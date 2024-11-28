@@ -1,294 +1,400 @@
-import React, { useState, useEffect } from 'react';
-import { Card, Button, Textarea, Alert, Modal } from 'flowbite-react';
-import {
-    HiThumbUp,
-    HiThumbDown,
-    HiQuestionMarkCircle,
-    HiAcademicCap,
-    HiUser,
-    HiX
-} from 'react-icons/hi';
-
-interface FeedbackResponse {
-    id: number;
-    user: {
-        name: string;
-        avatar: string;
-    };
-    feedback: 'agree' | 'disagree' | 'uncertain';
-    comment: string;
-    timestamp: string;
-}
-
-interface FeedbackStats {
-    agree: number;
-    disagree: number;
-    uncertain: number;
-    total: number;
-}
+import React, { useState, useEffect, useRef } from 'react';
+import { Button, Textarea, Avatar, Alert, Badge } from 'flowbite-react';
+import { MessageCircle, X, ThumbsUp, ThumbsDown, LogIn } from 'lucide-react';
+import { useAuth } from '../../hooks/useAuth';
+import { feedbackService } from '../../services/feedbackService';
+import { AUTH_PROVIDERS, EMOJIS, FEEDBACK_TYPES } from '../../config';
+import {Feedback, FeedbackStats, FeedbackType} from "../../types";
 
 interface FeedbackSectionProps {
     searchTerm: string;
     dataset: string;
 }
 
-export const FeedbackSection: React.FC<FeedbackSectionProps> = ({ searchTerm, dataset }) => {
-    const [isAuthenticated, setIsAuthenticated] = useState(false);
-    const [showAuthModal, setShowAuthModal] = useState(false);
-    const [feedback, setFeedback] = useState<'agree' | 'disagree' | 'uncertain' | null>(null);
+const FeedbackSection: React.FC<FeedbackSectionProps> = ({ searchTerm, dataset }) => {
+    // Auth hook
+    const { isAuthenticated, user, login } = useAuth();
+    const [isVisible, setIsVisible] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
+    const [activeTab, setActiveTab] = useState('submit');
+    const [selectedEmoji, setSelectedEmoji] = useState<FeedbackType | ''>('');
     const [comment, setComment] = useState('');
-    const [submitted, setSubmitted] = useState(false);
+    const [isPublic, setIsPublic] = useState(true);
     const [stats, setStats] = useState<FeedbackStats>({
-        agree: 0,
-        disagree: 0,
-        uncertain: 0,
-        total: 0
+        love: 0,
+        like: 0,
+        neutral: 0,
+        dislike: 0,
+        total: 0,
     });
-    const [history, setHistory] = useState<FeedbackResponse[]>([]);
+    const [feedbacks, setFeedbacks] = useState<Feedback[]>([]);
+    const [isLoading, setIsLoading] = useState(false);
+    const [error, setError] = useState<string | null>(null);
 
+    const popupRef = useRef<HTMLDivElement>(null);
+
+    // Scroll visibility handler
     useEffect(() => {
-        checkAuthStatus();
-        fetchStats();
-        fetchHistory();
-    }, [searchTerm, dataset]);
+        const handleScroll = () => {
+            const scrolled = window.scrollY > 100;
+            setIsVisible(scrolled);
+        };
 
-    const checkAuthStatus = async () => {
-        try {
-            const response = await fetch('/auth/status/');
-            const data = await response.json();
-            setIsAuthenticated(data.isAuthenticated);
-        } catch (error) {
-            console.error('Error checking auth status:', error);
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+    // Load data when popup opens
+    useEffect(() => {
+        if (isOpen) {
+            loadData();
         }
-    };
+    }, [isOpen]);
 
-    const fetchStats = async () => {
-        try {
-            const response = await fetch(
-                `/feedback/stats/?search=${searchTerm}&dataset=${dataset}`
-            );
-            const data = await response.json();
-            setStats(data);
-        } catch (error) {
-            console.error('Error fetching stats:', error);
-        }
-    };
+    // Close on outside click
+    useEffect(() => {
+        const handleClickOutside = (event: MouseEvent) => {
+            if (popupRef.current && !popupRef.current.contains(event.target as Node)) {
+                setIsOpen(false);
+            }
+        };
 
-    const fetchHistory = async () => {
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => document.removeEventListener('mousedown', handleClickOutside);
+    }, []);
+
+    const loadData = async () => {
+        setIsLoading(true);
+        setError(null);
+
         try {
-            const response = await fetch(
-                `/feedback/history/?search=${searchTerm}&dataset=${dataset}`
-            );
-            const data = await response.json();
-            setHistory(data);
-        } catch (error) {
-            console.error('Error fetching history:', error);
+            const [statsData, feedbacksData] = await Promise.all([
+                feedbackService.getStats(searchTerm, dataset),
+                feedbackService.getFeedbacks(searchTerm, dataset)
+            ]);
+
+            setStats(statsData);
+            setFeedbacks(feedbacksData);
+        } catch (err) {
+            setError('Failed to load feedback data');
+            console.error('Data loading failed:', err);
+        } finally {
+            setIsLoading(false);
         }
     };
 
     const handleSubmit = async () => {
-        if (!feedback || !isAuthenticated) return;
+        if (!isAuthenticated || !selectedEmoji) return;
+
+        setIsLoading(true);
+        setError(null);
 
         try {
-            const response = await fetch('/feedback/submit/', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    searchTerm,
-                    dataset,
-                    feedback,
-                    comment
-                }),
+            await feedbackService.submitFeedback({
+                searchTerm,
+                dataset,
+                feedback: selectedEmoji,
+                comment,
+                isPublic
             });
 
-            if (response.ok) {
-                setSubmitted(true);
-                fetchStats();
-                fetchHistory();
-            }
-        } catch (error) {
-            console.error('Error submitting feedback:', error);
+            setComment('');
+            setSelectedEmoji('');
+            setIsPublic(true);
+            await loadData();
+            setActiveTab('feedback');
+        } catch (err) {
+            setError('Failed to submit feedback');
+        } finally {
+            setIsLoading(false);
         }
     };
 
-    const AuthModal = () => (
-        <Modal
-            show={showAuthModal}
-            onClose={() => setShowAuthModal(false)}
-            size="md"
-        >
-            <Modal.Header>
-                <div className="flex justify-between items-center w-full">
-                    <span className="text-xl font-semibold">Authentication Required</span>
-                    <Button
-                        color="gray"
-                        size="sm"
-                        onClick={() => setShowAuthModal(false)}
+    const handleVote = async (feedbackId: number, isUpvote: boolean) => {
+        if (!isAuthenticated) return;
+
+        try {
+            await feedbackService.voteFeedback(feedbackId, isUpvote);
+            await loadData(); // Refresh feedback list
+        } catch (err) {
+            setError('Failed to register vote');
+        }
+    };
+
+    const AuthSection = () => (
+        <div className="p-6 space-y-4 feedback-item">
+            <div className="text-center mb-4">
+                <LogIn className="w-12 h-12 mx-auto text-gray-400 mb-2" />
+                <h3 className="text-lg font-medium text-gray-900">Sign in to continue</h3>
+                <p className="text-sm text-gray-500">Authentication required for feedback</p>
+            </div>
+
+            <div className="space-y-3">
+                <Button
+                    color="light"
+                    className="w-full"
+                    onClick={() => login('google')}
+                >
+                    <img src="/static/google-icon.svg" className="w-5 h-5 mr-2" alt="Google" />
+                    Continue with Google
+                </Button>
+
+                <Button
+                    color="light"
+                    className="w-full"
+                    onClick={() => login('orcid')}
+                >
+                    <img src="/static/orcid-icon.svg" className="w-5 h-5 mr-2" alt="ORCID" />
+                    Continue with ORCID
+                </Button>
+            </div>
+        </div>
+    );
+
+    const SubmitSection = () => (
+        <div className="p-4 space-y-4 feedback-item">
+            {/* Emoji Selection */}
+            <div className="flex justify-center space-x-4">
+                {Object.entries(FEEDBACK_TYPES).map(([key, value]) => (
+                    <button
+                        key={key}
+                        onClick={() => setSelectedEmoji(value)}
+                        className={`text-2xl p-2 rounded-full transition-all ${
+                            selectedEmoji === value
+                                ? 'bg-purple-100 scale-110'
+                                : 'hover:bg-gray-100'
+                        }`}
+                        title={key.toLowerCase()}
                     >
-                        <HiX className="w-4 h-4" />
-                    </Button>
+                        {EMOJIS[value]}
+                    </button>
+                ))}
+            </div>
+
+            {/* Comment Input */}
+            <Textarea
+                value={comment}
+                onChange={(e) => setComment(e.target.value)}
+                placeholder="Share your thoughts..."
+                rows={3}
+                className="resize-none"
+            />
+
+            {/* Privacy Toggle */}
+            <div className="flex items-center space-x-2">
+                <input
+                    type="checkbox"
+                    id="public-toggle"
+                    checked={isPublic}
+                    onChange={(e) => setIsPublic(e.target.checked)}
+                    className="rounded text-purple-600 focus:ring-purple-500"
+                />
+                <label htmlFor="public-toggle" className="text-sm text-gray-600">
+                    Make feedback public
+                </label>
+            </div>
+
+            {/* Submit Button */}
+            <Button
+                color="purple"
+                className="w-full"
+                onClick={handleSubmit}
+                disabled={!selectedEmoji || isLoading}
+            >
+                {isLoading ? (
+                    <div className="flex items-center justify-center">
+                        <div className="loading-spinner mr-2" />
+                        Submitting...
+                    </div>
+                ) : (
+                    'Submit Feedback'
+                )}
+            </Button>
+        </div>
+    );
+
+    // @ts-ignore
+    // @ts-ignore
+    // @ts-ignore
+    const FeedbackList = () => (
+        <div className="p-4 space-y-4">
+            {/* Stats Section */}
+            <div className="grid grid-cols-4 gap-2 p-3 bg-gray-50 rounded-lg">
+                {Object.entries(stats).slice(0, -1).map(([key, value]) => (
+                    <div key={key} className="text-center">
+                        <div className="text-xl mb-1">{EMOJIS[key as keyof typeof EMOJIS]}</div>
+                        <div className="text-sm font-medium text-gray-900">{value}</div>
+                    </div>
+                ))}
+            </div>
+
+            {/* Error Alert */}
+            {error && (
+                <Alert color="failure" onDismiss={() => setError(null)}>
+                    {error}
+                </Alert>
+            )}
+
+            {/* Loading State */}
+            {isLoading ? (
+                <div className="text-center py-8">
+                    <div className="loading-spinner mx-auto" />
                 </div>
-            </Modal.Header>
-            <Modal.Body>
-                <div className="space-y-4">
-                    <Button
-                        color="light"
-                        className="w-full flex items-center justify-center"
-                        onClick={() => window.location.href = '/auth/google/login'}
-                    >
-                        <HiThumbDown className="mr-2 h-5 w-5" />
-                        Continue with Google TODO
-                    </Button>
-                    <Button
-                        color="light"
-                        className="w-full flex items-center justify-center"
-                        onClick={() => window.location.href = '/auth/orcid/login'}
-                    >
-                        <HiAcademicCap className="mr-2 h-5 w-5" />
-                        Continue with ORCID
-                    </Button>
-                    <Button
-                        color="dark"
-                        className="w-full flex items-center justify-center"
-                        onClick={() => window.location.href = '/auth/test/login'}
-                    >
-                        <HiUser className="mr-2 h-5 w-5" />
-                        Test Login (Username/Password)
-                    </Button>
+            ) : (
+                <div className="space-y-3">
+                    {feedbacks.length === 0 ? (
+                        <div className="text-center py-6 text-gray-500">
+                            No feedback yet. Be the first to share your thoughts!
+                        </div>
+                    ) : (
+                        feedbacks.map((feedback: Feedback) => (
+                            <div key={feedback.id} className="feedback-item bg-gray-50 p-3 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                                {/* Feedback Header */}
+                                <div className="flex justify-between items-start mb-2">
+                                    <div className="flex items-center space-x-2">
+                                        <Avatar img={feedback.user.avatar} size="sm" rounded />
+                                        <div>
+                                            <p className="text-sm font-medium text-gray-900">{feedback.user.name}</p>
+                                            <p className="text-xs text-gray-500">
+                                                {new Date(feedback.timestamp).toLocaleDateString(undefined, {
+                                                    year: 'numeric',
+                                                    month: 'short',
+                                                    day: 'numeric',
+                                                    hour: '2-digit',
+                                                    minute: '2-digit'
+                                                })}
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <span className="text-xl" title={feedback.feedback}>
+                    {EMOJIS[feedback.feedback]}
+                  </span>
+                                </div>
+
+                                {/* Feedback Content */}
+                                {feedback.comment && (
+                                    <p className="text-sm text-gray-600 mt-2 break-words">
+                                        {feedback.comment}
+                                    </p>
+                                )}
+
+                                {/* Feedback Footer */}
+                                <div className="flex items-center justify-between mt-3">
+                                    <div className="flex space-x-4">
+                                        <button
+                                            className={`vote-button flex items-center space-x-1 transition-colors ${
+                                                feedback.hasUserVoted?.upvoted
+                                                    ? 'text-purple-600'
+                                                    : 'text-gray-500 hover:text-purple-600'
+                                            }`}
+                                            onClick={() => handleVote(feedback.id, true)}
+                                            disabled={!isAuthenticated || isLoading}
+                                            title={isAuthenticated ? 'Upvote' : 'Login to vote'}
+                                        >
+                                            <ThumbsUp className="w-4 h-4" />
+                                            <span className="text-xs">{feedback.upvotes}</span>
+                                        </button>
+                                        <button
+                                            className={`vote-button flex items-center space-x-1 transition-colors ${
+                                                feedback.hasUserVoted?.downvoted
+                                                    ? 'text-purple-600'
+                                                    : 'text-gray-500 hover:text-purple-600'
+                                            }`}
+                                            onClick={() => handleVote(feedback.id, false)}
+                                            disabled={!isAuthenticated || isLoading}
+                                            title={isAuthenticated ? 'Downvote' : 'Login to vote'}
+                                        >
+                                            <ThumbsDown className="w-4 h-4" />
+                                            <span className="text-xs">{feedback.downvotes}</span>
+                                        </button>
+                                    </div>
+                                    {feedback.isPublic && (
+                                        <Badge color="purple" size="sm">Public</Badge>
+                                    )}
+                                </div>
+                            </div>
+                        ))
+                    )}
                 </div>
-            </Modal.Body>
-        </Modal>
+            )}
+        </div>
     );
 
     return (
-        <Card className="mt-8">
-            <div className="space-y-6">
-                <h2 className="text-xl font-bold">Community Feedback</h2>
+        <div className="fixed bottom-6 right-6 z-50">
+            {/* Feedback Button */}
+            <div
+                className={`transition-all duration-300 transform ${
+                    isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'
+                }`}
+            >
+                <Button
+                    color="purple"
+                    size="lg"
+                    pill
+                    onClick={() => setIsOpen(!isOpen)}
+                    className="shadow-lg hover:shadow-xl group"
+                >
+                    <MessageCircle className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
+                    Feedback
+                </Button>
+            </div>
 
-                {!isAuthenticated ? (
-                    <Alert color="info">
-                        <div className="flex flex-col items-center space-y-4">
-                            <span>Please log in to provide feedback</span>
-                            <Button color="blue" onClick={() => setShowAuthModal(true)}>
-                                Log in
-                            </Button>
-                        </div>
-                    </Alert>
-                ) : (
-                    submitted ? (
-                        <Alert color="success">
-                            <span>Thank you for your feedback!</span>
-                        </Alert>
-                    ) : (
-                        <div className="space-y-4">
-                            <div className="flex justify-center gap-4">
-                                <Button
-                                    color={feedback === 'agree' ? 'success' : 'gray'}
-                                    onClick={() => setFeedback('agree')}
-                                >
-                                    <HiThumbUp className="mr-2 h-5 w-5" />
-                                    Agree
-                                </Button>
-                                <Button
-                                    color={feedback === 'disagree' ? 'failure' : 'gray'}
-                                    onClick={() => setFeedback('disagree')}
-                                >
-                                    <HiThumbDown className="mr-2 h-5 w-5" />
-                                    Disagree
-                                </Button>
-                                <Button
-                                    color={feedback === 'uncertain' ? 'warning' : 'gray'}
-                                    onClick={() => setFeedback('uncertain')}
-                                >
-                                    <HiQuestionMarkCircle className="mr-2 h-5 w-5" />
-                                    Uncertain
-                                </Button>
-                            </div>
-
-                            <Textarea
-                                value={comment}
-                                onChange={(e) => setComment(e.target.value)}
-                                placeholder="Add your comment (optional)"
-                                rows={3}
-                            />
-
-                            <Button
-                                color="blue"
-                                className="w-full"
-                                onClick={handleSubmit}
-                                disabled={!feedback}
+            {/* Feedback Panel */}
+            {isOpen && (
+                <div
+                    ref={popupRef}
+                    className="feedback-popup absolute bottom-16 right-0 w-96 bg-white rounded-lg shadow-xl border"
+                >
+                    {/* Panel Header */}
+                    <div className="flex items-center justify-between p-4 border-b">
+                        <div className="flex space-x-4">
+                            <button
+                                onClick={() => setActiveTab('submit')}
+                                className={`px-3 py-1 rounded-full text-sm font-medium transition-colors ${
+                                    activeTab === 'submit'
+                                        ? 'bg-purple-100 text-purple-700'
+                                        : 'text-gray-500 hover:text-gray-700'
+                                }`}
                             >
-                                Submit Feedback
-                            </Button>
+                                Submit
+                            </button>
+                            <button
+                                onClick={() => setActiveTab('feedback')}
+                                className={`px-3 py-1 rounded-full text-sm font-medium transition-colors ${
+                                    activeTab === 'feedback'
+                                        ? 'bg-purple-100 text-purple-700'
+                                        : 'text-gray-500 hover:text-gray-700'
+                                }`}
+                            >
+                                Feedback
+                            </button>
                         </div>
-                    )
-                )}
-
-                {/* Stats */}
-                <div>
-                    <h3 className="text-lg font-semibold mb-4">Feedback Statistics</h3>
-                    <div className="grid grid-cols-3 gap-4">
-                        {Object.entries(stats).map(([key, value]) => {
-                            if (key === 'total') return null;
-                            return (
-                                <div key={key} className="text-center p-4 bg-gray-50 rounded-lg">
-                                    <div className="text-2xl font-bold">{value}</div>
-                                    <div className="text-sm text-gray-600 capitalize">{key}</div>
-                                </div>
-                            );
-                        })}
+                        <button
+                            onClick={() => setIsOpen(false)}
+                            className="text-gray-400 hover:text-gray-600 transition-colors p-1 rounded-full hover:bg-gray-100"
+                            aria-label="Close feedback panel"
+                        >
+                            <X className="w-5 h-5" />
+                        </button>
                     </div>
-                </div>
 
-                {/* History */}
-                <div>
-                    <h3 className="text-lg font-semibold mb-4">Recent Feedback</h3>
-                    <div className="space-y-4">
-                        {history.length === 0 ? (
-                            <div className="text-center py-4 text-gray-500">
-                                No feedback submitted yet
-                            </div>
+                    {/* Panel Content */}
+                    {/* Panel Content */}
+                    <div className="max-h-[70vh] overflow-y-auto">
+                        {activeTab === 'submit' ? (
+                            !isAuthenticated ? (
+                                <AuthSection />
+                            ) : (
+                                <SubmitSection />
+                            )
                         ) : (
-                            history.map((item) => (
-                                <div key={item.id} className="p-4 bg-gray-50 rounded-lg">
-                                    <div className="flex items-center justify-between">
-                                        <div className="flex items-center">
-                                            <img
-                                                src={item.user.avatar}
-                                                alt=""
-                                                className="w-8 h-8 rounded-full"
-                                            />
-                                            <div className="ml-3">
-                                                <p className="text-sm font-medium">{item.user.name}</p>
-                                                <p className="text-sm text-gray-500">
-                                                    {new Date(item.timestamp).toLocaleDateString()}
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <span className={`
-                      px-2 py-1 rounded-full text-sm
-                      ${item.feedback === 'agree' ? 'bg-green-100 text-green-800' :
-                                            item.feedback === 'disagree' ? 'bg-red-100 text-red-800' :
-                                                'bg-yellow-100 text-yellow-800'
-                                        }
-                    `}>
-                      {item.feedback}
-                    </span>
-                                    </div>
-                                    {item.comment && (
-                                        <p className="mt-2 text-sm text-gray-600">{item.comment}</p>
-                                    )}
-                                </div>
-                            ))
+                            <FeedbackList />
                         )}
                     </div>
                 </div>
-            </div>
-
-            <AuthModal />
-        </Card>
+            )}
+        </div>
     );
 };
 

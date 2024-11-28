@@ -58,12 +58,12 @@ export interface FeedbackResponse {
     timestamp: string;
 }
 
-export interface FeedbackStats {
-    agree: number;
-    disagree: number;
-    uncertain: number;
-    total: number;
-}
+// export interface FeedbackStats {
+//     agree: number;
+//     disagree: number;
+//     uncertain: number;
+//     total: number;
+// }
 
 export interface VerificationStep {
     loading: string;
@@ -101,7 +101,7 @@ export interface VerificationData {
     final_question: string;
     responses: {
         [key: string]: {
-            short_ans: string;
+            short_ans: number;
             full_ans: string;
         };
     };
@@ -121,4 +121,43 @@ export interface VerificationData {
         stratum: string;
         topic: string;
     };
+}
+
+export type FeedbackType = 'love' | 'like' | 'neutral' | 'dislike';
+
+export interface FeedbackUser {
+    id: number;
+    name: string;
+    avatar: string;
+}
+
+export interface Feedback {
+    id: number;
+    user: FeedbackUser;
+    feedback: FeedbackType;
+    comment: string;
+    timestamp: string;
+    upvotes: number;
+    downvotes: number;
+    isPublic: boolean;
+    hasUserVoted?: {
+        upvoted: boolean;
+        downvoted: boolean;
+    };
+}
+
+export interface FeedbackStats {
+    love: number;
+    like: number;
+    neutral: number;
+    dislike: number;
+    total: number;
+}
+
+export interface FeedbackSubmission {
+    searchTerm: string;
+    dataset: string;
+    feedback: FeedbackType;
+    comment: string;
+    isPublic: boolean;
 }

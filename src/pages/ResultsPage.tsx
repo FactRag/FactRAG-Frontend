@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import {HistorySidebar} from "../components/verification/HistorySidebar";
 import VerificationProcess from "../components/verification/VerificationProcess";
-import {FeedbackSection} from "../components/verification/FeedbackSection";
+import FeedbackSection from "../components/verification/FeedbackSection";
 import {VerificationData} from "../types";
 import {SearchHistory, SearchHistoryItem} from "../components/verification/History";
 

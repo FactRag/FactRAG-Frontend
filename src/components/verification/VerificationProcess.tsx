@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react';
-import {Timeline, Card, Alert, Modal} from 'flowbite-react';
-import {HiExternalLink, HiInformationCircle, HiOutlineExternalLink, HiOutlineDocumentText, HiEye, HiX} from 'react-icons/hi';
+import {Timeline, Card, Alert, Modal, Badge} from 'flowbite-react';
+import {HiExternalLink, HiInformationCircle, HiOutlineExternalLink, HiOutlineDocumentText, HiEye, HiX, HiCheck, HiCube, HiLink, HiDocumentText} from 'react-icons/hi';
 import {VerificationData} from '../../types';
+import {ModelResponse} from "./ModelResponse";
 
 interface ProcessStep {
     id: string;
@@ -105,12 +106,61 @@ export const VerificationProcess: React.FC<VerificationProcessProps> = ({data, c
         }
     }, [docModal.file_id]);
 
+    const formatEntityText = (text: string) => {
+        return text.replace(/_/g, ' ');
+    };
     const renderTripleContent = () => (
-        <Card className="mb-4">
-            <div className="space-y-2">
-                <p><span className="font-semibold">Subject:</span> {data.subject}</p>
-                <p><span className="font-semibold">Predicate:</span> {data.predicate}</p>
-                <p><span className="font-semibold">Object:</span> {data.object}</p>
+        <Card className="mb-4 bg-white">
+            <div className="flex flex-col space-y-4">
+                {/* Triple Display */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    {/* Subject */}
+                    <div className="bg-gray-50 rounded-lg p-4">
+                        <div className="flex items-center justify-between mb-2">
+                            <Badge color="gray" className="px-3 py-1">
+                                <div className="flex items-center gap-1">
+                                    <HiCube className="w-4 h-4" />
+                                    <span>Subject</span>
+                                </div>
+                            </Badge>
+                            <HiLink className="w-4 h-4 text-gray-400" />
+                        </div>
+                        <p className="text-gray-900 font-medium break-words">
+                            {data.subject}
+                        </p>
+                    </div>
+
+                    {/* Predicate */}
+                    <div className="bg-blue-50 rounded-lg p-4">
+                        <div className="flex items-center justify-between mb-2">
+                            <Badge color="blue" className="px-3 py-1">
+                                <div className="flex items-center gap-1">
+                                    <HiLink className="w-4 h-4" />
+                                    <span>Predicate</span>
+                                </div>
+                            </Badge>
+                        </div>
+                        <p className="text-blue-900 font-medium break-words">
+                            {data.predicate}
+                        </p>
+                    </div>
+
+                    {/* Object */}
+                    <div className="bg-gray-50 rounded-lg p-4">
+                        <div className="flex items-center justify-between mb-2">
+                            <Badge color="gray" className="px-3 py-1">
+                                <div className="flex items-center gap-1">
+                                    <HiCube className="w-4 h-4" />
+                                    <span>Object</span>
+                                </div>
+                            </Badge>
+                            <HiLink className="w-4 h-4 text-gray-400" />
+                        </div>
+                        <p className="text-gray-900 font-medium break-words">
+                            {data.object}
+                        </p>
+                    </div>
+                </div>
             </div>
         </Card>
     );
@@ -451,19 +501,72 @@ Expected Response:
             </div>
         </Card>
     )
-    const renderModelResponses = () => (
-        <Card className="mb-4">
-            <div className="space-y-4">
-                {Object.entries(data.responses).map(([model, response], idx) => (
-                    <div key={idx} className="p-4 border rounded-lg">
-                        <h5 className="font-bold text-gray-900 mb-2">{model}</h5>
-                        <p className="text-gray-700">{response.short_ans}</p>
-                        <p className="text-sm text-gray-500 mt-2">Confidence: {response.full_ans}</p>
+    const renderModelResponses = () => {
+        const getCounts = () => {
+            const counts = { verified: 0, notVerified: 0, noAnswer: 0 };
+            Object.values(data.responses).forEach(response => {
+                const ans = response.short_ans;
+                if (ans === 1 ) counts.verified++;
+                else if (ans === 0) counts.notVerified++;
+                else counts.noAnswer++;
+            });
+            return counts;
+        };
+
+        const counts = getCounts();
+        const totalResponses = Object.keys(data.responses).length - counts.noAnswer;
+        const verifiedRate = totalResponses > 0 ? (counts.verified / totalResponses * 100) : 0;
+        const notVerifiedRate = totalResponses > 0 ? (counts.notVerified / totalResponses * 100) : 0;
+
+        return (
+            <Card className="mb-4">
+                <div className="space-y-4">
+                    <div className="flex justify-between items-center mb-4">
+                        <h4 className="text-xl font-bold text-gray-900">Model Verification Results</h4>
+                        <Alert color="info" className="p-2">
+                            <div className="flex items-center gap-2">
+              <span className="font-medium text-sm">
+                {counts.verified} Verified, {counts.notVerified} Not Verified
+                  {counts.noAnswer > 0 && `, ${counts.noAnswer} No Answer`}
+              </span>
+                            </div>
+                        </Alert>
                     </div>
-                ))}
-            </div>
-        </Card>
-    );
+
+                    <div className="space-y-3">
+                        {Object.entries(data.responses).map(([model, response], idx) => (
+                            <ModelResponse key={idx} model={model} response={response} />
+                        ))}
+                    </div>
+
+                    <div className="mt-4 p-3 bg-gray-50 rounded-lg">
+                        <div className="text-sm text-gray-600">
+                            <span className="font-semibold">Response Distribution:</span>
+                            <div className="w-full h-2.5 mt-2 rounded-full overflow-hidden bg-gray-200 flex">
+                                <div
+                                    className="h-full bg-green-600 transition-all duration-300"
+                                    style={{ width: `${verifiedRate}%` }}
+                                />
+                                <div
+                                    className="h-full bg-red-600 transition-all duration-300"
+                                    style={{ width: `${notVerifiedRate}%` }}
+                                />
+                            </div>
+                            <div className="flex justify-between mt-2">
+                                <span>Verified: {verifiedRate.toFixed(1)}%</span>
+                                <span>Not Verified: {notVerifiedRate.toFixed(1)}%</span>
+                            </div>
+                            {counts.noAnswer > 0 && (
+                                <div className="mt-2 text-gray-500 text-xs">
+                                    * {counts.noAnswer} model{counts.noAnswer > 1 ? 's' : ''} provided no answer
+                                </div>
+                            )}
+                        </div>
+                    </div>
+                </div>
+            </Card>
+        );
+    }
 
     const renderFinalAnalysis = () => (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">

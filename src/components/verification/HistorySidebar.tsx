@@ -100,7 +100,8 @@ export const HistorySidebar: React.FC<HistoryProps> = ({history, setHistory}) =>
                                 </div>
                                 <div className="flex items-center text-xs text-gray-500">
                                     <Badge color={getDatasetColor(item.dataset)}>
-                                        {item.dataset}
+                                        {/*{Capitalize the first letter}*/}
+                                        {item.dataset.charAt(0).toUpperCase() + item.dataset.slice(1)}
                                     </Badge>
                                     <span className="mx-2">•</span>
                                     <span>{SearchHistory.formatDate(item.timestamp)}</span>
