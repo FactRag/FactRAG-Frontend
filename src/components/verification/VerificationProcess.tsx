@@ -156,7 +156,9 @@ The output should be a JSON object with the key "output" and the value as the se
                             className="text-sm text-blue-600 hover:text-blue-800"
                             onClick={() => {
                                 const details = document.getElementById('sentencePromptDetails');
+                                console.log(details)
                                 if (details) {
+                                    console.log(details.style.display)
                                     details.style.display = details.style.display === 'none' ? 'block' : 'none';
                                 }
                             }}
@@ -165,7 +167,7 @@ The output should be a JSON object with the key "output" and the value as the se
                         </button>
                     </div>
 
-                    <div id="sentencePromptDetails" className="hidden">
+                    <div id="sentencePromptDetails" className="hidden" style={{display: 'none'}}>
                         <div className="bg-gray-50 p-4 rounded-lg border border-gray-200 overflow-x-auto">
                             <pre className="text-xs text-gray-600 whitespace-pre-wrap">{promptContent}</pre>
                         </div>
@@ -278,7 +280,7 @@ Expected Response:
                             Show/Hide Prompt
                         </button>
                     </div>
-                    <div id="promptDetails" className="hidden">
+                    <div id="promptDetails" className="hidden" style={{display: 'none'}}>
                         <div className="bg-gray-50 p-4 rounded-lg border border-gray-200 overflow-x-auto">
                             <pre className="text-xs text-gray-600 whitespace-pre-wrap">{promptContent}</pre>
                         </div>
