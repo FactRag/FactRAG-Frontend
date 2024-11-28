@@ -1,13 +1,44 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.loading-text {
+  @apply text-blue-600 font-medium animate-blink hidden p-2 bg-blue-50 rounded-md mb-2;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.content-section {
+  @apply opacity-0 transform translate-y-2.5 transition-all duration-500 hidden mb-4;
 }
+
+.content-section.visible {
+  @apply opacity-100 translate-y-0 block;
+}
+
+.chat-container {
+  @apply h-[calc(100vh-200px)] overflow-y-auto p-4 scroll-smooth;
+}
+
+.loading-container {
+  @apply sticky top-0 bg-white p-4 border-b border-gray-200 z-10 shadow-md;
+}
+
+/* Add to src/index.css */
+.verification-step {
+  @apply opacity-0 transform translate-y-4 transition-all duration-500 ease-in-out;
+}
+
+.verification-step.visible {
+  @apply opacity-100 translate-y-0;
+}
+
+.history-sidebar-mobile {
+  @apply fixed inset-y-0 left-0 z-30 w-64 bg-white shadow-lg transform transition-transform duration-300 ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .history-sidebar-mobile {
+    @apply relative transform-none shadow-none;
+  }
+}
+
