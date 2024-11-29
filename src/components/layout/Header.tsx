@@ -1,44 +1,60 @@
-// src/components/layout/Header.tsx
 import React from 'react';
-import {Link} from 'react-router-dom';
-import {useAuth} from '../../contexts/AuthContext';
-import {Button, Navbar, Avatar, Dropdown} from 'flowbite-react';
+import {Navbar} from 'flowbite-react';
 
-export const Header = () => {
-    const {isAuthenticated, user, logout} = useAuth();
+interface LogoItemProps {
+    src: string;
+    alt: string;
+    tooltip: string;
+}
+
+const LogoItem: React.FC<LogoItemProps> = ({src, alt, tooltip}) => (
+    <div className="relative flex items-center">
+        <img
+            src={src}
+            alt={alt}
+            className="h-8 md:h-10 w-auto hover:opacity-80 transition-opacity cursor-pointer"
+        />
+    </div>
+);
+
+export const Header: React.FC = () => {
+    const logos = [
+        {
+            src: "/images/unipd.png",
+            alt: "University of Padua logo",
+            tooltip: "University of Padua"
+        },
+        {
+            src: "/images/dei.png",
+            alt: "DEI logo",
+            tooltip: "Department of Information Engineering"
+        },
+        {
+            src: "/images/iiiahub.png",
+            alt: "IIIAHub logo",
+            tooltip: "Intelligent Interactive Information Access Hub"
+        }
+    ];
 
     return (
-        <header className="w-full py-6 bg-white shadow-sm">
-            <div className="container mx-auto px-4">
-                <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10">
-                    <div className="flex items-center" data-tooltip-target="tooltip-unipd">
-                        <img src="/images/unipd.png" alt="University of Padua logo" className="h-8 md:h-10 w-auto"/>
-                        <div id="tooltip-unipd" role="tooltip"
-                             className="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-                            University of Padua
-                            <div className="tooltip-arrow" data-popper-arrow=""></div>
-                        </div>
-                    </div>
-
-                    <div className="flex items-center" data-tooltip-target="tooltip-dei">
-                        <img src="/images/dei.png" alt="DEI logo" className="h-8 md:h-10 w-auto"/>
-                        <div id="tooltip-dei" role="tooltip"
-                             className="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-                            Department of Information Engineering
-                            <div className="tooltip-arrow" data-popper-arrow></div>
-                        </div>
-                    </div>
-
-                    <div className="flex items-center" data-tooltip-target="tooltip-iiiahub">
-                        <img src="/images/iiiahub.png" alt="IIIAHub logo" className="h-8 md:h-10 w-auto"/>
-                        <div id="tooltip-iiiahub" role="tooltip"
-                             className="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-                            Intelligent Interactive Information Access Hub
-                            <div className="tooltip-arrow" data-popper-arrow></div>
-                        </div>
-                    </div>
+        <Navbar
+            className="bg-white border-b shadow-sm py-4"
+            fluid
+        >
+            <div className="container mx-auto">
+                <div className="w-full flex flex-wrap justify-center items-center gap-6 md:gap-10">
+                    {logos.map((logo, index) => (
+                        <LogoItem
+                            key={index}
+                            src={logo.src}
+                            alt={logo.alt}
+                            tooltip={logo.tooltip}
+                        />
+                    ))}
                 </div>
             </div>
-        </header>
+        </Navbar>
     );
 };
+
+export default Header;

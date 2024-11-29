@@ -204,10 +204,9 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     };
 
     useEffect(() => {
-        console.log("ff")
         const token = localStorage.getItem('access_token');
         if (token) {
-            checkAuth();
+            checkAuth().then(r => r);
         } else {
             setIsLoading(false);
         }
