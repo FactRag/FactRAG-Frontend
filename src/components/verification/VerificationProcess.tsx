@@ -1,15 +1,26 @@
 import React, {useEffect, useState} from 'react';
 import {Timeline, Card, Alert, Modal, Badge} from 'flowbite-react';
-import {HiExternalLink, HiInformationCircle, HiOutlineExternalLink, HiOutlineDocumentText, HiEye, HiX, HiCheck, HiCube, HiLink, HiDocumentText} from 'react-icons/hi';
-import {VerificationData} from '../../types';
-import {ModelResponse} from "./ModelResponse";
+import {
+    HiInformationCircle,
+    HiOutlineExternalLink,
+} from 'react-icons/hi';
+import {ModelResponse, ModelResponseHeader} from "./ModelResponse";
+import type {VerificationData, ProcessStep} from '../../types/verification';
+import {useDocumentContent} from "../../hooks/useDocumentContent";
+import {DocumentModal} from "./modals/DocumentModal";
+import {TripleDisplay} from "./TripleDisplay";
+import {DocumentCard} from "./modals/DocumentCard";
+import {GooglePageCard} from "./GooglePageCard";
+import {PromptSection} from "./PromptSection";
+import {QuestionTable} from "./QuestionTable";
+import {generateHumanReadablePrompt, generateQuestionPromptContent} from "../../utils/promptGenerators";
+import {ScoreLegend} from "./ScoreLegend";
+import {ResponseDistribution} from "./ResponseDistribution";
+import {calculateModelStats} from "../../utils/calculateModelStats";
 
-interface ProcessStep {
-    id: string;
-    title: string;
-    description?: string;
-    prompt?: string;
-    examples?: { input: string; output: string }[];
+interface VerificationProcessProps {
+    data: VerificationData;
+    currentStep: number;
 }
 
 const VERIFICATION_STEPS: ProcessStep[] = [
@@ -64,10 +75,6 @@ Object: Maria_Feodorovna__Dagmar_of_Denmark_`,
     }
 ];
 
-interface VerificationProcessProps {
-    data: VerificationData;
-    currentStep: number;
-}
 
 export const VerificationProcess: React.FC<VerificationProcessProps> = ({data, currentStep}) => {
     const [pageModal, setPageModal] = useState<{ isOpen: boolean; url: string; html: string }>({
@@ -75,498 +82,7 @@ export const VerificationProcess: React.FC<VerificationProcessProps> = ({data, c
         url: '',
         html: ''
     });
-
-    const [docModal, setDocModal] = useState<{ isOpen: boolean; file_id: string; docContent: string }>({
-        isOpen: false,
-        file_id: '',
-        docContent: ''
-    });
-
-
-    useEffect(() => {
-        const loadDocContent = async () => {
-            if (docModal.file_id) {
-                // setIsLoading(true);
-                try {
-                    const response = await fetch(`/data/txt/${docModal.file_id}`);
-                    if (!response.ok) throw new Error('Failed to load document');
-                    const content = await response.text();
-                    setDocModal({isOpen: true, file_id: docModal.file_id, docContent: content});
-                } catch (error) {
-                    console.error('Error loading document:', error);
-                    setDocModal({isOpen: false, file_id: '', docContent: ''});
-                } finally {
-                    // setIsLoading(false);
-                }
-            }
-        };
-
-        if (docModal.file_id) {
-            loadDocContent().then(r => r);
-        }
-    }, [docModal.file_id]);
-
-    const formatEntityText = (text: string) => {
-        return text.replace(/_/g, ' ');
-    };
-    const renderTripleContent = () => (
-        <Card className="mb-4 bg-white">
-            <div className="flex flex-col space-y-4">
-                {/* Triple Display */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    {/* Subject */}
-                    <div className="bg-gray-50 rounded-lg p-4">
-                        <div className="flex items-center justify-between mb-2">
-                            <Badge color="gray" className="px-3 py-1">
-                                <div className="flex items-center gap-1">
-                                    <HiCube className="w-4 h-4" />
-                                    <span>Subject</span>
-                                </div>
-                            </Badge>
-                            <HiLink className="w-4 h-4 text-gray-400" />
-                        </div>
-                        <p className="text-gray-900 font-medium break-words">
-                            {data.subject}
-                        </p>
-                    </div>
-
-                    {/* Predicate */}
-                    <div className="bg-blue-50 rounded-lg p-4">
-                        <div className="flex items-center justify-between mb-2">
-                            <Badge color="blue" className="px-3 py-1">
-                                <div className="flex items-center gap-1">
-                                    <HiLink className="w-4 h-4" />
-                                    <span>Predicate</span>
-                                </div>
-                            </Badge>
-                        </div>
-                        <p className="text-blue-900 font-medium break-words">
-                            {data.predicate}
-                        </p>
-                    </div>
-
-                    {/* Object */}
-                    <div className="bg-gray-50 rounded-lg p-4">
-                        <div className="flex items-center justify-between mb-2">
-                            <Badge color="gray" className="px-3 py-1">
-                                <div className="flex items-center gap-1">
-                                    <HiCube className="w-4 h-4" />
-                                    <span>Object</span>
-                                </div>
-                            </Badge>
-                            <HiLink className="w-4 h-4 text-gray-400" />
-                        </div>
-                        <p className="text-gray-900 font-medium break-words">
-                            {data.object}
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </Card>
-    );
-
-    const getFileName = (fileId: string) => {
-        // Extract just the filename without path
-        return fileId.split('/').pop() || fileId;
-    };
-
-    const renderHumanReadableContent = () => {
-        const promptContent = `Task Description: Convert a knowledge graph triple into a meaningful human-readable sentence.
-
-Instructions: Given a subject, predicate, and object from a knowledge graph, form a grammatically correct and meaningful sentence that conveys the relationship between them.
-
-Examples:
-Input:
-Subject: Alexander_III_of_Russia
-Predicate: isMarriedTo
-Object: Maria_Feodorovna__Dagmar_of_Denmark_
-Output: {"output": "Alexander III of Russia is married to Maria Feodorovna, also known as Dagmar of Denmark."}
-
-Subject: Quentin_Tarantino
-Predicate: produced
-Object: From_Dusk_till_Dawn
-Output: {"output": "Quentin Tarantino produced the film From Dusk till Dawn."}
-
-Do the following:
-Input:
-Subject: ${data.subject}
-Predicate: ${data.predicate}
-Object: ${data.object}
-
-The output should be a JSON object with the key "output" and the value as the sentence. The sentence should be human-readable and grammatically correct.
-    `;
-
-        return (
-            <Card className="mb-4">
-                {/* Prompt Section */}
-                <div className="mb-6">
-                    <div className="flex items-center justify-between mb-2">
-                        <h3 className="text-sm font-semibold text-gray-700">Sentence Generation Prompt</h3>
-                        <button
-                            className="text-sm text-blue-600 hover:text-blue-800"
-                            onClick={() => {
-                                const details = document.getElementById('sentencePromptDetails');
-                                console.log(details)
-                                if (details) {
-                                    console.log(details.style.display)
-                                    details.style.display = details.style.display === 'none' ? 'block' : 'none';
-                                }
-                            }}
-                        >
-                            Show/Hide Details
-                        </button>
-                    </div>
-
-                    <div id="sentencePromptDetails" className="hidden" style={{display: 'none'}}>
-                        <div className="bg-gray-50 p-4 rounded-lg border border-gray-200 overflow-x-auto">
-                            <pre className="text-xs text-gray-600 whitespace-pre-wrap">{promptContent}</pre>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Output Display */}
-                <div className="overflow-x-auto">
-                    <table className="w-full text-sm text-left">
-                        <thead className="text-xs bg-gray-50">
-                        <tr>
-                            <th scope="col" className="px-4 py-3">Input Triple</th>
-                            <th scope="col" className="px-4 py-3">Human Readable Output</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr className="border-b">
-                            <td className="px-4 py-3">
-                                <div className="space-y-1">
-                                    <div className="text-xs text-gray-500">Subject</div>
-                                    <div className="font-medium text-gray-900">{data.subject}</div>
-                                    <div className="text-xs text-gray-500 mt-2">Predicate</div>
-                                    <div className="font-medium text-gray-900">{data.predicate}</div>
-                                    <div className="text-xs text-gray-500 mt-2">Object</div>
-                                    <div className="font-medium text-gray-900">{data.object}</div>
-                                </div>
-                            </td>
-                            <td className="px-4 py-3">
-                                <div className="bg-blue-50 p-3 rounded-lg border border-blue-100">
-                                    <div className="text-xs text-blue-600 mb-1">Generated Sentence</div>
-                                    <div className="font-medium text-blue-900">{data.human_readable}</div>
-                                </div>
-                                <div className="mt-2 text-xs text-gray-500">
-                                    Format: <code
-                                    className="bg-gray-100 px-1 py-0.5 rounded">{"{'output': '...'}"}</code>
-                                </div>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                {/* Legend */}
-                <div className="mt-4 px-4 py-3 bg-gray-50 rounded-lg">
-                    <p className="text-xs text-gray-600 font-medium mb-2">Process Overview:</p>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-2 text-xs">
-            <span className="flex items-center">
-              <span className="w-3 h-3 rounded-full bg-gray-400 mr-2"></span>
-              <span>1. Parse Input Triple</span>
-            </span>
-                        <span className="flex items-center">
-              <span className="w-3 h-3 rounded-full bg-blue-400 mr-2"></span>
-              <span>2. Generate Natural Language</span>
-            </span>
-                        <span className="flex items-center">
-              <span className="w-3 h-3 rounded-full bg-green-400 mr-2"></span>
-              <span>3. Format JSON Response</span>
-            </span>
-                    </div>
-                </div>
-            </Card>
-        );
-    };
-
-
-    const renderQuestionsContent = () => {
-        // Sort questions by score in descending order
-        const sortedQuestions = [...data.questions].sort((a, b) => Number(b.score) - Number(a.score));
-        const promptContent = `You are an intelligent system with access to a vast amount of information. I will provide you with a knowledge graph in the form of triples (subject, predicate, object). 
-
-Your task is to generate ten questions based on the knowledge graph. The questions should assess understanding and insight into the information presented in the graph. Provide the output in JSON format, with each question having a unique identifier.
-
-Instructions:
-    1. Analyze the provided knowledge graph.
-    2. Generate ten questions that are relevant to the information in the knowledge graph.
-    3. Provide the questions in JSON format, each with a unique identifier.
-
-Examples:
-Albert Einstein bornIn Ulm
-Expected Response:
-    {
-        "questions": [
-          {"id": 1, "question": "Where was Albert Einstein born?"},
-          {"id": 2, "question": "What is Albert Einstein known for?"},
-          {"id": 3, "question": "In what year was the Theory of Relativity published?"},
-          {"id": 4, "question": "Where did Albert Einstein work?"},
-          {"id": 5, "question": "What prestigious award did Albert Einstein win?"},
-          {"id": 6, "question": "Which theory is associated with Albert Einstein?"},
-          {"id": 7, "question": "Which university did Albert Einstein work at?"},
-          {"id": 8, "question": "What did Albert Einstein receive the Nobel Prize in?"},
-          {"id": 9, "question": "In what field did Albert Einstein win a Nobel Prize?"},
-          {"id": 10, "question": "Name the city where Albert Einstein was born."}
-        ]
-    }
-    `;
-        return (
-            <Card className="mb-4">
-                <div className="mb-6">
-                    <div className="flex items-center justify-between mb-2">
-                        <h3 className="text-sm font-semibold text-gray-700">Question Generation Prompt</h3>
-                        <button
-                            className="text-sm text-blue-600 hover:text-blue-800"
-                            onClick={() => {
-                                const details = document.getElementById('promptDetails');
-                                if (details) {
-                                    details.style.display = details.style.display === 'none' ? 'block' : 'none';
-                                }
-                            }}
-                        >
-                            Show/Hide Prompt
-                        </button>
-                    </div>
-                    <div id="promptDetails" className="hidden" style={{display: 'none'}}>
-                        <div className="bg-gray-50 p-4 rounded-lg border border-gray-200 overflow-x-auto">
-                            <pre className="text-xs text-gray-600 whitespace-pre-wrap">{promptContent}</pre>
-                        </div>
-                        <div className="mt-4 p-3 bg-yellow-50 border border-yellow-200 rounded-lg">
-                            <p className="text-sm text-yellow-800">
-                                <strong>Current Input:</strong> {data.human_readable}
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="overflow-x-auto">
-                    <table className="w-full text-sm text-left">
-                        <thead className="text-xs bg-gray-50">
-                        <tr>
-                            <th scope="col" className="px-4 py-3">Rank</th>
-                            <th scope="col" className="px-4 py-3">Question</th>
-                            <th scope="col" className="px-4 py-3 text-right">Score</th>
-                        </tr>
-                        </thead>
-                        <tbody className="divide-y">
-                        {sortedQuestions.map((q, idx) => (
-                            <tr key={idx} className="hover:bg-gray-50">
-                                <td className="px-4 py-3 w-16">
-                                    {idx < 3 && (
-                                        <span className={`inline-flex items-center justify-center w-6 h-6 rounded-full 
-                        ${idx === 0 ? 'bg-yellow-100 text-yellow-800' :
-                                            idx === 1 ? 'bg-gray-100 text-gray-800' :
-                                                'bg-amber-100 text-amber-800'}`}>
-                        {idx + 1}
-                      </span>
-                                    )}
-                                    {idx >= 3 && (
-                                        <span className="text-gray-500">{idx + 1}</span>
-                                    )}
-                                </td>
-                                <td className="px-4 py-3">
-                                    <div className="flex items-center">
-                                        <span className="font-medium text-gray-900">{q.question}</span>
-                                        {idx < 3 && (
-                                            <span className={`ml-2 inline-flex items-center px-2 py-0.5 rounded text-xs font-medium
-                          ${idx === 0 ? 'bg-yellow-100 text-yellow-800' :
-                                                idx === 1 ? 'bg-gray-100 text-gray-800' :
-                                                    'bg-amber-100 text-amber-800'}`}>
-                          {idx === 0 ? 'Best Match' :
-                              idx === 1 ? 'Second Best' :
-                                  'Third Best'}
-                        </span>
-                                        )}
-                                    </div>
-                                </td>
-                                <td className="px-4 py-3 text-right font-mono">
-                    <span className={`
-                      ${idx < 3 ? 'font-bold' : ''} 
-                      ${Number(q.score) >= 0.8 ? 'text-green-600' :
-                        Number(q.score) >= 0.6 ? 'text-blue-600' :
-                            Number(q.score) >= 0.4 ? 'text-yellow-600' :
-                                'text-red-600'}`}>
-                      {Number(q.score).toFixed(4)}
-                    </span>
-                                </td>
-                            </tr>
-                        ))}
-                        </tbody>
-                    </table>
-                </div>
-
-                {/* Score Legend */}
-                <div className="mt-4 px-4 py-3 bg-gray-50 rounded-lg">
-                    <p className="text-xs text-gray-600 font-medium mb-2">Score Range Legend:</p>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-2 text-xs">
-            <span className="flex items-center">
-              <span className="w-3 h-3 rounded-full bg-green-600 mr-2"></span>
-              <span>0.8-1.0: High Relevance</span>
-            </span>
-                        <span className="flex items-center">
-              <span className="w-3 h-3 rounded-full bg-blue-600 mr-2"></span>
-              <span>0.6-0.8: Good Match</span>
-            </span>
-                        <span className="flex items-center">
-              <span className="w-3 h-3 rounded-full bg-yellow-600 mr-2"></span>
-              <span>0.4-0.6: Moderate</span>
-            </span>
-                        <span className="flex items-center">
-              <span className="w-3 h-3 rounded-full bg-red-600 mr-2"></span>
-              <span>&lt;0.4: Low Relevance</span>
-            </span>
-                    </div>
-                </div>
-            </Card>
-        );
-    };
-    const renderGooglePagesContent = () => (
-        <Card className="mb-4">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                {data.google_pages.map((page, idx) => (
-                    <div
-                        key={idx}
-                        className="bg-white p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow flex flex-col"
-                    >
-                        <div className="flex items-start justify-between mb-3">
-                <span
-                    className="inline-flex items-center px-2 py-1 text-xs font-medium rounded bg-gray-100 text-gray-800">
-                  Source {idx + 1}
-                </span>
-                            <a
-                                href={page.url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-blue-600 hover:text-blue-800"
-                            >
-                                <HiExternalLink className="w-4 h-4"/>
-                            </a>
-                        </div>
-
-                        <p className="text-sm text-gray-600 mb-3 line-clamp-2 flex-grow">
-                            {new URL(page.url).hostname}
-                        </p>
-
-                        <button
-                            onClick={() => setPageModal({isOpen: true, url: page.url, html: page.html})}
-                            className="w-full px-3 py-2 text-sm font-medium text-blue-600 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors"
-                        >
-                            View Content
-                        </button>
-                    </div>
-                ))}
-            </div>
-        </Card>
-    );
-
-    const renderSelectedDocsContent = () => (
-        <Card className="mb-4">
-            <div className="flex items-center justify-between mb-4">
-                <h3 className="text-lg font-bold text-gray-900">Selected Documents</h3>
-                <span className="text-sm text-gray-500">
-            {data.selected_docs.length} document{data.selected_docs.length !== 1 ? 's' : ''}
-          </span>
-            </div>
-
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-                {data.selected_docs.map((doc, idx) => (
-                    <div
-                        key={idx}
-                        className="bg-white rounded-lg border border-gray-200 hover:shadow-md transition-all p-4 flex flex-col items-center cursor-pointer"
-                        onClick={() => setDocModal({isOpen: true, file_id: doc.file_id, docContent: ''})}
-                    >
-                        <div className="text-blue-600 mb-2">
-                            <HiOutlineDocumentText className="w-8 h-8" />
-                        </div>
-
-                        <p className="text-xs text-gray-500 text-center mb-2">
-                            Document {idx + 1}
-                        </p>
-
-                        <p className="text-sm text-gray-900 font-medium mb-3 text-center truncate w-full">
-                            {getFileName(doc.file_id)}
-                        </p>
-
-                        <button
-                            className="flex items-center justify-center text-xs text-blue-600 hover:text-blue-800 transition-colors"
-                        >
-                            <HiEye className="w-4 h-4 mr-1" />
-                            View Content
-                        </button>
-                    </div>
-                ))}
-            </div>
-        </Card>
-    )
-    const renderModelResponses = () => {
-        const getCounts = () => {
-            const counts = { verified: 0, notVerified: 0, noAnswer: 0 };
-            Object.values(data.responses).forEach(response => {
-                const ans = response.short_ans;
-                if (ans === 1 ) counts.verified++;
-                else if (ans === 0) counts.notVerified++;
-                else counts.noAnswer++;
-            });
-            return counts;
-        };
-
-        const counts = getCounts();
-        const totalResponses = Object.keys(data.responses).length - counts.noAnswer;
-        const verifiedRate = totalResponses > 0 ? (counts.verified / totalResponses * 100) : 0;
-        const notVerifiedRate = totalResponses > 0 ? (counts.notVerified / totalResponses * 100) : 0;
-
-        return (
-            <Card className="mb-4">
-                <div className="space-y-4">
-                    <div className="flex justify-between items-center mb-4">
-                        <h4 className="text-xl font-bold text-gray-900">Model Verification Results</h4>
-                        <Alert color="info" className="p-2">
-                            <div className="flex items-center gap-2">
-              <span className="font-medium text-sm">
-                {counts.verified} Verified, {counts.notVerified} Not Verified
-                  {counts.noAnswer > 0 && `, ${counts.noAnswer} No Answer`}
-              </span>
-                            </div>
-                        </Alert>
-                    </div>
-
-                    <div className="space-y-3">
-                        {Object.entries(data.responses).map(([model, response], idx) => (
-                            <ModelResponse key={idx} model={model} response={response} />
-                        ))}
-                    </div>
-
-                    <div className="mt-4 p-3 bg-gray-50 rounded-lg">
-                        <div className="text-sm text-gray-600">
-                            <span className="font-semibold">Response Distribution:</span>
-                            <div className="w-full h-2.5 mt-2 rounded-full overflow-hidden bg-gray-200 flex">
-                                <div
-                                    className="h-full bg-green-600 transition-all duration-300"
-                                    style={{ width: `${verifiedRate}%` }}
-                                />
-                                <div
-                                    className="h-full bg-red-600 transition-all duration-300"
-                                    style={{ width: `${notVerifiedRate}%` }}
-                                />
-                            </div>
-                            <div className="flex justify-between mt-2">
-                                <span>Verified: {verifiedRate.toFixed(1)}%</span>
-                                <span>Not Verified: {notVerifiedRate.toFixed(1)}%</span>
-                            </div>
-                            {counts.noAnswer > 0 && (
-                                <div className="mt-2 text-gray-500 text-xs">
-                                    * {counts.noAnswer} model{counts.noAnswer > 1 ? 's' : ''} provided no answer
-                                </div>
-                            )}
-                        </div>
-                    </div>
-                </div>
-            </Card>
-        );
-    }
+    const {docModal, openDocument, closeDocument} = useDocumentContent();
 
     const renderFinalAnalysis = () => (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
@@ -587,6 +103,163 @@ Expected Response:
             </Card>
         </div>
     );
+
+    const renderStepContent = (stepIndex: number) => {
+        switch (stepIndex) {
+            case 0:
+                return (
+                    <TripleDisplay
+                        subject={data.subject}
+                        predicate={data.predicate}
+                        object={data.object}
+                    />
+                );
+            case 1:
+                return (
+                    <Card className="mb-4">
+                        <PromptSection
+                            title="Sentence Generation Prompt"
+                            content={generateHumanReadablePrompt(data)}
+                            data={data}
+                        />
+
+                        {/* Output Display */}
+                        <div className="overflow-x-auto">
+                            <table className="w-full text-sm text-left">
+                                <thead className="text-xs bg-gray-50">
+                                <tr>
+                                    <th scope="col" className="px-4 py-3">Input Triple</th>
+                                    <th scope="col" className="px-4 py-3">Human Readable Output</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr className="border-b">
+                                    <td className="px-4 py-3">
+                                        <div className="space-y-1">
+                                            <div className="text-xs text-gray-500">Subject</div>
+                                            <div className="font-medium text-gray-900">{data.subject}</div>
+                                            <div className="text-xs text-gray-500 mt-2">Predicate</div>
+                                            <div className="font-medium text-gray-900">{data.predicate}</div>
+                                            <div className="text-xs text-gray-500 mt-2">Object</div>
+                                            <div className="font-medium text-gray-900">{data.object}</div>
+                                        </div>
+                                    </td>
+                                    <td className="px-4 py-3">
+                                        <div className="bg-blue-50 p-3 rounded-lg border border-blue-100">
+                                            <div className="text-xs text-blue-600 mb-1">Generated Sentence</div>
+                                            <div className="font-medium text-blue-900">{data.human_readable}</div>
+                                        </div>
+                                        <div className="mt-2 text-xs text-gray-500">
+                                            Format: <code
+                                            className="bg-gray-100 px-1 py-0.5 rounded">{"{'output': '...'}"}</code>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        {/* Legend */}
+                        <div className="mt-4 px-4 py-3 bg-gray-50 rounded-lg">
+                            <p className="text-xs text-gray-600 font-medium mb-2">Process Overview:</p>
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-2 text-xs">
+                        <span className="flex items-center">
+                          <span className="w-3 h-3 rounded-full bg-gray-400 mr-2"></span>
+                          <span>1. Parse Input Triple</span>
+                        </span>
+                                <span className="flex items-center">
+                          <span className="w-3 h-3 rounded-full bg-blue-400 mr-2"></span>
+                          <span>2. Generate Natural Language</span>
+                        </span>
+                                <span className="flex items-center">
+                          <span className="w-3 h-3 rounded-full bg-green-400 mr-2"></span>
+                          <span>3. Format JSON Response</span>
+                        </span>
+                            </div>
+                        </div>
+                    </Card>
+                )
+            case 2:
+                return (
+                    <Card className="mb-4">
+                        <PromptSection
+                            title="Question Generation Prompt"
+                            content={generateQuestionPromptContent(data)}
+                            data={data}
+                        />
+                        <QuestionTable questions={data.questions}/>
+                        <ScoreLegend/>
+                    </Card>
+                )
+            case 3:
+                return (
+                    <Card className="mb-4">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                            {data.google_pages.map((page, idx) => (
+                                <GooglePageCard
+                                    key={idx}
+                                    page={page}
+                                    index={idx}
+                                    onView={() => setPageModal({
+                                        isOpen: true,
+                                        url: page.url,
+                                        html: page.html
+                                    })}
+                                />
+                            ))}
+                        </div>
+                    </Card>
+                )
+            case 4:
+                return (
+                    <Card className="mb-4">
+                        <div className="flex items-center justify-between mb-4">
+                            <h3 className="text-lg font-bold text-gray-900">Selected Documents</h3>
+                            <span className="text-sm text-gray-500">
+                              {data.selected_docs.length} document{data.selected_docs.length !== 1 ? 's' : ''}
+                            </span>
+                        </div>
+
+                        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+                            {data.selected_docs.map((doc, idx) => (
+                                <DocumentCard
+                                    key={idx}
+                                    doc={doc}
+                                    index={idx}
+                                    onView={() => openDocument(doc.file_id)}
+                                />
+                            ))}
+                        </div>
+                    </Card>
+                )
+            case 5:
+                const modelStats = calculateModelStats(data.responses);
+
+                return (
+                    <Card className="mb-4">
+                        <div className="space-y-4">
+                            <ModelResponseHeader stats={modelStats}/>
+
+                            <div className="space-y-3">
+                                {Object.entries(data.responses).map(([model, response], idx) => (
+                                    <ModelResponse
+                                        key={`${model}-${idx}`}
+                                        model={model}
+                                        response={response}
+                                    />
+                                ))}
+                            </div>
+
+                            <ResponseDistribution stats={modelStats}/>
+                        </div>
+                    </Card>
+                )
+            case 7:
+                return renderFinalAnalysis()
+            default:
+                return null;
+        }
+    };
 
     return (
         <div className="max-w-4xl mx-auto">
@@ -612,16 +285,12 @@ Expected Response:
                             </Timeline.Time>
                             <Timeline.Title>{step.title}</Timeline.Title>
                             <Timeline.Body>
-                                <div className={`transition-opacity duration-300 ${
-                                    index <= currentStep ? 'opacity-100' : 'opacity-0'
-                                }`}>
-                                    {index === 0 && renderTripleContent()}
-                                    {index === 1 && renderHumanReadableContent()}
-                                    {index === 2 && renderQuestionsContent()}
-                                    {index === 3 && renderGooglePagesContent()}
-                                    {index === 4 && renderSelectedDocsContent()}
-                                    {index === 5 && renderModelResponses()}
-                                    {index === 7 && renderFinalAnalysis()}
+                                <div
+                                    className={`transition-opacity duration-300 ${
+                                        index <= currentStep ? 'opacity-100' : 'opacity-0'
+                                    }`}
+                                >
+                                    {renderStepContent(index)}
                                 </div>
                             </Timeline.Body>
                         </Timeline.Content>
@@ -649,61 +318,27 @@ Expected Response:
                     </div>
                     <div className="w-full h-[70vh] overflow-hidden">
                         <div className="relative w-full h-full">
-                        <iframe
-                            src={`./data/html/${pageModal.html}`}
-                            className="w-full h-full border rounded-lg"
-                            style={{
-                                 overflow: 'auto',
-                                 overflowX: 'hidden'
-                            }}
-                            title="Page Content"
-                        />
+                            <iframe
+                                src={`./data/html/${pageModal.html}`}
+                                className="w-full h-full border rounded-lg"
+                                style={{
+                                    overflow: 'auto',
+                                    overflowX: 'hidden'
+                                }}
+                                title="Page Content"
+                            />
                         </div>
                     </div>
                 </Modal.Body>
             </Modal>
 
-            <Modal
-                show={docModal.isOpen}
-                onClose={() => setDocModal({isOpen: false, file_id: '', docContent: ''})}
-                size="4xl"
-                theme={{
-                    content: {
-                        base: "relative h-[80vh] w-full rounded-lg bg-white shadow flex flex-col"
-                    }
-                }}
-            >
-                <Modal.Header>
-                    <div className="flex items-center justify-between w-full">
-                        <h3 className="text-lg font-semibold text-gray-900 flex-grow truncate pr-4">
-                            {docModal.file_id && getFileName(docModal.file_id)}
-                        </h3>
-                        {/*<button*/}
-                        {/*    onClick={() => {*/}
-                        {/*        setSelectedDoc(null);*/}
-                        {/*        setDocContent('');*/}
-                        {/*    }}*/}
-                        {/*    className="p-1 rounded-lg hover:bg-gray-100 transition-colors"*/}
-                        {/*>*/}
-                        {/*    <HiX className="w-5 h-5 text-gray-500" />*/}
-                        {/*</button>*/}
-                    </div>
-                </Modal.Header>
-
-                <Modal.Body className="p-4 flex-grow overflow-hidden relative">
-                    {docModal.docContent == "" ? (
-                        <div className="flex items-center justify-center h-full">
-                            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
-                        </div>
-                    ) : (
-                        <div className="h-full overflow-auto">
-              <pre className="text-sm text-gray-700 whitespace-pre-wrap font-mono bg-gray-50 p-4 rounded-lg">
-                {docModal.docContent}
-              </pre>
-                        </div>
-                    )}
-                </Modal.Body>
-            </Modal>
+            <DocumentModal
+                isOpen={docModal.isOpen}
+                onClose={closeDocument}
+                fileId={docModal.fileId}
+                content={docModal.content}
+                isLoading={docModal.isLoading}
+            />
         </div>
     );
 };

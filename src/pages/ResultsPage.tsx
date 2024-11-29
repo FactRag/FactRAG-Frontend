@@ -3,7 +3,7 @@ import { useSearchParams } from 'react-router-dom';
 import {HistorySidebar} from "../components/history/HistorySidebar";
 import VerificationProcess from "../components/verification/VerificationProcess";
 import FeedbackSection from "../components/verification/FeedbackSection";
-import {VerificationData} from "../types";
+import {VerificationData} from "../types/verification";
 import {HistoryService} from "../services/HistoryService";
 import {SearchHistoryItem} from "../types/history";
 
