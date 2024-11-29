@@ -1,21 +1,18 @@
 // tailwind.config.js
-const flowbite = require("flowbite-react/tailwind");
+const flowbite = require('flowbite-react/tailwind')
 
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-    flowbite.content(),
-  ],
+  content: ['./src/**/*.{js,jsx,ts,tsx}', flowbite.content()],
   theme: {
     extend: {
       animation: {
-        'blink': 'blink 1.5s infinite',
-        'fadeIn': 'fadeIn 0.5s ease-in-out',
+        blink: 'blink 1.5s infinite',
+        fadeIn: 'fadeIn 0.5s ease-in-out'
       },
       keyframes: {
         blink: {
           '0%, 100%': { opacity: '1' },
-          '50%': { opacity: '0' },
+          '50%': { opacity: '0' }
         },
         fadeIn: {
           from: {
@@ -25,13 +22,10 @@ module.exports = {
           to: {
             opacity: '1',
             transform: 'translateY(0)'
-          },
+          }
         }
       }
-    },
+    }
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-    flowbite.plugin(),
-  ],
+  plugins: [require('@tailwindcss/typography'), flowbite.plugin()]
 }

@@ -1,7 +1,7 @@
-import {VerificationData} from "../types/verification";
+import { VerificationData } from '../types/verification'
 
 export const generateQuestionPromptContent = (data: VerificationData): string => {
-    return `You are an intelligent system with access to a vast amount of information. I will provide you with a knowledge graph in the form of triples (subject, predicate, object). 
+  return `You are an intelligent system with access to a vast amount of information. I will provide you with a knowledge graph in the form of triples (subject, predicate, object). 
 
 Your task is to generate ten questions based on the knowledge graph. The questions should assess understanding and insight into the information presented in the graph. Provide the output in JSON format, with each question having a unique identifier.
 
@@ -40,11 +40,11 @@ The output should be provided in JSON format with the following structure:
     "questions": [
         {"id": number, "question": string}
     ]
-}`;
-};
+}`
+}
 
 export const generateHumanReadablePrompt = (data: VerificationData): string => {
-    return `Task Description: Convert a knowledge graph triple into a meaningful human-readable sentence.
+  return `Task Description: Convert a knowledge graph triple into a meaningful human-readable sentence.
 
 Instructions: Given a subject, predicate, and object from a knowledge graph, form a grammatically correct and meaningful sentence that conveys the relationship between them.
 
@@ -67,6 +67,6 @@ Predicate: ${data.predicate}
 Object: ${data.object}
 
 The output should be a JSON object with the key "output" and the value as the sentence. The sentence should be human-readable and grammatically correct.
-    `;
+    `
 
 }
