@@ -1,9 +1,8 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Button, Textarea, Avatar, Alert, Badge } from 'flowbite-react';
-import { MessageCircle, X, ThumbsUp, ThumbsDown, LogIn } from 'lucide-react';
-import { useAuth } from '../../hooks/useAuth';
-import { feedbackService } from '../../services/feedbackService';
-import { AUTH_PROVIDERS, EMOJIS, FEEDBACK_TYPES } from '../../config';
+import React, {useState, useEffect, useRef, memo, useCallback} from 'react';
+import {Button, Textarea, Avatar, Alert, Badge, Label, TextInput} from 'flowbite-react';
+import {MessageCircle, X, ThumbsUp, ThumbsDown, LogIn, Mail} from 'lucide-react';
+import { useAuth } from '../../contexts/AuthContext';
+import {API_BASE_URL, AUTH_PROVIDERS, EMOJIS, FEEDBACK_TYPES} from '../../config';
 import {Feedback, FeedbackStats, FeedbackType} from "../../types";
 
 interface FeedbackSectionProps {
@@ -11,9 +10,228 @@ interface FeedbackSectionProps {
     dataset: string;
 }
 
+interface FeedbackSubmission {
+    searchTerm: string;
+    dataset: string;
+    feedback: string;
+    comment: string;
+    isPublic: boolean;
+}
+
+const AuthSection = () => {
+    const {
+        isAuthenticated,
+        loginWithEmail,
+        socialLogin
+    } = useAuth();
+
+    const [showEmailLogin, setShowEmailLogin] = useState(false);
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+    const handleEmailLogin = async (e: React.FormEvent) => {
+        e.preventDefault();
+        try {
+            await loginWithEmail({ email, password });
+            setEmail('');
+            setPassword('');
+        } catch (error) {
+            console.error('Login failed:', error);
+        }
+    };
+
+    useEffect(() => {
+        if (isAuthenticated) {
+            setShowEmailLogin(false);
+            setEmail('');
+            setPassword('');
+        }
+    }, [isAuthenticated]);
+
+    return (
+        <div className="p-6 space-y-4 feedback-item">
+            <div className="text-center mb-4">
+                <LogIn className="w-12 h-12 mx-auto text-gray-400 mb-2" />
+                <h3 className="text-lg font-medium text-gray-900">Sign in to continue</h3>
+                <p className="text-sm text-gray-500">Authentication required for feedback</p>
+            </div>
+
+            {!showEmailLogin ? (
+                <>
+                    <div className="space-y-3">
+                        <Button
+                            color="light"
+                            className="w-full"
+                            onClick={() => socialLogin('google')}
+                        >
+                            <img src="/static/google-icon.svg" className="w-5 h-5 mr-2" alt="Google" />
+                            Continue with Google
+                        </Button>
+
+                        <Button
+                            color="light"
+                            className="w-full"
+                            onClick={() => socialLogin('orcid')}
+                        >
+                            <img src="/static/orcid-icon.svg" className="w-5 h-5 mr-2" alt="ORCID" />
+                            Continue with ORCID
+                        </Button>
+
+                        <div className="relative flex items-center justify-center">
+                            <div className="absolute w-full border-t border-gray-300"></div>
+                            <div className="relative bg-white px-4">
+                                <span className="text-sm text-gray-500">Or</span>
+                            </div>
+                        </div>
+
+                        <Button
+                            color="light"
+                            className="w-full"
+                            onClick={() => setShowEmailLogin(true)}
+                        >
+                            <Mail className="w-5 h-5 mr-2" />
+                            Continue with Email
+                        </Button>
+                    </div>
+                </>
+            ) : (
+                <form onSubmit={handleEmailLogin} className="space-y-4">
+                    <div>
+                        <Label htmlFor="email">Email</Label>
+                        <TextInput
+                            id="email"
+                            type="email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            required
+                        />
+                    </div>
+                    <div>
+                        <Label htmlFor="password">Password</Label>
+                        <TextInput
+                            id="password"
+                            type="password"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                            required
+                        />
+                    </div>
+                    <Button type="submit" color="dark" className="w-full">
+                        Sign In
+                    </Button>
+                    <Button
+                        color="light"
+                        className="w-full"
+                        onClick={() => setShowEmailLogin(false)}
+                    >
+                        Back to social login
+                    </Button>
+                </form>
+            )}
+        </div>
+    );
+};
+
+// Memoized Emoji Button Component
+const EmojiButton = memo(({
+                              emoji,
+                              label,
+                              isSelected,
+                              onClick
+                          }: {
+    emoji: string;
+    label: string;
+    isSelected: boolean;
+    onClick: () => void;
+}) => (
+    <button
+        onClick={onClick}
+        className={`text-2xl p-2 rounded-full transition-all ${
+            isSelected ? 'bg-purple-100 scale-110' : 'hover:bg-gray-100'
+        }`}
+        title={label.toLowerCase()}
+        type="button"
+    >
+        {emoji}
+    </button>
+));
+
+// Memoized Submit Section Component
+const SubmitSection = memo(({
+                                selectedEmoji,
+                                setSelectedEmoji,
+                                comment,
+                                setComment,
+                                isPublic,
+                                setIsPublic,
+                                handleSubmit,
+                                isLoading
+                            }: {
+    selectedEmoji: FeedbackType | '';
+    setSelectedEmoji: (emoji: FeedbackType | '') => void;
+    comment: string;
+    setComment: (comment: string) => void;
+    isPublic: boolean;
+    setIsPublic: (isPublic: boolean) => void;
+    handleSubmit: () => Promise<void>;
+    isLoading: boolean;
+}) => (
+    <div className="p-4 space-y-4">
+        <div className="flex justify-center space-x-4">
+            {Object.entries(FEEDBACK_TYPES).map(([key, value]) => (
+                <EmojiButton
+                    key={key}
+                    emoji={EMOJIS[value]}
+                    label={key}
+                    isSelected={selectedEmoji === value}
+                    onClick={() => setSelectedEmoji(value)}
+                />
+            ))}
+        </div>
+
+        <Textarea
+            value={comment}
+            onChange={(e) => setComment(e.target.value)}
+            placeholder="Share your thoughts..."
+            rows={3}
+            className="resize-none"
+        />
+
+        <div className="flex items-center space-x-2">
+            <input
+                type="checkbox"
+                id="public-toggle"
+                checked={isPublic}
+                onChange={(e) => setIsPublic(e.target.checked)}
+                className="rounded text-purple-600 focus:ring-purple-500"
+            />
+            <label htmlFor="public-toggle" className="text-sm text-gray-600">
+                Make feedback public
+            </label>
+        </div>
+
+        <Button
+            color="purple"
+            className="w-full"
+            onClick={handleSubmit}
+            disabled={!selectedEmoji || isLoading}
+        >
+            {isLoading ? (
+                <div className="flex items-center justify-center">
+                    <div className="loading-spinner mr-2" />
+                    Submitting...
+                </div>
+            ) : (
+                'Submit Feedback'
+            )}
+        </Button>
+    </div>
+));
+
 const FeedbackSection: React.FC<FeedbackSectionProps> = ({ searchTerm, dataset }) => {
     // Auth hook
-    const { isAuthenticated, user, login } = useAuth();
+    const { isAuthenticated, user, socialLogin } = useAuth();
+
     const [isVisible, setIsVisible] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
     const [activeTab, setActiveTab] = useState('submit');
@@ -21,10 +239,9 @@ const FeedbackSection: React.FC<FeedbackSectionProps> = ({ searchTerm, dataset }
     const [comment, setComment] = useState('');
     const [isPublic, setIsPublic] = useState(true);
     const [stats, setStats] = useState<FeedbackStats>({
-        love: 0,
-        like: 0,
-        neutral: 0,
-        dislike: 0,
+        agree: 0,
+        disagree: 0,
+        uncertain: 0,
         total: 0,
     });
     const [feedbacks, setFeedbacks] = useState<Feedback[]>([]);
@@ -46,8 +263,9 @@ const FeedbackSection: React.FC<FeedbackSectionProps> = ({ searchTerm, dataset }
 
     // Load data when popup opens
     useEffect(() => {
+        console.log('isOpen', isOpen);
         if (isOpen) {
-            loadData();
+            loadData().then(r => r);
         }
     }, [isOpen]);
 
@@ -68,10 +286,32 @@ const FeedbackSection: React.FC<FeedbackSectionProps> = ({ searchTerm, dataset }
         setError(null);
 
         try {
-            const [statsData, feedbacksData] = await Promise.all([
-                feedbackService.getStats(searchTerm, dataset),
-                feedbackService.getFeedbacks(searchTerm, dataset)
-            ]);
+            // Load feedback stats
+            const statsResponse = await fetch(
+                `${API_BASE_URL}/api/feedback/stats/?search=${encodeURIComponent(searchTerm)}&dataset=${encodeURIComponent(dataset)}`,
+                {
+                    headers: {
+                        'Authorization': `Bearer ${localStorage.getItem('access_token')}`
+                    }
+                }
+            );
+
+            // Load feedback history
+            const feedbacksResponse = await fetch(
+                `${API_BASE_URL}/api/feedback/list/?search=${encodeURIComponent(searchTerm)}&dataset=${encodeURIComponent(dataset)}`,
+                {
+                    headers: {
+                        'Authorization': `Bearer ${localStorage.getItem('access_token')}`
+                    }
+                }
+            );
+
+            if (!statsResponse.ok || !feedbacksResponse.ok) {
+                throw new Error('Failed to load feedback data');
+            }
+
+            const statsData = await statsResponse.json();
+            const feedbacksData = await feedbacksResponse.json();
 
             setStats(statsData);
             setFeedbacks(feedbacksData);
@@ -83,139 +323,69 @@ const FeedbackSection: React.FC<FeedbackSectionProps> = ({ searchTerm, dataset }
         }
     };
 
-    const handleSubmit = async () => {
+    const handleSubmit = useCallback(async () => {
         if (!isAuthenticated || !selectedEmoji) return;
 
         setIsLoading(true);
         setError(null);
 
         try {
-            await feedbackService.submitFeedback({
-                searchTerm,
-                dataset,
-                feedback: selectedEmoji,
-                comment,
-                isPublic
+            const response = await fetch(`${API_BASE_URL}/api/feedback/submit/`, {
+                method: 'POST',
+                headers: {
+                    'Authorization': `Bearer ${localStorage.getItem('access_token')}`,
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    searchTerm,
+                    dataset,
+                    feedback: selectedEmoji,
+                    comment,
+                    isPublic
+                })
             });
+
+            if (!response.ok) {
+                throw new Error('Failed to submit feedback');
+            }
 
             setComment('');
             setSelectedEmoji('');
             setIsPublic(true);
-            await loadData();
             setActiveTab('feedback');
         } catch (err) {
             setError('Failed to submit feedback');
         } finally {
             setIsLoading(false);
         }
-    };
+    }, [isAuthenticated, selectedEmoji, searchTerm, dataset, comment, isPublic]);
 
     const handleVote = async (feedbackId: number, isUpvote: boolean) => {
         if (!isAuthenticated) return;
 
         try {
-            await feedbackService.voteFeedback(feedbackId, isUpvote);
+            const response = await fetch(`${API_BASE_URL}/api/feedback/vote/`, {
+                method: 'POST',
+                headers: {
+                    'Authorization': `Bearer ${localStorage.getItem('access_token')}`,
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    feedbackId,
+                    isUpvote
+                })
+            });
+
+            if (!response.ok) {
+                throw new Error('Failed to register vote');
+            }
+
             await loadData(); // Refresh feedback list
         } catch (err) {
             setError('Failed to register vote');
         }
     };
 
-    const AuthSection = () => (
-        <div className="p-6 space-y-4 feedback-item">
-            <div className="text-center mb-4">
-                <LogIn className="w-12 h-12 mx-auto text-gray-400 mb-2" />
-                <h3 className="text-lg font-medium text-gray-900">Sign in to continue</h3>
-                <p className="text-sm text-gray-500">Authentication required for feedback</p>
-            </div>
-
-            <div className="space-y-3">
-                <Button
-                    color="light"
-                    className="w-full"
-                    onClick={() => login('google')}
-                >
-                    <img src="/static/google-icon.svg" className="w-5 h-5 mr-2" alt="Google" />
-                    Continue with Google
-                </Button>
-
-                <Button
-                    color="light"
-                    className="w-full"
-                    onClick={() => login('orcid')}
-                >
-                    <img src="/static/orcid-icon.svg" className="w-5 h-5 mr-2" alt="ORCID" />
-                    Continue with ORCID
-                </Button>
-            </div>
-        </div>
-    );
-
-    const SubmitSection = () => (
-        <div className="p-4 space-y-4 feedback-item">
-            {/* Emoji Selection */}
-            <div className="flex justify-center space-x-4">
-                {Object.entries(FEEDBACK_TYPES).map(([key, value]) => (
-                    <button
-                        key={key}
-                        onClick={() => setSelectedEmoji(value)}
-                        className={`text-2xl p-2 rounded-full transition-all ${
-                            selectedEmoji === value
-                                ? 'bg-purple-100 scale-110'
-                                : 'hover:bg-gray-100'
-                        }`}
-                        title={key.toLowerCase()}
-                    >
-                        {EMOJIS[value]}
-                    </button>
-                ))}
-            </div>
-
-            {/* Comment Input */}
-            <Textarea
-                value={comment}
-                onChange={(e) => setComment(e.target.value)}
-                placeholder="Share your thoughts..."
-                rows={3}
-                className="resize-none"
-            />
-
-            {/* Privacy Toggle */}
-            <div className="flex items-center space-x-2">
-                <input
-                    type="checkbox"
-                    id="public-toggle"
-                    checked={isPublic}
-                    onChange={(e) => setIsPublic(e.target.checked)}
-                    className="rounded text-purple-600 focus:ring-purple-500"
-                />
-                <label htmlFor="public-toggle" className="text-sm text-gray-600">
-                    Make feedback public
-                </label>
-            </div>
-
-            {/* Submit Button */}
-            <Button
-                color="purple"
-                className="w-full"
-                onClick={handleSubmit}
-                disabled={!selectedEmoji || isLoading}
-            >
-                {isLoading ? (
-                    <div className="flex items-center justify-center">
-                        <div className="loading-spinner mr-2" />
-                        Submitting...
-                    </div>
-                ) : (
-                    'Submit Feedback'
-                )}
-            </Button>
-        </div>
-    );
-
-    // @ts-ignore
-    // @ts-ignore
-    // @ts-ignore
     const FeedbackList = () => (
         <div className="p-4 space-y-4">
             {/* Stats Section */}
@@ -252,16 +422,26 @@ const FeedbackSection: React.FC<FeedbackSectionProps> = ({ searchTerm, dataset }
                                 {/* Feedback Header */}
                                 <div className="flex justify-between items-start mb-2">
                                     <div className="flex items-center space-x-2">
-                                        <Avatar img={feedback.user.avatar} size="sm" rounded />
+                                        {feedback.user.avatar ?
+                                            <Avatar img={feedback.user.avatar} size="sm" bordered/>
+                                            :
+                                            <Avatar
+                                                placeholderInitials=
+                                                    {feedback.user.username ? feedback.user.username.charAt(0).toUpperCase() : 'R'}
+                                                size="sm" bordered/>
+                                        }
                                         <div>
-                                            <p className="text-sm font-medium text-gray-900">{feedback.user.name}</p>
+                                            <p className="text-sm font-medium text-gray-900">
+                                                {feedback.user.username ? feedback.user.username : feedback.user.email.split('@')[0].charAt(0).toUpperCase() + feedback.user.email.split('@')[0].slice(1)}
+                                            </p>
                                             <p className="text-xs text-gray-500">
-                                                {new Date(feedback.timestamp).toLocaleDateString(undefined, {
+                                                {new Date(feedback.created_at).toLocaleDateString(undefined, {
                                                     year: 'numeric',
                                                     month: 'short',
                                                     day: 'numeric',
                                                     hour: '2-digit',
-                                                    minute: '2-digit'
+                                                    minute: '2-digit',
+                                                    hour12: false
                                                 })}
                                             </p>
                                         </div>
@@ -380,16 +560,24 @@ const FeedbackSection: React.FC<FeedbackSectionProps> = ({ searchTerm, dataset }
                     </div>
 
                     {/* Panel Content */}
-                    {/* Panel Content */}
                     <div className="max-h-[70vh] overflow-y-auto">
                         {activeTab === 'submit' ? (
                             !isAuthenticated ? (
                                 <AuthSection />
                             ) : (
-                                <SubmitSection />
+                                <SubmitSection
+                                    selectedEmoji={selectedEmoji}
+                                    setSelectedEmoji={setSelectedEmoji}
+                                    comment={comment}
+                                    setComment={setComment}
+                                    isPublic={isPublic}
+                                    setIsPublic={setIsPublic}
+                                    handleSubmit={handleSubmit}
+                                    isLoading={isLoading}
+                                />
                             )
                         ) : (
-                            <FeedbackList />
+                            <FeedbackList/>
                         )}
                     </div>
                 </div>
@@ -398,4 +586,4 @@ const FeedbackSection: React.FC<FeedbackSectionProps> = ({ searchTerm, dataset }
     );
 };
 
-export default FeedbackSection;
+export default memo(FeedbackSection);

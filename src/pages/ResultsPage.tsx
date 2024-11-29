@@ -16,7 +16,7 @@ export const ResultsPage = () => {
     const [history, setHistory] = useState<SearchHistoryItem[]>([]);
 
 
-    const STEP_DELAY = 1500;
+    const STEP_DELAY = 100;
     const steps = [
         'tripleProcessing',
         'humanReadable',
@@ -81,15 +81,14 @@ export const ResultsPage = () => {
                             <VerificationProcess
                                 data={data}
                                 currentStep={currentStep}
-                                // steps={steps}
-                            />
-                            <FeedbackSection
-                                searchTerm={searchParams.get('search')!}
-                                dataset={searchParams.get('dataset')!}
                             />
                         </>
                     )}
                 </div>
+                <FeedbackSection
+                    searchTerm={searchParams.get('search')!}
+                    dataset={searchParams.get('dataset')!}
+                />
             </main>
         </div>
     );

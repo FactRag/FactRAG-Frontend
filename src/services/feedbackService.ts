@@ -2,24 +2,6 @@
 import { API_BASE_URL } from '../config';
 import {Feedback as FeedbackResponse} from "../types";
 
-// export interface FeedbackResponse {
-//     id: number;
-//     user: {
-//         name: string;
-//         avatar: string;
-//     };
-//     feedback: 'love' | 'like' | 'neutral' | 'dislike';
-//     comment: string;
-//     timestamp: string;
-//     upvotes: number;
-//     downvotes: number;
-//     isPublic: boolean;
-//     hasUserVoted?: {
-//         upvoted: boolean;
-//         downvoted: boolean;
-//     };
-// }
-
 export interface FeedbackStats {
     love: number;
     like: number;
@@ -66,25 +48,25 @@ class FeedbackService {
 
     async getStats(searchTerm: string, dataset: string): Promise<FeedbackStats> {
         return this.fetch<FeedbackStats>(
-            `/feedback/stats?search=${encodeURIComponent(searchTerm)}&dataset=${encodeURIComponent(dataset)}`
+            `api/feedback/stats?search=${encodeURIComponent(searchTerm)}&dataset=${encodeURIComponent(dataset)}`
         );
     }
 
     async getFeedbacks(searchTerm: string, dataset: string): Promise<FeedbackResponse[]> {
         return this.fetch<FeedbackResponse[]>(
-            `/feedback/list?search=${encodeURIComponent(searchTerm)}&dataset=${encodeURIComponent(dataset)}`
+            `api/feedback/list?search=${encodeURIComponent(searchTerm)}&dataset=${encodeURIComponent(dataset)}`
         );
     }
 
     async submitFeedback(data: FeedbackSubmission): Promise<FeedbackResponse> {
-        return this.fetch<FeedbackResponse>('/feedback/submit', {
+        return this.fetch<FeedbackResponse>('api/feedback/submit', {
             method: 'POST',
             body: JSON.stringify(data)
         });
     }
 
     async voteFeedback(feedbackId: number, isUpvote: boolean): Promise<void> {
-        return this.fetch('/feedback/vote', {
+        return this.fetch('api/feedback/vote', {
             method: 'POST',
             body: JSON.stringify({
                 feedbackId,

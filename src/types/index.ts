@@ -123,11 +123,12 @@ export interface VerificationData {
     };
 }
 
-export type FeedbackType = 'love' | 'like' | 'neutral' | 'dislike';
+export type FeedbackType = 'agree' | 'disagree' | 'uncertain';
 
 export interface FeedbackUser {
     id: number;
-    name: string;
+    username: string;
+    email: string;
     avatar: string;
 }
 
@@ -136,7 +137,7 @@ export interface Feedback {
     user: FeedbackUser;
     feedback: FeedbackType;
     comment: string;
-    timestamp: string;
+    created_at: string;
     upvotes: number;
     downvotes: number;
     isPublic: boolean;
@@ -147,10 +148,9 @@ export interface Feedback {
 }
 
 export interface FeedbackStats {
-    love: number;
-    like: number;
-    neutral: number;
-    dislike: number;
+    agree: number;
+    disagree: number;
+    uncertain: number;
     total: number;
 }
 

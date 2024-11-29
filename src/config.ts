@@ -9,15 +9,13 @@ export const AUTH_PROVIDERS = {
 } as const;
 
 export const FEEDBACK_TYPES: Record<string, FeedbackType> = {
-    LOVE: 'love',
-    LIKE: 'like',
-    NEUTRAL: 'neutral',
-    DISLIKE: 'dislike'
+    Agree: 'agree',
+    Disagree: 'disagree',
+    Uncertain: 'uncertain'
 } as const;
 
 export const EMOJIS: Record<FeedbackType, string> = {
-    love: '❤️',
-    like: '👍',
-    neutral: '😐',
-    dislike: '👎'
+    agree: '👍',
+    disagree: '👎',
+    uncertain: '😐'
 } as const;
