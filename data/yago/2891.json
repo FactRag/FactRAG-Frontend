@@ -1,0 +1,105 @@
+{
+    "subject": "Una_Stubbs",
+    "predicate": "isMarriedTo",
+    "object": "Peter_Gilmore",
+    "human_readable": "Una Stubbs is married to Peter Gilmore.",
+    "questions": [
+        {
+            "score": 0.9882312417030334,
+            "question": "Is Peter Gilmore married to Una Stubbs?"
+        },
+        {
+            "score": 0.888957679271698,
+            "question": "What is the relationship between Una Stubbs and Peter Gilmore?"
+        },
+        {
+            "score": 0.8789651393890381,
+            "question": "Who is Una Stubbs married to?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Una Stubbs is married to Peter Gilmore.",
+            "html": "yago_2891_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the relationship between Una Stubbs and Peter Gilmore?",
+            "html": "yago_2891_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Peter Gilmore married to Una Stubbs?",
+            "html": "yago_2891_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "yago_2891_102.txt"
+        },
+        {
+            "file_id": "yago_2891_104.txt"
+        },
+        {
+            "file_id": "yago_2891_15.txt"
+        },
+        {
+            "file_id": "yago_2891_19.txt"
+        },
+        {
+            "file_id": "yago_2891_31.txt"
+        },
+        {
+            "file_id": "yago_2891_52.txt"
+        },
+        {
+            "file_id": "yago_2891_65.txt"
+        },
+        {
+            "file_id": "yago_2891_69.txt"
+        },
+        {
+            "file_id": "yago_2891_91.txt"
+        },
+        {
+            "file_id": "yago_2891_97.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple \"Una Stubbs is married to Peter Gilmore\" based on the provided context information:\n\n{\n  \"output\": \"no\"\n}\n\nThe reason for this answer is that while the documents mention Una Stubbs and Peter Gilmore as a couple getting married (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/yago_2891/re-ranker-msmarco/52.txt, 96.txt, 103.txt), they also mention that Peter Gilmore was married to Una Stubbs in the past (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/yago_2891/re-ranker-msmarco/64.txt) and then became divorced after a marriage of 11 years. This implies that while they were once married, they are no longer together at some point in the future."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents state that actor Peter Gilmore was married to Una Stubbs, which directly supports the statement that Una Stubbs is married to Peter Gilmore."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n    \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "gemma2": {
+            "short_ans": "is true",
+            "full_ans": "0.9"
+        },
+        "llama3.1": {
+            "short_ans": "is true",
+            "full_ans": "0.9"
+        }
+    },
+    "final_decision": "true",
+    "actual_decision": "true",
+    "analysis": {
+        "error_category": "caafscd",
+        "error_detail": "cdscsd",
+        "category": "csdcs",
+        "stratum": "fwefew",
+        "topic": "wefw"
+    }
+}
