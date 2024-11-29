@@ -1,21 +1,16 @@
 import React, {useState, useEffect, useRef, memo, useCallback} from 'react';
-import {Button, Textarea, Avatar, Alert, Badge, Label, TextInput} from 'flowbite-react';
-import {MessageCircle, X, ThumbsUp, ThumbsDown, LogIn, Mail} from 'lucide-react';
+import {Button, Alert, Label, TextInput} from 'flowbite-react';
+import {MessageCircle, X, LogIn, Mail} from 'lucide-react';
 import { useAuth } from '../../contexts/AuthContext';
-import {API_BASE_URL, AUTH_PROVIDERS, EMOJIS, FEEDBACK_TYPES} from '../../config';
+import {API_BASE_URL} from '../../config';
 import {Feedback, FeedbackStats, FeedbackType} from "../../types";
+import FeedbackItemWithVoting from "./FeedbackItemWithVoting";
+import EmojiStats from "./EmojiStats";
+import {FeedbackSubmitSection} from "./FeedBackSubmitSection";
 
 interface FeedbackSectionProps {
     searchTerm: string;
     dataset: string;
-}
-
-interface FeedbackSubmission {
-    searchTerm: string;
-    dataset: string;
-    feedback: string;
-    comment: string;
-    isPublic: boolean;
 }
 
 const AuthSection = () => {
@@ -132,102 +127,6 @@ const AuthSection = () => {
     );
 };
 
-// Memoized Emoji Button Component
-const EmojiButton = memo(({
-                              emoji,
-                              label,
-                              isSelected,
-                              onClick
-                          }: {
-    emoji: string;
-    label: string;
-    isSelected: boolean;
-    onClick: () => void;
-}) => (
-    <button
-        onClick={onClick}
-        className={`text-2xl p-2 rounded-full transition-all ${
-            isSelected ? 'bg-purple-100 scale-110' : 'hover:bg-gray-100'
-        }`}
-        title={label.toLowerCase()}
-        type="button"
-    >
-        {emoji}
-    </button>
-));
-
-// Memoized Submit Section Component
-const SubmitSection = memo(({
-                                selectedEmoji,
-                                setSelectedEmoji,
-                                comment,
-                                setComment,
-                                isPublic,
-                                setIsPublic,
-                                handleSubmit,
-                                isLoading
-                            }: {
-    selectedEmoji: FeedbackType | '';
-    setSelectedEmoji: (emoji: FeedbackType | '') => void;
-    comment: string;
-    setComment: (comment: string) => void;
-    isPublic: boolean;
-    setIsPublic: (isPublic: boolean) => void;
-    handleSubmit: () => Promise<void>;
-    isLoading: boolean;
-}) => (
-    <div className="p-4 space-y-4">
-        <div className="flex justify-center space-x-4">
-            {Object.entries(FEEDBACK_TYPES).map(([key, value]) => (
-                <EmojiButton
-                    key={key}
-                    emoji={EMOJIS[value]}
-                    label={key}
-                    isSelected={selectedEmoji === value}
-                    onClick={() => setSelectedEmoji(value)}
-                />
-            ))}
-        </div>
-
-        <Textarea
-            value={comment}
-            onChange={(e) => setComment(e.target.value)}
-            placeholder="Share your thoughts..."
-            rows={3}
-            className="resize-none"
-        />
-
-        <div className="flex items-center space-x-2">
-            <input
-                type="checkbox"
-                id="public-toggle"
-                checked={isPublic}
-                onChange={(e) => setIsPublic(e.target.checked)}
-                className="rounded text-purple-600 focus:ring-purple-500"
-            />
-            <label htmlFor="public-toggle" className="text-sm text-gray-600">
-                Make feedback public
-            </label>
-        </div>
-
-        <Button
-            color="purple"
-            className="w-full"
-            onClick={handleSubmit}
-            disabled={!selectedEmoji || isLoading}
-        >
-            {isLoading ? (
-                <div className="flex items-center justify-center">
-                    <div className="loading-spinner mr-2" />
-                    Submitting...
-                </div>
-            ) : (
-                'Submit Feedback'
-            )}
-        </Button>
-    </div>
-));
-
 const FeedbackSection: React.FC<FeedbackSectionProps> = ({ searchTerm, dataset }) => {
     // Auth hook
     const { isAuthenticated, user, socialLogin } = useAuth();
@@ -263,7 +162,6 @@ const FeedbackSection: React.FC<FeedbackSectionProps> = ({ searchTerm, dataset }
 
     // Load data when popup opens
     useEffect(() => {
-        console.log('isOpen', isOpen);
         if (isOpen) {
             loadData().then(r => r);
         }
@@ -286,13 +184,17 @@ const FeedbackSection: React.FC<FeedbackSectionProps> = ({ searchTerm, dataset }
         setError(null);
 
         try {
+            let headers = {};
+            if (isAuthenticated) {
+                headers = {
+                    'Authorization': `Bearer ${localStorage.getItem('access_token')}`
+                }
+            }
             // Load feedback stats
             const statsResponse = await fetch(
                 `${API_BASE_URL}/api/feedback/stats/?search=${encodeURIComponent(searchTerm)}&dataset=${encodeURIComponent(dataset)}`,
                 {
-                    headers: {
-                        'Authorization': `Bearer ${localStorage.getItem('access_token')}`
-                    }
+                    headers: headers
                 }
             );
 
@@ -300,9 +202,7 @@ const FeedbackSection: React.FC<FeedbackSectionProps> = ({ searchTerm, dataset }
             const feedbacksResponse = await fetch(
                 `${API_BASE_URL}/api/feedback/list/?search=${encodeURIComponent(searchTerm)}&dataset=${encodeURIComponent(dataset)}`,
                 {
-                    headers: {
-                        'Authorization': `Bearer ${localStorage.getItem('access_token')}`
-                    }
+                    headers: headers
                 }
             );
 
@@ -353,6 +253,7 @@ const FeedbackSection: React.FC<FeedbackSectionProps> = ({ searchTerm, dataset }
             setSelectedEmoji('');
             setIsPublic(true);
             setActiveTab('feedback');
+            await loadData()
         } catch (err) {
             setError('Failed to submit feedback');
         } finally {
@@ -388,24 +289,21 @@ const FeedbackSection: React.FC<FeedbackSectionProps> = ({ searchTerm, dataset }
 
     const FeedbackList = () => (
         <div className="p-4 space-y-4">
-            {/* Stats Section */}
-            <div className="grid grid-cols-4 gap-2 p-3 bg-gray-50 rounded-lg">
-                {Object.entries(stats).slice(0, -1).map(([key, value]) => (
-                    <div key={key} className="text-center">
-                        <div className="text-xl mb-1">{EMOJIS[key as keyof typeof EMOJIS]}</div>
-                        <div className="text-sm font-medium text-gray-900">{value}</div>
-                    </div>
-                ))}
-            </div>
+            {/* Stats Section remains the same */}
+            <EmojiStats stats={{
+                agree: stats.agree,
+                disagree: stats.disagree,
+                uncertain: stats.uncertain
+            }} />
 
-            {/* Error Alert */}
+            {/* Error Alert remains the same */}
             {error && (
                 <Alert color="failure" onDismiss={() => setError(null)}>
                     {error}
                 </Alert>
             )}
 
-            {/* Loading State */}
+            {/* Loading State remains the same */}
             {isLoading ? (
                 <div className="text-center py-8">
                     <div className="loading-spinner mx-auto" />
@@ -418,88 +316,19 @@ const FeedbackSection: React.FC<FeedbackSectionProps> = ({ searchTerm, dataset }
                         </div>
                     ) : (
                         feedbacks.map((feedback: Feedback) => (
-                            <div key={feedback.id} className="feedback-item bg-gray-50 p-3 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                                {/* Feedback Header */}
-                                <div className="flex justify-between items-start mb-2">
-                                    <div className="flex items-center space-x-2">
-                                        {feedback.user.avatar ?
-                                            <Avatar img={feedback.user.avatar} size="sm" bordered/>
-                                            :
-                                            <Avatar
-                                                placeholderInitials=
-                                                    {feedback.user.username ? feedback.user.username.charAt(0).toUpperCase() : 'R'}
-                                                size="sm" bordered/>
-                                        }
-                                        <div>
-                                            <p className="text-sm font-medium text-gray-900">
-                                                {feedback.user.username ? feedback.user.username : feedback.user.email.split('@')[0].charAt(0).toUpperCase() + feedback.user.email.split('@')[0].slice(1)}
-                                            </p>
-                                            <p className="text-xs text-gray-500">
-                                                {new Date(feedback.created_at).toLocaleDateString(undefined, {
-                                                    year: 'numeric',
-                                                    month: 'short',
-                                                    day: 'numeric',
-                                                    hour: '2-digit',
-                                                    minute: '2-digit',
-                                                    hour12: false
-                                                })}
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <span className="text-xl" title={feedback.feedback}>
-                    {EMOJIS[feedback.feedback]}
-                  </span>
-                                </div>
-
-                                {/* Feedback Content */}
-                                {feedback.comment && (
-                                    <p className="text-sm text-gray-600 mt-2 break-words">
-                                        {feedback.comment}
-                                    </p>
-                                )}
-
-                                {/* Feedback Footer */}
-                                <div className="flex items-center justify-between mt-3">
-                                    <div className="flex space-x-4">
-                                        <button
-                                            className={`vote-button flex items-center space-x-1 transition-colors ${
-                                                feedback.hasUserVoted?.upvoted
-                                                    ? 'text-purple-600'
-                                                    : 'text-gray-500 hover:text-purple-600'
-                                            }`}
-                                            onClick={() => handleVote(feedback.id, true)}
-                                            disabled={!isAuthenticated || isLoading}
-                                            title={isAuthenticated ? 'Upvote' : 'Login to vote'}
-                                        >
-                                            <ThumbsUp className="w-4 h-4" />
-                                            <span className="text-xs">{feedback.upvotes}</span>
-                                        </button>
-                                        <button
-                                            className={`vote-button flex items-center space-x-1 transition-colors ${
-                                                feedback.hasUserVoted?.downvoted
-                                                    ? 'text-purple-600'
-                                                    : 'text-gray-500 hover:text-purple-600'
-                                            }`}
-                                            onClick={() => handleVote(feedback.id, false)}
-                                            disabled={!isAuthenticated || isLoading}
-                                            title={isAuthenticated ? 'Downvote' : 'Login to vote'}
-                                        >
-                                            <ThumbsDown className="w-4 h-4" />
-                                            <span className="text-xs">{feedback.downvotes}</span>
-                                        </button>
-                                    </div>
-                                    {feedback.isPublic && (
-                                        <Badge color="purple" size="sm">Public</Badge>
-                                    )}
-                                </div>
-                            </div>
+                            <FeedbackItemWithVoting
+                                key={feedback.id}
+                                feedback={feedback}
+                                isAuthenticated={isAuthenticated}
+                                isLoading={isLoading}
+                                onVote={handleVote}
+                            />
                         ))
                     )}
                 </div>
             )}
         </div>
     );
-
     return (
         <div className="fixed bottom-6 right-6 z-50">
             {/* Feedback Button */}
@@ -565,7 +394,7 @@ const FeedbackSection: React.FC<FeedbackSectionProps> = ({ searchTerm, dataset }
                             !isAuthenticated ? (
                                 <AuthSection />
                             ) : (
-                                <SubmitSection
+                                <FeedbackSubmitSection
                                     selectedEmoji={selectedEmoji}
                                     setSelectedEmoji={setSelectedEmoji}
                                     comment={comment}

@@ -16,7 +16,7 @@ export const ResultsPage = () => {
     const [history, setHistory] = useState<SearchHistoryItem[]>([]);
 
 
-    const STEP_DELAY = 100;
+    const STEP_DELAY = 1000;
     const steps = [
         'tripleProcessing',
         'humanReadable',

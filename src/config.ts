@@ -10,8 +10,8 @@ export const AUTH_PROVIDERS = {
 
 export const FEEDBACK_TYPES: Record<string, FeedbackType> = {
     Agree: 'agree',
+    Uncertain: 'uncertain',
     Disagree: 'disagree',
-    Uncertain: 'uncertain'
 } as const;
 
 export const EMOJIS: Record<FeedbackType, string> = {
