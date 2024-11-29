@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { Card, Modal } from 'flowbite-react';
-import { HiExternalLink, HiX } from 'react-icons/hi';
+import React from 'react';
+import { Card} from 'flowbite-react';
+import { HiExternalLink } from 'react-icons/hi';
 
 interface GooglePage {
     url: string;

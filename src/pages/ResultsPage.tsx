@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import {HistorySidebar} from "../components/verification/HistorySidebar";
+import {HistorySidebar} from "../components/history/HistorySidebar";
 import VerificationProcess from "../components/verification/VerificationProcess";
 import FeedbackSection from "../components/verification/FeedbackSection";
 import {VerificationData} from "../types";
-import {SearchHistory, SearchHistoryItem} from "../components/verification/History";
+import {HistoryService} from "../services/HistoryService";
+import {SearchHistoryItem} from "../types/history";
 
 
 export const ResultsPage = () => {
@@ -65,8 +66,8 @@ export const ResultsPage = () => {
             const dataset = searchParams.get('dataset');
 
             if (searchTerm && dataset) {
-                SearchHistory.addToHistory(searchTerm, dataset, data.human_readable);
-                setHistory(SearchHistory.getHistory());
+                HistoryService.addToHistory(searchTerm, dataset, data.human_readable);
+                setHistory(HistoryService.getHistory());
             }
         }
     }, [data, searchParams]);

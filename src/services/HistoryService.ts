@@ -1,15 +1,19 @@
-export interface SearchHistoryItem {
-    searchTerm: string;
-    dataset: string;
-    timestamp: number;
-    humanReadable?: string;
-}
+import { SearchHistoryItem } from '../types/history';
+import { LocalStorage } from '../utils/storage';
 
-export class SearchHistory {
+export class HistoryService {
     private static readonly STORAGE_KEY = 'search_history';
     private static readonly MAX_HISTORY_ITEMS = 50;
 
-    static addToHistory(searchTerm: string, dataset: string, humanReadable?: string): void {
+    static getHistory(): SearchHistoryItem[] {
+        return LocalStorage.get<SearchHistoryItem[]>(this.STORAGE_KEY, []);
+    }
+
+    static addToHistory(
+        searchTerm: string,
+        dataset: string,
+        humanReadable?: string
+    ): void {
         const history = this.getHistory();
 
         const existingIndex = history.findIndex(
@@ -20,27 +24,24 @@ export class SearchHistory {
             history.splice(existingIndex, 1);
         }
 
-        history.unshift({
+        const newItem: SearchHistoryItem = {
             searchTerm,
             dataset,
             timestamp: Date.now(),
             humanReadable
-        });
+        };
+
+        history.unshift(newItem);
 
         if (history.length > this.MAX_HISTORY_ITEMS) {
             history.pop();
         }
 
-        localStorage.setItem(this.STORAGE_KEY, JSON.stringify(history));
-    }
-
-    static getHistory(): SearchHistoryItem[] {
-        const historyString = localStorage.getItem(this.STORAGE_KEY);
-        return historyString ? JSON.parse(historyString) : [];
+        LocalStorage.set(this.STORAGE_KEY, history);
     }
 
     static clearHistory(): void {
-        localStorage.removeItem(this.STORAGE_KEY);
+        LocalStorage.remove(this.STORAGE_KEY);
     }
 
     static formatDate(timestamp: number): string {
