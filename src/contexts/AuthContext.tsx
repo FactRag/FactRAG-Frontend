@@ -2,7 +2,6 @@
 import React, { createContext, useContext, useEffect, useState } from 'react'
 
 const API_BASE_URL = 'http://localhost:8000/api'
-
 export interface User {
   id: number;
   email: string;
