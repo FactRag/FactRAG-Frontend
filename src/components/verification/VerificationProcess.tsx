@@ -229,7 +229,7 @@ export const VerificationProcess: React.FC<VerificationProcessProps> = ({ data, 
             </div>
           </Card>
         )
-      case 5:
+      case 5: {
         const modelStats = calculateModelStats(data.responses)
 
         return (
@@ -251,6 +251,7 @@ export const VerificationProcess: React.FC<VerificationProcessProps> = ({ data, 
             </div>
           </Card>
         )
+      }
       case 7:
         return renderFinalAnalysis()
       default:

@@ -16,7 +16,7 @@ export const HistorySidebar: React.FC<HistorySidebarProps> = ({
                                                                 history,
                                                                 setHistory
                                                               }) => {
-  const isMobile = useResponsive()
+  const isMobile = useResponsive(768)
   const [isOpen, setIsOpen] = React.useState(!isMobile)
 
   useEffect(() => {
