@@ -13,14 +13,22 @@ export const QuestionTable: React.FC<QuestionTableProps> = ({ questions }) => {
   )
 
   const getScoreColor = (score: number) => {
-    if (Number(score) >= 0.8) return 'text-green-600'
-    if (Number(score) >= 0.6) return 'text-blue-600'
-    if (Number(score) >= 0.4) return 'text-yellow-600'
+    if (Number(score) >= 0.8) {
+      return 'text-green-600'
+    }
+    if (Number(score) >= 0.6) {
+      return 'text-blue-600'
+    }
+    if (Number(score) >= 0.4) {
+      return 'text-yellow-600'
+    }
     return 'text-red-600'
   }
 
   const getRankBadge = (idx: number) => {
-    if (idx >= 3) return null
+    if (idx >= 3) {
+      return null
+    }
 
     const badges = [
       { bg: 'bg-yellow-100', text: 'text-yellow-800', label: 'Best Match' },

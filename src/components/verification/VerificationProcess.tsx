@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Alert, Card, Modal, Timeline } from 'flowbite-react'
+import { Alert, Badge, Card, Modal, Timeline } from 'flowbite-react'
 import { HiInformationCircle, HiOutlineExternalLink } from 'react-icons/hi'
 import { ModelResponse, ModelResponseHeader } from './ModelResponse'
 import type { ProcessStep, VerificationData } from '../../types/verification'
@@ -14,6 +14,7 @@ import { generateHumanReadablePrompt, generateQuestionPromptContent } from '../.
 import { ScoreLegend } from './ScoreLegend'
 import { ResponseDistribution } from './ResponseDistribution'
 import { calculateModelStats } from '../../utils/calculateModelStats'
+import { AnalysisCard } from './AnalysisCard.'
 
 interface VerificationProcessProps {
   data: VerificationData;
@@ -252,22 +253,50 @@ export const VerificationProcess: React.FC<VerificationProcessProps> = ({ data, 
           </Card>
         )
       }
+      case 6:
+        if (data.need_tiebreaker) {
+          return (
+            <Card className='mb-4'>
+              <div className='space-y-4'>
+                <div className='flex justify-between items-center mb-4'>
+                  <h4 className='text-xl font-bold text-gray-900'>Tiebreaker Verification</h4>
+                  <Badge color='purple'>Consensus Check</Badge>
+                </div>
+
+                <div className='space-y-3'>
+                  {Object.entries(data.tiebreakers_responses).map(([model, response], idx) => (
+                    <ModelResponse
+                      key={`tiebreaker-${model}-${idx}`}
+                      model={model}
+                      response={response}
+                    />
+                  ))}
+                </div>
+
+                {/*<ResponseDistribution stats={tieStats} />*/}
+              </div>
+            </Card>
+          )
+        }
+        return
       case 7:
-        return renderFinalAnalysis()
+        return <AnalysisCard analysis={data.analysis}/>
       default:
         return null
     }
   }
 
+  const final_decision_color = data.need_tiebreaker ? 'indigo' : data.final_decision === 'true' ? 'success' : 'failure'
+  const final_decision_text = data.need_tiebreaker ? 'Tiebreaker Required' : data.final_decision === 'true' ? 'Verified' : 'Not Verified'
   return (
     <div className='max-w-4xl mx-auto'>
       <Alert
-        color={data.final_decision === 'true' ? 'success' : 'failure'}
+        color={final_decision_color}
         icon={HiInformationCircle}
         className='mb-4'
       >
         <span className='font-medium'>
-          {data.final_decision === 'true' ? 'VERIFIED' : 'NOT VERIFIED'}
+          {final_decision_text}
         </span>
       </Alert>
 

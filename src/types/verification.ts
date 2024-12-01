@@ -8,6 +8,8 @@ export interface VerificationData {
   google_pages: GooglePage[];
   selected_docs: SelectedDoc[];
   responses: Record<string, ModelResponse>;
+  need_tiebreaker: boolean;
+  tiebreakers_responses:Record<string, ModelResponse>;
   final_decision: string;
   analysis: Analysis;
 }
@@ -38,6 +40,7 @@ export interface Analysis {
   category: string;
   stratum: string;
   topic: string;
+  error_reason?: string;
 }
 
 export interface ProcessStep {
