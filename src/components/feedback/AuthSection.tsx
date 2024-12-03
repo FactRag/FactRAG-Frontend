@@ -49,7 +49,7 @@ export const AuthSection = () => {
               className='w-full'
               onClick={() => socialLogin('google')}
             >
-              <img src='/google-icon.svg' className='w-5 h-5 mr-2' alt='Google' />
+              <img src='/static/google-icon.svg' className='w-5 h-5 mr-2' alt='Google' />
               Continue with Google
             </Button>
 
@@ -58,7 +58,7 @@ export const AuthSection = () => {
               className='w-full'
               onClick={() => socialLogin('orcid')}
             >
-              <img src='/orcid-icon.svg' className='w-5 h-5 mr-2' alt='ORCID' />
+              <img src='/static/orcid-icon.svg' className='w-5 h-5 mr-2' alt='ORCID' />
               Continue with ORCID
             </Button>
 
