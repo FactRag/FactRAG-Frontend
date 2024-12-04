@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Donald_M._Grant",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "Grant, Donald M.",
+    "human_readable": "The full name of Donald M. Grant is Grant, Donald M.",
+    "questions": [
+        {
+            "score": 0.9855554103851318,
+            "question": "What is the full name of Donald M. Grant?"
+        },
+        {
+            "score": 0.9471750259399414,
+            "question": "If you were to introduce Donald M. Grant, what would you say his full name is?"
+        },
+        {
+            "score": 0.9287029504776001,
+            "question": "Which part of Donald M. Grant's full name comes first?"
+        },
+        {
+            "score": 0.9209550023078918,
+            "question": "Is 'Grant' Donald M.'s first or last name?"
+        },
+        {
+            "score": 0.9063919186592102,
+            "question": "If you saw 'Grant, Donald M.' written down, would you know his full name?"
+        },
+        {
+            "score": 0.8982680439949036,
+            "question": "What is the order of Donald M. Grant's names?"
+        },
+        {
+            "score": 0.8790751695632935,
+            "question": "How many words are in Donald M. Grant's full name?"
+        },
+        {
+            "score": 0.8077034950256348,
+            "question": "What are Donald M. Grant's initials?"
+        },
+        {
+            "score": 0.6588155627250671,
+            "question": "What is Donald M.'s last name?"
+        },
+        {
+            "score": 0.6120315790176392,
+            "question": "How would you write Donald M. Grant's first and middle names in order?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The full name of Donald M. Grant is Grant, Donald M.",
+            "html": "dbpedia_5355_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Donald M.'s last name?",
+            "html": "dbpedia_5355_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are Donald M. Grant's initials?",
+            "html": "dbpedia_5355_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How many words are in Donald M. Grant's full name?",
+            "html": "dbpedia_5355_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5355_110.txt"
+        },
+        {
+            "file_id": "dbpedia_5355_114.txt"
+        },
+        {
+            "file_id": "dbpedia_5355_14.txt"
+        },
+        {
+            "file_id": "dbpedia_5355_18.txt"
+        },
+        {
+            "file_id": "dbpedia_5355_22.txt"
+        },
+        {
+            "file_id": "dbpedia_5355_28.txt"
+        },
+        {
+            "file_id": "dbpedia_5355_48.txt"
+        },
+        {
+            "file_id": "dbpedia_5355_76.txt"
+        },
+        {
+            "file_id": "dbpedia_5355_90.txt"
+        },
+        {
+            "file_id": "dbpedia_5355_97.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe documents mention various instances of \"Donald M. Grant\" but consistently present his full name as  \"M. Donald Grant\" or \"Donald M. Grant\".  It's not listed as \"Grant, Donald M.\" in any of the provided texts."
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "After analyzing the context information provided, I can see that there are multiple documents mentioning different individuals named \"Donald M. Grant\". However, upon closer inspection, it appears that only one document (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5355/re-ranker-msmarco/94.txt) provides information about the full name of Donald M. Grant.\n\nThis single document mentions \"Donald M. Grant\" and also provides a context that suggests he is a publisher, not an athlete or public figure like M. Donald Grant mentioned in another document.\n\nBased on this analysis, I would conclude that:\n\n{'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\n**Explanation:** The documents provide multiple references to an individual named Donald M. Grant, confirming that the full name of Donald M. Grant is indeed Grant, Donald M."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Multiple sources list his name as M. Donald Grant.",
+            "category": 2
+        }
+    }
+}

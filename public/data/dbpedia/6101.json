@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Tommy_Davidson",
+    "predicate": "ontology/birthPlace",
+    "object": "resource/Washington,_D.C.",
+    "human_readable": "Tommy Davidson was born in Washington, D.C.",
+    "questions": [
+        {
+            "score": 0.9029674530029297,
+            "question": "Where was Tommy Davidson born?"
+        },
+        {
+            "score": 0.9011038541793823,
+            "question": "In what state was Tommy Davidson born?"
+        },
+        {
+            "score": 0.828571617603302,
+            "question": "What year was Tommy Davidson born?"
+        },
+        {
+            "score": 0.7464107871055603,
+            "question": "What is the name of the city where Tommy Davidson was born?"
+        },
+        {
+            "score": 0.4949684739112854,
+            "question": "What is Tommy Davidson known for?"
+        },
+        {
+            "score": 0.32196325063705444,
+            "question": "Name a famous comedy show that Tommy Davidson has been on."
+        },
+        {
+            "score": 0.2660312056541443,
+            "question": "Is Tommy Davidson known for his stand-up comedy?"
+        },
+        {
+            "score": 0.252328097820282,
+            "question": "What type of entertainment is Tommy Davidson involved in?"
+        },
+        {
+            "score": 0.24862554669380188,
+            "question": "Has Tommy Davidson done any acting?"
+        },
+        {
+            "score": 0.22219835221767426,
+            "question": "Has Tommy Davidson won any awards?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Tommy Davidson was born in Washington, D.C.",
+            "html": "dbpedia_6101_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Has Tommy Davidson done any acting?",
+            "html": "dbpedia_6101_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of entertainment is Tommy Davidson involved in?",
+            "html": "dbpedia_6101_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Tommy Davidson known for his stand-up comedy?",
+            "html": "dbpedia_6101_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6101_1.txt"
+        },
+        {
+            "file_id": "dbpedia_6101_24.txt"
+        },
+        {
+            "file_id": "dbpedia_6101_31.txt"
+        },
+        {
+            "file_id": "dbpedia_6101_34.txt"
+        },
+        {
+            "file_id": "dbpedia_6101_35.txt"
+        },
+        {
+            "file_id": "dbpedia_6101_40.txt"
+        },
+        {
+            "file_id": "dbpedia_6101_45.txt"
+        },
+        {
+            "file_id": "dbpedia_6101_56.txt"
+        },
+        {
+            "file_id": "dbpedia_6101_57.txt"
+        },
+        {
+            "file_id": "dbpedia_6101_66.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "To determine whether the information in the documents supports the triple \"Tommy Davidson was born in Washington, D.C.,\" I'll evaluate each relevant document:\n\n1. file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6101/re-ranker-msmarco/1.txt\n\nThis document states that Tommy Davidson (born December 18, 1965) is an American actor born in Washington, D.C., which supports the triple.\n\n2. file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6101/re-ranker-msmarco/65.txt\n\nThis document states that Tommy Davidson (born November 10, 1963) is an American comedian and actor born in Washington, D.C., which also supports the triple.\n\n3. file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6101/re-ranker-msmarco/23.txt\n\nThis document states that Tommy Davidson was born in Washington, D.C., but it does not specify the exact date of birth (November 10, 1963) as mentioned in other documents. However, since the triple only asks if he was born in Washington, D.C., this document also supports the triple.\n\n4. file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6101/re-ranker-msmarco/23.txt\n\nThis is a duplicate of the previous document and does not provide any additional information that would change the answer.\n\n5. file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6101/re-ranker-msmarco/56.txt\n\nfile_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6101/re-ranker-msmarco/39.txt\n\nThese documents only mention Tommy Davidson's birthplace as Washington, D.C., without specifying the exact date of birth. However, they do not provide any information that contradicts the triple.\n\nBased on this evaluation, I conclude that the information in the documents supports the triple \"Tommy Davidson was born in Washington, D.C.\"\n\nTherefore, my answer is:\n\n{'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\nThe documents provide information that supports the statement \"Tommy Davidson was born in Washington, D.C.\" All relevant text mentions that Tommy Davidson was born in Washington, D.C."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

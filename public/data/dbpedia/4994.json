@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Wells_Fargo",
+    "predicate": "ontology/product",
+    "object": "resource/Private_equity",
+    "human_readable": "Wells Fargo offers Private equity as a product.",
+    "questions": [
+        {
+            "score": 0.9355342388153076,
+            "question": "Does Wells Fargo provide private equity services?"
+        },
+        {
+            "score": 0.9240762591362,
+            "question": "Besides private equity, what other financial products or services might Wells Fargo offer?"
+        },
+        {
+            "score": 0.8701885342597961,
+            "question": "Are there any specific investment criteria or requirements associated with Wells Fargo's private equity products?"
+        },
+        {
+            "score": 0.798945963382721,
+            "question": "Who might be responsible for managing Wells Fargo's private equity offerings?"
+        },
+        {
+            "score": 0.7662147283554077,
+            "question": "What kind of financial products does Wells Fargo offer?"
+        },
+        {
+            "score": 0.7058209776878357,
+            "question": "How does Wells Fargo's offering of private equity compare to other major banks?"
+        },
+        {
+            "score": 0.6822253465652466,
+            "question": "To whom might Wells Fargo's private equity services be directed?"
+        },
+        {
+            "score": 0.6509546041488647,
+            "question": "What are the potential benefits and risks of investing in private equity through Wells Fargo?"
+        },
+        {
+            "score": 0.6161562204360962,
+            "question": "What regulations or oversight govern Wells Fargo's provision of private equity services?"
+        },
+        {
+            "score": 0.18349045515060425,
+            "question": "What is meant by 'private equity' in the context of finance?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Wells Fargo offers Private equity as a product.",
+            "html": "dbpedia_4994_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What regulations or oversight govern Wells Fargo's provision of private equity services?",
+            "html": "dbpedia_4994_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are the potential benefits and risks of investing in private equity through Wells Fargo?",
+            "html": "dbpedia_4994_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=To whom might Wells Fargo's private equity services be directed?",
+            "html": "dbpedia_4994_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4994_105.txt"
+        },
+        {
+            "file_id": "dbpedia_4994_113.txt"
+        },
+        {
+            "file_id": "dbpedia_4994_125.txt"
+        },
+        {
+            "file_id": "dbpedia_4994_20.txt"
+        },
+        {
+            "file_id": "dbpedia_4994_4.txt"
+        },
+        {
+            "file_id": "dbpedia_4994_47.txt"
+        },
+        {
+            "file_id": "dbpedia_4994_66.txt"
+        },
+        {
+            "file_id": "dbpedia_4994_68.txt"
+        },
+        {
+            "file_id": "dbpedia_4994_81.txt"
+        },
+        {
+            "file_id": "dbpedia_4994_86.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nWhile the documents mention Wells Fargo divesting from private equity investments, they don't indicate that they offer private equity as a product to clients.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the answer in JSON format:\n\n```\n{\n  \"output\": \"yes\"\n}\n```\n\nThis indicates that the triple \"Wells Fargo offers Private equity as a product\" is supported by the provided context information. \n\nThe relevant sentences that support this triple are:\n\n* \"US-based financial services company Wells Fargo has sold approximately USD 2 billion of private equity investments in certain NEP and NMP funds.\" (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4994/re-ranker-msmarco/23.txt)\n* \"Wells Fargo & Company has sold to a group of leading investors approximately $2 billion of private equity investments in certain Norwest Equity Partners (NEP) and Norwest Mezzanine Partners (NMP) funds.\" (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4994/re-ranker-msmarco/68.txt)\n* \"Wells Fargo is selling its asset management business, with $600 billion in assets, to private equity firms GTCR and Reverence Capital Partners.\" (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4994/re-ranker-msmarco/113.txt)\n\nThese sentences confirm that Wells Fargo has sold private equity investments in the past and is currently selling its asset management business to private equity firms, which supports the triple."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents indicate that Wells Fargo has sold private equity investments, suggesting they previously offered such products. Therefore, the statement \"Wells Fargo offers Private equity as a product\" is supported by the context information provided."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "The provided context details Wells Fargo divesting from private equity investments, not offering them as a product.",
+            "category": 2
+        }
+    }
+}

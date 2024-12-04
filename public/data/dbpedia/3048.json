@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Prince_Baudouin_of_Belgium",
+    "predicate": "property/birthPlace",
+    "object": "resource/Brussels",
+    "human_readable": "Prince Baudouin of Belgium was born in Brussels.",
+    "questions": [
+        {
+            "score": 0.9876558780670166,
+            "question": "Where was Prince Baudouin of Belgium born?"
+        },
+        {
+            "score": 0.8465469479560852,
+            "question": "Was Prince Baudouin's birthplace in Europe?"
+        },
+        {
+            "score": 0.7589876651763916,
+            "question": "When was Prince Baudouin born?"
+        },
+        {
+            "score": 0.6524788737297058,
+            "question": "What country is Prince Baudouin from?"
+        },
+        {
+            "score": 0.6024448275566101,
+            "question": "What other notable people were born in Brussels?"
+        },
+        {
+            "score": 0.2679436206817627,
+            "question": "Who is the King or Queen of Belgium now?"
+        },
+        {
+            "score": 0.26231813430786133,
+            "question": "Is Brussels the capital of Belgium?"
+        },
+        {
+            "score": 0.16354456543922424,
+            "question": "What language is spoken primarily in Brussels?"
+        },
+        {
+            "score": 0.16153240203857422,
+            "question": "What are some famous landmarks in Brussels?"
+        },
+        {
+            "score": 0.13788792490959167,
+            "question": "Is Brussels a popular tourist destination?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Prince Baudouin of Belgium was born in Brussels.",
+            "html": "dbpedia_3048_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some famous landmarks in Brussels?",
+            "html": "dbpedia_3048_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What language is spoken primarily in Brussels?",
+            "html": "dbpedia_3048_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Brussels the capital of Belgium?",
+            "html": "dbpedia_3048_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3048_13.txt"
+        },
+        {
+            "file_id": "dbpedia_3048_2.txt"
+        },
+        {
+            "file_id": "dbpedia_3048_28.txt"
+        },
+        {
+            "file_id": "dbpedia_3048_3.txt"
+        },
+        {
+            "file_id": "dbpedia_3048_30.txt"
+        },
+        {
+            "file_id": "dbpedia_3048_50.txt"
+        },
+        {
+            "file_id": "dbpedia_3048_60.txt"
+        },
+        {
+            "file_id": "dbpedia_3048_67.txt"
+        },
+        {
+            "file_id": "dbpedia_3048_73.txt"
+        },
+        {
+            "file_id": "dbpedia_3048_8.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "To evaluate the triple, we need to check if the documents support the statement \"Prince Baudouin of Belgium was born in Brussels\".\n\nAccording to the documents:\n\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3048/re-ranker-msmarco/29.txt, it is mentioned that Prince Baudouin was born on June 3, 1869, at the Palais de la R\u00e9gence in Brussels, Belgium.\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3048/re-ranker-msmarco/1.txt, it is mentioned that King Baudouin was born on 7 September 1930 in Chateau de Stuyvenberg, Belgium. However, this birthplace might be referring to the location of the Chateau de Stuyvenberg rather than the city of Brussels.\n\nConsidering the information provided, we can conclude that the statement \"Prince Baudouin of Belgium was born in Brussels\" is partially supported by the documents, since there are two mentions of his birthplaces: one mentioning Brussels and the other mentioning a specific chateau near Brussels. However, given the context, it's reasonable to assume that the city of Brussels is implied.\n\nTherefore:\n\n`{'output': 'yes'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The document states, \"Born on June 3, 1869, at the Palais de la R\u00e9gence in Brussels, Belgium,\" and also mentions that King Baudouin was born \"on September 7, 1930, at Stuyvenberg Castle in Laeken, Brussels, Belgium.\" This supports the statement that Prince Baudouin of Belgium (whether referring to the elder or later King Baudouin) was born in Brussels."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

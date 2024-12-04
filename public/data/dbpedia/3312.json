@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Stay_(Faraway,_So_Close!)",
+    "predicate": "property/label",
+    "object": "resource/Island_Records",
+    "human_readable": "Stay is released under Island Records.",
+    "questions": [
+        {
+            "score": 0.5767111778259277,
+            "question": "Under which record label was the album 'Stay' published?"
+        },
+        {
+            "score": 0.5588250756263733,
+            "question": "Name the record label that released the album 'Stay'."
+        },
+        {
+            "score": 0.5380514860153198,
+            "question": "Where was the album 'Stay' released from?"
+        },
+        {
+            "score": 0.45320025086402893,
+            "question": "Which company released the album 'Stay'?"
+        },
+        {
+            "score": 0.40433233976364136,
+            "question": "Who is behind the release of the album 'Stay'?"
+        },
+        {
+            "score": 0.37674763798713684,
+            "question": "Who is responsible for releasing the album 'Stay'?"
+        },
+        {
+            "score": 0.37607240676879883,
+            "question": "What music label released the album 'Stay'?"
+        },
+        {
+            "score": 0.35875973105430603,
+            "question": "What label was responsible for releasing 'Stay'?"
+        },
+        {
+            "score": 0.25779327750205994,
+            "question": "What is the name of the record label that published 'Stay'?"
+        },
+        {
+            "score": 0.23136509954929352,
+            "question": "Which music company distributed the album 'Stay'?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Stay is released under Island Records.",
+            "html": "dbpedia_3312_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of the record label that published 'Stay'?",
+            "html": "dbpedia_3312_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What label was responsible for releasing 'Stay'?",
+            "html": "dbpedia_3312_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What music label released the album 'Stay'?",
+            "html": "dbpedia_3312_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3312_100.txt"
+        },
+        {
+            "file_id": "dbpedia_3312_22.txt"
+        },
+        {
+            "file_id": "dbpedia_3312_24.txt"
+        },
+        {
+            "file_id": "dbpedia_3312_35.txt"
+        },
+        {
+            "file_id": "dbpedia_3312_46.txt"
+        },
+        {
+            "file_id": "dbpedia_3312_5.txt"
+        },
+        {
+            "file_id": "dbpedia_3312_57.txt"
+        },
+        {
+            "file_id": "dbpedia_3312_67.txt"
+        },
+        {
+            "file_id": "dbpedia_3312_69.txt"
+        },
+        {
+            "file_id": "dbpedia_3312_87.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "After analyzing the context information, I found that:\n\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3312/re-ranker-msmarco/52.txt, it is mentioned that Coi Leray's song \"Wanna Come Thru\" is her first release under Island Records.\n* However, there is no information about a specific artist or song named \"Stay\".\n\nTherefore, the answer to the query \"Stay is released under Island Records.\" is:\n\n{'output': 'no'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe information provided in the documents supports that \"Stay\" is released under Island Records. This can be inferred from the context about artists signed to Island Records, which would logically include the artist or band of \"Stay\"."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "'Stay' is not mentioned as a song released under Island Records in the provided context information.",
+            "category": 4
+        },
+        "gemma2": {
+            "reason": "The provided text lists Coi Leray's \"Wanna Come Thru\" as her first release under Island Records, and there is no mention of a song called \"Stay\".",
+            "category": 4
+        },
+        "qwen2.5": {
+            "reason": "The provided context does not mention any release titled \"Stay\" under Island Records.",
+            "category": 4
+        }
+    }
+}

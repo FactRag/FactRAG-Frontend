@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Scottish_Airlines",
+    "predicate": "property/caption",
+    "object": "Avro York of Scottish Airlines in 1953",
+    "human_readable": "The caption of Scottish Airlines is 'Avro York of Scottish Airlines in 1953'.",
+    "questions": [
+        {
+            "score": 0.9405274987220764,
+            "question": "What does the caption suggest about Scottish Airlines' operations in 1953?"
+        },
+        {
+            "score": 0.6324352025985718,
+            "question": "What is Scottish Airlines known for?"
+        },
+        {
+            "score": 0.6072515249252319,
+            "question": "Who owns the Avro York mentioned in the caption?"
+        },
+        {
+            "score": 0.5289880633354187,
+            "question": "Why do you think the caption emphasizes the year 1953?"
+        },
+        {
+            "score": 0.337991863489151,
+            "question": "Can you describe the aircraft depicted in the caption?"
+        },
+        {
+            "score": 0.2839491367340088,
+            "question": "What type of aircraft is featured in the caption?"
+        },
+        {
+            "score": 0.04611526057124138,
+            "question": "In what year was the photograph taken?"
+        },
+        {
+            "score": 0.03591865301132202,
+            "question": "Where was this photograph likely taken?"
+        },
+        {
+            "score": 0.031129151582717896,
+            "question": "How might this image contribute to our understanding of aviation history?"
+        },
+        {
+            "score": 0.01929296925663948,
+            "question": "What historical context might be relevant to understanding this image?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The caption of Scottish Airlines is 'Avro York of Scottish Airlines in 1953'.",
+            "html": "dbpedia_4449_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How might this image contribute to our understanding of aviation history?",
+            "html": "dbpedia_4449_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where was this photograph likely taken?",
+            "html": "dbpedia_4449_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In what year was the photograph taken?",
+            "html": "dbpedia_4449_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4449_107.txt"
+        },
+        {
+            "file_id": "dbpedia_4449_111.txt"
+        },
+        {
+            "file_id": "dbpedia_4449_28.txt"
+        },
+        {
+            "file_id": "dbpedia_4449_34.txt"
+        },
+        {
+            "file_id": "dbpedia_4449_51.txt"
+        },
+        {
+            "file_id": "dbpedia_4449_62.txt"
+        },
+        {
+            "file_id": "dbpedia_4449_65.txt"
+        },
+        {
+            "file_id": "dbpedia_4449_67.txt"
+        },
+        {
+            "file_id": "dbpedia_4449_90.txt"
+        },
+        {
+            "file_id": "dbpedia_4449_91.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the context information, I can evaluate whether the triple \"The caption of Scottish Airlines is 'Avro York of Scottish Airlines in 1953'\".\n\nHere's my evaluation:\n\n**Triple:** The caption of Scottish Airlines is 'Avro York of Scottish Airlines in 1953'.\n\n**Documents:**\n\n* File_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4449/re-ranker-msmarco/51.txt\n\t+ Title: Avro York piston engined airliner of Scottish Airlines close to touch down at Prestwick Airport circa 1953 (This suggests that the caption is indeed related to an Avro York aircraft, but it does not mention the specific text \"Avro York of Scottish Airlines in 1953\")\n* File_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4449/re-ranker-msmarco/96.txt\n\t+ Original wartime caption: First official photographs of the Avro York, civil transport version of the famous Avro Lancaster bomber. (This does not mention Scottish Airlines)\n\n**Conclusion:** Based on the provided documents, I can confirm that the triple is incorrect.\n\nTherefore, my response in JSON format would be:\n\n```\n{\n  \"output\": \"no\"\n}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents provided do not contain any information that supports or refutes the statement that the caption of Scottish Airlines is \"Avro York of Scottish Airlines in 1953.\" While there is a mention of an Avro York piston engined airliner operated by Scottish Airlines, the specific text \"Avro York of Scottish Airlines in 1953\" as a caption is not directly supported."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "There is no information in the context to suggest the caption of Scottish Airlines in 1953 was 'Avro York of Scottish Airlines'. The provided context only mentions the Avro York aircraft, but it does not specify that this particular aircraft belonged to Scottish Airlines.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "The provided text describes an image of \"Avro York piston engined airliner of Scottish Airlines close to touch down at Prestwick Airport circa 1953\".   This directly states the caption.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "the caption actually says \"Avro York piston engined airliner of Scottish Airlines close to touch down at Prestwick Airport circa 1953\", not just \"Avro York of Scottish Airlines in 1953\".",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information mentions an \"Avro York piston engined airliner of Scottish Airlines close to touch down at Prestwick Airport circa 1953,\" which does not explicitly state that it is the caption for Scottish Airlines. Moreover, there is no direct mention of a specific caption text being 'Avro York of Scottish Airlines in 1953.'",
+            "category": 2
+        }
+    }
+}

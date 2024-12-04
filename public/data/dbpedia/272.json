@@ -1,0 +1,110 @@
+{
+    "subject": "resource/The_Royal_Oui",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "The Royal Oui",
+    "human_readable": "The label of The Royal Oui is 'The Royal Oui'.",
+    "questions": [
+        {
+            "score": 0.9731159806251526,
+            "question": "What is the label of The Royal Oui?"
+        },
+        {
+            "score": 0.815686821937561,
+            "question": "Is 'The Royal Oui' a name or a description?"
+        },
+        {
+            "score": 0.703857958316803,
+            "question": "Can you tell me more about The Royal Oui?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The label of The Royal Oui is 'The Royal Oui'.",
+            "html": "dbpedia_272_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is 'The Royal Oui' a name or a description?",
+            "html": "dbpedia_272_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the label of The Royal Oui?",
+            "html": "dbpedia_272_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_272_1.txt"
+        },
+        {
+            "file_id": "dbpedia_272_10.txt"
+        },
+        {
+            "file_id": "dbpedia_272_14.txt"
+        },
+        {
+            "file_id": "dbpedia_272_28.txt"
+        },
+        {
+            "file_id": "dbpedia_272_30.txt"
+        },
+        {
+            "file_id": "dbpedia_272_52.txt"
+        },
+        {
+            "file_id": "dbpedia_272_57.txt"
+        },
+        {
+            "file_id": "dbpedia_272_75.txt"
+        },
+        {
+            "file_id": "dbpedia_272_8.txt"
+        },
+        {
+            "file_id": "dbpedia_272_84.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nLet me explain. While the documents describe The Royal Oui's signing with File Under: Music and their album releases, they never state that \"The Royal Oui\" itself is a label.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the structured JSON response:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nThe reason for this answer is that while The Royal Oui's label is mentioned in several documents, it is not referred to as simply \"The Royal Oui\" (e.g. \"Vancouver's the Royal Oui Sign with File Under: Music for New 7-Inch and Debut Album\", where the label name is \"File Under: Music\")."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The information provided does not mention any label associated with the band \"The Royal Oui.\" The documents discuss their music releases, performances, and reviews but do not provide details about a specific record label."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "The provided text states that The Royal Oui signed with File Under: Music.",
+            "category": 4
+        },
+        "llama3.1": {
+            "reason": "The text explicitly states that the label of The Royal Oui is \"File Under: Music\", not \"The Royal Oui\".",
+            "category": 4
+        },
+        "qwen2.5": {
+            "reason": "The context information mentions that The Royal Oui signed with File Under: Music for their self-titled album, indicating that File Under: Music is the label of The Royal Oui, not The Royal Oui itself.",
+            "category": 4
+        }
+    }
+}

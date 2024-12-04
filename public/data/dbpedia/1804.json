@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Giovanni_Bondioni",
+    "predicate": "http://purl.org/linguistics/gold/hypernym",
+    "object": "resource/Lieutenant",
+    "human_readable": "Giovanni Bondioni is a Lieutenant.",
+    "questions": [
+        {
+            "score": 0.6312177181243896,
+            "question": "Is Giovanni Bondioni a military officer?"
+        },
+        {
+            "score": 0.5501499772071838,
+            "question": "What is Giovanni Bondioni's profession?"
+        },
+        {
+            "score": 0.54487144947052,
+            "question": "In which organization might Giovanni Bondioni serve?"
+        },
+        {
+            "score": 0.4057430624961853,
+            "question": "What rank does Giovanni Bondioni hold?"
+        },
+        {
+            "score": 0.3127985894680023,
+            "question": "What responsibilities might a Lieutenant have?"
+        },
+        {
+            "score": 0.29516780376434326,
+            "question": "What type of position does 'Lieutenant' typically indicate?"
+        },
+        {
+            "score": 0.27873969078063965,
+            "question": "Is 'Lieutenant' a high or low-ranking position?"
+        },
+        {
+            "score": 0.2537103593349457,
+            "question": "Can you provide examples of other roles with the title 'Lieutenant'?"
+        },
+        {
+            "score": 0.2374785840511322,
+            "question": "Are there different branches that use the rank 'Lieutenant'?"
+        },
+        {
+            "score": 0.16226543486118317,
+            "question": "What are some qualifications needed to become a Lieutenant?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Giovanni Bondioni is a Lieutenant.",
+            "html": "dbpedia_1804_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there different branches that use the rank 'Lieutenant'?",
+            "html": "dbpedia_1804_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you provide examples of other roles with the title 'Lieutenant'?",
+            "html": "dbpedia_1804_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is 'Lieutenant' a high or low-ranking position?",
+            "html": "dbpedia_1804_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1804_3.txt"
+        },
+        {
+            "file_id": "dbpedia_1804_40.txt"
+        },
+        {
+            "file_id": "dbpedia_1804_5.txt"
+        },
+        {
+            "file_id": "dbpedia_1804_55.txt"
+        },
+        {
+            "file_id": "dbpedia_1804_56.txt"
+        },
+        {
+            "file_id": "dbpedia_1804_6.txt"
+        },
+        {
+            "file_id": "dbpedia_1804_66.txt"
+        },
+        {
+            "file_id": "dbpedia_1804_70.txt"
+        },
+        {
+            "file_id": "dbpedia_1804_8.txt"
+        },
+        {
+            "file_id": "dbpedia_1804_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nThe text clearly states that \"Giovanni Bondioni marquis of Niardo was an Italian lieutenant, of the Italian army during the World War I.\""
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "After analyzing the context information, I found the relevant documents and extracted the following information:\n\n* Document `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1804/re-ranker-msmarco/6.txt` contains the text:\n\"...Giovanni Bondioni marquis of Niardo (September 29, 1894, Niardo \u2013 August 17, 1918, Milovice) was an Italian lieutenant, of the Italian army during the World War I.\"\n* Document `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1804/re-ranker-msmarco/3.txt` contains the text:\n\"...Marquess Marcello Amero D'Aste-Stella (April 1, 1853 \u2013 September 17, 1931) was an Italian admiral of the Regia Marina (Royal Italian Navy) and later a politician.\"\n\nBased on this information, I can conclude that:\n\n* The triple \"Giovanni Bondioni is a Lieutenant\" is **correct**, as it is supported by Document `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1804/re-ranker-msmarco/6.txt`.\n\nTherefore, the answer in JSON format is:\n```json\n{\n  \"output\": \"yes\"\n}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents support the statement that \"Giovanni Bondioni is a Lieutenant.\" Specifically, the document states: \"Giovanni Bondioni marquis of Niardo (September 29, 1894, Niardo \u2013 August 17, 1918, Milovice) was an Italian lieutenant, of the Italian army during the World War I.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

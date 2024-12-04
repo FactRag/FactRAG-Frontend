@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Chennakeshava_Temple,_Aralaguppe",
+    "predicate": "property/subdivisionName",
+    "object": "resource/Tumakuru_district",
+    "human_readable": "Chennakeshava Temple, Aralaguppe is located in Tumakuru district.",
+    "questions": [
+        {
+            "score": 0.8725435733795166,
+            "question": "Where is the Chennakeshava Temple located?"
+        },
+        {
+            "score": 0.777411162853241,
+            "question": "In which district is the Aralaguppe village?"
+        },
+        {
+            "score": 0.7623273730278015,
+            "question": "What is the name of the temple in Aralaguppe?"
+        },
+        {
+            "score": 0.7379792928695679,
+            "question": "Is the Chennakeshava Temple situated in a city or village?"
+        },
+        {
+            "score": 0.5838256478309631,
+            "question": "What is the architectural style of the Chennakeshava Temple?"
+        },
+        {
+            "score": 0.5835345983505249,
+            "question": "To which district does Tumakuru belong?"
+        },
+        {
+            "score": 0.5461148619651794,
+            "question": "When was the Chennakeshava Temple built?"
+        },
+        {
+            "score": 0.1587119847536087,
+            "question": "Are there any famous sculptures or idols within the temple?"
+        },
+        {
+            "score": 0.11557773500680923,
+            "question": "What historical significance does the temple hold?"
+        },
+        {
+            "score": 0.11175473034381866,
+            "question": "What are some popular festivals celebrated at the temple?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Chennakeshava Temple, Aralaguppe is located in Tumakuru district.",
+            "html": "dbpedia_2354_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What historical significance does the temple hold?",
+            "html": "dbpedia_2354_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any famous sculptures or idols within the temple?",
+            "html": "dbpedia_2354_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=When was the Chennakeshava Temple built?",
+            "html": "dbpedia_2354_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2354_15.txt"
+        },
+        {
+            "file_id": "dbpedia_2354_47.txt"
+        },
+        {
+            "file_id": "dbpedia_2354_55.txt"
+        },
+        {
+            "file_id": "dbpedia_2354_69.txt"
+        },
+        {
+            "file_id": "dbpedia_2354_77.txt"
+        },
+        {
+            "file_id": "dbpedia_2354_80.txt"
+        },
+        {
+            "file_id": "dbpedia_2354_89.txt"
+        },
+        {
+            "file_id": "dbpedia_2354_90.txt"
+        },
+        {
+            "file_id": "dbpedia_2354_94.txt"
+        },
+        {
+            "file_id": "dbpedia_2354_98.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here's the evaluation of the triple:\n\n**Triple:** Chennakeshava Temple, Aralaguppe is located in Tumakuru district.\n\n**Evaluation:**\n\n* The documents mention that Aralaguppe is a small town in the Tumkur district (not Tumakuru district) of Karnataka state.\n* Specifically, file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2354/re-ranker-msmarco/55.txt mentions \"Tumkur District\" and file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2354/re-ranker-msmarco/69.txt mentions \"Tumakuru\".\n* However, the difference between Tumakuru and Tumkur is minor (both are in Karnataka state), but since Tumakuru is not explicitly mentioned as the district where Aralaguppe is located, we will consider this as an incorrect statement.\n\n**Response:**\n```json\n{\n  \"output\": \"no\"\n}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents provide information about the location of the Chennakeshava Temple as being in Aralaguppe, which is part of the Tumkur district, Karnataka. However, they do not explicitly state that Aralaguppe is located within the Tumakuru district. Therefore, the statement \"Chennakeshava Temple, Aralaguppe is located in Tumakuru district\" is incorrect based on the provided information."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n    \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Context information states the temple is located in Aralaguppe, a town in the Tumkur district, not Tumakuru district.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "It contradicts the information provided in context 1, 2, 4, and 5 that state the temple is located in Tumkur district, not Tumakuru district.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information clearly states that Aralaguppe, where the Chennakeshava Temple is located, is in the Tumkur district, not Tumakuru.",
+            "category": 2
+        }
+    }
+}

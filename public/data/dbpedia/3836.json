@@ -1,0 +1,142 @@
+{
+    "subject": "resource/The_Lawnmower_Man_(film)",
+    "predicate": "property/starring",
+    "object": "resource/Dean_Norris",
+    "human_readable": "The film 'The Lawnmower Man' stars Dean Norris.",
+    "questions": [
+        {
+            "score": 0.869395911693573,
+            "question": "Who stars in the film 'The Lawnmower Man'?"
+        },
+        {
+            "score": 0.8134187459945679,
+            "question": "What other roles has Dean Norris played besides 'The Lawnmower Man'?"
+        },
+        {
+            "score": 0.7680467963218689,
+            "question": "What is the name of the film that Dean Norris appeared in?"
+        },
+        {
+            "score": 0.7414085865020752,
+            "question": "Is Dean Norris an actor?"
+        },
+        {
+            "score": 0.7322949767112732,
+            "question": "Is 'The Lawnmower Man' a popular movie?"
+        },
+        {
+            "score": 0.7193887233734131,
+            "question": "Can you name a movie featuring Dean Norris?"
+        },
+        {
+            "score": 0.6683934926986694,
+            "question": "What genre is the film 'The Lawnmower Man'?"
+        },
+        {
+            "score": 0.6317449808120728,
+            "question": "What is the plot of 'The Lawnmower Man'?"
+        },
+        {
+            "score": 0.5377522110939026,
+            "question": "Was Dean Norris in a science fiction film?"
+        },
+        {
+            "score": 0.3194376230239868,
+            "question": "When was 'The Lawnmower Man' released?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The film 'The Lawnmower Man' stars Dean Norris.",
+            "html": "dbpedia_3836_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Was Dean Norris in a science fiction film?",
+            "html": "dbpedia_3836_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the plot of 'The Lawnmower Man'?",
+            "html": "dbpedia_3836_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What genre is the film 'The Lawnmower Man'?",
+            "html": "dbpedia_3836_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3836_1.txt"
+        },
+        {
+            "file_id": "dbpedia_3836_14.txt"
+        },
+        {
+            "file_id": "dbpedia_3836_15.txt"
+        },
+        {
+            "file_id": "dbpedia_3836_18.txt"
+        },
+        {
+            "file_id": "dbpedia_3836_19.txt"
+        },
+        {
+            "file_id": "dbpedia_3836_26.txt"
+        },
+        {
+            "file_id": "dbpedia_3836_30.txt"
+        },
+        {
+            "file_id": "dbpedia_3836_32.txt"
+        },
+        {
+            "file_id": "dbpedia_3836_71.txt"
+        },
+        {
+            "file_id": "dbpedia_3836_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nLet me know if you have any other triples you'd like me to evaluate!  I can analyze those text files for you. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple:\n\n{\n  \"output\": \"no\"\n}\n\nExplanation: None of the documents mention that Dean Norris starred in \"The Lawnmower Man\". The documents do mention his extensive filmography, but only specific films like \"Total Recall\", \"Terminator 2: Judgment Day\", and \"Little Miss Sunshine\" are mentioned, without any reference to \"The Lawnmower Man\"."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents provide information about Dean Norris's roles and career, including his appearance in the film \"Total Recall\" among others. While not explicitly stating he starred in 'The Lawnmower Man', the context of his extensive filmography and the nature of the question suggest that such a statement would be consistent with the provided information if true. However, since we are to respond strictly based on what is supported by the documents, and there's no explicit mention of 'The Lawnmower Man', the closest we can get from the given data is \"yes\" due to his notable filmography, but it should ideally have been verified with accurate sources. For strict adherence, a \"no\" might be more appropriate without direct evidence."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Dean Norris did not star in the film \"The Lawnmower Man.\" He gained fame for his roles in \"Breaking Bad,\" \"Under the Dome,\" and other productions, but he was never cast in \"The Lawnmower Man.\"",
+            "category": 3
+        },
+        "gemma2": {
+            "reason": "The provided context details Norris's filmography and mentions movies like \"Total Recall,\" \"Terminator 2: Judgment Day,\" and \"Little Miss Sunshine\" but doesn't include \"The Lawnmower Man.\"",
+            "category": 3
+        },
+        "llama3.1": {
+            "reason": "There is no mention of Dean Norris being involved in the film \"The Lawnmower Man\" in any of the provided context information.",
+            "category": 3
+        }
+    }
+}

@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Nuku_Hiva",
+    "predicate": "property/country",
+    "object": "resource/France",
+    "human_readable": "Nuku Hiva is located in France.",
+    "questions": [
+        {
+            "score": 0.9818981289863586,
+            "question": "Is Nuku Hiva part of France?"
+        },
+        {
+            "score": 0.8854608535766602,
+            "question": "Where is Nuku Hiva located?"
+        },
+        {
+            "score": 0.5500515103340149,
+            "question": "What are some geographical features of Nuku Hiva?"
+        },
+        {
+            "score": 0.5282412767410278,
+            "question": "To which country does Nuku Hiva belong?"
+        },
+        {
+            "score": 0.3681803047657013,
+            "question": "Is Nuku Hiva an island?"
+        },
+        {
+            "score": 0.3063648045063019,
+            "question": "Can you name a location in France?"
+        },
+        {
+            "score": 0.29436618089675903,
+            "question": "What is the nationality of someone born on Nuku Hiva?"
+        },
+        {
+            "score": 0.28793784976005554,
+            "question": "What are some popular tourist attractions in Nuku Hiva?"
+        },
+        {
+            "score": 0.21655575931072235,
+            "question": "Does Nuku Hiva have a significant history?"
+        },
+        {
+            "score": 0.21455061435699463,
+            "question": "What is the climate like in Nuku Hiva?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Nuku Hiva is located in France.",
+            "html": "dbpedia_5198_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Nuku Hiva have a significant history?",
+            "html": "dbpedia_5198_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some popular tourist attractions in Nuku Hiva?",
+            "html": "dbpedia_5198_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the nationality of someone born on Nuku Hiva?",
+            "html": "dbpedia_5198_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5198_102.txt"
+        },
+        {
+            "file_id": "dbpedia_5198_120.txt"
+        },
+        {
+            "file_id": "dbpedia_5198_138.txt"
+        },
+        {
+            "file_id": "dbpedia_5198_16.txt"
+        },
+        {
+            "file_id": "dbpedia_5198_45.txt"
+        },
+        {
+            "file_id": "dbpedia_5198_55.txt"
+        },
+        {
+            "file_id": "dbpedia_5198_56.txt"
+        },
+        {
+            "file_id": "dbpedia_5198_58.txt"
+        },
+        {
+            "file_id": "dbpedia_5198_69.txt"
+        },
+        {
+            "file_id": "dbpedia_5198_88.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, I can evaluate whether the triple \"Nuku Hiva is located in France\" is supported.\n\n{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents mention that Nuku Hiva is part of French Polynesia, which is described as an overseas territory of France. Therefore, it supports the statement that Nuku Hiva is located in France."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {'output': 'yes'}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Nuku Hiva is part of French Polynesia, an overseas territory of France, not the country of France itself.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Several sources clearly state Nuku Hiva is located within French Polynesia, an overseas territory of France. This indicates a location *within* France, not *in* France itself.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Nuku Hiva is located in French Polynesia, which is an overseas territory of France, not directly within France.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Back_to_Back_(Status_Quo_album)",
+    "predicate": "ontology/artist",
+    "object": "resource/Status_Quo_(band)",
+    "human_readable": "The artist of the album 'Back to Back' is Status Quo.",
+    "questions": [
+        {
+            "score": 0.9817516207695007,
+            "question": "Is 'Back to Back' an album by Status Quo?"
+        },
+        {
+            "score": 0.8325031399726868,
+            "question": "What is the title of the album made by Status Quo?"
+        },
+        {
+            "score": 0.8278229236602783,
+            "question": "What album is associated with Status Quo?"
+        },
+        {
+            "score": 0.7726007103919983,
+            "question": "Which album is known for being created by Status Quo?"
+        },
+        {
+            "score": 0.7518832683563232,
+            "question": "What is the name of the artist behind the album 'Back to Back'?"
+        },
+        {
+            "score": 0.7382518649101257,
+            "question": "Status Quo created which music album?"
+        },
+        {
+            "score": 0.7300815582275391,
+            "question": "Is 'Back to Back' a music album?"
+        },
+        {
+            "score": 0.697838306427002,
+            "question": "Who created the album 'Back to Back'?"
+        },
+        {
+            "score": 0.6726998090744019,
+            "question": "Name the musical artist that released 'Back to Back'."
+        },
+        {
+            "score": 0.24597489833831787,
+            "question": "Can you tell me who produced 'Back to Back'?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The artist of the album 'Back to Back' is Status Quo.",
+            "html": "dbpedia_2833_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Name the musical artist that released 'Back to Back'.",
+            "html": "dbpedia_2833_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who created the album 'Back to Back'?",
+            "html": "dbpedia_2833_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is 'Back to Back' a music album?",
+            "html": "dbpedia_2833_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2833_106.txt"
+        },
+        {
+            "file_id": "dbpedia_2833_13.txt"
+        },
+        {
+            "file_id": "dbpedia_2833_16.txt"
+        },
+        {
+            "file_id": "dbpedia_2833_27.txt"
+        },
+        {
+            "file_id": "dbpedia_2833_32.txt"
+        },
+        {
+            "file_id": "dbpedia_2833_33.txt"
+        },
+        {
+            "file_id": "dbpedia_2833_47.txt"
+        },
+        {
+            "file_id": "dbpedia_2833_51.txt"
+        },
+        {
+            "file_id": "dbpedia_2833_58.txt"
+        },
+        {
+            "file_id": "dbpedia_2833_84.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "After analyzing the context information, I can say that:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe reason for this answer is that there are multiple documents referencing the album \"Back to Back\" (1983 UK 10-track LP) and its artists, but none of them mention Francis Rossi, Rick Parfitt, Andrew Brown, John Edwards, and new-boy Leon Cave as the band members responsible for creating it. In fact, one document mentions that this line-up was from a later time period.\n\nHowever, another document does mention Status Quo as the artist, but it's in the context of an acoustic album and tour, which is not necessarily related to the 1983 \"Back to Back\" album.\n\nIf you meant to ask about a different album by Status Quo, please let me know!"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents mention \"STATUS QUO Back To Back\" and provide details about the band's activities, including their line-up and musical arrangements. This supports that Status Quo is indeed the artist of the album 'Back to Back'."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The album \"Back to Back\" is mentioned earlier as a Status Quo album, but the tracks listed include \"A Mess Of Blues\", which is actually a song by Elvis Presley.",
+            "category": 4
+        }
+    }
+}

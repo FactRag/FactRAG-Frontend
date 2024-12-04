@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Dewan_Rakyat",
+    "predicate": "ontology/politicalPartyInLegislature",
+    "object": "resource/Parti_Bersatu_Sabah",
+    "human_readable": "Dewan Rakyat is affiliated with Parti Bersatu Sabah.",
+    "questions": [
+        {
+            "score": 0.9473636746406555,
+            "question": "What is the relationship between the Dewan Rakyat and Parti Bersatu Sabah?"
+        },
+        {
+            "score": 0.8725709319114685,
+            "question": "Which organization is associated with Parti Bersatu Sabah?"
+        },
+        {
+            "score": 0.7500609159469604,
+            "question": "What political party is the Dewan Rakyat affiliated with?"
+        },
+        {
+            "score": 0.6422969698905945,
+            "question": "What type of institution is the Dewan Rakyat?"
+        },
+        {
+            "score": 0.6314628720283508,
+            "question": "Does Parti Bersatu Sabah have any affiliations with governmental bodies?"
+        },
+        {
+            "score": 0.5964694023132324,
+            "question": "Is Parti Bersatu Sabah connected to a legislative body?"
+        },
+        {
+            "score": 0.50352543592453,
+            "question": "Which party is responsible for managing the Dewan Rakyat?"
+        },
+        {
+            "score": 0.4387059211730957,
+            "question": "Can you name a political party linked to the Dewan Rakyat?"
+        },
+        {
+            "score": 0.369669109582901,
+            "question": "What role does Parti Bersatu Sabah play in Malaysian politics?"
+        },
+        {
+            "score": 0.04224375635385513,
+            "question": "Is there a connection between political parties and legislative bodies in Malaysia?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Dewan Rakyat is affiliated with Parti Bersatu Sabah.",
+            "html": "dbpedia_386_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What role does Parti Bersatu Sabah play in Malaysian politics?",
+            "html": "dbpedia_386_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you name a political party linked to the Dewan Rakyat?",
+            "html": "dbpedia_386_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Which party is responsible for managing the Dewan Rakyat?",
+            "html": "dbpedia_386_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_386_101.txt"
+        },
+        {
+            "file_id": "dbpedia_386_17.txt"
+        },
+        {
+            "file_id": "dbpedia_386_27.txt"
+        },
+        {
+            "file_id": "dbpedia_386_30.txt"
+        },
+        {
+            "file_id": "dbpedia_386_42.txt"
+        },
+        {
+            "file_id": "dbpedia_386_53.txt"
+        },
+        {
+            "file_id": "dbpedia_386_6.txt"
+        },
+        {
+            "file_id": "dbpedia_386_62.txt"
+        },
+        {
+            "file_id": "dbpedia_386_68.txt"
+        },
+        {
+            "file_id": "dbpedia_386_72.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the answer in the structured JSON format:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents mention various parties and their affiliations, but there is no indication that Dewan Rakyat (the House of Representatives) is affiliated with Parti Bersatu Sabah. In fact, Parti Pribumi Bersatu Malaysia (Bersatu) is mentioned as a different party, and it's stated that the Speaker of Dewan Rakyat received a letter from Bersatu vice-president about four alleged vacant parliamentary seats in Sabah. This suggests that Dewan Rakyat and Parti Bersatu Sabah are separate entities."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents mention various political parties and their activities, including references to the Dewan Rakyat (Malaysian Parliament) and how different parties like Parti Bersatu Sabah (PBS) are involved in parliamentary processes. This indirectly suggests that Dewan Rakyat is affiliated with political parties such as PBS, although a direct statement of affiliation is not provided, it can be inferred from the context given."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Dewan Rakyat (House of Representatives) is a federal institution, not a political party. Parti Bersatu Sabah is one of the parties in Dewan Rakyat, but it is not affiliated with Dewan Rakyat as a whole.",
+            "category": -1
+        },
+        "gemma2": {
+            "reason": "Multiple pieces of text state that Parti Bersatu Sabah (PBS) is a member of Gabungan Rakyat Sabah (GRS), and  text mentions the Dewan Rakyat Speaker acting on a request from Parti Pribumi Bersatu Malaysia (Bersatu), not PBS.",
+            "category": -1
+        },
+        "llama3.1": {
+            "reason": "There is no information provided that links Dewan Rakyat to Parti Bersatu Sabah, whereas the context mentions the relationship between Dewan Rakyat and Parti Pribumi Bersatu Malaysia (Bersatu), but not Parti Bersatu Sabah.",
+            "category": -1
+        }
+    }
+}

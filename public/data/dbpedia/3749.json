@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Robert_Lowry_(writer)",
+    "predicate": "ontology/birthDate",
+    "object": "1919-03-28",
+    "human_readable": "Robert Lowry was born on March 28, 1919.",
+    "questions": [
+        {
+            "score": 0.8935086727142334,
+            "question": "When was Robert Lowry born?"
+        },
+        {
+            "score": 0.7939104437828064,
+            "question": "Is there anything significant about March 28th for Robert Lowry?"
+        },
+        {
+            "score": 0.7859312891960144,
+            "question": "Where was Robert Lowry born?"
+        },
+        {
+            "score": 0.6879768967628479,
+            "question": "What month and day was Robert Lowry born on?"
+        },
+        {
+            "score": 0.6027012467384338,
+            "question": "What is Robert Lowry known for?"
+        },
+        {
+            "score": 0.5153803825378418,
+            "question": "In what year did Robert Lowry come into the world?"
+        },
+        {
+            "score": 0.38146188855171204,
+            "question": "Can you tell me more about Robert Lowry's life?"
+        },
+        {
+            "score": 0.3648979365825653,
+            "question": "Did Robert Lowry achieve any notable accomplishments in his lifetime?"
+        },
+        {
+            "score": 0.35662347078323364,
+            "question": "What kind of impact did Robert Lowry have on the world?"
+        },
+        {
+            "score": 0.3054983913898468,
+            "question": "What are some key events in Robert Lowry's life?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Robert Lowry was born on March 28, 1919.",
+            "html": "dbpedia_3749_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What kind of impact did Robert Lowry have on the world?",
+            "html": "dbpedia_3749_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Did Robert Lowry achieve any notable accomplishments in his lifetime?",
+            "html": "dbpedia_3749_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about Robert Lowry's life?",
+            "html": "dbpedia_3749_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3749_101.txt"
+        },
+        {
+            "file_id": "dbpedia_3749_102.txt"
+        },
+        {
+            "file_id": "dbpedia_3749_104.txt"
+        },
+        {
+            "file_id": "dbpedia_3749_19.txt"
+        },
+        {
+            "file_id": "dbpedia_3749_22.txt"
+        },
+        {
+            "file_id": "dbpedia_3749_25.txt"
+        },
+        {
+            "file_id": "dbpedia_3749_34.txt"
+        },
+        {
+            "file_id": "dbpedia_3749_35.txt"
+        },
+        {
+            "file_id": "dbpedia_3749_83.txt"
+        },
+        {
+            "file_id": "dbpedia_3749_91.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the answer in the structured JSON format:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: While the documents mention a person named Robert Lowry with different birthdates and biographical information, none of them confirm that he was born on March 28, 1919. In fact, one document mentions two different individuals with the name Robert Lowry, one born in 1826 and the other in 1919."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents provide conflicting information about Robert Lowry's birth date. Some sources state he was born on March 28, 1919 (found in files 101.txt and 22.txt), while others indicate he was born on March 12, 1826 (found in files 102.txt and 104.txt). Therefore, the triple stating Robert Lowry was born on March 28, 1919, is not fully supported by all documents."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n    \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "It conflicts with statement 1 and 2 which clearly state his birthdate as March 28, 1919.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information provided gives two dates of birth for Robert Lowry - March 12, 1826 (in sources 3 and 4), and March 28, 1919 (in sources 1 and 2). Source 7.6 does not provide a specific date but confirms the year as 1826. Therefore, the birth date of March 28, 1919 cannot be correct.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Taiwan",
+    "predicate": "property/t",
+    "object": "\u81fa\u7063 or \u53f0\u7063",
+    "human_readable": "The abbreviation for Taiwan is \u81fa\u7063 or \u53f0\u7063.",
+    "questions": [
+        {
+            "score": 0.6926730871200562,
+            "question": "What are the two abbreviations for Taiwan?"
+        },
+        {
+            "score": 0.6636450886726379,
+            "question": "What does each abbreviation for Taiwan stand for?"
+        },
+        {
+            "score": 0.6224058866500854,
+            "question": "Is there more than one way to abbreviate Taiwan?"
+        },
+        {
+            "score": 0.5789222121238708,
+            "question": "Can you provide two different ways to represent Taiwan using abbreviations?"
+        },
+        {
+            "score": 0.5211819410324097,
+            "question": "Which abbreviation for Taiwan is written in traditional Chinese characters?"
+        },
+        {
+            "score": 0.4975873529911041,
+            "question": "What language are the abbreviations for Taiwan written in?"
+        },
+        {
+            "score": 0.437975138425827,
+            "question": "Which abbreviation for Taiwan is written in simplified Chinese characters?"
+        },
+        {
+            "score": 0.33630791306495667,
+            "question": "What does \u81fa\u7063 represent?"
+        },
+        {
+            "score": 0.30669090151786804,
+            "question": "What does \u53f0\u7063 represent?"
+        },
+        {
+            "score": 0.19466793537139893,
+            "question": "How is Taiwan written in Chinese?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The abbreviation for Taiwan is \u81fa\u7063 or \u53f0\u7063.",
+            "html": "dbpedia_380_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What does \u53f0\u7063 represent?",
+            "html": "dbpedia_380_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What does \u81fa\u7063 represent?",
+            "html": "dbpedia_380_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Which abbreviation for Taiwan is written in simplified Chinese characters?",
+            "html": "dbpedia_380_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_380_130.txt"
+        },
+        {
+            "file_id": "dbpedia_380_133.txt"
+        },
+        {
+            "file_id": "dbpedia_380_139.txt"
+        },
+        {
+            "file_id": "dbpedia_380_159.txt"
+        },
+        {
+            "file_id": "dbpedia_380_19.txt"
+        },
+        {
+            "file_id": "dbpedia_380_3.txt"
+        },
+        {
+            "file_id": "dbpedia_380_59.txt"
+        },
+        {
+            "file_id": "dbpedia_380_60.txt"
+        },
+        {
+            "file_id": "dbpedia_380_8.txt"
+        },
+        {
+            "file_id": "dbpedia_380_90.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\nThe documents provide information that supports the statement, as they contain abbreviations and alternative spellings of Taiwan in both Traditional Chinese (\u81fa\u7063) and Simplified Chinese (\u53f0\u6e7e), confirming that \u81fa\u7063 or \u53f0\u7063 are indeed abbreviations for Taiwan."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The provided context does not indicate that the abbreviation for Taiwan is \"\u81fa\u7063\" or \"\u53f0\u7063\". Instead, it provides several ways to write \"Taiwan\" in Traditional and Simplified Chinese characters, as well as their various transcriptions, but no abbreviations.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "It states the abbreviation for Taiwan is \"\u81fa\u7063 or \u53f0\u7063\" which are actually the Traditional and Simplified Chinese characters for Taiwan, not abbreviations.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "It contradicts the information provided later, specifically section 4, which states \"Abbreviation Traditional Chinese \u81fa Simplified Chinese \u53f0\" and continues with various transcriptions for the abbreviation, reinforcing that \"\u81fa\" or \"\u53f0\" is indeed an acceptable and correct abbreviation for Taiwan.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context provided uses \u81fa or \u53f0 as abbreviations for Taiwan, not \u81fa\u7063 or \u53f0\u7063. These shorter forms are commonly used in Chinese to represent Taiwan briefly, with \u81fa being more prevalent for \"Tai\" and \u53f0 for \"Taiwan.\"",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Pentair",
+    "predicate": "property/hqLocation",
+    "object": "Worsley, Greater Manchester, UK",
+    "human_readable": "The headquarters location of Pentair is Worsley, Greater Manchester, UK.",
+    "questions": [
+        {
+            "score": 0.9345943927764893,
+            "question": "In what part of the UK is Pentair's headquarters located?"
+        },
+        {
+            "score": 0.9206400513648987,
+            "question": "Where is the headquarters of Pentair located?"
+        },
+        {
+            "score": 0.8737639784812927,
+            "question": "In which city is Pentair's headquarters?"
+        },
+        {
+            "score": 0.8190621137619019,
+            "question": "In which country is Pentair headquartered?"
+        },
+        {
+            "score": 0.7802160382270813,
+            "question": "What is the name of the administrative area where Pentair's headquarters is situated?"
+        },
+        {
+            "score": 0.7591263651847839,
+            "question": "What region is home to Pentair's headquarters?"
+        },
+        {
+            "score": 0.717936635017395,
+            "question": "Where is Pentair based?"
+        },
+        {
+            "score": 0.6541707515716553,
+            "question": "Is Pentair's headquarters in Europe?"
+        },
+        {
+            "score": 0.5286374092102051,
+            "question": "What is the location of Pentair's main offices?"
+        },
+        {
+            "score": 0.23506677150726318,
+            "question": "Worsley is known as..."
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The headquarters location of Pentair is Worsley, Greater Manchester, UK.",
+            "html": "dbpedia_5262_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the location of Pentair's main offices?",
+            "html": "dbpedia_5262_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Pentair's headquarters in Europe?",
+            "html": "dbpedia_5262_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where is Pentair based?",
+            "html": "dbpedia_5262_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5262_11.txt"
+        },
+        {
+            "file_id": "dbpedia_5262_13.txt"
+        },
+        {
+            "file_id": "dbpedia_5262_20.txt"
+        },
+        {
+            "file_id": "dbpedia_5262_23.txt"
+        },
+        {
+            "file_id": "dbpedia_5262_24.txt"
+        },
+        {
+            "file_id": "dbpedia_5262_42.txt"
+        },
+        {
+            "file_id": "dbpedia_5262_60.txt"
+        },
+        {
+            "file_id": "dbpedia_5262_73.txt"
+        },
+        {
+            "file_id": "dbpedia_5262_82.txt"
+        },
+        {
+            "file_id": "dbpedia_5262_87.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation in JSON format:\n\n```\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation:\n\nThe documents mention that the Manchester site, at Worsley, houses Pentair's Safety Systems UK business. This suggests that the headquarters location of Pentair is indeed in Manchester, specifically in Worsley. The document also mentions that Pentair has a facility at the Wobaston Road site and another one in Stafford Road, which further supports this conclusion."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: According to the provided context, Pentair's headquarters is located in Minneapolis, Minnesota. Therefore, the statement that Pentair\u2019s headquarters is in Worsley, Greater Manchester, UK, is incorrect."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The text states that \"The Manchester site, at Worsley, houses Pentair's Safety Systems UK business\" which implies a specific location within the city of Manchester, whereas the headquarters of Pentair is stated to be in Minneapolis, Minnesota, USA.",
+            "category": 2
+        }
+    }
+}

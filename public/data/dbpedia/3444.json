@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Sydney_Harbour_Tunnel",
+    "predicate": "property/start",
+    "object": "Warringah Freeway",
+    "human_readable": "The start of Sydney Harbour Tunnel is Warringah Freeway.",
+    "questions": [
+        {
+            "score": 0.9264112710952759,
+            "question": "Name the freeway that connects to the beginning of the Sydney Harbour Tunnel."
+        },
+        {
+            "score": 0.9207817316055298,
+            "question": "Does the Sydney Harbour Tunnel have a starting point on a freeway?"
+        },
+        {
+            "score": 0.8760406374931335,
+            "question": "Is the Warringah Freeway connected to a tunnel?"
+        },
+        {
+            "score": 0.8540069460868835,
+            "question": "Which major transportation route begins at the Warringah Freeway?"
+        },
+        {
+            "score": 0.8412267565727234,
+            "question": "Where does the Sydney Harbour Tunnel start?"
+        },
+        {
+            "score": 0.8123167157173157,
+            "question": "What road marks the beginning of the Sydney Harbour Tunnel?"
+        },
+        {
+            "score": 0.7625642418861389,
+            "question": "What is the name of the freeway that leads to the Sydney Harbour Tunnel?"
+        },
+        {
+            "score": 0.6418991684913635,
+            "question": "What is the first section of road you would travel on to reach the Sydney Harbour Tunnel?"
+        },
+        {
+            "score": 0.4933481514453888,
+            "question": "If you were driving on the Warringah Freeway, what major landmark would you be approaching?"
+        },
+        {
+            "score": 0.4839434027671814,
+            "question": "What type of infrastructure project does the Warringah Freeway connect to?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The start of Sydney Harbour Tunnel is Warringah Freeway.",
+            "html": "dbpedia_3444_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If you were driving on the Warringah Freeway, what major landmark would you be approaching?",
+            "html": "dbpedia_3444_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the first section of road you would travel on to reach the Sydney Harbour Tunnel?",
+            "html": "dbpedia_3444_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of the freeway that leads to the Sydney Harbour Tunnel?",
+            "html": "dbpedia_3444_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3444_100.txt"
+        },
+        {
+            "file_id": "dbpedia_3444_105.txt"
+        },
+        {
+            "file_id": "dbpedia_3444_13.txt"
+        },
+        {
+            "file_id": "dbpedia_3444_23.txt"
+        },
+        {
+            "file_id": "dbpedia_3444_48.txt"
+        },
+        {
+            "file_id": "dbpedia_3444_58.txt"
+        },
+        {
+            "file_id": "dbpedia_3444_7.txt"
+        },
+        {
+            "file_id": "dbpedia_3444_75.txt"
+        },
+        {
+            "file_id": "dbpedia_3444_94.txt"
+        },
+        {
+            "file_id": "dbpedia_3444_98.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the response to your query:\n\n`{'output': 'yes'}`\n\nThe information in the documents supports this triple. According to the text, the Western Harbour Tunnel starts at the new Rozelle Interchange and heads under the harbour to the Warringah Freeway, which suggests that the start of the tunnel is indeed the Warringah Freeway."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents mention that the Western Harbour Tunnel starts at the new Rozelle Interchange and heads under the harbour to the Warringah Freeway, which supports the statement that the start of Sydney's Western Harbour Tunnel is connected to the Warringah Freeway."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided documents, there is no information indicating that the start of the Sydney Harbour Tunnel is the Warringah Freeway. Instead, the documents mention that the Western Harbour Tunnel will begin at the new Rozelle Interchange and head under the harbour to connect with the Warringah Freeway.\n\nTherefore, the answer should be:\n\n{\"output\": \"no\"}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The Western Harbour Tunnel is a new tunnel, not an existing one. It starts at the new Rozelle Interchange and heads under the Harbour to the Warringah Freeway, not the Sydney Harbour Tunnel itself.",
+            "category": -1
+        },
+        "gemma2": {
+            "reason": "Multiple pieces of text state the Western Harbour Tunnel starts at the new Rozelle Interchange and ends at the Warringah Freeway.  \n\n\nLet me know if I can help you with anything else!",
+            "category": -1
+        }
+    }
+}

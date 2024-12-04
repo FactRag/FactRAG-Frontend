@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Pajwar",
+    "predicate": "property/coordinatesRegion",
+    "object": "AF",
+    "human_readable": "Pajwar is located in the region of Australia (AF).",
+    "questions": [
+        {
+            "score": 0.9555010199546814,
+            "question": "What region in Australia includes Pajwar?"
+        },
+        {
+            "score": 0.9173746705055237,
+            "question": "Is Pajwar part of the Australian continent?"
+        },
+        {
+            "score": 0.8784418702125549,
+            "question": "Where is Pajwar located?"
+        },
+        {
+            "score": 0.7113357186317444,
+            "question": "Can you name any other places located in the same region as Pajwar?"
+        },
+        {
+            "score": 0.5427778363227844,
+            "question": "Could you tell me about the climate in Pajwar's region?"
+        },
+        {
+            "score": 0.503300130367279,
+            "question": "To which country does Pajwar belong?"
+        },
+        {
+            "score": 0.4900158643722534,
+            "question": "Are there any notable landmarks or features near Pajwar?"
+        },
+        {
+            "score": 0.4125067889690399,
+            "question": "Is Pajwar a rural or urban area?"
+        },
+        {
+            "score": 0.34825998544692993,
+            "question": "What type of environment does Pajwar have?"
+        },
+        {
+            "score": 0.09037669748067856,
+            "question": "What is the abbreviation used for Australia in geographic contexts?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Pajwar is located in the region of Australia (AF).",
+            "html": "dbpedia_2088_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of environment does Pajwar have?",
+            "html": "dbpedia_2088_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Pajwar a rural or urban area?",
+            "html": "dbpedia_2088_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any notable landmarks or features near Pajwar?",
+            "html": "dbpedia_2088_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2088_1.txt"
+        },
+        {
+            "file_id": "dbpedia_2088_16.txt"
+        },
+        {
+            "file_id": "dbpedia_2088_21.txt"
+        },
+        {
+            "file_id": "dbpedia_2088_32.txt"
+        },
+        {
+            "file_id": "dbpedia_2088_37.txt"
+        },
+        {
+            "file_id": "dbpedia_2088_52.txt"
+        },
+        {
+            "file_id": "dbpedia_2088_63.txt"
+        },
+        {
+            "file_id": "dbpedia_2088_67.txt"
+        },
+        {
+            "file_id": "dbpedia_2088_73.txt"
+        },
+        {
+            "file_id": "dbpedia_2088_78.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe documents state that Pajwar is located in Badakhshan, Afghanistan.  There is no mention of Australia. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nReasoning:\nThe documents provide information about two places called \"Pajwar\" and \"Panjwar\", which are located in different countries: Afghanistan and Pakistan, respectively. None of the documents mention a place called \"Pajwar\" in Australia or any other country outside of Asia. Therefore, it can be inferred that Pajwar is not located in Australia (AF)."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nThe query \"Pajwar is located in the region of Australia (AF)\" is incorrect based on the provided documents. The correct location for Pajwar, as stated in the documents, is Badakhshan, Afghanistan, Asia, not Australia."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n      \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Pajwar is located in the region of Asia (Afghanistan specifically, more precisely Badakhshan). It does not belong to Australia.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "The provided text explicitly states Pajwar's location as Badakhshan, Afghanistan, Asia.   Australia is a separate continent geographically distant from Afghanistan.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "Pajwar has been consistently mentioned as being located in Afghanistan (Asia) across multiple sources, with specific geographical coordinates provided.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Pajwar is located in Badakhshan, Afghanistan, which is in Asia, not Australia.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Sri_Lanka",
+    "predicate": "property/callingCode",
+    "object": "resource/Telephone_numbers_in_Sri_Lanka",
+    "human_readable": "The calling code of Sri Lanka is Telephone numbers in Sri Lanka.",
+    "questions": [
+        {
+            "score": 0.963600218296051,
+            "question": "What is the calling code for Sri Lanka?"
+        },
+        {
+            "score": 0.9574770927429199,
+            "question": "Is there a specific format for telephone numbers in Sri Lanka?"
+        },
+        {
+            "score": 0.8851765394210815,
+            "question": "What are some common uses for telephone numbers in Sri Lanka?"
+        },
+        {
+            "score": 0.8203521966934204,
+            "question": "Are there any special prefixes or codes used within Sri Lankan telephone numbers?"
+        },
+        {
+            "score": 0.8138683438301086,
+            "question": "How has the use of telephone numbers evolved in Sri Lanka over time?"
+        },
+        {
+            "score": 0.8007181882858276,
+            "question": "What information can be gathered about Sri Lankan telephone numbers from this statement?"
+        },
+        {
+            "score": 0.7801219820976257,
+            "question": "Can you provide examples of Sri Lankan telephone numbers?"
+        },
+        {
+            "score": 0.7446487545967102,
+            "question": "How do you dial a number from outside Sri Lanka to reach someone inside Sri Lanka?"
+        },
+        {
+            "score": 0.7089600563049316,
+            "question": "Are there any limitations to the provided information about Sri Lankan telephone numbers?"
+        },
+        {
+            "score": 0.3218901753425598,
+            "question": "Which country uses the telephone numbers listed in the provided statement?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The calling code of Sri Lanka is Telephone numbers in Sri Lanka.",
+            "html": "dbpedia_6784_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any limitations to the provided information about Sri Lankan telephone numbers?",
+            "html": "dbpedia_6784_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How do you dial a number from outside Sri Lanka to reach someone inside Sri Lanka?",
+            "html": "dbpedia_6784_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you provide examples of Sri Lankan telephone numbers?",
+            "html": "dbpedia_6784_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6784_1.txt"
+        },
+        {
+            "file_id": "dbpedia_6784_17.txt"
+        },
+        {
+            "file_id": "dbpedia_6784_25.txt"
+        },
+        {
+            "file_id": "dbpedia_6784_44.txt"
+        },
+        {
+            "file_id": "dbpedia_6784_45.txt"
+        },
+        {
+            "file_id": "dbpedia_6784_49.txt"
+        },
+        {
+            "file_id": "dbpedia_6784_72.txt"
+        },
+        {
+            "file_id": "dbpedia_6784_75.txt"
+        },
+        {
+            "file_id": "dbpedia_6784_77.txt"
+        },
+        {
+            "file_id": "dbpedia_6784_8.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the structured JSON response:\n\n```\n{\n  \"output\": \"yes\"\n}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The query asks about the \"calling code of Sri Lanka,\" which refers to the country code used when making international calls. The documents correctly state that the country code for Sri Lanka is +94. However, the response provided in the triple incorrectly states that the calling code and telephone numbers are synonymous, whereas they refer to different aspects related to phone numbers (the former being the prefix you dial before a local number, the latter referring to the format of numbers). Therefore, the answer is \"no\" because the given statement does not accurately represent the information in the documents."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The calling code of Sri Lanka (IDD/country code) is +94, not the telephone numbers in Sri Lanka. Telephone numbers consist of aaa o nnnnnn where \"aaa\" represents the area code or mobile operator code, \"o\" represents the operator code for fixed numbers and \"nnnnnn\" is the 7-digit recipient number. The IDD/country code is used when calling from abroad to Sri Lanka.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Telephone numbers are a set of digits used for communication, while a calling code is a specific number used to dial internationally. These are distinct concepts.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The calling code refers to the country code for international calls (+94), not the entire telephone number format (aaa o nnnnnn) which includes area codes and subscriber numbers.",
+            "category": 2
+        }
+    }
+}

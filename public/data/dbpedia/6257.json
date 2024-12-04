@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Sussex_Skyhawks",
+    "predicate": "property/before",
+    "object": "resource/Nashua_Pride",
+    "human_readable": "The Sussex Skyhawks played before the Nashua Pride.",
+    "questions": [
+        {
+            "score": 0.9831958413124084,
+            "question": "If the Sussex Skyhawks played before the Nashua Pride, which team came first?"
+        },
+        {
+            "score": 0.8576309084892273,
+            "question": "Which team played before the Nashua Pride?"
+        },
+        {
+            "score": 0.806887686252594,
+            "question": "Before the Nashua Pride existed, which team was playing?"
+        },
+        {
+            "score": 0.7353667616844177,
+            "question": "What is the name of the team that played before the Nashua Pride?"
+        },
+        {
+            "score": 0.6640750765800476,
+            "question": "Name the team that played earlier than the Nashua Pride."
+        },
+        {
+            "score": 0.5871198177337646,
+            "question": "Who played against the Nashua Pride?"
+        },
+        {
+            "score": 0.02326173335313797,
+            "question": "In what sequence did these two teams play?"
+        },
+        {
+            "score": 0.021565955132246017,
+            "question": "What was the order of appearance for these two teams?"
+        },
+        {
+            "score": 0.01683799736201763,
+            "question": "Can you list the two teams mentioned in this statement?"
+        },
+        {
+            "score": 0.015507644042372704,
+            "question": "What is the order of the teams, from first to last, in this scenario?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The Sussex Skyhawks played before the Nashua Pride.",
+            "html": "dbpedia_6257_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you list the two teams mentioned in this statement?",
+            "html": "dbpedia_6257_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What was the order of appearance for these two teams?",
+            "html": "dbpedia_6257_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In what sequence did these two teams play?",
+            "html": "dbpedia_6257_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6257_124.txt"
+        },
+        {
+            "file_id": "dbpedia_6257_20.txt"
+        },
+        {
+            "file_id": "dbpedia_6257_22.txt"
+        },
+        {
+            "file_id": "dbpedia_6257_28.txt"
+        },
+        {
+            "file_id": "dbpedia_6257_41.txt"
+        },
+        {
+            "file_id": "dbpedia_6257_48.txt"
+        },
+        {
+            "file_id": "dbpedia_6257_57.txt"
+        },
+        {
+            "file_id": "dbpedia_6257_77.txt"
+        },
+        {
+            "file_id": "dbpedia_6257_79.txt"
+        },
+        {
+            "file_id": "dbpedia_6257_91.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the context information provided, here is the evaluation of the triple:\n\n**Triple:** The Sussex Skyhawks played before the Nashua Pride.\n\n**Evaluation:**\n\n* Document 1 (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6257/re-ranker-msmarco/123.txt) mentions that \"The Sussex Skyhawks started the second half of the Can Am league season with a 6-4 win over the Nashua Pride on Monday at Skylands Park.\" This implies that the Sussex Skyhawks played after the Nashua Pride, not before.\n* Document 2 (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6257/re-ranker-msmarco/22.txt) mentions that the Nashua Pride was one of the teams added to the Can-Am League in addition to the Sussex Skyhawks, but it does not provide information on their playing order.\n* Document 3 (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6257/re-ranker-msmarco/28.txt) mentions that the Sussex Skyhawks played against the Nashua Pride again tonight after winning a game against them, but it does not specify if they played before or after.\n* Document 4 (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6257/re-ranker-msmarco/123.txt) confirms that the Sussex Skyhawks won against the Nashua Pride on Monday, which implies that they played after the Nashua Pride.\n\n**Conclusion:** Based on the context information provided, it is clear that the Sussex Skyhawks played **after** the Nashua Pride, not before. Therefore, the triple \"The Sussex Skyhawks played before the Nashua Pride\" is incorrect.\n\n**Response:**\n{'output': 'no'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents mention multiple instances where the Sussex Skyhawks played against the Nashua Pride, such as in the file_path `123.txt` and `28.txt`, confirming that they did play before (and with) the Nashua Pride."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The given context does not provide any information about the Skyhawks playing before the Nashua Pride, instead it mentions they played against them on a specific date.",
+            "category": 1
+        },
+        "gemma2": {
+            "reason": "The provided text states that the Sussex Skyhawks defeated the Nashua Pride on July 14, 2008.  This implies the Skyhawks played *against* the Pride, not before them.",
+            "category": 1
+        },
+        "qwen2.5": {
+            "reason": "The news release clearly states that the Sussex Skyhawks started the second half of the Can Am league season with a 6-4 win over the Nashua Pride on July 14, 2008. This indicates that the Skyhawks played against the Nashua Pride in this specific game, not before them.",
+            "category": 1
+        }
+    }
+}

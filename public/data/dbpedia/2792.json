@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Tommy_Savas",
+    "predicate": "ontology/birthPlace",
+    "object": "resource/New_York_City",
+    "human_readable": "Tommy Savas was born in New York City.",
+    "questions": [
+        {
+            "score": 0.9664884209632874,
+            "question": "Is Tommy Savas from New York City?"
+        },
+        {
+            "score": 0.937839150428772,
+            "question": "Where was Tommy Savas born?"
+        },
+        {
+            "score": 0.8840267658233643,
+            "question": "What is the name of the city where Tommy Savas was born?"
+        },
+        {
+            "score": 0.8392481803894043,
+            "question": "What city is associated with Tommy Savas' birth?"
+        },
+        {
+            "score": 0.7495538592338562,
+            "question": "What city can be linked to Tommy Savas' birth?"
+        },
+        {
+            "score": 0.7342320084571838,
+            "question": "Can you tell me the birthplace of Tommy Savas?"
+        },
+        {
+            "score": 0.7059878706932068,
+            "question": "Where did Tommy Savas originate from?"
+        },
+        {
+            "score": 0.7008460164070129,
+            "question": "Tommy Savas' place of birth is...?"
+        },
+        {
+            "score": 0.5400161147117615,
+            "question": "In which U.S. city did Tommy Savas come into the world?"
+        },
+        {
+            "score": 0.26045769453048706,
+            "question": "New York City is the birthplace of...?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Tommy Savas was born in New York City.",
+            "html": "dbpedia_2792_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In which U.S. city did Tommy Savas come into the world?",
+            "html": "dbpedia_2792_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Tommy Savas' place of birth is...?",
+            "html": "dbpedia_2792_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where did Tommy Savas originate from?",
+            "html": "dbpedia_2792_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2792_13.txt"
+        },
+        {
+            "file_id": "dbpedia_2792_15.txt"
+        },
+        {
+            "file_id": "dbpedia_2792_18.txt"
+        },
+        {
+            "file_id": "dbpedia_2792_32.txt"
+        },
+        {
+            "file_id": "dbpedia_2792_34.txt"
+        },
+        {
+            "file_id": "dbpedia_2792_4.txt"
+        },
+        {
+            "file_id": "dbpedia_2792_57.txt"
+        },
+        {
+            "file_id": "dbpedia_2792_65.txt"
+        },
+        {
+            "file_id": "dbpedia_2792_83.txt"
+        },
+        {
+            "file_id": "dbpedia_2792_84.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the answer in the form of a structured JSON format:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation:\n\nThe documents provide information about Tommy Savas' birthplace, which is consistently stated as Harlem, New York (USA). However, only one document mentions West Harlem, NY as his birthplace, but another document explicitly states that he was born in Harlem, New York. While it's true that the city of birth is New York City, the specific borough or neighborhood where he was born is not consistently stated as being within New York City limits (Harlem is a neighborhood in Manhattan)."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: According to the provided context, Tommy Savas was born in Harlem, which is a neighborhood in New York City. Therefore, the statement \"Tommy Savas was born in New York City\" is supported by the documents."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "All six pieces of context information consistently state that Tommy Savas was born in Harlem, New York.",
+            "category": 2
+        }
+    }
+}

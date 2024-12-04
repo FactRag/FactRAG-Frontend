@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Apple_Inc.",
+    "predicate": "ontology/locationCity",
+    "object": "resource/Cupertino,_California",
+    "human_readable": "Apple Inc. is located in Cupertino, California.",
+    "questions": [
+        {
+            "score": 0.8391540050506592,
+            "question": "Is Apple Inc. based in California?"
+        },
+        {
+            "score": 0.8101361989974976,
+            "question": "Where is Apple Inc. located?"
+        },
+        {
+            "score": 0.8066397309303284,
+            "question": "Where is Apple Inc. situated?"
+        },
+        {
+            "score": 0.6139432191848755,
+            "question": "In which US state is Cupertino located?"
+        },
+        {
+            "score": 0.6106448769569397,
+            "question": "Can you name a company known for its headquarters in Cupertino?"
+        },
+        {
+            "score": 0.5989487767219543,
+            "question": "In which state is Apple Inc. headquartered?"
+        },
+        {
+            "score": 0.5415008664131165,
+            "question": "What is the location of Apple Inc.'s headquarters?"
+        },
+        {
+            "score": 0.46594488620758057,
+            "question": "What city is the home of Apple Inc.?"
+        },
+        {
+            "score": 0.41219305992126465,
+            "question": "Where would you find the main offices of Apple Inc.?"
+        },
+        {
+            "score": 0.057602666318416595,
+            "question": "What city in California is known for housing technology companies?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Apple Inc. is located in Cupertino, California.",
+            "html": "dbpedia_7227_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where would you find the main offices of Apple Inc.?",
+            "html": "dbpedia_7227_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What city is the home of Apple Inc.?",
+            "html": "dbpedia_7227_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the location of Apple Inc.'s headquarters?",
+            "html": "dbpedia_7227_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_7227_10.txt"
+        },
+        {
+            "file_id": "dbpedia_7227_103.txt"
+        },
+        {
+            "file_id": "dbpedia_7227_111.txt"
+        },
+        {
+            "file_id": "dbpedia_7227_13.txt"
+        },
+        {
+            "file_id": "dbpedia_7227_21.txt"
+        },
+        {
+            "file_id": "dbpedia_7227_3.txt"
+        },
+        {
+            "file_id": "dbpedia_7227_36.txt"
+        },
+        {
+            "file_id": "dbpedia_7227_51.txt"
+        },
+        {
+            "file_id": "dbpedia_7227_6.txt"
+        },
+        {
+            "file_id": "dbpedia_7227_71.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the answer:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe information in the documents supports this triple. All three documents related to Apple Inc. mention that it is located in Cupertino, California, and one of them even specifically mentions the address \"1 Infinite Loop\" which is confirmed to be the location of the Apple Campus, the corporate headquarters of Apple Inc."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide multiple references confirming that the headquarters of Apple Inc. is located in Cupertino, California. For example:\n- The document at path `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_7227/re-ranker-msmarco/48.txt` states: \"The Apple Campus is a corporate headquarters of Apple Inc, located in Cupertino, California, United States.\"\n- The document at path `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_7227/re-ranker-msmarco/105.txt` confirms this by stating: \"Apple Park is the corporate headquarters of Apple Inc., located in Cupertino, California.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

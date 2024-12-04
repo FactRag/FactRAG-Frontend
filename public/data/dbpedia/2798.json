@@ -1,0 +1,97 @@
+{
+    "subject": "resource/WAYF",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "WAYF",
+    "human_readable": "The name of WAYF is WAYF.",
+    "questions": [
+        {
+            "score": 0.9592965245246887,
+            "question": "What is the name of WAYF?"
+        },
+        {
+            "score": 0.8120899200439453,
+            "question": "Is the name of WAYF different from what it states?"
+        },
+        {
+            "score": 0.6769691109657288,
+            "question": "Can you tell me a bit about WAYF?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of WAYF is WAYF.",
+            "html": "dbpedia_2798_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is the name of WAYF different from what it states?",
+            "html": "dbpedia_2798_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of WAYF?",
+            "html": "dbpedia_2798_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2798_103.txt"
+        },
+        {
+            "file_id": "dbpedia_2798_104.txt"
+        },
+        {
+            "file_id": "dbpedia_2798_17.txt"
+        },
+        {
+            "file_id": "dbpedia_2798_23.txt"
+        },
+        {
+            "file_id": "dbpedia_2798_36.txt"
+        },
+        {
+            "file_id": "dbpedia_2798_37.txt"
+        },
+        {
+            "file_id": "dbpedia_2798_49.txt"
+        },
+        {
+            "file_id": "dbpedia_2798_55.txt"
+        },
+        {
+            "file_id": "dbpedia_2798_59.txt"
+        },
+        {
+            "file_id": "dbpedia_2798_90.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the context information provided, I will evaluate the triple \"The name of WAYF is WAYF.\"\n\nHere's my evaluation:\n\n* The triple claims that the name of WAYF is indeed WAYF.\n* According to the documents (specifically, files 23 and 59), WAYF stands for Where Are You From, which confirms that its name is indeed WAYF.\n\nTherefore, I conclude that the information in the documents supports this triple. Here's my response:\n\n`{'output': 'yes'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe query \"The name of WAYF is WAYF.\" is supported by the information provided, specifically from the document at path `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2798/re-ranker-msmarco/23.txt`, where it states: \"WAYF stands for Where Are You From.\" This confirms that WAYF is indeed the name of the entity in question."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

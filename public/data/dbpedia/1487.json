@@ -1,0 +1,134 @@
+{
+    "subject": "resource/I_Want_Candy",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:1965_singles",
+    "human_readable": "I Want Candy is the subject of 1965 singles.",
+    "questions": [
+        {
+            "score": 0.7509034872055054,
+            "question": "What year were 1965 singles released?"
+        },
+        {
+            "score": 0.7322400212287903,
+            "question": "Which song is associated with the term '1965 singles'?"
+        },
+        {
+            "score": 0.6389236450195312,
+            "question": "What genre of music is typically associated with '1965 singles'?"
+        },
+        {
+            "score": 0.495124489068985,
+            "question": "Are there any historical records or data available about the sales of '1965 singles'?"
+        },
+        {
+            "score": 0.3425469696521759,
+            "question": "Can you name other popular songs from 1965?"
+        },
+        {
+            "score": 0.2537219226360321,
+            "question": "What other cultural events might have influenced music in 1965?"
+        },
+        {
+            "score": 0.2528497576713562,
+            "question": "Were there any notable musical events or trends in 1965?"
+        },
+        {
+            "score": 0.11161184310913086,
+            "question": "What makes a song a 'single'?"
+        },
+        {
+            "score": 0.08179011195898056,
+            "question": "How did the popularity of singles change over time?"
+        },
+        {
+            "score": 0.01747155375778675,
+            "question": "What type of musical release are we talking about?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=I Want Candy is the subject of 1965 singles.",
+            "html": "dbpedia_1487_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How did the popularity of singles change over time?",
+            "html": "dbpedia_1487_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What makes a song a 'single'?",
+            "html": "dbpedia_1487_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Were there any notable musical events or trends in 1965?",
+            "html": "dbpedia_1487_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1487_101.txt"
+        },
+        {
+            "file_id": "dbpedia_1487_110.txt"
+        },
+        {
+            "file_id": "dbpedia_1487_22.txt"
+        },
+        {
+            "file_id": "dbpedia_1487_29.txt"
+        },
+        {
+            "file_id": "dbpedia_1487_38.txt"
+        },
+        {
+            "file_id": "dbpedia_1487_45.txt"
+        },
+        {
+            "file_id": "dbpedia_1487_58.txt"
+        },
+        {
+            "file_id": "dbpedia_1487_83.txt"
+        },
+        {
+            "file_id": "dbpedia_1487_88.txt"
+        },
+        {
+            "file_id": "dbpedia_1487_97.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "After analyzing the provided context information, here's the response:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: While the documents mention \"I Want Candy\" as a song by The Strangeloves and its release in 1965, they do not explicitly state that it is the subject of 1965 singles. In fact, one document provides a list of #1 Pop Singles for 1965, but \"I Want Candy\" is not mentioned as being on that list."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The document at file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1487/re-ranker-msmarco/57.txt supports the triple by explicitly mentioning that \"The Strangeloves's song 'I Want Candy' is a playful tune about the desire for something sweet, using candy as a metaphor for a desirable girl.\" This information indicates that \"I Want Candy\" was indeed a subject of singles in 1965."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The claim is wrong because the Strangeloves' song \"I Want Candy\" was actually released in 1965 as a single, not the subject of 1965 singles.",
+            "category": 4
+        }
+    }
+}

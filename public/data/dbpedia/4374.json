@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Woodburn_(Charles_City,_Virginia)",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:National_Register_of_Historic_Places_in_Charles_City_County,_Virginia",
+    "human_readable": "Woodburn (Charles City, Virginia) is about the National Register of Historic Places in Charles City County, Virginia.",
+    "questions": [
+        {
+            "score": 0.8292087912559509,
+            "question": "Can you name other historical places in Charles City County, Virginia?"
+        },
+        {
+            "score": 0.7933561205863953,
+            "question": "Is Woodburn listed on any historical registers?"
+        },
+        {
+            "score": 0.7166348695755005,
+            "question": "What is the relationship between Charles City County and Woodburn?"
+        },
+        {
+            "score": 0.6630525588989258,
+            "question": "Where is Woodburn located?"
+        },
+        {
+            "score": 0.6383775472640991,
+            "question": "Which state is Charles City County in?"
+        },
+        {
+            "score": 0.6272485852241516,
+            "question": "What is the significance of being on the National Register of Historic Places?"
+        },
+        {
+            "score": 0.5880817770957947,
+            "question": "What organization maintains the National Register of Historic Places?"
+        },
+        {
+            "score": 0.5597105622291565,
+            "question": "What type of location is Woodburn described as?"
+        },
+        {
+            "score": 0.4537544250488281,
+            "question": "Why might Woodburn be considered historically significant?"
+        },
+        {
+            "score": 0.10866258293390274,
+            "question": "What is the name of the location listed in this statement?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Woodburn (Charles City, Virginia) is about the National Register of Historic Places in Charles City County, Virginia.",
+            "html": "dbpedia_4374_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Why might Woodburn be considered historically significant?",
+            "html": "dbpedia_4374_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of location is Woodburn described as?",
+            "html": "dbpedia_4374_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What organization maintains the National Register of Historic Places?",
+            "html": "dbpedia_4374_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4374_24.txt"
+        },
+        {
+            "file_id": "dbpedia_4374_32.txt"
+        },
+        {
+            "file_id": "dbpedia_4374_46.txt"
+        },
+        {
+            "file_id": "dbpedia_4374_48.txt"
+        },
+        {
+            "file_id": "dbpedia_4374_53.txt"
+        },
+        {
+            "file_id": "dbpedia_4374_59.txt"
+        },
+        {
+            "file_id": "dbpedia_4374_62.txt"
+        },
+        {
+            "file_id": "dbpedia_4374_69.txt"
+        },
+        {
+            "file_id": "dbpedia_4374_77.txt"
+        },
+        {
+            "file_id": "dbpedia_4374_93.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation:\n\n`{ \"output\": \"no\" }`\n\nThe information in the documents does not directly support this triple. While it mentions Woodburn as a historic site and part of the National Register of Historic Places, there is no indication that it is specifically about the National Register of Historic Places in Charles City County, Virginia. The document actually talks about the Woodburn Plantation in South Carolina, which is located near Pendleton in Anderson County, South Carolina."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The document at `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4374/re-ranker-msmarco/32.txt` and `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4374/re-ranker-msmarco/77.txt` provide information about the National Register of Historic Places listings in Charles City County, Virginia. Specifically, it mentions Woodburn as one of the properties listed on the National Register of Historic Places in that county. Therefore, the statement \"Woodburn (Charles City, Virginia) is about the National Register of Historic Places in Charles City County, Virginia\" is supported by the documents provided."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{\"output\": \"yes\"}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Context information mentions Woodburn Plantation located in Anderson County, South Carolina, while the focus of the provided context is on Charles City County, Virginia.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because Woodburn (Charles City, Virginia) actually refers to a historic site located near Pendleton in Anderson County, South Carolina.",
+            "category": 2
+        }
+    }
+}

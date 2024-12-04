@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Servis",
+    "predicate": "ontology/location",
+    "object": "resource/Windsor,_Berkshire",
+    "human_readable": "Servis is located in Windsor, Berkshire.",
+    "questions": [
+        {
+            "score": 0.9250551462173462,
+            "question": "Is Servis in Berkshire?"
+        },
+        {
+            "score": 0.7578049898147583,
+            "question": "Where is Servis located?"
+        },
+        {
+            "score": 0.5910503268241882,
+            "question": "What is the name of the place where Servis is situated?"
+        },
+        {
+            "score": 0.5427918434143066,
+            "question": "Name a location in Berkshire."
+        },
+        {
+            "score": 0.5196874141693115,
+            "question": "Where can you find Servis?"
+        },
+        {
+            "score": 0.4107309579849243,
+            "question": "Which place is known as Servis's home?"
+        },
+        {
+            "score": 0.4019312262535095,
+            "question": "What city is known for being in Berkshire?"
+        },
+        {
+            "score": 0.3505403697490692,
+            "question": "What region is Windsor part of?"
+        },
+        {
+            "score": 0.35028669238090515,
+            "question": "Is Servis in England?"
+        },
+        {
+            "score": 0.337703138589859,
+            "question": "What county is Windsor in?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Servis is located in Windsor, Berkshire.",
+            "html": "dbpedia_6929_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Servis in England?",
+            "html": "dbpedia_6929_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What region is Windsor part of?",
+            "html": "dbpedia_6929_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What city is known for being in Berkshire?",
+            "html": "dbpedia_6929_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6929_102.txt"
+        },
+        {
+            "file_id": "dbpedia_6929_123.txt"
+        },
+        {
+            "file_id": "dbpedia_6929_154.txt"
+        },
+        {
+            "file_id": "dbpedia_6929_27.txt"
+        },
+        {
+            "file_id": "dbpedia_6929_32.txt"
+        },
+        {
+            "file_id": "dbpedia_6929_33.txt"
+        },
+        {
+            "file_id": "dbpedia_6929_54.txt"
+        },
+        {
+            "file_id": "dbpedia_6929_57.txt"
+        },
+        {
+            "file_id": "dbpedia_6929_64.txt"
+        },
+        {
+            "file_id": "dbpedia_6929_96.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the context information provided, here is my evaluation of the triple:\n\n{\n  \"output\": \"no\"\n}\n\nThe reason for this answer is that while there are mentions of \"Servis\" in various contexts (e.g., a surname, a brand of appliances, and a company), none of them explicitly state that Servis is located in Windsor, Berkshire. The closest mention to a specific location is the Servis Heat Treatment Co.Limited, which has its registered office located in Slough, Berkshire (not Windsor)."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\n**Explanation:** The documents mention several places related to Servis, including Windsor and Berkshire. Specifically, the document states that A Brassett provides services for repairing and installing Servis brand appliances in areas like Windsor, Berkshire, which supports the triple stating that Servis is located in Windsor, Berkshire."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, there isn't a direct statement that confirms or denies whether \"Servis\" specifically refers to an entity located in Windsor, Berkshire. However, the documents do mention Servis brand built-in white goods needing service and installation in areas including Windsor within the South East of England. Given this indirect reference without explicit confirmation, we cannot conclusively say that a specific Servis entity is located there.\n\nTherefore, the answer should be:\n\n{\"output\": \"no\"}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Information provided points to Servis origins in Scotland and England, with mentions of a company in Slough, Berkshire, and an appliance repair service operating across the South East of England. There's no direct evidence placing Servis specifically in Windsor.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information mentions Servis brand built-in white goods being installed or repaired in areas like Windsor, Berkshire, but does not state that Servis itself is located in Windsor. Additionally, the registered office of Servis Heat Treatment Co.Limited is in Slough, Berkshire, and Robert William Service, a famous poet associated with the name, was from Scotland, not necessarily related to a location called 'Servis.'",
+            "category": 2
+        }
+    }
+}

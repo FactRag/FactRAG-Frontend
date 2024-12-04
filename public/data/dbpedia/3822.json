@@ -1,0 +1,112 @@
+{
+    "subject": "resource/Usuran",
+    "predicate": "property/officialName",
+    "object": "Usuran",
+    "human_readable": "The official name of Usuran is Usuran.",
+    "questions": [
+        {
+            "score": 0.9826917052268982,
+            "question": "What is the official name of Usuran?"
+        },
+        {
+            "score": 0.8675289750099182,
+            "question": "Is 'Usuran' the recognized name for this entity?"
+        },
+        {
+            "score": 0.853462278842926,
+            "question": "Does Usuran have a different name?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The official name of Usuran is Usuran.",
+            "html": "dbpedia_3822_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is 'Usuran' the recognized name for this entity?",
+            "html": "dbpedia_3822_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the official name of Usuran?",
+            "html": "dbpedia_3822_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3822_16.txt"
+        },
+        {
+            "file_id": "dbpedia_3822_17.txt"
+        },
+        {
+            "file_id": "dbpedia_3822_18.txt"
+        },
+        {
+            "file_id": "dbpedia_3822_28.txt"
+        },
+        {
+            "file_id": "dbpedia_3822_34.txt"
+        },
+        {
+            "file_id": "dbpedia_3822_48.txt"
+        },
+        {
+            "file_id": "dbpedia_3822_49.txt"
+        },
+        {
+            "file_id": "dbpedia_3822_5.txt"
+        },
+        {
+            "file_id": "dbpedia_3822_51.txt"
+        },
+        {
+            "file_id": "dbpedia_3822_6.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have more triples to evaluate! \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "To evaluate the triple \"The official name of Urusan is Usuran\", I will search for any mention of a person named \"Urusan\" or \"Usuran\" in the provided context information.\n\nAfter reviewing the documents, I found that there are two mentions of a person named \"Urusan\". The first one is in file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3822/re-ranker-msmarco/28.txt and the second one is also in the same file.\n\nHowever, none of these mentions provide information about her official name being \"Usuran\". In fact, the first mention clearly states that Urusan was a Nerek woman of the Owl Clan, which implies that \"Urusan\" might be her actual or traditional name.\n\nTherefore, based on the provided context information, I conclude that:\n\n{'output': 'no'}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: The information provided in the context does not contain any details about Urusan's official name or identity. The text describes Urusan as a Nerek woman and grandmother, but there is no mention of her being referred to officially as \"Urusan.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, there isn't any document that contains details about a person named Urusan having an \"official\" name or a name change. Therefore, we cannot support or refute the statement \"The official name of Urusan is Urusan.\" Given the lack of evidence to either confirm or deny this claim in the documents, the appropriate response would be:\n\n```json\n{\"output\": \"no\"}\n```\n\nThis is because there's no information provided regarding an official naming process for a character named Urusan and thus we cannot affirm that \"Urusan\" is her official name according to the given context."
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The official name of Usuran is not mentioned as Usuran in the provided context information.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context does not provide any information about Usuran's official name. It only mentions Urusan as a Nerek woman who took care of orphaned grandchildren, and there is no indication that her name is officially different from what it is referred to in the text.",
+            "category": 2
+        }
+    }
+}

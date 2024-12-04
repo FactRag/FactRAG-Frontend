@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Jan_Hoffmann",
+    "predicate": "ontology/birthPlace",
+    "object": "resource/Saxony",
+    "human_readable": "Jan Hoffmann was born in Saxony.",
+    "questions": [
+        {
+            "score": 0.8294587135314941,
+            "question": "Where was Jan Hoffmann born?"
+        },
+        {
+            "score": 0.35396313667297363,
+            "question": "What is Saxony known for?"
+        },
+        {
+            "score": 0.3499736487865448,
+            "question": "Are there any famous people from Saxony?"
+        },
+        {
+            "score": 0.23691198229789734,
+            "question": "What is the culture like in Saxony?"
+        },
+        {
+            "score": 0.21954014897346497,
+            "question": "What are some interesting facts about Saxony?"
+        },
+        {
+            "score": 0.20979440212249756,
+            "question": "Is Saxony a historical region?"
+        },
+        {
+            "score": 0.20475104451179504,
+            "question": "Can you tell me more about Saxony?"
+        },
+        {
+            "score": 0.19797897338867188,
+            "question": "What is the population of Saxony?"
+        },
+        {
+            "score": 0.1828816682100296,
+            "question": "Does Saxony have any notable landmarks?"
+        },
+        {
+            "score": 0.12321691960096359,
+            "question": "What is the geography of Saxony like?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Jan Hoffmann was born in Saxony.",
+            "html": "dbpedia_2748_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Saxony have any notable landmarks?",
+            "html": "dbpedia_2748_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the population of Saxony?",
+            "html": "dbpedia_2748_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about Saxony?",
+            "html": "dbpedia_2748_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2748_109.txt"
+        },
+        {
+            "file_id": "dbpedia_2748_13.txt"
+        },
+        {
+            "file_id": "dbpedia_2748_14.txt"
+        },
+        {
+            "file_id": "dbpedia_2748_16.txt"
+        },
+        {
+            "file_id": "dbpedia_2748_30.txt"
+        },
+        {
+            "file_id": "dbpedia_2748_32.txt"
+        },
+        {
+            "file_id": "dbpedia_2748_38.txt"
+        },
+        {
+            "file_id": "dbpedia_2748_7.txt"
+        },
+        {
+            "file_id": "dbpedia_2748_70.txt"
+        },
+        {
+            "file_id": "dbpedia_2748_80.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have any other triples you'd like me to evaluate! \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents confirm that the birth of Jan Hoffmann is associated with Saxony."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe document states that Jan Hoffmann was born on October 26, 1955, in Dresden, Saxony, Germany, which supports the statement that Jan Hoffmann was born in Saxony."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n    \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Both individuals listed (Jan Hoffmann born in 1955 and Jan Hoffmann born in 1971) are mentioned as being born in different cities within Saxony, Germany. However, the person who is a figure skater was born in Dresden while the conductor was born in Kassel, which are separate cities in the state of Saxony, making it impossible for both individuals to have been born in Saxony.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Multiple sources state his birthplace as Dresden, Saxony.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The context information mentions two different birth places for Jan Hoffmann - one as Dresden, Saxony, Germany (points 1 and 6) and another as Berlin, Germany (point 5).",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Jan Hoffmann was born in Dresden, Saxony, Germany, not just in Saxony.",
+            "category": 2
+        }
+    }
+}

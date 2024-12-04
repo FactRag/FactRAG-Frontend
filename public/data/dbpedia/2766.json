@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Arthur_Lakes",
+    "predicate": "property/deathPlace",
+    "object": "resource/Nelson,_British_Columbia",
+    "human_readable": "Arthur Lakes died in Nelson, British Columbia.",
+    "questions": [
+        {
+            "score": 0.9217222332954407,
+            "question": "Was Arthur Lakes born in Nelson, British Columbia?"
+        },
+        {
+            "score": 0.8696321249008179,
+            "question": "Were there any notable events happening in Nelson, British Columbia around the time of Arthur Lakes' death?"
+        },
+        {
+            "score": 0.8257789015769958,
+            "question": "Where did Arthur Lakes die?"
+        },
+        {
+            "score": 0.79117351770401,
+            "question": "Is there a memorial or tribute to Arthur Lakes in Nelson, British Columbia?"
+        },
+        {
+            "score": 0.7223593592643738,
+            "question": "When did Arthur Lakes die?"
+        },
+        {
+            "score": 0.6031953692436218,
+            "question": "What was the cause of Arthur Lakes' death?"
+        },
+        {
+            "score": 0.431423544883728,
+            "question": "What was Arthur Lakes known for?"
+        },
+        {
+            "score": 0.3171018064022064,
+            "question": "What is known about Arthur Lakes' life?"
+        },
+        {
+            "score": 0.252765029668808,
+            "question": "Can you tell me more about Arthur Lakes?"
+        },
+        {
+            "score": 0.24390071630477905,
+            "question": "Are there any famous people from Nelson, British Columbia?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Arthur Lakes died in Nelson, British Columbia.",
+            "html": "dbpedia_2766_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about Arthur Lakes?",
+            "html": "dbpedia_2766_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is known about Arthur Lakes' life?",
+            "html": "dbpedia_2766_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What was Arthur Lakes known for?",
+            "html": "dbpedia_2766_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2766_30.txt"
+        },
+        {
+            "file_id": "dbpedia_2766_35.txt"
+        },
+        {
+            "file_id": "dbpedia_2766_40.txt"
+        },
+        {
+            "file_id": "dbpedia_2766_42.txt"
+        },
+        {
+            "file_id": "dbpedia_2766_58.txt"
+        },
+        {
+            "file_id": "dbpedia_2766_65.txt"
+        },
+        {
+            "file_id": "dbpedia_2766_69.txt"
+        },
+        {
+            "file_id": "dbpedia_2766_77.txt"
+        },
+        {
+            "file_id": "dbpedia_2766_79.txt"
+        },
+        {
+            "file_id": "dbpedia_2766_99.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple \"Arthur Lakes died in Nelson, British Columbia\" based on the provided context information:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation:\nThe documents provide various information about Arthur Lakes' life and death. However, none of them mention that he died in Nelson, British Columbia. According to one document (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2766/re-ranker-msmarco/63.txt), Arthur Lakes moved from Colorado to Ymir, British Columbia in 1910 and continued living there until his death in 1917. However, it does not specify that he died in Nelson."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\n**Explanation:** The provided context does not mention that Arthur Lakes died in Nelson, British Columbia. It only states that he moved there to be with his sons but provides no information about the place of his death. Therefore, based on the given information, the statement is unsupported."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Text states he moved to Ymir, British Columbia to be with his sons involved in the mining business and continued to document his experiences there until his death in 1917.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "Arthur Lakes' death location cannot be inferred from the provided context information as his death place was not mentioned, but his work and movement before his death were discussed.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context states that Lakes moved to Ymir, British Columbia in 1910 after retiring from Colorado and continued his work through paintings and articles until his death in 1917. Therefore, he did not die in Nelson, British Columbia.",
+            "category": 2
+        }
+    }
+}

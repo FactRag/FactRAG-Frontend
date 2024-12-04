@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Billy_Two_Hats",
+    "predicate": "ontology/country",
+    "object": "resource/United_States",
+    "human_readable": "Billy Two Hats was from United States.",
+    "questions": [
+        {
+            "score": 0.9815717935562134,
+            "question": "Is Billy Two Hats from a specific state in the United States?"
+        },
+        {
+            "score": 0.8870564103126526,
+            "question": "Are there any famous individuals from the United States who share similar backgrounds with Billy Two Hats?"
+        },
+        {
+            "score": 0.8667119145393372,
+            "question": "Where is Billy Two Hats from?"
+        },
+        {
+            "score": 0.6919251680374146,
+            "question": "Can you tell me about Billy Two Hats's origins?"
+        },
+        {
+            "score": 0.6914142370223999,
+            "question": "What country is associated with Billy Two Hats?"
+        },
+        {
+            "score": 0.6825838685035706,
+            "question": "Where was Billy Two Hats likely raised?"
+        },
+        {
+            "score": 0.6112393736839294,
+            "question": "What is known about Billy Two Hats's nationality?"
+        },
+        {
+            "score": 0.3442012369632721,
+            "question": "How might Billy Two Hats's background influence his work or stories?"
+        },
+        {
+            "score": 0.29310229420661926,
+            "question": "What cultural influences might be present in Billy Two Hats's life and work?"
+        },
+        {
+            "score": 0.00964825414121151,
+            "question": "What is the significance of knowing where someone is from in understanding their work or personality?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Billy Two Hats was from United States.",
+            "html": "dbpedia_3385_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What cultural influences might be present in Billy Two Hats's life and work?",
+            "html": "dbpedia_3385_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How might Billy Two Hats's background influence his work or stories?",
+            "html": "dbpedia_3385_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is known about Billy Two Hats's nationality?",
+            "html": "dbpedia_3385_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3385_13.txt"
+        },
+        {
+            "file_id": "dbpedia_3385_142.txt"
+        },
+        {
+            "file_id": "dbpedia_3385_151.txt"
+        },
+        {
+            "file_id": "dbpedia_3385_152.txt"
+        },
+        {
+            "file_id": "dbpedia_3385_19.txt"
+        },
+        {
+            "file_id": "dbpedia_3385_38.txt"
+        },
+        {
+            "file_id": "dbpedia_3385_4.txt"
+        },
+        {
+            "file_id": "dbpedia_3385_57.txt"
+        },
+        {
+            "file_id": "dbpedia_3385_78.txt"
+        },
+        {
+            "file_id": "dbpedia_3385_82.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, here's the evaluation of the triple:\n\n{\n  \"output\": \"no\"\n}\n\nReasoning:\nThe document mentions that \"Billy Two Hats is recorded in English and originally aired in United States\" (emphasis mine). However, this statement refers to the television program appearing on TV in 1970, not the movie. Later documents mention that the Western Billy Two Hats hit theaters in 1974 and was filmed entirely in Israel. This suggests that the movie \"Billy Two Hats\" was from Israel, not the United States."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents state that \"Billy Two Hats is originally aired in the United States,\" which supports the statement that \"Billy Two Hats was from the United States.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{\"output\": \"yes\"}\n\nThe provided context information states that the TV program \"Billy Two Hats\" originally aired in the United States. Therefore, the statement \"Billy Two Hats was from United States\" is supported by the documents."
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "It states the show originally aired in the United States but context mentions it was filmed entirely in Israel.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "It was filmed entirely in Israel.",
+            "category": 3
+        }
+    }
+}

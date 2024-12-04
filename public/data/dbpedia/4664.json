@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Ex_Machina_(film)",
+    "predicate": "ontology/distributor",
+    "object": "resource/Universal_Studios",
+    "human_readable": "The film Ex Machina was distributed by Universal Studios.",
+    "questions": [
+        {
+            "score": 0.9204229712486267,
+            "question": "Besides Ex Machina, what other films might Universal Studios have distributed?"
+        },
+        {
+            "score": 0.9179052710533142,
+            "question": "Who distributed the film Ex Machina?"
+        },
+        {
+            "score": 0.8311121463775635,
+            "question": "Which film was distributed by Universal Studios?"
+        },
+        {
+            "score": 0.8079501390457153,
+            "question": "What is the name of the studio that distributed Ex Machina?"
+        },
+        {
+            "score": 0.702688455581665,
+            "question": "Is Universal Studios involved in the distribution of movies?"
+        },
+        {
+            "score": 0.5169742107391357,
+            "question": "Can you name some other movies distributed by Universal Studios?"
+        },
+        {
+            "score": 0.2611103355884552,
+            "question": "What kind of company is Universal Studios?"
+        },
+        {
+            "score": 0.20337510108947754,
+            "question": "What is the role of a film distributor?"
+        },
+        {
+            "score": 0.18018901348114014,
+            "question": "What is the relationship between a film studio and a distributor?"
+        },
+        {
+            "score": 0.1132354885339737,
+            "question": "How does a film get from production to being watched by audiences?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The film Ex Machina was distributed by Universal Studios.",
+            "html": "dbpedia_4664_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the relationship between a film studio and a distributor?",
+            "html": "dbpedia_4664_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the role of a film distributor?",
+            "html": "dbpedia_4664_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What kind of company is Universal Studios?",
+            "html": "dbpedia_4664_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4664_139.txt"
+        },
+        {
+            "file_id": "dbpedia_4664_158.txt"
+        },
+        {
+            "file_id": "dbpedia_4664_23.txt"
+        },
+        {
+            "file_id": "dbpedia_4664_27.txt"
+        },
+        {
+            "file_id": "dbpedia_4664_29.txt"
+        },
+        {
+            "file_id": "dbpedia_4664_32.txt"
+        },
+        {
+            "file_id": "dbpedia_4664_34.txt"
+        },
+        {
+            "file_id": "dbpedia_4664_43.txt"
+        },
+        {
+            "file_id": "dbpedia_4664_64.txt"
+        },
+        {
+            "file_id": "dbpedia_4664_86.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n\n\nLet me explain: While some files mention Universal Pictures being involved, they state that A24 Films ultimately distributed the film *after* Universal passed on it. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the answer in JSON format:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: Based on the provided context information, we can see that there are multiple files related to Ex Machina, including one that mentions its distribution (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4664/re-ranker-msmarco/61.txt). This file states that \"The 108 min. film was produced by Film4 Productions and distributed internationally by Universal Pictures.\" However, another file (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4664/re-ranker-msmarco/53.txt) mentions A24 as the distributor of Ex Machina in the semi-wide release. Therefore, it's not entirely accurate to say that the film was distributed by Universal Studios only, which would be a more specific claim than what is actually supported by the documents."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provided contain information about the distribution of the film \"Ex Machina,\" stating that it was distributed internationally by Universal Pictures. Therefore, the statement \"The film Ex Machina was distributed by Universal Studios\" is supported by the given context."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n      \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Ex Machina was distributed by Universal Pictures internationally, not in North America where A24 Films handled the distribution.",
+            "category": 3
+        },
+        "gemma2": {
+            "reason": "It states A24 Films distributed the film in North America after Universal passed.",
+            "category": 3
+        },
+        "llama3.1": {
+            "reason": "Ex Machina was distributed by A24 Films after Universal passed on it.",
+            "category": 3
+        }
+    }
+}

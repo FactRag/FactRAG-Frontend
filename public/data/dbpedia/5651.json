@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Erwin_von_Witzleben",
+    "predicate": "property/serviceyears",
+    "object": "1901",
+    "human_readable": "Erwin von Witzleben served from 1901.",
+    "questions": [
+        {
+            "score": 0.8308167457580566,
+            "question": "What year did Erwin von Witzleben begin serving?"
+        },
+        {
+            "score": 0.8140650391578674,
+            "question": "Who was Erwin von Witzleben?"
+        },
+        {
+            "score": 0.7308380603790283,
+            "question": "In what capacity did Erwin von Witzleben serve?"
+        },
+        {
+            "score": 0.7272312641143799,
+            "question": "What events occurred during the time Erwin von Witzleben served?"
+        },
+        {
+            "score": 0.6782277226448059,
+            "question": "What was Erwin von Witzleben known for?"
+        },
+        {
+            "score": 0.5212228894233704,
+            "question": "Was Erwin von Witzleben a public figure?"
+        },
+        {
+            "score": 0.5122116208076477,
+            "question": "How did Erwin von Witzleben's service impact history?"
+        },
+        {
+            "score": 0.4897022247314453,
+            "question": "Are there any notable achievements associated with Erwin von Witzleben?"
+        },
+        {
+            "score": 0.4257334768772125,
+            "question": "What were some of the challenges faced by Erwin von Witzleben during his service?"
+        },
+        {
+            "score": 0.3826065957546234,
+            "question": "Can you tell me more about Erwin von Witzleben's career?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Erwin von Witzleben served from 1901.",
+            "html": "dbpedia_5651_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What were some of the challenges faced by Erwin von Witzleben during his service?",
+            "html": "dbpedia_5651_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any notable achievements associated with Erwin von Witzleben?",
+            "html": "dbpedia_5651_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How did Erwin von Witzleben's service impact history?",
+            "html": "dbpedia_5651_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5651_1.txt"
+        },
+        {
+            "file_id": "dbpedia_5651_114.txt"
+        },
+        {
+            "file_id": "dbpedia_5651_21.txt"
+        },
+        {
+            "file_id": "dbpedia_5651_23.txt"
+        },
+        {
+            "file_id": "dbpedia_5651_5.txt"
+        },
+        {
+            "file_id": "dbpedia_5651_53.txt"
+        },
+        {
+            "file_id": "dbpedia_5651_71.txt"
+        },
+        {
+            "file_id": "dbpedia_5651_77.txt"
+        },
+        {
+            "file_id": "dbpedia_5651_89.txt"
+        },
+        {
+            "file_id": "dbpedia_5651_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of whether the information in the documents supports the triple \"Erwin von Witzleben served from 1901\":\n\n{\n  \"output\": \"no\"\n}\n\nReasoning:\n\n* The document at file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5651/re-ranker-msmarco/52.txt mentions that Erwin von Witzleben joined the German Army in March 1901 as a second lieutenant, but this is not the same as \"served from 1901\".\n* The document at file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5651/re-ranker-msmarco/104.txt mentions that Witzleben was a career officer who remained in service after the First World War, but this does not provide information about his specific service years.\n* The document at file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5651/re-ranker-msmarco/8.txt mentions that Witzleben was born in 1881 and became a Field Marshal by 1940, but this does not provide information about his service years.\n\nTherefore, the triple \"Erwin von Witzleben served from 1901\" is not supported by the provided documents."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information that supports the statement \"Erwin von Witzleben served from 1901.\" Specifically, the document at file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5651/re-ranker-msmarco/52.txt states: \"He joined the German Army in March 1901 as a second lieutenant in the 7th Grenadier Regiment.\" This indicates that Erwin von Witzleben began his service in the military in 1901, supporting the given triple."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Several sources state he joined the army in March 1901 as a second lieutenant.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Erwin von Witzleben joined the German Army as a second lieutenant in 1901, not that he served from 1901. His military service began after his graduation from the Prussian Cadet Corps program in 1901.",
+            "category": 2
+        }
+    }
+}

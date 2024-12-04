@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Steven_G._Vandenberg",
+    "predicate": "ontology/almaMater",
+    "object": "resource/University_of_Michigan",
+    "human_readable": "Steven G. Vandenberg attended University of Michigan.",
+    "questions": [
+        {
+            "score": 0.98610919713974,
+            "question": "Did Steven G. Vandenberg study at a university in Michigan?"
+        },
+        {
+            "score": 0.984331488609314,
+            "question": "Is Steven G. Vandenberg a graduate of the University of Michigan?"
+        },
+        {
+            "score": 0.979574978351593,
+            "question": "Name a university that Steven G. Vandenberg attended."
+        },
+        {
+            "score": 0.9624976515769958,
+            "question": "Where did Steven G. Vandenberg attend university?"
+        },
+        {
+            "score": 0.8741363286972046,
+            "question": "Steven G. Vandenberg's academic journey took place at which university?"
+        },
+        {
+            "score": 0.8256262540817261,
+            "question": "What university is Steven G. Vandenberg associated with?"
+        },
+        {
+            "score": 0.8225528597831726,
+            "question": "What is the name of the university Steven G. Vandenberg went to?"
+        },
+        {
+            "score": 0.7502312064170837,
+            "question": "What institution provided Steven G. Vandenberg with his education?"
+        },
+        {
+            "score": 0.7230297923088074,
+            "question": "Which university is linked to Steven G. Vandenberg's studies?"
+        },
+        {
+            "score": 0.5683903098106384,
+            "question": "Can you tell me about Steven G. Vandenberg's educational background?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Steven G. Vandenberg attended University of Michigan.",
+            "html": "dbpedia_64_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Which university is linked to Steven G. Vandenberg's studies?",
+            "html": "dbpedia_64_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What institution provided Steven G. Vandenberg with his education?",
+            "html": "dbpedia_64_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of the university Steven G. Vandenberg went to?",
+            "html": "dbpedia_64_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_64_24.txt"
+        },
+        {
+            "file_id": "dbpedia_64_31.txt"
+        },
+        {
+            "file_id": "dbpedia_64_34.txt"
+        },
+        {
+            "file_id": "dbpedia_64_43.txt"
+        },
+        {
+            "file_id": "dbpedia_64_51.txt"
+        },
+        {
+            "file_id": "dbpedia_64_64.txt"
+        },
+        {
+            "file_id": "dbpedia_64_65.txt"
+        },
+        {
+            "file_id": "dbpedia_64_72.txt"
+        },
+        {
+            "file_id": "dbpedia_64_81.txt"
+        },
+        {
+            "file_id": "dbpedia_64_83.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "The triple to be evaluated is:\n\n\"Steven G. VandenBerg attended University of Michigan.\"\n\nGiven the context information, we can see that there are multiple mentions of Dr. VandenBerg's education and affiliations, but none of them mention attending the University of Michigan.\n\nIn fact, it says that \"A graduate of Michigan State University\u2019s College of Osteopathic Medicine, Dr. VandenBerg...\" which implies that he attended Michigan State University, not the University of Michigan.\n\nTherefore, the answer is:\n\n`{'output': 'no'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe document states that Dr. VandenBerg is a graduate of Michigan State University\u2019s College of Osteopathic Medicine, but there is no information indicating he also attended the University of Michigan. However, given the lack of conflicting information and assuming the query only requires verification of the attended institution mentioned (Michigan State University), the answer aligns with \"yes\" based on the provided documents. If strict adherence to both institutions must be confirmed, the response would need additional context or documentation."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nExplanation:\nThe provided context does not support the claim that Dr. VandenBerg (Steven G. Vandenberg) attended the University of Michigan. The text states that he is a graduate of Michigan State University\u2019s College of Osteopathic Medicine and did his residency at Rush University Medical Center in Chicago, with no mention of any affiliation with the University of Michigan. Therefore, the answer to this query is \"no\"."
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "It states Dr. VandenBerg attended University of Michigan but the provided text says he graduated from Michigan State University\u2019s College of Osteopathic Medicine.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "It contradicts the information provided about Dr. Steven G. VandenBerg, which states that he attended Michigan State University's College of Osteopathic Medicine, not the University of Michigan.",
+            "category": 2
+        }
+    }
+}

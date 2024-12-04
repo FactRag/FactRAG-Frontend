@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Espera",
+    "predicate": "ontology/country",
+    "object": "resource/Spain",
+    "human_readable": "Espera is from Spain.",
+    "questions": [
+        {
+            "score": 0.9587474465370178,
+            "question": "Is Espera located in Spain?"
+        },
+        {
+            "score": 0.7290038466453552,
+            "question": "Where is Espera from?"
+        },
+        {
+            "score": 0.5234265327453613,
+            "question": "What country is Espera associated with?"
+        },
+        {
+            "score": 0.5149972438812256,
+            "question": "What is Espera known for?"
+        },
+        {
+            "score": 0.5039908289909363,
+            "question": "What is known about Espera?"
+        },
+        {
+            "score": 0.42690882086753845,
+            "question": "Where might someone find Espera?"
+        },
+        {
+            "score": 0.42476966977119446,
+            "question": "Are there any famous people from Espera?"
+        },
+        {
+            "score": 0.33419549465179443,
+            "question": "Is there anything interesting about the location of Espera?"
+        },
+        {
+            "score": 0.3324822783470154,
+            "question": "Does the name Espera have any significance?"
+        },
+        {
+            "score": 0.2821938693523407,
+            "question": "Can you tell me more about Espera?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Espera is from Spain.",
+            "html": "dbpedia_424_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does the name Espera have any significance?",
+            "html": "dbpedia_424_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there anything interesting about the location of Espera?",
+            "html": "dbpedia_424_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any famous people from Espera?",
+            "html": "dbpedia_424_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_424_102.txt"
+        },
+        {
+            "file_id": "dbpedia_424_122.txt"
+        },
+        {
+            "file_id": "dbpedia_424_13.txt"
+        },
+        {
+            "file_id": "dbpedia_424_14.txt"
+        },
+        {
+            "file_id": "dbpedia_424_22.txt"
+        },
+        {
+            "file_id": "dbpedia_424_39.txt"
+        },
+        {
+            "file_id": "dbpedia_424_54.txt"
+        },
+        {
+            "file_id": "dbpedia_424_6.txt"
+        },
+        {
+            "file_id": "dbpedia_424_72.txt"
+        },
+        {
+            "file_id": "dbpedia_424_75.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nThe documents repeatedly state that Espera is located in Cadiz, Andalusia, Spain.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the context information provided, here's the evaluation of whether the statement \"Espera is from Spain\" is supported by the documents:\n\n{\n  \"output\": \"yes\"\n}\n\nExplanation:\n\n* The file_path indicates that the document is related to Espera, and one of the files (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_424/re-ranker-msmarco/39.txt) contains information about Espera's location in Andalusia, Spain.\n* The file_path also mentions that the document is related to Cadiz, Andalusia, Spain, which further supports the statement.\n* Another file (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_424/re-ranker-msmarco/75.txt) contains a description of Espera's location in Spain.\n\nTherefore, based on this information, it is correct to say that Espera is from Spain."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information about Espera, a municipality located in the Province of C\u00e1diz, Andalusia, Spain. Therefore, the statement \"Espera is from Spain\" is supported by the given context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

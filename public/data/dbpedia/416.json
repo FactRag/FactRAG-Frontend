@@ -1,0 +1,144 @@
+{
+    "subject": "resource/WVAH-TV",
+    "predicate": "property/location",
+    "object": "resource/Huntington,_West_Virginia",
+    "human_readable": "WVAH-TV is located in Huntington, West Virginia.",
+    "questions": [
+        {
+            "score": 0.9482265114784241,
+            "question": "Where is WVAH-TV located?"
+        },
+        {
+            "score": 0.9423244595527649,
+            "question": "Name the location of WVAH-TV."
+        },
+        {
+            "score": 0.9137752056121826,
+            "question": "In what city is WVAH-TV situated?"
+        },
+        {
+            "score": 0.8555217385292053,
+            "question": "Is Huntington, West Virginia a known city for television broadcasting?"
+        },
+        {
+            "score": 0.762116551399231,
+            "question": "Is WVAH-TV a television station?"
+        },
+        {
+            "score": 0.7451974153518677,
+            "question": "Where would you find WVAH-TV broadcasting from?"
+        },
+        {
+            "score": 0.7125504612922668,
+            "question": "What is the home city of WVAH-TV?"
+        },
+        {
+            "score": 0.648324191570282,
+            "question": "What kind of organization is WVAH-TV?"
+        },
+        {
+            "score": 0.6238902807235718,
+            "question": "Can you tell me more about WVAH-TV?"
+        },
+        {
+            "score": 0.5713725090026855,
+            "question": "What state is Huntington in?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=WVAH-TV is located in Huntington, West Virginia.",
+            "html": "dbpedia_416_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about WVAH-TV?",
+            "html": "dbpedia_416_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What kind of organization is WVAH-TV?",
+            "html": "dbpedia_416_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the home city of WVAH-TV?",
+            "html": "dbpedia_416_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_416_11.txt"
+        },
+        {
+            "file_id": "dbpedia_416_27.txt"
+        },
+        {
+            "file_id": "dbpedia_416_29.txt"
+        },
+        {
+            "file_id": "dbpedia_416_46.txt"
+        },
+        {
+            "file_id": "dbpedia_416_50.txt"
+        },
+        {
+            "file_id": "dbpedia_416_52.txt"
+        },
+        {
+            "file_id": "dbpedia_416_56.txt"
+        },
+        {
+            "file_id": "dbpedia_416_72.txt"
+        },
+        {
+            "file_id": "dbpedia_416_8.txt"
+        },
+        {
+            "file_id": "dbpedia_416_91.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "To evaluate the query \"WVAH-TV is located in Huntington, West Virginia\", I need to analyze the context information provided.\n\nHere's a breakdown of the relevant information:\n\n* File_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_416/re-ranker-msmarco/8.txt:\n\t+ WVAH (channel 8) is a television station licensed to Huntington, West Virginia...\n* File_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_416/re-ranker-msmarco/49.txt:\n\t+ WVAH-TV is the Fox-affiliated television station for Charleston and Huntington, West Virginia...\n* File_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_416/re-ranker-msmarco/51.txt:\n\t+ WVAH-TV (no specific location mentioned)\n* File_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_416/re-ranker-msmarco/45.txt and 90.txt:\n\t+ No specific information about the location of WVAH-TV\n\nBased on this analysis, I can see that there are multiple mentions of WVAH-TV in different files, but only one file (8.txt) explicitly states that it is licensed to Huntington, West Virginia. The other mentions of WVAH-TV do not provide a specific location.\n\nTherefore, the answer is:\n\n`{'output': 'yes'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents mention that WVAH (channel 8) is licensed to and serves the Charleston\u2013Huntington market, but they do not specify that it is located in Huntington, West Virginia. It only mentions studios in Huntington and Charleston."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "Based on the provided context information:\n\n- The documents mention that WVAH (channel 8) is licensed to Huntington, West Virginia and serves the Charleston\u2013Huntington market. It maintains studios on 5th Avenue in Huntington.\n\nGiven this information supports the statement that WVAH-TV is located in Huntington, West Virginia, the answer is:\n\n{\"output\": \"yes\"}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "WVAH-TV is stated to be the Fox affiliate for Charleston and Huntington, WV, but also says that its studios are located on 5th Avenue in Huntington, with an additional studio and newsroom on Columbia Avenue in Charleston.   This suggests that it serves both cities, not just one.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "WVAH-TV is licensed to Huntington, West Virginia, but its studios are located in Charleston, with a transmitter near Milton. The primary affiliation and market coverage mentioned (Charleston-Huntington) also point to the station being centered around those areas rather than specifically Huntington.",
+            "category": 2
+        }
+    }
+}

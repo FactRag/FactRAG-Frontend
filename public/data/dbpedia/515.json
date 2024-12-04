@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Pat_Green",
+    "predicate": "ontology/hometown",
+    "object": "resource/United_States",
+    "human_readable": "Pat Green's hometown is United States.",
+    "questions": [
+        {
+            "score": 0.847740650177002,
+            "question": "What country is Pat Green's hometown in?"
+        },
+        {
+            "score": 0.8462493419647217,
+            "question": "Is Pat Green originally from the United States?"
+        },
+        {
+            "score": 0.7596198916435242,
+            "question": "Pat Green's hometown is located in which part of the world?"
+        },
+        {
+            "score": 0.726804792881012,
+            "question": "What is the nationality of Pat Green based on his hometown?"
+        },
+        {
+            "score": 0.656354546546936,
+            "question": "Where is Pat Green from?"
+        },
+        {
+            "score": 0.5274354815483093,
+            "question": "Where did Pat Green grow up?"
+        },
+        {
+            "score": 0.48784637451171875,
+            "question": "Pat Green identifies as being from where?"
+        },
+        {
+            "score": 0.3215269148349762,
+            "question": "What can you say about Pat Green's place of origin?"
+        },
+        {
+            "score": 0.3047535717487335,
+            "question": "If you were to visit Pat Green, what country would you travel to?"
+        },
+        {
+            "score": 0.22206376492977142,
+            "question": "Can you tell me more about Pat Green's roots?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Pat Green's hometown is United States.",
+            "html": "dbpedia_515_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If you were to visit Pat Green, what country would you travel to?",
+            "html": "dbpedia_515_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What can you say about Pat Green's place of origin?",
+            "html": "dbpedia_515_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Pat Green identifies as being from where?",
+            "html": "dbpedia_515_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_515_104.txt"
+        },
+        {
+            "file_id": "dbpedia_515_12.txt"
+        },
+        {
+            "file_id": "dbpedia_515_121.txt"
+        },
+        {
+            "file_id": "dbpedia_515_25.txt"
+        },
+        {
+            "file_id": "dbpedia_515_28.txt"
+        },
+        {
+            "file_id": "dbpedia_515_51.txt"
+        },
+        {
+            "file_id": "dbpedia_515_62.txt"
+        },
+        {
+            "file_id": "dbpedia_515_84.txt"
+        },
+        {
+            "file_id": "dbpedia_515_87.txt"
+        },
+        {
+            "file_id": "dbpedia_515_88.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'} \n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the answer:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe reason for this response is that while some of the documents mention San Antonio, Texas as Pat Green's hometown (which is consistent with him being from the United States), one document specifically states that he was born and raised in San Antonio, Texas, implying that his hometown is indeed Texas, not the entire United States."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents state that Pat Green was born and raised in San Antonio, Texas. Since San Antonio is located in the United States, this supports the statement that Pat Green\u2019s hometown is in the United States."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n\nExplanation: The documents clearly state that Pat Green was born and raised in San Antonio, Texas. While it is correct to say that his hometown is part of the United States, the statement \"Pat Green's hometown is United States\" is not specific enough as it does not mention San Antonio or Texas, which are more accurate representations of where he comes from according to the documents provided."
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Pat Green's hometown is San Antonio, Texas, which is a city within the United States.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Pat Green's hometown is specifically stated as San Antonio, Texas, which is located in the United States. Therefore, saying his hometown is simply the United States is incorrect.",
+            "category": 2
+        }
+    }
+}

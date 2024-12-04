@@ -1,0 +1,114 @@
+{
+    "subject": "resource/Marie-Magdeleine",
+    "predicate": "property/cname",
+    "object": "Marie-Magdeleine",
+    "human_readable": "Marie-Magdeleine is also known as Marie-Magdeleine.",
+    "questions": [
+        {
+            "score": 0.9490014314651489,
+            "question": "What is another name for Marie-Magdeleine?"
+        },
+        {
+            "score": 0.9198766350746155,
+            "question": "Is there more than one name associated with Marie-Magdeleine?"
+        },
+        {
+            "score": 0.8847605586051941,
+            "question": "Does Marie-Magdeleine have a different name?"
+        },
+        {
+            "score": 0.8725996017456055,
+            "question": "What can we say about the names used for Marie-Magdeleine?"
+        },
+        {
+            "score": 0.850496768951416,
+            "question": "How many names are used to refer to Marie-Magdeleine?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Marie-Magdeleine is also known as Marie-Magdeleine.",
+            "html": "dbpedia_2545_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What can we say about the names used for Marie-Magdeleine?",
+            "html": "dbpedia_2545_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Marie-Magdeleine have a different name?",
+            "html": "dbpedia_2545_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there more than one name associated with Marie-Magdeleine?",
+            "html": "dbpedia_2545_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2545_117.txt"
+        },
+        {
+            "file_id": "dbpedia_2545_118.txt"
+        },
+        {
+            "file_id": "dbpedia_2545_3.txt"
+        },
+        {
+            "file_id": "dbpedia_2545_31.txt"
+        },
+        {
+            "file_id": "dbpedia_2545_4.txt"
+        },
+        {
+            "file_id": "dbpedia_2545_42.txt"
+        },
+        {
+            "file_id": "dbpedia_2545_47.txt"
+        },
+        {
+            "file_id": "dbpedia_2545_5.txt"
+        },
+        {
+            "file_id": "dbpedia_2545_55.txt"
+        },
+        {
+            "file_id": "dbpedia_2545_6.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me explain why:\n\n* **The text mentions:** \"But she gradually asserted herself (though sometimes confusingly, Marie Madeleine and sometimes Marie Magdeleine)\"  This clearly indicates that Marie-Magdeleine and Marie Madeleine are used interchangeably to refer to the same person. \n\n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "To evaluate the triple, we need to identify the subject (Marie-Magdeleine), the property (is also known as), and the object (Marie-Magdeleine).\n\nFrom the documents, we can see that there are multiple individuals with the name Marie-Magdeleine. In document 113.txt, it is mentioned that \"Children and adults greet her with a drawn out, almost sung greeting of \u2018Mam Beck\u2019 as they pass her home located on the main street.\" This suggests that this Marie-Magdeleine has a nickname 'Mam Beck'. However, in document 26.txt, it is mentioned that \"Marie-Magdeleine, daughter of Joseph Boucher and Marie Madeleine Baillarjon, was born and baptized on 31 May 1767 at Berthierville.\" This suggests that this Marie-Magdeleine is a historical figure.\n\nSince the two Marie-Magdelaines are different individuals with distinct characteristics, it is not accurate to say that Marie-Magdeleine is also known as Marie-Magdeleine. Therefore:\n\n```json\n{\n  \"output\": \"no\"\n}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide information about a person named Marie Magdeleine who was active in the Mon Repos community and described with various aliases including \"Marie Magdeleine\" and \"Mam Beck,\" supporting the triple that Marie-Magdeleine is also known as Marie-Magdeleine."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "It contradicts the information provided in sources 3 and 6, which mention Marie-Magdeleine Brumagne being known as Marie Magdeleine (without the hyphen), but not vice versa.",
+            "category": 2
+        }
+    }
+}

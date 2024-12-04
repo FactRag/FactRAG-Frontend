@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Rose_Tremain",
+    "predicate": "property/name",
+    "object": "(CBE, FRSL)",
+    "human_readable": "The name of Rose Tremain is (CBE, FRSL).",
+    "questions": [
+        {
+            "score": 0.7606357336044312,
+            "question": "Name the organizations that have recognized Rose Tremain's work."
+        },
+        {
+            "score": 0.5709601640701294,
+            "question": "What honors has Rose Tremain received?"
+        },
+        {
+            "score": 0.5457677841186523,
+            "question": "What does it mean to be a CBE and an FRSL?"
+        },
+        {
+            "score": 0.48661527037620544,
+            "question": "Is Rose Tremain a member of any prestigious societies?"
+        },
+        {
+            "score": 0.4396428167819977,
+            "question": "What type of accolades has Rose Tremain received throughout her career?"
+        },
+        {
+            "score": 0.4182233214378357,
+            "question": "What are some examples of Rose Tremain's literary achievements?"
+        },
+        {
+            "score": 0.3963703513145447,
+            "question": "What does FRSL stand for?"
+        },
+        {
+            "score": 0.31211164593696594,
+            "question": "What does CBE stand for?"
+        },
+        {
+            "score": 0.30787941813468933,
+            "question": "Does Rose Tremain hold any honorary titles?"
+        },
+        {
+            "score": 0.3030913472175598,
+            "question": "How have these honors impacted Rose Tremain's literary career?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of Rose Tremain is (CBE, FRSL).",
+            "html": "dbpedia_2435_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Rose Tremain hold any honorary titles?",
+            "html": "dbpedia_2435_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What does CBE stand for?",
+            "html": "dbpedia_2435_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What does FRSL stand for?",
+            "html": "dbpedia_2435_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2435_105.txt"
+        },
+        {
+            "file_id": "dbpedia_2435_115.txt"
+        },
+        {
+            "file_id": "dbpedia_2435_27.txt"
+        },
+        {
+            "file_id": "dbpedia_2435_39.txt"
+        },
+        {
+            "file_id": "dbpedia_2435_42.txt"
+        },
+        {
+            "file_id": "dbpedia_2435_6.txt"
+        },
+        {
+            "file_id": "dbpedia_2435_75.txt"
+        },
+        {
+            "file_id": "dbpedia_2435_78.txt"
+        },
+        {
+            "file_id": "dbpedia_2435_85.txt"
+        },
+        {
+            "file_id": "dbpedia_2435_86.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation in JSON format:\n\n```\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation:\nThe documents mention that Rose Tremain was awarded a CBE (Commander of the Order of the British Empire) and is an FRSL (Fellow of the Royal Society of Literature). Therefore, the triple statement \"The name of Rose Tremain is (CBE, FRSL)\" is supported by the provided context information."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe information provided in the documents supports that Rose Tremain holds the CBE honor and is a Fellow of the Royal Society of Literature (FRSL)."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Rose Tremain was awarded a CBE in 2007 and she also holds an FRSL. However, the order of these awards is incorrect as she was given the FRSL before the CBE.",
+            "category": -1
+        },
+        "gemma2": {
+            "reason": "The provided text states she was awarded a CBE in 2007 and became a Dame in 2020. It also states she is a fellow of the Royal Society of Literature (FRSL).  These facts contradict the presented claim as it implies these honors were not bestowed upon her.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because Rose Tremain was awarded a CBE (Commander of the Order of the British Empire) in 2007, but FRSL (Fellow of the Royal Society of Literature) was held by Rose Tremain before that. The correct sequence of honors should be stated as \"Rose Tremain holds an FRSL and was awarded a CBE\"",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context mentions that Rose Tremain was awarded a CBE in 2007, but does not mention any FRSL (Fellow of the Royal Society of Literature) status. While it states she holds an FRSL, this specific detail is not part of the initial incorrect fact given.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Kazi_Jalil_Abbasi",
+    "predicate": "ontology/birthPlace",
+    "object": "resource/Basti,_Uttar_Pradesh",
+    "human_readable": "Kazi Jalil Abbasi was born in Basti, Uttar Pradesh.",
+    "questions": [
+        {
+            "score": 0.9190022945404053,
+            "question": "In what state was Kazi Jalil Abbasi born?"
+        },
+        {
+            "score": 0.904845118522644,
+            "question": "Where was Kazi Jalil Abbasi born?"
+        },
+        {
+            "score": 0.7887300848960876,
+            "question": "What is the name of the city where Kazi Jalil Abbasi was born?"
+        },
+        {
+            "score": 0.6560354828834534,
+            "question": "What is Kazi Jalil Abbasi known for?"
+        },
+        {
+            "score": 0.5911442637443542,
+            "question": "What are some interesting facts about Basti, Uttar Pradesh?"
+        },
+        {
+            "score": 0.46094465255737305,
+            "question": "Is Kazi Jalil Abbasi a well-known figure?"
+        },
+        {
+            "score": 0.4424540400505066,
+            "question": "Can you tell me more about Kazi Jalil Abbasi's life?"
+        },
+        {
+            "score": 0.32602953910827637,
+            "question": "Has Kazi Jalil Abbasi made any significant contributions to society?"
+        },
+        {
+            "score": 0.27452409267425537,
+            "question": "Are there any historical events associated with Basti?"
+        },
+        {
+            "score": 0.24684154987335205,
+            "question": "Is Basti a large or small city?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Kazi Jalil Abbasi was born in Basti, Uttar Pradesh.",
+            "html": "dbpedia_6988_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any historical events associated with Basti?",
+            "html": "dbpedia_6988_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Has Kazi Jalil Abbasi made any significant contributions to society?",
+            "html": "dbpedia_6988_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about Kazi Jalil Abbasi's life?",
+            "html": "dbpedia_6988_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6988_10.txt"
+        },
+        {
+            "file_id": "dbpedia_6988_14.txt"
+        },
+        {
+            "file_id": "dbpedia_6988_15.txt"
+        },
+        {
+            "file_id": "dbpedia_6988_16.txt"
+        },
+        {
+            "file_id": "dbpedia_6988_17.txt"
+        },
+        {
+            "file_id": "dbpedia_6988_18.txt"
+        },
+        {
+            "file_id": "dbpedia_6988_2.txt"
+        },
+        {
+            "file_id": "dbpedia_6988_25.txt"
+        },
+        {
+            "file_id": "dbpedia_6988_31.txt"
+        },
+        {
+            "file_id": "dbpedia_6988_37.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the answer:\n\n`{'output': 'no'}`\n\nThe documents do not mention the place of birth of Kazi Jalil Abbasi. The first document mentions \"He was born in Bayara, Uttar Pradesh, India\", but later documents do not confirm this information. Therefore, it cannot be determined from the provided context whether Kazi Jalil Abbasi was indeed born in Basti, Uttar Pradesh."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nJustification: The context information mentions that \"Kazi Jalil Abbasi was born in Bayara, Uttar Pradesh,\" which aligns with the query stating he was born in Basti, Uttar Pradesh. While there is a slight discrepancy (Bayara vs. Basti), it can be reasonably inferred that these are referring to the same place, thus supporting the triple."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Kazi Jalil Abbasi was born in Bayara, not Basti, both in Uttar Pradesh.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Context information states he was born in Bayara, Uttar Pradesh.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "information from sources 1, 3, 4, and 5 state that Kazi Jalil Abbasi was born in Bayara, Uttar Pradesh, India.",
+            "category": 2
+        }
+    }
+}

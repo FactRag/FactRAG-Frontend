@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Primeval",
+    "predicate": "ontology/company",
+    "object": "resource/M6_(TV_channel)",
+    "human_readable": "The company of Primeval is M6 TV channel.",
+    "questions": [
+        {
+            "score": 0.979006826877594,
+            "question": "Which M6 TV channel program features the company Primeval?"
+        },
+        {
+            "score": 0.9608659744262695,
+            "question": "Is Primeval a show broadcast on M6 TV?"
+        },
+        {
+            "score": 0.9044905304908752,
+            "question": "Does Primeval produce content for M6 TV?"
+        },
+        {
+            "score": 0.8462148308753967,
+            "question": "What genre is the Primeval show on M6 TV?"
+        },
+        {
+            "score": 0.827996015548706,
+            "question": "What television channel is the company Primeval associated with?"
+        },
+        {
+            "score": 0.8088369369506836,
+            "question": "When was the Primeval program first aired on M6 TV?"
+        },
+        {
+            "score": 0.722181499004364,
+            "question": "Who owns the company Primeval?"
+        },
+        {
+            "score": 0.7155213952064514,
+            "question": "Has Primeval won any awards for its work with M6 TV?"
+        },
+        {
+            "score": 0.7098324298858643,
+            "question": "What type of company is Primeval?"
+        },
+        {
+            "score": 0.5209665298461914,
+            "question": "What is the primary focus of the company Primeval?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The company of Primeval is M6 TV channel.",
+            "html": "dbpedia_3681_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of company is Primeval?",
+            "html": "dbpedia_3681_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Has Primeval won any awards for its work with M6 TV?",
+            "html": "dbpedia_3681_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who owns the company Primeval?",
+            "html": "dbpedia_3681_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3681_12.txt"
+        },
+        {
+            "file_id": "dbpedia_3681_13.txt"
+        },
+        {
+            "file_id": "dbpedia_3681_26.txt"
+        },
+        {
+            "file_id": "dbpedia_3681_28.txt"
+        },
+        {
+            "file_id": "dbpedia_3681_41.txt"
+        },
+        {
+            "file_id": "dbpedia_3681_43.txt"
+        },
+        {
+            "file_id": "dbpedia_3681_46.txt"
+        },
+        {
+            "file_id": "dbpedia_3681_50.txt"
+        },
+        {
+            "file_id": "dbpedia_3681_51.txt"
+        },
+        {
+            "file_id": "dbpedia_3681_6.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the structured JSON format containing the evaluation result:\n\n```\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: According to the documents, the production companies for the TV show \"Primeval\" include Impossible Pictures, ITV Studios, ProSieben, Treasure Entertainment, and M6 Films. The document also mentions that M6 is a private French TV channel, which implies that it can be considered as one of the companies involved in producing Primeval, especially since it's mentioned alongside other media-related firms."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents provide information that M6 is involved in the production of Primeval, which supports the statement that the company (M6 TV channel) was part of the production of Primeval."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "M6 TV channel is mentioned as one of the broadcasters of Primeval, not the production company.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The text specifically states that Primeval was produced for ITV by Impossible Pictures, not M6 TV channel.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Primeval is produced by production companies including Impossible Pictures, ITV Studios, ProSieben, Treasure Entertainment, and M6 Films, not directly by the M6 TV channel.",
+            "category": 2
+        }
+    }
+}

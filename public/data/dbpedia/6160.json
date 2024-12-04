@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Paessler",
+    "predicate": "property/location",
+    "object": "resource/Nuremberg,_Germany",
+    "human_readable": "Paessler is located in Nuremberg, Germany.",
+    "questions": [
+        {
+            "score": 0.8573035597801208,
+            "question": "Where is Paessler located?"
+        },
+        {
+            "score": 0.826067328453064,
+            "question": "In what country is Paessler situated?"
+        },
+        {
+            "score": 0.7706595063209534,
+            "question": "Does Paessler have offices outside of Nuremberg?"
+        },
+        {
+            "score": 0.6586832404136658,
+            "question": "What is the significance of Nuremberg to Paessler?"
+        },
+        {
+            "score": 0.6305089592933655,
+            "question": "Is Paessler based in Europe?"
+        },
+        {
+            "score": 0.5107882618904114,
+            "question": "What city is the home of Paessler?"
+        },
+        {
+            "score": 0.3045841157436371,
+            "question": "What type of company is Paessler?"
+        },
+        {
+            "score": 0.2928031086921692,
+            "question": "Can you tell me more about Paessler?"
+        },
+        {
+            "score": 0.28483882546424866,
+            "question": "What industry does Paessler operate in?"
+        },
+        {
+            "score": 0.26421061158180237,
+            "question": "Is Paessler a well-known company?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Paessler is located in Nuremberg, Germany.",
+            "html": "dbpedia_6160_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What industry does Paessler operate in?",
+            "html": "dbpedia_6160_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about Paessler?",
+            "html": "dbpedia_6160_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of company is Paessler?",
+            "html": "dbpedia_6160_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6160_100.txt"
+        },
+        {
+            "file_id": "dbpedia_6160_104.txt"
+        },
+        {
+            "file_id": "dbpedia_6160_128.txt"
+        },
+        {
+            "file_id": "dbpedia_6160_32.txt"
+        },
+        {
+            "file_id": "dbpedia_6160_41.txt"
+        },
+        {
+            "file_id": "dbpedia_6160_47.txt"
+        },
+        {
+            "file_id": "dbpedia_6160_57.txt"
+        },
+        {
+            "file_id": "dbpedia_6160_7.txt"
+        },
+        {
+            "file_id": "dbpedia_6160_85.txt"
+        },
+        {
+            "file_id": "dbpedia_6160_89.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the structured JSON response:\n\n```\n{\n  \"output\": \"yes\"\n}\n```\n\nThe information provided supports the triple that Paessler is located in Nuremberg, Germany. This can be inferred from several documents where it is mentioned that Paessler AG is based in Nuremberg, Germany (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6160/re-ranker-msmarco/57.txt) and has its flagship product PRTG Network Monitor monitor all systems, devices, traffic, and applications in organizations\u2019 IT, OT and IoT infrastructures located in Nuremberg (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6160/re-ranker-msmarco/32.txt)."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\"output\": \"yes\"}\n```\n\nThe documents provide information that supports the statement \"Paessler is located in Nuremberg, Germany.\" This can be seen from multiple mentions such as \"Founded in 1997 in the metropolitan region of Nuremberg,\" and \"Paessler AG, based in Nuremberg, Germany,\" which confirm Paessler's location."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

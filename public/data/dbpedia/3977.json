@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Richard_Boggs",
+    "predicate": "ontology/deathPlace",
+    "object": "resource/California_State_Prison,_Corcoran",
+    "human_readable": "Richard Boggs died in California State Prison, Corcoran.",
+    "questions": [
+        {
+            "score": 0.89966881275177,
+            "question": "In what prison did Richard Boggs die?"
+        },
+        {
+            "score": 0.8279824256896973,
+            "question": "Where did Richard Boggs die?"
+        },
+        {
+            "score": 0.6577969789505005,
+            "question": "Were there any notable details surrounding Richard Boggs' death?"
+        },
+        {
+            "score": 0.654599130153656,
+            "question": "What state is the California State Prison, Corcoran located in?"
+        },
+        {
+            "score": 0.5850157141685486,
+            "question": "Was Richard Boggs convicted of a crime?"
+        },
+        {
+            "score": 0.5123727321624756,
+            "question": "How long was Richard Boggs imprisoned?"
+        },
+        {
+            "score": 0.4112776517868042,
+            "question": "What was the nature of Richard Boggs' crimes?"
+        },
+        {
+            "score": 0.35870999097824097,
+            "question": "Can you provide more information about Richard Boggs' life?"
+        },
+        {
+            "score": 0.3350013494491577,
+            "question": "Was Richard Boggs involved in any high-profile cases?"
+        },
+        {
+            "score": 0.23790574073791504,
+            "question": "Are there any public records available about Richard Boggs?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Richard Boggs died in California State Prison, Corcoran.",
+            "html": "dbpedia_3977_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Was Richard Boggs involved in any high-profile cases?",
+            "html": "dbpedia_3977_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you provide more information about Richard Boggs' life?",
+            "html": "dbpedia_3977_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What was the nature of Richard Boggs' crimes?",
+            "html": "dbpedia_3977_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3977_16.txt"
+        },
+        {
+            "file_id": "dbpedia_3977_17.txt"
+        },
+        {
+            "file_id": "dbpedia_3977_20.txt"
+        },
+        {
+            "file_id": "dbpedia_3977_22.txt"
+        },
+        {
+            "file_id": "dbpedia_3977_4.txt"
+        },
+        {
+            "file_id": "dbpedia_3977_55.txt"
+        },
+        {
+            "file_id": "dbpedia_3977_76.txt"
+        },
+        {
+            "file_id": "dbpedia_3977_80.txt"
+        },
+        {
+            "file_id": "dbpedia_3977_90.txt"
+        },
+        {
+            "file_id": "dbpedia_3977_94.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, here is the evaluation of the triple:\n\n{\n  \"output\": \"no\"\n}\n\nThe reason for this answer is that while there are multiple documents mentioning Richard Boggs and his sentence to prison, none of them mention California State Prison, Corcoran as the location where he died. According to document 60.txt, Richard T. Boggs was put to death in Virginia's electric chair at the State Penitentiary in downtown Richmond, and according to document 53.txt, Richard Boggs died in prison in 2003 (no specific location mentioned)."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: None of the provided documents mention Richard Boggs dying in California State Prison, Corcoran. The information available is about his death sentence and execution but does not specify the location of his imprisonment or place of death."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Richard Boggs was sentenced to life imprisonment in California State Prison, but he died in a different state, Virginia.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Several passages mention Richard Boggs being convicted of murder in California, serving time in a Californian prison, and dying in prison.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The information states that Richard Boggs was sentenced to life in prison in 1990 for a scheme involving murder in California, but later mentions that he died in prison in 2003.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information does not mention Richard Boggs being imprisoned in California State Prison, Corcoran. Instead, it states that he was sentenced to life in prison in 1990 for a scheme involving murder and identity theft to collect a $1.5 million life insurance policy, and later died in prison in 2003. Additionally, there is another context about Richard T. Boggs being executed in Virginia's electric chair for murdering an elderly widow, which suggests he was not the same person as the one mentioned in California.",
+            "category": 2
+        }
+    }
+}

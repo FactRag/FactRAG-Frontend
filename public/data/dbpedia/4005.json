@@ -1,0 +1,122 @@
+{
+    "subject": "resource/Bishop_Grimes_Junior/Senior_High_School",
+    "predicate": "property/type",
+    "object": "resource/Mixed-sex_education",
+    "human_readable": "Bishop Grimes Junior/Senior High School is a mixed-sex education.",
+    "questions": [
+        {
+            "score": 0.9854394197463989,
+            "question": "Is Bishop Grimes Junior/Senior High School a single-sex or mixed-sex school?"
+        },
+        {
+            "score": 0.9609031677246094,
+            "question": "Who can attend Bishop Grimes Junior/Senior High School based on gender?"
+        },
+        {
+            "score": 0.9037221074104309,
+            "question": "What type of education does Bishop Grimes Junior/Senior High School provide?"
+        },
+        {
+            "score": 0.8914629817008972,
+            "question": "What is the gender composition of students at Bishop Grimes Junior/Senior High School?"
+        },
+        {
+            "score": 0.8159082531929016,
+            "question": "Does Bishop Grimes Junior/Senior High School cater to boys only, girls only, or both genders?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Bishop Grimes Junior/Senior High School is a mixed-sex education.",
+            "html": "dbpedia_4005_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the gender composition of students at Bishop Grimes Junior/Senior High School?",
+            "html": "dbpedia_4005_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of education does Bishop Grimes Junior/Senior High School provide?",
+            "html": "dbpedia_4005_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who can attend Bishop Grimes Junior/Senior High School based on gender?",
+            "html": "dbpedia_4005_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4005_20.txt"
+        },
+        {
+            "file_id": "dbpedia_4005_21.txt"
+        },
+        {
+            "file_id": "dbpedia_4005_25.txt"
+        },
+        {
+            "file_id": "dbpedia_4005_28.txt"
+        },
+        {
+            "file_id": "dbpedia_4005_3.txt"
+        },
+        {
+            "file_id": "dbpedia_4005_36.txt"
+        },
+        {
+            "file_id": "dbpedia_4005_45.txt"
+        },
+        {
+            "file_id": "dbpedia_4005_51.txt"
+        },
+        {
+            "file_id": "dbpedia_4005_53.txt"
+        },
+        {
+            "file_id": "dbpedia_4005_58.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nWhile the provided text doesn't explicitly state \"mixed-sex\", it does mention  Bishop Grimes Junior/Senior High School having over 350 students in grades seven through twelve, and welcoming both boys and girls. This strongly implies a mixed-sex education environment. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here's the evaluation of the triple in the form of a structured JSON format:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe reason for this answer is that according to document `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4005/re-ranker-msmarco/51.txt`, Bishop Grimes Senior High School (note: not Junior/Senior High School) has \"a rich history rooted in Catholic values\", which suggests a Christian education, and document `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4005/re-ranker-msmarco/3.txt` states that Bishop Grimes Junior Senior High School is a Diocesan Preparatory School committed to providing a quality Christian education in the Catholic tradition. There is no mention of mixed-sex education, and it's likely that the school is single-sex (Catholic schools often have single-sex education)."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe documents do not provide any information to support that Bishop Grimes Junior/Senior High School is a mixed-sex school. The provided context focuses on the school's mission, religious commitment, sports programs, and location but does not mention anything about the sex of the students or the nature of the education it provides regarding gender."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n      \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "There is no information provided in the context indicating that Bishop Grimes Junior/Senior High School is a mixed-sex education. It only mentions students, but there's no explicit mention of boys and girls being educated together.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "the context information explicitly states that Bishop Grimes Junior/Senior High School is a Diocesan Preparatory School committed to providing a quality Christian education in the Catholic tradition, which implies it is likely a single-sex education for boys and girls separately.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context does not provide any information about the school being mixed-sex or single-gender. Additionally, the focus on a faith-driven environment and Catholic tradition typically suggests a single-gender setting for preparatory schools to maintain a specific religious atmosphere, making it less likely to be mixed-sex.",
+            "category": 2
+        }
+    }
+}

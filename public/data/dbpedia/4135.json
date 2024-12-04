@@ -1,0 +1,146 @@
+{
+    "subject": "resource/H._Robert_Horvitz",
+    "predicate": "property/prizes",
+    "object": "resource/Royal_Society",
+    "human_readable": "H. Robert Horvitz has won a prize from the Royal Society.",
+    "questions": [
+        {
+            "score": 0.9864067435264587,
+            "question": "Is H. Robert Horvitz a recipient of a Royal Society prize?"
+        },
+        {
+            "score": 0.9859319925308228,
+            "question": "What kind of prize did H. Robert Horvitz win from the Royal Society?"
+        },
+        {
+            "score": 0.9845917820930481,
+            "question": "For what achievements did H. Robert Horvitz receive a prize from the Royal Society?"
+        },
+        {
+            "score": 0.9480171799659729,
+            "question": "Which prestigious society awarded H. Robert Horvitz a prize?"
+        },
+        {
+            "score": 0.9363194108009338,
+            "question": "Who has won a prize from the Royal Society?"
+        },
+        {
+            "score": 0.9164201021194458,
+            "question": "Name the individual who won a prize from the Royal Society."
+        },
+        {
+            "score": 0.8840389251708984,
+            "question": "What organization awarded H. Robert Horvitz a prize?"
+        },
+        {
+            "score": 0.8375864028930664,
+            "question": "What is notable about H. Robert Horvitz's recognition by the Royal Society?"
+        },
+        {
+            "score": 0.7737906575202942,
+            "question": "What recognition has H. Robert Horvitz received?"
+        },
+        {
+            "score": 0.7394441366195679,
+            "question": "Has H. Robert Horvitz received any notable awards?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=H. Robert Horvitz has won a prize from the Royal Society.",
+            "html": "dbpedia_4135_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What recognition has H. Robert Horvitz received?",
+            "html": "dbpedia_4135_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is notable about H. Robert Horvitz's recognition by the Royal Society?",
+            "html": "dbpedia_4135_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What organization awarded H. Robert Horvitz a prize?",
+            "html": "dbpedia_4135_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4135_20.txt"
+        },
+        {
+            "file_id": "dbpedia_4135_21.txt"
+        },
+        {
+            "file_id": "dbpedia_4135_25.txt"
+        },
+        {
+            "file_id": "dbpedia_4135_43.txt"
+        },
+        {
+            "file_id": "dbpedia_4135_44.txt"
+        },
+        {
+            "file_id": "dbpedia_4135_50.txt"
+        },
+        {
+            "file_id": "dbpedia_4135_54.txt"
+        },
+        {
+            "file_id": "dbpedia_4135_57.txt"
+        },
+        {
+            "file_id": "dbpedia_4135_75.txt"
+        },
+        {
+            "file_id": "dbpedia_4135_79.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have any other triples you'd like me to evaluate! \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the structured JSON response:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe information in the documents supports the triple that H. Robert Horvitz has won a prize from the Royal Society. The documents mention that he is a foreign member of the Royal Society of London, which indicates that he has indeed received an award or honor from this prestigious scientific organization."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe context information indicates that H. Robert Horvitz is indeed a recipient of multiple prestigious awards, including being a \"Foreign Member, Royal Society of London.\" This confirms that he has received a prize from the Royal Society, supporting the given triple."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "H. Robert Horvitz has been a foreign member of the Royal Society of London, but being a foreign member does not equate to winning a prize from the society.",
+            "category": -1
+        },
+        "gemma2": {
+            "reason": "It states he has won a prize from the Royal Society, but the provided text says he is a *foreign member* of the Royal Society.  There's a difference between being a member and winning an award from an organization.",
+            "category": -1
+        },
+        "llama3.1": {
+            "reason": "H. Robert Horvitz is a foreign member of the Royal Society of London, not that he has won a prize from them.",
+            "category": -1
+        },
+        "qwen2.5": {
+            "reason": "The context information explicitly lists Horvitz as a \"Foreign Member, Royal Society of London,\" which is different from being a regular member. This distinction indicates that while he has been honored by the Royal Society, it was not with a prize but rather through membership recognition.",
+            "category": -1
+        }
+    }
+}

@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Barry_Davis_(footballer)",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:Living_people",
+    "human_readable": "Barry Davis (footballer) is about Living people.",
+    "questions": [
+        {
+            "score": 0.7916296720504761,
+            "question": "Where might we find information about Barry Davis' life?"
+        },
+        {
+            "score": 0.6476025581359863,
+            "question": "Is Barry Davis a famous person?"
+        },
+        {
+            "score": 0.6202497482299805,
+            "question": "Is Barry Davis still alive?"
+        },
+        {
+            "score": 0.5850726366043091,
+            "question": "Who might be considered 'about' Living people?"
+        },
+        {
+            "score": 0.5843252539634705,
+            "question": "Are there any famous footballers named Barry Davis?"
+        },
+        {
+            "score": 0.5558120608329773,
+            "question": "What is Barry Davis known for?"
+        },
+        {
+            "score": 0.42543232440948486,
+            "question": "What sport does Barry Davis play?"
+        },
+        {
+            "score": 0.42316991090774536,
+            "question": "Can you tell me more about Barry Davis?"
+        },
+        {
+            "score": 0.3514600396156311,
+            "question": "Has Barry Davis achieved any notable accomplishments?"
+        },
+        {
+            "score": 0.27346619963645935,
+            "question": "What are some common traits of living people?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Barry Davis (footballer) is about Living people.",
+            "html": "dbpedia_566_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Has Barry Davis achieved any notable accomplishments?",
+            "html": "dbpedia_566_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about Barry Davis?",
+            "html": "dbpedia_566_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What sport does Barry Davis play?",
+            "html": "dbpedia_566_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_566_122.txt"
+        },
+        {
+            "file_id": "dbpedia_566_126.txt"
+        },
+        {
+            "file_id": "dbpedia_566_15.txt"
+        },
+        {
+            "file_id": "dbpedia_566_17.txt"
+        },
+        {
+            "file_id": "dbpedia_566_28.txt"
+        },
+        {
+            "file_id": "dbpedia_566_60.txt"
+        },
+        {
+            "file_id": "dbpedia_566_61.txt"
+        },
+        {
+            "file_id": "dbpedia_566_83.txt"
+        },
+        {
+            "file_id": "dbpedia_566_85.txt"
+        },
+        {
+            "file_id": "dbpedia_566_88.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n\n\nThe provided text discusses Barry Davis's passing and his impact on football. This indicates he is not a living person.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the structured JSON response:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe information in the documents supports the triple, as it mentions that Barry Davis was a \"triple premiership player\" and played for Essendon and North Melbourne."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe documents do not provide any information that suggests Barry Davis is a living person. The context clearly mentions his death at the age of 80, which indicates he is no longer alive. Therefore, the statement \"Barry Davis (footballer) is about Living people\" is incorrect based on the given information."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n     \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "Based on the context information provided, Barry Davis is described as having passed away at the age of 80. Therefore, the statement \"Barry Davis (footballer) is about Living people\" is incorrect.\n\nThe answer in structured JSON format would be:\n\n```json\n{\"output\": \"no\"}\n```"
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "The provided text explicitly states that Barry Davis passed away on Wednesday, aged 80.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Barry Davis passed away on Wednesday at the age of 80, as mentioned multiple times in the context information.",
+            "category": 2
+        }
+    }
+}

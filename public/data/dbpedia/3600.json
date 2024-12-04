@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Luis_Congo",
+    "predicate": "ontology/birthPlace",
+    "object": "resource/Mira_Canton",
+    "human_readable": "Luis Congo was born in Mira Canton.",
+    "questions": [
+        {
+            "score": 0.8217037320137024,
+            "question": "Where was Luis Congo born?"
+        },
+        {
+            "score": 0.47069090604782104,
+            "question": "What country is Mira Canton located in?"
+        },
+        {
+            "score": 0.4587957561016083,
+            "question": "What is the significance of Luis Congo's birthplace?"
+        },
+        {
+            "score": 0.36839759349823,
+            "question": "What is Mira Canton known for?"
+        },
+        {
+            "score": 0.3632522225379944,
+            "question": "Are there any other notable individuals from Mira Canton?"
+        },
+        {
+            "score": 0.23656222224235535,
+            "question": "Is there any information available about Luis Congo's life?"
+        },
+        {
+            "score": 0.21019861102104187,
+            "question": "What are some cultural traditions associated with Mira Canton?"
+        },
+        {
+            "score": 0.20452773571014404,
+            "question": "What is the climate like in Mira Canton?"
+        },
+        {
+            "score": 0.2037474811077118,
+            "question": "Can you tell me more about Luis Congo?"
+        },
+        {
+            "score": 0.13674063980579376,
+            "question": "How does the environment of Mira Canton influence its residents?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Luis Congo was born in Mira Canton.",
+            "html": "dbpedia_3600_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about Luis Congo?",
+            "html": "dbpedia_3600_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the climate like in Mira Canton?",
+            "html": "dbpedia_3600_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some cultural traditions associated with Mira Canton?",
+            "html": "dbpedia_3600_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3600_115.txt"
+        },
+        {
+            "file_id": "dbpedia_3600_119.txt"
+        },
+        {
+            "file_id": "dbpedia_3600_131.txt"
+        },
+        {
+            "file_id": "dbpedia_3600_2.txt"
+        },
+        {
+            "file_id": "dbpedia_3600_22.txt"
+        },
+        {
+            "file_id": "dbpedia_3600_23.txt"
+        },
+        {
+            "file_id": "dbpedia_3600_30.txt"
+        },
+        {
+            "file_id": "dbpedia_3600_55.txt"
+        },
+        {
+            "file_id": "dbpedia_3600_65.txt"
+        },
+        {
+            "file_id": "dbpedia_3600_95.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "The query is \"Luis Congo was born in Mira Canton.\"\n\nHere's the evaluation:\n\n```\n{\n  \"output\": \"yes\"\n}\n```\n\nReasoning:\n\n* The context information contains multiple documents related to Luis Congo, including a document with the file path `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3600/re-ranker-msmarco/128.txt` that states: \"Luis Congo is an Ecuadorian football player who plays as a forward. He was born on February 27, 1989, in Mira Canton, Ecuador.\"\n* Another document with the file path `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3600/re-ranker-msmarco/22.txt` states: \"Luis Gonzalo Congo Minda (born 27 February 1989 in Mira Canton) is an Ecuadorian footballer who plays for C.D. El Nacional as a forward.\"\n* Both documents confirm that Luis Congo was indeed born in Mira Canton, Ecuador.\n\nTherefore, the answer is \"yes\"."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe document states, \"Luis Congo is an Ecuadorian football player who plays as a forward. He was born on February 27, 1989, in Mira Canton, Ecuador.\" This supports the statement that Luis Congo was born in Mira Canton."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

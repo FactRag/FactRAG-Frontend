@@ -1,0 +1,129 @@
+{
+    "subject": "resource/WGAC-FM",
+    "predicate": "ontology/city",
+    "object": "resource/Harlem,_Georgia",
+    "human_readable": "WGAC-FM is located in Harlem, Georgia.",
+    "questions": [
+        {
+            "score": 0.8378532528877258,
+            "question": "Where is WGAC-FM located?"
+        },
+        {
+            "score": 0.7291029691696167,
+            "question": "Are there other radio stations in Harlem, Georgia?"
+        },
+        {
+            "score": 0.6962671279907227,
+            "question": "What state is Harlem, Georgia in?"
+        },
+        {
+            "score": 0.4803256094455719,
+            "question": "Is WGAC-FM a radio station?"
+        },
+        {
+            "score": 0.42476707696914673,
+            "question": "Who owns WGAC-FM?"
+        },
+        {
+            "score": 0.38286322355270386,
+            "question": "What type of station might WGAC-FM be?"
+        },
+        {
+            "score": 0.3475993573665619,
+            "question": "What is the population of Harlem, Georgia?"
+        },
+        {
+            "score": 0.2930205762386322,
+            "question": "Does WGAC-FM have a website?"
+        },
+        {
+            "score": 0.2799701988697052,
+            "question": "Could you find more information about WGAC-FM's programming?"
+        },
+        {
+            "score": 0.20510879158973694,
+            "question": "What is the history of radio broadcasting in Georgia?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=WGAC-FM is located in Harlem, Georgia.",
+            "html": "dbpedia_6333_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Could you find more information about WGAC-FM's programming?",
+            "html": "dbpedia_6333_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does WGAC-FM have a website?",
+            "html": "dbpedia_6333_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the population of Harlem, Georgia?",
+            "html": "dbpedia_6333_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6333_100.txt"
+        },
+        {
+            "file_id": "dbpedia_6333_107.txt"
+        },
+        {
+            "file_id": "dbpedia_6333_111.txt"
+        },
+        {
+            "file_id": "dbpedia_6333_29.txt"
+        },
+        {
+            "file_id": "dbpedia_6333_45.txt"
+        },
+        {
+            "file_id": "dbpedia_6333_47.txt"
+        },
+        {
+            "file_id": "dbpedia_6333_53.txt"
+        },
+        {
+            "file_id": "dbpedia_6333_64.txt"
+        },
+        {
+            "file_id": "dbpedia_6333_84.txt"
+        },
+        {
+            "file_id": "dbpedia_6333_86.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe information in the documents supports the triple. The document with file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6333/re-ranker-msmarco/29.txt states that WGAC (which is another name for WGAC-FM) is licensed to Harlem, GA."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\"output\": \"yes\"}\n```\n\nThe documents provide information that supports the statement \"WGAC-FM is located in Harlem, Georgia.\" Specifically, multiple sources indicate that WGAC-FM (which can also be referred to as Newstalk 580 95.1) is licensed to and operates in Harlem, Georgia."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

@@ -1,0 +1,142 @@
+{
+    "subject": "resource/George_Herbert_Scott",
+    "predicate": "property/name",
+    "object": "Scott, George Herbert",
+    "human_readable": "The name of George Herbert Scott is Scott, George Herbert.",
+    "questions": [
+        {
+            "score": 0.9781342148780823,
+            "question": "What is the full name of George Herbert Scott?"
+        },
+        {
+            "score": 0.9674756526947021,
+            "question": "Is 'Scott' the first or last name of George Herbert Scott?"
+        },
+        {
+            "score": 0.9618018865585327,
+            "question": "What is the last name of George Herbert Scott?"
+        },
+        {
+            "score": 0.9499760866165161,
+            "question": "What is the first name of George Herbert Scott?"
+        },
+        {
+            "score": 0.9299615025520325,
+            "question": "How many names are in George Herbert Scott's name?"
+        },
+        {
+            "score": 0.9017729759216309,
+            "question": "If you were to introduce George Herbert Scott, what would you say his name is?"
+        },
+        {
+            "score": 0.8963186740875244,
+            "question": "What two words make up the full name of George Herbert Scott?"
+        },
+        {
+            "score": 0.8840080499649048,
+            "question": "What are the two parts of George Herbert Scott's name?"
+        },
+        {
+            "score": 0.8614973425865173,
+            "question": "What order do the names appear in for George Herbert Scott?"
+        },
+        {
+            "score": 0.7520163059234619,
+            "question": "Can you re-write George Herbert Scott's name in reverse order?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of George Herbert Scott is Scott, George Herbert.",
+            "html": "dbpedia_727_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What order do the names appear in for George Herbert Scott?",
+            "html": "dbpedia_727_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are the two parts of George Herbert Scott's name?",
+            "html": "dbpedia_727_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What two words make up the full name of George Herbert Scott?",
+            "html": "dbpedia_727_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_727_15.txt"
+        },
+        {
+            "file_id": "dbpedia_727_43.txt"
+        },
+        {
+            "file_id": "dbpedia_727_45.txt"
+        },
+        {
+            "file_id": "dbpedia_727_53.txt"
+        },
+        {
+            "file_id": "dbpedia_727_55.txt"
+        },
+        {
+            "file_id": "dbpedia_727_58.txt"
+        },
+        {
+            "file_id": "dbpedia_727_62.txt"
+        },
+        {
+            "file_id": "dbpedia_727_66.txt"
+        },
+        {
+            "file_id": "dbpedia_727_85.txt"
+        },
+        {
+            "file_id": "dbpedia_727_87.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you'd like to evaluate any more triples!"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "After analyzing the documents, I found that:\n\n* There are multiple individuals named George Herbert (or variations thereof) mentioned throughout the documents. This includes a poet, an American philosopher, British aristocrats, and others.\n* One specific individual is indeed named \"George Herbert Scott\", which matches the triple you provided.\n\nTherefore, based on this analysis, I can conclude that:\n\n{ \"output\": \"yes\" }"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\"output\": \"no\"}\n```\n\nExplanation: According to the provided documents, Major George Herbert \"Lucky Breeze\" Scott, CBE, AFC, (25 May 1888 \u2013 5 October 1930) is a British airship pilot and engineer. There is no information linking his name specifically as \"Scott, George Herbert.\" Therefore, the statement that the name of George Herbert Scott is \"Scott, George Herbert\" cannot be supported by the given context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "There is no direct evidence in the provided context to support that George Herbert Scott's full name is \"Scott, George Herbert.\" Instead, the context refers to him as just \"Scott\" and does not provide any information about a middle name.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "The provided context clearly states Herbert Fleming Scott Jr.'s name as \"Herbert Fleming Scott Jr.\" multiple times.   It also mentions various other individuals named George Herbert, but none of them are referred to as \"Scott, George Herbert.\"",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "There are multiple individuals with the name \"George Herbert\" or \"George Herbert Scott\" mentioned across different contexts, including a Welsh-born poet, an American philosopher, and a British airship pilot, making it impossible for all of them to share the same full name.",
+            "category": 2
+        }
+    }
+}

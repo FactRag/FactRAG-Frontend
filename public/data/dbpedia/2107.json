@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Gombe_State",
+    "predicate": "property/seatType",
+    "object": "resource/List_of_Nigerian_state_capitals",
+    "human_readable": "The seat type of Gombe State is List of Nigerian state capitals.",
+    "questions": [
+        {
+            "score": 0.9647220969200134,
+            "question": "Is Gombe State listed among Nigerian state capitals?"
+        },
+        {
+            "score": 0.849724531173706,
+            "question": "What type of seat is Gombe State?"
+        },
+        {
+            "score": 0.7671282291412354,
+            "question": "Where can you find a list of Nigerian state capitals?"
+        },
+        {
+            "score": 0.7285609245300293,
+            "question": "What information is included in the List of Nigerian state capitals?"
+        },
+        {
+            "score": 0.708370566368103,
+            "question": "What is the capital city of Gombe State?"
+        },
+        {
+            "score": 0.6640090346336365,
+            "question": "Is there a specific organization or document that maintains the List of Nigerian state capitals?"
+        },
+        {
+            "score": 0.5978071093559265,
+            "question": "Why might it be important to have a list of Nigerian state capitals?"
+        },
+        {
+            "score": 0.5008795857429504,
+            "question": "Are there any other relevant terms or concepts related to Nigerian state capitals?"
+        },
+        {
+            "score": 0.36691123247146606,
+            "question": "Can you name other Nigerian states besides Gombe?"
+        },
+        {
+            "score": 0.10038439929485321,
+            "question": "Does the term 'seat' refer to a political position or location in this context?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The seat type of Gombe State is List of Nigerian state capitals.",
+            "html": "dbpedia_2107_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you name other Nigerian states besides Gombe?",
+            "html": "dbpedia_2107_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any other relevant terms or concepts related to Nigerian state capitals?",
+            "html": "dbpedia_2107_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Why might it be important to have a list of Nigerian state capitals?",
+            "html": "dbpedia_2107_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2107_105.txt"
+        },
+        {
+            "file_id": "dbpedia_2107_133.txt"
+        },
+        {
+            "file_id": "dbpedia_2107_25.txt"
+        },
+        {
+            "file_id": "dbpedia_2107_39.txt"
+        },
+        {
+            "file_id": "dbpedia_2107_4.txt"
+        },
+        {
+            "file_id": "dbpedia_2107_44.txt"
+        },
+        {
+            "file_id": "dbpedia_2107_58.txt"
+        },
+        {
+            "file_id": "dbpedia_2107_68.txt"
+        },
+        {
+            "file_id": "dbpedia_2107_72.txt"
+        },
+        {
+            "file_id": "dbpedia_2107_98.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here's the evaluation of the triple \"The seat type of Gombe State is List of Nigerian state capitals\" based on the provided context information:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation:\n\n* The documents contain a list of Nigerian state capitals, which includes Gombe State.\n* In one of the documents, it's mentioned that Gombe City is the capital city of Gombe State in Nigeria.\n* Another document provides information about Gombe State, mentioning its location in the northeastern region of Nigeria and listing it as one of the states in Nigeria along with its capital, Gombe City.\n* Yet another document contains a list of Nigerian state capitals, specifically mentioning Gombe State (Gombe) as one of the capital cities.\n\nTherefore, based on these documents, the triple \"The seat type of Gombe State is List of Nigerian state capitals\" is supported."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The provided documents support that Gombe State has a capital, which is listed in the context as Gombe City. Therefore, it aligns with the query that lists the capitals of Nigerian states, including Gombe State's capital city, Gombe."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Gombe City is the seat of Gombe State and not listed under any state capital in the provided list.",
+            "category": -1
+        },
+        "llama3.1": {
+            "reason": "The context information provided does not mention Gombe State as one of the listed Nigerian state capitals, whereas the fact statement claims that \"The seat type of Gombe State is List of Nigerian state capitals.\" implies a direct association between Gombe State and the list of Nigerian state capitals.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Gombe State's capital city is specifically named as Gombe, not listed as a general seat type for capitals.",
+            "category": -1
+        }
+    }
+}

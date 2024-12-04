@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Charlie_Chan_Carries_On_(film)",
+    "predicate": "property/starring",
+    "object": "resource/Warren_Hymer",
+    "human_readable": "The movie Charlie Chan Carries On stars Warren Hymer.",
+    "questions": [
+        {
+            "score": 0.915385365486145,
+            "question": "Who starred in the movie Charlie Chan Carries On?"
+        },
+        {
+            "score": 0.7637638449668884,
+            "question": "Who played the main character in Charlie Chan Carries On?"
+        },
+        {
+            "score": 0.6693339347839355,
+            "question": "What is the title of the movie starring Warren Hymer?"
+        },
+        {
+            "score": 0.664134681224823,
+            "question": "What genre is the movie Charlie Chan Carries On likely to be?"
+        },
+        {
+            "score": 0.638148844242096,
+            "question": "What other movies has Warren Hymer acted in?"
+        },
+        {
+            "score": 0.6254940032958984,
+            "question": "Name a movie featuring Warren Hymer."
+        },
+        {
+            "score": 0.6217964291572571,
+            "question": "Were there any sequels to Charlie Chan Carries On?"
+        },
+        {
+            "score": 0.5511154532432556,
+            "question": "Is Warren Hymer known for acting in movies?"
+        },
+        {
+            "score": 0.5406032204627991,
+            "question": "What year was Charlie Chan Carries On released?"
+        },
+        {
+            "score": 0.4839758276939392,
+            "question": "Was Warren Hymer a famous actor?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The movie Charlie Chan Carries On stars Warren Hymer.",
+            "html": "dbpedia_3531_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What year was Charlie Chan Carries On released?",
+            "html": "dbpedia_3531_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Warren Hymer known for acting in movies?",
+            "html": "dbpedia_3531_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Were there any sequels to Charlie Chan Carries On?",
+            "html": "dbpedia_3531_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3531_1.txt"
+        },
+        {
+            "file_id": "dbpedia_3531_106.txt"
+        },
+        {
+            "file_id": "dbpedia_3531_110.txt"
+        },
+        {
+            "file_id": "dbpedia_3531_117.txt"
+        },
+        {
+            "file_id": "dbpedia_3531_130.txt"
+        },
+        {
+            "file_id": "dbpedia_3531_14.txt"
+        },
+        {
+            "file_id": "dbpedia_3531_23.txt"
+        },
+        {
+            "file_id": "dbpedia_3531_36.txt"
+        },
+        {
+            "file_id": "dbpedia_3531_44.txt"
+        },
+        {
+            "file_id": "dbpedia_3531_96.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'} \n``` \n\n\nThe documents state that the film *Charlie Chan Carries On* stars Warner Oland, not Warren Hymer.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the context information, I can evaluate whether the statement \"The movie Charlie Chan Carries On stars Warner Oland\" is correct.\n\nHere's my evaluation:\n\n* In multiple documents (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3531/re-ranker-msmarco/104.txt, file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3531/re-ranker-msmarco/108.txt, and others), it is stated that the movie \"Charlie Chan Carries On\" stars Warner Oland as Charlie Chan.\n* There are no contradictions or corrections in any of the documents stating that another actor (Warren Hymer) played the role.\n\nTherefore, based on the provided context information:\n\n{'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: According to the documents, the actor who starred as Charlie Chan in \"Charlie Chan Carries On\" is Warner Oland, not Warren Hymer."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Warner Oland, not Warren Hymer, starred as Charlie Chan in the movie \"Charlie Chan Carries On\".",
+            "category": 3
+        },
+        "gemma2": {
+            "reason": "Several sources state that Warner Oland played Charlie Chan in the film.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "The context clearly states that Charlie Chan Carries On stars Warner Oland, not Warren Hymer.",
+            "category": 3
+        }
+    }
+}

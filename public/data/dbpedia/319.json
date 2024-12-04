@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Thunderbird_Films",
+    "predicate": "property/locationCity",
+    "object": "resource/California",
+    "human_readable": "Thunderbird Films is located in California.",
+    "questions": [
+        {
+            "score": 0.9105350375175476,
+            "question": "Where is Thunderbird Films located?"
+        },
+        {
+            "score": 0.8993439078330994,
+            "question": "What other businesses might be located in California alongside Thunderbird Films?"
+        },
+        {
+            "score": 0.8920244574546814,
+            "question": "In which state is Thunderbird Films situated?"
+        },
+        {
+            "score": 0.5073030591011047,
+            "question": "Does Thunderbird Films operate in the film industry?"
+        },
+        {
+            "score": 0.4635762572288513,
+            "question": "What are some of the popular movies associated with Thunderbird Films?"
+        },
+        {
+            "score": 0.43413904309272766,
+            "question": "What type of company is Thunderbird Films?"
+        },
+        {
+            "score": 0.426266610622406,
+            "question": "Are there any famous films produced by Thunderbird Films?"
+        },
+        {
+            "score": 0.3356650173664093,
+            "question": "Is Thunderbird Films a publicly traded company?"
+        },
+        {
+            "score": 0.29957619309425354,
+            "question": "Does Thunderbird Films have a website or social media presence?"
+        },
+        {
+            "score": 0.2082570642232895,
+            "question": "Has Thunderbird Films won any awards for their work?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Thunderbird Films is located in California.",
+            "html": "dbpedia_319_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Thunderbird Films have a website or social media presence?",
+            "html": "dbpedia_319_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Thunderbird Films a publicly traded company?",
+            "html": "dbpedia_319_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any famous films produced by Thunderbird Films?",
+            "html": "dbpedia_319_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_319_120.txt"
+        },
+        {
+            "file_id": "dbpedia_319_125.txt"
+        },
+        {
+            "file_id": "dbpedia_319_130.txt"
+        },
+        {
+            "file_id": "dbpedia_319_140.txt"
+        },
+        {
+            "file_id": "dbpedia_319_51.txt"
+        },
+        {
+            "file_id": "dbpedia_319_59.txt"
+        },
+        {
+            "file_id": "dbpedia_319_73.txt"
+        },
+        {
+            "file_id": "dbpedia_319_77.txt"
+        },
+        {
+            "file_id": "dbpedia_319_91.txt"
+        },
+        {
+            "file_id": "dbpedia_319_97.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "To answer your question, I'll evaluate the information provided and determine whether it supports the triple \"Thunderbird Films is located in California\".\n\nHere's my analysis:\n\n* Document 3 mentions a Thunderbird Films with an address at 10675 Santa Monica Blvd in Westwood - Los Angeles, CA.\n* This suggests that Thunderbird Films has a presence in Los Angeles, California.\n\nHowever, I also found another document (Document 9) that talks about an earlier version of Thunderbird Films as a Los Angeles based film distributor, but it does not explicitly state their location.\n\nAdditionally, Document 6 mentions Thunderbird Films being founded in Oklahoma City by Randy Wayne and Talia Bella, which implies that the company is now based in Oklahoma.\n\nConsidering these points, I conclude that:\n\nResponse: {'output': 'no'}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe documents provide information about Thunderbird Films being based in Oklahoma, not California. Specifically, it mentions that Randy Wayne and Talia Bella founded Thunderbird Films in Oklahoma City, where Wayne grew up."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Information from various sources clearly states Thunderbird Films is based in Oklahoma, not California.",
+            "category": 3
+        }
+    }
+}

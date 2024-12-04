@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Scooby-Doo!_Pirates_Ahoy!",
+    "predicate": "property/name",
+    "object": "Scooby-Doo! Pirates Ahoy!",
+    "human_readable": "The name of Scooby-Doo! Pirates Ahoy! is Scooby-Do! Pirates Ahoy!",
+    "questions": [
+        {
+            "score": 0.8166924715042114,
+            "question": "What type of media is Scooby-Doo! Pirates Ahoy!"
+        },
+        {
+            "score": 0.7481681704521179,
+            "question": "What is the name of the Scooby-Doo movie?"
+        },
+        {
+            "score": 0.5966836810112,
+            "question": "Does the title of the Scooby-Doo movie include an exclamation point?"
+        },
+        {
+            "score": 0.5738884806632996,
+            "question": "What word comes first in the title of the Scooby-Doo movie?"
+        },
+        {
+            "score": 0.4454647898674011,
+            "question": "What is the theme of the Scooby-Doo movie?"
+        },
+        {
+            "score": 0.42161744832992554,
+            "question": "What kind of adventure does the Scooby-Doo movie likely involve?"
+        },
+        {
+            "score": 0.12749119102954865,
+            "question": "Would you watch this movie?"
+        },
+        {
+            "score": 0.08752094954252243,
+            "question": "How is the title of the movie spelled?"
+        },
+        {
+            "score": 0.06231076270341873,
+            "question": "Is there a space in the movie title?"
+        },
+        {
+            "score": 0.04511916637420654,
+            "question": "Is the title case sensitive?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of Scooby-Doo! Pirates Ahoy! is Scooby-Do! Pirates Ahoy!",
+            "html": "dbpedia_5249_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there a space in the movie title?",
+            "html": "dbpedia_5249_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How is the title of the movie spelled?",
+            "html": "dbpedia_5249_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Would you watch this movie?",
+            "html": "dbpedia_5249_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5249_22.txt"
+        },
+        {
+            "file_id": "dbpedia_5249_24.txt"
+        },
+        {
+            "file_id": "dbpedia_5249_29.txt"
+        },
+        {
+            "file_id": "dbpedia_5249_34.txt"
+        },
+        {
+            "file_id": "dbpedia_5249_35.txt"
+        },
+        {
+            "file_id": "dbpedia_5249_5.txt"
+        },
+        {
+            "file_id": "dbpedia_5249_61.txt"
+        },
+        {
+            "file_id": "dbpedia_5249_64.txt"
+        },
+        {
+            "file_id": "dbpedia_5249_65.txt"
+        },
+        {
+            "file_id": "dbpedia_5249_78.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here's the structured JSON format containing the answer to your query:\n\n```\n{\n  \"output\": \"no\"\n}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: According to the provided documents, the correct title for this movie is \"Scooby-Doo! Pirates Ahoy!\" and not \"Scooby-Do! Pirates Ahoy!\"."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n    \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The correct title for the film is \"Scooby-Doo! Pirates Ahoy!\" instead of \"Scooby-Doo: Pirates Ahoy!\". The difference lies in the exclamation point and colon.",
+            "category": 3
+        },
+        "gemma2": {
+            "reason": "It is stating the name of the film as if it were a separate entity from the title itself.",
+            "category": 3
+        },
+        "llama3.1": {
+            "reason": "The official title of the film is \"Scooby-Doo! Pirates Ahoy!\", not \"Scooby-Do! Pirates Ahoy!\", as indicated by the consistent use of the correct title throughout the provided context information.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "The context information provided clearly states the title as \"Scooby-Doo! Pirates Ahoy!\" with an exclamation mark, not \"Scooby-Do! Pirates Ahoy!\" which lacks the exclamation mark.",
+            "category": -1
+        }
+    }
+}

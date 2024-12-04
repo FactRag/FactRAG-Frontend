@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Lionel_Casson",
+    "predicate": "property/birthPlace",
+    "object": "resource/New_York_City",
+    "human_readable": "Lionel Casson was born in New York City.",
+    "questions": [
+        {
+            "score": 0.9488503932952881,
+            "question": "Is Lionel Casson from New York?"
+        },
+        {
+            "score": 0.931605875492096,
+            "question": "Where was Lionel Casson born?"
+        },
+        {
+            "score": 0.9091073274612427,
+            "question": "Was Lionel Casson born in a major US city?"
+        },
+        {
+            "score": 0.8231694102287292,
+            "question": "What city is associated with Lionel Casson's birth?"
+        },
+        {
+            "score": 0.8182985782623291,
+            "question": "What city is known for being Lionel Casson's birthplace?"
+        },
+        {
+            "score": 0.7703753709793091,
+            "question": "What is Lionel Casson's birthplace?"
+        },
+        {
+            "score": 0.6638766527175903,
+            "question": "Where was Lionel Casson raised?"
+        },
+        {
+            "score": 0.6400260925292969,
+            "question": "Can you tell me Lionel Casson's place of birth?"
+        },
+        {
+            "score": 0.5677580237388611,
+            "question": "In which US city did Lionel Casson come into the world?"
+        },
+        {
+            "score": 0.4387540817260742,
+            "question": "What US city is connected to Lionel Casson's early life?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Lionel Casson was born in New York City.",
+            "html": "dbpedia_3871_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In which US city did Lionel Casson come into the world?",
+            "html": "dbpedia_3871_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me Lionel Casson's place of birth?",
+            "html": "dbpedia_3871_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where was Lionel Casson raised?",
+            "html": "dbpedia_3871_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3871_1.txt"
+        },
+        {
+            "file_id": "dbpedia_3871_13.txt"
+        },
+        {
+            "file_id": "dbpedia_3871_15.txt"
+        },
+        {
+            "file_id": "dbpedia_3871_27.txt"
+        },
+        {
+            "file_id": "dbpedia_3871_28.txt"
+        },
+        {
+            "file_id": "dbpedia_3871_45.txt"
+        },
+        {
+            "file_id": "dbpedia_3871_5.txt"
+        },
+        {
+            "file_id": "dbpedia_3871_58.txt"
+        },
+        {
+            "file_id": "dbpedia_3871_61.txt"
+        },
+        {
+            "file_id": "dbpedia_3871_63.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation of the triple:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents support that Lionel Casson was indeed born in Brooklyn, but it's close enough to being born in New York City."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe documents do not provide any information to support that Lionel Casson was born in New York City. The provided context mentions his birth date and that he attended New York University, but it does not specify the city of his birth."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {'output': 'yes'}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "qwen2.5": {
+            "reason": "The context information states that Lionel Casson was born on July 22, 1914, in Brooklyn, which is part of New York City. Therefore, saying he was born in New York City (without specifying Brooklyn) is an overgeneralization and not precisely accurate according to the given information.",
+            "category": 2
+        }
+    }
+}

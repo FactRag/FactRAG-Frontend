@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Ulania",
+    "predicate": "property/latd",
+    "object": "22",
+    "human_readable": "Ulania's latitude is 22.",
+    "questions": [
+        {
+            "score": 0.8430216908454895,
+            "question": "What is Ulania's latitude?"
+        },
+        {
+            "score": 0.6316131353378296,
+            "question": "What other geographical features might be found near a location with Ulania's latitude?"
+        },
+        {
+            "score": 0.6222623586654663,
+            "question": "How does Ulania's latitude compare to the equator?"
+        },
+        {
+            "score": 0.6004558205604553,
+            "question": "Could a location at Ulania's latitude experience extreme weather events?"
+        },
+        {
+            "score": 0.5809364914894104,
+            "question": "Are there any famous cities or landmarks located at a similar latitude to Ulania?"
+        },
+        {
+            "score": 0.4952676594257355,
+            "question": "How might Ulania's latitude influence its cultural traditions and way of life?"
+        },
+        {
+            "score": 0.39712002873420715,
+            "question": "Is Ulania located in the Northern or Southern Hemisphere?"
+        },
+        {
+            "score": 0.281586617231369,
+            "question": "How would you describe the climate of a place with a latitude of 22 degrees?"
+        },
+        {
+            "score": 0.2653234004974365,
+            "question": "What kind of plants and animals might you find in an area with Ulania's climate?"
+        },
+        {
+            "score": 0.11225065588951111,
+            "question": "What are some of the challenges and opportunities associated with living in a place like Ulania?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Ulania's latitude is 22.",
+            "html": "dbpedia_5232_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What kind of plants and animals might you find in an area with Ulania's climate?",
+            "html": "dbpedia_5232_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How would you describe the climate of a place with a latitude of 22 degrees?",
+            "html": "dbpedia_5232_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Ulania located in the Northern or Southern Hemisphere?",
+            "html": "dbpedia_5232_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5232_1.txt"
+        },
+        {
+            "file_id": "dbpedia_5232_12.txt"
+        },
+        {
+            "file_id": "dbpedia_5232_19.txt"
+        },
+        {
+            "file_id": "dbpedia_5232_2.txt"
+        },
+        {
+            "file_id": "dbpedia_5232_27.txt"
+        },
+        {
+            "file_id": "dbpedia_5232_28.txt"
+        },
+        {
+            "file_id": "dbpedia_5232_31.txt"
+        },
+        {
+            "file_id": "dbpedia_5232_32.txt"
+        },
+        {
+            "file_id": "dbpedia_5232_33.txt"
+        },
+        {
+            "file_id": "dbpedia_5232_36.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nThe document states \" Latitude: 22\u00b0 51' 22.57\" N\".  This confirms that Ulania's latitude is indeed greater than 22 degrees. \n"
+        },
+        "llama3.1": {
+            "short_ans": -1,
+            "full_ans": "To determine whether the information in the documents supports the triple, I will search for mentions of \"Ulania\", its latitude, and verify if it equals 22.\n\nDocument /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5232/re-ranker-msmarco/2.txt contains:\n\nLatitude: 22\u00b0 51' 22.57\" N\n\nDocument /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5232/re-ranker-msmarco/1.txt does not contain any latitude information for Ulania, however it does contain the document /Users/stefanomachresin/Research/fshami/Rag/docs/dbpedia_5232/re-ranker-msmarco/2.txt which contains a similar latitude value."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe document clearly states that the latitude of Ulania is 22\u00b0 51' 22.57\" N, which confirms that its basic latitude is 22 degrees north."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n    \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "There are multiple sources stating Ulania's latitude as 22\u00b0 51' 22.57\" N, which contradicts the initial evaluation that this fact is incorrect.",
+            "category": 2
+        }
+    }
+}

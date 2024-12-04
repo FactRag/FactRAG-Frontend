@@ -1,0 +1,129 @@
+{
+    "subject": "resource/The_Dog_Island",
+    "predicate": "property/publisher",
+    "object": "resource/Ubisoft",
+    "human_readable": "The Dog Island was published by Ubisoft.",
+    "questions": [
+        {
+            "score": 0.8676163554191589,
+            "question": "Who published The Dog Island?"
+        },
+        {
+            "score": 0.7968663573265076,
+            "question": "When was The Dog Island published?"
+        },
+        {
+            "score": 0.7835812568664551,
+            "question": "What company published The Dog Island?"
+        },
+        {
+            "score": 0.5506675839424133,
+            "question": "What is the name of the game published by Ubisoft?"
+        },
+        {
+            "score": 0.44847163558006287,
+            "question": "What genre is The Dog Island?"
+        },
+        {
+            "score": 0.4173814654350281,
+            "question": "Can you name another game published by Ubisoft?"
+        },
+        {
+            "score": 0.3853705823421478,
+            "question": "Where can you find more information about The Dog Island?"
+        },
+        {
+            "score": 0.35589247941970825,
+            "question": "Is The Dog Island a video game?"
+        },
+        {
+            "score": 0.31242889165878296,
+            "question": "Is The Dog Island a popular video game?"
+        },
+        {
+            "score": 0.20937730371952057,
+            "question": "Does Ubisoft publish other types of media besides video games?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The Dog Island was published by Ubisoft.",
+            "html": "dbpedia_6323_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is The Dog Island a popular video game?",
+            "html": "dbpedia_6323_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is The Dog Island a video game?",
+            "html": "dbpedia_6323_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where can you find more information about The Dog Island?",
+            "html": "dbpedia_6323_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6323_15.txt"
+        },
+        {
+            "file_id": "dbpedia_6323_18.txt"
+        },
+        {
+            "file_id": "dbpedia_6323_48.txt"
+        },
+        {
+            "file_id": "dbpedia_6323_5.txt"
+        },
+        {
+            "file_id": "dbpedia_6323_55.txt"
+        },
+        {
+            "file_id": "dbpedia_6323_63.txt"
+        },
+        {
+            "file_id": "dbpedia_6323_64.txt"
+        },
+        {
+            "file_id": "dbpedia_6323_70.txt"
+        },
+        {
+            "file_id": "dbpedia_6323_71.txt"
+        },
+        {
+            "file_id": "dbpedia_6323_73.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "The triple to be evaluated is:\n\n\"The Dog Island was published by Ubisoft.\"\n\nBased on the context information provided, here's the evaluation:\n\n* Document at file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6323/re-ranker-msmarco/73.txt mentions \"Publisher: Ubisoft\" for the game \"The Dog Island\".\n* Other documents also mention Ubisoft as a publisher, but not specifically for The Dog Island.\n* However, the information consistently points to Ubisoft being involved in publishing The Dog Island.\n\nGiven this analysis, the evaluation is:\n\n{'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\nThis answer is derived from the information provided, specifically in the file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6323/re-ranker-msmarco/73.txt and 18.txt where it states that The Dog Island was published by Ubisoft."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n    \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

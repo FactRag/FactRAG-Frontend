@@ -1,0 +1,142 @@
+{
+    "subject": "resource/The_Toilers_and_the_Wayfarers",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+    "object": "The Toilers and the Wayfarers  is a 1996 film written and directed by Keith Froelich.  It was released on March 14, 1997.",
+    "human_readable": "The Toilers and the Wayfarers has a comment that it is a 1996 film written and directed by Keith Froelich, which was released on March 14, 1997.",
+    "questions": [
+        {
+            "score": 0.9827991127967834,
+            "question": "Is 'The Toilers and the Wayfarers' a 1996 film?"
+        },
+        {
+            "score": 0.929493248462677,
+            "question": "Who wrote and directed the film 'The Toilers and the Wayfarers'?"
+        },
+        {
+            "score": 0.8417812585830688,
+            "question": "When was the film 'The Toilers and the Wayfarers' released?"
+        },
+        {
+            "score": 0.7829626202583313,
+            "question": "What year was the film 'The Toilers and the Wayfarers' made?"
+        },
+        {
+            "score": 0.7662033438682556,
+            "question": "What is the release date of 'The Toilers and the Wayfarers'?"
+        },
+        {
+            "score": 0.7368969321250916,
+            "question": "Is Keith Froelich known for directing films?"
+        },
+        {
+            "score": 0.669941782951355,
+            "question": "Who is Keith Froelich?"
+        },
+        {
+            "score": 0.6488286852836609,
+            "question": "Can you find any information about the plot of 'The Toilers and the Wayfarers'?"
+        },
+        {
+            "score": 0.6232292056083679,
+            "question": "Are there any other films directed by Keith Froelich?"
+        },
+        {
+            "score": 0.5369166731834412,
+            "question": "What genre is 'The Toilers and the Wayfarers' likely to be?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The Toilers and the Wayfarers has a comment that it is a 1996 film written and directed by Keith Froelich, which was released on March 14, 1997.",
+            "html": "dbpedia_2937_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any other films directed by Keith Froelich?",
+            "html": "dbpedia_2937_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you find any information about the plot of 'The Toilers and the Wayfarers'?",
+            "html": "dbpedia_2937_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is Keith Froelich?",
+            "html": "dbpedia_2937_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2937_14.txt"
+        },
+        {
+            "file_id": "dbpedia_2937_20.txt"
+        },
+        {
+            "file_id": "dbpedia_2937_24.txt"
+        },
+        {
+            "file_id": "dbpedia_2937_29.txt"
+        },
+        {
+            "file_id": "dbpedia_2937_36.txt"
+        },
+        {
+            "file_id": "dbpedia_2937_4.txt"
+        },
+        {
+            "file_id": "dbpedia_2937_46.txt"
+        },
+        {
+            "file_id": "dbpedia_2937_52.txt"
+        },
+        {
+            "file_id": "dbpedia_2937_53.txt"
+        },
+        {
+            "file_id": "dbpedia_2937_7.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nWhile several documents mention *The Toilers and the Wayfarers* being written and directed by Keith Froelich and being released in 1997, there's no mention of a release date of March 14, 1997. Some documents even state it was released on June 23, 1996.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation of the triple:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe information in the documents supports the triple that The Toilers and the Wayfarers has a comment that it is a 1996 film written and directed by Keith Froelich, which was released on March 14, 1997. This is mentioned in multiple documents, including files with paths `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2937/re-ranker-msmarco/28.txt`, `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2937/re-ranker-msmarco/51.txt`, and `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2937/re-ranker-msmarco/34.txt`."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents state that \"The Toilers and the Wayfarers\" is a 1997 film with a release date of March 14, 1997. There is no mention of it being from 1996 or any other year. Therefore, the information provided in the triple is incorrect according to the given documents."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {'output': 'no'}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The film was released on March 14, 1997, which is after the stated release date of June 23, 1996.",
+            "category": 3
+        },
+        "gemma2": {
+            "reason": "Multiple sources state the film was released in 1997, and one source explicitly mentions a release date of March 14, 1997. Additionally, contextually, there are descriptions consistent with a 1997 release and no information to suggest it was released earlier.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "The context clearly states that \"The Toilers and the Wayfarers\" was released on 14 March 1997, not in 1996. Additionally, it was written and directed by Keith Froelich.",
+            "category": 3
+        }
+    }
+}

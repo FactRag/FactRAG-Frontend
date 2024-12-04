@@ -1,0 +1,110 @@
+{
+    "subject": "resource/Dead_Game",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "Dead Game",
+    "human_readable": "The name of Dead Game is Dead Game.",
+    "questions": [
+        {
+            "score": 0.9715756177902222,
+            "question": "Is the name of the game 'Dead Game'?"
+        },
+        {
+            "score": 0.3559642434120178,
+            "question": "What is the name of the game?"
+        },
+        {
+            "score": 0.2547360360622406,
+            "question": "Does the game have a different name?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of Dead Game is Dead Game.",
+            "html": "dbpedia_4656_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of the game?",
+            "html": "dbpedia_4656_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is the name of the game 'Dead Game'?",
+            "html": "dbpedia_4656_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4656_105.txt"
+        },
+        {
+            "file_id": "dbpedia_4656_106.txt"
+        },
+        {
+            "file_id": "dbpedia_4656_132.txt"
+        },
+        {
+            "file_id": "dbpedia_4656_61.txt"
+        },
+        {
+            "file_id": "dbpedia_4656_62.txt"
+        },
+        {
+            "file_id": "dbpedia_4656_65.txt"
+        },
+        {
+            "file_id": "dbpedia_4656_67.txt"
+        },
+        {
+            "file_id": "dbpedia_4656_7.txt"
+        },
+        {
+            "file_id": "dbpedia_4656_75.txt"
+        },
+        {
+            "file_id": "dbpedia_4656_98.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe context information discusses the term \"dead game\" and provides various metrics for evaluating whether a game fits this description. It mentions that some people consider a game to be dead if it has no players, but others use more complex criteria such as player drop percentages, current number of players, impact on multiplayer gameplay, developer communication/news, updates or continued development, and community activity. The term \"dead game\" is clearly defined and discussed in the provided documents, thus supporting the triple."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {'output': 'no'}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The name of a game does not inherently determine whether it is dead or not. A game being labeled as \"Dead Game\" is not the same as its actual status, which can be determined based on factors such as player drop %, current number of players, impact on multiplayer play, lack of developer communication/news, lack of updates or continued development, and lack of community activity.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "It oversimplifies a complex issue. The provided text details various factors contributing to the perception of a game as \"dead,\" going beyond simply a lack of players.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "It simplifies the complex issue of what makes a game \"dead\" to just a single metric, ignoring other relevant factors such as player drop percentage, community activity, and developer communication.",
+            "category": 2
+        }
+    }
+}

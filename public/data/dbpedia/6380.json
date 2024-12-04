@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Peter_D\u00fcttmann",
+    "predicate": "ontology/birthYear",
+    "object": "1923",
+    "human_readable": "Peter D\u00fcttmann was born in 1923.",
+    "questions": [
+        {
+            "score": 0.970890998840332,
+            "question": "How old is Peter D\u00fcttmann if his birth year was 1923?"
+        },
+        {
+            "score": 0.9107348918914795,
+            "question": "When was Peter D\u00fcttmann born?"
+        },
+        {
+            "score": 0.8919501900672913,
+            "question": "In what year was Peter D\u00fcttmann born?"
+        },
+        {
+            "score": 0.8032903075218201,
+            "question": "What is the birth year of Peter D\u00fcttmann?"
+        },
+        {
+            "score": 0.7731634974479675,
+            "question": "Can you find any information about notable events or figures from the year Peter D\u00fcttmann was born?"
+        },
+        {
+            "score": 0.7315195798873901,
+            "question": "What significant event happened in the world around the time Peter D\u00fcttmann was born?"
+        },
+        {
+            "score": 0.6184309124946594,
+            "question": "If someone was born in the same year as Peter D\u00fcttmann, would they be a contemporary of his?"
+        },
+        {
+            "score": 0.6116531491279602,
+            "question": "What decade did Peter D\u00fcttmann's birth fall into?"
+        },
+        {
+            "score": 0.4869696795940399,
+            "question": "Did Peter D\u00fcttmann live in the 20th century?"
+        },
+        {
+            "score": 0.32376569509506226,
+            "question": "How would knowing Peter D\u00fcttmann's birth year help understand his life experiences?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Peter D\u00fcttmann was born in 1923.",
+            "html": "dbpedia_6380_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Did Peter D\u00fcttmann live in the 20th century?",
+            "html": "dbpedia_6380_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What decade did Peter D\u00fcttmann's birth fall into?",
+            "html": "dbpedia_6380_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If someone was born in the same year as Peter D\u00fcttmann, would they be a contemporary of his?",
+            "html": "dbpedia_6380_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6380_12.txt"
+        },
+        {
+            "file_id": "dbpedia_6380_13.txt"
+        },
+        {
+            "file_id": "dbpedia_6380_18.txt"
+        },
+        {
+            "file_id": "dbpedia_6380_2.txt"
+        },
+        {
+            "file_id": "dbpedia_6380_24.txt"
+        },
+        {
+            "file_id": "dbpedia_6380_31.txt"
+        },
+        {
+            "file_id": "dbpedia_6380_42.txt"
+        },
+        {
+            "file_id": "dbpedia_6380_43.txt"
+        },
+        {
+            "file_id": "dbpedia_6380_62.txt"
+        },
+        {
+            "file_id": "dbpedia_6380_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the answer in the form of a structured JSON format:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nThe reason for this answer is that while the documents mention Werner D\u00fcttmann and Peter D\u00fcttmann, there is no information provided about Peter D\u00fcttmann's birth year. The only reference to his birth year is in the context of another person (Heinz Ewald), where it mentions that Heinz was born in 1922, which does not necessarily confirm that Peter was born in 1923."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents provide information about Werner D\u00fcttmann, not Peter D\u00fcttmann. According to the context, Werner D\u00fcttmann was born in 1921, whereas the query incorrectly states that Peter D\u00fcttmann was born in 1923."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The information about Peter D\u00fcttmann being born in 1923 contradicts the fact that Werner D\u00fcttmann, who was mentioned earlier, was born in 1921 and another person named Heinz Ewald was also born in 1922.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information clearly states that Werner D\u00fcttmann was born in 1921, not Peter D\u00fcttmann. The document lists decorations and awards for individuals including \"DUTTMANN, Peter,\" but it does not provide his birth year, while it explicitly mentions that Werner D\u00fcttmann was born in 1921.",
+            "category": 2
+        }
+    }
+}

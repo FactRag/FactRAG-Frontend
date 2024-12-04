@@ -1,0 +1,97 @@
+{
+    "subject": "resource/John_Timbs",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "John Timbs",
+    "human_readable": "John Timbs is named John Timbs.",
+    "questions": [
+        {
+            "score": 0.9810237884521484,
+            "question": "Is 'John Timbs' the name of someone?"
+        },
+        {
+            "score": 0.9710037112236023,
+            "question": "What is John Timbs's name?"
+        },
+        {
+            "score": 0.8571138978004456,
+            "question": "Does John Timbs go by another name?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=John Timbs is named John Timbs.",
+            "html": "dbpedia_2509_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is John Timbs's name?",
+            "html": "dbpedia_2509_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is 'John Timbs' the name of someone?",
+            "html": "dbpedia_2509_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2509_106.txt"
+        },
+        {
+            "file_id": "dbpedia_2509_12.txt"
+        },
+        {
+            "file_id": "dbpedia_2509_32.txt"
+        },
+        {
+            "file_id": "dbpedia_2509_37.txt"
+        },
+        {
+            "file_id": "dbpedia_2509_43.txt"
+        },
+        {
+            "file_id": "dbpedia_2509_44.txt"
+        },
+        {
+            "file_id": "dbpedia_2509_56.txt"
+        },
+        {
+            "file_id": "dbpedia_2509_68.txt"
+        },
+        {
+            "file_id": "dbpedia_2509_76.txt"
+        },
+        {
+            "file_id": "dbpedia_2509_83.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation of the triple:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe reason for this answer is that all three parts of the triple (\"John\", \"Timbs\", and \"is named\") are indeed mentioned in the documents as referring to the same person, with the first document mentioning a book written by John Timbs and the subsequent documents providing biographical information about John Timbs."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide various details about John Timbs, including his name, which is explicitly mentioned. Therefore, the triple \"John Timbs is named John Timbs\" is correct according to the given context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {'output': 'yes'}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

@@ -1,0 +1,144 @@
+{
+    "subject": "resource/John_Doyle_(RAF_officer)",
+    "predicate": "property/branch",
+    "object": "British Army",
+    "human_readable": "John Doyle (RAF officer) served in the British Army.",
+    "questions": [
+        {
+            "score": 0.9368812441825867,
+            "question": "Was John Doyle a member of the British Army?"
+        },
+        {
+            "score": 0.9052780866622925,
+            "question": "What time period did John Doyle serve in the British Army?"
+        },
+        {
+            "score": 0.8842470049858093,
+            "question": "What was John Doyle's role as an RAF officer?"
+        },
+        {
+            "score": 0.850360631942749,
+            "question": "What branch of the military did John Doyle serve in?"
+        },
+        {
+            "score": 0.7841304540634155,
+            "question": "Did John Doyle serve in any other military branches besides the RAF?"
+        },
+        {
+            "score": 0.6487545371055603,
+            "question": "In what country did John Doyle serve?"
+        },
+        {
+            "score": 0.6446349024772644,
+            "question": "What were some of the challenges faced by RAF officers during John Doyle's service?"
+        },
+        {
+            "score": 0.5031501650810242,
+            "question": "What was John Doyle's profession?"
+        },
+        {
+            "score": 0.4580276608467102,
+            "question": "Is John Doyle known for any specific military campaigns or actions?"
+        },
+        {
+            "score": 0.2645314037799835,
+            "question": "What does RAF stand for?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=John Doyle (RAF officer) served in the British Army.",
+            "html": "dbpedia_1845_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is John Doyle known for any specific military campaigns or actions?",
+            "html": "dbpedia_1845_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What was John Doyle's profession?",
+            "html": "dbpedia_1845_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What were some of the challenges faced by RAF officers during John Doyle's service?",
+            "html": "dbpedia_1845_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1845_106.txt"
+        },
+        {
+            "file_id": "dbpedia_1845_25.txt"
+        },
+        {
+            "file_id": "dbpedia_1845_30.txt"
+        },
+        {
+            "file_id": "dbpedia_1845_35.txt"
+        },
+        {
+            "file_id": "dbpedia_1845_38.txt"
+        },
+        {
+            "file_id": "dbpedia_1845_41.txt"
+        },
+        {
+            "file_id": "dbpedia_1845_80.txt"
+        },
+        {
+            "file_id": "dbpedia_1845_87.txt"
+        },
+        {
+            "file_id": "dbpedia_1845_92.txt"
+        },
+        {
+            "file_id": "dbpedia_1845_97.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, here is the evaluation of the triple:\n\n{\n  \"output\": \"no\"\n}\n\nExplanation:\nThe documents provide information about multiple individuals named John Doyle, but none of them are referred to as a (RAF) officer. The first three documents mention General Sir John Doyle, who was an officer in the British Army, but not specifically related to the RAF. The last two documents mention different individuals with the name John Doyle, including one who was a pilot credited with 9 confirmed victories during World War I, but it is clear that this individual is distinct from General Sir John Doyle and does not mention service in the British Army. Therefore, based on the provided context information, the triple \"John Doyle (RAF officer) served in the British Army\" is incorrect."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents mention that there was a military career for an individual named John Doyle, who served with distinction in various wars and joined the army. However, it specifically mentions his service during the American War of Independence and later raising his own regiment for the French Revolutionary Wars. While the provided information does not explicitly state he served directly in the British Army after transferring to the RAF (as in the Pat Frank example), it does confirm that John Doyle was initially an officer in the British Army, which aligns with the query's assertion of him serving there as an RAF officer, albeit indirectly through his initial service."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}\n\nAlthough the name \"John Doyle\" appears multiple times across different contexts, one specific mention matches closely with the query. In file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1845/re-ranker-msmarco/92.txt, there is a reference to John Edgcumbe Doyle DFC (born 18 April 1895) who was a British World War I pilot credited with 9 confirmed victories. However, the documents also clearly state that another John Doyle served in the army starting from March 1771 and distinguishing himself during the American War of Independence, which would include service in the British Army.\n\nGiven these references, it's reasonable to conclude based on the information available that there is a John Doyle who indeed served in the British Army. Therefore, the answer is \"yes\"."
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "John Edgcumbe Doyle was a World War I pilot in the RAF, not a member of the British Army.  His service record clearly indicates he was part of the Royal Air Force.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "There are multiple individuals named John Doyle mentioned in the context information, and none of them appear to be a RAF officer. One of the Johns (John Edgcumbe Doyle DFC) is indeed a British World War I pilot, but his military service was as part of the Royal Air Force (RAF), not the British Army.",
+            "category": 2
+        }
+    }
+}

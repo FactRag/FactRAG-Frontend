@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Frank_Miller_(Medal_of_Honor)",
+    "predicate": "ontology/birthPlace",
+    "object": "resource/New_York",
+    "human_readable": "Frank Miller was born in New York.",
+    "questions": [
+        {
+            "score": 0.9045439958572388,
+            "question": "Where was Frank Miller born?"
+        },
+        {
+            "score": 0.6967195272445679,
+            "question": "In what city did Frank Miller grow up?"
+        },
+        {
+            "score": 0.4522556662559509,
+            "question": "What is Frank Miller known for?"
+        },
+        {
+            "score": 0.2733246684074402,
+            "question": "What is Frank Miller's full name?"
+        },
+        {
+            "score": 0.23150210082530975,
+            "question": "Name one famous character created by Frank Miller."
+        },
+        {
+            "score": 0.15652067959308624,
+            "question": "Which era did Frank Miller primarily draw comics in?"
+        },
+        {
+            "score": 0.12792237102985382,
+            "question": "Is Frank Miller still active in the comic book industry?"
+        },
+        {
+            "score": 0.1121804267168045,
+            "question": "Has Frank Miller written any comic books?"
+        },
+        {
+            "score": 0.08641756325960159,
+            "question": "What is a notable film adaptation based on Frank Miller's work?"
+        },
+        {
+            "score": 0.08315723389387131,
+            "question": "What genre of comics is Frank Miller most associated with?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Frank Miller was born in New York.",
+            "html": "dbpedia_2813_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is a notable film adaptation based on Frank Miller's work?",
+            "html": "dbpedia_2813_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Has Frank Miller written any comic books?",
+            "html": "dbpedia_2813_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Frank Miller still active in the comic book industry?",
+            "html": "dbpedia_2813_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2813_1.txt"
+        },
+        {
+            "file_id": "dbpedia_2813_109.txt"
+        },
+        {
+            "file_id": "dbpedia_2813_139.txt"
+        },
+        {
+            "file_id": "dbpedia_2813_15.txt"
+        },
+        {
+            "file_id": "dbpedia_2813_25.txt"
+        },
+        {
+            "file_id": "dbpedia_2813_33.txt"
+        },
+        {
+            "file_id": "dbpedia_2813_51.txt"
+        },
+        {
+            "file_id": "dbpedia_2813_53.txt"
+        },
+        {
+            "file_id": "dbpedia_2813_56.txt"
+        },
+        {
+            "file_id": "dbpedia_2813_63.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have any other queries! I'm ready to analyze them based on the provided context.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, I can evaluate whether the statement \"Frank Miller was born in New York\" is supported by the documents.\n\nThe relevant documents for this evaluation are:\n\n- file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2813/re-ranker-msmarco/25.txt\n- file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2813/re-ranker-msmarco/26.txt\n- file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2813/re-ranker-msmarco/29.txt\n\nThese documents all describe a Frank Miller who was born in Olney, Maryland, not New York.\n\nTherefore, the statement \"Frank Miller was born in New York\" is not supported by the provided context information.\n\nThe JSON response should be:\n```\n{\n  \"output\": \"no\"\n}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents mention that \"Frank P. Miller was born in New York in 1911,\" which supports the statement \"Frank Miller was born in New York.\" Note that the specific birth year is not provided, but the city of birth matches the query."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "There are multiple individuals named Frank Miller mentioned in the context information, and only one of them (Frank Tyler Miller) was born in New York. The other individuals, including the famous comic book writer/artist Frank Miller, were born in different states or countries.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Bill_Nunn",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "Bill Nunn",
+    "human_readable": "The name of Bill Nunn is Bill Nunn.",
+    "questions": [
+        {
+            "score": 0.9836186766624451,
+            "question": "Is Bill Nunn's name Bill Nunn?"
+        },
+        {
+            "score": 0.9722678065299988,
+            "question": "What is the name of Bill Nunn?"
+        },
+        {
+            "score": 0.9684756994247437,
+            "question": "According to the information, what is the name of Bill Nunn?"
+        },
+        {
+            "score": 0.964126467704773,
+            "question": "Does the information state Bill Nunn's name is Bill Nunn?"
+        },
+        {
+            "score": 0.9411332607269287,
+            "question": "What name corresponds to the individual known as Bill Nunn?"
+        },
+        {
+            "score": 0.9332482218742371,
+            "question": "What is the full name provided for Bill Nunn?"
+        },
+        {
+            "score": 0.9305280447006226,
+            "question": "What is someone called if their name is Bill Nunn?"
+        },
+        {
+            "score": 0.9248965382575989,
+            "question": "Can you identify the given name of Bill Nunn?"
+        },
+        {
+            "score": 0.8494977951049805,
+            "question": "How would you refer to Bill Nunn?"
+        },
+        {
+            "score": 0.8301796913146973,
+            "question": "If you wanted to address Bill Nunn, what name would you use?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of Bill Nunn is Bill Nunn.",
+            "html": "dbpedia_5280_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How would you refer to Bill Nunn?",
+            "html": "dbpedia_5280_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you identify the given name of Bill Nunn?",
+            "html": "dbpedia_5280_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is someone called if their name is Bill Nunn?",
+            "html": "dbpedia_5280_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5280_15.txt"
+        },
+        {
+            "file_id": "dbpedia_5280_17.txt"
+        },
+        {
+            "file_id": "dbpedia_5280_29.txt"
+        },
+        {
+            "file_id": "dbpedia_5280_30.txt"
+        },
+        {
+            "file_id": "dbpedia_5280_45.txt"
+        },
+        {
+            "file_id": "dbpedia_5280_57.txt"
+        },
+        {
+            "file_id": "dbpedia_5280_71.txt"
+        },
+        {
+            "file_id": "dbpedia_5280_81.txt"
+        },
+        {
+            "file_id": "dbpedia_5280_85.txt"
+        },
+        {
+            "file_id": "dbpedia_5280_88.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "The query is \"The name of Bill Nunn is Bill Nunn.\" \n\nHere's the evaluation:\n\n{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide sufficient information to confirm that the name \"Bill Nunn\" refers to the same individual discussed, thus supporting the triple stating his name as Bill Nunn."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The context information actually shows that there are two individuals named Bill Nunn, one being a sportswriter (Bill Nunn Sr.) and the other an actor (Bill Nunn III), making the statement incorrect as it assumes only one person with the name Bill Nunn exists.",
+            "category": 4
+        }
+    }
+}

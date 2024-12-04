@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Broadminded_(film)",
+    "predicate": "ontology/starring",
+    "object": "resource/Joe_E._Brown",
+    "human_readable": "The film 'Broadminded' stars Joe E. Brown.",
+    "questions": [
+        {
+            "score": 0.8953775763511658,
+            "question": "What is the name of the film starring Joe E. Brown?"
+        },
+        {
+            "score": 0.88514643907547,
+            "question": "Who stars in the film 'Broadminded'?"
+        },
+        {
+            "score": 0.8277609944343567,
+            "question": "Who directed the film 'Broadminded'?"
+        },
+        {
+            "score": 0.7519347667694092,
+            "question": "Is Joe E. Brown known for acting in movies?"
+        },
+        {
+            "score": 0.7205557227134705,
+            "question": "Can you name another film starring Joe E. Brown?"
+        },
+        {
+            "score": 0.6243197321891785,
+            "question": "Was Joe E. Brown a popular actor during his time?"
+        },
+        {
+            "score": 0.6058990955352783,
+            "question": "When was the film 'Broadminded' released?"
+        },
+        {
+            "score": 0.5667100548744202,
+            "question": "What genre is the film 'Broadminded' likely to be?"
+        },
+        {
+            "score": 0.5083361268043518,
+            "question": "Are there any other actors who appeared in 'Broadminded'?"
+        },
+        {
+            "score": 0.48499682545661926,
+            "question": "What is Joe E. Brown's most famous role?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The film 'Broadminded' stars Joe E. Brown.",
+            "html": "dbpedia_233_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any other actors who appeared in 'Broadminded'?",
+            "html": "dbpedia_233_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What genre is the film 'Broadminded' likely to be?",
+            "html": "dbpedia_233_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=When was the film 'Broadminded' released?",
+            "html": "dbpedia_233_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_233_102.txt"
+        },
+        {
+            "file_id": "dbpedia_233_115.txt"
+        },
+        {
+            "file_id": "dbpedia_233_17.txt"
+        },
+        {
+            "file_id": "dbpedia_233_61.txt"
+        },
+        {
+            "file_id": "dbpedia_233_67.txt"
+        },
+        {
+            "file_id": "dbpedia_233_69.txt"
+        },
+        {
+            "file_id": "dbpedia_233_7.txt"
+        },
+        {
+            "file_id": "dbpedia_233_70.txt"
+        },
+        {
+            "file_id": "dbpedia_233_73.txt"
+        },
+        {
+            "file_id": "dbpedia_233_77.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of whether the information in the documents supports the triple:\n\n`{'output': 'no'}`\n\nThe reason for this answer is that while the documents do mention \"Joe E. Brown\" as a star, they also mention other actors such as Bela Lugosi and Ona Munson being part of the film \"Broadminded\". This suggests that the film has multiple stars, not just Joe E. Brown."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents mention that the film \"Broadminded\" starring Joe E. Brown is directed by Mervyn LeRoy and produced by First National Pictures in 1931, confirming that Joe E. Brown stars in the film."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The context information states that the film \"Broadminded\" actually stars Bela Lugosi, not Joe E. Brown, in addition to other actors including Joe E. Brown.",
+            "category": 3
+        }
+    }
+}

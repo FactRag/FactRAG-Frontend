@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Liberty_Hall_(Barnstable,_Massachusetts)",
+    "predicate": "property/latDirection",
+    "object": "N",
+    "human_readable": "Liberty Hall in Barnstable, Massachusetts has a latitude direction of North.",
+    "questions": [
+        {
+            "score": 0.8406627774238586,
+            "question": "What is the latitude direction of Liberty Hall?"
+        },
+        {
+            "score": 0.8034530878067017,
+            "question": "Is Liberty Hall located in a northern or southern direction?"
+        },
+        {
+            "score": 0.7624973058700562,
+            "question": "How is the latitude direction of Liberty Hall expressed?"
+        },
+        {
+            "score": 0.7071778774261475,
+            "question": "Can you determine the approximate location of Liberty Hall based on its latitude direction?"
+        },
+        {
+            "score": 0.686253547668457,
+            "question": "What information about Liberty Hall is provided regarding its latitude?"
+        },
+        {
+            "score": 0.5578824877738953,
+            "question": "What is the geographic location of Liberty Hall?"
+        },
+        {
+            "score": 0.5560902953147888,
+            "question": "Where is Liberty Hall located?"
+        },
+        {
+            "score": 0.5066973567008972,
+            "question": "In which state is Liberty Hall situated?"
+        },
+        {
+            "score": 0.35403117537498474,
+            "question": "Which state is home to Liberty Hall?"
+        },
+        {
+            "score": 0.13794918358325958,
+            "question": "What does 'latitude' refer to in this context?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Liberty Hall in Barnstable, Massachusetts has a latitude direction of North.",
+            "html": "dbpedia_5954_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Which state is home to Liberty Hall?",
+            "html": "dbpedia_5954_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In which state is Liberty Hall situated?",
+            "html": "dbpedia_5954_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where is Liberty Hall located?",
+            "html": "dbpedia_5954_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5954_106.txt"
+        },
+        {
+            "file_id": "dbpedia_5954_14.txt"
+        },
+        {
+            "file_id": "dbpedia_5954_22.txt"
+        },
+        {
+            "file_id": "dbpedia_5954_24.txt"
+        },
+        {
+            "file_id": "dbpedia_5954_39.txt"
+        },
+        {
+            "file_id": "dbpedia_5954_59.txt"
+        },
+        {
+            "file_id": "dbpedia_5954_63.txt"
+        },
+        {
+            "file_id": "dbpedia_5954_69.txt"
+        },
+        {
+            "file_id": "dbpedia_5954_81.txt"
+        },
+        {
+            "file_id": "dbpedia_5954_88.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe provided text states that the  latitude and longitude coordinates of Barnstable are: 41.697876, -70.318588. This indicates a North-South coordinate system, not a direction from North. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the answer in JSON format:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThis is because there is no information in the provided context that suggests Liberty Hall is located in Barnstable, Massachusetts. The first document mentions Barnstable as a town in Massachusetts, but it does not mention Liberty Hall. The second and third documents actually refer to Liberty Hall being located at 1003 Morris Avenue, Union New Jersey 07083, which is different from Barnstable, Massachusetts."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The given documents do not provide any information about the specific latitude or direction (North) related to Liberty Hall in Barnstable, Massachusetts. Therefore, the statement is unsupported by the provided context."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Barnstable, Massachusetts is located at latitude 41.697876, which is significantly north of Liberty Hall, Tennessee's latitude (35.0723\u00b0 N). Therefore, the direction from Liberty Hall to Barnstable is not North but South as calculated earlier.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Context information states Liberty Hall is located in Union New Jersey, not Barnstable, Massachusetts.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The latitude direction of a location on Earth is determined by its angular distance north or south of the Equator, with North being 0\u00b0 to 90\u00b0 and South being -90\u00b0 to 0\u00b0, and Barnstable's coordinates (41.697876, -70.318588) indicate a negative longitude value which corresponds to a Western longitude in the Northern Hemisphere, not a North latitude direction.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information provides the latitude coordinate for Barnstable, MA (41.697876), which indicates it is located north of the equator, and specifically states that the flight direction from Union City, Tennessee to Liberty Hall, TN is south (-176 degrees from North). This confirms Barnstable is indeed in a northern latitude direction.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Bob_Hoskins",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:1942_births",
+    "human_readable": "Bob Hoskins is a subject of Category: 1942 births.",
+    "questions": [
+        {
+            "score": 0.787447988986969,
+            "question": "What category does Bob Hoskins belong to based on his birth year?"
+        },
+        {
+            "score": 0.7243963479995728,
+            "question": "In what year was Bob Hoskins born?"
+        },
+        {
+            "score": 0.4983043670654297,
+            "question": "Are there any other notable individuals born in the same year as Bob Hoskins?"
+        },
+        {
+            "score": 0.4962342083454132,
+            "question": "What other notable events happened in the year Bob Hoskins was born?"
+        },
+        {
+            "score": 0.3729332387447357,
+            "question": "How has the film industry evolved since Bob Hoskins' birth?"
+        },
+        {
+            "score": 0.330148309469223,
+            "question": "What type of roles is Bob Hoskins known for playing?"
+        },
+        {
+            "score": 0.2411355972290039,
+            "question": "Can you describe Bob Hoskins' impact on the world of acting?"
+        },
+        {
+            "score": 0.20845036208629608,
+            "question": "Can you name any famous actors born in 1942?"
+        },
+        {
+            "score": 0.1780143529176712,
+            "question": "What are some popular films featuring Bob Hoskins?"
+        },
+        {
+            "score": 0.17375315725803375,
+            "question": "Has Bob Hoskins won any major awards for his acting?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Bob Hoskins is a subject of Category: 1942 births.",
+            "html": "dbpedia_4258_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some popular films featuring Bob Hoskins?",
+            "html": "dbpedia_4258_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you name any famous actors born in 1942?",
+            "html": "dbpedia_4258_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you describe Bob Hoskins' impact on the world of acting?",
+            "html": "dbpedia_4258_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4258_104.txt"
+        },
+        {
+            "file_id": "dbpedia_4258_109.txt"
+        },
+        {
+            "file_id": "dbpedia_4258_130.txt"
+        },
+        {
+            "file_id": "dbpedia_4258_17.txt"
+        },
+        {
+            "file_id": "dbpedia_4258_22.txt"
+        },
+        {
+            "file_id": "dbpedia_4258_28.txt"
+        },
+        {
+            "file_id": "dbpedia_4258_30.txt"
+        },
+        {
+            "file_id": "dbpedia_4258_87.txt"
+        },
+        {
+            "file_id": "dbpedia_4258_90.txt"
+        },
+        {
+            "file_id": "dbpedia_4258_95.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me explain why:\n\n* **The text states:** \"Date of birth : 1942-10-26\" in one document and confirms his birth year as part of a list of notable works in another. This directly supports the claim that Bob Hoskins was born in 1942, making him a subject of Category:1942 births.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the structured JSON format containing the answer:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nThis is because none of the documents indicate that Bob Hoskins is a subject of Category: 1942 births. The information provided shows that Bob Hoskins was born on October 26, 1942, but it does not categorize him as a birth in 1942."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information about Bob Hoskins's date of birth (1942), which supports the triple stating that he belongs to the category of 1942 births."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "Bob Hoskins' date of birth is listed as 1942-10-26, indicating that he was born on October 26, 1942, which corresponds to Category: 1942 births. However, the Category list includes \"1942 births\" and not specifically \"Robert William Hoskins (born October 26, 1942)\".",
+            "category": 2
+        }
+    }
+}

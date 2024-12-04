@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Meggitt",
+    "predicate": "ontology/location",
+    "object": "resource/Dorset",
+    "human_readable": "Meggitt is located in Dorset.",
+    "questions": [
+        {
+            "score": 0.8766695261001587,
+            "question": "Where is Meggitt located?"
+        },
+        {
+            "score": 0.8246460556983948,
+            "question": "In which county is Meggitt situated?"
+        },
+        {
+            "score": 0.7628132104873657,
+            "question": "Is Meggitt located in a city or a rural area?"
+        },
+        {
+            "score": 0.5258248448371887,
+            "question": "Can you name any landmarks near Meggitt?"
+        },
+        {
+            "score": 0.3975963890552521,
+            "question": "Are there any notable events associated with Meggitt?"
+        },
+        {
+            "score": 0.32831528782844543,
+            "question": "What region of England is home to Meggitt?"
+        },
+        {
+            "score": 0.28588277101516724,
+            "question": "What type of industry is Meggitt involved in?"
+        },
+        {
+            "score": 0.2621234059333801,
+            "question": "Is Meggitt known for any specific products or services?"
+        },
+        {
+            "score": 0.21095485985279083,
+            "question": "What is the population density around Meggitt?"
+        },
+        {
+            "score": 0.2093566507101059,
+            "question": "Does Meggitt have any significant historical connections?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Meggitt is located in Dorset.",
+            "html": "dbpedia_2912_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the population density around Meggitt?",
+            "html": "dbpedia_2912_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Meggitt known for any specific products or services?",
+            "html": "dbpedia_2912_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of industry is Meggitt involved in?",
+            "html": "dbpedia_2912_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2912_23.txt"
+        },
+        {
+            "file_id": "dbpedia_2912_38.txt"
+        },
+        {
+            "file_id": "dbpedia_2912_4.txt"
+        },
+        {
+            "file_id": "dbpedia_2912_53.txt"
+        },
+        {
+            "file_id": "dbpedia_2912_54.txt"
+        },
+        {
+            "file_id": "dbpedia_2912_59.txt"
+        },
+        {
+            "file_id": "dbpedia_2912_6.txt"
+        },
+        {
+            "file_id": "dbpedia_2912_65.txt"
+        },
+        {
+            "file_id": "dbpedia_2912_84.txt"
+        },
+        {
+            "file_id": "dbpedia_2912_94.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the response:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation:\n\nThe information in the documents supports the triple that Meggitt is located in Dorset. The phrase \"Dorset headquartered\" appears in multiple documents, indicating that Meggitt has its headquarters or main office location in Dorset. This information is present in documents 38, 84, and 94, among others."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\nThe documents mention that Meggitt is headquartered in Bournemouth, Dorset, which supports the statement that Meggitt is located in Dorset."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Meggitt is headquartered in Dorset, not located.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Information in multiple sources states Meggitt is headquartered in Dorset.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The text states \"Meggitt plc is an engineering business headquartered in Christchurch, Dorset\" but also mentions later that \"Dorset headquartered Meggitt operates... at Bournemouth Airport\", implying that the headquarters might actually be located elsewhere (Bournemouth) rather than specifically in Dorset.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Precision Micro, the company acquired by Meggitt plc, is based in Erdington, Birmingham. Additionally, while Meggitt does have its headquarters at Bournemouth Airport in Dorset, the statement that \"Meggitt is located in Dorset\" without specifying this as the location of its HQ and not the location of Precision Micro or other mentioned companies, is misleading and incorrect.",
+            "category": 2
+        }
+    }
+}

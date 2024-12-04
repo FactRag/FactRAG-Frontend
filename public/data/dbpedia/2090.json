@@ -1,0 +1,114 @@
+{
+    "subject": "resource/Pajwar",
+    "predicate": "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+    "object": "71.45",
+    "human_readable": "Pajwar's longitude is 71.45.",
+    "questions": [
+        {
+            "score": 0.7658995389938354,
+            "question": "Where would you find a location with a longitude of 71.45?"
+        },
+        {
+            "score": 0.7209432125091553,
+            "question": "What is the longitude of Pajwar?"
+        },
+        {
+            "score": 0.482705682516098,
+            "question": "How can you express the geographical position of Pajwar using longitude?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Pajwar's longitude is 71.45.",
+            "html": "dbpedia_2090_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the longitude of Pajwar?",
+            "html": "dbpedia_2090_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where would you find a location with a longitude of 71.45?",
+            "html": "dbpedia_2090_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2090_1.txt"
+        },
+        {
+            "file_id": "dbpedia_2090_20.txt"
+        },
+        {
+            "file_id": "dbpedia_2090_23.txt"
+        },
+        {
+            "file_id": "dbpedia_2090_25.txt"
+        },
+        {
+            "file_id": "dbpedia_2090_30.txt"
+        },
+        {
+            "file_id": "dbpedia_2090_38.txt"
+        },
+        {
+            "file_id": "dbpedia_2090_44.txt"
+        },
+        {
+            "file_id": "dbpedia_2090_46.txt"
+        },
+        {
+            "file_id": "dbpedia_2090_63.txt"
+        },
+        {
+            "file_id": "dbpedia_2090_8.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'} \n``` \n\n\nThe provided text mentions that the longitude of Pajwar city is 73\u00b0 3' 0\" E.  This converts to approximately 73.05 degrees, not 71.45. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the context information provided, I can evaluate whether the triple supports the statement.\n\nThe triple is:\nPajwar's longitude is 71.45.\n\nIn the documents, I found the following relevant information:\n\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2090/re-ranker-msmarco/15.txt, it says: \"What is Latitude and Longitude of Panjwar city?\"\n\t+ The answer to this question is: Panjwar city of country Pakistan lies on the geographical coordinates of 31\u00b0 31' 0\" N, 73\u00b0 3' 0\" E.\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2090/re-ranker-msmarco/45.txt, it says: \"Q: What is Latitude and Longitude of the Pakawarai city of Pakistan?\"\n\t+ The answer to this question is: Pakawarai city of country Pakistan lies on the geographical coordinates of 33\u00b0 54' 33\" N, 71\u00b0 3' 10\" E.\n\nHowever, there is no information about a location called \"Pajwar\" with a longitude of 71.45 in any of the documents.\n\nTherefore, based on the provided context information, I conclude that:\n\n{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\n**Explanation:** The provided context does not contain any information about the longitude of Pajwar city, nor does it mention that its longitude is 71.45. Therefore, the statement is unsupported by the given documents."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The provided context does not contain any information about the longitude of Pajwar city. The only longitudes given are for Pakawarai, Panjwar (which has a longitude of 73.05 according to the context), and no other cities mentioned in the question set.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "The provided context repeatedly gives longitudes for Pakistani cities starting with \"Panj\" followed by various words. There is no mention of \"Pajwar\" in the context and therefore it's unlikely to have a longitude of 71.45.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The provided context information does not mention Pajwar's longitude as 71.45, instead, it lists various cities' longitudes with different values.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information provides the longitude of Pajwar city as 73\u00b0 3' 0\" E, not 71.45.",
+            "category": 2
+        }
+    }
+}

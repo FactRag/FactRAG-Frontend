@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Taiwan",
+    "predicate": "property/p",
+    "object": "T\u00e1iw\u0101n",
+    "human_readable": "The p of Taiwan is T\u00e1iw\u0101n.",
+    "questions": [
+        {
+            "score": 0.7398096323013306,
+            "question": "What is the p of Taiwan?"
+        },
+        {
+            "score": 0.6949853301048279,
+            "question": "Is T\u00e1iw\u0101n a country or region?"
+        },
+        {
+            "score": 0.3798987567424774,
+            "question": "How is Taiwan officially known?"
+        },
+        {
+            "score": 0.3353263735771179,
+            "question": "What is the official language of Taiwan?"
+        },
+        {
+            "score": 0.3178015649318695,
+            "question": "What other names might be used for Taiwan?"
+        },
+        {
+            "score": 0.2930147647857666,
+            "question": "Where is Taiwan located geographically?"
+        },
+        {
+            "score": 0.2092774361371994,
+            "question": "Can you provide more information about Taiwan?"
+        },
+        {
+            "score": 0.20473462343215942,
+            "question": "Does Taiwan have a unique culture or history?"
+        },
+        {
+            "score": 0.20102015137672424,
+            "question": "What are some popular tourist destinations in Taiwan?"
+        },
+        {
+            "score": 0.08029649406671524,
+            "question": "What does 'p' stand for in this context?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The p of Taiwan is T\u00e1iw\u0101n.",
+            "html": "dbpedia_379_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some popular tourist destinations in Taiwan?",
+            "html": "dbpedia_379_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Taiwan have a unique culture or history?",
+            "html": "dbpedia_379_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you provide more information about Taiwan?",
+            "html": "dbpedia_379_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_379_109.txt"
+        },
+        {
+            "file_id": "dbpedia_379_110.txt"
+        },
+        {
+            "file_id": "dbpedia_379_118.txt"
+        },
+        {
+            "file_id": "dbpedia_379_13.txt"
+        },
+        {
+            "file_id": "dbpedia_379_15.txt"
+        },
+        {
+            "file_id": "dbpedia_379_20.txt"
+        },
+        {
+            "file_id": "dbpedia_379_24.txt"
+        },
+        {
+            "file_id": "dbpedia_379_36.txt"
+        },
+        {
+            "file_id": "dbpedia_379_91.txt"
+        },
+        {
+            "file_id": "dbpedia_379_94.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have more triples to evaluate! \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the answer in the form of a structured JSON format:\n\n```\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation:\n\nThe triple \"The p of Taiwan is T\u00e1iw\u0101n\" can be evaluated as follows:\n\n* The \"p\" in question refers to the romanization or transcription of the Chinese name for Taiwan.\n* According to the provided context, the Chinese name for Taiwan is variously transliterated as \"T\u00e1iw\u0101n\", \"\u81fa \u7063\", or \"\u53f0 \u7063\".\n* Therefore, the statement that the p of Taiwan is T\u00e1iw\u0101n appears to be correct based on the information in the documents."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\nThe document states that \"Taiwan (Chinese: \u81fa\u7063 or \u53f0\u7063; pinyin: T\u00e1iw\u0101n)\", which confirms that the pinyin for Taiwan is indeed \"T\u00e1iw\u0101n\"."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The context information provides the pinyin for Taiwan as \"T\u00e1iw\u0101n,\" but the p stands for the phonetic transcription, not the official name of Taiwan. The official name can be found in the same context, it's either \"\u81fa\u7063\" or \"\u53f0\u7063.\"",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Several pieces of context information provide the pinyin romanization of Taiwan as T\u00e1iw\u0101n.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because the pinyin romanization of Taiwan is indeed T\u00e1iw\u0101n.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The provided context uses \"Taiwan\" (Chinese: \u81fa\u7063 or \u53f0\u7063; pinyin: T\u00e1iw\u0101n) which indicates that \"T\u00e1iw\u0101n\" is the pinyin romanization of the Chinese characters for Taiwan, not the name itself.",
+            "category": 2
+        }
+    }
+}

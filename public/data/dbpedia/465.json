@@ -1,0 +1,146 @@
+{
+    "subject": "resource/XNU",
+    "predicate": "ontology/programmingLanguage",
+    "object": "resource/C_(programming_language)",
+    "human_readable": "XNU runs on C.",
+    "questions": [
+        {
+            "score": 0.7186440825462341,
+            "question": "Is XNU written in C?"
+        },
+        {
+            "score": 0.28670698404312134,
+            "question": "What programming foundation does XNU have?"
+        },
+        {
+            "score": 0.2519015967845917,
+            "question": "XNU relies on what programming language for its development?"
+        },
+        {
+            "score": 0.21776489913463593,
+            "question": "What programming language does XNU use?"
+        },
+        {
+            "score": 0.19570912420749664,
+            "question": "Can you tell me a programming language used by XNU?"
+        },
+        {
+            "score": 0.18790824711322784,
+            "question": "What is the primary language behind XNU's functionality?"
+        },
+        {
+            "score": 0.18370479345321655,
+            "question": "What language is fundamental to the structure of XNU?"
+        },
+        {
+            "score": 0.16631732881069183,
+            "question": "Which language powers XNU's core operations?"
+        },
+        {
+            "score": 0.13033054769039154,
+            "question": "Name a programming language used by XNU."
+        },
+        {
+            "score": 0.09302615374326706,
+            "question": "What operating system uses C for its core?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=XNU runs on C.",
+            "html": "dbpedia_465_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Name a programming language used by XNU.",
+            "html": "dbpedia_465_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Which language powers XNU's core operations?",
+            "html": "dbpedia_465_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What language is fundamental to the structure of XNU?",
+            "html": "dbpedia_465_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_465_100.txt"
+        },
+        {
+            "file_id": "dbpedia_465_14.txt"
+        },
+        {
+            "file_id": "dbpedia_465_26.txt"
+        },
+        {
+            "file_id": "dbpedia_465_29.txt"
+        },
+        {
+            "file_id": "dbpedia_465_31.txt"
+        },
+        {
+            "file_id": "dbpedia_465_40.txt"
+        },
+        {
+            "file_id": "dbpedia_465_60.txt"
+        },
+        {
+            "file_id": "dbpedia_465_65.txt"
+        },
+        {
+            "file_id": "dbpedia_465_82.txt"
+        },
+        {
+            "file_id": "dbpedia_465_96.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe provided text describes XNU as running on architectures like x86_64 and ARM64, not C. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the answer in the required format:\n\n`{'output': 'no'}`\n\nThe reason for this answer is that none of the documents mention XNU running on a language like C, but rather mention it as a hybrid kernel combining components from FreeBSD and a C++ API. Additionally, one document mentions that XNU runs on x86_64 and ARM64 for both single processor and multi-processor configurations, which suggests it's related to operating system architecture, not programming languages."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe information provided in the documents does not mention anything about the operating system kernel running on the programming language C. The context is entirely about the XNU kernel and its configurations for macOS and iOS, as well as the architectures it runs on (x86_64, ARM64). There is no reference to C as an architecture or execution environment in any of the documents."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n      \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "XNU kernel runs on x86_64, ARM64, but not C. It is a software component for macOS and iOS, not a programming language.",
+            "category": -1
+        },
+        "gemma2": {
+            "reason": "It states XNU runs on C, which implies C is a hardware architecture. The provided context describes XNU as running on x86_64 and ARM64 architectures, which are processor types, not programming languages.",
+            "category": -1
+        },
+        "llama3.1": {
+            "reason": "It was never mentioned that XNU runs on C, but rather that it combines the Mach kernel with components from FreeBSD and a C++ API for writing drivers called IOKit.",
+            "category": -1
+        },
+        "qwen2.5": {
+            "reason": "XNU runs on x86_64 and ARM64 architectures for both single processor and multi-processor configurations, as stated multiple times in the context information provided. There is no mention of C architecture support.",
+            "category": -1
+        }
+    }
+}

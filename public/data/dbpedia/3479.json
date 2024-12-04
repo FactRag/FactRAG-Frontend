@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Lottie_Williams",
+    "predicate": "ontology/deathPlace",
+    "object": "resource/California",
+    "human_readable": "Lottie Williams died in California.",
+    "questions": [
+        {
+            "score": 0.9192531704902649,
+            "question": "Where did Lottie Williams die?"
+        },
+        {
+            "score": 0.8497470021247864,
+            "question": "What state was Lottie Williams living in when she died?"
+        },
+        {
+            "score": 0.8217871785163879,
+            "question": "What year did Lottie Williams die?"
+        },
+        {
+            "score": 0.6893850564956665,
+            "question": "Was California Lottie Williams' birthplace?"
+        },
+        {
+            "score": 0.5970922112464905,
+            "question": "Do you know anything else about the circumstances of Lottie Williams' death?"
+        },
+        {
+            "score": 0.3593371510505676,
+            "question": "Was Lottie Williams known for anything specific?"
+        },
+        {
+            "score": 0.33615589141845703,
+            "question": "Where could I find more details about Lottie Williams?"
+        },
+        {
+            "score": 0.3272680640220642,
+            "question": "Can you tell me more about Lottie Williams?"
+        },
+        {
+            "score": 0.27882620692253113,
+            "question": "Are there any records available about Lottie Williams' life?"
+        },
+        {
+            "score": 0.26926857233047485,
+            "question": "Is there any information about Lottie Williams' family?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Lottie Williams died in California.",
+            "html": "dbpedia_3479_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any records available about Lottie Williams' life?",
+            "html": "dbpedia_3479_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about Lottie Williams?",
+            "html": "dbpedia_3479_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where could I find more details about Lottie Williams?",
+            "html": "dbpedia_3479_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3479_12.txt"
+        },
+        {
+            "file_id": "dbpedia_3479_19.txt"
+        },
+        {
+            "file_id": "dbpedia_3479_2.txt"
+        },
+        {
+            "file_id": "dbpedia_3479_22.txt"
+        },
+        {
+            "file_id": "dbpedia_3479_25.txt"
+        },
+        {
+            "file_id": "dbpedia_3479_30.txt"
+        },
+        {
+            "file_id": "dbpedia_3479_38.txt"
+        },
+        {
+            "file_id": "dbpedia_3479_54.txt"
+        },
+        {
+            "file_id": "dbpedia_3479_55.txt"
+        },
+        {
+            "file_id": "dbpedia_3479_59.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nLet me know if you have any other triples to evaluate! \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "After analyzing the context information, I found that:\n\n* There are multiple documents about a person named Lottie Williams, but none of them mention her dying in California.\n* One document (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3479/re-ranker-msmarco/19.txt) mentions that Lottie Williams died on 6 May 1946 in White County, Arkansas.\n* Another document (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3479/re-ranker-msmarco/38.txt) mentions that Lottie Williams died on March 17, 1929, but this is inconsistent with the first document.\n\nTherefore, based on the provided context information:\n\n{'output': 'no'}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: None of the provided documents mention that Lottie Williams died in California. The documents state she passed away on May 6, 1946, in White County, Arkansas, and also provide a birth date around 1892, but do not mention her place of death as California."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Lottie Williams died on May 6, 1946, in White County, Arkansas, according to the provided context information.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Multiple sources state Lottie Williams died in New York.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "Lottie Williams' death was reported to have occurred in White County, Arkansas, not California.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The provided context explicitly states that Lottie Williams died on 29 May 2019 at Orchard Manor, which is located in Grove City. Additionally, another profile indicates she passed away in Arkansas City, Kansas, not California.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Milton_F._Pavlic",
+    "predicate": "ontology/deathDate",
+    "object": "1942-11-15",
+    "human_readable": "Milton F. Pavlic died on November 15, 1942.",
+    "questions": [
+        {
+            "score": 0.8975234031677246,
+            "question": "When did Milton F. Pavlic die?"
+        },
+        {
+            "score": 0.7940379977226257,
+            "question": "What is the date of Milton F. Pavlic's death?"
+        },
+        {
+            "score": 0.7806922197341919,
+            "question": "What events happened in the year of Milton F. Pavlic's death?"
+        },
+        {
+            "score": 0.7725444436073303,
+            "question": "How old was Milton F. Pavlic when he died?"
+        },
+        {
+            "score": 0.6933881044387817,
+            "question": "Is Milton F. Pavlic still alive?"
+        },
+        {
+            "score": 0.651706874370575,
+            "question": "What day of the week was Milton F. Pavlic's death?"
+        },
+        {
+            "score": 0.579049289226532,
+            "question": "Were there any significant discoveries or inventions made around the time of Milton F. Pavlic's death?"
+        },
+        {
+            "score": 0.5561118721961975,
+            "question": "In what year did Milton F. Pavlic pass away?"
+        },
+        {
+            "score": 0.555181622505188,
+            "question": "Who are some notable people who also died on November 15th?"
+        },
+        {
+            "score": 0.4418306052684784,
+            "question": "Is there any information available about Milton F. Pavlic's life and work?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Milton F. Pavlic died on November 15, 1942.",
+            "html": "dbpedia_2387_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who are some notable people who also died on November 15th?",
+            "html": "dbpedia_2387_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In what year did Milton F. Pavlic pass away?",
+            "html": "dbpedia_2387_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Were there any significant discoveries or inventions made around the time of Milton F. Pavlic's death?",
+            "html": "dbpedia_2387_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2387_12.txt"
+        },
+        {
+            "file_id": "dbpedia_2387_15.txt"
+        },
+        {
+            "file_id": "dbpedia_2387_19.txt"
+        },
+        {
+            "file_id": "dbpedia_2387_2.txt"
+        },
+        {
+            "file_id": "dbpedia_2387_25.txt"
+        },
+        {
+            "file_id": "dbpedia_2387_26.txt"
+        },
+        {
+            "file_id": "dbpedia_2387_34.txt"
+        },
+        {
+            "file_id": "dbpedia_2387_4.txt"
+        },
+        {
+            "file_id": "dbpedia_2387_6.txt"
+        },
+        {
+            "file_id": "dbpedia_2387_62.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe provided documents state that Milton F. Pavlic was killed in action during World War II but doesn't specify a date.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the provided context information, I can evaluate whether the statement \"Milton F. Pavlic died on November 15, 1942\" is correct or not.\n\nHere's the evaluation in JSON format:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe reason for this answer is that the first document (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2387/re-ranker-msmarco/15.txt) states that Milton F. Pavlic was a United States Navy officer killed in action during World War II, with his date of birth and death mentioned as 1909-1942. This implies that he died in 1942, which matches the given statement."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents state that Milton F. Pavlic was killed in action during World War II but do not specify the exact date of his death as November 15, 1942. Therefore, the information provided does not support the given triple."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Milton F. Pavlic was killed in action during World War II on an undisclosed date, not decommissioned or died on November 15, 1942.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Information states he was commissioned as an Ensign on June 2, 1932, and Lieutenant Commander on June 15, 1942. Additionally, the provided context states that he was killed in action during World War II.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information states that Milton F. Pavlic was killed in action during World War II, not on November 15, 1942. Specifically, it mentions he served until 15 June 1942 when he was promoted to Lieutenant Commander, suggesting his death occurred prior to this date but does not specify the exact day of his death.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Patti_D'Arbanville",
+    "predicate": "property/partner",
+    "object": "Don Johnson  1 son",
+    "human_readable": "Patti D'Arbanville's partner is Don Johnson and they have one son.",
+    "questions": [
+        {
+            "score": 0.9829703569412231,
+            "question": "Are Patti D'Arbanville and Don Johnson a couple?"
+        },
+        {
+            "score": 0.9679581522941589,
+            "question": "What is the name of Patti D'Arbanville and Don Johnson's son?"
+        },
+        {
+            "score": 0.9587117433547974,
+            "question": "Do Patti D'Arbanville and Don Johnson have any other children besides their son?"
+        },
+        {
+            "score": 0.943210244178772,
+            "question": "What is known about the relationship between Patti D'Arbanville and Don Johnson?"
+        },
+        {
+            "score": 0.9410290718078613,
+            "question": "Who is Patti D'Arbanville's partner?"
+        },
+        {
+            "score": 0.9385375380516052,
+            "question": "How many children do Patti D'Arbanville and Don Johnson have together?"
+        },
+        {
+            "score": 0.8473486304283142,
+            "question": "Is Patti D'Arbanville married to Don Johnson?"
+        },
+        {
+            "score": 0.8339020609855652,
+            "question": "Does Patti D'Arbanville have any children?"
+        },
+        {
+            "score": 0.6235885620117188,
+            "question": "Who is Don Johnson?"
+        },
+        {
+            "score": 0.5401095151901245,
+            "question": "What can you tell me about Patti D'Arbanville's family life?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Patti D'Arbanville's partner is Don Johnson and they have one son.",
+            "html": "dbpedia_5074_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is Don Johnson?",
+            "html": "dbpedia_5074_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Patti D'Arbanville have any children?",
+            "html": "dbpedia_5074_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Patti D'Arbanville married to Don Johnson?",
+            "html": "dbpedia_5074_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5074_10.txt"
+        },
+        {
+            "file_id": "dbpedia_5074_107.txt"
+        },
+        {
+            "file_id": "dbpedia_5074_111.txt"
+        },
+        {
+            "file_id": "dbpedia_5074_114.txt"
+        },
+        {
+            "file_id": "dbpedia_5074_14.txt"
+        },
+        {
+            "file_id": "dbpedia_5074_22.txt"
+        },
+        {
+            "file_id": "dbpedia_5074_23.txt"
+        },
+        {
+            "file_id": "dbpedia_5074_45.txt"
+        },
+        {
+            "file_id": "dbpedia_5074_57.txt"
+        },
+        {
+            "file_id": "dbpedia_5074_90.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "After analyzing the context information, I can answer your question as follows:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation:\n\nAccording to the documents, Patti D'Arbanville has a son named Jesse Johnson with her former partner Don Johnson. However, it is stated that she also has three children with her former husband Terry Quinn, implying that she and Don Johnson have more than one child together, or possibly they are not in a relationship at the time of having Jesse.\n\nThe document file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5074/re-ranker-msmarco/57.txt mentions that Don Johnson has five children and lists them as Jesse, Dakota, Atherton, Jasper, and Deacon. However, this does not directly confirm the statement about Patti D'Arbanville's relationship with Don Johnson.\n\nThe document file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5074/re-ranker-msmarco/111.txt provides information about Patti D'Arbanville's family, but it only mentions her son Jesse and three children with Terry Quinn, without explicitly stating that she had a relationship with Don Johnson. \n\nTherefore, the statement \"Patti D'Arbanville's partner is Don Johnson and they have one son\" cannot be confirmed as correct according to the provided documents."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information that supports the statement: Patti D'Arbanville is a former partner of Don Johnson, and they have a son named Jesse. This can be inferred from the following details:\n\n- From `66.txt`: \"Johnson has a son, Jesse, 16, by actress Patti D\u2019Arbanville,\" which indicates that Don Johnson and Patti D'Arbanville had a son named Jesse.\n- From `23.txt` and `57.txt`: They both mention the same information about Jesse being their son from a previous relationship.\n\nTherefore, the triple \"Patti D'Arbanville's partner is Don Johnson and they have one son\" is supported by the given documents."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The text states that Patti D'Arbanville has a son, actor Jesse Johnson, with her former partner Don Johnson and also mentions that she has three children with her former husband, firefighter Terry Quinn. This implies that Jesse Johnson was not from a relationship with Don Johnson, contradicting the initial claim.",
+            "category": 0
+        }
+    }
+}

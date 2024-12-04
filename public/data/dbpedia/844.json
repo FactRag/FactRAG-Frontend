@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Sensenich_Propeller",
+    "predicate": "property/locationCity",
+    "object": "Lancaster, Pennsylvania and Plant City, Florida",
+    "human_readable": "Sensenich Propeller is located in both Lancaster, Pennsylvania and Plant City, Florida.",
+    "questions": [
+        {
+            "score": 0.9774724841117859,
+            "question": "Is Sensenich Propeller headquartered in Lancaster or Plant City?"
+        },
+        {
+            "score": 0.9591415524482727,
+            "question": "Besides Lancaster and Plant City, are there any other locations where Sensenich Propeller operates?"
+        },
+        {
+            "score": 0.9360026121139526,
+            "question": "Where is Sensenich Propeller located?"
+        },
+        {
+            "score": 0.9248800277709961,
+            "question": "Name two cities where Sensenich Propeller has a presence."
+        },
+        {
+            "score": 0.7887741923332214,
+            "question": "Does Sensenich Propeller have multiple locations?"
+        },
+        {
+            "score": 0.7241289019584656,
+            "question": "Can you list the states where Sensenich Propeller is found?"
+        },
+        {
+            "score": 0.5604993104934692,
+            "question": "Would you say that Sensenich Propeller has a nationwide presence?"
+        },
+        {
+            "score": 0.5420777797698975,
+            "question": "In what state is Lancaster, Pennsylvania located?"
+        },
+        {
+            "score": 0.47300413250923157,
+            "question": "What type of business is Sensenich Propeller?"
+        },
+        {
+            "score": 0.26909488439559937,
+            "question": "What state is Plant City in?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Sensenich Propeller is located in both Lancaster, Pennsylvania and Plant City, Florida.",
+            "html": "dbpedia_844_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of business is Sensenich Propeller?",
+            "html": "dbpedia_844_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In what state is Lancaster, Pennsylvania located?",
+            "html": "dbpedia_844_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Would you say that Sensenich Propeller has a nationwide presence?",
+            "html": "dbpedia_844_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_844_24.txt"
+        },
+        {
+            "file_id": "dbpedia_844_37.txt"
+        },
+        {
+            "file_id": "dbpedia_844_44.txt"
+        },
+        {
+            "file_id": "dbpedia_844_49.txt"
+        },
+        {
+            "file_id": "dbpedia_844_72.txt"
+        },
+        {
+            "file_id": "dbpedia_844_77.txt"
+        },
+        {
+            "file_id": "dbpedia_844_85.txt"
+        },
+        {
+            "file_id": "dbpedia_844_86.txt"
+        },
+        {
+            "file_id": "dbpedia_844_9.txt"
+        },
+        {
+            "file_id": "dbpedia_844_95.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the structured JSON response:\n\n```\n{\n  \"output\": \"yes\"\n}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents state that Sensenich Propeller has two manufacturing locations: Lancaster, Pa., and Plant City Fl. This confirms that the company is indeed located in both Lancaster, Pennsylvania, and Plant City, Florida."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Sensenich Propeller has two manufacturing locations, one in Lancaster, Pa. and the other in Plant City Fl., but they are not stated as having multiple locations within a single city.",
+            "category": -1
+        },
+        "gemma2": {
+            "reason": "Context information states Sensenich Propeller has two manufacturing locations in Lancaster, Pa.  and Plant City Fl.",
+            "category": -1
+        },
+        "llama3.1": {
+            "reason": "Context information 1 states that Sensenich Propeller has two manufacturing locations in Lancaster, Pa. and Plant City Fl., but context information 2, 3, 4 and 5 do not mention Pennsylvania as a location for Sensenich Propeller's operation or manufacturing plant, while the others mention Plant City Florida consistently.",
+            "category": -1
+        },
+        "qwen2.5": {
+            "reason": "The context information states that Sensenich Propeller has two manufacturing locations, one in Lancaster, Pennsylvania, and the other in Plant City, Florida. However, it does not mention that the company's headquarters or main location spans both cities simultaneously.",
+            "category": -1
+        }
+    }
+}

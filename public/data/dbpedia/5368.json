@@ -1,0 +1,102 @@
+{
+    "subject": "resource/Poseidon_(film)",
+    "predicate": "property/caption",
+    "object": "Theatrical release poster",
+    "human_readable": "The caption of the film Poseidon is 'Theatrical release poster'.",
+    "questions": [
+        {
+            "score": 0.9495462775230408,
+            "question": "Is the Poseidon poster a theatrical release?"
+        },
+        {
+            "score": 0.9433519244194031,
+            "question": "What is the caption of the Poseidon film poster?"
+        },
+        {
+            "score": 0.8084075450897217,
+            "question": "What type of poster is depicted for the film Poseidon?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The caption of the film Poseidon is 'Theatrical release poster'.",
+            "html": "dbpedia_5368_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the caption of the Poseidon film poster?",
+            "html": "dbpedia_5368_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is the Poseidon poster a theatrical release?",
+            "html": "dbpedia_5368_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5368_1.txt"
+        },
+        {
+            "file_id": "dbpedia_5368_10.txt"
+        },
+        {
+            "file_id": "dbpedia_5368_24.txt"
+        },
+        {
+            "file_id": "dbpedia_5368_35.txt"
+        },
+        {
+            "file_id": "dbpedia_5368_37.txt"
+        },
+        {
+            "file_id": "dbpedia_5368_6.txt"
+        },
+        {
+            "file_id": "dbpedia_5368_67.txt"
+        },
+        {
+            "file_id": "dbpedia_5368_8.txt"
+        },
+        {
+            "file_id": "dbpedia_5368_86.txt"
+        },
+        {
+            "file_id": "dbpedia_5368_87.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "To evaluate whether the information supports the triple, I'll check if any of the documents mention that the caption of the film Poseidon is \"Theatrical release poster\".\n\nAfter analyzing the documents, I found a match:\n\n* In the file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5368/re-ranker-msmarco/1.txt, it says: \"Like many theatrical movie posters printed after 1990, this poster is double-sided.\"\n\nHowever, none of the documents explicitly mention that the caption of the film Poseidon is \"Theatrical release poster\". They do mention other related information, but not the exact caption.\n\nTherefore, based on the provided context and without prior knowledge, I conclude:\n\n{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: None of the provided documents mention a theatrical release poster for the film \"Poseidon\" or any information related to its caption. Therefore, the statement that the caption of the film Poseidon is 'Theatrical release poster' cannot be supported by the given context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The provided context does not indicate the title of the film as a \"theatrical release poster.\" It states that the item being described is a \"poster\" for the film Poseidon, but it doesn't specify that it is a theatrical release poster.",
+            "category": 3
+        }
+    }
+}

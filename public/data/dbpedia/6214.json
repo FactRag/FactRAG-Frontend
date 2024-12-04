@@ -1,0 +1,148 @@
+{
+    "subject": "resource/WIVM-LD",
+    "predicate": "ontology/location",
+    "object": "resource/Newcomerstown,_Ohio",
+    "human_readable": "WIVM-LD is located in Newcomerstown, Ohio.",
+    "questions": [
+        {
+            "score": 0.8961299657821655,
+            "question": "Where is WIVM-LD located?"
+        },
+        {
+            "score": 0.8373515009880066,
+            "question": "How does WIVM-LD contribute to the community in Newcomerstown?"
+        },
+        {
+            "score": 0.7439014911651611,
+            "question": "What state is WIVM-LD in?"
+        },
+        {
+            "score": 0.5521747469902039,
+            "question": "Are there any famous people associated with Newcomerstown, Ohio?"
+        },
+        {
+            "score": 0.43641430139541626,
+            "question": "What type of organization is WIVM-LD?"
+        },
+        {
+            "score": 0.39791399240493774,
+            "question": "Can you name any other organizations in Newcomerstown, Ohio?"
+        },
+        {
+            "score": 0.3399136960506439,
+            "question": "Does WIVM-LD have a website?"
+        },
+        {
+            "score": 0.27828437089920044,
+            "question": "Is WIVM-LD a radio station?"
+        },
+        {
+            "score": 0.18542863428592682,
+            "question": "What is the purpose of a radio station like WIVM-LD?"
+        },
+        {
+            "score": 0.04434707388281822,
+            "question": "What are some popular radio stations in Ohio?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=WIVM-LD is located in Newcomerstown, Ohio.",
+            "html": "dbpedia_6214_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the purpose of a radio station like WIVM-LD?",
+            "html": "dbpedia_6214_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is WIVM-LD a radio station?",
+            "html": "dbpedia_6214_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does WIVM-LD have a website?",
+            "html": "dbpedia_6214_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6214_15.txt"
+        },
+        {
+            "file_id": "dbpedia_6214_22.txt"
+        },
+        {
+            "file_id": "dbpedia_6214_23.txt"
+        },
+        {
+            "file_id": "dbpedia_6214_24.txt"
+        },
+        {
+            "file_id": "dbpedia_6214_27.txt"
+        },
+        {
+            "file_id": "dbpedia_6214_46.txt"
+        },
+        {
+            "file_id": "dbpedia_6214_48.txt"
+        },
+        {
+            "file_id": "dbpedia_6214_5.txt"
+        },
+        {
+            "file_id": "dbpedia_6214_8.txt"
+        },
+        {
+            "file_id": "dbpedia_6214_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": -1,
+            "full_ans": "WIVN-LP (Channel 29) in Newcomerstown, Ohio is a low power television station.   The stations are America One network affiliates.  \n"
+        },
+        "llama3.1": {
+            "short_ans": -1,
+            "full_ans": "**Rewrite**\n\nWIVM-LD is actually located in Newcomerstown, Ohio. The station shares a location with its sister channel, WIVN-LP, which operates on Channel 29. This information is supported by the file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6214/re-ranker-msmarco/23.txt, where it is stated that WIVN-LP (Channel 29) is located in Newcomerstown, Ohio."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "no"
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n       \"output\": \"yes\"\n    }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "WIVM-LD does not have a location specified in the provided context. It only appears in the list without any geographical coordinates or city name associated with it, making it impossible to determine that it is located in Newcomerstown, Ohio.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "The provided data lists WIVM-LD as being associated with Akron, OH, not Newcomerstown.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The information states that WIVM-LD (Channel 39) is located in Canton, Ohio, while the channel callsigns for stations located in Newcomerstown are listed as WIVN-LP and WIVN-LD.",
+            "category": 2
+        }
+    }
+}

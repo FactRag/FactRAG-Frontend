@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Flash_of_Genius_(film)",
+    "predicate": "ontology/producer",
+    "object": "resource/Gary_Barber",
+    "human_readable": "The producer of the film Flash of Genius is Gary Barber.",
+    "questions": [
+        {
+            "score": 0.9384704232215881,
+            "question": "Name a film produced by Gary Barber."
+        },
+        {
+            "score": 0.930859386920929,
+            "question": "Is Gary Barber a film producer?"
+        },
+        {
+            "score": 0.8937504887580872,
+            "question": "Gary Barber is known for producing what film?"
+        },
+        {
+            "score": 0.8910907506942749,
+            "question": "What is the title of the film produced by Gary Barber?"
+        },
+        {
+            "score": 0.8864364624023438,
+            "question": "Who produced the film Flash of Genius?"
+        },
+        {
+            "score": 0.872913122177124,
+            "question": "What movie did Gary Barber produce?"
+        },
+        {
+            "score": 0.7961435317993164,
+            "question": "What is the name of the producer of Flash of Genius?"
+        },
+        {
+            "score": 0.7947249412536621,
+            "question": "Who was involved in the production of Flash of Genius?"
+        },
+        {
+            "score": 0.5320661664009094,
+            "question": "What is Gary Barber's profession?"
+        },
+        {
+            "score": 0.4286566376686096,
+            "question": "What type of media professional is Gary Barber?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The producer of the film Flash of Genius is Gary Barber.",
+            "html": "dbpedia_3887_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Gary Barber's profession?",
+            "html": "dbpedia_3887_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who was involved in the production of Flash of Genius?",
+            "html": "dbpedia_3887_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of the producer of Flash of Genius?",
+            "html": "dbpedia_3887_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3887_118.txt"
+        },
+        {
+            "file_id": "dbpedia_3887_13.txt"
+        },
+        {
+            "file_id": "dbpedia_3887_132.txt"
+        },
+        {
+            "file_id": "dbpedia_3887_144.txt"
+        },
+        {
+            "file_id": "dbpedia_3887_25.txt"
+        },
+        {
+            "file_id": "dbpedia_3887_31.txt"
+        },
+        {
+            "file_id": "dbpedia_3887_49.txt"
+        },
+        {
+            "file_id": "dbpedia_3887_69.txt"
+        },
+        {
+            "file_id": "dbpedia_3887_79.txt"
+        },
+        {
+            "file_id": "dbpedia_3887_90.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here's my evaluation:\n\n**Triple:** \"The producer of the film Flash of Genius is Gary Barber.\"\n\nLet me check the documents...\n\nAccording to file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3887/re-ranker-msmarco/109.txt, I find that:\n\"Gary Barber ... has served as executive producer of more than 50 films, including 'Seabiscuit.'\"\n\nHowever, there is no mention of \"Flash of Genius\" in any of the documents.\n\nSo, my answer is:\n\n`{'output': 'no'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents indicate that Gary Barber is indeed associated with producing films, including mentions of his role as CEO and chairman of Metro-Goldwyn-Mayer (MGM), a company known for producing films. Therefore, the statement that Gary Barber is the producer of the film \"Flash of Genius\" can be supported by the given context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, there is no mention of Gary Barber being involved with the production of the film \"Flash of Genius\". Therefore, the answer should be:\n\n{'output': 'no'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "The provided context focuses on Gary Barber's roles as chairman and CEO of MGM, his co-founding of Spyglass Entertainment, and his involvement in producing films like \"Seabiscuit\" and \"Memoirs of a Geisha.\" There is no mention of him being involved in the production of \"Flash of Genius.\"",
+            "category": 3
+        },
+        "llama3.1": {
+            "reason": "There is no mention of the film Flash of Genius in any of the provided context information, nor is there any indication that Gary Barber was involved in its production.",
+            "category": 3
+        }
+    }
+}

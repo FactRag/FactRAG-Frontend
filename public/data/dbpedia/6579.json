@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Ghost_Chasers",
+    "predicate": "property/country",
+    "object": "United States",
+    "human_readable": "Ghost Chasers is from the United States.",
+    "questions": [
+        {
+            "score": 0.9742642641067505,
+            "question": "Is Ghost Chasers a group or organization from the United States?"
+        },
+        {
+            "score": 0.7782131433486938,
+            "question": "Where is Ghost Chasers from?"
+        },
+        {
+            "score": 0.5698902606964111,
+            "question": "What country are Ghost Chasers associated with?"
+        },
+        {
+            "score": 0.5487569570541382,
+            "question": "What kind of activities might Ghost Chasers be involved in?"
+        },
+        {
+            "score": 0.5469463467597961,
+            "question": "Can you tell me about Ghost Chasers' origin?"
+        },
+        {
+            "score": 0.3998182415962219,
+            "question": "Are there any famous ghost stories associated with the United States?"
+        },
+        {
+            "score": 0.37379753589630127,
+            "question": "Where might you find people or shows like Ghost Chasers?"
+        },
+        {
+            "score": 0.35826924443244934,
+            "question": "What is Ghost Chasers' role in the world of paranormal investigation?"
+        },
+        {
+            "score": 0.3069123327732086,
+            "question": "Are there any popular paranormal investigation groups from the United States?"
+        },
+        {
+            "score": 0.2967528700828552,
+            "question": "Is the United States known for its interest in the paranormal?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Ghost Chasers is from the United States.",
+            "html": "dbpedia_6579_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any popular paranormal investigation groups from the United States?",
+            "html": "dbpedia_6579_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Ghost Chasers' role in the world of paranormal investigation?",
+            "html": "dbpedia_6579_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where might you find people or shows like Ghost Chasers?",
+            "html": "dbpedia_6579_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6579_1.txt"
+        },
+        {
+            "file_id": "dbpedia_6579_118.txt"
+        },
+        {
+            "file_id": "dbpedia_6579_120.txt"
+        },
+        {
+            "file_id": "dbpedia_6579_126.txt"
+        },
+        {
+            "file_id": "dbpedia_6579_15.txt"
+        },
+        {
+            "file_id": "dbpedia_6579_23.txt"
+        },
+        {
+            "file_id": "dbpedia_6579_42.txt"
+        },
+        {
+            "file_id": "dbpedia_6579_64.txt"
+        },
+        {
+            "file_id": "dbpedia_6579_66.txt"
+        },
+        {
+            "file_id": "dbpedia_6579_75.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n\n\nLet me know if you'd like to evaluate more triples!  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, I will evaluate whether the statement \"Ghost Chasers is from the United States\" is supported by the documents.\n\nHere's the JSON response:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe reason for this answer is that most of the relevant documents mention specific locations related to Ghost Chasers, such as Delaware (in file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6579/re-ranker-msmarco/75.txt) and Potsdam (in file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6579/re-ranker-msmarco/42.txt), which are not in the United States. Although one of the documents mentions a reality TV show \"Ghost Hunters\" that became widespread in the United States, it does not imply that Ghost Chasers itself is from the United States.\n\nNote: The file_path for 120.txt mentions ToyLabTV and T-Rex Ranch series timeline, which could suggest international connections, but these are not conclusive evidence to support the statement \"Ghost Chasers is from the United States\"."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe context mentions \"Ghost Chasers Society, headquartered in Little Creek, Del.\" which implies that the organization is based in the United States. Therefore, the statement \"Ghost Chasers is from the United States\" is supported by the given information."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{\"output\": \"yes\"}\n\nThe provided context mentions multiple instances of activities or content related to ghost hunting and paranormal investigations that originate from locations within the United States, such as Delaware (mentioned in file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6579/re-ranker-msmarco/75.txt) and university-based research conducted at the University of Potsdam which is located in New York State. Therefore, it can be inferred that Ghost Chasers, as a concept related to ghost hunting or paranormal investigations, likely originates from the United States."
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Context information mentions a Ghost Chasers Society based in Delaware, USA. Additionally, the context discusses the popularity of ghost hunting in the US after the reality show \"Ghost Hunters\" premiered in 2004.",
+            "category": -1
+        },
+        "llama3.1": {
+            "reason": "The context information does not provide a clear indication of the country of origin for Ghost Chasers, but the first point explicitly states that it was made \"for our final year of our 2D animation degree\", which implies that it was created in a specific institution or program.",
+            "category": -1
+        }
+    }
+}

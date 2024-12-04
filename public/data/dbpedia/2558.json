@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Niantic,_Inc.",
+    "predicate": "property/hasPhotoCollection",
+    "object": "http://wifo5-03.informatik.uni-mannheim.de/flickrwrappr/photos/Niantic,_Inc.",
+    "human_readable": "Niantic, Inc. has a photo collection.",
+    "questions": [
+        {
+            "score": 0.9717211127281189,
+            "question": "Does Niantic, Inc. collect photos?"
+        },
+        {
+            "score": 0.9643990397453308,
+            "question": "What might be found in Niantic, Inc.'s photo collection?"
+        },
+        {
+            "score": 0.9598929286003113,
+            "question": "What does Niantic, Inc. do with their photo collection?"
+        },
+        {
+            "score": 0.9528005123138428,
+            "question": "Is Niantic, Inc. involved in photography?"
+        },
+        {
+            "score": 0.9227588772773743,
+            "question": "What kind of collection does Niantic, Inc. have?"
+        },
+        {
+            "score": 0.9031790494918823,
+            "question": "Niantic, Inc. is known for collecting what?"
+        },
+        {
+            "score": 0.867844820022583,
+            "question": "What are some examples of photos that Niantic, Inc. might have?"
+        },
+        {
+            "score": 0.8535746335983276,
+            "question": "Can you tell me about the type of items Niantic, Inc. collects?"
+        },
+        {
+            "score": 0.8392943143844604,
+            "question": "What is the subject of Niantic, Inc.'s collection?"
+        },
+        {
+            "score": 0.7089576125144958,
+            "question": "What kind of company is Niantic, Inc.?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Niantic, Inc. has a photo collection.",
+            "html": "dbpedia_2558_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the subject of Niantic, Inc.'s collection?",
+            "html": "dbpedia_2558_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me about the type of items Niantic, Inc. collects?",
+            "html": "dbpedia_2558_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some examples of photos that Niantic, Inc. might have?",
+            "html": "dbpedia_2558_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2558_10.txt"
+        },
+        {
+            "file_id": "dbpedia_2558_113.txt"
+        },
+        {
+            "file_id": "dbpedia_2558_12.txt"
+        },
+        {
+            "file_id": "dbpedia_2558_130.txt"
+        },
+        {
+            "file_id": "dbpedia_2558_22.txt"
+        },
+        {
+            "file_id": "dbpedia_2558_46.txt"
+        },
+        {
+            "file_id": "dbpedia_2558_66.txt"
+        },
+        {
+            "file_id": "dbpedia_2558_75.txt"
+        },
+        {
+            "file_id": "dbpedia_2558_83.txt"
+        },
+        {
+            "file_id": "dbpedia_2558_93.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "{\n  \"output\": \"yes\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents mention that players can take photos with Pok\u00e9mon Go (e.g., \"All of the photos taken with Go Snapshot are saved to a person\u2019s device automatically\"), which implies that Niantic, Inc. has some involvement with or access to these photo collections as the developer and owner of the app."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Niantic, Inc. collects photos taken by users using their Go Snapshot feature, but the claim incorrectly states that they have a photo collection themselves.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "The provided text states that \"All of the photos taken with Go Snapshot are saved to a person\u2019s device automatically,\" implying users, not Niantic, retain possession of the images.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "Niantic only said photos taken with Go Snapshot are saved to a person\u2019s device automatically, but there is no information provided that they have a centralized photo collection.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "While Niantic collects location data from users for its AR+ Mode and other features, there is no explicit mention or indication in the provided context that Niantic specifically has a photo collection policy. The information focuses on how photos taken with Go Snapshot are saved to users' devices automatically, not collected by Niantic.",
+            "category": 2
+        }
+    }
+}

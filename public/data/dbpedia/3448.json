@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Love_Crime",
+    "predicate": "ontology/writer",
+    "object": "resource/Natalie_Carter",
+    "human_readable": "Natalie Carter wrote Love Crime.",
+    "questions": [
+        {
+            "score": 0.7377951145172119,
+            "question": "Who wrote the book 'Love Crime'?"
+        },
+        {
+            "score": 0.5980035066604614,
+            "question": "Name a book written by Natalie Carter."
+        },
+        {
+            "score": 0.5835154056549072,
+            "question": "What is the title of the book written by Natalie Carter?"
+        },
+        {
+            "score": 0.5005154609680176,
+            "question": "What is Natalie Carter known for?"
+        },
+        {
+            "score": 0.4973140060901642,
+            "question": "Are there any other books written by Natalie Carter?"
+        },
+        {
+            "score": 0.4256238341331482,
+            "question": "Who are some other authors who write in a similar genre to Natalie Carter?"
+        },
+        {
+            "score": 0.2691260576248169,
+            "question": "Can you tell me about the plot of 'Love Crime'?"
+        },
+        {
+            "score": 0.2296016365289688,
+            "question": "Where can I find more information about 'Love Crime'?"
+        },
+        {
+            "score": 0.20736049115657806,
+            "question": "What genre might 'Love Crime' belong to?"
+        },
+        {
+            "score": 0.19446052610874176,
+            "question": "What is the main theme explored in 'Love Crime'?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Natalie Carter wrote Love Crime.",
+            "html": "dbpedia_3448_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What genre might 'Love Crime' belong to?",
+            "html": "dbpedia_3448_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where can I find more information about 'Love Crime'?",
+            "html": "dbpedia_3448_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me about the plot of 'Love Crime'?",
+            "html": "dbpedia_3448_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3448_25.txt"
+        },
+        {
+            "file_id": "dbpedia_3448_29.txt"
+        },
+        {
+            "file_id": "dbpedia_3448_36.txt"
+        },
+        {
+            "file_id": "dbpedia_3448_49.txt"
+        },
+        {
+            "file_id": "dbpedia_3448_54.txt"
+        },
+        {
+            "file_id": "dbpedia_3448_59.txt"
+        },
+        {
+            "file_id": "dbpedia_3448_61.txt"
+        },
+        {
+            "file_id": "dbpedia_3448_64.txt"
+        },
+        {
+            "file_id": "dbpedia_3448_71.txt"
+        },
+        {
+            "file_id": "dbpedia_3448_99.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "After analyzing the documents, I can confirm that:\n\n`{ \"output\": \"no\" }`\n\nThe document with path `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3448/re-ranker-msmarco/48.txt` mentions Alain Corneau and Natalie Carter as writers of Love Crime, not just Natalie Carter."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide information that supports the statement \"Natalie Carter wrote Love Crime.\" Specifically, Document 28.txt mentions Alain Corneau and Nathalie Carter as the director and co-scripter of a film titled \"Love Crime,\" and Document 98.txt discusses Natalie Carter-Giles's first novel, which is also titled \"Hunting Helen,\" further implying her involvement in writing."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "There are multiple Natalie Carters mentioned across the context information, but only one of them is explicitly credited with writing \"Ein Geheimnis\", \"Passion\", and \"Das M\u00e4dchen von gegen\u00fcber\". The credit for writing \"Love Crime\" is attributed to Alain Corneau and another person (not explicitly stated), not a Natalie Carter.",
+            "category": 3
+        }
+    }
+}

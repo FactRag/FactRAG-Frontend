@@ -1,0 +1,144 @@
+{
+    "subject": "resource/I'm_No_Dummy",
+    "predicate": "property/country",
+    "object": "United States",
+    "human_readable": "I'm No Dummy is from the United States.",
+    "questions": [
+        {
+            "score": 0.9526844024658203,
+            "question": "Is I'm No Dummy American?"
+        },
+        {
+            "score": 0.9337469339370728,
+            "question": "Can I'm No Dummy be considered American?"
+        },
+        {
+            "score": 0.9252364039421082,
+            "question": "Is I'm No Dummy a product of the United States?"
+        },
+        {
+            "score": 0.7927975058555603,
+            "question": "Where is I'm No Dummy from?"
+        },
+        {
+            "score": 0.7707544565200806,
+            "question": "Where originates I'm No Dummy from?"
+        },
+        {
+            "score": 0.7328574061393738,
+            "question": "What is the origin country of I'm No Dummy?"
+        },
+        {
+            "score": 0.7226619124412537,
+            "question": "To which nation does I'm No Dummy belong?"
+        },
+        {
+            "score": 0.6905840039253235,
+            "question": "From which country does I'm No Dummy hail?"
+        },
+        {
+            "score": 0.6745576858520508,
+            "question": "What country is associated with I'm No Dummy?"
+        },
+        {
+            "score": 0.6121743321418762,
+            "question": "What is the nationality of I'm No Dummy?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=I'm No Dummy is from the United States.",
+            "html": "dbpedia_5752_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What country is associated with I'm No Dummy?",
+            "html": "dbpedia_5752_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=From which country does I'm No Dummy hail?",
+            "html": "dbpedia_5752_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=To which nation does I'm No Dummy belong?",
+            "html": "dbpedia_5752_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5752_106.txt"
+        },
+        {
+            "file_id": "dbpedia_5752_11.txt"
+        },
+        {
+            "file_id": "dbpedia_5752_112.txt"
+        },
+        {
+            "file_id": "dbpedia_5752_13.txt"
+        },
+        {
+            "file_id": "dbpedia_5752_21.txt"
+        },
+        {
+            "file_id": "dbpedia_5752_29.txt"
+        },
+        {
+            "file_id": "dbpedia_5752_38.txt"
+        },
+        {
+            "file_id": "dbpedia_5752_40.txt"
+        },
+        {
+            "file_id": "dbpedia_5752_54.txt"
+        },
+        {
+            "file_id": "dbpedia_5752_91.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'} \n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "After analyzing the context information, I can provide an answer to your query.\n\nThe triple you are asking about is: \"I'm No Dummy is from the United States.\"\n\nHere's my evaluation:\n\n* The text mentions \"Dummy\", which is a reference to William \"Dummy\" Hoy, who lived in California (USA).\n* However, the main topic of discussion seems to be a comedy documentary and a book called \"Hey! I'm Talkin' Here!\", as well as a ventriloquism show called \"I'm No Dummy Productions\". There is no explicit mention of the country of origin for these entities.\n* The text does not provide any information that would suggest \"I'm No Dummy\" (the documentary, book, or show) is specifically from the United States.\n\nTherefore, based on this analysis, my answer to your query would be:\n\n`{'output': 'no'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents mention \"I'm No Dummy\" and provide information about its production, suggesting it is a product or creation from the United States (e.g., linked with Jeff Dunham and his shows). However, for clarity in response formatting as per your request, I have structured it accordingly."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{\"output\": \"yes\"}\n\nThe documents mention a DVD titled \"I'm No Dummy\" and discuss it as part of Bryan W. Simon's work, which is associated with ventriloquism performances in the United States. This supports that \"I'm No Dummy\" has origins or relevance within the United States context."
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Several mentions of specific US locations (Imperial, CA, Laguna Playhouse) and a reference to a \"US-based director\" strongly suggest the production has origins within the United States.",
+            "category": 3
+        },
+        "llama3.1": {
+            "reason": "The context information mentions \"Dummy is no Dummy\" by Patricia Robles (Imperial, CA, USA), which implies that the term \"Dummy\" has a different origin and significance in the United States compared to other countries.",
+            "category": 2
+        }
+    }
+}

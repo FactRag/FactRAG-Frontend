@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Dorothy_Appleby",
+    "predicate": "ontology/activeYearsEndYear",
+    "object": "1943",
+    "human_readable": "Dorothy Appleby was active until 1943.",
+    "questions": [
+        {
+            "score": 0.7792969346046448,
+            "question": "When did Dorothy Appleby stop being active?"
+        },
+        {
+            "score": 0.741798996925354,
+            "question": "In what field was Dorothy Appleby likely active?"
+        },
+        {
+            "score": 0.6604259610176086,
+            "question": "Was Dorothy Appleby a historical figure?"
+        },
+        {
+            "score": 0.6395134329795837,
+            "question": "What was Dorothy Appleby known for?"
+        },
+        {
+            "score": 0.5570853352546692,
+            "question": "Was Dorothy Appleby involved in any significant events?"
+        },
+        {
+            "score": 0.4068846106529236,
+            "question": "What kind of work might Dorothy Appleby have done?"
+        },
+        {
+            "score": 0.3628726601600647,
+            "question": "What were some of the challenges Dorothy Appleby might have faced during her lifetime?"
+        },
+        {
+            "score": 0.3375921845436096,
+            "question": "Can you tell me more about Dorothy Appleby's life?"
+        },
+        {
+            "score": 0.3240092992782593,
+            "question": "How did society view people like Dorothy Appleby in her time?"
+        },
+        {
+            "score": 0.25834327936172485,
+            "question": "What can we learn from Dorothy Appleby's life and work?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Dorothy Appleby was active until 1943.",
+            "html": "dbpedia_4861_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How did society view people like Dorothy Appleby in her time?",
+            "html": "dbpedia_4861_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about Dorothy Appleby's life?",
+            "html": "dbpedia_4861_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What were some of the challenges Dorothy Appleby might have faced during her lifetime?",
+            "html": "dbpedia_4861_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4861_100.txt"
+        },
+        {
+            "file_id": "dbpedia_4861_103.txt"
+        },
+        {
+            "file_id": "dbpedia_4861_18.txt"
+        },
+        {
+            "file_id": "dbpedia_4861_28.txt"
+        },
+        {
+            "file_id": "dbpedia_4861_42.txt"
+        },
+        {
+            "file_id": "dbpedia_4861_49.txt"
+        },
+        {
+            "file_id": "dbpedia_4861_52.txt"
+        },
+        {
+            "file_id": "dbpedia_4861_70.txt"
+        },
+        {
+            "file_id": "dbpedia_4861_95.txt"
+        },
+        {
+            "file_id": "dbpedia_4861_96.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe information in the documents supports this triple. According to the document at file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4861/re-ranker-msmarco/27.txt, Dorothy Appleby was an American film actress who appeared in over 50 films between 1931 and 1943."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents indicate that Dorothy Appleby's career spanned from 1931 to 1943, with a notable filmography including roles in films such as \"Nothing But Pleasure\" (1940) and \"General Nuisance\" (1941). This supports the statement that she was active until 1943."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Dorothy Appleby died in 1990, which is after the year 1943. Therefore, she was not active until 1943 as per her death date.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "It conflicts with information stating she died in 1990.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The context information mentions specific film titles and years of release (e.g. \"Nothing But Pleasure\" (1940); \"Pardon My Berth Marks\" (1940)), indicating that Dorothy Appleby was still active in the film industry as late as 1941, but it does not provide any information about her activity after 1943, which suggests that she may have actually stopped working in the film industry before or around 1943.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information provided includes a death record indicating Dorothy Appleby passed away on August 9, 1990. Given her career span and the dates mentioned in the filmography, it's clear she was active well beyond 1943.",
+            "category": 2
+        }
+    }
+}

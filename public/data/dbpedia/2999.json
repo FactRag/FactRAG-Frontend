@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Rufus_Amis_House_and_Mill",
+    "predicate": "ontology/nearestCity",
+    "object": "resource/Virgilina,_North_Carolina",
+    "human_readable": "The nearest city to Rufus Amis House and Mill is Virgilina, North Carolina.",
+    "questions": [
+        {
+            "score": 0.9669167399406433,
+            "question": "What is the nearest city to Rufus Amis House and Mill?"
+        },
+        {
+            "score": 0.8627269268035889,
+            "question": "Are there any historical sites near Rufus Amis House and Mill?"
+        },
+        {
+            "score": 0.84906005859375,
+            "question": "What are some landmarks near Rufus Amis House and Mill?"
+        },
+        {
+            "score": 0.8280298113822937,
+            "question": "Where is Rufus Amis House and Mill located?"
+        },
+        {
+            "score": 0.812402606010437,
+            "question": "Are there any nearby natural attractions to Rufus Amis House and Mill?"
+        },
+        {
+            "score": 0.6296162009239197,
+            "question": "Is Virgilina a city or town?"
+        },
+        {
+            "score": 0.5631486177444458,
+            "question": "In which state is Virgilina located?"
+        },
+        {
+            "score": 0.4593016803264618,
+            "question": "What amenities are available in Virgilina?"
+        },
+        {
+            "score": 0.3769448697566986,
+            "question": "What is the geographic significance of Virgilina?"
+        },
+        {
+            "score": 0.3149697780609131,
+            "question": "Is Virgilina a popular tourist destination?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The nearest city to Rufus Amis House and Mill is Virgilina, North Carolina.",
+            "html": "dbpedia_2999_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the geographic significance of Virgilina?",
+            "html": "dbpedia_2999_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What amenities are available in Virgilina?",
+            "html": "dbpedia_2999_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In which state is Virgilina located?",
+            "html": "dbpedia_2999_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2999_10.txt"
+        },
+        {
+            "file_id": "dbpedia_2999_14.txt"
+        },
+        {
+            "file_id": "dbpedia_2999_15.txt"
+        },
+        {
+            "file_id": "dbpedia_2999_27.txt"
+        },
+        {
+            "file_id": "dbpedia_2999_29.txt"
+        },
+        {
+            "file_id": "dbpedia_2999_3.txt"
+        },
+        {
+            "file_id": "dbpedia_2999_31.txt"
+        },
+        {
+            "file_id": "dbpedia_2999_33.txt"
+        },
+        {
+            "file_id": "dbpedia_2999_47.txt"
+        },
+        {
+            "file_id": "dbpedia_2999_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "To evaluate whether the information in the documents supports the triple \"The nearest city to Rufus Amis House and Mill is Virgilina, North Carolina.\", let's break down the relevant parts of the text:\n\n* In the first document (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2999/re-ranker-msmarco/10.txt), it mentions \"Rufus Amis House and Mill\" is located near Virgilina, Granville County, North Carolina.\n* In the fifth document (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2999/re-ranker-msmarco/26.txt), under \"Project Type Location\", it lists Amis, Rufus, House and Mill (Address Restricted) in Granville County, NC (Virgilina vicinity).\n\nFrom the above information, we can see that both documents confirm the location of Rufus Amis House and Mill near or in Virgilina, Granville County, North Carolina. Therefore:\n\n```\n{\n  \"output\": \"yes\"\n}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information about the Rufus Amis House and Mill being located near Virgilina, Granville County, North Carolina. This supports the statement that the nearest city to Rufus Amis House and Mill is Virgilina, North Carolina, considering Virgilina is specified as a nearby location in the context provided."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

@@ -1,0 +1,102 @@
+{
+    "subject": "resource/WTCF",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "WTCF",
+    "human_readable": "The name of WTCF is WTCF.",
+    "questions": [
+        {
+            "score": 0.9683082103729248,
+            "question": "Is the name of WTCF, indeed, WTCF?"
+        },
+        {
+            "score": 0.9551314115524292,
+            "question": "What is the name of WTCF?"
+        },
+        {
+            "score": 0.7105563282966614,
+            "question": "Does WTCF stand for something else?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of WTCF is WTCF.",
+            "html": "dbpedia_5314_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of WTCF?",
+            "html": "dbpedia_5314_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is the name of WTCF, indeed, WTCF?",
+            "html": "dbpedia_5314_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5314_1.txt"
+        },
+        {
+            "file_id": "dbpedia_5314_106.txt"
+        },
+        {
+            "file_id": "dbpedia_5314_126.txt"
+        },
+        {
+            "file_id": "dbpedia_5314_139.txt"
+        },
+        {
+            "file_id": "dbpedia_5314_141.txt"
+        },
+        {
+            "file_id": "dbpedia_5314_45.txt"
+        },
+        {
+            "file_id": "dbpedia_5314_48.txt"
+        },
+        {
+            "file_id": "dbpedia_5314_49.txt"
+        },
+        {
+            "file_id": "dbpedia_5314_75.txt"
+        },
+        {
+            "file_id": "dbpedia_5314_81.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, I will evaluate whether the statement \"The name of WTCF is WTCF\" is correct or not.\n\nHere's my evaluation in the form of a JSON object:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nMy reasoning is as follows: The documents mention WTCF (World Tourism Cities Federations) but also use the acronym WTC several times, referring to the World Test Championship. This suggests that WTCF and WTC are not the same entity, which contradicts the statement in question."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe context provided confirms that WTCF stands for World Tourism Cities Federation, which directly supports the statement that the name \"WTCF\" is indeed the name of this organization."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The context information provided refers to two different meanings of WTC - one related to cricket (World Test Champions) and another related to the World Tourism Cities Federation, with its own Secretariat and membership structure. This discrepancy suggests that the name \"WTCF\" does not solely represent itself, but rather can refer to two distinct entities, making the statement \"The name of WTCF is WTCF\" an oversimplification or incorrect representation of the organization's identity.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,142 @@
+{
+    "subject": "resource/WHLM-FM",
+    "predicate": "http://purl.org/linguistics/gold/hypernym",
+    "object": "resource/Station",
+    "human_readable": "The hypernym of WHLM-FM is a Station.",
+    "questions": [
+        {
+            "score": 0.8643518090248108,
+            "question": "Is WHLM-FM a type of station?"
+        },
+        {
+            "score": 0.8050099611282349,
+            "question": "Give an example of a hypernym for WHLM-FM."
+        },
+        {
+            "score": 0.7723968029022217,
+            "question": "If WHLM-FM is a station, what kind of station could it be?"
+        },
+        {
+            "score": 0.6496588587760925,
+            "question": "What is the relationship between WHLM-FM and the term 'Station'?"
+        },
+        {
+            "score": 0.6411479115486145,
+            "question": "How does the term 'Station' relate to WHLM-FM?"
+        },
+        {
+            "score": 0.47416433691978455,
+            "question": "What is a higher level category for WHLM-FM?"
+        },
+        {
+            "score": 0.40594059228897095,
+            "question": "What is the general term that encompasses WHLM-FM?"
+        },
+        {
+            "score": 0.3990316689014435,
+            "question": "What category does WHLM-FM belong to?"
+        },
+        {
+            "score": 0.3278459906578064,
+            "question": "What broader category does WHLM-FM fall under?"
+        },
+        {
+            "score": 0.20587000250816345,
+            "question": "Can you name other examples of things that are Stations?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The hypernym of WHLM-FM is a Station.",
+            "html": "dbpedia_6296_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What broader category does WHLM-FM fall under?",
+            "html": "dbpedia_6296_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What category does WHLM-FM belong to?",
+            "html": "dbpedia_6296_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the general term that encompasses WHLM-FM?",
+            "html": "dbpedia_6296_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6296_13.txt"
+        },
+        {
+            "file_id": "dbpedia_6296_16.txt"
+        },
+        {
+            "file_id": "dbpedia_6296_21.txt"
+        },
+        {
+            "file_id": "dbpedia_6296_3.txt"
+        },
+        {
+            "file_id": "dbpedia_6296_31.txt"
+        },
+        {
+            "file_id": "dbpedia_6296_39.txt"
+        },
+        {
+            "file_id": "dbpedia_6296_42.txt"
+        },
+        {
+            "file_id": "dbpedia_6296_46.txt"
+        },
+        {
+            "file_id": "dbpedia_6296_54.txt"
+        },
+        {
+            "file_id": "dbpedia_6296_62.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n**Explanation:**\n\nWhile the documents don't explicitly state \"WHLM-FM\" as a specific instance of a \"Station,\"  they repeatedly refer to it as a radio station and use terms like \"commercial radio station,\" \"FM radio station,\" and \"broadcast Radio station.\" These descriptions strongly imply that WHLM-FM falls under the category of \"Station.\" \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation of the triple:\n\n* Subject: WHLM-FM\n* Predicate: is_a\n* Object: Station\n\nThe information in the documents does not directly state that WHLM-FM is a \"Station\". However, some documents mention \"WHLM (930 kHz 'Pop Radio') is a commercial radio station\" and another document mentions \"W282CO WHLM 104.3 is a broadcast Radio station\", which implies that WHLM-FM is indeed a type of radio station.\n\nHowever, upon closer inspection, the documents actually describe different stations with the call sign WHLM: one in Bloomsburg, Pennsylvania, and another in Hollywood, Florida (which is not mentioned as WHLM-FM). The document about WHLM-FM actually mentions it has a previous incarnation with the same call sign from 1981-2001 and 2006-2017.\n\nTherefore, while the documents do describe radio stations with similar names and characteristics, they also suggest that \"WHLM-FM\" is not necessarily a single entity, but rather two different stations with the same name. \n\nGiven this nuance, I would say that the triple is partially supported by the information in the documents, so the value should be \"yes\", but with some caveats.\n\nHere is the JSON response:\n\n```\n{\n  \"output\": \"yes\"\n}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe information provided in the documents supports that \"WHLM-FM\" refers to a radio station, which aligns with the statement that its hypernym (most general category) is a Station."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Multiple pieces of text identify WHLM-FM as a specific radio station with unique identifiers (call signs, frequencies, locations), indicating it is an instance of a station, not a broader category.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because WHLM-FM has multiple hypernyms including Station, Radio station, and FM radio station.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "WHLM-FM refers to a specific FM radio station, which is a type of Station. Therefore, the hypernym (most general term) for WHLM-FM should be a Station, not something more general that would encompass all types of stations.",
+            "category": 2
+        }
+    }
+}

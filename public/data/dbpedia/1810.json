@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Dries_van_der_Lof",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:1990_deaths",
+    "human_readable": "Dries van der Lof is a subject of Category:1990 deaths.",
+    "questions": [
+        {
+            "score": 0.7752286195755005,
+            "question": "In what year did Dries van der Lof die?"
+        },
+        {
+            "score": 0.7736669778823853,
+            "question": "What category does Dries van der Lof belong to?"
+        },
+        {
+            "score": 0.7610698938369751,
+            "question": "Were there any notable events associated with Dries van der Lof's death?"
+        },
+        {
+            "score": 0.6673792004585266,
+            "question": "Is there information available about Dries van der Lof's life?"
+        },
+        {
+            "score": 0.6005885004997253,
+            "question": "What was Dries van der Lof known for?"
+        },
+        {
+            "score": 0.5181079506874084,
+            "question": "Are there any sources that provide details about Dries van der Lof's life and work?"
+        },
+        {
+            "score": 0.4508061110973358,
+            "question": "Can you tell me more about Dries van der Lof?"
+        },
+        {
+            "score": 0.36303678154945374,
+            "question": "Who were some notable people who died in 1990?"
+        },
+        {
+            "score": 0.34906524419784546,
+            "question": "What impact did Dries van der Lof have on his field?"
+        },
+        {
+            "score": 0.30332908034324646,
+            "question": "Can you find any photographs or portraits of Dries van der Lof?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Dries van der Lof is a subject of Category:1990 deaths.",
+            "html": "dbpedia_1810_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What impact did Dries van der Lof have on his field?",
+            "html": "dbpedia_1810_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who were some notable people who died in 1990?",
+            "html": "dbpedia_1810_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about Dries van der Lof?",
+            "html": "dbpedia_1810_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1810_1.txt"
+        },
+        {
+            "file_id": "dbpedia_1810_13.txt"
+        },
+        {
+            "file_id": "dbpedia_1810_16.txt"
+        },
+        {
+            "file_id": "dbpedia_1810_18.txt"
+        },
+        {
+            "file_id": "dbpedia_1810_44.txt"
+        },
+        {
+            "file_id": "dbpedia_1810_58.txt"
+        },
+        {
+            "file_id": "dbpedia_1810_60.txt"
+        },
+        {
+            "file_id": "dbpedia_1810_65.txt"
+        },
+        {
+            "file_id": "dbpedia_1810_7.txt"
+        },
+        {
+            "file_id": "dbpedia_1810_77.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me explain why:\n\n*  **The context states:** \"Dries van der Lof (23 August 1919 in Emmen \u2013 24 May 1990 in Enschede)\". This clearly indicates that he died in 1990. \n\n\n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation:\n\nGiven the context information, I will evaluate whether the statement \"Dries van der Lof is a subject of Category:1990 deaths\" is supported by the documents.\n\nAfter analyzing the documents, I found that Dries van der Lof's date of death is mentioned as 24 May 1990 in Enschede. This information supports the statement.\n\nTherefore, my answer is:\n\n`{'output': 'yes'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information about Dries van der Lof's death on May 24, 1990, in Enschede, which supports the triple stating that he is a subject of Category:1990 deaths."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Dries van der Lof died on May 24, 1990, which is more than 4 years before the end of Formula One season in 1956 (the latest event mentioned in the context) where his death occurred. Therefore, he cannot be a subject of Category:1990 deaths.",
+            "category": 2
+        }
+    }
+}

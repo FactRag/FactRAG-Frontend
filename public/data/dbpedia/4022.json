@@ -1,0 +1,97 @@
+{
+    "subject": "resource/Graham_Leonard",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "Graham Leonard",
+    "human_readable": "The name of Graham Leonard is Graham Leonard.",
+    "questions": [
+        {
+            "score": 0.9821332097053528,
+            "question": "What is the name of Graham Leonard?"
+        },
+        {
+            "score": 0.9639277458190918,
+            "question": "Is Graham Leonard a person?"
+        },
+        {
+            "score": 0.5860353708267212,
+            "question": "Could you tell me more about Graham Leonard?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of Graham Leonard is Graham Leonard.",
+            "html": "dbpedia_4022_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Graham Leonard a person?",
+            "html": "dbpedia_4022_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of Graham Leonard?",
+            "html": "dbpedia_4022_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4022_12.txt"
+        },
+        {
+            "file_id": "dbpedia_4022_123.txt"
+        },
+        {
+            "file_id": "dbpedia_4022_23.txt"
+        },
+        {
+            "file_id": "dbpedia_4022_28.txt"
+        },
+        {
+            "file_id": "dbpedia_4022_6.txt"
+        },
+        {
+            "file_id": "dbpedia_4022_63.txt"
+        },
+        {
+            "file_id": "dbpedia_4022_71.txt"
+        },
+        {
+            "file_id": "dbpedia_4022_74.txt"
+        },
+        {
+            "file_id": "dbpedia_4022_83.txt"
+        },
+        {
+            "file_id": "dbpedia_4022_91.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation of the triple \"The name of Graham Leonard is Graham Leonard\" based on the provided context information:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThis is because all documents containing information about Graham Leonard consistently refer to him as \"Graham Leonard\"."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide information about Graham Douglas Leonard, including his full name, birth date, and various roles he held. Given the query \"The name of Graham Leonard is Graham Leonard,\" which is a simple assertion of identity, it is supported by the documents that refer to him as Graham Douglas Leonard. Therefore, the answer is \"yes.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

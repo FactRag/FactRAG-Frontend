@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Joseph_Stalin",
+    "predicate": "property/years",
+    "object": "1945",
+    "human_readable": "Joseph Stalin served in the years 1945.",
+    "questions": [
+        {
+            "score": 0.8448548913002014,
+            "question": "What year did Joseph Stalin serve?"
+        },
+        {
+            "score": 0.7592771649360657,
+            "question": "What were the major events that occurred during Joseph Stalin's service years?"
+        },
+        {
+            "score": 0.735153317451477,
+            "question": "Who else served alongside Joseph Stalin in those years?"
+        },
+        {
+            "score": 0.6064673662185669,
+            "question": "In what capacity did Joseph Stalin serve?"
+        },
+        {
+            "score": 0.5041330456733704,
+            "question": "How is Joseph Stalin's service period remembered in history?"
+        },
+        {
+            "score": 0.4397767186164856,
+            "question": "Was Joseph Stalin's service term limited to a single year?"
+        },
+        {
+            "score": 0.3183739185333252,
+            "question": "What were the consequences of Joseph Stalin's service for the world?"
+        },
+        {
+            "score": 0.2823505699634552,
+            "question": "Were there any notable challenges faced by Joseph Stalin during his service?"
+        },
+        {
+            "score": 0.2581172287464142,
+            "question": "What were some of the key decisions made by Joseph Stalin during his service?"
+        },
+        {
+            "score": 0.2385641634464264,
+            "question": "How did Joseph Stalin's service impact the Soviet Union?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Joseph Stalin served in the years 1945.",
+            "html": "dbpedia_4246_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What were some of the key decisions made by Joseph Stalin during his service?",
+            "html": "dbpedia_4246_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Were there any notable challenges faced by Joseph Stalin during his service?",
+            "html": "dbpedia_4246_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What were the consequences of Joseph Stalin's service for the world?",
+            "html": "dbpedia_4246_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4246_105.txt"
+        },
+        {
+            "file_id": "dbpedia_4246_106.txt"
+        },
+        {
+            "file_id": "dbpedia_4246_116.txt"
+        },
+        {
+            "file_id": "dbpedia_4246_16.txt"
+        },
+        {
+            "file_id": "dbpedia_4246_17.txt"
+        },
+        {
+            "file_id": "dbpedia_4246_32.txt"
+        },
+        {
+            "file_id": "dbpedia_4246_34.txt"
+        },
+        {
+            "file_id": "dbpedia_4246_35.txt"
+        },
+        {
+            "file_id": "dbpedia_4246_59.txt"
+        },
+        {
+            "file_id": "dbpedia_4246_74.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have any other triples you'd like me to evaluate!  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "To evaluate whether the information in the documents supports the triple, I will analyze each statement:\n\n1. The documents mention Joseph Stalin as the dictator of the Soviet Union from 1923 to 1953.\n2. One document mentions Stalin attending meetings with the Allies at Tehran (1943), Yalta (1945), and Potsdam (1945).\n\nBased on this information, I can conclude that:\n\nResponse: {'output': 'yes'}\n\nJoseph Stalin did indeed serve in the years mentioned in the documents, including 1945."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe query asks if Joseph Stalin served from 1945, which is not supported by the documents. The information provided indicates that Stalin died in March 1953 and his significant actions related to WWII concluded with the defeat of Germany in 1945, but he continued to rule until his death."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Stalin died in March 1953, four days after suffering a massive stroke. Therefore, he did not serve in the year 1945.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Several provided text segments state Stalin ruled the Soviet Union from the mid-1920s until his death in 1953.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because Stalin attended landmark meetings with the Allies at Tehran (1943) and Yalta (1945), but there was no meeting mentioned in 1945 that he served, rather it's a year where one of the conferences took place.",
+            "category": 2
+        }
+    }
+}

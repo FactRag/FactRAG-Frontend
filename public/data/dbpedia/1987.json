@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Truckin'_Magazine",
+    "predicate": "property/title",
+    "object": "Truckin Magazine",
+    "human_readable": "The title of Truckin' Magazine is 'Truckin' Magazine'.",
+    "questions": [
+        {
+            "score": 0.9824061393737793,
+            "question": "What is the title of Truckin' Magazine?"
+        },
+        {
+            "score": 0.9522099494934082,
+            "question": "Does 'Truckin' Magazine' have a different title?"
+        },
+        {
+            "score": 0.9503329396247864,
+            "question": "Is Truckin' a popular magazine?"
+        },
+        {
+            "score": 0.885610044002533,
+            "question": "Is there a website associated with 'Truckin' Magazine'?"
+        },
+        {
+            "score": 0.8458567261695862,
+            "question": "What kind of content might Truckin' Magazine feature?"
+        },
+        {
+            "score": 0.7983666658401489,
+            "question": "How often is 'Truckin' Magazine' published?"
+        },
+        {
+            "score": 0.781842827796936,
+            "question": "Who is the target audience for Truckin' Magazine?"
+        },
+        {
+            "score": 0.7679229974746704,
+            "question": "What other magazines are similar to 'Truckin' Magazine'?"
+        },
+        {
+            "score": 0.7665959000587463,
+            "question": "How long has 'Truckin' Magazine' been in publication?"
+        },
+        {
+            "score": 0.7196490168571472,
+            "question": "Does 'Truckin' Magazine' have any awards or recognition?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The title of Truckin' Magazine is 'Truckin' Magazine'.",
+            "html": "dbpedia_1987_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How long has 'Truckin' Magazine' been in publication?",
+            "html": "dbpedia_1987_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What other magazines are similar to 'Truckin' Magazine'?",
+            "html": "dbpedia_1987_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is the target audience for Truckin' Magazine?",
+            "html": "dbpedia_1987_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1987_15.txt"
+        },
+        {
+            "file_id": "dbpedia_1987_16.txt"
+        },
+        {
+            "file_id": "dbpedia_1987_32.txt"
+        },
+        {
+            "file_id": "dbpedia_1987_52.txt"
+        },
+        {
+            "file_id": "dbpedia_1987_55.txt"
+        },
+        {
+            "file_id": "dbpedia_1987_7.txt"
+        },
+        {
+            "file_id": "dbpedia_1987_70.txt"
+        },
+        {
+            "file_id": "dbpedia_1987_8.txt"
+        },
+        {
+            "file_id": "dbpedia_1987_86.txt"
+        },
+        {
+            "file_id": "dbpedia_1987_99.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the context information provided, I will evaluate whether the statement \"The title of Truckin' Magazine is 'Truckin' Magazine'\" is correct according to the documents.\n\nHere's my evaluation:\n\n* In document 51.txt and 69.txt, the magazine is referred to as \"Truckin'\", without the possessive phrase \"Magazine\".\n* In document 54.txt, the title is mentioned as \"Truckin\", without any additional words.\n* Only in document 31.txt, there's a mention of \"Truckin' (Street Trucks) Magazine\", but this seems to be an exception rather than the rule.\n\nGiven this information, I would say that the statement \"The title of Truckin' Magazine is 'Truckin' Magazine'\" is not universally supported by the documents. Therefore:\n\n```\n{\n  \"output\": \"no\"\n}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\"output\": \"yes\"}\n```\n\nExplanation: All the provided documents consistently refer to a magazine named \"Truckin'\" or \"Truckin' Magazine,\" confirming that the title of the magazine is indeed \"Truckin' Magazine.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The provided context does not explicitly state that the title of Truckin' Magazine is \"Truckin' Magazine\". It only mentions the name \"Truckin'\" as a magazine, but not as its title.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Several pieces of context state the magazine's title is \"Truckin'\" or use it as the name throughout.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information refers to \"Truckin' magazine\" and uses the term consistently, indicating that the title of the magazine is indeed \"Truckin' Magazine,\" not a different title.",
+            "category": 2
+        }
+    }
+}

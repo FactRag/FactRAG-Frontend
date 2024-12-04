@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Jerry_Roberts",
+    "predicate": "property/alternativeNames",
+    "object": "Roberts, Raymond C.",
+    "human_readable": "The alternative names of Jerry Roberts are Roberts, Raymond C.",
+    "questions": [
+        {
+            "score": 0.9568545818328857,
+            "question": "Is 'Roberts' an alternate name for Jerry Roberts?"
+        },
+        {
+            "score": 0.9447355270385742,
+            "question": "What are some alternative names for Jerry Roberts?"
+        },
+        {
+            "score": 0.8517299294471741,
+            "question": "Does Raymond C. also refer to Jerry Roberts?"
+        },
+        {
+            "score": 0.7943793535232544,
+            "question": "Are there multiple identities associated with the name Jerry Roberts?"
+        },
+        {
+            "score": 0.7586477994918823,
+            "question": "What is another name for Jerry Roberts besides his given name?"
+        },
+        {
+            "score": 0.6824500560760498,
+            "question": "Besides 'Jerry Roberts', what other names could you use to refer to him?"
+        },
+        {
+            "score": 0.6664396524429321,
+            "question": "How many different names are used for Jerry Roberts?"
+        },
+        {
+            "score": 0.6166849136352539,
+            "question": "List all the names associated with Jerry Roberts."
+        },
+        {
+            "score": 0.5967593193054199,
+            "question": "What are the different ways Jerry Roberts is known?"
+        },
+        {
+            "score": 0.39644747972488403,
+            "question": "What is Raymond C.'s full name?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The alternative names of Jerry Roberts are Roberts, Raymond C.",
+            "html": "dbpedia_2241_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are the different ways Jerry Roberts is known?",
+            "html": "dbpedia_2241_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=List all the names associated with Jerry Roberts.",
+            "html": "dbpedia_2241_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How many different names are used for Jerry Roberts?",
+            "html": "dbpedia_2241_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2241_100.txt"
+        },
+        {
+            "file_id": "dbpedia_2241_26.txt"
+        },
+        {
+            "file_id": "dbpedia_2241_32.txt"
+        },
+        {
+            "file_id": "dbpedia_2241_51.txt"
+        },
+        {
+            "file_id": "dbpedia_2241_67.txt"
+        },
+        {
+            "file_id": "dbpedia_2241_75.txt"
+        },
+        {
+            "file_id": "dbpedia_2241_81.txt"
+        },
+        {
+            "file_id": "dbpedia_2241_9.txt"
+        },
+        {
+            "file_id": "dbpedia_2241_93.txt"
+        },
+        {
+            "file_id": "dbpedia_2241_97.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n**Explanation:**\n\nThe text from the files states that \"Raymond Clarke Roberts (always known as Jerry)\" appears multiple times.  This directly supports the triple. \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation of the triple:\n\n{\n  \"output\": \"yes\"\n}\n\nThe documents mention a person named Jerry Roberts on multiple occasions, and each time, his full name is given as \"Jerry Roberts\" or sometimes followed by his birthdate or other information. However, in one document (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2241/re-ranker-msmarco/79.txt), the full name of Jerry Roberts is explicitly mentioned as \"Raymond Clarke Roberts\" (always known as Jerry). This suggests that the alternative names of Jerry Roberts are indeed \"Roberts, Raymond C.\""
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The provided context does not mention any alternative names for Jerry Roberts other than Raymond Clarke Roberts (always known as Jerry). Therefore, the statement that one of his alternative names is simply \"Roberts\" or \"Raymond C.\" is not supported by the given documents."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "qwen2.5": {
+            "reason": "The context information provides Jerry Roberts' full name as Raymond Clarke Roberts, but does not mention any alternative names as Roberts.",
+            "category": 2
+        }
+    }
+}

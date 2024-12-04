@@ -1,0 +1,102 @@
+{
+    "subject": "resource/Frank_E._Petersen",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "Frank E. Petersen",
+    "human_readable": "The full name of Frank E. Petersen is Frank E. Petersen.",
+    "questions": [
+        {
+            "score": 0.9885231256484985,
+            "question": "Is 'Frank E. Petersen' the full name of Frank E. Petersen?"
+        },
+        {
+            "score": 0.9867944121360779,
+            "question": "What is the full name of Frank E. Petersen?"
+        },
+        {
+            "score": 0.8650434017181396,
+            "question": "Does Frank E. Petersen have any other names?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The full name of Frank E. Petersen is Frank E. Petersen.",
+            "html": "dbpedia_5026_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the full name of Frank E. Petersen?",
+            "html": "dbpedia_5026_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is 'Frank E. Petersen' the full name of Frank E. Petersen?",
+            "html": "dbpedia_5026_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5026_13.txt"
+        },
+        {
+            "file_id": "dbpedia_5026_29.txt"
+        },
+        {
+            "file_id": "dbpedia_5026_33.txt"
+        },
+        {
+            "file_id": "dbpedia_5026_53.txt"
+        },
+        {
+            "file_id": "dbpedia_5026_55.txt"
+        },
+        {
+            "file_id": "dbpedia_5026_61.txt"
+        },
+        {
+            "file_id": "dbpedia_5026_66.txt"
+        },
+        {
+            "file_id": "dbpedia_5026_69.txt"
+        },
+        {
+            "file_id": "dbpedia_5026_7.txt"
+        },
+        {
+            "file_id": "dbpedia_5026_75.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "After reviewing the provided context information, I can confirm that:\n\n{\n  \"output\": \"no\"\n}\n\nThe correct full name of Frank E. Petersen is not explicitly stated in the documents as simply \"Frank E. Petersen\", but rather it varies between different sources, with some mentioning a III or Jr. suffix and others providing additional details about his life and career."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\nThe documents provide information about Frank E. Petersen, including his full name, which supports the statement that the full name of Frank E. Petersen is Frank E. Petersen."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The context information explicitly states the full name of Frank E. Petersen as \"Frank E. Petersen\" (with no last name), but also mentions \"Frank E. Petersen, III\", indicating that there is a person named Frank E. Petersen with a son, suggesting that this Frank E. Petersen is not the same person being referred to in the rest of the text as Frank E. Petersen, and therefore the full name given is likely incorrect or misleading.",
+            "category": 2
+        }
+    }
+}

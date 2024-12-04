@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Joan_Maragall",
+    "predicate": "ontology/deathPlace",
+    "object": "resource/Catalonia",
+    "human_readable": "Joan Maragall died in Catalonia.",
+    "questions": [
+        {
+            "score": 0.9241223335266113,
+            "question": "Was Joan Maragall from Catalonia?"
+        },
+        {
+            "score": 0.8227450251579285,
+            "question": "Where did Joan Maragall die?"
+        },
+        {
+            "score": 0.7229717969894409,
+            "question": "When did Joan Maragall die?"
+        },
+        {
+            "score": 0.582389771938324,
+            "question": "Who was Joan Maragall?"
+        },
+        {
+            "score": 0.35639941692352295,
+            "question": "What was Joan Maragall's profession?"
+        },
+        {
+            "score": 0.34507933259010315,
+            "question": "Can you tell me about Joan Maragall's life?"
+        },
+        {
+            "score": 0.2941790819168091,
+            "question": "Is there anything else you know about Joan Maragall?"
+        },
+        {
+            "score": 0.2298586070537567,
+            "question": "What is Catalonia known for?"
+        },
+        {
+            "score": 0.18190956115722656,
+            "question": "Are there any famous landmarks in Catalonia?"
+        },
+        {
+            "score": 0.1746460497379303,
+            "question": "What is the culture like in Catalonia?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Joan Maragall died in Catalonia.",
+            "html": "dbpedia_4915_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any famous landmarks in Catalonia?",
+            "html": "dbpedia_4915_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Catalonia known for?",
+            "html": "dbpedia_4915_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there anything else you know about Joan Maragall?",
+            "html": "dbpedia_4915_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4915_10.txt"
+        },
+        {
+            "file_id": "dbpedia_4915_12.txt"
+        },
+        {
+            "file_id": "dbpedia_4915_19.txt"
+        },
+        {
+            "file_id": "dbpedia_4915_2.txt"
+        },
+        {
+            "file_id": "dbpedia_4915_33.txt"
+        },
+        {
+            "file_id": "dbpedia_4915_44.txt"
+        },
+        {
+            "file_id": "dbpedia_4915_53.txt"
+        },
+        {
+            "file_id": "dbpedia_4915_62.txt"
+        },
+        {
+            "file_id": "dbpedia_4915_63.txt"
+        },
+        {
+            "file_id": "dbpedia_4915_69.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\nWhile the documents state Joan Maragall was born and lived in Barcelona, Spain (which is in Catalonia), they do not explicitly say he died there.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "{\n  \"output\": \"yes\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents mention that Joan Maragall was born and raised in Barcelona, Spain, and died on May 4, 1913. Given that Barcelona is a city in Catalonia, the statement \"Joan Maragall died in Catalonia\" can be supported by the information provided."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Context information states he was born and raised in Barcelona, Spain.  Additionally, the context mentions his manuscripts are preserved in the Joan Maragall Archive of Barcelona.",
+            "category": 2
+        }
+    }
+}

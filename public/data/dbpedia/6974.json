@@ -1,0 +1,144 @@
+{
+    "subject": "resource/John_and_Mary_(film)",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:1960s_drama_films",
+    "human_readable": "The subject of the John and Mary film is 1960s drama films.",
+    "questions": [
+        {
+            "score": 0.8491287231445312,
+            "question": "What is the subject of the film 'John and Mary'?"
+        },
+        {
+            "score": 0.7656513452529907,
+            "question": "Is 'John and Mary' a comedy or drama?"
+        },
+        {
+            "score": 0.7442681193351746,
+            "question": "What era are 'John and Mary' films associated with?"
+        },
+        {
+            "score": 0.6708832383155823,
+            "question": "What type of film is 'John and Mary'?"
+        },
+        {
+            "score": 0.6356469988822937,
+            "question": "In what decade does the film 'John and Mary' take place?"
+        },
+        {
+            "score": 0.5479819178581238,
+            "question": "Can you describe the genre of the film 'John and Mary'?"
+        },
+        {
+            "score": 0.520142138004303,
+            "question": "What time period is depicted in the film 'John and Mary'?"
+        },
+        {
+            "score": 0.5013335347175598,
+            "question": "Is the film 'John and Mary' a period piece?"
+        },
+        {
+            "score": 0.4575910270214081,
+            "question": "To what genre do 'John and Mary' films belong?"
+        },
+        {
+            "score": 0.2521771192550659,
+            "question": "What kind of story does 'John and Mary' tell?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The subject of the John and Mary film is 1960s drama films.",
+            "html": "dbpedia_6974_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=To what genre do 'John and Mary' films belong?",
+            "html": "dbpedia_6974_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is the film 'John and Mary' a period piece?",
+            "html": "dbpedia_6974_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What time period is depicted in the film 'John and Mary'?",
+            "html": "dbpedia_6974_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6974_100.txt"
+        },
+        {
+            "file_id": "dbpedia_6974_11.txt"
+        },
+        {
+            "file_id": "dbpedia_6974_124.txt"
+        },
+        {
+            "file_id": "dbpedia_6974_125.txt"
+        },
+        {
+            "file_id": "dbpedia_6974_127.txt"
+        },
+        {
+            "file_id": "dbpedia_6974_133.txt"
+        },
+        {
+            "file_id": "dbpedia_6974_142.txt"
+        },
+        {
+            "file_id": "dbpedia_6974_144.txt"
+        },
+        {
+            "file_id": "dbpedia_6974_5.txt"
+        },
+        {
+            "file_id": "dbpedia_6974_74.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me explain how I arrived at this answer:\n\n* **Document Analysis:**  The provided text excerpts consistently refer to \"John and Mary\" as a film set in the year 1969. Several documents mention its categorization as a romantic drama or highlight themes of relationships and interactions between two individuals.\n\n* **Conclusion:** Based on the context, it's reasonable to infer that the subject of the \"John and Mary\" film aligns with 1960s drama films.\n\n\nLet me know if you have any more triples you'd like me to evaluate!"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here's the evaluation result in JSON format:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents do mention \"John and Mary\" as a movie, but they describe it as a romantic film that explores relationships between two people, rather than specifically categorizing it as a 1960s drama film."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The context provided mentions that \"John and Mary\" was released in 1969, which aligns with it being a film from the 1960s. Additionally, details about the characters' interactions and the setting (an industrial-looking loft-type apartment) suggest elements of drama typical for films from that era. However, given the specific query about the subject matter being \"1960s drama films,\" and considering the document only discusses this film without explicitly stating it's a 1960s drama, the answer leans towards \"yes\" based on the context provided."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The provided context does not provide sufficient evidence to conclude that the subject of the John and Mary film is specifically a 1960s drama. While it was released in 1969, the context suggests that it deals with themes such as relationships and the interactions between two people after the initial passion has faded (point 4), religious and political turmoil (point 5), and power struggles (point 5). However, these themes are not exclusive to the 1960s, and there is no mention of it being a drama film in the provided context.",
+            "category": 3
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because the John and Mary film itself does not appear to be a 1960s drama film, but rather a romantic comedy-drama released in 1969 that explores the interactions between two people after a fleeting passion has ended.",
+            "category": 3
+        }
+    }
+}

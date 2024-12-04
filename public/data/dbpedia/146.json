@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Ouzouer-sous-Bellegarde",
+    "predicate": "property/region",
+    "object": "resource/Centre-Val_de_Loire",
+    "human_readable": "Ouzouer-sous-Bellegarde is located in Centre-Val de Loire.",
+    "questions": [
+        {
+            "score": 0.9597920179367065,
+            "question": "Where is Ouzouer-sous-Bellegarde located?"
+        },
+        {
+            "score": 0.9021830558776855,
+            "question": "Name the administrative area that includes Ouzouer-sous-Bellegarde."
+        },
+        {
+            "score": 0.8725574016571045,
+            "question": "Is Ouzouer-sous-Bellegarde a town or city?"
+        },
+        {
+            "score": 0.7761377692222595,
+            "question": "What country is Ouzouer-sous-Bellegarde in?"
+        },
+        {
+            "score": 0.7638161778450012,
+            "question": "What is the region of France where Ouzouer-sous-Bellegarde is situated?"
+        },
+        {
+            "score": 0.7303286790847778,
+            "question": "In which part of France can you find Ouzouer-sous-Bellegarde?"
+        },
+        {
+            "score": 0.7031152844429016,
+            "question": "What is the history of Ouzouer-sous-Bellegarde?"
+        },
+        {
+            "score": 0.6925439834594727,
+            "question": "Are there any other notable towns or cities in Centre-Val de Loire?"
+        },
+        {
+            "score": 0.6684697270393372,
+            "question": "What geographical features are characteristic of Centre-Val de Loire?"
+        },
+        {
+            "score": 0.5888644456863403,
+            "question": "Can you identify the region of France known as Centre-Val de Loire?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Ouzouer-sous-Bellegarde is located in Centre-Val de Loire.",
+            "html": "dbpedia_146_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What geographical features are characteristic of Centre-Val de Loire?",
+            "html": "dbpedia_146_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any other notable towns or cities in Centre-Val de Loire?",
+            "html": "dbpedia_146_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the history of Ouzouer-sous-Bellegarde?",
+            "html": "dbpedia_146_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_146_105.txt"
+        },
+        {
+            "file_id": "dbpedia_146_17.txt"
+        },
+        {
+            "file_id": "dbpedia_146_18.txt"
+        },
+        {
+            "file_id": "dbpedia_146_27.txt"
+        },
+        {
+            "file_id": "dbpedia_146_28.txt"
+        },
+        {
+            "file_id": "dbpedia_146_33.txt"
+        },
+        {
+            "file_id": "dbpedia_146_49.txt"
+        },
+        {
+            "file_id": "dbpedia_146_51.txt"
+        },
+        {
+            "file_id": "dbpedia_146_61.txt"
+        },
+        {
+            "file_id": "dbpedia_146_68.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the answer in JSON format:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation:\n\nThe query asks if Ouzouer-sous-Bellegarde is located in Centre-Val de Loire. However, according to the context information (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_146/re-ranker-msmarco/68.txt), Ouzouer-sous-Bellegarde is actually located in the department of Loiret in the region of Centre, not in Centre-Val de Loire."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents state that Ouzouer-sous-Bellegarde is located in \"France Centre-Val de Loire Loiret Ouzouer-sous-Bellegarde,\" which supports the statement that it is located in Centre-Val de Loire."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "It directly contradicts the repeated statements throughout the context information, which consistently state that Ouzouer-sous-Bellegarde is located in the department of Loiret and the french region Centre.",
+            "category": 2
+        }
+    }
+}

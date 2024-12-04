@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Philip_Emeagwali",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:George_Washington_University_alumni",
+    "human_readable": "Philip Emeagwali is the subject of Category:George Washington University alumni.",
+    "questions": [
+        {
+            "score": 0.923596203327179,
+            "question": "Is Philip Emeagwali listed as an alumnus of George Washington University?"
+        },
+        {
+            "score": 0.8086937665939331,
+            "question": "Name some notable alumni of George Washington University."
+        },
+        {
+            "score": 0.7939882874488831,
+            "question": "Who is Philip Emeagwali?"
+        },
+        {
+            "score": 0.6602386236190796,
+            "question": "What university did Philip Emeagwali attend?"
+        },
+        {
+            "score": 0.6553207635879517,
+            "question": "Is there any information available about Philip Emeagwali's career path?"
+        },
+        {
+            "score": 0.6369842886924744,
+            "question": "What are some accomplishments of Philip Emeagwali?"
+        },
+        {
+            "score": 0.6115580201148987,
+            "question": "What field of study is Philip Emeagwali known for?"
+        },
+        {
+            "score": 0.6020024418830872,
+            "question": "Are there any other prominent figures associated with Philip Emeagwali?"
+        },
+        {
+            "score": 0.5141602754592896,
+            "question": "Where did Philip Emeagwali likely receive his education?"
+        },
+        {
+            "score": 0.47503161430358887,
+            "question": "What is the significance of being a George Washington University alumnus?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Philip Emeagwali is the subject of Category:George Washington University alumni.",
+            "html": "dbpedia_612_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where did Philip Emeagwali likely receive his education?",
+            "html": "dbpedia_612_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any other prominent figures associated with Philip Emeagwali?",
+            "html": "dbpedia_612_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What field of study is Philip Emeagwali known for?",
+            "html": "dbpedia_612_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_612_105.txt"
+        },
+        {
+            "file_id": "dbpedia_612_111.txt"
+        },
+        {
+            "file_id": "dbpedia_612_115.txt"
+        },
+        {
+            "file_id": "dbpedia_612_135.txt"
+        },
+        {
+            "file_id": "dbpedia_612_137.txt"
+        },
+        {
+            "file_id": "dbpedia_612_140.txt"
+        },
+        {
+            "file_id": "dbpedia_612_45.txt"
+        },
+        {
+            "file_id": "dbpedia_612_58.txt"
+        },
+        {
+            "file_id": "dbpedia_612_63.txt"
+        },
+        {
+            "file_id": "dbpedia_612_81.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me explain why:\n\n* **The documents state:** \"He soon moved to the Washington, D.C. area and received a Master's Degree in Environmental Engineering from George Washington University in 1981...\"  This directly links Philip Emeagwali to George Washington University. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, here's the evaluation:\n\n{\n  \"output\": \"no\"\n}\n\nThe reason for this answer is that while Philip Emeagwali has multiple Master's degrees from George Washington University (as mentioned in file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_612/re-ranker-msmarco/54.txt), there is no mention of him being part of Category:George Washington University alumni. The context information only mentions his Master's degrees, not any affiliation with the category."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents do not provide any information that suggests Philip Emeagwali is associated with George Washington University. Instead, they mention he received a Master's Degree in Environmental Engineering from there and another Master's Degree in Ocean, Coastal and Marine Engineering, but no direct statement links him to being an alumni of the university in the context provided."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Philip Emeagwali did receive a Master's Degree from George Washington University, but he did not receive multiple Master's degrees from the university.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "It contradicts information stated elsewhere in the context.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information mentions that Philip Emeagwali received a Master's Degree in Environmental Engineering from George Washington University in 1981 and another Master's Degree in Ocean, Coastal and Marine Engineering during the same period. However, there is no mention of him being an alumni of George Washington University for his doctoral studies or any other degree beyond these two Master's degrees.",
+            "category": 2
+        }
+    }
+}

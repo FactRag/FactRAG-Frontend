@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Jane_Wall",
+    "predicate": "ontology/birthPlace",
+    "object": "resource/Lagos",
+    "human_readable": "Jane Wall was born in Lagos.",
+    "questions": [
+        {
+            "score": 0.827675998210907,
+            "question": "Where was Jane Wall born?"
+        },
+        {
+            "score": 0.7398289442062378,
+            "question": "Is Jane Wall still living in Lagos?"
+        },
+        {
+            "score": 0.7269286513328552,
+            "question": "When was Jane Wall born?"
+        },
+        {
+            "score": 0.5591522455215454,
+            "question": "What nationality is Jane Wall?"
+        },
+        {
+            "score": 0.22875240445137024,
+            "question": "Does Jane Wall have any siblings?"
+        },
+        {
+            "score": 0.20646175742149353,
+            "question": "What does Jane Wall do for a living?"
+        },
+        {
+            "score": 0.19370725750923157,
+            "question": "Where did Jane Wall go to school?"
+        },
+        {
+            "score": 0.17213353514671326,
+            "question": "Who are some famous people from Lagos?"
+        },
+        {
+            "score": 0.17071640491485596,
+            "question": "What is Lagos known for?"
+        },
+        {
+            "score": 0.08303716033697128,
+            "question": "What are some interesting facts about Lagos?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Jane Wall was born in Lagos.",
+            "html": "dbpedia_8023_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Lagos known for?",
+            "html": "dbpedia_8023_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who are some famous people from Lagos?",
+            "html": "dbpedia_8023_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where did Jane Wall go to school?",
+            "html": "dbpedia_8023_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8023_11.txt"
+        },
+        {
+            "file_id": "dbpedia_8023_12.txt"
+        },
+        {
+            "file_id": "dbpedia_8023_21.txt"
+        },
+        {
+            "file_id": "dbpedia_8023_25.txt"
+        },
+        {
+            "file_id": "dbpedia_8023_33.txt"
+        },
+        {
+            "file_id": "dbpedia_8023_39.txt"
+        },
+        {
+            "file_id": "dbpedia_8023_45.txt"
+        },
+        {
+            "file_id": "dbpedia_8023_54.txt"
+        },
+        {
+            "file_id": "dbpedia_8023_59.txt"
+        },
+        {
+            "file_id": "dbpedia_8023_7.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the context information, the answer is:\n\n`{'output': 'yes'}`\n\nThis is because one of the documents (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8023/re-ranker-msmarco/10.txt) states that \"Jane Wall was born 1972 in Lagos, Nigeria.\" This directly supports the statement."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\"output\": \"yes\"}\n```\n\nExplanation: The documents indicate that Jane Wall was born in Lagos, Nigeria. Therefore, the statement \"Jane Wall was born in Lagos\" is supported by the provided information."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Live_My_Life_(song)",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:Songs_written_by_Bilal_Hajji",
+    "human_readable": "The subject of the song 'Live My Life' is songs written by Bilal Hajji.",
+    "questions": [
+        {
+            "score": 0.9876055717468262,
+            "question": "Is 'Live My Life' a song written by Bilal Hajji?"
+        },
+        {
+            "score": 0.8789371848106384,
+            "question": "Who wrote the song 'Live My Life'?"
+        },
+        {
+            "score": 0.7504148483276367,
+            "question": "What genre of music is likely associated with Bilal Hajji's songs?"
+        },
+        {
+            "score": 0.7149743437767029,
+            "question": "Are there any common themes in Bilal Hajji's songwriting?"
+        },
+        {
+            "score": 0.6913304924964905,
+            "question": "Can you name another song written by Bilal Hajji?"
+        },
+        {
+            "score": 0.6373469829559326,
+            "question": "What kind of things does Bilal Hajji write?"
+        },
+        {
+            "score": 0.5930187106132507,
+            "question": "Who performs the song 'Live My Life'?"
+        },
+        {
+            "score": 0.5410894155502319,
+            "question": "Where can you listen to Bilal Hajji's songs?"
+        },
+        {
+            "score": 0.4813133776187897,
+            "question": "What inspires Bilal Hajji's music?"
+        },
+        {
+            "score": 0.4627251923084259,
+            "question": "Has Bilal Hajji won any awards for his songwriting?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The subject of the song 'Live My Life' is songs written by Bilal Hajji.",
+            "html": "dbpedia_1192_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What inspires Bilal Hajji's music?",
+            "html": "dbpedia_1192_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where can you listen to Bilal Hajji's songs?",
+            "html": "dbpedia_1192_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who performs the song 'Live My Life'?",
+            "html": "dbpedia_1192_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1192_19.txt"
+        },
+        {
+            "file_id": "dbpedia_1192_23.txt"
+        },
+        {
+            "file_id": "dbpedia_1192_28.txt"
+        },
+        {
+            "file_id": "dbpedia_1192_46.txt"
+        },
+        {
+            "file_id": "dbpedia_1192_55.txt"
+        },
+        {
+            "file_id": "dbpedia_1192_59.txt"
+        },
+        {
+            "file_id": "dbpedia_1192_62.txt"
+        },
+        {
+            "file_id": "dbpedia_1192_66.txt"
+        },
+        {
+            "file_id": "dbpedia_1192_84.txt"
+        },
+        {
+            "file_id": "dbpedia_1192_86.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the response in the structured JSON format:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: According to the provided context information, there are several documents that mention Bilal Hajji and his work as a songwriter and record producer. However, none of these documents explicitly state that Bilal Hajji wrote the song \"Live My Life\". In fact, one of the documents mentions that Far East Movement played \"Live My Life\" for RedFoo from LMFAO to get him to do a remix, which implies that the original version of the song was not written by Bilal Hajji."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: According to the documents, Bilal Hajji has co-written and produced several well-known songs, including being involved in the production of \"Live My Life\" with Far East Movement. This supports the statement that the subject of the song 'Live My Life' is among the songs written by Bilal Hajji."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, there is no indication that \"Live My Life\" by Far East Movement is a song written by Bilal Hajji. While it mentions RedOne was involved in producing the song with De Paris, there's no evidence supporting Bilal Hajji as its author or songwriter. Therefore, the answer to this query would be:\n\n{\"output\": \"no\"}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "The provided text states that \"Live My Life\" is by Far East Movement featuring Justin Bieber, and was produced by RedOne and De Paris.  There is no mention of Bilal Hajji being involved in its creation.",
+            "category": 4
+        },
+        "llama3.1": {
+            "reason": "Bilal Hajji did not write \"Live My Life\", he co-wrote songs for Lady Gaga among others, but RedOne and De Paris produced the song that features Justin Bieber.",
+            "category": -1
+        }
+    }
+}

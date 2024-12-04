@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Adam_Kotsko",
+    "predicate": "ontology/almaMater",
+    "object": "resource/Olivet_Nazarene_University",
+    "human_readable": "Adam Kotsko attended Olivet Nazarene University.",
+    "questions": [
+        {
+            "score": 0.9878451228141785,
+            "question": "Was Adam Kotsko a student at Olivet Nazarene University?"
+        },
+        {
+            "score": 0.9865389466285706,
+            "question": "Is Adam Kotsko a graduate of Olivet Nazarene University?"
+        },
+        {
+            "score": 0.9859272241592407,
+            "question": "Is Olivet Nazarene University associated with Adam Kotsko?"
+        },
+        {
+            "score": 0.9804010987281799,
+            "question": "Did Adam Kotsko receive his education from Olivet Nazarene University?"
+        },
+        {
+            "score": 0.9414574503898621,
+            "question": "Who attended Olivet Nazarene University?"
+        },
+        {
+            "score": 0.8549360632896423,
+            "question": "Where did Adam Kotsko attend university?"
+        },
+        {
+            "score": 0.8396886587142944,
+            "question": "What is the name of the university Adam Kotsko attended?"
+        },
+        {
+            "score": 0.788152277469635,
+            "question": "Name the university that Adam Kotsko studied at."
+        },
+        {
+            "score": 0.7429808378219604,
+            "question": "To which university did Adam Kotsko go?"
+        },
+        {
+            "score": 0.3882406949996948,
+            "question": "What institution of higher learning is connected to Adam Kotsko?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Adam Kotsko attended Olivet Nazarene University.",
+            "html": "dbpedia_3723_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=To which university did Adam Kotsko go?",
+            "html": "dbpedia_3723_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Name the university that Adam Kotsko studied at.",
+            "html": "dbpedia_3723_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of the university Adam Kotsko attended?",
+            "html": "dbpedia_3723_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3723_13.txt"
+        },
+        {
+            "file_id": "dbpedia_3723_14.txt"
+        },
+        {
+            "file_id": "dbpedia_3723_16.txt"
+        },
+        {
+            "file_id": "dbpedia_3723_18.txt"
+        },
+        {
+            "file_id": "dbpedia_3723_19.txt"
+        },
+        {
+            "file_id": "dbpedia_3723_20.txt"
+        },
+        {
+            "file_id": "dbpedia_3723_22.txt"
+        },
+        {
+            "file_id": "dbpedia_3723_23.txt"
+        },
+        {
+            "file_id": "dbpedia_3723_4.txt"
+        },
+        {
+            "file_id": "dbpedia_3723_6.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation of the triple:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe information in the documents supports the triple. The document at `file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3723/re-ranker-msmarco/13.txt` contains the following line:\n\n\"Kotsko earned his BA at Olivet Nazarene University in Bourbonnais, Illinois in 2002.\"\n\nThis confirms that Adam Kotsko attended Olivet Nazarene University."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\nThe documents clearly indicate that Adam Kotsko earned his BA at Olivet Nazarene University in 2002, thus supporting the statement that he attended Olivet Nazarene University."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

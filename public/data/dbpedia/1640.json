@@ -1,0 +1,114 @@
+{
+    "subject": "resource/Disco_2000_(song)",
+    "predicate": "property/headline",
+    "object": "Part one",
+    "human_readable": "The headline of the Disco 2000 (song) is 'Part one'.",
+    "questions": [
+        {
+            "score": 0.9412900805473328,
+            "question": "What is the headline of the Disco 2000 song?"
+        },
+        {
+            "score": 0.7933633327484131,
+            "question": "Does the Disco 2000 song have multiple parts?"
+        },
+        {
+            "score": 0.7082681059837341,
+            "question": "What is the name of the first part of the Disco 2000 song?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The headline of the Disco 2000 (song) is 'Part one'.",
+            "html": "dbpedia_1640_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does the Disco 2000 song have multiple parts?",
+            "html": "dbpedia_1640_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the headline of the Disco 2000 song?",
+            "html": "dbpedia_1640_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1640_1.txt"
+        },
+        {
+            "file_id": "dbpedia_1640_107.txt"
+        },
+        {
+            "file_id": "dbpedia_1640_22.txt"
+        },
+        {
+            "file_id": "dbpedia_1640_34.txt"
+        },
+        {
+            "file_id": "dbpedia_1640_45.txt"
+        },
+        {
+            "file_id": "dbpedia_1640_53.txt"
+        },
+        {
+            "file_id": "dbpedia_1640_59.txt"
+        },
+        {
+            "file_id": "dbpedia_1640_6.txt"
+        },
+        {
+            "file_id": "dbpedia_1640_63.txt"
+        },
+        {
+            "file_id": "dbpedia_1640_76.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "To evaluate the triple \"The headline of the Disco 2000 (song) is 'Part one'\", we need to check if any of the documents mention this.\n\nAccording to the first document:\n\"The song's title, 'Disco 2000,' alludes to a future meeting time, a common childhood promise to reunite in the new millennium...\"\n\nThe second document mentions various information about the song \"Disco 2000\", but none of it is related to its headline. The third document talks about the companion album and book.\n\nHowever, the fourth document provides more information about the song, including its title, but does not mention a headline:\n\"Title Length 1.  \\\"Disco 2000 (7\\\" Mix)\\\" 4:51 2.  \\\"Ansaphone\\\" 4:01\"\n\nThe fifth document talks about the song being featured in various movies and TV shows, but it does not provide any information about its headline.\n\nBased on this analysis, we can conclude that:\n\n{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: None of the provided documents mention that the headline or title of the song \"Disco 2000\" is \"Part One.\" The documents describe various aspects of the song, such as its lyrics and cultural references, but do not include information about it being called \"Part One.\""
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The given context provides no information suggesting that the headline of the Disco 2000 song is 'Part one.'",
+            "category": 4
+        },
+        "gemma2": {
+            "reason": "There is no mention of the song title being \"Part one\" in any of the provided context information.",
+            "category": 4
+        },
+        "llama3.1": {
+            "reason": "The headline of the song \"Disco 2000\" is actually not mentioned to be \"Part one\" in any of the provided context information.",
+            "category": 4
+        },
+        "qwen2.5": {
+            "reason": "The context provided does not mention any headline for the song \"Disco 2000\" being referred to as 'Part one'. There is no information suggesting that the song has multiple parts or a part designation.",
+            "category": 4
+        }
+    }
+}

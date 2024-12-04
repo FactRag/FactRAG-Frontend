@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Southwest_Airlines",
+    "predicate": "ontology/operatingIncome",
+    "object": "2.23E9",
+    "human_readable": "Southwest Airlines' operating income is $2.23 billion.",
+    "questions": [
+        {
+            "score": 0.9139502048492432,
+            "question": "What financial metric is $2.23 billion referring to for Southwest Airlines?"
+        },
+        {
+            "score": 0.7209799289703369,
+            "question": "How much operating income did Southwest Airlines report?"
+        },
+        {
+            "score": 0.7005636692047119,
+            "question": "In what amount was Southwest Airlines' operating income reported?"
+        },
+        {
+            "score": 0.6809355020523071,
+            "question": "What was the financial performance of Southwest Airlines in terms of operating income?"
+        },
+        {
+            "score": 0.668444812297821,
+            "question": "What is the significance of operating income for an airline like Southwest?"
+        },
+        {
+            "score": 0.6464732885360718,
+            "question": "What factors might have contributed to Southwest Airlines' operating income?"
+        },
+        {
+            "score": 0.5964909791946411,
+            "question": "How does Southwest Airlines' operating income compare to other airlines?"
+        },
+        {
+            "score": 0.5674214363098145,
+            "question": "Is the operating income of Southwest Airlines considered high or low?"
+        },
+        {
+            "score": 0.5666355490684509,
+            "question": "Can you describe the financial health of Southwest Airlines based on its operating income?"
+        },
+        {
+            "score": 0.5209652781486511,
+            "question": "Did Southwest Airlines experience a profit or loss in its operating income?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Southwest Airlines' operating income is $2.23 billion.",
+            "html": "dbpedia_4707_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you describe the financial health of Southwest Airlines based on its operating income?",
+            "html": "dbpedia_4707_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is the operating income of Southwest Airlines considered high or low?",
+            "html": "dbpedia_4707_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How does Southwest Airlines' operating income compare to other airlines?",
+            "html": "dbpedia_4707_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4707_18.txt"
+        },
+        {
+            "file_id": "dbpedia_4707_28.txt"
+        },
+        {
+            "file_id": "dbpedia_4707_35.txt"
+        },
+        {
+            "file_id": "dbpedia_4707_45.txt"
+        },
+        {
+            "file_id": "dbpedia_4707_46.txt"
+        },
+        {
+            "file_id": "dbpedia_4707_55.txt"
+        },
+        {
+            "file_id": "dbpedia_4707_59.txt"
+        },
+        {
+            "file_id": "dbpedia_4707_63.txt"
+        },
+        {
+            "file_id": "dbpedia_4707_73.txt"
+        },
+        {
+            "file_id": "dbpedia_4707_8.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'} \n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "To evaluate the triple, I'll check if the information in the documents supports the statement \"Southwest Airlines' operating income is $2.23 billion\".\n\nHere's the result:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe reason for this answer is that according to the document with file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4707/re-ranker-msmarco/44.txt, Southwest Airlines' operating income (as reported) for the second quarter was $398 million, not $2.23 billion."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: None of the provided documents mention that Southwest Airlines' operating income is $2.23 billion. The closest information given in the context is about operating income for specific quarters, such as $398 million in one quarter and $405 million on an adjusted basis in another, but there is no indication or support for a figure of $2.23 billion."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Southwest Airlines has not reported a quarterly operating income of $2.23 billion for any quarter in the given context information. The highest reported quarterly operating revenue is $7 billion, and while the company expects to contribute between $1.0 billion and $1.5 billion of pre-tax profit for 2023, this does not translate to a quarterly operating income of $2.23 billion.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "The provided context details operating income for specific quarters,  reaching $398 million in the second quarter and a range of pre-tax profit for 2023 between $1.0 billion and $1.5 billion. There's no mention of an overall annual operating income figure of $2.23 billion.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The context information states that Southwest Airlines reported an operating income (as reported) of $398 million for the second quarter, which is lower than what was expected, and on an adjusted basis, the company reported operating income of $405 million compared with $891 million in the year-ago reported quarter. This information does not support a claim of $2.23 billion in operating income.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information only mentions operating income of $398 million for the second quarter and an all-time record quarterly operating revenue of $7 billion. There is no mention of a total operating income of $2.23 billion for any period.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Arthur_Wagner",
+    "predicate": "http://xmlns.com/foaf/0.1/isPrimaryTopicOf",
+    "object": "http://en.wikipedia.org/wiki/Arthur_Wagner",
+    "human_readable": "Arthur Wagner is the primary topic of Wikipedia page.",
+    "questions": [
+        {
+            "score": 0.9807363748550415,
+            "question": "What are the main topics covered on Arthur Wagner's Wikipedia page?"
+        },
+        {
+            "score": 0.8908019661903381,
+            "question": "What are some interesting facts about Arthur Wagner that can be found on his Wikipedia page?"
+        },
+        {
+            "score": 0.8474250435829163,
+            "question": "Is there a biography about Arthur Wagner available on Wikipedia?"
+        },
+        {
+            "score": 0.8368595242500305,
+            "question": "Has Arthur Wagner's Wikipedia page been recently updated?"
+        },
+        {
+            "score": 0.835006594657898,
+            "question": "What is the structure and organization of Arthur Wagner's Wikipedia page?"
+        },
+        {
+            "score": 0.7835652828216553,
+            "question": "Who is the primary topic of the Wikipedia page?"
+        },
+        {
+            "score": 0.7328216433525085,
+            "question": "Does Arthur Wagner's Wikipedia page have external links to other resources?"
+        },
+        {
+            "score": 0.6513625383377075,
+            "question": "What is Arthur Wagner known for?"
+        },
+        {
+            "score": 0.4224220812320709,
+            "question": "Are there any notable works or contributions associated with Arthur Wagner?"
+        },
+        {
+            "score": 0.38699546456336975,
+            "question": "What are some key events in Arthur Wagner's life?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Arthur Wagner is the primary topic of Wikipedia page.",
+            "html": "dbpedia_2223_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any notable works or contributions associated with Arthur Wagner?",
+            "html": "dbpedia_2223_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Arthur Wagner known for?",
+            "html": "dbpedia_2223_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Arthur Wagner's Wikipedia page have external links to other resources?",
+            "html": "dbpedia_2223_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2223_10.txt"
+        },
+        {
+            "file_id": "dbpedia_2223_14.txt"
+        },
+        {
+            "file_id": "dbpedia_2223_15.txt"
+        },
+        {
+            "file_id": "dbpedia_2223_17.txt"
+        },
+        {
+            "file_id": "dbpedia_2223_22.txt"
+        },
+        {
+            "file_id": "dbpedia_2223_29.txt"
+        },
+        {
+            "file_id": "dbpedia_2223_30.txt"
+        },
+        {
+            "file_id": "dbpedia_2223_32.txt"
+        },
+        {
+            "file_id": "dbpedia_2223_35.txt"
+        },
+        {
+            "file_id": "dbpedia_2223_40.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nThe text \"A fact from Arthur Wagner appeared on Wikipedia's Main Page\" clearly indicates that Arthur Wagner is the primary topic of at least one Wikipedia page. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, I can evaluate whether the statement \"Arthur Wagner is the primary topic of Wikipedia page\" is supported by the documents.\n\nThe document with file_path \"/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2223/re-ranker-msmarco/28.txt\" mentions a fact from Arthur Wagner appearing on Wikipedia's Main Page, which suggests that Arthur Wagner is indeed a topic of a Wikipedia page. However, this does not necessarily mean he is the primary topic.\n\nThe document with file_path \"/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2223/re-ranker-msmarco/29.txt\" discusses Wikipedia's policies and features, but it does not provide information about Arthur Wagner being the primary topic of a Wikipedia page.\n\nThe document with file_path \"/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2223/re-ranker-msmarco/21.txt\" provides some biographical information about Arthur Wagner, but again, it does not confirm that he is the primary topic of a Wikipedia page.\n\nTherefore, based on the provided context information, I conclude that:\n\n{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information about Arthur Wagner, including a fact that appeared on a Wikipedia \"Did you know\" entry. This strongly suggests that Arthur Wagner is indeed the primary topic of at least one Wikipedia page. Therefore, the statement \"Arthur Wagner is the primary topic of Wikipedia page\" is supported by the given context."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n      \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nThe provided context information does not support the claim that \"Arthur Wagner is the primary topic of a Wikipedia page.\" The documents mention facts about various individuals named Arthur Wagner but do not indicate that any of these are primary topics on Wikipedia. There is no statement confirming an entire Wikipedia page dedicated to any specific person named Arthur Wagner as the main subject."
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Arthur Wagner is mentioned on Wikipedia, but the page dedicated to him may not be the primary topic of a Wikipedia page. Wikipedia pages are typically named after specific topics, and while Arthur Wagner is the subject of the fact presented, there might not be an individual page specifically for him unless he meets the criteria for creating such a page (notability, uniqueness, etc.).",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because there are multiple Wikipedia pages about different individuals named Arthur Wagner, and the context information does not specify which one is the primary topic.",
+            "category": 2
+        }
+    }
+}

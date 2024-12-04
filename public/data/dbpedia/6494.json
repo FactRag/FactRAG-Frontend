@@ -1,0 +1,102 @@
+{
+    "subject": "resource/Yedida",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "Yedida",
+    "human_readable": "Yedida is labeled as 'Yedida'.",
+    "questions": [
+        {
+            "score": 0.9527722597122192,
+            "question": "What is the label of Yedida?"
+        },
+        {
+            "score": 0.8310924768447876,
+            "question": "Is Yedida a person, place, or thing?"
+        },
+        {
+            "score": 0.6669424176216125,
+            "question": "Can you tell me more about Yedida?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Yedida is labeled as 'Yedida'.",
+            "html": "dbpedia_6494_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Yedida a person, place, or thing?",
+            "html": "dbpedia_6494_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the label of Yedida?",
+            "html": "dbpedia_6494_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6494_102.txt"
+        },
+        {
+            "file_id": "dbpedia_6494_15.txt"
+        },
+        {
+            "file_id": "dbpedia_6494_22.txt"
+        },
+        {
+            "file_id": "dbpedia_6494_38.txt"
+        },
+        {
+            "file_id": "dbpedia_6494_43.txt"
+        },
+        {
+            "file_id": "dbpedia_6494_50.txt"
+        },
+        {
+            "file_id": "dbpedia_6494_68.txt"
+        },
+        {
+            "file_id": "dbpedia_6494_8.txt"
+        },
+        {
+            "file_id": "dbpedia_6494_82.txt"
+        },
+        {
+            "file_id": "dbpedia_6494_91.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple \"Yedida is labeled as 'Yedida'\":\n\n{\n  \"output\": \"no\"\n}\n\nExplanation:\n\nThe documents mention the name \"Yedida\" multiple times, but none of them explicitly state that Yedida is labeled as \"Yedida\". The closest statement related to labeling is in the section \"About Yedida Name\" which states \"Meaning of Yedida is Dear friend.  Yedida is Baby Girl name.\", but it does not mention anything about labeling."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe query \"Yedida is labeled as 'Yedida'\" is correct according to the provided context information, which repeatedly refers to the name \"Yedida\" throughout."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The context information explicitly states that the name \"Yedida\" has 6 alphabets, but nowhere does it mention or imply that it should be labeled as anything other than \"Yedida\".",
+            "category": 2
+        }
+    }
+}

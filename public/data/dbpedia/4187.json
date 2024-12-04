@@ -1,0 +1,102 @@
+{
+    "subject": "resource/Justin_R._Durban",
+    "predicate": "property/name",
+    "object": "Durban, Justin R.",
+    "human_readable": "Justin R. Durban's name is Durban, Justin R.",
+    "questions": [
+        {
+            "score": 0.9840998649597168,
+            "question": "What is Justin R. Durban's name?"
+        },
+        {
+            "score": 0.9355712532997131,
+            "question": "How is Justin R. Durban known?"
+        },
+        {
+            "score": 0.8594754934310913,
+            "question": "Is there more information available about Justin R. Durban?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Justin R. Durban's name is Durban, Justin R.",
+            "html": "dbpedia_4187_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How is Justin R. Durban known?",
+            "html": "dbpedia_4187_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Justin R. Durban's name?",
+            "html": "dbpedia_4187_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4187_12.txt"
+        },
+        {
+            "file_id": "dbpedia_4187_18.txt"
+        },
+        {
+            "file_id": "dbpedia_4187_24.txt"
+        },
+        {
+            "file_id": "dbpedia_4187_25.txt"
+        },
+        {
+            "file_id": "dbpedia_4187_26.txt"
+        },
+        {
+            "file_id": "dbpedia_4187_38.txt"
+        },
+        {
+            "file_id": "dbpedia_4187_40.txt"
+        },
+        {
+            "file_id": "dbpedia_4187_63.txt"
+        },
+        {
+            "file_id": "dbpedia_4187_64.txt"
+        },
+        {
+            "file_id": "dbpedia_4187_8.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n**Explanation:**\n\nThe text states \"Justin R. Durban\" repeatedly throughout the provided documents.  This directly supports the triple that Justin R. Durban's name is Durban, Justin R. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple \"Justin R. Durban's date of birth\" with the value being the triple itself:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents provide information about Justin R. Durban's birthdate as December 7th, 1977, but not a date of birth in the format 1986. Therefore, the triple is incorrect according to the documents."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe provided context information confirms that Justin R. Durban\u2019s full name is indeed \"Justin R. Durban.\" Therefore, the statement \"Justin R. Durban's name is Durban, Justin R.\" is correct based on the documents."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "the provided context information consistently uses \"Justin R. Durban\" as a singular name, without any indication that \"Duran\" and \"R.\" are separate names or initials.",
+            "category": 2
+        }
+    }
+}

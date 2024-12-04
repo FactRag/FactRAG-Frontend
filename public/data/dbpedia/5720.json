@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Bill_Johnson_(editor)",
+    "predicate": "property/name",
+    "object": "Bill Johnson",
+    "human_readable": "The name of Bill Johnson (editor) is Bill Johnson.",
+    "questions": [
+        {
+            "score": 0.970560610294342,
+            "question": "Is Bill Johnson an editor?"
+        },
+        {
+            "score": 0.9272493720054626,
+            "question": "What is the name of Bill Johnson?"
+        },
+        {
+            "score": 0.907418429851532,
+            "question": "What is the given name of Bill Johnson?"
+        },
+        {
+            "score": 0.8980070352554321,
+            "question": "Bill Johnson's name is...?"
+        },
+        {
+            "score": 0.8964049816131592,
+            "question": "Provide the full name of Bill Johnson."
+        },
+        {
+            "score": 0.8868836760520935,
+            "question": "Does Bill Johnson identify as Bill Johnson?"
+        },
+        {
+            "score": 0.8603599667549133,
+            "question": "Who is Bill Johnson?"
+        },
+        {
+            "score": 0.8315457701683044,
+            "question": "Is Bill Johnson known by any other names?"
+        },
+        {
+            "score": 0.6362144947052002,
+            "question": "What profession does Bill Johnson have?"
+        },
+        {
+            "score": 0.5648708939552307,
+            "question": "What do we know about Bill Johnson based on this information?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of Bill Johnson (editor) is Bill Johnson.",
+            "html": "dbpedia_5720_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What profession does Bill Johnson have?",
+            "html": "dbpedia_5720_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Bill Johnson known by any other names?",
+            "html": "dbpedia_5720_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is Bill Johnson?",
+            "html": "dbpedia_5720_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5720_11.txt"
+        },
+        {
+            "file_id": "dbpedia_5720_119.txt"
+        },
+        {
+            "file_id": "dbpedia_5720_12.txt"
+        },
+        {
+            "file_id": "dbpedia_5720_29.txt"
+        },
+        {
+            "file_id": "dbpedia_5720_4.txt"
+        },
+        {
+            "file_id": "dbpedia_5720_49.txt"
+        },
+        {
+            "file_id": "dbpedia_5720_69.txt"
+        },
+        {
+            "file_id": "dbpedia_5720_73.txt"
+        },
+        {
+            "file_id": "dbpedia_5720_81.txt"
+        },
+        {
+            "file_id": "dbpedia_5720_98.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you'd like to evaluate more triples!  I'm ready."
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation:\n\nThe triple to be evaluated is \"The name of Bill Johnson (editor) is Bill Johnson.\"\n\nGiven the context information, we can see that there are multiple documents with information about a person named Bill Johnson. However, only one document (4.txt) mentions a Bill Johnson who is an editor and columnist for the Denver Post.\n\nIn this document, it is mentioned that \"Bill Johnson, one of the highest profile writers to join the Denver Post after the death of the Rocky Mountain News, has resigned from his position as columnist with the paper.\"\n\nThe other documents (119.txt, 11.txt, and 131.txt) mention a Bill Johnson who is a television director, pastor, or minister, but there is no clear connection between these individuals and the editor/columnist mentioned in document 4.txt.\n\nHowever, upon closer inspection of document 61.txt, it mentions that \"Bill Johnson was one of the 20 House Republicans\" honored by Retirsafe, which suggests that this Bill Johnson might be related to politics and not editing.\n\nGiven the ambiguity and lack of clear connection between the different documents, it's difficult to confirm with certainty that the name of the editor/columnist mentioned in document 4.txt is indeed \"Bill Johnson\". However, based on the available information, I would say:\n\n{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide information about a person named Bill Johnson who has worked as an editor, television director, and has various other roles and affiliations. Therefore, the statement \"The name of Bill Johnson (editor) is Bill Johnson\" is supported by the provided context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The context information contains multiple individuals named Bill Johnson, including an episodic television director and a lead pastor at Bethel Church, making the statement ambiguous and not specific to one particular individual.",
+            "category": 2
+        }
+    }
+}

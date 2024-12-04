@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Roman_Catholic_Diocese_of_Honolulu",
+    "predicate": "ontology/territory",
+    "object": "resource/Unincorporated_territories_of_the_United_States",
+    "human_readable": "The Roman Catholic Diocese of Honolulu serves the territory of Unincorporated territories of the United States.",
+    "questions": [
+        {
+            "score": 0.9847879409790039,
+            "question": "Is the Roman Catholic Diocese of Honolulu located in a state or unincorporated territory?"
+        },
+        {
+            "score": 0.9545704126358032,
+            "question": "What territory does the Roman Catholic Diocese of Honolulu serve?"
+        },
+        {
+            "score": 0.8900564908981323,
+            "question": "Which type of area does the Roman Catholic Diocese of Honolulu serve?"
+        },
+        {
+            "score": 0.8756857514381409,
+            "question": "Where is the Roman Catholic Diocese of Honolulu located?"
+        },
+        {
+            "score": 0.8135015368461609,
+            "question": "What is the religious affiliation of the Roman Catholic Diocese of Honolulu?"
+        },
+        {
+            "score": 0.7578292489051819,
+            "question": "What role does the Roman Catholic Diocese of Honolulu play in the community?"
+        },
+        {
+            "score": 0.7324153780937195,
+            "question": "Are there any other dioceses in the Unincorporated territories of the United States?"
+        },
+        {
+            "score": 0.6537889838218689,
+            "question": "Does the Roman Catholic Diocese of Honolulu have a specific geographical boundary?"
+        },
+        {
+            "score": 0.6323012709617615,
+            "question": "Which country are these Unincorporated territories part of?"
+        },
+        {
+            "score": 0.5641112327575684,
+            "question": "What is the full name of the territory served by the diocese?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The Roman Catholic Diocese of Honolulu serves the territory of Unincorporated territories of the United States.",
+            "html": "dbpedia_5518_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Which country are these Unincorporated territories part of?",
+            "html": "dbpedia_5518_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does the Roman Catholic Diocese of Honolulu have a specific geographical boundary?",
+            "html": "dbpedia_5518_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any other dioceses in the Unincorporated territories of the United States?",
+            "html": "dbpedia_5518_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5518_100.txt"
+        },
+        {
+            "file_id": "dbpedia_5518_101.txt"
+        },
+        {
+            "file_id": "dbpedia_5518_12.txt"
+        },
+        {
+            "file_id": "dbpedia_5518_16.txt"
+        },
+        {
+            "file_id": "dbpedia_5518_37.txt"
+        },
+        {
+            "file_id": "dbpedia_5518_50.txt"
+        },
+        {
+            "file_id": "dbpedia_5518_57.txt"
+        },
+        {
+            "file_id": "dbpedia_5518_59.txt"
+        },
+        {
+            "file_id": "dbpedia_5518_77.txt"
+        },
+        {
+            "file_id": "dbpedia_5518_91.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe documents state that the diocese covers \"the entire state of Hawaii and the unincorporated Hawaiian Islands\".  While the unincorporated Hawaiian islands are part of US territory, this does not mean it serves *all* unincorporated territories of the United States.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, I can evaluate whether the triple is supported or not.\n\nThe triple to be evaluated is:\n\"The Roman Catholic Diocese of Honolulu serves the territory of Unincorporated territories of the United States.\"\n\nHere's the evaluation in JSON format:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents mention that the diocese is comprised of the entire state of Hawaii and the unincorporated Hawaiian Islands, but they do not explicitly state that it serves the territory of Unincorporated territories of the United States. In fact, one document mentions that the diocese is suffragan to the Metropolitan Province of San Francisco, which includes various other dioceses in the United States, suggesting a more specific geographical scope for the Diocese of Honolulu than the entire United States."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents mention that the Roman Catholic Diocese of Honolulu encompasses \"the entire state of Hawaii and the unincorporated Hawaiian Islands,\" which supports the statement that it serves the territory of Unincorporated territories of the United States."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}\n\nThe documents indicate that the Roman Catholic Diocese of Honolulu encompasses \"the entire state of Hawaii and the unincorporated Hawaiian Islands,\" which includes unincorporated U.S. territories. Therefore, the statement is supported by the information provided in the context."
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "The provided text states the diocese encompasses \"the entire state of Hawaii and the unincorporated Hawaiian Islands.\"   This implies that the territory served is part of the state, not a separate category like unincorporated US territories.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The Roman Catholic Diocese of Honolulu is comprised of the entire state of Hawaii, not unincorporated territories of the United States.",
+            "category": 2
+        }
+    }
+}

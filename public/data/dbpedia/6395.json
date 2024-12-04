@@ -1,0 +1,142 @@
+{
+    "subject": "resource/No_Way_Out_(1987_film)",
+    "predicate": "property/starring",
+    "object": "*",
+    "human_readable": "The film No Way Out starring *.",
+    "questions": [
+        {
+            "score": 0.7622516751289368,
+            "question": "Who directed the movie *No Way Out*?"
+        },
+        {
+            "score": 0.6492516398429871,
+            "question": "Besides Kevin Costner, who else stars in *No Way Out*?"
+        },
+        {
+            "score": 0.5850155353546143,
+            "question": "What genre is the film *No Way Out*?"
+        },
+        {
+            "score": 0.5470252633094788,
+            "question": "What makes *No Way Out* a memorable film?"
+        },
+        {
+            "score": 0.5408636331558228,
+            "question": "Is there a sequel to *No Way Out*?"
+        },
+        {
+            "score": 0.4841504693031311,
+            "question": "Has *No Way Out* influenced any other films or works of art?"
+        },
+        {
+            "score": 0.3272133767604828,
+            "question": "What year was *No Way Out* released?"
+        },
+        {
+            "score": 0.31960034370422363,
+            "question": "Was *No Way Out* a critical and commercial success?"
+        },
+        {
+            "score": 0.24751435220241547,
+            "question": "What is a central theme explored in *No Way Out*?"
+        },
+        {
+            "score": 0.15686015784740448,
+            "question": "What is the title of the film starring Kevin Costner?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The film No Way Out starring *.",
+            "html": "dbpedia_6395_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is a central theme explored in *No Way Out*?",
+            "html": "dbpedia_6395_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Was *No Way Out* a critical and commercial success?",
+            "html": "dbpedia_6395_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What year was *No Way Out* released?",
+            "html": "dbpedia_6395_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6395_1.txt"
+        },
+        {
+            "file_id": "dbpedia_6395_10.txt"
+        },
+        {
+            "file_id": "dbpedia_6395_11.txt"
+        },
+        {
+            "file_id": "dbpedia_6395_12.txt"
+        },
+        {
+            "file_id": "dbpedia_6395_14.txt"
+        },
+        {
+            "file_id": "dbpedia_6395_2.txt"
+        },
+        {
+            "file_id": "dbpedia_6395_3.txt"
+        },
+        {
+            "file_id": "dbpedia_6395_5.txt"
+        },
+        {
+            "file_id": "dbpedia_6395_6.txt"
+        },
+        {
+            "file_id": "dbpedia_6395_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'} \n``` \n\n\nLet me know if you have more triples to evaluate! \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, I'll evaluate whether the information supports the triple \"Kevin Costner stars in No Way Out\".\n\nAfter analyzing the documents, I found mentions of Kevin Costner and the movie \"No Way Out\". However, there is no direct statement that confirms Kevin Costner's involvement in the film. The relevant text only contains phrases like \"Extremely bozo 80s sex scene in this with Sean Young and Kevin Costner\", which implies their presence in the movie but doesn't confirm a starring role for Kevin Costner.\n\nConsidering this, I would conclude:\n\n{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe context mentions a scene from the movie with Kevin Costner and Sean Young, where they are referred to as being in a love affair within a vehicle. This supports the query about the film \"No Way Out\" starring an unnamed actor/actress represented by \"*\"."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The film discussed in the context information does not have a specific title explicitly mentioned. Therefore, stating \"The film No Way Out starring Kevin Costner\" would be an incorrect assumption.",
+            "category": 3
+        },
+        "gemma2": {
+            "reason": "Multiple entries describe plot points and character details specific to the film \"No Way Out\" starring Kevin Costner.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "The film No Way Out does not primarily star Kevin Costner. While he plays a significant role, the film stars Sean Young as Susan Atwell and Gene Hackman as Secretary of Defense David Brice. Therefore, the primary characters and their roles make it inaccurate to state that Kevin Costner is the main star.",
+            "category": 3
+        }
+    }
+}

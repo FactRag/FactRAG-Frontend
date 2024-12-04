@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Leonardo_da_Vinci",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:Ambassadors_of_the_Republic_of_Florence",
+    "human_readable": "Leonardo da Vinci is an ambassador of the Republic of Florence category.",
+    "questions": [
+        {
+            "score": 0.8592829704284668,
+            "question": "What role did Leonardo da Vinci hold in the Republic of Florence?"
+        },
+        {
+            "score": 0.8589484095573425,
+            "question": "What was Leonardo da Vinci's relationship to the Republic of Florence?"
+        },
+        {
+            "score": 0.8278270959854126,
+            "question": "How did Leonardo da Vinci contribute to the Republic of Florence?"
+        },
+        {
+            "score": 0.8247562050819397,
+            "question": "Who was Leonardo da Vinci an ambassador for?"
+        },
+        {
+            "score": 0.6669752597808838,
+            "question": "To which city-state was Leonardo da Vinci an ambassador?"
+        },
+        {
+            "score": 0.6572273969650269,
+            "question": "What is the name of the political entity that Leonardo da Vinci served as an ambassador for?"
+        },
+        {
+            "score": 0.6270754933357239,
+            "question": "In what capacity did Leonardo da Vinci represent Florence?"
+        },
+        {
+            "score": 0.30685168504714966,
+            "question": "Did Leonardo da Vinci hold any diplomatic positions?"
+        },
+        {
+            "score": 0.27584952116012573,
+            "question": "What is known about Leonardo da Vinci's involvement in Florentine politics?"
+        },
+        {
+            "score": 0.240094393491745,
+            "question": "Aside from his artistic talents, what other roles did Leonardo da Vinci play?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Leonardo da Vinci is an ambassador of the Republic of Florence category.",
+            "html": "dbpedia_6070_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is known about Leonardo da Vinci's involvement in Florentine politics?",
+            "html": "dbpedia_6070_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Did Leonardo da Vinci hold any diplomatic positions?",
+            "html": "dbpedia_6070_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In what capacity did Leonardo da Vinci represent Florence?",
+            "html": "dbpedia_6070_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6070_106.txt"
+        },
+        {
+            "file_id": "dbpedia_6070_116.txt"
+        },
+        {
+            "file_id": "dbpedia_6070_118.txt"
+        },
+        {
+            "file_id": "dbpedia_6070_131.txt"
+        },
+        {
+            "file_id": "dbpedia_6070_15.txt"
+        },
+        {
+            "file_id": "dbpedia_6070_3.txt"
+        },
+        {
+            "file_id": "dbpedia_6070_57.txt"
+        },
+        {
+            "file_id": "dbpedia_6070_58.txt"
+        },
+        {
+            "file_id": "dbpedia_6070_69.txt"
+        },
+        {
+            "file_id": "dbpedia_6070_96.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n\n\nLet me explain why:\n\n* **The context:** The document states, \"Leonardo was sent as an ambassador by Lorenzo de Medici to the ruler of Milan in 1481 AD.\"  While it doesn't explicitly say \"Republic of Florence,\" Lorenzo de Medici ruled Florence. Therefore, we can infer Leonardo acted on behalf of Florence. \n\n* **Ambassador role:** The document clearly states he was sent as an ambassador, fulfilling the criteria of the triple. \n\n\n\nLet me know if you have more triples to evaluate!"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of whether the information in the documents supports the triple:\n\n{\n  \"output\": \"no\"\n}\n\nThe reason for this answer is that, while the documents mention Leonardo da Vinci's appointment as an ambassador by Lorenzo de Medici to the ruler of Milan (in 1481 AD), there is no specific mention of him being an ambassador of the Republic of Florence. The category mentioned in the documents is related to his work in Milan and other locations, but not specifically to Florence."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: The documents do not mention anything about Leonardo da Vinci being an ambassador of the Republic of Florence. They discuss his role as an ambassador sent by Lorenzo de Medici to the ruler of Milan in 1481 AD, but there is no information supporting him being an ambassador for the Republic of Florence."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nThe provided documents do not mention that Leonardo da Vinci was an ambassador for the Republic of Florence. Instead, they indicate that he was sent by Lorenzo de Medici as an ambassador to the ruler of Milan in 1481 AD, not to the Republic of Florence."
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "It does not match with point 3 of the context information where it is mentioned that \"Leonardo was sent as an ambassador by Lorenzo de Medici to the ruler of Milan in 1481 AD.\"",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context states that Leonardo da Vinci was sent as an ambassador by Lorenzo de Medici to the ruler of Milan in 1481 AD, not by the Republic of Florence.",
+            "category": 2
+        }
+    }
+}

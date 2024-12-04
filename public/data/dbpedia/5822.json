@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Hannibal_(film)",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:Films_shot_in_the_Czech_Republic",
+    "human_readable": "The subject of the film Hannibal is Category:Films shot in the Czech Republic.",
+    "questions": [
+        {
+            "score": 0.8118346333503723,
+            "question": "Can you name any films besides Hannibal that were shot in the Czech Republic?"
+        },
+        {
+            "score": 0.781194269657135,
+            "question": "Where were scenes for the film Hannibal shot?"
+        },
+        {
+            "score": 0.7368738651275635,
+            "question": "Who directed the film Hannibal?"
+        },
+        {
+            "score": 0.6966844201087952,
+            "question": "Is Hannibal a Czech Republic production?"
+        },
+        {
+            "score": 0.6516725420951843,
+            "question": "What genre is the film Hannibal?"
+        },
+        {
+            "score": 0.6237965822219849,
+            "question": "What is the plot summary of the film Hannibal?"
+        },
+        {
+            "score": 0.5952402949333191,
+            "question": "What is the nationality of the film Hannibal?"
+        },
+        {
+            "score": 0.525519847869873,
+            "question": "Who are some of the main actors in the film Hannibal?"
+        },
+        {
+            "score": 0.4135494828224182,
+            "question": "Is the film Hannibal based on a book?"
+        },
+        {
+            "score": 0.3788059651851654,
+            "question": "What year was the film Hannibal released?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The subject of the film Hannibal is Category:Films shot in the Czech Republic.",
+            "html": "dbpedia_5822_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is the film Hannibal based on a book?",
+            "html": "dbpedia_5822_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who are some of the main actors in the film Hannibal?",
+            "html": "dbpedia_5822_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the nationality of the film Hannibal?",
+            "html": "dbpedia_5822_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5822_1.txt"
+        },
+        {
+            "file_id": "dbpedia_5822_114.txt"
+        },
+        {
+            "file_id": "dbpedia_5822_125.txt"
+        },
+        {
+            "file_id": "dbpedia_5822_162.txt"
+        },
+        {
+            "file_id": "dbpedia_5822_179.txt"
+        },
+        {
+            "file_id": "dbpedia_5822_38.txt"
+        },
+        {
+            "file_id": "dbpedia_5822_50.txt"
+        },
+        {
+            "file_id": "dbpedia_5822_54.txt"
+        },
+        {
+            "file_id": "dbpedia_5822_63.txt"
+        },
+        {
+            "file_id": "dbpedia_5822_88.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, here is the evaluation of the triple:\n\n{\n  \"output\": \"no\"\n}\n\nExplanation:\nThe triple to be evaluated is: \"The subject of the film Hannibal is Category:Films shot in the Czech Republic.\"\n\nThe text does not explicitly state that Hannibal was shot in the Czech Republic. However, it mentions other locations and films shot in the Czech Republic, but does not provide information about the filming location of Hannibal.\n\nNote: The mention of \"Barrandov Studios in Prague\" in file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5822/re-ranker-msmarco/112.txt is related to the film \"Hannibal Rising\", not the original film \"Hannibal\"."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The document mentions that parts of the movie \"Hannibal\" were filmed in Barrandov Studios in Prague, which is located in the Czech Republic. Therefore, it supports the statement that the film \"Hannibal\" was shot in the Czech Republic."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "Hannibal was filmed primarily in Italy, the United States, and Florence, not in the Czech Republic.",
+            "category": 3
+        }
+    }
+}

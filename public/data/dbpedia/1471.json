@@ -1,0 +1,134 @@
+{
+    "subject": "resource/FC_Kehlen",
+    "predicate": "property/league",
+    "object": "resource/Luxembourg_1._Division",
+    "human_readable": "FC Kehlen plays in the Luxembourg 1. Division league.",
+    "questions": [
+        {
+            "score": 0.9882857799530029,
+            "question": "Is FC Kehlen a member of the Luxembourg 1. Division league?"
+        },
+        {
+            "score": 0.921050488948822,
+            "question": "Name one team that plays in the Luxembourg 1. Division league."
+        },
+        {
+            "score": 0.9152718186378479,
+            "question": "Which team plays in the Luxembourg 1. Division league?"
+        },
+        {
+            "score": 0.8917757272720337,
+            "question": "What division does FC Kehlen play in?"
+        },
+        {
+            "score": 0.8680884838104248,
+            "question": "What league does FC Kehlen play in?"
+        },
+        {
+            "score": 0.7860926985740662,
+            "question": "Where is the Luxembourg 1. Division league based?"
+        },
+        {
+            "score": 0.7698310613632202,
+            "question": "In which country is the Luxembourg 1. Division league located?"
+        },
+        {
+            "score": 0.6497666239738464,
+            "question": "What is the name of the football league that FC Kehlen participates in?"
+        },
+        {
+            "score": 0.4347549080848694,
+            "question": "Does FC Kehlen compete at a national level?"
+        },
+        {
+            "score": 0.34102365374565125,
+            "question": "What is the highest tier of football league in Luxembourg?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=FC Kehlen plays in the Luxembourg 1. Division league.",
+            "html": "dbpedia_1471_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does FC Kehlen compete at a national level?",
+            "html": "dbpedia_1471_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of the football league that FC Kehlen participates in?",
+            "html": "dbpedia_1471_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In which country is the Luxembourg 1. Division league located?",
+            "html": "dbpedia_1471_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1471_1.txt"
+        },
+        {
+            "file_id": "dbpedia_1471_16.txt"
+        },
+        {
+            "file_id": "dbpedia_1471_19.txt"
+        },
+        {
+            "file_id": "dbpedia_1471_23.txt"
+        },
+        {
+            "file_id": "dbpedia_1471_38.txt"
+        },
+        {
+            "file_id": "dbpedia_1471_47.txt"
+        },
+        {
+            "file_id": "dbpedia_1471_53.txt"
+        },
+        {
+            "file_id": "dbpedia_1471_54.txt"
+        },
+        {
+            "file_id": "dbpedia_1471_61.txt"
+        },
+        {
+            "file_id": "dbpedia_1471_7.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of whether the information in the documents supports the triple:\n\n{\n  \"output\": \"no\"\n}\n\nExplanation: The document file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1471/re-ranker-msmarco/16.txt mentions that FC Kehlen currently plays in Luxembourg 1. Division, which is a league below the top-level National Division in Luxembourg (as mentioned in file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1471/re-ranker-msmarco/1.txt). Therefore, the statement \"FC Kehlen plays in the Luxembourg 1. Division league\" is not accurate according to the provided documents."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe document at file_path `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1471/re-ranker-msmarco/16.txt` states that \"FC Kehlen plays in Luxembourg 1. Division,\" which directly supports the query that FC Kehlen plays in the Luxembourg 1. Division league."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "FC Kehlen is actually playing in the Luxembourg 2. Division according to general information about Luxembourgian football leagues, but since there are no specific details about their current league placement mentioned in your given context after evaluating the general information.",
+            "category": 1
+        }
+    }
+}

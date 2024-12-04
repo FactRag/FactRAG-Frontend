@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Thunderbolt_and_Lightfoot",
+    "predicate": "property/producer",
+    "object": "resource/Robert_Daley_(producer)",
+    "human_readable": "The producer of Thunderbolt and Lightfoot is Robert Daley.",
+    "questions": [
+        {
+            "score": 0.9410383701324463,
+            "question": "What was the role of Robert Daley in Thunderbolt and Lightfoot?"
+        },
+        {
+            "score": 0.8243087530136108,
+            "question": "What is the name of the person who produced Thunderbolt and Lightfoot?"
+        },
+        {
+            "score": 0.8240839242935181,
+            "question": "Who produced the movie Thunderbolt and Lightfoot?"
+        },
+        {
+            "score": 0.8106411695480347,
+            "question": "Robert Daley is the producer for which film?"
+        },
+        {
+            "score": 0.7942388653755188,
+            "question": "Name a film produced by Robert Daley."
+        },
+        {
+            "score": 0.6567255258560181,
+            "question": "Who directed Thunderbolt and Lightfoot?"
+        },
+        {
+            "score": 0.6092339754104614,
+            "question": "Is Robert Daley known for producing movies?"
+        },
+        {
+            "score": 0.5110651254653931,
+            "question": "Can you tell me about any other films produced by Robert Daley?"
+        },
+        {
+            "score": 0.49867919087409973,
+            "question": "What type of work does Robert Daley do?"
+        },
+        {
+            "score": 0.41826871037483215,
+            "question": "When was Thunderbolt and Lightfoot released?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The producer of Thunderbolt and Lightfoot is Robert Daley.",
+            "html": "dbpedia_3172_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of work does Robert Daley do?",
+            "html": "dbpedia_3172_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me about any other films produced by Robert Daley?",
+            "html": "dbpedia_3172_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Robert Daley known for producing movies?",
+            "html": "dbpedia_3172_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3172_106.txt"
+        },
+        {
+            "file_id": "dbpedia_3172_19.txt"
+        },
+        {
+            "file_id": "dbpedia_3172_21.txt"
+        },
+        {
+            "file_id": "dbpedia_3172_32.txt"
+        },
+        {
+            "file_id": "dbpedia_3172_44.txt"
+        },
+        {
+            "file_id": "dbpedia_3172_64.txt"
+        },
+        {
+            "file_id": "dbpedia_3172_67.txt"
+        },
+        {
+            "file_id": "dbpedia_3172_78.txt"
+        },
+        {
+            "file_id": "dbpedia_3172_83.txt"
+        },
+        {
+            "file_id": "dbpedia_3172_89.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "The query is whether the information in the documents supports the triple \"The producer of Thunderbolt and Lightfoot is Robert Daley\".\n\nUpon reviewing the documents, we can see that:\n\n* file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3172/re-ranker-msmarco/88.txt mentions \"producer = Robert Daley\"\n* file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3172/re-ranker-msmarco/44.txt also mentions \"Producer: Robert Daley\"\n\nTherefore, the information in the documents supports the triple.\n\nThe final answer is:\n```json\n{'output': 'yes'}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\nThe documents clearly state that Robert Daley was a producer for the film \"Thunderbolt and Lightfoot.\" Therefore, the statement \"The producer of Thunderbolt and Lightfoot is Robert Daley\" is supported by the given information."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

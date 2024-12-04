@@ -1,0 +1,129 @@
+{
+    "subject": "resource/J._D._Hayworth",
+    "predicate": "property/almaMater",
+    "object": "resource/North_Carolina_State_University",
+    "human_readable": "J. D. Hayworth attended North Carolina State University.",
+    "questions": [
+        {
+            "score": 0.9608967900276184,
+            "question": "Name the university J.D. Hayworth attended."
+        },
+        {
+            "score": 0.9172261953353882,
+            "question": "Where did J.D. Hayworth attend university?"
+        },
+        {
+            "score": 0.8457448482513428,
+            "question": "What is the full name of the university J.D. Hayworth attended?"
+        },
+        {
+            "score": 0.7707262635231018,
+            "question": "To which educational institution did J.D. Hayworth go?"
+        },
+        {
+            "score": 0.749422550201416,
+            "question": "What university is associated with J.D. Hayworth?"
+        },
+        {
+            "score": 0.6495888233184814,
+            "question": "Which state is North Carolina State University located in?"
+        },
+        {
+            "score": 0.6356157064437866,
+            "question": "What are some notable alumni of North Carolina State University?"
+        },
+        {
+            "score": 0.5712055563926697,
+            "question": "What is J.D. Hayworth's alma mater?"
+        },
+        {
+            "score": 0.5647703409194946,
+            "question": "What type of institution is North Carolina State University?"
+        },
+        {
+            "score": 0.37397074699401855,
+            "question": "Is North Carolina State University a public or private institution?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=J. D. Hayworth attended North Carolina State University.",
+            "html": "dbpedia_3356_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of institution is North Carolina State University?",
+            "html": "dbpedia_3356_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is J.D. Hayworth's alma mater?",
+            "html": "dbpedia_3356_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some notable alumni of North Carolina State University?",
+            "html": "dbpedia_3356_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3356_14.txt"
+        },
+        {
+            "file_id": "dbpedia_3356_16.txt"
+        },
+        {
+            "file_id": "dbpedia_3356_24.txt"
+        },
+        {
+            "file_id": "dbpedia_3356_38.txt"
+        },
+        {
+            "file_id": "dbpedia_3356_4.txt"
+        },
+        {
+            "file_id": "dbpedia_3356_44.txt"
+        },
+        {
+            "file_id": "dbpedia_3356_60.txt"
+        },
+        {
+            "file_id": "dbpedia_3356_74.txt"
+        },
+        {
+            "file_id": "dbpedia_3356_80.txt"
+        },
+        {
+            "file_id": "dbpedia_3356_84.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the structured JSON format with the evaluation of whether the triple is supported by the documents:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation:\n\nThe triple in question is \"J. D. Hayworth attended North Carolina State University.\" The document at file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3356/re-ranker-msmarco/41.txt explicitly states that \"While attending State on a football scholarship, Hayworth became involved in many campus organizations. He was WKNC's sports director and he contributed to the athletic section of the 1979 _Agromeck_. Hayworth graduated Cum Laude in 1980 with Bachelor of Arts degrees in political science and speech communication.\" This information suggests that J. D. Hayworth did indeed attend North Carolina State University, specifically during the years 1979-1980 when he was student body president."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents support the statement that \"J. D. Hayworth attended North Carolina State University.\" The information provided in the file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3356/re-ranker-msmarco/41.txt states, \"While attending State on a football scholarship,\" which refers to North Carolina State University."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

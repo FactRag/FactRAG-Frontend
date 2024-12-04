@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Andriy_Hlushchenko",
+    "predicate": "http://purl.org/linguistics/gold/hypernym",
+    "object": "resource/Coach",
+    "human_readable": "Andriy Hlushchenko is a Coach.",
+    "questions": [
+        {
+            "score": 0.9793968200683594,
+            "question": "Who could Andriy Hlushchenko coach?"
+        },
+        {
+            "score": 0.9753409624099731,
+            "question": "Where might Andriy Hlushchenko work as a Coach?"
+        },
+        {
+            "score": 0.8737174272537231,
+            "question": "What are some qualities of a good coach, like Andriy Hlushchenko?"
+        },
+        {
+            "score": 0.8716530799865723,
+            "question": "What is Andriy Hlushchenko's profession?"
+        },
+        {
+            "score": 0.86122065782547,
+            "question": "What are the benefits of having a coach like Andriy Hlushchenko?"
+        },
+        {
+            "score": 0.771443784236908,
+            "question": "Is Andriy Hlushchenko a teacher?"
+        },
+        {
+            "score": 0.7706247568130493,
+            "question": "What kind of training does Andriy Hlushchenko provide?"
+        },
+        {
+            "score": 0.7284884452819824,
+            "question": "Does Andriy Hlushchenko work with athletes?"
+        },
+        {
+            "score": 0.7212515473365784,
+            "question": "What skills might Andriy Hlushchenko possess?"
+        },
+        {
+            "score": 0.536705732345581,
+            "question": "How does Andriy Hlushchenko help his clients achieve their goals?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Andriy Hlushchenko is a Coach.",
+            "html": "dbpedia_1579_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What skills might Andriy Hlushchenko possess?",
+            "html": "dbpedia_1579_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Andriy Hlushchenko work with athletes?",
+            "html": "dbpedia_1579_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What kind of training does Andriy Hlushchenko provide?",
+            "html": "dbpedia_1579_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1579_14.txt"
+        },
+        {
+            "file_id": "dbpedia_1579_15.txt"
+        },
+        {
+            "file_id": "dbpedia_1579_20.txt"
+        },
+        {
+            "file_id": "dbpedia_1579_42.txt"
+        },
+        {
+            "file_id": "dbpedia_1579_46.txt"
+        },
+        {
+            "file_id": "dbpedia_1579_50.txt"
+        },
+        {
+            "file_id": "dbpedia_1579_61.txt"
+        },
+        {
+            "file_id": "dbpedia_1579_65.txt"
+        },
+        {
+            "file_id": "dbpedia_1579_67.txt"
+        },
+        {
+            "file_id": "dbpedia_1579_69.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation of the triple \"Andriy Hlushchenko is a Coach\" based on the provided context information:\n\n{\n    \"output\": \"yes\"\n}\n\nReasoning:\nThe text mentions that Andriy Hlushchenko \"is a Ukrainian football goalkeeper coach at Chornomorets Odessa of the Ukrainian Premier League.\" This statement explicitly confirms that he is a coach, specifically in the field of football."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents mention that Andriy Hlushchenko is currently a football goalkeeper coach at Chornomorets Odessa, which supports the statement that he is a coach."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Andriy Hlushchenko is currently a goalkeeper coach, not a head coach.",
+            "category": 1
+        },
+        "gemma2": {
+            "reason": "The text mentions Andriy Totovytskyi, Anton Hlushchenko appearing as players.  This implies a connection between the name and playing rather than coaching.",
+            "category": 1
+        },
+        "llama3.1": {
+            "reason": "It directly contradicts the information provided under question 1, which states \"Andriy Hlushchenko (born 18 March 1974) is a Ukrainian football goalkeeper coach at Chornomorets Odessa of the Ukrainian Premier League.\" This clearly indicates that Andriy Hlushchenko is indeed a coach.",
+            "category": 1
+        },
+        "qwen2.5": {
+            "reason": "Andriy Hlushchenko is currently a football goalkeeper coach at Chornomorets Odessa, not a Coach in the broader sense.",
+            "category": 1
+        }
+    }
+}

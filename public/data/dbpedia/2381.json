@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Questacon",
+    "predicate": "property/hasPhotoCollection",
+    "object": "http://wifo5-03.informatik.uni-mannheim.de/flickrwrappr/photos/Questacon",
+    "human_readable": "Questacon has a photo collection.",
+    "questions": [
+        {
+            "score": 0.9847515225410461,
+            "question": "Is there a photo collection at Questacon?"
+        },
+        {
+            "score": 0.9834573268890381,
+            "question": "Does Questacon have a photo collection?"
+        },
+        {
+            "score": 0.9639840126037598,
+            "question": "Who might have taken the photos in Questacon's collection?"
+        },
+        {
+            "score": 0.9355002045631409,
+            "question": "What can you find in Questacon's photo collection?"
+        },
+        {
+            "score": 0.9286328554153442,
+            "question": "Are there any famous photos in Questacon's collection?"
+        },
+        {
+            "score": 0.9173749089241028,
+            "question": "What types of photos might be in Questacon's collection?"
+        },
+        {
+            "score": 0.8905788660049438,
+            "question": "How could people view Questacon's photo collection?"
+        },
+        {
+            "score": 0.878503143787384,
+            "question": "What kind of collection does Questacon have?"
+        },
+        {
+            "score": 0.8585059642791748,
+            "question": "What stories might the photos in Questacon's collection tell?"
+        },
+        {
+            "score": 0.701914370059967,
+            "question": "Is Questacon a museum?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Questacon has a photo collection.",
+            "html": "dbpedia_2381_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What stories might the photos in Questacon's collection tell?",
+            "html": "dbpedia_2381_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What kind of collection does Questacon have?",
+            "html": "dbpedia_2381_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How could people view Questacon's photo collection?",
+            "html": "dbpedia_2381_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2381_11.txt"
+        },
+        {
+            "file_id": "dbpedia_2381_3.txt"
+        },
+        {
+            "file_id": "dbpedia_2381_37.txt"
+        },
+        {
+            "file_id": "dbpedia_2381_43.txt"
+        },
+        {
+            "file_id": "dbpedia_2381_46.txt"
+        },
+        {
+            "file_id": "dbpedia_2381_67.txt"
+        },
+        {
+            "file_id": "dbpedia_2381_75.txt"
+        },
+        {
+            "file_id": "dbpedia_2381_89.txt"
+        },
+        {
+            "file_id": "dbpedia_2381_90.txt"
+        },
+        {
+            "file_id": "dbpedia_2381_92.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have any other triples you'd like me to evaluate!  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the answer in the structured JSON format:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents do not mention that Questacon has a photo collection. They mention a location that lists all photo spots tagged with Questacon, but it's called Locationscout and it's a network of passionate photographers and travelers, not a part of Questacon itself."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents mention that there is information about photography and photo spots at Questacon, which implies that Questacon has some sort of photo-related content or collections."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "There is no evidence in the provided context information to suggest that Questacon has a photo collection.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "There is no mention of Questacon having a photo collection in the provided text.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information does not mention a photo collection at Questacon. Instead, it provides details about the gallery spaces, volunteer activities, and various exhibitions, including photography locations within the center and an external collaboration with photographers, but no explicit reference to a photo collection owned by or curated at Questacon itself.",
+            "category": 2
+        }
+    }
+}

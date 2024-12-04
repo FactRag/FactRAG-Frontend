@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Tower_of_Power",
+    "predicate": "ontology/hometown",
+    "object": "resource/United_States",
+    "human_readable": "The hometown of Tower of Power is United States.",
+    "questions": [
+        {
+            "score": 0.802577555179596,
+            "question": "What country is considered the hometown of Tower of Power?"
+        },
+        {
+            "score": 0.6312411427497864,
+            "question": "Where is Tower of Power from?"
+        },
+        {
+            "score": 0.5442090630531311,
+            "question": "Where are Tower of Power originally from?"
+        },
+        {
+            "score": 0.4563904106616974,
+            "question": "In which nation was Tower of Power founded?"
+        },
+        {
+            "score": 0.32544636726379395,
+            "question": "To what country does Tower of Power belong?"
+        },
+        {
+            "score": 0.27595484256744385,
+            "question": "Tower of Power hails from which nation?"
+        },
+        {
+            "score": 0.25955063104629517,
+            "question": "What is the home country of the band Tower of Power?"
+        },
+        {
+            "score": 0.24616673588752747,
+            "question": "If you wanted to see Tower of Power perform, in which country would you go?"
+        },
+        {
+            "score": 0.24523113667964935,
+            "question": "Tower of Power is a musical group from what place?"
+        },
+        {
+            "score": 0.1836303174495697,
+            "question": "What is the origin country of the band Tower of Power?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The hometown of Tower of Power is United States.",
+            "html": "dbpedia_496_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Tower of Power is a musical group from what place?",
+            "html": "dbpedia_496_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If you wanted to see Tower of Power perform, in which country would you go?",
+            "html": "dbpedia_496_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the home country of the band Tower of Power?",
+            "html": "dbpedia_496_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_496_107.txt"
+        },
+        {
+            "file_id": "dbpedia_496_108.txt"
+        },
+        {
+            "file_id": "dbpedia_496_127.txt"
+        },
+        {
+            "file_id": "dbpedia_496_19.txt"
+        },
+        {
+            "file_id": "dbpedia_496_20.txt"
+        },
+        {
+            "file_id": "dbpedia_496_47.txt"
+        },
+        {
+            "file_id": "dbpedia_496_55.txt"
+        },
+        {
+            "file_id": "dbpedia_496_88.txt"
+        },
+        {
+            "file_id": "dbpedia_496_89.txt"
+        },
+        {
+            "file_id": "dbpedia_496_99.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe documents state that Tower of Power is from Oakland, California.  While Oakland is in the United States, the hometown is specifically Oakland. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nThe information provided suggests that the hometown of Tower of Power is Oakland, California (specifically mentioned in file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_496/re-ranker-msmarco/20.txt and file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_496/re-ranker-msmarco/22.txt), not the United States as a whole."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information about Tower of Power being an iconic band from Oakland, California, which is in the United States. Therefore, the statement that the hometown of Tower of Power is the United States is supported by the context provided."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{\"output\": \"no\"}\n\nThe documents provided indicate that Tower of Power has strong ties to Oakland, California. However, the statement \"The hometown of Tower of Power is United States\" is too broad and vague to be considered accurate based on the given information. Therefore, the correct response is \"no\"."
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Tower of Power is a band from Oakland, California, which is a city within the United States, but not the hometown claim specifies the country.",
+            "category": 4
+        },
+        "qwen2.5": {
+            "reason": "The context information explicitly states that Tower of Power will have a hometown show at Oakland, California, indicating their primary base is in the United States. Additionally, multiple references to venues and tours in the United States (e.g., Providence, R.I., Kansas City, Mo.) support that the band has strong connections to the U.S.",
+            "category": 4
+        }
+    }
+}

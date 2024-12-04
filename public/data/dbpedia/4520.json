@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Gambino_Family_(group)",
+    "predicate": "ontology/hometown",
+    "object": "resource/New_Orleans",
+    "human_readable": "The hometown of Gambino Family (group) is New Orleans.",
+    "questions": [
+        {
+            "score": 0.9359005093574524,
+            "question": "Where is the hometown of the Gambino Family?"
+        },
+        {
+            "score": 0.695472776889801,
+            "question": "What city is associated with the Gambino Family?"
+        },
+        {
+            "score": 0.6863721013069153,
+            "question": "What is the ancestral city of the Gambino Family?"
+        },
+        {
+            "score": 0.6373711228370667,
+            "question": "In which location did the Gambino Family originate?"
+        },
+        {
+            "score": 0.5637635588645935,
+            "question": "Where are the roots of the Gambino Family located?"
+        },
+        {
+            "score": 0.44691944122314453,
+            "question": "Where did the Gambino Family establish its headquarters?"
+        },
+        {
+            "score": 0.40263479948043823,
+            "question": "What city served as the birthplace of the Gambino Family's operations?"
+        },
+        {
+            "score": 0.3824104368686676,
+            "question": "What is considered the home base for the Gambino Family?"
+        },
+        {
+            "score": 0.36191922426223755,
+            "question": "If you wanted to find the Gambino Family's origins, where would you look?"
+        },
+        {
+            "score": 0.2692827582359314,
+            "question": "New Orleans is known for which prominent organized crime family?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The hometown of Gambino Family (group) is New Orleans.",
+            "html": "dbpedia_4520_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If you wanted to find the Gambino Family's origins, where would you look?",
+            "html": "dbpedia_4520_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is considered the home base for the Gambino Family?",
+            "html": "dbpedia_4520_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What city served as the birthplace of the Gambino Family's operations?",
+            "html": "dbpedia_4520_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4520_1.txt"
+        },
+        {
+            "file_id": "dbpedia_4520_10.txt"
+        },
+        {
+            "file_id": "dbpedia_4520_108.txt"
+        },
+        {
+            "file_id": "dbpedia_4520_117.txt"
+        },
+        {
+            "file_id": "dbpedia_4520_13.txt"
+        },
+        {
+            "file_id": "dbpedia_4520_2.txt"
+        },
+        {
+            "file_id": "dbpedia_4520_25.txt"
+        },
+        {
+            "file_id": "dbpedia_4520_47.txt"
+        },
+        {
+            "file_id": "dbpedia_4520_50.txt"
+        },
+        {
+            "file_id": "dbpedia_4520_69.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, here's the evaluation for the given query:\n\nThe query is: \"The hometown of Gambino Family (group) is New Orleans.\"\n\nAccording to the context information, specifically from file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4520/re-ranker-msmarco/104.txt, there's a mention of \"Gambino Family\" in relation to a hip hop group. However, none of the documents directly state the hometown of Gambino Family (group). In fact, file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4520/re-ranker-msmarco/25.txt states that \"The Gambino crime family is one of the Five Families\" but doesn't mention a specific hometown for the hip hop group.\n\nHowever, there's an indirect reference in file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4520/re-ranker-msmarco/25.txt mentioning that the Gambino crime family operations extend from New York and the eastern seaboard to California. But this is related to the organized crime family, not the hip hop group.\n\nTherefore, based on the provided context information, the answer is:\n\n{'output': 'no'}\n\nThis indicates that the triple \"The hometown of Gambino Family (group) is New Orleans\" does not have sufficient support from the documents."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nThe documents do not provide any information to support the claim that the hometown of the Gambino Family is New Orleans. The context provided is about the history and operations of the Gambino crime family in relation to organized crime activities primarily centered around New York City, with extensions to other parts of the United States. There is no mention of New Orleans being associated with the Gambino Family."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The Gambino Family (as described in the context) is an Italian-American Mafia crime family originating from New York City, not New Orleans.",
+            "category": 4
+        },
+        "gemma2": {
+            "reason": "The provided text states the Gambino crime family originated from New York City, not New Orleans.",
+            "category": -1
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because there is no mention of the Gambino Family (group) being from New Orleans or having any connection to that city.",
+            "category": 4
+        },
+        "qwen2.5": {
+            "reason": "The context information clearly states that the Gambino Crime Family originated from New York City, not New Orleans.",
+            "category": 4
+        }
+    }
+}

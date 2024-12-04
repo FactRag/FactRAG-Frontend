@@ -1,0 +1,134 @@
+{
+    "subject": "resource/L'inafferrabile_12",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:Films_directed_by_Mario_Mattoli",
+    "human_readable": "The subject of L'inafferrabile 12 is Category: Films directed by Mario Mattoli.",
+    "questions": [
+        {
+            "score": 0.9861159324645996,
+            "question": "Is 'L'inafferrabile 12' a type of movie directed by Mario Mattoli?"
+        },
+        {
+            "score": 0.9417321085929871,
+            "question": "Who directed the film 'L'inafferrabile 12'?"
+        },
+        {
+            "score": 0.9383330941200256,
+            "question": "What is the category of 'L'inafferrabile 12'?"
+        },
+        {
+            "score": 0.8710196018218994,
+            "question": "What other films might be categorized similarly to 'L'inafferrabile 12'?"
+        },
+        {
+            "score": 0.8345804214477539,
+            "question": "What is the plot of 'L'inafferrabile 12'?"
+        },
+        {
+            "score": 0.717891275882721,
+            "question": "When was 'L'inafferrabile 12' released?"
+        },
+        {
+            "score": 0.713658332824707,
+            "question": "Where was 'L'inafferrabile 12' filmed?"
+        },
+        {
+            "score": 0.5724278688430786,
+            "question": "Are there any famous actors who appeared in films directed by Mario Mattoli?"
+        },
+        {
+            "score": 0.5488934516906738,
+            "question": "Can you name any films directed by Mario Mattoli?"
+        },
+        {
+            "score": 0.4167592227458954,
+            "question": "Has 'L'inafferrabile 12' won any awards?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The subject of L'inafferrabile 12 is Category: Films directed by Mario Mattoli.",
+            "html": "dbpedia_6088_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you name any films directed by Mario Mattoli?",
+            "html": "dbpedia_6088_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any famous actors who appeared in films directed by Mario Mattoli?",
+            "html": "dbpedia_6088_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where was 'L'inafferrabile 12' filmed?",
+            "html": "dbpedia_6088_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6088_1.txt"
+        },
+        {
+            "file_id": "dbpedia_6088_11.txt"
+        },
+        {
+            "file_id": "dbpedia_6088_15.txt"
+        },
+        {
+            "file_id": "dbpedia_6088_16.txt"
+        },
+        {
+            "file_id": "dbpedia_6088_22.txt"
+        },
+        {
+            "file_id": "dbpedia_6088_23.txt"
+        },
+        {
+            "file_id": "dbpedia_6088_3.txt"
+        },
+        {
+            "file_id": "dbpedia_6088_4.txt"
+        },
+        {
+            "file_id": "dbpedia_6088_5.txt"
+        },
+        {
+            "file_id": "dbpedia_6088_7.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the answer in JSON format:\n\n{\n  \"output\": \"no\"\n}\n\nExplanation: The subject of L'inafferrabile 12 is not explicitly stated as being directed by Mario Mattoli, although he is listed as the director. However, a different document (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6088/re-ranker-msmarco/21.txt) provides information about Mario Monicelli, who is an Italian director and screenwriter. This does not directly support the triple, so the answer is \"no\"."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\n**Explanation:** The provided documents mention films and include details about directors, screenwriters, actors, and titles that align with the query. Specifically, both `5.txt` and `10.txt` reference a film titled \"L'inafferrabile 12\" directed by Mario Mattoli, which directly supports the given triple where the subject of \"L'inafferrabile 12\" is categorized under films directed by Mario Mattoli."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "L'inafferrabile 12 does not appear to be a film directed by Mario Mattoli, but rather an Italian comedy film with the same title and release year (1950), where twin brothers discover each other as adults after being separated at birth.",
+            "category": 3
+        }
+    }
+}

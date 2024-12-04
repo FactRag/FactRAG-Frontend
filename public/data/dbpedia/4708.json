@@ -1,0 +1,110 @@
+{
+    "subject": "resource/Southwest_Airlines",
+    "predicate": "property/frequentFlyer",
+    "object": "resource/Southwest_Airlines",
+    "human_readable": "Southwest Airlines has Southwest Airlines as its frequent flyer.",
+    "questions": [
+        {
+            "score": 0.9297137260437012,
+            "question": "Does Southwest Airlines use its own name for its frequent flyer program?"
+        },
+        {
+            "score": 0.909004271030426,
+            "question": "What is the frequent flyer program of Southwest Airlines called?"
+        },
+        {
+            "score": 0.7521540522575378,
+            "question": "What type of reward program is Southwest Airlines frequent flyer program?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Southwest Airlines has Southwest Airlines as its frequent flyer.",
+            "html": "dbpedia_4708_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the frequent flyer program of Southwest Airlines called?",
+            "html": "dbpedia_4708_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Southwest Airlines use its own name for its frequent flyer program?",
+            "html": "dbpedia_4708_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4708_100.txt"
+        },
+        {
+            "file_id": "dbpedia_4708_129.txt"
+        },
+        {
+            "file_id": "dbpedia_4708_130.txt"
+        },
+        {
+            "file_id": "dbpedia_4708_18.txt"
+        },
+        {
+            "file_id": "dbpedia_4708_36.txt"
+        },
+        {
+            "file_id": "dbpedia_4708_42.txt"
+        },
+        {
+            "file_id": "dbpedia_4708_43.txt"
+        },
+        {
+            "file_id": "dbpedia_4708_65.txt"
+        },
+        {
+            "file_id": "dbpedia_4708_87.txt"
+        },
+        {
+            "file_id": "dbpedia_4708_99.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple \"Southwest Airlines has Southwest Airlines as its frequent flyer\" based on the provided context information:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation:\n\n* The document at file_path \"/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4708/re-ranker-msmarco/87.txt\" mentions that Southwest Rapid Rewards is the frequent flyer program for Southwest Airlines.\n* However, this does not imply that Southwest Airlines has itself as its frequent flyer. Instead, it means that the frequent flyer program (Rapid Rewards) belongs to Southwest Airlines.\n* Therefore, the triple \"Southwest Airlines has Southwest Airlines as its frequent flyer\" is incorrect according to the documents."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: The information provided does not support the statement \"Southwest Airlines has Southwest Airlines as its frequent flyer.\" The documents discuss the Rapid Rewards program, which is the frequent flyer program for Southwest Airlines, but do not state that Southwest Airlines itself is a frequent flyer."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "It states a redundant fact. Frequent flyer programs are designed by and for airlines, so an airline having its own program is a given, not something remarkable to state.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because Southwest Airlines' frequent flyer program is called Rapid Rewards, not Southwest Airlines.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The frequent flyer program name \"Southwest Rapid Rewards\" indicates it is a separate program within the airline, not named after the airline itself.",
+            "category": 2
+        }
+    }
+}

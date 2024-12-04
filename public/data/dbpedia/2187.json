@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Ella_Fitzgerald's_Christmas",
+    "predicate": "property/label",
+    "object": "resource/Capitol_Records",
+    "human_readable": "The label of Ella Fitzgerald's Christmas is Capitol Records.",
+    "questions": [
+        {
+            "score": 0.8895928859710693,
+            "question": "Which album by Ella Fitzgerald is associated with Capitol Records?"
+        },
+        {
+            "score": 0.8070192337036133,
+            "question": "What record label released Ella Fitzgerald's Christmas album?"
+        },
+        {
+            "score": 0.7009420990943909,
+            "question": "Who recorded a Christmas album for Capitol Records?"
+        },
+        {
+            "score": 0.7001530528068542,
+            "question": "Besides Ella Fitzgerald, what other artists have albums on Capitol Records?"
+        },
+        {
+            "score": 0.5915005207061768,
+            "question": "Is Ella Fitzgerald's Christmas album popular during the holiday season?"
+        },
+        {
+            "score": 0.5206067562103271,
+            "question": "When was Ella Fitzgerald's Christmas album released?"
+        },
+        {
+            "score": 0.42763954401016235,
+            "question": "What are some other famous albums by Ella Fitzgerald?"
+        },
+        {
+            "score": 0.32802143692970276,
+            "question": "What company released Ella Fitzgerald's music?"
+        },
+        {
+            "score": 0.24685654044151306,
+            "question": "Is Capitol Records known for releasing jazz music?"
+        },
+        {
+            "score": 0.17820852994918823,
+            "question": "What type of music did Ella Fitzgerald specialize in?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The label of Ella Fitzgerald's Christmas is Capitol Records.",
+            "html": "dbpedia_2187_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Capitol Records known for releasing jazz music?",
+            "html": "dbpedia_2187_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What company released Ella Fitzgerald's music?",
+            "html": "dbpedia_2187_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some other famous albums by Ella Fitzgerald?",
+            "html": "dbpedia_2187_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2187_128.txt"
+        },
+        {
+            "file_id": "dbpedia_2187_129.txt"
+        },
+        {
+            "file_id": "dbpedia_2187_140.txt"
+        },
+        {
+            "file_id": "dbpedia_2187_142.txt"
+        },
+        {
+            "file_id": "dbpedia_2187_20.txt"
+        },
+        {
+            "file_id": "dbpedia_2187_22.txt"
+        },
+        {
+            "file_id": "dbpedia_2187_40.txt"
+        },
+        {
+            "file_id": "dbpedia_2187_5.txt"
+        },
+        {
+            "file_id": "dbpedia_2187_62.txt"
+        },
+        {
+            "file_id": "dbpedia_2187_78.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "The triple \"The label of Ella Fitzgerald's Christmas is Capitol Records\" can be evaluated as follows:\n\n* There are multiple documents mentioning Ella Fitzgerald and her Christmas albums.\n* Some documents mention the release title \"Ella Fitzgerald's Christmas\" (e.g., in document 75.txt) and also mention Capitol Records as the record label for some of Ella Fitzgerald's releases (e.g., in document 137.txt).\n* However, one document (31.txt) mentions a different release title (\"Ruby Red\") and a different record label (Verve), but it is not clear if this is another release by Ella Fitzgerald.\n* Another document (58.txt) mentions a picture disc release of \"Ella Wishes You A Swinging Christmas\" with DOL as the record label.\n\nGiven this information, we can conclude that:\n\n{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents state that the release title for both \"Ella Fitzgerald's Christmas\" and \"Ella Wishes You A Swinging Christmas\" albums is associated with Capitol Records, supporting the triple."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "Ella Fitzgerald's Christmas album has multiple labels associated with different releases.",
+            "category": 4
+        }
+    }
+}

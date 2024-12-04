@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Lake_effect_snow_advisory",
+    "predicate": "ontology/abstract",
+    "object": "A Lake Effect Snow Advisory is issued by the National Weather Service of the United States when lake effect snow may pose a hazard or is life-threatening. The snow must be completely caused by a convective snow development over a lake and not by a low pressure system. The criteria for this advisory vary from area to area.Prior to the 2008-09 winter storm season, there was the Lake-Effect Snow and Blowing Snow Advisory, specific for when blowing snow another hazard expected in the advised area. The Lake-Effect Snow Advisory for Lake-Effect Snow and Blowing Snow has since replaced it.",
+    "human_readable": "A Lake Effect Snow Advisory is issued by the National Weather Service of the United States when lake effect snow may pose a hazard or is life-threatening.",
+    "questions": [
+        {
+            "score": 0.9849854707717896,
+            "question": "When is a Lake Effect Snow Advisory issued by the National Weather Service?"
+        },
+        {
+            "score": 0.9117211699485779,
+            "question": "Who issues a Lake Effect Snow Advisory?"
+        },
+        {
+            "score": 0.8720159530639648,
+            "question": "Is a Lake Effect Snow Advisory issued for all levels of snowfall from lakes?"
+        },
+        {
+            "score": 0.8646141886711121,
+            "question": "What are the potential consequences of lake effect snow mentioned in the advisory?"
+        },
+        {
+            "score": 0.8447593450546265,
+            "question": "What type of weather event does a Lake Effect Snow Advisory warn about?"
+        },
+        {
+            "score": 0.8410599827766418,
+            "question": "What information is typically included in a Lake Effect Snow Advisory?"
+        },
+        {
+            "score": 0.8086434006690979,
+            "question": "Besides snowfall, are there other weather conditions associated with a Lake Effect Snow Advisory?"
+        },
+        {
+            "score": 0.7895767688751221,
+            "question": "What should people do when they see a Lake Effect Snow Advisory?"
+        },
+        {
+            "score": 0.7027755975723267,
+            "question": "How severe does the lake effect snow need to be to warrant an advisory?"
+        },
+        {
+            "score": 0.5544856786727905,
+            "question": "What country's National Weather Service issues this type of advisory?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=A Lake Effect Snow Advisory is issued by the National Weather Service of the United States when lake effect snow may pose a hazard or is life-threatening.",
+            "html": "dbpedia_85_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How severe does the lake effect snow need to be to warrant an advisory?",
+            "html": "dbpedia_85_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What should people do when they see a Lake Effect Snow Advisory?",
+            "html": "dbpedia_85_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Besides snowfall, are there other weather conditions associated with a Lake Effect Snow Advisory?",
+            "html": "dbpedia_85_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_85_105.txt"
+        },
+        {
+            "file_id": "dbpedia_85_128.txt"
+        },
+        {
+            "file_id": "dbpedia_85_13.txt"
+        },
+        {
+            "file_id": "dbpedia_85_130.txt"
+        },
+        {
+            "file_id": "dbpedia_85_36.txt"
+        },
+        {
+            "file_id": "dbpedia_85_55.txt"
+        },
+        {
+            "file_id": "dbpedia_85_60.txt"
+        },
+        {
+            "file_id": "dbpedia_85_82.txt"
+        },
+        {
+            "file_id": "dbpedia_85_85.txt"
+        },
+        {
+            "file_id": "dbpedia_85_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nWhile the documents describe a Lake Effect Snow Advisory as being issued when \"lake induced snows of 4+ inches are expected\", they don't state that it's issued when the snow may pose a hazard or is life-threatening. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "To evaluate whether the information in the documents supports the triple, I'll analyze the context and the query.\n\nThe query is: \"A Lake Effect Snow Advisory is issued by the National Weather Service of the United States when lake effect snow may pose a hazard or is life-threatening.\"\n\nAccording to the documents, specifically the one at file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_85/re-ranker-msmarco/29.txt:\n\n\"Lake Effect Snow Advisory: Issued by your local NWS Forecast Office when lake induced snows of 4+ inches are expected.\"\n\nThe documents do not mention that a Lake Effect Snow Advisory is issued when lake effect snow may pose a hazard or is life-threatening. Instead, it specifies the amount of snow (4+ inches) for which an advisory is issued.\n\nTherefore, based on the information in the documents, I conclude that:\n\n{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents provide information about lake effect snow advisories and other weather warnings but do not contain any statements directly related to the criteria for issuing an advisory. Specifically, they mention that a Lake Effect Snow Advisory is issued when lake induced snows of 4+ inches are expected, which does not match the given query's assertion that it is issued when lake effect snow may pose a hazard or be life-threatening."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Lake Effect Snow Advisories are issued for snowfall of 4+ inches, not when the snow may pose a hazard or be life-threatening.  That level of danger would warrant a Winter Storm Warning.",
+            "category": -1
+        },
+        "llama3.1": {
+            "reason": "A Lake Effect Snow Advisory is issued by the National Weather Service of the United States when lake induced snows of 4+ inches are expected, not that it poses a hazard or is life-threatening.",
+            "category": -1
+        },
+        "qwen2.5": {
+            "reason": "A Lake Effect Snow Advisory is issued when lake-induced snows of 4+ inches are expected, not when the snow may pose a hazard or be life-threatening. The severity threshold for the advisory is based on the amount of snow anticipated, not the potential hazards it might cause.",
+            "category": -1
+        }
+    }
+}

@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Horseshoes_(film)",
+    "predicate": "http://purl.org/linguistics/gold/hypernym",
+    "object": "resource/Film",
+    "human_readable": "Horseshoes (film) is a type of Film.",
+    "questions": [
+        {
+            "score": 0.9302489161491394,
+            "question": "Is 'Horseshoes' a type of documentary?"
+        },
+        {
+            "score": 0.9270105957984924,
+            "question": "What genre is the film 'Horseshoes'?"
+        },
+        {
+            "score": 0.8190956711769104,
+            "question": "Is there a director associated with the film 'Horseshoes'?"
+        },
+        {
+            "score": 0.7986245155334473,
+            "question": "What kind of story might the film 'Horseshoes' tell?"
+        },
+        {
+            "score": 0.7805190086364746,
+            "question": "Could 'Horseshoes' be considered a fictional film?"
+        },
+        {
+            "score": 0.7630133032798767,
+            "question": "What other types of films exist besides 'Horseshoes'?"
+        },
+        {
+            "score": 0.6026882529258728,
+            "question": "Can you name some famous actors who might have starred in a film called 'Horseshoes'?"
+        },
+        {
+            "score": 0.5980584621429443,
+            "question": "Do you know any films with similar titles to 'Horseshoes'?"
+        },
+        {
+            "score": 0.5258593559265137,
+            "question": "Where might you be able to watch the film 'Horseshoes'?"
+        },
+        {
+            "score": 0.5044787526130676,
+            "question": "What year was the film 'Horseshoes' likely released?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Horseshoes (film) is a type of Film.",
+            "html": "dbpedia_350_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where might you be able to watch the film 'Horseshoes'?",
+            "html": "dbpedia_350_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Do you know any films with similar titles to 'Horseshoes'?",
+            "html": "dbpedia_350_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you name some famous actors who might have starred in a film called 'Horseshoes'?",
+            "html": "dbpedia_350_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_350_10.txt"
+        },
+        {
+            "file_id": "dbpedia_350_109.txt"
+        },
+        {
+            "file_id": "dbpedia_350_14.txt"
+        },
+        {
+            "file_id": "dbpedia_350_16.txt"
+        },
+        {
+            "file_id": "dbpedia_350_24.txt"
+        },
+        {
+            "file_id": "dbpedia_350_27.txt"
+        },
+        {
+            "file_id": "dbpedia_350_30.txt"
+        },
+        {
+            "file_id": "dbpedia_350_31.txt"
+        },
+        {
+            "file_id": "dbpedia_350_45.txt"
+        },
+        {
+            "file_id": "dbpedia_350_51.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the context information provided, here's the evaluation:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nThis is because none of the documents explicitly mention that \"Horseshoes (film)\" is a type of film. The document from file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_350/re-ranker-msmarco/44.txt only mentions it as a title, and another document from file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_350/re-ranker-msmarco/107.txt describes the content of the film but does not categorize it."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nExplanation: The document `44.txt` provides a brief plot summary for the film \"Horseshoes,\" confirming that it is indeed a type of film, even though the specific year and detailed plot are not provided. This supports the statement that \"Horseshoes (film) is a type of Film.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The film Horseshoes (1963) is described as a documentary or educational film, with the title being misleading since it refers to a specific craft rather than the overall content of the film.",
+            "category": 3
+        }
+    }
+}

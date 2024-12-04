@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Adam_Soilleux",
+    "predicate": "property/name",
+    "object": "Soilleux, Adam",
+    "human_readable": "The name of Adam Soilleux is Soilleux, Adam.",
+    "questions": [
+        {
+            "score": 0.9654211401939392,
+            "question": "What is the full name of Adam Soilleux?"
+        },
+        {
+            "score": 0.95771723985672,
+            "question": "What is Adam Soilleux's surname?"
+        },
+        {
+            "score": 0.9529760479927063,
+            "question": "What is Adam Soilleux's given name?"
+        },
+        {
+            "score": 0.9197127223014832,
+            "question": "Is 'Soilleux' Adam's first or last name?"
+        },
+        {
+            "score": 0.8892505168914795,
+            "question": "Which part of Adam Soilleux's name comes first?"
+        },
+        {
+            "score": 0.8547272086143494,
+            "question": "If you were to introduce Adam Soilleux, how would you say his name?"
+        },
+        {
+            "score": 0.8437183499336243,
+            "question": "In what order should the parts of Adam Soilleux's name be written?"
+        },
+        {
+            "score": 0.8057014346122742,
+            "question": "How should Adam Soilleux's name be written formally?"
+        },
+        {
+            "score": 0.8038842082023621,
+            "question": "If you saw 'Soilleux, Adam' on a document, who would it refer to?"
+        },
+        {
+            "score": 0.6858483552932739,
+            "question": "What is the difference between 'Soilleux' and 'Adam Soilleux'?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of Adam Soilleux is Soilleux, Adam.",
+            "html": "dbpedia_3377_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If you saw 'Soilleux, Adam' on a document, who would it refer to?",
+            "html": "dbpedia_3377_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How should Adam Soilleux's name be written formally?",
+            "html": "dbpedia_3377_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In what order should the parts of Adam Soilleux's name be written?",
+            "html": "dbpedia_3377_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3377_1.txt"
+        },
+        {
+            "file_id": "dbpedia_3377_12.txt"
+        },
+        {
+            "file_id": "dbpedia_3377_15.txt"
+        },
+        {
+            "file_id": "dbpedia_3377_22.txt"
+        },
+        {
+            "file_id": "dbpedia_3377_23.txt"
+        },
+        {
+            "file_id": "dbpedia_3377_28.txt"
+        },
+        {
+            "file_id": "dbpedia_3377_30.txt"
+        },
+        {
+            "file_id": "dbpedia_3377_39.txt"
+        },
+        {
+            "file_id": "dbpedia_3377_47.txt"
+        },
+        {
+            "file_id": "dbpedia_3377_72.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'} \n```  \n\n\nThe provided text states that Adam Soilleux's full name is Adam Soilleux. \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation of the triple:\n\n* Subj: Adam Soilleux\n* Pred: surname\n* Obj: Soilleux\n\nThe documents contain information that supports this triple. Specifically, document \"file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3377/re-ranker-msmarco/28.txt\" states:\n\n\"Surname Soilleux\"\n\nand document \"file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3377/re-ranker-msmarco/72.txt\" mentions:\n\n\"Ex Loughborough players Adam Soilleux is also representing the visitors.\"\n\nSo, the answer is:\n\n{'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: According to the provided context information, Adam Soilleux's surname and cognomen are mentioned as \"Soilleux.\" Although not explicitly stated in the format \"Soilleux, Adam,\" it can be reasonably inferred that \"Adam Soilleux\" refers to a person whose last name is \"Soilleux.\" Therefore, the triple \"The name of Adam Soilleux is Soilleux, Adam\" is supported by the documents."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {'output': 'yes'}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The context provides the full name of Adam Soilleux, which is already given as 'Adam Soilleux', so it is unnecessary and redundant to state that his name is 'Soilleux, Adam'.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The surname \"Soilleux\" does not match the first name \"Adam\", which implies that Adam Soilleux's surname is actually \"Soilleux\" but his given name is \"Adam\", not \"Soilleux\".",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The given context clearly states that Adam Soilleux's full name is Adam Soilleux, indicating that \"Soilleux\" is his surname and \"Adam\" is his given name. Therefore, it would be incorrect to reverse these and state his name as \"Soilleux, Adam.\"",
+            "category": 2
+        }
+    }
+}

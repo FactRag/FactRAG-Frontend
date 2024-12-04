@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Luis_Cruz",
+    "predicate": "property/team",
+    "object": "Chiba Lotte Marines",
+    "human_readable": "Luis Cruz plays for Chiba Lotte Marines.",
+    "questions": [
+        {
+            "score": 0.7936835289001465,
+            "question": "Who does Luis Cruz play for?"
+        },
+        {
+            "score": 0.7497131824493408,
+            "question": "Where do the Chiba Lotte Marines play?"
+        },
+        {
+            "score": 0.7061090469360352,
+            "question": "What position does Luis Cruz play?"
+        },
+        {
+            "score": 0.6157531142234802,
+            "question": "Can you name another player on the Chiba Lotte Marines?"
+        },
+        {
+            "score": 0.4553154408931732,
+            "question": "In what sport does Luis Cruz participate?"
+        },
+        {
+            "score": 0.4378940761089325,
+            "question": "What team is Luis Cruz associated with?"
+        },
+        {
+            "score": 0.4211302399635315,
+            "question": "Is Luis Cruz a famous player?"
+        },
+        {
+            "score": 0.38579869270324707,
+            "question": "Is Luis Cruz a professional athlete?"
+        },
+        {
+            "score": 0.32831069827079773,
+            "question": "What league is the Chiba Lotte Marines part of?"
+        },
+        {
+            "score": 0.2352548986673355,
+            "question": "Does Luis Cruz play in Japan?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Luis Cruz plays for Chiba Lotte Marines.",
+            "html": "dbpedia_4773_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What league is the Chiba Lotte Marines part of?",
+            "html": "dbpedia_4773_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Luis Cruz a professional athlete?",
+            "html": "dbpedia_4773_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Luis Cruz a famous player?",
+            "html": "dbpedia_4773_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4773_13.txt"
+        },
+        {
+            "file_id": "dbpedia_4773_17.txt"
+        },
+        {
+            "file_id": "dbpedia_4773_18.txt"
+        },
+        {
+            "file_id": "dbpedia_4773_22.txt"
+        },
+        {
+            "file_id": "dbpedia_4773_25.txt"
+        },
+        {
+            "file_id": "dbpedia_4773_30.txt"
+        },
+        {
+            "file_id": "dbpedia_4773_33.txt"
+        },
+        {
+            "file_id": "dbpedia_4773_57.txt"
+        },
+        {
+            "file_id": "dbpedia_4773_75.txt"
+        },
+        {
+            "file_id": "dbpedia_4773_92.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the context information, I will evaluate whether the statement \"Luis Cruz plays for Chiba Lotte Marines\" is supported by the documents.\n\nHere's my evaluation:\n\n* File_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4773/re-ranker-msmarco/18.txt, 32.txt and 13.txt all mention Luis Cruz playing for Chiba Lotte Marines. \n* File_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4773/re-ranker-msmarco/17.txt mentions that Luis Cruz played in Nippon Professional Baseball (NPB) for the Chiba Lotte Marines, among other teams.\n\nTherefore, the statement \"Luis Cruz plays for Chiba Lotte Marines\" is supported by the documents, and the answer should be:\n\n`{'output': 'yes'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents mention that the Chiba Lotte Marines signed Luis Cruz to a contract and have re-signed him, indicating that he plays for them."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

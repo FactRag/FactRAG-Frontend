@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Tomorrow_Wendy",
+    "predicate": "ontology/publisher",
+    "object": "resource/IUniverse",
+    "human_readable": "Tomorrow Wendy was published by IUniverse.",
+    "questions": [
+        {
+            "score": 0.8332014679908752,
+            "question": "Who published the book 'Tomorrow Wendy'?"
+        },
+        {
+            "score": 0.8212206363677979,
+            "question": "When was 'Tomorrow Wendy' published?"
+        },
+        {
+            "score": 0.7248129844665527,
+            "question": "By whom was the book 'Tomorrow Wendy' written?"
+        },
+        {
+            "score": 0.513925313949585,
+            "question": "What is the title of the book published by IUniverse?"
+        },
+        {
+            "score": 0.4387854039669037,
+            "question": "Are there other books published by IUniverse?"
+        },
+        {
+            "score": 0.3849065899848938,
+            "question": "Can you tell me more about the book 'Tomorrow Wendy'?"
+        },
+        {
+            "score": 0.3720850944519043,
+            "question": "What is the main theme of 'Tomorrow Wendy'?"
+        },
+        {
+            "score": 0.3285400867462158,
+            "question": "What type of publishing house is IUniverse?"
+        },
+        {
+            "score": 0.24471747875213623,
+            "question": "What genres of books does IUniverse typically publish?"
+        },
+        {
+            "score": 0.2049247920513153,
+            "question": "Is there a website for IUniverse?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Tomorrow Wendy was published by IUniverse.",
+            "html": "dbpedia_1573_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What genres of books does IUniverse typically publish?",
+            "html": "dbpedia_1573_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of publishing house is IUniverse?",
+            "html": "dbpedia_1573_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the main theme of 'Tomorrow Wendy'?",
+            "html": "dbpedia_1573_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1573_112.txt"
+        },
+        {
+            "file_id": "dbpedia_1573_123.txt"
+        },
+        {
+            "file_id": "dbpedia_1573_2.txt"
+        },
+        {
+            "file_id": "dbpedia_1573_21.txt"
+        },
+        {
+            "file_id": "dbpedia_1573_46.txt"
+        },
+        {
+            "file_id": "dbpedia_1573_53.txt"
+        },
+        {
+            "file_id": "dbpedia_1573_60.txt"
+        },
+        {
+            "file_id": "dbpedia_1573_70.txt"
+        },
+        {
+            "file_id": "dbpedia_1573_9.txt"
+        },
+        {
+            "file_id": "dbpedia_1573_99.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have any other triples to evaluate!"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the answer in the form of a structured JSON format:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents do not mention that \"Tomorrow Wendy\" was published by IUniverse. In fact, one of the documents mentions that \"Tomorrow Wendy : A Love Story\" was published by Delacorte Press (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1573/re-ranker-msmarco/122.txt)."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents mention that \"Tomorrow Wendy : A Love Story\" is published by Iuniverse, which aligns with the statement \"Tomorrow Wendy was published by IUniverse.\" Note that the documents do not provide explicit information about the author of \"Tomorrow Wendy : A Love Story,\" but the query does not ask for the authorship."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The other sources (3 and 5) mention the correct publisher of \"Tomorrow Wendy\" as Delacorte Press.",
+            "category": 2
+        }
+    }
+}

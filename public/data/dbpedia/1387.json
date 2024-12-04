@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Michael_Wenczel",
+    "predicate": "property/dateOfBirth",
+    "object": "1977-11-23",
+    "human_readable": "Michael Wenczel was born on November 23, 1977.",
+    "questions": [
+        {
+            "score": 0.9688364267349243,
+            "question": "Was Michael Wenczel born before or after November 20th, 1977?"
+        },
+        {
+            "score": 0.8938443064689636,
+            "question": "When was Michael Wenczel born?"
+        },
+        {
+            "score": 0.7846649289131165,
+            "question": "What is Michael Wenczel's birthdate?"
+        },
+        {
+            "score": 0.7413753271102905,
+            "question": "On which day of the month was Michael Wenczel born?"
+        },
+        {
+            "score": 0.6784761548042297,
+            "question": "What month and day was Michael Wenczel born?"
+        },
+        {
+            "score": 0.5285437107086182,
+            "question": "Is Michael Wenczel's birthday in the summer or winter?"
+        },
+        {
+            "score": 0.47713497281074524,
+            "question": "What is Michael Wenczel's birth date expressed as month and day?"
+        },
+        {
+            "score": 0.471309632062912,
+            "question": "In what year did Michael Wenczel come into the world?"
+        },
+        {
+            "score": 0.4354347288608551,
+            "question": "If today is October 27th, 2023, how old is Michael Wenczel?"
+        },
+        {
+            "score": 0.32823991775512695,
+            "question": "How many years old was Michael Wenczel in the year 2000?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Michael Wenczel was born on November 23, 1977.",
+            "html": "dbpedia_1387_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If today is October 27th, 2023, how old is Michael Wenczel?",
+            "html": "dbpedia_1387_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In what year did Michael Wenczel come into the world?",
+            "html": "dbpedia_1387_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Michael Wenczel's birth date expressed as month and day?",
+            "html": "dbpedia_1387_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1387_11.txt"
+        },
+        {
+            "file_id": "dbpedia_1387_16.txt"
+        },
+        {
+            "file_id": "dbpedia_1387_37.txt"
+        },
+        {
+            "file_id": "dbpedia_1387_43.txt"
+        },
+        {
+            "file_id": "dbpedia_1387_46.txt"
+        },
+        {
+            "file_id": "dbpedia_1387_53.txt"
+        },
+        {
+            "file_id": "dbpedia_1387_59.txt"
+        },
+        {
+            "file_id": "dbpedia_1387_87.txt"
+        },
+        {
+            "file_id": "dbpedia_1387_94.txt"
+        },
+        {
+            "file_id": "dbpedia_1387_99.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the answer in JSON format:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThis response indicates that the information in the documents does not support the triple that Michael Wenczel was born on November 23, 1977. The documents actually contain two birthdates for Michael Wenczel: November 23, 1977 (from the Buzzlearn.com article and one of the other documents), but also mention that he was \"born in the year of 1977\" without specifying the month or day, which could be interpreted as a conflicting information."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\nThe documents provided contain information about Michael Wenczel's date of birth as November 23, 1977. Therefore, the statement that Michael Wenczel was born on November 23, 1977, is supported by the given context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The context information from multiple sources consistently states that Michael Wenczel was born on November 23, 1977.",
+            "category": 2
+        }
+    }
+}

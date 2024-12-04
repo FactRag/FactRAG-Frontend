@@ -1,0 +1,102 @@
+{
+    "subject": "resource/Patrick_Joseph_Sullivan",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "Patrick Joseph Sullivan",
+    "human_readable": "The label of Patrick Joseph Sullivan is Patrick Joseph Sullivan.",
+    "questions": [
+        {
+            "score": 0.9869325757026672,
+            "question": "Is 'Patrick Joseph Sullivan' a label?"
+        },
+        {
+            "score": 0.9121589064598083,
+            "question": "What is the name of Patrick Joseph Sullivan?"
+        },
+        {
+            "score": 0.8994322419166565,
+            "question": "Who or what is referred to as 'Patrick Joseph Sullivan'?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The label of Patrick Joseph Sullivan is Patrick Joseph Sullivan.",
+            "html": "dbpedia_4870_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of Patrick Joseph Sullivan?",
+            "html": "dbpedia_4870_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is 'Patrick Joseph Sullivan' a label?",
+            "html": "dbpedia_4870_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4870_13.txt"
+        },
+        {
+            "file_id": "dbpedia_4870_33.txt"
+        },
+        {
+            "file_id": "dbpedia_4870_4.txt"
+        },
+        {
+            "file_id": "dbpedia_4870_60.txt"
+        },
+        {
+            "file_id": "dbpedia_4870_61.txt"
+        },
+        {
+            "file_id": "dbpedia_4870_66.txt"
+        },
+        {
+            "file_id": "dbpedia_4870_7.txt"
+        },
+        {
+            "file_id": "dbpedia_4870_78.txt"
+        },
+        {
+            "file_id": "dbpedia_4870_88.txt"
+        },
+        {
+            "file_id": "dbpedia_4870_94.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have more triples to evaluate! I'm ready. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple \"The label of Patrick Joseph Sullivan is Patrick Joseph Sullivan.\":\n\n`{'output': 'no'}`\n\nExplanation:\nThe documents mention several individuals with the name \"Patrick Joseph Sullivan\", including:\n\n* A Chief Financial Officer at New Vision Television and a founder and CFO of US Broadcast Group (93.txt)\n* The husband of Elizabeth Carlson Sullivan who passed away in 2024 (87.txt, 32.txt)\n* An active union organizer and supporter of Democratic candidates (93.txt)\n\nHowever, none of the documents provide explicit information about an individual named \"Patrick Joseph Sullivan\" being a different person from the ones mentioned above. Therefore, it is likely that the triple is incorrect, and the value should be 'no'."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide multiple references to an individual named \"Patrick Joseph Sullivan,\" thus supporting the assertion that the label of Patrick Joseph Sullivan is indeed \"Patrick Joseph Sullivan.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The context provides multiple information about different individuals with the name Patrick Joseph Sullivan (or variations), but only one of them matches the provided characteristics, which suggests that there are multiple individuals with the same name, and therefore, the label \"Patrick Joseph Sullivan\" cannot be uniquely attributed to a single individual.",
+            "category": 2
+        }
+    }
+}

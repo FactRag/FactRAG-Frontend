@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Lionel_Messi",
+    "predicate": "property/nationalteam",
+    "object": "resource/Argentina_national_football_team",
+    "human_readable": "Lionel Messi plays for the Argentina national football team.",
+    "questions": [
+        {
+            "score": 0.9145628213882446,
+            "question": "For how many years has Lionel Messi been playing for the Argentina national team?"
+        },
+        {
+            "score": 0.901421070098877,
+            "question": "For which national football team does Lionel Messi play?"
+        },
+        {
+            "score": 0.8011318445205688,
+            "question": "What are some of Lionel Messi's most notable achievements with the Argentina national team?"
+        },
+        {
+            "score": 0.7260074615478516,
+            "question": "What country's national football team does Lionel Messi represent?"
+        },
+        {
+            "score": 0.6076674461364746,
+            "question": "Is Lionel Messi a member of any national teams?"
+        },
+        {
+            "score": 0.5052505135536194,
+            "question": "What sport is Lionel Messi known for?"
+        },
+        {
+            "score": 0.41863149404525757,
+            "question": "What position does Lionel Messi play on the field?"
+        },
+        {
+            "score": 0.40543344616889954,
+            "question": "What is Lionel Messi's nationality?"
+        },
+        {
+            "score": 0.30694347620010376,
+            "question": "Is Lionel Messi considered one of the greatest football players of all time?"
+        },
+        {
+            "score": 0.24592779576778412,
+            "question": "Has Lionel Messi won any major international tournaments?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Lionel Messi plays for the Argentina national football team.",
+            "html": "dbpedia_5753_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Lionel Messi considered one of the greatest football players of all time?",
+            "html": "dbpedia_5753_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Lionel Messi's nationality?",
+            "html": "dbpedia_5753_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What position does Lionel Messi play on the field?",
+            "html": "dbpedia_5753_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5753_104.txt"
+        },
+        {
+            "file_id": "dbpedia_5753_111.txt"
+        },
+        {
+            "file_id": "dbpedia_5753_114.txt"
+        },
+        {
+            "file_id": "dbpedia_5753_115.txt"
+        },
+        {
+            "file_id": "dbpedia_5753_12.txt"
+        },
+        {
+            "file_id": "dbpedia_5753_153.txt"
+        },
+        {
+            "file_id": "dbpedia_5753_29.txt"
+        },
+        {
+            "file_id": "dbpedia_5753_32.txt"
+        },
+        {
+            "file_id": "dbpedia_5753_41.txt"
+        },
+        {
+            "file_id": "dbpedia_5753_7.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation of the triple \"Lionel Messi plays for the Argentina national football team\" according to the documents:\n\n{\n  \"output\": \"yes\"\n}\n\nExplanation:\n\n* The triple is supported by multiple documents, including:\n\t+ file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5753/re-ranker-msmarco/37.txt: \"Lionel Messi plays as a forward and captain both Inter Miami C.F. and the Argentina National Football Team.\"\n\t+ file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5753/re-ranker-msmarco/12.txt: \"He captains the Argentina national team...\"\n\t+ file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5753/re-ranker-msmarco/103.txt: \"...Messi plays forward for Barcelona FC as well as for Argentina's national team.\"\n* The information in these documents consistently states that Lionel Messi is a member of the Argentina national football team, making the triple true."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\nThe documents provide multiple references that support the statement \"Lionel Messi plays for the Argentina national football team.\" For example, in `109.txt`, it mentions his win at the 2008 Olympic gold medal. In `37.txt`, it states he \"plays as a forward and captain both Inter Miami C.F. and the Argentina National Football Team.\" Additionally, `12.txt` also confirms that Messi \"captains the Argentina national team,\" and `7.txt` discusses his decision to return to play for the Argentine national football team. Therefore, the information in the documents supports the given triple."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

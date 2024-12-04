@@ -1,0 +1,134 @@
+{
+    "subject": "resource/TransAdelaide",
+    "predicate": "ontology/successor",
+    "object": "resource/Adelaide_Metro",
+    "human_readable": "The successor of TransAdelaide is Adelaide Metro.",
+    "questions": [
+        {
+            "score": 0.8213974237442017,
+            "question": "Is Adelaide Metro a newer system than TransAdelaide?"
+        },
+        {
+            "score": 0.6120288968086243,
+            "question": "Which public transportation system replaced TransAdelaide?"
+        },
+        {
+            "score": 0.5377219319343567,
+            "question": "What was the name of the system that preceded Adelaide Metro?"
+        },
+        {
+            "score": 0.4581484794616699,
+            "question": "If you were traveling in Adelaide, would you use Adelaide Metro?"
+        },
+        {
+            "score": 0.2630932033061981,
+            "question": "What is the current name of Adelaide's public transportation system?"
+        },
+        {
+            "score": 0.217687726020813,
+            "question": "What does 'successor' mean in this context?"
+        },
+        {
+            "score": 0.021526027470827103,
+            "question": "Can you name two features of a public transportation system?"
+        },
+        {
+            "score": 0.020860396325588226,
+            "question": "How might the name of a public transportation system reflect its location or history?"
+        },
+        {
+            "score": 0.01975092478096485,
+            "question": "Do you think it is important for cities to have efficient public transportation systems?"
+        },
+        {
+            "score": 0.013932534493505955,
+            "question": "What are some reasons why people might choose to use public transportation?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The successor of TransAdelaide is Adelaide Metro.",
+            "html": "dbpedia_6465_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Do you think it is important for cities to have efficient public transportation systems?",
+            "html": "dbpedia_6465_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How might the name of a public transportation system reflect its location or history?",
+            "html": "dbpedia_6465_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you name two features of a public transportation system?",
+            "html": "dbpedia_6465_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6465_16.txt"
+        },
+        {
+            "file_id": "dbpedia_6465_20.txt"
+        },
+        {
+            "file_id": "dbpedia_6465_24.txt"
+        },
+        {
+            "file_id": "dbpedia_6465_29.txt"
+        },
+        {
+            "file_id": "dbpedia_6465_37.txt"
+        },
+        {
+            "file_id": "dbpedia_6465_43.txt"
+        },
+        {
+            "file_id": "dbpedia_6465_44.txt"
+        },
+        {
+            "file_id": "dbpedia_6465_47.txt"
+        },
+        {
+            "file_id": "dbpedia_6465_5.txt"
+        },
+        {
+            "file_id": "dbpedia_6465_7.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have any other queries! I'm ready to analyze more triples based on the provided context.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "{\n  \"output\": \"yes\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents mention that Adelaide Metro is the public transport system replacing or integrating services previously managed by entities like TransAdelaide. For example, from the document `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6465/re-ranker-msmarco/14.txt`, we see \"Adelaide Metro began in 2000 with the privatisation of existing government-operated bus and train routes. The Glenelg tram, the only of Adelaide's tramways to survive the 1950s, was also integrated into the current system.\" This indicates that services previously under TransAdelaide were integrated or taken over by Adelaide Metro, supporting the statement that the successor of TransAdelaide is indeed Adelaide Metro."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n      \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "TransAdelaide and Adelaide Metro are not successors of each other. TransAdelaide was a government organization that provided train, tram, and bus services from 1994 to 2017, while Adelaide Metro is the public transport system established in 2000 after the privatization of existing government-operated routes, which includes TransAdelaide. Therefore, they are not successors but rather different entities operating at different times in Adelaide's public transportation history.",
+            "category": 2
+        }
+    }
+}

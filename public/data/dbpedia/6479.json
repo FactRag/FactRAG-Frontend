@@ -1,0 +1,142 @@
+{
+    "subject": "resource/J\u014dshin-etsu_Expressway",
+    "predicate": "property/cities",
+    "object": "resource/Chikuma,_Nagano",
+    "human_readable": "The J\u014dshin-etsu Expressway serves the city of Chikuma, Nagano.",
+    "questions": [
+        {
+            "score": 0.9499274492263794,
+            "question": "What city does the J\u014dshin-etsu Expressway serve?"
+        },
+        {
+            "score": 0.7439811825752258,
+            "question": "Are there any notable landmarks near the J\u014dshin-etsu Expressway?"
+        },
+        {
+            "score": 0.6567115783691406,
+            "question": "What is the primary function of the J\u014dshin-etsu Expressway?"
+        },
+        {
+            "score": 0.6456172466278076,
+            "question": "When was the J\u014dshin-etsu Expressway built?"
+        },
+        {
+            "score": 0.6363339424133301,
+            "question": "What type of infrastructure is the J\u014dshin-etsu Expressway?"
+        },
+        {
+            "score": 0.5527318716049194,
+            "question": "Is the J\u014dshin-etsu Expressway a highway?"
+        },
+        {
+            "score": 0.5423120856285095,
+            "question": "In which prefecture is Chikuma located?"
+        },
+        {
+            "score": 0.5224800109863281,
+            "question": "What is the length of the J\u014dshin-etsu Expressway?"
+        },
+        {
+            "score": 0.5056960582733154,
+            "question": "How does the J\u014dshin-etsu Expressway connect to other transportation networks?"
+        },
+        {
+            "score": 0.4193391501903534,
+            "question": "Does the J\u014dshin-etsu Expressway have any toll stations?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The J\u014dshin-etsu Expressway serves the city of Chikuma, Nagano.",
+            "html": "dbpedia_6479_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How does the J\u014dshin-etsu Expressway connect to other transportation networks?",
+            "html": "dbpedia_6479_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the length of the J\u014dshin-etsu Expressway?",
+            "html": "dbpedia_6479_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In which prefecture is Chikuma located?",
+            "html": "dbpedia_6479_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6479_13.txt"
+        },
+        {
+            "file_id": "dbpedia_6479_17.txt"
+        },
+        {
+            "file_id": "dbpedia_6479_18.txt"
+        },
+        {
+            "file_id": "dbpedia_6479_2.txt"
+        },
+        {
+            "file_id": "dbpedia_6479_20.txt"
+        },
+        {
+            "file_id": "dbpedia_6479_33.txt"
+        },
+        {
+            "file_id": "dbpedia_6479_44.txt"
+        },
+        {
+            "file_id": "dbpedia_6479_53.txt"
+        },
+        {
+            "file_id": "dbpedia_6479_55.txt"
+        },
+        {
+            "file_id": "dbpedia_6479_7.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe provided documents don't explicitly state that the J\u014dshin-etsu Expressway serves Chikuma, Nagano.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation:\n\n{\n  \"output\": \"no\"\n}\n\nExplanation: According to the documents, the J\u014dshin-etsu Expressway is mentioned in relation to accessing various areas, including Tsunan and the Shin-etsu Trail. However, there is no mention of it serving the city of Chikuma, Nagano. In fact, one document mentions getting onto the J\u014dshin-etsu Expressway from the K\u00c5\u008dshoku Junction toward Nagano and Shin-etsu, but does not specify that it serves Chikuma, Nagano specifically."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: There is no information in the provided context about the J\u014dshin-etsu Expressway serving the city of Chikuma, Nagano. The documents mention the J\u014dshin-etsu Expressway and how to travel via it but do not specify any cities served by it other than implying routes towards Shin-etsu Trail areas."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "The provided text focuses on transportation infrastructure related to the 1998 Winter Olympics and the Shin-etsu Trail, with no mention of Chikuma city or its connection to the J\u014dshin-etsu Expressway.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The context information does not mention Chikuma, Nagano at all.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information mentions the J\u014dshin-etsu Expressway as serving Nagano, not specifically Chikuma. It details routes and exits related to Nagano city, including the Toyota-Iiyama IC for accessing areas of the Shin-etsu Trail.",
+            "category": 2
+        }
+    }
+}

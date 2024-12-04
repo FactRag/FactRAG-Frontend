@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Shringar_Nagaraj",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:People_from_Bangalore",
+    "human_readable": "Shringar Nagaraj is about people from Bangalore.",
+    "questions": [
+        {
+            "score": 0.9770591855049133,
+            "question": "What kind of information does Shringar Nagaraj provide about people from Bangalore?"
+        },
+        {
+            "score": 0.9042308926582336,
+            "question": "Where are the people in Shringar Nagaraj from?"
+        },
+        {
+            "score": 0.8423319458961487,
+            "question": "What is Shringar Nagaraj about?"
+        },
+        {
+            "score": 0.7981873750686646,
+            "question": "How could Shringar Nagaraj be helpful in understanding Bangalore culture?"
+        },
+        {
+            "score": 0.7788680195808411,
+            "question": "Are there other works similar to Shringar Nagaraj about people from different cities?"
+        },
+        {
+            "score": 0.6346429586410522,
+            "question": "Who created Shringar Nagaraj?"
+        },
+        {
+            "score": 0.5376871824264526,
+            "question": "Why might someone be interested in Shringar Nagaraj?"
+        },
+        {
+            "score": 0.5192826390266418,
+            "question": "Can you give an example of a topic covered in Shringar Nagaraj?"
+        },
+        {
+            "score": 0.4328731894493103,
+            "question": "Is Shringar Nagaraj a book or a type of media?"
+        },
+        {
+            "score": 0.3947640359401703,
+            "question": "What is Bangalore known for?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Shringar Nagaraj is about people from Bangalore.",
+            "html": "dbpedia_1359_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Shringar Nagaraj a book or a type of media?",
+            "html": "dbpedia_1359_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you give an example of a topic covered in Shringar Nagaraj?",
+            "html": "dbpedia_1359_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Why might someone be interested in Shringar Nagaraj?",
+            "html": "dbpedia_1359_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1359_19.txt"
+        },
+        {
+            "file_id": "dbpedia_1359_26.txt"
+        },
+        {
+            "file_id": "dbpedia_1359_29.txt"
+        },
+        {
+            "file_id": "dbpedia_1359_4.txt"
+        },
+        {
+            "file_id": "dbpedia_1359_42.txt"
+        },
+        {
+            "file_id": "dbpedia_1359_5.txt"
+        },
+        {
+            "file_id": "dbpedia_1359_55.txt"
+        },
+        {
+            "file_id": "dbpedia_1359_56.txt"
+        },
+        {
+            "file_id": "dbpedia_1359_64.txt"
+        },
+        {
+            "file_id": "dbpedia_1359_74.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "To evaluate whether the information in the documents supports the triple \"Shringar Nagaraj is about people from Bangalore\", we need to check if any of the documents mention that Shringar Nagaraj was born or associated with Bangalore.\n\nUpon reviewing the provided context, I find that:\n\n* File_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1359/re-ranker-msmarco/18.txt mentions that \"Shringar Nagaraj was born on July 16, 1939, in Bengaluru, Karnataka, India.\"\n* File_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1359/re-ranker-msmarco/25.txt mentions that Shringar Nagaraj's \"Place Of Birth\" is Bangalore, Karnataka.\n\nBased on this information, I can conclude that the triple is supported by the documents.\n\nTherefore, my response in the structured JSON format is:\n```\n{\n  \"output\": \"yes\"\n}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide information about Shringar Nagaraj, including his birthplace being Bangalore, Karnataka, India. Therefore, the statement \"Shringar Nagaraj is about people from Bangalore\" can be considered correct based on the given context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Several pieces of information explicitly state Shringar Nagaraj was born in Bengaluru, Karnataka.",
+            "category": 2
+        }
+    }
+}

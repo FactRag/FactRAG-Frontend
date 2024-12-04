@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Newcastle,_New_South_Wales",
+    "predicate": "property/density",
+    "object": "1103",
+    "human_readable": "The density of Newcastle, New South Wales is 1103.",
+    "questions": [
+        {
+            "score": 0.9304015040397644,
+            "question": "What is the density of Newcastle, New South Wales?"
+        },
+        {
+            "score": 0.9144576191902161,
+            "question": "How dense is Newcastle, New South Wales?"
+        },
+        {
+            "score": 0.8004587292671204,
+            "question": "Is Newcastle, New South Wales a densely populated area?"
+        },
+        {
+            "score": 0.6524704694747925,
+            "question": "What unit of measurement is used for the density of Newcastle?"
+        },
+        {
+            "score": 0.6213372945785522,
+            "question": "Compare the density of Newcastle to other Australian cities."
+        },
+        {
+            "score": 0.5894301533699036,
+            "question": "How has the density of Newcastle changed over time?"
+        },
+        {
+            "score": 0.566640317440033,
+            "question": "Are there any areas within Newcastle with significantly different densities?"
+        },
+        {
+            "score": 0.539945662021637,
+            "question": "What factors contribute to the high density of Newcastle?"
+        },
+        {
+            "score": 0.5129456520080566,
+            "question": "How does the density of Newcastle compare to global averages?"
+        },
+        {
+            "score": 0.5035172700881958,
+            "question": "What are the implications of a high population density in Newcastle?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The density of Newcastle, New South Wales is 1103.",
+            "html": "dbpedia_5377_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How does the density of Newcastle compare to global averages?",
+            "html": "dbpedia_5377_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What factors contribute to the high density of Newcastle?",
+            "html": "dbpedia_5377_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any areas within Newcastle with significantly different densities?",
+            "html": "dbpedia_5377_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5377_18.txt"
+        },
+        {
+            "file_id": "dbpedia_5377_27.txt"
+        },
+        {
+            "file_id": "dbpedia_5377_4.txt"
+        },
+        {
+            "file_id": "dbpedia_5377_47.txt"
+        },
+        {
+            "file_id": "dbpedia_5377_63.txt"
+        },
+        {
+            "file_id": "dbpedia_5377_70.txt"
+        },
+        {
+            "file_id": "dbpedia_5377_85.txt"
+        },
+        {
+            "file_id": "dbpedia_5377_90.txt"
+        },
+        {
+            "file_id": "dbpedia_5377_91.txt"
+        },
+        {
+            "file_id": "dbpedia_5377_94.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation:\n\n* \"The density of Newcastle, New South Wales is 1103.\"\n* This statement can be represented as a triple: (Newcastle, New South Wales, population density is 1103)\n* Looking at the provided context information, we see that:\n\t+ In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5377/re-ranker-msmarco/18.txt, it is mentioned that \"Newcastle\u2019s population density is 1,103 people per kilometer...\"\n* So, the answer to this triple is: {'output': 'yes'}\n\nHere is the JSON response:\n\n```\n{\n  \"output\": \"yes\"\n}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe document states, \"Newcastle\u2019s population density is 1,103 people per kilometer,\" which supports the given statement."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Several sources state population densities for Newcastle and Lake Macquarie ranging from 427.89 to 593.6 residents per square kilometer,  while the given density of 1103 people per kilometer is significantly higher than these figures.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The given information states that the population density of Newcastle is 427.89 people per kilometer squared (p/km\u00b2) as of 2017, which later changes to a different figure when considering future population growth rates, but it never mentions or implies a figure of 1103 people per kilometer.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information states that the population density of Newcastle is 1,103 people per kilometer, not 1,103.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Korean_War",
+    "predicate": "property/casualties",
+    "object": "Total: 178,426 dead and 32,925 missing",
+    "human_readable": "The Korean War had a total of 178,426 dead and 32,925 missing.",
+    "questions": [
+        {
+            "score": 0.6842826008796692,
+            "question": "Approximately how many individuals went missing during the Korean War?"
+        },
+        {
+            "score": 0.5900645852088928,
+            "question": "What was the total number of casualties in the Korean War?"
+        },
+        {
+            "score": 0.5065261721611023,
+            "question": "How many people died during the Korean War?"
+        },
+        {
+            "score": 0.5021117925643921,
+            "question": "What is the difference between the number of deaths and missing persons in the Korean War?"
+        },
+        {
+            "score": 0.46277159452438354,
+            "question": "What was the outcome of the Korean War?"
+        },
+        {
+            "score": 0.39273199439048767,
+            "question": "When did the Korean War take place?"
+        },
+        {
+            "score": 0.35534510016441345,
+            "question": "What were the major causes of the Korean War?"
+        },
+        {
+            "score": 0.3357660472393036,
+            "question": "Who were the main participants in the Korean War?"
+        },
+        {
+            "score": 0.3206566870212555,
+            "question": "Is there any other information about the Korean War that you could provide?"
+        },
+        {
+            "score": 0.271403431892395,
+            "question": "Could you express the casualty figures of the Korean War as a percentage?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The Korean War had a total of 178,426 dead and 32,925 missing.",
+            "html": "dbpedia_3854_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there any other information about the Korean War that you could provide?",
+            "html": "dbpedia_3854_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who were the main participants in the Korean War?",
+            "html": "dbpedia_3854_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What were the major causes of the Korean War?",
+            "html": "dbpedia_3854_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3854_24.txt"
+        },
+        {
+            "file_id": "dbpedia_3854_32.txt"
+        },
+        {
+            "file_id": "dbpedia_3854_4.txt"
+        },
+        {
+            "file_id": "dbpedia_3854_44.txt"
+        },
+        {
+            "file_id": "dbpedia_3854_54.txt"
+        },
+        {
+            "file_id": "dbpedia_3854_59.txt"
+        },
+        {
+            "file_id": "dbpedia_3854_78.txt"
+        },
+        {
+            "file_id": "dbpedia_3854_88.txt"
+        },
+        {
+            "file_id": "dbpedia_3854_9.txt"
+        },
+        {
+            "file_id": "dbpedia_3854_96.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the response in the format you requested:\n\n```\n{\n  \"output\": \"yes\"\n}\n```\n\nThis is because the documents provided support the statement that the Korean War had a total of 178,426 dead and 32,925 missing. This information appears in multiple documents (e.g., file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3854/re-ranker-msmarco/30.txt, file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3854/re-ranker-msmarco/17.txt)."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provided contain information that supports the statement \"The Korean War had a total of 178,426 dead and 32,925 missing,\" as this exact figure is mentioned in several of the texts."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The provided information indicates a total of 178,426 dead and 32,925 missing from all involved belligerents. However, the given context only mentions casualties for the United States during the Korean War, which was 36,500 casualties (including deaths). Therefore, the claim overestimates the total number of dead in the Korean War by a significant margin.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Multiple other sources provided within the text state significantly higher death tolls, including upwards of 600,000 dead and nearly 1,000,000 wounded on both sides, plus an estimated 2.5 million civilian deaths.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The provided context information shows multiple sources citing different numbers for the dead (178,426 vs 600,000) and missing (32,925 vs nearly 1,000,000), indicating inconsistency in reporting.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information provided includes separate casualty counts for the South Korean (ROK) and North Korean forces, as well as U.N. forces. The 178,426 dead and 32,925 missing figure specifically refers to U.N. forces, not the total number of casualties across all sides involved in the conflict.",
+            "category": 2
+        }
+    }
+}

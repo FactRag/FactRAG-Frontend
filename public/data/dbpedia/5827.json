@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Asking_for_Trouble",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:English-language_films",
+    "human_readable": "Asking for Trouble is a film in the category of English-language films.",
+    "questions": [
+        {
+            "score": 0.9540286660194397,
+            "question": "What language is the film 'Asking for Trouble' in?"
+        },
+        {
+            "score": 0.8641543984413147,
+            "question": "Is 'Asking for Trouble' a foreign language film?"
+        },
+        {
+            "score": 0.6732480525970459,
+            "question": "Can you name some other films in the English-language category?"
+        },
+        {
+            "score": 0.5673379302024841,
+            "question": "What genres are common in English-language films?"
+        },
+        {
+            "score": 0.43360286951065063,
+            "question": "What are some popular themes explored in English-language films?"
+        },
+        {
+            "score": 0.40871259570121765,
+            "question": "Can you give an example of an award-winning English-language film?"
+        },
+        {
+            "score": 0.39104583859443665,
+            "question": "Are there any famous actors known for starring in English-language films?"
+        },
+        {
+            "score": 0.3324708938598633,
+            "question": "How has the portrayal of characters in English-language films evolved over time?"
+        },
+        {
+            "score": 0.2921648323535919,
+            "question": "What is the significance of subtitles for viewers watching English-language films in their non-native language?"
+        },
+        {
+            "score": 0.2167188674211502,
+            "question": "How do cultural differences influence the reception of English-language films worldwide?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Asking for Trouble is a film in the category of English-language films.",
+            "html": "dbpedia_5827_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the significance of subtitles for viewers watching English-language films in their non-native language?",
+            "html": "dbpedia_5827_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How has the portrayal of characters in English-language films evolved over time?",
+            "html": "dbpedia_5827_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any famous actors known for starring in English-language films?",
+            "html": "dbpedia_5827_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5827_117.txt"
+        },
+        {
+            "file_id": "dbpedia_5827_127.txt"
+        },
+        {
+            "file_id": "dbpedia_5827_24.txt"
+        },
+        {
+            "file_id": "dbpedia_5827_35.txt"
+        },
+        {
+            "file_id": "dbpedia_5827_45.txt"
+        },
+        {
+            "file_id": "dbpedia_5827_51.txt"
+        },
+        {
+            "file_id": "dbpedia_5827_53.txt"
+        },
+        {
+            "file_id": "dbpedia_5827_62.txt"
+        },
+        {
+            "file_id": "dbpedia_5827_69.txt"
+        },
+        {
+            "file_id": "dbpedia_5827_99.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you'd like to test more triples!"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "After analyzing the context information, I can provide the following response:\n\n{\n  \"output\": \"no\"\n}\n\nThe reason is that while one document (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5827/re-ranker-msmarco/21.txt) talks about a film called \"Asking for Trouble\", it clearly states that the genre of the film is comedy, not English-language films. The other documents mention a book and an erotic film with a similar title, but they do not provide information about a film in the category of English-language films. Therefore, the triple \"Asking for Trouble is a film in the category of English-language films\" is incorrect based on the provided context information."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\nThe document states that \"Asking for Trouble\" is a Max Miller film, which falls under the genre of comedy. While not explicitly categorized as an English-language film, it can be inferred to be such given the context and the nature of the documents, which discuss films and their genres. Therefore, the statement is supported by the provided information."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The context information provided shows that \"Asking for Trouble\" refers to multiple things, including a 1945 film directed by Oswald Mitchell and starring Max Miller, a red hot romance book released on May 12, 2020, and an audiobook review of the same name. This demonstrates that \"Asking for Trouble\" is not a single entity but rather a title shared across different categories (film, book, audiobook).",
+            "category": 3
+        }
+    }
+}

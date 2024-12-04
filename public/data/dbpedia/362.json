@@ -1,0 +1,134 @@
+{
+    "subject": "resource/DN5",
+    "predicate": "property/cities",
+    "object": "resource/Giurgiu",
+    "human_readable": "DN5 is located in Giurgiu.",
+    "questions": [
+        {
+            "score": 0.8209549784660339,
+            "question": "Where is DN5 located?"
+        },
+        {
+            "score": 0.7848312258720398,
+            "question": "Why is Giurgiu mentioned in relation to DN5?"
+        },
+        {
+            "score": 0.7617365121841431,
+            "question": "In which region is DN5 situated?"
+        },
+        {
+            "score": 0.5404074788093567,
+            "question": "Is DN5 a physical place?"
+        },
+        {
+            "score": 0.4950353801250458,
+            "question": "What city is associated with DN5?"
+        },
+        {
+            "score": 0.45694515109062195,
+            "question": "Are there any other landmarks or places near DN5?"
+        },
+        {
+            "score": 0.3582983911037445,
+            "question": "What kind of information might be associated with DN5?"
+        },
+        {
+            "score": 0.2963205873966217,
+            "question": "Is there any historical significance associated with DN5?"
+        },
+        {
+            "score": 0.2664176821708679,
+            "question": "What else could we learn about DN5?"
+        },
+        {
+            "score": 0.22369927167892456,
+            "question": "Could DN5 be a code or identifier?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=DN5 is located in Giurgiu.",
+            "html": "dbpedia_362_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What else could we learn about DN5?",
+            "html": "dbpedia_362_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there any historical significance associated with DN5?",
+            "html": "dbpedia_362_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What kind of information might be associated with DN5?",
+            "html": "dbpedia_362_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_362_1.txt"
+        },
+        {
+            "file_id": "dbpedia_362_120.txt"
+        },
+        {
+            "file_id": "dbpedia_362_29.txt"
+        },
+        {
+            "file_id": "dbpedia_362_47.txt"
+        },
+        {
+            "file_id": "dbpedia_362_62.txt"
+        },
+        {
+            "file_id": "dbpedia_362_65.txt"
+        },
+        {
+            "file_id": "dbpedia_362_69.txt"
+        },
+        {
+            "file_id": "dbpedia_362_8.txt"
+        },
+        {
+            "file_id": "dbpedia_362_84.txt"
+        },
+        {
+            "file_id": "dbpedia_362_87.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the context information provided, here is the evaluation of whether the triple \"DN5 is located in Giurgiu\" is supported:\n\n`{'output': 'no'}`\n\nThis is because while the documents mention Giurgiu as a city or town related to the DN5 road (e.g., it's mentioned as a scenery town in one document, and there are references to border crossings and roads connecting to Giurgiu), they do not explicitly state that the DN5 road itself is located in Giurgiu. The documents describe the DN5 as running through or connecting to Giurgiu, rather than being contained within it."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe information provided in the documents supports that DN5 runs through or near Giurgiu, as mentioned in several documents. For example, document 47.txt describes the DN5 road connecting Bucharest with the southern border of Bulgaria via Giurgiu, and document 120.txt mentions the \"Bypass Giurgiu\" project. Document 62.txt also lists Giurgiu as a scenery town connected by the DN5 road."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The DN5 runs north to Bucure\u0219ti and south to Ruse, Bulgaria.",
+            "category": 2
+        }
+    }
+}

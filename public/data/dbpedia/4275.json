@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Michael_Stoute",
+    "predicate": "ontology/raceHorse",
+    "object": "resource/Golan_(horse)",
+    "human_readable": "Michael Stoute trained Golan.",
+    "questions": [
+        {
+            "score": 0.9001774787902832,
+            "question": "Was there a specific reason Michael Stoute chose to train Golan?"
+        },
+        {
+            "score": 0.8259699940681458,
+            "question": "Is there a connection between Michael Stoute and Golan?"
+        },
+        {
+            "score": 0.8059768080711365,
+            "question": "Who trained Golan?"
+        },
+        {
+            "score": 0.6597542762756348,
+            "question": "Can you tell me more about the relationship between Michael Stoute and Golan?"
+        },
+        {
+            "score": 0.6592079997062683,
+            "question": "Can you provide examples of other people or things that Michael Stoute has trained?"
+        },
+        {
+            "score": 0.6371693015098572,
+            "question": "What are some common characteristics of individuals trained by Michael Stoute?"
+        },
+        {
+            "score": 0.5659358501434326,
+            "question": "What kind of training did Golan receive?"
+        },
+        {
+            "score": 0.5433362722396851,
+            "question": "What is Michael Stoute known for?"
+        },
+        {
+            "score": 0.5432153940200806,
+            "question": "Who is Golan?"
+        },
+        {
+            "score": 0.5095720887184143,
+            "question": "Are there any notable achievements associated with Golan's training?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Michael Stoute trained Golan.",
+            "html": "dbpedia_4275_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is Golan?",
+            "html": "dbpedia_4275_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Michael Stoute known for?",
+            "html": "dbpedia_4275_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What kind of training did Golan receive?",
+            "html": "dbpedia_4275_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4275_11.txt"
+        },
+        {
+            "file_id": "dbpedia_4275_116.txt"
+        },
+        {
+            "file_id": "dbpedia_4275_127.txt"
+        },
+        {
+            "file_id": "dbpedia_4275_136.txt"
+        },
+        {
+            "file_id": "dbpedia_4275_139.txt"
+        },
+        {
+            "file_id": "dbpedia_4275_32.txt"
+        },
+        {
+            "file_id": "dbpedia_4275_55.txt"
+        },
+        {
+            "file_id": "dbpedia_4275_74.txt"
+        },
+        {
+            "file_id": "dbpedia_4275_78.txt"
+        },
+        {
+            "file_id": "dbpedia_4275_82.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "To determine whether the triple \"Michael Stoute trained Golan\" is supported by the documents, I'll evaluate each relevant document:\n\n1. `file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4275/re-ranker-msmarco/136.txt`: This document states that \"Golan (IRE) has raced at Arlington Park, Ascot-GB, Chepstow-GB, Curragh-IRE, Epsom-GB, Nakayama-JPN, ParisLongchamp-FR, Newmarket-GB, Tokyo-JPN, York-GB with wins at Ascot-GB, Chepstow-GB, ParisLongchamp-FR, Newmarket-GB.\" It does not explicitly mention Michael Stoute as the trainer of Golan.\n2. `file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4275/re-ranker-msmarco/136.txt`: This document is the same as above, and I'll ignore it to avoid duplication.\n3. `file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4275/re-ranker-msmarco/76.txt`: This document states that \"Golan with Kieren Fallon aboard and trained by Sir Michael Stoute, broke to the front on the inside in the last furlong to edge 'Nayef' by a head and win the race.\" This explicitly mentions Sir Michael Stoute as the trainer of Golan.\n4. `file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4275/re-ranker-msmarco/15.txt`: This document provides information about Sir Michael Stoute, but it does not mention his involvement with the horse Golan.\n\nBased on these documents, the statement \"Michael Stoute trained Golan\" is supported by document `file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4275/re-ranker-msmarco/76.txt`, which explicitly mentions Sir Michael Stoute as the trainer of Golan. Therefore, the correct answer is:\n\n`{'output': 'yes'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information that supports the statement \"Michael Stoute trained Golan.\" For instance, file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4275/re-ranker-msmarco/136.txt mentions that Golan was trained by Sir Michael Stoute."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n    \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

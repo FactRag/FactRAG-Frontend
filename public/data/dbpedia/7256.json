@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Outside_These_Walls",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:English-language_films",
+    "human_readable": "The subject of the film 'Outside These Walls' is English-language films.",
+    "questions": [
+        {
+            "score": 0.9170099496841431,
+            "question": "What language are the films 'Outside These Walls' made in?"
+        },
+        {
+            "score": 0.7951115369796753,
+            "question": "Who directed the film 'Outside These Walls'?"
+        },
+        {
+            "score": 0.7885429263114929,
+            "question": "What type of films does 'Outside These Walls' focus on?"
+        },
+        {
+            "score": 0.7805601358413696,
+            "question": "Is 'Outside These Walls' a documentary or a fictional film?"
+        },
+        {
+            "score": 0.6833660006523132,
+            "question": "Where was 'Outside These Walls' filmed?"
+        },
+        {
+            "score": 0.6660692691802979,
+            "question": "Who stars in the film 'Outside These Walls'?"
+        },
+        {
+            "score": 0.6292964816093445,
+            "question": "Can you tell me about the plot of 'Outside These Walls'?"
+        },
+        {
+            "score": 0.5948890447616577,
+            "question": "What are some themes explored in 'Outside These Walls'?"
+        },
+        {
+            "score": 0.5364575386047363,
+            "question": "When was 'Outside These Walls' released?"
+        },
+        {
+            "score": 0.31577733159065247,
+            "question": "Has 'Outside These Walls' received any awards or recognition?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The subject of the film 'Outside These Walls' is English-language films.",
+            "html": "dbpedia_7256_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=When was 'Outside These Walls' released?",
+            "html": "dbpedia_7256_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some themes explored in 'Outside These Walls'?",
+            "html": "dbpedia_7256_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me about the plot of 'Outside These Walls'?",
+            "html": "dbpedia_7256_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_7256_101.txt"
+        },
+        {
+            "file_id": "dbpedia_7256_32.txt"
+        },
+        {
+            "file_id": "dbpedia_7256_41.txt"
+        },
+        {
+            "file_id": "dbpedia_7256_42.txt"
+        },
+        {
+            "file_id": "dbpedia_7256_55.txt"
+        },
+        {
+            "file_id": "dbpedia_7256_60.txt"
+        },
+        {
+            "file_id": "dbpedia_7256_64.txt"
+        },
+        {
+            "file_id": "dbpedia_7256_75.txt"
+        },
+        {
+            "file_id": "dbpedia_7256_84.txt"
+        },
+        {
+            "file_id": "dbpedia_7256_95.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nLet me know if you have any other triples to evaluate!"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here's the structured JSON output:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The document for file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_7256/re-ranker-msmarco/41.txt mentions \"What is the English language plot outline for Outside These Walls (1939)?\" but this question itself doesn't confirm that the subject of the film 'Outside These Walls' is English-language films. The document does not provide any information to support or contradict the triple, so the output should be 'no'."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The provided documents do not contain any information that supports the statement that the subject of the film 'Outside These Walls' is about English-language films. Instead, the context suggests that it deals with themes related to incarceration and societal structures, rather than focusing on the language of the films themselves."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n    \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "'Outside These Walls' is a film produced in the United States, not English-language films as a whole.",
+            "category": 3
+        },
+        "gemma2": {
+            "reason": "The provided text discusses the film \"Outside These Walls\" (1939) and mentions its English-language plot outline.",
+            "category": 3
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because the information provided earlier states \"Outside These Walls (1939)\" without specifying a language, implying that it could be any language including English, but then later mentions \"Chan's lens captures the yearning for liberation... in this film\" without mentioning Outside These Walls being in English.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "The context information mentions \"Outside the Wall\" as a film from the 1930s and states it was written and directed by Crane Wilbur, indicating it is an older film likely in English. However, there is no direct statement saying it is an English-language film; rather, the focus is on its content and production aspects. The claim about it being explicitly \"English-language\" lacks supporting evidence from the provided context.",
+            "category": 3
+        }
+    }
+}

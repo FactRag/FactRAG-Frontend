@@ -1,0 +1,112 @@
+{
+    "subject": "resource/Norris_v._Ireland",
+    "predicate": "property/judge",
+    "object": "Brian Walsh",
+    "human_readable": "The judge in Norris v. Ireland was Brian Walsh.",
+    "questions": [
+        {
+            "score": 0.9436928033828735,
+            "question": "Who was the judge in Norris v. Ireland?"
+        },
+        {
+            "score": 0.7946736216545105,
+            "question": "What case involved Brian Walsh as a judge?"
+        },
+        {
+            "score": 0.6746683716773987,
+            "question": "Name the legal case where Brian Walsh presided."
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The judge in Norris v. Ireland was Brian Walsh.",
+            "html": "dbpedia_1751_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What case involved Brian Walsh as a judge?",
+            "html": "dbpedia_1751_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who was the judge in Norris v. Ireland?",
+            "html": "dbpedia_1751_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1751_115.txt"
+        },
+        {
+            "file_id": "dbpedia_1751_116.txt"
+        },
+        {
+            "file_id": "dbpedia_1751_3.txt"
+        },
+        {
+            "file_id": "dbpedia_1751_47.txt"
+        },
+        {
+            "file_id": "dbpedia_1751_58.txt"
+        },
+        {
+            "file_id": "dbpedia_1751_68.txt"
+        },
+        {
+            "file_id": "dbpedia_1751_7.txt"
+        },
+        {
+            "file_id": "dbpedia_1751_73.txt"
+        },
+        {
+            "file_id": "dbpedia_1751_81.txt"
+        },
+        {
+            "file_id": "dbpedia_1751_85.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the structured JSON format containing the evaluation of the triple:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nThis is because the documents do not provide any information that confirms or denies the judge in Norris v. Ireland being Brian Walsh, but upon closer inspection, the documents actually mention a case involving Norris and another justice (Seamus Henchy), while also mentioning Brian Walsh as a different Irish Supreme Court and European Court of Human Rights judge. Therefore, based on this context, it appears that the triple is incorrect."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents provide several references to Brian Walsh, including his role as a judge in the Irish Supreme Court and the European Court of Human Rights. While specific mentions of him being involved in the case \"Norris v. Ireland\" are not found within the provided text snippets, it is reasonable to infer that given his prominence as an Irish judge, such a significant legal matter could have been before his court. Therefore, based on the context and without contradicting information, the statement can be considered correct."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, there is no mention of a case named \"Norris v. Ireland\" or any specific instance where Brian Walsh acted as the judge in such a case. Therefore, the given query cannot be verified using the information from these documents.\n\n{'output': 'no'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "The provided text focuses on Brian Walsh's career as an Irish judge, his notable legal positions, and his personal views on various social issues. There is no mention of him presiding over a case named \"Norris v. Ireland.\"",
+            "category": -1
+        },
+        "llama3.1": {
+            "reason": "The judge in Norris v. Ireland was not Brian Walsh, but rather Judge Seamus Henchy, who had a disagreement with Walsh on the Law Enforcement Commission over homosexuality.",
+            "category": -1
+        }
+    }
+}

@@ -1,0 +1,134 @@
+{
+    "subject": "resource/William_H._Lewis",
+    "predicate": "property/birthPlace",
+    "object": "resource/Berkley,_Virginia",
+    "human_readable": "William H. Lewis was born in Berkley, Virginia.",
+    "questions": [
+        {
+            "score": 0.9002059698104858,
+            "question": "Where was William H. Lewis born?"
+        },
+        {
+            "score": 0.6681747436523438,
+            "question": "What state is Berkley, Virginia in?"
+        },
+        {
+            "score": 0.5403830409049988,
+            "question": "Was William H. Lewis a notable figure?"
+        },
+        {
+            "score": 0.47335922718048096,
+            "question": "Is there any information about William H. Lewis's family?"
+        },
+        {
+            "score": 0.46163278818130493,
+            "question": "What time period was William H. Lewis alive in?"
+        },
+        {
+            "score": 0.4591518044471741,
+            "question": "Is there any other information available about William H. Lewis?"
+        },
+        {
+            "score": 0.4362080991268158,
+            "question": "Who were some of William H. Lewis's contemporaries?"
+        },
+        {
+            "score": 0.4196297228336334,
+            "question": "What is known about William H. Lewis's life?"
+        },
+        {
+            "score": 0.4002196192741394,
+            "question": "Can you tell me more about William H. Lewis?"
+        },
+        {
+            "score": 0.262346476316452,
+            "question": "Are there any records or documents related to William H. Lewis?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=William H. Lewis was born in Berkley, Virginia.",
+            "html": "dbpedia_3369_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about William H. Lewis?",
+            "html": "dbpedia_3369_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is known about William H. Lewis's life?",
+            "html": "dbpedia_3369_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who were some of William H. Lewis's contemporaries?",
+            "html": "dbpedia_3369_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3369_112.txt"
+        },
+        {
+            "file_id": "dbpedia_3369_12.txt"
+        },
+        {
+            "file_id": "dbpedia_3369_135.txt"
+        },
+        {
+            "file_id": "dbpedia_3369_138.txt"
+        },
+        {
+            "file_id": "dbpedia_3369_23.txt"
+        },
+        {
+            "file_id": "dbpedia_3369_34.txt"
+        },
+        {
+            "file_id": "dbpedia_3369_4.txt"
+        },
+        {
+            "file_id": "dbpedia_3369_63.txt"
+        },
+        {
+            "file_id": "dbpedia_3369_65.txt"
+        },
+        {
+            "file_id": "dbpedia_3369_91.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "After analyzing the provided context information, I found that there are multiple documents mentioning individuals with the name \"William H. Lewis\", but they appear to be different people.\n\nDocument 1 (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3369/re-ranker-msmarco/34.txt) mentions William H. Lewis as being born in Norfolk, Virginia in 1868.\n\nDocument 3 (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3369/re-ranker-msmarco/64.txt) mentions a different William Henry Lewis who was born in Berkley, Virginia in 1868.\n\nDocument 4 (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3369/re-ranker-msmarco/62.txt) mentions William Henry Lewis as being born in Berkley, Virginia in 1868.\n\nHowever, Document 2 (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3369/re-ranker-msmarco/83.txt) and Document 5 (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3369/re-ranker-msmarco/12.txt) mention William Henry Lewis being born in Berkeley, Virginia on November 28, 1868.\n\nDocument 5 specifically mentions a person named William Berkely Lewis who was born in Loudoun County, Va. and died before 1866.\n\nGiven this information, I found that the statement \"William H. Lewis was born in Berkley, Virginia\" is partially correct, but it could refer to one of the multiple individuals mentioned in the documents. Therefore:\n\n{ 'output': 'no' }"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\nThe documents indicate that William Henry Lewis was indeed born in Berkeley (which is often spelled as Berkley), Virginia, in 1868, which supports the statement \"William H. Lewis was born in Berkley, Virginia.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "multiple sources contradict the birthplace of William H. Lewis, stating he was born in Norfolk (1) and Berkeley, Virginia does not match with his father's location mentioned in other facts which mention Berkley as the place where his father moved to after being born elsewhere.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Perry_B._Duryea,_Jr.",
+    "predicate": "property/spouse",
+    "object": "Marie Therese Duryea",
+    "human_readable": "Perry B. Duryea, Jr.'s spouse is Marie Therese Duryea.",
+    "questions": [
+        {
+            "score": 0.985508382320404,
+            "question": "Is there a marriage between Perry B. Duryea, Jr. and Marie Therese Duryea?"
+        },
+        {
+            "score": 0.981952965259552,
+            "question": "Who is Perry B. Duryea, Jr.'s spouse?"
+        },
+        {
+            "score": 0.970681369304657,
+            "question": "What is the relationship between Perry B. Duryea, Jr. and Marie Therese Duryea?"
+        },
+        {
+            "score": 0.9687420725822449,
+            "question": "What is the name of Perry B. Duryea, Jr.'s spouse?"
+        },
+        {
+            "score": 0.9589970707893372,
+            "question": "Is Perry B. Duryea, Jr. married?"
+        },
+        {
+            "score": 0.9534065127372742,
+            "question": "Can you tell me the name of Perry B. Duryea, Jr.'s wife?"
+        },
+        {
+            "score": 0.9525994658470154,
+            "question": "To whom is Perry B. Duryea, Jr. married?"
+        },
+        {
+            "score": 0.944618821144104,
+            "question": "Who is married to Perry B. Duryea, Jr.?"
+        },
+        {
+            "score": 0.9183191657066345,
+            "question": "Who is Marie Therese Duryea related to?"
+        },
+        {
+            "score": 0.8376944065093994,
+            "question": "What is the name of Marie Therese Duryea?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Perry B. Duryea, Jr.'s spouse is Marie Therese Duryea.",
+            "html": "dbpedia_1447_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is Marie Therese Duryea related to?",
+            "html": "dbpedia_1447_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is married to Perry B. Duryea, Jr.?",
+            "html": "dbpedia_1447_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=To whom is Perry B. Duryea, Jr. married?",
+            "html": "dbpedia_1447_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1447_29.txt"
+        },
+        {
+            "file_id": "dbpedia_1447_33.txt"
+        },
+        {
+            "file_id": "dbpedia_1447_39.txt"
+        },
+        {
+            "file_id": "dbpedia_1447_4.txt"
+        },
+        {
+            "file_id": "dbpedia_1447_43.txt"
+        },
+        {
+            "file_id": "dbpedia_1447_46.txt"
+        },
+        {
+            "file_id": "dbpedia_1447_48.txt"
+        },
+        {
+            "file_id": "dbpedia_1447_52.txt"
+        },
+        {
+            "file_id": "dbpedia_1447_55.txt"
+        },
+        {
+            "file_id": "dbpedia_1447_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me explain: The first document states \"Mr.  Duryea is survived by his wife, Marie Therese Duryea...\" This confirms the statement. \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "To evaluate the triple \"Perry B. Duryea, Jr.'s spouse is Marie Therese Duryea\", I will search for information about Perry B. Duryea, Jr.'s spouse in the provided context.\n\nFrom file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1447/re-ranker-msmarco/49.txt:\n\n\"... Mr.  Duryea is survived by his wife, Marie Therese Duryea, and two children-Lynne Duryea and Perry \"Chip\" Duryea III.\"\n\nThis sentence explicitly states that Marie Therese Duryea is the spouse of Perry B. Duryea, Jr.\n\nTherefore, my response to your query is:\n\n`{'output': 'yes'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe information in the documents supports that Perry B. Duryea, Jr. is survived by his wife, Marie Therese Duryea, which directly indicates that his spouse is indeed Marie Therese Duryea."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "There is no information in the provided context that explicitly states Perry B. Duryea, Jr.'s spouse is Marie Therese Duryea. Only the fact that he is survived by his wife Marie Therese Duryea is mentioned, but it does not confirm them as being currently married at the time of writing.",
+            "category": 0
+        },
+        "gemma2": {
+            "reason": "The text states Mr. Duryea is survived by his wife, Marie Therese Duryea.  This implies she was alive at the time of his passing and therefore his spouse during his life.",
+            "category": 0
+        },
+        "llama3.1": {
+            "reason": "There are multiple instances of people with the name \"Duryea\" or variations thereof, but none of them mention a spouse named Marie Therese Duryea for Perry B. Duryea, Jr., whereas it is mentioned that Mr. Duryea is survived by his wife, Marie Therese Duryea, and two children-Lynne Duryea and Perry \"Chip\" Duryea III.",
+            "category": 0
+        },
+        "qwen2.5": {
+            "reason": "The context states that Perry B. Duryea, Jr. is survived by his wife, Trace, not Marie Therese Duryea.",
+            "category": 0
+        }
+    }
+}

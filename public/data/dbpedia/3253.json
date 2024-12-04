@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Miroslav_Svoboda_(ice_hockey)",
+    "predicate": "ontology/draftTeam",
+    "object": "resource/Edmonton_Oilers",
+    "human_readable": "Miroslav Svoboda played for the Edmonton Oilers draft team.",
+    "questions": [
+        {
+            "score": 0.9877520799636841,
+            "question": "Was Miroslav Svoboda drafted by the Edmonton Oilers?"
+        },
+        {
+            "score": 0.9786439538002014,
+            "question": "What was Miroslav Svoboda's role on the Edmonton Oilers?"
+        },
+        {
+            "score": 0.9752980470657349,
+            "question": "What year was Miroslav Svoboda drafted by the Edmonton Oilers?"
+        },
+        {
+            "score": 0.9556936621665955,
+            "question": "Did Miroslav Svoboda have a successful career with the Edmonton Oilers?"
+        },
+        {
+            "score": 0.8565047979354858,
+            "question": "For which NHL team did Miroslav Svoboda play?"
+        },
+        {
+            "score": 0.8139970302581787,
+            "question": "What position did Miroslav Svoboda play?"
+        },
+        {
+            "score": 0.8052533864974976,
+            "question": "Is Miroslav Svoboda known for playing in the NHL?"
+        },
+        {
+            "score": 0.6644043326377869,
+            "question": "In what sport did Miroslav Svoboda compete?"
+        },
+        {
+            "score": 0.6143926978111267,
+            "question": "Where did Miroslav Svoboda play hockey?"
+        },
+        {
+            "score": 0.6079477667808533,
+            "question": "Is Miroslav Svoboda a former NHL player?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Miroslav Svoboda played for the Edmonton Oilers draft team.",
+            "html": "dbpedia_3253_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where did Miroslav Svoboda play hockey?",
+            "html": "dbpedia_3253_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In what sport did Miroslav Svoboda compete?",
+            "html": "dbpedia_3253_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Miroslav Svoboda known for playing in the NHL?",
+            "html": "dbpedia_3253_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3253_12.txt"
+        },
+        {
+            "file_id": "dbpedia_3253_23.txt"
+        },
+        {
+            "file_id": "dbpedia_3253_35.txt"
+        },
+        {
+            "file_id": "dbpedia_3253_5.txt"
+        },
+        {
+            "file_id": "dbpedia_3253_54.txt"
+        },
+        {
+            "file_id": "dbpedia_3253_55.txt"
+        },
+        {
+            "file_id": "dbpedia_3253_57.txt"
+        },
+        {
+            "file_id": "dbpedia_3253_61.txt"
+        },
+        {
+            "file_id": "dbpedia_3253_65.txt"
+        },
+        {
+            "file_id": "dbpedia_3253_7.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the provided context information, I can confirm that the triple \"Miroslav Svoboda played for the Edmonton Oilers draft team\" is supported by the documents.\n\nHere's the structured JSON response:\n\n```\n{\n  \"output\": \"yes\"\n}\n```\n\nThis is because Miroslav Svoboda was indeed drafted by the Edmonton Oilers in the 2015 NHL Draft, as mentioned in the articles from file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3253/re-ranker-msmarco/23.txt and file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3253/re-ranker-msmarco/35.txt."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents do not indicate that Miroslav Svoboda actually played for the Edmonton Oilers. Instead, they mention his being drafted by the Edmonton Oilers and playing for other teams before signing with the Nashville Predators."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Miroslav Svoboda was drafted by the Edmonton Oilers, but he has not yet played for them in the NHL. He was loaned to the Atlanta Gladiators (ECHL) and signed an entry-level contract with the Nashville Predators, suggesting that he is currently under their contractual control.",
+            "category": 1
+        },
+        "gemma2": {
+            "reason": "He was drafted by the Edmonton Oilers but played for them after his draft.",
+            "category": 1
+        },
+        "qwen2.5": {
+            "reason": "Miroslav Svoboda was selected by the Edmonton Oilers with their 208th overall pick in the seventh round of the 2015 NHL Draft, and there's no indication that he played for a draft team. His selection directly implies he was signed to join the Oilers' organization, not play for another team during the draft process.",
+            "category": 1
+        }
+    }
+}

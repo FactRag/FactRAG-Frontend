@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Someone_to_Watch_Over_Me_(film)",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:1987_films",
+    "human_readable": "The subject of the film 'Someone to Watch Over Me' is 1987 films.",
+    "questions": [
+        {
+            "score": 0.7788342237472534,
+            "question": "Who directed the film 'Someone to Watch Over Me'?"
+        },
+        {
+            "score": 0.7531631588935852,
+            "question": "What is the plot of the film 'Someone to Watch Over Me'?"
+        },
+        {
+            "score": 0.6849433183670044,
+            "question": "Is 'Someone to Watch Over Me' a popular film?"
+        },
+        {
+            "score": 0.6418842673301697,
+            "question": "What genre is the film 'Someone to Watch Over Me'?"
+        },
+        {
+            "score": 0.6289162635803223,
+            "question": "What year was the film 'Someone to Watch Over Me' released?"
+        },
+        {
+            "score": 0.5121298432350159,
+            "question": "What themes does the film 'Someone to Watch Over Me' explore?"
+        },
+        {
+            "score": 0.4081296920776367,
+            "question": "Were there any sequels or remakes of 'Someone to Watch Over Me'?"
+        },
+        {
+            "score": 0.31896668672561646,
+            "question": "How was 'Someone to Watch Over Me' received by critics?"
+        },
+        {
+            "score": 0.29722875356674194,
+            "question": "Where can I watch 'Someone to Watch Over Me' today?"
+        },
+        {
+            "score": 0.26275140047073364,
+            "question": "Can you name any actors who appeared in 'Someone to Watch Over Me'?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The subject of the film 'Someone to Watch Over Me' is 1987 films.",
+            "html": "dbpedia_4830_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where can I watch 'Someone to Watch Over Me' today?",
+            "html": "dbpedia_4830_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How was 'Someone to Watch Over Me' received by critics?",
+            "html": "dbpedia_4830_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Were there any sequels or remakes of 'Someone to Watch Over Me'?",
+            "html": "dbpedia_4830_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4830_21.txt"
+        },
+        {
+            "file_id": "dbpedia_4830_27.txt"
+        },
+        {
+            "file_id": "dbpedia_4830_30.txt"
+        },
+        {
+            "file_id": "dbpedia_4830_37.txt"
+        },
+        {
+            "file_id": "dbpedia_4830_49.txt"
+        },
+        {
+            "file_id": "dbpedia_4830_60.txt"
+        },
+        {
+            "file_id": "dbpedia_4830_61.txt"
+        },
+        {
+            "file_id": "dbpedia_4830_70.txt"
+        },
+        {
+            "file_id": "dbpedia_4830_88.txt"
+        },
+        {
+            "file_id": "dbpedia_4830_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents mention that \"Someone to Watch Over Me\" was released in 1987, which aligns with the query stating it is a subject of 1987 films."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}\n\nThe documents provided discuss the 1987 film \"Someone To Watch Over Me\" directed by Ridley Scott, so the statement that the subject of the film \"Someone to Watch Over Me\" is a 1987 film is correct."
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The film 'Someone to Watch Over Me' was released in 1987, making it a 1987 film.",
+            "category": 3
+        },
+        "llama3.1": {
+            "reason": "The film \"Someone to Watch Over Me\" is actually released in 1987, but the context information contains a mention of another film with the same title, which was directed by Ridley Scott and released in 1987, however it also mentions that Ridley Scott's early proving grounds was Someone To Watch Over Me, this implies that this \"Someone to Watch Over Me\" is not the one mentioned as being released in 1987, but rather an earlier film.",
+            "category": 3
+        }
+    }
+}

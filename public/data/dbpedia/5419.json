@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Azuara",
+    "predicate": "http://purl.org/linguistics/gold/hypernym",
+    "object": "resource/Municipality",
+    "human_readable": "Azuara is a municipality.",
+    "questions": [
+        {
+            "score": 0.8078511953353882,
+            "question": "Is Azuara a city, town, or village?"
+        },
+        {
+            "score": 0.700752317905426,
+            "question": "What country is Azuara located in?"
+        },
+        {
+            "score": 0.6871403455734253,
+            "question": "What type of entity is Azuara?"
+        },
+        {
+            "score": 0.6013072729110718,
+            "question": "Are there any specific industries or activities associated with Azuara?"
+        },
+        {
+            "score": 0.5689122676849365,
+            "question": "Where would you find Azuara?"
+        },
+        {
+            "score": 0.5162631273269653,
+            "question": "What is the administrative level of Azuara?"
+        },
+        {
+            "score": 0.494850218296051,
+            "question": "Does Azuara have its own government?"
+        },
+        {
+            "score": 0.29797235131263733,
+            "question": "What is the population size of Azuara?"
+        },
+        {
+            "score": 0.20700983703136444,
+            "question": "Can you provide examples of other municipalities?"
+        },
+        {
+            "score": 0.20450279116630554,
+            "question": "What are some common characteristics of municipalities?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Azuara is a municipality.",
+            "html": "dbpedia_5419_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you provide examples of other municipalities?",
+            "html": "dbpedia_5419_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the population size of Azuara?",
+            "html": "dbpedia_5419_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Azuara have its own government?",
+            "html": "dbpedia_5419_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5419_101.txt"
+        },
+        {
+            "file_id": "dbpedia_5419_108.txt"
+        },
+        {
+            "file_id": "dbpedia_5419_113.txt"
+        },
+        {
+            "file_id": "dbpedia_5419_19.txt"
+        },
+        {
+            "file_id": "dbpedia_5419_20.txt"
+        },
+        {
+            "file_id": "dbpedia_5419_36.txt"
+        },
+        {
+            "file_id": "dbpedia_5419_4.txt"
+        },
+        {
+            "file_id": "dbpedia_5419_55.txt"
+        },
+        {
+            "file_id": "dbpedia_5419_56.txt"
+        },
+        {
+            "file_id": "dbpedia_5419_72.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the answer:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe information in the documents supports the triple. The document with file path `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5419/re-ranker-msmarco/36.txt` explicitly states that Azuara is a municipality, as indicated by the text \"Home \u2192 Europe \u2192 Spain \u2192 Zaragoza Province Azuara in Azuara (Zaragoza Province) Contents: Municipality seat...\"."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\nThe documents mention that Azuara is a town and municipality, so the statement \"Azuara is a municipality\" is supported by the provided context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

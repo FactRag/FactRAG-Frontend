@@ -1,0 +1,144 @@
+{
+    "subject": "resource/IPad_Air",
+    "predicate": "property/service",
+    "object": "resource/IBooks",
+    "human_readable": "The service of iPad Air is IBooks.",
+    "questions": [
+        {
+            "score": 0.8843420743942261,
+            "question": "What service does the iPad Air use for reading books?"
+        },
+        {
+            "score": 0.8800846934318542,
+            "question": "If you want to read ebooks on an iPad Air, what service would you use?"
+        },
+        {
+            "score": 0.8089441061019897,
+            "question": "What is the name of the book-reading service used by the iPad Air?"
+        },
+        {
+            "score": 0.7684073448181152,
+            "question": "Which app is associated with the iPad Air for reading ebooks?"
+        },
+        {
+            "score": 0.7199916243553162,
+            "question": "What app on iPad Air allows you to access and read ebooks?"
+        },
+        {
+            "score": 0.7136142253875732,
+            "question": "What is the name of the book reading application on iPad Air?"
+        },
+        {
+            "score": 0.6851229071617126,
+            "question": "For reading books, what is the primary application available on iPad Air?"
+        },
+        {
+            "score": 0.6233207583427429,
+            "question": "Which service is integrated into the iPad Air to provide a reading experience?"
+        },
+        {
+            "score": 0.6134569644927979,
+            "question": "What app comes pre-installed on iPad Air for reading books?"
+        },
+        {
+            "score": 0.5450982451438904,
+            "question": "Name the default ebook reader application for iPad Air."
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The service of iPad Air is IBooks.",
+            "html": "dbpedia_3163_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What app comes pre-installed on iPad Air for reading books?",
+            "html": "dbpedia_3163_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Which service is integrated into the iPad Air to provide a reading experience?",
+            "html": "dbpedia_3163_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=For reading books, what is the primary application available on iPad Air?",
+            "html": "dbpedia_3163_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3163_105.txt"
+        },
+        {
+            "file_id": "dbpedia_3163_111.txt"
+        },
+        {
+            "file_id": "dbpedia_3163_137.txt"
+        },
+        {
+            "file_id": "dbpedia_3163_15.txt"
+        },
+        {
+            "file_id": "dbpedia_3163_17.txt"
+        },
+        {
+            "file_id": "dbpedia_3163_29.txt"
+        },
+        {
+            "file_id": "dbpedia_3163_30.txt"
+        },
+        {
+            "file_id": "dbpedia_3163_45.txt"
+        },
+        {
+            "file_id": "dbpedia_3163_89.txt"
+        },
+        {
+            "file_id": "dbpedia_3163_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe text mentions that the iPad is a good choice for reading iBooks but it doesn't state that the service of iPad Air *is* iBooks.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the provided context information, here's the evaluation:\n\n{\n  \"output\": \"yes\"\n}\n\nThe context documents discuss various aspects of iPad and iBooks, including transferring iBooks between iPads or other devices. The documents also mention iBooks as a service available on the iPad, which suggests that the statement about the service of iPad Air being IBooks is supported by the provided information."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The provided documents do not mention the service or function of the iPad Air being specifically related to iBooks. The information focuses on how to transfer and manage iBooks between iPads, but does not state that the service of the iPad Air is IBooks."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n    \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'} \n\nThe documents provide information about iBooks on iPads, which implies that the service (or application) for reading books on an iPad Air would indeed be iBooks."
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "The provided text discusses transferring iBooks between iPads and mentions iCloud syncing for Books, suggesting iBooks is an application, not a service associated with a specific iPad model like the iPad Air.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information describes iBooks as an application available on iPads for reading e-books, not a service provided by iPad Air.",
+            "category": 2
+        }
+    }
+}

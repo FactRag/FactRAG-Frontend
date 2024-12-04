@@ -1,0 +1,114 @@
+{
+    "subject": "resource/Martin_J._Taylor",
+    "predicate": "property/name",
+    "object": "Taylor, Martin J.",
+    "human_readable": "Martin J. Taylor's name is Taylor, Martin J.",
+    "questions": [
+        {
+            "score": 0.9821540117263794,
+            "question": "What is Martin J. Taylor's name?"
+        },
+        {
+            "score": 0.9753807187080383,
+            "question": "Is 'Taylor' a part of Martin J. Taylor's full name?"
+        },
+        {
+            "score": 0.9391087889671326,
+            "question": "What are the initials of Martin J. Taylor's name?"
+        },
+        {
+            "score": 0.9163642525672913,
+            "question": "Could 'Martin J. Taylor' be someone's full name?"
+        },
+        {
+            "score": 0.8725457787513733,
+            "question": "How is Martin J. Taylor's name ordered?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Martin J. Taylor's name is Taylor, Martin J.",
+            "html": "dbpedia_4381_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Could 'Martin J. Taylor' be someone's full name?",
+            "html": "dbpedia_4381_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are the initials of Martin J. Taylor's name?",
+            "html": "dbpedia_4381_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is 'Taylor' a part of Martin J. Taylor's full name?",
+            "html": "dbpedia_4381_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4381_122.txt"
+        },
+        {
+            "file_id": "dbpedia_4381_128.txt"
+        },
+        {
+            "file_id": "dbpedia_4381_15.txt"
+        },
+        {
+            "file_id": "dbpedia_4381_3.txt"
+        },
+        {
+            "file_id": "dbpedia_4381_41.txt"
+        },
+        {
+            "file_id": "dbpedia_4381_47.txt"
+        },
+        {
+            "file_id": "dbpedia_4381_50.txt"
+        },
+        {
+            "file_id": "dbpedia_4381_60.txt"
+        },
+        {
+            "file_id": "dbpedia_4381_73.txt"
+        },
+        {
+            "file_id": "dbpedia_4381_80.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have any other triples to evaluate!"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the answer in JSON format:\n\n{\n  \"output\": \"no\"\n}\n\nThe triple \"Martin J. Taylor's name is Taylor, Martin J.\" is incorrect according to the documents. The correct name of the person mentioned in the files is actually \"Martin Taylor\" (without the \"J.\")"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nExplanation: The provided context mentions \"Martin Taylor\" and refers to him as an individual with the full name order being common (last name first in some cultures). Therefore, it supports that his name can also be written as \"Taylor, Martin J.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "There are multiple individuals named Martin Taylor with different backgrounds and professions.",
+            "category": 2
+        }
+    }
+}

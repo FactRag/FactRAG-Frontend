@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Popstars_2015",
+    "predicate": "http://purl.org/linguistics/gold/hypernym",
+    "object": "resource/Season",
+    "human_readable": "Popstars 2015 is a season.",
+    "questions": [
+        {
+            "score": 0.9821330904960632,
+            "question": "Is 'Popstars 2015' the title of a season?"
+        },
+        {
+            "score": 0.9597234725952148,
+            "question": "Who participated in the Popstars 2015 season?"
+        },
+        {
+            "score": 0.9534531831741333,
+            "question": "What is the name of the Popstars season from 2015?"
+        },
+        {
+            "score": 0.9151135683059692,
+            "question": "Where was the Popstars 2015 season held?"
+        },
+        {
+            "score": 0.9016444683074951,
+            "question": "What happened in the Popstars 2015 season?"
+        },
+        {
+            "score": 0.8970375657081604,
+            "question": "Was there a Popstars competition in 2015?"
+        },
+        {
+            "score": 0.8868361711502075,
+            "question": "How popular was the Popstars 2015 season?"
+        },
+        {
+            "score": 0.8321482539176941,
+            "question": "Are there any other seasons of Popstars besides 2015?"
+        },
+        {
+            "score": 0.5575548410415649,
+            "question": "What year did the Popstars season take place?"
+        },
+        {
+            "score": 0.3446800112724304,
+            "question": "What kind of competition is Popstars?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Popstars 2015 is a season.",
+            "html": "dbpedia_1121_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What year did the Popstars season take place?",
+            "html": "dbpedia_1121_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any other seasons of Popstars besides 2015?",
+            "html": "dbpedia_1121_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How popular was the Popstars 2015 season?",
+            "html": "dbpedia_1121_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1121_101.txt"
+        },
+        {
+            "file_id": "dbpedia_1121_107.txt"
+        },
+        {
+            "file_id": "dbpedia_1121_12.txt"
+        },
+        {
+            "file_id": "dbpedia_1121_127.txt"
+        },
+        {
+            "file_id": "dbpedia_1121_21.txt"
+        },
+        {
+            "file_id": "dbpedia_1121_47.txt"
+        },
+        {
+            "file_id": "dbpedia_1121_53.txt"
+        },
+        {
+            "file_id": "dbpedia_1121_56.txt"
+        },
+        {
+            "file_id": "dbpedia_1121_62.txt"
+        },
+        {
+            "file_id": "dbpedia_1121_99.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nLet me know if you have any other triples you'd like me to evaluate!  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the answer in the requested format:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The document states that Germany had the longest-running version of Popstars, lasting 11 seasons that aired up until 2015. Therefore, it supports the triple that Popstars 2015 is a season."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: The documents mention \"Germany, an early adopter of the franchise, had the longest-running version, lasting 11 seasons that aired up until 2015.\" This indicates that Popstars ran for multiple seasons and ended in 2015. Therefore, stating that \"Popstars 2015 is a season\" without specifying it as part of an ongoing series would be incorrect based on the provided context."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Popstars 2015 is not a season, but rather the last season of the Popstars franchise in Germany. Seasons refer to recurring installments of a show, while the final season marks the end of that specific run.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "The provided text states that the German version of Popstars ended its run in 2015 after 11 seasons.  This implies that 2015 marks the final season, not a new season within an ongoing series.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information states that Germany had the longest-running version of Popstars, lasting 11 seasons up until 2015. This suggests that Popstars did not have a season in 2015 itself, but rather ended its run in that year.",
+            "category": 2
+        }
+    }
+}

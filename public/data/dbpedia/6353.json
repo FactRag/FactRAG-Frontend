@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Cotton_College_State_University",
+    "predicate": "property/type",
+    "object": "resource/Public_university",
+    "human_readable": "Cotton College State University is a public university.",
+    "questions": [
+        {
+            "score": 0.9849268198013306,
+            "question": "Is Cotton College State University a public or private institution?"
+        },
+        {
+            "score": 0.9114309549331665,
+            "question": "What type of university is Cotton College State University?"
+        },
+        {
+            "score": 0.8558745384216309,
+            "question": "Where is Cotton College State University located?"
+        },
+        {
+            "score": 0.7621777057647705,
+            "question": "What kind of programs does Cotton College State University offer?"
+        },
+        {
+            "score": 0.7349462509155273,
+            "question": "Does Cotton College State University have a vibrant campus life?"
+        },
+        {
+            "score": 0.6914635896682739,
+            "question": "Does Cotton College State University have a strong academic reputation?"
+        },
+        {
+            "score": 0.6891567707061768,
+            "question": "Are there any notable alumni from Cotton College State University?"
+        },
+        {
+            "score": 0.6882158517837524,
+            "question": "Can you tell me more about Cotton College State University?"
+        },
+        {
+            "score": 0.6517824530601501,
+            "question": "What is the student population like at Cotton College State University?"
+        },
+        {
+            "score": 0.4937179684638977,
+            "question": "What are some of the extracurricular activities offered at Cotton College State University?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Cotton College State University is a public university.",
+            "html": "dbpedia_6353_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the student population like at Cotton College State University?",
+            "html": "dbpedia_6353_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about Cotton College State University?",
+            "html": "dbpedia_6353_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any notable alumni from Cotton College State University?",
+            "html": "dbpedia_6353_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6353_14.txt"
+        },
+        {
+            "file_id": "dbpedia_6353_17.txt"
+        },
+        {
+            "file_id": "dbpedia_6353_41.txt"
+        },
+        {
+            "file_id": "dbpedia_6353_48.txt"
+        },
+        {
+            "file_id": "dbpedia_6353_50.txt"
+        },
+        {
+            "file_id": "dbpedia_6353_6.txt"
+        },
+        {
+            "file_id": "dbpedia_6353_60.txt"
+        },
+        {
+            "file_id": "dbpedia_6353_69.txt"
+        },
+        {
+            "file_id": "dbpedia_6353_73.txt"
+        },
+        {
+            "file_id": "dbpedia_6353_74.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you'd like to evaluate more triples!"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the context information provided, here's my evaluation of the query \"Cotton College State University is a public university\":\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation:\n\nThe context information mentions that \"Cotton University\" (formerly known as Cotton College) is a public state university located in Guwahati, Assam, India. However, there's no specific mention of \"Cotton College State University\" being a public university. In fact, one of the documents refers to \"Cotton College State University\" as one of the entities that was merged with Cotton College to form Cotton University.\n\nTherefore, based on the available information, I couldn't find any direct evidence to confirm whether Cotton College State University is a public university or not."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThis answer is derived from the information provided in several documents, which state that Cotton University (formerly known as Cotton College) is a public state university. While some documents refer specifically to Cotton University, others mention Cotton College State University, which supports the statement that Cotton College State University is a public university."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n     \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "Multiple sources explicitly state that Cotton University is a public state university, not a public university without specifying \"state\". This indicates a consistent and specific classification.",
+            "category": 2
+        }
+    }
+}

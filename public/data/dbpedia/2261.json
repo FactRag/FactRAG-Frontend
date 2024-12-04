@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Brian_O'Brien",
+    "predicate": "property/birthDate",
+    "object": "1898-01-02",
+    "human_readable": "Brian O'Brien was born on January 2, 1898.",
+    "questions": [
+        {
+            "score": 0.8675121068954468,
+            "question": "When was Brian O'Brien born?"
+        },
+        {
+            "score": 0.7399095892906189,
+            "question": "What is Brian O'Brien's birthdate?"
+        },
+        {
+            "score": 0.6725425124168396,
+            "question": "What historical events happened around the time of Brian O'Brien's birth?"
+        },
+        {
+            "score": 0.6665685772895813,
+            "question": "Who might have been alive when Brian O'Brien was born?"
+        },
+        {
+            "score": 0.6507903337478638,
+            "question": "What month and day was Brian O'Brien born?"
+        },
+        {
+            "score": 0.49496492743492126,
+            "question": "How old would Brian O'Brien be today?"
+        },
+        {
+            "score": 0.45092877745628357,
+            "question": "In what year did Brian O'Brien come into the world?"
+        },
+        {
+            "score": 0.3485727906227112,
+            "question": "Do you know anything else about Brian O'Brien?"
+        },
+        {
+            "score": 0.34701719880104065,
+            "question": "Can you find any famous people born on January 2nd?"
+        },
+        {
+            "score": 0.1951749622821808,
+            "question": "Is January 2nd a common birthday?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Brian O'Brien was born on January 2, 1898.",
+            "html": "dbpedia_2261_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you find any famous people born on January 2nd?",
+            "html": "dbpedia_2261_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Do you know anything else about Brian O'Brien?",
+            "html": "dbpedia_2261_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In what year did Brian O'Brien come into the world?",
+            "html": "dbpedia_2261_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2261_23.txt"
+        },
+        {
+            "file_id": "dbpedia_2261_36.txt"
+        },
+        {
+            "file_id": "dbpedia_2261_42.txt"
+        },
+        {
+            "file_id": "dbpedia_2261_45.txt"
+        },
+        {
+            "file_id": "dbpedia_2261_54.txt"
+        },
+        {
+            "file_id": "dbpedia_2261_57.txt"
+        },
+        {
+            "file_id": "dbpedia_2261_71.txt"
+        },
+        {
+            "file_id": "dbpedia_2261_74.txt"
+        },
+        {
+            "file_id": "dbpedia_2261_78.txt"
+        },
+        {
+            "file_id": "dbpedia_2261_94.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nLet me know if you have any other triples to evaluate!"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the structured JSON response:\n\n```\n{\n  \"output\": \"yes\"\n}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: The document provided does not contain any information about Brian O'Brien's birth date being January 2, 1898. It mentions that \"Brian O\u2019Brien was born in 1898 in Denver, Colorado, USA\" in one of the documents, but it does not specify the exact date as January 2."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The provided context clearly states Brian O\u2019Brien was born in 1898, but the given date (January 2, 1898) does not match any of the dates mentioned within the context. The dates mentioned for Brian O'Brien are April 19, 1898 for his birth year and July 1, 1992 for his death year.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Multiple sources list Brian O\u2019Brien's birth year as 1898, yet another source states his birth year was 1911.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information clearly states that Brian O'Brien was born in 1898, specifically mentioning the year but not the exact date, which contradicts the January 2, 1898 birth date.",
+            "category": 2
+        }
+    }
+}

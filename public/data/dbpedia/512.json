@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Carpathian_Ruthenia",
+    "predicate": "ontology/capital",
+    "object": "resource/Uzhhorod",
+    "human_readable": "The capital of Carpathian Ruthenia is Uzhhorod.",
+    "questions": [
+        {
+            "score": 0.917389452457428,
+            "question": "What is the capital of Carpathian Ruthenia?"
+        },
+        {
+            "score": 0.5740941762924194,
+            "question": "Where is Uzhhorod located?"
+        },
+        {
+            "score": 0.4926694631576538,
+            "question": "Is Uzhhorod a major city?"
+        },
+        {
+            "score": 0.48795896768569946,
+            "question": "Are there any historical landmarks in Uzhhorod?"
+        },
+        {
+            "score": 0.4725828766822815,
+            "question": "What country does Carpathian Ruthenia belong to?"
+        },
+        {
+            "score": 0.3849039375782013,
+            "question": "What is the geography like around Uzhhorod?"
+        },
+        {
+            "score": 0.3542584478855133,
+            "question": "What is the population of Uzhhorod?"
+        },
+        {
+            "score": 0.33948588371276855,
+            "question": "What are some popular tourist attractions in Carpathian Ruthenia?"
+        },
+        {
+            "score": 0.26910948753356934,
+            "question": "Is Uzhhorod a good place to learn about Ukrainian culture?"
+        },
+        {
+            "score": 0.18180806934833527,
+            "question": "What is the primary language spoken in Uzhhorod?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The capital of Carpathian Ruthenia is Uzhhorod.",
+            "html": "dbpedia_512_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Uzhhorod a good place to learn about Ukrainian culture?",
+            "html": "dbpedia_512_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some popular tourist attractions in Carpathian Ruthenia?",
+            "html": "dbpedia_512_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the population of Uzhhorod?",
+            "html": "dbpedia_512_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_512_11.txt"
+        },
+        {
+            "file_id": "dbpedia_512_115.txt"
+        },
+        {
+            "file_id": "dbpedia_512_130.txt"
+        },
+        {
+            "file_id": "dbpedia_512_17.txt"
+        },
+        {
+            "file_id": "dbpedia_512_26.txt"
+        },
+        {
+            "file_id": "dbpedia_512_39.txt"
+        },
+        {
+            "file_id": "dbpedia_512_50.txt"
+        },
+        {
+            "file_id": "dbpedia_512_53.txt"
+        },
+        {
+            "file_id": "dbpedia_512_86.txt"
+        },
+        {
+            "file_id": "dbpedia_512_91.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n\n\nLet me know if you have any other queries!  I'm ready to analyze more triples based on the provided text."
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the structured JSON format for the query:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents support this triple. Uzhhorod is mentioned as the capital of Carpathian Ruthenia in document `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_512/re-ranker-msmarco/15.txt`."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nExplanation: The documents provided contain information about Uzhhorod, which is described as the \"capital city of Zakarpattia Region\" and referred to multiple times as the capital of the region. This supports the statement that the capital of Carpathian Ruthenia is Uzhhorod."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n    \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "During the inter-war period (1920-1938), Uzhhorod was indeed the administrative center of Carpathian Ruthenia, but it became a part of Hungary following the First Vienna Agreement in November 1938. Therefore, during the time when Carpathian Ruthenia was an entity, its capital was not Uzhhorod.",
+            "category": -1
+        },
+        "gemma2": {
+            "reason": "The text states that Uzhhorod became the capital of Subcarpathian Ruthenia, not Carpathian Ruthenia.   Furthermore, it mentions that following the Munich agreement, Ungv\u00e1r (Uzhhorod) was 'awarded' to Hungary in 1938. This implies a shift in control and therefore challenges the claim that Uzhhorod remained the capital continuously.",
+            "category": -1
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because Uzhhorod was actually the capital of Subcarpathian Ruthenia, not Carpathian Ruthenia.",
+            "category": -1
+        },
+        "qwen2.5": {
+            "reason": "In the context information, Uzhhorod became the capital of Carpathian Ruthenia from 1920 until 1938, but after that, it was awarded to Hungary as per the Munich Agreement. The term \"capital\" in the claim is not specified to a time period, which makes it misleading.",
+            "category": -1
+        }
+    }
+}

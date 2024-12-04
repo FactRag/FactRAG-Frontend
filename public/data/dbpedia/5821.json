@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Charlie_Chaplin",
+    "predicate": "property/name",
+    "object": "Sir Charles Chaplin",
+    "human_readable": "The name of Charlie Chaplin is Sir Charles Chaplin.",
+    "questions": [
+        {
+            "score": 0.9878755211830139,
+            "question": "Is Charlie Chaplin also known as Sir Charles Chaplin?"
+        },
+        {
+            "score": 0.8316484093666077,
+            "question": "Does the name 'Sir Charles Chaplin' refer to a famous person?"
+        },
+        {
+            "score": 0.8308976292610168,
+            "question": "Who is Charlie Chaplin?"
+        },
+        {
+            "score": 0.8099803328514099,
+            "question": "What was Charlie Chaplin's full name?"
+        },
+        {
+            "score": 0.7634280323982239,
+            "question": "What other names might be used to refer to Charlie Chaplin?"
+        },
+        {
+            "score": 0.7435736060142517,
+            "question": "What is the connection between 'Charlie Chaplin' and 'Sir Charles Chaplin'?"
+        },
+        {
+            "score": 0.6572510600090027,
+            "question": "What title does Sir Charles Chaplin hold?"
+        },
+        {
+            "score": 0.6563332080841064,
+            "question": "What was Charlie Chaplin's birth name?"
+        },
+        {
+            "score": 0.4856644868850708,
+            "question": "Is there an honorary title associated with Charlie Chaplin?"
+        },
+        {
+            "score": 0.024188807234168053,
+            "question": "Can you provide examples of famous individuals who have been knighted?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of Charlie Chaplin is Sir Charles Chaplin.",
+            "html": "dbpedia_5821_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there an honorary title associated with Charlie Chaplin?",
+            "html": "dbpedia_5821_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What was Charlie Chaplin's birth name?",
+            "html": "dbpedia_5821_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What title does Sir Charles Chaplin hold?",
+            "html": "dbpedia_5821_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5821_10.txt"
+        },
+        {
+            "file_id": "dbpedia_5821_100.txt"
+        },
+        {
+            "file_id": "dbpedia_5821_20.txt"
+        },
+        {
+            "file_id": "dbpedia_5821_23.txt"
+        },
+        {
+            "file_id": "dbpedia_5821_25.txt"
+        },
+        {
+            "file_id": "dbpedia_5821_29.txt"
+        },
+        {
+            "file_id": "dbpedia_5821_34.txt"
+        },
+        {
+            "file_id": "dbpedia_5821_5.txt"
+        },
+        {
+            "file_id": "dbpedia_5821_62.txt"
+        },
+        {
+            "file_id": "dbpedia_5821_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the structured JSON format for your query:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The context information provided contains multiple documents with information about Charlie Chaplin. In one of the documents (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5821/re-ranker-msmarco/32.txt), it is mentioned that \"Charlie Chaplin (Charles Chaplin)\", which confirms that the name \"Sir Charles Chaplin\" is indeed associated with Charlie Chaplin."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents mention that Charlie Chaplin's full name is \"Sir Charles Spencer Chaplin, Jr.,\" which supports the statement that his name is \"Sir Charles Chaplin.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

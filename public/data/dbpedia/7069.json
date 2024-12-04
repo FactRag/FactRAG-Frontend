@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Iris_Runge",
+    "predicate": "ontology/academicAdvisor",
+    "object": "resource/Arnold_Sommerfeld",
+    "human_readable": "Iris Runge was advised academically by Arnold Sommerfeld.",
+    "questions": [
+        {
+            "score": 0.982724130153656,
+            "question": "Did Arnold Sommerfeld provide guidance to Iris Runge?"
+        },
+        {
+            "score": 0.9701302647590637,
+            "question": "Was there a mentor-student relationship between Iris Runge and Arnold Sommerfeld?"
+        },
+        {
+            "score": 0.9644929766654968,
+            "question": "Who advised Iris Runge academically?"
+        },
+        {
+            "score": 0.950244665145874,
+            "question": "Who was responsible for advising Iris Runge academically?"
+        },
+        {
+            "score": 0.9410049319267273,
+            "question": "What was Arnold Sommerfeld's role in Iris Runge's education?"
+        },
+        {
+            "score": 0.8601313233375549,
+            "question": "In what capacity did Arnold Sommerfeld interact with Iris Runge?"
+        },
+        {
+            "score": 0.859804630279541,
+            "question": "Who is known to have advised Iris Runge?"
+        },
+        {
+            "score": 0.7700191140174866,
+            "question": "What kind of relationship existed between Iris Runge and Arnold Sommerfeld?"
+        },
+        {
+            "score": 0.7486510276794434,
+            "question": "To whom did Iris Runge turn for academic guidance?"
+        },
+        {
+            "score": 0.6153147220611572,
+            "question": "Who played a mentoring role in Iris Runge's academic journey?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Iris Runge was advised academically by Arnold Sommerfeld.",
+            "html": "dbpedia_7069_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=To whom did Iris Runge turn for academic guidance?",
+            "html": "dbpedia_7069_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What kind of relationship existed between Iris Runge and Arnold Sommerfeld?",
+            "html": "dbpedia_7069_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is known to have advised Iris Runge?",
+            "html": "dbpedia_7069_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_7069_13.txt"
+        },
+        {
+            "file_id": "dbpedia_7069_14.txt"
+        },
+        {
+            "file_id": "dbpedia_7069_2.txt"
+        },
+        {
+            "file_id": "dbpedia_7069_20.txt"
+        },
+        {
+            "file_id": "dbpedia_7069_30.txt"
+        },
+        {
+            "file_id": "dbpedia_7069_31.txt"
+        },
+        {
+            "file_id": "dbpedia_7069_32.txt"
+        },
+        {
+            "file_id": "dbpedia_7069_43.txt"
+        },
+        {
+            "file_id": "dbpedia_7069_47.txt"
+        },
+        {
+            "file_id": "dbpedia_7069_8.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe information in the documents supports this triple. According to file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_7069/re-ranker-msmarco/14.txt, Sommerfeld was a teaching staff member and Privatdozent at the University of K\u00f6nigsberg (Vita), and later offered an assistantship in Voigt's laboratory. This implies that he had students who could have been advised by him academically, including Iris Runge, a prominent mathematician."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\n**Explanation:** The documents mention Arnold Sommerfeld as an influential figure who had students like Wolfgang Pauli, Hans Bethe, Peter Debye, and Werner Heisenberg. Given the context of academic mentorship and the importance placed on Sommerfeld's role in the development of quantum theory, it is reasonable to infer that he would have advised doctoral candidates, including Iris Runge (a notable German chemist who did indeed receive her doctorate under his supervision), thus supporting the statement."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n      \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Iris Runge was not a student of Arnold Sommerfeld, she was born in the late 1950s and her academic career started after Sommerfeld's death.",
+            "category": 2
+        }
+    }
+}

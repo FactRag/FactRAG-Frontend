@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Walk_the_Moon",
+    "predicate": "ontology/hometown",
+    "object": "resource/United_States",
+    "human_readable": "Walk the Moon's hometown is the United States.",
+    "questions": [
+        {
+            "score": 0.8892326354980469,
+            "question": "Where is Walk the Moon's hometown located?"
+        },
+        {
+            "score": 0.7877674102783203,
+            "question": "What country is considered Walk the Moon's hometown?"
+        },
+        {
+            "score": 0.7411099076271057,
+            "question": "Is Walk the Moon from a particular state or region within the United States?"
+        },
+        {
+            "score": 0.42931967973709106,
+            "question": "In which nation did Walk the Moon form?"
+        },
+        {
+            "score": 0.4254913926124573,
+            "question": "Where did Walk the Moon originate?"
+        },
+        {
+            "score": 0.4046836495399475,
+            "question": "What is the nationality of Walk the Moon?"
+        },
+        {
+            "score": 0.3641865849494934,
+            "question": "Is Walk the Moon from a specific country?"
+        },
+        {
+            "score": 0.3212617039680481,
+            "question": "Which country can be associated with Walk the Moon's roots?"
+        },
+        {
+            "score": 0.3120892643928528,
+            "question": "Can you tell me about Walk the Moon's place of origin?"
+        },
+        {
+            "score": 0.16174988448619843,
+            "question": "What is the home base for the band Walk the Moon?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Walk the Moon's hometown is the United States.",
+            "html": "dbpedia_498_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me about Walk the Moon's place of origin?",
+            "html": "dbpedia_498_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Which country can be associated with Walk the Moon's roots?",
+            "html": "dbpedia_498_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Walk the Moon from a specific country?",
+            "html": "dbpedia_498_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_498_126.txt"
+        },
+        {
+            "file_id": "dbpedia_498_146.txt"
+        },
+        {
+            "file_id": "dbpedia_498_25.txt"
+        },
+        {
+            "file_id": "dbpedia_498_36.txt"
+        },
+        {
+            "file_id": "dbpedia_498_37.txt"
+        },
+        {
+            "file_id": "dbpedia_498_44.txt"
+        },
+        {
+            "file_id": "dbpedia_498_45.txt"
+        },
+        {
+            "file_id": "dbpedia_498_49.txt"
+        },
+        {
+            "file_id": "dbpedia_498_63.txt"
+        },
+        {
+            "file_id": "dbpedia_498_82.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'} \n``` \n\n\nThe documents mention that Walk the Moon started building a huge fan base in their hometown, and later became well known throughout the U.S. and other countries.  However, they don't explicitly state that their hometown *is* the United States. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents mention that the band Walk the Moon started building a huge fan base in their hometown and became well-known throughout the U.S., supporting the claim that their hometown is the United States."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "Based on the context information provided, there are multiple documents discussing Neil Armstrong and his achievements related to Wapakoneta, Ohio. There is no mention of \"Walk the Moon\" being associated with any specific town as its hometown or directly stating that Walk the Moon's hometown is in the United States. However, based on general knowledge which isn't provided but inferred from context clues such as them performing and building a fanbase within the U.S., one can reasonably deduce this fact about the band.\n\nGiven the instruction to evaluate solely based on the documents:\n\n{\"output\": \"no\"}\n\nThe direct information in the documents does not explicitly state that Walk the Moon's hometown is the United States. Hence, according to the strict interpretation of evaluating only with provided document content, the answer would be no."
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Walk the Moon's hometown is not specified within the given context information. However, it can be inferred that since the statue unveiling and celebration are happening in Wapakoneta, Ohio (USA), it might be a place where some of the band members reside or grew up, but it does not confirm that Walk the Moon's hometown is the United States.",
+            "category": 4
+        },
+        "qwen2.5": {
+            "reason": "The context information mentions Wapakoneta, Ohio as Neil Armstrong's hometown, not Walk the Moon's. Furthermore, Walk the Moon is described as a band that gained popularity and success within the U.S., but their origin is not explicitly stated to be the United States in the given context.",
+            "category": 4
+        }
+    }
+}

@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Martin_Hellman",
+    "predicate": "ontology/doctoralStudent",
+    "object": "resource/Taher_Elgamal",
+    "human_readable": "Martin Hellman was the doctoral student of Taher Elgamal.",
+    "questions": [
+        {
+            "score": 0.9774119853973389,
+            "question": "Did Martin Hellman study under Taher Elgamal?"
+        },
+        {
+            "score": 0.9441606998443604,
+            "question": "Was Taher Elgamal Martin Hellman's teacher?"
+        },
+        {
+            "score": 0.8921071290969849,
+            "question": "What is Taher Elgamal's role in Martin Hellman's academic journey?"
+        },
+        {
+            "score": 0.8766077160835266,
+            "question": "Martin Hellman was a student under which researcher?"
+        },
+        {
+            "score": 0.872053861618042,
+            "question": "Who supervised Martin Hellman's doctoral studies?"
+        },
+        {
+            "score": 0.8083152770996094,
+            "question": "Who was Martin Hellman's doctoral advisor?"
+        },
+        {
+            "score": 0.7153263688087463,
+            "question": "Who held the position of Martin Hellman's doctoral advisor?"
+        },
+        {
+            "score": 0.706505298614502,
+            "question": "What is the relationship between Martin Hellman and Taher Elgamal?"
+        },
+        {
+            "score": 0.6895182132720947,
+            "question": "What is the nature of Martin Hellman's connection to Taher Elgamal?"
+        },
+        {
+            "score": 0.6765773892402649,
+            "question": "To whom did Martin Hellman submit his doctoral thesis?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Martin Hellman was the doctoral student of Taher Elgamal.",
+            "html": "dbpedia_7394_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the nature of Martin Hellman's connection to Taher Elgamal?",
+            "html": "dbpedia_7394_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the relationship between Martin Hellman and Taher Elgamal?",
+            "html": "dbpedia_7394_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who held the position of Martin Hellman's doctoral advisor?",
+            "html": "dbpedia_7394_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_7394_22.txt"
+        },
+        {
+            "file_id": "dbpedia_7394_25.txt"
+        },
+        {
+            "file_id": "dbpedia_7394_33.txt"
+        },
+        {
+            "file_id": "dbpedia_7394_39.txt"
+        },
+        {
+            "file_id": "dbpedia_7394_5.txt"
+        },
+        {
+            "file_id": "dbpedia_7394_50.txt"
+        },
+        {
+            "file_id": "dbpedia_7394_51.txt"
+        },
+        {
+            "file_id": "dbpedia_7394_69.txt"
+        },
+        {
+            "file_id": "dbpedia_7394_71.txt"
+        },
+        {
+            "file_id": "dbpedia_7394_72.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nLet me know if you have any other triples you'd like me to evaluate!  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The provided context does not support the statement that \"Martin Hellman was the doctoral student of Taher Elgamal.\" According to the documents, Taher Elgamal was Martin Hellman's doctoral student. Specifically, it states: \"Elgamal earned master\u2019s and doctoral degrees from Stanford University, where A.M. Turing Award recipient and cryptography pioneer Martin Hellman was his dissertation advisor.\""
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Taher Elgamal was Martin Hellman's dissertation advisor, not his doctoral student.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Several passages state that Martin Hellman was Elgamal's dissertation advisor, implying a student-advisor relationship where Hellman was the student and Elgamal the advisor.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because Martin Hellman was the dissertation advisor of Taher Elgamal.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Martin Hellman was Elgamal's dissertation advisor, not his doctoral student.",
+            "category": 2
+        }
+    }
+}

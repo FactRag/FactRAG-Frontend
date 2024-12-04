@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Justin_R._Durban",
+    "predicate": "property/name",
+    "object": "Justin R. Durban",
+    "human_readable": "The name of Justin R. Durban is Justin R. Durban.",
+    "questions": [
+        {
+            "score": 0.980180025100708,
+            "question": "Is 'Justin R. Durban' a person's name?"
+        },
+        {
+            "score": 0.9777820110321045,
+            "question": "What is the full name of Justin R. Durban?"
+        },
+        {
+            "score": 0.977455735206604,
+            "question": "What is the given name of Justin R. Durban?"
+        },
+        {
+            "score": 0.9663369655609131,
+            "question": "What is the last name of Justin R. Durban?"
+        },
+        {
+            "score": 0.9582478404045105,
+            "question": "Is 'Justin R. Durban' a common name?"
+        },
+        {
+            "score": 0.9257142543792725,
+            "question": "What does the name 'Justin R. Durban' suggest?"
+        },
+        {
+            "score": 0.9087636470794678,
+            "question": "Is there anything unique about the name 'Justin R. Durban'?"
+        },
+        {
+            "score": 0.8963115215301514,
+            "question": "How would you refer to Justin R. Durban?"
+        },
+        {
+            "score": 0.8874423503875732,
+            "question": "Would you consider 'Justin R. Durban' a real name?"
+        },
+        {
+            "score": 0.719066858291626,
+            "question": "Can you provide any other information about Justin R. Durban?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of Justin R. Durban is Justin R. Durban.",
+            "html": "dbpedia_4184_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Would you consider 'Justin R. Durban' a real name?",
+            "html": "dbpedia_4184_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How would you refer to Justin R. Durban?",
+            "html": "dbpedia_4184_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there anything unique about the name 'Justin R. Durban'?",
+            "html": "dbpedia_4184_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4184_13.txt"
+        },
+        {
+            "file_id": "dbpedia_4184_15.txt"
+        },
+        {
+            "file_id": "dbpedia_4184_33.txt"
+        },
+        {
+            "file_id": "dbpedia_4184_38.txt"
+        },
+        {
+            "file_id": "dbpedia_4184_39.txt"
+        },
+        {
+            "file_id": "dbpedia_4184_4.txt"
+        },
+        {
+            "file_id": "dbpedia_4184_40.txt"
+        },
+        {
+            "file_id": "dbpedia_4184_53.txt"
+        },
+        {
+            "file_id": "dbpedia_4184_7.txt"
+        },
+        {
+            "file_id": "dbpedia_4184_8.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here's the evaluation:\n\n* `How old is Justin Durban?` Justin Durban's is 38 years old -> This statement can be found in file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4184/re-ranker-msmarco/13.txt\n* `What is Justin Durban's date of birth?` Justin Durban was born on 1986 -> **INCORRECT**. According to file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4184/re-ranker-msmarco/8.txt, Justin R. Durban was born on December 7th, 1977.\n* `Does Justin Durban have a criminal record?` -> This statement can be found in file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4184/re-ranker-msmarco/13.txt\n* `How to find someone with name and birthday?` -> This question is not relevant to the information provided.\n\nTherefore, the answer is:\n```json\n{\n  \"output\": \"no\"\n}\n```\nThe date of birth mentioned in the triple (`1986`) does not match any of the dates of birth found in the documents."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```"
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "It directly contradicts the provided information stating Justin R. Durban's name as \"Justin R. Durban\".",
+            "category": 2
+        }
+    }
+}

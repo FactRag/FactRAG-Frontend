@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Heart's_Desire_(film)",
+    "predicate": "property/country",
+    "object": "United Kingdom",
+    "human_readable": "The country of the film 'Heart's Desire' is United Kingdom.",
+    "questions": [
+        {
+            "score": 0.9213762283325195,
+            "question": "Is 'Heart's Desire' a British film?"
+        },
+        {
+            "score": 0.8119150400161743,
+            "question": "What country is the film 'Heart's Desire' from?"
+        },
+        {
+            "score": 0.5126407742500305,
+            "question": "Where was 'Heart's Desire' filmed?"
+        },
+        {
+            "score": 0.47563013434410095,
+            "question": "Who directed 'Heart's Desire'?"
+        },
+        {
+            "score": 0.4497365355491638,
+            "question": "What is the plot of 'Heart's Desire'?"
+        },
+        {
+            "score": 0.37107783555984497,
+            "question": "What are some popular films from the United Kingdom?"
+        },
+        {
+            "score": 0.3254731595516205,
+            "question": "Who are some actors in 'Heart's Desire'?"
+        },
+        {
+            "score": 0.2913455367088318,
+            "question": "What is the genre of 'Heart's Desire'?"
+        },
+        {
+            "score": 0.23651641607284546,
+            "question": "Can you name any other films produced in the United Kingdom?"
+        },
+        {
+            "score": 0.20788757503032684,
+            "question": "When was 'Heart's Desire' released?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The country of the film 'Heart's Desire' is United Kingdom.",
+            "html": "dbpedia_5949_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you name any other films produced in the United Kingdom?",
+            "html": "dbpedia_5949_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the genre of 'Heart's Desire'?",
+            "html": "dbpedia_5949_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who are some actors in 'Heart's Desire'?",
+            "html": "dbpedia_5949_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5949_106.txt"
+        },
+        {
+            "file_id": "dbpedia_5949_19.txt"
+        },
+        {
+            "file_id": "dbpedia_5949_2.txt"
+        },
+        {
+            "file_id": "dbpedia_5949_36.txt"
+        },
+        {
+            "file_id": "dbpedia_5949_41.txt"
+        },
+        {
+            "file_id": "dbpedia_5949_43.txt"
+        },
+        {
+            "file_id": "dbpedia_5949_47.txt"
+        },
+        {
+            "file_id": "dbpedia_5949_48.txt"
+        },
+        {
+            "file_id": "dbpedia_5949_84.txt"
+        },
+        {
+            "file_id": "dbpedia_5949_92.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the answer in the structured JSON format:\n\n{\n  \"output\": \"no\"\n}\n\nThis is because none of the documents mention that the film \"Heart's Desire\" was released or produced in the United Kingdom. The document at file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5949/re-ranker-msmarco/6.txt mentions that it was done by Goodby Silverstein & Partners San Francisco, Hungry Man advertising agencies for Sonic Drive-in in the United States, and the other documents mention that it was released or produced in India."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: There is no information provided that suggests the country associated with the film \"Heart's Desire\" is the United Kingdom. The documents mention events and details related to India, the United States, and a London premiere but do not provide evidence linking the film directly to the United Kingdom as its primary country of production or release."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The film \"Heart's Desire\" is not mentioned as being from the United Kingdom in the provided context. It is only associated with Savannah, Georgia (USA) and India.",
+            "category": 3
+        },
+        "gemma2": {
+            "reason": "Text mentions the film premiered at Regal Cinema (London) and was released by Luminosity Pictures in India on November 6th, 2015.",
+            "category": 3
+        },
+        "llama3.1": {
+            "reason": "The country of the film \"Desires of the Heart\" (not \"Heart's Desire\") is India, as stated in multiple context information points.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "The context information mentions \"Desires of the Heart\" which was released in theaters across India on November 6th, 2015. There is no mention or indication that \"Heart's Desire\" is a United Kingdom production.",
+            "category": 3
+        }
+    }
+}

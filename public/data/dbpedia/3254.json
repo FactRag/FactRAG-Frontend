@@ -1,0 +1,110 @@
+{
+    "subject": "resource/Miroslav_Svoboda_(ice_hockey)",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "Miroslav Svoboda (ice hockey)",
+    "human_readable": "The label of Miroslav Svoboda (ice hockey) is Miroslav Svoboda (ice hockey).",
+    "questions": [
+        {
+            "score": 0.9705128073692322,
+            "question": "Is Miroslav Svoboda known for playing ice hockey?"
+        },
+        {
+            "score": 0.9298542737960815,
+            "question": "Who is Miroslav Svoboda?"
+        },
+        {
+            "score": 0.8775421380996704,
+            "question": "Can you tell me more about Miroslav Svoboda's career in ice hockey?"
+        },
+        {
+            "score": 0.8609499335289001,
+            "question": "What sport is Miroslav Svoboda associated with?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The label of Miroslav Svoboda (ice hockey) is Miroslav Svoboda (ice hockey).",
+            "html": "dbpedia_3254_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about Miroslav Svoboda's career in ice hockey?",
+            "html": "dbpedia_3254_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is Miroslav Svoboda?",
+            "html": "dbpedia_3254_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Miroslav Svoboda known for playing ice hockey?",
+            "html": "dbpedia_3254_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3254_1.txt"
+        },
+        {
+            "file_id": "dbpedia_3254_101.txt"
+        },
+        {
+            "file_id": "dbpedia_3254_20.txt"
+        },
+        {
+            "file_id": "dbpedia_3254_26.txt"
+        },
+        {
+            "file_id": "dbpedia_3254_64.txt"
+        },
+        {
+            "file_id": "dbpedia_3254_71.txt"
+        },
+        {
+            "file_id": "dbpedia_3254_79.txt"
+        },
+        {
+            "file_id": "dbpedia_3254_82.txt"
+        },
+        {
+            "file_id": "dbpedia_3254_83.txt"
+        },
+        {
+            "file_id": "dbpedia_3254_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation of the triple:\n\n**Triple:** What Enneagram Type is Miroslav Svoboda?\n\nGiven the context information and without prior knowledge, I find that there are multiple mentions of Miroslav Svoboda in different contexts. In one document (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3254/re-ranker-msmarco/9.txt), it is mentioned that \"Miroslav Svoboda is an Enneagram Six personality type with a Seven wing or 6w7.\"\n\nThis information directly supports the triple, indicating that the answer should be **yes**.\n\nHere is the response in JSON format:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: The provided documents contain information about Miroslav Svoboda as a Czech celebrity and ice hockey goaltender. They do not mention any association with \"Miroslav Svoboda (ice hockey)\" being the label of another person or entity, nor do they provide any direct connection to him being labeled in this way. Therefore, the triple is incorrect according to the given context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "qwen2.5": {
+            "reason": "The provided context clearly differentiates between Miroslav Svoboda as an ice hockey goaltender and a Czech celebrity, highlighting distinct biographies and achievements for each. Therefore, labeling them as the same individual would be inaccurate.",
+            "category": 2
+        }
+    }
+}

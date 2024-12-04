@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Manchester_Museum",
+    "predicate": "ontology/type",
+    "object": "resource/University_museum",
+    "human_readable": "The Manchester Museum is of the type University museum.",
+    "questions": [
+        {
+            "score": 0.9631011486053467,
+            "question": "What type of museum is the Manchester Museum?"
+        },
+        {
+            "score": 0.9504044651985168,
+            "question": "Is the Manchester Museum affiliated with a university?"
+        },
+        {
+            "score": 0.8793612718582153,
+            "question": "What kind of exhibits might be found at the Manchester Museum?"
+        },
+        {
+            "score": 0.8196666836738586,
+            "question": "How does being a University museum influence the Manchester Museum's collections?"
+        },
+        {
+            "score": 0.7731017470359802,
+            "question": "Are there any special programs or events held at the Manchester Museum?"
+        },
+        {
+            "score": 0.7137240767478943,
+            "question": "How does the Manchester Museum contribute to the university's academic mission?"
+        },
+        {
+            "score": 0.5821079611778259,
+            "question": "What are some common features of University museums?"
+        },
+        {
+            "score": 0.5730206370353699,
+            "question": "What is the purpose of a University museum?"
+        },
+        {
+            "score": 0.4829743802547455,
+            "question": "Can you name other examples of University museums?"
+        },
+        {
+            "score": 0.3285331130027771,
+            "question": "What are some of the challenges faced by University museums?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The Manchester Museum is of the type University museum.",
+            "html": "dbpedia_4084_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you name other examples of University museums?",
+            "html": "dbpedia_4084_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the purpose of a University museum?",
+            "html": "dbpedia_4084_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some common features of University museums?",
+            "html": "dbpedia_4084_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4084_114.txt"
+        },
+        {
+            "file_id": "dbpedia_4084_126.txt"
+        },
+        {
+            "file_id": "dbpedia_4084_139.txt"
+        },
+        {
+            "file_id": "dbpedia_4084_14.txt"
+        },
+        {
+            "file_id": "dbpedia_4084_16.txt"
+        },
+        {
+            "file_id": "dbpedia_4084_44.txt"
+        },
+        {
+            "file_id": "dbpedia_4084_61.txt"
+        },
+        {
+            "file_id": "dbpedia_4084_72.txt"
+        },
+        {
+            "file_id": "dbpedia_4084_73.txt"
+        },
+        {
+            "file_id": "dbpedia_4084_87.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the provided context information, here is the evaluation of the triple:\n\n{\n  \"output\": \"yes\"\n}\n\nExplanation:\n\nThe context information states that \"Manchester Museum is part of the University of Manchester...\" (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4084/re-ranker-msmarco/44.txt) and \"Manchester Museum is a museum displaying works of archaeology, anthropology and natural history and is owned by the University of Manchester, in England.\" (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4084/re-ranker-msmarco/71.txt). This suggests that The Manchester Museum is indeed a type of university museum, as it is part of and owned by the University of Manchester."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide multiple mentions that Manchester Museum is part of or owned by the University of Manchester, which supports the statement that it is a university museum."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

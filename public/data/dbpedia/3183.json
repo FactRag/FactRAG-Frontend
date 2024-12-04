@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Kemao_Market",
+    "predicate": "ontology/country",
+    "object": "resource/China",
+    "human_readable": "Kemao Market is located in China.",
+    "questions": [
+        {
+            "score": 0.9170387983322144,
+            "question": "Where is Kemao Market located?"
+        },
+        {
+            "score": 0.8138735890388489,
+            "question": "What country is Kemao Market in?"
+        },
+        {
+            "score": 0.6122464537620544,
+            "question": "Is Kemao Market a popular market?"
+        },
+        {
+            "score": 0.5813787579536438,
+            "question": "Are there any famous landmarks near Kemao Market?"
+        },
+        {
+            "score": 0.4918077886104584,
+            "question": "What kind of goods are sold at Kemao Market?"
+        },
+        {
+            "score": 0.4688315689563751,
+            "question": "Can you tell me about Kemao Market?"
+        },
+        {
+            "score": 0.444315642118454,
+            "question": "How can someone get to Kemao Market?"
+        },
+        {
+            "score": 0.3956338167190552,
+            "question": "Is there anything special about visiting Kemao Market?"
+        },
+        {
+            "score": 0.33051368594169617,
+            "question": "What is the atmosphere like at Kemao Market?"
+        },
+        {
+            "score": 0.2774210274219513,
+            "question": "Does Kemao Market have a unique history or significance?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Kemao Market is located in China.",
+            "html": "dbpedia_3183_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the atmosphere like at Kemao Market?",
+            "html": "dbpedia_3183_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there anything special about visiting Kemao Market?",
+            "html": "dbpedia_3183_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How can someone get to Kemao Market?",
+            "html": "dbpedia_3183_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3183_12.txt"
+        },
+        {
+            "file_id": "dbpedia_3183_18.txt"
+        },
+        {
+            "file_id": "dbpedia_3183_22.txt"
+        },
+        {
+            "file_id": "dbpedia_3183_23.txt"
+        },
+        {
+            "file_id": "dbpedia_3183_25.txt"
+        },
+        {
+            "file_id": "dbpedia_3183_27.txt"
+        },
+        {
+            "file_id": "dbpedia_3183_36.txt"
+        },
+        {
+            "file_id": "dbpedia_3183_38.txt"
+        },
+        {
+            "file_id": "dbpedia_3183_46.txt"
+        },
+        {
+            "file_id": "dbpedia_3183_71.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the context information provided, here's my evaluation:\n\n* Triple: Kemao Market is located in China.\n\nMy analysis:\nThe first document (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3183/re-ranker-msmarco/38.txt) mentions that \"The power is out on the second floor of Kemao Market, a 24-floor multi-story mall on the east side of the Zhongguancun Avenue, in the northwest district of Haidian.\" This suggests that Kemao Market is located in Beijing, China. \n\nHowever, upon closer inspection, I realize that \"Haidian\" is actually a district in Beijing, China. But there's another document (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3183/re-ranker-msmarco/71.txt) which mentions \"Shanghai Kemao Pharmaceutical Packaging Materials Co., Ltd.\" and not \"Kemao Market\". This leads me to believe that there might be two different entities: Kemao Market in Beijing, China and another company named Kemao in Shanghai, China.\n\nConsidering this context, I'm inclined to say that the statement \"Kemao Market is located in China\" is true but not entirely accurate. While Kemao Market is indeed located in Haidian district of Beijing (which is in China), there might be some confusion with another company named Kemao operating in Shanghai. However, since the question doesn't specify which entity to focus on, I'll assume it's referring to Kemao Market.\n\nSo, my answer would be:\n{'output': 'yes'}\n\nPlease note that this evaluation is based on the provided context information and might not reflect a more nuanced understanding of the entities involved."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe context information provided mentions \"Kemao Market, a 24-floor multi-story mall on the east side of the Zhongguancun Avenue, in the northwest district of Haidian,\" which is located in Beijing, China. Therefore, the statement that Kemao Market is located in China is supported by the given documents."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {'output': 'yes'}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

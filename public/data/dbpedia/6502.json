@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Salamanca",
+    "predicate": "property/janPrecipitationDays",
+    "object": "6",
+    "human_readable": "Salamanca has a January precipitation of 6 days.",
+    "questions": [
+        {
+            "score": 0.8664735555648804,
+            "question": "How many days of precipitation does Salamanca experience in January?"
+        },
+        {
+            "score": 0.8437933921813965,
+            "question": "What is the average rainfall in Salamanca during January?"
+        },
+        {
+            "score": 0.8309643864631653,
+            "question": "What activities might be affected by the rainfall in Salamanca during January?"
+        },
+        {
+            "score": 0.7763335108757019,
+            "question": "Is January a typically rainy month in Salamanca?"
+        },
+        {
+            "score": 0.7713916897773743,
+            "question": "How does the precipitation in January compare to other months in Salamanca?"
+        },
+        {
+            "score": 0.765376091003418,
+            "question": "Compared to other months, how much rain does Salamanca get in January?"
+        },
+        {
+            "score": 0.7407668232917786,
+            "question": "What is the typical weather pattern in Salamanca during January?"
+        },
+        {
+            "score": 0.6811023950576782,
+            "question": "Would you expect a sunny day in Salamanca during January?"
+        },
+        {
+            "score": 0.6723854541778564,
+            "question": "Does Salamanca receive more or less precipitation in January compared to December?"
+        },
+        {
+            "score": 0.5130419135093689,
+            "question": "What kind of clothing would be suitable for visiting Salamanca in January?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Salamanca has a January precipitation of 6 days.",
+            "html": "dbpedia_6502_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Salamanca receive more or less precipitation in January compared to December?",
+            "html": "dbpedia_6502_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Would you expect a sunny day in Salamanca during January?",
+            "html": "dbpedia_6502_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the typical weather pattern in Salamanca during January?",
+            "html": "dbpedia_6502_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6502_10.txt"
+        },
+        {
+            "file_id": "dbpedia_6502_28.txt"
+        },
+        {
+            "file_id": "dbpedia_6502_34.txt"
+        },
+        {
+            "file_id": "dbpedia_6502_48.txt"
+        },
+        {
+            "file_id": "dbpedia_6502_50.txt"
+        },
+        {
+            "file_id": "dbpedia_6502_57.txt"
+        },
+        {
+            "file_id": "dbpedia_6502_74.txt"
+        },
+        {
+            "file_id": "dbpedia_6502_78.txt"
+        },
+        {
+            "file_id": "dbpedia_6502_94.txt"
+        },
+        {
+            "file_id": "dbpedia_6502_96.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n**Explanation:**\n\nThe provided text states that Salamanca usually receives around **2 days** of rain in January, not 6 days.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents mention that Salamanca usually receives around 15 days with rain in January or low rainfall averaging around 12 mm for the month, but they do not specify a precise number of 6 rainy days. Therefore, the statement \"Salamanca has a January precipitation of 6 days\" is not supported by the given information."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n    \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The provided context states that on average, there are about 15 days with rain during January in Salamanca. This means that it rains for approximately 43% of the month (15 out of 35 days), not 6 days.",
+            "category": -1
+        },
+        "gemma2": {
+            "reason": "Several sources mention Salamanca receiving moderate rainfall around 49 mm with about 15 days of rain during January.  6 days of precipitation are inconsistent with these figures.",
+            "category": -1
+        },
+        "llama3.1": {
+            "reason": "January precipitation in Salamanca averages around 49 mm for one source and 12 mm for another, but no information is provided about the number of rainy days, only that there are about 15 rainy days on average for the first source and around 2 rainy days on average for the second source.",
+            "category": -1
+        },
+        "qwen2.5": {
+            "reason": "The context information states that Salamanca in January usually has about 15 days with rain, not 6 days.",
+            "category": -1
+        }
+    }
+}

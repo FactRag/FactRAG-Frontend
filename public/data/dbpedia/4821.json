@@ -1,0 +1,142 @@
+{
+    "subject": "resource/James_Lepp",
+    "predicate": "ontology/college",
+    "object": "resource/University_of_Illinois_at_Urbana\u2013Champaign",
+    "human_readable": "James Lepp attended University of Illinois at Urbana\u2013Champaign.",
+    "questions": [
+        {
+            "score": 0.9885823726654053,
+            "question": "Is James Lepp a student at the University of Illinois at Urbana\u2013Champaign?"
+        },
+        {
+            "score": 0.960139811038971,
+            "question": "Did James Lepp study at a university in Illinois?"
+        },
+        {
+            "score": 0.9174073934555054,
+            "question": "Where did James Lepp attend university?"
+        },
+        {
+            "score": 0.8513625264167786,
+            "question": "What is the name of the university that James Lepp attended?"
+        },
+        {
+            "score": 0.8364408016204834,
+            "question": "What is the full name of the university James Lepp attended?"
+        },
+        {
+            "score": 0.8125779032707214,
+            "question": "Where was James Lepp's university located?"
+        },
+        {
+            "score": 0.8025626540184021,
+            "question": "Name the university James Lepp is associated with."
+        },
+        {
+            "score": 0.750701904296875,
+            "question": "At which university did James Lepp study?"
+        },
+        {
+            "score": 0.6445087790489197,
+            "question": "What university did James Lepp graduate from?"
+        },
+        {
+            "score": 0.637708306312561,
+            "question": "What institution of higher learning did James Lepp attend?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=James Lepp attended University of Illinois at Urbana\u2013Champaign.",
+            "html": "dbpedia_4821_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What university did James Lepp graduate from?",
+            "html": "dbpedia_4821_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=At which university did James Lepp study?",
+            "html": "dbpedia_4821_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Name the university James Lepp is associated with.",
+            "html": "dbpedia_4821_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4821_14.txt"
+        },
+        {
+            "file_id": "dbpedia_4821_17.txt"
+        },
+        {
+            "file_id": "dbpedia_4821_32.txt"
+        },
+        {
+            "file_id": "dbpedia_4821_37.txt"
+        },
+        {
+            "file_id": "dbpedia_4821_43.txt"
+        },
+        {
+            "file_id": "dbpedia_4821_46.txt"
+        },
+        {
+            "file_id": "dbpedia_4821_5.txt"
+        },
+        {
+            "file_id": "dbpedia_4821_51.txt"
+        },
+        {
+            "file_id": "dbpedia_4821_53.txt"
+        },
+        {
+            "file_id": "dbpedia_4821_98.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation:\n\nThe query is \"James Lepp attended University of Illinois at Urbana\u2013Champaign.\"\n\nUpon analyzing the documents, we can see that there are multiple mentions of James Lepp and his attendance at the University of Illinois. However, it's stated that he was recruited to Illinois because they had a scholarship available, which is not exactly what the query asks (attended). The correct information is that James Lepp \"settled on the University of Illinois in the fall of 2001\" but then transferred to the University of Washington in 2003.\n\nTherefore:\n\n{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information about James Lepp's academic journey, mentioning that he initially attended the University of Illinois. Therefore, the statement that James Lepp attended the University of Illinois at Urbana\u2013Champaign is supported by the given context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "James Lepp initially attended the University of Illinois but later transferred to the University of Washington.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Text states he transferred from the University of Illinois to the University of Washington.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context explicitly states that James Lepp was recruited by the University of Illinois but chose to attend due to scholarships being available, indicating he did indeed attend the University of Illinois at Urbana\u2013Champaign.",
+            "category": 2
+        }
+    }
+}

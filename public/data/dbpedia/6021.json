@@ -1,0 +1,134 @@
+{
+    "subject": "resource/WVJS",
+    "predicate": "ontology/sisterStation",
+    "object": "resource/WKCM",
+    "human_readable": "WVJS is a sister station of WKCM.",
+    "questions": [
+        {
+            "score": 0.98686683177948,
+            "question": "If WVJS is a sister station of WKCM, what does that mean?"
+        },
+        {
+            "score": 0.9844470024108887,
+            "question": "What other stations might be considered 'sisters' to WVJS and WKCM?"
+        },
+        {
+            "score": 0.9324297308921814,
+            "question": "Is WVJS related to WKCM?"
+        },
+        {
+            "score": 0.7477290630340576,
+            "question": "Are WVJS and WKCM both radio stations?"
+        },
+        {
+            "score": 0.6801303625106812,
+            "question": "What is the relationship between WVJS and WKCM?"
+        },
+        {
+            "score": 0.6332188844680786,
+            "question": "What kind of media outlets are WVJS and WKCM?"
+        },
+        {
+            "score": 0.47395071387290955,
+            "question": "How could the relationship between WVJS and WKCM benefit listeners?"
+        },
+        {
+            "score": 0.4125300943851471,
+            "question": "Do WVJS and WKCM share any ownership?"
+        },
+        {
+            "score": 0.4003579020500183,
+            "question": "Are there any downsides to being a sister station?"
+        },
+        {
+            "score": 0.3560847043991089,
+            "question": "Could WVJS and WKCM have similar programming formats?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=WVJS is a sister station of WKCM.",
+            "html": "dbpedia_6021_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any downsides to being a sister station?",
+            "html": "dbpedia_6021_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Do WVJS and WKCM share any ownership?",
+            "html": "dbpedia_6021_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How could the relationship between WVJS and WKCM benefit listeners?",
+            "html": "dbpedia_6021_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6021_1.txt"
+        },
+        {
+            "file_id": "dbpedia_6021_11.txt"
+        },
+        {
+            "file_id": "dbpedia_6021_12.txt"
+        },
+        {
+            "file_id": "dbpedia_6021_13.txt"
+        },
+        {
+            "file_id": "dbpedia_6021_15.txt"
+        },
+        {
+            "file_id": "dbpedia_6021_17.txt"
+        },
+        {
+            "file_id": "dbpedia_6021_2.txt"
+        },
+        {
+            "file_id": "dbpedia_6021_3.txt"
+        },
+        {
+            "file_id": "dbpedia_6021_6.txt"
+        },
+        {
+            "file_id": "dbpedia_6021_8.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you'd like to try another query!  I'm ready for more."
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "To evaluate whether the information in the documents supports the triple \"WVJS is a sister station of WKCM\", I will look for any mention of WVJS and WKCM being associated with each other.\n\nUpon examining the provided context, I find that:\n\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6021/re-ranker-msmarco/13.txt, it is mentioned that \"WXCM\" (not WVJS or WKCM) is a sister station of WBIO, WKCM, WLME, WTCJ, and WVJS.\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6021/re-ranker-msmarco/6.txt, it is mentioned that WVJS shares facilities at 1115 Tamarack Rd, Owensboro, with Cromwell stations WBIO, WKCM, WLME, WCJZ, and WTCJ. However, this information does not explicitly state that WVJS is a sister station of WKCM.\n\nBased on the provided context, I conclude that:\n\n`{ \"output\": \"no\" }`"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents state that WVJS has sister stations including WBIO, WXCM, WKCM, WLME, WCJZ and WTCJ. This confirms that WVJS is indeed a sister station of WKCM."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The claim is wrong because WVJS is a California running club located in Saratoga, CA, whereas WKCM/WLME are stations based in Owensboro, Kentucky.",
+            "category": 2
+        }
+    }
+}

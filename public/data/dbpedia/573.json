@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Ivesia_pickeringii",
+    "predicate": "ontology/binomialAuthority",
+    "object": "resource/John_Torrey",
+    "human_readable": "Ivesia pickeringii was described by John Torrey.",
+    "questions": [
+        {
+            "score": 0.984347939491272,
+            "question": "When was Ivesia pickeringii first described by John Torrey?"
+        },
+        {
+            "score": 0.8485532999038696,
+            "question": "Who described the plant Ivesia pickeringii?"
+        },
+        {
+            "score": 0.82916659116745,
+            "question": "Which botanist is known for describing Ivesia pickeringii?"
+        },
+        {
+            "score": 0.6689016819000244,
+            "question": "What characteristics define Ivesia pickeringii?"
+        },
+        {
+            "score": 0.5536889433860779,
+            "question": "Is Ivesia pickeringii a type of flower?"
+        },
+        {
+            "score": 0.5184042453765869,
+            "question": "Can you name another plant described by John Torrey?"
+        },
+        {
+            "score": 0.4693824052810669,
+            "question": "Where might one find Ivesia pickeringii growing?"
+        },
+        {
+            "score": 0.4312567114830017,
+            "question": "What is the scientific name of the plant described by John Torrey?"
+        },
+        {
+            "score": 0.32220396399497986,
+            "question": "Are there any conservation concerns for Ivesia pickeringii?"
+        },
+        {
+            "score": 0.21503843367099762,
+            "question": "What field does John Torrey's work belong to?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Ivesia pickeringii was described by John Torrey.",
+            "html": "dbpedia_573_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any conservation concerns for Ivesia pickeringii?",
+            "html": "dbpedia_573_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the scientific name of the plant described by John Torrey?",
+            "html": "dbpedia_573_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where might one find Ivesia pickeringii growing?",
+            "html": "dbpedia_573_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_573_1.txt"
+        },
+        {
+            "file_id": "dbpedia_573_15.txt"
+        },
+        {
+            "file_id": "dbpedia_573_16.txt"
+        },
+        {
+            "file_id": "dbpedia_573_17.txt"
+        },
+        {
+            "file_id": "dbpedia_573_19.txt"
+        },
+        {
+            "file_id": "dbpedia_573_2.txt"
+        },
+        {
+            "file_id": "dbpedia_573_20.txt"
+        },
+        {
+            "file_id": "dbpedia_573_22.txt"
+        },
+        {
+            "file_id": "dbpedia_573_4.txt"
+        },
+        {
+            "file_id": "dbpedia_573_8.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\"output\": \"yes\"}\n``` \n\n\nLet me explain why:\n\n* **The text states:** \"Ivesia pickeringii Torr. ex A. Gray\"  appears multiple times in the documents. This indicates that Ivesia pickeringii was indeed described by John Torrey (Torr.). \n\n\n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The document mentions that \"Ivesia pickeringii Torr. ex A. Gray is a synonym of Horkelia pickeringii (Torr. ex A. Gray) Rydb.\" This indicates that John Torrey (Torr.) was involved in the description, even though the primary name used today might be different due to taxonomic changes."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n      \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Information provided states Ivesia pickeringii Torr. ex A. Gray, indicating that Asa Gray published the description after John Torrey made initial observations or collection of the species.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "Ivesia pickeringii was described by A. Gray (Asa Gray), not John Torrey, according to the text which states \"Ivesia pickeringii Torr. ex A. Gray\".",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The provided context does not mention John Torrey as the describer of Ivesia pickeringii. Instead, it indicates that Ivesia pickeringii Torr. ex A. Gray is a synonym of Horkelia pickeringii, suggesting that the original description was by Torrey (Torr.), but without his last name, and later amended by Asa Gray (ex A. Gray).",
+            "category": 2
+        }
+    }
+}

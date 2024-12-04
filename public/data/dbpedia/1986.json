@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Ian_Henschke",
+    "predicate": "http://purl.org/linguistics/gold/hypernym",
+    "object": "resource/Journalist",
+    "human_readable": "Ian Henschke is a Journalist.",
+    "questions": [
+        {
+            "score": 0.9162660241127014,
+            "question": "Is Ian Henschke a writer?"
+        },
+        {
+            "score": 0.8561872243881226,
+            "question": "Is Ian Henschke involved in media?"
+        },
+        {
+            "score": 0.8392691016197205,
+            "question": "What are some examples of journalism that Ian Henschke might do?"
+        },
+        {
+            "score": 0.6951033473014832,
+            "question": "What is Ian Henschke's profession?"
+        },
+        {
+            "score": 0.5678226351737976,
+            "question": "Does Ian Henschke report on news?"
+        },
+        {
+            "score": 0.4314221143722534,
+            "question": "Can you tell me about Ian Henschke's career?"
+        },
+        {
+            "score": 0.3746059536933899,
+            "question": "Where might Ian Henschke work?"
+        },
+        {
+            "score": 0.35447198152542114,
+            "question": "What type of work does Ian Henschke do?"
+        },
+        {
+            "score": 0.2875702381134033,
+            "question": "What field does Ian Henschke work in?"
+        },
+        {
+            "score": 0.2503918707370758,
+            "question": "What skills are important for Ian Henschke's job?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Ian Henschke is a Journalist.",
+            "html": "dbpedia_1986_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What field does Ian Henschke work in?",
+            "html": "dbpedia_1986_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of work does Ian Henschke do?",
+            "html": "dbpedia_1986_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where might Ian Henschke work?",
+            "html": "dbpedia_1986_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1986_10.txt"
+        },
+        {
+            "file_id": "dbpedia_1986_12.txt"
+        },
+        {
+            "file_id": "dbpedia_1986_24.txt"
+        },
+        {
+            "file_id": "dbpedia_1986_25.txt"
+        },
+        {
+            "file_id": "dbpedia_1986_3.txt"
+        },
+        {
+            "file_id": "dbpedia_1986_34.txt"
+        },
+        {
+            "file_id": "dbpedia_1986_39.txt"
+        },
+        {
+            "file_id": "dbpedia_1986_5.txt"
+        },
+        {
+            "file_id": "dbpedia_1986_80.txt"
+        },
+        {
+            "file_id": "dbpedia_1986_86.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "After evaluating the provided context information, I can answer your query as follows:\n\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1986/re-ranker-msmarco/24.txt and file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1986/re-ranker-msmarco/25.txt, it is stated that Ian Henschke was a \"veteran journalist\" and the chief advocate at National Seniors Australia.\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1986/re-ranker-msmarco/39.txt, it is mentioned that Ian Henschke is a former South Australian television journalist and radio presenter.\n\nBased on this information, the answer to your query is:\n\n{'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide multiple references to Ian Henschke's career as a journalist, including his roles on programs like Four Corners and 7.30 Report, his work as an ABC radio talk show presenter, and his current position as Chief Advocate for National Seniors Australia where he shares information relevant to older Australians, indicating his ongoing journalism or related activities."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Ian Henschke was a journalist earlier in his career but currently holds the role of Chief Advocate for National Seniors Australia.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Multiple entries describe his roles as Chief Advocate for National Seniors Australia, Spokesperson for the Alliance for a Fairer Retirement System, and past experience as an advocate and journalist.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "Ian Henschke held the position of Chief Advocate for National Seniors Australia from 2017 to 2023, which was after his time as a top rating ABC radio talk show presenter and journalist.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Ian Henschke held the role of Chief Advocate for National Seniors Australia for 7 years from 2017 to 2023, which indicates he has shifted his focus away from journalism. Additionally, while he did have a career as a journalist and radio presenter in the past, including work on programs like Four Corners and 7.30 Report, his current role does not align with active journalistic duties.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Tomorrow_Wendy",
+    "predicate": "ontology/isbn",
+    "object": "0-595-26954-0",
+    "human_readable": "The ISBN of Tomorrow Wendy is 0-595-26954-0.",
+    "questions": [
+        {
+            "score": 0.8751059174537659,
+            "question": "What is the ISBN of the book 'Tomorrow Wendy'?"
+        },
+        {
+            "score": 0.810509443283081,
+            "question": "Can you provide the ISBN for the book 'Tomorrow Wendy'?"
+        },
+        {
+            "score": 0.7656330466270447,
+            "question": "Is there a book with the title 'Tomorrow Wendy'?"
+        },
+        {
+            "score": 0.7313516736030579,
+            "question": "How many digits are in the ISBN of 'Tomorrow Wendy'?"
+        },
+        {
+            "score": 0.7263458371162415,
+            "question": "What information does '0-595-26954-0' represent?"
+        },
+        {
+            "score": 0.33475905656814575,
+            "question": "What is the purpose of an ISBN?"
+        },
+        {
+            "score": 0.3173940181732178,
+            "question": "What kind of information can be found using an ISBN?"
+        },
+        {
+            "score": 0.312295526266098,
+            "question": "Does the ISBN identify a specific book?"
+        },
+        {
+            "score": 0.20910920202732086,
+            "question": "Can you find other books with similar ISBN prefixes?"
+        },
+        {
+            "score": 0.027868518605828285,
+            "question": "Is there a standard format for ISBNs?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The ISBN of Tomorrow Wendy is 0-595-26954-0.",
+            "html": "dbpedia_1577_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you find other books with similar ISBN prefixes?",
+            "html": "dbpedia_1577_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does the ISBN identify a specific book?",
+            "html": "dbpedia_1577_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What kind of information can be found using an ISBN?",
+            "html": "dbpedia_1577_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1577_1.txt"
+        },
+        {
+            "file_id": "dbpedia_1577_10.txt"
+        },
+        {
+            "file_id": "dbpedia_1577_2.txt"
+        },
+        {
+            "file_id": "dbpedia_1577_3.txt"
+        },
+        {
+            "file_id": "dbpedia_1577_4.txt"
+        },
+        {
+            "file_id": "dbpedia_1577_5.txt"
+        },
+        {
+            "file_id": "dbpedia_1577_6.txt"
+        },
+        {
+            "file_id": "dbpedia_1577_7.txt"
+        },
+        {
+            "file_id": "dbpedia_1577_8.txt"
+        },
+        {
+            "file_id": "dbpedia_1577_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'} \n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "To evaluate the query, I need to check if the documents contain information about the ISBN of \"Tomorrow Wendy\".\n\nAfter searching through the documents, I found a mention of the book \"Tomorrow Wendy\" in file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1577/re-ranker-msmarco/5.txt. The relevant text is:\n\n\"Shelley Stoehr.  Delacorte Press, $15.95 (176pp) ISBN 978-0-385-32339-0\"\n\nThe ISBN mentioned in the document is indeed \"978-0-385-32339-0\", but it's not what we're looking for.\n\nHowever, I found another mention of the book \"Tomorrow Wendy\" in file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1577/re-ranker-msmarco/6.txt. The relevant text is:\n\n\"8vo.  166pp.  Paperback.  Author Shelley Stoehr, who never seems to flinch at the grit of teenage angst, succeeds again with Tomorrow Wendy, the story of an unforgettable teen named Cary who finds herself obsessed with her boyfriend's sister.\"\n\nNo ISBN is mentioned in this document.\n\nBut I found another mention of the book \"Tomorrow Wendy\" in file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1577/re-ranker-msmarco/5.txt. The relevant text is:\n\n\"Shelley Stoehr.  Delacorte Press, $15.95 (176pp) ISBN 978-0-385-32339-0\"\n\nAnd also in file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1577/re-ranker-msmarco/6.txt is not the only one where it appears, same info.\n\nThe ISBN mentioned in this document is \"978-0-385-32339-0\", but the original query states that the ISBN of \"Tomorrow Wendy\" is 0-595-26954-0. \n\nTherefore, I conclude that:\n\n{\n    \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\"output\": \"no\"}\n```\n\nExplanation: None of the provided documents contain information about the ISBN of \"Tomorrow Wendy,\" which is stated as 0-595-26954-0 in the query. Therefore, the triple is incorrect according to the given context."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The ISBN provided (0-595-26954-0) does not match the ISBN mentioned in any of the context information for the book \"Tomorrow Wendy\". The correct ISBN can be found in item #3 and #4, which are both 0-385-32339-7.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "The provided text lists the ISBN as 978-0-385-32339-0.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The ISBN provided (0-595-26954-0) does not match any of the ISBNs mentioned in the context information, which includes 978-0-385-32339-0 for the book \"Tomorrow Wendy\".",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The provided context does not mention any ISBN for the book \"Tomorrow Wendy,\" and the ISBN 0-595-26954-0 does not match the one given in the \"synopsis\" which is 978-0-385-32339-0.",
+            "category": 2
+        }
+    }
+}

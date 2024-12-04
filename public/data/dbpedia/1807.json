@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Dries_van_der_Lof",
+    "predicate": "property/name",
+    "object": "Lof, Andre van der",
+    "human_readable": "The name of Dries van der Lof is Lof, Andre van der.",
+    "questions": [
+        {
+            "score": 0.9819462895393372,
+            "question": "Is 'Andre van der' a part of Dries van der Lof's full name?"
+        },
+        {
+            "score": 0.9446209669113159,
+            "question": "Does Dries van der Lof have a nickname?"
+        },
+        {
+            "score": 0.9269190430641174,
+            "question": "What is Dries van der Lof's nickname?"
+        },
+        {
+            "score": 0.9196552038192749,
+            "question": "What are the full names of Dries van der Lof?"
+        },
+        {
+            "score": 0.9074717164039612,
+            "question": "What name is used interchangeably with 'Dries van der Lof'?"
+        },
+        {
+            "score": 0.8817207217216492,
+            "question": "What are the different names associated with Dries van der Lof?"
+        },
+        {
+            "score": 0.841937243938446,
+            "question": "How many names does Dries van der Lof have?"
+        },
+        {
+            "score": 0.8415749669075012,
+            "question": "Can you list all the names of Dries van der Lof?"
+        },
+        {
+            "score": 0.8170309066772461,
+            "question": "What is another way to refer to Dries van der Lof?"
+        },
+        {
+            "score": 0.7040703296661377,
+            "question": "Who is known as 'Lof'?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of Dries van der Lof is Lof, Andre van der.",
+            "html": "dbpedia_1807_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is another way to refer to Dries van der Lof?",
+            "html": "dbpedia_1807_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you list all the names of Dries van der Lof?",
+            "html": "dbpedia_1807_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How many names does Dries van der Lof have?",
+            "html": "dbpedia_1807_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1807_100.txt"
+        },
+        {
+            "file_id": "dbpedia_1807_15.txt"
+        },
+        {
+            "file_id": "dbpedia_1807_24.txt"
+        },
+        {
+            "file_id": "dbpedia_1807_31.txt"
+        },
+        {
+            "file_id": "dbpedia_1807_35.txt"
+        },
+        {
+            "file_id": "dbpedia_1807_53.txt"
+        },
+        {
+            "file_id": "dbpedia_1807_61.txt"
+        },
+        {
+            "file_id": "dbpedia_1807_64.txt"
+        },
+        {
+            "file_id": "dbpedia_1807_67.txt"
+        },
+        {
+            "file_id": "dbpedia_1807_7.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'} \n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "After evaluating the context information, I can confirm that:\n\n{\n  \"output\": \"no\"\n} \n\nThis is because none of the documents mention that the full name of Dries van der Lof is actually \"Lof, Andre van der\". The documents consistently refer to him as \"Dries van der Lof\" or \"Andre 'Dries' van der Lof\", but not with the surname \"Lof\" before the first name."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: According to the provided documents, Dries van der Lof's full name is given as \"Andre \u201cDries\u201d van der Lof,\" which does not match the query stating his name is \"Lof, Andre van der.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "It contradicts the consistent use of \"Andre 'Dries' van der Lof\" as his full name across all provided context information.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The name of Dries van der Lof is actually Van der Lof, Andre \"Dries\", not just Lof, as his full first name is mentioned and distinguished from his nickname.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The correct name provided in all context information is \"Andre \"Dries\" van der Lof,\" not \"Lof, Andre van der.\"",
+            "category": 2
+        }
+    }
+}

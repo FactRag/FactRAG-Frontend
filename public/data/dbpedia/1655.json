@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Amy_Bach",
+    "predicate": "ontology/nationality",
+    "object": "resource/United_States",
+    "human_readable": "Amy Bach's nationality is United States.",
+    "questions": [
+        {
+            "score": 0.9389164447784424,
+            "question": "Does Amy Bach hold American nationality?"
+        },
+        {
+            "score": 0.9249576926231384,
+            "question": "Is Amy Bach a citizen of the United States?"
+        },
+        {
+            "score": 0.9145971536636353,
+            "question": "What is Amy Bach's nationality?"
+        },
+        {
+            "score": 0.8657712936401367,
+            "question": "Is Amy Bach an American citizen?"
+        },
+        {
+            "score": 0.6685332655906677,
+            "question": "In what nation was Amy Bach born?"
+        },
+        {
+            "score": 0.640889585018158,
+            "question": "To which country does Amy Bach belong?"
+        },
+        {
+            "score": 0.5528733730316162,
+            "question": "What country does Amy Bach represent?"
+        },
+        {
+            "score": 0.4531734585762024,
+            "question": "What is Amy Bach's citizenship?"
+        },
+        {
+            "score": 0.4119108021259308,
+            "question": "Where is Amy Bach from?"
+        },
+        {
+            "score": 0.39129963517189026,
+            "question": "Where is Amy Bach originally from?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Amy Bach's nationality is United States.",
+            "html": "dbpedia_1655_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where is Amy Bach from?",
+            "html": "dbpedia_1655_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Amy Bach's citizenship?",
+            "html": "dbpedia_1655_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What country does Amy Bach represent?",
+            "html": "dbpedia_1655_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1655_105.txt"
+        },
+        {
+            "file_id": "dbpedia_1655_107.txt"
+        },
+        {
+            "file_id": "dbpedia_1655_11.txt"
+        },
+        {
+            "file_id": "dbpedia_1655_113.txt"
+        },
+        {
+            "file_id": "dbpedia_1655_2.txt"
+        },
+        {
+            "file_id": "dbpedia_1655_31.txt"
+        },
+        {
+            "file_id": "dbpedia_1655_64.txt"
+        },
+        {
+            "file_id": "dbpedia_1655_86.txt"
+        },
+        {
+            "file_id": "dbpedia_1655_87.txt"
+        },
+        {
+            "file_id": "dbpedia_1655_97.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n\n\nExplanation: While the documents mention Amy Bach's work and residences in various locations (New York City, Rochester, San Francisco), they do not explicitly state her nationality as United States. \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the answer:\n\n`{'output': 'yes'}`\n\nThe context information mentions that Amy Bach \"lives in Rochester, New York\", which implies that her nationality is likely to be American (United States). This supports the triple."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide information about Amy Bach, including that she is a member of the New York bar and has written for publications from New York. This supports her being American, thus supporting the statement that her nationality is the United States."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "The provided text states that Amy Bach is a lawyer from New York City and lives in Rochester, New York.  It also mentions she co-founded an organization based in San Francisco. These details strongly suggest she is an American citizen.",
+            "category": 2
+        }
+    }
+}

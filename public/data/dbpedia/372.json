@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Recordland",
+    "predicate": "property/keyPeople",
+    "object": "Marcel Granier, President Empresas 1BC",
+    "human_readable": "The key people associated with Recordland are Marcel Granier, President Empresas 1BC.",
+    "questions": [
+        {
+            "score": 0.9060009717941284,
+            "question": "Is Marcel Granier involved with Recordland?"
+        },
+        {
+            "score": 0.881563127040863,
+            "question": "What is the relationship between Marcel Granier and Empresas 1BC?"
+        },
+        {
+            "score": 0.8559186458587646,
+            "question": "Who are some key figures associated with Recordland?"
+        },
+        {
+            "score": 0.8282366991043091,
+            "question": "Are there multiple key people associated with Recordland?"
+        },
+        {
+            "score": 0.802852988243103,
+            "question": "What role does Marcel Granier play at Empresas 1BC?"
+        },
+        {
+            "score": 0.7533055543899536,
+            "question": "Is there a connection between Marcel Granier and Recordland?"
+        },
+        {
+            "score": 0.7411617040634155,
+            "question": "Who is the president of Empresas 1BC?"
+        },
+        {
+            "score": 0.4990707039833069,
+            "question": "What is the name of the company Empresas 1BC?"
+        },
+        {
+            "score": 0.46879246830940247,
+            "question": "Can you list individuals connected to Recordland?"
+        },
+        {
+            "score": 0.3213890790939331,
+            "question": "What company does Marcel Granier lead?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The key people associated with Recordland are Marcel Granier, President Empresas 1BC.",
+            "html": "dbpedia_372_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you list individuals connected to Recordland?",
+            "html": "dbpedia_372_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of the company Empresas 1BC?",
+            "html": "dbpedia_372_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is the president of Empresas 1BC?",
+            "html": "dbpedia_372_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_372_1.txt"
+        },
+        {
+            "file_id": "dbpedia_372_10.txt"
+        },
+        {
+            "file_id": "dbpedia_372_100.txt"
+        },
+        {
+            "file_id": "dbpedia_372_26.txt"
+        },
+        {
+            "file_id": "dbpedia_372_42.txt"
+        },
+        {
+            "file_id": "dbpedia_372_48.txt"
+        },
+        {
+            "file_id": "dbpedia_372_50.txt"
+        },
+        {
+            "file_id": "dbpedia_372_65.txt"
+        },
+        {
+            "file_id": "dbpedia_372_85.txt"
+        },
+        {
+            "file_id": "dbpedia_372_99.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe provided text mentions Armand Cohen as the founder of Recordland and his family's history with records, but it doesn't mention Marcel Granier as being associated with Recordland.  Marcel Granier is associated with RCTV (Radio Caracas Televisi\u00f3n). \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple in JSON format:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nThe reason for this answer is that while Marcel Granier is indeed a key person mentioned in the documents (as president and CEO of Empresas 1BC, and as a Venezuelan journalist and media entrepreneur), he is not associated with Recordland. The documents describe Recordland as a record store run by the Cohen family, particularly Armand Cohen, who grew up in Israel DJ'ing and working at a record-pressing plant before emigrating to Canada in 1975."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\n**Explanation:** The documents mention Marcel Granier as the president of Empresas 1BC and his involvement with RCTV (later part of Recordland), which supports the statement that he is a key person associated with Recordland."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nThe provided context information does not support the statement \"The key people associated with Recordland are Marcel Granier, President Empresas 1BC.\" The documents primarily discuss Marcel Granier in relation to RCTV (Radio Caracas Televisi\u00f3n) and Empresas 1BC, which is a media company. There is no mention of Recordland or its association with Marcel Granier in the given context."
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Marcel Granier is associated with RCTV, a Venezuelan television network, not Recordland, which appears to be a record store.",
+            "category": 4
+        },
+        "llama3.1": {
+            "reason": "Armand Cohen, not Marcel Granier, is associated with Recordland.",
+            "category": 4
+        }
+    }
+}

@@ -1,0 +1,146 @@
+{
+    "subject": "resource/John_M._Gerrard",
+    "predicate": "property/appointer",
+    "object": "resource/Ben_Nelson",
+    "human_readable": "John M. Gerrard was appointed by Ben Nelson.",
+    "questions": [
+        {
+            "score": 0.9312366843223572,
+            "question": "Who appointed John M. Gerrard?"
+        },
+        {
+            "score": 0.9163874387741089,
+            "question": "What was the role of Ben Nelson in relation to John M. Gerrard?"
+        },
+        {
+            "score": 0.8680151700973511,
+            "question": "What kind of appointment was given to John M. Gerrard?"
+        },
+        {
+            "score": 0.8120884895324707,
+            "question": "In what capacity was John M. Gerrard appointed?"
+        },
+        {
+            "score": 0.7948306798934937,
+            "question": "Can you tell me more about the relationship between John M. Gerrard and Ben Nelson?"
+        },
+        {
+            "score": 0.7263719439506531,
+            "question": "Are there any other known appointments made by Ben Nelson?"
+        },
+        {
+            "score": 0.6847660541534424,
+            "question": "Who is Ben Nelson?"
+        },
+        {
+            "score": 0.649075448513031,
+            "question": "Was there a specific event or reason for John M. Gerrard's appointment?"
+        },
+        {
+            "score": 0.5295031666755676,
+            "question": "What does this appointment suggest about John M. Gerrard's qualifications?"
+        },
+        {
+            "score": 0.08650855720043182,
+            "question": "What impact might this appointment have had?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=John M. Gerrard was appointed by Ben Nelson.",
+            "html": "dbpedia_7353_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What does this appointment suggest about John M. Gerrard's qualifications?",
+            "html": "dbpedia_7353_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Was there a specific event or reason for John M. Gerrard's appointment?",
+            "html": "dbpedia_7353_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is Ben Nelson?",
+            "html": "dbpedia_7353_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_7353_11.txt"
+        },
+        {
+            "file_id": "dbpedia_7353_113.txt"
+        },
+        {
+            "file_id": "dbpedia_7353_115.txt"
+        },
+        {
+            "file_id": "dbpedia_7353_28.txt"
+        },
+        {
+            "file_id": "dbpedia_7353_68.txt"
+        },
+        {
+            "file_id": "dbpedia_7353_69.txt"
+        },
+        {
+            "file_id": "dbpedia_7353_72.txt"
+        },
+        {
+            "file_id": "dbpedia_7353_87.txt"
+        },
+        {
+            "file_id": "dbpedia_7353_92.txt"
+        },
+        {
+            "file_id": "dbpedia_7353_97.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation of the triple:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThis is because the documents state that Governor Ben Nelson appointed John M. Gerrard to the Nebraska Supreme Court in 1995 (as stated in multiple documents, including `file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_7353/re-ranker-msmarco/87.txt` and `file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_7353/re-ranker-msmarco/97.txt`)."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\"output\": \"yes\"}\n```\n\nThe documents state that \"Democratic Senator Ben Nelson appointed Gerrard to the state\u2019s highest court while serving as governor,\" which supports the statement that John M. Gerrard was appointed by Ben Nelson."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "John M. Gerrard was appointed by Ben Nelson when he served as the Governor of Nebraska, not when he was a senator.",
+            "category": -1
+        },
+        "gemma2": {
+            "reason": "Multiple sources state Gerrard was appointed to the Nebraska Supreme Court by Governor Ben Nelson.",
+            "category": -1
+        },
+        "llama3.1": {
+            "reason": "The context clearly states that John M. Gerrard was appointed by Democratic Governor Ben Nelson to the Nebraska Supreme Court, but then later mentions that Senator Mike Johanns supported him at his Judiciary Committee confirmation hearing last September, with a quote \"while introducing Gerrard at his Judiciary Committee confirmation hearing last September\", which implies that he was being considered for a federal position, not a state one.",
+            "category": -1
+        },
+        "qwen2.5": {
+            "reason": "In the context information, it states \"Democratic Senator Ben Nelson appointed Gerrard to the state\u2019s highest court while serving as governor.\" This indicates that Ben Nelson appointed John M. Gerrard, but not as a judge by himself, rather through his role as Governor when Gerrard was appointed to the Nebraska Supreme Court.",
+            "category": -1
+        }
+    }
+}

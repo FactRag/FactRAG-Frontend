@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Frank_Castillo",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:Wytheville_Cubs_players",
+    "human_readable": "Frank Castillo is a subject of Category:Wytheville Cubs players.",
+    "questions": [
+        {
+            "score": 0.809518039226532,
+            "question": "What is the Category:Wytheville Cubs known for?"
+        },
+        {
+            "score": 0.7581637501716614,
+            "question": "Is Frank Castillo associated with baseball?"
+        },
+        {
+            "score": 0.7574405670166016,
+            "question": "Who is Frank Castillo?"
+        },
+        {
+            "score": 0.7455620169639587,
+            "question": "Is Frank Castillo a professional athlete?"
+        },
+        {
+            "score": 0.694059431552887,
+            "question": "Where might Frank Castillo play?"
+        },
+        {
+            "score": 0.6836891174316406,
+            "question": "What type of organization are the Wytheville Cubs?"
+        },
+        {
+            "score": 0.629257321357727,
+            "question": "What sport are the Wytheville Cubs likely involved in?"
+        },
+        {
+            "score": 0.616881787776947,
+            "question": "Are there other players in the Wytheville Cubs?"
+        },
+        {
+            "score": 0.6132236123085022,
+            "question": "What team does Frank Castillo play for?"
+        },
+        {
+            "score": 0.5802450776100159,
+            "question": "Can you name other players on the Wytheville Cubs?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Frank Castillo is a subject of Category:Wytheville Cubs players.",
+            "html": "dbpedia_4928_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What team does Frank Castillo play for?",
+            "html": "dbpedia_4928_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there other players in the Wytheville Cubs?",
+            "html": "dbpedia_4928_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What sport are the Wytheville Cubs likely involved in?",
+            "html": "dbpedia_4928_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4928_1.txt"
+        },
+        {
+            "file_id": "dbpedia_4928_23.txt"
+        },
+        {
+            "file_id": "dbpedia_4928_28.txt"
+        },
+        {
+            "file_id": "dbpedia_4928_41.txt"
+        },
+        {
+            "file_id": "dbpedia_4928_48.txt"
+        },
+        {
+            "file_id": "dbpedia_4928_50.txt"
+        },
+        {
+            "file_id": "dbpedia_4928_56.txt"
+        },
+        {
+            "file_id": "dbpedia_4928_64.txt"
+        },
+        {
+            "file_id": "dbpedia_4928_72.txt"
+        },
+        {
+            "file_id": "dbpedia_4928_79.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "To evaluate whether the information in the documents supports the triple \"Frank Castillo is a subject of Category:Wytheville Cubs players.\", I will analyze the context information provided.\n\nThe relevant sentences from the files are:\n\n* file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4928/re-ranker-msmarco/50.txt: \"This is for players of the Wytheville Cubs minor league baseball team, who played in the Appalachian League from 1985-1989.\"\n* file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4928/re-ranker-msmarco/72.txt: \"Castillo started with the Cubs at short-season Geneva and rookie Wytheville. He went 11-1 on the year, with a 2.15 ERA.\"\n\nFrom these sentences, we can infer that Frank Castillo played for the Wytheville Cubs minor league baseball team.\n\nTherefore, my answer is:\n\n`{'output': 'yes'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents do not provide any information that suggests Frank Castillo was a player for the Wytheville Cubs minor league baseball team. The document related to the Wytheville Cubs (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4928/re-ranker-msmarco/50.txt) discusses players of the Wytheville Cubs but does not mention Frank Castillo."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "qwen2.5": {
+            "reason": "The context clearly states that Castillo started his minor league career with the Cubs at short-season Geneva and rookie Wytheville, but it does not indicate he was a player for the Wytheville Cubs. Instead, the information suggests he was part of the organization's system while developing as a pitcher.",
+            "category": 1
+        }
+    }
+}

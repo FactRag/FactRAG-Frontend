@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Acharya_Ramlochan_Saran",
+    "predicate": "property/placeOfBirth",
+    "object": "Sitamarhi Bihar, India",
+    "human_readable": "Acharya Ramlochan Saran was born in Sitamarhi, Bihar, India.",
+    "questions": [
+        {
+            "score": 0.935141384601593,
+            "question": "Where was Acharya Ramlochan Saran born?"
+        },
+        {
+            "score": 0.7688865661621094,
+            "question": "What is the significance of Acharya Ramlochan Saran's birthplace?"
+        },
+        {
+            "score": 0.5492349863052368,
+            "question": "In which state is Sitamarhi located?"
+        },
+        {
+            "score": 0.5238555669784546,
+            "question": "Can you tell me more about Acharya Ramlochan Saran's life?"
+        },
+        {
+            "score": 0.5138745903968811,
+            "question": "Is there a museum dedicated to Acharya Ramlochan Saran?"
+        },
+        {
+            "score": 0.5043951272964478,
+            "question": "Who are some other notable people from Sitamarhi?"
+        },
+        {
+            "score": 0.4990083575248718,
+            "question": "What is Sitamarhi known for?"
+        },
+        {
+            "score": 0.40303587913513184,
+            "question": "What are some cultural traditions associated with Sitamarhi?"
+        },
+        {
+            "score": 0.37008678913116455,
+            "question": "What is the history of Sitamarhi?"
+        },
+        {
+            "score": 0.350253164768219,
+            "question": "What are some famous landmarks in Sitamarhi?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Acharya Ramlochan Saran was born in Sitamarhi, Bihar, India.",
+            "html": "dbpedia_1939_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the history of Sitamarhi?",
+            "html": "dbpedia_1939_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some cultural traditions associated with Sitamarhi?",
+            "html": "dbpedia_1939_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Sitamarhi known for?",
+            "html": "dbpedia_1939_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1939_12.txt"
+        },
+        {
+            "file_id": "dbpedia_1939_14.txt"
+        },
+        {
+            "file_id": "dbpedia_1939_15.txt"
+        },
+        {
+            "file_id": "dbpedia_1939_3.txt"
+        },
+        {
+            "file_id": "dbpedia_1939_35.txt"
+        },
+        {
+            "file_id": "dbpedia_1939_5.txt"
+        },
+        {
+            "file_id": "dbpedia_1939_55.txt"
+        },
+        {
+            "file_id": "dbpedia_1939_74.txt"
+        },
+        {
+            "file_id": "dbpedia_1939_76.txt"
+        },
+        {
+            "file_id": "dbpedia_1939_85.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe information provided indicates that Acharya Ramlochan Saran was indeed born in Sitamarhi town. This is supported by the context documents, which mention his birthplace as Sitamarhi Bihar, India."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information that Acharya Ramlochan Saran was born on 11th February, 1889 at Sitamarhi town, which is in Bihar, India. This supports the statement that Acharya Ramlochan Saran was born in Sitamarhi, Bihar, India."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Acharya Ramlochan Saran was born in Darbhanga, Bihar, India, not Sitamarhi.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Multiple sources state he was born in Darbhanga, Bihar.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "It contradicts the information provided in context 1 which states that Acharya Ramlochan Saran was born on 11th February, 1889 at Sitamarhi town. However, it later becomes clear that he was actually born in Darbhanga, Bihar as stated in context 3 and also in context 5, 4, 6.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Acharya Ramlochan Saran was born in Darbhanga, Bihar, India, as stated in multiple sources including his infobox and biography.",
+            "category": 2
+        }
+    }
+}

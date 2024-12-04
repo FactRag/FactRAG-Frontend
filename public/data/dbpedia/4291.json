@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Formica_japonica",
+    "predicate": "ontology/class",
+    "object": "resource/Insect",
+    "human_readable": "Formica japonica is a class of insect.",
+    "questions": [
+        {
+            "score": 0.9163498282432556,
+            "question": "Can you provide examples of other insects in the same class as Formica japonica?"
+        },
+        {
+            "score": 0.8050845265388489,
+            "question": "Is Formica japonica an animal?"
+        },
+        {
+            "score": 0.6845568418502808,
+            "question": "To which group of animals does Formica japonica belong?"
+        },
+        {
+            "score": 0.680046558380127,
+            "question": "What type of organism is Formica japonica?"
+        },
+        {
+            "score": 0.5924232006072998,
+            "question": "What are some interesting facts about Formica japonica?"
+        },
+        {
+            "score": 0.5885795950889587,
+            "question": "What are some characteristics that define Formica japonica?"
+        },
+        {
+            "score": 0.48460501432418823,
+            "question": "Where might you find Formica japonica living?"
+        },
+        {
+            "score": 0.4753139019012451,
+            "question": "How does Formica japonica interact with other species?"
+        },
+        {
+            "score": 0.3722853660583496,
+            "question": "What role does Formica japonica play in its ecosystem?"
+        },
+        {
+            "score": 0.3662269413471222,
+            "question": "Are there any specific threats to Formica japonica populations?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Formica japonica is a class of insect.",
+            "html": "dbpedia_4291_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What role does Formica japonica play in its ecosystem?",
+            "html": "dbpedia_4291_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How does Formica japonica interact with other species?",
+            "html": "dbpedia_4291_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where might you find Formica japonica living?",
+            "html": "dbpedia_4291_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4291_100.txt"
+        },
+        {
+            "file_id": "dbpedia_4291_101.txt"
+        },
+        {
+            "file_id": "dbpedia_4291_17.txt"
+        },
+        {
+            "file_id": "dbpedia_4291_26.txt"
+        },
+        {
+            "file_id": "dbpedia_4291_31.txt"
+        },
+        {
+            "file_id": "dbpedia_4291_6.txt"
+        },
+        {
+            "file_id": "dbpedia_4291_82.txt"
+        },
+        {
+            "file_id": "dbpedia_4291_83.txt"
+        },
+        {
+            "file_id": "dbpedia_4291_92.txt"
+        },
+        {
+            "file_id": "dbpedia_4291_97.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents provide detailed information about Formica japonica, including its classification under the family Hymenoptera and subfamily Formicinae. This supports the statement that Formica japonica is a class of insect, although it should be noted that in biological taxonomy, species are not referred to as \"classes,\" but this can still be inferred from the hierarchical structure given."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {'output': 'no'}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}\n\nAlthough the context provided does not explicitly state that \"Formica japonica\" belongs to the class Insecta, it implicitly refers to Formica japonica as an ant which falls under the order Hymenoptera and family Formicidae. Both of these taxonomic classifications are subsets of Insecta (Insects). Therefore, it is accurate to say that \"Formica japonica\" belongs to the class Insecta."
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Formica japonica is not a class of insect. It belongs to the Order Hymenoptera within the family Formicidae, and more specifically, it is a species within the genus Formica.",
+            "category": -1
+        },
+        "gemma2": {
+            "reason": "It states Formica japonica is a *class* of insect, but the provided text describes it as a species within the genus *Formica*, which belongs to the family Formicidae.  Classes are higher taxonomic ranks than genera or species.",
+            "category": -1
+        }
+    }
+}

@@ -1,0 +1,97 @@
+{
+    "subject": "resource/Smith_College",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "Smith College",
+    "human_readable": "The label of Smith College is 'Smith College'.",
+    "questions": [
+        {
+            "score": 0.9725680947303772,
+            "question": "What is the label of Smith College?"
+        },
+        {
+            "score": 0.8840680718421936,
+            "question": "Is 'Smith College' a school?"
+        },
+        {
+            "score": 0.6444521546363831,
+            "question": "Can you tell me more about Smith College?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The label of Smith College is 'Smith College'.",
+            "html": "dbpedia_405_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is 'Smith College' a school?",
+            "html": "dbpedia_405_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the label of Smith College?",
+            "html": "dbpedia_405_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_405_115.txt"
+        },
+        {
+            "file_id": "dbpedia_405_135.txt"
+        },
+        {
+            "file_id": "dbpedia_405_139.txt"
+        },
+        {
+            "file_id": "dbpedia_405_16.txt"
+        },
+        {
+            "file_id": "dbpedia_405_59.txt"
+        },
+        {
+            "file_id": "dbpedia_405_61.txt"
+        },
+        {
+            "file_id": "dbpedia_405_89.txt"
+        },
+        {
+            "file_id": "dbpedia_405_91.txt"
+        },
+        {
+            "file_id": "dbpedia_405_92.txt"
+        },
+        {
+            "file_id": "dbpedia_405_97.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me explain why:\n\n* **The text clearly states:** \"Smith College is a prestigious private liberal arts women's college located in Northampton, Massachusetts.\"  This directly confirms that the label of Smith College is indeed 'Smith College'. \n\n\n\nLet me know if you have any other triples you'd like me to evaluate!"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here's the evaluation of whether the information in the documents supports the triple:\n\n**Triple:** ?label = \"Smith College\"\n\nThe answer to this question can be found in various parts of the context information. Here are the relevant snippets:\n\n* \"Smith College is a distinguished liberal arts college...\"\n* \"... Smith College is a popular college in the U.S. with the following rankings:...\"\n* \"Smith College campus is spread across 147 acres in North Hampton, Massachusetts.\"\n* \"Smith College is a prestigious private liberal arts women's college located in Northampton, Massachusetts.\"\n\nAs we can see from these snippets, the label of Smith College is consistently referred to as simply \"Smith College\", without any additional labels or descriptions. Therefore:\n\n**Response:** {'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe context provided does indeed confirm that the label for \"Smith College\" is indeed \"Smith College\"."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

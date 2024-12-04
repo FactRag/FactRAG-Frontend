@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Joe_DiMaggio",
+    "predicate": "property/position",
+    "object": "resource/Center_fielder",
+    "human_readable": "Joe DiMaggio played at Center fielder.",
+    "questions": [
+        {
+            "score": 0.9336349964141846,
+            "question": "Besides playing Center fielder, what other positions did Joe DiMaggio play?"
+        },
+        {
+            "score": 0.829771101474762,
+            "question": "Was Joe DiMaggio a pitcher?"
+        },
+        {
+            "score": 0.7978458404541016,
+            "question": "What position did Joe DiMaggio play?"
+        },
+        {
+            "score": 0.7773284316062927,
+            "question": "In what sport did Joe DiMaggio play?"
+        },
+        {
+            "score": 0.7281578183174133,
+            "question": "Name the position where Joe DiMaggio excelled."
+        },
+        {
+            "score": 0.6859044432640076,
+            "question": "Where on the baseball field did Joe DiMaggio play?"
+        },
+        {
+            "score": 0.5970227718353271,
+            "question": "Did Joe DiMaggio play infield?"
+        },
+        {
+            "score": 0.5015093088150024,
+            "question": "Is Joe DiMaggio known for playing in the outfield?"
+        },
+        {
+            "score": 0.31838592886924744,
+            "question": "What is another term for Center fielder?"
+        },
+        {
+            "score": 0.25436773896217346,
+            "question": "What is Center fielder's primary responsibility in baseball?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Joe DiMaggio played at Center fielder.",
+            "html": "dbpedia_5619_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is another term for Center fielder?",
+            "html": "dbpedia_5619_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Joe DiMaggio known for playing in the outfield?",
+            "html": "dbpedia_5619_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Did Joe DiMaggio play infield?",
+            "html": "dbpedia_5619_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5619_123.txt"
+        },
+        {
+            "file_id": "dbpedia_5619_125.txt"
+        },
+        {
+            "file_id": "dbpedia_5619_20.txt"
+        },
+        {
+            "file_id": "dbpedia_5619_27.txt"
+        },
+        {
+            "file_id": "dbpedia_5619_34.txt"
+        },
+        {
+            "file_id": "dbpedia_5619_48.txt"
+        },
+        {
+            "file_id": "dbpedia_5619_49.txt"
+        },
+        {
+            "file_id": "dbpedia_5619_7.txt"
+        },
+        {
+            "file_id": "dbpedia_5619_75.txt"
+        },
+        {
+            "file_id": "dbpedia_5619_94.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "After analyzing the provided context information, I can determine that the triple \"Joe DiMaggio played at Center fielder\" is supported by the documents.\n\nHere's the structured JSON response:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents mention Joe DiMaggio as a center fielder in multiple instances, such as:\n\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5619/re-ranker-msmarco/109.txt, it is stated that \"DiMaggio started his first game in left field with Chapman in center field.  After also spending time in both right field and center field in 1936, DiMaggio became the Yankees\u2019 center fielder in 1937.\"\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5619/re-ranker-msmarco/103.txt, it is mentioned that \"It\u2019s a debate that\u2019s been raging for more than 50 years.  Who is the best center fielder in the storied history of the New York Yankees: Joe DiMaggio or Mickey Mantle?\"\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5619/re-ranker-msmarco/70.txt, it is stated that \"Joe Paul 'Joe' DiMaggio, born Giuseppe Paolo DiMaggio, nicknamed \"Joltin' Joe\" and \"The Yankee Clipper\", was an American Major League Baseball center fielder...\"\n\nThese instances confirm that Joe DiMaggio played as a center fielder, making the triple correct according to the documents."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide information that supports the statement \"Joe DiMaggio played as a center fielder.\" Specifically, the document mentions \"DiMaggio became the Yankees\u2019 center fielder in 1937\" and \"DiMaggio started his first game in left field with Chapman in center field,\" indicating his role as a center fielder for the New York Yankees."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

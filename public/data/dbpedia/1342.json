@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Eolica_Casimcea_Wind_Farm",
+    "predicate": "property/psElectricalCapacity",
+    "object": "244.0",
+    "human_readable": "The electrical capacity of Eolica Casimcea Wind Farm is 244.0.",
+    "questions": [
+        {
+            "score": 0.9652037620544434,
+            "question": "What is the electrical capacity of Eolica Casimcea Wind Farm?"
+        },
+        {
+            "score": 0.8139026165008545,
+            "question": "Can you compare the capacity of Eolica Casimcea Wind Farm to other wind farms?"
+        },
+        {
+            "score": 0.5995392203330994,
+            "question": "Is Eolica Casimcea Wind Farm a large wind farm?"
+        },
+        {
+            "score": 0.5502614974975586,
+            "question": "What technologies are used in Eolica Casimcea Wind Farm?"
+        },
+        {
+            "score": 0.5456234216690063,
+            "question": "Where is Eolica Casimcea Wind Farm located?"
+        },
+        {
+            "score": 0.5260430574417114,
+            "question": "What are the environmental benefits of Eolica Casimcea Wind Farm?"
+        },
+        {
+            "score": 0.48502373695373535,
+            "question": "Are there any challenges associated with operating Eolica Casimcea Wind Farm?"
+        },
+        {
+            "score": 0.48324018716812134,
+            "question": "How many megawatts does Eolica Casimcea Wind Farm generate?"
+        },
+        {
+            "score": 0.44592466950416565,
+            "question": "How does Eolica Casimcea Wind Farm contribute to energy production?"
+        },
+        {
+            "score": 0.32994499802589417,
+            "question": "What is the unit of measurement for electrical capacity?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The electrical capacity of Eolica Casimcea Wind Farm is 244.0.",
+            "html": "dbpedia_1342_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How does Eolica Casimcea Wind Farm contribute to energy production?",
+            "html": "dbpedia_1342_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How many megawatts does Eolica Casimcea Wind Farm generate?",
+            "html": "dbpedia_1342_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any challenges associated with operating Eolica Casimcea Wind Farm?",
+            "html": "dbpedia_1342_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1342_10.txt"
+        },
+        {
+            "file_id": "dbpedia_1342_14.txt"
+        },
+        {
+            "file_id": "dbpedia_1342_17.txt"
+        },
+        {
+            "file_id": "dbpedia_1342_19.txt"
+        },
+        {
+            "file_id": "dbpedia_1342_20.txt"
+        },
+        {
+            "file_id": "dbpedia_1342_21.txt"
+        },
+        {
+            "file_id": "dbpedia_1342_22.txt"
+        },
+        {
+            "file_id": "dbpedia_1342_24.txt"
+        },
+        {
+            "file_id": "dbpedia_1342_4.txt"
+        },
+        {
+            "file_id": "dbpedia_1342_7.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have any other triples you'd like me to evaluate!"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation result:\n\n`{'output': 'yes'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information that supports the statement \"The electrical capacity of Eolica Casimcea Wind Farm is 244.0 MW,\" as multiple sources, including `20.txt`, explicitly state this detail."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The information provided indicates that the Eolica Casimcea Wind Farm will have a maximum capacity of 244 MW, but it states that it consists of 122 wind turbines with a nominal output of around 2 MW each. In this scenario, the sum of all the individual wind turbine outputs would be 244 * 2 = 488 MW, not 244 MW as claimed.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "It contradicts information stating the Eolica Casimcea Wind Farm will deliver up to 244 MW of power.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "the text states \"It will have 122 individual wind turbines [2] with a nominal output of around 2 MW which will deliver up to 244 MW of power\" implying that each turbine has an average capacity, not the total capacity.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information states that the maximum capacity of Eolica Casimcea Wind Farm is 244 MW, not 244.0. The addition of \".0\" implies a precision that is not supported by the provided data.",
+            "category": 2
+        }
+    }
+}

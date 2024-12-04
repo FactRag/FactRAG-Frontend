@@ -1,0 +1,134 @@
+{
+    "subject": "resource/James_Donald",
+    "predicate": "property/birthPlace",
+    "object": "resource/Aberdeen",
+    "human_readable": "James Donald was born in Aberdeen.",
+    "questions": [
+        {
+            "score": 0.7859652042388916,
+            "question": "Where was James Donald born?"
+        },
+        {
+            "score": 0.6002560257911682,
+            "question": "Are there any famous people from Aberdeen besides James Donald?"
+        },
+        {
+            "score": 0.5513003468513489,
+            "question": "What might be some interesting facts about someone born in Aberdeen?"
+        },
+        {
+            "score": 0.49666598439216614,
+            "question": "Can you tell me about James Donald's birthplace?"
+        },
+        {
+            "score": 0.4810621738433838,
+            "question": "What city is associated with James Donald's birth?"
+        },
+        {
+            "score": 0.3516666293144226,
+            "question": "How might James Donald's birthplace have influenced him?"
+        },
+        {
+            "score": 0.2871849536895752,
+            "question": "Aberdeen is known for what?"
+        },
+        {
+            "score": 0.20906426012516022,
+            "question": "Is there anything else you know about James Donald?"
+        },
+        {
+            "score": 0.10320029407739639,
+            "question": "What are some of the cultural aspects of Aberdeen?"
+        },
+        {
+            "score": 0.10064160078763962,
+            "question": "Can you describe the climate in Aberdeen?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=James Donald was born in Aberdeen.",
+            "html": "dbpedia_3196_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some of the cultural aspects of Aberdeen?",
+            "html": "dbpedia_3196_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there anything else you know about James Donald?",
+            "html": "dbpedia_3196_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Aberdeen is known for what?",
+            "html": "dbpedia_3196_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3196_109.txt"
+        },
+        {
+            "file_id": "dbpedia_3196_11.txt"
+        },
+        {
+            "file_id": "dbpedia_3196_13.txt"
+        },
+        {
+            "file_id": "dbpedia_3196_14.txt"
+        },
+        {
+            "file_id": "dbpedia_3196_27.txt"
+        },
+        {
+            "file_id": "dbpedia_3196_31.txt"
+        },
+        {
+            "file_id": "dbpedia_3196_40.txt"
+        },
+        {
+            "file_id": "dbpedia_3196_70.txt"
+        },
+        {
+            "file_id": "dbpedia_3196_72.txt"
+        },
+        {
+            "file_id": "dbpedia_3196_74.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the context information, here is the evaluation of whether the triple \"James Donald was born in Aberdeen\" is supported by the documents:\n\n{\n  \"output\": \"no\"\n}\n\nExplanation: The first mention of James Donald being born in Aberdeen is actually referring to a different person, James F. Donald (the founder of the cinema business), not the actor James Donald. The later mentions of James Donald's birthplace are ambiguous and do not confirm that he was indeed born in Aberdeen."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents clearly state that \"The Scottish actor James Donald was born in Aberdeen on May 18th, 1917,\" which supports the statement that James Donald was born in Aberdeen."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "All three accounts of James Donald's biography, including the one describing his early life and education, confirm that he was born in Aberdeen on May 18th, 1917.",
+            "category": 2
+        }
+    }
+}

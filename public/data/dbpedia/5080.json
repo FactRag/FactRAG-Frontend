@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Mother_Up!",
+    "predicate": "ontology/country",
+    "object": "resource/Canada",
+    "human_readable": "Mother Up! is from Canada.",
+    "questions": [
+        {
+            "score": 0.9584302306175232,
+            "question": "Is Mother Up! a Canadian group?"
+        },
+        {
+            "score": 0.9538646340370178,
+            "question": "Is Mother Up! popular in Canada?"
+        },
+        {
+            "score": 0.8220523595809937,
+            "question": "Where is Mother Up! from?"
+        },
+        {
+            "score": 0.6061778664588928,
+            "question": "What country is Mother Up! associated with?"
+        },
+        {
+            "score": 0.4394342005252838,
+            "question": "Where might Mother Up! be performing?"
+        },
+        {
+            "score": 0.4168909788131714,
+            "question": "Can you tell me about Mother Up! ?"
+        },
+        {
+            "score": 0.2988150119781494,
+            "question": "Has Mother Up! won any awards?"
+        },
+        {
+            "score": 0.29018744826316833,
+            "question": "Do you know anything about Mother Up!'s history?"
+        },
+        {
+            "score": 0.17960378527641296,
+            "question": "What kind of music does Mother Up! play?"
+        },
+        {
+            "score": 0.057170964777469635,
+            "question": "Are there any other Canadian musical groups?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Mother Up! is from Canada.",
+            "html": "dbpedia_5080_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What kind of music does Mother Up! play?",
+            "html": "dbpedia_5080_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Do you know anything about Mother Up!'s history?",
+            "html": "dbpedia_5080_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Has Mother Up! won any awards?",
+            "html": "dbpedia_5080_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5080_122.txt"
+        },
+        {
+            "file_id": "dbpedia_5080_144.txt"
+        },
+        {
+            "file_id": "dbpedia_5080_167.txt"
+        },
+        {
+            "file_id": "dbpedia_5080_182.txt"
+        },
+        {
+            "file_id": "dbpedia_5080_19.txt"
+        },
+        {
+            "file_id": "dbpedia_5080_27.txt"
+        },
+        {
+            "file_id": "dbpedia_5080_35.txt"
+        },
+        {
+            "file_id": "dbpedia_5080_5.txt"
+        },
+        {
+            "file_id": "dbpedia_5080_80.txt"
+        },
+        {
+            "file_id": "dbpedia_5080_84.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nMother Up! is an animated comedy that was created by two actual mothers \u2014 Marnie Nir and Katie Torpey . It is  co-produced with Canadian broadcaster City, but it does not state that the show itself is from Canada. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here's the structured JSON format for your query:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation:\nThe documents mention that \"Mother Up!\" is an animated series created by two actual mothers, Marnie Nir and Katie Torpey. However, it does not explicitly state that \"Mother Up!\" is from Canada. There are other references to Mother Mother, a Canadian indie rock band, but this is a different entity from the animated series \"Mother Up!\"."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents mention that \"Mother Up!\" is co-produced with a Canadian broadcaster (City), indicating its connection to Canada. This supports the statement that \"Mother Up!\" is from Canada."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n      \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "\"Mother Up!\" is co-produced with a Canadian broadcaster (City), indicating that it has a Canadian connection, but it doesn't necessarily mean the series itself is from Canada.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "The text states \"Mother Up! (co-produced with Canadian broadcaster City)\"",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "It is contradicted by statement 3 which states \"On the heels of Canada Day, and with the current state of the world, I thought that this video would be a perfect fit to share on The Indy Review. Mother Mother is a Canadian indie rock band based out of Vancouver, British Columbia...\"",
+            "category": 2
+        }
+    }
+}

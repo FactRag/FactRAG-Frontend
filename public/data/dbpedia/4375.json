@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Woodburn_(Charles_City,_Virginia)",
+    "predicate": "property/locmapin",
+    "object": "Virginia",
+    "human_readable": "Woodburn, Charles City, Virginia is located in Virginia.",
+    "questions": [
+        {
+            "score": 0.9548307061195374,
+            "question": "Is Woodburn a place within Virginia?"
+        },
+        {
+            "score": 0.9354612827301025,
+            "question": "Is Woodburn a part of Virginia?"
+        },
+        {
+            "score": 0.8753746151924133,
+            "question": "Where would you find Charles City, Virginia?"
+        },
+        {
+            "score": 0.7562218308448792,
+            "question": "Where is Woodburn located?"
+        },
+        {
+            "score": 0.7515805959701538,
+            "question": "In which state is Charles City located?"
+        },
+        {
+            "score": 0.6253377199172974,
+            "question": "What is the name of the city in Virginia?"
+        },
+        {
+            "score": 0.5783623456954956,
+            "question": "What is the geographical location of Woodburn?"
+        },
+        {
+            "score": 0.5133068561553955,
+            "question": "Which state is home to Charles City?"
+        },
+        {
+            "score": 0.47825750708580017,
+            "question": "Can you name a city in Virginia?"
+        },
+        {
+            "score": 0.0482940599322319,
+            "question": "What US state is known for its historical significance?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Woodburn, Charles City, Virginia is located in Virginia.",
+            "html": "dbpedia_4375_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you name a city in Virginia?",
+            "html": "dbpedia_4375_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Which state is home to Charles City?",
+            "html": "dbpedia_4375_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the geographical location of Woodburn?",
+            "html": "dbpedia_4375_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4375_102.txt"
+        },
+        {
+            "file_id": "dbpedia_4375_104.txt"
+        },
+        {
+            "file_id": "dbpedia_4375_113.txt"
+        },
+        {
+            "file_id": "dbpedia_4375_123.txt"
+        },
+        {
+            "file_id": "dbpedia_4375_127.txt"
+        },
+        {
+            "file_id": "dbpedia_4375_3.txt"
+        },
+        {
+            "file_id": "dbpedia_4375_67.txt"
+        },
+        {
+            "file_id": "dbpedia_4375_69.txt"
+        },
+        {
+            "file_id": "dbpedia_4375_71.txt"
+        },
+        {
+            "file_id": "dbpedia_4375_77.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the context information provided, here is the evaluation of whether the information in the documents supports the triple:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The context information provides multiple descriptions of Woodburn, but none of them specify that it is located in Charles City, Virginia. In fact, some of the descriptions mention different locations for Woodburn, such as Northern Virginia (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4375/re-ranker-msmarco/112.txt), Loudoun County, Virginia (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4375/re-ranker-msmarco/101.txt and file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4375/re-ranker-msmarco/126.txt), and Fairfax, Virginia (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4375/re-ranker-msmarco/120.txt)."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents provide information about various places named Woodburn in Virginia, including one that is specifically located near Charles City. While the exact document stating \"Woodburn, Charles City, Virginia\" is not provided, the context suggests multiple instances of Woodburn in Virginia, which supports the query's statement that Woodburn, associated with Charles City, is indeed located in Virginia."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "There are multiple places named Woodburn mentioned in the context information, but only one of them (Woodburn in Fairfax County) is located in Virginia. The other ones are located in Charles City County and Albemarle County, which have different county names, indicating they are not the same Woodburn.",
+            "category": 2
+        }
+    }
+}

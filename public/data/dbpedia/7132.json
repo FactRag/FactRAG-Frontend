@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Tappan_Bridge",
+    "predicate": "ontology/crosses",
+    "object": "resource/Dry_Brook",
+    "human_readable": "The Tappan Bridge crosses Dry Brook.",
+    "questions": [
+        {
+            "score": 0.8148230910301208,
+            "question": "What is the name of the bridge that crosses Dry Brook?"
+        },
+        {
+            "score": 0.6696456074714661,
+            "question": "Where is the Tappan Bridge located?"
+        },
+        {
+            "score": 0.6295680999755859,
+            "question": "What body of water does the Tappan Bridge cross?"
+        },
+        {
+            "score": 0.5058228969573975,
+            "question": "What type of structure is the Tappan Bridge?"
+        },
+        {
+            "score": 0.49637332558631897,
+            "question": "Can you name any landmarks near the Tappan Bridge?"
+        },
+        {
+            "score": 0.4913386404514313,
+            "question": "What is the purpose of the Tappan Bridge?"
+        },
+        {
+            "score": 0.45492318272590637,
+            "question": "Is the Tappan Bridge a road or rail bridge?"
+        },
+        {
+            "score": 0.4420830011367798,
+            "question": "Which geographical feature does the Tappan Bridge span?"
+        },
+        {
+            "score": 0.4083864986896515,
+            "question": "Are there any historical events associated with the Tappan Bridge?"
+        },
+        {
+            "score": 0.3377078175544739,
+            "question": "Has the Tappan Bridge undergone any major renovations or changes?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The Tappan Bridge crosses Dry Brook.",
+            "html": "dbpedia_7132_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any historical events associated with the Tappan Bridge?",
+            "html": "dbpedia_7132_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Which geographical feature does the Tappan Bridge span?",
+            "html": "dbpedia_7132_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is the Tappan Bridge a road or rail bridge?",
+            "html": "dbpedia_7132_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_7132_130.txt"
+        },
+        {
+            "file_id": "dbpedia_7132_131.txt"
+        },
+        {
+            "file_id": "dbpedia_7132_16.txt"
+        },
+        {
+            "file_id": "dbpedia_7132_34.txt"
+        },
+        {
+            "file_id": "dbpedia_7132_42.txt"
+        },
+        {
+            "file_id": "dbpedia_7132_48.txt"
+        },
+        {
+            "file_id": "dbpedia_7132_5.txt"
+        },
+        {
+            "file_id": "dbpedia_7132_6.txt"
+        },
+        {
+            "file_id": "dbpedia_7132_69.txt"
+        },
+        {
+            "file_id": "dbpedia_7132_87.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the context information provided, here is my evaluation of the query:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nThis is because there are multiple mentions of a bridge called \"Tappan-Kittle Covered Bridge\" or simply \"Tappan Bridge\", but it does not appear to be associated with Dry Brook. In fact, one document mentions that the Tappan-Kittle Covered Bridge is located over Dry Brook in the Catskill Mountains, while another document refers to a different covered bridge called \"Forge Covered Bridge\" which crosses Dry Brook. However, there is no mention of a specific bridge called \"Tappan Bridge\" and its association with Dry Brook."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents support the statement that \"The Tappan-Kittle Covered Bridge\" (also referred to as simply \"Tappan Bridge\") is located over Dry Brook. For instance, in the document with file path `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_7132/re-ranker-msmarco/41.txt`, it explicitly states that the Tappan-Kittle Covered Bridge \"is over the Dry Brook\". Additionally, another reference to this bridge in the same file path confirms its location: \"Built by Salem Jerome Moot in 1906, this 43-foot-long, single span structure once incorporated a Kingpost truss design. It is over the Dry Brook.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The Tappan-Kittle Covered Bridge (not just the Tappan Bridge) crosses Dry Brook.",
+            "category": 2
+        }
+    }
+}

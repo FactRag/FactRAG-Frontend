@@ -1,0 +1,144 @@
+{
+    "subject": "resource/The_Simpsons",
+    "predicate": "ontology/company",
+    "object": "resource/20th_Century_Fox_Television",
+    "human_readable": "The Simpsons is a company of 20th Century Fox Television.",
+    "questions": [
+        {
+            "score": 0.8703979253768921,
+            "question": "What type of company is 20th Century Fox Television?"
+        },
+        {
+            "score": 0.6440771818161011,
+            "question": "What is the name of the company that owns The Simpsons?"
+        },
+        {
+            "score": 0.6341333389282227,
+            "question": "Who owns The Simpsons?"
+        },
+        {
+            "score": 0.5804876089096069,
+            "question": "Is The Simpsons a film or a television show?"
+        },
+        {
+            "score": 0.4786717891693115,
+            "question": "To which television network does The Simpsons belong?"
+        },
+        {
+            "score": 0.44142410159111023,
+            "question": "What is the name of the television network that airs The Simpsons?"
+        },
+        {
+            "score": 0.43562424182891846,
+            "question": "What is the parent company of The Simpsons?"
+        },
+        {
+            "score": 0.4004053771495819,
+            "question": "Is The Simpsons a product of Disney?"
+        },
+        {
+            "score": 0.38012611865997314,
+            "question": "In what century was The Simpsons created?"
+        },
+        {
+            "score": 0.2584947645664215,
+            "question": "When was The Simpsons created (approximately)?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The Simpsons is a company of 20th Century Fox Television.",
+            "html": "dbpedia_6301_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In what century was The Simpsons created?",
+            "html": "dbpedia_6301_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is The Simpsons a product of Disney?",
+            "html": "dbpedia_6301_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the parent company of The Simpsons?",
+            "html": "dbpedia_6301_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6301_105.txt"
+        },
+        {
+            "file_id": "dbpedia_6301_123.txt"
+        },
+        {
+            "file_id": "dbpedia_6301_134.txt"
+        },
+        {
+            "file_id": "dbpedia_6301_135.txt"
+        },
+        {
+            "file_id": "dbpedia_6301_18.txt"
+        },
+        {
+            "file_id": "dbpedia_6301_22.txt"
+        },
+        {
+            "file_id": "dbpedia_6301_29.txt"
+        },
+        {
+            "file_id": "dbpedia_6301_34.txt"
+        },
+        {
+            "file_id": "dbpedia_6301_97.txt"
+        },
+        {
+            "file_id": "dbpedia_6301_99.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple in the form of a structured JSON format:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation:\n\nThe information in the documents does not support the triple that The Simpsons is a company of 20th Century Fox Television. The correct relationship between The Simpsons and 20th Century Fox Television is that The Simpsons is a production of Gracie Films Production in association with 20th Century Fox Television, as stated in file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6301/re-ranker-msmarco/99.txt."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation:\nThe information provided does not indicate that \"The Simpsons\" is a company. It describes \"The Simpsons\" as an American animated television series created by Matt Groening and produced by 20th Century Fox Television (now part of Disney). There is no mention of it being a company itself."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context, \"The Simpsons\" is not described as a company of 20th Century Fox Television. Instead, it states that \"The Simpsons\" is produced by Gracie Films in association with 20th Century Fox Television.\n\nTherefore, the answer should be:\n\n{\"output\": \"no\"}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The Simpsons was created by Matt Groening for the Fox Broadcasting Company, but it's also stated that Disney now owns 20th Century Studios and consequently, The Simpsons, indicating a change in ownership.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The Simpsons is produced by Gracie Films in association with 20th Century Fox Television, not directly as a company of 20th Century Fox Television.",
+            "category": -1
+        }
+    }
+}

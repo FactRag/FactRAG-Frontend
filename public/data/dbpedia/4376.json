@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Woodburn_(Charles_City,_Virginia)",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:Houses_in_Charles_City_County,_Virginia",
+    "human_readable": "The subject of Woodburn (Charles City, Virginia) is Category: Houses in Charles City County, Virginia.",
+    "questions": [
+        {
+            "score": 0.8521389365196228,
+            "question": "What can you tell about the historical significance of Woodburn in Charles City County?"
+        },
+        {
+            "score": 0.7232670783996582,
+            "question": "What category does Woodburn belong to?"
+        },
+        {
+            "score": 0.7213817834854126,
+            "question": "In which county is Woodburn situated?"
+        },
+        {
+            "score": 0.7123599648475647,
+            "question": "What are some interesting facts about houses from Charles City County?"
+        },
+        {
+            "score": 0.7021603584289551,
+            "question": "Are there any other notable houses in Charles City County?"
+        },
+        {
+            "score": 0.6815820336341858,
+            "question": "What architectural style is typical of houses in Charles City County?"
+        },
+        {
+            "score": 0.6014772057533264,
+            "question": "Where is Woodburn located?"
+        },
+        {
+            "score": 0.594178318977356,
+            "question": "Is Woodburn a type of building?"
+        },
+        {
+            "score": 0.42193618416786194,
+            "question": "Who might have lived in Woodburn?"
+        },
+        {
+            "score": 0.324613094329834,
+            "question": "How old is Woodburn likely to be?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The subject of Woodburn (Charles City, Virginia) is Category: Houses in Charles City County, Virginia.",
+            "html": "dbpedia_4376_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who might have lived in Woodburn?",
+            "html": "dbpedia_4376_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Woodburn a type of building?",
+            "html": "dbpedia_4376_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where is Woodburn located?",
+            "html": "dbpedia_4376_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4376_17.txt"
+        },
+        {
+            "file_id": "dbpedia_4376_21.txt"
+        },
+        {
+            "file_id": "dbpedia_4376_33.txt"
+        },
+        {
+            "file_id": "dbpedia_4376_5.txt"
+        },
+        {
+            "file_id": "dbpedia_4376_50.txt"
+        },
+        {
+            "file_id": "dbpedia_4376_51.txt"
+        },
+        {
+            "file_id": "dbpedia_4376_53.txt"
+        },
+        {
+            "file_id": "dbpedia_4376_58.txt"
+        },
+        {
+            "file_id": "dbpedia_4376_61.txt"
+        },
+        {
+            "file_id": "dbpedia_4376_70.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have any other triples to evaluate!  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation for the triple:\n\n`The subject of Woodburn (Charles City, Virginia) is Category: Houses in Charles City County, Virginia.`\n\nBased on the provided context information and without prior knowledge, here is my response:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents mention two different locations for Woodburn: one in Warren County, Kentucky (documents 41 and 53), and another in Anderson County, South Carolina (document 79). While the document from Kentucky does mention a city hall for Woodburn, it clearly states that it is located in Warren County. On the other hand, the documents from South Carolina describe a plantation house named Woodburn, which seems to be unrelated to the city hall mentioned in the Kentucky document. Therefore, the triple statement about Woodburn being a house in Charles City County, Virginia does not match any of the provided context information."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: The provided context does not mention anything about \"Woodburn\" being a category of houses or specifically tied to the category mentioned. The documents discuss Woodburn as a plantation in Charles City County, Virginia, and provide details related to its history and architecture, but do not categorize it under \"houses in Charles City County, Virginia.\""
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Woodburn (Charles City, Virginia) is not a house; it is a plantation owned by John Tyler. The subject under discussion is about the plantation, not the specific house within it.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because Woodburn refers to two different locations, one in Kentucky and the other in South Carolina, which have distinct histories and characteristics. The house in Virginia is mentioned as being related to John Tyler, while the one in South Carolina is a plantation associated with Charles Cotesworth Pinckney.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information clearly states that Woodburn is located in Warren County, Kentucky, not Charles City County, Virginia. Furthermore, the properties named \"Woodburn\" mentioned in the South Carolina Department of Archives and History context pertain to a different location in Anderson County, South Carolina, not the subject of discussion here.",
+            "category": 2
+        }
+    }
+}

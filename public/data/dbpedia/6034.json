@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Philipp_Lenard",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "Philipp Lenard",
+    "human_readable": "The full name of Philipp Lenard is Philipp Lenard.",
+    "questions": [
+        {
+            "score": 0.9848026633262634,
+            "question": "What is the full name of Philipp Lenard?"
+        },
+        {
+            "score": 0.958747386932373,
+            "question": "Is Philipp Lenard known by a different name?"
+        },
+        {
+            "score": 0.9410881996154785,
+            "question": "Can you provide the full legal name of Philipp Lenard?"
+        },
+        {
+            "score": 0.9221151471138,
+            "question": "What is the complete and precise name of Philipp Lenard?"
+        },
+        {
+            "score": 0.9200942516326904,
+            "question": "What is the complete form of Philipp Lenard's name?"
+        },
+        {
+            "score": 0.8841240406036377,
+            "question": "When writing about Philipp Lenard, which name should be used?"
+        },
+        {
+            "score": 0.8621021509170532,
+            "question": "What is the official way to write Philipp Lenard's name?"
+        },
+        {
+            "score": 0.8588303923606873,
+            "question": "For documentation purposes, what would be the accurate name for Philipp Lenard?"
+        },
+        {
+            "score": 0.8043982982635498,
+            "question": "How would you refer to Philipp Lenard formally?"
+        },
+        {
+            "score": 0.5450538992881775,
+            "question": "If someone wanted to address Philipp Lenard directly, what would they say?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The full name of Philipp Lenard is Philipp Lenard.",
+            "html": "dbpedia_6034_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How would you refer to Philipp Lenard formally?",
+            "html": "dbpedia_6034_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=For documentation purposes, what would be the accurate name for Philipp Lenard?",
+            "html": "dbpedia_6034_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the official way to write Philipp Lenard's name?",
+            "html": "dbpedia_6034_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6034_13.txt"
+        },
+        {
+            "file_id": "dbpedia_6034_18.txt"
+        },
+        {
+            "file_id": "dbpedia_6034_37.txt"
+        },
+        {
+            "file_id": "dbpedia_6034_45.txt"
+        },
+        {
+            "file_id": "dbpedia_6034_56.txt"
+        },
+        {
+            "file_id": "dbpedia_6034_65.txt"
+        },
+        {
+            "file_id": "dbpedia_6034_69.txt"
+        },
+        {
+            "file_id": "dbpedia_6034_7.txt"
+        },
+        {
+            "file_id": "dbpedia_6034_9.txt"
+        },
+        {
+            "file_id": "dbpedia_6034_93.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple \"The full name of Philipp Lenard is Philipp Lenard\" based on the context information:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation:\n\n* The first document mentions \"Name / Lenard, Philipp Gender: M\", which suggests that \"Lenard, Philipp\" is indeed a part of his full name.\n* However, subsequent documents mention \"Philipp Eduard Anton von Lenard\" as his full name, which includes additional details such as \"Eduard Anton von\".\n* Therefore, the triple \"The full name of Philipp Lenard is Philipp Lenard\" is incorrect."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\nThe documents provide information about Philipp Eduard Anton von Lenard, confirming that his full name is indeed Philipp Eduard Anton von Lenard."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nExplanation: Based on the context information provided, Philipp Lenard's full name was actually \"Philipp Eduard Anton von Lenard,\" not just \"Philipp Lenard.\" Thus, the statement \"The full name of Philipp Lenard is Philipp Lenard\" does not match the given details and should be evaluated as incorrect."
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n\nExplanation:\nThe information provided in the context does not support the given statement. According to the documents, the full name of Philipp Lenard is actually \"Philipp Eduard Anton von Lenard\", not just \"Philipp Lenard\"."
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Several sources list his full name as Philipp Eduard Anton von Lenard.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "the full name of Philipp Lenard given in the context information as \"Philipp Eduard Anton von Lenard\" contradicts the straightforward statement that his full name is simply \"Philipp Lenard\".",
+            "category": 2
+        }
+    }
+}

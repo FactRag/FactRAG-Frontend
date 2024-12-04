@@ -1,0 +1,102 @@
+{
+    "subject": "resource/William_C._Marland",
+    "predicate": "property/name",
+    "object": "William C. Marland",
+    "human_readable": "William C. Marland's name is William C. Marland.",
+    "questions": [
+        {
+            "score": 0.9789303541183472,
+            "question": "What is William C. Marland's full name?"
+        },
+        {
+            "score": 0.9787034392356873,
+            "question": "Is William C. Marland a person?"
+        },
+        {
+            "score": 0.8744118213653564,
+            "question": "What information do we know about William C. Marland?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=William C. Marland's name is William C. Marland.",
+            "html": "dbpedia_5271_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is William C. Marland a person?",
+            "html": "dbpedia_5271_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is William C. Marland's full name?",
+            "html": "dbpedia_5271_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5271_1.txt"
+        },
+        {
+            "file_id": "dbpedia_5271_10.txt"
+        },
+        {
+            "file_id": "dbpedia_5271_40.txt"
+        },
+        {
+            "file_id": "dbpedia_5271_53.txt"
+        },
+        {
+            "file_id": "dbpedia_5271_58.txt"
+        },
+        {
+            "file_id": "dbpedia_5271_72.txt"
+        },
+        {
+            "file_id": "dbpedia_5271_73.txt"
+        },
+        {
+            "file_id": "dbpedia_5271_75.txt"
+        },
+        {
+            "file_id": "dbpedia_5271_82.txt"
+        },
+        {
+            "file_id": "dbpedia_5271_85.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have any other queries! \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the context information provided, I will evaluate whether the triple \"William C. Marland's name is William C. Marland\" is correct.\n\nHere is the evaluation:\n\n* The first document mentions a person named \"William Marland\", but it does not explicitly mention his full name as \"William C. Marland\".\n* However, the second document references a biography of \"William C. Marland\", which suggests that he may be the same person mentioned in the previous documents.\n* Nevertheless, this does not necessarily mean that the triple is correct, as there could be another William Marland with a similar name and profile.\n\nTherefore, based on the context information provided, I would say:\n\n`{'output': 'no'}`\n\nThe triple \"William C. Marland's name is William C. Marland\" may be incorrect, or at least it cannot be confirmed as correct based on the available context information."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```"
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "the context information mentions William Marland, not William C. Marland.",
+            "category": 2
+        }
+    }
+}

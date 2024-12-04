@@ -1,0 +1,146 @@
+{
+    "subject": "resource/James_N._Cupp",
+    "predicate": "property/placeOfDeath",
+    "object": "resource/Manassas,_Virginia",
+    "human_readable": "James N. Cupp died in Manassas, Virginia.",
+    "questions": [
+        {
+            "score": 0.8536919951438904,
+            "question": "Where did James N. Cupp die?"
+        },
+        {
+            "score": 0.7953492403030396,
+            "question": "What is the name of the state where James N. Cupp died?"
+        },
+        {
+            "score": 0.7719323635101318,
+            "question": "When did James N. Cupp die?"
+        },
+        {
+            "score": 0.656651496887207,
+            "question": "What was the cause of James N. Cupp's death?"
+        },
+        {
+            "score": 0.4467265009880066,
+            "question": "Who were some significant people in James N. Cupp's life?"
+        },
+        {
+            "score": 0.43172183632850647,
+            "question": "In which city did James N. Cupp pass away?"
+        },
+        {
+            "score": 0.42016661167144775,
+            "question": "What legacy did James N. Cupp leave behind?"
+        },
+        {
+            "score": 0.4128373861312866,
+            "question": "Was James N. Cupp known for anything specific?"
+        },
+        {
+            "score": 0.3864501416683197,
+            "question": "Are there any notable events associated with James N. Cupp's life?"
+        },
+        {
+            "score": 0.367917001247406,
+            "question": "Can you tell me more about James N. Cupp?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=James N. Cupp died in Manassas, Virginia.",
+            "html": "dbpedia_4147_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any notable events associated with James N. Cupp's life?",
+            "html": "dbpedia_4147_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Was James N. Cupp known for anything specific?",
+            "html": "dbpedia_4147_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What legacy did James N. Cupp leave behind?",
+            "html": "dbpedia_4147_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4147_1.txt"
+        },
+        {
+            "file_id": "dbpedia_4147_13.txt"
+        },
+        {
+            "file_id": "dbpedia_4147_30.txt"
+        },
+        {
+            "file_id": "dbpedia_4147_37.txt"
+        },
+        {
+            "file_id": "dbpedia_4147_55.txt"
+        },
+        {
+            "file_id": "dbpedia_4147_60.txt"
+        },
+        {
+            "file_id": "dbpedia_4147_85.txt"
+        },
+        {
+            "file_id": "dbpedia_4147_93.txt"
+        },
+        {
+            "file_id": "dbpedia_4147_95.txt"
+        },
+        {
+            "file_id": "dbpedia_4147_96.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple:\n\n{\n    \"output\": \"no\"\n}\n\nThe reason for this answer is that the documents mention multiple individuals named James/Martin/Jim/James M. Cupp, but only one of them is mentioned as dying in Manassas, Virginia (in document 24.txt), and his first name is actually Jim, not James N."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents do not provide any information that supports the statement \"James N. Cupp died in Manassas, Virginia.\" The only relevant document mentions James M. Cupp's death but states he died in Morgantown, West Virginia, not in Manassas, Virginia."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n      \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The given context information states that James M. Cupp died at J.W. Ruby Memorial Hospital, Morgantown, WV, not Manassas, Virginia.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "There are multiple James Cupps mentioned in the text, and none of them died in Manassas, Virginia.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because there are multiple individuals named James Cupp mentioned in the context information, and only one of them (James M. Cupp) died in a different location (Bruceton Mills, WV), while the others' locations of death or residence are not specified as Manassas, Virginia.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information does not mention James N. Cupp dying in Manassas, Virginia. Instead, it provides details about James M. Cupp who died on August 25, 2019, at J.W. Ruby Memorial Hospital in Morgantown, WV, and another James Cupp who passed away on January 19, 2013, in Edgewood, KY. There is no information supporting the claim about a person named James N. Cupp dying in Manassas, Virginia.",
+            "category": 2
+        }
+    }
+}

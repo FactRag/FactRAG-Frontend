@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Ibarreta",
+    "predicate": "http://www.georss.org/georss/point",
+    "object": "-25.216666666666665 -59.85",
+    "human_readable": "Ibarreta is located at -25.216666666666665\u00b0 latitude and -59.85\u00b0 longitude.",
+    "questions": [
+        {
+            "score": 0.8533533811569214,
+            "question": "Where is Ibarreta located?"
+        },
+        {
+            "score": 0.8399001955986023,
+            "question": "At what latitude and longitude can you find Ibarreta?"
+        },
+        {
+            "score": 0.803632378578186,
+            "question": "What is the latitude of Ibarreta?"
+        },
+        {
+            "score": 0.8001101016998291,
+            "question": "What is the longitude of Ibarreta?"
+        },
+        {
+            "score": 0.7715060114860535,
+            "question": "Provide the geographical coordinates of Ibarreta."
+        },
+        {
+            "score": 0.7668666243553162,
+            "question": "Describe the position of Ibarreta using latitude and longitude."
+        },
+        {
+            "score": 0.7172959446907043,
+            "question": "What are the coordinates for finding Ibarreta?"
+        },
+        {
+            "score": 0.7036764025688171,
+            "question": "What are the precise geographical coordinates of Ibarreta?"
+        },
+        {
+            "score": 0.6997283697128296,
+            "question": "If you were to map Ibarreta, where would it be situated?"
+        },
+        {
+            "score": 0.6476615071296692,
+            "question": "How can you pinpoint the location of Ibarreta on a map?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Ibarreta is located at -25.216666666666665\u00b0 latitude and -59.85\u00b0 longitude.",
+            "html": "dbpedia_1887_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If you were to map Ibarreta, where would it be situated?",
+            "html": "dbpedia_1887_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are the precise geographical coordinates of Ibarreta?",
+            "html": "dbpedia_1887_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are the coordinates for finding Ibarreta?",
+            "html": "dbpedia_1887_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1887_15.txt"
+        },
+        {
+            "file_id": "dbpedia_1887_2.txt"
+        },
+        {
+            "file_id": "dbpedia_1887_20.txt"
+        },
+        {
+            "file_id": "dbpedia_1887_29.txt"
+        },
+        {
+            "file_id": "dbpedia_1887_33.txt"
+        },
+        {
+            "file_id": "dbpedia_1887_34.txt"
+        },
+        {
+            "file_id": "dbpedia_1887_4.txt"
+        },
+        {
+            "file_id": "dbpedia_1887_52.txt"
+        },
+        {
+            "file_id": "dbpedia_1887_64.txt"
+        },
+        {
+            "file_id": "dbpedia_1887_66.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n\n\nThe provided text states that the GPS coordinates of Ibarreta are  -25.21438 latitude and -59.85851 longitude.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple based on the provided context information:\n\n{\n\"output\": \"no\"\n}\n\nExplanation: The document mentions that the GPS Coordinates of Ibarreta, Formosa, Argentina are -25.21438\u00b0 latitude and -59.85851\u00b0 longitude, which does not match the provided coordinates (-25.216666666666665\u00b0 latitude and -59.85\u00b0 longitude)."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The provided documents contain information about the geographical coordinates of Ibarreta, which are close to the values mentioned in the query (-25.216666666666665\u00b0 latitude and -59.85\u00b0 longitude). Therefore, the statement is supported by the documents."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, the coordinates given in the query for Ibarreta are slightly different from those specified in the documents:\n\n- The document specifies the latitude as -25.21438 and longitude as -59.85851.\n\nTherefore, the triple \"Ibarreta is located at -25.216666666666665\u00b0 latitude and -59.85\u00b0 longitude.\" does not match the information in the documents exactly.\n\nAnswer:\n```json\n{\"output\": \"no\"}\n```"
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The provided coordinates (-25.216666666666665\u00b0 latitude and -59.85\u00b0 longitude) have decimal places, while the context information specifies that Ibarreta's coordinates are given as degrees, minutes, and seconds (DMS). The decimal values in the claim do not correspond to the DMS format provided in the context.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The provided context gives the exact latitude and longitude coordinates of Ibarreta as -25.12532167\u00b0 S, -59.85844056\u00b0 W, which do not match the values in the claim.",
+            "category": 2
+        }
+    }
+}

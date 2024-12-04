@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Amrit_Rai",
+    "predicate": "ontology/birthYear",
+    "object": "1921",
+    "human_readable": "Amrit Rai was born in 1921.",
+    "questions": [
+        {
+            "score": 0.7960226535797119,
+            "question": "In what year was Amrit Rai born?"
+        },
+        {
+            "score": 0.7126314043998718,
+            "question": "Is Amrit Rai younger than someone born in 1922?"
+        },
+        {
+            "score": 0.6841564178466797,
+            "question": "What decade was Amrit Rai born in?"
+        },
+        {
+            "score": 0.6247972846031189,
+            "question": "What is the birth year of Amrit Rai?"
+        },
+        {
+            "score": 0.4436643123626709,
+            "question": "Is Amrit Rai older than someone born in 1920?"
+        },
+        {
+            "score": 0.4370735287666321,
+            "question": "Amrit Rai's birth year falls within which century?"
+        },
+        {
+            "score": 0.3374722898006439,
+            "question": "When did Amrit Rai come into this world?"
+        },
+        {
+            "score": 0.31310224533081055,
+            "question": "How many years have passed since Amrit Rai's birth?"
+        },
+        {
+            "score": 0.2955905795097351,
+            "question": "If today is January 1st, 2023, how old would Amrit Rai be?"
+        },
+        {
+            "score": 0.28223171830177307,
+            "question": "What year marks the beginning of Amrit Rai's life?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Amrit Rai was born in 1921.",
+            "html": "dbpedia_648_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If today is January 1st, 2023, how old would Amrit Rai be?",
+            "html": "dbpedia_648_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How many years have passed since Amrit Rai's birth?",
+            "html": "dbpedia_648_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=When did Amrit Rai come into this world?",
+            "html": "dbpedia_648_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_648_19.txt"
+        },
+        {
+            "file_id": "dbpedia_648_24.txt"
+        },
+        {
+            "file_id": "dbpedia_648_4.txt"
+        },
+        {
+            "file_id": "dbpedia_648_45.txt"
+        },
+        {
+            "file_id": "dbpedia_648_5.txt"
+        },
+        {
+            "file_id": "dbpedia_648_62.txt"
+        },
+        {
+            "file_id": "dbpedia_648_8.txt"
+        },
+        {
+            "file_id": "dbpedia_648_83.txt"
+        },
+        {
+            "file_id": "dbpedia_648_86.txt"
+        },
+        {
+            "file_id": "dbpedia_648_88.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, I can evaluate whether the statement \"Amrit Rai was born in 1921\" is correct or not.\n\nHere's the structured JSON response:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The document mentions that Amrit Rai (the Indian writer) was born on September 3, 1921. However, there's another mention of a person named Amrit Rai (an Indian-born Marin painter) who was born in Delhi and moved to the San Francisco Bay Area when she was six years old. It does not specify her birth year as 1921. Therefore, it is unclear which Amrit Rai the statement refers to, making it incorrect based on the provided context information."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\nThe documents state that Amrit Rai was born on September 3, 1921. The exact year of his birth is supported by the information provided."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "there are two separate individuals with the name Amrit Rai born in different years (1921) and contexts, which suggests that one of them cannot be born in 1921.",
+            "category": 2
+        }
+    }
+}

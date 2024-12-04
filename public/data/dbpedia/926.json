@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Revco",
+    "predicate": "property/defunct",
+    "object": "1997",
+    "human_readable": "Revco was defunct by 1997.",
+    "questions": [
+        {
+            "score": 0.9402459263801575,
+            "question": "What happened to Revco by 1997?"
+        },
+        {
+            "score": 0.835564136505127,
+            "question": "In what year did Revco become defunct?"
+        },
+        {
+            "score": 0.7972046732902527,
+            "question": "Was Revco still in business after 1997?"
+        },
+        {
+            "score": 0.48421910405158997,
+            "question": "Was there a significant event that led to Revco's closure?"
+        },
+        {
+            "score": 0.45572829246520996,
+            "question": "What type of company was Revco?"
+        },
+        {
+            "score": 0.43099305033683777,
+            "question": "When did Revco cease to operate?"
+        },
+        {
+            "score": 0.36323705315589905,
+            "question": "What might have caused the closure of Revco?"
+        },
+        {
+            "score": 0.3259764611721039,
+            "question": "What were some of Revco's products or services?"
+        },
+        {
+            "score": 0.2920932471752167,
+            "question": "Can you provide information about Revco's history?"
+        },
+        {
+            "score": 0.26824256777763367,
+            "question": "Is Revco still a functioning company?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Revco was defunct by 1997.",
+            "html": "dbpedia_926_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you provide information about Revco's history?",
+            "html": "dbpedia_926_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What were some of Revco's products or services?",
+            "html": "dbpedia_926_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What might have caused the closure of Revco?",
+            "html": "dbpedia_926_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_926_12.txt"
+        },
+        {
+            "file_id": "dbpedia_926_2.txt"
+        },
+        {
+            "file_id": "dbpedia_926_26.txt"
+        },
+        {
+            "file_id": "dbpedia_926_32.txt"
+        },
+        {
+            "file_id": "dbpedia_926_45.txt"
+        },
+        {
+            "file_id": "dbpedia_926_55.txt"
+        },
+        {
+            "file_id": "dbpedia_926_56.txt"
+        },
+        {
+            "file_id": "dbpedia_926_6.txt"
+        },
+        {
+            "file_id": "dbpedia_926_66.txt"
+        },
+        {
+            "file_id": "dbpedia_926_84.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nReasoning:\n\nThe documents provide information about the history and acquisition of Revco, but they do not indicate that it was defunct by 1997. In fact, one of the documents mentions that CVS acquired Revco in June 1997, indicating that Revco was still operational at that time."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents provide information that supports the statement \"Revco was defunct by 1997.\" Specifically, multiple sources indicate significant changes in Revco's status around this time. For example, the document at path `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_926/re-ranker-msmarco/25.txt` states that \"In late 1997, Revco was acquired by RI-based CVS Corp., which sponsored the race from 1998 through 2002,\" indicating that Revco ceased to operate independently by 1997."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "Based on the provided context information, it is accurate to say that Revco was no longer operating as an independent company by 1997. Specifically, document references indicate that in June 1997, CVS purchased Revco. Therefore, the triple \"Revco was defunct by 1997\" can be evaluated as correct according to the documents.\n\nThe structured JSON format answer is:\n\n```json\n{\"output\": \"yes\"}\n```"
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "The provided text states CVS acquired Revco in 1997 and rebranded Big B. Drugs as CVS pharmacies. This indicates Revco still existed as a company in 1997.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "Revco was actually acquired by CVS Corp. in 1997, according to the context information provided, which contradicts the notion that Revco was defunct by then.",
+            "category": 2
+        }
+    }
+}

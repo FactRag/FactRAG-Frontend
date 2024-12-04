@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Frank_Lebby_Stanton",
+    "predicate": "ontology/birthPlace",
+    "object": "resource/Charleston,_South_Carolina",
+    "human_readable": "Frank Lebby Stanton was born in Charleston, South Carolina.",
+    "questions": [
+        {
+            "score": 0.9270074367523193,
+            "question": "Where was Frank Lebby Stanton born?"
+        },
+        {
+            "score": 0.9122022390365601,
+            "question": "What state was Frank Lebby Stanton born in?"
+        },
+        {
+            "score": 0.7776771187782288,
+            "question": "Who else was born in Charleston, South Carolina?"
+        },
+        {
+            "score": 0.7698880434036255,
+            "question": "Can you tell me about Frank Lebby Stanton's birthplace?"
+        },
+        {
+            "score": 0.4719344675540924,
+            "question": "Describe Frank Lebby Stanton's early life."
+        },
+        {
+            "score": 0.4081365168094635,
+            "question": "What is the significance of Charleston, South Carolina?"
+        },
+        {
+            "score": 0.2826584577560425,
+            "question": "Are there any famous people from Charleston?"
+        },
+        {
+            "score": 0.2481168955564499,
+            "question": "What is the history of Charleston?"
+        },
+        {
+            "score": 0.22303694486618042,
+            "question": "Is Charleston known for anything particular?"
+        },
+        {
+            "score": 0.1964031457901001,
+            "question": "What are some interesting facts about Charleston?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Frank Lebby Stanton was born in Charleston, South Carolina.",
+            "html": "dbpedia_5340_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Charleston known for anything particular?",
+            "html": "dbpedia_5340_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the history of Charleston?",
+            "html": "dbpedia_5340_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any famous people from Charleston?",
+            "html": "dbpedia_5340_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5340_1.txt"
+        },
+        {
+            "file_id": "dbpedia_5340_12.txt"
+        },
+        {
+            "file_id": "dbpedia_5340_49.txt"
+        },
+        {
+            "file_id": "dbpedia_5340_51.txt"
+        },
+        {
+            "file_id": "dbpedia_5340_55.txt"
+        },
+        {
+            "file_id": "dbpedia_5340_65.txt"
+        },
+        {
+            "file_id": "dbpedia_5340_68.txt"
+        },
+        {
+            "file_id": "dbpedia_5340_72.txt"
+        },
+        {
+            "file_id": "dbpedia_5340_89.txt"
+        },
+        {
+            "file_id": "dbpedia_5340_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple in JSON format:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe reason for this answer is that while some documents mention that Frank Lebby Stanton was born on February 22, 1857, they do not specify the exact location where he was born. However, another document states that he was born in Charleston, South Carolina however notes that the family is not known to have lived in the city, suggesting that he might not have been born there after all. \n\nA more accurate answer would be \"maybe\" or \"uncertain\", but since this option is not available, I have provided \"no\"."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents indicate that Frank Lebby Stanton was born in Charleston, South Carolina. Therefore, the statement \"Frank Lebby Stanton was born in Charleston, South Carolina\" is supported by the given context information."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "According to the context information, Stanton was born on February 22, 1857, but his family lived in St Bartholomews Parish, Colleton District, South Carolina adjacent to Charleston at that time. Although he was born near Charleston, it seems there is no evidence indicating that Stanton himself was actually born within the city of Charleston.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Information provided in sections 1, 2, and 4 states that while he was born in Charleston, his family did not live there. Additionally, section 1 mentions he was born in Charleston but lived in St Bartholomews Parish, Colleton District, South Carolina with his family in 1860.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information states that Frank Lebby Stanton was born in Charleston, South Carolina, but the biographies mention he was born in South Carolina without specifying a city. Furthermore, one biography explicitly notes he was born on February 22, 1857, in Charleston, South Carolina, which contradicts the claim.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,122 @@
+{
+    "subject": "resource/Double_Dragon",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "Double Dragon",
+    "human_readable": "The label of Double Dragon is Double Dragon.",
+    "questions": [
+        {
+            "score": 0.9702474474906921,
+            "question": "What is the label of Double Dragon?"
+        },
+        {
+            "score": 0.802562415599823,
+            "question": "What kind of media is Double Dragon?"
+        },
+        {
+            "score": 0.7739989757537842,
+            "question": "Is 'Double Dragon' referring to itself?"
+        },
+        {
+            "score": 0.11127114295959473,
+            "question": "Can you give me another example of a game with a self-referential label like this?"
+        },
+        {
+            "score": 0.04207659885287285,
+            "question": "Are there any other popular games with similar names?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The label of Double Dragon is Double Dragon.",
+            "html": "dbpedia_6120_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you give me another example of a game with a self-referential label like this?",
+            "html": "dbpedia_6120_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is 'Double Dragon' referring to itself?",
+            "html": "dbpedia_6120_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What kind of media is Double Dragon?",
+            "html": "dbpedia_6120_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6120_1.txt"
+        },
+        {
+            "file_id": "dbpedia_6120_108.txt"
+        },
+        {
+            "file_id": "dbpedia_6120_11.txt"
+        },
+        {
+            "file_id": "dbpedia_6120_12.txt"
+        },
+        {
+            "file_id": "dbpedia_6120_45.txt"
+        },
+        {
+            "file_id": "dbpedia_6120_46.txt"
+        },
+        {
+            "file_id": "dbpedia_6120_47.txt"
+        },
+        {
+            "file_id": "dbpedia_6120_63.txt"
+        },
+        {
+            "file_id": "dbpedia_6120_73.txt"
+        },
+        {
+            "file_id": "dbpedia_6120_82.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe text discusses blue and red labels on Sega cartridges, but it doesn't state that the label of a *Double Dragon* game was simply \"Double Dragon\".  There are discussions about carts with blue and red labels, but nothing saying the label itself was just \"Double Dragon.\""
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, I will evaluate the query \"The label of Double Dragon is Double Dragon\" as follows:\n\n{\n  \"output\": \"no\"\n}\n\nExplanation:\nIn one of the documents, a user named krb asks about the meaning of a Double Dragon card with a blue label. Mike responds that the blue label carts are US versions, which implies that there are different labels (red and blue) for Double Dragon cartridges in different regions. Later, another user joins the conversation and mentions having a red-labeled cart and wondering where the blue ones come from, suggesting that blue-labeled Double Dragon cards might be specific to Australia or Brazil.\n\nThis information suggests that the label on a Double Dragon cartridge is not necessarily \"Double Dragon\", but rather depends on the region (US, Australia, or Brazil in this case). Therefore, I conclude that the query \"The label of Double Dragon is Double Dragon\" does not hold true based on the provided context."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The context mentions that the blue labels on Double Dragon cards indicate US versions, while red and possibly black and brownish-red (SMS) are other colors associated with the game. This supports the triple stating that the label of Double Dragon can be Double Dragon (referring to the game itself)."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The Double Dragon card with a blue label is not the game itself, but rather a US version of the game.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "The provided conversation discusses different label colors for Double Dragon cartridges (blue and red) indicating variations exist beyond a single, universal label.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The blue label Double Dragon carts were indeed US versions, as mentioned by Mike, which contradicts the initial assumption that the blue label implies a non-US version.",
+            "category": 2
+        }
+    }
+}

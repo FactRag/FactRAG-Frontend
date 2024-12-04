@@ -1,0 +1,114 @@
+{
+    "subject": "resource/Sodagreen",
+    "predicate": "property/currentmembers",
+    "object": "resource/Ho_Jing-Yang",
+    "human_readable": "Sodagreen's current members include Ho Jing-Yang.",
+    "questions": [
+        {
+            "score": 0.9548861384391785,
+            "question": "Is Ho Jing-Yang in Sodagreen?"
+        },
+        {
+            "score": 0.9135181903839111,
+            "question": "Who is currently a member of Sodagreen?"
+        },
+        {
+            "score": 0.872443675994873,
+            "question": "Who makes up Sodagreen's current lineup?"
+        },
+        {
+            "score": 0.856362521648407,
+            "question": "Does Sodagreen have any members besides Ho Jing-Yang?"
+        },
+        {
+            "score": 0.8344165086746216,
+            "question": "What is the name of the current Sodagreen member?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Sodagreen's current members include Ho Jing-Yang.",
+            "html": "dbpedia_4307_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Sodagreen have any members besides Ho Jing-Yang?",
+            "html": "dbpedia_4307_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who makes up Sodagreen's current lineup?",
+            "html": "dbpedia_4307_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is currently a member of Sodagreen?",
+            "html": "dbpedia_4307_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4307_101.txt"
+        },
+        {
+            "file_id": "dbpedia_4307_115.txt"
+        },
+        {
+            "file_id": "dbpedia_4307_16.txt"
+        },
+        {
+            "file_id": "dbpedia_4307_27.txt"
+        },
+        {
+            "file_id": "dbpedia_4307_3.txt"
+        },
+        {
+            "file_id": "dbpedia_4307_36.txt"
+        },
+        {
+            "file_id": "dbpedia_4307_50.txt"
+        },
+        {
+            "file_id": "dbpedia_4307_61.txt"
+        },
+        {
+            "file_id": "dbpedia_4307_72.txt"
+        },
+        {
+            "file_id": "dbpedia_4307_74.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nHere's the reasoning:\n\nThe documents mention several members of Sodagreen, including Qing-Feng Wu (Greeny), Jia-Kai Liou (Kay), Jing-Yang Ho (A-Fu), Yu-Chi Gong (Zephyr), Shin-Yi Shie (Claire), and Jyun-Wei Shih (Wei). However, there is no mention of Ho Jing-Yang as a current member."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\nThe documents list Ho Jing-Yang as a current member of Sodagreen, thus supporting the statement that Sodagreen's current members include Ho Jing-Yang."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {'output': 'yes'}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The provided information from context 1 states Sodagreen members are currently 41, 43 & 44 years old, and lists Wu Tsing-Fong, Cheng Chia-Chun, and Lee Wei as current members. However, the specific member Ho Jing-Yang is not mentioned in this list, but rather in other contexts where he's referred to as A-Fu.",
+            "category": 2
+        }
+    }
+}

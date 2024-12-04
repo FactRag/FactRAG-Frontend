@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Ian_Bruce_Ferguson",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "Ian Ferguson",
+    "human_readable": "The full name of Ian Bruce Ferguson is Ian Ferguson.",
+    "questions": [
+        {
+            "score": 0.9853396415710449,
+            "question": "What is the full name of Ian Bruce Ferguson?"
+        },
+        {
+            "score": 0.919262707233429,
+            "question": "Which name is used more often for Ian Bruce Ferguson: 'Ian Bruce Ferguson' or 'Ian Ferguson'?"
+        },
+        {
+            "score": 0.9118958115577698,
+            "question": "If someone knew Ian Ferguson, would they know his full name?"
+        },
+        {
+            "score": 0.8963739275932312,
+            "question": "What is the shorter version of Ian Bruce Ferguson's full name?"
+        },
+        {
+            "score": 0.8961592316627502,
+            "question": "Does Ian Bruce Ferguson go by his middle name?"
+        },
+        {
+            "score": 0.8932604789733887,
+            "question": "What is Ian Ferguson's given name?"
+        },
+        {
+            "score": 0.8611562252044678,
+            "question": "How many names does Ian Bruce Ferguson have?"
+        },
+        {
+            "score": 0.8324883580207825,
+            "question": "Is 'Ian Ferguson' a common nickname?"
+        },
+        {
+            "score": 0.6484042406082153,
+            "question": "What is the difference between Ian Bruce Ferguson and Ian Ferguson?"
+        },
+        {
+            "score": 0.14961014688014984,
+            "question": "Can you identify the full name from a shortened version?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The full name of Ian Bruce Ferguson is Ian Ferguson.",
+            "html": "dbpedia_4760_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the difference between Ian Bruce Ferguson and Ian Ferguson?",
+            "html": "dbpedia_4760_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is 'Ian Ferguson' a common nickname?",
+            "html": "dbpedia_4760_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How many names does Ian Bruce Ferguson have?",
+            "html": "dbpedia_4760_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4760_2.txt"
+        },
+        {
+            "file_id": "dbpedia_4760_25.txt"
+        },
+        {
+            "file_id": "dbpedia_4760_32.txt"
+        },
+        {
+            "file_id": "dbpedia_4760_37.txt"
+        },
+        {
+            "file_id": "dbpedia_4760_43.txt"
+        },
+        {
+            "file_id": "dbpedia_4760_5.txt"
+        },
+        {
+            "file_id": "dbpedia_4760_52.txt"
+        },
+        {
+            "file_id": "dbpedia_4760_56.txt"
+        },
+        {
+            "file_id": "dbpedia_4760_57.txt"
+        },
+        {
+            "file_id": "dbpedia_4760_6.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here's the structured JSON answer:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: While there are multiple documents describing individuals named Ian Ferguson, none of them explicitly state that Ian Bruce Ferguson (a military officer) and Ian Ferguson (a kayaker/Olympian) are the same person. The first name \"Ian\" is shared by multiple individuals with different last names (Ferguson and Ferguson), which suggests that they may not be related or the same person."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents provide information about an individual named Ian Bruce Ferguson, but they do not mention that his full name is simply Ian Ferguson. The name Ian Bruce Ferguson is mentioned in the texts, indicating there might be a middle name or additional details to his name that are not covered by this query."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, it can be observed that there are multiple individuals named \"Ian Ferguson,\" but only one is explicitly referred to as \"Ian Bruce Ferguson.\" From the documents:\n\n- One document mentions \"Colonel Ian Bruce Ferguson DSO, MC\" and provides birth details for this specific individual.\n- Another set of documents mention an Olympian kayaker named \"Ian Ferguson\" who was a student at Palmerston North Boys\u2019 High School and won multiple medals in Olympics and world championships.\n\nGiven the context provided does not explicitly state that Ian Ferguson (the Olympian) is also known as Ian Bruce Ferguson, we cannot confirm with certainty from these documents alone that \"The full name of Ian Ferguson is Ian Bruce Ferguson.\"\n\nTherefore, the appropriate response is:\n\n{\"output\": \"no\"}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The provided context does not indicate that Ian Ferguson's full name is simply \"Ian Ferguson\". In fact, from the context, it can be seen that his full name is Ian Bruce Ferguson.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Several sources clearly state his full name as Ian Bruce Ferguson.",
+            "category": 2
+        }
+    }
+}

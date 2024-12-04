@@ -1,9 +1,12 @@
 import { useMemo } from 'react'
 import type { SearchMatch, Triple } from '../types/search'
 import { yagoData } from '../data/yago'
+import { dbpediaData } from '../data/dbpedia'
+
 
 const realData: Record<string, Record<string, Triple>> = {
-  'yago': yagoData
+  'yago': yagoData,
+  'dbpedia': dbpediaData,
 }
 
 export const useSearchData = (searchTerm: string) => {

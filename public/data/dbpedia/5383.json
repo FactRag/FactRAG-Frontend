@@ -1,0 +1,146 @@
+{
+    "subject": "resource/The_Mirror_Has_Two_Faces",
+    "predicate": "property/studio",
+    "object": "resource/Barwood_Films",
+    "human_readable": "The studio behind The Mirror Has Two Faces is Barwood Films.",
+    "questions": [
+        {
+            "score": 0.8267763257026672,
+            "question": "Is The Mirror Has Two Faces a popular film?"
+        },
+        {
+            "score": 0.7943699359893799,
+            "question": "What is the name of the studio that produced The Mirror Has Two Faces?"
+        },
+        {
+            "score": 0.7304458022117615,
+            "question": "What genre is The Mirror Has Two Faces?"
+        },
+        {
+            "score": 0.6424109935760498,
+            "question": "What other films has Barwood Films produced?"
+        },
+        {
+            "score": 0.6213123798370361,
+            "question": "What is the plot of The Mirror Has Two Faces?"
+        },
+        {
+            "score": 0.5972312092781067,
+            "question": "When was The Mirror Has Two Faces released?"
+        },
+        {
+            "score": 0.5571486949920654,
+            "question": "Who are the main actors in The Mirror Has Two Faces?"
+        },
+        {
+            "score": 0.49197450280189514,
+            "question": "Which film was produced by Barwood Films?"
+        },
+        {
+            "score": 0.44260409474372864,
+            "question": "Who are some notable directors associated with Barwood Films?"
+        },
+        {
+            "score": 0.23411180078983307,
+            "question": "Has Barwood Films won any awards for their work?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The studio behind The Mirror Has Two Faces is Barwood Films.",
+            "html": "dbpedia_5383_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who are some notable directors associated with Barwood Films?",
+            "html": "dbpedia_5383_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Which film was produced by Barwood Films?",
+            "html": "dbpedia_5383_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who are the main actors in The Mirror Has Two Faces?",
+            "html": "dbpedia_5383_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5383_102.txt"
+        },
+        {
+            "file_id": "dbpedia_5383_112.txt"
+        },
+        {
+            "file_id": "dbpedia_5383_148.txt"
+        },
+        {
+            "file_id": "dbpedia_5383_23.txt"
+        },
+        {
+            "file_id": "dbpedia_5383_49.txt"
+        },
+        {
+            "file_id": "dbpedia_5383_58.txt"
+        },
+        {
+            "file_id": "dbpedia_5383_59.txt"
+        },
+        {
+            "file_id": "dbpedia_5383_87.txt"
+        },
+        {
+            "file_id": "dbpedia_5383_97.txt"
+        },
+        {
+            "file_id": "dbpedia_5383_98.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nNone of the provided documents mention Barwood Films as being behind *The Mirror Has Two Faces*.  TriStar Pictures is mentioned as the releaser of the film."
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: None of the provided documents mention \"Barwood Films\" as the studio behind \"The Mirror Has Two Faces.\" Instead, it is mentioned that the film was produced and directed by Barbra Streisand. Therefore, the statement is not supported by the given context information."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "There is no information provided in the context indicating that Barwood Films was the studio behind The Mirror Has Two Faces. The film was released by TriStar Pictures.",
+            "category": 3
+        },
+        "gemma2": {
+            "reason": "Context information states the film was released by TriStar Pictures.",
+            "category": 3
+        },
+        "llama3.1": {
+            "reason": "The studio behind The Mirror Has Two Faces is actually TriStar Pictures, not Barwood Films.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "The context information does not mention Barwood Films as the studio behind the film. It only mentions TriStar Pictures as the distributor for the release of the film on November 15, 1996.",
+            "category": 3
+        }
+    }
+}

@@ -1,0 +1,102 @@
+{
+    "subject": "resource/Richard_Boggs",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "Richard Boggs",
+    "human_readable": "The label of Richard Boggs is Richard Boggs.",
+    "questions": [
+        {
+            "score": 0.9666417241096497,
+            "question": "What label is associated with Richard Boggs?"
+        },
+        {
+            "score": 0.9231763482093811,
+            "question": "Who is Richard Boggs?"
+        },
+        {
+            "score": 0.7658259272575378,
+            "question": "Is there any other information we can gather about Richard Boggs?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The label of Richard Boggs is Richard Boggs.",
+            "html": "dbpedia_3978_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is Richard Boggs?",
+            "html": "dbpedia_3978_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What label is associated with Richard Boggs?",
+            "html": "dbpedia_3978_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3978_112.txt"
+        },
+        {
+            "file_id": "dbpedia_3978_15.txt"
+        },
+        {
+            "file_id": "dbpedia_3978_17.txt"
+        },
+        {
+            "file_id": "dbpedia_3978_18.txt"
+        },
+        {
+            "file_id": "dbpedia_3978_34.txt"
+        },
+        {
+            "file_id": "dbpedia_3978_43.txt"
+        },
+        {
+            "file_id": "dbpedia_3978_45.txt"
+        },
+        {
+            "file_id": "dbpedia_3978_56.txt"
+        },
+        {
+            "file_id": "dbpedia_3978_58.txt"
+        },
+        {
+            "file_id": "dbpedia_3978_89.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have any other triples to evaluate! \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation result:\n\n{\n  \"output\": \"no\"\n}\n\nExplanation:\nThe information in the documents does not explicitly state that Richard Boggs' label is simply \"Richard Boggs\". In fact, the documents mention different professions and roles for Richard Boggs (e.g. scientist, counselor, store manager), which suggests a more complex and nuanced labeling of his profession."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide information about Richard Matthew Boggs and Richard Boggs, including his profession as a scientist or counselor. However, they do not indicate any connection to the authorship of \"Alas, Babylon\" or any political office in Iraq or Nobel Prize in Literature awards. The query specifically asks for confirmation of the label \"Richard Boggs,\" which is supported by the documents mentioning Richard Boggs multiple times with his profession details."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "There are multiple individuals with the name Richard Boggs mentioned in the context information, each with different professions and credentials.",
+            "category": 2
+        }
+    }
+}

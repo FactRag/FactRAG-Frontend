@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Lotus_18",
+    "predicate": "property/manufacturer",
+    "object": "resource/Team_Lotus",
+    "human_readable": "Lotus 18 was manufactured by Team Lotus.",
+    "questions": [
+        {
+            "score": 0.9742646813392639,
+            "question": "Which team produced the Lotus 18?"
+        },
+        {
+            "score": 0.9576351642608643,
+            "question": "Who manufactured the Lotus 18?"
+        },
+        {
+            "score": 0.7336921691894531,
+            "question": "What era did the Lotus 18 compete in?"
+        },
+        {
+            "score": 0.6977064609527588,
+            "question": "What is the relationship between Team Lotus and the Lotus 18?"
+        },
+        {
+            "score": 0.6955706477165222,
+            "question": "What kind of company is Team Lotus?"
+        },
+        {
+            "score": 0.6304752230644226,
+            "question": "What is the name of the car model manufactured by Team Lotus?"
+        },
+        {
+            "score": 0.5977158546447754,
+            "question": "Can you name a car made by Team Lotus?"
+        },
+        {
+            "score": 0.5767067670822144,
+            "question": "Is Lotus 18 a type of vehicle?"
+        },
+        {
+            "score": 0.01301466953009367,
+            "question": "Who are some other famous Formula One car manufacturers?"
+        },
+        {
+            "score": 0.009522859007120132,
+            "question": "What makes a Formula One car successful?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Lotus 18 was manufactured by Team Lotus.",
+            "html": "dbpedia_1630_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who are some other famous Formula One car manufacturers?",
+            "html": "dbpedia_1630_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Lotus 18 a type of vehicle?",
+            "html": "dbpedia_1630_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you name a car made by Team Lotus?",
+            "html": "dbpedia_1630_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1630_104.txt"
+        },
+        {
+            "file_id": "dbpedia_1630_106.txt"
+        },
+        {
+            "file_id": "dbpedia_1630_122.txt"
+        },
+        {
+            "file_id": "dbpedia_1630_15.txt"
+        },
+        {
+            "file_id": "dbpedia_1630_29.txt"
+        },
+        {
+            "file_id": "dbpedia_1630_3.txt"
+        },
+        {
+            "file_id": "dbpedia_1630_48.txt"
+        },
+        {
+            "file_id": "dbpedia_1630_52.txt"
+        },
+        {
+            "file_id": "dbpedia_1630_65.txt"
+        },
+        {
+            "file_id": "dbpedia_1630_75.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the answer:\n\n`{'output': 'no'}`\n\nThe information in the documents does not explicitly state that Lotus 18 was manufactured by Team Lotus. In fact, the documents mention \"Colin Chapman\" as the designer of the Lotus 18, which suggests that it was designed and built by Colin Chapman, but there is no clear indication that it was a team-owned or -operated vehicle at the time of its manufacture."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information that supports the statement that the Lotus 18 was manufactured by Team Lotus. Specifically, several documents mention the car being designed and used by Lotus for various racing seasons, indicating its manufacture by Team Lotus."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The Lotus 18 was designed and built by Colin Chapman for the Lotus company, not a separate team.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because the information provided indicates that Lotus 18 was a race car designed by Colin Chapman for use by Lotus in Formula Junior, Formula Two, and Formula One, but it does not explicitly state that the manufacturing of the car was done by Team Lotus. However, given the context, it can be inferred that the manufacturer is likely to be Team Lotus since the information mentions \"Lotus\" as the entity associated with the design and use of the car. Nonetheless, the claim could still be considered wrong because it assumes a level of specificity (i.e., that Team Lotus was the sole manufacturer) without actually stating it.",
+            "category": 2
+        }
+    }
+}

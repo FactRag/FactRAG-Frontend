@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Emily_Penrose",
+    "predicate": "property/title",
+    "object": "resource/Royal_Holloway,_University_of_London",
+    "human_readable": "The title of Emily Penrose is Royal Holloway, University of London.",
+    "questions": [
+        {
+            "score": 0.9113929867744446,
+            "question": "Is Emily Penrose a professor at Royal Holloway?"
+        },
+        {
+            "score": 0.8468673229217529,
+            "question": "What is Emily Penrose's title?"
+        },
+        {
+            "score": 0.825928807258606,
+            "question": "Name the university where Emily Penrose holds a position."
+        },
+        {
+            "score": 0.6816924214363098,
+            "question": "What type of institution is Royal Holloway?"
+        },
+        {
+            "score": 0.6767237186431885,
+            "question": "Is Emily Penrose affiliated with a university?"
+        },
+        {
+            "score": 0.5708150863647461,
+            "question": "What is the full name of Emily Penrose's position?"
+        },
+        {
+            "score": 0.44767817854881287,
+            "question": "Where does Emily Penrose work?"
+        },
+        {
+            "score": 0.4463196396827698,
+            "question": "Where can you find information about Emily Penrose's role?"
+        },
+        {
+            "score": 0.3977678716182709,
+            "question": "What does 'Royal Holloway' refer to in this context?"
+        },
+        {
+            "score": 0.3796098530292511,
+            "question": "Does Emily Penrose work in academia?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The title of Emily Penrose is Royal Holloway, University of London.",
+            "html": "dbpedia_4323_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What does 'Royal Holloway' refer to in this context?",
+            "html": "dbpedia_4323_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where can you find information about Emily Penrose's role?",
+            "html": "dbpedia_4323_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where does Emily Penrose work?",
+            "html": "dbpedia_4323_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4323_13.txt"
+        },
+        {
+            "file_id": "dbpedia_4323_20.txt"
+        },
+        {
+            "file_id": "dbpedia_4323_22.txt"
+        },
+        {
+            "file_id": "dbpedia_4323_45.txt"
+        },
+        {
+            "file_id": "dbpedia_4323_65.txt"
+        },
+        {
+            "file_id": "dbpedia_4323_74.txt"
+        },
+        {
+            "file_id": "dbpedia_4323_87.txt"
+        },
+        {
+            "file_id": "dbpedia_4323_89.txt"
+        },
+        {
+            "file_id": "dbpedia_4323_90.txt"
+        },
+        {
+            "file_id": "dbpedia_4323_96.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n\n\nWhile the documents mention Dame Emily Penrose as Principal of Royal Holloway from 1898-1907, they do not state that her title was \"Royal Holloway, University of London.\"  Her role was Principal."
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the structured JSON response:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: According to the context information provided, Emily Penrose was Principal of Bedford College and then Principal of Royal Holloway from 1898-1907. While she did have a connection with Royal Holloway (specifically, there is mention of a portrait possibly being of her), it does not appear that \"Royal Holloway\" is a title associated with her."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nExplanation: According to the provided context information, Emily Penrose served as Principal at both Bedford College and Royal Holloway from 1898-1907. This supports the statement that her title includes Royal Holloway, University of London."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n     \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Emily Penrose is a person, not an institution. Royal Holloway, University of London is the institution where she served as principal.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Several texts mention Penrose as Principal of Bedford College and Royal Holloway, indicating leadership roles rather than a simple title.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The context information states that Emily Penrose served as principal at Bedford College, Royal Holloway College, and Somerville College, but does not confirm her association with the institution now known as Royal Holloway, University of London.",
+            "category": 2
+        }
+    }
+}

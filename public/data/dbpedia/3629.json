@@ -1,0 +1,119 @@
+{
+    "subject": "resource/Tarikmah",
+    "predicate": "property/subdivisionName",
+    "object": "resource/Qaleh_Ganj_County",
+    "human_readable": "Tarikmah is a part of Qaleh Ganj County.",
+    "questions": [
+        {
+            "score": 0.9371362924575806,
+            "question": "What county is Tarikmah a part of?"
+        },
+        {
+            "score": 0.924710750579834,
+            "question": "Name the county that encompasses Tarikmah."
+        },
+        {
+            "score": 0.8842061758041382,
+            "question": "What is the name of the county that contains Tarikmah?"
+        },
+        {
+            "score": 0.86223965883255,
+            "question": "Is Tarikmah situated within a specific county?"
+        },
+        {
+            "score": 0.8390371799468994,
+            "question": "Is Tarikmah affiliated with a particular county?"
+        },
+        {
+            "score": 0.8167295455932617,
+            "question": "Which county is responsible for governing Tarikmah?"
+        },
+        {
+            "score": 0.7617694139480591,
+            "question": "Where is Tarikmah located?"
+        },
+        {
+            "score": 0.5195380449295044,
+            "question": "To which administrative division does Tarikmah belong?"
+        },
+        {
+            "score": 0.49493616819381714,
+            "question": "In what administrative region does Tarikmah reside?"
+        },
+        {
+            "score": 0.3188941776752472,
+            "question": "What is the larger political entity that includes Tarikmah?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Tarikmah is a part of Qaleh Ganj County.",
+            "html": "dbpedia_3629_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In what administrative region does Tarikmah reside?",
+            "html": "dbpedia_3629_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=To which administrative division does Tarikmah belong?",
+            "html": "dbpedia_3629_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where is Tarikmah located?",
+            "html": "dbpedia_3629_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3629_1.txt"
+        },
+        {
+            "file_id": "dbpedia_3629_2.txt"
+        },
+        {
+            "file_id": "dbpedia_3629_3.txt"
+        },
+        {
+            "file_id": "dbpedia_3629_4.txt"
+        },
+        {
+            "file_id": "dbpedia_3629_5.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have any other triples you'd like me to evaluate!  "
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the structured JSON answer:\n\n```\n{\n    \"output\": \"yes\"\n}\n```\n\nThe documents mention \"Qaleh Ganj County\" and also mention \"Sorkh Qaleh Rural District\" which is located within the Central District of Qaleh Ganj County, Kerman Province, Iran. This suggests that Tarikmah (not mentioned in the documents) is indeed a part of Qaleh Ganj County."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The document mentions that Sorkh Qaleh Rural District is located in the Central District of Qaleh Ganj County, Kerman Province, Iran. This information supports the statement that Tarikmah (assuming it refers to a part of the Qaleh Ganj County based on context) is indeed a part of Qaleh Ganj County."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Sorkh Qaleh Rural District is a rural district within Qaleh Ganj County, not a part of it. A rural district is one of the administrative divisions in Iran, which are subdivisions of counties. Thus, Sorkh Qaleh Rural District is a constituent unit of Qaleh Ganj County, but it is not a part of it.",
+            "category": 2
+        }
+    }
+}

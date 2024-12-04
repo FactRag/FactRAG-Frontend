@@ -1,0 +1,109 @@
+{
+    "subject": "resource/Bryan_Forbes",
+    "predicate": "ontology/child",
+    "object": "resource/Emma_Forbes",
+    "human_readable": "Bryan Forbes has a child named Emma Forbes.",
+    "questions": [
+        {
+            "score": 0.9671841859817505,
+            "question": "Is Emma Forbes related to Bryan Forbes?"
+        },
+        {
+            "score": 0.9087131023406982,
+            "question": "Who is Bryan Forbes's child?"
+        },
+        {
+            "score": 0.8259836435317993,
+            "question": "What is the name of Bryan Forbes's daughter?"
+        },
+        {
+            "score": 0.7996930480003357,
+            "question": "Does Bryan Forbes have any children?"
+        },
+        {
+            "score": 0.632486879825592,
+            "question": "Who are Emma Forbes' parents?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Bryan Forbes has a child named Emma Forbes.",
+            "html": "dbpedia_638_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Bryan Forbes have any children?",
+            "html": "dbpedia_638_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of Bryan Forbes's daughter?",
+            "html": "dbpedia_638_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is Bryan Forbes's child?",
+            "html": "dbpedia_638_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_638_1.txt"
+        },
+        {
+            "file_id": "dbpedia_638_119.txt"
+        },
+        {
+            "file_id": "dbpedia_638_34.txt"
+        },
+        {
+            "file_id": "dbpedia_638_4.txt"
+        },
+        {
+            "file_id": "dbpedia_638_48.txt"
+        },
+        {
+            "file_id": "dbpedia_638_5.txt"
+        },
+        {
+            "file_id": "dbpedia_638_53.txt"
+        },
+        {
+            "file_id": "dbpedia_638_62.txt"
+        },
+        {
+            "file_id": "dbpedia_638_73.txt"
+        },
+        {
+            "file_id": "dbpedia_638_80.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information about Emma Forbes, confirming that she is the daughter of Bryan Forbes. Therefore, the triple stating that Bryan Forbes has a child named Emma Forbes is correct according to the given context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

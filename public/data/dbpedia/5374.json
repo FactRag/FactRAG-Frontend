@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Capture_of_USS_President",
+    "predicate": "property/casualties",
+    "object": "1",
+    "human_readable": "The capture of USS President resulted in 1 casualties.",
+    "questions": [
+        {
+            "score": 0.8531598448753357,
+            "question": "How many casualties resulted from the capture of USS President?"
+        },
+        {
+            "score": 0.8004284501075745,
+            "question": "What was the outcome of the capture of USS President?"
+        },
+        {
+            "score": 0.6393508315086365,
+            "question": "What type of conflict might have led to the capture of USS President?"
+        },
+        {
+            "score": 0.47700825333595276,
+            "question": "Can you provide more information about the capture of USS President?"
+        },
+        {
+            "score": 0.34795936942100525,
+            "question": "What vessel was captured?"
+        },
+        {
+            "score": 0.3297886252403259,
+            "question": "Were there any other consequences besides casualties from the capture?"
+        },
+        {
+            "score": 0.1989201158285141,
+            "question": "Was there a significant loss of life during the capture?"
+        },
+        {
+            "score": 0.03226320073008537,
+            "question": "In what historical period did this event likely occur?"
+        },
+        {
+            "score": 0.020452212542295456,
+            "question": "What event is being described in this statement?"
+        },
+        {
+            "score": 0.01676386222243309,
+            "question": "What does the number '1' refer to in this context?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The capture of USS President resulted in 1 casualties.",
+            "html": "dbpedia_5374_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What event is being described in this statement?",
+            "html": "dbpedia_5374_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In what historical period did this event likely occur?",
+            "html": "dbpedia_5374_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Was there a significant loss of life during the capture?",
+            "html": "dbpedia_5374_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5374_115.txt"
+        },
+        {
+            "file_id": "dbpedia_5374_13.txt"
+        },
+        {
+            "file_id": "dbpedia_5374_16.txt"
+        },
+        {
+            "file_id": "dbpedia_5374_42.txt"
+        },
+        {
+            "file_id": "dbpedia_5374_5.txt"
+        },
+        {
+            "file_id": "dbpedia_5374_67.txt"
+        },
+        {
+            "file_id": "dbpedia_5374_77.txt"
+        },
+        {
+            "file_id": "dbpedia_5374_8.txt"
+        },
+        {
+            "file_id": "dbpedia_5374_86.txt"
+        },
+        {
+            "file_id": "dbpedia_5374_91.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "To determine whether the information in the documents supports the triple, let's analyze it:\n\nThe capture of USS President resulted in [insert number] casualties.\n\nAccording to the document with file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5374/re-ranker-msmarco/8.txt, we find:\n\n\"The Capture of USS President.Belligerents United Kingdom United StatesCommanders and leaders Commodore John Hayes Commodore Stephen DecaturStrength 1 razee, HMS Majestic (58), 3 frigates, HMS Endymion (40), HMS Tenedos (38), HMS Pomone (38) 1 frigate, USS President (44)Casualties and losses 1 frigate damaged\n\n11 killed\n\n14 wounded 1 frigate captured\"\n\nWe can see that the document reports 25 casualties in total (11 killed + 14 wounded). \n\nTherefore:\n\n{\n  \"output\": \"yes\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: The context information provided does not support the statement that \"The capture of USS President resulted in 1 casualty.\" According to the documents, there were significant casualties on both sides. For instance, it mentions that the USS President had 35 killed and 70 wounded, while HMS Endymion from the British side had 11 killed and 14 wounded."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The claim is wrong because the capture of USS President resulted in 35 casualties (11 killed and 24 wounded) on the American side, not just 1 casualty.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Langenthal",
+    "predicate": "ontology/canton",
+    "object": "resource/Canton_of_Bern",
+    "human_readable": "Langenthal is a canton of Bern.",
+    "questions": [
+        {
+            "score": 0.8754357099533081,
+            "question": "Is Langenthal a city or a canton?"
+        },
+        {
+            "score": 0.7688266038894653,
+            "question": "What is the name of the canton where Langenthal is located?"
+        },
+        {
+            "score": 0.6248596906661987,
+            "question": "Which Swiss canton is known as Bern?"
+        },
+        {
+            "score": 0.41072115302085876,
+            "question": "Langenthal is part of which Swiss territory?"
+        },
+        {
+            "score": 0.3582035005092621,
+            "question": "What administrative region does Langenthal belong to?"
+        },
+        {
+            "score": 0.3520934581756592,
+            "question": "What geographical region is home to Langenthal?"
+        },
+        {
+            "score": 0.27300071716308594,
+            "question": "To which larger administrative area does Langenthal belong?"
+        },
+        {
+            "score": 0.265781044960022,
+            "question": "Where in Switzerland is Langenthal situated?"
+        },
+        {
+            "score": 0.20575183629989624,
+            "question": "What is the political division that encompasses Langenthal?"
+        },
+        {
+            "score": 0.1306839883327484,
+            "question": "Can you name a canton within Switzerland?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Langenthal is a canton of Bern.",
+            "html": "dbpedia_5764_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the political division that encompasses Langenthal?",
+            "html": "dbpedia_5764_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where in Switzerland is Langenthal situated?",
+            "html": "dbpedia_5764_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=To which larger administrative area does Langenthal belong?",
+            "html": "dbpedia_5764_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5764_1.txt"
+        },
+        {
+            "file_id": "dbpedia_5764_10.txt"
+        },
+        {
+            "file_id": "dbpedia_5764_34.txt"
+        },
+        {
+            "file_id": "dbpedia_5764_4.txt"
+        },
+        {
+            "file_id": "dbpedia_5764_49.txt"
+        },
+        {
+            "file_id": "dbpedia_5764_54.txt"
+        },
+        {
+            "file_id": "dbpedia_5764_61.txt"
+        },
+        {
+            "file_id": "dbpedia_5764_69.txt"
+        },
+        {
+            "file_id": "dbpedia_5764_70.txt"
+        },
+        {
+            "file_id": "dbpedia_5764_86.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\"output\": \"no\"}\n``` \n\n\n\n\nLangenthal is described as a city and municipality *within* the canton of Bern, not a canton itself.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the structured JSON answer:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents mention that Langenthal is a town and a municipality in the district of Oberaargau within the canton of Bern in Switzerland, which supports the triple."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The information provided does not support the statement that \"Langenthal is a canton of Bern.\" According to the documents, Langenthal is a municipality within the canton of Bern, not a canton itself."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Several sources state Langenthal is a city and municipality *within* the canton of Bern, not a canton itself.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Langenthal is a municipality within the canton of Bern, not a canton itself.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Gary_Herbert",
+    "predicate": "ontology/birthPlace",
+    "object": "resource/Utah",
+    "human_readable": "Gary Herbert was born in Utah.",
+    "questions": [
+        {
+            "score": 0.9803204536437988,
+            "question": "Was Gary Herbert born in a specific city or region within Utah?"
+        },
+        {
+            "score": 0.948723554611206,
+            "question": "Is Gary Herbert from Utah?"
+        },
+        {
+            "score": 0.8866015672683716,
+            "question": "Where was Gary Herbert born?"
+        },
+        {
+            "score": 0.74079829454422,
+            "question": "What is the name of the state where Gary Herbert was born?"
+        },
+        {
+            "score": 0.6755577325820923,
+            "question": "What is the significance of Utah to Gary Herbert?"
+        },
+        {
+            "score": 0.6263259053230286,
+            "question": "Can you tell me about Gary Herbert's birthplace?"
+        },
+        {
+            "score": 0.6212363839149475,
+            "question": "Is there any information available about Gary Herbert's family history in Utah?"
+        },
+        {
+            "score": 0.6043332815170288,
+            "question": "Do you know anything about Gary Herbert's early life in Utah?"
+        },
+        {
+            "score": 0.4216313064098358,
+            "question": "What state is Gary Herbert associated with?"
+        },
+        {
+            "score": 0.3421626091003418,
+            "question": "What role does Utah play in Gary Herbert's political career?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Gary Herbert was born in Utah.",
+            "html": "dbpedia_4565_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What state is Gary Herbert associated with?",
+            "html": "dbpedia_4565_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Do you know anything about Gary Herbert's early life in Utah?",
+            "html": "dbpedia_4565_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there any information available about Gary Herbert's family history in Utah?",
+            "html": "dbpedia_4565_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4565_17.txt"
+        },
+        {
+            "file_id": "dbpedia_4565_18.txt"
+        },
+        {
+            "file_id": "dbpedia_4565_32.txt"
+        },
+        {
+            "file_id": "dbpedia_4565_33.txt"
+        },
+        {
+            "file_id": "dbpedia_4565_40.txt"
+        },
+        {
+            "file_id": "dbpedia_4565_43.txt"
+        },
+        {
+            "file_id": "dbpedia_4565_52.txt"
+        },
+        {
+            "file_id": "dbpedia_4565_54.txt"
+        },
+        {
+            "file_id": "dbpedia_4565_60.txt"
+        },
+        {
+            "file_id": "dbpedia_4565_61.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple \"Gary Herbert was born in Utah\" based on the provided context information:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation:\nThe triple states that Gary Herbert was born in Utah. However, according to the documents (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4565/re-ranker-msmarco/6.txt and file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4565/re-ranker-msmarco/60.txt), Gary Herbert was born in American Fork, Utah. While it is true that he grew up in Orem, Utah (which is also located in the state of Utah), the documents do not provide information about his birthplace being within the state boundaries rather than a specific city or town within the state."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information that supports the statement \"Gary Herbert was born in Utah.\" Specifically, multiple sources state that Gary R. Herbert was born on May 7, 1947, in American Fork, Utah."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The claim is wrong because multiple sources explicitly state that Gary Herbert was born on May 7, 1947, in American Fork, Utah.",
+            "category": 2
+        }
+    }
+}

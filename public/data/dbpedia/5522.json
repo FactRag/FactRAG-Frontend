@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Nathan_Phelps",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "Phelps, Nathan",
+    "human_readable": "The full name of Nathan Phelps is Phelps, Nathan.",
+    "questions": [
+        {
+            "score": 0.9824889898300171,
+            "question": "What is the full name of Nathan Phelps?"
+        },
+        {
+            "score": 0.950591504573822,
+            "question": "Is Nathan Phelps' first name listed before his last name in his full name?"
+        },
+        {
+            "score": 0.9236343502998352,
+            "question": "What is Nathan Phelps' last name?"
+        },
+        {
+            "score": 0.9213503003120422,
+            "question": "How many names are in Nathan Phelps' full name?"
+        },
+        {
+            "score": 0.9083808064460754,
+            "question": "What is Nathan Phelps' first name?"
+        },
+        {
+            "score": 0.9017599821090698,
+            "question": "Imagine you saw a document that only listed 'Phelps, Nathan'. Would you know the person's full name?"
+        },
+        {
+            "score": 0.7803431749343872,
+            "question": "Would 'Nathan' and 'Phelps' work as separate identifiers for someone named Nathan Phelps?"
+        },
+        {
+            "score": 0.7602967619895935,
+            "question": "What order should the names be written for formal identification of Nathan Phelps?"
+        },
+        {
+            "score": 0.6273587942123413,
+            "question": "If you were to introduce Nathan Phelps, what would you say?"
+        },
+        {
+            "score": 0.23069004714488983,
+            "question": "What is significant about the order of names in a full name?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The full name of Nathan Phelps is Phelps, Nathan.",
+            "html": "dbpedia_5522_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If you were to introduce Nathan Phelps, what would you say?",
+            "html": "dbpedia_5522_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What order should the names be written for formal identification of Nathan Phelps?",
+            "html": "dbpedia_5522_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Would 'Nathan' and 'Phelps' work as separate identifiers for someone named Nathan Phelps?",
+            "html": "dbpedia_5522_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5522_102.txt"
+        },
+        {
+            "file_id": "dbpedia_5522_11.txt"
+        },
+        {
+            "file_id": "dbpedia_5522_112.txt"
+        },
+        {
+            "file_id": "dbpedia_5522_12.txt"
+        },
+        {
+            "file_id": "dbpedia_5522_2.txt"
+        },
+        {
+            "file_id": "dbpedia_5522_27.txt"
+        },
+        {
+            "file_id": "dbpedia_5522_32.txt"
+        },
+        {
+            "file_id": "dbpedia_5522_35.txt"
+        },
+        {
+            "file_id": "dbpedia_5522_36.txt"
+        },
+        {
+            "file_id": "dbpedia_5522_75.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe provided documents refer to Nathan Phelps as \"Nathan Phelps\" and never state his full name as \"Phelps, Nathan\".  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation:\n\n`{ \"output\": \"no\" }`\n\nThe reason for this answer is that according to document `2.txt`, the full name of Nathan Phelps is actually \"Nathan 'Nate' Phelps\", not just \"Phelps, Nathan\". This information contradicts the triple statement."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide the full name \"Nathan Phelps\" for the individual in question, which supports the triple stating that his full name is Phelps, Nathan."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "Based on the context information provided, there isn't a clear statement that Nathan Phelps's full name is \"Phelps, Nathan\". All documents refer to him as Nathan Phelps or Nate Phelps. Therefore, without additional evidence from other sources confirming his full legal name as being in the format of \"Last Name, First Name\", it cannot be concluded that the triple is correct.\n\nThe answer should be:\n```json\n{\"output\": \"no\"}\n```"
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "The provided context consistently presents his name as \"Nathan Phelps\" with the first name preceding the last name, which is the standard order for full names.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The full name of Nathan Phelps varies across different sources, with some sources listing him as \"Nathan Phelps\" and others as \"Nate Phelps\", \"Nathan 'Nate' Phelps\", or just \"Nate Phelps\".",
+            "category": 2
+        }
+    }
+}

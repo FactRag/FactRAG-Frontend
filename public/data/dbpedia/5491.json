@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Whitworth_University",
+    "predicate": "property/type",
+    "object": "resource/Private_university",
+    "human_readable": "Whitworth University is a private university.",
+    "questions": [
+        {
+            "score": 0.9626154899597168,
+            "question": "Is Whitworth University publicly or privately funded?"
+        },
+        {
+            "score": 0.7699449062347412,
+            "question": "What type of institution is Whitworth University?"
+        },
+        {
+            "score": 0.6910887360572815,
+            "question": "Is there a religious affiliation with Whitworth University?"
+        },
+        {
+            "score": 0.6519834399223328,
+            "question": "What are some of the majors offered at Whitworth University?"
+        },
+        {
+            "score": 0.5677728652954102,
+            "question": "Where is Whitworth University located?"
+        },
+        {
+            "score": 0.5627058148384094,
+            "question": "Does Whitworth University have any notable alumni?"
+        },
+        {
+            "score": 0.5482092499732971,
+            "question": "Does Whitworth University offer any athletic programs?"
+        },
+        {
+            "score": 0.5165427923202515,
+            "question": "Does Whitworth University offer undergraduate and graduate programs?"
+        },
+        {
+            "score": 0.4670090973377228,
+            "question": "What are the admission requirements for Whitworth University?"
+        },
+        {
+            "score": 0.4277675151824951,
+            "question": "What are the student-to-faculty ratios at Whitworth University?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Whitworth University is a private university.",
+            "html": "dbpedia_5491_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are the admission requirements for Whitworth University?",
+            "html": "dbpedia_5491_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Whitworth University offer undergraduate and graduate programs?",
+            "html": "dbpedia_5491_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Whitworth University offer any athletic programs?",
+            "html": "dbpedia_5491_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5491_1.txt"
+        },
+        {
+            "file_id": "dbpedia_5491_110.txt"
+        },
+        {
+            "file_id": "dbpedia_5491_126.txt"
+        },
+        {
+            "file_id": "dbpedia_5491_137.txt"
+        },
+        {
+            "file_id": "dbpedia_5491_23.txt"
+        },
+        {
+            "file_id": "dbpedia_5491_40.txt"
+        },
+        {
+            "file_id": "dbpedia_5491_45.txt"
+        },
+        {
+            "file_id": "dbpedia_5491_49.txt"
+        },
+        {
+            "file_id": "dbpedia_5491_8.txt"
+        },
+        {
+            "file_id": "dbpedia_5491_81.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here's the answer:\n\n{\n  \"output\": \"yes\"\n}\n\nExplanation: The documents provide information about Whitworth University, and according to file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5491/re-ranker-msmarco/124.txt, it is stated that \"Whitworth University is a private, Christian university...\" This supports the triple that Whitworth University is a private university."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThis answer is derived from the information provided across multiple documents, which consistently describe Whitworth University as a private institution. For instance, document `40.txt` states \"Whitworth University is a small, private Christian institution,\" and other documents also reinforce this characterization by discussing its control type as private and listing it as a small-sized non-profit higher education institution."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

@@ -1,0 +1,144 @@
+{
+    "subject": "resource/RocknRolla",
+    "predicate": "property/genre",
+    "object": "resource/Funk",
+    "human_readable": "RocknRolla's genre is Funk.",
+    "questions": [
+        {
+            "score": 0.8064586520195007,
+            "question": "Is Funk considered a popular music genre?"
+        },
+        {
+            "score": 0.6682878732681274,
+            "question": "Are there any subgenres of Funk music?"
+        },
+        {
+            "score": 0.6094130873680115,
+            "question": "What genre of music does RocknRolla belong to?"
+        },
+        {
+            "score": 0.5872441530227661,
+            "question": "How has Funk music influenced other musical genres?"
+        },
+        {
+            "score": 0.512585461139679,
+            "question": "What instruments are commonly used in Funk music?"
+        },
+        {
+            "score": 0.48849090933799744,
+            "question": "What are some characteristics of Funk music?"
+        },
+        {
+            "score": 0.42785656452178955,
+            "question": "Can you name other artists who perform Funk music?"
+        },
+        {
+            "score": 0.37140747904777527,
+            "question": "What is the cultural significance of Funk music?"
+        },
+        {
+            "score": 0.29941850900650024,
+            "question": "When did Funk music originate?"
+        },
+        {
+            "score": 0.20574304461479187,
+            "question": "Where did Funk music first gain popularity?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=RocknRolla's genre is Funk.",
+            "html": "dbpedia_2742_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=When did Funk music originate?",
+            "html": "dbpedia_2742_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the cultural significance of Funk music?",
+            "html": "dbpedia_2742_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you name other artists who perform Funk music?",
+            "html": "dbpedia_2742_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2742_28.txt"
+        },
+        {
+            "file_id": "dbpedia_2742_49.txt"
+        },
+        {
+            "file_id": "dbpedia_2742_53.txt"
+        },
+        {
+            "file_id": "dbpedia_2742_62.txt"
+        },
+        {
+            "file_id": "dbpedia_2742_70.txt"
+        },
+        {
+            "file_id": "dbpedia_2742_71.txt"
+        },
+        {
+            "file_id": "dbpedia_2742_85.txt"
+        },
+        {
+            "file_id": "dbpedia_2742_9.txt"
+        },
+        {
+            "file_id": "dbpedia_2742_92.txt"
+        },
+        {
+            "file_id": "dbpedia_2742_96.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have more triples to evaluate!"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThis response indicates that the information in the documents supports the triple, which states that RocknRolla's genre is Funk. The documents mention RocknRolla's remixes and collaborations with funk artists, which suggests that they are associated with the funk genre."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The provided documents do not mention RocknRolla or any artist that could be associated with the genre Funk. Therefore, based on the given context, the statement \"RocknRolla's genre is Funk\" cannot be supported and is incorrect."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "The provided text focuses on Funk Rock as a genre blend of funk and rock,  and while it mentions RocknRolla's remix work within the context of Susanne Alt's album, there's no indication that RocknRolla themselves are primarily a Funk Rock band.",
+            "category": 4
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because RocknRolla's genre is actually Rock (or a sub-genre of Rock) based on the context information provided, particularly points 2 and 6 which mention Rock as one of the genres being discussed.",
+            "category": 4
+        }
+    }
+}

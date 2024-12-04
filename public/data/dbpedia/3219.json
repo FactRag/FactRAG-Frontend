@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Alex_Troup",
+    "predicate": "ontology/team",
+    "object": "resource/Scotland_national_football_team",
+    "human_readable": "Alex Troup is part of the Scotland national football team.",
+    "questions": [
+        {
+            "score": 0.951163113117218,
+            "question": "Is Alex Troup considered a key player in the Scotland national team?"
+        },
+        {
+            "score": 0.9382599592208862,
+            "question": "What national football team is Alex Troup part of?"
+        },
+        {
+            "score": 0.8108339309692383,
+            "question": "What position does Alex Troup play in the national team?"
+        },
+        {
+            "score": 0.7627288699150085,
+            "question": "Is Alex Troup a professional footballer?"
+        },
+        {
+            "score": 0.6293749809265137,
+            "question": "For which club does Alex Troup currently play?"
+        },
+        {
+            "score": 0.612975537776947,
+            "question": "When did Alex Troup first join the national team?"
+        },
+        {
+            "score": 0.5708128809928894,
+            "question": "How many caps has Alex Troup earned for his national team?"
+        },
+        {
+            "score": 0.4185885488986969,
+            "question": "What is Alex Troup's nationality?"
+        },
+        {
+            "score": 0.36150097846984863,
+            "question": "Has Alex Troup played in any major international tournaments?"
+        },
+        {
+            "score": 0.1925840526819229,
+            "question": "Has Alex Troup won any individual awards for his performances?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Alex Troup is part of the Scotland national football team.",
+            "html": "dbpedia_3219_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Has Alex Troup played in any major international tournaments?",
+            "html": "dbpedia_3219_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Alex Troup's nationality?",
+            "html": "dbpedia_3219_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How many caps has Alex Troup earned for his national team?",
+            "html": "dbpedia_3219_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3219_100.txt"
+        },
+        {
+            "file_id": "dbpedia_3219_11.txt"
+        },
+        {
+            "file_id": "dbpedia_3219_111.txt"
+        },
+        {
+            "file_id": "dbpedia_3219_13.txt"
+        },
+        {
+            "file_id": "dbpedia_3219_28.txt"
+        },
+        {
+            "file_id": "dbpedia_3219_38.txt"
+        },
+        {
+            "file_id": "dbpedia_3219_40.txt"
+        },
+        {
+            "file_id": "dbpedia_3219_42.txt"
+        },
+        {
+            "file_id": "dbpedia_3219_72.txt"
+        },
+        {
+            "file_id": "dbpedia_3219_73.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the response:\n\n```\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide evidence that Alex Troup played for Dundee and Everton, and was capped for Scotland against England in 1920. They also mention his four Scottish international appearances and two Scottish League appearances, confirming that he was part of the Scotland national football team."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide information that supports Alex Troup being a part of the Scotland national football team. Specifically, they mention his four caps (full Scottish international appearances) against England and Northern Ireland between 1920 and 1922."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Troup played for Scotland, but he was only capped four times (as mentioned in the context), not as part of the national football team.",
+            "category": 1
+        },
+        "gemma2": {
+            "reason": "Multiple mentions of him being capped for Scotland against various teams are present.  This implies he was part of the national team, not just a member.",
+            "category": 1
+        },
+        "llama3.1": {
+            "reason": "The text explicitly states that Alec Troup (also known as Alex Troup) played for the Scotland national football team, specifically mentioning his four Scottish international caps.",
+            "category": 1
+        },
+        "qwen2.5": {
+            "reason": "Alex Troup was part of the Scotland national football team based on his four caps, which are mentioned in the context. Therefore, stating he is \"not\" part of the team is incorrect.",
+            "category": 1
+        }
+    }
+}

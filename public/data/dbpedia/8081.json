@@ -1,0 +1,144 @@
+{
+    "subject": "resource/North_by_Northwest",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:American_action_thriller_films",
+    "human_readable": "North by Northwest is a subject of Category:American action thriller films.",
+    "questions": [
+        {
+            "score": 0.9578748345375061,
+            "question": "Is North by Northwest considered an American film?"
+        },
+        {
+            "score": 0.7983599901199341,
+            "question": "What genre is the film North by Northwest?"
+        },
+        {
+            "score": 0.7470425963401794,
+            "question": "What kind of films does 'Category:American action thriller films' encompass?"
+        },
+        {
+            "score": 0.6403232216835022,
+            "question": "Where are American action thriller films typically set?"
+        },
+        {
+            "score": 0.5059119462966919,
+            "question": "Give an example of another American action thriller film."
+        },
+        {
+            "score": 0.46017229557037354,
+            "question": "What makes a film considered a 'thriller'?"
+        },
+        {
+            "score": 0.4264187514781952,
+            "question": "What are some common themes found in action thriller films?"
+        },
+        {
+            "score": 0.4259059727191925,
+            "question": "What elements contribute to the suspense and excitement in North by Northwest?"
+        },
+        {
+            "score": 0.4089501202106476,
+            "question": "Name some popular actors who often star in action thriller films."
+        },
+        {
+            "score": 0.2610194981098175,
+            "question": "Who are some famous directors known for making action thriller films?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=North by Northwest is a subject of Category:American action thriller films.",
+            "html": "dbpedia_8081_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Name some popular actors who often star in action thriller films.",
+            "html": "dbpedia_8081_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What elements contribute to the suspense and excitement in North by Northwest?",
+            "html": "dbpedia_8081_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some common themes found in action thriller films?",
+            "html": "dbpedia_8081_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8081_19.txt"
+        },
+        {
+            "file_id": "dbpedia_8081_4.txt"
+        },
+        {
+            "file_id": "dbpedia_8081_41.txt"
+        },
+        {
+            "file_id": "dbpedia_8081_42.txt"
+        },
+        {
+            "file_id": "dbpedia_8081_59.txt"
+        },
+        {
+            "file_id": "dbpedia_8081_64.txt"
+        },
+        {
+            "file_id": "dbpedia_8081_73.txt"
+        },
+        {
+            "file_id": "dbpedia_8081_74.txt"
+        },
+        {
+            "file_id": "dbpedia_8081_76.txt"
+        },
+        {
+            "file_id": "dbpedia_8081_83.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, here's my evaluation:\n\nThe query is \"North by Northwest is a subject of Category:American action thriller films.\"\n\nLooking at the documents, I can see that \"North by Northwest\" is indeed described as an American spy thriller film (document 1), and later as a suspense/mystery story in Hitchcock's career (document 7). However, it is not explicitly categorized as an action thriller film.\n\nUpon closer inspection, while the movie does have elements of adventure and suspense, there are no strong indications that it belongs to the specific category of \"American action thriller films\".\n\nTherefore, my response would be:\n\n`{'output': 'no'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The provided documents discuss \"North by Northwest\" as an American spy thriller film, not specifically categorized as an American action thriller film. Therefore, the statement does not align with the information given in the context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "It is classified as a spy thriller film, not an American action thriller film.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "North by Northwest is primarily categorized as a spy thriller, not an action film. While it does contain elements of action, its core genre is defined more by its suspenseful and espionage themes rather than by overt action sequences.",
+            "category": 3
+        }
+    }
+}

@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Damn_Seagulls",
+    "predicate": "property/currentMembers",
+    "object": "Jami Auvinen",
+    "human_readable": "The current members of Damn Seagulls are Jami Auvinen.",
+    "questions": [
+        {
+            "score": 0.9792901277542114,
+            "question": "Is Jami Auvinen a member of Damn Seagulls?"
+        },
+        {
+            "score": 0.9474419355392456,
+            "question": "Who is a current member of Damn Seagulls?"
+        },
+        {
+            "score": 0.9077051281929016,
+            "question": "Does Jami Auvinen play in Damn Seagulls?"
+        },
+        {
+            "score": 0.8518304228782654,
+            "question": "Can you list any current members of Damn Seagulls?"
+        },
+        {
+            "score": 0.7967432737350464,
+            "question": "Who are some of the people in Damn Seagulls?"
+        },
+        {
+            "score": 0.752785861492157,
+            "question": "What is the name of one of the members in Damn Seagulls?"
+        },
+        {
+            "score": 0.7500190734863281,
+            "question": "Who belongs to the band Damn Seagulls?"
+        },
+        {
+            "score": 0.7403304576873779,
+            "question": "Is there more than one member in Damn Seagulls?"
+        },
+        {
+            "score": 0.7148071527481079,
+            "question": "Name a musician in the band Damn Seagulls."
+        },
+        {
+            "score": 0.4415709972381592,
+            "question": "What bands does Jami Auvinen play in?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The current members of Damn Seagulls are Jami Auvinen.",
+            "html": "dbpedia_2171_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Name a musician in the band Damn Seagulls.",
+            "html": "dbpedia_2171_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there more than one member in Damn Seagulls?",
+            "html": "dbpedia_2171_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who belongs to the band Damn Seagulls?",
+            "html": "dbpedia_2171_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2171_10.txt"
+        },
+        {
+            "file_id": "dbpedia_2171_15.txt"
+        },
+        {
+            "file_id": "dbpedia_2171_18.txt"
+        },
+        {
+            "file_id": "dbpedia_2171_22.txt"
+        },
+        {
+            "file_id": "dbpedia_2171_27.txt"
+        },
+        {
+            "file_id": "dbpedia_2171_30.txt"
+        },
+        {
+            "file_id": "dbpedia_2171_36.txt"
+        },
+        {
+            "file_id": "dbpedia_2171_38.txt"
+        },
+        {
+            "file_id": "dbpedia_2171_5.txt"
+        },
+        {
+            "file_id": "dbpedia_2171_55.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "To evaluate the query, we need to look for information about the current members of the rock group Damn Seagulls.\n\nThe relevant text is from file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2171/re-ranker-msmarco/5.txt:\n\n\"Find out more about Damn Seagulls tour dates & tickets 2024-2025\n\nWant to see Damn Seagulls in concert?  Find information on all of Damn Seagulls\u2019s upcoming concerts, tour dates and ticket information for 2024-2025.\n\nUnfortunately there are no concert dates for Damn Seagulls scheduled in 2024.\n\nSongkick is the first to know of new tour announcements and concert information, so if your favorite artists are not currently on tour, join Songkick to track Damn Seagulls and get concert alerts when they play near you, like 641 other Damn Seagulls fans.\"\n\nHowever, this text does not mention the current members of the band.\n\nThe best answer is therefore: \n\n{'output': 'no'}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The provided documents do not contain any information about the current members of Damn Seagulls, specifically not mentioning Jami Auvinen or any other member names. Therefore, based on the given context, we cannot confirm this statement as correct."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "There is no information provided in the context suggesting the current members of Damn Seagulls.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "None of the provided text mentions current band members.",
+            "category": 4
+        },
+        "llama3.1": {
+            "reason": "There is no mention of the current members of Damn Seagulls or Jami Auvinen as a member in any of the provided context information.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The provided context does not include any information about the current members of Damn Seagulls, making it impossible to confirm or deny that Jami Auvinen is a member. Therefore, without additional information, we cannot evaluate the correctness of the statement.",
+            "category": 2
+        }
+    }
+}

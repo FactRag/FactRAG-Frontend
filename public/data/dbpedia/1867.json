@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Haan",
+    "predicate": "ontology/populationTotal",
+    "object": "29193",
+    "human_readable": "The population total of Haan is 29193.",
+    "questions": [
+        {
+            "score": 0.7318705916404724,
+            "question": "What is the population of Haan?"
+        },
+        {
+            "score": 0.48135486245155334,
+            "question": "Compare the population of Haan to other nearby cities."
+        },
+        {
+            "score": 0.4495573043823242,
+            "question": "How many people live in Haan?"
+        },
+        {
+            "score": 0.4410969018936157,
+            "question": "What are the demographic characteristics of the population in Haan?"
+        },
+        {
+            "score": 0.43429672718048096,
+            "question": "Is the population of Haan increasing or decreasing?"
+        },
+        {
+            "score": 0.41327592730522156,
+            "question": "What factors might influence the population of Haan?"
+        },
+        {
+            "score": 0.37257319688796997,
+            "question": "What is the historical trend of population growth in Haan?"
+        },
+        {
+            "score": 0.32671037316322327,
+            "question": "Predict how the population of Haan might change in the future."
+        },
+        {
+            "score": 0.3089405596256256,
+            "question": "How does the population density of Haan compare to other areas?"
+        },
+        {
+            "score": 0.29344040155410767,
+            "question": "What are the implications of Haan's population size for its resources and infrastructure?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The population total of Haan is 29193.",
+            "html": "dbpedia_1867_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How does the population density of Haan compare to other areas?",
+            "html": "dbpedia_1867_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Predict how the population of Haan might change in the future.",
+            "html": "dbpedia_1867_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the historical trend of population growth in Haan?",
+            "html": "dbpedia_1867_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1867_22.txt"
+        },
+        {
+            "file_id": "dbpedia_1867_24.txt"
+        },
+        {
+            "file_id": "dbpedia_1867_28.txt"
+        },
+        {
+            "file_id": "dbpedia_1867_29.txt"
+        },
+        {
+            "file_id": "dbpedia_1867_39.txt"
+        },
+        {
+            "file_id": "dbpedia_1867_47.txt"
+        },
+        {
+            "file_id": "dbpedia_1867_55.txt"
+        },
+        {
+            "file_id": "dbpedia_1867_78.txt"
+        },
+        {
+            "file_id": "dbpedia_1867_86.txt"
+        },
+        {
+            "file_id": "dbpedia_1867_98.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe provided text states the population of Haan is \"29985 people\".  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation:\n\nSince there are multiple documents, I will evaluate each one separately to see if it supports the triple \"The population total of Haan is 29193\".\n\n**Document 1:** /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1867/re-ranker-msmarco/46.txt\nThis document mentions that the population of Haan city is 29985 people.\n\n**Document 2:** /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1867/re-ranker-msmarco/24.txt\nThis document provides detailed census data for Haan, including population figures. However, it does not mention a total population figure of 29193.\n\n**Document 3:** /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1867/re-ranker-msmarco/22.txt\nThis document provides population figures for Haan from 1998 to 2006, but it does not mention a total population figure of 29193.\n\n**Document 4:** /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1867/re-ranker-msmarco/54.txt\nThis document mentions the surname Haan and its frequency in the US census, but it does not provide information on the population of Haan.\n\nSince none of the documents support a total population figure of 29193 for Haan, I conclude that:\n\n{'output': 'no'}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: According to the documents, the population of Haan city as reported by open sources and wiki data is 29,985 people, not 29,193."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The population total provided (29193) does not align with the population data given in the context, which states that the population of Haan city is 29985 people.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "It contradicts the information provided stating the population of Haan is 29985 people.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The population total of Haan is 29985 people according to open sources and wiki data.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The correct population total of Haan is 29,985 according to the provided context.",
+            "category": 2
+        }
+    }
+}

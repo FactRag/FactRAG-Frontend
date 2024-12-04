@@ -1,0 +1,142 @@
+{
+    "subject": "resource/The_Adventures_of_Rocky_and_Bullwinkle",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:The_Rocky_and_Bullwinkle_Show",
+    "human_readable": "The subject of 'The Adventures of Rocky and Bullwinkle' is Category: The Rocky and Bullwinkle Show.",
+    "questions": [
+        {
+            "score": 0.9685922861099243,
+            "question": "What is the category of 'The Adventures of Rocky and Bullwinkle'?"
+        },
+        {
+            "score": 0.9662155508995056,
+            "question": "What is the main subject of 'The Rocky and Bullwinkle Show'?"
+        },
+        {
+            "score": 0.957169234752655,
+            "question": "Describe the general category of 'The Rocky and Bullwinkle Show'."
+        },
+        {
+            "score": 0.9545438885688782,
+            "question": "Can you identify the category of 'The Rocky and Bullwinkle Show'?"
+        },
+        {
+            "score": 0.9447903037071228,
+            "question": "What type of show is 'The Adventures of Rocky and Bullwinkle'?"
+        },
+        {
+            "score": 0.9281986355781555,
+            "question": "To which category does 'The Rocky and Bullwinkle Show' belong?"
+        },
+        {
+            "score": 0.9156893491744995,
+            "question": "Is 'The Adventures of Rocky and Bullwinkle' a drama or a cartoon?"
+        },
+        {
+            "score": 0.9096759557723999,
+            "question": "Is 'The Adventures of Rocky and Bullwinkle' a comedy or an action show?"
+        },
+        {
+            "score": 0.8234807848930359,
+            "question": "What show features Rocky and Bullwinkle as characters?"
+        },
+        {
+            "score": 0.8222849369049072,
+            "question": "Name the television program that includes Rocky and Bullwinkle."
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The subject of 'The Adventures of Rocky and Bullwinkle' is Category: The Rocky and Bullwinkle Show.",
+            "html": "dbpedia_6271_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What show features Rocky and Bullwinkle as characters?",
+            "html": "dbpedia_6271_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is 'The Adventures of Rocky and Bullwinkle' a comedy or an action show?",
+            "html": "dbpedia_6271_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is 'The Adventures of Rocky and Bullwinkle' a drama or a cartoon?",
+            "html": "dbpedia_6271_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6271_24.txt"
+        },
+        {
+            "file_id": "dbpedia_6271_26.txt"
+        },
+        {
+            "file_id": "dbpedia_6271_29.txt"
+        },
+        {
+            "file_id": "dbpedia_6271_3.txt"
+        },
+        {
+            "file_id": "dbpedia_6271_33.txt"
+        },
+        {
+            "file_id": "dbpedia_6271_38.txt"
+        },
+        {
+            "file_id": "dbpedia_6271_40.txt"
+        },
+        {
+            "file_id": "dbpedia_6271_62.txt"
+        },
+        {
+            "file_id": "dbpedia_6271_69.txt"
+        },
+        {
+            "file_id": "dbpedia_6271_70.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here's the evaluation:\n\n{\n  \"output\": \"no\"\n}\n\nExplanation: The documents provided do not mention anything about \"Category: The Rocky and Bullwinkle Show\" being related to \"The Adventures of Rocky and Bullwinkle\". Instead, it appears that \"The Adventures of Rocky and Bullwinkle\", \"The Rocky and His Friends\", \"The Bullwinkle Show\", and other titles are all referring to the same TV series."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nExplanation: The context information provided mentions that \"The Adventures of Rocky and Bullwinkle\" is an animated television series featuring the adventures of the main characters, Rocket J. Squirrel (Rocky) and Bullwinkle J. Moose. This aligns with the query stating that the subject of 'The Adventures of Rocky and Bullwinkle' falls under the category \"The Rocky and Bullwinkle Show.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The title of the television series presented in the context information is \"The Adventures of Rocky and Bullwinkle and Friends,\" not \"The Rocky and Bullwinkle Show.\" Although syndicated versions of the show have used different titles, the original broadcast titles were \"Rocky and His Friends\" and \"The Bullwinkle Show,\" not \"The Rocky and Bullwinkle Show.\"",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Multiple pieces of context information state that the show aired under various titles like \"Rocky and His Friends\", \"The Bullwinkle Show\", and \"The Adventures of Rocky and Bullwinkle\" during its original run. The blanket title \"The Adventures of Rocky and Bullwinkle\" was applied for home video releases much later.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context clearly states that \"The current blanket title was imposed for home video releases more than 40 years after the series originally aired and was never used when the show was televised.\" Therefore, \"The Rocky and Bullwinkle Show\" was not the subject's original or primary title during its television run.",
+            "category": 2
+        }
+    }
+}

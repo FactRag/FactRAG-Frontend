@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Svanem\u00f8llen_station",
+    "predicate": "ontology/owningOrganisation",
+    "object": "resource/DSB_(railway_company)",
+    "human_readable": "Svanem\u00f8llen station is owned by DSB (railway company).",
+    "questions": [
+        {
+            "score": 0.9808887839317322,
+            "question": "Is Svanem\u00f8llen station owned by a railway company?"
+        },
+        {
+            "score": 0.9652925133705139,
+            "question": "What is the name of the railway company that owns Svanem\u00f8llen station?"
+        },
+        {
+            "score": 0.9501153230667114,
+            "question": "Who owns Svanem\u00f8llen station?"
+        },
+        {
+            "score": 0.9260535836219788,
+            "question": "What type of company owns Svanem\u00f8llen station?"
+        },
+        {
+            "score": 0.7820515036582947,
+            "question": "Does DSB own any other stations besides Svanem\u00f8llen?"
+        },
+        {
+            "score": 0.7540727257728577,
+            "question": "Is Svanem\u00f8llen station a major transportation hub?"
+        },
+        {
+            "score": 0.7011834979057312,
+            "question": "Where is Svanem\u00f8llen station located?"
+        },
+        {
+            "score": 0.7002071142196655,
+            "question": "What services are offered at Svanem\u00f8llen station?"
+        },
+        {
+            "score": 0.34630000591278076,
+            "question": "What does DSB stand for?"
+        },
+        {
+            "score": 0.315494179725647,
+            "question": "Can you name another railway company in Denmark?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Svanem\u00f8llen station is owned by DSB (railway company).",
+            "html": "dbpedia_2928_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What does DSB stand for?",
+            "html": "dbpedia_2928_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What services are offered at Svanem\u00f8llen station?",
+            "html": "dbpedia_2928_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where is Svanem\u00f8llen station located?",
+            "html": "dbpedia_2928_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2928_20.txt"
+        },
+        {
+            "file_id": "dbpedia_2928_21.txt"
+        },
+        {
+            "file_id": "dbpedia_2928_3.txt"
+        },
+        {
+            "file_id": "dbpedia_2928_32.txt"
+        },
+        {
+            "file_id": "dbpedia_2928_34.txt"
+        },
+        {
+            "file_id": "dbpedia_2928_38.txt"
+        },
+        {
+            "file_id": "dbpedia_2928_39.txt"
+        },
+        {
+            "file_id": "dbpedia_2928_4.txt"
+        },
+        {
+            "file_id": "dbpedia_2928_40.txt"
+        },
+        {
+            "file_id": "dbpedia_2928_41.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe provided text documents do not explicitly state who owns Svanem\u00f8llen station.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "{\n  \"output\": \"yes\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe information provided does not explicitly state that Svanem\u00f8llen station is owned by DSB. While it mentions that DSB operates the trains to and from Svanem\u00f8llen station, ownership is not confirmed in the given documents."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context, there is no explicit information that states Svanem\u00f8llen station is owned by DSB (Danish State Railways). However, it mentions that DSB operates trains to and from Svanem\u00f8llen Station. Therefore, while DSB operates services at Svanem\u00f8llen station, we cannot confirm ownership from the given documents.\n\nThe answer should reflect this lack of direct evidence for ownership:\n\n```json\n{\"output\": \"no\"}\n```"
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "There are mentions of DSB as the main train operator on the route serving Svanem\u00f8llen station, but no indication that they own the station itself.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information does not mention Svanem\u00f8llen station being owned by DSB. It only states that DSB operates the trains serving the station, providing services like A, H, B, C, and E. Ownership of the station is not specified in the given information.",
+            "category": 2
+        }
+    }
+}

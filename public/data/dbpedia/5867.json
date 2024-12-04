@@ -1,0 +1,114 @@
+{
+    "subject": "resource/Seabiscuit_(film)",
+    "predicate": "property/caption",
+    "object": "Theatrical release poster",
+    "human_readable": "The caption of Seabiscuit (film) is 'Theatrical release poster'.",
+    "questions": [
+        {
+            "score": 0.9735669493675232,
+            "question": "Is the Seabiscuit film poster a theatrical release?"
+        },
+        {
+            "score": 0.9581940770149231,
+            "question": "What is the caption of the Seabiscuit film poster?"
+        },
+        {
+            "score": 0.8936384320259094,
+            "question": "What type of release does the Seabiscuit film poster represent?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The caption of Seabiscuit (film) is 'Theatrical release poster'.",
+            "html": "dbpedia_5867_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the caption of the Seabiscuit film poster?",
+            "html": "dbpedia_5867_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is the Seabiscuit film poster a theatrical release?",
+            "html": "dbpedia_5867_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5867_10.txt"
+        },
+        {
+            "file_id": "dbpedia_5867_19.txt"
+        },
+        {
+            "file_id": "dbpedia_5867_24.txt"
+        },
+        {
+            "file_id": "dbpedia_5867_28.txt"
+        },
+        {
+            "file_id": "dbpedia_5867_38.txt"
+        },
+        {
+            "file_id": "dbpedia_5867_41.txt"
+        },
+        {
+            "file_id": "dbpedia_5867_44.txt"
+        },
+        {
+            "file_id": "dbpedia_5867_58.txt"
+        },
+        {
+            "file_id": "dbpedia_5867_6.txt"
+        },
+        {
+            "file_id": "dbpedia_5867_62.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the context information, here is the structured JSON response for your query:\n\n{\n  \"output\": \"no\"\n}\n\nExplanation: None of the documents mention anything about a \"theatrical release poster\" being the caption of Seabiscuit (film). The documents do contain information about posters related to the film, but they do not confirm that the specific phrase \"Theatrical release poster\" is used as a caption."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: None of the provided documents mention a theatrical release poster for the film Seabiscuit. The documents discuss movie posters, signed movie posters, and details about the film's plot, but do not provide information that supports the statement that the caption of Seabiscuit (film) is 'Theatrical release poster'."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The provided context does not contain any information indicating that the caption of Seabiscuit (film) is \"Theatrical release poster\". The descriptions given for the movie posters mention they are from the Dallas premiere or printed, but there's no evidence to support that these are the official theatrical release posters.",
+            "category": 3
+        },
+        "gemma2": {
+            "reason": "The provided context includes descriptions of various Seabiscuit memorabilia like signed posters, prints, and even an original vintage film poster. These items are typically associated with promotional materials for a film rather than the theatrical release poster itself.",
+            "category": 3
+        },
+        "llama3.1": {
+            "reason": "The information provided describes a signed movie poster from the 2003 hit film Seabiscuit, which indicates that there are multiple posters available with different sizes and features, but none of them appear to be the \"theatrical release poster\" as described in the claim.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "The context information does not mention a \"Theatrical release poster\" caption specifically, and instead describes various types of movie posters including signed ones and different sizes, without indicating any single caption labeled as such.",
+            "category": 3
+        }
+    }
+}

@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Quentin_Davies,_Baron_Davies_of_Stamford",
+    "predicate": "ontology/birthPlace",
+    "object": "resource/Oxford",
+    "human_readable": "Quentin Davies of Stamford was born in Oxford.",
+    "questions": [
+        {
+            "score": 0.8879469633102417,
+            "question": "Is Quentin Davies originally from Oxford?"
+        },
+        {
+            "score": 0.8215252757072449,
+            "question": "Where was Quentin Davies born?"
+        },
+        {
+            "score": 0.6978455185890198,
+            "question": "Who is Quentin Davies?"
+        },
+        {
+            "score": 0.6788034439086914,
+            "question": "What is Quentin Davies's birthplace?"
+        },
+        {
+            "score": 0.5119566321372986,
+            "question": "What city is Quentin Davies from?"
+        },
+        {
+            "score": 0.5033749938011169,
+            "question": "What is Quentin Davies known for?"
+        },
+        {
+            "score": 0.37366431951522827,
+            "question": "Where does Quentin Davies currently reside?"
+        },
+        {
+            "score": 0.3141942322254181,
+            "question": "Can you tell me more about Quentin Davies?"
+        },
+        {
+            "score": 0.2968681752681732,
+            "question": "Is there anything else you know about Quentin Davies?"
+        },
+        {
+            "score": 0.29193946719169617,
+            "question": "Does Quentin Davies have any notable achievements?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Quentin Davies of Stamford was born in Oxford.",
+            "html": "dbpedia_8086_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there anything else you know about Quentin Davies?",
+            "html": "dbpedia_8086_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about Quentin Davies?",
+            "html": "dbpedia_8086_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where does Quentin Davies currently reside?",
+            "html": "dbpedia_8086_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8086_1.txt"
+        },
+        {
+            "file_id": "dbpedia_8086_2.txt"
+        },
+        {
+            "file_id": "dbpedia_8086_22.txt"
+        },
+        {
+            "file_id": "dbpedia_8086_26.txt"
+        },
+        {
+            "file_id": "dbpedia_8086_27.txt"
+        },
+        {
+            "file_id": "dbpedia_8086_31.txt"
+        },
+        {
+            "file_id": "dbpedia_8086_32.txt"
+        },
+        {
+            "file_id": "dbpedia_8086_33.txt"
+        },
+        {
+            "file_id": "dbpedia_8086_8.txt"
+        },
+        {
+            "file_id": "dbpedia_8086_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation of the triple in JSON format:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation:\n\nThe documents provide multiple sources that confirm Quentin Davies' birthplace. In the file_path:/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8086/re-ranker-msmarco/1.txt, it is stated that \"Born in Oxford, Davies was the son of a doctor who had been in the RAF during the Second World War...\" In the file_path:/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8086/re-ranker-msmarco/9.txt, it is also mentioned that \"John Quentin Davies was born in 1944 at Oxford where his father practised as a family doctor...\".\n\nTherefore, based on the provided context information, the triple \"Quentin Davies of Stamford was born in Oxford\" is supported and the answer is indeed \"yes\"."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\nThe documents state that John Quentin Davies, Baron Davies of Stamford, was born in Oxford. Therefore, the statement \"Quentin Davies of Stamford was born in Oxford\" is supported by the provided context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

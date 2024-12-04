@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Lan_Yu_(film)",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:Films_set_in_the_1990s",
+    "human_readable": "The subject of the film Lan Yu is Category:Films set in the 1990s.",
+    "questions": [
+        {
+            "score": 0.8311514258384705,
+            "question": "Are there any specific events from the 1990s that are depicted in Lan Yu?"
+        },
+        {
+            "score": 0.7370339035987854,
+            "question": "What are some common characteristics of films set in the 1990s?"
+        },
+        {
+            "score": 0.689503014087677,
+            "question": "What decade does the film Lan Yu take place in?"
+        },
+        {
+            "score": 0.6821213960647583,
+            "question": "What are some notable films from the 1990s?"
+        },
+        {
+            "score": 0.6780184507369995,
+            "question": "Can you name other films set in the 1990s?"
+        },
+        {
+            "score": 0.5549792051315308,
+            "question": "What genre does the film Lan Yu belong to?"
+        },
+        {
+            "score": 0.5243635177612305,
+            "question": "How does the setting of Lan Yu influence the story?"
+        },
+        {
+            "score": 0.5241652727127075,
+            "question": "What is the main theme of the film Lan Yu?"
+        },
+        {
+            "score": 0.40996238589286804,
+            "question": "What is the significance of setting a film in a particular decade?"
+        },
+        {
+            "score": 0.3799079656600952,
+            "question": "Is Lan Yu a historical drama?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The subject of the film Lan Yu is Category:Films set in the 1990s.",
+            "html": "dbpedia_4608_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the significance of setting a film in a particular decade?",
+            "html": "dbpedia_4608_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the main theme of the film Lan Yu?",
+            "html": "dbpedia_4608_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How does the setting of Lan Yu influence the story?",
+            "html": "dbpedia_4608_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4608_106.txt"
+        },
+        {
+            "file_id": "dbpedia_4608_117.txt"
+        },
+        {
+            "file_id": "dbpedia_4608_15.txt"
+        },
+        {
+            "file_id": "dbpedia_4608_20.txt"
+        },
+        {
+            "file_id": "dbpedia_4608_28.txt"
+        },
+        {
+            "file_id": "dbpedia_4608_46.txt"
+        },
+        {
+            "file_id": "dbpedia_4608_57.txt"
+        },
+        {
+            "file_id": "dbpedia_4608_69.txt"
+        },
+        {
+            "file_id": "dbpedia_4608_96.txt"
+        },
+        {
+            "file_id": "dbpedia_4608_98.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n\n\nLet me know if you'd like to evaluate more triples!  I'm ready for another round. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "After analyzing the context information, I found that:\n\n* The subject of the film \"Lan Yu\" is indeed set in the late 1980s and early 1990s Beijing (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4608/re-ranker-msmarco/94.txt).\n* However, the specific category of \"Films set in the 1990s\" is not explicitly mentioned in any of the documents.\n\nTherefore, based on the context information provided, I would say that:\n\n`{'output': 'no'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents mention that the film \"Lan Yu\" is set in late 1980s and early 1990s Beijing, not just the 1990s. Therefore, it does not fully match the query's statement that the subject of the film Lan Yu is categorized as films set in the 1990s without specifying the decade further."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "Based on the provided documents, \"Lan Yu\" is primarily set against the backdrop of Beijing during the late 1980s and early 1990s. This setting aligns with the category \"Films set in the 1990s,\" as a significant portion of the film's narrative takes place within this timeframe. Therefore, the information supports the triple stating that the subject of the film \"Lan Yu\" is categorized under films set in the 1990s.\n\nResponse:\n```json\n{\"output\": \"yes\"}\n```\n\nThis conclusion stems from the details provided across several documents indicating the historical and temporal context within which the film is set."
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The claim is wrong because the context information states that the film Lan Yu \"unfolds in late 1980s and early 1990s Beijing\" and not specifically set in the 1990s.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "The film Lan Yu is set primarily in the late 1980s and early 1990s, as indicated by context information mentioning its setting during \"the late 1980s and \u201990s.\"",
+            "category": 3
+        }
+    }
+}

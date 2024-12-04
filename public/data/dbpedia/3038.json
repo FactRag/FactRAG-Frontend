@@ -1,0 +1,134 @@
+{
+    "subject": "resource/The_Hour_of_the_Pig",
+    "predicate": "property/language",
+    "object": "resource/English_language",
+    "human_readable": "The Hour of the Pig is written in English.",
+    "questions": [
+        {
+            "score": 0.9366825819015503,
+            "question": "Who wrote The Hour of the Pig?"
+        },
+        {
+            "score": 0.9178169965744019,
+            "question": "What language is The Hour of the Pig written in?"
+        },
+        {
+            "score": 0.6705833077430725,
+            "question": "What year was The Hour of the Pig published?"
+        },
+        {
+            "score": 0.6628734469413757,
+            "question": "What themes are explored in The Hour of the Pig?"
+        },
+        {
+            "score": 0.6540337204933167,
+            "question": "What is the genre of The Hour of the Pig?"
+        },
+        {
+            "score": 0.5811353325843811,
+            "question": "Who are some of the main characters in The Hour of the Pig?"
+        },
+        {
+            "score": 0.5673605799674988,
+            "question": "Where is The Hour of the Pig set?"
+        },
+        {
+            "score": 0.4806942045688629,
+            "question": "Is The Hour of the Pig a work of fiction or non-fiction?"
+        },
+        {
+            "score": 0.4123372435569763,
+            "question": "Has The Hour of the Pig been adapted into other media?"
+        },
+        {
+            "score": 0.3736835718154907,
+            "question": "What critical reception did The Hour of the Pig receive?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The Hour of the Pig is written in English.",
+            "html": "dbpedia_3038_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Has The Hour of the Pig been adapted into other media?",
+            "html": "dbpedia_3038_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is The Hour of the Pig a work of fiction or non-fiction?",
+            "html": "dbpedia_3038_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where is The Hour of the Pig set?",
+            "html": "dbpedia_3038_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3038_102.txt"
+        },
+        {
+            "file_id": "dbpedia_3038_106.txt"
+        },
+        {
+            "file_id": "dbpedia_3038_110.txt"
+        },
+        {
+            "file_id": "dbpedia_3038_131.txt"
+        },
+        {
+            "file_id": "dbpedia_3038_144.txt"
+        },
+        {
+            "file_id": "dbpedia_3038_166.txt"
+        },
+        {
+            "file_id": "dbpedia_3038_180.txt"
+        },
+        {
+            "file_id": "dbpedia_3038_184.txt"
+        },
+        {
+            "file_id": "dbpedia_3038_42.txt"
+        },
+        {
+            "file_id": "dbpedia_3038_73.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the structured JSON format containing the answer:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe information in the documents supports the triple. The document from file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3038/re-ranker-msmarco/109.txt states that \"The film is usually categorised as a drama, although it could also be classified as a mystery or a black comedy.\" and also mentions the \"Quick Facts\" section which includes \"Language: English\". Additionally, the document from file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3038/re-ranker-msmarco/105.txt states that the language of The Hour of the Pig is mentioned as English in a written caption for British and European audiences."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe query \"The Hour of the Pig is written in English\" can be inferred from the information provided, particularly from the document stating \"LanguageEnglish\", indicating that the film's narration and dialogue are in English."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The context does not provide any information about the language of the film. However, since the film was produced by the BBC, a British broadcaster, it can be assumed that it was primarily produced in English due to it being the native language of Britain, but this remains an assumption without concrete evidence from the provided context.",
+            "category": 3
+        }
+    }
+}

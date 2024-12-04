@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Byron_Anthony",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "Byron Joseph Anthony",
+    "human_readable": "Byron Anthony's full name is Byron Joseph Anthony.",
+    "questions": [
+        {
+            "score": 0.9830542206764221,
+            "question": "Is 'Byron Joseph Anthony' a shorter version of Byron Anthony's full name?"
+        },
+        {
+            "score": 0.9728097915649414,
+            "question": "What is Byron Anthony's full name?"
+        },
+        {
+            "score": 0.9481008052825928,
+            "question": "What is the middle name in Byron Anthony's full name?"
+        },
+        {
+            "score": 0.9341921210289001,
+            "question": "What are the two given names in Byron Anthony's full name?"
+        },
+        {
+            "score": 0.9178562760353088,
+            "question": "How many names are in Byron Anthony's full name?"
+        },
+        {
+            "score": 0.8740992546081543,
+            "question": "If you were to introduce Byron Anthony, what would be his complete name?"
+        },
+        {
+            "score": 0.8642760515213013,
+            "question": "If someone only knew Byron Anthony's shorter name, how could they find his full name?"
+        },
+        {
+            "score": 0.8536677360534668,
+            "question": "Which part of Byron Anthony's name comes last?"
+        },
+        {
+            "score": 0.8235018849372864,
+            "question": "What is the relationship between 'Byron Anthony' and 'Byron Joseph Anthony'?"
+        },
+        {
+            "score": 0.8185304403305054,
+            "question": "Which part of Byron Anthony's name comes first?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Byron Anthony's full name is Byron Joseph Anthony.",
+            "html": "dbpedia_4906_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the relationship between 'Byron Anthony' and 'Byron Joseph Anthony'?",
+            "html": "dbpedia_4906_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Which part of Byron Anthony's name comes last?",
+            "html": "dbpedia_4906_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If someone only knew Byron Anthony's shorter name, how could they find his full name?",
+            "html": "dbpedia_4906_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4906_103.txt"
+        },
+        {
+            "file_id": "dbpedia_4906_118.txt"
+        },
+        {
+            "file_id": "dbpedia_4906_2.txt"
+        },
+        {
+            "file_id": "dbpedia_4906_20.txt"
+        },
+        {
+            "file_id": "dbpedia_4906_30.txt"
+        },
+        {
+            "file_id": "dbpedia_4906_69.txt"
+        },
+        {
+            "file_id": "dbpedia_4906_74.txt"
+        },
+        {
+            "file_id": "dbpedia_4906_9.txt"
+        },
+        {
+            "file_id": "dbpedia_4906_96.txt"
+        },
+        {
+            "file_id": "dbpedia_4906_97.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple \"Byron Anthony's full name is Byron Joseph Anthony.\"\n\n{\n  \"output\": \"no\"\n}\n\nThe reason for this answer is that there are multiple documents mentioning Byron Anthony, but only one document (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4906/re-ranker-msmarco/20.txt) specifies his full name as \"Byron Joseph Anthony\". However, the other documents mention different information about Byron Anthony, such as his date of birth, phone number, address, etc., but not his full name. Therefore, it is not certain that the triple is correct based on the provided context information."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe document states that Byron Anthony\u2019s full name is Byron Joseph Anthony, which directly supports the query."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {'output': 'yes'}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The claim is wrong because the context information from point 3 directly states Byron Anthony's full name as \"Byron Joseph Anthony\".",
+            "category": 2
+        }
+    }
+}

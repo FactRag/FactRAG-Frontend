@@ -1,0 +1,144 @@
+{
+    "subject": "resource/William_Kennon,_Sr.",
+    "predicate": "ontology/birthPlace",
+    "object": "resource/Uniontown,_Pennsylvania",
+    "human_readable": "William Kennon, Sr. was born in Uniontown, Pennsylvania.",
+    "questions": [
+        {
+            "score": 0.9521780610084534,
+            "question": "Where was William Kennon, Sr. born?"
+        },
+        {
+            "score": 0.9201233386993408,
+            "question": "What state was William Kennon, Sr. born in?"
+        },
+        {
+            "score": 0.8394269943237305,
+            "question": "Who is William Kennon, Sr.?"
+        },
+        {
+            "score": 0.7809394001960754,
+            "question": "Were there any notable events associated with William Kennon, Sr.'s birth?"
+        },
+        {
+            "score": 0.6503952741622925,
+            "question": "Where could I find more information about William Kennon, Sr.?"
+        },
+        {
+            "score": 0.6136404871940613,
+            "question": "Can you tell me more about William Kennon, Sr.?"
+        },
+        {
+            "score": 0.5454613566398621,
+            "question": "What is known about William Kennon, Sr.'s early life?"
+        },
+        {
+            "score": 0.51302170753479,
+            "question": "Are there any famous people from Uniontown, Pennsylvania?"
+        },
+        {
+            "score": 0.5067762136459351,
+            "question": "What might be some historical facts about Uniontown, Pennsylvania?"
+        },
+        {
+            "score": 0.41113317012786865,
+            "question": "Is Uniontown a city?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=William Kennon, Sr. was born in Uniontown, Pennsylvania.",
+            "html": "dbpedia_3555_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What might be some historical facts about Uniontown, Pennsylvania?",
+            "html": "dbpedia_3555_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any famous people from Uniontown, Pennsylvania?",
+            "html": "dbpedia_3555_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is known about William Kennon, Sr.'s early life?",
+            "html": "dbpedia_3555_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3555_16.txt"
+        },
+        {
+            "file_id": "dbpedia_3555_18.txt"
+        },
+        {
+            "file_id": "dbpedia_3555_2.txt"
+        },
+        {
+            "file_id": "dbpedia_3555_26.txt"
+        },
+        {
+            "file_id": "dbpedia_3555_30.txt"
+        },
+        {
+            "file_id": "dbpedia_3555_32.txt"
+        },
+        {
+            "file_id": "dbpedia_3555_39.txt"
+        },
+        {
+            "file_id": "dbpedia_3555_51.txt"
+        },
+        {
+            "file_id": "dbpedia_3555_57.txt"
+        },
+        {
+            "file_id": "dbpedia_3555_8.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n\n\nWhile the documents mention William Kennon and provide information about his life, none of them state that he was born in Uniontown, Pennsylvania.  The text explicitly says he was born on May 14, 1793, but the location is not mentioned."
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "After analyzing the documents, I found that the information about William Kennon's birthplace is mentioned in two different texts:\n\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3555/re-ranker-msmarco/18.txt, it says \"William Kennon (born May 14, 1793 in Uniontown, Fayette County, Pennsylvania...\"\n* However, in file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3555/re-ranker-msmarco/57.txt, it mentions William Kennon's birth year as 1713 and a different birthplace, Henrico County, Virginia.\n\nTherefore, the triple \"William Kennon, Sr. was born in Uniontown, Pennsylvania\" is not consistently supported by all the documents.\n\nThe final answer is: \n\n{'output': 'no'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe document at `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3555/re-ranker-msmarco/18.txt` states that William Kennon was born \"May 14, 1793 in Uniontown, Fayette County, Pennsylvania,\" which supports the statement that William Kennon, Sr. (assuming he is referred to as 'Sr.' due to generational distinction) was born in Uniontown, Pennsylvania."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n     \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{\n  \"output\": \"yes\"\n}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "There are multiple William Kennons mentioned in the text with different birthdates and locations, suggesting they are distinct individuals. The statement attributes a specific birthplace and date to William Kennon, Sr., but other entries contradict this information by listing different birthplaces (Ohio) and dates (May 14, 1793).",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The context information about William Kennon mentions multiple individuals with the same name, including one born on May 14, 1793 in Uniontown, Fayette County, Pennsylvania, and another born on February 9, 1713 in Henrico County, Virginia.",
+            "category": 2
+        }
+    }
+}

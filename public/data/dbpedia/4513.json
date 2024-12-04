@@ -1,0 +1,146 @@
+{
+    "subject": "resource/The_Devil's_Own",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:Columbia_Pictures_films",
+    "human_readable": "The subject of the film 'The Devil's Own' is Columbia Pictures films.",
+    "questions": [
+        {
+            "score": 0.9035620093345642,
+            "question": "Is 'The Devil's Own' a production of Columbia Pictures?"
+        },
+        {
+            "score": 0.818142831325531,
+            "question": "Are there any other films by Columbia Pictures with a similar theme to 'The Devil's Own'?"
+        },
+        {
+            "score": 0.7163687944412231,
+            "question": "Name a movie made by Columbia Pictures."
+        },
+        {
+            "score": 0.6388054490089417,
+            "question": "Who are some actors known for starring in Columbia Pictures films?"
+        },
+        {
+            "score": 0.49027368426322937,
+            "question": "What is the plot of 'The Devil's Own'?"
+        },
+        {
+            "score": 0.4141336977481842,
+            "question": "What film studio produced 'The Devil's Own'?"
+        },
+        {
+            "score": 0.39629867672920227,
+            "question": "Who directed 'The Devil's Own'?"
+        },
+        {
+            "score": 0.28970441222190857,
+            "question": "What genre is 'The Devil's Own' likely to be?"
+        },
+        {
+            "score": 0.22301296889781952,
+            "question": "When was 'The Devil's Own' released?"
+        },
+        {
+            "score": 0.18574272096157074,
+            "question": "What critical reception did 'The Devil's Own' receive?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The subject of the film 'The Devil's Own' is Columbia Pictures films.",
+            "html": "dbpedia_4513_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=When was 'The Devil's Own' released?",
+            "html": "dbpedia_4513_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What genre is 'The Devil's Own' likely to be?",
+            "html": "dbpedia_4513_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who directed 'The Devil's Own'?",
+            "html": "dbpedia_4513_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4513_113.txt"
+        },
+        {
+            "file_id": "dbpedia_4513_114.txt"
+        },
+        {
+            "file_id": "dbpedia_4513_18.txt"
+        },
+        {
+            "file_id": "dbpedia_4513_25.txt"
+        },
+        {
+            "file_id": "dbpedia_4513_33.txt"
+        },
+        {
+            "file_id": "dbpedia_4513_40.txt"
+        },
+        {
+            "file_id": "dbpedia_4513_47.txt"
+        },
+        {
+            "file_id": "dbpedia_4513_57.txt"
+        },
+        {
+            "file_id": "dbpedia_4513_77.txt"
+        },
+        {
+            "file_id": "dbpedia_4513_98.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the answer in the form of a structured JSON format:\n\n{\n  \"output\": \"no\"\n}\n\nExplanation: According to the provided context information, the film \"The Devil's Own\" is described as follows:\n\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4513/re-ranker-msmarco/26.txt: The Devil\u2019s Own is a 1997 action thriller film directed by Alan J. Pakula.\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4513/re-ranker-msmarco/17.txt: The Devil\u2019s Own is a Columbia Pictures/Sony Pictures release.\n* In other files (not shown), it is also mentioned as a Columbia Pictures release, but not as the only subject."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: The context information does not mention that \"The Devil\u2019s Own\" is a Columbia Pictures film. It only lists \"The Devil\u2019s Own\" as directed by Alan J. Pakula and released by Columbia Pictures/Sony Pictures, but this alone is insufficient to confirm it as a statement about the subject matter of the film or its production process in detail relevant to the query."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The subject of the film 'The Devil\u2019s Own' is not a Columbia Pictures film. It is a Sony Pictures release, as mentioned in context information point 3 and 10.",
+            "category": 3
+        },
+        "gemma2": {
+            "reason": "Multiple passages state that *The Devil's Own* was a Columbia Pictures/Sony Pictures release.  Columbia Pictures is not the same thing as all Columbia Pictures films.",
+            "category": 3
+        },
+        "llama3.1": {
+            "reason": "The subject of the film 'The Devil's Own' is actually directed by Alan J. Pakula, not Columbia Pictures films.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "The context information does not provide any specific mention of Columbia Pictures being the subject of the film 'The Devil's Own.' Instead, it mentions that 'The Devil's Own' was released by Columbia Pictures/Sony Pictures.",
+            "category": 3
+        }
+    }
+}

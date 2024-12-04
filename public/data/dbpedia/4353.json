@@ -1,0 +1,144 @@
+{
+    "subject": "resource/VH1",
+    "predicate": "property/sisterNames",
+    "object": "resource/VH1_Soul",
+    "human_readable": "The sister name of VH1 is VH1 Soul.",
+    "questions": [
+        {
+            "score": 0.8223240375518799,
+            "question": "What is the name of VH1's sister channel?"
+        },
+        {
+            "score": 0.7697627544403076,
+            "question": "Is there a sister channel to VH1?"
+        },
+        {
+            "score": 0.7678700089454651,
+            "question": "VH1 has a sibling channel, what is it called?"
+        },
+        {
+            "score": 0.6823586225509644,
+            "question": "VH1 has a sister channel, what's its title?"
+        },
+        {
+            "score": 0.5173255205154419,
+            "question": "What is another name for a channel related to VH1?"
+        },
+        {
+            "score": 0.3247280716896057,
+            "question": "What is the name of the channel that shares a close connection with VH1?"
+        },
+        {
+            "score": 0.30845749378204346,
+            "question": "Name a channel that is part of the same network as VH1."
+        },
+        {
+            "score": 0.18345466256141663,
+            "question": "If you like VH1, which other channel might you enjoy?"
+        },
+        {
+            "score": 0.16887935996055603,
+            "question": "Besides VH1, what other channel exists within the same network?"
+        },
+        {
+            "score": 0.1400483250617981,
+            "question": "Which channel shares a close relationship with VH1?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The sister name of VH1 is VH1 Soul.",
+            "html": "dbpedia_4353_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Besides VH1, what other channel exists within the same network?",
+            "html": "dbpedia_4353_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If you like VH1, which other channel might you enjoy?",
+            "html": "dbpedia_4353_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Name a channel that is part of the same network as VH1.",
+            "html": "dbpedia_4353_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4353_100.txt"
+        },
+        {
+            "file_id": "dbpedia_4353_102.txt"
+        },
+        {
+            "file_id": "dbpedia_4353_123.txt"
+        },
+        {
+            "file_id": "dbpedia_4353_34.txt"
+        },
+        {
+            "file_id": "dbpedia_4353_49.txt"
+        },
+        {
+            "file_id": "dbpedia_4353_5.txt"
+        },
+        {
+            "file_id": "dbpedia_4353_56.txt"
+        },
+        {
+            "file_id": "dbpedia_4353_6.txt"
+        },
+        {
+            "file_id": "dbpedia_4353_72.txt"
+        },
+        {
+            "file_id": "dbpedia_4353_79.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the answer in the structured JSON format:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents support this triple as they mention that VH1 Soul is a sister network to VH1."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: According to the documents, the sister names of VH1 include \"MTV, Nickelodeon, MTV2, The N, Comedy Central, Noggin, TV Land, Nicktoons Network, Spike, Nick at Nite, MTV Tr3s, MTV Hits, CMT, and VH1 Classic.\" VH1 Soul is not listed as a sister channel of VH1."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n      \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{\"output\": \"no\"}\n\nThe provided documents do mention that VH1 and VH1 Soul are sister channels, but the statement \"VH1's sister name is VH1 Soul\" is not correct. It would be more accurate to say that VH1 Soul is a sister channel of VH1 rather than stating it as a sister name. Therefore, the given query does not correctly reflect the information provided in the documents."
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "VH1 Soul is a sister network to VH1, not the other way around.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "VH1 Soul is explicitly stated as a sister channel to VH1, not the other way around.",
+            "category": 2
+        }
+    }
+}

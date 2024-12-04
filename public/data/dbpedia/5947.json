@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Jona_railway_station",
+    "predicate": "ontology/owner",
+    "object": "resource/Swiss_Federal_Railways",
+    "human_readable": "The owner of Jona railway station is Swiss Federal Railways.",
+    "questions": [
+        {
+            "score": 0.9340695738792419,
+            "question": "Who owns Jona railway station?"
+        },
+        {
+            "score": 0.8806332945823669,
+            "question": "Are there any other railway stations owned by Swiss Federal Railways?"
+        },
+        {
+            "score": 0.8222624659538269,
+            "question": "What is the nationality of the owner of Jona railway station?"
+        },
+        {
+            "score": 0.6135268807411194,
+            "question": "Where is Jona railway station located?"
+        },
+        {
+            "score": 0.6088850498199463,
+            "question": "Is Swiss Federal Railways a private company?"
+        },
+        {
+            "score": 0.6005255579948425,
+            "question": "What are the responsibilities of the owner of a railway station?"
+        },
+        {
+            "score": 0.5653521418571472,
+            "question": "Is there a website for Swiss Federal Railways?"
+        },
+        {
+            "score": 0.4827686846256256,
+            "question": "What type of transportation services does Jona railway station provide?"
+        },
+        {
+            "score": 0.37104159593582153,
+            "question": "Are there any historical facts about Jona railway station?"
+        },
+        {
+            "score": 0.3473677933216095,
+            "question": "How does Swiss Federal Railways finance its operations?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The owner of Jona railway station is Swiss Federal Railways.",
+            "html": "dbpedia_5947_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any historical facts about Jona railway station?",
+            "html": "dbpedia_5947_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of transportation services does Jona railway station provide?",
+            "html": "dbpedia_5947_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there a website for Swiss Federal Railways?",
+            "html": "dbpedia_5947_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5947_23.txt"
+        },
+        {
+            "file_id": "dbpedia_5947_40.txt"
+        },
+        {
+            "file_id": "dbpedia_5947_43.txt"
+        },
+        {
+            "file_id": "dbpedia_5947_51.txt"
+        },
+        {
+            "file_id": "dbpedia_5947_57.txt"
+        },
+        {
+            "file_id": "dbpedia_5947_59.txt"
+        },
+        {
+            "file_id": "dbpedia_5947_60.txt"
+        },
+        {
+            "file_id": "dbpedia_5947_65.txt"
+        },
+        {
+            "file_id": "dbpedia_5947_81.txt"
+        },
+        {
+            "file_id": "dbpedia_5947_84.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the structured JSON response:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: While the documents mention Jona railway station and Swiss Federal Railways, they do not explicitly state that Jona railway station is owned by Swiss Federal Railways. The documents only provide information about the location of the station, its services, and general facts about Swiss Federal Railways. There is no direct connection made between the ownership of Jona railway station and Swiss Federal Railways."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide information about the operation and services related to Jona railway station, indicating it is served by Zurich S-Bahn lines S5 and S15. While the documents do not explicitly state that Swiss Federal Railways owns Jona railway station, they imply operational control over multiple stations in Switzerland, which strongly suggests ownership or management by Swiss Federal Railways as a national railway service."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "The provided text describes Jona railway station as being served by Zurich S-Bahn lines S5 and S15, which are operated by Swiss Federal Railways (SBB), but it doesn't explicitly state that SBB owns the station itself.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "There is no information provided about the ownership of Jona railway station, but Bubikon, R\u00fcti ZH, and Jona are mentioned as stations served by Zurich S-Bahn lines S5 and S15 without mentioning Swiss Federal Railways explicitly as their owner.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,97 @@
+{
+    "subject": "resource/Lewis_Nkosi",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "Lewis Nkosi",
+    "human_readable": "The name of Lewis Nkosi is Lewis Nkosi.",
+    "questions": [
+        {
+            "score": 0.9721788763999939,
+            "question": "What is the name of Lewis Nkosi?"
+        },
+        {
+            "score": 0.9054833650588989,
+            "question": "Is Lewis Nkosi his own name?"
+        },
+        {
+            "score": 0.5876272916793823,
+            "question": "How would you describe Lewis Nkosi based on this information?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of Lewis Nkosi is Lewis Nkosi.",
+            "html": "dbpedia_5474_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Lewis Nkosi his own name?",
+            "html": "dbpedia_5474_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of Lewis Nkosi?",
+            "html": "dbpedia_5474_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5474_14.txt"
+        },
+        {
+            "file_id": "dbpedia_5474_16.txt"
+        },
+        {
+            "file_id": "dbpedia_5474_17.txt"
+        },
+        {
+            "file_id": "dbpedia_5474_23.txt"
+        },
+        {
+            "file_id": "dbpedia_5474_28.txt"
+        },
+        {
+            "file_id": "dbpedia_5474_48.txt"
+        },
+        {
+            "file_id": "dbpedia_5474_65.txt"
+        },
+        {
+            "file_id": "dbpedia_5474_71.txt"
+        },
+        {
+            "file_id": "dbpedia_5474_79.txt"
+        },
+        {
+            "file_id": "dbpedia_5474_83.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "To evaluate the triple \"The name of Lewis Nkosi is Lewis Nkosi\", I will examine the context information.\n\nUpon reviewing the documents, I found that:\n\n* File_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5474/re-ranker-msmarco/15.txt mentions \"Lewis Nkosi was born on December 5, 1926 in Durban, South Africa.\"\n* File_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5474/re-ranker-msmarco/16.txt mentions \"Lewis Nkosi was born on 5 December 1926 in Durban, South Africa.\"\n* File_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5474/re-ranker-msmarco/77.txt mentions \"Lewis Nkosi (born 1936) is known chiefly for his scholarly studies of contemporary African literature...\"\n* File_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5474/re-ranker-msmarco/55.txt mentions \"Journalist, critic, playwright, and novelist, Lewis Nkosi was born in 1936 in Durban, Natal, South Africa...\"\n\nAll documents mention the name \"Lewis Nkosi\" as associated with the individual.\n\nTherefore, the output is:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe information provided in the documents supports that Lewis Nkosi is indeed referred to as \"Lewis Nkosi.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

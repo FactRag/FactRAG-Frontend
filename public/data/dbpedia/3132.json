@@ -1,0 +1,146 @@
+{
+    "subject": "resource/H._H._Asquith",
+    "predicate": "ontology/primeMinister",
+    "object": "resource/David_Lloyd_George",
+    "human_readable": "H.H. Asquith was the Prime Minister of David Lloyd George.",
+    "questions": [
+        {
+            "score": 0.9333581924438477,
+            "question": "Who was the Prime Minister of David Lloyd George?"
+        },
+        {
+            "score": 0.926347553730011,
+            "question": "Was David Lloyd George a Prime Minister?"
+        },
+        {
+            "score": 0.8923773765563965,
+            "question": "During which period was H.H. Asquith Prime Minister?"
+        },
+        {
+            "score": 0.8706717491149902,
+            "question": "What is the relationship between H.H. Asquith and David Lloyd George?"
+        },
+        {
+            "score": 0.8008113503456116,
+            "question": "Who served as Prime Minister before David Lloyd George?"
+        },
+        {
+            "score": 0.7353176474571228,
+            "question": "How did David Lloyd George's time in office differ from H.H. Asquith's?"
+        },
+        {
+            "score": 0.688909113407135,
+            "question": "What were some of the key events during H.H. Asquith's time as Prime Minister?"
+        },
+        {
+            "score": 0.6281359195709229,
+            "question": "Name the political position held by H.H. Asquith."
+        },
+        {
+            "score": 0.5891512036323547,
+            "question": "What was H.H. Asquith's role in British politics?"
+        },
+        {
+            "score": 0.36019206047058105,
+            "question": "What were the major challenges facing Britain during H.H. Asquith's premiership?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=H.H. Asquith was the Prime Minister of David Lloyd George.",
+            "html": "dbpedia_3132_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What was H.H. Asquith's role in British politics?",
+            "html": "dbpedia_3132_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Name the political position held by H.H. Asquith.",
+            "html": "dbpedia_3132_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What were some of the key events during H.H. Asquith's time as Prime Minister?",
+            "html": "dbpedia_3132_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3132_13.txt"
+        },
+        {
+            "file_id": "dbpedia_3132_26.txt"
+        },
+        {
+            "file_id": "dbpedia_3132_30.txt"
+        },
+        {
+            "file_id": "dbpedia_3132_42.txt"
+        },
+        {
+            "file_id": "dbpedia_3132_51.txt"
+        },
+        {
+            "file_id": "dbpedia_3132_53.txt"
+        },
+        {
+            "file_id": "dbpedia_3132_73.txt"
+        },
+        {
+            "file_id": "dbpedia_3132_79.txt"
+        },
+        {
+            "file_id": "dbpedia_3132_82.txt"
+        },
+        {
+            "file_id": "dbpedia_3132_88.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents provide information about H.H. Asquith and David Lloyd George, but they do not indicate that H.H. Asquith was the Prime Minister of David Lloyd George. In fact, the opposite is true: David Lloyd George replaced H.H. Asquith as Prime Minister in December 1916."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nThe documents provide information that states \"On 7 December 1916, H.H. Asquith was replaced as Prime Minister by David Lloyd George.\" This indicates that David Lloyd George became Prime Minister after H.H. Asquith, contradicting the statement that H.H. Asquith was the Prime Minister of David Lloyd George."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "David Lloyd George was the Prime Minister after H.H. Asquith, not during his tenure.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Lloyd George replaced Asquith as Prime Minister.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because H.H. Asquith was replaced as Prime Minister by David Lloyd George, not the other way around.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "H.H. Asquith was replaced as Prime Minister by David Lloyd George on 7 December 1916 due to growing dissatisfaction with the conduct of the First World War and other issues, not because he was the Prime Minister of David Lloyd George.",
+            "category": 2
+        }
+    }
+}

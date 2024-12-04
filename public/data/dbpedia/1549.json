@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Projekt_Herz",
+    "predicate": "property/title",
+    "object": "Western Beta",
+    "human_readable": "The title of Projekt Herz is Western Beta.",
+    "questions": [
+        {
+            "score": 0.8108275532722473,
+            "question": "What is the title of Projekt Herz?"
+        },
+        {
+            "score": 0.5991934537887573,
+            "question": "Is 'Western Beta' a project title or a description?"
+        },
+        {
+            "score": 0.543513298034668,
+            "question": "Are there any other projects with the title 'Western Beta'?"
+        },
+        {
+            "score": 0.5235546231269836,
+            "question": "What is another name for Projekt Herz?"
+        },
+        {
+            "score": 0.43561795353889465,
+            "question": "What does the name 'Western Beta' suggest about the project?"
+        },
+        {
+            "score": 0.35463374853134155,
+            "question": "Could 'Projekt Herz' be a code name?"
+        },
+        {
+            "score": 0.3463538587093353,
+            "question": "How could you find more information about Projekt Herz?"
+        },
+        {
+            "score": 0.3119867742061615,
+            "question": "What kind of project might 'Projekt Herz' be?"
+        },
+        {
+            "score": 0.2720995545387268,
+            "question": "What are some potential goals of a project called 'Projekt Herz'?"
+        },
+        {
+            "score": 0.03812118247151375,
+            "question": "Why might a project be given two titles?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The title of Projekt Herz is Western Beta.",
+            "html": "dbpedia_1549_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some potential goals of a project called 'Projekt Herz'?",
+            "html": "dbpedia_1549_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What kind of project might 'Projekt Herz' be?",
+            "html": "dbpedia_1549_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How could you find more information about Projekt Herz?",
+            "html": "dbpedia_1549_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1549_16.txt"
+        },
+        {
+            "file_id": "dbpedia_1549_31.txt"
+        },
+        {
+            "file_id": "dbpedia_1549_32.txt"
+        },
+        {
+            "file_id": "dbpedia_1549_44.txt"
+        },
+        {
+            "file_id": "dbpedia_1549_5.txt"
+        },
+        {
+            "file_id": "dbpedia_1549_51.txt"
+        },
+        {
+            "file_id": "dbpedia_1549_63.txt"
+        },
+        {
+            "file_id": "dbpedia_1549_67.txt"
+        },
+        {
+            "file_id": "dbpedia_1549_70.txt"
+        },
+        {
+            "file_id": "dbpedia_1549_90.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```  \n\n\nLet me know if you have any other triples to evaluate!"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nThe document at file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1549/re-ranker-msmarco/62.txt mentions that the song \"Western Beta\" is a western-metal song, but it does not mention that this is the title of Projekt Herz. The actual title of Projekt Herz is mentioned in other documents as \"Projekt Herz\"."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: According to the provided context, the EP titled \"Projekt Herz\" contains various songs such as \"USA\" and \"Western Beta,\" but \"Western Beta\" is described as a western-metal song and not the title of the EP itself."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The title of Projekt Herz is not Western Beta. Western Beta is a song from the EP, but it is not the title of the entire EP.",
+            "category": 4
+        },
+        "gemma2": {
+            "reason": "The provided text states \"Western Beta\" is a song on the Projekt Herz EP, not the title of the EP itself.",
+            "category": 4
+        },
+        "llama3.1": {
+            "reason": "There is no information provided that suggests the title of Projekt Herz is Western Beta, but rather that \"Western Beta\" is one of the songs on the EP.",
+            "category": 4
+        },
+        "qwen2.5": {
+            "reason": "The title of the EP is Projekt Herz, not Western Beta. Western Beta appears to be one of the songs on the EP but not the title itself.",
+            "category": 4
+        }
+    }
+}

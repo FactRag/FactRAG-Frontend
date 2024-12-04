@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Olympia_Snowe",
+    "predicate": "property/order",
+    "object": "Member of the",
+    "human_readable": "Olympia Snowe is a Member of.",
+    "questions": [
+        {
+            "score": 0.9152833223342896,
+            "question": "In which group does Olympia Snowe hold a position?"
+        },
+        {
+            "score": 0.8988141417503357,
+            "question": "To what organization does Olympia Snowe belong?"
+        },
+        {
+            "score": 0.834705650806427,
+            "question": "What political body is Olympia Snowe a member of?"
+        },
+        {
+            "score": 0.7671685814857483,
+            "question": "Which institution does Olympia Snowe represent?"
+        },
+        {
+            "score": 0.7629352807998657,
+            "question": "What political affiliation is associated with Olympia Snowe?"
+        },
+        {
+            "score": 0.7422195672988892,
+            "question": "Is Olympia Snowe part of a political party?"
+        },
+        {
+            "score": 0.7252129316329956,
+            "question": "What is Olympia Snowe's role within her organization?"
+        },
+        {
+            "score": 0.664480984210968,
+            "question": "Olympia Snowe serves in what capacity?"
+        },
+        {
+            "score": 0.4830140769481659,
+            "question": "What is Olympia Snowe's current role in politics?"
+        },
+        {
+            "score": 0.33334529399871826,
+            "question": "Where does Olympia Snowe hold political office?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Olympia Snowe is a Member of.",
+            "html": "dbpedia_1461_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Olympia Snowe's current role in politics?",
+            "html": "dbpedia_1461_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Olympia Snowe serves in what capacity?",
+            "html": "dbpedia_1461_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Olympia Snowe's role within her organization?",
+            "html": "dbpedia_1461_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1461_106.txt"
+        },
+        {
+            "file_id": "dbpedia_1461_118.txt"
+        },
+        {
+            "file_id": "dbpedia_1461_27.txt"
+        },
+        {
+            "file_id": "dbpedia_1461_52.txt"
+        },
+        {
+            "file_id": "dbpedia_1461_54.txt"
+        },
+        {
+            "file_id": "dbpedia_1461_65.txt"
+        },
+        {
+            "file_id": "dbpedia_1461_66.txt"
+        },
+        {
+            "file_id": "dbpedia_1461_76.txt"
+        },
+        {
+            "file_id": "dbpedia_1461_81.txt"
+        },
+        {
+            "file_id": "dbpedia_1461_95.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'} \n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the context information provided, I can evaluate whether the statement \"Olympia Snowe is a Member of\" is supported by the documents. Here is my evaluation:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThis is because none of the documents mention Olympia Snowe as being a member of any organization or group that is not explicitly stated (e.g., Board of Directors, Senior Fellow, etc.). If you're looking for information on what specific groups she is a member of, I can try to provide that from the context information."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information that Olympia Snowe was a U.S. Senator from Maine and also served as a Member of the U.S. House of Representatives, which supports her being a member of legislative bodies. However, given the specific query about her being a member of (without specifying the body), the provided answer in JSON format strictly adheres to the structured response required."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Olympia Snowe is currently a Chairman and CEO of her own consulting firm (Olympia Snowe, LLC) and a Senior Fellow at the Bipartisan Policy Center, not a Member of any specific organization or body.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Multiple passages state she served *as* a Member of the House of Representatives and Senator, indicating past roles, not current membership.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The provided context does not list Olympia Snowe as a member of any specific organization or board, but rather describes her roles as an advisor, chairperson, and senior fellow in various capacities.",
+            "category": 2
+        }
+    }
+}

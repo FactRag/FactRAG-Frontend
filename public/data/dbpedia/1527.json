@@ -1,0 +1,102 @@
+{
+    "subject": "resource/Sharon_Brown_(actress)",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "Sharon Brown",
+    "human_readable": "The name of Sharon Brown (actress) is Sharon Brown.",
+    "questions": [
+        {
+            "score": 0.9770293831825256,
+            "question": "Is Sharon Brown an actress?"
+        },
+        {
+            "score": 0.9607954621315002,
+            "question": "What is the name of Sharon Brown?"
+        },
+        {
+            "score": 0.9330251216888428,
+            "question": "Who is Sharon Brown?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of Sharon Brown (actress) is Sharon Brown.",
+            "html": "dbpedia_1527_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of Sharon Brown?",
+            "html": "dbpedia_1527_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Sharon Brown an actress?",
+            "html": "dbpedia_1527_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1527_10.txt"
+        },
+        {
+            "file_id": "dbpedia_1527_11.txt"
+        },
+        {
+            "file_id": "dbpedia_1527_33.txt"
+        },
+        {
+            "file_id": "dbpedia_1527_34.txt"
+        },
+        {
+            "file_id": "dbpedia_1527_7.txt"
+        },
+        {
+            "file_id": "dbpedia_1527_75.txt"
+        },
+        {
+            "file_id": "dbpedia_1527_78.txt"
+        },
+        {
+            "file_id": "dbpedia_1527_81.txt"
+        },
+        {
+            "file_id": "dbpedia_1527_86.txt"
+        },
+        {
+            "file_id": "dbpedia_1527_93.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the structured JSON response:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents provided do not confirm that Sharon Brown's full name is indeed Sharon Brown. In fact, some documents mention her as Sharon Catherine Brown or Sharon Blanks, suggesting that she may have multiple names or aliases. Therefore, the statement \"The name of Sharon Brown (actress) is Sharon Brown\" cannot be confirmed to be true based on the provided information."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide information about Sharon Brown as an actress and confirm her name is indeed Sharon Brown."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The claim is wrong because the context information consistently refers to her as \"Sharon Brown\" or \"Sharon Catherine Brown\", with multiple sources confirming her birth name, and no single source contradicting the fact that she is indeed known by this name.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,142 @@
+{
+    "subject": "resource/The_Great_Gildersleeve_(film)",
+    "predicate": "property/runtime",
+    "object": "3720.0",
+    "human_readable": "The runtime of The Great Gildersleeve (film) is 3720.0.",
+    "questions": [
+        {
+            "score": 0.8723809123039246,
+            "question": "Is the runtime of The Great Gildersleeve (film) typical for a movie?"
+        },
+        {
+            "score": 0.7092748880386353,
+            "question": "What is the runtime of The Great Gildersleeve (film) in minutes?"
+        },
+        {
+            "score": 0.6395798921585083,
+            "question": "How many minutes are there in the runtime of The Great Gildersleeve (film)?"
+        },
+        {
+            "score": 0.5761886239051819,
+            "question": "Does The Great Gildersleeve (film) have a runtime longer than 3 hours?"
+        },
+        {
+            "score": 0.48446619510650635,
+            "question": "What would be the running time of The Great Gildersleeve (film) if it were rounded to the nearest hour?"
+        },
+        {
+            "score": 0.4239652156829834,
+            "question": "What is the duration of The Great Gildersleeve (film) expressed in seconds?"
+        },
+        {
+            "score": 0.4216563105583191,
+            "question": "How long is The Great Gildersleeve (film)?"
+        },
+        {
+            "score": 0.3457206189632416,
+            "question": "If someone started watching The Great Gildersleeve (film) at 2:00 PM, what time would it finish?"
+        },
+        {
+            "score": 0.31301820278167725,
+            "question": "If The Great Gildersleeve (film) were to be watched in a single sitting, how many hours would it take?"
+        },
+        {
+            "score": 0.2987835109233856,
+            "question": "Could you watch The Great Gildersleeve (film) in one day?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The runtime of The Great Gildersleeve (film) is 3720.0.",
+            "html": "dbpedia_3065_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If The Great Gildersleeve (film) were to be watched in a single sitting, how many hours would it take?",
+            "html": "dbpedia_3065_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If someone started watching The Great Gildersleeve (film) at 2:00 PM, what time would it finish?",
+            "html": "dbpedia_3065_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How long is The Great Gildersleeve (film)?",
+            "html": "dbpedia_3065_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3065_12.txt"
+        },
+        {
+            "file_id": "dbpedia_3065_22.txt"
+        },
+        {
+            "file_id": "dbpedia_3065_23.txt"
+        },
+        {
+            "file_id": "dbpedia_3065_24.txt"
+        },
+        {
+            "file_id": "dbpedia_3065_33.txt"
+        },
+        {
+            "file_id": "dbpedia_3065_36.txt"
+        },
+        {
+            "file_id": "dbpedia_3065_4.txt"
+        },
+        {
+            "file_id": "dbpedia_3065_40.txt"
+        },
+        {
+            "file_id": "dbpedia_3065_41.txt"
+        },
+        {
+            "file_id": "dbpedia_3065_5.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe text states \"Includes \"The Great Gildersleeve\" (1942/62 min.)\".  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here's the evaluation:\n\n* Query: Harold Peary actor Throckmorton P. Gildersleeve\n* Response:\n```json\n{\n  \"output\": \"yes\"\n}\n```\nThis triple is supported by multiple documents, which mention Harold Peary playing the role of Throckmorton P. Gildersleeve in various films and a radio show.\n\nNote that there are no runtime values mentioned in any of the documents for The Great Gildersleeve (film), so we cannot evaluate the second query. However, based on the first query, I can confirm that Harold Peary is indeed the actor who played Throckmorton P. Gildersleeve."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: According to the provided documents, \"The Great Gildersleeve\" film has a total runtime of 62 + 62 + 65 + 63 + 87 = 349 minutes. Therefore, the statement that its runtime is 3720.0 minutes is incorrect."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {'output': 'no'}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The runtime of each individual film in the collection is given (62 min., 65 min., 63 min., and 87 min.), but there is no mention or calculation that adds up to a total of 3720 minutes.",
+            "category": 3
+        },
+        "gemma2": {
+            "reason": "A runtime of 3720.0 suggests a duration of over an hour, but the provided text states \"62 min.\" for the film's length.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "The runtime of 3720.0 minutes does not match the stated duration of 62 minutes for \"The Great Gildersleeve\" film in the context information.",
+            "category": 3
+        }
+    }
+}

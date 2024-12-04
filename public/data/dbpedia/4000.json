@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Marion_Francis_Forst",
+    "predicate": "property/placeOfBirth",
+    "object": "resource/St._Louis,_Missouri",
+    "human_readable": "Marion Francis Forst was born in St. Louis, Missouri.",
+    "questions": [
+        {
+            "score": 0.9513533711433411,
+            "question": "Where was Marion Francis Forst born?"
+        },
+        {
+            "score": 0.9247552156448364,
+            "question": "In what state was Marion Francis Forst born?"
+        },
+        {
+            "score": 0.8687689304351807,
+            "question": "What year was Marion Francis Forst born?"
+        },
+        {
+            "score": 0.8369548320770264,
+            "question": "What city is associated with Marion Francis Forst's birthplace?"
+        },
+        {
+            "score": 0.8075573444366455,
+            "question": "Did Marion Francis Forst live in any other places besides St. Louis?"
+        },
+        {
+            "score": 0.7667260766029358,
+            "question": "What is Marion Francis Forst known for?"
+        },
+        {
+            "score": 0.6500314474105835,
+            "question": "Is there any information available about Marion Francis Forst's family?"
+        },
+        {
+            "score": 0.6397606134414673,
+            "question": "Is there any historical significance associated with Marion Francis Forst?"
+        },
+        {
+            "score": 0.5699394345283508,
+            "question": "Can you tell me more about Marion Francis Forst?"
+        },
+        {
+            "score": 0.5457214117050171,
+            "question": "What were some of Marion Francis Forst's accomplishments?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Marion Francis Forst was born in St. Louis, Missouri.",
+            "html": "dbpedia_4000_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about Marion Francis Forst?",
+            "html": "dbpedia_4000_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there any historical significance associated with Marion Francis Forst?",
+            "html": "dbpedia_4000_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there any information available about Marion Francis Forst's family?",
+            "html": "dbpedia_4000_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4000_12.txt"
+        },
+        {
+            "file_id": "dbpedia_4000_14.txt"
+        },
+        {
+            "file_id": "dbpedia_4000_15.txt"
+        },
+        {
+            "file_id": "dbpedia_4000_18.txt"
+        },
+        {
+            "file_id": "dbpedia_4000_19.txt"
+        },
+        {
+            "file_id": "dbpedia_4000_25.txt"
+        },
+        {
+            "file_id": "dbpedia_4000_28.txt"
+        },
+        {
+            "file_id": "dbpedia_4000_36.txt"
+        },
+        {
+            "file_id": "dbpedia_4000_46.txt"
+        },
+        {
+            "file_id": "dbpedia_4000_6.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\"output\": \"no\"}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "After analyzing the context information, I found that:\n\n* The text does mention \"Marion Francis Forst\", but it doesn't specify his birthplace as St. Louis, Missouri.\n\nTherefore, based on the provided context information and without prior knowledge, I conclude that:\n\n```\n{\n  \"output\": \"no\"\n}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The document mentions that Marion Francis Forst was born on June, 1928, the son of the late Frank A. and Bertha (Gulath) Forst, of Richmond Heights, Mo., which is close to St. Louis. While it does not explicitly state he was born in St. Louis, Missouri, this inference can be reasonably made given the proximity of Richmond Heights to St. Louis. Therefore, the statement that Marion Francis Forst was born in or near St. Louis, Missouri, is supported by the provided context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nThe documents indicate that Marion Francis Forst was born in Richmond Heights, Mo., not St. Louis, Missouri. Therefore, the given statement is incorrect according to the provided information."
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Paragraph 2 states he was a St. Louis native.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "It contradicts the original text where Marion Francis Forst is described as a St. Louis native, implying he was born there, not that he was born elsewhere (such as Missouri).",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,114 @@
+{
+    "subject": "resource/Royal_Netherlands_Air_Force",
+    "predicate": "property/unitName",
+    "object": "Royal Netherlands Air Force",
+    "human_readable": "The unit name of the Royal Netherlands Air Force is the Royal Netherlands Air Force.",
+    "questions": [
+        {
+            "score": 0.9874719977378845,
+            "question": "What is the unit name of the Royal Netherlands Air Force?"
+        },
+        {
+            "score": 0.9617513418197632,
+            "question": "Is the Royal Netherlands Air Force a real military unit?"
+        },
+        {
+            "score": 0.7612324357032776,
+            "question": "Are there any other branches within the Royal Netherlands Air Force?"
+        },
+        {
+            "score": 0.3890233635902405,
+            "question": "Does the unit name refer to itself?"
+        },
+        {
+            "score": 0.3504714369773865,
+            "question": "What country's air force is this?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The unit name of the Royal Netherlands Air Force is the Royal Netherlands Air Force.",
+            "html": "dbpedia_3569_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does the unit name refer to itself?",
+            "html": "dbpedia_3569_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any other branches within the Royal Netherlands Air Force?",
+            "html": "dbpedia_3569_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is the Royal Netherlands Air Force a real military unit?",
+            "html": "dbpedia_3569_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3569_114.txt"
+        },
+        {
+            "file_id": "dbpedia_3569_20.txt"
+        },
+        {
+            "file_id": "dbpedia_3569_30.txt"
+        },
+        {
+            "file_id": "dbpedia_3569_32.txt"
+        },
+        {
+            "file_id": "dbpedia_3569_37.txt"
+        },
+        {
+            "file_id": "dbpedia_3569_64.txt"
+        },
+        {
+            "file_id": "dbpedia_3569_78.txt"
+        },
+        {
+            "file_id": "dbpedia_3569_80.txt"
+        },
+        {
+            "file_id": "dbpedia_3569_83.txt"
+        },
+        {
+            "file_id": "dbpedia_3569_86.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the context information provided, here's the evaluation of the triple:\n\n{ \"output\": \"no\" }\n\nThe reason for this answer is that the documents mention various details about the Royal Netherlands Air Force, such as its history, structure, and personnel, but none of them explicitly state that the unit name of the Royal Netherlands Air Force is the Royal Netherlands Air Force. The name is mentioned multiple times throughout the documents, but it's not described as a unit name, rather as an official title or designation for the organization."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide information about the history and structure of the Royal Netherlands Air Force, including its predecessor and formation. They confirm that it was indeed founded in 1913 as the Army Aviation Group (Luchtvaartafdeling) and later renamed to the Royal Netherlands Air Force (Koninklijke Luchtmacht), which directly supports the statement that \"The unit name of the Royal Netherlands Air Force is the Royal Netherlands Air Force.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The claim is wrong because the Royal Netherlands Air Force was preceded by the Army Aviation Group (Luchtvaartafdeling, abbreviation LVA) which was later renamed to Army Aviation Brigade (Luchtvaartbrigade), not directly known as Royal Netherlands Air Force until 1953.",
+            "category": 2
+        }
+    }
+}

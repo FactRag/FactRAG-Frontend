@@ -1,0 +1,146 @@
+{
+    "subject": "resource/The_Sky_Ranger",
+    "predicate": "property/country",
+    "object": "United States",
+    "human_readable": "The Sky Ranger was from United States.",
+    "questions": [
+        {
+            "score": 0.73668372631073,
+            "question": "What country did the Sky Ranger originate from?"
+        },
+        {
+            "score": 0.6959702968597412,
+            "question": "Where is the Sky Ranger from?"
+        },
+        {
+            "score": 0.4742504954338074,
+            "question": "Can you tell me more about the Sky Ranger's origins?"
+        },
+        {
+            "score": 0.4664817452430725,
+            "question": "What is the nationality of the Sky Ranger?"
+        },
+        {
+            "score": 0.4592214822769165,
+            "question": "Where was the Sky Ranger created or built?"
+        },
+        {
+            "score": 0.4023534655570984,
+            "question": "Are there any other notable individuals or things from the same country as the Sky Ranger?"
+        },
+        {
+            "score": 0.39036476612091064,
+            "question": "What makes the Sky Ranger unique based on its origin?"
+        },
+        {
+            "score": 0.3575601875782013,
+            "question": "Is there anything else known about the Sky Ranger?"
+        },
+        {
+            "score": 0.33776286244392395,
+            "question": "How does the Sky Ranger's origin influence its characteristics?"
+        },
+        {
+            "score": 0.23007631301879883,
+            "question": "The Sky Ranger's home country is...?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The Sky Ranger was from United States.",
+            "html": "dbpedia_4360_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How does the Sky Ranger's origin influence its characteristics?",
+            "html": "dbpedia_4360_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there anything else known about the Sky Ranger?",
+            "html": "dbpedia_4360_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What makes the Sky Ranger unique based on its origin?",
+            "html": "dbpedia_4360_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4360_114.txt"
+        },
+        {
+            "file_id": "dbpedia_4360_117.txt"
+        },
+        {
+            "file_id": "dbpedia_4360_163.txt"
+        },
+        {
+            "file_id": "dbpedia_4360_164.txt"
+        },
+        {
+            "file_id": "dbpedia_4360_18.txt"
+        },
+        {
+            "file_id": "dbpedia_4360_47.txt"
+        },
+        {
+            "file_id": "dbpedia_4360_59.txt"
+        },
+        {
+            "file_id": "dbpedia_4360_66.txt"
+        },
+        {
+            "file_id": "dbpedia_4360_79.txt"
+        },
+        {
+            "file_id": "dbpedia_4360_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe provided text states that the Sky Ranger is a French-designed ultralight built in Ukraine by Aeros, Ltd.  It does not mention the United States as its origin.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "The triple to be evaluated is:\n\n\"The Sky Ranger was from United States.\"\n\nHere's the structured JSON response based on the provided documents:\n\n{\n  \"output\": \"no\"\n}\n\nExplanation:\n\n* There are multiple mentions of the Sky Ranger in the documents, but none of them explicitly state that it is from the United States.\n* The Sky Ranger is mentioned as being built in the Ukraine by Aeros, Ltd. (document with file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4360/re-ranker-msmarco/91.txt).\n* Another document mentions that it has a ready market in the United States and around the world, but this does not imply that it is from the United States (document with file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4360/re-ranker-msmarco/35.txt).\n* There are no documents that explicitly state or suggest that the Sky Ranger was from the United States.\n\nTherefore, based on the provided information, it is not supported that the Sky Ranger was from the United States."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents provide information about the Sky Ranger aircraft, mentioning its production in Ukraine and distribution in various countries like the U.S., Canada, and Mexico. There is no indication that it originated from the United States itself."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The information provided does not indicate that the Sky Ranger was from the United States. It was first introduced in France, moved production to Ukraine, and has distribution rights in multiple countries including the US. However, there's no evidence suggesting it originated in the US.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Multiple passages state the Sky Ranger was designed in France, built in Ukraine, and has distribution rights across various countries including Canada and Mexico.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "It was actually built in the Ukraine by Aeros, Ltd.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The Sky Ranger is actually built in the Ukraine by Aeros, Ltd., as mentioned in points 3 and 4. There is no information suggesting any United States connection to its manufacture or origin.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Death_Angel",
+    "predicate": "ontology/hometown",
+    "object": "resource/San_Francisco_Bay_Area",
+    "human_readable": "Death Angel is from San Francisco Bay Area.",
+    "questions": [
+        {
+            "score": 0.962893545627594,
+            "question": "Is Death Angel a local band to the San Francisco Bay Area?"
+        },
+        {
+            "score": 0.8901141285896301,
+            "question": "Are there any famous landmarks in the San Francisco Bay Area associated with Death Angel?"
+        },
+        {
+            "score": 0.7599518299102783,
+            "question": "How has the San Francisco Bay Area influenced Death Angel's music?"
+        },
+        {
+            "score": 0.7058576941490173,
+            "question": "Where is Death Angel from?"
+        },
+        {
+            "score": 0.17010003328323364,
+            "question": "Have any other notable bands originated from the San Francisco Bay Area?"
+        },
+        {
+            "score": 0.15442456305027008,
+            "question": "What musical genre is Death Angel known for?"
+        },
+        {
+            "score": 0.08588529378175735,
+            "question": "What are some popular venues for live music in the San Francisco Bay Area?"
+        },
+        {
+            "score": 0.07570825517177582,
+            "question": "Are there any festivals or events in the San Francisco Bay Area dedicated to heavy metal music?"
+        },
+        {
+            "score": 0.07529132813215256,
+            "question": "What is the history of the metal music scene in the San Francisco Bay Area?"
+        },
+        {
+            "score": 0.06932651996612549,
+            "question": "What is the cultural significance of the San Francisco Bay Area for heavy metal music?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Death Angel is from San Francisco Bay Area.",
+            "html": "dbpedia_2250_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the history of the metal music scene in the San Francisco Bay Area?",
+            "html": "dbpedia_2250_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any festivals or events in the San Francisco Bay Area dedicated to heavy metal music?",
+            "html": "dbpedia_2250_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some popular venues for live music in the San Francisco Bay Area?",
+            "html": "dbpedia_2250_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2250_101.txt"
+        },
+        {
+            "file_id": "dbpedia_2250_3.txt"
+        },
+        {
+            "file_id": "dbpedia_2250_52.txt"
+        },
+        {
+            "file_id": "dbpedia_2250_6.txt"
+        },
+        {
+            "file_id": "dbpedia_2250_61.txt"
+        },
+        {
+            "file_id": "dbpedia_2250_68.txt"
+        },
+        {
+            "file_id": "dbpedia_2250_70.txt"
+        },
+        {
+            "file_id": "dbpedia_2250_77.txt"
+        },
+        {
+            "file_id": "dbpedia_2250_84.txt"
+        },
+        {
+            "file_id": "dbpedia_2250_92.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "The query asks whether the information in the documents supports the triple \"Death Angel is from San Francisco Bay Area\".\n\nBased on the provided context, here's the evaluation:\n\n* The text explicitly states that \"Death Angel was formed in the San Francisco Bay Area, California, in 1982\" (document with file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2250/re-ranker-msmarco/66.txt).\n* Additionally, it mentions that the band played club gigs \"in and around the San Francisco Bay area for nearly 2 years\" (same document).\n\nGiven this information, the evaluation is:\n\n`{'output': 'yes'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information that supports the statement \"Death Angel is from the San Francisco Bay Area.\" Specifically, multiple sources mention that Death Angel was formed in the San Francisco Bay Area, California."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

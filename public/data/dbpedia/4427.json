@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Scottish_Fuels",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:2001_establishments_in_Scotland",
+    "human_readable": "Scottish Fuels is subject to Category: 2001 establishments in Scotland.",
+    "questions": [
+        {
+            "score": 0.9580731987953186,
+            "question": "What factors might have contributed to the establishment of Scottish Fuels in 2001?"
+        },
+        {
+            "score": 0.9258495569229126,
+            "question": "How many establishments are there in the '2001 establishments in Scotland' category?"
+        },
+        {
+            "score": 0.8827263712882996,
+            "question": "Are there any significant trends associated with establishments founded in 2001 in Scotland?"
+        },
+        {
+            "score": 0.8747403621673584,
+            "question": "What category does Scottish Fuels belong to?"
+        },
+        {
+            "score": 0.8719940185546875,
+            "question": "What industries are represented by establishments from the '2001 establishments in Scotland' category?"
+        },
+        {
+            "score": 0.8691360354423523,
+            "question": "What kind of establishment is Scottish Fuels?"
+        },
+        {
+            "score": 0.8106685280799866,
+            "question": "Is Scottish Fuels a new establishment?"
+        },
+        {
+            "score": 0.7865898013114929,
+            "question": "In what year was Scottish Fuels established?"
+        },
+        {
+            "score": 0.7362897396087646,
+            "question": "Where is Scottish Fuels located?"
+        },
+        {
+            "score": 0.722112774848938,
+            "question": "Are there other businesses in Scotland that belong to the same category as Scottish Fuels?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Scottish Fuels is subject to Category: 2001 establishments in Scotland.",
+            "html": "dbpedia_4427_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where is Scottish Fuels located?",
+            "html": "dbpedia_4427_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In what year was Scottish Fuels established?",
+            "html": "dbpedia_4427_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Scottish Fuels a new establishment?",
+            "html": "dbpedia_4427_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4427_21.txt"
+        },
+        {
+            "file_id": "dbpedia_4427_22.txt"
+        },
+        {
+            "file_id": "dbpedia_4427_31.txt"
+        },
+        {
+            "file_id": "dbpedia_4427_37.txt"
+        },
+        {
+            "file_id": "dbpedia_4427_47.txt"
+        },
+        {
+            "file_id": "dbpedia_4427_51.txt"
+        },
+        {
+            "file_id": "dbpedia_4427_57.txt"
+        },
+        {
+            "file_id": "dbpedia_4427_73.txt"
+        },
+        {
+            "file_id": "dbpedia_4427_75.txt"
+        },
+        {
+            "file_id": "dbpedia_4427_8.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the answer:\n\n`{'output': 'yes'}`\n\nThe information in the documents supports the triple \"Scottish Fuels is subject to Category: 2001 establishments in Scotland\".\n\nExplanation:\nThe document `file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4427/re-ranker-msmarco/73.txt` contains a quote from Elizabeth Leighton (Existing Homes Alliance Scotland) where she mentions \"the strategy is looking at all four drivers of fuel poverty\". However, there is no direct connection between this information and the category \"2001 establishments in Scotland\".\n\nOn the other hand, the documents do not provide any information that would contradict the triple \"Scottish Fuels is subject to Category: 2001 establishments in Scotland\", therefore, we can safely assume it is correct.\n\nNote: The context of the document suggests that it is about energy and fuel related topics, but there is no specific mention of Scottish Fuels or its establishment year."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\n**Explanation:** The provided documents do not contain any information related to \"Scottish Fuels\" or its establishment category. There is no mention of the company \"Scottish Fuels\" or any specific establishments, and thus the query cannot be verified as correct based on the given context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, there is no mention of \"Scottish Fuels\" or its relation to any category such as \"Category: 2001 establishments in Scotland.\" Therefore, without additional relevant details within the given documents, we cannot confirm if this statement about Scottish Fuels is accurate according to these documents.\n\nThe response should be:\n```json\n{\"output\": \"no\"}\n```"
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "There is no mention of Scottish Fuels being categorized as a \"2001 establishment\" within the provided context. The information focuses on biomass energy, oil production and refinery operations, fuel poverty, and the economic impact of these industries in Scotland.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The provided context does not mention anything about Scottish Fuels being categorized as 2001 establishments. There is no information linking Scottish Fuels to such a specific category or establishment year, making the statement unsupported by the given data.",
+            "category": 2
+        }
+    }
+}

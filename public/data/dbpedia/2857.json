@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Durham_bus_station",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "Durham bus station",
+    "human_readable": "The label of Durham bus station is Durham bus station.",
+    "questions": [
+        {
+            "score": 0.9839000701904297,
+            "question": "What is the label of Durham bus station?"
+        },
+        {
+            "score": 0.9569075107574463,
+            "question": "What information does the label of Durham bus station provide?"
+        },
+        {
+            "score": 0.9484166502952576,
+            "question": "Does the label accurately reflect the location of Durham bus station?"
+        },
+        {
+            "score": 0.9480522274971008,
+            "question": "Is the label of Durham bus station clear and understandable?"
+        },
+        {
+            "score": 0.9340212345123291,
+            "question": "What purpose does the label of Durham bus station serve?"
+        },
+        {
+            "score": 0.9324431419372559,
+            "question": "If you were visiting Durham, would you be able to find the bus station using its label?"
+        },
+        {
+            "score": 0.9280068874359131,
+            "question": "How would you describe the label of Durham bus station?"
+        },
+        {
+            "score": 0.9271516799926758,
+            "question": "Where is Durham bus station located?"
+        },
+        {
+            "score": 0.9143223762512207,
+            "question": "Is there a specific name for Durham bus station?"
+        },
+        {
+            "score": 0.9120684266090393,
+            "question": "Can you tell me the name of the bus station in Durham?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The label of Durham bus station is Durham bus station.",
+            "html": "dbpedia_2857_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there a specific name for Durham bus station?",
+            "html": "dbpedia_2857_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where is Durham bus station located?",
+            "html": "dbpedia_2857_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How would you describe the label of Durham bus station?",
+            "html": "dbpedia_2857_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2857_32.txt"
+        },
+        {
+            "file_id": "dbpedia_2857_39.txt"
+        },
+        {
+            "file_id": "dbpedia_2857_5.txt"
+        },
+        {
+            "file_id": "dbpedia_2857_56.txt"
+        },
+        {
+            "file_id": "dbpedia_2857_58.txt"
+        },
+        {
+            "file_id": "dbpedia_2857_63.txt"
+        },
+        {
+            "file_id": "dbpedia_2857_75.txt"
+        },
+        {
+            "file_id": "dbpedia_2857_84.txt"
+        },
+        {
+            "file_id": "dbpedia_2857_9.txt"
+        },
+        {
+            "file_id": "dbpedia_2857_91.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "To evaluate the triple, I need to determine if the information in the documents supports the statement \"The label of Durham bus station is Durham Bus Station.\"\n\nAfter analyzing the context information, I can see that the documents consistently refer to the location as \"Durham Bus Station\". This includes:\n\n* File_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2857/re-ranker-msmarco/84.txt - \"Our plan for Durham Bus Station\"\n* File_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2857/re-ranker-msmarco/56.txt - \"Durham City bus station, Co. Durham, England, UK\" (note the consistent spelling)\n* File_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2857/re-ranker-msmarco/9.txt - \"Whether you like it or loathe it, Durham Bus Station has been welcoming people...\"\n* File_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2857/re-ranker-msmarco/5.txt - \"Durham County Council described the new station as a \u201csafe and welcoming space for residents and visitors. at Durham Bus Station\u201d\n* File_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2857/re-ranker-msmarco/75.txt - \"The \u00a310.4m bus station\u2019s structure is now fully in place, with some exterior and interior works left to be completed at Durham Bus Station\"\n\nGiven this consistent spelling throughout the documents, I can conclude that the statement \"The label of Durham bus station is Durham Bus Station\" is indeed supported by the information in the documents.\n\nTherefore, my response would be:\n\n`{'output': 'yes'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nExplanation: The documents provide information about the Durham Bus Station, including its location and description. While they do not explicitly state \"the label of Durham bus station is Durham bus station,\" it is clear from the context that the station is indeed labeled or referred to as \"Durham Bus Station.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

@@ -1,0 +1,144 @@
+{
+    "subject": "resource/WBIV-LP",
+    "predicate": "http://xmlns.com/foaf/0.1/isPrimaryTopicOf",
+    "object": "http://en.wikipedia.org/wiki/WBIV-LP",
+    "human_readable": "WBIV-LP is primarily about http://en.wikipedia.org/wiki/WBIV-LP.",
+    "questions": [
+        {
+            "score": 0.9478402733802795,
+            "question": "What is WBIV-LP primarily about?"
+        },
+        {
+            "score": 0.9376508593559265,
+            "question": "Is there a Wikipedia page for WBIV-LP?"
+        },
+        {
+            "score": 0.7818504571914673,
+            "question": "Can you tell me more about WBIV-LP?"
+        },
+        {
+            "score": 0.774412989616394,
+            "question": "Where is WBIV-LP located?"
+        },
+        {
+            "score": 0.7627318501472473,
+            "question": "Who owns WBIV-LP?"
+        },
+        {
+            "score": 0.744219958782196,
+            "question": "What kind of station is WBIV-LP?"
+        },
+        {
+            "score": 0.6784177422523499,
+            "question": "What is the frequency of WBIV-LP?"
+        },
+        {
+            "score": 0.6711887717247009,
+            "question": "Is WBIV-LP a commercial or non-commercial station?"
+        },
+        {
+            "score": 0.6422008872032166,
+            "question": "What type of programming does WBIV-LP broadcast?"
+        },
+        {
+            "score": 0.6386024951934814,
+            "question": "When did WBIV-LP start broadcasting?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=WBIV-LP is primarily about http://en.wikipedia.org/wiki/WBIV-LP.",
+            "html": "dbpedia_5735_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of programming does WBIV-LP broadcast?",
+            "html": "dbpedia_5735_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is WBIV-LP a commercial or non-commercial station?",
+            "html": "dbpedia_5735_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the frequency of WBIV-LP?",
+            "html": "dbpedia_5735_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5735_28.txt"
+        },
+        {
+            "file_id": "dbpedia_5735_30.txt"
+        },
+        {
+            "file_id": "dbpedia_5735_32.txt"
+        },
+        {
+            "file_id": "dbpedia_5735_4.txt"
+        },
+        {
+            "file_id": "dbpedia_5735_47.txt"
+        },
+        {
+            "file_id": "dbpedia_5735_5.txt"
+        },
+        {
+            "file_id": "dbpedia_5735_51.txt"
+        },
+        {
+            "file_id": "dbpedia_5735_76.txt"
+        },
+        {
+            "file_id": "dbpedia_5735_83.txt"
+        },
+        {
+            "file_id": "dbpedia_5735_88.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you'd like to evaluate more triples!  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, I will evaluate the triple \"WBIV-LP is primarily about http://en.wikipedia.org/wiki/WBIV-LP\".\n\nHere's the evaluation:\n\nThe documents contain information about various topics, including a TV station named WBIV-LD (not WBIV-LP) and its operations. However, there is no specific mention of what WBIV-LP is primarily about. The closest relevant information is from file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5735/re-ranker-msmarco/64.txt, which talks about WKRG (not WBIV-LD or WBIV-LP) and its programming.\n\nTherefore, the evaluation result is:\n\n`{'output': 'no'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The provided context does not contain any information related to the station WBIV-LP or its content, hence it cannot support or refute the query about what the station is primarily about."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nThe provided context does not contain any information related to WBIV-LP or its content, so the query cannot be evaluated based on the given documents."
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "there is no information provided about WBIV-LP to support the connection to http://en.wikipedia.org/wiki/WBIV-LP.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context provided does not mention WBIV-LP at all, nor does it provide any information that would support the statement about the station being primarily about http://en.wikipedia.org/wiki/WBIV-LP. The context discusses WKRG and WNEQ-TV in Buffalo, as well as LOCAL1's application for a broadcasting licence, but there is no reference to WBIV-LP or its content focus.",
+            "category": 2
+        }
+    }
+}

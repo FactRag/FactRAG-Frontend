@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Andrew_Jackson_Montague",
+    "predicate": "ontology/deathPlace",
+    "object": "resource/United_States",
+    "human_readable": "Andrew Jackson Montague died in the United States.",
+    "questions": [
+        {
+            "score": 0.9060678482055664,
+            "question": "Where did Andrew Jackson Montague die?"
+        },
+        {
+            "score": 0.8800455927848816,
+            "question": "Was Andrew Jackson Montague born in the United States?"
+        },
+        {
+            "score": 0.8563426733016968,
+            "question": "What year did Andrew Jackson Montague die?"
+        },
+        {
+            "score": 0.6375082731246948,
+            "question": "Who was Andrew Jackson Montague?"
+        },
+        {
+            "score": 0.48135438561439514,
+            "question": "What country was Andrew Jackson Montague from?"
+        },
+        {
+            "score": 0.37577515840530396,
+            "question": "Were there any notable events associated with Andrew Jackson Montague's life?"
+        },
+        {
+            "score": 0.3508067727088928,
+            "question": "Can you tell me more about Andrew Jackson Montague?"
+        },
+        {
+            "score": 0.33342134952545166,
+            "question": "What was Andrew Jackson Montague's profession?"
+        },
+        {
+            "score": 0.2581977844238281,
+            "question": "Are there any historical records about Andrew Jackson Montague?"
+        },
+        {
+            "score": 0.2433035969734192,
+            "question": "Is there information available about Andrew Jackson Montague's family?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Andrew Jackson Montague died in the United States.",
+            "html": "dbpedia_4074_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any historical records about Andrew Jackson Montague?",
+            "html": "dbpedia_4074_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What was Andrew Jackson Montague's profession?",
+            "html": "dbpedia_4074_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about Andrew Jackson Montague?",
+            "html": "dbpedia_4074_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4074_12.txt"
+        },
+        {
+            "file_id": "dbpedia_4074_17.txt"
+        },
+        {
+            "file_id": "dbpedia_4074_28.txt"
+        },
+        {
+            "file_id": "dbpedia_4074_35.txt"
+        },
+        {
+            "file_id": "dbpedia_4074_37.txt"
+        },
+        {
+            "file_id": "dbpedia_4074_58.txt"
+        },
+        {
+            "file_id": "dbpedia_4074_67.txt"
+        },
+        {
+            "file_id": "dbpedia_4074_69.txt"
+        },
+        {
+            "file_id": "dbpedia_4074_78.txt"
+        },
+        {
+            "file_id": "dbpedia_4074_81.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, here is the evaluation of the triple:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe reason for this answer is that according to the documents, Andrew Jackson Montague died in Urbanna, Virginia (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4074/re-ranker-msmarco/77.txt), which is a city within the United States, but specifically in the state of Virginia."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\nThe documents state that Andrew Jackson Montague died on January 24, 1937, and he is associated with Virginia. Given that Virginia is a state within the United States, it can be inferred that he died in the United States."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "there is no information provided to suggest he died outside of the United States.",
+            "category": 2
+        }
+    }
+}

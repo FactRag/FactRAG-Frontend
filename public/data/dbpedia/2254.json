@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Lais_Ribeiro",
+    "predicate": "property/name",
+    "object": "Ribeiro, Lais",
+    "human_readable": "The name of Lais Ribeiro is Ribeiro, Lais.",
+    "questions": [
+        {
+            "score": 0.9854017496109009,
+            "question": "Is 'Ribeiro' the surname of Lais Ribeiro?"
+        },
+        {
+            "score": 0.9690623879432678,
+            "question": "What is the full name of Lais Ribeiro?"
+        },
+        {
+            "score": 0.9410951733589172,
+            "question": "What is the last name of Lais Ribeiro?"
+        },
+        {
+            "score": 0.9212192893028259,
+            "question": "What is the first name of Lais Ribeiro?"
+        },
+        {
+            "score": 0.8549304008483887,
+            "question": "Which part comes first in Lais Ribeiro's full name?"
+        },
+        {
+            "score": 0.8400541543960571,
+            "question": "How would you write Lais Ribeiro's name in full?"
+        },
+        {
+            "score": 0.8357686400413513,
+            "question": "What is the order of Lais Ribeiro's name components?"
+        },
+        {
+            "score": 0.8274945616722107,
+            "question": "How many parts are there to Lais Ribeiro's full name?"
+        },
+        {
+            "score": 0.6991305351257324,
+            "question": "If you met Lais Ribeiro, what would you say to her using her full name?"
+        },
+        {
+            "score": 0.5412472486495972,
+            "question": "Is 'Lais' a common first name?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of Lais Ribeiro is Ribeiro, Lais.",
+            "html": "dbpedia_2254_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If you met Lais Ribeiro, what would you say to her using her full name?",
+            "html": "dbpedia_2254_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How many parts are there to Lais Ribeiro's full name?",
+            "html": "dbpedia_2254_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the order of Lais Ribeiro's name components?",
+            "html": "dbpedia_2254_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2254_19.txt"
+        },
+        {
+            "file_id": "dbpedia_2254_29.txt"
+        },
+        {
+            "file_id": "dbpedia_2254_6.txt"
+        },
+        {
+            "file_id": "dbpedia_2254_63.txt"
+        },
+        {
+            "file_id": "dbpedia_2254_73.txt"
+        },
+        {
+            "file_id": "dbpedia_2254_74.txt"
+        },
+        {
+            "file_id": "dbpedia_2254_8.txt"
+        },
+        {
+            "file_id": "dbpedia_2254_86.txt"
+        },
+        {
+            "file_id": "dbpedia_2254_9.txt"
+        },
+        {
+            "file_id": "dbpedia_2254_92.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you'd like to evaluate more triples!"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "After analyzing the context information, I found that:\n\n* There are multiple documents mentioning Lais Ribeiro's name, which includes variations such as \"Lais Ribeiro\" (multiple times), \"Lais Pereira de Oliveira\" (document 74 and 63), but none of them mention her full name being \"Ribeiro, Lais\".\n* While some documents mention her first and last names separately, they all confirm that the person's first name is indeed \"Lais\", but not necessarily followed by \"Ribeiro\".\n\nTherefore, I conclude that the information in the documents does not support the triple.\n\nThe final answer is: \n\n{'output': 'no'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe context information provided supports the triple \"The name of Lais Ribeiro is Ribeiro, Lais.\" All documents refer to her as \"Lais Ribeiro,\" confirming this order and form of her name."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The name provided as \"Ribeiro, Lais\" does not match the birth names given in points 3 and 4 as \"Lais Pereira de Oliveira\".",
+            "category": 2
+        }
+    }
+}

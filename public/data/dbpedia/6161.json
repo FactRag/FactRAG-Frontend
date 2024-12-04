@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Paessler",
+    "predicate": "property/homepage",
+    "object": "http://www.paessler.com/",
+    "human_readable": "The homepage of Paessler is http://www.paessler.com/",
+    "questions": [
+        {
+            "score": 0.938243567943573,
+            "question": "What is the URL of Paessler's homepage?"
+        },
+        {
+            "score": 0.9209203124046326,
+            "question": "Give me the URL of Paessler's main website."
+        },
+        {
+            "score": 0.9174004793167114,
+            "question": "Provide the web address for Paessler's website."
+        },
+        {
+            "score": 0.8942030072212219,
+            "question": "What is the official website address for Paessler?"
+        },
+        {
+            "score": 0.8832721710205078,
+            "question": "What is the web address for accessing Paessler's homepage?"
+        },
+        {
+            "score": 0.8698623180389404,
+            "question": "What is the domain name of Paessler's homepage?"
+        },
+        {
+            "score": 0.8358268141746521,
+            "question": "If you wanted to visit Paessler's website, what URL would you type in?"
+        },
+        {
+            "score": 0.8322622776031494,
+            "question": "Where can you find information about Paessler online?"
+        },
+        {
+            "score": 0.7969683408737183,
+            "question": "How can you access information about Paessler online?"
+        },
+        {
+            "score": 0.6201076507568359,
+            "question": "Where would you go to learn more about Paessler?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The homepage of Paessler is http://www.paessler.com/",
+            "html": "dbpedia_6161_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How can you access information about Paessler online?",
+            "html": "dbpedia_6161_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where can you find information about Paessler online?",
+            "html": "dbpedia_6161_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If you wanted to visit Paessler's website, what URL would you type in?",
+            "html": "dbpedia_6161_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6161_23.txt"
+        },
+        {
+            "file_id": "dbpedia_6161_5.txt"
+        },
+        {
+            "file_id": "dbpedia_6161_53.txt"
+        },
+        {
+            "file_id": "dbpedia_6161_66.txt"
+        },
+        {
+            "file_id": "dbpedia_6161_67.txt"
+        },
+        {
+            "file_id": "dbpedia_6161_69.txt"
+        },
+        {
+            "file_id": "dbpedia_6161_71.txt"
+        },
+        {
+            "file_id": "dbpedia_6161_72.txt"
+        },
+        {
+            "file_id": "dbpedia_6161_73.txt"
+        },
+        {
+            "file_id": "dbpedia_6161_75.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you'd like to evaluate more triples!"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the response to your query:\n\n`{'output': 'yes'}`\n\nThe reason for this answer is that the text explicitly mentions \"Website\" with a link \"http://www.paessler.com\". This supports the statement that the homepage of Paessler is indeed http://www.paessler.com."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\nThe context information provided mentions the website `http://www.paessler.com`, which supports the statement that the homepage of Paessler is at this URL."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The provided context does not contain any information about the homepage of Paessler.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Information in context 2 states \"Website http://www.paessler.com\" which confirms the homepage of Paessler is indeed http://www.paessler.com",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The given context information does not mention the homepage of Paessler at all. In fact, it only mentions a website (http://www.paessler.com) under point 2 as part of \"Our products empower our customers to monitor everything, and thus help them optimize their resources.  Learn more about us, and how monitoring can help you, at www.paessler.com.\"",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context provided does not explicitly state that \"http://www.paessler.com/\" is the homepage of Paessler. It only provides a general link to learn more about the company, and does not specify it as the homepage.",
+            "category": 2
+        }
+    }
+}

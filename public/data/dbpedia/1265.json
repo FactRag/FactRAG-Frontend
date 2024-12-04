@@ -1,0 +1,102 @@
+{
+    "subject": "resource/Chandidas_Mahavidyalaya",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "Chandidas Mahavidyalaya",
+    "human_readable": "Chandidas Mahavidyalaya is also known as Chandidas Mahavidyalaya.",
+    "questions": [
+        {
+            "score": 0.9836832880973816,
+            "question": "Is Chandidas Mahavidyalaya known by a different name?"
+        },
+        {
+            "score": 0.974994421005249,
+            "question": "What is another name for Chandidas Mahavidyalaya?"
+        },
+        {
+            "score": 0.9059701561927795,
+            "question": "Does Chandidas Mahavidyalaya have multiple names?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Chandidas Mahavidyalaya is also known as Chandidas Mahavidyalaya.",
+            "html": "dbpedia_1265_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is another name for Chandidas Mahavidyalaya?",
+            "html": "dbpedia_1265_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Chandidas Mahavidyalaya known by a different name?",
+            "html": "dbpedia_1265_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1265_10.txt"
+        },
+        {
+            "file_id": "dbpedia_1265_13.txt"
+        },
+        {
+            "file_id": "dbpedia_1265_16.txt"
+        },
+        {
+            "file_id": "dbpedia_1265_21.txt"
+        },
+        {
+            "file_id": "dbpedia_1265_26.txt"
+        },
+        {
+            "file_id": "dbpedia_1265_29.txt"
+        },
+        {
+            "file_id": "dbpedia_1265_38.txt"
+        },
+        {
+            "file_id": "dbpedia_1265_4.txt"
+        },
+        {
+            "file_id": "dbpedia_1265_58.txt"
+        },
+        {
+            "file_id": "dbpedia_1265_7.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the structured JSON format:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe documents do mention various names for the institution, such as:\n\n* \"Chandidas Mahavidyalaya\" (multiple times)\n* \"Khujutipara College\"\n* \"Chandidas Mahavidyalaya, Khujutipara\"\n\nHowever, they also suggest that it is also known by a different name: \"Khujutipara College\". The documents do not provide any evidence to support the claim that Chandidas Mahavidyalaya is also known as \"Chandidas Mahavidyalaya\", which would be a tautology. Therefore, I evaluate the triple as incorrect (\"no\")."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents consistently refer to the institution as \"Chandidas Mahavidyalaya\" and provide details about its establishment, location, and academic offerings. Therefore, the statement that Chandidas Mahavidyalaya is also known as Chandidas Mahavidyalaya itself is correct according to the provided information."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The information from all the different sources consistently mention \"Chandidas Mahavidyalaya\" as the name of the college, with no other names being mentioned.",
+            "category": 2
+        }
+    }
+}

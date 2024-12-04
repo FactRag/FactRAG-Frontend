@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Tote_(footballer)",
+    "predicate": "property/birthPlace",
+    "object": "resource/Madrid",
+    "human_readable": "Tote was born in Madrid.",
+    "questions": [
+        {
+            "score": 0.967920184135437,
+            "question": "Is Madrid the place where Tote was born?"
+        },
+        {
+            "score": 0.7543795704841614,
+            "question": "Where was Tote born?"
+        },
+        {
+            "score": 0.550381064414978,
+            "question": "Which city is known as the birthplace of Tote?"
+        },
+        {
+            "score": 0.45957431197166443,
+            "question": "What city is associated with Tote's birth?"
+        },
+        {
+            "score": 0.45828479528427124,
+            "question": "What is Tote's place of birth?"
+        },
+        {
+            "score": 0.33846980333328247,
+            "question": "Can you tell me Tote's birthplace?"
+        },
+        {
+            "score": 0.33251601457595825,
+            "question": "To what city does Tote's birth relate?"
+        },
+        {
+            "score": 0.25159063935279846,
+            "question": "Where did Tote begin their life?"
+        },
+        {
+            "score": 0.24866676330566406,
+            "question": "In which location did Tote come into the world?"
+        },
+        {
+            "score": 0.191740944981575,
+            "question": "What is the city of Tote's origin?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Tote was born in Madrid.",
+            "html": "dbpedia_458_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In which location did Tote come into the world?",
+            "html": "dbpedia_458_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where did Tote begin their life?",
+            "html": "dbpedia_458_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=To what city does Tote's birth relate?",
+            "html": "dbpedia_458_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_458_126.txt"
+        },
+        {
+            "file_id": "dbpedia_458_132.txt"
+        },
+        {
+            "file_id": "dbpedia_458_145.txt"
+        },
+        {
+            "file_id": "dbpedia_458_39.txt"
+        },
+        {
+            "file_id": "dbpedia_458_40.txt"
+        },
+        {
+            "file_id": "dbpedia_458_53.txt"
+        },
+        {
+            "file_id": "dbpedia_458_85.txt"
+        },
+        {
+            "file_id": "dbpedia_458_87.txt"
+        },
+        {
+            "file_id": "dbpedia_458_94.txt"
+        },
+        {
+            "file_id": "dbpedia_458_96.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "After analyzing the provided context information, I can confirm that:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe reason for this answer is that one of the documents (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_458/re-ranker-msmarco/83.txt) states:\n\n\"Tote Garc\u00eda Ortega was born in 1915 in Madrid, Madrid, Spain.\"\n\nThis clearly supports the triple \"Tote was born in Madrid.\""
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe context information states, \"Tote Garc\u00eda Ortega was born in 1915 in Madrid, Madrid, Spain,\" which supports the triple that Tote was born in Madrid."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

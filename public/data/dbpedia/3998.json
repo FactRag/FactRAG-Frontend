@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Marion_Francis_Forst",
+    "predicate": "property/deathPlace",
+    "object": "resource/Kansas_City,_Kansas",
+    "human_readable": "Marion Francis Forst died in Kansas City, Kansas.",
+    "questions": [
+        {
+            "score": 0.903005838394165,
+            "question": "Where did Marion Francis Forst die?"
+        },
+        {
+            "score": 0.8434311747550964,
+            "question": "In which city in Kansas did Marion Francis Forst pass away?"
+        },
+        {
+            "score": 0.8184952735900879,
+            "question": "What year did Marion Francis Forst die?"
+        },
+        {
+            "score": 0.7938215136528015,
+            "question": "What was the cause of Marion Francis Forst's death?"
+        },
+        {
+            "score": 0.7563902735710144,
+            "question": "Were there any notable events associated with Marion Francis Forst's death?"
+        },
+        {
+            "score": 0.6876009702682495,
+            "question": "What state was Marion Francis Forst from?"
+        },
+        {
+            "score": 0.6216605305671692,
+            "question": "Is there any information available about Marion Francis Forst's life?"
+        },
+        {
+            "score": 0.5171540379524231,
+            "question": "Can you tell me more about Marion Francis Forst?"
+        },
+        {
+            "score": 0.4956025779247284,
+            "question": "Is there a record of Marion Francis Forst's birth location?"
+        },
+        {
+            "score": 0.39755749702453613,
+            "question": "Were there any family members associated with Marion Francis Forst?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Marion Francis Forst died in Kansas City, Kansas.",
+            "html": "dbpedia_3998_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there a record of Marion Francis Forst's birth location?",
+            "html": "dbpedia_3998_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about Marion Francis Forst?",
+            "html": "dbpedia_3998_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there any information available about Marion Francis Forst's life?",
+            "html": "dbpedia_3998_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3998_13.txt"
+        },
+        {
+            "file_id": "dbpedia_3998_16.txt"
+        },
+        {
+            "file_id": "dbpedia_3998_2.txt"
+        },
+        {
+            "file_id": "dbpedia_3998_23.txt"
+        },
+        {
+            "file_id": "dbpedia_3998_26.txt"
+        },
+        {
+            "file_id": "dbpedia_3998_29.txt"
+        },
+        {
+            "file_id": "dbpedia_3998_39.txt"
+        },
+        {
+            "file_id": "dbpedia_3998_41.txt"
+        },
+        {
+            "file_id": "dbpedia_3998_48.txt"
+        },
+        {
+            "file_id": "dbpedia_3998_52.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the answer in JSON format:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents mention that Marion Francis Forst has died at Olathe Regional Medical Center, which is located in Kansas, but it's not explicitly stated as Kansas City. However, another document mentions a list of people who died in Kansas City and includes Marion Francis Forst among them. Therefore, the information supports the triple that Marion Francis Forst died in Kansas City, Kansas."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents state that Marion Francis Forst died at Olathe Regional Medical Center in Kansas City, Kansas. Therefore, the statement \"Marion Francis Forst died in Kansas City, Kansas\" is supported by the information provided."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The context information states that Marion Francis Forst died at the Olathe Regional Medical Center, which is located in Kansas City, Kansas. However, it does not specify that he died within the city limits of Kansas City, but rather in its surrounding area.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Multiple sources state he died at Olathe Regional Medical Center, which is in Kansas but not Kansas City, and other passages mention his home was in St. Louis.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The original context information states \"KANSAS CITY, Kan.-\" which implies Kansas City, Kansas, not Kansas City, Missouri.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context explicitly states that Marion Francis Forst died at Olathe Regional Medical Center, which is located in Olathe, Kansas, not Kansas City, Kansas.",
+            "category": 2
+        }
+    }
+}

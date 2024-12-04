@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Operation_Gladio",
+    "predicate": "property/headquarters",
+    "object": "resource/Rome",
+    "human_readable": "The headquarters of Operation Gladio is Rome.",
+    "questions": [
+        {
+            "score": 0.9319140911102295,
+            "question": "Where was the headquarters of Operation Gladio located?"
+        },
+        {
+            "score": 0.9245162010192871,
+            "question": "In which Italian city was Operation Gladio headquartered?"
+        },
+        {
+            "score": 0.8751503229141235,
+            "question": "What is the name of the city that housed Operation Gladio's headquarters?"
+        },
+        {
+            "score": 0.7765539288520813,
+            "question": "Name the city that served as the base for Operation Gladio."
+        },
+        {
+            "score": 0.7195834517478943,
+            "question": "What organization had its headquarters in Rome?"
+        },
+        {
+            "score": 0.6674748659133911,
+            "question": "Rome is known as the headquarters of which covert operation?"
+        },
+        {
+            "score": 0.6339609622955322,
+            "question": "Where was Operation Gladio's main operational center situated?"
+        },
+        {
+            "score": 0.6059313416481018,
+            "question": "What secret organization utilized Rome as its headquarters?"
+        },
+        {
+            "score": 0.5982221961021423,
+            "question": "Can you identify the city where Operation Gladio had its central command?"
+        },
+        {
+            "score": 0.5962327718734741,
+            "question": "Which city is associated with the secret organization, Operation Gladio?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The headquarters of Operation Gladio is Rome.",
+            "html": "dbpedia_4528_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you identify the city where Operation Gladio had its central command?",
+            "html": "dbpedia_4528_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What secret organization utilized Rome as its headquarters?",
+            "html": "dbpedia_4528_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where was Operation Gladio's main operational center situated?",
+            "html": "dbpedia_4528_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4528_10.txt"
+        },
+        {
+            "file_id": "dbpedia_4528_101.txt"
+        },
+        {
+            "file_id": "dbpedia_4528_111.txt"
+        },
+        {
+            "file_id": "dbpedia_4528_35.txt"
+        },
+        {
+            "file_id": "dbpedia_4528_37.txt"
+        },
+        {
+            "file_id": "dbpedia_4528_55.txt"
+        },
+        {
+            "file_id": "dbpedia_4528_72.txt"
+        },
+        {
+            "file_id": "dbpedia_4528_81.txt"
+        },
+        {
+            "file_id": "dbpedia_4528_86.txt"
+        },
+        {
+            "file_id": "dbpedia_4528_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "To evaluate the triple \"The headquarters of Operation Gladio is Rome\", I'll check if the documents support this claim.\n\nUpon reviewing the documents, I found that:\n\n* File_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4528/re-ranker-msmarco/27.txt mentions that \"Among other things the USA paid for the headquarters of the Gladio army on the Italian island of Sardinia.\" This indicates that the headquarters is not in Rome, but rather on the island of Sardinia.\n* Other documents also confirm that the Gladio headquarters was located on the island of Sardinia, specifically at Capo Marragiu near the village of Alghero.\n\nGiven this information, I conclude that the triple \"The headquarters of Operation Gladio is Rome\" is incorrect. Therefore, my response is:\n\n`{'output': 'no'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: None of the provided documents mention that the headquarters of Operation Gladio is in Rome. While there are references to operations and structures associated with Operation Gladio in Italy, including details about the construction of a center on Sardinia, there is no information suggesting that the primary or sole headquarters was located in Rome."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Operation Gladio headquarters were not located in Rome, but on the Italian island of Sardinia at Capo Marragiu near Alghero.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "The text states that the most expensive and prestigious project of SIFAR in the 1950s was the construction of the Gladio headquarters on the Italian island of Sardinia.  It also mentions that the headquarters was called \"Centro Adestramento Guastatori \u201c(CAG) and was located at Capo Marragiu near the village of Alghero.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The headquarters of Operation Gladio were located on the Italian island of Sardinia, specifically at Capo Marragiu near the village of Alghero.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information does not mention Rome as the location of Operation Gladio headquarters. It specifically states that the Gladio headquarters on Sardinia was called \"Centro Adestramento Guastatori\" (CAG) and located at Capo Marragiu near Alghero, while also mentioning CIA involvement in financing and directing operations from the US embassy in Rome.",
+            "category": 2
+        }
+    }
+}

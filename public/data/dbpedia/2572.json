@@ -1,0 +1,102 @@
+{
+    "subject": "resource/Living_a_Dream",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "Living a Dream",
+    "human_readable": "The name of Living a Dream is Living a Dream.",
+    "questions": [
+        {
+            "score": 0.8377599120140076,
+            "question": "Does the name 'Living a Dream' refer to something else?"
+        },
+        {
+            "score": 0.6124382019042969,
+            "question": "Is there anything else we know about 'Living a Dream'?"
+        },
+        {
+            "score": 0.09289556741714478,
+            "question": "What is the name of the thing described?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of Living a Dream is Living a Dream.",
+            "html": "dbpedia_2572_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there anything else we know about 'Living a Dream'?",
+            "html": "dbpedia_2572_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does the name 'Living a Dream' refer to something else?",
+            "html": "dbpedia_2572_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2572_100.txt"
+        },
+        {
+            "file_id": "dbpedia_2572_105.txt"
+        },
+        {
+            "file_id": "dbpedia_2572_106.txt"
+        },
+        {
+            "file_id": "dbpedia_2572_2.txt"
+        },
+        {
+            "file_id": "dbpedia_2572_25.txt"
+        },
+        {
+            "file_id": "dbpedia_2572_50.txt"
+        },
+        {
+            "file_id": "dbpedia_2572_53.txt"
+        },
+        {
+            "file_id": "dbpedia_2572_7.txt"
+        },
+        {
+            "file_id": "dbpedia_2572_93.txt"
+        },
+        {
+            "file_id": "dbpedia_2572_98.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the structured JSON format containing the evaluation of the triple:\n\n{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThis answer is based on the fact that the phrase \"Living the Dream\" is discussed multiple times throughout the provided documents, and its alternative expressions are also mentioned, confirming the consistency in naming."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The claim is wrong because the name \"Living a Dream\" is not actually called that. The context information mentions various phrases or idioms that can be used to describe living a dream life, such as \"Living my best life\", \"The good life\", and others, but it does not mention \"Living a Dream\" as one of them.",
+            "category": 2
+        }
+    }
+}

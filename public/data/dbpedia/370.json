@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Recordland",
+    "predicate": "property/locationCity",
+    "object": "Caracas",
+    "human_readable": "The location city of Recordland is Caracas.",
+    "questions": [
+        {
+            "score": 0.9726966619491577,
+            "question": "Is Recordland located in Caracas?"
+        },
+        {
+            "score": 0.8515644669532776,
+            "question": "In which city is Recordland situated?"
+        },
+        {
+            "score": 0.8294768333435059,
+            "question": "What city is the location of Recordland?"
+        },
+        {
+            "score": 0.7291016578674316,
+            "question": "Where is Recordland specifically located?"
+        },
+        {
+            "score": 0.6167564392089844,
+            "question": "What is the geographical location of Recordland?"
+        },
+        {
+            "score": 0.5905340313911438,
+            "question": "Can you tell me the city associated with Recordland?"
+        },
+        {
+            "score": 0.585564374923706,
+            "question": "Where can you find Recordland?"
+        },
+        {
+            "score": 0.5762784481048584,
+            "question": "Does Recordland reside in a specific city?"
+        },
+        {
+            "score": 0.4687768518924713,
+            "question": "What is the name of the city that houses Recordland?"
+        },
+        {
+            "score": 0.38350769877433777,
+            "question": "If you wanted to visit Recordland, what city would you go to?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The location city of Recordland is Caracas.",
+            "html": "dbpedia_370_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of the city that houses Recordland?",
+            "html": "dbpedia_370_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Recordland reside in a specific city?",
+            "html": "dbpedia_370_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where can you find Recordland?",
+            "html": "dbpedia_370_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_370_100.txt"
+        },
+        {
+            "file_id": "dbpedia_370_108.txt"
+        },
+        {
+            "file_id": "dbpedia_370_114.txt"
+        },
+        {
+            "file_id": "dbpedia_370_19.txt"
+        },
+        {
+            "file_id": "dbpedia_370_4.txt"
+        },
+        {
+            "file_id": "dbpedia_370_41.txt"
+        },
+        {
+            "file_id": "dbpedia_370_44.txt"
+        },
+        {
+            "file_id": "dbpedia_370_64.txt"
+        },
+        {
+            "file_id": "dbpedia_370_73.txt"
+        },
+        {
+            "file_id": "dbpedia_370_81.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation in JSON format:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: According to the documents, Recordland has locations in Inglewood (recorded by Facebook) and Calgary, Alberta, Canada. There is no mention of Caracas as a location for Recordland."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nThe documents do not mention the location of Recordland being Caracas. Instead, there are references to a Recordland store in Calgary, Alberta, Canada, and another one mentioned as being located in Inglewood (though Inglewood is not specified to be in Venezuela or anywhere near Caracas)."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Recordland is not located in Caracas. According to the provided context, Recordland is located in Inglewood, United States (in Facebook post) and Calgary Alberta, Canada (in articles 3 and 4).",
+            "category": 4
+        },
+        "gemma2": {
+            "reason": "The provided text describes Recordland as being located in Calgary, Alberta, Canada. It also mentions the store having a large selection of vinyl and a focus on serving the local music scene in Calgary.  There's no mention of Caracas or Venezuela in any of the provided context.",
+            "category": 4
+        },
+        "llama3.1": {
+            "reason": "The context explicitly states that Recordland is located in Inglewood and later mentions that there is a different Recordland located in Calgary, Alberta, Canada.",
+            "category": 4
+        },
+        "qwen2.5": {
+            "reason": "The context clearly states that Recordland is located in Calgary, Alberta, Canada, not Caracas.",
+            "category": 4
+        }
+    }
+}

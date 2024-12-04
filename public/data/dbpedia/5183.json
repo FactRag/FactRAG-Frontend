@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Dallas_County,_Texas",
+    "predicate": "property/foundedDate",
+    "object": "--03-30",
+    "human_readable": "Dallas County, Texas was founded on March 30.",
+    "questions": [
+        {
+            "score": 0.9174784421920776,
+            "question": "When was Dallas County, Texas founded?"
+        },
+        {
+            "score": 0.905565083026886,
+            "question": "Can you name a county in Texas founded on March 30th?"
+        },
+        {
+            "score": 0.8817780613899231,
+            "question": "What is the name of the county founded on March 30th?"
+        },
+        {
+            "score": 0.8206064701080322,
+            "question": "What event occurred on March 30th in Texas history?"
+        },
+        {
+            "score": 0.7915646433830261,
+            "question": "Is there a significant historical event associated with March 30th in Texas?"
+        },
+        {
+            "score": 0.7880367040634155,
+            "question": "What date marks the founding of Dallas County?"
+        },
+        {
+            "score": 0.6980383992195129,
+            "question": "What information can you tell me about the founding of Dallas County?"
+        },
+        {
+            "score": 0.6152805089950562,
+            "question": "Where is Dallas County located?"
+        },
+        {
+            "score": 0.5664342641830444,
+            "question": "In what state is Dallas County located?"
+        },
+        {
+            "score": 0.18683139979839325,
+            "question": "What kind of administrative division is Dallas County?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Dallas County, Texas was founded on March 30.",
+            "html": "dbpedia_5183_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In what state is Dallas County located?",
+            "html": "dbpedia_5183_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where is Dallas County located?",
+            "html": "dbpedia_5183_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What information can you tell me about the founding of Dallas County?",
+            "html": "dbpedia_5183_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5183_100.txt"
+        },
+        {
+            "file_id": "dbpedia_5183_132.txt"
+        },
+        {
+            "file_id": "dbpedia_5183_14.txt"
+        },
+        {
+            "file_id": "dbpedia_5183_18.txt"
+        },
+        {
+            "file_id": "dbpedia_5183_5.txt"
+        },
+        {
+            "file_id": "dbpedia_5183_51.txt"
+        },
+        {
+            "file_id": "dbpedia_5183_6.txt"
+        },
+        {
+            "file_id": "dbpedia_5183_66.txt"
+        },
+        {
+            "file_id": "dbpedia_5183_67.txt"
+        },
+        {
+            "file_id": "dbpedia_5183_94.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation of the triple:\n\n{\n  \"output\": \"yes\"\n}\n\nThe documents state that \"An act of new Texas state legislature creates Dallas County; Dallas made temporary county seat\" and also mention that \"Dallas County was organized on March 30, 1846\". These statements support the idea that Dallas County, Texas was founded on March 30."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents state that \"March 30: An act of new Texas state legislature creates Dallas County; Dallas made temporary county seat.\" This supports the query that Dallas County, Texas was indeed founded on March 30."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The given context mentions that Dallas County was organized on March 30, 1846, not founded. Organizing a county and founding a city are different events. A county is officially created by the government while a city is established by people. In this case, Dallas County already existed as an administrative entity before it was organized.",
+            "category": -1
+        },
+        "gemma2": {
+            "reason": "It contradicts information stating that Dallas County was founded on March 30, 1846. \n\n\nLet me know if you'd like to explore more about Dallas County's history!",
+            "category": -1
+        },
+        "llama3.1": {
+            "reason": "It was actually founded on March 30, 1846.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information specifies that \"An act of new Texas state legislature creates Dallas County; Dallas made temporary county seat.\" followed by the date March 30, indicating the creation of Dallas County occurred on this day, not its founding. Additionally, the text mentions the first election for organizing the county took place in 1846, suggesting a formation process that began before March 30, 1846.",
+            "category": -1
+        }
+    }
+}

@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Sergio_Osme\u00f1a",
+    "predicate": "property/spouse",
+    "object": "Esperanza Limjap ; 3 children",
+    "human_readable": "Sergio Osme\u00f1a was married to Esperanza Limjap, with whom he had 3 children.",
+    "questions": [
+        {
+            "score": 0.9585497379302979,
+            "question": "Was Sergio Osme\u00f1a's wife named Esperanza?"
+        },
+        {
+            "score": 0.9344700574874878,
+            "question": "To whom was Sergio Osme\u00f1a married?"
+        },
+        {
+            "score": 0.931514322757721,
+            "question": "Who was Sergio Osme\u00f1a married to?"
+        },
+        {
+            "score": 0.9240026473999023,
+            "question": "Was Sergio Osme\u00f1a married?"
+        },
+        {
+            "score": 0.9078701734542847,
+            "question": "Did Sergio Osme\u00f1a and Esperanza Limjap have a family?"
+        },
+        {
+            "score": 0.8352866768836975,
+            "question": "How many children did Sergio Osme\u00f1a and Esperanza Limjap have?"
+        },
+        {
+            "score": 0.7591787576675415,
+            "question": "What is the name of Sergio Osme\u00f1a's wife?"
+        },
+        {
+            "score": 0.751285195350647,
+            "question": "What is the name of Sergio Osme\u00f1a's spouse?"
+        },
+        {
+            "score": 0.6680361032485962,
+            "question": "Who are the parents of Sergio Osme\u00f1a's children?"
+        },
+        {
+            "score": 0.4626482129096985,
+            "question": "How many offspring did Sergio Osme\u00f1a have?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Sergio Osme\u00f1a was married to Esperanza Limjap, with whom he had 3 children.",
+            "html": "dbpedia_2031_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who are the parents of Sergio Osme\u00f1a's children?",
+            "html": "dbpedia_2031_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of Sergio Osme\u00f1a's spouse?",
+            "html": "dbpedia_2031_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of Sergio Osme\u00f1a's wife?",
+            "html": "dbpedia_2031_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2031_11.txt"
+        },
+        {
+            "file_id": "dbpedia_2031_30.txt"
+        },
+        {
+            "file_id": "dbpedia_2031_4.txt"
+        },
+        {
+            "file_id": "dbpedia_2031_43.txt"
+        },
+        {
+            "file_id": "dbpedia_2031_45.txt"
+        },
+        {
+            "file_id": "dbpedia_2031_63.txt"
+        },
+        {
+            "file_id": "dbpedia_2031_68.txt"
+        },
+        {
+            "file_id": "dbpedia_2031_70.txt"
+        },
+        {
+            "file_id": "dbpedia_2031_72.txt"
+        },
+        {
+            "file_id": "dbpedia_2031_74.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "After analyzing the provided context information, I can evaluate whether the triple is supported by the documents. \n\nHere's my response in the requested JSON format:\n\n{\n  \"output\": \"no\"\n}\n\nThe reason for this response is that while Sergio Osme\u00f1a was indeed married to Esperanza Limjap (and had three children with her, according to file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2031/re-ranker-msmarco/63.txt), there's no information in the documents that confirms they had 3 children together. In fact, one of the files (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2031/re-ranker-msmarco/53.txt) mentions that Esperanza Limjap had Rosalina, Ramon, and Victor as her children with Sergio Osme\u00f1a, which is a different number than the one stated in the triple."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\n### Explanation:\nThe documents provide information that supports the statement \"Sergio Osme\u00f1a was married to Esperanza Limjap, and they had three children.\" Specifically:\n\n- Document `69.txt` mentions \"Esperanza Escolar Limjap Osme\u00f1a\" as the second wife of Sergio Osme\u00f1a.\n- Document `53.txt` states that Don Sergio\u2019s second wife (presumably referring to Esperanza) had three children: Rosalina, Ramon, and Victor.\n\nThese details align with the provided statement."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The information provided states that Sergio Osme\u00f1a was married to Estefan\u00eda Chiong Veloso y Rosales until her death, and then later married Esperanza Limjap y Escolar, but it does not mention that he had children with both wives.",
+            "category": 0
+        }
+    }
+}

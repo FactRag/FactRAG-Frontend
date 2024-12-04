@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Salamanca",
+    "predicate": "property/subdivisionType",
+    "object": "resource/Province",
+    "human_readable": "Salamanca is a province.",
+    "questions": [
+        {
+            "score": 0.9857839941978455,
+            "question": "Is Salamanca a city or a province?"
+        },
+        {
+            "score": 0.9296945333480835,
+            "question": "What is the history of Salamanca as a province?"
+        },
+        {
+            "score": 0.8364905118942261,
+            "question": "Where is Salamanca located?"
+        },
+        {
+            "score": 0.7543800473213196,
+            "question": "How does the culture of Salamanca differ from other Spanish provinces?"
+        },
+        {
+            "score": 0.3893105983734131,
+            "question": "What is the administrative division of Salamanca?"
+        },
+        {
+            "score": 0.3759270906448364,
+            "question": "What are some famous landmarks or attractions in Salamanca?"
+        },
+        {
+            "score": 0.15718598663806915,
+            "question": "Can you name other provinces in Spain?"
+        },
+        {
+            "score": 0.13232873380184174,
+            "question": "What are some characteristics of provinces in Spain?"
+        },
+        {
+            "score": 0.13057589530944824,
+            "question": "What are the key differences between a province and a city?"
+        },
+        {
+            "score": 0.10926467180252075,
+            "question": "What types of governments exist within Spanish provinces?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Salamanca is a province.",
+            "html": "dbpedia_6505_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are the key differences between a province and a city?",
+            "html": "dbpedia_6505_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some characteristics of provinces in Spain?",
+            "html": "dbpedia_6505_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you name other provinces in Spain?",
+            "html": "dbpedia_6505_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6505_10.txt"
+        },
+        {
+            "file_id": "dbpedia_6505_11.txt"
+        },
+        {
+            "file_id": "dbpedia_6505_12.txt"
+        },
+        {
+            "file_id": "dbpedia_6505_26.txt"
+        },
+        {
+            "file_id": "dbpedia_6505_29.txt"
+        },
+        {
+            "file_id": "dbpedia_6505_36.txt"
+        },
+        {
+            "file_id": "dbpedia_6505_50.txt"
+        },
+        {
+            "file_id": "dbpedia_6505_51.txt"
+        },
+        {
+            "file_id": "dbpedia_6505_69.txt"
+        },
+        {
+            "file_id": "dbpedia_6505_75.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have any other triples to evaluate!"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here's the evaluation of the triple \"Salamanca is a province\" based on the provided context information:\n\n{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents repeatedly refer to \"Salamanca\" as a province and a city, confirming that it is indeed a province. For example, one document directly states, \"For the city, see Salamanca.\" Another mentions, \"It [the province of Salamanca] has an area of 12,349 km2 and in 2018 had a population of 331,473 people.\" This supports the triple."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Salamanca is a city and not a province. It is the capital of the province of Salamanca, but provinces are administrative divisions in Spain and cannot be considered to be cities themselves.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because Salamanca is actually a city and the capital of the province of Salamanca, not the other way around.",
+            "category": -1
+        }
+    }
+}

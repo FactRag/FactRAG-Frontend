@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Matt_McColm",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "McColm, Matt",
+    "human_readable": "The name of Matt McColm is McColm, Matt.",
+    "questions": [
+        {
+            "score": 0.964374303817749,
+            "question": "What is Matt McColm's full name?"
+        },
+        {
+            "score": 0.9514051675796509,
+            "question": "What is Matt McColm's last name?"
+        },
+        {
+            "score": 0.9357749819755554,
+            "question": "What name would you use to refer to Matt McColm formally?"
+        },
+        {
+            "score": 0.9270466566085815,
+            "question": "What is Matt McColm's first name?"
+        },
+        {
+            "score": 0.9161403775215149,
+            "question": "What is the order of Matt McColm's names?"
+        },
+        {
+            "score": 0.8795433640480042,
+            "question": "Does Matt McColm have a hyphen in his name?"
+        },
+        {
+            "score": 0.8302801847457886,
+            "question": "Is 'McColm' the last part of his name?"
+        },
+        {
+            "score": 0.7643164992332458,
+            "question": "If you met Matt McColm, what would you call him?"
+        },
+        {
+            "score": 0.7390851378440857,
+            "question": "How would you write Matt McColm's name in reverse order?"
+        },
+        {
+            "score": 0.6129053235054016,
+            "question": "Is 'Matt' the first part of his name?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of Matt McColm is McColm, Matt.",
+            "html": "dbpedia_1298_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How would you write Matt McColm's name in reverse order?",
+            "html": "dbpedia_1298_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If you met Matt McColm, what would you call him?",
+            "html": "dbpedia_1298_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is 'McColm' the last part of his name?",
+            "html": "dbpedia_1298_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1298_13.txt"
+        },
+        {
+            "file_id": "dbpedia_1298_16.txt"
+        },
+        {
+            "file_id": "dbpedia_1298_2.txt"
+        },
+        {
+            "file_id": "dbpedia_1298_40.txt"
+        },
+        {
+            "file_id": "dbpedia_1298_5.txt"
+        },
+        {
+            "file_id": "dbpedia_1298_52.txt"
+        },
+        {
+            "file_id": "dbpedia_1298_54.txt"
+        },
+        {
+            "file_id": "dbpedia_1298_78.txt"
+        },
+        {
+            "file_id": "dbpedia_1298_82.txt"
+        },
+        {
+            "file_id": "dbpedia_1298_87.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here's the evaluation of the triple \"The name of Matt McColm is McColm, Matt.\":\n\n{\n  \"output\": \"no\"\n}\n\nExplanation:\n\nIn all the documents provided, the first name is consistently written as \"Matt\" and the last name is consistently written as \"McColm\". However, in none of the documents is the full name \"McColm, Matt\" mentioned together. The order and capitalization may vary (e.g., \"Matt McColm\", \"McColm was born on January 31, 1965. He is an actor, known for The Matrix Reloaded (2003), They Live (1988) and R.I.P.D.  (2013). - in this case, \"Matt\" comes before \"McColm\"), but the first name is always \"Matt\". Therefore, based on the provided documents, it's not accurate to say that the full name of Matt McColm is \"McColm, Matt\", which makes the triple incorrect."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide the full name as \"Matt McColm\", which supports the triple stating that his name is indeed \"McColm, Matt\"."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The claim is wrong because the given context provides the full name of Matt McColm which includes his first name, making the statement that only states \"The name of Matt McColm is McColm.\" redundant and incorrect.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "The provided context consistently lists his name as Matt McColm.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The names are listed as \"Matt McColm\" in all provided context information, not \"McColm, Matt.\"",
+            "category": 2
+        }
+    }
+}

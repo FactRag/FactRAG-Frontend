@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Famous_Studios",
+    "predicate": "ontology/foundingDate",
+    "object": "1942-05-25",
+    "human_readable": "Famous Studios was founded on May 25, 1942.",
+    "questions": [
+        {
+            "score": 0.9625961780548096,
+            "question": "What is the name of the studio founded on May 25, 1942?"
+        },
+        {
+            "score": 0.8366566300392151,
+            "question": "When was Famous Studios founded?"
+        },
+        {
+            "score": 0.599443256855011,
+            "question": "May 25th, 1942 is significant to which company?"
+        },
+        {
+            "score": 0.5880348682403564,
+            "question": "What kind of studio was Famous Studios?"
+        },
+        {
+            "score": 0.47375252842903137,
+            "question": "Were there any famous people associated with Famous Studios?"
+        },
+        {
+            "score": 0.4393388628959656,
+            "question": "In what year did Famous Studios begin operations?"
+        },
+        {
+            "score": 0.4387875199317932,
+            "question": "What was the purpose of Famous Studios?"
+        },
+        {
+            "score": 0.3786870539188385,
+            "question": "Famous Studios is a company in which industry?"
+        },
+        {
+            "score": 0.32120242714881897,
+            "question": "What type of productions were likely made by Famous Studios?"
+        },
+        {
+            "score": 0.2776825726032257,
+            "question": "Is there any other information about Famous Studios that you know?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Famous Studios was founded on May 25, 1942.",
+            "html": "dbpedia_7300_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of productions were likely made by Famous Studios?",
+            "html": "dbpedia_7300_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Famous Studios is a company in which industry?",
+            "html": "dbpedia_7300_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What was the purpose of Famous Studios?",
+            "html": "dbpedia_7300_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_7300_1.txt"
+        },
+        {
+            "file_id": "dbpedia_7300_106.txt"
+        },
+        {
+            "file_id": "dbpedia_7300_125.txt"
+        },
+        {
+            "file_id": "dbpedia_7300_143.txt"
+        },
+        {
+            "file_id": "dbpedia_7300_15.txt"
+        },
+        {
+            "file_id": "dbpedia_7300_151.txt"
+        },
+        {
+            "file_id": "dbpedia_7300_33.txt"
+        },
+        {
+            "file_id": "dbpedia_7300_61.txt"
+        },
+        {
+            "file_id": "dbpedia_7300_77.txt"
+        },
+        {
+            "file_id": "dbpedia_7300_81.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\nThe information provided in the documents states that \"Famous Studios was founded on May 25, 1942,\" which directly supports the query."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Famous Studios was not officially incorporated until May 25, 1942. However, the takeover by Paramount occurred at the end of 1941 and the studio continued under Fleischer management for a while after that. Therefore, it was not founded on May 25, 1942 but rather, the studio came under Paramount ownership on that date.",
+            "category": 3
+        },
+        "gemma2": {
+            "reason": "Several passages state Famous Studios was founded after Paramount acquired assets from Fleischer Studios, which occurred in 1942 but not until the end of their contract. It also states Famous Studios was officially incorporated on May 25, 1942, meaning they were a functioning entity before that date.",
+            "category": 3
+        },
+        "llama3.1": {
+            "reason": "Although the Fleischers left the studio at the end of 1941, Famous Studios was not officially incorporated until May 25, 1942.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "The context information states that \"Famous Studios was not officially incorporated until May 25, 1942, after Paramount's contract with Fleischer Studios had formally run its course.\" This indicates the official establishment date, but does not confirm it as the founding date.",
+            "category": 3
+        }
+    }
+}

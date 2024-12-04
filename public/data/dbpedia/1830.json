@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Battle_of_Belleau_Wood",
+    "predicate": "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+    "object": "3.29",
+    "human_readable": "The longitude of the Battle of Belleau Wood is 3.29.",
+    "questions": [
+        {
+            "score": 0.9053066968917847,
+            "question": "What is the longitude of the Battle of Belleau Wood?"
+        },
+        {
+            "score": 0.7107923626899719,
+            "question": "What historical event occurred at a location with a longitude of 3.29?"
+        },
+        {
+            "score": 0.70064777135849,
+            "question": "Is there any significance to the longitude 3.29?"
+        },
+        {
+            "score": 0.6829582452774048,
+            "question": "What geographical coordinate is associated with the Battle of Belleau Wood?"
+        },
+        {
+            "score": 0.5412513613700867,
+            "question": "Can you tell me about the Battle of Belleau Wood?"
+        },
+        {
+            "score": 0.48075491189956665,
+            "question": "Where did the Battle of Belleau Wood take place?"
+        },
+        {
+            "score": 0.43435797095298767,
+            "question": "What other historical events occurred near the Battle of Belleau Wood?"
+        },
+        {
+            "score": 0.23026636242866516,
+            "question": "Is there any connection between longitude and historical events?"
+        },
+        {
+            "score": 0.11651608347892761,
+            "question": "Were there any major battles fought in this region?"
+        },
+        {
+            "score": 0.052703533321619034,
+            "question": "Can you provide information about World War I battles?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The longitude of the Battle of Belleau Wood is 3.29.",
+            "html": "dbpedia_1830_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Were there any major battles fought in this region?",
+            "html": "dbpedia_1830_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there any connection between longitude and historical events?",
+            "html": "dbpedia_1830_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What other historical events occurred near the Battle of Belleau Wood?",
+            "html": "dbpedia_1830_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1830_10.txt"
+        },
+        {
+            "file_id": "dbpedia_1830_106.txt"
+        },
+        {
+            "file_id": "dbpedia_1830_108.txt"
+        },
+        {
+            "file_id": "dbpedia_1830_12.txt"
+        },
+        {
+            "file_id": "dbpedia_1830_13.txt"
+        },
+        {
+            "file_id": "dbpedia_1830_22.txt"
+        },
+        {
+            "file_id": "dbpedia_1830_4.txt"
+        },
+        {
+            "file_id": "dbpedia_1830_50.txt"
+        },
+        {
+            "file_id": "dbpedia_1830_67.txt"
+        },
+        {
+            "file_id": "dbpedia_1830_82.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'} \n``` \n\n\nThe provided text states that the GPS coordinates for Belleau Wood are \"49\u00b0 4' 24\" N , 3\u00b0 17' 27\" E\".  This translates to a longitude of 3.29 degrees East. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "To evaluate the triple, I need to check if the information in the documents supports the statement \"The longitude of the Battle of Belleau Wood is 3.29.\"\n\nHere's the relevant information from the context:\n\n* file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1830/re-ranker-msmarco/12.txt\n\t+ GPS Coordinates: 49\u00b0 4' 24\" N , 3\u00b0 17' 27\" E\n\nThis information does not explicitly mention the longitude being 3.29, but it does provide the coordinates in degrees, minutes, and seconds format.\n\nHowever, I can convert the provided longitude (3\u00b0 17' 27\" E) to decimal format:\n\n3\u00b0 = 3 \u00d7 60' / 360' = 0.08333... E\n+ 17' = 17 \u00d7 60'' / 360' \u2248 1.4722... E\n+ 27'' \u2248 0.00072... E\n\nAdding these values together:\n3 + 1.4722... + 0.00072... \u2248 4.473 E\n\nThe provided value (3.29) is close to the converted longitude, but it does not exactly match.\n\nTherefore, I will conclude that:\n\n* {'output': 'no'}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nThe context information provided does not contain any direct reference to the longitude of the Battle of Belleau Wood or related geographical coordinates in a form that could be interpreted as exactly 3.29. The latitude and longitude are given as \"GPS Coordinates: 49\u00b0 4' 24\" N, 3\u00b0 17' 27\" E\", which does not match the specified longitude of 3.29."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

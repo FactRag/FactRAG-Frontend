@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Los_Pintanos",
+    "predicate": "ontology/isPartOf",
+    "object": "resource/Zaragoza_(province)",
+    "human_readable": "Los Pintanos is part of Zaragoza (province).",
+    "questions": [
+        {
+            "score": 0.8714163303375244,
+            "question": "What is the name of the province that Los Pintanos is part of?"
+        },
+        {
+            "score": 0.5725917816162109,
+            "question": "Can you name any other places within the province of Zaragoza?"
+        },
+        {
+            "score": 0.5334677696228027,
+            "question": "To which city or town does Los Pintanos belong?"
+        },
+        {
+            "score": 0.49956947565078735,
+            "question": "Is there a historical significance to Los Pintanos?"
+        },
+        {
+            "score": 0.45451900362968445,
+            "question": "What are some notable features of Zaragoza?"
+        },
+        {
+            "score": 0.4494059681892395,
+            "question": "What is the administrative region that includes Zaragoza?"
+        },
+        {
+            "score": 0.39333534240722656,
+            "question": "Is Los Pintanos a city or a smaller settlement?"
+        },
+        {
+            "score": 0.3395971953868866,
+            "question": "What is the population of Los Pintanos?"
+        },
+        {
+            "score": 0.2626171112060547,
+            "question": "Does Los Pintanos have any unique characteristics?"
+        },
+        {
+            "score": 0.249265655875206,
+            "question": "Are there any popular tourist attractions in Zaragoza?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Los Pintanos is part of Zaragoza (province).",
+            "html": "dbpedia_5206_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Los Pintanos have any unique characteristics?",
+            "html": "dbpedia_5206_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the population of Los Pintanos?",
+            "html": "dbpedia_5206_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Los Pintanos a city or a smaller settlement?",
+            "html": "dbpedia_5206_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5206_21.txt"
+        },
+        {
+            "file_id": "dbpedia_5206_22.txt"
+        },
+        {
+            "file_id": "dbpedia_5206_24.txt"
+        },
+        {
+            "file_id": "dbpedia_5206_33.txt"
+        },
+        {
+            "file_id": "dbpedia_5206_44.txt"
+        },
+        {
+            "file_id": "dbpedia_5206_6.txt"
+        },
+        {
+            "file_id": "dbpedia_5206_60.txt"
+        },
+        {
+            "file_id": "dbpedia_5206_8.txt"
+        },
+        {
+            "file_id": "dbpedia_5206_92.txt"
+        },
+        {
+            "file_id": "dbpedia_5206_95.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "After analyzing the context information, I can tell you that:\n\n`{'output': 'yes'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThis answer is derived from the information provided, particularly from the document with file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5206/re-ranker-msmarco/8.txt. The document explicitly states \"Los Pintanos... Located in Zaragoza province,\" which supports the statement that Los Pintanos is part of Zaragoza (province)."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Los Pintanos is a municipality within the province of Zaragoza, not part of the city itself.",
+            "category": 2
+        }
+    }
+}

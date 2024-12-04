@@ -1,0 +1,134 @@
+{
+    "subject": "resource/The_Prince_(song)",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:2_Tone_Records_singles",
+    "human_readable": "The song 'The Prince' is about 2 Tone Records singles.",
+    "questions": [
+        {
+            "score": 0.6805820465087891,
+            "question": "What is the song 'The Prince' about?"
+        },
+        {
+            "score": 0.5942379832267761,
+            "question": "Are there any famous singles released by 2 Tone Records?"
+        },
+        {
+            "score": 0.539211630821228,
+            "question": "Which record label are the songs referred to in 'The Prince' associated with?"
+        },
+        {
+            "score": 0.5237361192703247,
+            "question": "What genre of music is associated with 2 Tone Records?"
+        },
+        {
+            "score": 0.4680919647216797,
+            "question": "What impact did 2 Tone Records have on music?"
+        },
+        {
+            "score": 0.33794519305229187,
+            "question": "Can you name some popular artists from 2 Tone Records?"
+        },
+        {
+            "score": 0.2723395824432373,
+            "question": "What era of music history is 2 Tone Records most closely associated with?"
+        },
+        {
+            "score": 0.24417151510715485,
+            "question": "Who are some of the musicians featured on 'The Prince'?"
+        },
+        {
+            "score": 0.21778294444084167,
+            "question": "What is the overall message or theme conveyed in 'The Prince'?"
+        },
+        {
+            "score": 0.19348108768463135,
+            "question": "How does 'The Prince' reflect the musical trends of its time?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The song 'The Prince' is about 2 Tone Records singles.",
+            "html": "dbpedia_2128_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the overall message or theme conveyed in 'The Prince'?",
+            "html": "dbpedia_2128_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who are some of the musicians featured on 'The Prince'?",
+            "html": "dbpedia_2128_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What era of music history is 2 Tone Records most closely associated with?",
+            "html": "dbpedia_2128_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2128_120.txt"
+        },
+        {
+            "file_id": "dbpedia_2128_121.txt"
+        },
+        {
+            "file_id": "dbpedia_2128_172.txt"
+        },
+        {
+            "file_id": "dbpedia_2128_179.txt"
+        },
+        {
+            "file_id": "dbpedia_2128_18.txt"
+        },
+        {
+            "file_id": "dbpedia_2128_201.txt"
+        },
+        {
+            "file_id": "dbpedia_2128_42.txt"
+        },
+        {
+            "file_id": "dbpedia_2128_57.txt"
+        },
+        {
+            "file_id": "dbpedia_2128_74.txt"
+        },
+        {
+            "file_id": "dbpedia_2128_77.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "After analyzing the context information, I can evaluate whether the statement \"The song 'The Prince' is about 2 Tone Records singles.\" is correct.\n\nHere's my response in the required format:\n\n```\n{\n  \"output\": \"yes\"\n}\n```\n\nMy reasoning is as follows:\n\n* The document at file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2128/re-ranker-msmarco/41.txt states that \"'The Prince' was Madness' first song to be released as a single and their only single to be released by 2 Tone Records.\"\n* The document at file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2128/re-ranker-msmarco/13.txt mentions that \"'The Prince' is the ninth track from the second disc of Metallica's cover album Garage, Inc.\" but does not relate it to 2 Tone Records singles.\n* The document at file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2128/re-ranker-msmarco/17.txt states that \"'The Prince' is a song by British ska/pop band Madness. It was released through 2 Tone Records\" which further supports the statement.\n* The document at file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2128/re-ranker-msmarco/42.txt mentions that \"Madness were invited to cut their first single The Prince/Madness: their first hit\" and it was released on 2 Tone Records, which reinforces the statement.\n\nTherefore, based on the context information provided, the answer is affirmative."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: According to the provided documents, \"The Prince\" was indeed Madness' first single and their only single released by 2 Tone Records. Therefore, the statement that \"The song 'The Prince' is about 2 Tone Records singles\" is supported by the context information."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "The provided text states that \"The Prince\" is a tribute to ska musician Prince Buster and was one of the first songs Madness recorded. There is no mention of the song being about 2 Tone Records singles.",
+            "category": 4
+        }
+    }
+}

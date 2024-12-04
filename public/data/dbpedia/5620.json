@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Joe_DiMaggio",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:National_Baseball_Hall_of_Fame_inductees",
+    "human_readable": "Joe DiMaggio is a subject of Category:National Baseball Hall of Fame inductees.",
+    "questions": [
+        {
+            "score": 0.9476627111434937,
+            "question": "Is Joe DiMaggio in the Baseball Hall of Fame?"
+        },
+        {
+            "score": 0.9045343399047852,
+            "question": "When was Joe DiMaggio inducted into the Hall of Fame?"
+        },
+        {
+            "score": 0.8089563250541687,
+            "question": "What category does Joe DiMaggio belong to?"
+        },
+        {
+            "score": 0.8087015748023987,
+            "question": "Who is Joe DiMaggio?"
+        },
+        {
+            "score": 0.7418099641799927,
+            "question": "Why is Joe DiMaggio considered a baseball legend?"
+        },
+        {
+            "score": 0.7187551259994507,
+            "question": "What are some of Joe DiMaggio's notable achievements?"
+        },
+        {
+            "score": 0.6492524147033691,
+            "question": "What position did Joe DiMaggio play in baseball?"
+        },
+        {
+            "score": 0.6281142830848694,
+            "question": "What makes someone eligible for induction into the National Baseball Hall of Fame?"
+        },
+        {
+            "score": 0.5331338047981262,
+            "question": "Which team is Joe DiMaggio most associated with?"
+        },
+        {
+            "score": 0.45407962799072266,
+            "question": "Name a famous baseball player who is also in the National Baseball Hall of Fame."
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Joe DiMaggio is a subject of Category:National Baseball Hall of Fame inductees.",
+            "html": "dbpedia_5620_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Which team is Joe DiMaggio most associated with?",
+            "html": "dbpedia_5620_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What makes someone eligible for induction into the National Baseball Hall of Fame?",
+            "html": "dbpedia_5620_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What position did Joe DiMaggio play in baseball?",
+            "html": "dbpedia_5620_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5620_1.txt"
+        },
+        {
+            "file_id": "dbpedia_5620_107.txt"
+        },
+        {
+            "file_id": "dbpedia_5620_109.txt"
+        },
+        {
+            "file_id": "dbpedia_5620_13.txt"
+        },
+        {
+            "file_id": "dbpedia_5620_133.txt"
+        },
+        {
+            "file_id": "dbpedia_5620_143.txt"
+        },
+        {
+            "file_id": "dbpedia_5620_145.txt"
+        },
+        {
+            "file_id": "dbpedia_5620_154.txt"
+        },
+        {
+            "file_id": "dbpedia_5620_26.txt"
+        },
+        {
+            "file_id": "dbpedia_5620_37.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nThe document states: \"The National Baseball Hall of Fame inducted DiMaggio in 1955.\"  This indicates that Joe DiMaggio is a subject of Category:National Baseball Hall of Fame inductees."
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the provided context information, I can evaluate whether the triple is supported.\n\nThe triple to be evaluated is:\n\n\"Joe DiMaggio is a subject of Category: National Baseball Hall of Fame inductees.\"\n\nHere's the JSON response:\n\n```\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation:\n\n* In the file `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5620/re-ranker-msmarco/83.txt`, it is mentioned that \"The National Baseball Hall of Fame inducted DiMaggio in 1955.\"\n* This information directly supports the triple, as it confirms Joe DiMaggio's membership in the National Baseball Hall of Fame.\n* Therefore, the answer is `yes`."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\nThe documents provide information about Joe DiMaggio being inducted into the National Baseball Hall of Fame in 1955, which supports the statement that Joe DiMaggio is a subject of Category:National Baseball Hall of Fame inductees."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

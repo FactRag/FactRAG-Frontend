@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Langenthal",
+    "predicate": "ontology/neighboringMunicipality",
+    "object": "resource/Bleienbach",
+    "human_readable": "Langenthal is neighboring Bleienbach.",
+    "questions": [
+        {
+            "score": 0.9850336909294128,
+            "question": "Is Langenthal near Bleienbach?"
+        },
+        {
+            "score": 0.9756941199302673,
+            "question": "Where is Langenthal situated in relation to Bleienbach?"
+        },
+        {
+            "score": 0.9124897718429565,
+            "question": "Are Langenthal and Bleienbach geographically close?"
+        },
+        {
+            "score": 0.8195880055427551,
+            "question": "What town is neighboring Bleienbach?"
+        },
+        {
+            "score": 0.7890406250953674,
+            "question": "Name a town that borders Bleienbach."
+        },
+        {
+            "score": 0.7607097625732422,
+            "question": "What is the relationship between Langenthal and Bleienbach?"
+        },
+        {
+            "score": 0.7430130243301392,
+            "question": "Which town is located next to Bleienbach?"
+        },
+        {
+            "score": 0.6598224639892578,
+            "question": "What town shares a border with Bleienbach?"
+        },
+        {
+            "score": 0.4269282817840576,
+            "question": "Besides Bleienbach, what other town is mentioned?"
+        },
+        {
+            "score": 0.09031981229782104,
+            "question": "Which towns are considered neighbors?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Langenthal is neighboring Bleienbach.",
+            "html": "dbpedia_5763_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Besides Bleienbach, what other town is mentioned?",
+            "html": "dbpedia_5763_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What town shares a border with Bleienbach?",
+            "html": "dbpedia_5763_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Which town is located next to Bleienbach?",
+            "html": "dbpedia_5763_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5763_1.txt"
+        },
+        {
+            "file_id": "dbpedia_5763_19.txt"
+        },
+        {
+            "file_id": "dbpedia_5763_29.txt"
+        },
+        {
+            "file_id": "dbpedia_5763_3.txt"
+        },
+        {
+            "file_id": "dbpedia_5763_35.txt"
+        },
+        {
+            "file_id": "dbpedia_5763_52.txt"
+        },
+        {
+            "file_id": "dbpedia_5763_53.txt"
+        },
+        {
+            "file_id": "dbpedia_5763_77.txt"
+        },
+        {
+            "file_id": "dbpedia_5763_87.txt"
+        },
+        {
+            "file_id": "dbpedia_5763_97.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nThe documents describe ViaMichelin services for calculating routes between Langenthal and Bleienbach, indicating they are geographically connected.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "To determine whether the information in the documents supports the triple, let's analyze it:\n\nThe triple states that Langenthal is neighboring Bleienbach.\n\nFrom the provided context information:\n\n* The first two files (86.txt and 19.txt) mention calculating routes between Langenthal and Bleienbach, suggesting they are distinct locations.\n* The third file (76.txt) mentions an airport in Bleienbach and Langenthal as a nearby location.\n* Two of the files (86.txt) specifically state that ViaMichelin can calculate the route from Langenthal to Bleienbach.\n\nBased on this information:\n\n{\n  \"output\": \"yes\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe context information provided indicates that there are routes between Langenthal and Bleienbach, suggesting they are connected by road. While the exact distance or travel time isn't given, the presence of a route implies these locations are in close proximity and likely neighbors."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Langenthal and Bleienbach are not neighboring towns, but Bleienbach is located within the political municipality of Langenthal in the canton of Bern. However, they are geographically separate.",
+            "category": 2
+        }
+    }
+}

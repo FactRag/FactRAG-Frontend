@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Time_of_My_Life_(George_Fox_song)",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:George_Fox_songs",
+    "human_readable": "The subject of the song 'Time of My Life' is George Fox songs.",
+    "questions": [
+        {
+            "score": 0.953397274017334,
+            "question": "Is there a song called 'Time of My Life' about someone named George Fox?"
+        },
+        {
+            "score": 0.9267182350158691,
+            "question": "Does a song titled 'Time of My Life' exist about a person named George Fox?"
+        },
+        {
+            "score": 0.8943151235580444,
+            "question": "What is the title of the song that features George Fox as its subject?"
+        },
+        {
+            "score": 0.8367287516593933,
+            "question": "What song is about George Fox?"
+        },
+        {
+            "score": 0.796290397644043,
+            "question": "Can you identify a song associated with George Fox?"
+        },
+        {
+            "score": 0.738176703453064,
+            "question": "Which artist created a song focused on George Fox's life?"
+        },
+        {
+            "score": 0.7101982831954956,
+            "question": "What is the name of the song that tells the story of George Fox?"
+        },
+        {
+            "score": 0.6488073468208313,
+            "question": "What is the subject matter of the song 'Time of My Life'?"
+        },
+        {
+            "score": 0.6059121489524841,
+            "question": "Who sings the song 'Time of My Life'?"
+        },
+        {
+            "score": 0.40874117612838745,
+            "question": "Is there a musical piece dedicated to George Fox's experiences?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The subject of the song 'Time of My Life' is George Fox songs.",
+            "html": "dbpedia_1584_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who sings the song 'Time of My Life'?",
+            "html": "dbpedia_1584_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the subject matter of the song 'Time of My Life'?",
+            "html": "dbpedia_1584_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of the song that tells the story of George Fox?",
+            "html": "dbpedia_1584_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1584_10.txt"
+        },
+        {
+            "file_id": "dbpedia_1584_102.txt"
+        },
+        {
+            "file_id": "dbpedia_1584_12.txt"
+        },
+        {
+            "file_id": "dbpedia_1584_27.txt"
+        },
+        {
+            "file_id": "dbpedia_1584_30.txt"
+        },
+        {
+            "file_id": "dbpedia_1584_32.txt"
+        },
+        {
+            "file_id": "dbpedia_1584_40.txt"
+        },
+        {
+            "file_id": "dbpedia_1584_45.txt"
+        },
+        {
+            "file_id": "dbpedia_1584_49.txt"
+        },
+        {
+            "file_id": "dbpedia_1584_80.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the answer in the form of a structured JSON format:\n\n{\n  \"output\": \"no\"\n}\n\nThe reason for this answer is that the documents mention two different individuals named George Fox. One is a Canadian country music singer, and the other is a founder of the Quaker movement. The song \"Time of My Life\" does not appear to be associated with the Quaker founder George Fox, but rather with the Canadian singer."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The provided documents do not contain any information that suggests the subject of the song \"Time of My Life\" is about George Fox. The documents mention George Fox in several contexts, including his induction into the Canadian Country Music Hall of Fame and a song he wrote, but there is no direct correlation between him being the subject of \"Time of My Life.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Several passages mention George Fox as a country music singer with hits like \"Time Of My Life\" and \"Mustang Heart.\"  There's no indication that the song \"Time of My Life\" is about him.  Additionally, there are references to lyrics about speeding in an old pickup truck and listening to the Rolling Stones, which doesn't align with a biographical song about Fox.",
+            "category": 4
+        },
+        "llama3.1": {
+            "reason": "George Fox appears to be a person being inducted into the Canadian Country Music Hall of Fame, who had a song called \"Time Of My Life\", which is different from George Fox (the Quaker) that the other context information was talking about.",
+            "category": 4
+        },
+        "qwen2.5": {
+            "reason": "The song titled \"Time of My Life\" mentioned in the context is associated with Willie Nelson, not George Fox.",
+            "category": 4
+        }
+    }
+}

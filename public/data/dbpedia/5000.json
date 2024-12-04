@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Smooth_Glasgow",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:Radio_stations_established_in_2007",
+    "human_readable": "Smooth Glasgow is about Radio stations established in 2007.",
+    "questions": [
+        {
+            "score": 0.8832752108573914,
+            "question": "Is Smooth Glasgow a local or national radio station?"
+        },
+        {
+            "score": 0.8363603949546814,
+            "question": "When was Smooth Glasgow established?"
+        },
+        {
+            "score": 0.8153004050254822,
+            "question": "What type of stations are included in Smooth Glasgow?"
+        },
+        {
+            "score": 0.7714457511901855,
+            "question": "In what year did Smooth Glasgow begin broadcasting?"
+        },
+        {
+            "score": 0.692449688911438,
+            "question": "Are there any other stations associated with Smooth Glasgow?"
+        },
+        {
+            "score": 0.5944022536277771,
+            "question": "What are some popular features of Smooth Glasgow?"
+        },
+        {
+            "score": 0.4492848813533783,
+            "question": "Is Smooth Glasgow known for any particular events or programming?"
+        },
+        {
+            "score": 0.40733152627944946,
+            "question": "What genre of music is typically played on Smooth Glasgow?"
+        },
+        {
+            "score": 0.40201041102409363,
+            "question": "What city or region does Smooth Glasgow primarily serve?"
+        },
+        {
+            "score": 0.3981642723083496,
+            "question": "Does Smooth Glasgow have a website or online presence?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Smooth Glasgow is about Radio stations established in 2007.",
+            "html": "dbpedia_5000_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What city or region does Smooth Glasgow primarily serve?",
+            "html": "dbpedia_5000_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What genre of music is typically played on Smooth Glasgow?",
+            "html": "dbpedia_5000_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Smooth Glasgow known for any particular events or programming?",
+            "html": "dbpedia_5000_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5000_10.txt"
+        },
+        {
+            "file_id": "dbpedia_5000_109.txt"
+        },
+        {
+            "file_id": "dbpedia_5000_122.txt"
+        },
+        {
+            "file_id": "dbpedia_5000_126.txt"
+        },
+        {
+            "file_id": "dbpedia_5000_15.txt"
+        },
+        {
+            "file_id": "dbpedia_5000_22.txt"
+        },
+        {
+            "file_id": "dbpedia_5000_65.txt"
+        },
+        {
+            "file_id": "dbpedia_5000_7.txt"
+        },
+        {
+            "file_id": "dbpedia_5000_75.txt"
+        },
+        {
+            "file_id": "dbpedia_5000_84.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have more triples to evaluate!  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the structured JSON format with the answer:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation:\n\nThe context information mentions that \"Smooth Radio Glasgow\" is a radio station owned and operated by Global Radio, which started broadcasting in 2007. It also mentions \"Smooth Scotland\", which was aired for the first time on March 26, 2007, replacing Saga 105.2 FM. Therefore, the statement \"Smooth Glasgow is about Radio stations established in 2007\" is supported by the documents."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\"output\": \"yes\"}\n```\n\nThe documents provided contain information that supports the statement \"Smooth Glasgow is about Radio stations established in 2007.\" Specifically, both files with path `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5000/re-ranker-msmarco/21.txt` and multiple mentions in other files indicate that Smooth Scotland (which operates in Glasgow) began broadcasting on March 26, 2007."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n    \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Smooth Glasgow is not just a radio station established in 2007, but it is one of the stations within the Smooth Radio network.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Multiple pieces of context state Smooth Scotland was launched on March 26, 2007.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The information provided states that Smooth Scotland (not Glasgow) was aired for the first time on 26 March 2007, replacing Saga 105.2 FM, and it also mentions that Smooth Glasgow is an independent Scottish radio on air since 2007, but this seems to be a separate station from Smooth Scotland as mentioned in point 3 of the context information.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Smooth Radio Glasgow was established in 2007, but the information provided specifies that Smooth Scotland (which includes Smooth Glasgow) officially launched on March 26, 2007. This means both stations were indeed established around that time, not just one of them.",
+            "category": 2
+        }
+    }
+}

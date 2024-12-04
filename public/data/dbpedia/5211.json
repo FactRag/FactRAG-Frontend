@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Burgersdorp",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "Burgersdorp",
+    "human_readable": "Burgersdorp is known as Burgersdorp.",
+    "questions": [
+        {
+            "score": 0.97789067029953,
+            "question": "What is Burgersdorp known for?"
+        },
+        {
+            "score": 0.8818265795707703,
+            "question": "How would you describe Burgersdorp?"
+        },
+        {
+            "score": 0.8387691378593445,
+            "question": "What are some interesting facts about Burgersdorp?"
+        },
+        {
+            "score": 0.8191292881965637,
+            "question": "Is Burgersdorp a popular tourist destination?"
+        },
+        {
+            "score": 0.8115331530570984,
+            "question": "What comes to mind when you hear the name 'Burgersdorp'?"
+        },
+        {
+            "score": 0.7574290633201599,
+            "question": "Is there anything specific that makes Burgersdorp unique?"
+        },
+        {
+            "score": 0.7083537578582764,
+            "question": "What kind of people live in Burgersdorp?"
+        },
+        {
+            "score": 0.7038421630859375,
+            "question": "What are some local traditions or events in Burgersdorp?"
+        },
+        {
+            "score": 0.6710869073867798,
+            "question": "Can you tell me more about the history of Burgersdorp?"
+        },
+        {
+            "score": 0.6356430649757385,
+            "question": "What is the climate like in Burgersdorp?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Burgersdorp is known as Burgersdorp.",
+            "html": "dbpedia_5211_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about the history of Burgersdorp?",
+            "html": "dbpedia_5211_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some local traditions or events in Burgersdorp?",
+            "html": "dbpedia_5211_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What kind of people live in Burgersdorp?",
+            "html": "dbpedia_5211_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5211_109.txt"
+        },
+        {
+            "file_id": "dbpedia_5211_116.txt"
+        },
+        {
+            "file_id": "dbpedia_5211_20.txt"
+        },
+        {
+            "file_id": "dbpedia_5211_30.txt"
+        },
+        {
+            "file_id": "dbpedia_5211_39.txt"
+        },
+        {
+            "file_id": "dbpedia_5211_62.txt"
+        },
+        {
+            "file_id": "dbpedia_5211_80.txt"
+        },
+        {
+            "file_id": "dbpedia_5211_81.txt"
+        },
+        {
+            "file_id": "dbpedia_5211_87.txt"
+        },
+        {
+            "file_id": "dbpedia_5211_88.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have more triples to evaluate!  I'm ready."
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "The query is \"Burgersdorp is known as Burgersdorp.\" Given the context information, here's my evaluation:\n\n{\n  \"output\": \"no\"\n}\n\nThis is because the documents mention that Burgersdorp is also known as \"Burgersdorf\", \"Burghersdorp\", but not just \"Burgersdorp\" alone."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe information across the documents supports that Burgersdorp is also known as Burgersdorf and Burghersdorp. Therefore, the statement \"Burgersdorp is known as Burgersdorp\" is correct according to the given context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The context information lists other names for Burgersdorp as \"Burgersdorf\" and \"Burghersdorp\", implying that the name \"Burgersdorp\" itself is a variant or synonym of the correct name, rather than an alternate spelling of the same name.",
+            "category": 2
+        }
+    }
+}

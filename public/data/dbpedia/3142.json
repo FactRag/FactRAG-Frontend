@@ -1,0 +1,148 @@
+{
+    "subject": "resource/Westminster_School",
+    "predicate": "property/chairLabel",
+    "object": "Chairman of Governors",
+    "human_readable": "The chairman of Governors at Westminster School.",
+    "questions": [
+        {
+            "score": 0.987987220287323,
+            "question": "Who is the chairman of Governors at Westminster School?"
+        },
+        {
+            "score": 0.8735126256942749,
+            "question": "What are the responsibilities of the Governors at Westminster School?"
+        },
+        {
+            "score": 0.7194564938545227,
+            "question": "How many Governors are there at Westminster School?"
+        },
+        {
+            "score": 0.6562778949737549,
+            "question": "What is the role of a chairman of Governors?"
+        },
+        {
+            "score": 0.55149245262146,
+            "question": "Is the chairman of Governors elected or appointed?"
+        },
+        {
+            "score": 0.5049502849578857,
+            "question": "Where is Westminster School located?"
+        },
+        {
+            "score": 0.5025939345359802,
+            "question": "Does Westminster School have a governing body?"
+        },
+        {
+            "score": 0.4390062987804413,
+            "question": "What type of institution is Westminster School?"
+        },
+        {
+            "score": 0.35851502418518066,
+            "question": "When was Westminster School founded?"
+        },
+        {
+            "score": 0.3570963740348816,
+            "question": "Are there any notable alumni from Westminster School?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The chairman of Governors at Westminster School.",
+            "html": "dbpedia_3142_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=When was Westminster School founded?",
+            "html": "dbpedia_3142_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of institution is Westminster School?",
+            "html": "dbpedia_3142_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Westminster School have a governing body?",
+            "html": "dbpedia_3142_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3142_1.txt"
+        },
+        {
+            "file_id": "dbpedia_3142_23.txt"
+        },
+        {
+            "file_id": "dbpedia_3142_34.txt"
+        },
+        {
+            "file_id": "dbpedia_3142_39.txt"
+        },
+        {
+            "file_id": "dbpedia_3142_54.txt"
+        },
+        {
+            "file_id": "dbpedia_3142_57.txt"
+        },
+        {
+            "file_id": "dbpedia_3142_59.txt"
+        },
+        {
+            "file_id": "dbpedia_3142_67.txt"
+        },
+        {
+            "file_id": "dbpedia_3142_87.txt"
+        },
+        {
+            "file_id": "dbpedia_3142_98.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nLet me explain why:\n\nWhile the provided text discusses governing bodies and individuals involved in schools, it doesn't explicitly name \"The chairman of Governors at Westminster School\".  To answer this query accurately, we'd need a document that directly states the chairman's name. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "After analyzing the context information, I found the following mention related to the chairmen of governors:\n\nfile_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3142/re-ranker-msmarco/34.txt\nGovernors\nChair of Governors \u2013 David Heminway\n\nAnd:\n \nfile_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3142/re-ranker-msmarco/66.txt\n... Governor, Mr Rodney Harris, former Headmaster of Chengdu Westminster School, will take over from Mr Summerscale in September.\n\nHowever, there is no mention of the current chairman for that last document. Therefore, given that the question asks about \"The chairman of Governors at Westminster School\" and considering the information provided:\n\n{ 'output': 'no' }"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\nThe document provided mentions the Chairman of the Governing Body, David Hoyle KCVO MBE. Therefore, the statement \"The chairman of Governors at Westminster School\" is supported by the information given."
+        },
+        "mistral": {
+            "short_ans": -1,
+            "full_ans": " {\"output\": \"The provided information does not specify the chairman of Governors at Westminster School, so it cannot be definitively answered based on the given documents.\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "Based on the provided context, the chairman of the governors at Westminster School is The Very Reverend Dr David Hoyle KCVO MBE. Therefore, the answer to the query \"The chairman of Governors at Westminster School.\" should affirm that this person holds the position.\n\nResponse:\n{\n\"output\": \"yes\"\n}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The context does not provide the name of the Chairman of Governors at Westminster School.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Information provided lists David Heminway as the Chair of Governors.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The context information states \"The Governing Body\" for different schools (Westminster Primary Academy School, Kensington Wade School) but the specific chairman of Governors at Westminster School isn't mentioned.",
+            "category": 2
+        }
+    }
+}

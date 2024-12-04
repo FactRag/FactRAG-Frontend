@@ -1,0 +1,144 @@
+{
+    "subject": "resource/On_the_Great_White_Trail",
+    "predicate": "property/language",
+    "object": "English",
+    "human_readable": "On the Great White Trail is written in English.",
+    "questions": [
+        {
+            "score": 0.9859482049942017,
+            "question": "What is written on the Great White Trail in English?"
+        },
+        {
+            "score": 0.957749605178833,
+            "question": "Can someone read English on the Great White Trail?"
+        },
+        {
+            "score": 0.9377857446670532,
+            "question": "Is there any English text on the Great White Trail?"
+        },
+        {
+            "score": 0.9041461944580078,
+            "question": "What language is written on the Great White Trail?"
+        },
+        {
+            "score": 0.8349174857139587,
+            "question": "Is text present on the Great White Trail?"
+        },
+        {
+            "score": 0.8255483508110046,
+            "question": "If you speak English, will you be able to read signs on the Great White Trail?"
+        },
+        {
+            "score": 0.8248777985572815,
+            "question": "Does the Great White Trail have any English inscriptions?"
+        },
+        {
+            "score": 0.666573166847229,
+            "question": "Would a person who speaks only English be able to understand any signage on the Great White Trail?"
+        },
+        {
+            "score": 0.6496805548667908,
+            "question": "What is the language of signage on the Great White Trail?"
+        },
+        {
+            "score": 0.44613373279571533,
+            "question": "What language would be used for guidance signs on the Great White Trail?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=On the Great White Trail is written in English.",
+            "html": "dbpedia_4499_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the language of signage on the Great White Trail?",
+            "html": "dbpedia_4499_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Would a person who speaks only English be able to understand any signage on the Great White Trail?",
+            "html": "dbpedia_4499_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does the Great White Trail have any English inscriptions?",
+            "html": "dbpedia_4499_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4499_124.txt"
+        },
+        {
+            "file_id": "dbpedia_4499_134.txt"
+        },
+        {
+            "file_id": "dbpedia_4499_14.txt"
+        },
+        {
+            "file_id": "dbpedia_4499_16.txt"
+        },
+        {
+            "file_id": "dbpedia_4499_2.txt"
+        },
+        {
+            "file_id": "dbpedia_4499_44.txt"
+        },
+        {
+            "file_id": "dbpedia_4499_46.txt"
+        },
+        {
+            "file_id": "dbpedia_4499_55.txt"
+        },
+        {
+            "file_id": "dbpedia_4499_65.txt"
+        },
+        {
+            "file_id": "dbpedia_4499_74.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple \"On the Great White Trail is written in English\" based on the provided context information:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe reason for this answer is that there are several documents mentioning the title \"On the Great White Trail\", but none of them mention anything about the language in which it was written. The documents seem to be discussing a film, a hiking trail, and other topics unrelated to writing or languages. Therefore, we cannot determine if the triple is correct based on the provided information."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents do not provide direct information on whether \"On the Great White Trail\" is written in English, but they describe it as a film and discuss it in an English context. Given that there's no conflicting information suggesting it\u2019s not in English, we can infer that the statement is likely correct without contradicting any provided text."
+        },
+        "mistral": {
+            "short_ans": -1,
+            "full_ans": " {\"output\": \"unknown\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}\n\nExplanation:\nWhile the provided documents do not explicitly state that \"On the Great White Trail\" is written in English, we can infer this based on the context. All of the text provided is in English and discusses an American silent drama film produced in 1917. Given that there's no mention of any other language version or country of production besides America for this film, it is reasonable to conclude that \"On the Great White Trail\" was written in English."
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The context does not provide information about the language of the movie \"On the Great White Trail\". Therefore, it cannot be determined whether the film is written in English or not.",
+            "category": 3
+        },
+        "llama3.1": {
+            "reason": "The passage about the Great White Trail does not provide any information on its language, but mentions \"Moby Dick\" which is a book written in English.",
+            "category": 3
+        }
+    }
+}

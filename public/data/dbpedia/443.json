@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Claude_Shannon",
+    "predicate": "ontology/doctoralStudent",
+    "object": "resource/Bert_Sutherland",
+    "human_readable": "Claude Shannon was a doctoral student of Bert Sutherland.",
+    "questions": [
+        {
+            "score": 0.9780875444412231,
+            "question": "Did Claude Shannon study under Bert Sutherland?"
+        },
+        {
+            "score": 0.9564908146858215,
+            "question": "Was Bert Sutherland Claude Shannon's professor?"
+        },
+        {
+            "score": 0.9089994430541992,
+            "question": "What academic relationship existed between Claude Shannon and Bert Sutherland?"
+        },
+        {
+            "score": 0.8626022934913635,
+            "question": "Who guided Claude Shannon through his doctoral studies?"
+        },
+        {
+            "score": 0.8351652026176453,
+            "question": "In what capacity did Bert Sutherland work with Claude Shannon?"
+        },
+        {
+            "score": 0.8288202285766602,
+            "question": "Who was Claude Shannon's doctoral advisor?"
+        },
+        {
+            "score": 0.8251606822013855,
+            "question": "What was the relationship between Claude Shannon and Bert Sutherland?"
+        },
+        {
+            "score": 0.8010833859443665,
+            "question": "What is the connection between Claude Shannon and Bert Sutherland?"
+        },
+        {
+            "score": 0.7878081798553467,
+            "question": "To whom did Claude Shannon owe his doctoral degree?"
+        },
+        {
+            "score": 0.7535198330879211,
+            "question": "Who was responsible for mentoring Claude Shannon during his doctorate?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Claude Shannon was a doctoral student of Bert Sutherland.",
+            "html": "dbpedia_443_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=To whom did Claude Shannon owe his doctoral degree?",
+            "html": "dbpedia_443_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the connection between Claude Shannon and Bert Sutherland?",
+            "html": "dbpedia_443_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What was the relationship between Claude Shannon and Bert Sutherland?",
+            "html": "dbpedia_443_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_443_19.txt"
+        },
+        {
+            "file_id": "dbpedia_443_20.txt"
+        },
+        {
+            "file_id": "dbpedia_443_31.txt"
+        },
+        {
+            "file_id": "dbpedia_443_33.txt"
+        },
+        {
+            "file_id": "dbpedia_443_57.txt"
+        },
+        {
+            "file_id": "dbpedia_443_67.txt"
+        },
+        {
+            "file_id": "dbpedia_443_71.txt"
+        },
+        {
+            "file_id": "dbpedia_443_74.txt"
+        },
+        {
+            "file_id": "dbpedia_443_87.txt"
+        },
+        {
+            "file_id": "dbpedia_443_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents do not provide any information that supports the claim that Claude Shannon was a doctoral student of Bert (or Ivan) Sutherland. The documents mention that Claude Shannon supervised Sutherland's thesis, but they do not indicate that Shannon himself was a doctoral student of Sutherland."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Claude Shannon was actually the supervisor of Ivan Sutherland's Ph.D. thesis, not a doctoral student.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Several text passages state that Claude Shannon supervised Ivan Sutherland's thesis at MIT.  One passage even mentions that Shannon signed on to supervise Sutherland's computer drawing thesis.   Additionally, the provided context states that Sutherland earned his PhD under the supervision of Claude Shannon.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "There is no information provided to suggest that Claude Shannon was a doctoral student of Bert Sutherland, but rather the opposite; Ivan Sutherland (not Bert) and not Bert's thesis were supervised by Claude Shannon.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Claude Shannon supervised Sutherland's thesis, not the other way around. The context clearly states that Claude Shannon signed on to supervise Sutherland\u2019s computer drawing thesis.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Zoya_Ivanova",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:Kazakhstani_marathon_runners",
+    "human_readable": "Zoya Ivanova is a subject of Kazakhstani marathon runners.",
+    "questions": [
+        {
+            "score": 0.9591707587242126,
+            "question": "Are there famous Kazakhstani marathon runners besides Zoya Ivanova?"
+        },
+        {
+            "score": 0.932087779045105,
+            "question": "Is Zoya Ivanova a marathon runner?"
+        },
+        {
+            "score": 0.788514256477356,
+            "question": "Where might Zoya Ivanova compete as a runner?"
+        },
+        {
+            "score": 0.7678409218788147,
+            "question": "What nationality are Kazakhstani marathon runners?"
+        },
+        {
+            "score": 0.573858380317688,
+            "question": "Does Zoya Ivanova represent Kazakhstan in marathons?"
+        },
+        {
+            "score": 0.5303283333778381,
+            "question": "Are there any challenges faced by marathon runners from Kazakhstan?"
+        },
+        {
+            "score": 0.5111387968063354,
+            "question": "What is the nationality of Zoya Ivanova?"
+        },
+        {
+            "score": 0.47332999110221863,
+            "question": "Does Zoya Ivanova participate in other running events besides marathons?"
+        },
+        {
+            "score": 0.4655386507511139,
+            "question": "What training does Zoya Ivanova likely undergo?"
+        },
+        {
+            "score": 0.22935786843299866,
+            "question": "What are some common characteristics of marathon runners?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Zoya Ivanova is a subject of Kazakhstani marathon runners.",
+            "html": "dbpedia_1323_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What training does Zoya Ivanova likely undergo?",
+            "html": "dbpedia_1323_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Zoya Ivanova participate in other running events besides marathons?",
+            "html": "dbpedia_1323_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the nationality of Zoya Ivanova?",
+            "html": "dbpedia_1323_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1323_27.txt"
+        },
+        {
+            "file_id": "dbpedia_1323_39.txt"
+        },
+        {
+            "file_id": "dbpedia_1323_41.txt"
+        },
+        {
+            "file_id": "dbpedia_1323_46.txt"
+        },
+        {
+            "file_id": "dbpedia_1323_53.txt"
+        },
+        {
+            "file_id": "dbpedia_1323_61.txt"
+        },
+        {
+            "file_id": "dbpedia_1323_64.txt"
+        },
+        {
+            "file_id": "dbpedia_1323_70.txt"
+        },
+        {
+            "file_id": "dbpedia_1323_82.txt"
+        },
+        {
+            "file_id": "dbpedia_1323_88.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation in JSON format:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation:\n\nThe triple to be evaluated is \"Zoya Ivanova is a subject of Kazakhstani marathon runners.\"\n\nFrom the context information, there are multiple documents related to Zoya Ivanova. Document 1 and Document 3 mention that Zoya Ivanova is a \"Kazakhstani marathon runner\" or a \"retired long-distance runner from Kazakhstan\", which indicates that she is indeed associated with Kazakhstani marathon runners.\n\nTherefore, the evaluation result is \"yes\"."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information that supports the statement \"Zoya Ivanova is a subject of Kazakhstani marathon runners.\" The details in multiple files confirm her nationality as Kazakhstani and her profession as a marathon runner, making her a significant figure in the context of Kazakhstani marathon running."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Zoya Ivanova was born and competed for the Soviet Union, not Kazakhstan. She represented Kazakhstan only after its independence from the Soviet Union.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Multiple sources state she represented the Soviet Union and competed internationally for them.",
+            "category": -1
+        },
+        "llama3.1": {
+            "reason": "The context information suggests that there are multiple individuals named Zoya Ivanova or Zoya Douchine, who are marathon runners or athletes from different countries (Kazakhstan, Russia, Germany), which contradicts the idea of a single person being a subject of Kazakhstani marathon runners.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Zoya Ivanova was born in 1952 in Petropavl, Kazakh SSR (now Kazakhstan), but she represented the Soviet Union in the 1988 Summer Olympics. While she has established herself as a prominent figure in the sports community of Kazakhstan after retirement, her primary representation during significant competitions was for the Soviet Union, not specifically for Kazakhstan as an independent state at that time.",
+            "category": 2
+        }
+    }
+}

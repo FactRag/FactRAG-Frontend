@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Jamal_Jones",
+    "predicate": "ontology/birthPlace",
+    "object": "resource/Washington,_D.C.",
+    "human_readable": "Jamal Jones was born in Washington, D.C.",
+    "questions": [
+        {
+            "score": 0.8874989151954651,
+            "question": "Where was Jamal Jones born?"
+        },
+        {
+            "score": 0.8045653104782104,
+            "question": "What year was Jamal Jones born?"
+        },
+        {
+            "score": 0.7414243817329407,
+            "question": "Does Jamal Jones live in Washington, D.C. now?"
+        },
+        {
+            "score": 0.6867696642875671,
+            "question": "Is Jamal Jones' birthplace a city?"
+        },
+        {
+            "score": 0.554266095161438,
+            "question": "Is Jamal Jones from the United States?"
+        },
+        {
+            "score": 0.4972572326660156,
+            "question": "What is Jamal Jones known for?"
+        },
+        {
+            "score": 0.47381722927093506,
+            "question": "How old is Jamal Jones now?"
+        },
+        {
+            "score": 0.2504369616508484,
+            "question": "What country is Washington, D.C. located in?"
+        },
+        {
+            "score": 0.16832871735095978,
+            "question": "What are some famous landmarks in Washington, D.C.?"
+        },
+        {
+            "score": 0.1319430023431778,
+            "question": "Name the U.S. state where Washington, D.C. is located."
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Jamal Jones was born in Washington, D.C.",
+            "html": "dbpedia_4011_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some famous landmarks in Washington, D.C.?",
+            "html": "dbpedia_4011_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What country is Washington, D.C. located in?",
+            "html": "dbpedia_4011_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How old is Jamal Jones now?",
+            "html": "dbpedia_4011_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4011_1.txt"
+        },
+        {
+            "file_id": "dbpedia_4011_12.txt"
+        },
+        {
+            "file_id": "dbpedia_4011_15.txt"
+        },
+        {
+            "file_id": "dbpedia_4011_26.txt"
+        },
+        {
+            "file_id": "dbpedia_4011_36.txt"
+        },
+        {
+            "file_id": "dbpedia_4011_39.txt"
+        },
+        {
+            "file_id": "dbpedia_4011_4.txt"
+        },
+        {
+            "file_id": "dbpedia_4011_72.txt"
+        },
+        {
+            "file_id": "dbpedia_4011_74.txt"
+        },
+        {
+            "file_id": "dbpedia_4011_79.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "After analyzing the provided context information, I can answer the query as follows:\n\n{'output': 'no'}\n\nThe reason for this is that while there are multiple documents mentioning individuals named Jamal Jones or Jamal Aman Jones, none of them specify their birthplace as Washington, D.C. The document at file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4011/re-ranker-msmarco/4.txt mentions a Jamal Jones who was born in Washington, DC USA, but this is referring to a different person."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The document at file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4011/re-ranker-msmarco/4.txt contains the following information about Jamal Jones:\n\n\"Born: April 24, 1981\nWashington, DC USA\"\n\nThis supports the statement that Jamal Jones was born in Washington, D.C."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "Multiple sources contradict the birthplace of Jamal Jones as Washington, D.C.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Yorkton",
+    "predicate": "property/2006TotalPvtDwell",
+    "object": "6773",
+    "human_readable": "The total private dwellings in Yorkton in 2006 were 6773.",
+    "questions": [
+        {
+            "score": 0.9793741703033447,
+            "question": "What was the total number of private dwellings in Yorkton in 2006?"
+        },
+        {
+            "score": 0.9697085022926331,
+            "question": "In what year was the number of private dwellings in Yorkton recorded as 6773?"
+        },
+        {
+            "score": 0.9448583126068115,
+            "question": "How many private dwellings were there in Yorkton according to the data from 2006?"
+        },
+        {
+            "score": 0.7726308107376099,
+            "question": "How has the number of private dwellings in Yorkton changed over time?"
+        },
+        {
+            "score": 0.7069500088691711,
+            "question": "Can you compare the number of private dwellings in Yorkton to another city's data?"
+        },
+        {
+            "score": 0.6731206178665161,
+            "question": "What factors might influence the number of private dwellings in a city like Yorkton?"
+        },
+        {
+            "score": 0.6620672941207886,
+            "question": "Is there a correlation between the number of private dwellings and other socioeconomic indicators in Yorkton?"
+        },
+        {
+            "score": 0.6371249556541443,
+            "question": "What are the implications of a high number of private dwellings in a city like Yorkton?"
+        },
+        {
+            "score": 0.5497379899024963,
+            "question": "How does the number of private dwellings in Yorkton compare to the national average for Canadian cities?"
+        },
+        {
+            "score": 0.3078523278236389,
+            "question": "What is the population density of Yorkton if we assume each dwelling houses a single family?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The total private dwellings in Yorkton in 2006 were 6773.",
+            "html": "dbpedia_242_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How does the number of private dwellings in Yorkton compare to the national average for Canadian cities?",
+            "html": "dbpedia_242_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are the implications of a high number of private dwellings in a city like Yorkton?",
+            "html": "dbpedia_242_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there a correlation between the number of private dwellings and other socioeconomic indicators in Yorkton?",
+            "html": "dbpedia_242_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_242_13.txt"
+        },
+        {
+            "file_id": "dbpedia_242_17.txt"
+        },
+        {
+            "file_id": "dbpedia_242_22.txt"
+        },
+        {
+            "file_id": "dbpedia_242_27.txt"
+        },
+        {
+            "file_id": "dbpedia_242_31.txt"
+        },
+        {
+            "file_id": "dbpedia_242_38.txt"
+        },
+        {
+            "file_id": "dbpedia_242_46.txt"
+        },
+        {
+            "file_id": "dbpedia_242_54.txt"
+        },
+        {
+            "file_id": "dbpedia_242_58.txt"
+        },
+        {
+            "file_id": "dbpedia_242_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have any other questions!  "
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the provided context information, I can evaluate whether the statement is supported by the documents.\n\nThe query is: \"The total private dwellings in Yorkton in 2006 were 6773.\"\n\nThe relevant part of the document is:\n\nCanada census \u2013 Yorkton community profile 2016 2011 2006 Population: 16,343 (4.3% from 2011) 15,669 (4.2% from 2006) 15,038 (-0.5% from 2001) Land area: 36.32 km2 (14.02 sq mi) 25.77 km2 (9.95 sq mi) 24.57 km2 (9.49 sq mi) Population density: 449.9/km2 (1,165/sq mi) 608.1/km2 (1,575/sq mi) 612.2/km2 (1,586/sq mi) Median age: 42.7 (M: 40.4, F: 44.8) 40.3 (M: 38.7, F: 41.7) Total private dwellings: **6,773** Median household income: $41,392\n\nYes, the document supports this statement.\n\nThe output is:\n\n`{'output': 'yes'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe document states that in the 2006 census, Yorkton had a total of 6,773 private dwellings, which directly supports the query."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n    \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "In the context information provided, the total private dwellings in Yorkton in 2006 were stated as 6,773 in one section but later, in a different section, it was mentioned that there were 6,974 total private dwellings in 2021. Since the number of dwellings is higher in 2021 than in 2006, it implies that the number of dwellings in 2006 should be lower than 6,773, not equal to it.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "The Canada census \u2013 Yorkton community profile 2016 states that the total private dwellings were 7,175 in 2016. If the number of dwellings decreased between 2006 and 2016, it would be illogical for the number to be lower in 2006 than in 2016.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The total private dwellings in Yorkton in 2006 were actually 15,038/15,669*10000= 97523. However the text states that \"Total private dwellings\" but the actual number of total dwellings including non-private ones are not provided, so we can't make sure if the given number is for private or all types of dwellings.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information states that the total private dwellings in Yorkton in 2006 were 6,773, not 6,773 (repeated).",
+            "category": 2
+        }
+    }
+}

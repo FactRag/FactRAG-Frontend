@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Princess_Maria_Francesca_of_Savoy",
+    "predicate": "ontology/deathPlace",
+    "object": "resource/France",
+    "human_readable": "Princess Maria Francesca of Savoy died in France.",
+    "questions": [
+        {
+            "score": 0.957800030708313,
+            "question": "Was Princess Maria Francesca of Savoy born in France?"
+        },
+        {
+            "score": 0.9345443844795227,
+            "question": "Where did Princess Maria Francesca of Savoy die?"
+        },
+        {
+            "score": 0.8889833688735962,
+            "question": "What was the cause of death for Princess Maria Francesca of Savoy?"
+        },
+        {
+            "score": 0.6855377554893494,
+            "question": "What is known about the life of Princess Maria Francesca of Savoy?"
+        },
+        {
+            "score": 0.576291561126709,
+            "question": "When did Princess Maria Francesca of Savoy live?"
+        },
+        {
+            "score": 0.502443790435791,
+            "question": "Were there any famous relatives of Princess Maria Francesca of Savoy?"
+        },
+        {
+            "score": 0.4695832431316376,
+            "question": "Are there any historical records or accounts of Princess Maria Francesca of Savoy's life?"
+        },
+        {
+            "score": 0.19881489872932434,
+            "question": "Can you tell me more about the Savoy dynasty?"
+        },
+        {
+            "score": 0.19391728937625885,
+            "question": "Was France a significant location during her lifetime?"
+        },
+        {
+            "score": 0.04224729165434837,
+            "question": "What role did she play in history?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Princess Maria Francesca of Savoy died in France.",
+            "html": "dbpedia_3639_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Was France a significant location during her lifetime?",
+            "html": "dbpedia_3639_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about the Savoy dynasty?",
+            "html": "dbpedia_3639_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any historical records or accounts of Princess Maria Francesca of Savoy's life?",
+            "html": "dbpedia_3639_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3639_1.txt"
+        },
+        {
+            "file_id": "dbpedia_3639_13.txt"
+        },
+        {
+            "file_id": "dbpedia_3639_29.txt"
+        },
+        {
+            "file_id": "dbpedia_3639_30.txt"
+        },
+        {
+            "file_id": "dbpedia_3639_40.txt"
+        },
+        {
+            "file_id": "dbpedia_3639_42.txt"
+        },
+        {
+            "file_id": "dbpedia_3639_45.txt"
+        },
+        {
+            "file_id": "dbpedia_3639_57.txt"
+        },
+        {
+            "file_id": "dbpedia_3639_6.txt"
+        },
+        {
+            "file_id": "dbpedia_3639_63.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nThe information provided shows that Princess Maria Francesca of Savoy lived in France after being interned by the Nazis during WWII, but it does not explicitly state where she died. However, one of the documents mentions that she \"died on this day in 2001\", which implies that the place of death is not specified or mentioned in the provided context information. Therefore, without further knowledge, we cannot confirm whether she died in France or not. \n\nHowever, considering the information given, it can be inferred that she did not die in Italy (since her family was in Rome and later lived in Cannes) so the answer could potentially be 'no' assuming \"France\" is what we are evaluating against."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide information about the life and death of Princess Maria Francesca of Savoy, indicating that she lived in France after returning from a Nazi Concentration Camp during WWII. Given this context, it is reasonable to infer that she died in France on December 4, 2001."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": -1,
+            "full_ans": "Based on the provided context, we can see that Princess Maria Francesca of Savoy lived in France after being interned by the Nazis during World War II and returned to live there at Mandelieu-la-Napoule, near Cannes. Although it is not explicitly stated where she died, the information strongly implies that she spent her later years in France, which supports the statement that she died in France.\n\nTherefore, the answer would be:\n\n```json\n{\"output\": \"yes\"}\n```\n\nHowever, for absolute certainty, we should note that the documents do not clearly state that Princess Maria Francesca of Savoy died in France. The given information suggests it is highly likely but does not confirm it explicitly. Thus, if we strictly adhere to only what is confirmed:\n\n```json\n{\"output\": \"no\"}\n```\n\nGiven the context's implication and common practice in such evaluations, the first interpretation would be more appropriate unless instructed otherwise."
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Several pieces of text state she lived in France after World War II.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "Princess Maria Francesca of Savoy died on December 4, 2001, not in France, but in Italy.",
+            "category": 0
+        }
+    }
+}

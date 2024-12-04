@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Charles_de_Gaulle",
+    "predicate": "property/successor",
+    "object": "resource/Georges_Pompidou",
+    "human_readable": "Charles de Gaulle was succeeded by Georges Pompidou.",
+    "questions": [
+        {
+            "score": 0.9804092645645142,
+            "question": "In what context is Charles de Gaulle succeeded by Georges Pompidou?"
+        },
+        {
+            "score": 0.9374237060546875,
+            "question": "Who succeeded Charles de Gaulle?"
+        },
+        {
+            "score": 0.8482972383499146,
+            "question": "How did Georges Pompidou's leadership compare to Charles de Gaulle's?"
+        },
+        {
+            "score": 0.61765456199646,
+            "question": "What position did Georges Pompidou hold?"
+        },
+        {
+            "score": 0.5699928402900696,
+            "question": "Was there any public debate surrounding the succession of Charles de Gaulle?"
+        },
+        {
+            "score": 0.5130878686904907,
+            "question": "What political party was Georges Pompidou associated with?"
+        },
+        {
+            "score": 0.4921150505542755,
+            "question": "What year did Georges Pompidou become President of France?"
+        },
+        {
+            "score": 0.48015403747558594,
+            "question": "What were some of the challenges faced by Georges Pompidou as President?"
+        },
+        {
+            "score": 0.4677681028842926,
+            "question": "Who was the French president before Georges Pompidou?"
+        },
+        {
+            "score": 0.4346369504928589,
+            "question": "Can you name any significant events during Georges Pompidou's presidency?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Charles de Gaulle was succeeded by Georges Pompidou.",
+            "html": "dbpedia_4091_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who was the French president before Georges Pompidou?",
+            "html": "dbpedia_4091_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What were some of the challenges faced by Georges Pompidou as President?",
+            "html": "dbpedia_4091_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What year did Georges Pompidou become President of France?",
+            "html": "dbpedia_4091_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4091_1.txt"
+        },
+        {
+            "file_id": "dbpedia_4091_100.txt"
+        },
+        {
+            "file_id": "dbpedia_4091_120.txt"
+        },
+        {
+            "file_id": "dbpedia_4091_125.txt"
+        },
+        {
+            "file_id": "dbpedia_4091_18.txt"
+        },
+        {
+            "file_id": "dbpedia_4091_34.txt"
+        },
+        {
+            "file_id": "dbpedia_4091_63.txt"
+        },
+        {
+            "file_id": "dbpedia_4091_76.txt"
+        },
+        {
+            "file_id": "dbpedia_4091_89.txt"
+        },
+        {
+            "file_id": "dbpedia_4091_97.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the answer in the form of a structured JSON format:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation:\nThe documents provided contain information about Charles de Gaulle and Georges Pompidou, including their relationship as President and Prime Minister. The document at file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4091/re-ranker-msmarco/32.txt states that \"Nevertheless, in part due to his actions during the May 1968 crisis, he [Pompidou] appeared as the natural successor to de Gaulle. Pompidou announced his candidature for the Presidency in January 1969.\" and another document at file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4091/re-ranker-msmarco/19.txt states that \"However, after being defeated in the referendum of 27 April 1969 on regionalisation and the reform of the Senate, de Gaulle resigned. Georges Pompidou, his former Prime Minister, succeeded him on 15 June 1969.\" These statements confirm that Charles de Gaulle was succeeded by Georges Pompidou."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe information provided in the documents supports that Charles de Gaulle was indeed succeeded by Georges Pompidou. This is evident from multiple sources, such as the details given in `89.txt`, `44.txt`, and `19.txt` which mention Pompidou succeeding De Gaulle on 15 June 1969 after the latter's resignation."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

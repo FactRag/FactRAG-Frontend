@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Pelham_Bay_Bridge",
+    "predicate": "ontology/maintainedBy",
+    "object": "resource/Amtrak",
+    "human_readable": "The Pelham Bay Bridge was maintained by Amtrak.",
+    "questions": [
+        {
+            "score": 0.9179452657699585,
+            "question": "How long has Amtrak been maintaining the Pelham Bay Bridge?"
+        },
+        {
+            "score": 0.9175438284873962,
+            "question": "Who maintains the Pelham Bay Bridge?"
+        },
+        {
+            "score": 0.8585920333862305,
+            "question": "Is Amtrak involved in bridge maintenance?"
+        },
+        {
+            "score": 0.734535813331604,
+            "question": "What organization is responsible for maintaining the Pelham Bay Bridge?"
+        },
+        {
+            "score": 0.682742714881897,
+            "question": "Can you name any other bridges maintained by Amtrak?"
+        },
+        {
+            "score": 0.6611652970314026,
+            "question": "Does Amtrak operate any trains that cross the Pelham Bay Bridge?"
+        },
+        {
+            "score": 0.6586849093437195,
+            "question": "What are some challenges associated with maintaining bridges like the Pelham Bay Bridge?"
+        },
+        {
+            "score": 0.514240562915802,
+            "question": "Where is the Pelham Bay Bridge located?"
+        },
+        {
+            "score": 0.45677435398101807,
+            "question": "What is the purpose of the Pelham Bay Bridge?"
+        },
+        {
+            "score": 0.3812943398952484,
+            "question": "What type of structure is the Pelham Bay Bridge?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The Pelham Bay Bridge was maintained by Amtrak.",
+            "html": "dbpedia_4414_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the purpose of the Pelham Bay Bridge?",
+            "html": "dbpedia_4414_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where is the Pelham Bay Bridge located?",
+            "html": "dbpedia_4414_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some challenges associated with maintaining bridges like the Pelham Bay Bridge?",
+            "html": "dbpedia_4414_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4414_10.txt"
+        },
+        {
+            "file_id": "dbpedia_4414_14.txt"
+        },
+        {
+            "file_id": "dbpedia_4414_25.txt"
+        },
+        {
+            "file_id": "dbpedia_4414_29.txt"
+        },
+        {
+            "file_id": "dbpedia_4414_42.txt"
+        },
+        {
+            "file_id": "dbpedia_4414_48.txt"
+        },
+        {
+            "file_id": "dbpedia_4414_50.txt"
+        },
+        {
+            "file_id": "dbpedia_4414_52.txt"
+        },
+        {
+            "file_id": "dbpedia_4414_66.txt"
+        },
+        {
+            "file_id": "dbpedia_4414_77.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the context information provided, here is the evaluation of the triple:\n\n{\n  \"output\": \"yes\"\n}\n\nThe documents mention that Amtrak plans to rehabilitate the Pelham Bay Bridge and that it accommodates 43 passenger trains and two freight trains each weekday. This suggests that the bridge was maintained by Amtrak."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\"output\": \"yes\"}\n```\n\nThe documents provide information that supports the statement \"The Pelham Bay Bridge was maintained by Amtrak.\" Specifically, document 10.txt mentions a project funded by ARRA to rehabilitate the Pelham Bay Bridge and states it is located along the Northeast Corridor in the Bronx. This indicates that Amtrak has maintenance responsibilities for this bridge."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The Pelham Bay Bridge is maintained by Amtrak, but the text does not specify that. Instead, it mentions that Amtrak plans to rehabilitate the bridge, which implies that maintenance of the bridge will continue after the rehab work. However, there's no indication in the text that Amtrak has exclusive responsibility for maintaining the bridge at all times.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Multiple texts state Amtrak is rehabilitating the Pelham Bay Bridge, not that they maintain it.  Additionally, the text says Amtrak is undertaking other projects to maintain and improve its infrastructure in the New York area.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because Amtrak only undertakes painting and maintenance work on the Bronx Kill Bridge along the Northeast Corridor, while the Pelham Bay Bridge rehab project is funded by the American Recovery and Reinvestment Act (ARRA) and managed by a different entity.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information indicates that Amtrak plans to rehabilitate the Pelham Bay Bridge, funded by the American Recovery and Reinvestment Act (ARRA). This implies that while maintenance was likely handled by Amtrak on an ongoing basis, rehabilitation of this scale is a specific project they are undertaking. Therefore, it cannot be stated that Amtrak always maintained the bridge; rather, they are responsible for its rehabilitation during this particular period.",
+            "category": 2
+        }
+    }
+}

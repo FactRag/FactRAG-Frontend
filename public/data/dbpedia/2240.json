@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Jerry_Roberts",
+    "predicate": "property/deathDate",
+    "object": "2014-03-25",
+    "human_readable": "Jerry Roberts died on March 25, 2014.",
+    "questions": [
+        {
+            "score": 0.8008301854133606,
+            "question": "When did Jerry Roberts die?"
+        },
+        {
+            "score": 0.7301564812660217,
+            "question": "Was March 25th a significant day for Jerry Roberts?"
+        },
+        {
+            "score": 0.6344018578529358,
+            "question": "What year was March 25, 2014?"
+        },
+        {
+            "score": 0.5648245811462402,
+            "question": "What might have been the cause of Jerry Roberts' death?"
+        },
+        {
+            "score": 0.48387911915779114,
+            "question": "Is there any information about Jerry Roberts' life besides his death date?"
+        },
+        {
+            "score": 0.35162153840065,
+            "question": "Are there any known individuals who were close to Jerry Roberts?"
+        },
+        {
+            "score": 0.3299049139022827,
+            "question": "Where do you think Jerry Roberts lived?"
+        },
+        {
+            "score": 0.30063173174858093,
+            "question": "What was Jerry Roberts' profession?"
+        },
+        {
+            "score": 0.2895263135433197,
+            "question": "Can you tell me more about Jerry Roberts?"
+        },
+        {
+            "score": 0.28397881984710693,
+            "question": "Can you find any records or articles about Jerry Roberts?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Jerry Roberts died on March 25, 2014.",
+            "html": "dbpedia_2240_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about Jerry Roberts?",
+            "html": "dbpedia_2240_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What was Jerry Roberts' profession?",
+            "html": "dbpedia_2240_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where do you think Jerry Roberts lived?",
+            "html": "dbpedia_2240_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2240_100.txt"
+        },
+        {
+            "file_id": "dbpedia_2240_21.txt"
+        },
+        {
+            "file_id": "dbpedia_2240_23.txt"
+        },
+        {
+            "file_id": "dbpedia_2240_25.txt"
+        },
+        {
+            "file_id": "dbpedia_2240_27.txt"
+        },
+        {
+            "file_id": "dbpedia_2240_39.txt"
+        },
+        {
+            "file_id": "dbpedia_2240_48.txt"
+        },
+        {
+            "file_id": "dbpedia_2240_72.txt"
+        },
+        {
+            "file_id": "dbpedia_2240_88.txt"
+        },
+        {
+            "file_id": "dbpedia_2240_90.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the answer to your question:\n\n{\n  \"output\": \"no\"\n}\n\nExplanation:\nThe documents provide information about several individuals named Jerry Roberts, but none of them mention a death date or year that matches March 25, 2014. The most relevant document (path 25.txt) mentions a Jerry Lee Roberts who passed away on March 25, 2024, which is close to the given date, but not exactly the same."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The information provided does not support the statement that \"Jerry Roberts died on March 25, 2014.\" According to the documents, there are multiple entries about individuals named Jerry Roberts, but none of them indicate a death date of March 25, 2014. For example, one entry states that Jerry Wayne Roberts passed away on Saturday, March 9, 2019, at Cleveland Area Hospital in Cleveland."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {'output': 'no'}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The claim is wrong because there is no information among the provided context indicating that Jerry Roberts died on March 25, 2014. The dates of death for the individuals mentioned in the text are either 1962, 1949, 1943, December 18, 2020, June 13, 2022, or March 9, 2019.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "There are multiple obituaries for individuals named Jerry Roberts, each with different dates of death.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "It directly contradicts the information provided in option 2 where Jerry Lee Roberts, age 74, of Ontario, passed away early Monday morning, March 25, 2024.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "There is no Jerry Roberts listed who died on March 25, 2014. The closest date mentioned for a Jerry Roberts is March 9, 2019, and another individual named Jerry Lee Roberts passed away on March 25, 2024, which contradicts the given date in the claim.",
+            "category": 2
+        }
+    }
+}

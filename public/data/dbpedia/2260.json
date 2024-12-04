@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Charles_Grene_Ellicombe",
+    "predicate": "property/name",
+    "object": "Ellicombe, Charles Grene",
+    "human_readable": "The name of Charles Grene Ellicombe is Ellicombe, Charles Grene.",
+    "questions": [
+        {
+            "score": 0.9753661155700684,
+            "question": "What is the full name of Charles Grene Ellicombe?"
+        },
+        {
+            "score": 0.9649919867515564,
+            "question": "Could someone be named 'Ellicombe, Charles Grene'?"
+        },
+        {
+            "score": 0.944242537021637,
+            "question": "Is 'Ellicombe' part of Charles Grene Ellicombe's first or last name?"
+        },
+        {
+            "score": 0.9278246164321899,
+            "question": "What order are the names in Charles Grene Ellicombe's full name?"
+        },
+        {
+            "score": 0.9259635806083679,
+            "question": "What are the two parts of Charles Grene Ellicombe's name?"
+        },
+        {
+            "score": 0.8309112191200256,
+            "question": "If you met Charles Grene Ellicombe, what name would you use to greet him?"
+        },
+        {
+            "score": 0.8308593034744263,
+            "question": "If you saw Charles Grene Ellicombe on a document, how would you know his full name?"
+        },
+        {
+            "score": 0.8178558349609375,
+            "question": "What information does the provided statement tell us about Charles Grene Ellicombe?"
+        },
+        {
+            "score": 0.7883614897727966,
+            "question": "Which part of his name is 'Grene'?"
+        },
+        {
+            "score": 0.6695778369903564,
+            "question": "How should Charles Grene Ellicombe be addressed?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of Charles Grene Ellicombe is Ellicombe, Charles Grene.",
+            "html": "dbpedia_2260_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Which part of his name is 'Grene'?",
+            "html": "dbpedia_2260_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What information does the provided statement tell us about Charles Grene Ellicombe?",
+            "html": "dbpedia_2260_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If you saw Charles Grene Ellicombe on a document, how would you know his full name?",
+            "html": "dbpedia_2260_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2260_1.txt"
+        },
+        {
+            "file_id": "dbpedia_2260_11.txt"
+        },
+        {
+            "file_id": "dbpedia_2260_12.txt"
+        },
+        {
+            "file_id": "dbpedia_2260_17.txt"
+        },
+        {
+            "file_id": "dbpedia_2260_24.txt"
+        },
+        {
+            "file_id": "dbpedia_2260_28.txt"
+        },
+        {
+            "file_id": "dbpedia_2260_32.txt"
+        },
+        {
+            "file_id": "dbpedia_2260_35.txt"
+        },
+        {
+            "file_id": "dbpedia_2260_4.txt"
+        },
+        {
+            "file_id": "dbpedia_2260_7.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe text refers to him as \"Sir Charles Grene Ellicombe\", not \"Ellicombe, Charles Grene\".  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation of the triple:\n\n`{'output': 'yes'}`\n\nThe documents mention \"Charles Grene Ellicombe\" as a British general and a Royal Engineer, which confirms that his full name includes \"Ellicombe, Charles Grene\"."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe provided documents contain information about Sir Charles Grene Ellicombe, confirming that his full name includes \"Ellicombe\" and \"Grene\"."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "It appears to be attempting to re-arrange the name, implying that there are multiple independent parts of a name when a person's full name is generally structured as First Name Last Name.",
+            "category": 2
+        }
+    }
+}

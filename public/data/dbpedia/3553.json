@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Battle_of_Quingua",
+    "predicate": "property/wordnet_type",
+    "object": "http://www.w3.org/2006/03/wn/wn20/instances/synset-war-noun-1",
+    "human_readable": "The type of the Battle of Quingua is war.",
+    "questions": [
+        {
+            "score": 0.9265397191047668,
+            "question": "What type of event was the Battle of Quingua?"
+        },
+        {
+            "score": 0.8291403651237488,
+            "question": "Was the Battle of Quingua a peaceful conflict?"
+        },
+        {
+            "score": 0.16950154304504395,
+            "question": "Why do wars happen?"
+        },
+        {
+            "score": 0.1562751680612564,
+            "question": "What are some common characteristics of wars?"
+        },
+        {
+            "score": 0.14577259123325348,
+            "question": "What are the different types of warfare?"
+        },
+        {
+            "score": 0.14402106404304504,
+            "question": "What are the consequences of war?"
+        },
+        {
+            "score": 0.12609133124351501,
+            "question": "Can you give an example of another war?"
+        },
+        {
+            "score": 0.08117111772298813,
+            "question": "Are there any historical examples of wars that ended peacefully?"
+        },
+        {
+            "score": 0.04423173516988754,
+            "question": "How do wars impact societies?"
+        },
+        {
+            "score": 0.02669939212501049,
+            "question": "What role does diplomacy play in preventing wars?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The type of the Battle of Quingua is war.",
+            "html": "dbpedia_3553_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How do wars impact societies?",
+            "html": "dbpedia_3553_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any historical examples of wars that ended peacefully?",
+            "html": "dbpedia_3553_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you give an example of another war?",
+            "html": "dbpedia_3553_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3553_102.txt"
+        },
+        {
+            "file_id": "dbpedia_3553_109.txt"
+        },
+        {
+            "file_id": "dbpedia_3553_113.txt"
+        },
+        {
+            "file_id": "dbpedia_3553_15.txt"
+        },
+        {
+            "file_id": "dbpedia_3553_55.txt"
+        },
+        {
+            "file_id": "dbpedia_3553_56.txt"
+        },
+        {
+            "file_id": "dbpedia_3553_65.txt"
+        },
+        {
+            "file_id": "dbpedia_3553_75.txt"
+        },
+        {
+            "file_id": "dbpedia_3553_88.txt"
+        },
+        {
+            "file_id": "dbpedia_3553_91.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the structured JSON format for the query \"The type of the Battle of Quingua is war\":\n\n{\n  \"output\": \"no\"\n}\n\nExplanation:\n\nAlthough the context documents mention the Battle of Quingua as a battle fought during the Philippine-American war (1899-1902), they do not explicitly state that it was a war. The correct category for the Battle of Quingua would be more specific, such as \"battle\" or \"skirmish\", rather than a broad category like \"war\". Therefore, the answer is \"no\", indicating that the provided triple does not accurately represent the information in the context documents."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents describe the Battle of Quingua as part of the Philippine-American War, which confirms that the battle falls under the category of a war. Therefore, the statement \"The type of the Battle of Quingua is war\" is supported by the provided context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "A battle is a part of a war, not the type itself. The Battle of Quingua was fought during the Philippine-American War, hence it is correctly categorized as a 'battle' within that larger conflict.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "The provided context consistently describes the Battle of Quingua as a specific event within the Philippine-American War, not just a generic war.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The Battle of Quingua was a part of the Philippine-American War, which itself is considered a war. However, calling it simply \"war\" without specifying its context within the larger conflict is inaccurate. It was specifically a battle during the Philippine-American War, aimed at defending the first Philippine Republic against the Northern Campaign of the American Army.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Sergey_Vasilyevich_Gerasimov",
+    "predicate": "property/name",
+    "object": "Gerasimov, Sergey Vasilyevich",
+    "human_readable": "Sergey Vasilyevich Gerasimov's name is Gerasimov, Sergey Vasilyevich.",
+    "questions": [
+        {
+            "score": 0.9860793948173523,
+            "question": "What is Sergey Vasilyevich Gerasimov's full name?"
+        },
+        {
+            "score": 0.9771450757980347,
+            "question": "What is the order of names in Sergey Vasilyevich Gerasimov's full name?"
+        },
+        {
+            "score": 0.9745071530342102,
+            "question": "Which name comes first in Sergey Vasilyevich Gerasimov's full name?"
+        },
+        {
+            "score": 0.9674596190452576,
+            "question": "How is Sergey Vasilyevich Gerasimov's first name spelled?"
+        },
+        {
+            "score": 0.9554294943809509,
+            "question": "What is Sergey Vasilyevich Gerasimov's patronymic?"
+        },
+        {
+            "score": 0.7866880893707275,
+            "question": "Are there any famous people with the last name 'Gerasimov'?"
+        },
+        {
+            "score": 0.5233091115951538,
+            "question": "What does the patronymic 'Vasilyevich' typically indicate about someone?"
+        },
+        {
+            "score": 0.4342685639858246,
+            "question": "Is 'Sergey' a common first name in Russia?"
+        },
+        {
+            "score": 0.2887899577617645,
+            "question": "Can you provide examples of other Russian names with a patronymic?"
+        },
+        {
+            "score": 0.06801897287368774,
+            "question": "How common is it for people to use their full name in everyday life?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Sergey Vasilyevich Gerasimov's name is Gerasimov, Sergey Vasilyevich.",
+            "html": "dbpedia_1376_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you provide examples of other Russian names with a patronymic?",
+            "html": "dbpedia_1376_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is 'Sergey' a common first name in Russia?",
+            "html": "dbpedia_1376_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What does the patronymic 'Vasilyevich' typically indicate about someone?",
+            "html": "dbpedia_1376_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1376_3.txt"
+        },
+        {
+            "file_id": "dbpedia_1376_30.txt"
+        },
+        {
+            "file_id": "dbpedia_1376_33.txt"
+        },
+        {
+            "file_id": "dbpedia_1376_35.txt"
+        },
+        {
+            "file_id": "dbpedia_1376_4.txt"
+        },
+        {
+            "file_id": "dbpedia_1376_49.txt"
+        },
+        {
+            "file_id": "dbpedia_1376_58.txt"
+        },
+        {
+            "file_id": "dbpedia_1376_63.txt"
+        },
+        {
+            "file_id": "dbpedia_1376_92.txt"
+        },
+        {
+            "file_id": "dbpedia_1376_93.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have other queries! \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of whether the information in the documents supports the triple:\n\n{\n  \"output\": \"no\"\n}\n\nThe reason for this answer is that the documents mention a person named \"Sergey Gerasimov\" (also referred to as \"Sergei Gerasimov\") with various attributes such as date of birth, address, phone number, and occupation as an artist. However, they do not support the claim that Sergey Vasilyevich Gerasimov's name is simply \"Gerasimov, Sergey Vasilyevich\", as this would imply a different person with the same name."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe provided context information includes details about Sergey Vasilievich Gerasimov, confirming his full name as stated in the query."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {'output': 'yes'}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "There are two individuals named Sergey Gerasimov mentioned in the context, one being a contemporary individual living in Brighton, MI and the other being an artist who lived and died in the early 20th century. The individual mentioned as having an email address and residing in Brighton, MI is not referred to as 'Sergey Vasilyevich' in the provided context.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Multiple entries refer to an individual named Sergey Gerasimov with various details like email addresses, birthdate, potential criminal records, and even a physical address. This suggests there are different individuals with the name \"Sergey Gerasimov,\" making it unlikely that \"Sergey Vasilyevich Gerasimov\" is a unique identifier for a single person.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information provides multiple references to Sergey Gerasimov without the middle name \"Vasilyevich,\" suggesting that \"Sergey Vasilyevich\" might be a specific individual or an additional person, not necessarily the same as the one discussed in other contexts.",
+            "category": 2
+        }
+    }
+}

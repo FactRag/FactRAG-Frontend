@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Adam_Soilleux",
+    "predicate": "property/column",
+    "object": "resource/First-class_cricket",
+    "human_readable": "Adam Soilleux plays First-class cricket.",
+    "questions": [
+        {
+            "score": 0.9795457124710083,
+            "question": "Where might Adam Soilleux play first-class cricket?"
+        },
+        {
+            "score": 0.8376408815383911,
+            "question": "At what level does Adam Soilleux play cricket?"
+        },
+        {
+            "score": 0.813036322593689,
+            "question": "Is Adam Soilleux involved in professional cricket?"
+        },
+        {
+            "score": 0.7560206055641174,
+            "question": "What type of cricket matches does Adam Soilleux participate in?"
+        },
+        {
+            "score": 0.7127155065536499,
+            "question": "What sport does Adam Soilleux play?"
+        },
+        {
+            "score": 0.6147415041923523,
+            "question": "Does Adam Soilleux play any other sports besides cricket?"
+        },
+        {
+            "score": 0.5277103185653687,
+            "question": "What are some skills required to play first-class cricket?"
+        },
+        {
+            "score": 0.442051500082016,
+            "question": "Are there any famous players in the history of first-class cricket?"
+        },
+        {
+            "score": 0.4139089286327362,
+            "question": "What are some challenges faced by first-class cricket players?"
+        },
+        {
+            "score": 0.33443790674209595,
+            "question": "How popular is first-class cricket compared to other forms of cricket?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Adam Soilleux plays First-class cricket.",
+            "html": "dbpedia_3374_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some challenges faced by first-class cricket players?",
+            "html": "dbpedia_3374_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any famous players in the history of first-class cricket?",
+            "html": "dbpedia_3374_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some skills required to play first-class cricket?",
+            "html": "dbpedia_3374_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3374_1.txt"
+        },
+        {
+            "file_id": "dbpedia_3374_22.txt"
+        },
+        {
+            "file_id": "dbpedia_3374_29.txt"
+        },
+        {
+            "file_id": "dbpedia_3374_3.txt"
+        },
+        {
+            "file_id": "dbpedia_3374_33.txt"
+        },
+        {
+            "file_id": "dbpedia_3374_35.txt"
+        },
+        {
+            "file_id": "dbpedia_3374_42.txt"
+        },
+        {
+            "file_id": "dbpedia_3374_45.txt"
+        },
+        {
+            "file_id": "dbpedia_3374_56.txt"
+        },
+        {
+            "file_id": "dbpedia_3374_74.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the response:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents mention Adam Soilleux playing cricket at various levels, including first-class matches (e.g., in file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3374/re-ranker-msmarco/3.txt), and refer to his batting career statistics (e.g., in file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3374/re-ranker-msmarco/35.txt). This information supports the triple that Adam Soilleux plays first-class cricket."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information about Adam Soilleux's batting career, including his performances in first-class matches. This supports the statement that Adam Soilleux plays first-class cricket."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Adam Soilleux's First-class career statistics provided in the context show that he has played only 6 matches, which does not meet the threshold of 10 matches required for a cricketer to be considered as having played First-class cricket according to most cricket authorities.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "The provided text focuses on Soilleux's participation in T10,  Sunday League, and Essex County League matches, suggesting a focus on less formal cricket formats rather than First-class.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The text describes Adam Soilleux playing T20 and 50 over games against the Sierra Leonean under-19 side and the full national side, as well as 10 over games, but does not mention him participating in a First-class match.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Adam Soilleux's career statistics provided only include T10 matches and not First-class cricket matches.",
+            "category": 2
+        }
+    }
+}

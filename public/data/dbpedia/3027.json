@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Casema",
+    "predicate": "property/location",
+    "object": "resource/The_Hague",
+    "human_readable": "Casema is located in The Hague.",
+    "questions": [
+        {
+            "score": 0.842951238155365,
+            "question": "Where is Casema located?"
+        },
+        {
+            "score": 0.7610490322113037,
+            "question": "What is the location of Casema?"
+        },
+        {
+            "score": 0.7065618634223938,
+            "question": "Is Casema situated in a country?"
+        },
+        {
+            "score": 0.6140117049217224,
+            "question": "What city is Casema in?"
+        },
+        {
+            "score": 0.5083417892456055,
+            "question": "Where would you go to find Casema?"
+        },
+        {
+            "score": 0.4479166567325592,
+            "question": "Casema's address is in what city?"
+        },
+        {
+            "score": 0.42753443121910095,
+            "question": "In which Dutch city can you find Casema?"
+        },
+        {
+            "score": 0.42556288838386536,
+            "question": "Can you tell me the name of the city where Casema resides?"
+        },
+        {
+            "score": 0.37148675322532654,
+            "question": "What is the city that houses Casema?"
+        },
+        {
+            "score": 0.3230021893978119,
+            "question": "Casema's headquarters are in what European city?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Casema is located in The Hague.",
+            "html": "dbpedia_3027_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the city that houses Casema?",
+            "html": "dbpedia_3027_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me the name of the city where Casema resides?",
+            "html": "dbpedia_3027_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In which Dutch city can you find Casema?",
+            "html": "dbpedia_3027_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3027_12.txt"
+        },
+        {
+            "file_id": "dbpedia_3027_22.txt"
+        },
+        {
+            "file_id": "dbpedia_3027_37.txt"
+        },
+        {
+            "file_id": "dbpedia_3027_48.txt"
+        },
+        {
+            "file_id": "dbpedia_3027_63.txt"
+        },
+        {
+            "file_id": "dbpedia_3027_66.txt"
+        },
+        {
+            "file_id": "dbpedia_3027_69.txt"
+        },
+        {
+            "file_id": "dbpedia_3027_76.txt"
+        },
+        {
+            "file_id": "dbpedia_3027_89.txt"
+        },
+        {
+            "file_id": "dbpedia_3027_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the context information provided, here's my evaluation of the triple:\n\n{ \"output\": \"no\" }\n\nThe reason for this answer is that while Casema is indeed a Dutch cable operator and has a presence in cities such as The Hague (according to document 48), it is also stated that Multikabel is based in Alkmaar, near The Hague, but not that Casema itself is located in The Hague."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\n**Explanation:** According to the context provided, there are references to Casema being based in The Hague. Specifically, file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3027/re-ranker-msmarco/12.txt states that \"Casema is active in such cities as The Hague, Utrecht, Amersfoort, Leiden and Breda.\" This supports the statement that Casema is located in The Hague."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "It contradicts the information provided about Casema's location, which states that its network is located mainly in the central and southwestern parts of the Netherlands, but not specifically mentioning The Hague.",
+            "category": 2
+        }
+    }
+}

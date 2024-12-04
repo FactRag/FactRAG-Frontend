@@ -1,0 +1,146 @@
+{
+    "subject": "resource/K1_Speed",
+    "predicate": "ontology/regionServed",
+    "object": "resource/Southern_California",
+    "human_readable": "K1 Speed serves the region of Southern California.",
+    "questions": [
+        {
+            "score": 0.9813189506530762,
+            "question": "Is K1 Speed located in Southern California?"
+        },
+        {
+            "score": 0.9238802194595337,
+            "question": "Are there any other regions where K1 Speed has locations besides Southern California?"
+        },
+        {
+            "score": 0.915970504283905,
+            "question": "If you lived in Southern California, could you potentially visit a K1 Speed location?"
+        },
+        {
+            "score": 0.8648548126220703,
+            "question": "Which areas of California does K1 Speed cater to?"
+        },
+        {
+            "score": 0.8051726222038269,
+            "question": "What region does K1 Speed serve?"
+        },
+        {
+            "score": 0.7244705557823181,
+            "question": "Can you find a K1 Speed location in Northern California?"
+        },
+        {
+            "score": 0.7047893404960632,
+            "question": "Where does K1 Speed operate?"
+        },
+        {
+            "score": 0.4047725200653076,
+            "question": "What services might K1 Speed offer?"
+        },
+        {
+            "score": 0.34629905223846436,
+            "question": "Would you expect to find a K1 Speed in a metropolitan area?"
+        },
+        {
+            "score": 0.2025017887353897,
+            "question": "What type of business is K1 Speed?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=K1 Speed serves the region of Southern California.",
+            "html": "dbpedia_4703_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Would you expect to find a K1 Speed in a metropolitan area?",
+            "html": "dbpedia_4703_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What services might K1 Speed offer?",
+            "html": "dbpedia_4703_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where does K1 Speed operate?",
+            "html": "dbpedia_4703_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4703_10.txt"
+        },
+        {
+            "file_id": "dbpedia_4703_126.txt"
+        },
+        {
+            "file_id": "dbpedia_4703_132.txt"
+        },
+        {
+            "file_id": "dbpedia_4703_14.txt"
+        },
+        {
+            "file_id": "dbpedia_4703_18.txt"
+        },
+        {
+            "file_id": "dbpedia_4703_24.txt"
+        },
+        {
+            "file_id": "dbpedia_4703_28.txt"
+        },
+        {
+            "file_id": "dbpedia_4703_5.txt"
+        },
+        {
+            "file_id": "dbpedia_4703_54.txt"
+        },
+        {
+            "file_id": "dbpedia_4703_69.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the answer in JSON format:\n\n```\n{\n  \"output\": \"yes\"\n}\n```\n\nThis is because the documents provided mention K1 Speed's multiple locations throughout Southern California, with specific mentions of locations such as Anaheim and Irvine. The information supports the statement that K1 Speed serves the region of Southern California."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents mention multiple locations of K1 Speed in Southern California, such as Los Angeles, San Diego, the Inland Empire, and plans for expansion to areas like South San Francisco. This supports the statement that K1 Speed serves the region of Southern California."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "K1 Speed has multiple locations throughout Southern California, Pacific Northwest, South Florida, and plans for expansion nationally. This indicates that K1 Speed serves not only the region of Southern California but also other regions as well.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Multiple pieces of text explicitly state K1 Speed has locations throughout Southern California and specifically lists several cities within Southern California as having K1 Speed centers.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The context information states that K1 Speed has locations throughout Southern California and the Pacific Northwest, as well as in Seattle, San Antonio, TX, Sacramento, CA, Union City, CA, and South San Francisco. This indicates that the company serves multiple regions beyond just Southern California.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "K1 Speed operates in multiple regions including Southern California, the Pacific Northwest, and now Northern California with locations in Santa Clara.",
+            "category": 2
+        }
+    }
+}

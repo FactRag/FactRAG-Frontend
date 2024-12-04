@@ -1,0 +1,114 @@
+{
+    "subject": "resource/David_Grose",
+    "predicate": "http://xmlns.com/foaf/0.1/surname",
+    "object": "Grose",
+    "human_readable": "The surname of David Grose is Grose.",
+    "questions": [
+        {
+            "score": 0.98415207862854,
+            "question": "What is the surname of David Grose?"
+        },
+        {
+            "score": 0.9410910606384277,
+            "question": "Is David Grose's last name Grose?"
+        },
+        {
+            "score": 0.9349796772003174,
+            "question": "Who has the surname Grose?"
+        },
+        {
+            "score": 0.8752409815788269,
+            "question": "What is the family name of David Grose?"
+        },
+        {
+            "score": 0.8597054481506348,
+            "question": "How would you refer to David Grose's last name?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The surname of David Grose is Grose.",
+            "html": "dbpedia_1783_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the family name of David Grose?",
+            "html": "dbpedia_1783_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who has the surname Grose?",
+            "html": "dbpedia_1783_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is David Grose's last name Grose?",
+            "html": "dbpedia_1783_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1783_110.txt"
+        },
+        {
+            "file_id": "dbpedia_1783_16.txt"
+        },
+        {
+            "file_id": "dbpedia_1783_24.txt"
+        },
+        {
+            "file_id": "dbpedia_1783_25.txt"
+        },
+        {
+            "file_id": "dbpedia_1783_32.txt"
+        },
+        {
+            "file_id": "dbpedia_1783_42.txt"
+        },
+        {
+            "file_id": "dbpedia_1783_44.txt"
+        },
+        {
+            "file_id": "dbpedia_1783_84.txt"
+        },
+        {
+            "file_id": "dbpedia_1783_86.txt"
+        },
+        {
+            "file_id": "dbpedia_1783_87.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe reason for this answer is that, according to the documents, one possible origin of the surname \"Grose\" is from Old French \"gros\", meaning \"big\" or \"fat\". Therefore, it is not necessarily true that someone with the surname \"Grose\" would have a first name like \"David Grose\" and still be referred to as having the same surname. The documents mention Benjamin Grose and William Grose among others, but there's no specific information about David Grose."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\n**Explanation:** The documents provide information about the surname Grose, its origins, notable people with the name, and its distribution across various countries. Since the query asks if the surname of David Grose is Grose, which is directly supported by the provided context, the answer is \"yes.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "There are two possible origins of the surname Grose (Cornish origin from \"cross\" and French origin from Old French \"gros\"), so the surname of David Grose being specifically \"Grose\" doesn't necessarily establish its origin.",
+            "category": 2
+        }
+    }
+}

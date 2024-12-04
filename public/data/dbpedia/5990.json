@@ -1,0 +1,144 @@
+{
+    "subject": "resource/First_Love_(2010_Thai_film)",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "First Love (2010 Thai film)",
+    "human_readable": "The label of the film 'First Love' is 'First Love 2010 Thai film'.",
+    "questions": [
+        {
+            "score": 0.6717215776443481,
+            "question": "What is the plot of the film 'First Love'?"
+        },
+        {
+            "score": 0.64527428150177,
+            "question": "What genre is the film 'First Love'?"
+        },
+        {
+            "score": 0.6388806104660034,
+            "question": "Who directed the film 'First Love'?"
+        },
+        {
+            "score": 0.6194005608558655,
+            "question": "What is the full title of the film 'First Love'?"
+        },
+        {
+            "score": 0.6158846616744995,
+            "question": "Is the film 'First Love' a remake?"
+        },
+        {
+            "score": 0.5854822993278503,
+            "question": "What year was the film 'First Love' released?"
+        },
+        {
+            "score": 0.5444415211677551,
+            "question": "Are there any sequels to the film 'First Love'?"
+        },
+        {
+            "score": 0.5101893544197083,
+            "question": "What country is the film 'First Love' from?"
+        },
+        {
+            "score": 0.4599018096923828,
+            "question": "Who are the main actors in the film 'First Love'?"
+        },
+        {
+            "score": 0.41696205735206604,
+            "question": "Where can I watch the film 'First Love'?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The label of the film 'First Love' is 'First Love 2010 Thai film'.",
+            "html": "dbpedia_5990_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who are the main actors in the film 'First Love'?",
+            "html": "dbpedia_5990_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What country is the film 'First Love' from?",
+            "html": "dbpedia_5990_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any sequels to the film 'First Love'?",
+            "html": "dbpedia_5990_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5990_10.txt"
+        },
+        {
+            "file_id": "dbpedia_5990_15.txt"
+        },
+        {
+            "file_id": "dbpedia_5990_16.txt"
+        },
+        {
+            "file_id": "dbpedia_5990_19.txt"
+        },
+        {
+            "file_id": "dbpedia_5990_31.txt"
+        },
+        {
+            "file_id": "dbpedia_5990_35.txt"
+        },
+        {
+            "file_id": "dbpedia_5990_52.txt"
+        },
+        {
+            "file_id": "dbpedia_5990_53.txt"
+        },
+        {
+            "file_id": "dbpedia_5990_71.txt"
+        },
+        {
+            "file_id": "dbpedia_5990_72.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe reason for this answer is that, based on the context information provided, there are multiple films with the title \"First Love\", including a Japanese film directed by Takashi Miike and a Thai film (also called \"A Little Thing Called Love\") directed by Sranya Noithai. Therefore, it cannot be definitively stated that the film 'First Love' is labeled as '2010 Thai film', as this information only applies to one of the multiple films with the same title."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\n**Explanation:** The document provided mentions a film titled \"First Love\" which was released in 2010 and is a Thai film. This supports the triple stating that 'First Love' is labeled as a 2010 Thai film."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided documents, there is no information that confirms \"The label of the film 'First Love' is 'First Love 2010 Thai film'.\" In fact, the documents mention a movie titled \u201cA Little Thing Called Love\u201d (released in 2010) starring Mario Maurer and Baifern. There's also another movie mentioned called \"First Love,\" but it seems to be set in Tokyo involving a young boxer and a call girl, which is likely not the same as the Thai film referred to in the query.\n\nThus, the answer is:\n\n{\"output\": \"no\"}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "The provided context discusses a film \"First Love\" directed by Takashi Miike, which premiered at Cannes and screened at various international film festivals. This strongly suggests it's a recent Japanese film, not a 2010 Thai production.",
+            "category": 3
+        },
+        "llama3.1": {
+            "reason": "The film \"First Love\" mentioned in the context information (point 6) is actually a Japanese film, not Thai, based on the description of being directed by Takashi Miike.",
+            "category": 3
+        }
+    }
+}

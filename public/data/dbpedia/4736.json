@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Blue_Ridge_Christian_Academy",
+    "predicate": "property/athletics",
+    "object": "Ladies' Volleyball, Cross Country, Boys' Fall Soccer, Boys' and Girls' Basketball, Boys' and Girls' Spring Soccer",
+    "human_readable": "The athletics at Blue Ridge Christian Academy include Ladies' Volleyball, Cross Country, Boys' Fall Soccer, Boys' and Girls' Basketball, and Boys' and Girls' Spring Soccer.",
+    "questions": [
+        {
+            "score": 0.961063802242279,
+            "question": "Are there any sports offered for both boys and girls at Blue Ridge Christian Academy?"
+        },
+        {
+            "score": 0.958783745765686,
+            "question": "What sports are offered for girls at Blue Ridge Christian Academy?"
+        },
+        {
+            "score": 0.9578981399536133,
+            "question": "Which sports are offered in the spring at Blue Ridge Christian Academy?"
+        },
+        {
+            "score": 0.956306517124176,
+            "question": "Which sports are played in the fall at Blue Ridge Christian Academy?"
+        },
+        {
+            "score": 0.9438531398773193,
+            "question": "Does Blue Ridge Christian Academy have a Cross Country team?"
+        },
+        {
+            "score": 0.9342295527458191,
+            "question": "Does Blue Ridge Christian Academy have a Boys' Soccer team?"
+        },
+        {
+            "score": 0.9284698367118835,
+            "question": "What sport is unique to the boys at Blue Ridge Christian Academy?"
+        },
+        {
+            "score": 0.9221680760383606,
+            "question": "What types of athletics are available for students at Blue Ridge Christian Academy?"
+        },
+        {
+            "score": 0.8749111890792847,
+            "question": "Name all the sports offered by Blue Ridge Christian Academy."
+        },
+        {
+            "score": 0.87310391664505,
+            "question": "Are there any team sports offered at Blue Ridge Christian Academy?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The athletics at Blue Ridge Christian Academy include Ladies' Volleyball, Cross Country, Boys' Fall Soccer, Boys' and Girls' Basketball, and Boys' and Girls' Spring Soccer.",
+            "html": "dbpedia_4736_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Name all the sports offered by Blue Ridge Christian Academy.",
+            "html": "dbpedia_4736_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What types of athletics are available for students at Blue Ridge Christian Academy?",
+            "html": "dbpedia_4736_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What sport is unique to the boys at Blue Ridge Christian Academy?",
+            "html": "dbpedia_4736_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4736_13.txt"
+        },
+        {
+            "file_id": "dbpedia_4736_22.txt"
+        },
+        {
+            "file_id": "dbpedia_4736_30.txt"
+        },
+        {
+            "file_id": "dbpedia_4736_32.txt"
+        },
+        {
+            "file_id": "dbpedia_4736_33.txt"
+        },
+        {
+            "file_id": "dbpedia_4736_35.txt"
+        },
+        {
+            "file_id": "dbpedia_4736_36.txt"
+        },
+        {
+            "file_id": "dbpedia_4736_47.txt"
+        },
+        {
+            "file_id": "dbpedia_4736_51.txt"
+        },
+        {
+            "file_id": "dbpedia_4736_57.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe provided text mentions that Blue Ridge Christian School offers these sports:\n\n* Basketball\n* Cross Country\n* Intramural Sports Only \n* Riflery\n* Soccer\n* Track and Field\n* Volleyball\n\nIt does not mention Ladies' Volleyball, Boys' Fall Soccer, or Boys' and Girls' Spring Soccer.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "To evaluate the triple, I'll check if the documents support the claim that Blue Ridge Christian School is often compared to Heritage Christian School.\n\nBased on the provided context information:\n\n* The document at file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4736/re-ranker-msmarco/26.txt mentions that Blue Ridge Christian School is often viewed alongside Cornerstone Christian School.\n* There's no mention of Heritage Christian School in the documents provided.\n\nTherefore, the information in the documents does not support the claim that Blue Ridge Christian School is often compared to Heritage Christian School.\n\nThe response should be:\n```json\n{'output': 'no'}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The provided documents mention that Blue Ridge Christian School offers the following sports: Basketball, Cross Country, Soccer (not limited to Fall or Spring), Track and Field, and Volleyball. However, there is no specific mention of Ladies' Volleyball, Boys' Fall Soccer, or Girls' Spring Soccer. Therefore, the given query about the exact set of sports offered by Blue Ridge Christian Academy does not match the information provided in the documents."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "The provided text states Blue Ridge Christian School offers Basketball, Cross Country, Riflery, Soccer, Track and Field and Volleyball.  It does not mention Boys' Fall Soccer or Boys' and Girls' Spring Soccer.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "Blue Ridge Christian School offers 7 interscholastic sports as stated in the context information, but Ladies' Volleyball, Cross Country, Boys' Fall Soccer, Boys' and Girls' Basketball, and Boys' and Girls' Spring Soccer were actually listed for Heritage Christian School, not Blue Ridge Christian School.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context lists Blue Ridge Christian School's interscholastic sports as Basketball, Cross Country, Riflery, Soccer, Track and Field, and Volleyball. Ladies' Volleyball is not explicitly mentioned, and Riflery and the inclusion of specific seasons for soccer (Fall and Spring) are not aligned with the provided information.",
+            "category": 2
+        }
+    }
+}

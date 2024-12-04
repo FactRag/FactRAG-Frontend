@@ -1,0 +1,146 @@
+{
+    "subject": "resource/The_Independents_(band)",
+    "predicate": "ontology/hometown",
+    "object": "resource/United_States",
+    "human_readable": "The Independents (band) is from United States.",
+    "questions": [
+        {
+            "score": 0.9653481245040894,
+            "question": "Is The Independents band American?"
+        },
+        {
+            "score": 0.9632837176322937,
+            "question": "Is The Independents a US-based band?"
+        },
+        {
+            "score": 0.7879855632781982,
+            "question": "Where is The Independents band from?"
+        },
+        {
+            "score": 0.7142066359519958,
+            "question": "The Independents band hails from which nation?"
+        },
+        {
+            "score": 0.627284049987793,
+            "question": "What country is The Independents band associated with?"
+        },
+        {
+            "score": 0.6151040196418762,
+            "question": "Can you name a band from the United States?"
+        },
+        {
+            "score": 0.5745896100997925,
+            "question": "What is the origin of The Independents?"
+        },
+        {
+            "score": 0.5647030472755432,
+            "question": "Where are The Independents originally from?"
+        },
+        {
+            "score": 0.42933401465415955,
+            "question": "What is the nationality of The Independents?"
+        },
+        {
+            "score": 0.41280415654182434,
+            "question": "Which country do The Independents represent musically?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The Independents (band) is from United States.",
+            "html": "dbpedia_495_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the nationality of The Independents?",
+            "html": "dbpedia_495_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where are The Independents originally from?",
+            "html": "dbpedia_495_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the origin of The Independents?",
+            "html": "dbpedia_495_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_495_111.txt"
+        },
+        {
+            "file_id": "dbpedia_495_113.txt"
+        },
+        {
+            "file_id": "dbpedia_495_115.txt"
+        },
+        {
+            "file_id": "dbpedia_495_127.txt"
+        },
+        {
+            "file_id": "dbpedia_495_134.txt"
+        },
+        {
+            "file_id": "dbpedia_495_46.txt"
+        },
+        {
+            "file_id": "dbpedia_495_53.txt"
+        },
+        {
+            "file_id": "dbpedia_495_83.txt"
+        },
+        {
+            "file_id": "dbpedia_495_96.txt"
+        },
+        {
+            "file_id": "dbpedia_495_98.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you'd like to test more triples!  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation of the triple:\n\n```\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents contain information about The Independents, a band that was formed in South Carolina, which is part of the United States. This supports the claim that The Independents (band) is from the United States."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\n**Explanation:** The documents provide information that supports the statement \"The Independents (band) is from the United States.\" Specifically, it mentions that the band was formed in South Carolina, which is a state in the United States. Additionally, their touring history includes performances with bands such as the Ramones and others, suggesting an American context for the band's activities."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The context information provided does not specify the location where the band formed, but only mentions South Carolina, which is a part of the United States. Therefore, we cannot definitively say that the band is from outside the US without further information.",
+            "category": 4
+        },
+        "gemma2": {
+            "reason": "The provided text states the band was formed in South Carolina.",
+            "category": 4
+        },
+        "llama3.1": {
+            "reason": "The Independents were formed in South Carolina, United States.",
+            "category": 4
+        },
+        "qwen2.5": {
+            "reason": "The band was formed in South Carolina, which is a state in the United States, but there's no direct statement that they are from the United States. They have toured with U.S.-based bands and performed at conventions in the U.S., but this doesn't necessarily indicate their origin. Given the context provided, it would be more accurate to say they are an American band rather than explicitly stating they are from the United States without qualification.",
+            "category": 4
+        }
+    }
+}

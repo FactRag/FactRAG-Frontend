@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Enterprise,_Utah",
+    "predicate": "property/longew",
+    "object": "W",
+    "human_readable": "The longitude of Enterprise, Utah is W.",
+    "questions": [
+        {
+            "score": 0.9440653920173645,
+            "question": "What is the longitude of Enterprise, Utah?"
+        },
+        {
+            "score": 0.9178705215454102,
+            "question": "How is the longitude of Enterprise, Utah represented?"
+        },
+        {
+            "score": 0.8757824897766113,
+            "question": "What direction does the longitude of Enterprise, Utah face?"
+        },
+        {
+            "score": 0.7587646842002869,
+            "question": "Where is Enterprise, Utah located?"
+        },
+        {
+            "score": 0.6894316077232361,
+            "question": "Is Enterprise, Utah east or west of the prime meridian?"
+        },
+        {
+            "score": 0.23993586003780365,
+            "question": "What geographic coordinate system uses longitude?"
+        },
+        {
+            "score": 0.15377290546894073,
+            "question": "Can longitude be used to determine a location on Earth?"
+        },
+        {
+            "score": 0.14609527587890625,
+            "question": "What is the range of possible values for longitude?"
+        },
+        {
+            "score": 0.12852315604686737,
+            "question": "Are longitudes measured in degrees?"
+        },
+        {
+            "score": 0.10061544179916382,
+            "question": "What is the significance of the prime meridian in relation to longitude?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The longitude of Enterprise, Utah is W.",
+            "html": "dbpedia_3643_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are longitudes measured in degrees?",
+            "html": "dbpedia_3643_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the range of possible values for longitude?",
+            "html": "dbpedia_3643_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can longitude be used to determine a location on Earth?",
+            "html": "dbpedia_3643_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3643_10.txt"
+        },
+        {
+            "file_id": "dbpedia_3643_2.txt"
+        },
+        {
+            "file_id": "dbpedia_3643_27.txt"
+        },
+        {
+            "file_id": "dbpedia_3643_43.txt"
+        },
+        {
+            "file_id": "dbpedia_3643_47.txt"
+        },
+        {
+            "file_id": "dbpedia_3643_5.txt"
+        },
+        {
+            "file_id": "dbpedia_3643_56.txt"
+        },
+        {
+            "file_id": "dbpedia_3643_64.txt"
+        },
+        {
+            "file_id": "dbpedia_3643_66.txt"
+        },
+        {
+            "file_id": "dbpedia_3643_89.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nThe provided text mentions  \"longitude -113.7191300\" several times referring to the longitude of Enterprise, Utah.  Since a western longitude is represented by \"W\", this information supports the triple."
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the answer to your query:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation:\n\nThe context information provided includes various facts about Enterprise, Utah, such as its location (latitude and longitude), time zone, population, and geographic data. It also mentions that Enterprise might be an ideal location for individuals whose birth number or life path numbers align with the values shown above.\n\nOne of the documents specifically states: \"Enterprise, Utah, located at latitude 37.5735900 and longitude -113.7191300,\" which implies that the longitude of Enterprise, Utah is indeed \"-113.7191300\" or West, but more specifically, it's a negative value indicating a Western direction."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: According to the context information provided, the longitude for Enterprise, Utah, as given in multiple documents, is -113.7191300 or -113\u00b043'47.28\" West Longitude. Therefore, stating that the longitude of Enterprise, Utah is W (West) is correct."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n     \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The longitude of Enterprise, Utah is actually negative (West), not positive (East). A longitude value less than zero indicates a location West from the Prime Meridian (0\u00b0), while values greater than zero indicate locations East.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,134 @@
+{
+    "subject": "resource/University_of_the_East",
+    "predicate": "ontology/campus",
+    "object": "resource/University_of_the_East_Ramon_Magsaysay_Memorial_Medical_Center",
+    "human_readable": "The campus of University of the East is University of the East Ramon Magsaysay Memorial Medical Center.",
+    "questions": [
+        {
+            "score": 0.9887127876281738,
+            "question": "Is the University of the East Ramon Magsaysay Memorial Medical Center part of the University of the East?"
+        },
+        {
+            "score": 0.9880979657173157,
+            "question": "Where is the University of the East Ramon Magsaysay Memorial Medical Center located?"
+        },
+        {
+            "score": 0.9867061972618103,
+            "question": "What type of institution is the University of the East Ramon Magsaysay Memorial Medical Center?"
+        },
+        {
+            "score": 0.9723342061042786,
+            "question": "Can you describe the relationship between the University of the East and the Ramon Magsaysay Memorial Medical Center?"
+        },
+        {
+            "score": 0.9393114447593689,
+            "question": "Which institution operates the Ramon Magsaysay Memorial Medical Center?"
+        },
+        {
+            "score": 0.9235382676124573,
+            "question": "What is the full name of the medical center on the University of the East campus?"
+        },
+        {
+            "score": 0.9181187748908997,
+            "question": "What is the name of the medical center located on the University of the East campus?"
+        },
+        {
+            "score": 0.9019001126289368,
+            "question": "Name a medical facility associated with the University of the East."
+        },
+        {
+            "score": 0.7580795884132385,
+            "question": "Does the University of the East have a hospital on its campus?"
+        },
+        {
+            "score": 0.023084644228219986,
+            "question": "What does the abbreviation 'UE' stand for in this context?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The campus of University of the East is University of the East Ramon Magsaysay Memorial Medical Center.",
+            "html": "dbpedia_6996_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does the University of the East have a hospital on its campus?",
+            "html": "dbpedia_6996_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Name a medical facility associated with the University of the East.",
+            "html": "dbpedia_6996_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of the medical center located on the University of the East campus?",
+            "html": "dbpedia_6996_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6996_1.txt"
+        },
+        {
+            "file_id": "dbpedia_6996_26.txt"
+        },
+        {
+            "file_id": "dbpedia_6996_28.txt"
+        },
+        {
+            "file_id": "dbpedia_6996_40.txt"
+        },
+        {
+            "file_id": "dbpedia_6996_47.txt"
+        },
+        {
+            "file_id": "dbpedia_6996_5.txt"
+        },
+        {
+            "file_id": "dbpedia_6996_63.txt"
+        },
+        {
+            "file_id": "dbpedia_6996_70.txt"
+        },
+        {
+            "file_id": "dbpedia_6996_8.txt"
+        },
+        {
+            "file_id": "dbpedia_6996_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n**Explanation:**\n\nThe provided text states: \"UERMMMCI is one of the three campuses of the University of the East.\"  This directly supports the claim that the campus of University of the East *is* University of the East Ramon Magsaysay Memorial Medical Center. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the response in JSON format:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: None of the provided documents mention that the campus of University of the East is University of the East Ramon Magsaysay Memorial Medical Center. The documents mention UERMMMCI as a separate institution, possibly affiliated with University of the East, but do not confirm it as the main campus or sole location of University of the East."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents mention that the University of the East Ramon Magsaysay Memorial Medical Center (UERMMMCI or UERM) is a component of the larger University of the East, supporting the statement that the campus of University of the East includes University of the East Ramon Magsaysay Memorial Medical Center."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "It contradicts the information provided in context point 1 where it is stated that \"The University of the East/Ramon Magsaysay Memorial Medical Center College of Medicine\" is a separate educational institution from the main University of the East, implying that the medical center campus is not the same as the main university campus.",
+            "category": 2
+        }
+    }
+}

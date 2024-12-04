@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Auburn_Hills,_Michigan",
+    "predicate": "property/northeast",
+    "object": "resource/Oakland_Township,_Michigan",
+    "human_readable": "Auburn Hills, Michigan is located in the northeast part of Oakland Township, Michigan.",
+    "questions": [
+        {
+            "score": 0.9440556168556213,
+            "question": "What part of Oakland Township is Auburn Hills in?"
+        },
+        {
+            "score": 0.943399965763092,
+            "question": "Where is Auburn Hills, Michigan located?"
+        },
+        {
+            "score": 0.867123544216156,
+            "question": "Is Auburn Hills located within a township?"
+        },
+        {
+            "score": 0.7711628079414368,
+            "question": "What is the name of the township that Auburn Hills is part of?"
+        },
+        {
+            "score": 0.7542408108711243,
+            "question": "In which state is Auburn Hills situated?"
+        },
+        {
+            "score": 0.7343848943710327,
+            "question": "What is the relationship between Auburn Hills and Oakland Township?"
+        },
+        {
+            "score": 0.723436713218689,
+            "question": "What direction is Auburn Hills in relation to the rest of Oakland Township?"
+        },
+        {
+            "score": 0.679123044013977,
+            "question": "Can you describe the geographic location of Auburn Hills?"
+        },
+        {
+            "score": 0.6025785207748413,
+            "question": "Where would you find Auburn Hills geographically?"
+        },
+        {
+            "score": 0.25120627880096436,
+            "question": "Is Auburn Hills a city or part of a larger administrative division?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Auburn Hills, Michigan is located in the northeast part of Oakland Township, Michigan.",
+            "html": "dbpedia_3584_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where would you find Auburn Hills geographically?",
+            "html": "dbpedia_3584_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you describe the geographic location of Auburn Hills?",
+            "html": "dbpedia_3584_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What direction is Auburn Hills in relation to the rest of Oakland Township?",
+            "html": "dbpedia_3584_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3584_103.txt"
+        },
+        {
+            "file_id": "dbpedia_3584_27.txt"
+        },
+        {
+            "file_id": "dbpedia_3584_38.txt"
+        },
+        {
+            "file_id": "dbpedia_3584_39.txt"
+        },
+        {
+            "file_id": "dbpedia_3584_45.txt"
+        },
+        {
+            "file_id": "dbpedia_3584_52.txt"
+        },
+        {
+            "file_id": "dbpedia_3584_66.txt"
+        },
+        {
+            "file_id": "dbpedia_3584_8.txt"
+        },
+        {
+            "file_id": "dbpedia_3584_84.txt"
+        },
+        {
+            "file_id": "dbpedia_3584_97.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nLet me know if you have any other queries!"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents provided do not mention that Auburn Hills, Michigan is located in the northeast part of Oakland Township. They describe its location relative to other cities and counties but do not specify a particular quadrant or township within Oakland County."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Auburn Hills is not located in the northeast part of Oakland Township, Michigan. It is a city in Oakland County and was formed from Pontiac Township in 1983.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "It states Auburn Hills is located in Oakland Township, but  the provided text says Auburn Hills is a city in Oakland County and  became its own city from Pontiac Township in 1983.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "It contradicts the information provided in section 1 and 2, which states that Auburn Hills is located in southeast Michigan and 4 miles NE of Pontiac, Michigan. This suggests that it is actually in the northeast part of Oakland County, but not within a \"Township\", rather as a separate city entity formed from Pontiac Township.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Auburn Hills is located in Oakland County, not Oakland Township. Additionally, the context states that Auburn Hills is 4 miles northeast of Pontiac and 26 miles north of Detroit, indicating it is in southeast Michigan, not the northeast part.",
+            "category": 2
+        }
+    }
+}

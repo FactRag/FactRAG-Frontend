@@ -1,0 +1,144 @@
+{
+    "subject": "resource/The_Non-Stop_Kid",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "The Non-Stop Kid",
+    "human_readable": "The name of The Non-Stop Kid is The Non-Stop Kid.",
+    "questions": [
+        {
+            "score": 0.9763323068618774,
+            "question": "What is the name of The Non-Stop Kid?"
+        },
+        {
+            "score": 0.9510622620582581,
+            "question": "Is 'The Non-Stop Kid' a person?"
+        },
+        {
+            "score": 0.9290838837623596,
+            "question": "Why is The Non-Stop Kid called 'The Non-Stop Kid'?"
+        },
+        {
+            "score": 0.9232555031776428,
+            "question": "What kind of person is The Non-Stop Kid?"
+        },
+        {
+            "score": 0.9118503332138062,
+            "question": "Does The Non-Stop Kid have any other names?"
+        },
+        {
+            "score": 0.7808948159217834,
+            "question": "Is The Non-Stop Kid a real person or a fictional character?"
+        },
+        {
+            "score": 0.7641445994377136,
+            "question": "Is there a story or movie about The Non-Stop Kid?"
+        },
+        {
+            "score": 0.7534380555152893,
+            "question": "Where might we find information about The Non-Stop Kid?"
+        },
+        {
+            "score": 0.7372176647186279,
+            "question": "Could you tell me more about The Non-Stop Kid?"
+        },
+        {
+            "score": 0.7352278232574463,
+            "question": "Can you give me an example of something The Non-Stop Kid might do?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of The Non-Stop Kid is The Non-Stop Kid.",
+            "html": "dbpedia_5703_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Could you tell me more about The Non-Stop Kid?",
+            "html": "dbpedia_5703_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where might we find information about The Non-Stop Kid?",
+            "html": "dbpedia_5703_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there a story or movie about The Non-Stop Kid?",
+            "html": "dbpedia_5703_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5703_101.txt"
+        },
+        {
+            "file_id": "dbpedia_5703_102.txt"
+        },
+        {
+            "file_id": "dbpedia_5703_109.txt"
+        },
+        {
+            "file_id": "dbpedia_5703_19.txt"
+        },
+        {
+            "file_id": "dbpedia_5703_24.txt"
+        },
+        {
+            "file_id": "dbpedia_5703_36.txt"
+        },
+        {
+            "file_id": "dbpedia_5703_64.txt"
+        },
+        {
+            "file_id": "dbpedia_5703_72.txt"
+        },
+        {
+            "file_id": "dbpedia_5703_81.txt"
+        },
+        {
+            "file_id": "dbpedia_5703_84.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe text refers to the company as \"Non-Stop Kids Entertainment,\" not simply \"The Non-Stop Kid.\" \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the structured JSON format for your query:\n\n{\n  \"output\": \"no\"\n}\n\nExplanation:\nThe document provided contains information about a company called Non-Stop Kids Entertainment, which offers various services and activities for children's events. However, it does not mention the name of the company being \"The Non-Stop Kid\". In fact, the company is consistently referred to as \"Non-Stop Kids\" throughout the document. Therefore, the triple statement that the name of The Non-Stop Kid is The Non-Stop Kid is incorrect according to the provided information."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe query \"The name of The Non-Stop Kid is The Non-Stop Kid\" is supported by the context information, which consistently refers to the company as \"Non-Stop Kids Entertainment.\" Therefore, the answer aligns with the provided documents."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "It contradicts the provided text which states \"Non-Stop Kids Entertainment\" as the company name.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because the name of The Non-Stop Kid is not explicitly stated to be \"The Non-Stop Kid\" in any part of the provided context information. In fact, it's referred to as \"Non-Stop Kids Entertainment\", with no indication that \"Kid\" refers to a singular entity rather than plural children.",
+            "category": 3
+        }
+    }
+}

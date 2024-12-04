@@ -1,0 +1,126 @@
+{
+    "subject": "resource/\u00c9douard_Balladur",
+    "predicate": "property/president",
+    "object": "resource/Fran\u00e7ois_Mitterrand",
+    "human_readable": "\u00c9douard Balladur was a president of Fran\u00e7ois Mitterrand.",
+    "questions": [
+        {
+            "score": 0.917586624622345,
+            "question": "What political relationship existed between \u00c9douard Balladur and Fran\u00e7ois Mitterrand?"
+        },
+        {
+            "score": 0.9142987728118896,
+            "question": "Was \u00c9douard Balladur a president of France?"
+        },
+        {
+            "score": 0.8916333913803101,
+            "question": "What role did \u00c9douard Balladur hold in relation to Fran\u00e7ois Mitterrand?"
+        },
+        {
+            "score": 0.8627367615699768,
+            "question": "Who was Fran\u00e7ois Mitterrand?"
+        },
+        {
+            "score": 0.8428282737731934,
+            "question": "Who was \u00c9douard Balladur?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=\u00c9douard Balladur was a president of Fran\u00e7ois Mitterrand.",
+            "html": "dbpedia_3972_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who was Fran\u00e7ois Mitterrand?",
+            "html": "dbpedia_3972_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What role did \u00c9douard Balladur hold in relation to Fran\u00e7ois Mitterrand?",
+            "html": "dbpedia_3972_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Was \u00c9douard Balladur a president of France?",
+            "html": "dbpedia_3972_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3972_11.txt"
+        },
+        {
+            "file_id": "dbpedia_3972_127.txt"
+        },
+        {
+            "file_id": "dbpedia_3972_38.txt"
+        },
+        {
+            "file_id": "dbpedia_3972_40.txt"
+        },
+        {
+            "file_id": "dbpedia_3972_49.txt"
+        },
+        {
+            "file_id": "dbpedia_3972_54.txt"
+        },
+        {
+            "file_id": "dbpedia_3972_68.txt"
+        },
+        {
+            "file_id": "dbpedia_3972_72.txt"
+        },
+        {
+            "file_id": "dbpedia_3972_86.txt"
+        },
+        {
+            "file_id": "dbpedia_3972_92.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation:\nThe text provides information about \u00c9douard Balladur's career as a French politician and economist, but it does not mention him being a President of Fran\u00e7ois Mitterrand. In fact, it describes Balladur as Prime Minister under President Fran\u00e7ois Mitterrand's administration, indicating that he was in a subordinate position to Mitterrand."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe documents indicate that \u00c9douard Balladur served as Prime Minister of France from 1993 to 1995 under President Fran\u00e7ois Mitterrand. There is no information suggesting he was a president himself, let alone the president of Fran\u00e7ois Mitterrand."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n    \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "\u00c9douard Balladur was not a president of Fran\u00e7ois Mitterrand. He served as Prime Minister of France under President Mitterrand's administration from 1993 to 1995, but Mitterrand remained the President throughout that period.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "It states Balladur was a president under Mitterrand, but the provided text says Balladur served as Prime Minister *under* President Mitterrand.  A Prime Minister is not the same role as a president.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because \u00c9douard Balladur was not the president of France during Fran\u00e7ois Mitterrand's presidency, but rather the Prime Minister.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "\u00c9douard Balladur served as Prime Minister of France from 1993 to 1995 under President Fran\u00e7ois Mitterrand, not as a president himself. His presidency bid in 1995 was unsuccessful, and he lost in the runoff to Jacques Chirac.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,129 @@
+{
+    "subject": "resource/John_Marvin_(Connecticut_politician)",
+    "predicate": "ontology/residence",
+    "object": "resource/Sharon,_Connecticut",
+    "human_readable": "John Marvin resides in Sharon, Connecticut.",
+    "questions": [
+        {
+            "score": 0.8996490836143494,
+            "question": "Is John Marvin from Connecticut?"
+        },
+        {
+            "score": 0.8597991466522217,
+            "question": "Where does John Marvin reside?"
+        },
+        {
+            "score": 0.5713279247283936,
+            "question": "What are some things to do in Sharon, Connecticut?"
+        },
+        {
+            "score": 0.5285857319831848,
+            "question": "Does John Marvin live in a house or apartment?"
+        },
+        {
+            "score": 0.4674118757247925,
+            "question": "What state is Sharon in?"
+        },
+        {
+            "score": 0.4636930525302887,
+            "question": "Are there any famous people from Sharon, Connecticut?"
+        },
+        {
+            "score": 0.4135337471961975,
+            "question": "What is the weather like in Sharon, Connecticut?"
+        },
+        {
+            "score": 0.3928355574607849,
+            "question": "Can you tell me more about Sharon, Connecticut?"
+        },
+        {
+            "score": 0.38422155380249023,
+            "question": "What is the population of Sharon, Connecticut?"
+        },
+        {
+            "score": 0.27139556407928467,
+            "question": "Is John Marvin married?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=John Marvin resides in Sharon, Connecticut.",
+            "html": "dbpedia_5151_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the population of Sharon, Connecticut?",
+            "html": "dbpedia_5151_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about Sharon, Connecticut?",
+            "html": "dbpedia_5151_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the weather like in Sharon, Connecticut?",
+            "html": "dbpedia_5151_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5151_18.txt"
+        },
+        {
+            "file_id": "dbpedia_5151_26.txt"
+        },
+        {
+            "file_id": "dbpedia_5151_29.txt"
+        },
+        {
+            "file_id": "dbpedia_5151_3.txt"
+        },
+        {
+            "file_id": "dbpedia_5151_4.txt"
+        },
+        {
+            "file_id": "dbpedia_5151_59.txt"
+        },
+        {
+            "file_id": "dbpedia_5151_64.txt"
+        },
+        {
+            "file_id": "dbpedia_5151_69.txt"
+        },
+        {
+            "file_id": "dbpedia_5151_73.txt"
+        },
+        {
+            "file_id": "dbpedia_5151_88.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the answer in JSON format:\n\n```\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation:\n\nThe documents provide information about a person named David Marvin, who is a son of John Marvin. The documents mention that David Marvin was born in 1764 and died in 1841, but they also mention that another David Marvin (Capt. David Marvin) was born in 1711 and died in 1779. However, the document with file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5151/re-ranker-msmarco/18.txt mentions \"David Marvin\" without specifying which one, but it does mention that he was born in Sharon, Connecticut, and died in Northampton, New York. Since the document does not specify whether this is the David Marvin born in 1711 or the one born in 1764, we can assume that the triple John Marvin resides in Sharon, Connecticut could be referring to any of his sons who lived there, including possibly Sgt. John Marvin himself (although he was not mentioned as living in Sharon, but rather in Norwalk and later in Sharon). However, this assumption is supported by the fact that one of John's sons, David Marvin born in 1764, is indeed documented to have been a resident of Sharon, Connecticut."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide information about Sgt. John Marvin's place of death as Sharon, Litchfield County, Connecticut, which supports the statement that he resided (or at least died) in Sharon, Connecticut."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

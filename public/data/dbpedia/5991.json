@@ -1,0 +1,144 @@
+{
+    "subject": "resource/First_Love_(2010_Thai_film)",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:2010_films",
+    "human_readable": "The subject of 'First Love' (2010 Thai film) is the category of 2010 films.",
+    "questions": [
+        {
+            "score": 0.9217539429664612,
+            "question": "Is 'First Love' a Thai film?"
+        },
+        {
+            "score": 0.5850255489349365,
+            "question": "What genre is the film 'First Love'?"
+        },
+        {
+            "score": 0.45819902420043945,
+            "question": "What year was the film 'First Love' released?"
+        },
+        {
+            "score": 0.3971804678440094,
+            "question": "Are there any famous Thai actors who starred in 'First Love'?"
+        },
+        {
+            "score": 0.345037043094635,
+            "question": "What other films explore similar themes to 'First Love'?"
+        },
+        {
+            "score": 0.29946401715278625,
+            "question": "What are some popular romantic films from Thailand?"
+        },
+        {
+            "score": 0.2574153244495392,
+            "question": "Can you name other films released in 2010?"
+        },
+        {
+            "score": 0.21506215631961823,
+            "question": "How is 'First Love' received by critics and audiences?"
+        },
+        {
+            "score": 0.1440502107143402,
+            "question": "Where could you watch 'First Love'?"
+        },
+        {
+            "score": 0.05780676752328873,
+            "question": "What is the general theme of romantic films?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The subject of 'First Love' (2010 Thai film) is the category of 2010 films.",
+            "html": "dbpedia_5991_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where could you watch 'First Love'?",
+            "html": "dbpedia_5991_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How is 'First Love' received by critics and audiences?",
+            "html": "dbpedia_5991_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you name other films released in 2010?",
+            "html": "dbpedia_5991_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5991_10.txt"
+        },
+        {
+            "file_id": "dbpedia_5991_125.txt"
+        },
+        {
+            "file_id": "dbpedia_5991_13.txt"
+        },
+        {
+            "file_id": "dbpedia_5991_153.txt"
+        },
+        {
+            "file_id": "dbpedia_5991_23.txt"
+        },
+        {
+            "file_id": "dbpedia_5991_27.txt"
+        },
+        {
+            "file_id": "dbpedia_5991_32.txt"
+        },
+        {
+            "file_id": "dbpedia_5991_36.txt"
+        },
+        {
+            "file_id": "dbpedia_5991_42.txt"
+        },
+        {
+            "file_id": "dbpedia_5991_62.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, here's the evaluation:\n\nThe triple seems to be asking whether the movie \"First Love\" (2010 Thai film) is a part of the category of 2010 films.\n\nUpon reviewing the documents, I found that the file_path for each document contains a timestamp or year. However, none of them explicitly mention the categorization as 2010 films. They do provide information about the movie's release date and other relevant details.\n\nGiven this context, it appears that the information does not directly support the triple. Therefore:\n\n{'output': 'no'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents provide information about the 2010 Thai film \"Crazy Little Thing Called Love\" or \"First Love,\" which falls under the category of 2010 films. Therefore, the statement that 'First Love' (2010 Thai film) is the subject of 2010 films is supported by the context information provided."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n      \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The subject of 'First Love' (2010 Thai film) is not categorized as a 2010 film, but rather it was released in the year 2010.",
+            "category": 3
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because the category of 2010 films is more specific than the subject of 'First Love', which refers to a particular film, whereas the category includes all films released in 2010, not just 'First Love'.",
+            "category": 3
+        }
+    }
+}

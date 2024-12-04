@@ -1,0 +1,144 @@
+{
+    "subject": "resource/UD_Melilla",
+    "predicate": "property/clubname",
+    "object": "Melilla",
+    "human_readable": "The club name of UD Melilla is Melilla.",
+    "questions": [
+        {
+            "score": 0.9517014622688293,
+            "question": "Is 'Melilla' the official club name?"
+        },
+        {
+            "score": 0.9410650730133057,
+            "question": "Is UD Melilla a popular club?"
+        },
+        {
+            "score": 0.9407692551612854,
+            "question": "What is the name of UD Melilla?"
+        },
+        {
+            "score": 0.8717917799949646,
+            "question": "Is there a stadium associated with UD Melilla?"
+        },
+        {
+            "score": 0.6911813616752625,
+            "question": "What sport does UD Melilla play?"
+        },
+        {
+            "score": 0.6892131567001343,
+            "question": "Where is UD Melilla located?"
+        },
+        {
+            "score": 0.6182700991630554,
+            "question": "Does UD Melilla play in a league?"
+        },
+        {
+            "score": 0.5825046896934509,
+            "question": "What is the history of UD Melilla?"
+        },
+        {
+            "score": 0.510597825050354,
+            "question": "Does UD Melilla have a rivalry with another team?"
+        },
+        {
+            "score": 0.45497840642929077,
+            "question": "Has UD Melilla won any championships?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The club name of UD Melilla is Melilla.",
+            "html": "dbpedia_4799_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does UD Melilla have a rivalry with another team?",
+            "html": "dbpedia_4799_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the history of UD Melilla?",
+            "html": "dbpedia_4799_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does UD Melilla play in a league?",
+            "html": "dbpedia_4799_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4799_19.txt"
+        },
+        {
+            "file_id": "dbpedia_4799_20.txt"
+        },
+        {
+            "file_id": "dbpedia_4799_36.txt"
+        },
+        {
+            "file_id": "dbpedia_4799_7.txt"
+        },
+        {
+            "file_id": "dbpedia_4799_79.txt"
+        },
+        {
+            "file_id": "dbpedia_4799_82.txt"
+        },
+        {
+            "file_id": "dbpedia_4799_84.txt"
+        },
+        {
+            "file_id": "dbpedia_4799_85.txt"
+        },
+        {
+            "file_id": "dbpedia_4799_9.txt"
+        },
+        {
+            "file_id": "dbpedia_4799_99.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the structured JSON format for your query:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe reason for this answer is that the text states that \"Ud Melilla, also known as Uni\u00f3n Deportiva Melilla\" (i.e., the club name includes the phrase \"Uni\u00f3n Deportiva\", not just \"Melilla\")."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The document states that Ud Melilla, also known as Uni\u00f3n Deportiva Melilla, is a Spanish football club based in the autonomous city of Melilla. This confirms that the club's name can be referred to as both Ud Melilla and Melilla."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n      \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nThe provided context does not indicate that the club name of Ud Melilla is simply \"Melilla\". Instead, it specifies that Ud Melilla's full name is Uni\u00f3n Deportiva Melilla. Thus, the statement \"The club name of UD Melilla is Melilla\" is incorrect according to the information given in the documents."
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Ud Melilla is not the club name. It is a short form of Uni\u00f3n Deportiva Melilla, which is the full name of the football club based in Melilla.",
+            "category": 1
+        },
+        "llama3.1": {
+            "reason": "It contradicts the initial statement of the club name being \"Uni\u00f3n Deportiva Melilla\".",
+            "category": 1
+        }
+    }
+}

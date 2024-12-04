@@ -1,0 +1,144 @@
+{
+    "subject": "resource/In_My_Chair",
+    "predicate": "ontology/subsequentWork",
+    "object": "resource/Status_Quo_(band)",
+    "human_readable": "The subsequent work of 'In My Chair' is by Status Quo.",
+    "questions": [
+        {
+            "score": 0.529304563999176,
+            "question": "Who created the work 'In My Chair'?"
+        },
+        {
+            "score": 0.4184426963329315,
+            "question": "When was 'In My Chair' released?"
+        },
+        {
+            "score": 0.3254706561565399,
+            "question": "What is the overall style of 'In My Chair'?"
+        },
+        {
+            "score": 0.312888503074646,
+            "question": "Can you name another song by Status Quo?"
+        },
+        {
+            "score": 0.2853327691555023,
+            "question": "Who are some other notable artists from the same era as Status Quo?"
+        },
+        {
+            "score": 0.20997890830039978,
+            "question": "What are some common themes explored in Status Quo's music?"
+        },
+        {
+            "score": 0.20396645367145538,
+            "question": "Was 'In My Chair' a popular song?"
+        },
+        {
+            "score": 0.18312497437000275,
+            "question": "What genre of music is most associated with Status Quo?"
+        },
+        {
+            "score": 0.1751270443201065,
+            "question": "What is the name of the musical group that produced 'In My Chair'?"
+        },
+        {
+            "score": 0.1501777023077011,
+            "question": "Has Status Quo won any major music awards?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The subsequent work of 'In My Chair' is by Status Quo.",
+            "html": "dbpedia_3831_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of the musical group that produced 'In My Chair'?",
+            "html": "dbpedia_3831_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What genre of music is most associated with Status Quo?",
+            "html": "dbpedia_3831_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Was 'In My Chair' a popular song?",
+            "html": "dbpedia_3831_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3831_114.txt"
+        },
+        {
+            "file_id": "dbpedia_3831_125.txt"
+        },
+        {
+            "file_id": "dbpedia_3831_129.txt"
+        },
+        {
+            "file_id": "dbpedia_3831_33.txt"
+        },
+        {
+            "file_id": "dbpedia_3831_36.txt"
+        },
+        {
+            "file_id": "dbpedia_3831_47.txt"
+        },
+        {
+            "file_id": "dbpedia_3831_70.txt"
+        },
+        {
+            "file_id": "dbpedia_3831_78.txt"
+        },
+        {
+            "file_id": "dbpedia_3831_8.txt"
+        },
+        {
+            "file_id": "dbpedia_3831_99.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe text states that \"In My Chair\" was  one of the songs that helped shape the band's future sound, but it doesn't mention a specific subsequent work being directly *by* Status Quo as a result of this song. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "To evaluate the triple, I need to determine whether \"The subsequent work of 'In My Chair' is by Status Quo.\" is supported or not supported based on the provided context information.\n\nFrom the documents related to file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3831/re-ranker-msmarco/114.txt, we can see that \"In My Chair\" is indeed a song by Status Quo. However, there's no direct mention of subsequent work(s) in relation to the band or song.\n\nHowever, looking at another document related to file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3831/re-ranker-msmarco/50.txt which appears unrelated to Status Quo, we can infer that 'Status Quo' in this context is referring to a set of historical arrangements concerning existing rights at holy places in Israel/Palestine.\n\nSince there's no direct information about subsequent work(s) of 'In My Chair' by Status Quo (either the band or the historical arrangements), and considering that these two concepts seem unrelated, I would say:\n\n{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nExplanation:\nThe context information provided mentions \"In My Chair\" as a song released by the band Status Quo, and it discusses its recording details, chart performance, live performances, and b-side track. Therefore, the statement that \"the subsequent work of 'In My Chair' is by Status Quo\" is supported by the given information."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "The provided text focuses on the musical group Status Quo and their song \"In My Chair,\" heavily implying that any subsequent work related to the song is also by them.",
+            "category": 4
+        },
+        "llama3.1": {
+            "reason": "It directly contradicts the provided context information stating that \"In My Chair\" is indeed a song by Status Quo.",
+            "category": 4
+        }
+    }
+}

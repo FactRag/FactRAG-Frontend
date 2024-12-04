@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Sentrigo",
+    "predicate": "ontology/location",
+    "object": "resource/Santa_Clara,_California",
+    "human_readable": "Sentrigo is located in Santa Clara, California.",
+    "questions": [
+        {
+            "score": 0.9447357058525085,
+            "question": "Is Sentrigo in California?"
+        },
+        {
+            "score": 0.9061903953552246,
+            "question": "Where is Sentrigo located?"
+        },
+        {
+            "score": 0.881530225276947,
+            "question": "In what state is Sentrigo located?"
+        },
+        {
+            "score": 0.7226801514625549,
+            "question": "What country is Sentrigo in?"
+        },
+        {
+            "score": 0.6623960137367249,
+            "question": "What city is the home of Sentrigo?"
+        },
+        {
+            "score": 0.43542084097862244,
+            "question": "Can you tell me more about Sentrigo?"
+        },
+        {
+            "score": 0.43057921528816223,
+            "question": "Are there any other companies located in Santa Clara?"
+        },
+        {
+            "score": 0.40569040179252625,
+            "question": "What industry is Sentrigo likely in?"
+        },
+        {
+            "score": 0.14100201427936554,
+            "question": "What is the climate like in Santa Clara?"
+        },
+        {
+            "score": 0.11625124514102936,
+            "question": "Is Santa Clara a major tech hub?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Sentrigo is located in Santa Clara, California.",
+            "html": "dbpedia_6147_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the climate like in Santa Clara?",
+            "html": "dbpedia_6147_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What industry is Sentrigo likely in?",
+            "html": "dbpedia_6147_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any other companies located in Santa Clara?",
+            "html": "dbpedia_6147_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6147_106.txt"
+        },
+        {
+            "file_id": "dbpedia_6147_109.txt"
+        },
+        {
+            "file_id": "dbpedia_6147_139.txt"
+        },
+        {
+            "file_id": "dbpedia_6147_142.txt"
+        },
+        {
+            "file_id": "dbpedia_6147_16.txt"
+        },
+        {
+            "file_id": "dbpedia_6147_19.txt"
+        },
+        {
+            "file_id": "dbpedia_6147_2.txt"
+        },
+        {
+            "file_id": "dbpedia_6147_4.txt"
+        },
+        {
+            "file_id": "dbpedia_6147_55.txt"
+        },
+        {
+            "file_id": "dbpedia_6147_79.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here's the evaluation of whether the information in the documents supports the triple:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe reason for this answer is that the document at file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6147/re-ranker-msmarco/18.txt explicitly states that Sentrigo is located in Santa Clara, United States."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents state that \"Sentrigo is located in Santa Clara, United States.\" This supports the query that Sentrigo is located in Santa Clara, California, assuming California and Santa Clara are referring to the same location."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n    \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

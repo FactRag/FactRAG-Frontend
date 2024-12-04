@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Eve_von_Bibra",
+    "predicate": "property/name",
+    "object": "Von Bibra, Eve",
+    "human_readable": "The name of Eve von Bibra is Von Bibra, Eve.",
+    "questions": [
+        {
+            "score": 0.9689364433288574,
+            "question": "What is the surname of Eve von Bibra?"
+        },
+        {
+            "score": 0.9245457649230957,
+            "question": "What is Eve von Bibra's full name?"
+        },
+        {
+            "score": 0.8902192115783691,
+            "question": "What is the format of Eve von Bibra's name?"
+        },
+        {
+            "score": 0.883624255657196,
+            "question": "Could Eve von Bibra also be known by a nickname?"
+        },
+        {
+            "score": 0.8818453550338745,
+            "question": "What could 'von' indicate in Eve von Bibra's name?"
+        },
+        {
+            "score": 0.8809552192687988,
+            "question": "If someone called Eve von Bibra 'Von Bibra', would they be using her full name?"
+        },
+        {
+            "score": 0.8315733671188354,
+            "question": "How might you pronounce Eve von Bibra's name?"
+        },
+        {
+            "score": 0.7069945931434631,
+            "question": "Are there any famous people with the last name 'von Bibra'?"
+        },
+        {
+            "score": 0.6272559762001038,
+            "question": "How would you write Eve von Bibra's first and last name in reverse order?"
+        },
+        {
+            "score": 0.33833736181259155,
+            "question": "Is 'Eve' a common first name?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of Eve von Bibra is Von Bibra, Eve.",
+            "html": "dbpedia_1108_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How would you write Eve von Bibra's first and last name in reverse order?",
+            "html": "dbpedia_1108_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any famous people with the last name 'von Bibra'?",
+            "html": "dbpedia_1108_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How might you pronounce Eve von Bibra's name?",
+            "html": "dbpedia_1108_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1108_107.txt"
+        },
+        {
+            "file_id": "dbpedia_1108_113.txt"
+        },
+        {
+            "file_id": "dbpedia_1108_15.txt"
+        },
+        {
+            "file_id": "dbpedia_1108_23.txt"
+        },
+        {
+            "file_id": "dbpedia_1108_49.txt"
+        },
+        {
+            "file_id": "dbpedia_1108_67.txt"
+        },
+        {
+            "file_id": "dbpedia_1108_70.txt"
+        },
+        {
+            "file_id": "dbpedia_1108_72.txt"
+        },
+        {
+            "file_id": "dbpedia_1108_89.txt"
+        },
+        {
+            "file_id": "dbpedia_1108_98.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have more triples to evaluate!"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe information in the documents supports the triple. The document at `file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1108/re-ranker-msmarco/59.txt` contains the line `Sort name: Bibra, Eve Von`, which confirms that Eve von Bibra's last name is indeed \"Von\"."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents indicate that the correct name format for Eve von Bibra is \"Bibra, Eve Von,\" which supports the triple stating her name as \"Von Bibra, Eve.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The given context does not explicitly state that the name of Eve von Bibra is \"Von Bibra, Eve.\" It only mentions her first and last names separately. Therefore, it cannot be concluded with certainty that she is named \"Von Bibra, Eve\".",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Common name conventions typically place the last name first followed by the first name.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The context information explicitly states the name as \"Eve Sarah von Bibra\" or simply \"Eve von Bibra\", not \"Von Bibra, Eve\".",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context provides Eve von Bibra's name in the format \"Eve Sarah von Bibra,\" indicating that \"von Bibra\" is part of her last name, not a separate prefix. Therefore, her full name is given as \"Eve Sarah von Bibra,\" not \"Von Bibra, Eve.\"",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,112 @@
+{
+    "subject": "resource/P._Harrison",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "P. Harrison",
+    "human_readable": "The full name of P. Harrison is P. Harrison.",
+    "questions": [
+        {
+            "score": 0.9840026497840881,
+            "question": "What is the full name of P. Harrison?"
+        },
+        {
+            "score": 0.9774420261383057,
+            "question": "Is the full name of P. Harrison the same as his given name?"
+        },
+        {
+            "score": 0.8872510194778442,
+            "question": "How would you write P. Harrison's full name formally?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The full name of P. Harrison is P. Harrison.",
+            "html": "dbpedia_4874_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is the full name of P. Harrison the same as his given name?",
+            "html": "dbpedia_4874_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the full name of P. Harrison?",
+            "html": "dbpedia_4874_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4874_101.txt"
+        },
+        {
+            "file_id": "dbpedia_4874_104.txt"
+        },
+        {
+            "file_id": "dbpedia_4874_11.txt"
+        },
+        {
+            "file_id": "dbpedia_4874_127.txt"
+        },
+        {
+            "file_id": "dbpedia_4874_135.txt"
+        },
+        {
+            "file_id": "dbpedia_4874_156.txt"
+        },
+        {
+            "file_id": "dbpedia_4874_39.txt"
+        },
+        {
+            "file_id": "dbpedia_4874_53.txt"
+        },
+        {
+            "file_id": "dbpedia_4874_90.txt"
+        },
+        {
+            "file_id": "dbpedia_4874_91.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nLet me know if you have more triples you'd like me to evaluate!"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation:\n\nQuery: T.P. Harrison occupation\nResponse: \n\nEvaluation:\nThe context information includes a biography for T.P. Harrison, which mentions that he is engaged in farming and also filling the position of county assessor. This indicates that T.P. Harrison has an occupation.\n\nSo, the answer would be:\n{\n  \"output\": \"yes\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nThe documents do not provide any information about the full name of P. Harrison, only discussing various aspects related to the name \"Harrison\" without mentioning a specific individual named P. Harrison."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context, there isn't any information about a person named \"P. Harrison\" with the full name explicitly stated as such. Therefore, the statement \"The full name of P. Harrison is P. Harrison.\" cannot be verified from the given text.\n\n{'output': 'no'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The context provides no information about the full name of P. Harrison. Therefore, we cannot definitively conclude that P. Harrison is the full name of anyone mentioned in the text.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The full name of T.P. Harrison (not P. Harrison) is T.P. Harrison, as mentioned in the provided context information, specifically in section 4: \"T. P. Harrison (1871 - ) Biography\".",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,134 @@
+{
+    "subject": "resource/The_Third_Degree",
+    "predicate": "http://purl.org/linguistics/gold/hypernym",
+    "object": "resource/Film",
+    "human_readable": "The Third Degree is a type of Film.",
+    "questions": [
+        {
+            "score": 0.8405810594558716,
+            "question": "Give an example of a film similar to 'The Third Degree'."
+        },
+        {
+            "score": 0.792386531829834,
+            "question": "What makes a film successful within the genre of 'The Third Degree'?"
+        },
+        {
+            "score": 0.6413382291793823,
+            "question": "What are some common themes in films like 'The Third Degree'?"
+        },
+        {
+            "score": 0.5961000919342041,
+            "question": "What are some common plot elements found in films like 'The Third Degree'?"
+        },
+        {
+            "score": 0.546953022480011,
+            "question": "Are there any famous directors known for making films similar to 'The Third Degree'?"
+        },
+        {
+            "score": 0.5098630785942078,
+            "question": "Who might be the target audience for films like 'The Third Degree'?"
+        },
+        {
+            "score": 0.4951223134994507,
+            "question": "What historical period are films like 'The Third Degree' often set in?"
+        },
+        {
+            "score": 0.4831005334854126,
+            "question": "Can you name any actors who have starred in films similar to 'The Third Degree'?"
+        },
+        {
+            "score": 0.4324706494808197,
+            "question": "What kind of media is 'The Third Degree'?"
+        },
+        {
+            "score": 0.33854204416275024,
+            "question": "How does the genre of 'The Third Degree' typically portray its characters?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The Third Degree is a type of Film.",
+            "html": "dbpedia_7612_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What kind of media is 'The Third Degree'?",
+            "html": "dbpedia_7612_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you name any actors who have starred in films similar to 'The Third Degree'?",
+            "html": "dbpedia_7612_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What historical period are films like 'The Third Degree' often set in?",
+            "html": "dbpedia_7612_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_7612_108.txt"
+        },
+        {
+            "file_id": "dbpedia_7612_22.txt"
+        },
+        {
+            "file_id": "dbpedia_7612_29.txt"
+        },
+        {
+            "file_id": "dbpedia_7612_31.txt"
+        },
+        {
+            "file_id": "dbpedia_7612_40.txt"
+        },
+        {
+            "file_id": "dbpedia_7612_51.txt"
+        },
+        {
+            "file_id": "dbpedia_7612_55.txt"
+        },
+        {
+            "file_id": "dbpedia_7612_66.txt"
+        },
+        {
+            "file_id": "dbpedia_7612_8.txt"
+        },
+        {
+            "file_id": "dbpedia_7612_91.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple in JSON format:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe reason for this response is that, according to the documents, \"Third Degree Films\" appears to be related to adult entertainment and tax returns (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_7612/re-ranker-msmarco/90.txt), but none of the documents mention a film called \"The Third Degree\". The only relevant information is in file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_7612/re-ranker-msmarco/107.txt, which mentions \"The Third Degree\" as a part of a project that includes two films, and describes it as an art installation."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe context information clearly states that \"Third Degree Films is a film production company specializing in adult entertainment.\" This directly supports the query that \"The Third Degree\" is a type of film, as it refers to the nature of the content produced by this company."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The context information provided does not support the notion that \"The Third Degree\" refers to a type of film, as there are multiple instances where it is mentioned alongside financial and tax-related terminology, indicating a different meaning for \"Third Degree\".",
+            "category": 3
+        }
+    }
+}

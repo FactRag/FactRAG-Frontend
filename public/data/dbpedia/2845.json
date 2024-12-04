@@ -1,0 +1,109 @@
+{
+    "subject": "resource/Nicholas_Brown,_Jr.",
+    "predicate": "ontology/restingPlace",
+    "object": "resource/Providence,_Rhode_Island",
+    "human_readable": "The resting place of Nicholas Brown Jr. is Providence, Rhode Island.",
+    "questions": [
+        {
+            "score": 0.9131898880004883,
+            "question": "In which location does Nicholas Brown Jr. rest?"
+        },
+        {
+            "score": 0.8782070279121399,
+            "question": "Who was laid to rest in Providence, Rhode Island?"
+        },
+        {
+            "score": 0.8603659868240356,
+            "question": "What city and state is the resting place of Nicholas Brown Jr.?"
+        },
+        {
+            "score": 0.6697939038276672,
+            "question": "Providence, Rhode Island is associated with which person?"
+        },
+        {
+            "score": 0.48304980993270874,
+            "question": "Where is Nicholas Brown Jr. buried?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The resting place of Nicholas Brown Jr. is Providence, Rhode Island.",
+            "html": "dbpedia_2845_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Providence, Rhode Island is associated with which person?",
+            "html": "dbpedia_2845_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What city and state is the resting place of Nicholas Brown Jr.?",
+            "html": "dbpedia_2845_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who was laid to rest in Providence, Rhode Island?",
+            "html": "dbpedia_2845_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2845_1.txt"
+        },
+        {
+            "file_id": "dbpedia_2845_104.txt"
+        },
+        {
+            "file_id": "dbpedia_2845_12.txt"
+        },
+        {
+            "file_id": "dbpedia_2845_21.txt"
+        },
+        {
+            "file_id": "dbpedia_2845_49.txt"
+        },
+        {
+            "file_id": "dbpedia_2845_55.txt"
+        },
+        {
+            "file_id": "dbpedia_2845_56.txt"
+        },
+        {
+            "file_id": "dbpedia_2845_67.txt"
+        },
+        {
+            "file_id": "dbpedia_2845_78.txt"
+        },
+        {
+            "file_id": "dbpedia_2845_85.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "After analyzing the context information, I found that it does not provide any direct information about the resting place of Nicholas Brown Jr.\n\nHowever, based on the text, I can infer that there are multiple individuals named Nicholas Brown mentioned in the documents, and one of them is a descendant of Nicholas Brown who died in 1979. This individual is referred to as John Nicholas Brown or simply \"Brown\" in some sections.\n\nThe relevant information is found in file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2845/re-ranker-msmarco/83.txt, where it mentions that:\n\n\"On October 10, 1979, while celebrating his son John Carter Brown III's 45th birthday, John Nicholas Brown had a heart attack while on his yacht in Annapolis, Maryland and died.\"\n\nLater, it is mentioned that \"Brown was laid to rest, beside several of his ancestors, at the Brown family plot in the North Burial Ground in Providence.\" \n\nSince the documents mention multiple individuals named Nicholas Brown, and only one of them (John Nicholas Brown) has a specific resting place mentioned, I would say that the answer is:\n\n{'output': 'yes'}\n\nNote: However, this inference might not be entirely accurate if there are other Nicholas Browns with different resting places mentioned in the same documents or other related sources."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide information about Nicholas Brown Jr., including his death and burial. Specifically, the document states: \"Brown was laid to rest, beside several of his ancestors, at the Brown family plot in the North Burial Ground in Providence.\" This supports the triple that Nicholas Brown Jr.'s resting place is in Providence, Rhode Island."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n    \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Arnold_Schwarzenegger",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:People_from_Graz",
+    "human_readable": "The subject of Arnold Schwarzenegger is People from Graz.",
+    "questions": [
+        {
+            "score": 0.959063708782196,
+            "question": "Is Arnold Schwarzenegger from Graz?"
+        },
+        {
+            "score": 0.9129183888435364,
+            "question": "Is there a specific reason why Arnold Schwarzenegger is associated with Graz?"
+        },
+        {
+            "score": 0.8781323432922363,
+            "question": "Are there other famous people from Graz besides Arnold Schwarzenegger?"
+        },
+        {
+            "score": 0.8596003651618958,
+            "question": "What is the connection between Arnold Schwarzenegger and Graz?"
+        },
+        {
+            "score": 0.6787526607513428,
+            "question": "Who are some notable individuals associated with Graz?"
+        },
+        {
+            "score": 0.37571167945861816,
+            "question": "What makes Graz significant?"
+        },
+        {
+            "score": 0.3483940064907074,
+            "question": "Where was Arnold Schwarzenegger born?"
+        },
+        {
+            "score": 0.33573514223098755,
+            "question": "What is Graz known for?"
+        },
+        {
+            "score": 0.24154038727283478,
+            "question": "Can you tell me more about the cultural heritage of Graz?"
+        },
+        {
+            "score": 0.03139837831258774,
+            "question": "What is the significance of place of birth for famous individuals?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The subject of Arnold Schwarzenegger is People from Graz.",
+            "html": "dbpedia_7643_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about the cultural heritage of Graz?",
+            "html": "dbpedia_7643_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Graz known for?",
+            "html": "dbpedia_7643_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where was Arnold Schwarzenegger born?",
+            "html": "dbpedia_7643_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_7643_110.txt"
+        },
+        {
+            "file_id": "dbpedia_7643_112.txt"
+        },
+        {
+            "file_id": "dbpedia_7643_120.txt"
+        },
+        {
+            "file_id": "dbpedia_7643_23.txt"
+        },
+        {
+            "file_id": "dbpedia_7643_28.txt"
+        },
+        {
+            "file_id": "dbpedia_7643_46.txt"
+        },
+        {
+            "file_id": "dbpedia_7643_73.txt"
+        },
+        {
+            "file_id": "dbpedia_7643_77.txt"
+        },
+        {
+            "file_id": "dbpedia_7643_82.txt"
+        },
+        {
+            "file_id": "dbpedia_7643_98.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: While some documents mention that Arnold Schwarzenegger was born in Thal, Austria (near Graz), which could imply a connection to the city of Graz, there is no direct statement that he is a People from Graz. The most relevant document (#39) mentions that the Arnold Schwarzenegger Museum is located \"in the village where he was born\" and also mentions Graz as part of the Styrian capital, but it does not explicitly state that Schwarzenegger himself is a person from Graz."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents mention that Arnold Schwarzenegger was born in Thal, a village near the Styrian capital of Graz, Austria. Therefore, it is accurate to say that people from Graz include Arnold Schwarzenegger."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Arnold Schwarzenegger was born in Thal, a village near Graz, not in Graz itself.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "While Arnold Schwarzenegger hails from a village near Graz and has a museum there,  the provided text emphasizes his global career as a bodybuilder, actor, and politician, transcending his origins in Graz.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Arnold Schwarzenegger was born in Thal, a village near Graz, not directly in Graz.",
+            "category": 2
+        }
+    }
+}

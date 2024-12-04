@@ -1,0 +1,129 @@
+{
+    "subject": "resource/A_Lesson_Before_Dying_(film)",
+    "predicate": "ontology/company",
+    "object": "resource/HBO",
+    "human_readable": "The company behind 'A Lesson Before Dying (film)' is HBO.",
+    "questions": [
+        {
+            "score": 0.890166163444519,
+            "question": "What is the connection between HBO and the film 'A Lesson Before Dying'?"
+        },
+        {
+            "score": 0.8406925201416016,
+            "question": "What company produced the film 'A Lesson Before Dying'?"
+        },
+        {
+            "score": 0.7111805081367493,
+            "question": "Who was involved in producing the film 'A Lesson Before Dying'?"
+        },
+        {
+            "score": 0.6661311388015747,
+            "question": "Which film is associated with HBO?"
+        },
+        {
+            "score": 0.5645015239715576,
+            "question": "What genre might the film 'A Lesson Before Dying' belong to?"
+        },
+        {
+            "score": 0.5500077605247498,
+            "question": "Is HBO known for making movies?"
+        },
+        {
+            "score": 0.4896245300769806,
+            "question": "What type of media company is HBO?"
+        },
+        {
+            "score": 0.40677857398986816,
+            "question": "Name a movie made by HBO."
+        },
+        {
+            "score": 0.3734318017959595,
+            "question": "Besides films, what else does HBO produce?"
+        },
+        {
+            "score": 0.3163808584213257,
+            "question": "Can you name another film produced by HBO?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The company behind 'A Lesson Before Dying (film)' is HBO.",
+            "html": "dbpedia_6051_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Besides films, what else does HBO produce?",
+            "html": "dbpedia_6051_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Name a movie made by HBO.",
+            "html": "dbpedia_6051_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of media company is HBO?",
+            "html": "dbpedia_6051_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6051_1.txt"
+        },
+        {
+            "file_id": "dbpedia_6051_10.txt"
+        },
+        {
+            "file_id": "dbpedia_6051_13.txt"
+        },
+        {
+            "file_id": "dbpedia_6051_14.txt"
+        },
+        {
+            "file_id": "dbpedia_6051_17.txt"
+        },
+        {
+            "file_id": "dbpedia_6051_18.txt"
+        },
+        {
+            "file_id": "dbpedia_6051_19.txt"
+        },
+        {
+            "file_id": "dbpedia_6051_3.txt"
+        },
+        {
+            "file_id": "dbpedia_6051_4.txt"
+        },
+        {
+            "file_id": "dbpedia_6051_7.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the answer in JSON format:\n\n{\n  \"output\": \"yes\"\n}\n\nExplanation:\nThe question asks if the information in the documents supports the triple that \"The company behind 'A Lesson Before Dying (film)' is HBO.\" \n\nFrom the document at file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6051/re-ranker-msmarco/4.txt, we have:\n\n\"A Lesson Before Dying\"\n\nHBO\n\nDebuts at 8 p.m.  Saturday, May 22\n\nRepeats on May 25 and 30 and June 3, 9, 12 and 14\n\n... \n\nNot so coincidentally, that problem could be solved easily by cutting out the talky chunks in which the story strays away from its central theme.  When \u201cA Lesson Before Dying\u201d assumes that the audience is smart enough to follow along without having to be beaten about the head and shoulders, it soars.  Conversely, it sags when it explains too much.\n\n Nonetheless, \u201cA Lesson Before Dying\u201d will doubtless be a strong Emmy contender this year.  And it should\n\n... \n\nAnd from the document at file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6051/re-ranker-msmarco/13.txt, we have:\n\nA Lesson Before Dying is a 1999 American television drama film directed by Joseph Sargent which aired on May 22, 1999 on the HBO network.\n\nThis clearly indicates that HBO is indeed the company behind 'A Lesson Before Dying (film)'. Therefore, the answer is \"yes\"."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nExplanation: The document mentions \"A Lesson Before Dying\" as an HBO film, which supports the statement that the company behind it is HBO."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n    \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

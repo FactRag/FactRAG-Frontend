@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Jamal_Jones",
+    "predicate": "ontology/formerTeam",
+    "object": "resource/Philadelphia_Eagles",
+    "human_readable": "Jamal Jones used to play for the Philadelphia Eagles.",
+    "questions": [
+        {
+            "score": 0.9722267985343933,
+            "question": "Is Jamal Jones a former player for the Philadelphia Eagles?"
+        },
+        {
+            "score": 0.9669039249420166,
+            "question": "When did Jamal Jones play for the Philadelphia Eagles?"
+        },
+        {
+            "score": 0.9662728905677795,
+            "question": "Was Jamal Jones associated with the Philadelphia Eagles?"
+        },
+        {
+            "score": 0.952233076095581,
+            "question": "Is Jamal Jones still playing for the Philadelphia Eagles?"
+        },
+        {
+            "score": 0.9505678415298462,
+            "question": "Who were some of Jamal Jones's teammates on the Philadelphia Eagles?"
+        },
+        {
+            "score": 0.8799899220466614,
+            "question": "What are some notable achievements of Jamal Jones during his time with the Philadelphia Eagles?"
+        },
+        {
+            "score": 0.7527527213096619,
+            "question": "For which team did Jamal Jones play?"
+        },
+        {
+            "score": 0.6802685856819153,
+            "question": "What position did Jamal Jones play?"
+        },
+        {
+            "score": 0.6593676209449768,
+            "question": "What sport did Jamal Jones play?"
+        },
+        {
+            "score": 0.29680079221725464,
+            "question": "Where was Jamal Jones born?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Jamal Jones used to play for the Philadelphia Eagles.",
+            "html": "dbpedia_4012_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What sport did Jamal Jones play?",
+            "html": "dbpedia_4012_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What position did Jamal Jones play?",
+            "html": "dbpedia_4012_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=For which team did Jamal Jones play?",
+            "html": "dbpedia_4012_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4012_13.txt"
+        },
+        {
+            "file_id": "dbpedia_4012_14.txt"
+        },
+        {
+            "file_id": "dbpedia_4012_32.txt"
+        },
+        {
+            "file_id": "dbpedia_4012_38.txt"
+        },
+        {
+            "file_id": "dbpedia_4012_59.txt"
+        },
+        {
+            "file_id": "dbpedia_4012_62.txt"
+        },
+        {
+            "file_id": "dbpedia_4012_65.txt"
+        },
+        {
+            "file_id": "dbpedia_4012_66.txt"
+        },
+        {
+            "file_id": "dbpedia_4012_76.txt"
+        },
+        {
+            "file_id": "dbpedia_4012_85.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nWhile several documents mention Jamal Jones playing for the Philadelphia Eagles, none of them state that he \"used to\" play for them.  The context indicates that he was recently signed by the team.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the structured JSON response:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nReasoning:\n\n* The documents mention a Jamal Jones who signed with the Philadelphia Eagles, but they also mention Julio Jones and Marvin Jones Jr. as different individuals playing for other teams.\n* There is no information in the provided context that suggests Jamal Jones (the one associated with the Eagles) used to play for the Eagles.\n\nNote: This evaluation is based solely on the provided context and does not take into account any external knowledge or prior information about Jamal Jones' career."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents mention that the Philadelphia Eagles signed Jamal Jones to a contract, which supports the statement that Jamal Jones used to play for the Philadelphia Eagles."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "There are mentions of the Eagles signing *a* Jamal Jones, but no indication that he played for them previously. The focus is on new signings and there's discussion about Julio Jones joining the team, not a past player named Jamal Jones.",
+            "category": 1
+        },
+        "llama3.1": {
+            "reason": "There are multiple players named Jamal/Jamal Agnew/Jamal Jones mentioned in the context, all of whom played for different teams or had different roles (e.g., kick-off return, wide receiver), indicating that the Jamal Jones who used to play for the Philadelphia Eagles does not exist.",
+            "category": 1
+        }
+    }
+}

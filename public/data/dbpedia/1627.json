@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Nikkor",
+    "predicate": "ontology/type",
+    "object": "resource/Nikon",
+    "human_readable": "Nikkor is a type of Nikon.",
+    "questions": [
+        {
+            "score": 0.6767021417617798,
+            "question": "What is the relationship between Nikkor and Nikon?"
+        },
+        {
+            "score": 0.5662333369255066,
+            "question": "Are Nikkor lenses compatible with all Nikon cameras?"
+        },
+        {
+            "score": 0.5221598148345947,
+            "question": "Can you name some popular types of Nikkor lenses?"
+        },
+        {
+            "score": 0.46294450759887695,
+            "question": "Is Nikkor a brand of camera lenses?"
+        },
+        {
+            "score": 0.37338966131210327,
+            "question": "What are some features that distinguish Nikkor lenses?"
+        },
+        {
+            "score": 0.25752905011177063,
+            "question": "Where are Nikkor lenses typically manufactured?"
+        },
+        {
+            "score": 0.22612401843070984,
+            "question": "What company does Nikkor belong to?"
+        },
+        {
+            "score": 0.21215718984603882,
+            "question": "Nikon manufactures what type of products?"
+        },
+        {
+            "score": 0.1765691637992859,
+            "question": "Why might someone choose a Nikkor lens over another brand?"
+        },
+        {
+            "score": 0.13389573991298676,
+            "question": "Give an example of a product made by Nikon."
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Nikkor is a type of Nikon.",
+            "html": "dbpedia_1627_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Why might someone choose a Nikkor lens over another brand?",
+            "html": "dbpedia_1627_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Nikon manufactures what type of products?",
+            "html": "dbpedia_1627_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What company does Nikkor belong to?",
+            "html": "dbpedia_1627_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1627_10.txt"
+        },
+        {
+            "file_id": "dbpedia_1627_13.txt"
+        },
+        {
+            "file_id": "dbpedia_1627_2.txt"
+        },
+        {
+            "file_id": "dbpedia_1627_27.txt"
+        },
+        {
+            "file_id": "dbpedia_1627_41.txt"
+        },
+        {
+            "file_id": "dbpedia_1627_76.txt"
+        },
+        {
+            "file_id": "dbpedia_1627_8.txt"
+        },
+        {
+            "file_id": "dbpedia_1627_83.txt"
+        },
+        {
+            "file_id": "dbpedia_1627_85.txt"
+        },
+        {
+            "file_id": "dbpedia_1627_90.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the structured JSON answer:\n\n```\n{\n  \"output\": \"yes\"\n}\n```\n\nThis is because all the documents provided contain information about Nikon and its lenses, including the specific types (e.g. Series-E, MultiCoated, K-type, etc.), which suggests that Nikkor is indeed a type of Nikon lens or brand."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe context information provided does support the statement that \"Nikkor is a type of Nikon.\" This can be inferred from statements like \"Nikon is a highly respectable trade name within the optical industry with their world-renowned Nikon cameras, Nikkor lenses and accessories,\" indicating that Nikkor lenses are part of the broader Nikon brand."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Nikkor is a type of lens produced by Nikon, not a type of Nikon itself.",
+            "category": -1
+        },
+        "gemma2": {
+            "reason": "The text states that \"Nikkor\" is derived from \"Nippon Kogaku K.K.\" which is the original company name for Nikon.  It further explains that Nikkor, Nikkorex, Nikkormat, and Nikonos are all brand names derived from Nippon Kogaku K.K., implying they are different brands associated with Nikon rather than being synonymous.",
+            "category": -1
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because the brand names of \"Nikon,\" \"Nikkor,\" \"Nikkorex,\" \"Nikkormat\" and \"Nikonos\" are derived from \"Nippon Kogaku K.K.\", but this does not imply that Nikkors are a type of Nikon.",
+            "category": -1
+        },
+        "qwen2.5": {
+            "reason": "\"Nikkor\" is a brand name for Nikon lenses, not a type of lens.",
+            "category": -1
+        }
+    }
+}

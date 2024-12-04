@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Kelly_Johnson_(engineer)",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "Johnson, Clarence",
+    "human_readable": "The name of Kelly Johnson (engineer) is Johnson, Clarence.",
+    "questions": [
+        {
+            "score": 0.924256443977356,
+            "question": "Is 'Clarence' Kelly Johnson's middle name or last name?"
+        },
+        {
+            "score": 0.8589324951171875,
+            "question": "What is the full name of Kelly Johnson?"
+        },
+        {
+            "score": 0.8234487175941467,
+            "question": "What is Kelly Johnson known for?"
+        },
+        {
+            "score": 0.7196702361106873,
+            "question": "What is Kelly Johnson's first name?"
+        },
+        {
+            "score": 0.6773983836174011,
+            "question": "What profession did Kelly Johnson have?"
+        },
+        {
+            "score": 0.660285472869873,
+            "question": "How is Kelly Johnson's name structured?"
+        },
+        {
+            "score": 0.5577794313430786,
+            "question": "What does the name 'Johnson' typically refer to?"
+        },
+        {
+            "score": 0.43420347571372986,
+            "question": "Are there any other famous individuals with the last name 'Johnson'?"
+        },
+        {
+            "score": 0.16008442640304565,
+            "question": "Can you provide another famous engineer?"
+        },
+        {
+            "score": 0.04402310401201248,
+            "question": "What is another example of a profession that uses engineering principles?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of Kelly Johnson (engineer) is Johnson, Clarence.",
+            "html": "dbpedia_2758_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you provide another famous engineer?",
+            "html": "dbpedia_2758_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any other famous individuals with the last name 'Johnson'?",
+            "html": "dbpedia_2758_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What does the name 'Johnson' typically refer to?",
+            "html": "dbpedia_2758_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2758_103.txt"
+        },
+        {
+            "file_id": "dbpedia_2758_109.txt"
+        },
+        {
+            "file_id": "dbpedia_2758_116.txt"
+        },
+        {
+            "file_id": "dbpedia_2758_13.txt"
+        },
+        {
+            "file_id": "dbpedia_2758_16.txt"
+        },
+        {
+            "file_id": "dbpedia_2758_26.txt"
+        },
+        {
+            "file_id": "dbpedia_2758_52.txt"
+        },
+        {
+            "file_id": "dbpedia_2758_53.txt"
+        },
+        {
+            "file_id": "dbpedia_2758_62.txt"
+        },
+        {
+            "file_id": "dbpedia_2758_83.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the context information provided, here's my evaluation:\n\n`{ \"output\": \"no\" }`\n\nThe documents mention various facts about Kelly Johnson, such as his birthdate, occupation, achievements, and contributions to aircraft design. However, none of them mention that his name is \"Johnson, Clarence.\" They consistently refer to him as \"Clarence Leonard 'Kelly' Johnson,\" \"Kelly Johnson\", or simply \"Johnson\"."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide sufficient information to confirm that the engineer referred to as \"Kelly\" has the full name Clarence Leonard Johnson."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Clarence Leonard \"Kelly\" Johnson is the name of the person, not his surname.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Multiple sources clearly state his name as Clarence Leonard \"Kelly\" Johnson.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context provides multiple references to his full name as \"Clarence Leonard 'Kelly' Johnson,\" indicating that \"Kelly\" was a nickname or shortened form of his first name, Clarence. Therefore, stating the name is simply \"Johnson, Clarence\" omits his given first name and the common nickname he was known by.",
+            "category": 2
+        }
+    }
+}

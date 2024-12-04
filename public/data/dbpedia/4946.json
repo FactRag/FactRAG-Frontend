@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Team_Wellington",
+    "predicate": "property/league",
+    "object": "resource/New_Zealand_Football_Championship",
+    "human_readable": "Team Wellington plays in the New Zealand Football Championship.",
+    "questions": [
+        {
+            "score": 0.9785462021827698,
+            "question": "In which country's football championship does Team Wellington play?"
+        },
+        {
+            "score": 0.9375268816947937,
+            "question": "What is the history of Team Wellington in the New Zealand Football Championship?"
+        },
+        {
+            "score": 0.816973090171814,
+            "question": "What competition does Team Wellington participate in?"
+        },
+        {
+            "score": 0.8062761425971985,
+            "question": "Can you name any other teams that play in the same championship as Team Wellington?"
+        },
+        {
+            "score": 0.804850161075592,
+            "question": "Has Team Wellington won any championships?"
+        },
+        {
+            "score": 0.659844160079956,
+            "question": "Are there any famous players who have played for Team Wellington?"
+        },
+        {
+            "score": 0.6448538899421692,
+            "question": "Is Team Wellington a part of a domestic or international football league?"
+        },
+        {
+            "score": 0.6342402100563049,
+            "question": "What is the level of competition in the New Zealand Football Championship?"
+        },
+        {
+            "score": 0.6281434297561646,
+            "question": "What is the name of the league in which Team Wellington competes?"
+        },
+        {
+            "score": 0.593895673751831,
+            "question": "Where are Team Wellington's home games played?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Team Wellington plays in the New Zealand Football Championship.",
+            "html": "dbpedia_4946_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of the league in which Team Wellington competes?",
+            "html": "dbpedia_4946_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the level of competition in the New Zealand Football Championship?",
+            "html": "dbpedia_4946_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Team Wellington a part of a domestic or international football league?",
+            "html": "dbpedia_4946_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4946_1.txt"
+        },
+        {
+            "file_id": "dbpedia_4946_10.txt"
+        },
+        {
+            "file_id": "dbpedia_4946_111.txt"
+        },
+        {
+            "file_id": "dbpedia_4946_18.txt"
+        },
+        {
+            "file_id": "dbpedia_4946_19.txt"
+        },
+        {
+            "file_id": "dbpedia_4946_20.txt"
+        },
+        {
+            "file_id": "dbpedia_4946_50.txt"
+        },
+        {
+            "file_id": "dbpedia_4946_60.txt"
+        },
+        {
+            "file_id": "dbpedia_4946_64.txt"
+        },
+        {
+            "file_id": "dbpedia_4946_77.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "The query is not a triple in the format \"subject-predicate-object\", but rather a statement about Team Wellington. Based on the context information, here's the evaluation:\n\n* The document at file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4946/re-ranker-msmarco/50.txt states that \"In the inaugural season (2004/2005) of the NZFC, Team Wellington FC performed below expectations, finishing sixth.\" and also mentions that they improved in the next season, ending the season in fourth place.\n* The document at file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4946/re-ranker-msmarco/64.txt states that Team Wellington has qualified for FIFA's Club World Cup, but it does not mention their performance in the New Zealand Football Championship.\n\nBased on this information, it appears that while Team Wellington has participated in the New Zealand Football Championship, there is no explicit statement about them currently playing in the championship. However, they have performed well in other competitions.\n\nTherefore, the answer is:\n\n```\n{\n  \"output\": \"no\"\n}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information that supports the statement \"Team Wellington plays in the New Zealand Football Championship.\" Specifically, the document with file path `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4946/re-ranker-msmarco/50.txt` states: \"Team Wellington FC was formed in 2004 by a consortium of Wellington clubs to compete in the New Zealand Football Championship.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The claim is wrong because Team Wellington actually competes in the National League and the Oceania Champions League, not the New Zealand Football Championship.",
+            "category": -1
+        }
+    }
+}

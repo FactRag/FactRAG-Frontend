@@ -1,0 +1,144 @@
+{
+    "subject": "resource/The_Mirror_Has_Two_Faces",
+    "predicate": "property/music",
+    "object": "Barbra Streisand",
+    "human_readable": "The music of The Mirror Has Two Faces is performed by Barbra Streisand.",
+    "questions": [
+        {
+            "score": 0.986156702041626,
+            "question": "Is Barbra Streisand involved in the music of 'The Mirror Has Two Faces'?"
+        },
+        {
+            "score": 0.8686869144439697,
+            "question": "Name an artist who has contributed to the soundtrack of 'The Mirror Has Two Faces'."
+        },
+        {
+            "score": 0.8453958630561829,
+            "question": "Which film includes a soundtrack by Barbra Streisand?"
+        },
+        {
+            "score": 0.8317376971244812,
+            "question": "Who performs the music for the movie 'The Mirror Has Two Faces'?"
+        },
+        {
+            "score": 0.8069674968719482,
+            "question": "What is the name of the artist who performed the music in the film 'The Mirror Has Two Faces'?"
+        },
+        {
+            "score": 0.7810970544815063,
+            "question": "Who is responsible for the musical score of 'The Mirror Has Two Faces'?"
+        },
+        {
+            "score": 0.7796371579170227,
+            "question": "What film features music composed by Barbra Streisand?"
+        },
+        {
+            "score": 0.7401847243309021,
+            "question": "What movie features music by Barbra Streisand?"
+        },
+        {
+            "score": 0.55904620885849,
+            "question": "Besides acting, what other talent does Barbra Streisand possess?"
+        },
+        {
+            "score": 0.5059159398078918,
+            "question": "Barbra Streisand is known for what type of artistic work?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The music of The Mirror Has Two Faces is performed by Barbra Streisand.",
+            "html": "dbpedia_5382_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Besides acting, what other talent does Barbra Streisand possess?",
+            "html": "dbpedia_5382_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What movie features music by Barbra Streisand?",
+            "html": "dbpedia_5382_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What film features music composed by Barbra Streisand?",
+            "html": "dbpedia_5382_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5382_17.txt"
+        },
+        {
+            "file_id": "dbpedia_5382_21.txt"
+        },
+        {
+            "file_id": "dbpedia_5382_23.txt"
+        },
+        {
+            "file_id": "dbpedia_5382_38.txt"
+        },
+        {
+            "file_id": "dbpedia_5382_42.txt"
+        },
+        {
+            "file_id": "dbpedia_5382_58.txt"
+        },
+        {
+            "file_id": "dbpedia_5382_67.txt"
+        },
+        {
+            "file_id": "dbpedia_5382_8.txt"
+        },
+        {
+            "file_id": "dbpedia_5382_86.txt"
+        },
+        {
+            "file_id": "dbpedia_5382_87.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nWhile the documents mention Barbra Streisand being involved in the soundtrack for \"The Mirror Has Two Faces\", they state that she only performs on two tracks. The majority of the album features other artists like Richard Marx, David Sanborn, and Luciano Pavarotti.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents state that Barbra Streisand contributed two new songs (\"All of My Life\" and a duet with Bryan Adams) to the soundtrack of The Mirror Has Two Faces, supporting the query."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "Based on the information provided, the statement \"The music of The Mirror Has Two Faces is performed by Barbra Streisand\" is not entirely accurate. While Barbra Streisand does contribute two tracks to the soundtrack, most of the album includes performances from other artists such as Richard Marx, David Sanborn, Luciano Pavarotti, and Bryan Adams among others.\n\nThe correct answer should reflect that only some parts are performed by Barbra Streisand rather than all music being solely her work. Therefore, the response is:\n\n{\"output\": \"no\"}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Most of the music on the album is not performed by Barbra Streisand, but rather by various artists including Richard Marx, David Sanborn, and Luciano Pavarotti. Only two tracks are performed by Barbra Streisand.",
+            "category": 4
+        },
+        "qwen2.5": {
+            "reason": "The context clearly states that Barbra Streisand only makes her presence felt on two tracks of the album, with most of the music performed by other artists.",
+            "category": 4
+        }
+    }
+}

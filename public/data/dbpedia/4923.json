@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Kirk_Fordice",
+    "predicate": "ontology/lieutenant",
+    "object": "resource/Ronnie_Musgrove",
+    "human_readable": "Kirk Fordice served as lieutenant to Ronnie Musgrove.",
+    "questions": [
+        {
+            "score": 0.9837305545806885,
+            "question": "In what political context did Kirk Fordice serve as lieutenant to Ronnie Musgrove?"
+        },
+        {
+            "score": 0.9578444361686707,
+            "question": "Who served as lieutenant to Ronnie Musgrove?"
+        },
+        {
+            "score": 0.9516194462776184,
+            "question": "What was Kirk Fordice's role in relation to Ronnie Musgrove?"
+        },
+        {
+            "score": 0.9133905172348022,
+            "question": "Was Kirk Fordice a superior or subordinate to Ronnie Musgrove?"
+        },
+        {
+            "score": 0.8226977586746216,
+            "question": "What type of relationship existed between Kirk Fordice and Ronnie Musgrove?"
+        },
+        {
+            "score": 0.5947283506393433,
+            "question": "Who was the lieutenant governor during Ronnie Musgrove's time in office?"
+        },
+        {
+            "score": 0.4792478084564209,
+            "question": "Can you provide more information about Kirk Fordice's political career beyond his role as lieutenant governor?"
+        },
+        {
+            "score": 0.4736400544643402,
+            "question": "Can you name a political position held by Kirk Fordice?"
+        },
+        {
+            "score": 0.3020876348018646,
+            "question": "Were there any other notable figures associated with Ronnie Musgrove's administration?"
+        },
+        {
+            "score": 0.17089296877384186,
+            "question": "What were some of the key policies or initiatives implemented during Ronnie Musgrove's term?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Kirk Fordice served as lieutenant to Ronnie Musgrove.",
+            "html": "dbpedia_4923_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Were there any other notable figures associated with Ronnie Musgrove's administration?",
+            "html": "dbpedia_4923_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you name a political position held by Kirk Fordice?",
+            "html": "dbpedia_4923_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you provide more information about Kirk Fordice's political career beyond his role as lieutenant governor?",
+            "html": "dbpedia_4923_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4923_11.txt"
+        },
+        {
+            "file_id": "dbpedia_4923_16.txt"
+        },
+        {
+            "file_id": "dbpedia_4923_30.txt"
+        },
+        {
+            "file_id": "dbpedia_4923_38.txt"
+        },
+        {
+            "file_id": "dbpedia_4923_44.txt"
+        },
+        {
+            "file_id": "dbpedia_4923_5.txt"
+        },
+        {
+            "file_id": "dbpedia_4923_60.txt"
+        },
+        {
+            "file_id": "dbpedia_4923_68.txt"
+        },
+        {
+            "file_id": "dbpedia_4923_90.txt"
+        },
+        {
+            "file_id": "dbpedia_4923_91.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe provided text states that Ronnie Musgrove served under Kirk Fordice as Lieutenant Governor.  It does not state that Fordice served under Musgrove. \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation of the triple:\n\n```\n{\n  \"output\": \"yes\"\n}\n```\n\nReasoning: The documents mention that Ronnie Musgrove was a two-term state senator and Lieutenant Governor under Kirk Fordice. This implies that Kirk Fordice served as lieutenant governor to Ronnie Musgrove, not the other way around."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents do not support the statement that Kirk Fordice served as lieutenant to Ronnie Musgrove. Instead, the documents indicate that Ronnie Musgrove served as Lieutenant Governor under Kirk Fordice and that Musgrove was pressed into service as acting governor when Fordice nearly died in a car accident."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n\nExplanation: The documents indicate that Ronnie Musgrove was Lieutenant Governor under Kirk Fordice, not the other way around. Therefore, the given statement is incorrect according to the provided context information."
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "The provided text states that Musgrove served as lieutenant governor under Kirk Fordice, not the other way around.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Musgrove served as Lieutenant Governor under Kirk Fordice, not the other way around.",
+            "category": 2
+        }
+    }
+}

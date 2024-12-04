@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Aster,_Edmonton",
+    "predicate": "property/northeast",
+    "object": "resource/Strathcona_County",
+    "human_readable": "Aster in Edmonton is located northeast of Strathcona County.",
+    "questions": [
+        {
+            "score": 0.9064130187034607,
+            "question": "Is Aster located within Strathcona County?"
+        },
+        {
+            "score": 0.7963416576385498,
+            "question": "Which direction is Strathcona County from Aster?"
+        },
+        {
+            "score": 0.7332186698913574,
+            "question": "Are there any other landmarks or geographical features near Aster and Strathcona County?"
+        },
+        {
+            "score": 0.6880568861961365,
+            "question": "What is the geographic relationship between Aster and Strathcona County?"
+        },
+        {
+            "score": 0.6083534955978394,
+            "question": "If you were traveling from Aster to Strathcona County, which direction would you go?"
+        },
+        {
+            "score": 0.5899263620376587,
+            "question": "Where is Aster located?"
+        },
+        {
+            "score": 0.5196686387062073,
+            "question": "In what city is Aster situated?"
+        },
+        {
+            "score": 0.5173763036727905,
+            "question": "Can you describe the relative positions of Aster and Strathcona County?"
+        },
+        {
+            "score": 0.25372734665870667,
+            "question": "What are some possible reasons why Aster is located in this particular area?"
+        },
+        {
+            "score": 0.23040997982025146,
+            "question": "How might the location of Aster influence its surroundings?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Aster in Edmonton is located northeast of Strathcona County.",
+            "html": "dbpedia_116_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some possible reasons why Aster is located in this particular area?",
+            "html": "dbpedia_116_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you describe the relative positions of Aster and Strathcona County?",
+            "html": "dbpedia_116_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In what city is Aster situated?",
+            "html": "dbpedia_116_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_116_107.txt"
+        },
+        {
+            "file_id": "dbpedia_116_11.txt"
+        },
+        {
+            "file_id": "dbpedia_116_118.txt"
+        },
+        {
+            "file_id": "dbpedia_116_123.txt"
+        },
+        {
+            "file_id": "dbpedia_116_26.txt"
+        },
+        {
+            "file_id": "dbpedia_116_28.txt"
+        },
+        {
+            "file_id": "dbpedia_116_41.txt"
+        },
+        {
+            "file_id": "dbpedia_116_84.txt"
+        },
+        {
+            "file_id": "dbpedia_116_85.txt"
+        },
+        {
+            "file_id": "dbpedia_116_96.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe text states that Aster Gardens allows seniors to settle in the area they love, while maintaining an excellent quality of life. It also mentions that  Aster Gardens is a senior living community in Strathcona County and Sherwood Park. However, it doesn't say anything about Aster being located northeast of Strathcona County. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here's the evaluation in JSON format:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe reason for this answer is that none of the provided documents mention Aster being located northeast of Strathcona County. In fact, one document mentions Aster Gardens as a senior living community in Strathcona County and Sherwood Park (which is adjacent to Edmonton), but it does not specify its location relative to Strathcona County."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\"output\": \"no\"}\n```\n\nExplanation: The provided context information does not mention the location of Aster relative to Strathcona County. Therefore, the statement that Aster in Edmonton is located northeast of Strathcona County cannot be confirmed from the given documents."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n      \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Aster is located within the Meadows Community area, which is a part of southeast Edmonton, not northeast of Strathcona County.",
+            "category": -1
+        },
+        "gemma2": {
+            "reason": "Text mentions Aster Gardens allows Strathcona County and Sherwood Park seniors to settle, implying a location within proximity or southwest of those areas.",
+            "category": -1
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because the context information states that Aster is a neighbourhood located within the Meadows Community area, southeast Edmonton, which implies a location relative to Edmonton itself, but does not provide any direct connection or implication of its proximity to Strathcona County.",
+            "category": -1
+        },
+        "qwen2.5": {
+            "reason": "The context information states that Aster Gardens allows Strathcona County and Sherwood Park seniors to settle in the area they love, implying a proximity to both locations. However, it does not specify a northeast direction. In fact, the provided details about Aster being in southeast Edmonton contradict the northeast location relative to Strathcona County.",
+            "category": -1
+        }
+    }
+}

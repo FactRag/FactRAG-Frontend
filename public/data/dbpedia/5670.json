@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Romuald_the_Reindeer",
+    "predicate": "ontology/voice",
+    "object": "resource/Howell_Evens",
+    "human_readable": "Romuald the Reindeer's voice is Howell Evens.",
+    "questions": [
+        {
+            "score": 0.9723753333091736,
+            "question": "What kind of voice does Howell Evens use for Romuald the Reindeer?"
+        },
+        {
+            "score": 0.8700911402702332,
+            "question": "Who voices Romuald the Reindeer?"
+        },
+        {
+            "score": 0.746854305267334,
+            "question": "What other characters has Howell Evens voiced?"
+        },
+        {
+            "score": 0.6550308465957642,
+            "question": "What is unique about Romuald the Reindeer's voice?"
+        },
+        {
+            "score": 0.6373713612556458,
+            "question": "What is the name of the actor who voices Romuald the Reindeer?"
+        },
+        {
+            "score": 0.5796456336975098,
+            "question": "Is Howell Evens a real person?"
+        },
+        {
+            "score": 0.5287984013557434,
+            "question": "Can you tell me more about Howell Evens?"
+        },
+        {
+            "score": 0.4892130196094513,
+            "question": "Do you know any other details about Romuald the Reindeer?"
+        },
+        {
+            "score": 0.443466454744339,
+            "question": "Where might I find out more about Romuald the Reindeer?"
+        },
+        {
+            "score": 0.35135194659233093,
+            "question": "Is Romuald the Reindeer a character in a movie or TV show?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Romuald the Reindeer's voice is Howell Evens.",
+            "html": "dbpedia_5670_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where might I find out more about Romuald the Reindeer?",
+            "html": "dbpedia_5670_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Do you know any other details about Romuald the Reindeer?",
+            "html": "dbpedia_5670_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about Howell Evens?",
+            "html": "dbpedia_5670_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5670_34.txt"
+        },
+        {
+            "file_id": "dbpedia_5670_47.txt"
+        },
+        {
+            "file_id": "dbpedia_5670_50.txt"
+        },
+        {
+            "file_id": "dbpedia_5670_51.txt"
+        },
+        {
+            "file_id": "dbpedia_5670_55.txt"
+        },
+        {
+            "file_id": "dbpedia_5670_58.txt"
+        },
+        {
+            "file_id": "dbpedia_5670_63.txt"
+        },
+        {
+            "file_id": "dbpedia_5670_74.txt"
+        },
+        {
+            "file_id": "dbpedia_5670_77.txt"
+        },
+        {
+            "file_id": "dbpedia_5670_79.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple:\n\n{\n  \"output\": \"no\"\n}\n\nThe reason for this answer is that, according to the documents, the voice of Romuald the Reindeer is Nigel Planer, not Howell Evens. This information can be found in the documents listed as file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5670/re-ranker-msmarco/32.txt and file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5670/re-ranker-msmarco/53.txt."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The information provided does not support the statement that Romuald the Reindeer's voice is Howell Evens. According to the context, Nigel Planer is listed as the voice of Romuald Haroldson, and there is no mention of Howell Evens in any of the provided texts."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n    \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Howell Evens is not listed among the voices in the characters section of the provided context information.",
+            "category": 4
+        },
+        "gemma2": {
+            "reason": "The provided context lists Nigel Planer as the voice of Romuald Haroldson.",
+            "category": 4
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because Howell Evens' name does not appear as one of the voices for Romuald in any of the provided context information, whereas Nigel Planer and Julie Higginson are listed among the voices.",
+            "category": 4
+        },
+        "qwen2.5": {
+            "reason": "The context clearly states that Nigel Planer voices Romuald Haroldson.",
+            "category": 4
+        }
+    }
+}

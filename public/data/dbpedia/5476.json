@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Lewis_Nkosi",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "Nkosi, Lewis",
+    "human_readable": "The name of Lewis Nkosi is Nkosi, Lewis.",
+    "questions": [
+        {
+            "score": 0.9563863277435303,
+            "question": "What is the full name of Lewis Nkosi?"
+        },
+        {
+            "score": 0.9307880401611328,
+            "question": "What is Lewis Nkosi's surname?"
+        },
+        {
+            "score": 0.9150434732437134,
+            "question": "Is 'Nkosi' Lewis Nkosi's first or last name?"
+        },
+        {
+            "score": 0.8816089630126953,
+            "question": "What is Lewis Nkosi's first name?"
+        },
+        {
+            "score": 0.8698282241821289,
+            "question": "Is there any ambiguity in the way Lewis Nkosi's name is presented?"
+        },
+        {
+            "score": 0.8231891989707947,
+            "question": "If someone only knew Lewis Nkosi's surname, what could they assume about his given name?"
+        },
+        {
+            "score": 0.7027516961097717,
+            "question": "How would you write Lewis Nkosi's name in reverse order?"
+        },
+        {
+            "score": 0.6928038597106934,
+            "question": "Could you provide an example of how to use Lewis Nkosi's full name in a sentence?"
+        },
+        {
+            "score": 0.6066962480545044,
+            "question": "What information can you gather from the provided statement about Lewis Nkosi?"
+        },
+        {
+            "score": 0.030543014407157898,
+            "question": "Why do you think it's important to know someone's full name?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of Lewis Nkosi is Nkosi, Lewis.",
+            "html": "dbpedia_5476_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What information can you gather from the provided statement about Lewis Nkosi?",
+            "html": "dbpedia_5476_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Could you provide an example of how to use Lewis Nkosi's full name in a sentence?",
+            "html": "dbpedia_5476_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How would you write Lewis Nkosi's name in reverse order?",
+            "html": "dbpedia_5476_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5476_12.txt"
+        },
+        {
+            "file_id": "dbpedia_5476_16.txt"
+        },
+        {
+            "file_id": "dbpedia_5476_27.txt"
+        },
+        {
+            "file_id": "dbpedia_5476_3.txt"
+        },
+        {
+            "file_id": "dbpedia_5476_45.txt"
+        },
+        {
+            "file_id": "dbpedia_5476_49.txt"
+        },
+        {
+            "file_id": "dbpedia_5476_59.txt"
+        },
+        {
+            "file_id": "dbpedia_5476_64.txt"
+        },
+        {
+            "file_id": "dbpedia_5476_78.txt"
+        },
+        {
+            "file_id": "dbpedia_5476_87.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the answer in the structured JSON format:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation:\n\nThe triple states that the name of Lewis Nkosi is \"Nkosi, Lewis\". This can be evaluated by checking the documents for any mention of Lewis Nkosi's full name. In document 2 (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5476/re-ranker-msmarco/52.txt), it is stated that \"Lewis Nkosi\" is one of South Africa's foremost writers and critics, which supports the triple."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide multiple references to \"Lewis Nkosi\" and consistently present his full name as \"Nkosi, Lewis.\" Therefore, the triple stating that the name of Lewis Nkosi is Nkosi, Lewis, is supported by the given context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n     \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Common name order conventions typically place the surname first followed by the given name.  \n\n\n\n\nLet me know if you'd like to explore other reasoning possibilities!",
+            "category": 2
+        }
+    }
+}

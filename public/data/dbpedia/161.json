@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Drama_(film)",
+    "predicate": "property/distributor",
+    "object": "Jayanna Combines",
+    "human_readable": "The distributor of Drama (film) is Jayanna Combines.",
+    "questions": [
+        {
+            "score": 0.9760145545005798,
+            "question": "Which film was distributed by Jayanna Combines?"
+        },
+        {
+            "score": 0.9605359435081482,
+            "question": "Are there other films distributed by Jayanna Combines?"
+        },
+        {
+            "score": 0.8855099081993103,
+            "question": "What type of media did Jayanna Combines distribute?"
+        },
+        {
+            "score": 0.7767197489738464,
+            "question": "Who distributed the film Drama?"
+        },
+        {
+            "score": 0.6512301564216614,
+            "question": "What is the name of the company that distributed the film Drama?"
+        },
+        {
+            "score": 0.53470379114151,
+            "question": "Who might be involved in the distribution of a film like Drama?"
+        },
+        {
+            "score": 0.46400731801986694,
+            "question": "Is Drama a movie?"
+        },
+        {
+            "score": 0.3907155394554138,
+            "question": "What role does distribution play in the success of a film?"
+        },
+        {
+            "score": 0.3024439811706543,
+            "question": "What does it mean for a company to distribute a film?"
+        },
+        {
+            "score": 0.278033047914505,
+            "question": "Can you give an example of another company that distributes films?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The distributor of Drama (film) is Jayanna Combines.",
+            "html": "dbpedia_161_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What does it mean for a company to distribute a film?",
+            "html": "dbpedia_161_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What role does distribution play in the success of a film?",
+            "html": "dbpedia_161_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Drama a movie?",
+            "html": "dbpedia_161_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_161_1.txt"
+        },
+        {
+            "file_id": "dbpedia_161_14.txt"
+        },
+        {
+            "file_id": "dbpedia_161_15.txt"
+        },
+        {
+            "file_id": "dbpedia_161_24.txt"
+        },
+        {
+            "file_id": "dbpedia_161_31.txt"
+        },
+        {
+            "file_id": "dbpedia_161_33.txt"
+        },
+        {
+            "file_id": "dbpedia_161_40.txt"
+        },
+        {
+            "file_id": "dbpedia_161_53.txt"
+        },
+        {
+            "file_id": "dbpedia_161_61.txt"
+        },
+        {
+            "file_id": "dbpedia_161_73.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the provided context information, here's the evaluation:\n\n{\n  \"output\": \"yes\"\n}\n\nThe documents confirm that Jayanna Combines is indeed the distributor of the film \"Drama\"."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents mention that Jayanna Combines is distributing a film titled \"Drama,\" which supports the statement that \"The distributor of Drama (film) is Jayanna Combines.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The distributor of the film 'Drama' is not explicitly stated in the context information provided. It is only mentioned that Jayanna Combines is involved in its production as a production house, but there is no mention of distribution rights being sold by them for this specific film.",
+            "category": 3
+        },
+        "gemma2": {
+            "reason": "Context 5 states \"This time he is not selling the film to other colleagues.  He is distributing the expensive film of his career on own.\"",
+            "category": 3
+        },
+        "llama3.1": {
+            "reason": "Point 5 of the context information states that Jayanna is distributing the film \"Drama\" on his own, not selling it to other colleagues or distributors. This suggests that Jayanna Combines is both producing and distributing the film, making Jayanna Combines the distributor of the film, not just a distribution company that has acquired the rights to distribute it.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "The context mentions that Jayanna of 'Jayanna Combines' is very confident about the success of his 5th film production called 'Drama', and he is distributing it on his own. This indicates that Jayanna Combines is indeed the distributor of 'Drama'.",
+            "category": 3
+        }
+    }
+}

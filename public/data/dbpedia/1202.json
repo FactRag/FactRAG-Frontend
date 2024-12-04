@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Le_Tigre",
+    "predicate": "ontology/associatedBand",
+    "object": "resource/Julie_Ruin",
+    "human_readable": "Le Tigre is associated with Julie Ruin.",
+    "questions": [
+        {
+            "score": 0.9427493214607239,
+            "question": "What is the relationship between Le Tigre and Julie Ruin?"
+        },
+        {
+            "score": 0.9407522678375244,
+            "question": "Are Le Tigre and Julie Ruin related in any way musically?"
+        },
+        {
+            "score": 0.935010552406311,
+            "question": "Does Julie Ruin have a connection to the band Le Tigre?"
+        },
+        {
+            "score": 0.9306461215019226,
+            "question": "Is there a shared history between Le Tigre and Julie Ruin?"
+        },
+        {
+            "score": 0.9279616475105286,
+            "question": "Is there a musical connection between Le Tigre and Julie Ruin?"
+        },
+        {
+            "score": 0.9217068552970886,
+            "question": "Can you name a musical act associated with both Le Tigre and Julie Ruin?"
+        },
+        {
+            "score": 0.8472047448158264,
+            "question": "Who or what connects the musical groups Le Tigre and Julie Ruin?"
+        },
+        {
+            "score": 0.8365310430526733,
+            "question": "What musical projects are linked to each other through Julie Ruin and Le Tigre?"
+        },
+        {
+            "score": 0.6099612712860107,
+            "question": "Who is Julie Ruin connected to musically?"
+        },
+        {
+            "score": 0.4055000841617584,
+            "question": "What musical group is Le Tigre associated with?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Le Tigre is associated with Julie Ruin.",
+            "html": "dbpedia_1202_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is Julie Ruin connected to musically?",
+            "html": "dbpedia_1202_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What musical projects are linked to each other through Julie Ruin and Le Tigre?",
+            "html": "dbpedia_1202_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who or what connects the musical groups Le Tigre and Julie Ruin?",
+            "html": "dbpedia_1202_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1202_112.txt"
+        },
+        {
+            "file_id": "dbpedia_1202_115.txt"
+        },
+        {
+            "file_id": "dbpedia_1202_119.txt"
+        },
+        {
+            "file_id": "dbpedia_1202_137.txt"
+        },
+        {
+            "file_id": "dbpedia_1202_142.txt"
+        },
+        {
+            "file_id": "dbpedia_1202_44.txt"
+        },
+        {
+            "file_id": "dbpedia_1202_46.txt"
+        },
+        {
+            "file_id": "dbpedia_1202_58.txt"
+        },
+        {
+            "file_id": "dbpedia_1202_61.txt"
+        },
+        {
+            "file_id": "dbpedia_1202_68.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here's the evaluation of whether the information in the documents supports the triple:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation:\n\nThe document at file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1202/re-ranker-msmarco/3.txt mentions that Kathleen Hanna is a member of Le Tigre, and The Julie Ruin. In fact, it says that \"Hanna, who's also known from her bands Bikini Kill and The Julie Ruin, formed Le Tigre nearly 25 years ago...\" This suggests a close association between the two bands.\n\nAdditionally, the document at file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1202/re-ranker-msmarco/44.txt mentions that The Julie Ruin is \"featuring Kathleen Hanna of Bikini Kill and Le Tigre\". This further reinforces the connection between the two bands.\n\nTherefore, based on this information, it appears that Le Tigre is indeed associated with The Julie Ruin."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information that supports the association between Le Tigre and The Julie Ruin, as Kathleen Hanna was a member of both bands."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

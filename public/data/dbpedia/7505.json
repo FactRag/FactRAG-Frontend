@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Citizen_Kane",
+    "predicate": "property/distributor",
+    "object": "resource/RKO_Pictures",
+    "human_readable": "Citizen Kane was distributed by RKO Pictures.",
+    "questions": [
+        {
+            "score": 0.7723219990730286,
+            "question": "Which production company was behind the distribution of Citizen Kane?"
+        },
+        {
+            "score": 0.7713617086410522,
+            "question": "Which studio was responsible for distributing Citizen Kane?"
+        },
+        {
+            "score": 0.7406934499740601,
+            "question": "Who distributed the movie Citizen Kane?"
+        },
+        {
+            "score": 0.6765360236167908,
+            "question": "Which film studio handled the distribution of Citizen Kane?"
+        },
+        {
+            "score": 0.5136325359344482,
+            "question": "What company released Citizen Kane?"
+        },
+        {
+            "score": 0.505895733833313,
+            "question": "Name the production company behind Citizen Kane."
+        },
+        {
+            "score": 0.4430338740348816,
+            "question": "What is the name of the company that released Citizen Kane?"
+        },
+        {
+            "score": 0.4084506630897522,
+            "question": "What company made Citizen Kane available for public viewing?"
+        },
+        {
+            "score": 0.40214061737060547,
+            "question": "Who was responsible for getting Citizen Kane into cinemas?"
+        },
+        {
+            "score": 0.35643240809440613,
+            "question": "Who brought Citizen Kane to theaters?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Citizen Kane was distributed by RKO Pictures.",
+            "html": "dbpedia_7505_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who was responsible for getting Citizen Kane into cinemas?",
+            "html": "dbpedia_7505_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What company made Citizen Kane available for public viewing?",
+            "html": "dbpedia_7505_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of the company that released Citizen Kane?",
+            "html": "dbpedia_7505_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_7505_11.txt"
+        },
+        {
+            "file_id": "dbpedia_7505_16.txt"
+        },
+        {
+            "file_id": "dbpedia_7505_17.txt"
+        },
+        {
+            "file_id": "dbpedia_7505_22.txt"
+        },
+        {
+            "file_id": "dbpedia_7505_29.txt"
+        },
+        {
+            "file_id": "dbpedia_7505_38.txt"
+        },
+        {
+            "file_id": "dbpedia_7505_41.txt"
+        },
+        {
+            "file_id": "dbpedia_7505_59.txt"
+        },
+        {
+            "file_id": "dbpedia_7505_95.txt"
+        },
+        {
+            "file_id": "dbpedia_7505_96.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "The triple to be evaluated is:\n\n\"Citizen Kane was distributed by RKO Pictures.\"\n\nHere's the structured JSON response:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents mention that Citizen Kane was produced and released by RKO Radio Pictures, but they also state that the last releases were distributed by Universal, indicating that RKO's distribution rights may have been transferred or sold to another company. Therefore, it is not accurate to say that Citizen Kane was \"distributed by\" RKO Pictures in the present tense, especially considering that RKO's domestic and international distribution offices had closed their doors for good by January 1957."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents mention that \"Citizen Kane\" was produced by and under the studio of RKO Radio Pictures, which implies it was distributed by them as well. Therefore, the statement \"Citizen Kane was distributed by RKO Pictures\" is supported by the information provided."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "It was actually distributed by a company other than RKO Pictures after RKO's domestic distribution offices were closed.",
+            "category": 3
+        }
+    }
+}

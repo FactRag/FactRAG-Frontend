@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Sigrid_Undset",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:People_from_Kalundborg",
+    "human_readable": "Sigrid Undset's subject is People from Kalundborg.",
+    "questions": [
+        {
+            "score": 0.9767870306968689,
+            "question": "Is Sigrid Undset known as a person from Kalundborg?"
+        },
+        {
+            "score": 0.8587473034858704,
+            "question": "How might Sigrid Undset's upbringing in Kalundborg have influenced her work?"
+        },
+        {
+            "score": 0.8253164291381836,
+            "question": "Does Sigrid Undset have any connections to Kalundborg?"
+        },
+        {
+            "score": 0.8191729784011841,
+            "question": "Are there other notable people from Kalundborg?"
+        },
+        {
+            "score": 0.7598888278007507,
+            "question": "Where is Sigrid Undset from?"
+        },
+        {
+            "score": 0.6798985600471497,
+            "question": "What city is associated with Sigrid Undset?"
+        },
+        {
+            "score": 0.5696554183959961,
+            "question": "What is Kalundborg known for?"
+        },
+        {
+            "score": 0.4743918776512146,
+            "question": "What is the nationality of Sigrid Undset based on the given information?"
+        },
+        {
+            "score": 0.4607710540294647,
+            "question": "Can we infer anything about Sigrid Undset's origins from this statement?"
+        },
+        {
+            "score": 0.4507250487804413,
+            "question": "What other facts would you like to know about Sigrid Undset?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Sigrid Undset's subject is People from Kalundborg.",
+            "html": "dbpedia_2614_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can we infer anything about Sigrid Undset's origins from this statement?",
+            "html": "dbpedia_2614_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the nationality of Sigrid Undset based on the given information?",
+            "html": "dbpedia_2614_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Kalundborg known for?",
+            "html": "dbpedia_2614_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2614_113.txt"
+        },
+        {
+            "file_id": "dbpedia_2614_118.txt"
+        },
+        {
+            "file_id": "dbpedia_2614_15.txt"
+        },
+        {
+            "file_id": "dbpedia_2614_22.txt"
+        },
+        {
+            "file_id": "dbpedia_2614_34.txt"
+        },
+        {
+            "file_id": "dbpedia_2614_58.txt"
+        },
+        {
+            "file_id": "dbpedia_2614_63.txt"
+        },
+        {
+            "file_id": "dbpedia_2614_7.txt"
+        },
+        {
+            "file_id": "dbpedia_2614_72.txt"
+        },
+        {
+            "file_id": "dbpedia_2614_95.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of whether the information in the documents supports the triple:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nThe reason for this answer is that none of the provided documents mention Sigrid Undset being a person from Kalundborg, but rather that she was born there. The documents describe her as a Norwegian novelist who was born in Kalundborg, Denmark, and moved to Norway when she was two years old."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\n**Explanation:** The documents provide information about Sigrid Undset, including her birthplace in Kalundborg, Denmark. Therefore, the statement that Sigrid Undset\u2019s subjects include people from Kalundborg is supported by the provided context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "Based on the context information provided, we can see that Sigrid Undset was born in Kalundborg, Denmark. Therefore, it can be concluded that \"Sigrid Undset's subject is People from Kalundborg\" is supported by the documents.\n\nThe answer would be:\n```json\n{\"output\": \"yes\"}\n```\n\nThis conclusion aligns with all of the provided information across different files which mention Sigrid Undset's birthplace as being in Kalundborg, Denmark."
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Several sources state she was born in Kalundborg but her family moved to Norway when she was two.  She is primarily associated with Norway, not Kalundborg.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "Sigrid Undset was born in Kalundborg, Denmark, but her family moved to Norway when she was two years old.",
+            "category": 2
+        }
+    }
+}

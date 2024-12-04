@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Eolica_Casimcea_Wind_Farm",
+    "predicate": "property/status",
+    "object": "Approved",
+    "human_readable": "The status of Eolica Casimcea Wind Farm is Approved.",
+    "questions": [
+        {
+            "score": 0.9709568619728088,
+            "question": "Has Eolica Casimcea Wind Farm been approved?"
+        },
+        {
+            "score": 0.9661633372306824,
+            "question": "What is the status of Eolica Casimcea Wind Farm?"
+        },
+        {
+            "score": 0.9624233245849609,
+            "question": "Who approved the Eolica Casimcea Wind Farm project?"
+        },
+        {
+            "score": 0.8431599140167236,
+            "question": "Is Eolica Casimcea Wind Farm operational?"
+        },
+        {
+            "score": 0.8087350726127625,
+            "question": "What are the potential benefits of Eolica Casimcea Wind Farm?"
+        },
+        {
+            "score": 0.7725868821144104,
+            "question": "How will Eolica Casimcea Wind Farm impact the local community?"
+        },
+        {
+            "score": 0.7667681574821472,
+            "question": "What is the estimated capacity of Eolica Casimcea Wind Farm?"
+        },
+        {
+            "score": 0.7572258114814758,
+            "question": "Are there any concerns associated with Eolica Casimcea Wind Farm?"
+        },
+        {
+            "score": 0.7329103350639343,
+            "question": "Where is Eolica Casimcea Wind Farm located?"
+        },
+        {
+            "score": 0.6807073354721069,
+            "question": "What type of energy source does Eolica Casimcea Wind Farm utilize?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The status of Eolica Casimcea Wind Farm is Approved.",
+            "html": "dbpedia_1340_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where is Eolica Casimcea Wind Farm located?",
+            "html": "dbpedia_1340_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any concerns associated with Eolica Casimcea Wind Farm?",
+            "html": "dbpedia_1340_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the estimated capacity of Eolica Casimcea Wind Farm?",
+            "html": "dbpedia_1340_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1340_1.txt"
+        },
+        {
+            "file_id": "dbpedia_1340_12.txt"
+        },
+        {
+            "file_id": "dbpedia_1340_17.txt"
+        },
+        {
+            "file_id": "dbpedia_1340_19.txt"
+        },
+        {
+            "file_id": "dbpedia_1340_2.txt"
+        },
+        {
+            "file_id": "dbpedia_1340_22.txt"
+        },
+        {
+            "file_id": "dbpedia_1340_3.txt"
+        },
+        {
+            "file_id": "dbpedia_1340_4.txt"
+        },
+        {
+            "file_id": "dbpedia_1340_6.txt"
+        },
+        {
+            "file_id": "dbpedia_1340_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "After evaluating the context information, I can confirm that:\n\n`{'output': 'yes'}`\n\nThe document at `file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1340/re-ranker-msmarco/17.txt` contains an \"Infobox_Power_Station\" with the key \"status=Approved\", which directly supports this triple."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\nThe query \"The status of Eolica Casimcea Wind Farm is Approved.\" is supported by the information in document 17.txt, which states under the `status` field: `Approved`. Therefore, the answer is \"yes\"."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Will_Patton",
+    "predicate": "property/nationality",
+    "object": "American",
+    "human_readable": "Will Patton is American.",
+    "questions": [
+        {
+            "score": 0.9855560660362244,
+            "question": "Is Will Patton American?"
+        },
+        {
+            "score": 0.9445391297340393,
+            "question": "Is Will Patton's citizenship American?"
+        },
+        {
+            "score": 0.943009078502655,
+            "question": "Is Will Patton a US citizen?"
+        },
+        {
+            "score": 0.6715922951698303,
+            "question": "From which country is Will Patton?"
+        },
+        {
+            "score": 0.6652165055274963,
+            "question": "What nationality is Will Patton?"
+        },
+        {
+            "score": 0.6499210000038147,
+            "question": "What is Will Patton's nationality?"
+        },
+        {
+            "score": 0.6179541945457458,
+            "question": "What is Will Patton's origin?"
+        },
+        {
+            "score": 0.5703204870223999,
+            "question": "Where was Will Patton born?"
+        },
+        {
+            "score": 0.5289108753204346,
+            "question": "To what country does Will Patton belong?"
+        },
+        {
+            "score": 0.4682161808013916,
+            "question": "Where did Will Patton grow up?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Will Patton is American.",
+            "html": "dbpedia_5564_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=To what country does Will Patton belong?",
+            "html": "dbpedia_5564_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where was Will Patton born?",
+            "html": "dbpedia_5564_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Will Patton's origin?",
+            "html": "dbpedia_5564_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5564_108.txt"
+        },
+        {
+            "file_id": "dbpedia_5564_110.txt"
+        },
+        {
+            "file_id": "dbpedia_5564_111.txt"
+        },
+        {
+            "file_id": "dbpedia_5564_15.txt"
+        },
+        {
+            "file_id": "dbpedia_5564_4.txt"
+        },
+        {
+            "file_id": "dbpedia_5564_40.txt"
+        },
+        {
+            "file_id": "dbpedia_5564_42.txt"
+        },
+        {
+            "file_id": "dbpedia_5564_54.txt"
+        },
+        {
+            "file_id": "dbpedia_5564_71.txt"
+        },
+        {
+            "file_id": "dbpedia_5564_72.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple \"Will Patton is American\" based on the provided context information:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation:\nThe documents mention that Will Patton was born in Charleston, South Carolina (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5564/re-ranker-msmarco/54.txt), which indicates that he is from the United States. However, being American does not necessarily mean that his ethnicity or nationality as an actor and audiobook narrator is solely American."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\nThe documents provide multiple references confirming that Will Patton is an American actor. For instance, one document states he was born in Charleston, United States of America, and another mentions his roles in American films while noting his nationality as American."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The context information states that Will Patton was born in Charleston, South Carolina, which is a part of the United States. This information suggests that he holds American citizenship and nationality.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Thomas_Burlison,_Baron_Burlison",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:Lincoln_City_F.C._players",
+    "human_readable": "The subject of Thomas Burlison, Baron Burlison is Category:Lincoln City F.C. players.",
+    "questions": [
+        {
+            "score": 0.9860554933547974,
+            "question": "Was Thomas Burlison, Baron Burlison a player for Lincoln City F.C.?"
+        },
+        {
+            "score": 0.9688466787338257,
+            "question": "When did Thomas Burlison, Baron Burlison play for Lincoln City F.C.?"
+        },
+        {
+            "score": 0.9324851036071777,
+            "question": "Who is Thomas Burlison, Baron Burlison?"
+        },
+        {
+            "score": 0.9172217845916748,
+            "question": "What category does Thomas Burlison, Baron Burlison belong to?"
+        },
+        {
+            "score": 0.6808410882949829,
+            "question": "What kind of organization is Lincoln City F.C.?"
+        },
+        {
+            "score": 0.6604259610176086,
+            "question": "Where is Lincoln City F.C. located?"
+        },
+        {
+            "score": 0.6519670486450195,
+            "question": "What are some of the achievements of Lincoln City F.C.?"
+        },
+        {
+            "score": 0.6494022607803345,
+            "question": "Are there any famous individuals associated with Lincoln City F.C.?"
+        },
+        {
+            "score": 0.569645345211029,
+            "question": "Can you name any other players from Lincoln City F.C.?"
+        },
+        {
+            "score": 0.24225856363773346,
+            "question": "Does the title 'Baron' indicate a specific role or position?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The subject of Thomas Burlison, Baron Burlison is Category:Lincoln City F.C. players.",
+            "html": "dbpedia_2465_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you name any other players from Lincoln City F.C.?",
+            "html": "dbpedia_2465_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any famous individuals associated with Lincoln City F.C.?",
+            "html": "dbpedia_2465_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some of the achievements of Lincoln City F.C.?",
+            "html": "dbpedia_2465_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2465_20.txt"
+        },
+        {
+            "file_id": "dbpedia_2465_24.txt"
+        },
+        {
+            "file_id": "dbpedia_2465_30.txt"
+        },
+        {
+            "file_id": "dbpedia_2465_32.txt"
+        },
+        {
+            "file_id": "dbpedia_2465_38.txt"
+        },
+        {
+            "file_id": "dbpedia_2465_40.txt"
+        },
+        {
+            "file_id": "dbpedia_2465_57.txt"
+        },
+        {
+            "file_id": "dbpedia_2465_59.txt"
+        },
+        {
+            "file_id": "dbpedia_2465_60.txt"
+        },
+        {
+            "file_id": "dbpedia_2465_8.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "To evaluate the triple, I'll first identify the subject (Thomas Burlison, Baron Burlison) and the category (Category:Lincoln City F.C. players). Then, I'll check if the documents support this categorization.\n\nThe subject of Thomas Burlison, Baron Burlison is a complex one, as he was involved in various fields beyond football, such as trade unionism and politics. However, according to the documents:\n\n* He played professional football for Lincoln City (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2465/re-ranker-msmarco/24.txt)\n* He was a regional officer and secretary of the General & Municipal Workers' Union (GMB), which is related to trade unionism, but not specifically to Lincoln City F.C.\n* He was also a Member of the House of Lords and had connections with various politicians, including Tony Blair.\n\nGiven this information, it appears that Thomas Burlison, Baron Burlison's connection to Category:Lincoln City F.C. players is more direct than his involvement in other areas of life. While he may have been involved in trade unionism and politics, the documents primarily highlight his football career, particularly with Lincoln City.\n\nTherefore, based on the context information provided, I would conclude that the triple is correct:\n\n`{'output': 'yes'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The provided documents do not mention any connection between Thomas Burlison and Lincoln City F.C., nor does it categorize him under that specific category. The information focuses on his career as a footballer, union leader, and his political involvement, but there is no indication linking him directly to being a player for Lincoln City F.C."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n      \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Thomas Burlison played for Lincoln City, Hartlepool United, and Darlington, but the claim focuses only on Lincoln City.",
+            "category": 1
+        },
+        "qwen2.5": {
+            "reason": "Thomas Burlison played for Lincoln City only briefly as an apprentice and from 1953 to 1965, his main clubs were Hartlepool United and Darlington. He is not categorized primarily as a Lincoln City player in the provided context.",
+            "category": 1
+        }
+    }
+}

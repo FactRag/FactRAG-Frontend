@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Yekaterinburg",
+    "predicate": "property/mayRecordHighC",
+    "object": "33.4",
+    "human_readable": "Yekaterinburg may record a high temperature of 33.4.",
+    "questions": [
+        {
+            "score": 0.8821706771850586,
+            "question": "What is the highest temperature Yekaterinburg may record?"
+        },
+        {
+            "score": 0.7879823446273804,
+            "question": "How high could the temperature go in Yekaterinburg?"
+        },
+        {
+            "score": 0.7215819954872131,
+            "question": "What is a possible temperature for Yekaterinburg?"
+        },
+        {
+            "score": 0.6444130539894104,
+            "question": "Are temperatures expected to be unusually high in Yekaterinburg?"
+        },
+        {
+            "score": 0.5759270787239075,
+            "question": "What temperature should residents of Yekaterinburg be aware of?"
+        },
+        {
+            "score": 0.5246851444244385,
+            "question": "Is there a chance of extreme heat in Yekaterinburg?"
+        },
+        {
+            "score": 0.511895477771759,
+            "question": "Is it likely to be hot in Yekaterinburg?"
+        },
+        {
+            "score": 0.4376544952392578,
+            "question": "Should people in Yekaterinburg be prepared for hot weather?"
+        },
+        {
+            "score": 0.4305148720741272,
+            "question": "What might be the weather like in Yekaterinburg today?"
+        },
+        {
+            "score": 0.42263418436050415,
+            "question": "Could Yekaterinburg experience a very warm day?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Yekaterinburg may record a high temperature of 33.4.",
+            "html": "dbpedia_321_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What might be the weather like in Yekaterinburg today?",
+            "html": "dbpedia_321_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Should people in Yekaterinburg be prepared for hot weather?",
+            "html": "dbpedia_321_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is it likely to be hot in Yekaterinburg?",
+            "html": "dbpedia_321_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_321_11.txt"
+        },
+        {
+            "file_id": "dbpedia_321_127.txt"
+        },
+        {
+            "file_id": "dbpedia_321_129.txt"
+        },
+        {
+            "file_id": "dbpedia_321_134.txt"
+        },
+        {
+            "file_id": "dbpedia_321_4.txt"
+        },
+        {
+            "file_id": "dbpedia_321_40.txt"
+        },
+        {
+            "file_id": "dbpedia_321_70.txt"
+        },
+        {
+            "file_id": "dbpedia_321_76.txt"
+        },
+        {
+            "file_id": "dbpedia_321_93.txt"
+        },
+        {
+            "file_id": "dbpedia_321_94.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n\n\nThe provided text mentions a highest recorded temperature of 88\u00b0F (31.1\u00b0C) in July-August, but doesn't specify any  temperature as high as 33.4\u00b0C."
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents do not mention any specific information about May temperatures in Yekaterinburg, let alone a record high of 33.4\u00b0C (92.3\u00b0F). However, document #125.txt mentions that daily high temperatures increase by 10\u00c2\u00b0F from 56\u00c2\u00b0F to 66\u00c2\u00b0F in May, and the highest temperature mentioned is 73\u00c2\u00b0F on July 3. There is no indication of a record high of 33.4\u00b0C in May or any other month."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents provide information about the climate in Yekaterinburg, including recorded temperatures. The highest temperature recorded in recent years was 39\u00b0C (102\u00b0F) in July 2023, which supports the statement that Yekaterinburg may record a high temperature of 33.4\u00b0C (around 92\u00b0F), albeit at a lower value but within plausible range based on the provided data."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "According to the context information provided, the highest temperature recorded in Yekaterinburg was 39\u00b0C (102.2\u00b0F), not 33.4\u00b0C.",
+            "category": -1
+        },
+        "gemma2": {
+            "reason": "The provided context states that the highest temperature recorded in Yekaterinburg in recent years was 39\u00b0C in July 2023.  A high of 33.4\u00b0C falls below this recorded maximum.",
+            "category": -1
+        },
+        "llama3.1": {
+            "reason": "The highest temperature recorded in Yekaterinburg in recent years was 39\u00b0C in July 2023, which is higher than the claimed value of 33.4\u00b0C.",
+            "category": -1
+        }
+    }
+}

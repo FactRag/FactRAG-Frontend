@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Canada_Place",
+    "predicate": "property/floorCount",
+    "object": "23",
+    "human_readable": "Canada Place has 23 floors.",
+    "questions": [
+        {
+            "score": 0.7318126559257507,
+            "question": "How many floors does Canada Place have?"
+        },
+        {
+            "score": 0.3630604147911072,
+            "question": "In what city is Canada Place located?"
+        },
+        {
+            "score": 0.34067487716674805,
+            "question": "Who designed Canada Place?"
+        },
+        {
+            "score": 0.3162766993045807,
+            "question": "Does Canada Place have any notable architectural features?"
+        },
+        {
+            "score": 0.3018590807914734,
+            "question": "Is Canada Place a residential or commercial building?"
+        },
+        {
+            "score": 0.29071980714797974,
+            "question": "When was Canada Place built?"
+        },
+        {
+            "score": 0.2887524366378784,
+            "question": "What is the purpose of Canada Place?"
+        },
+        {
+            "score": 0.254781037569046,
+            "question": "What is the height of Canada Place?"
+        },
+        {
+            "score": 0.23765911161899567,
+            "question": "Is Canada Place a popular tourist destination?"
+        },
+        {
+            "score": 0.1967022866010666,
+            "question": "Are there any restaurants or shops in Canada Place?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Canada Place has 23 floors.",
+            "html": "dbpedia_3090_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Canada Place a popular tourist destination?",
+            "html": "dbpedia_3090_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the height of Canada Place?",
+            "html": "dbpedia_3090_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the purpose of Canada Place?",
+            "html": "dbpedia_3090_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3090_1.txt"
+        },
+        {
+            "file_id": "dbpedia_3090_12.txt"
+        },
+        {
+            "file_id": "dbpedia_3090_14.txt"
+        },
+        {
+            "file_id": "dbpedia_3090_26.txt"
+        },
+        {
+            "file_id": "dbpedia_3090_29.txt"
+        },
+        {
+            "file_id": "dbpedia_3090_30.txt"
+        },
+        {
+            "file_id": "dbpedia_3090_57.txt"
+        },
+        {
+            "file_id": "dbpedia_3090_63.txt"
+        },
+        {
+            "file_id": "dbpedia_3090_79.txt"
+        },
+        {
+            "file_id": "dbpedia_3090_92.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the structured JSON response:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents mention a \"Canada Place\" in Vancouver, but it's not explicitly stated that it has 23 floors. However, it does describe Canada Place as a \"multi-purpose, 23 story complex\". This implies that the building has 23 floors, so the statement is likely true according to the provided context information."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The document for file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3090/re-ranker-msmarco/29.txt states that Canada Place is a \"multi-purpose, 23 story complex,\" which supports the query that Canada Place has 23 floors."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Canada Place in Vancouver, as described in the context, has 23 stories, not 23 floors. A story refers to one level of a building, including all areas from ground level up to and including any roof area, while a floor is a single level within the building excluding the roof area. Since the convention center, hotel, retail spaces, and other facilities are included in the 23 stories, it has 23 stories, not 23 floors.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "It contradicts the information provided in context 2 which states \"Canada Place is a multi-purpose, 23 story complex\".",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The context information states that there are two different buildings with the name \"Canada Place\", one being a 23-story complex in Vancouver and another being a glass-and-steel office building in Edmonton, but it also mentions that First Canadian Place in Toronto has the tallest skyscraper in Canada which has 72 floors.",
+            "category": -1
+        },
+        "qwen2.5": {
+            "reason": "The context clearly states that Canada Place is a 23-story complex.",
+            "category": 2
+        }
+    }
+}

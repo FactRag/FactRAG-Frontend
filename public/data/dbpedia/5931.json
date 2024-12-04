@@ -1,0 +1,134 @@
+{
+    "subject": "resource/RATP_Group",
+    "predicate": "property/parent",
+    "object": "resource/Government_of_France",
+    "human_readable": "RATP Group's parent organization is the Government of France.",
+    "questions": [
+        {
+            "score": 0.882602870464325,
+            "question": "What is the relationship between the RATP Group and the Government of France?"
+        },
+        {
+            "score": 0.8784491419792175,
+            "question": "Who is the parent organization of the RATP Group?"
+        },
+        {
+            "score": 0.7685397863388062,
+            "question": "Which country's government owns the RATP Group?"
+        },
+        {
+            "score": 0.7002304196357727,
+            "question": "To which government does the RATP Group belong?"
+        },
+        {
+            "score": 0.622392475605011,
+            "question": "What type of entity governs the RATP Group?"
+        },
+        {
+            "score": 0.5905349850654602,
+            "question": "Is the RATP Group a public or private organization?"
+        },
+        {
+            "score": 0.48031526803970337,
+            "question": "Is the RATP Group owned by the public or private citizens?"
+        },
+        {
+            "score": 0.3859780728816986,
+            "question": "Does the RATP Group report to a specific government body?"
+        },
+        {
+            "score": 0.2807183563709259,
+            "question": "What is the highest level of authority overseeing the RATP Group?"
+        },
+        {
+            "score": 0.22875553369522095,
+            "question": "Who ultimately has control over the RATP Group?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=RATP Group's parent organization is the Government of France.",
+            "html": "dbpedia_5931_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the highest level of authority overseeing the RATP Group?",
+            "html": "dbpedia_5931_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does the RATP Group report to a specific government body?",
+            "html": "dbpedia_5931_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is the RATP Group owned by the public or private citizens?",
+            "html": "dbpedia_5931_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5931_117.txt"
+        },
+        {
+            "file_id": "dbpedia_5931_134.txt"
+        },
+        {
+            "file_id": "dbpedia_5931_24.txt"
+        },
+        {
+            "file_id": "dbpedia_5931_3.txt"
+        },
+        {
+            "file_id": "dbpedia_5931_31.txt"
+        },
+        {
+            "file_id": "dbpedia_5931_57.txt"
+        },
+        {
+            "file_id": "dbpedia_5931_58.txt"
+        },
+        {
+            "file_id": "dbpedia_5931_59.txt"
+        },
+        {
+            "file_id": "dbpedia_5931_76.txt"
+        },
+        {
+            "file_id": "dbpedia_5931_94.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe provided text states that RATP Group is a state-owned enterprise (EPIC) and doesn't explicitly mention the Government of France as its parent organization.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the answer in the form of a structured JSON format:\n\n```\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation:\n\nThe context information provided contains multiple documents that describe the RATP Group, its headquarters, and its operations. While the specific parent organization is not explicitly mentioned, it is repeatedly stated that RATP Group is a French state-owned enterprise (EPIC) or a state-owned public transport operator headquartered in Paris, France. This implies that the Government of France has some level of ownership or control over the RATP Group, supporting the assertion that its parent organization is the Government of France."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents describe RATP as a state-owned enterprise and public transport operator. This implies that its parent organization is the Government of France, which aligns with the statement \"RATP Group's parent organization is the Government of France.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Multiple sources state RATP Group is a state-owned enterprise (EPIC) and originates from the public transport operator for the city of Paris.",
+            "category": 2
+        }
+    }
+}

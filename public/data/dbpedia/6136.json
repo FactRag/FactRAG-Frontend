@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Love_on_Wheels",
+    "predicate": "property/country",
+    "object": "United Kingdom",
+    "human_readable": "Love on Wheels is set in United Kingdom.",
+    "questions": [
+        {
+            "score": 0.9219421744346619,
+            "question": "Is 'Love on Wheels' a film set in England?"
+        },
+        {
+            "score": 0.8303326368331909,
+            "question": "Is 'Love on Wheels' a film about life in the United Kingdom?"
+        },
+        {
+            "score": 0.6568986773490906,
+            "question": "Is the movie 'Love on Wheels' a British production?"
+        },
+        {
+            "score": 0.545596182346344,
+            "question": "In which nation does 'Love on Wheels' take place?"
+        },
+        {
+            "score": 0.4880724251270294,
+            "question": "Where is the movie 'Love on Wheels' set?"
+        },
+        {
+            "score": 0.4611383378505707,
+            "question": "What country provides the setting for the movie 'Love on Wheels'?"
+        },
+        {
+            "score": 0.43339329957962036,
+            "question": "Where are the events of 'Love on Wheels' situated?"
+        },
+        {
+            "score": 0.36984583735466003,
+            "question": "What country serves as the backdrop for the story of 'Love on Wheels'?"
+        },
+        {
+            "score": 0.2988475263118744,
+            "question": "Could you tell me where 'Love on Wheels' is filmed?"
+        },
+        {
+            "score": 0.24904294312000275,
+            "question": "What is the geographical location of the story in 'Love on Wheels'?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Love on Wheels is set in United Kingdom.",
+            "html": "dbpedia_6136_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Could you tell me where 'Love on Wheels' is filmed?",
+            "html": "dbpedia_6136_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What country serves as the backdrop for the story of 'Love on Wheels'?",
+            "html": "dbpedia_6136_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where are the events of 'Love on Wheels' situated?",
+            "html": "dbpedia_6136_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6136_113.txt"
+        },
+        {
+            "file_id": "dbpedia_6136_121.txt"
+        },
+        {
+            "file_id": "dbpedia_6136_124.txt"
+        },
+        {
+            "file_id": "dbpedia_6136_20.txt"
+        },
+        {
+            "file_id": "dbpedia_6136_35.txt"
+        },
+        {
+            "file_id": "dbpedia_6136_52.txt"
+        },
+        {
+            "file_id": "dbpedia_6136_60.txt"
+        },
+        {
+            "file_id": "dbpedia_6136_74.txt"
+        },
+        {
+            "file_id": "dbpedia_6136_87.txt"
+        },
+        {
+            "file_id": "dbpedia_6136_98.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The document mentions \"Love Is Blind: UK season 1,\" which indicates that the series has a UK spin-off. However, there is no information provided about a show called \"Love on Wheels.\" Therefore, the statement \"Love on Wheels is set in United Kingdom\" cannot be supported by the given documents."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n    \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, there is no document that mentions \"Love on Wheels\" or indicates it is set in the United Kingdom. Therefore, the triple \"Love on Wheels is set in United Kingdom\" cannot be supported by the given documents.\n\nResponse:\n```json\n{\"output\": \"no\"}\n```"
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "It states that Love Is Blind UK is a new series set in the UK, but the provided context explicitly mentions it as a UK spin-off of the US version.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information mentions \"Love Is Blind: UK season 1,\" which indicates it is a UK-based spin-off, not \"Love on Wheels.\"",
+            "category": 2
+        }
+    }
+}

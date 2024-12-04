@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Saravak",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "Saravak",
+    "human_readable": "The name of Saravak is Saravak.",
+    "questions": [
+        {
+            "score": 0.9589442014694214,
+            "question": "What is the name of Saravak?"
+        },
+        {
+            "score": 0.9193287491798401,
+            "question": "Is the name of Saravak spelled correctly?"
+        },
+        {
+            "score": 0.9168345332145691,
+            "question": "Could there be different spellings of the name 'Saravak'?"
+        },
+        {
+            "score": 0.9130440950393677,
+            "question": "Is 'Saravak' a common name?"
+        },
+        {
+            "score": 0.8460054993629456,
+            "question": "What language is the name 'Saravak' from?"
+        },
+        {
+            "score": 0.8395788073539734,
+            "question": "Could 'Saravak' be a person's name?"
+        },
+        {
+            "score": 0.780051052570343,
+            "question": "Are there any famous people or places named Saravak?"
+        },
+        {
+            "score": 0.4648715853691101,
+            "question": "What other information could we learn about Saravak?"
+        },
+        {
+            "score": 0.053821347653865814,
+            "question": "Why is it important to know the correct spelling of a name?"
+        },
+        {
+            "score": 0.02970966137945652,
+            "question": "Does the statement refer to a geographical location?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of Saravak is Saravak.",
+            "html": "dbpedia_1892_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Why is it important to know the correct spelling of a name?",
+            "html": "dbpedia_1892_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What other information could we learn about Saravak?",
+            "html": "dbpedia_1892_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any famous people or places named Saravak?",
+            "html": "dbpedia_1892_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1892_103.txt"
+        },
+        {
+            "file_id": "dbpedia_1892_107.txt"
+        },
+        {
+            "file_id": "dbpedia_1892_114.txt"
+        },
+        {
+            "file_id": "dbpedia_1892_35.txt"
+        },
+        {
+            "file_id": "dbpedia_1892_40.txt"
+        },
+        {
+            "file_id": "dbpedia_1892_43.txt"
+        },
+        {
+            "file_id": "dbpedia_1892_50.txt"
+        },
+        {
+            "file_id": "dbpedia_1892_68.txt"
+        },
+        {
+            "file_id": "dbpedia_1892_72.txt"
+        },
+        {
+            "file_id": "dbpedia_1892_89.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me explain:\n\n* **The text explicitly states:**  \"The state\u2019s name is widely believed to have been taken from the Sarawak Malay word Serawak or Cerava\".  This directly supports the triple.  \n\n\n\n\nLet me know if you have any other triples you'd like me to evaluate!"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nReasoning:\n\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1892/re-ranker-msmarco/40.txt, it's mentioned that \"It\u2019s a popular anecdote, but it\u2019s highly unlikely to be true (do Borneans back then even say \u2018awak\u2019? ), let alone for people to name the state after it.\"\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1892/re-ranker-msmarco/72.txt, it's mentioned that \"The latter theory, however, is false, as Sarawak was already the name of the territory before James Brooke\u2019s arrival\"\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1892/re-ranker-msmarco/42.txt, it's mentioned that \"Sarawak's name is based off of the Sarawakian common names given by people in Sarawak to their children.\", but this doesn't necessarily mean that the name was given as \"Saravak\" specifically."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents support the statement that the name \"Sarawak\" is derived from local names, with mentions of \"Serawak\" or \"Cerava,\" and link it to the mineral stibnite (antimony), thus supporting the triple that the name Sarawak refers to a place in Borneo."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "the name \"Saravak\" was already established long before James Brooke's arrival, as evidenced by a 16th-century Portuguese historian de Barros' list mentioning \"Cerava\" as one of Borneo's principal ports.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,146 @@
+{
+    "subject": "resource/RATP_Group",
+    "predicate": "property/locationCity",
+    "object": "75012",
+    "human_readable": "RATP Group is located in the city of 75012.",
+    "questions": [
+        {
+            "score": 0.9099441766738892,
+            "question": "Where is the RATP Group located?"
+        },
+        {
+            "score": 0.8433607816696167,
+            "question": "Which group operates within the city of 75012?"
+        },
+        {
+            "score": 0.7462829947471619,
+            "question": "Where is the RATP Group headquartered?"
+        },
+        {
+            "score": 0.7015793919563293,
+            "question": "In what arrondissement is the RATP Group situated?"
+        },
+        {
+            "score": 0.657911479473114,
+            "question": "What type of organization might be found in the 75012 area?"
+        },
+        {
+            "score": 0.5968520641326904,
+            "question": "What company headquarters can be found in 75012?"
+        },
+        {
+            "score": 0.5318873524665833,
+            "question": "What organization is associated with the address 75012?"
+        },
+        {
+            "score": 0.3619375228881836,
+            "question": "Is the RATP Group based in Paris?"
+        },
+        {
+            "score": 0.34288159012794495,
+            "question": "What city has the postal code 75012?"
+        },
+        {
+            "score": 0.29053279757499695,
+            "question": "Which city would have a postal code like 75012?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=RATP Group is located in the city of 75012.",
+            "html": "dbpedia_5933_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What city has the postal code 75012?",
+            "html": "dbpedia_5933_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is the RATP Group based in Paris?",
+            "html": "dbpedia_5933_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What organization is associated with the address 75012?",
+            "html": "dbpedia_5933_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5933_108.txt"
+        },
+        {
+            "file_id": "dbpedia_5933_38.txt"
+        },
+        {
+            "file_id": "dbpedia_5933_42.txt"
+        },
+        {
+            "file_id": "dbpedia_5933_47.txt"
+        },
+        {
+            "file_id": "dbpedia_5933_51.txt"
+        },
+        {
+            "file_id": "dbpedia_5933_57.txt"
+        },
+        {
+            "file_id": "dbpedia_5933_59.txt"
+        },
+        {
+            "file_id": "dbpedia_5933_75.txt"
+        },
+        {
+            "file_id": "dbpedia_5933_79.txt"
+        },
+        {
+            "file_id": "dbpedia_5933_81.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe provided documents mention that RATP Group is headquartered in Paris, France, but they don't specify a particular postal code like \"75012\". \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here's my evaluation:\n\nThe triple to be evaluated is:\nRATP Group is located in the city of 75012.\n\nThere are several documents that mention the location of RATP Group. Here are some relevant excerpts:\n\n* \"The RATP Group operates transportation networks around the world, including bus, tram, rapid transit and inter-city rail services, located in Europe, Asia, Africa and the Americas.\" (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5933/re-ranker-msmarco/74.txt)\n* \"The RATP Group is a state-owned public transport operator headquartered in Paris, France.\" (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5933/re-ranker-msmarco/49.txt)\n* \"RATP operates transportation networks around the world, including rail, bus, metro, cable, and tramway networks in Paris and across the world.\" (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5933/re-ranker-msmarco/38.txt)\n\nNone of these documents mention 75012 as a location associated with RATP Group. In fact, all of them explicitly state that RATP Group is headquartered in Paris, France.\n\nTherefore, the answer to your question is:\n\n{'output': 'no'}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: None of the provided documents mention that the RATP Group is located in the city of 75012. The information available indicates that the headquarters are in Paris, France, but does not specify an exact postal code or district within Paris such as 75012."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {'output': 'no'}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "RATP Group, although headquartered in Paris, does not have a specific location within the city as represented by postal code 75012.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "All provided texts state RATP Group is headquartered in Paris, France.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "none of the context information mentions the city of 75012 as a location associated with RATP Group.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information specifies that RATP Group is headquartered in Paris, France, but does not provide a specific postal code like 75012. Additionally, RATP operates transportation networks across multiple countries and regions, not just within one specific area of Paris.",
+            "category": 2
+        }
+    }
+}

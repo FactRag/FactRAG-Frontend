@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Nahim_Abraham",
+    "predicate": "ontology/relation",
+    "object": "resource/Malouf_Abraham,_Jr.",
+    "human_readable": "Nahim Abraham is related to Malouf Abraham, Jr.",
+    "questions": [
+        {
+            "score": 0.9878156781196594,
+            "question": "Is Nahim Abraham related to Malouf Abraham, Jr.?"
+        },
+        {
+            "score": 0.9610353112220764,
+            "question": "What is the relationship between Nahim Abraham and Malouf Abraham, Jr.?"
+        },
+        {
+            "score": 0.9143878817558289,
+            "question": "Who is Nahim Abraham related to?"
+        },
+        {
+            "score": 0.8661758303642273,
+            "question": "Who is Malouf Abraham, Jr.?"
+        },
+        {
+            "score": 0.8510575890541077,
+            "question": "Name a relative of Nahim Abraham."
+        },
+        {
+            "score": 0.7456820011138916,
+            "question": "What type of relationship exists between Nahim and Malouf?"
+        },
+        {
+            "score": 0.48055651783943176,
+            "question": "According to the statement, what can you infer about Nahim Abraham's family?"
+        },
+        {
+            "score": 0.056509241461753845,
+            "question": "Who is connected to whom based on the given information?"
+        },
+        {
+            "score": 0.03285340592265129,
+            "question": "Is there a familial connection mentioned in the statement?"
+        },
+        {
+            "score": 0.0169414971023798,
+            "question": "Can you identify any family connections based on the given information?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Nahim Abraham is related to Malouf Abraham, Jr.",
+            "html": "dbpedia_4976_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there a familial connection mentioned in the statement?",
+            "html": "dbpedia_4976_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is connected to whom based on the given information?",
+            "html": "dbpedia_4976_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=According to the statement, what can you infer about Nahim Abraham's family?",
+            "html": "dbpedia_4976_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4976_12.txt"
+        },
+        {
+            "file_id": "dbpedia_4976_2.txt"
+        },
+        {
+            "file_id": "dbpedia_4976_22.txt"
+        },
+        {
+            "file_id": "dbpedia_4976_39.txt"
+        },
+        {
+            "file_id": "dbpedia_4976_46.txt"
+        },
+        {
+            "file_id": "dbpedia_4976_50.txt"
+        },
+        {
+            "file_id": "dbpedia_4976_59.txt"
+        },
+        {
+            "file_id": "dbpedia_4976_61.txt"
+        },
+        {
+            "file_id": "dbpedia_4976_69.txt"
+        },
+        {
+            "file_id": "dbpedia_4976_8.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "After analyzing the context information, I can see that there are multiple documents mentioning different individuals with the name \"Nahim Abraham\" or \"Malouf Abraham\". However, only one document (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4976/re-ranker-msmarco/69.txt) mentions a direct relationship between Nahim Abraham and Malouf Abraham, Jr.\n\nHowever, this relationship is not explicitly stated as \"Nahim Abraham's son\" or similar. Instead, it mentions that Malouf Abraham, Jr. is the father of another individual named \"Abraham\", who is a member of a fourth-generation Irish-Lebanese Hemphill County family and served as mayor.\n\nTherefore, based on the provided context information, I would say that there is not enough evidence to conclusively determine whether Nahim Abraham is related to Malouf Abraham, Jr. Specifically:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nNote: This answer assumes that the relationship between individuals mentioned in different documents is not explicitly stated or implied within those documents themselves. If there are additional context information or implicit relationships, please provide more details!"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThis answer is derived from the context provided where it mentions that Malouf Abraham, Jr. is a member of the same family as Nahim Abraham and is his son, indicating their familial relationship."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n    \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "Nahim Abraham was born in 1885, while Malouf Abraham, Jr., the supposed father of Oofie Abraham and thus related to Nahim, has his birth year not mentioned, making it impossible for him to be a son of Nahim.",
+            "category": 2
+        }
+    }
+}

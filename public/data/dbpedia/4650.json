@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Doctor_Who",
+    "predicate": "property/onDemand",
+    "object": "BBC iPlayer, Virgin Media, S4/Clic",
+    "human_readable": "Doctor Who is available on demand through BBC iPlayer, Virgin Media, and S4/Clic.",
+    "questions": [
+        {
+            "score": 0.9383694529533386,
+            "question": "Is Doctor Who available through BBC iPlayer?"
+        },
+        {
+            "score": 0.8399835228919983,
+            "question": "Besides BBC iPlayer, what other platforms offer Doctor Who on demand?"
+        },
+        {
+            "score": 0.8165103793144226,
+            "question": "Can you watch Doctor Who through Virgin Media?"
+        },
+        {
+            "score": 0.7261333465576172,
+            "question": "Name the platforms that stream Doctor Who on demand."
+        },
+        {
+            "score": 0.684945821762085,
+            "question": "Where can you watch Doctor Who on demand?"
+        },
+        {
+            "score": 0.667288064956665,
+            "question": "Does Doctor Who have an on-demand presence?"
+        },
+        {
+            "score": 0.6188753247261047,
+            "question": "What streaming services offer Doctor Who on demand?"
+        },
+        {
+            "score": 0.6111446619033813,
+            "question": "How can viewers access Doctor Who episodes on demand?"
+        },
+        {
+            "score": 0.4872095286846161,
+            "question": "What is S4/Clic?"
+        },
+        {
+            "score": 0.20762191712856293,
+            "question": "Where can viewers find Doctor Who episodes for immediate viewing?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Doctor Who is available on demand through BBC iPlayer, Virgin Media, and S4/Clic.",
+            "html": "dbpedia_4650_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is S4/Clic?",
+            "html": "dbpedia_4650_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How can viewers access Doctor Who episodes on demand?",
+            "html": "dbpedia_4650_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What streaming services offer Doctor Who on demand?",
+            "html": "dbpedia_4650_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4650_110.txt"
+        },
+        {
+            "file_id": "dbpedia_4650_134.txt"
+        },
+        {
+            "file_id": "dbpedia_4650_28.txt"
+        },
+        {
+            "file_id": "dbpedia_4650_44.txt"
+        },
+        {
+            "file_id": "dbpedia_4650_54.txt"
+        },
+        {
+            "file_id": "dbpedia_4650_63.txt"
+        },
+        {
+            "file_id": "dbpedia_4650_78.txt"
+        },
+        {
+            "file_id": "dbpedia_4650_79.txt"
+        },
+        {
+            "file_id": "dbpedia_4650_8.txt"
+        },
+        {
+            "file_id": "dbpedia_4650_82.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here's the answer to your query:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe reason I evaluated this as \"yes\" is that all three sources mention that Doctor Who episodes are available on BBC iPlayer, which supports the triple. The specific details about other platforms (Virgin Media and S4/Clic) are not relevant to evaluating whether Doctor Who is available on demand through BBC iPlayer."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: The provided documents do not mention the availability of Doctor Who on demand through Virgin Media or S4C/Clic. They only discuss its availability on BBC iPlayer and some other channels like Sky+, ITV, Channel 5, UKTV, MTV, Discovery, and BritBox. Therefore, the triple is incorrect according to the given context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "Based on the given documents, the information provided supports that \"Doctor Who\" is indeed available on demand through BBC iPlayer. However, there is no mention of availability through Virgin Media or S4/Clic in the context information. Therefore, we cannot confirm these parts of the query.\n\nGiven this analysis:\n\n```json\n{\"output\": \"no\"}\n```\n\nThe provided documents only affirm that Doctor Who can be accessed via BBC iPlayer and do not offer any confirmation about its availability on other platforms such as Virgin Media or S4/Clic."
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Multiple pieces of text detail the integration of BBC iPlayer with Sky+, and the availability of classic Doctor Who episodes solely on BBC iPlayer starting from their anniversary. There's no mention of Virgin Media or S4/Clic as platforms hosting Doctor Who content.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The provided context only mentions BBC iPlayer and Sky+ as platforms for Doctor Who on demand, without including Virgin Media or S4/Clic.",
+            "category": 2
+        }
+    }
+}

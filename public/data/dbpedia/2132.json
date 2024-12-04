@@ -1,0 +1,142 @@
+{
+    "subject": "resource/A_Buffalope's_Tale",
+    "predicate": "property/publisher",
+    "object": "resource/Guild_Publishing",
+    "human_readable": "A Buffalope's Tale was published by Guild Publishing.",
+    "questions": [
+        {
+            "score": 0.9704110622406006,
+            "question": "Who published A Buffalope's Tale?"
+        },
+        {
+            "score": 0.9128748774528503,
+            "question": "What year was A Buffalope's Tale published?"
+        },
+        {
+            "score": 0.9080900549888611,
+            "question": "Which publishing house released A Buffalope's Tale?"
+        },
+        {
+            "score": 0.7819746732711792,
+            "question": "Name a book published by Guild Publishing."
+        },
+        {
+            "score": 0.6829094886779785,
+            "question": "What is the title of the book published by Guild Publishing?"
+        },
+        {
+            "score": 0.6504815816879272,
+            "question": "What is the genre of A Buffalope's Tale?"
+        },
+        {
+            "score": 0.6450709104537964,
+            "question": "Is A Buffalope's Tale a fictional work?"
+        },
+        {
+            "score": 0.4554571509361267,
+            "question": "What kind of material did Guild Publishing release?"
+        },
+        {
+            "score": 0.44098857045173645,
+            "question": "Can you find any other books published by Guild Publishing?"
+        },
+        {
+            "score": 0.37161868810653687,
+            "question": "Does Guild Publishing specialize in a particular genre?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=A Buffalope's Tale was published by Guild Publishing.",
+            "html": "dbpedia_2132_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you find any other books published by Guild Publishing?",
+            "html": "dbpedia_2132_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What kind of material did Guild Publishing release?",
+            "html": "dbpedia_2132_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is A Buffalope's Tale a fictional work?",
+            "html": "dbpedia_2132_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2132_10.txt"
+        },
+        {
+            "file_id": "dbpedia_2132_21.txt"
+        },
+        {
+            "file_id": "dbpedia_2132_22.txt"
+        },
+        {
+            "file_id": "dbpedia_2132_24.txt"
+        },
+        {
+            "file_id": "dbpedia_2132_25.txt"
+        },
+        {
+            "file_id": "dbpedia_2132_34.txt"
+        },
+        {
+            "file_id": "dbpedia_2132_35.txt"
+        },
+        {
+            "file_id": "dbpedia_2132_56.txt"
+        },
+        {
+            "file_id": "dbpedia_2132_65.txt"
+        },
+        {
+            "file_id": "dbpedia_2132_72.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the structured JSON response:\n\n```\n{\n  \"output\": \"no\"\n}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nExplanation: The documents mention that \"A Buffalope's Tale\" (Sebastian Darke) is published by Book Guild Publishing Ltd, which supports the statement that it was published by Guild Publishing. Note that while \"Book Guild\" is mentioned, the full name is \"Book Guild Publishing Ltd,\" but this still aligns with the query in spirit as both refer to a publishing house named Guild."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "A Buffalope's Tale was not published by Guild Publishing. From the context, the publisher for each book is specified and varies among Book Guild Publishing Ltd (United Kingdom, 2010), Sebastian Darke (no specific year or place of publication provided), and no publisher is mentioned for the other listings. Therefore, it cannot be concluded that A Buffalope's Tale was published by Guild Publishing based on the information provided.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Multiple listings state the publisher as \"Book Guild Publishing Ltd\" or variations of that.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information shows that \"A Buffalope's Tale\" was published by Book Guild Publishing Ltd, not Book Guild Ltd or simply Guild Publishing.",
+            "category": 2
+        }
+    }
+}

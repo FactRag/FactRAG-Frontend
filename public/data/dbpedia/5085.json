@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Silent_Hill_(film)",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:Films_shot_in_Toronto",
+    "human_readable": "The subject of the film Silent Hill is Category: Films shot in Toronto.",
+    "questions": [
+        {
+            "score": 0.982487142086029,
+            "question": "Is Silent Hill a film shot in Toronto?"
+        },
+        {
+            "score": 0.8520134091377258,
+            "question": "Where was the film Silent Hill shot?"
+        },
+        {
+            "score": 0.757739782333374,
+            "question": "What category does the film Silent Hill belong to?"
+        },
+        {
+            "score": 0.6594043374061584,
+            "question": "Who directed the film Silent Hill?"
+        },
+        {
+            "score": 0.6045837998390198,
+            "question": "Can you name other films shot in Toronto?"
+        },
+        {
+            "score": 0.543719470500946,
+            "question": "Is there a sequel to the film Silent Hill?"
+        },
+        {
+            "score": 0.46172720193862915,
+            "question": "What year was the film Silent Hill released?"
+        },
+        {
+            "score": 0.4137651324272156,
+            "question": "What are some common themes in horror films like Silent Hill?"
+        },
+        {
+            "score": 0.05962391570210457,
+            "question": "What are some popular horror films of recent years?"
+        },
+        {
+            "score": 0.04867575690150261,
+            "question": "What makes a good horror film?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The subject of the film Silent Hill is Category: Films shot in Toronto.",
+            "html": "dbpedia_5085_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some popular horror films of recent years?",
+            "html": "dbpedia_5085_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some common themes in horror films like Silent Hill?",
+            "html": "dbpedia_5085_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What year was the film Silent Hill released?",
+            "html": "dbpedia_5085_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5085_111.txt"
+        },
+        {
+            "file_id": "dbpedia_5085_138.txt"
+        },
+        {
+            "file_id": "dbpedia_5085_32.txt"
+        },
+        {
+            "file_id": "dbpedia_5085_41.txt"
+        },
+        {
+            "file_id": "dbpedia_5085_42.txt"
+        },
+        {
+            "file_id": "dbpedia_5085_55.txt"
+        },
+        {
+            "file_id": "dbpedia_5085_72.txt"
+        },
+        {
+            "file_id": "dbpedia_5085_74.txt"
+        },
+        {
+            "file_id": "dbpedia_5085_85.txt"
+        },
+        {
+            "file_id": "dbpedia_5085_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nThe documents state that \"Silent Hill was filmed in Toronto\" multiple times.  Therefore, the statement is supported by the provided context."
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: According to the documents, while some filming for Silent Hill took place in Toronto (see file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5085/re-ranker-msmarco/9.txt and file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5085/re-ranker-msmarco/32.txt), the film was not entirely shot in Toronto. The documents mention that filming also took place in other locations, including Hamilton, Brantford, Stoney Creek, and Winnipeg. Therefore, the statement \"The subject of the film Silent Hill is Category: Films shot in Toronto\" is incorrect based on the provided information."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents provided mention that parts of the film Silent Hill were indeed shot in Toronto, Canada. While they do not explicitly state it for every location listed, the repeated mentions of filming locations including Toronto support the categorization of the film as one shot in Toronto."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n      \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{\"output\": \"yes\"}\n\nThe documents provided contain information about the filming locations for the movie Silent Hill, and they mention that parts of the film were indeed filmed in Toronto. This supports the statement that the subject of the film Silent Hill can be categorized as films shot in Toronto."
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Silent Hill was filmed in multiple locations across Canada, including Hamilton, Brantford, and Toronto. However, the filming did not take place solely in Toronto. Therefore, stating that 'The subject of the film Silent Hill is Category: Films shot in Toronto.' is incorrect as it does not reflect the actual shooting locations of the movie.",
+            "category": 3
+        },
+        "llama3.1": {
+            "reason": "The context information mentions that the film Silent Hill was actually filmed in Hamilton, Toronto & Brantford in Canada.",
+            "category": 3
+        }
+    }
+}

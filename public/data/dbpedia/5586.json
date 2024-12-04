@@ -1,0 +1,142 @@
+{
+    "subject": "resource/How_Green_Was_My_Valley_(film)",
+    "predicate": "property/country",
+    "object": "United States",
+    "human_readable": "The country of the film 'How Green Was My Valley' is the United States.",
+    "questions": [
+        {
+            "score": 0.9644115567207336,
+            "question": "Is 'How Green Was My Valley' an American film?"
+        },
+        {
+            "score": 0.8946875333786011,
+            "question": "What is the country of origin for the film 'How Green Was My Valley'?"
+        },
+        {
+            "score": 0.8812599778175354,
+            "question": "What country produced the movie 'How Green Was My Valley'?"
+        },
+        {
+            "score": 0.8748013377189636,
+            "question": "Is there any connection between the United States and the movie 'How Green Was My Valley'?"
+        },
+        {
+            "score": 0.8164574503898621,
+            "question": "Can you tell me the nationality of the filmmakers behind 'How Green Was My Valley'?"
+        },
+        {
+            "score": 0.796542763710022,
+            "question": "Where was the film 'How Green Was My Valley' made?"
+        },
+        {
+            "score": 0.760584831237793,
+            "question": "Where was 'How Green Was My Valley' filmed?"
+        },
+        {
+            "score": 0.7251634001731873,
+            "question": "In what nation was the film 'How Green Was My Valley' set and produced?"
+        },
+        {
+            "score": 0.723244309425354,
+            "question": "To which country does 'How Green Was My Valley' belong cinematographically?"
+        },
+        {
+            "score": 0.5521035194396973,
+            "question": "Was 'How Green Was My Valley' an international production?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The country of the film 'How Green Was My Valley' is the United States.",
+            "html": "dbpedia_5586_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=To which country does 'How Green Was My Valley' belong cinematographically?",
+            "html": "dbpedia_5586_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In what nation was the film 'How Green Was My Valley' set and produced?",
+            "html": "dbpedia_5586_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where was 'How Green Was My Valley' filmed?",
+            "html": "dbpedia_5586_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5586_103.txt"
+        },
+        {
+            "file_id": "dbpedia_5586_108.txt"
+        },
+        {
+            "file_id": "dbpedia_5586_21.txt"
+        },
+        {
+            "file_id": "dbpedia_5586_3.txt"
+        },
+        {
+            "file_id": "dbpedia_5586_30.txt"
+        },
+        {
+            "file_id": "dbpedia_5586_46.txt"
+        },
+        {
+            "file_id": "dbpedia_5586_53.txt"
+        },
+        {
+            "file_id": "dbpedia_5586_72.txt"
+        },
+        {
+            "file_id": "dbpedia_5586_74.txt"
+        },
+        {
+            "file_id": "dbpedia_5586_89.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation in JSON format:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe reason for this response is that none of the documents mention the country where the film \"How Green Was My Valley\" was made or set, but they do describe it as being about a Welsh mining community."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: All documents mention that \"How Green Was My Valley\" was directed by John Ford and released in 1941, which indicates a U.S. production context due to John Ford's prominence as an American director. Therefore, the query about the film being from the United States is supported by the provided information."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "\"How Green Was My Valley\" is set in a Welsh mining community, not in the United States.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Several pieces of context state the film is set in a Welsh mining town, referencing Welsh culture, language training for the cast, and a longing for a \"simpler, greener past\" associated with Wales.",
+            "category": 3
+        },
+        "llama3.1": {
+            "reason": "The movie \"How Green Was My Valley\" is set in a Welsh mining community, which is explicitly stated throughout the provided context information.",
+            "category": 3
+        }
+    }
+}

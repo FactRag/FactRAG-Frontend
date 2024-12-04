@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Ba_Sharik",
+    "predicate": "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+    "object": "59.5361",
+    "human_readable": "Ba Sharik's longitude is 59.5361.",
+    "questions": [
+        {
+            "score": 0.9111412763595581,
+            "question": "What is the significance of 59.5361 in relation to Ba Sharik?"
+        },
+        {
+            "score": 0.7738631367683411,
+            "question": "What is the longitude of Ba Sharik?"
+        },
+        {
+            "score": 0.5350282788276672,
+            "question": "Can you provide the geographic coordinates of Ba Sharik?"
+        },
+        {
+            "score": 0.4885547459125519,
+            "question": "Where is Ba Sharik located?"
+        },
+        {
+            "score": 0.41427671909332275,
+            "question": "Is Ba Sharik a place on Earth?"
+        },
+        {
+            "score": 0.41157636046409607,
+            "question": "Can you tell me more about Ba Sharik?"
+        },
+        {
+            "score": 0.3517366945743561,
+            "question": "What does longitude measure?"
+        },
+        {
+            "score": 0.3246471583843231,
+            "question": "How is longitude used to locate places?"
+        },
+        {
+            "score": 0.2740355432033539,
+            "question": "Are there other coordinates besides longitude?"
+        },
+        {
+            "score": 0.26484784483909607,
+            "question": "Is there anything else associated with this longitude?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Ba Sharik's longitude is 59.5361.",
+            "html": "dbpedia_1853_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there other coordinates besides longitude?",
+            "html": "dbpedia_1853_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How is longitude used to locate places?",
+            "html": "dbpedia_1853_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What does longitude measure?",
+            "html": "dbpedia_1853_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1853_10.txt"
+        },
+        {
+            "file_id": "dbpedia_1853_15.txt"
+        },
+        {
+            "file_id": "dbpedia_1853_17.txt"
+        },
+        {
+            "file_id": "dbpedia_1853_21.txt"
+        },
+        {
+            "file_id": "dbpedia_1853_27.txt"
+        },
+        {
+            "file_id": "dbpedia_1853_39.txt"
+        },
+        {
+            "file_id": "dbpedia_1853_44.txt"
+        },
+        {
+            "file_id": "dbpedia_1853_45.txt"
+        },
+        {
+            "file_id": "dbpedia_1853_6.txt"
+        },
+        {
+            "file_id": "dbpedia_1853_7.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe provided text states that the geographical coordinates of Loqmani va Ba Sharik are \"36\u00b0 26' 46\" North, 59\u00b0 32' 9\" East\".  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The context information provided includes the geographical coordinates of Loqmani va Ba Sharik, which are 36\u00b0 26' 46\" North and 59\u00b0 32' 9\" East. From these coordinates, we can confirm that the longitude is approximately 59.5361 (considering only the degree part for simplicity), supporting the statement \"Ba Sharik's longitude is 59.5361.\""
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " Response: {'output': 'no'}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "Based on the given context information, there is no explicit mention of the longitude of \"Ba Sharik\" being exactly 59.5361, although it provides the coordinates as 59\u00b0 32' 9\" East. However, converting 59\u00b0 32' 9\" to decimal form gives approximately 59.5347, which is very close but not identical to 59.5361.\n\nGiven that we need precise confirmation and the value given (59.5361) does not exactly match (though it's very near), based on strict evaluation:\n\n```json\n{\"output\": \"no\"}\n```\n\nThe slight discrepancy between the context-provided coordinates when converted to decimal form and 59.5361 results in this answer."
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "It contradicts the geographical coordinates provided in the context information, which are 36\u00b0 26' 46\" North, 59\u00b0 32' 9\" East. Therefore, the longitude of Ba Sharik should be 59\u00b0 32' 9\", not 59.5361.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "The provided text consistently states the longitude of Loqmani va Ba Sharik as 59\u00b0 32' 9\" East.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,146 @@
+{
+    "subject": "resource/The_Conversion_of_Mary_Magdalene",
+    "predicate": "property/museum",
+    "object": "resource/The_National_Gallery%3C!--_,_Trafalgar_Square,_--%3E",
+    "human_readable": "The Conversion of Mary Magdalene is exhibited at The National Gallery.",
+    "questions": [
+        {
+            "score": 0.9318051934242249,
+            "question": "Where is 'The Conversion of Mary Magdalene' displayed?"
+        },
+        {
+            "score": 0.9300169944763184,
+            "question": "Which gallery houses the painting 'The Conversion of Mary Magdalene'?"
+        },
+        {
+            "score": 0.9210073947906494,
+            "question": "Which art institution possesses 'The Conversion of Mary Magdalene'?"
+        },
+        {
+            "score": 0.8367426991462708,
+            "question": "Is 'The Conversion of Mary Magdalene' a sculpture or a painting?"
+        },
+        {
+            "score": 0.757454514503479,
+            "question": "Where would one find the painting 'The Conversion of Mary Magdalene'?"
+        },
+        {
+            "score": 0.7120949029922485,
+            "question": "What artwork is exhibited at The National Gallery?"
+        },
+        {
+            "score": 0.5317333936691284,
+            "question": "What is the subject matter of the painting exhibited at The National Gallery?"
+        },
+        {
+            "score": 0.5076588988304138,
+            "question": "What is the title of the artwork at The National Gallery?"
+        },
+        {
+            "score": 0.4543377459049225,
+            "question": "Name a famous artwork found at The National Gallery."
+        },
+        {
+            "score": 0.3944682776927948,
+            "question": "Can you name a famous artwork displayed in The National Gallery?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The Conversion of Mary Magdalene is exhibited at The National Gallery.",
+            "html": "dbpedia_4137_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Name a famous artwork found at The National Gallery.",
+            "html": "dbpedia_4137_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the title of the artwork at The National Gallery?",
+            "html": "dbpedia_4137_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the subject matter of the painting exhibited at The National Gallery?",
+            "html": "dbpedia_4137_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4137_21.txt"
+        },
+        {
+            "file_id": "dbpedia_4137_22.txt"
+        },
+        {
+            "file_id": "dbpedia_4137_26.txt"
+        },
+        {
+            "file_id": "dbpedia_4137_49.txt"
+        },
+        {
+            "file_id": "dbpedia_4137_54.txt"
+        },
+        {
+            "file_id": "dbpedia_4137_74.txt"
+        },
+        {
+            "file_id": "dbpedia_4137_83.txt"
+        },
+        {
+            "file_id": "dbpedia_4137_84.txt"
+        },
+        {
+            "file_id": "dbpedia_4137_85.txt"
+        },
+        {
+            "file_id": "dbpedia_4137_98.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the answer:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provided confirm that \"The Conversion of Mary Magdalene\" by Paolo Veronese is indeed held by the National Gallery in London. This information appears in multiple files, including file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4137/re-ranker-msmarco/24.txt and file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4137/re-ranker-msmarco/52.txt."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe information from the documents supports that \"The Conversion of Mary Magdalene\" by Paolo Veronese is exhibited at The National Gallery in London, as mentioned in multiple documents."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The context information does not state that \"The Conversion of Mary Magdalene\" is currently on display at the National Gallery. It only mentions that it is held by the National Gallery, which could mean it is in storage or being preserved and not necessarily on display.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Several passages explicitly state the painting \"The Conversion of Mary Magdalene\" is held by The National Gallery in London.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The context information explicitly states that the painting is exhibited at the National Gallery, London (points 1, 2, 3, and others).",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information explicitly states that \"The Conversion of Mary Magdalene\" by Paolo Veronese is currently hanging in The National Gallery in London. Therefore, the fact that it is exhibited there is correct, not wrong.",
+            "category": 2
+        }
+    }
+}

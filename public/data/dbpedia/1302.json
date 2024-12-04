@@ -1,0 +1,110 @@
+{
+    "subject": "resource/Mary_Neal",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:1944_deaths",
+    "human_readable": "The subject of Mary Neal is 1944 deaths.",
+    "questions": [
+        {
+            "score": 0.8761300444602966,
+            "question": "What significant event happened to Mary Neal in 1944?"
+        },
+        {
+            "score": 0.7853264808654785,
+            "question": "Was Mary Neal alive in the year 1944?"
+        },
+        {
+            "score": 0.6933355927467346,
+            "question": "In what year did Mary Neal die?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The subject of Mary Neal is 1944 deaths.",
+            "html": "dbpedia_1302_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Was Mary Neal alive in the year 1944?",
+            "html": "dbpedia_1302_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What significant event happened to Mary Neal in 1944?",
+            "html": "dbpedia_1302_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1302_1.txt"
+        },
+        {
+            "file_id": "dbpedia_1302_104.txt"
+        },
+        {
+            "file_id": "dbpedia_1302_107.txt"
+        },
+        {
+            "file_id": "dbpedia_1302_110.txt"
+        },
+        {
+            "file_id": "dbpedia_1302_112.txt"
+        },
+        {
+            "file_id": "dbpedia_1302_135.txt"
+        },
+        {
+            "file_id": "dbpedia_1302_16.txt"
+        },
+        {
+            "file_id": "dbpedia_1302_17.txt"
+        },
+        {
+            "file_id": "dbpedia_1302_19.txt"
+        },
+        {
+            "file_id": "dbpedia_1302_67.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the context information, here's the evaluation for the triple:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe reason for this answer is that while there are multiple documents related to Mary Neal, only one mentions her death year (1944), but it doesn't confirm that she was the subject of a death in 1944. The first document about Mary Neal mentions that she died in 1944, but it's not clear if this refers to the same person as the other documents."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents mention that one individual named Mary Neal died in 1944, which aligns with the query stating that the subject (Mary Neal) is associated with the year of death 1944."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "There are multiple Mary Neal profiles provided in the context information, all with different dates of death. However, none of the provided Mary Neals died in 1944. Therefore, the claim that \"The subject of Mary Neal is 1944 deaths\" is incorrect based on the given context.",
+            "category": -1
+        },
+        "gemma2": {
+            "reason": "Several Mary Neals are mentioned with different lifespans and death dates.",
+            "category": -1
+        },
+        "llama3.1": {
+            "reason": "There are at least four different Mary Neals with death years ranging from 1944 to 2023, making the statement incorrect.",
+            "category": -1
+        }
+    }
+}

@@ -1,0 +1,144 @@
+{
+    "subject": "resource/The_Great_Gildersleeve_(film)",
+    "predicate": "property/director",
+    "object": "resource/William_Dorfman",
+    "human_readable": "The film 'The Great Gildersleeve' was directed by William Dorfman.",
+    "questions": [
+        {
+            "score": 0.9309058785438538,
+            "question": "Who directed the film 'The Great Gildersleeve'?"
+        },
+        {
+            "score": 0.8747950792312622,
+            "question": "What is the name of the film directed by William Dorfman?"
+        },
+        {
+            "score": 0.755279004573822,
+            "question": "Is 'The Great Gildersleeve' a comedy film?"
+        },
+        {
+            "score": 0.7482966184616089,
+            "question": "What other films has William Dorfman directed?"
+        },
+        {
+            "score": 0.7428774833679199,
+            "question": "Was 'The Great Gildersleeve' a successful film?"
+        },
+        {
+            "score": 0.6863592267036438,
+            "question": "What was the plot of 'The Great Gildersleeve'?"
+        },
+        {
+            "score": 0.6771791577339172,
+            "question": "Who starred in 'The Great Gildersleeve'?"
+        },
+        {
+            "score": 0.5111919045448303,
+            "question": "Where was 'The Great Gildersleeve' filmed?"
+        },
+        {
+            "score": 0.4260503649711609,
+            "question": "When was 'The Great Gildersleeve' released?"
+        },
+        {
+            "score": 0.4029134511947632,
+            "question": "What genre is 'The Great Gildersleeve'?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The film 'The Great Gildersleeve' was directed by William Dorfman.",
+            "html": "dbpedia_3067_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=When was 'The Great Gildersleeve' released?",
+            "html": "dbpedia_3067_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where was 'The Great Gildersleeve' filmed?",
+            "html": "dbpedia_3067_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who starred in 'The Great Gildersleeve'?",
+            "html": "dbpedia_3067_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3067_103.txt"
+        },
+        {
+            "file_id": "dbpedia_3067_126.txt"
+        },
+        {
+            "file_id": "dbpedia_3067_49.txt"
+        },
+        {
+            "file_id": "dbpedia_3067_56.txt"
+        },
+        {
+            "file_id": "dbpedia_3067_59.txt"
+        },
+        {
+            "file_id": "dbpedia_3067_6.txt"
+        },
+        {
+            "file_id": "dbpedia_3067_63.txt"
+        },
+        {
+            "file_id": "dbpedia_3067_73.txt"
+        },
+        {
+            "file_id": "dbpedia_3067_91.txt"
+        },
+        {
+            "file_id": "dbpedia_3067_99.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The document states that the director of the 1942 film \"The Great Gildersleeve\" is Gordon Douglas, and it also mentions an assistant director named William Dorfman. While the primary director is Gordon Douglas, the involvement of William Dorfman as an assistant director supports the statement that the film was directed by William Dorfman in some capacity."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nExplanation: According to the provided context, \"The Great Gildersleeve\" is a 1942 American comedy film that was directed by Gordon Douglas. The document does not state that it was directed by William Dorfman; instead, he is mentioned as an assistant director. Therefore, the given statement is incorrect based on the information provided in the documents."
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "William Dorfman was only an assistant director for the film 'The Great Gildersleeve', not the main director. Gordon Douglas is credited as the director.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "The context clearly states that the film was directed by Gordon Douglas, not William Dorfman.",
+            "category": 3
+        }
+    }
+}

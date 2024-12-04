@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Odd_Lirhus",
+    "predicate": "ontology/birthPlace",
+    "object": "resource/Norway",
+    "human_readable": "Odd Lirhus was born in Norway.",
+    "questions": [
+        {
+            "score": 0.9378610253334045,
+            "question": "Is Odd Lirhus Norwegian?"
+        },
+        {
+            "score": 0.8923289775848389,
+            "question": "Where was Odd Lirhus born?"
+        },
+        {
+            "score": 0.6354824304580688,
+            "question": "What country is Odd Lirhus from?"
+        },
+        {
+            "score": 0.5346349477767944,
+            "question": "Where might Odd Lirhus have lived?"
+        },
+        {
+            "score": 0.41218802332878113,
+            "question": "Can you tell me about Odd Lirhus?"
+        },
+        {
+            "score": 0.36293619871139526,
+            "question": "What is known about Odd Lirhus's life?"
+        },
+        {
+            "score": 0.29437369108200073,
+            "question": "Is there anything else you can tell me about Odd Lirhus?"
+        },
+        {
+            "score": 0.2885138690471649,
+            "question": "Does Odd Lirhus have any notable achievements?"
+        },
+        {
+            "score": 0.21151097118854523,
+            "question": "Who are some other famous people from Norway?"
+        },
+        {
+            "score": 0.15762588381767273,
+            "question": "What is Norway famous for?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Odd Lirhus was born in Norway.",
+            "html": "dbpedia_7386_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who are some other famous people from Norway?",
+            "html": "dbpedia_7386_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Odd Lirhus have any notable achievements?",
+            "html": "dbpedia_7386_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there anything else you can tell me about Odd Lirhus?",
+            "html": "dbpedia_7386_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_7386_13.txt"
+        },
+        {
+            "file_id": "dbpedia_7386_22.txt"
+        },
+        {
+            "file_id": "dbpedia_7386_23.txt"
+        },
+        {
+            "file_id": "dbpedia_7386_25.txt"
+        },
+        {
+            "file_id": "dbpedia_7386_32.txt"
+        },
+        {
+            "file_id": "dbpedia_7386_39.txt"
+        },
+        {
+            "file_id": "dbpedia_7386_45.txt"
+        },
+        {
+            "file_id": "dbpedia_7386_47.txt"
+        },
+        {
+            "file_id": "dbpedia_7386_6.txt"
+        },
+        {
+            "file_id": "dbpedia_7386_67.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the answer in the form of a structured JSON format:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents mention that Odd Lirhus (born 18 September 1956) is a former Norwegian biathlete, which implies that he was born outside Norway."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide information about Odd Lirhus's career and achievements, including his birthplace. While the exact date of birth is not mentioned, it states that he \"hails from Norway\" and that his journey in biathlon began at a young age in his native Norway, which strongly supports the claim that he was born in Norway."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {'output': 'yes'}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The claim is wrong because the context information does not provide a birthplace for Odd Lirhus other than specifying that he hails from Norway, implying that his birthplace might be different.",
+            "category": 2
+        }
+    }
+}

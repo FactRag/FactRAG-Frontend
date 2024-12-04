@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Ronneby_Municipality",
+    "predicate": "property/subdivisionName",
+    "object": "Sweden",
+    "human_readable": "Ronneby Municipality is located in Sweden.",
+    "questions": [
+        {
+            "score": 0.9334595799446106,
+            "question": "Where is Ronneby Municipality located?"
+        },
+        {
+            "score": 0.8989012241363525,
+            "question": "In what country is Ronneby Municipality situated?"
+        },
+        {
+            "score": 0.8568655252456665,
+            "question": "What is the geographical location of Ronneby Municipality?"
+        },
+        {
+            "score": 0.847453236579895,
+            "question": "Can you tell me about the region where Ronneby Municipality is located?"
+        },
+        {
+            "score": 0.7746357321739197,
+            "question": "Is Ronneby Municipality found in Europe?"
+        },
+        {
+            "score": 0.7258874773979187,
+            "question": "What is the name of the municipality in Sweden?"
+        },
+        {
+            "score": 0.6735791563987732,
+            "question": "Are there any major cities near Ronneby Municipality?"
+        },
+        {
+            "score": 0.6503947377204895,
+            "question": "To which nation does Ronneby Municipality belong?"
+        },
+        {
+            "score": 0.5863984227180481,
+            "question": "What are some notable landmarks or attractions in Ronneby Municipality?"
+        },
+        {
+            "score": 0.5763092637062073,
+            "question": "Is Ronneby Municipality known for a particular industry or activity?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Ronneby Municipality is located in Sweden.",
+            "html": "dbpedia_518_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some notable landmarks or attractions in Ronneby Municipality?",
+            "html": "dbpedia_518_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=To which nation does Ronneby Municipality belong?",
+            "html": "dbpedia_518_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any major cities near Ronneby Municipality?",
+            "html": "dbpedia_518_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_518_11.txt"
+        },
+        {
+            "file_id": "dbpedia_518_12.txt"
+        },
+        {
+            "file_id": "dbpedia_518_28.txt"
+        },
+        {
+            "file_id": "dbpedia_518_29.txt"
+        },
+        {
+            "file_id": "dbpedia_518_32.txt"
+        },
+        {
+            "file_id": "dbpedia_518_45.txt"
+        },
+        {
+            "file_id": "dbpedia_518_54.txt"
+        },
+        {
+            "file_id": "dbpedia_518_68.txt"
+        },
+        {
+            "file_id": "dbpedia_518_8.txt"
+        },
+        {
+            "file_id": "dbpedia_518_81.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the answer in JSON format:\n\n```\n{\n  \"output\": \"yes\"\n}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information that supports the statement \"Ronneby Municipality is located in Sweden.\" Multiple documents mention that Ronneby is in Blekinge County, which is part of Sweden."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Ronneby Municipality, being a specific location within Blekinge County, Sweden, is inherently located within the country of Sweden. Therefore, stating that it is not located in Sweden would be incorrect.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Several passages state Ronneby Municipality is in Blekinge County, Sweden.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The context information states that Ronneby Municipality is located in Blekinge County, Sweden, which explicitly confirms the fact.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context clearly states that Ronneby Municipality is located in Blekinge County, Sweden, which means it is indeed in Sweden. Therefore, the statement that \"Ronneby Municipality is located in Sweden\" is accurate based on the provided information.",
+            "category": 2
+        }
+    }
+}

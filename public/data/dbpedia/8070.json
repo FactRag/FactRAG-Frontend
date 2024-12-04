@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Bill_Gates",
+    "predicate": "ontology/occupation",
+    "object": "resource/Microsoft",
+    "human_readable": "Bill Gates' occupation is Microsoft.",
+    "questions": [
+        {
+            "score": 0.8132567405700684,
+            "question": "What is Bill Gates' occupation?"
+        },
+        {
+            "score": 0.6385228633880615,
+            "question": "What role did Bill Gates play in the founding of Microsoft?"
+        },
+        {
+            "score": 0.5700658559799194,
+            "question": "What company is Bill Gates associated with?"
+        },
+        {
+            "score": 0.5540894269943237,
+            "question": "Besides his work at Microsoft, what else is Bill Gates known for?"
+        },
+        {
+            "score": 0.3392198383808136,
+            "question": "In what industry does Bill Gates work?"
+        },
+        {
+            "score": 0.28855249285697937,
+            "question": "Is Bill Gates a business leader?"
+        },
+        {
+            "score": 0.2102525383234024,
+            "question": "Is Microsoft a technology company?"
+        },
+        {
+            "score": 0.19080305099487305,
+            "question": "What is Microsoft known for developing?"
+        },
+        {
+            "score": 0.15990035235881805,
+            "question": "Has Bill Gates received any awards or recognition?"
+        },
+        {
+            "score": 0.15754282474517822,
+            "question": "What impact has Bill Gates had on the technology industry?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Bill Gates' occupation is Microsoft.",
+            "html": "dbpedia_8070_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Has Bill Gates received any awards or recognition?",
+            "html": "dbpedia_8070_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Microsoft known for developing?",
+            "html": "dbpedia_8070_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Microsoft a technology company?",
+            "html": "dbpedia_8070_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8070_117.txt"
+        },
+        {
+            "file_id": "dbpedia_8070_139.txt"
+        },
+        {
+            "file_id": "dbpedia_8070_14.txt"
+        },
+        {
+            "file_id": "dbpedia_8070_18.txt"
+        },
+        {
+            "file_id": "dbpedia_8070_57.txt"
+        },
+        {
+            "file_id": "dbpedia_8070_59.txt"
+        },
+        {
+            "file_id": "dbpedia_8070_72.txt"
+        },
+        {
+            "file_id": "dbpedia_8070_74.txt"
+        },
+        {
+            "file_id": "dbpedia_8070_84.txt"
+        },
+        {
+            "file_id": "dbpedia_8070_97.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nWhile the documents state that Bill Gates co-founded and led Microsoft, they don't describe his occupation as *Microsoft*.  He is described as a computer programmer, philanthropist, investor, and chairman of the Bill & Melinda Gates Foundation.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple \"Bill Gates' occupation is Microsoft\" based on the provided context information:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation:\nThe documents describe Bill Gates as a co-founder of Microsoft, but they do not explicitly state that his occupation is Microsoft. The documents mention various positions held by Gates at Microsoft, such as CEO and chief software architect, but they also mention other roles and affiliations, including philanthropist and chairman of the Bill & Melinda Gates Foundation. Therefore, while Gates has a strong connection to Microsoft, it is not accurate to say that his occupation is simply \"Microsoft\"."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information about Bill Gates's role and position at Microsoft, such as holding positions like CEO and chief software architect. This supports the statement that his occupation is related to Microsoft."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Bill Gates' occupation is not Microsoft; instead, he is a co-founder of Microsoft Corporation.",
+            "category": -1
+        },
+        "gemma2": {
+            "reason": "Multiple sources state Bill Gates held positions like CEO and Chief Software Architect at Microsoft, implying he worked *within* the company, not that his occupation *was* the company itself.",
+            "category": -1
+        },
+        "llama3.1": {
+            "reason": "Bill Gates' occupation is a software executive, not Microsoft.",
+            "category": -1
+        }
+    }
+}

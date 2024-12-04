@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Yorkton",
+    "predicate": "property/novRecordHighC",
+    "object": "20.6",
+    "human_readable": "The record high temperature in Yorkton is 20.6.",
+    "questions": [
+        {
+            "score": 0.9827190637588501,
+            "question": "On what day was the record high temperature of 20.6 degrees Celsius recorded in Yorkton?"
+        },
+        {
+            "score": 0.9189385771751404,
+            "question": "What is the record high temperature in Yorkton?"
+        },
+        {
+            "score": 0.9180488586425781,
+            "question": "Is 20.6 degrees Celsius a common temperature in Yorkton?"
+        },
+        {
+            "score": 0.8227999806404114,
+            "question": "What is the highest temperature ever recorded in Yorkton?"
+        },
+        {
+            "score": 0.7590824365615845,
+            "question": "Has Yorkton ever reached temperatures above 20 degrees Celsius?"
+        },
+        {
+            "score": 0.6967915296554565,
+            "question": "Are there any local records for consecutive days of high temperatures in Yorkton?"
+        },
+        {
+            "score": 0.6152597069740295,
+            "question": "What month usually has the highest temperatures in Yorkton?"
+        },
+        {
+            "score": 0.5936110019683838,
+            "question": "What are some factors that contribute to the high temperatures in Yorkton?"
+        },
+        {
+            "score": 0.5503561496734619,
+            "question": "How does the record high temperature in Yorkton compare to other Canadian cities?"
+        },
+        {
+            "score": 0.5282967686653137,
+            "question": "How hot does it get in Yorkton?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The record high temperature in Yorkton is 20.6.",
+            "html": "dbpedia_245_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How does the record high temperature in Yorkton compare to other Canadian cities?",
+            "html": "dbpedia_245_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some factors that contribute to the high temperatures in Yorkton?",
+            "html": "dbpedia_245_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What month usually has the highest temperatures in Yorkton?",
+            "html": "dbpedia_245_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_245_17.txt"
+        },
+        {
+            "file_id": "dbpedia_245_4.txt"
+        },
+        {
+            "file_id": "dbpedia_245_53.txt"
+        },
+        {
+            "file_id": "dbpedia_245_59.txt"
+        },
+        {
+            "file_id": "dbpedia_245_61.txt"
+        },
+        {
+            "file_id": "dbpedia_245_68.txt"
+        },
+        {
+            "file_id": "dbpedia_245_71.txt"
+        },
+        {
+            "file_id": "dbpedia_245_76.txt"
+        },
+        {
+            "file_id": "dbpedia_245_77.txt"
+        },
+        {
+            "file_id": "dbpedia_245_92.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\"output\": \"no\"}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here's the evaluation of the triple in the format you requested:\n\n{'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\"output\": \"no\"}\n```\n\nThe context information does not support the triple \"The record high temperature in Yorkton is 20.6\u00b0C.\" According to the documents, the highest recorded temperatures in July include 35\u00b0C in 2021 and other high records, but no mention of a specific record high of 20.6\u00b0C."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "There is no record of a high temperature of 20.6\u00b0C in Yorkton, according to the provided context information, which presents historical temperature records for July in Yorkton.",
+            "category": -1
+        },
+        "gemma2": {
+            "reason": "Multiple entries throughout the text state record high temperatures in Yorkton exceeding 30\u00b0C, with some even reaching over 35\u00b0C.",
+            "category": -1
+        },
+        "qwen2.5": {
+            "reason": "The context information provides record high temperatures for Yorkton of 31\u00b0C (2011) and 35\u00b0C (2021), which are significantly higher than the claimed 20.6\u00b0C.",
+            "category": -1
+        }
+    }
+}

@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Living_My_Life_(song)",
+    "predicate": "ontology/recordLabel",
+    "object": "resource/Island_Records",
+    "human_readable": "The song 'Living My Life' was released by Island Records.",
+    "questions": [
+        {
+            "score": 0.8766966462135315,
+            "question": "Which song was released by Island Records?"
+        },
+        {
+            "score": 0.7902718782424927,
+            "question": "Who released the song 'Living My Life'?"
+        },
+        {
+            "score": 0.6417934894561768,
+            "question": "What is the name of the record label that released 'Living My Life'?"
+        },
+        {
+            "score": 0.6017073392868042,
+            "question": "By which company was the song 'Living My Life' distributed?"
+        },
+        {
+            "score": 0.567534327507019,
+            "question": "Can you name other songs released by Island Records?"
+        },
+        {
+            "score": 0.5620192885398865,
+            "question": "Is Island Records known for releasing popular music?"
+        },
+        {
+            "score": 0.5158132314682007,
+            "question": "What music label is responsible for releasing 'Living My Life'?"
+        },
+        {
+            "score": 0.47952330112457275,
+            "question": "Does Island Records release music in different genres?"
+        },
+        {
+            "score": 0.39373522996902466,
+            "question": "When was 'Living My Life' most likely released?"
+        },
+        {
+            "score": 0.24327580630779266,
+            "question": "What genre is 'Living My Life' likely to be?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The song 'Living My Life' was released by Island Records.",
+            "html": "dbpedia_2962_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=When was 'Living My Life' most likely released?",
+            "html": "dbpedia_2962_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Island Records release music in different genres?",
+            "html": "dbpedia_2962_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What music label is responsible for releasing 'Living My Life'?",
+            "html": "dbpedia_2962_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2962_27.txt"
+        },
+        {
+            "file_id": "dbpedia_2962_28.txt"
+        },
+        {
+            "file_id": "dbpedia_2962_30.txt"
+        },
+        {
+            "file_id": "dbpedia_2962_4.txt"
+        },
+        {
+            "file_id": "dbpedia_2962_45.txt"
+        },
+        {
+            "file_id": "dbpedia_2962_48.txt"
+        },
+        {
+            "file_id": "dbpedia_2962_69.txt"
+        },
+        {
+            "file_id": "dbpedia_2962_72.txt"
+        },
+        {
+            "file_id": "dbpedia_2962_73.txt"
+        },
+        {
+            "file_id": "dbpedia_2962_98.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nLet me explain why:\n\nWhile the text mentions \"Living My Life\" as an album by Grace Jones, it doesn't state that Island Records released the song.  The provided context only indicates that the album was recorded with Compass Points in the Bahamas.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple:\n\n{\n  \"output\": \"no\"\n}\n\nThe information in the documents does not support this triple. According to the document, \"Living My Life\" is an album released by Grace Jones in 1982 (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2962/re-ranker-msmarco/71.txt), and it featured her lead single \"My Jamaican Guy\". However, there is no mention of the song being released by Island Records."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe document states, \"Grace Jones\u2019s fifth studio album Nightclubbing is a masterpiece of post-punk pop featuring nine tracks of mostly reworked covers of songs by the likes of David Bowie, Iggy Pop and Bill Withers. It also featured her much-loved hits Demolition Man, written by Sting, and Pull up the Bumper.\" However, for the specific query about \"Living My Life,\" although not directly stated as such, it can be inferred that this is a title from Grace Jones's album as part of her discography discussed. Given the context provided focuses on Grace Jones\u2019s albums and singles, it supports that an album or track with such a name was indeed released by Island Records. Therefore, the response aligns with \"yes.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n    \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nThe document mentions \"Living My Life\" as one of Grace Jones' albums, but there is no information indicating that the title track or any specific song titled 'Living My Life' was released by Island Records. The text describes \"Living My Life\" as an album, not a single song released by Island Records."
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Context states \"Living My Life\" was the last album recorded with Compass Points in the Bahamas. It also mentions other albums like *Portfolio, Fame* and *Island Life* were released by Island Records.",
+            "category": 4
+        },
+        "llama3.1": {
+            "reason": "The album \"Living My Life\" was produced by Compass Points, not Island Records.",
+            "category": 4
+        }
+    }
+}

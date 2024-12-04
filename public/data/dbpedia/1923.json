@@ -1,0 +1,134 @@
+{
+    "subject": "resource/John_C._McManus",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:People_from_St._Louis,_Missouri",
+    "human_readable": "John C. McManus is about People from St. Louis, Missouri.",
+    "questions": [
+        {
+            "score": 0.947026252746582,
+            "question": "What connection does John C. McManus have to St. Louis, Missouri?"
+        },
+        {
+            "score": 0.9376875162124634,
+            "question": "Is John C. McManus known for anything related to St. Louis?"
+        },
+        {
+            "score": 0.9359509348869324,
+            "question": "Why is St. Louis, Missouri mentioned in connection with John C. McManus?"
+        },
+        {
+            "score": 0.8348715305328369,
+            "question": "Who is John C. McManus?"
+        },
+        {
+            "score": 0.8242524266242981,
+            "question": "Where are People from St. Louis, Missouri originally from?"
+        },
+        {
+            "score": 0.8021067380905151,
+            "question": "What is notable about St. Louis, Missouri?"
+        },
+        {
+            "score": 0.7868969440460205,
+            "question": "Are there any famous people from St. Louis, Missouri?"
+        },
+        {
+            "score": 0.764643132686615,
+            "question": "Can you tell me more about People from St. Louis, Missouri?"
+        },
+        {
+            "score": 0.5647213459014893,
+            "question": "Is there anything specific that John C. McManus is known for?"
+        },
+        {
+            "score": 0.46580272912979126,
+            "question": "What makes St. Louis, Missouri unique?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=John C. McManus is about People from St. Louis, Missouri.",
+            "html": "dbpedia_1923_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there anything specific that John C. McManus is known for?",
+            "html": "dbpedia_1923_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about People from St. Louis, Missouri?",
+            "html": "dbpedia_1923_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any famous people from St. Louis, Missouri?",
+            "html": "dbpedia_1923_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1923_22.txt"
+        },
+        {
+            "file_id": "dbpedia_1923_26.txt"
+        },
+        {
+            "file_id": "dbpedia_1923_39.txt"
+        },
+        {
+            "file_id": "dbpedia_1923_40.txt"
+        },
+        {
+            "file_id": "dbpedia_1923_6.txt"
+        },
+        {
+            "file_id": "dbpedia_1923_60.txt"
+        },
+        {
+            "file_id": "dbpedia_1923_61.txt"
+        },
+        {
+            "file_id": "dbpedia_1923_78.txt"
+        },
+        {
+            "file_id": "dbpedia_1923_88.txt"
+        },
+        {
+            "file_id": "dbpedia_1923_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple in JSON format:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe reason for this answer is that while one of the documents mentions John C. McManus as a native of St. Louis and another document mentions him as a professor at Missouri University of Science and Technology, none of the documents explicitly state that he is about People from St. Louis, Missouri."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide information that supports the statement \"John C. McManus is about People from St. Louis, Missouri.\" Both 76.txt and 59.txt mention John C. McManus's origin as being from St. Louis, Missouri."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "John C. McManus is actually from Missouri University of Science and Technology from St. Louis, Missouri but John Coyne McManus (born 1965) is a native of St. Louis.",
+            "category": 2
+        }
+    }
+}

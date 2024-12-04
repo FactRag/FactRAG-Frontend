@@ -1,0 +1,129 @@
+{
+    "subject": "resource/WSBR",
+    "predicate": "ontology/city",
+    "object": "resource/Boca_Raton,_Florida",
+    "human_readable": "WSBR is located in Boca Raton, Florida.",
+    "questions": [
+        {
+            "score": 0.894082248210907,
+            "question": "Is WSBR in Florida?"
+        },
+        {
+            "score": 0.8232276439666748,
+            "question": "Where is WSBR located?"
+        },
+        {
+            "score": 0.7607119083404541,
+            "question": "What is the location of WSBR?"
+        },
+        {
+            "score": 0.6589022278785706,
+            "question": "What state is WSBR in?"
+        },
+        {
+            "score": 0.6522008776664734,
+            "question": "In which US state is WSBR situated?"
+        },
+        {
+            "score": 0.603956401348114,
+            "question": "In which city does WSBR operate?"
+        },
+        {
+            "score": 0.5815815329551697,
+            "question": "Where would you find WSBR?"
+        },
+        {
+            "score": 0.578757643699646,
+            "question": "What city is associated with WSBR?"
+        },
+        {
+            "score": 0.5614476203918457,
+            "question": "Can you tell me the city where WSBR is based?"
+        },
+        {
+            "score": 0.5224334001541138,
+            "question": "What city is home to WSBR?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=WSBR is located in Boca Raton, Florida.",
+            "html": "dbpedia_6245_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me the city where WSBR is based?",
+            "html": "dbpedia_6245_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What city is associated with WSBR?",
+            "html": "dbpedia_6245_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where would you find WSBR?",
+            "html": "dbpedia_6245_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6245_14.txt"
+        },
+        {
+            "file_id": "dbpedia_6245_15.txt"
+        },
+        {
+            "file_id": "dbpedia_6245_22.txt"
+        },
+        {
+            "file_id": "dbpedia_6245_24.txt"
+        },
+        {
+            "file_id": "dbpedia_6245_33.txt"
+        },
+        {
+            "file_id": "dbpedia_6245_48.txt"
+        },
+        {
+            "file_id": "dbpedia_6245_52.txt"
+        },
+        {
+            "file_id": "dbpedia_6245_62.txt"
+        },
+        {
+            "file_id": "dbpedia_6245_71.txt"
+        },
+        {
+            "file_id": "dbpedia_6245_79.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation of the triple in JSON format:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation:\n\nThe documents contain information about WSBR, including its location. The document at file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6245/re-ranker-msmarco/24.txt mentions that the radio station is in Boca Raton, Florida. Additionally, the document at file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6245/re-ranker-msmarco/33.txt also confirms this information by listing Boca Raton, FL as the city of license for WSBR. Therefore, the triple \"WSBR is located in Boca Raton, Florida\" is supported by the documents and the answer is \"yes\"."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe information provided in the documents supports that WSBR is located in Boca Raton, Florida. This can be seen from multiple documents where it explicitly states the city of license as Boca Raton, FL."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {'output': 'yes'}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

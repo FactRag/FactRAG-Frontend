@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Arizona_Summit_Law_School",
+    "predicate": "property/type",
+    "object": "resource/Private_university",
+    "human_readable": "Arizona Summit Law School is a private university.",
+    "questions": [
+        {
+            "score": 0.9877856969833374,
+            "question": "Is Arizona Summit Law School a public or private university?"
+        },
+        {
+            "score": 0.8844611644744873,
+            "question": "What type of institution is Arizona Summit Law School?"
+        },
+        {
+            "score": 0.8043872714042664,
+            "question": "Where is Arizona Summit Law School located?"
+        },
+        {
+            "score": 0.7570332884788513,
+            "question": "What are some of the specializations offered at Arizona Summit Law School?"
+        },
+        {
+            "score": 0.7371683120727539,
+            "question": "Does Arizona Summit Law School offer undergraduate or graduate degrees?"
+        },
+        {
+            "score": 0.7222582697868347,
+            "question": "What field of study is primarily focused on at Arizona Summit Law School?"
+        },
+        {
+            "score": 0.681379497051239,
+            "question": "Is Arizona Summit Law School accredited by any recognized organizations?"
+        },
+        {
+            "score": 0.6514621376991272,
+            "question": "What is the student-to-faculty ratio at Arizona Summit Law School?"
+        },
+        {
+            "score": 0.6347469687461853,
+            "question": "What are the admission requirements for Arizona Summit Law School?"
+        },
+        {
+            "score": 0.5618208050727844,
+            "question": "Does Arizona Summit Law School offer online programs?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Arizona Summit Law School is a private university.",
+            "html": "dbpedia_4747_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are the admission requirements for Arizona Summit Law School?",
+            "html": "dbpedia_4747_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the student-to-faculty ratio at Arizona Summit Law School?",
+            "html": "dbpedia_4747_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Arizona Summit Law School accredited by any recognized organizations?",
+            "html": "dbpedia_4747_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4747_100.txt"
+        },
+        {
+            "file_id": "dbpedia_4747_17.txt"
+        },
+        {
+            "file_id": "dbpedia_4747_24.txt"
+        },
+        {
+            "file_id": "dbpedia_4747_27.txt"
+        },
+        {
+            "file_id": "dbpedia_4747_33.txt"
+        },
+        {
+            "file_id": "dbpedia_4747_39.txt"
+        },
+        {
+            "file_id": "dbpedia_4747_42.txt"
+        },
+        {
+            "file_id": "dbpedia_4747_49.txt"
+        },
+        {
+            "file_id": "dbpedia_4747_71.txt"
+        },
+        {
+            "file_id": "dbpedia_4747_81.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "To evaluate the triple, I need to check if the information in the documents supports the statement \"Arizona Summit Law School is a private university.\"\n\nFrom the context information:\n\n* File_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4747/re-ranker-msmarco/26.txt\n\t+ Arizona Summit Law School is described as a \"Private for-profit institution\" located in Phoenix, AZ.\n* File_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4747/re-ranker-msmarco/37.txt\n\t+ The Arizona Summit Law School is referred to as a \"for-profit, private law school\" located in Phoenix, Arizona.\n* File_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4747/re-ranker-msmarco/47.txt\n\t+ Arizona Summit Law School is described as a \"private law school\" established in 2004.\n\nBased on this information, it appears that the statement \"Arizona Summit Law School is a private university\" is not entirely accurate. The documents describe it as a law school, specifically a private for-profit institution, rather than a university.\n\nTherefore, the response should be:\n\n`{'output': 'no'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents state that \"Arizona Summit Law School is a Private for-profit institution,\" which supports the claim that it is a private university."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Arizona Summit Law School is not a university, but a law school offering Juris Doctor (J.D.) programs only.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Multiple sources state Arizona Summit Law School was a private law school, not a university.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "It specifically states \"Arizona Summit Law School is a Private for-profit institution located in Phoenix, AZ\", which indicates that it is not a university but rather a law school.",
+            "category": 2
+        }
+    }
+}

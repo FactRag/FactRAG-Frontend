@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Almere_City_FC",
+    "predicate": "property/no",
+    "object": "26",
+    "human_readable": "The number of Almere City FC is 26.",
+    "questions": [
+        {
+            "score": 0.9755837917327881,
+            "question": "Is there a specific significance to the number 26 for Almere City FC?"
+        },
+        {
+            "score": 0.9487866759300232,
+            "question": "What is the context in which the number 26 is used for Almere City FC?"
+        },
+        {
+            "score": 0.9330433011054993,
+            "question": "What does the number 26 represent in relation to Almere City FC?"
+        },
+        {
+            "score": 0.912438690662384,
+            "question": "What might be some reasons behind choosing the number 26 for Almere City FC?"
+        },
+        {
+            "score": 0.9060831069946289,
+            "question": "How does the number 26 contribute to the identity of Almere City FC?"
+        },
+        {
+            "score": 0.7869971990585327,
+            "question": "What is the number associated with Almere City FC?"
+        },
+        {
+            "score": 0.7095595598220825,
+            "question": "Are there any other numbers commonly associated with Almere City FC?"
+        },
+        {
+            "score": 0.6682347059249878,
+            "question": "Which football club has the number 26?"
+        },
+        {
+            "score": 0.2776128053665161,
+            "question": "Could the number 26 be related to a jersey or team ranking?"
+        },
+        {
+            "score": 0.09903512895107269,
+            "question": "Do other football clubs use the same number?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The number of Almere City FC is 26.",
+            "html": "dbpedia_3727_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Could the number 26 be related to a jersey or team ranking?",
+            "html": "dbpedia_3727_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Which football club has the number 26?",
+            "html": "dbpedia_3727_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any other numbers commonly associated with Almere City FC?",
+            "html": "dbpedia_3727_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3727_20.txt"
+        },
+        {
+            "file_id": "dbpedia_3727_23.txt"
+        },
+        {
+            "file_id": "dbpedia_3727_33.txt"
+        },
+        {
+            "file_id": "dbpedia_3727_42.txt"
+        },
+        {
+            "file_id": "dbpedia_3727_45.txt"
+        },
+        {
+            "file_id": "dbpedia_3727_46.txt"
+        },
+        {
+            "file_id": "dbpedia_3727_48.txt"
+        },
+        {
+            "file_id": "dbpedia_3727_5.txt"
+        },
+        {
+            "file_id": "dbpedia_3727_59.txt"
+        },
+        {
+            "file_id": "dbpedia_3727_68.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here's the evaluation of whether the information in the documents supports the triple:\n\n{\n  \"output\": \"yes\"\n}\n\nExplanation: According to document file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3727/re-ranker-msmarco/39.txt, it is mentioned that Teams Heracles Almere City FC played so far 6 matches and also in another part of the same document, The Soccer Teams FC Oss and Almere City FC played 26 Games up to today."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents provided do not contain any information about the number of games played, let alone that it is 26. The closest related content mentions they have played 26 games up to a certain year but does not specify that this is the current number of games or directly state the number as 26."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "There is no information provided about the number of games played by Almere City FC, so it cannot be determined that the number of games they have played is 26.",
+            "category": 1
+        },
+        "gemma2": {
+            "reason": "The text states \"The Soccer Teams FC Oss and Almere City FC played 26 Games up to today.\"  This implies that 26 is the total number of games played between the two teams, not a specific identifier for Almere City FC.",
+            "category": 1
+        },
+        "llama3.1": {
+            "reason": "The provided context information mentions \"The Soccer Teams FC Oss and Almere City FC played 26 Games up to today\" but also talks about Heracles, indicating a different match or league being discussed later on, making the number of matches for Almere City FC irrelevant or incorrect in the initial statement.",
+            "category": 1
+        }
+    }
+}

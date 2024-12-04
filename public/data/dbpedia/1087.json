@@ -1,0 +1,97 @@
+{
+    "subject": "resource/Sandy_Mart\u00ednez",
+    "predicate": "http://xmlns.com/foaf/0.1/surname",
+    "object": "Martinez",
+    "human_readable": "Sandy Mart\u00ednez's surname is Martinez.",
+    "questions": [
+        {
+            "score": 0.9828011989593506,
+            "question": "Is 'Martinez' Sandy Mart\u00ednez's last name?"
+        },
+        {
+            "score": 0.9384181499481201,
+            "question": "What is Sandy Mart\u00ednez's surname?"
+        },
+        {
+            "score": 0.6659756302833557,
+            "question": "How would you write Sandy Mart\u00ednez's full name?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Sandy Mart\u00ednez's surname is Martinez.",
+            "html": "dbpedia_1087_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Sandy Mart\u00ednez's surname?",
+            "html": "dbpedia_1087_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is 'Martinez' Sandy Mart\u00ednez's last name?",
+            "html": "dbpedia_1087_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1087_124.txt"
+        },
+        {
+            "file_id": "dbpedia_1087_133.txt"
+        },
+        {
+            "file_id": "dbpedia_1087_31.txt"
+        },
+        {
+            "file_id": "dbpedia_1087_33.txt"
+        },
+        {
+            "file_id": "dbpedia_1087_46.txt"
+        },
+        {
+            "file_id": "dbpedia_1087_56.txt"
+        },
+        {
+            "file_id": "dbpedia_1087_69.txt"
+        },
+        {
+            "file_id": "dbpedia_1087_73.txt"
+        },
+        {
+            "file_id": "dbpedia_1087_83.txt"
+        },
+        {
+            "file_id": "dbpedia_1087_87.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the context information provided, I can evaluate the triple as follows:\n\n* The first file_path contains information about a person named Sandy Mart\u00ednez, including his birthdate and place of birth. However, there is no mention of his surname in this document.\n* The second file_path (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1087/re-ranker-msmarco/32.txt) contains information about the surname Martinez-Perez, but it does not specifically mention Sandy Mart\u00ednez. Similarly, the third file_path (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1087/re-ranker-msmarco/55.txt) contains information about the surname Martinez-Ruiz, again without mentioning Sandy Mart\u00ednez.\n* However, upon closer inspection of the documents, I notice that Sandy Mart\u00ednez is mentioned in the context of his father, former Major League catcher Sandy Mart\u00ednez, who is also a Martinez.\n\nTherefore, based on this information, I can conclude that:\n\n{ \"output\": \"yes\" }"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\nThe documents provide information about individuals with the surname \"Mart\u00ednez\" or variations thereof, such as \"Martinez-Perez\" and \"Martinez-Ruiz.\" This supports that Sandy Mart\u00ednez's surname is Martinez."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

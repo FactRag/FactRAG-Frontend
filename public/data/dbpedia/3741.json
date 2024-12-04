@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Murder_of_Elisa_Izquierdo",
+    "predicate": "ontology/birthPlace",
+    "object": "resource/New_York_City",
+    "human_readable": "The birth place of the Murder of Elisa Izquierdo is New York City.",
+    "questions": [
+        {
+            "score": 0.9539752006530762,
+            "question": "Is New York City connected to the Murder of Elisa Izquierdo?"
+        },
+        {
+            "score": 0.8684872388839722,
+            "question": "What was the location of the Elisa Izquierdo murder?"
+        },
+        {
+            "score": 0.865157961845398,
+            "question": "Where did the Murder of Elisa Izquierdo take place?"
+        },
+        {
+            "score": 0.8027846813201904,
+            "question": "What is known about the birthplace of the Elisa Izquierdo case?"
+        },
+        {
+            "score": 0.7011558413505554,
+            "question": "In which city did the tragedy involving Elisa Izquierdo occur?"
+        },
+        {
+            "score": 0.07270016521215439,
+            "question": "Can we learn about the location of a crime from its description?"
+        },
+        {
+            "score": 0.030097942799329758,
+            "question": "How might knowing the location of a crime influence an investigation?"
+        },
+        {
+            "score": 0.02317539043724537,
+            "question": "What are some factors that might make a specific location significant in a case like this?"
+        },
+        {
+            "score": 0.020152699202299118,
+            "question": "Are there any limitations to what we can infer from a statement about a location?"
+        },
+        {
+            "score": 0.012674594298005104,
+            "question": "Why is it important to consider the context when analyzing information about a crime?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The birth place of the Murder of Elisa Izquierdo is New York City.",
+            "html": "dbpedia_3741_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any limitations to what we can infer from a statement about a location?",
+            "html": "dbpedia_3741_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some factors that might make a specific location significant in a case like this?",
+            "html": "dbpedia_3741_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How might knowing the location of a crime influence an investigation?",
+            "html": "dbpedia_3741_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3741_11.txt"
+        },
+        {
+            "file_id": "dbpedia_3741_20.txt"
+        },
+        {
+            "file_id": "dbpedia_3741_23.txt"
+        },
+        {
+            "file_id": "dbpedia_3741_35.txt"
+        },
+        {
+            "file_id": "dbpedia_3741_57.txt"
+        },
+        {
+            "file_id": "dbpedia_3741_59.txt"
+        },
+        {
+            "file_id": "dbpedia_3741_66.txt"
+        },
+        {
+            "file_id": "dbpedia_3741_82.txt"
+        },
+        {
+            "file_id": "dbpedia_3741_88.txt"
+        },
+        {
+            "file_id": "dbpedia_3741_93.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the answer in the form of a structured JSON format:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: According to the documents, Elisa Izquierdo was born in Brooklyn, New York (document 2), not New York City in general. She was specifically born at Woodhull Hospital in Brooklyn, New York (document 2)."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\n**Explanation**: The documents provide information about Elisa Izquierdo, including her birth and death locations. Specifically, document `33.txt` states that she was born in Brooklyn, New York, U.S., which is part of New York City. Therefore, the statement that the birthplace of Elisa Izquierdo is New York City is supported by the provided context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Elisa Izquierdo was born in Brooklyn, New York City, but she died in Manhattan, New York City. Therefore, the birth place and the location where she was murdered are not the same.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Several texts state Elisa Izquierdo was born and murdered in New York City.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Elisa Izquierdo was born in Brooklyn, New York, not the entire city of New York.",
+            "category": 2
+        }
+    }
+}

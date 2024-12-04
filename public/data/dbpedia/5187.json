@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Maseru",
+    "predicate": "property/subdivisionName",
+    "object": "resource/Lesotho",
+    "human_readable": "Maseru is a subdivision of Lesotho.",
+    "questions": [
+        {
+            "score": 0.7645618915557861,
+            "question": "What country is Maseru a subdivision of?"
+        },
+        {
+            "score": 0.5715153813362122,
+            "question": "Does Lesotho have any other major cities besides Maseru?"
+        },
+        {
+            "score": 0.5493834018707275,
+            "question": "Where is Maseru located?"
+        },
+        {
+            "score": 0.47822490334510803,
+            "question": "What kind of geographical features can be found in Lesotho?"
+        },
+        {
+            "score": 0.47348475456237793,
+            "question": "What is the capital of Lesotho?"
+        },
+        {
+            "score": 0.4119052588939667,
+            "question": "What is the name of the country that Maseru belongs to?"
+        },
+        {
+            "score": 0.3528643846511841,
+            "question": "Is Maseru a city or a country?"
+        },
+        {
+            "score": 0.3166491389274597,
+            "question": "Can you tell me more about Lesotho?"
+        },
+        {
+            "score": 0.2932618260383606,
+            "question": "Is Maseru a well-known city in Africa?"
+        },
+        {
+            "score": 0.1986699104309082,
+            "question": "What language(s) are spoken in Maseru?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Maseru is a subdivision of Lesotho.",
+            "html": "dbpedia_5187_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Maseru a well-known city in Africa?",
+            "html": "dbpedia_5187_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about Lesotho?",
+            "html": "dbpedia_5187_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Maseru a city or a country?",
+            "html": "dbpedia_5187_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5187_10.txt"
+        },
+        {
+            "file_id": "dbpedia_5187_112.txt"
+        },
+        {
+            "file_id": "dbpedia_5187_113.txt"
+        },
+        {
+            "file_id": "dbpedia_5187_14.txt"
+        },
+        {
+            "file_id": "dbpedia_5187_17.txt"
+        },
+        {
+            "file_id": "dbpedia_5187_19.txt"
+        },
+        {
+            "file_id": "dbpedia_5187_39.txt"
+        },
+        {
+            "file_id": "dbpedia_5187_56.txt"
+        },
+        {
+            "file_id": "dbpedia_5187_73.txt"
+        },
+        {
+            "file_id": "dbpedia_5187_78.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here's the structured JSON format for your query:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation:\nThe documents provided indicate that Maseru is indeed a city in Lesotho (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5187/re-ranker-msmarco/2.txt), the capital city of Lesotho (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5187/re-ranker-msmarco/2.txt and file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5187/re-ranker-msmarco/54.txt), and a subdivision of Lesotho (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5187/re-ranker-msmarco/87.txt). Therefore, the information supports that Maseru is a subdivision of Lesotho."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The information provided in the documents does not directly state that Maseru is a subdivision of Lesotho. Instead, it refers to Maseru as the capital city and largest urban area in Lesotho. Therefore, the statement that Maseru is a subdivision of Lesotho is not supported by the given context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n    \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "qwen2.5": {
+            "reason": "Maseru is described as the capital city of Lesotho and a region within the country, not a subdivision. Subdivisions typically refer to smaller administrative areas or districts, whereas Maseru is presented as a significant urban area in its own right.",
+            "category": -1
+        }
+    }
+}

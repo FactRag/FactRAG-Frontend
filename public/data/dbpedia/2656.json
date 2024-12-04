@@ -1,0 +1,97 @@
+{
+    "subject": "resource/Edward_Garnier",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "Edward Garnier",
+    "human_readable": "Edward Garnier's label is Edward Garnier.",
+    "questions": [
+        {
+            "score": 0.9403241276741028,
+            "question": "What does the label 'Edward Garnier' refer to?"
+        },
+        {
+            "score": 0.92641681432724,
+            "question": "Who is Edward Garnier?"
+        },
+        {
+            "score": 0.7050722241401672,
+            "question": "Can you tell me more about Edward Garnier?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Edward Garnier's label is Edward Garnier.",
+            "html": "dbpedia_2656_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is Edward Garnier?",
+            "html": "dbpedia_2656_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What does the label 'Edward Garnier' refer to?",
+            "html": "dbpedia_2656_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2656_120.txt"
+        },
+        {
+            "file_id": "dbpedia_2656_131.txt"
+        },
+        {
+            "file_id": "dbpedia_2656_147.txt"
+        },
+        {
+            "file_id": "dbpedia_2656_150.txt"
+        },
+        {
+            "file_id": "dbpedia_2656_37.txt"
+        },
+        {
+            "file_id": "dbpedia_2656_52.txt"
+        },
+        {
+            "file_id": "dbpedia_2656_55.txt"
+        },
+        {
+            "file_id": "dbpedia_2656_7.txt"
+        },
+        {
+            "file_id": "dbpedia_2656_86.txt"
+        },
+        {
+            "file_id": "dbpedia_2656_99.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "To evaluate the triple, I'll check if the documents support the statement \"Edward Garnier's label is Edward Garnier\".\n\nAfter reviewing the context information, I found that:\n\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2656/re-ranker-msmarco/55.txt, Edward Garnier QC is mentioned.\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2656/re-ranker-msmarco/52.txt and others, the label \"Edward, Lord Garnier QC\" or simply \"Edward Garnier QC\" is used to refer to him.\n\nThis suggests that Edward Garnier's common label in these documents is indeed \"Edward Garnier\".\n\nTherefore, the answer is:\n\n`{'output': 'yes'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe query \"Edward Garnier's label is Edward Garnier\" is correct according to the documents provided, as all references consistently identify him using his name."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

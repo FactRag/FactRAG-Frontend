@@ -1,0 +1,126 @@
+{
+    "subject": "resource/Ali_(film)",
+    "predicate": "ontology/starring",
+    "object": "resource/Ron_Silver",
+    "human_readable": "Ali starring is Ron Silver.",
+    "questions": [
+        {
+            "score": 0.8784643411636353,
+            "question": "Can you tell me more about the role Ron Silver plays in Ali?"
+        },
+        {
+            "score": 0.656967282295227,
+            "question": "Who is Ron Silver?"
+        },
+        {
+            "score": 0.3500952422618866,
+            "question": "Is Ali a movie or TV show?"
+        },
+        {
+            "score": 0.21157079935073853,
+            "question": "Who is starring in the film?"
+        },
+        {
+            "score": 0.11747418344020844,
+            "question": "What is the name of the actor starring in the film?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Ali starring is Ron Silver.",
+            "html": "dbpedia_2957_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is starring in the film?",
+            "html": "dbpedia_2957_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Ali a movie or TV show?",
+            "html": "dbpedia_2957_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is Ron Silver?",
+            "html": "dbpedia_2957_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2957_1.txt"
+        },
+        {
+            "file_id": "dbpedia_2957_109.txt"
+        },
+        {
+            "file_id": "dbpedia_2957_128.txt"
+        },
+        {
+            "file_id": "dbpedia_2957_136.txt"
+        },
+        {
+            "file_id": "dbpedia_2957_31.txt"
+        },
+        {
+            "file_id": "dbpedia_2957_34.txt"
+        },
+        {
+            "file_id": "dbpedia_2957_79.txt"
+        },
+        {
+            "file_id": "dbpedia_2957_84.txt"
+        },
+        {
+            "file_id": "dbpedia_2957_90.txt"
+        },
+        {
+            "file_id": "dbpedia_2957_99.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the answer in the structured JSON format:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nThis indicates that the triple \"Ali starring is Ron Silver\" is incorrect, based on the provided context information. The documents actually mention that Ron Silver played the role of Ali's trainer Angelo Dundee, but not that he starred as Muhammad Ali in the movie \"Ali\"."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The information provided does not support the triple \"Ali starring is Ron Silver.\" While Ron Silver appears as a cast member in the film, playing the role of Ali's trainer Angelo Dundee, he did not star in the movie. Will Smith starred as Muhammad Ali in the film."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Ron Silver played the character Angelo Dundee, Ali's trainer, in the movie \"Ali\" but he was not one of the stars or main characters in the film.",
+            "category": 3
+        },
+        "gemma2": {
+            "reason": "Several texts state Ron Silver played Angelo Dundee, Ali's trainer, not that he starred as Ali. Will Smith played Muhammad Ali.",
+            "category": 3
+        },
+        "llama3.1": {
+            "reason": "Ron Silver passed away on Sunday, which implies he cannot be starring in \"Ali\".",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "Ron Silver played the role of Ali's trainer Angelo Dundee, not Muhammad Ali himself.",
+            "category": 3
+        }
+    }
+}

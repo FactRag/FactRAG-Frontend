@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Miracle_(Cascada_song)",
+    "predicate": "property/certification",
+    "object": "Gold",
+    "human_readable": "The certification of the song Miracle by Cascada is Gold.",
+    "questions": [
+        {
+            "score": 0.9156831502914429,
+            "question": "Which song by Cascada received a Gold certification?"
+        },
+        {
+            "score": 0.8773500323295593,
+            "question": "Is the song Miracle by Cascada certified Platinum?"
+        },
+        {
+            "score": 0.8481103777885437,
+            "question": "What certification level has the song Miracle by Cascada achieved?"
+        },
+        {
+            "score": 0.7580422759056091,
+            "question": "Has any other song by Cascada reached a Gold certification level?"
+        },
+        {
+            "score": 0.557686984539032,
+            "question": "What does it mean for a song to be Gold certified?"
+        },
+        {
+            "score": 0.5370327234268188,
+            "question": "Who are some other artists that have songs with a Gold certification?"
+        },
+        {
+            "score": 0.48560112714767456,
+            "question": "When was the song Miracle by Cascada released?"
+        },
+        {
+            "score": 0.45733779668807983,
+            "question": "Are there any awards associated with a Gold certification for music?"
+        },
+        {
+            "score": 0.4333499073982239,
+            "question": "What factors contribute to a song receiving a Gold certification?"
+        },
+        {
+            "score": 0.38907715678215027,
+            "question": "What is the significance of achieving a Gold certification in the music industry?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The certification of the song Miracle by Cascada is Gold.",
+            "html": "dbpedia_2198_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What factors contribute to a song receiving a Gold certification?",
+            "html": "dbpedia_2198_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any awards associated with a Gold certification for music?",
+            "html": "dbpedia_2198_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=When was the song Miracle by Cascada released?",
+            "html": "dbpedia_2198_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2198_18.txt"
+        },
+        {
+            "file_id": "dbpedia_2198_19.txt"
+        },
+        {
+            "file_id": "dbpedia_2198_27.txt"
+        },
+        {
+            "file_id": "dbpedia_2198_34.txt"
+        },
+        {
+            "file_id": "dbpedia_2198_51.txt"
+        },
+        {
+            "file_id": "dbpedia_2198_53.txt"
+        },
+        {
+            "file_id": "dbpedia_2198_6.txt"
+        },
+        {
+            "file_id": "dbpedia_2198_80.txt"
+        },
+        {
+            "file_id": "dbpedia_2198_81.txt"
+        },
+        {
+            "file_id": "dbpedia_2198_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": -1,
+            "full_ans": "Here's the evaluation of the triple \"The certification of the song Miracle by Cascada is Gold.\"\n\nAfter reviewing the provided context information, I found that:\n\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2198/re-ranker-msmarco/34.txt, it is mentioned that the song \"Miracle\" has a certification of \"Gold (RIAA)\".\n* However, in file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2198/re-ranker-msmarco/19.txt, it is mentioned that the album \"Everytime We Touch\" includes a song called \"Miracle\", but there's no specific information about its certification.\n\nConsidering this information, I would say that the triple \"The certification of the song Miracle by Cascada is Gold.\" is partially supported. The correct answer should be:\n\n{'output': 'partial'}\n\nHowever, since you asked for a binary output and considering that the provided context does not provide strong evidence against the statement being true (only partial information), I would say that the best course of action would be to mark it as \"yes\", acknowledging that the partial support is more relevant than a clear \"no\"."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe information provided in the documents supports that the song \"Miracle\" by Cascada received a gold certification, as mentioned in at least one document."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The certification of the song \"Miracle\" by Cascada is actually Platinum, not Gold.",
+            "category": 4
+        }
+    }
+}

@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Lin_Zexu",
+    "predicate": "ontology/birthPlace",
+    "object": "resource/Fuzhou",
+    "human_readable": "Lin Zexu was born in Fuzhou.",
+    "questions": [
+        {
+            "score": 0.807378888130188,
+            "question": "Where was Lin Zexu born?"
+        },
+        {
+            "score": 0.7285431623458862,
+            "question": "In what century was Lin Zexu born?"
+        },
+        {
+            "score": 0.4590061902999878,
+            "question": "What is Lin Zexu known for?"
+        },
+        {
+            "score": 0.3736163079738617,
+            "question": "Name the city where Lin Zexu originated from."
+        },
+        {
+            "score": 0.3325806260108948,
+            "question": "Where did Lin Zexu work during his career?"
+        },
+        {
+            "score": 0.3319895565509796,
+            "question": "Who were Lin Zexu's contemporaries?"
+        },
+        {
+            "score": 0.3137887418270111,
+            "question": "How is Lin Zexu remembered in history?"
+        },
+        {
+            "score": 0.30435964465141296,
+            "question": "What position did Lin Zexu hold in the Qing dynasty?"
+        },
+        {
+            "score": 0.251079797744751,
+            "question": "What significant event took place during Lin Zexu's time?"
+        },
+        {
+            "score": 0.22705483436584473,
+            "question": "What was the outcome of Lin Zexu's actions?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Lin Zexu was born in Fuzhou.",
+            "html": "dbpedia_5384_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What significant event took place during Lin Zexu's time?",
+            "html": "dbpedia_5384_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What position did Lin Zexu hold in the Qing dynasty?",
+            "html": "dbpedia_5384_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How is Lin Zexu remembered in history?",
+            "html": "dbpedia_5384_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5384_1.txt"
+        },
+        {
+            "file_id": "dbpedia_5384_15.txt"
+        },
+        {
+            "file_id": "dbpedia_5384_21.txt"
+        },
+        {
+            "file_id": "dbpedia_5384_22.txt"
+        },
+        {
+            "file_id": "dbpedia_5384_23.txt"
+        },
+        {
+            "file_id": "dbpedia_5384_26.txt"
+        },
+        {
+            "file_id": "dbpedia_5384_35.txt"
+        },
+        {
+            "file_id": "dbpedia_5384_63.txt"
+        },
+        {
+            "file_id": "dbpedia_5384_8.txt"
+        },
+        {
+            "file_id": "dbpedia_5384_82.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nAll the documents mention that Lin Zexu was born in Fuzhou."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents clearly state that Lin Zexu was born in Fuzhou, Fujian province. Therefore, the statement \"Lin Zexu was born in Fuzhou\" is supported by the given context information."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Lin Zexu was born in Fuzhou, which is stated repeatedly in the context information.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Several sources clearly state that Lin Zexu was born in Fuzhou.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "It conflicts with the information provided in context 6 that Lin Zexu was born in Houguan (today's Fuzhou City), Fujian Province.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information consistently states that Lin Zexu was born in Fuzhou, with multiple sources confirming this fact. Therefore, without additional contradictory evidence, the initial statement cannot be evaluated as incorrect based on the provided context.",
+            "category": 2
+        }
+    }
+}

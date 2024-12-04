@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Pontiac_Astre",
+    "predicate": "ontology/bodyStyle",
+    "object": "resource/Notchback",
+    "human_readable": "The body style of Pontiac Astre is Notchback.",
+    "questions": [
+        {
+            "score": 0.9664549827575684,
+            "question": "How did the Notchback body style influence the look of the Pontiac Astre?"
+        },
+        {
+            "score": 0.9208369255065918,
+            "question": "Why do you think the Pontiac Astre was designed with a Notchback body style?"
+        },
+        {
+            "score": 0.9122098684310913,
+            "question": "What is the body style of the Pontiac Astre?"
+        },
+        {
+            "score": 0.8419672250747681,
+            "question": "Were there other body styles available for the Pontiac Astre?"
+        },
+        {
+            "score": 0.7926643490791321,
+            "question": "What are some characteristics of a Notchback body style?"
+        },
+        {
+            "score": 0.5717578530311584,
+            "question": "Describe the general shape of the Pontiac Astre."
+        },
+        {
+            "score": 0.5446596145629883,
+            "question": "What is an example of another car that shares a similar body style with the Pontiac Astre?"
+        },
+        {
+            "score": 0.4528435170650482,
+            "question": "What type of car design does the Pontiac Astre have?"
+        },
+        {
+            "score": 0.29334601759910583,
+            "question": "Is the Pontiac Astre a coupe or a sedan?"
+        },
+        {
+            "score": 0.1699475347995758,
+            "question": "How many doors does a typical Pontiac Astre have?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The body style of Pontiac Astre is Notchback.",
+            "html": "dbpedia_4468_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is the Pontiac Astre a coupe or a sedan?",
+            "html": "dbpedia_4468_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of car design does the Pontiac Astre have?",
+            "html": "dbpedia_4468_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is an example of another car that shares a similar body style with the Pontiac Astre?",
+            "html": "dbpedia_4468_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4468_1.txt"
+        },
+        {
+            "file_id": "dbpedia_4468_13.txt"
+        },
+        {
+            "file_id": "dbpedia_4468_14.txt"
+        },
+        {
+            "file_id": "dbpedia_4468_16.txt"
+        },
+        {
+            "file_id": "dbpedia_4468_19.txt"
+        },
+        {
+            "file_id": "dbpedia_4468_31.txt"
+        },
+        {
+            "file_id": "dbpedia_4468_44.txt"
+        },
+        {
+            "file_id": "dbpedia_4468_46.txt"
+        },
+        {
+            "file_id": "dbpedia_4468_51.txt"
+        },
+        {
+            "file_id": "dbpedia_4468_53.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "To answer the query, we need to evaluate whether the information in the documents supports the statement:\n\n\"The body style of Pontiac Astre is Notchback.\"\n\nLet's examine the relevant passages:\n\n- file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4468/re-ranker-msmarco/44.txt\n  The text describes the Astre as having \"Market[ed] for the 1973\u201374 model years, the Astre featured Pontiac's trademark split grill, emblems, steering wheel, and re-styled taillights (notchback and hatchback).\"\n\n- file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4468/re-ranker-msmarco/42.txt\n  This document states that the Astre is a \"2-door notchback\" among other body styles.\n\nBased on these passages, it's clear that the Pontiac Astre indeed had a notchback body style, in addition to others. Therefore:\n\n{'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information about the Pontiac Astre, including that it was available as a two-door notchback. Therefore, the statement that the body style of the Pontiac Astre is Notchback is supported by the provided context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Leonardo_da_Vinci",
+    "predicate": "property/placeOfDeath",
+    "object": "Clos Luc\u00e9, France",
+    "human_readable": "Leonardo da Vinci died in Clos Luc\u00e9, France.",
+    "questions": [
+        {
+            "score": 0.7226571440696716,
+            "question": "Where did Leonardo da Vinci die?"
+        },
+        {
+            "score": 0.6740677952766418,
+            "question": "In which country was Leonardo da Vinci's death?"
+        },
+        {
+            "score": 0.6288914680480957,
+            "question": "What is the name of the place where Leonardo da Vinci died?"
+        },
+        {
+            "score": 0.593543291091919,
+            "question": "Was Clos Luc\u00e9 a famous place during Leonardo da Vinci's time?"
+        },
+        {
+            "score": 0.43402060866355896,
+            "question": "What is known about Leonardo da Vinci's life and death?"
+        },
+        {
+            "score": 0.3647119998931885,
+            "question": "Did Leonardo da Vinci die in Italy?"
+        },
+        {
+            "score": 0.3066790997982025,
+            "question": "Where did Leonardo da Vinci spend his last years?"
+        },
+        {
+            "score": 0.250347375869751,
+            "question": "Was Leonardo da Vinci Italian?"
+        },
+        {
+            "score": 0.224197119474411,
+            "question": "What is known about Leonardo da Vinci's final years?"
+        },
+        {
+            "score": 0.21143820881843567,
+            "question": "What are some of the famous works by Leonardo da Vinci?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Leonardo da Vinci died in Clos Luc\u00e9, France.",
+            "html": "dbpedia_6069_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is known about Leonardo da Vinci's final years?",
+            "html": "dbpedia_6069_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Was Leonardo da Vinci Italian?",
+            "html": "dbpedia_6069_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where did Leonardo da Vinci spend his last years?",
+            "html": "dbpedia_6069_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6069_1.txt"
+        },
+        {
+            "file_id": "dbpedia_6069_102.txt"
+        },
+        {
+            "file_id": "dbpedia_6069_104.txt"
+        },
+        {
+            "file_id": "dbpedia_6069_118.txt"
+        },
+        {
+            "file_id": "dbpedia_6069_25.txt"
+        },
+        {
+            "file_id": "dbpedia_6069_3.txt"
+        },
+        {
+            "file_id": "dbpedia_6069_57.txt"
+        },
+        {
+            "file_id": "dbpedia_6069_59.txt"
+        },
+        {
+            "file_id": "dbpedia_6069_6.txt"
+        },
+        {
+            "file_id": "dbpedia_6069_89.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the answer in the structured JSON format:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents indicate that Leonardo da Vinci lived and died in Amboise, France (specifically at the Ch\u00e2teau du Clos Luc\u00e9, which is located near Amboise), but there is no mention of him dying in Clos Luc\u00e9 specifically."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents mention that Leonardo da Vinci died in Amboise, France, and lived in the Ch\u00e2teau du Clos Luc\u00e9 for his last three years. They do not state that he died directly at the Ch\u00e2teau du Clos Luc\u00e9; therefore, the statement \"Leonardo da Vinci died in Clos Luc\u00e9, France\" is not fully supported by the given documents."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The Ch\u00e2teau du Clos Luc\u00e9 was Leonardo da Vinci's home for the last three years of his life, but he actually died at Amboise, not Clos Luc\u00e9.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Leonardo da Vinci died in Amboise, France, at the Ch\u00e2teau du Clos Luc\u00e9, not in Clos Luc\u00e9 itself.",
+            "category": 2
+        }
+    }
+}

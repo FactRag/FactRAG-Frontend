@@ -1,0 +1,134 @@
+{
+    "subject": "resource/New_Wet_Kojak",
+    "predicate": "property/class",
+    "object": "artist",
+    "human_readable": "New Wet Kojak is an artist.",
+    "questions": [
+        {
+            "score": 0.9836544394493103,
+            "question": "Is New Wet Kojak a musician?"
+        },
+        {
+            "score": 0.9796684384346008,
+            "question": "What type of artist is New Wet Kojak?"
+        },
+        {
+            "score": 0.9609627723693848,
+            "question": "Is New Wet Kojak a self-taught artist?"
+        },
+        {
+            "score": 0.8814076781272888,
+            "question": "What is New Wet Kojak known for?"
+        },
+        {
+            "score": 0.8650557398796082,
+            "question": "Does New Wet Kojak create visual art?"
+        },
+        {
+            "score": 0.8593950867652893,
+            "question": "What inspires New Wet Kojak's art?"
+        },
+        {
+            "score": 0.8469662070274353,
+            "question": "Are there any famous works by New Wet Kojak?"
+        },
+        {
+            "score": 0.7693857550621033,
+            "question": "Has New Wet Kojak won any awards for their art?"
+        },
+        {
+            "score": 0.7059288620948792,
+            "question": "Where does New Wet Kojak work?"
+        },
+        {
+            "score": 0.570952832698822,
+            "question": "What is the name of New Wet Kojak's most recent exhibition?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=New Wet Kojak is an artist.",
+            "html": "dbpedia_4645_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where does New Wet Kojak work?",
+            "html": "dbpedia_4645_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Has New Wet Kojak won any awards for their art?",
+            "html": "dbpedia_4645_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any famous works by New Wet Kojak?",
+            "html": "dbpedia_4645_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4645_26.txt"
+        },
+        {
+            "file_id": "dbpedia_4645_34.txt"
+        },
+        {
+            "file_id": "dbpedia_4645_44.txt"
+        },
+        {
+            "file_id": "dbpedia_4645_46.txt"
+        },
+        {
+            "file_id": "dbpedia_4645_49.txt"
+        },
+        {
+            "file_id": "dbpedia_4645_5.txt"
+        },
+        {
+            "file_id": "dbpedia_4645_67.txt"
+        },
+        {
+            "file_id": "dbpedia_4645_7.txt"
+        },
+        {
+            "file_id": "dbpedia_4645_9.txt"
+        },
+        {
+            "file_id": "dbpedia_4645_91.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple \"New Wet Kojak is an artist\" based on the provided context information:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents mention that New Wet Kojak is a band, not an individual artist. In fact, they are described as having multiple members (Scott McCloud and Johnny Temple, among others) and releasing albums in different roles (guitarist/singer, bassist, etc.)."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information about the band New Wet Kojak, including their formation year and members. This supports that New Wet Kojak is indeed an artistic entity."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {'output': 'yes'}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "\"Artist\" typically implies a solo musician, painter, writer, etc., whereas New Wet Kojak is described as a band with multiple members (guitarist/singer Scott McCloud + bassist Johnny Temple and others), indicating it is a collective rather than an individual.",
+            "category": 4
+        }
+    }
+}

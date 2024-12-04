@@ -1,0 +1,142 @@
+{
+    "subject": "resource/The_Black_Crowes",
+    "predicate": "http://xmlns.com/foaf/0.1/isPrimaryTopicOf",
+    "object": "http://en.wikipedia.org/wiki/The_Black_Crowes",
+    "human_readable": "The Black Crowes is the primary topic of Wikipedia.",
+    "questions": [
+        {
+            "score": 0.527762234210968,
+            "question": "Can you tell me more about the Black Crowes based on this information?"
+        },
+        {
+            "score": 0.5102681517601013,
+            "question": "What is the main subject of the Wikipedia page mentioned?"
+        },
+        {
+            "score": 0.39648517966270447,
+            "question": "Who are some of the key members of The Black Crowes?"
+        },
+        {
+            "score": 0.3673490583896637,
+            "question": "What genre of music might The Black Crowes be associated with?"
+        },
+        {
+            "score": 0.3661310374736786,
+            "question": "Is there any specific event or album that The Black Crowes are known for?"
+        },
+        {
+            "score": 0.2781974673271179,
+            "question": "How influential was The Black Crowes in the music industry?"
+        },
+        {
+            "score": 0.24808244407176971,
+            "question": "What other bands or artists might be similar to The Black Crowes?"
+        },
+        {
+            "score": 0.1894196718931198,
+            "question": "What type of content is likely found on this Wikipedia page?"
+        },
+        {
+            "score": 0.16941164433956146,
+            "question": "Who or what band is primarily discussed on that Wikipedia page?"
+        },
+        {
+            "score": 0.14912530779838562,
+            "question": "What other information besides the band's name might be found on this Wikipedia page?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The Black Crowes is the primary topic of Wikipedia.",
+            "html": "dbpedia_215_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who or what band is primarily discussed on that Wikipedia page?",
+            "html": "dbpedia_215_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of content is likely found on this Wikipedia page?",
+            "html": "dbpedia_215_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What other bands or artists might be similar to The Black Crowes?",
+            "html": "dbpedia_215_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_215_102.txt"
+        },
+        {
+            "file_id": "dbpedia_215_117.txt"
+        },
+        {
+            "file_id": "dbpedia_215_127.txt"
+        },
+        {
+            "file_id": "dbpedia_215_17.txt"
+        },
+        {
+            "file_id": "dbpedia_215_3.txt"
+        },
+        {
+            "file_id": "dbpedia_215_60.txt"
+        },
+        {
+            "file_id": "dbpedia_215_63.txt"
+        },
+        {
+            "file_id": "dbpedia_215_67.txt"
+        },
+        {
+            "file_id": "dbpedia_215_70.txt"
+        },
+        {
+            "file_id": "dbpedia_215_90.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'} \n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the context information provided, I will evaluate whether the triple \"The Black Crowes is the primary topic of Wikipedia\" is supported by the documents.\n\nHere's my evaluation:\n\n* Document 1 mentions The Black Crowes in a general way, stating that they were most popular in the early 1990s and had several successful albums.\n* Document 2 discusses The Black Crowes as one of the last great American bands, but does not establish them as the primary topic of Wikipedia.\n* Document 3 again mentions The Black Crowes' popularity in the early 1990s and their hit singles, but still does not indicate that they are the primary topic of Wikipedia.\n* Document 4 provides a brief mention of The Black Crowes being booted from a ZZ Top tour due to a controversy with a fan, but this is not related to them being the primary topic of Wikipedia.\n\nBased on these evaluations, I conclude that:\n\n{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provided discuss various aspects related to The Black Crowes, including their music, popularity, and band members. While no explicit mention of a Wikipedia article is made, the context strongly suggests that The Black Crowes are the primary subject of the information presented, which would typically be covered in a Wikipedia article about them."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "There is no information in the context provided to suggest that the Black Crowes have a dedicated Wikipedia page as their primary topic.",
+            "category": 4
+        },
+        "gemma2": {
+            "reason": "The provided text focuses on the band's history, popularity, music style, and internal conflicts, suggesting a significant but not necessarily primary topic level of coverage on Wikipedia.",
+            "category": 4
+        },
+        "llama3.1": {
+            "reason": "The primary topic of Wikipedia was not evaluated as the Black Crowes were the focus, but rather their popularity, music style, and controversies.",
+            "category": 4
+        }
+    }
+}
