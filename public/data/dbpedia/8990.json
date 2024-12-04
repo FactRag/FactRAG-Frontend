@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Jeremy_Messersmith",
+    "predicate": "ontology/hometown",
+    "object": "resource/United_States",
+    "human_readable": "Jeremy Messersmith's hometown is the United States.",
+    "questions": [
+        {
+            "score": 0.9458068609237671,
+            "question": "What is the location of Jeremy Messersmith's hometown?"
+        },
+        {
+            "score": 0.902587354183197,
+            "question": "What country is considered Jeremy Messersmith's hometown?"
+        },
+        {
+            "score": 0.8976279497146606,
+            "question": "Is Jeremy Messersmith originally from the United States?"
+        },
+        {
+            "score": 0.8951907753944397,
+            "question": "Is Jeremy Messersmith an American?"
+        },
+        {
+            "score": 0.8862766027450562,
+            "question": "Is the United States considered Jeremy Messersmith's place of origin?"
+        },
+        {
+            "score": 0.711190402507782,
+            "question": "Where is Jeremy Messersmith from?"
+        },
+        {
+            "score": 0.5350706577301025,
+            "question": "Where did Jeremy Messersmith grow up?"
+        },
+        {
+            "score": 0.5185142755508423,
+            "question": "What is the nationality of Jeremy Messersmith?"
+        },
+        {
+            "score": 0.3543904721736908,
+            "question": "Can you tell me about Jeremy Messersmith's birthplace?"
+        },
+        {
+            "score": 0.267022967338562,
+            "question": "In what country did Jeremy Messersmith spend his childhood?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Jeremy Messersmith's hometown is the United States.",
+            "html": "dbpedia_8990_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me about Jeremy Messersmith's birthplace?",
+            "html": "dbpedia_8990_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the nationality of Jeremy Messersmith?",
+            "html": "dbpedia_8990_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where did Jeremy Messersmith grow up?",
+            "html": "dbpedia_8990_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8990_11.txt"
+        },
+        {
+            "file_id": "dbpedia_8990_12.txt"
+        },
+        {
+            "file_id": "dbpedia_8990_13.txt"
+        },
+        {
+            "file_id": "dbpedia_8990_25.txt"
+        },
+        {
+            "file_id": "dbpedia_8990_32.txt"
+        },
+        {
+            "file_id": "dbpedia_8990_37.txt"
+        },
+        {
+            "file_id": "dbpedia_8990_49.txt"
+        },
+        {
+            "file_id": "dbpedia_8990_6.txt"
+        },
+        {
+            "file_id": "dbpedia_8990_65.txt"
+        },
+        {
+            "file_id": "dbpedia_8990_71.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "{\n  \"output\": \"yes\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents indicate that Jeremy Messersmith is from Washington state and later moved to Minneapolis, both locations in the United States. Therefore, it can be inferred that his hometown is within the United States."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Jeremy Messersmith's hometown is not the United States, but South Carolina (context 1).",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because it contradicts the explicit information provided in multiple sources that identify Jeremy Messersmith as a native of South Carolina, Washington state, or Minneapolis.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Jeremy Messersmith was born in South Carolina and raised in Washington state before settling in Minneapolis, indicating the United States as his home but not a single hometown.",
+            "category": 2
+        }
+    }
+}

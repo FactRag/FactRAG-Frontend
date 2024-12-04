@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Kingdom_of_Hungary",
+    "predicate": "ontology/currency",
+    "object": "resource/Hungarian_forint",
+    "human_readable": "The currency of the Kingdom of Hungary is Hungarian forint.",
+    "questions": [
+        {
+            "score": 0.9571250677108765,
+            "question": "Is 'Hungarian forint' a type of currency?"
+        },
+        {
+            "score": 0.9394571185112,
+            "question": "What is the currency of the Kingdom of Hungary?"
+        },
+        {
+            "score": 0.8705703616142273,
+            "question": "What is the official currency of Hungary?"
+        },
+        {
+            "score": 0.8336653113365173,
+            "question": "What is the name of the Hungarian currency?"
+        },
+        {
+            "score": 0.8144355416297913,
+            "question": "In what country is the Hungarian forint used?"
+        },
+        {
+            "score": 0.6346707940101624,
+            "question": "What is the monetary system used in Hungary?"
+        },
+        {
+            "score": 0.5411269664764404,
+            "question": "What unit do Hungarians use for their money?"
+        },
+        {
+            "score": 0.4204074740409851,
+            "question": "Can you name a country that uses forint as its currency?"
+        },
+        {
+            "score": 0.22381049394607544,
+            "question": "If you were in Hungary, what would you pay with?"
+        },
+        {
+            "score": 0.06898333877325058,
+            "question": "What currency is denoted by HUF?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The currency of the Kingdom of Hungary is Hungarian forint.",
+            "html": "dbpedia_9214_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If you were in Hungary, what would you pay with?",
+            "html": "dbpedia_9214_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you name a country that uses forint as its currency?",
+            "html": "dbpedia_9214_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What unit do Hungarians use for their money?",
+            "html": "dbpedia_9214_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_9214_106.txt"
+        },
+        {
+            "file_id": "dbpedia_9214_11.txt"
+        },
+        {
+            "file_id": "dbpedia_9214_125.txt"
+        },
+        {
+            "file_id": "dbpedia_9214_22.txt"
+        },
+        {
+            "file_id": "dbpedia_9214_36.txt"
+        },
+        {
+            "file_id": "dbpedia_9214_48.txt"
+        },
+        {
+            "file_id": "dbpedia_9214_63.txt"
+        },
+        {
+            "file_id": "dbpedia_9214_8.txt"
+        },
+        {
+            "file_id": "dbpedia_9214_89.txt"
+        },
+        {
+            "file_id": "dbpedia_9214_90.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here's my evaluation:\n\n* \"The currency of the Kingdom of Hungary is Hungarian forint.\"\n\t+ Document 1 (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_9214/re-ranker-msmarco/47.txt) states that \"The Hungarian Forint is the official currency of Hungary.\"\n\t+ Document 2 (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_9214/re-ranker-msmarco/102.txt) also confirms this, stating that \"The Hungarian Forint is the official currency of Hungary.\"\n\t+ The other documents provide additional information about the Hungarian forint, but they do not contradict the statement.\n\t+ Therefore, the answer is: {'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information supporting that the Hungarian forint is indeed the currency of Hungary. This can be seen in multiple documents which describe the forint as the official currency, its abbreviation (HUF), and symbol (Ft)."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

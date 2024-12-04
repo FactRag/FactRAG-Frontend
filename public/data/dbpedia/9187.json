@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Gagauzia",
+    "predicate": "ontology/currency",
+    "object": "resource/Moldovan_leu",
+    "human_readable": "The currency of Gagauzia is Moldovan leu.",
+    "questions": [
+        {
+            "score": 0.9786059260368347,
+            "question": "When was the Moldovan leu introduced as the currency of Gagauzia?"
+        },
+        {
+            "score": 0.9351198673248291,
+            "question": "What are some challenges faced by the Moldovan leu as the currency of Gagauzia?"
+        },
+        {
+            "score": 0.9151939153671265,
+            "question": "Is Moldovan leu used in Gagauzia?"
+        },
+        {
+            "score": 0.826140820980072,
+            "question": "Does Gagauzia have its own central bank that issues the Moldovan leu?"
+        },
+        {
+            "score": 0.8219427466392517,
+            "question": "What is the currency of Gagauzia?"
+        },
+        {
+            "score": 0.7282505035400391,
+            "question": "What country uses Moldovan leu as its currency?"
+        },
+        {
+            "score": 0.6966521143913269,
+            "question": "Besides Gagauzia, are there any other regions that use Moldovan leu?"
+        },
+        {
+            "score": 0.5625271797180176,
+            "question": "What is the equivalent value of one Moldovan leu in another currency?"
+        },
+        {
+            "score": 0.501628041267395,
+            "question": "How does the value of the Moldovan leu compare to other currencies in the region?"
+        },
+        {
+            "score": 0.3112140893936157,
+            "question": "What factors influence the exchange rate of the Moldovan leu?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The currency of Gagauzia is Moldovan leu.",
+            "html": "dbpedia_9187_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How does the value of the Moldovan leu compare to other currencies in the region?",
+            "html": "dbpedia_9187_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the equivalent value of one Moldovan leu in another currency?",
+            "html": "dbpedia_9187_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Besides Gagauzia, are there any other regions that use Moldovan leu?",
+            "html": "dbpedia_9187_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_9187_13.txt"
+        },
+        {
+            "file_id": "dbpedia_9187_24.txt"
+        },
+        {
+            "file_id": "dbpedia_9187_3.txt"
+        },
+        {
+            "file_id": "dbpedia_9187_31.txt"
+        },
+        {
+            "file_id": "dbpedia_9187_39.txt"
+        },
+        {
+            "file_id": "dbpedia_9187_41.txt"
+        },
+        {
+            "file_id": "dbpedia_9187_5.txt"
+        },
+        {
+            "file_id": "dbpedia_9187_53.txt"
+        },
+        {
+            "file_id": "dbpedia_9187_55.txt"
+        },
+        {
+            "file_id": "dbpedia_9187_56.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the answer in the form of a structured JSON format:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The text does not explicitly state that the currency of Gagauzia is the Moldovan leu. While it mentions that Russian and Ukrainian have official status together with Romanian in Gagauzia, there is no specific mention of a currency for Gagauzia. However, it does mention that \"Moldova Leu (MDL; plural Lei), 1 Leu = 100 Bani (singular Ban)\" as the official currency of Moldova, and also notes that in Transnistria, a partially recognized state claimed by Moldova, the Transnistrian rouble is used instead. Therefore, while it can be inferred from this information, it's not explicitly stated that Gagauzia uses the Moldovan leu."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The context information mentions that \"Russian is provided with the status of a 'language of interethnic communication' (alongside the official language), and in practice remains widely used. Gagauz and Ukrainian have significant regional speaker populations and are granted official status together with Russian in Gagauzia and Transnistria respectively.\" It also states, \"Moldova Leu (MDL; plural Lei), 1 Leu = 100 Bani (singular Ban). In Transnistria, a partially recognized state claimed in whole by Moldova, the Transnistrian rouble is used instead.\" However, since Gagauzia is not specifically mentioned to use a different currency and given that the context does not explicitly deny the usage of the Moldovan leu there, we can infer that the Moldovan leu could be the currency of Gagauzia."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Gagauzia is a region within Moldova, not a separate state. Therefore, it uses the official currency of Moldova, which is the Moldovan leu, not its own currency.",
+            "category": -1
+        },
+        "gemma2": {
+            "reason": "Text states that \"In Transnistria, a partially recognized state claimed in whole by Moldova, the Transnistrian rouble is used instead\" implying regions within Moldova use different currencies.",
+            "category": -1
+        },
+        "llama3.1": {
+            "reason": "The currency of Gagauzia is mentioned as Transnistrian rouble instead of Moldovan leu.",
+            "category": -1
+        }
+    }
+}

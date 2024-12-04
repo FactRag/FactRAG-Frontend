@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Horam",
+    "predicate": "property/wordnet_type",
+    "object": "http://www.w3.org/2006/03/wn/wn20/instances/synset-location-noun-1",
+    "human_readable": "Horam is a location.",
+    "questions": [
+        {
+            "score": 0.9391096234321594,
+            "question": "Where might Horam be located?"
+        },
+        {
+            "score": 0.7242913842201233,
+            "question": "Can you tell me anything about the location Horam?"
+        },
+        {
+            "score": 0.7157741189002991,
+            "question": "Is Horam a popular tourist destination?"
+        },
+        {
+            "score": 0.5949122905731201,
+            "question": "Are there any famous landmarks or historical events associated with Horam?"
+        },
+        {
+            "score": 0.3457336723804474,
+            "question": "What is the population of Horam?"
+        },
+        {
+            "score": 0.3393954038619995,
+            "question": "What type of entity is Horam?"
+        },
+        {
+            "score": 0.30923140048980713,
+            "question": "Are there any unique cultural traditions or customs associated with Horam?"
+        },
+        {
+            "score": 0.2822105586528778,
+            "question": "Is there anything else you know about Horam?"
+        },
+        {
+            "score": 0.2789455056190491,
+            "question": "What is the climate like in Horam?"
+        },
+        {
+            "score": 0.26420989632606506,
+            "question": "Does Horam have a significant history?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Horam is a location.",
+            "html": "dbpedia_8754_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the climate like in Horam?",
+            "html": "dbpedia_8754_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there anything else you know about Horam?",
+            "html": "dbpedia_8754_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any unique cultural traditions or customs associated with Horam?",
+            "html": "dbpedia_8754_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8754_1.txt"
+        },
+        {
+            "file_id": "dbpedia_8754_10.txt"
+        },
+        {
+            "file_id": "dbpedia_8754_14.txt"
+        },
+        {
+            "file_id": "dbpedia_8754_33.txt"
+        },
+        {
+            "file_id": "dbpedia_8754_41.txt"
+        },
+        {
+            "file_id": "dbpedia_8754_47.txt"
+        },
+        {
+            "file_id": "dbpedia_8754_67.txt"
+        },
+        {
+            "file_id": "dbpedia_8754_90.txt"
+        },
+        {
+            "file_id": "dbpedia_8754_93.txt"
+        },
+        {
+            "file_id": "dbpedia_8754_95.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the provided context information, I can answer your question.\n\n**Horam is a location.**\n\nThe documents mention Horam as a \"village\", a \"civil parish\", and a place with its own church and village hall. They also describe Horam's geographical location in relation to other places such as Heathfield, Hailsham, and the Weald. Therefore, the information supports the triple that:\n\n`{'output': 'yes'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide multiple references to Horam as a place, including details about its geographical position, population, and amenities. Therefore, the statement that Horam is a location is supported by the given context information."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n     \"output\": \"yes\"\n    }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Horam is not just a location; it is a village situated in the Weald of Sussex, England.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Several pieces of text explicitly state Horam is a village and/or a place within England.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because Horam is specifically identified as a village and a place in England.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Horam is described as a village and civil parish with specific details about its population, location within the Wealden administrative district, and local facilities such as churches and a village hall. These descriptions indicate that Horam has a defined geographical presence and infrastructure, which contradicts it being merely a 'location.'",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Israel_Zangwill",
+    "predicate": "ontology/birthPlace",
+    "object": "resource/United_Kingdom_of_Great_Britain_and_Ireland",
+    "human_readable": "Israel Zangwill was born in the United Kingdom of Great Britain and Ireland.",
+    "questions": [
+        {
+            "score": 0.9444742798805237,
+            "question": "Was Israel Zangwill born in a different country than the United Kingdom?"
+        },
+        {
+            "score": 0.9215053915977478,
+            "question": "Where was Israel Zangwill born?"
+        },
+        {
+            "score": 0.8977298140525818,
+            "question": "In what region was Israel Zangwill born?"
+        },
+        {
+            "score": 0.8602501749992371,
+            "question": "When was Israel Zangwill born?"
+        },
+        {
+            "score": 0.8442451357841492,
+            "question": "What is the full name of the country where Israel Zangwill was born?"
+        },
+        {
+            "score": 0.8338108062744141,
+            "question": "Is Israel Zangwill British?"
+        },
+        {
+            "score": 0.7868146896362305,
+            "question": "What nationality was Israel Zangwill?"
+        },
+        {
+            "score": 0.6871044635772705,
+            "question": "Can you tell me more about Israel Zangwill's birthplace?"
+        },
+        {
+            "score": 0.47149547934532166,
+            "question": "What else is known about Israel Zangwill?"
+        },
+        {
+            "score": 0.43816304206848145,
+            "question": "What country is the United Kingdom of Great Britain and Ireland?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Israel Zangwill was born in the United Kingdom of Great Britain and Ireland.",
+            "html": "dbpedia_8321_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What else is known about Israel Zangwill?",
+            "html": "dbpedia_8321_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about Israel Zangwill's birthplace?",
+            "html": "dbpedia_8321_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What nationality was Israel Zangwill?",
+            "html": "dbpedia_8321_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8321_11.txt"
+        },
+        {
+            "file_id": "dbpedia_8321_12.txt"
+        },
+        {
+            "file_id": "dbpedia_8321_23.txt"
+        },
+        {
+            "file_id": "dbpedia_8321_28.txt"
+        },
+        {
+            "file_id": "dbpedia_8321_3.txt"
+        },
+        {
+            "file_id": "dbpedia_8321_35.txt"
+        },
+        {
+            "file_id": "dbpedia_8321_5.txt"
+        },
+        {
+            "file_id": "dbpedia_8321_54.txt"
+        },
+        {
+            "file_id": "dbpedia_8321_57.txt"
+        },
+        {
+            "file_id": "dbpedia_8321_64.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me explain why:\n\n* **The documents state:**  Several files mention that Israel Zangwill was born in London ( \"London on 21st January 1864\" ) and lived in Bristol. The United Kingdom of Great Britain and Ireland encompassed both England (where London is located) and Wales at the time of Zangwill's birth.\n\n\nLet me know if you have any other triples you'd like me to evaluate!"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the response in the requested format:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The context information provides multiple documents that describe Israel Zangwill's birthplace. However, none of them mention the \"United Kingdom of Great Britain and Ireland\". Some documents state he was born in Bristol, while others specify London as his birthplace."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents provide information that supports the statement \"Israel Zangwill was born in the United Kingdom of Great Britain and Ireland.\" All documents indicate he was born in London, which is part of the United Kingdom."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {'output': 'no'}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Israel Zangwill was born in London, which at the time was part of the United Kingdom of Great Britain and Ireland, but he was born to Jewish immigrant parents from the Russian Empire.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "All the sources (1-4) agree that Israel Zangwill was born in either Bristol or London, but not in the United Kingdom of Great Britain and Ireland. The UK did not exist until 1801, so it would have been incorrect to refer to the region as the UK at the time of Zangwill's birth in 1864.",
+            "category": 2
+        }
+    }
+}

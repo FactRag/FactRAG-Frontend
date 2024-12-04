@@ -1,0 +1,102 @@
+{
+    "subject": "resource/Philippines",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "Philippines",
+    "human_readable": "The label of the Philippines is 'Philippines'.",
+    "questions": [
+        {
+            "score": 0.9830936193466187,
+            "question": "Is 'Philippines' a label?"
+        },
+        {
+            "score": 0.9704849720001221,
+            "question": "What is the label of the Philippines?"
+        },
+        {
+            "score": 0.9257670044898987,
+            "question": "To what does the label 'Philippines' refer?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The label of the Philippines is 'Philippines'.",
+            "html": "dbpedia_9082_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the label of the Philippines?",
+            "html": "dbpedia_9082_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is 'Philippines' a label?",
+            "html": "dbpedia_9082_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_9082_13.txt"
+        },
+        {
+            "file_id": "dbpedia_9082_20.txt"
+        },
+        {
+            "file_id": "dbpedia_9082_4.txt"
+        },
+        {
+            "file_id": "dbpedia_9082_49.txt"
+        },
+        {
+            "file_id": "dbpedia_9082_5.txt"
+        },
+        {
+            "file_id": "dbpedia_9082_50.txt"
+        },
+        {
+            "file_id": "dbpedia_9082_53.txt"
+        },
+        {
+            "file_id": "dbpedia_9082_59.txt"
+        },
+        {
+            "file_id": "dbpedia_9082_6.txt"
+        },
+        {
+            "file_id": "dbpedia_9082_64.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have any other triples you'd like me to evaluate!"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is my response:\n\n`{'output': 'yes'}`\n\nMy reasoning is as follows: \n\nThe documents mention \"Warner Music Philippines\" (WMP) and its subsidiary labels such as Island Records Philippines and Republic Records Philippines. The label of the Philippines is indeed mentioned as \"Philippines\", which matches the query."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The provided documents do not contain any information related to the label or labeling requirements for a specific product in the Philippines, nor do they mention any Nobel Prize winners. Therefore, the triple \"The label of the Philippines is 'Philippines'\" cannot be validated by the given context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " Response: {'output': 'yes'}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "qwen2.5": {
+            "reason": "The context information specifies that labels for consumer products sold domestically in the Philippines must include specific required information such as the manufacturer's name, trademark, and other details. Simply stating \"Philippines\" on a label would not meet these requirements.",
+            "category": 2
+        }
+    }
+}

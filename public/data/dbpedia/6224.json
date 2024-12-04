@@ -1,0 +1,142 @@
+{
+    "subject": "resource/1991_UEFA_Cup_Final",
+    "predicate": "ontology/team",
+    "object": "resource/A.S._Roma",
+    "human_readable": "The team that played in the 1991 UEFA Cup Final is A.S. Roma.",
+    "questions": [
+        {
+            "score": 0.9641482830047607,
+            "question": "Who played in the 1991 UEFA Cup Final?"
+        },
+        {
+            "score": 0.92592853307724,
+            "question": "Who were some notable players on A.S. Roma in 1991?"
+        },
+        {
+            "score": 0.8893952369689941,
+            "question": "Which team won the 1991 UEFA Cup?"
+        },
+        {
+            "score": 0.8641072511672974,
+            "question": "What is the name of the competition that A.S. Roma won in 1991?"
+        },
+        {
+            "score": 0.7958522439002991,
+            "question": "Did A.S. Roma win a major European trophy in 1991?"
+        },
+        {
+            "score": 0.68455570936203,
+            "question": "What year was the UEFA Cup Final played?"
+        },
+        {
+            "score": 0.577825665473938,
+            "question": "Is A.S. Roma a well-known football club?"
+        },
+        {
+            "score": 0.4366444945335388,
+            "question": "When was the last time A.S. Roma won a major trophy?"
+        },
+        {
+            "score": 0.22307901084423065,
+            "question": "What other major football competitions are there besides the UEFA Cup?"
+        },
+        {
+            "score": 0.21235546469688416,
+            "question": "Can you name an Italian football team that has won a European trophy?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The team that played in the 1991 UEFA Cup Final is A.S. Roma.",
+            "html": "dbpedia_6224_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What other major football competitions are there besides the UEFA Cup?",
+            "html": "dbpedia_6224_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=When was the last time A.S. Roma won a major trophy?",
+            "html": "dbpedia_6224_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is A.S. Roma a well-known football club?",
+            "html": "dbpedia_6224_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6224_116.txt"
+        },
+        {
+            "file_id": "dbpedia_6224_120.txt"
+        },
+        {
+            "file_id": "dbpedia_6224_16.txt"
+        },
+        {
+            "file_id": "dbpedia_6224_18.txt"
+        },
+        {
+            "file_id": "dbpedia_6224_3.txt"
+        },
+        {
+            "file_id": "dbpedia_6224_50.txt"
+        },
+        {
+            "file_id": "dbpedia_6224_53.txt"
+        },
+        {
+            "file_id": "dbpedia_6224_61.txt"
+        },
+        {
+            "file_id": "dbpedia_6224_69.txt"
+        },
+        {
+            "file_id": "dbpedia_6224_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nLet me know if you'd like to try another query! \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The document at file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6224/re-ranker-msmarco/18.txt mentions the UEFA Cup final in 1991 between Inter Milan and AS Roma, which supports that AS. Roma played in the 1991 UEFA Cup Final."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n    \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Ajax, not AS Roma, played in the 1991 UEFA Cup Final.",
+            "category": 1
+        },
+        "gemma2": {
+            "reason": "multiple text passages state that Ajax won the 1991 UEFA Cup Final against Torino.",
+            "category": 1
+        },
+        "llama3.1": {
+            "reason": "Inter Milan played in the 1991 UEFA Cup Final against Roma.",
+            "category": 1
+        }
+    }
+}

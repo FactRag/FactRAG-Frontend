@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Pescanova",
+    "predicate": "ontology/subsidiary",
+    "object": "resource/Fishco",
+    "human_readable": "Pescanova is a subsidiary of Fishco.",
+    "questions": [
+        {
+            "score": 0.9419113397598267,
+            "question": "What could be some potential benefits for Pescanova being a subsidiary of Fishco?"
+        },
+        {
+            "score": 0.889636754989624,
+            "question": "What industry are Pescanova and Fishco involved in?"
+        },
+        {
+            "score": 0.8796451687812805,
+            "question": "Is Fishco a larger company than Pescanova?"
+        },
+        {
+            "score": 0.8497867584228516,
+            "question": "Can you name a subsidiary of Fishco?"
+        },
+        {
+            "score": 0.826170802116394,
+            "question": "Does Pescanova operate independently from Fishco?"
+        },
+        {
+            "score": 0.818566620349884,
+            "question": "What type of relationship exists between Pescanova and Fishco?"
+        },
+        {
+            "score": 0.8072891235351562,
+            "question": "Are there any other companies besides Pescanova that Fishco owns?"
+        },
+        {
+            "score": 0.7296305894851685,
+            "question": "How might the relationship between Pescanova and Fishco impact their operations?"
+        },
+        {
+            "score": 0.496496319770813,
+            "question": "Who is the parent company of Pescanova?"
+        },
+        {
+            "score": 0.24860405921936035,
+            "question": "What does it mean for a company to be a subsidiary?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Pescanova is a subsidiary of Fishco.",
+            "html": "dbpedia_8218_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is the parent company of Pescanova?",
+            "html": "dbpedia_8218_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How might the relationship between Pescanova and Fishco impact their operations?",
+            "html": "dbpedia_8218_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any other companies besides Pescanova that Fishco owns?",
+            "html": "dbpedia_8218_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8218_13.txt"
+        },
+        {
+            "file_id": "dbpedia_8218_2.txt"
+        },
+        {
+            "file_id": "dbpedia_8218_23.txt"
+        },
+        {
+            "file_id": "dbpedia_8218_29.txt"
+        },
+        {
+            "file_id": "dbpedia_8218_32.txt"
+        },
+        {
+            "file_id": "dbpedia_8218_34.txt"
+        },
+        {
+            "file_id": "dbpedia_8218_37.txt"
+        },
+        {
+            "file_id": "dbpedia_8218_42.txt"
+        },
+        {
+            "file_id": "dbpedia_8218_50.txt"
+        },
+        {
+            "file_id": "dbpedia_8218_55.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "To evaluate whether the information in the documents supports the triple \"Pescanova is a subsidiary of Fishco\", I will analyze the context information.\n\nHere are the relevant findings:\n\n* There is no mention of Fishco being a parent company or having Pescanova as a subsidiary.\n* However, there is a mention of Nueva Pescanova's strong global presence attributed to its FishCo operations via a fleet of more than 130 vessels (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8218/re-ranker-msmarco/13.txt).\n* This suggests that FishCo is an operational unit or division within Nueva Pescanova, rather than the other way around.\n\nGiven this analysis, the answer to whether the information in the documents supports the triple \"Pescanova is a subsidiary of Fishco\" is:\n\n`{'output': 'no'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents do not contain any information that suggests Pescanova is a subsidiary of Fishco. Instead, the document at file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8218/re-ranker-msmarco/50.txt mentions \"Pescanova\u2019s strong global presence is attributed to its FishCo operations via a fleet of more than 130 vessels,\" which indicates that FishCo operates through Pescanova's vessels, but does not state that Pescanova is a subsidiary of Fishco."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Nueva Pescanova is a multinational seafood company, not a subsidiary of Fishco. It operates independently with its own fleet and operations across more than 80 countries.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Nueva Pescanova is described as having a fleet of over 60 vessels that catch, cultivate, transform, and distribute seafood. This indicates they are an independent company operating within the seafood industry, not a subsidiary.  Additionally, the mention of its IPO suggests it operates independently as a publicly traded entity.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "There is no mention of Pescanova being a subsidiary of Fishco in the provided context information, but rather that Nueva Pescanova has a fleet of vessels under its own operation called FishCo.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information does not mention Pescanova being a subsidiary of Fishco. Instead, it mentions that Nueva Pescanova has a fleet of over 130 vessels and operates globally through its FishCo operations, implying it owns or operates these vessels directly rather than them being subsidiaries.",
+            "category": 2
+        }
+    }
+}

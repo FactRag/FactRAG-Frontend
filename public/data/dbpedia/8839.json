@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Dennis_Robbins",
+    "predicate": "ontology/hometown",
+    "object": "resource/United_States",
+    "human_readable": "Dennis Robbins' hometown is United States.",
+    "questions": [
+        {
+            "score": 0.988370418548584,
+            "question": "Is the United States considered Dennis Robbins' hometown?"
+        },
+        {
+            "score": 0.9715220332145691,
+            "question": "Does Dennis Robbins currently reside in the United States?"
+        },
+        {
+            "score": 0.8928420543670654,
+            "question": "Is Dennis Robbins associated with the United States?"
+        },
+        {
+            "score": 0.7915049195289612,
+            "question": "What country considers Dennis Robbins as a hometown resident?"
+        },
+        {
+            "score": 0.6817350387573242,
+            "question": "Where is Dennis Robbins from?"
+        },
+        {
+            "score": 0.5289987921714783,
+            "question": "What is the home country of Dennis Robbins?"
+        },
+        {
+            "score": 0.49911928176879883,
+            "question": "Where did Dennis Robbins grow up?"
+        },
+        {
+            "score": 0.43864715099334717,
+            "question": "What is the nationality of Dennis Robbins?"
+        },
+        {
+            "score": 0.3931862413883209,
+            "question": "Can you tell me about Dennis Robbins' place of origin?"
+        },
+        {
+            "score": 0.35628265142440796,
+            "question": "In which nation was Dennis Robbins born or raised?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Dennis Robbins' hometown is United States.",
+            "html": "dbpedia_8839_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me about Dennis Robbins' place of origin?",
+            "html": "dbpedia_8839_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the nationality of Dennis Robbins?",
+            "html": "dbpedia_8839_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where did Dennis Robbins grow up?",
+            "html": "dbpedia_8839_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8839_23.txt"
+        },
+        {
+            "file_id": "dbpedia_8839_3.txt"
+        },
+        {
+            "file_id": "dbpedia_8839_48.txt"
+        },
+        {
+            "file_id": "dbpedia_8839_71.txt"
+        },
+        {
+            "file_id": "dbpedia_8839_75.txt"
+        },
+        {
+            "file_id": "dbpedia_8839_76.txt"
+        },
+        {
+            "file_id": "dbpedia_8839_77.txt"
+        },
+        {
+            "file_id": "dbpedia_8839_79.txt"
+        },
+        {
+            "file_id": "dbpedia_8839_86.txt"
+        },
+        {
+            "file_id": "dbpedia_8839_87.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "After analyzing the context information, I can provide an answer for you.\n\nThe triple \"Dennis Robbins' hometown is United States\" seems to be supported by the documents. \n\nIn the first document, there's no mention of a specific city or state as Dennis Robbins' hometown.\n\nHowever, in the third document (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8839/re-ranker-msmarco/70.txt), it mentions \"Dennis Robbins, PhD, MPH\" without any additional context that could be related to a specific city or state.\n\nIn the fourth document (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8839/re-ranker-msmarco/21.txt), it mentions \"Dennis Keith Tobiason, 62 of Kalispell passed away April 1st, 2019\" which indicates that Dennis Tobiason's hometown is indeed in the United States.\n\nBut then there's another document (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8839/re-ranker-msmarco/49.txt) mentioning \"Dennis Robbins\" as a former Los Angeles County sheriff\u2019s detective. \n\nThis seems to support the idea that Dennis Robbins' hometown or at least some part of his life was connected to the United States.\n\nTherefore, based on this context information, I'll provide an answer for you:\n\n{\n  \"output\": \"yes\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\n**Explanation:** The documents provide information about Dennis Robbins, including his occupation as a franchisee and attorney. While the specific mention of his hometown is not explicitly stated in any of the provided files, it can be inferred from the context that he is associated with Scottsdale, which is located in the United States (a common detail mentioned for U.S.-based politicians and professionals). Therefore, based on the documents' content and the inference drawn, the statement \"Dennis Robbins' hometown is United States\" is supported."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Multiple pieces of text mention Dennis Robbins living in places like Farmington Hills, Michigan and working with law enforcement agencies in California.",
+            "category": 2
+        }
+    }
+}

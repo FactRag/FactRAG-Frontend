@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Ferrari",
+    "predicate": "ontology/foundingYear",
+    "object": "1947",
+    "human_readable": "Ferrari was founded in 1947.",
+    "questions": [
+        {
+            "score": 0.8618417978286743,
+            "question": "When was Ferrari founded?"
+        },
+        {
+            "score": 0.5909847021102905,
+            "question": "What significant historical event happened around the same time Ferrari was founded?"
+        },
+        {
+            "score": 0.39997559785842896,
+            "question": "Ferrari's founding year falls in what decade?"
+        },
+        {
+            "score": 0.3966509699821472,
+            "question": "What year did the company Ferrari begin operations?"
+        },
+        {
+            "score": 0.1609792411327362,
+            "question": "Name a famous car brand that was founded in the mid-20th century."
+        },
+        {
+            "score": 0.14249727129936218,
+            "question": "Is Ferrari an older or newer car company?"
+        },
+        {
+            "score": 0.12345187366008759,
+            "question": "What type of company is Ferrari?"
+        },
+        {
+            "score": 0.11388983577489853,
+            "question": "What might someone associate with the year 1947?"
+        },
+        {
+            "score": 0.019259881228208542,
+            "question": "Name a company known for its Italian heritage."
+        },
+        {
+            "score": 0.016045603901147842,
+            "question": "Which company is known for producing luxury sports cars?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Ferrari was founded in 1947.",
+            "html": "dbpedia_3193_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Name a company known for its Italian heritage.",
+            "html": "dbpedia_3193_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What might someone associate with the year 1947?",
+            "html": "dbpedia_3193_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of company is Ferrari?",
+            "html": "dbpedia_3193_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3193_127.txt"
+        },
+        {
+            "file_id": "dbpedia_3193_14.txt"
+        },
+        {
+            "file_id": "dbpedia_3193_141.txt"
+        },
+        {
+            "file_id": "dbpedia_3193_29.txt"
+        },
+        {
+            "file_id": "dbpedia_3193_41.txt"
+        },
+        {
+            "file_id": "dbpedia_3193_45.txt"
+        },
+        {
+            "file_id": "dbpedia_3193_65.txt"
+        },
+        {
+            "file_id": "dbpedia_3193_74.txt"
+        },
+        {
+            "file_id": "dbpedia_3193_77.txt"
+        },
+        {
+            "file_id": "dbpedia_3193_97.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the provided context information, the answer to the query is:\n\n{'output': 'yes'}\n\nThe documents contain multiple references to the founding of Ferrari in 1947, including:\n\n* \"Ferrari is an Italian car manufacturer founded in 1947 by Enzo Ferrari\"\n* \"In 1947, Ferrari founded his own company, Ferrari S.p.A., which began to produce exclusive cars for a wide audience.\"\n* \"Ferrari was Founded in 1947\"\n\nAll of these references confirm that the correct information is that Ferrari was indeed founded in 1947."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThis answer is based on the repeated information across multiple documents that Ferrari S.p.A. was indeed founded in 1947 by Enzo Ferrari."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The company named Ferrari was indeed founded in 1947, but the Scuderia Ferrari racing team was founded earlier in 1929.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Multiple texts state Enzo Ferrari founded Scuderia Ferrari in 1929,  a racing team that prepared cars for racing. This indicates a prior involvement with automobiles before the official founding of Ferrari S.p.A. in 1947.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The context information states that Enzo Ferrari founded Scuderia Ferrari, a team that prepared cars for racing, as early as 1929. This implies that the Ferrari brand was established and operating at least 18 years before 1947, making it unlikely that 1947 is the founding year of the company itself.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information clearly states that Ferrari was founded in 1929 when Enzo Ferrari founded Scuderia Ferrari, a racing team. Ferrari S.p.A., the car manufacturing company, was founded in 1947 by Enzo Ferrari. Therefore, saying Ferrari was founded in 1947 is inaccurate as it refers to the founding of the car company, not the brand's beginnings.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Alexandra_Chando",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "Chando, Alexandra",
+    "human_readable": "The full name of Alexandra Chando is Chando, Alexandra.",
+    "questions": [
+        {
+            "score": 0.9854631423950195,
+            "question": "What is the full name of Alexandra Chando?"
+        },
+        {
+            "score": 0.9435363411903381,
+            "question": "What is the last name of Alexandra Chando?"
+        },
+        {
+            "score": 0.9197309017181396,
+            "question": "Is 'Chando' Alexandra's first or last name?"
+        },
+        {
+            "score": 0.8928219676017761,
+            "question": "What is the order of Alexandra Chando's names as they appear in a typical full name format?"
+        },
+        {
+            "score": 0.890164852142334,
+            "question": "Does 'Alexandra' come before or after 'Chando' in her full name?"
+        },
+        {
+            "score": 0.8877619504928589,
+            "question": "Which part of Alexandra Chando's name comes first?"
+        },
+        {
+            "score": 0.8211334943771362,
+            "question": "What are Alexandra Chando's middle and first names?"
+        },
+        {
+            "score": 0.68870609998703,
+            "question": "How would you write Alexandra Chando's name in reverse order?"
+        },
+        {
+            "score": 0.5693538188934326,
+            "question": "Can you list Alexandra Chando's names from shortest to longest?"
+        },
+        {
+            "score": 0.5014248490333557,
+            "question": "If you met Alexandra Chando, how would you address her formally?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The full name of Alexandra Chando is Chando, Alexandra.",
+            "html": "dbpedia_8318_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you list Alexandra Chando's names from shortest to longest?",
+            "html": "dbpedia_8318_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How would you write Alexandra Chando's name in reverse order?",
+            "html": "dbpedia_8318_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are Alexandra Chando's middle and first names?",
+            "html": "dbpedia_8318_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8318_10.txt"
+        },
+        {
+            "file_id": "dbpedia_8318_2.txt"
+        },
+        {
+            "file_id": "dbpedia_8318_23.txt"
+        },
+        {
+            "file_id": "dbpedia_8318_33.txt"
+        },
+        {
+            "file_id": "dbpedia_8318_41.txt"
+        },
+        {
+            "file_id": "dbpedia_8318_43.txt"
+        },
+        {
+            "file_id": "dbpedia_8318_44.txt"
+        },
+        {
+            "file_id": "dbpedia_8318_5.txt"
+        },
+        {
+            "file_id": "dbpedia_8318_51.txt"
+        },
+        {
+            "file_id": "dbpedia_8318_53.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, I can answer your question.\n\nThe triple you're asking about is:\n\n\"The full name of Alexandra Chando is Chando, Alexandra.\"\n\nLet's evaluate this triple based on the documents provided:\n\n* In document 2 (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8318/re-ranker-msmarco/2.txt), it says \"Full born name: Alexandra Chando\". This indicates that her full-born name is indeed \"Alexandra Chando\".\n* In document 6 (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8318/re-ranker-msmarco/51.txt), it says \"Bio: Alexandra Chando (born July 28, 1986 in Bethlehem, Pennsylvania) is an American actress.\" Again, her full name is listed as \"Alexandra Chando\".\n\nGiven this information, the triple \"The full name of Alexandra Chando is Chando, Alexandra\" is actually incorrect. The correct full name of Alexandra Chando is indeed \"Alexandra Chando\", not \"Chando, Alexandra\". Therefore:\n\n```json\n{\n  \"output\": \"no\"\n}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents provide information about Alexandra Chando's birth date, profession, and some personal details but do not contain any information regarding her full name being \"Chando, Alexandra.\" The provided context suggests that her first name is Alexandra and she has a middle name or initials (though this is not explicitly stated in all the snippets), but there is no confirmation of the surname being Chando."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Several sources list her full name as Alexandra Chando.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because Alexandra Chando's full name is not provided as \"Chando, Alexandra\" but rather the first name \"Alexandra\" followed by a last name \"Chando\".",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The provided context consistently refers to her name as \"Alexandra Chando\" with the first name preceding the last name, indicating that \"Alexandra\" is her given name and \"Chando\" is her family name. There is no information suggesting her full name is written in a different order or format.",
+            "category": 2
+        }
+    }
+}

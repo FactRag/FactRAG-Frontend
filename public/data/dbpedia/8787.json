@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Guyana",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "Guyana",
+    "human_readable": "The label of Guyana is 'Guyana'.",
+    "questions": [
+        {
+            "score": 0.965418815612793,
+            "question": "What is the label of Guyana?"
+        },
+        {
+            "score": 0.7773785591125488,
+            "question": "What is the official name of Guyana?"
+        },
+        {
+            "score": 0.7539282441139221,
+            "question": "Is 'Guyana' a country?"
+        },
+        {
+            "score": 0.7378671765327454,
+            "question": "What is the capital of Guyana?"
+        },
+        {
+            "score": 0.676986575126648,
+            "question": "Where is Guyana located?"
+        },
+        {
+            "score": 0.648874819278717,
+            "question": "What is the currency of Guyana?"
+        },
+        {
+            "score": 0.5932030081748962,
+            "question": "Could you tell me more about Guyana?"
+        },
+        {
+            "score": 0.5580644607543945,
+            "question": "What language is spoken in Guyana?"
+        },
+        {
+            "score": 0.5544889569282532,
+            "question": "What are some popular tourist destinations in Guyana?"
+        },
+        {
+            "score": 0.5119806528091431,
+            "question": "Does Guyana have a unique culture or traditions?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The label of Guyana is 'Guyana'.",
+            "html": "dbpedia_8787_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some popular tourist destinations in Guyana?",
+            "html": "dbpedia_8787_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What language is spoken in Guyana?",
+            "html": "dbpedia_8787_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Could you tell me more about Guyana?",
+            "html": "dbpedia_8787_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8787_21.txt"
+        },
+        {
+            "file_id": "dbpedia_8787_24.txt"
+        },
+        {
+            "file_id": "dbpedia_8787_28.txt"
+        },
+        {
+            "file_id": "dbpedia_8787_41.txt"
+        },
+        {
+            "file_id": "dbpedia_8787_45.txt"
+        },
+        {
+            "file_id": "dbpedia_8787_48.txt"
+        },
+        {
+            "file_id": "dbpedia_8787_65.txt"
+        },
+        {
+            "file_id": "dbpedia_8787_75.txt"
+        },
+        {
+            "file_id": "dbpedia_8787_77.txt"
+        },
+        {
+            "file_id": "dbpedia_8787_93.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation for the query \"The label of Guyana is 'Guyana'\":\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: While one of the documents mentions that the country's brand has a role to play in redefining Guyana's position globally, and another document refers to the national brand as \"Guyana\", there is no direct statement that confirms the label of Guyana as simply \"Guyana\". The first document implies that there may be multiple brands or perspectives on Guyana, and the second document suggests that the country has a strong national brand, but doesn't explicitly state its label. Therefore, based on the provided documents, it cannot be confirmed that the label of Guyana is indeed \"Guyana\"."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nExplanation: The provided documents mention \"Guyana\" multiple times, referring to it as the name of a country and its brand. Therefore, the statement that the label of Guyana is 'Guyana' is supported by the context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "It doesn't take into account the country's official name as mentioned in multiple sources (\"Co-operative Republic of Guyana\").",
+            "category": 2
+        }
+    }
+}

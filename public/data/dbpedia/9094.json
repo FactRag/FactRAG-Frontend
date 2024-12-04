@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Curiel_de_Duero",
+    "predicate": "property/subdivisionType",
+    "object": "resource/Autonomous_communities_of_Spain",
+    "human_readable": "Curiel de Duero is an autonomous community of Spain.",
+    "questions": [
+        {
+            "score": 0.9419324994087219,
+            "question": "Is Curiel de Duero part of Spain?"
+        },
+        {
+            "score": 0.7189537882804871,
+            "question": "Can you name some autonomous communities in Spain?"
+        },
+        {
+            "score": 0.6400691270828247,
+            "question": "To which country does Curiel de Duero belong?"
+        },
+        {
+            "score": 0.5597835779190063,
+            "question": "Where is Curiel de Duero located?"
+        },
+        {
+            "score": 0.5293368697166443,
+            "question": "What type of region is Curiel de Duero?"
+        },
+        {
+            "score": 0.505867063999176,
+            "question": "What is the culture like in Curiel de Duero?"
+        },
+        {
+            "score": 0.4600559175014496,
+            "question": "What are some interesting facts about Curiel de Duero?"
+        },
+        {
+            "score": 0.36274173855781555,
+            "question": "How would you describe the geography of Curiel de Duero?"
+        },
+        {
+            "score": 0.29430335760116577,
+            "question": "Are there any famous landmarks or attractions in Curiel de Duero?"
+        },
+        {
+            "score": 0.27312350273132324,
+            "question": "What are the characteristics of an autonomous community?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Curiel de Duero is an autonomous community of Spain.",
+            "html": "dbpedia_9094_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any famous landmarks or attractions in Curiel de Duero?",
+            "html": "dbpedia_9094_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How would you describe the geography of Curiel de Duero?",
+            "html": "dbpedia_9094_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some interesting facts about Curiel de Duero?",
+            "html": "dbpedia_9094_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_9094_104.txt"
+        },
+        {
+            "file_id": "dbpedia_9094_11.txt"
+        },
+        {
+            "file_id": "dbpedia_9094_134.txt"
+        },
+        {
+            "file_id": "dbpedia_9094_137.txt"
+        },
+        {
+            "file_id": "dbpedia_9094_23.txt"
+        },
+        {
+            "file_id": "dbpedia_9094_4.txt"
+        },
+        {
+            "file_id": "dbpedia_9094_42.txt"
+        },
+        {
+            "file_id": "dbpedia_9094_52.txt"
+        },
+        {
+            "file_id": "dbpedia_9094_54.txt"
+        },
+        {
+            "file_id": "dbpedia_9094_7.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple in the form of a structured JSON format:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents do not mention that Curiel de Duero is an autonomous community of Spain. In fact, they mention it as a municipality located in the province of Valladolid, Castile and Le\u00f3n, Spain."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe documents provide information about Curiel de Duero being a municipality within the province of Valladolid, Castile and Le\u00f3n, Spain. They do not mention that it is an autonomous community itself, which means the statement \"Curiel de Duero is an autonomous community of Spain\" is incorrect based on the given context."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Curiel de Duero is a municipality, not an autonomous community. Autonomous communities are the first-order administrative divisions of Spain, while Curiel de Duero falls under the province of Valladolid and the autonomous community of Castile and Le\u00f3n.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Multiple sources state Curiel de Duero is a municipality within the province of Valladolid, Castile and Le\u00f3n, Spain. Municipalities are subdivisions within provinces, not autonomous communities.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "Curiel de Duero is actually a municipality within the autonomous community of Castile and Le\u00f3n, Spain, not an autonomous community itself. The text explicitly states that it is a \"municipality located in the province of Valladolid, Castile and Le\u00f3n, Spain\" and that it belongs to the Valle del Cuco region, indicating its status as a smaller administrative unit within the larger autonomous community.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Curiel de Duero is a municipality within the province of Valladolid, Castile and Le\u00f3n, Spain. It is not an autonomous community itself. Autonomous communities are higher-level administrative divisions in Spain, of which Castile and Le\u00f3n is one, but Curiel de Duero operates at a lower administrative level as a part of this autonomous community.",
+            "category": 2
+        }
+    }
+}

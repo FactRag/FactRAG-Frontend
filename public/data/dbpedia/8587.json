@@ -1,0 +1,109 @@
+{
+    "subject": "resource/Dell",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "Dell",
+    "human_readable": "The label of Dell is 'Dell'.",
+    "questions": [
+        {
+            "score": 0.9446041584014893,
+            "question": "What is the label of Dell?"
+        },
+        {
+            "score": 0.7483013868331909,
+            "question": "Is 'Dell' a company name?"
+        },
+        {
+            "score": 0.6107715964317322,
+            "question": "Is 'Dell' a recognized brand name?"
+        },
+        {
+            "score": 0.4709516763687134,
+            "question": "What product category is typically associated with Dell?"
+        },
+        {
+            "score": 0.4465814232826233,
+            "question": "Does Dell produce computer hardware?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The label of Dell is 'Dell'.",
+            "html": "dbpedia_8587_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What product category is typically associated with Dell?",
+            "html": "dbpedia_8587_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is 'Dell' a recognized brand name?",
+            "html": "dbpedia_8587_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is 'Dell' a company name?",
+            "html": "dbpedia_8587_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8587_24.txt"
+        },
+        {
+            "file_id": "dbpedia_8587_27.txt"
+        },
+        {
+            "file_id": "dbpedia_8587_28.txt"
+        },
+        {
+            "file_id": "dbpedia_8587_45.txt"
+        },
+        {
+            "file_id": "dbpedia_8587_63.txt"
+        },
+        {
+            "file_id": "dbpedia_8587_64.txt"
+        },
+        {
+            "file_id": "dbpedia_8587_74.txt"
+        },
+        {
+            "file_id": "dbpedia_8587_91.txt"
+        },
+        {
+            "file_id": "dbpedia_8587_96.txt"
+        },
+        {
+            "file_id": "dbpedia_8587_97.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you'd like to evaluate more queries!"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the JSON response:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation:\n\nThe triple to be evaluated is: \"The label of Dell is 'Dell'.\"\n\nAccording to the provided context, it is stated that \"The company's logo and brand are well-recognized in the computing and technology sectors.\" (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8587/re-ranker-msmarco/14.txt)\n\nAdditionally, when describing the trademark disputes involving Dell, it mentions that \"Dell argued that its trade name derived from the surname of its founder, Michael Dell, and that Dell Technologies' use of the DELL mark constituted trademark infringement.\" (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8587/re-ranker-msmarco/14.txt)\n\nThis implies that the label or trade name associated with Dell is indeed 'Dell'. Therefore, the triple \"The label of Dell is 'Dell'\" is supported by the provided context."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nExplanation: The documents provide information about Dell, including the fact that it is a technology company known for manufacturing computers and related products. While they do not explicitly state \"The label of Dell is 'Dell'\", the context clearly refers to Dell as the brand name and company, thus supporting the triple's assertion."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {'output': 'yes'}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

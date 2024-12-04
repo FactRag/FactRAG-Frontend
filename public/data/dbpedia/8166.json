@@ -1,0 +1,110 @@
+{
+    "subject": "resource/Aselin_Debison",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "Debison, Aselin",
+    "human_readable": "The full name of Aselin Debison is Aselin Debison.",
+    "questions": [
+        {
+            "score": 0.9869329333305359,
+            "question": "What is the full name of Aselin Debison?"
+        },
+        {
+            "score": 0.9802818298339844,
+            "question": "Is Aselin Debison's full name different from her given name?"
+        },
+        {
+            "score": 0.9289497137069702,
+            "question": "How would you describe Aselin Debison using her full name?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The full name of Aselin Debison is Aselin Debison.",
+            "html": "dbpedia_8166_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Aselin Debison's full name different from her given name?",
+            "html": "dbpedia_8166_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the full name of Aselin Debison?",
+            "html": "dbpedia_8166_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8166_1.txt"
+        },
+        {
+            "file_id": "dbpedia_8166_15.txt"
+        },
+        {
+            "file_id": "dbpedia_8166_18.txt"
+        },
+        {
+            "file_id": "dbpedia_8166_3.txt"
+        },
+        {
+            "file_id": "dbpedia_8166_33.txt"
+        },
+        {
+            "file_id": "dbpedia_8166_34.txt"
+        },
+        {
+            "file_id": "dbpedia_8166_35.txt"
+        },
+        {
+            "file_id": "dbpedia_8166_36.txt"
+        },
+        {
+            "file_id": "dbpedia_8166_45.txt"
+        },
+        {
+            "file_id": "dbpedia_8166_6.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you'd like to test more queries!  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple in the form of a structured JSON format:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: According to the documents, the full name of Aselin Debison is Aselin Ettinger (not just Aselin Debison). This can be confirmed from multiple sources, including file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8166/re-ranker-msmarco/18.txt, which states \"Aselin Debison was born on 27 June 1990 in Glace Bay, Nova Scotia, Canada. She has been married to Jonathan Ettinger since 2012.\" and file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8166/re-ranker-msmarco/3.txt, which states \"Aselin Debison (b. June 27, 1990) is a Canadian pop singer from Nova Scotia.\""
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide sufficient information to confirm that the full name of Aselin Debison is indeed Aselin Debison, as there are no mentions of a middle name or any other names."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "It is given in the context that Aselin Debison's full name is Aselin Ettinger, not just Aselin Debison.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Aselin Debison's full name is Aselin Ettinger as stated in context information.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context provides Aselin Debison's first name but does not specify a middle or last name, indicating her full name could be Aselin Debison Ettinger based on the marriage information.",
+            "category": 2
+        }
+    }
+}

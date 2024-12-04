@@ -1,0 +1,142 @@
+{
+    "subject": "resource/New_York_Yankees",
+    "predicate": "property/uniformlogo",
+    "object": "NewYorkYankees caplogo.svg",
+    "human_readable": "The uniform logo of the New York Yankees is NewYorkYankees_caplogo.svg.",
+    "questions": [
+        {
+            "score": 0.9809781312942505,
+            "question": "Which team uses the logo NewYorkYankees_caplogo.svg?"
+        },
+        {
+            "score": 0.946223258972168,
+            "question": "What is the uniform logo of the New York Yankees?"
+        },
+        {
+            "score": 0.943804919719696,
+            "question": "Is the NewYorkYankees_caplogo.svg a copyrighted image?"
+        },
+        {
+            "score": 0.9139689207077026,
+            "question": "Can you describe the New York Yankees' uniform logo?"
+        },
+        {
+            "score": 0.8932985663414001,
+            "question": "Where might you find the New York Yankees' uniform logo?"
+        },
+        {
+            "score": 0.8674232363700867,
+            "question": "Is there a specific name for the logo used by the New York Yankees?"
+        },
+        {
+            "score": 0.8618242740631104,
+            "question": "What does the New York Yankees' logo represent?"
+        },
+        {
+            "score": 0.8196502327919006,
+            "question": "What file name is associated with the New York Yankees' uniform logo?"
+        },
+        {
+            "score": 0.784392774105072,
+            "question": "How is the New York Yankees' logo used in their branding?"
+        },
+        {
+            "score": 0.7344871759414673,
+            "question": "What type of image file is the New York Yankees' logo?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The uniform logo of the New York Yankees is NewYorkYankees_caplogo.svg.",
+            "html": "dbpedia_5139_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How is the New York Yankees' logo used in their branding?",
+            "html": "dbpedia_5139_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What file name is associated with the New York Yankees' uniform logo?",
+            "html": "dbpedia_5139_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What does the New York Yankees' logo represent?",
+            "html": "dbpedia_5139_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5139_12.txt"
+        },
+        {
+            "file_id": "dbpedia_5139_15.txt"
+        },
+        {
+            "file_id": "dbpedia_5139_17.txt"
+        },
+        {
+            "file_id": "dbpedia_5139_19.txt"
+        },
+        {
+            "file_id": "dbpedia_5139_27.txt"
+        },
+        {
+            "file_id": "dbpedia_5139_30.txt"
+        },
+        {
+            "file_id": "dbpedia_5139_35.txt"
+        },
+        {
+            "file_id": "dbpedia_5139_49.txt"
+        },
+        {
+            "file_id": "dbpedia_5139_53.txt"
+        },
+        {
+            "file_id": "dbpedia_5139_60.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation:\n\n{\n  \"output\": \"yes\"\n}\n\nExplanation:\nThe documents contain information about the New York Yankees logo, specifically mentioning the interlocking \"NY\" logo, which matches the description given in the query. There are multiple mentions of the NY logo throughout the documents, including its design, history, and variations for different uniforms (e.g., home jersey, cap, batting helmet). Therefore, based on the context information provided, it can be concluded that the triple is correct according to the documents."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe documents do not provide any specific information about a file named \"NewYorkYankees_caplogo.svg\" or confirm that this particular logo represents the uniform logo of the New York Yankees. The provided context discusses various aspects of the New York Yankees' logos, including their history and variations but does not reference a specific SVG file name for the cap logo."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The context information describes the uniform logo of the New York Yankees worn from 1931 to 1972, which features \"NEW YORK\" arched in midnight navy blue on a grey button-up jersey. However, the image provided as NewYorkYankees_caplogo.svg appears to be the current and modern 'NY' logo used on caps, which was adapted from a design by Louis B. Tiffany and did not become the uniform logo until 1973.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "The provided context discusses variations of the Yankees logo across different items like jerseys, caps, and batting helmets, indicating that there isn't a single uniform logo.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information provided does not support the existence of a single \"NewYorkYankees_caplogo.svg\" uniform logo. Instead, it mentions multiple versions of the NY logo used on different items like home jerseys, caps, and batting helmets, indicating inconsistencies in their application.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Pooja_Sharma",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "Sharma, Pooja",
+    "human_readable": "The name of Pooja Sharma is Sharma, Pooja.",
+    "questions": [
+        {
+            "score": 0.9686302542686462,
+            "question": "What is the full name of Pooja Sharma?"
+        },
+        {
+            "score": 0.9445592761039734,
+            "question": "Is 'Sharma' Pooja Sharma's first or last name?"
+        },
+        {
+            "score": 0.9386662840843201,
+            "question": "What is Pooja Sharma's last name?"
+        },
+        {
+            "score": 0.9006744623184204,
+            "question": "If you met someone named 'Sharma, Pooja', would you know their full name?"
+        },
+        {
+            "score": 0.8991535305976868,
+            "question": "Is the order of names in 'Sharma, Pooja' unusual?"
+        },
+        {
+            "score": 0.8459818363189697,
+            "question": "How many names are listed for Pooja Sharma?"
+        },
+        {
+            "score": 0.8246235251426697,
+            "question": "What is another way to write Pooja Sharma's name?"
+        },
+        {
+            "score": 0.7454427480697632,
+            "question": "What might be the reason for writing Pooja Sharma's name in this format?"
+        },
+        {
+            "score": 0.521224856376648,
+            "question": "Could 'Pooja Sharma' be written in a different way?"
+        },
+        {
+            "score": 0.4396211802959442,
+            "question": "If you saw 'Sharma' alone, would you know it was part of a name?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of Pooja Sharma is Sharma, Pooja.",
+            "html": "dbpedia_8349_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Could 'Pooja Sharma' be written in a different way?",
+            "html": "dbpedia_8349_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What might be the reason for writing Pooja Sharma's name in this format?",
+            "html": "dbpedia_8349_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is another way to write Pooja Sharma's name?",
+            "html": "dbpedia_8349_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8349_12.txt"
+        },
+        {
+            "file_id": "dbpedia_8349_23.txt"
+        },
+        {
+            "file_id": "dbpedia_8349_28.txt"
+        },
+        {
+            "file_id": "dbpedia_8349_30.txt"
+        },
+        {
+            "file_id": "dbpedia_8349_39.txt"
+        },
+        {
+            "file_id": "dbpedia_8349_42.txt"
+        },
+        {
+            "file_id": "dbpedia_8349_43.txt"
+        },
+        {
+            "file_id": "dbpedia_8349_60.txt"
+        },
+        {
+            "file_id": "dbpedia_8349_72.txt"
+        },
+        {
+            "file_id": "dbpedia_8349_8.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have more queries!"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of whether the information in the documents supports the triple \"The name of Pooja Sharma is Sharma, Pooja.\":\n\n{\n  \"output\": \"no\"\n}\n\nThis is because none of the documents mention that her last name is \"Sharma\" or that her full name is \"Pooja Sharma\". In fact, document 42 mentions a separate person called \"Pooja Mudgal\", which suggests that this is possibly the correct name for Pooja's first and last names."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n**Explanation:** The provided documents confirm that the name Pooja Sharma is also referred to as Pooja Mudgal. While the exact phrasing might vary slightly between documents, all sources consistently refer to her by both names, indicating that these are indeed aliases or variations of each other."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {'output': 'yes'}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The name mentioned as \"Pooja Mudgal\" in the context information has a different first name, which might indicate that it refers to a different person, and there is no evidence provided to support that \"Pooja Sharma\" and \"Pooja Mudgal\" are the same person.",
+            "category": 2
+        }
+    }
+}

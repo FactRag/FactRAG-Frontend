@@ -1,0 +1,144 @@
+{
+    "subject": "resource/David_Shankle",
+    "predicate": "ontology/hometown",
+    "object": "resource/United_States",
+    "human_readable": "David Shankle's hometown is United States.",
+    "questions": [
+        {
+            "score": 0.9441255927085876,
+            "question": "Does David Shankle currently live in the United States?"
+        },
+        {
+            "score": 0.8947901725769043,
+            "question": "Is David Shankle originally from the United States?"
+        },
+        {
+            "score": 0.8454228043556213,
+            "question": "What is associated with David Shankle's hometown?"
+        },
+        {
+            "score": 0.8398200273513794,
+            "question": "What country is considered David Shankle's hometown?"
+        },
+        {
+            "score": 0.8359870314598083,
+            "question": "Is the United States David Shankle's primary residence?"
+        },
+        {
+            "score": 0.6358827948570251,
+            "question": "Where is David Shankle from?"
+        },
+        {
+            "score": 0.4984925091266632,
+            "question": "Where did David Shankle grow up?"
+        },
+        {
+            "score": 0.42842987179756165,
+            "question": "Can you tell me about David Shankle's home country?"
+        },
+        {
+            "score": 0.34071284532546997,
+            "question": "What is known about David Shankle's place of birth?"
+        },
+        {
+            "score": 0.28436681628227234,
+            "question": "Where did David Shankle spend his formative years?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=David Shankle's hometown is United States.",
+            "html": "dbpedia_9305_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is known about David Shankle's place of birth?",
+            "html": "dbpedia_9305_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me about David Shankle's home country?",
+            "html": "dbpedia_9305_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where did David Shankle grow up?",
+            "html": "dbpedia_9305_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_9305_14.txt"
+        },
+        {
+            "file_id": "dbpedia_9305_19.txt"
+        },
+        {
+            "file_id": "dbpedia_9305_21.txt"
+        },
+        {
+            "file_id": "dbpedia_9305_31.txt"
+        },
+        {
+            "file_id": "dbpedia_9305_39.txt"
+        },
+        {
+            "file_id": "dbpedia_9305_44.txt"
+        },
+        {
+            "file_id": "dbpedia_9305_52.txt"
+        },
+        {
+            "file_id": "dbpedia_9305_63.txt"
+        },
+        {
+            "file_id": "dbpedia_9305_70.txt"
+        },
+        {
+            "file_id": "dbpedia_9305_83.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nWhile the documents state David Lee Shankle was born and lives in Chicago, Illinois, they don't explicitly mention his hometown being the United States.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, I can evaluate whether the statement \"David Shankle's hometown is United States\" is correct.\n\n{\n  \"output\": \"no\"\n}\n\nThe documents do mention that David Lee Shankle was born in Chicago, IL, which is indeed within the United States. However, the statement asks for his \"hometown\", not birthplace or city of origin. Since there is no explicit information about where David Shankle currently resides or considers as their hometown, I can only assume it might be somewhere else based on the absence of evidence supporting this specific claim."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\n**Explanation:** The documents provide information about David Lee Shankle, including his birthplace as Chicago, IL., which is in the United States. This supports the statement that David Shankle's hometown is the United States."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nThe documents provide information about David Lee Shankle, including his birthplace (Chicago, IL) and nationality (American), but they do not specify that his hometown is the entire United States. Therefore, the statement \"David Shankle's hometown is United States\" is incorrect based on the provided context."
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "It states his birthplace as Chicago, IL.  Chicago is a city within the United States.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "David Shankle was born in Chicago, IL.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Arnold_Schwarzenegger",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "Arnold Schwarzenegger",
+    "human_readable": "The full name of Arnold Schwarzenegger is Arnold Schwarzenegger.",
+    "questions": [
+        {
+            "score": 0.9857176542282104,
+            "question": "Is Arnold Schwarzenegger's full name Arnold Schwarzenegger?"
+        },
+        {
+            "score": 0.9839377999305725,
+            "question": "What is the full name of Arnold Schwarzenegger?"
+        },
+        {
+            "score": 0.9298886060714722,
+            "question": "What is Arnold Schwarzenegger known for?"
+        },
+        {
+            "score": 0.8553177714347839,
+            "question": "What nationality is Arnold Schwarzenegger?"
+        },
+        {
+            "score": 0.7618257403373718,
+            "question": "Where was Arnold Schwarzenegger born?"
+        },
+        {
+            "score": 0.6856361031532288,
+            "question": "When was Arnold Schwarzenegger born?"
+        },
+        {
+            "score": 0.6642744541168213,
+            "question": "Has Arnold Schwarzenegger acted in movies?"
+        },
+        {
+            "score": 0.6126821637153625,
+            "question": "Is Arnold Schwarzenegger a bodybuilder?"
+        },
+        {
+            "score": 0.5985498428344727,
+            "question": "What are some of Arnold Schwarzenegger's famous movie roles?"
+        },
+        {
+            "score": 0.36947596073150635,
+            "question": "Did Arnold Schwarzenegger serve as Governor of California?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The full name of Arnold Schwarzenegger is Arnold Schwarzenegger.",
+            "html": "dbpedia_8417_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some of Arnold Schwarzenegger's famous movie roles?",
+            "html": "dbpedia_8417_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Arnold Schwarzenegger a bodybuilder?",
+            "html": "dbpedia_8417_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Has Arnold Schwarzenegger acted in movies?",
+            "html": "dbpedia_8417_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8417_20.txt"
+        },
+        {
+            "file_id": "dbpedia_8417_28.txt"
+        },
+        {
+            "file_id": "dbpedia_8417_30.txt"
+        },
+        {
+            "file_id": "dbpedia_8417_38.txt"
+        },
+        {
+            "file_id": "dbpedia_8417_41.txt"
+        },
+        {
+            "file_id": "dbpedia_8417_50.txt"
+        },
+        {
+            "file_id": "dbpedia_8417_52.txt"
+        },
+        {
+            "file_id": "dbpedia_8417_61.txt"
+        },
+        {
+            "file_id": "dbpedia_8417_74.txt"
+        },
+        {
+            "file_id": "dbpedia_8417_83.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the answer in the structured JSON format:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThis is because according to the context information, the full name of Arnold Schwarzenegger is actually \"Arnold Alois Schwarzenegger\", not just \"Arnold Schwarzenegger\"."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: The documents provide the full name of Arnold Schwarzenegger as \"Arnold Alois Schwarzenegger,\" not simply \"Arnold Schwarzenegger.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nThe provided documents indicate that the full name of Arnold Schwarzenegger is \"Arnold Alois Schwarzenegger\", not just \"Arnold Schwarzenegger\". Therefore, the statement in the query is incorrect."
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The provided context information states \"Full Name: Arnold Alois Schwarzenegger\", which directly contradicts the statement that \"The full name of Arnold Schwarzenegger is Arnold Schwarzenegger\".",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "His full name is Arnold Alois Schwarzenegger.",
+            "category": 2
+        }
+    }
+}

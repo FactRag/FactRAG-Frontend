@@ -1,0 +1,102 @@
+{
+    "subject": "resource/Letchworth",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "Letchworth",
+    "human_readable": "The label of Letchworth is 'Letchworth'.",
+    "questions": [
+        {
+            "score": 0.9560222625732422,
+            "question": "What is the label of Letchworth?"
+        },
+        {
+            "score": 0.856805145740509,
+            "question": "Is 'Letchworth' a place?"
+        },
+        {
+            "score": 0.8373510837554932,
+            "question": "How would you describe Letchworth based on its label?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The label of Letchworth is 'Letchworth'.",
+            "html": "dbpedia_8236_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is 'Letchworth' a place?",
+            "html": "dbpedia_8236_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the label of Letchworth?",
+            "html": "dbpedia_8236_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8236_13.txt"
+        },
+        {
+            "file_id": "dbpedia_8236_2.txt"
+        },
+        {
+            "file_id": "dbpedia_8236_31.txt"
+        },
+        {
+            "file_id": "dbpedia_8236_51.txt"
+        },
+        {
+            "file_id": "dbpedia_8236_64.txt"
+        },
+        {
+            "file_id": "dbpedia_8236_67.txt"
+        },
+        {
+            "file_id": "dbpedia_8236_68.txt"
+        },
+        {
+            "file_id": "dbpedia_8236_72.txt"
+        },
+        {
+            "file_id": "dbpedia_8236_83.txt"
+        },
+        {
+            "file_id": "dbpedia_8236_87.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have any other triples you'd like me to evaluate! \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation:\n\n* The first document mentions \"The Legend\" as a nickname for the Letchworth yearbook, which suggests that the name \"Letchworth\" itself might be used as a legend or a story. However, this does not necessarily imply that \"Letchworth\" is its own label.\n* The second document provides historical information about Letchworth, including its location and population in the 19th century. It mentions that the living is a rectory, but it does not mention anything about a label or nickname for Letchworth.\n* The third document also discusses Letchworth Park History and mentions a label from a stereocard circa 1875, but again, there is no indication of \"Letchworth\" being used as its own label.\n\nBased on this analysis, the triple is likely incorrect. Therefore:\n\n```\n{\n  \"output\": \"no\"\n}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents mention \"Letchworth\" multiple times and provide context that supports the statement that \"The label of Letchworth is 'Letchworth'\". This can be inferred from references like \"from Letchworth Park History\", \"LETCHWORTH, a parish in the hundred of Broadwater\", and other mentions throughout the texts."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n    \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The label of the main text refers to \"Legends\" as an alternative name for Letchworth, not simply stating that the label of Letchworth is \"Letchworth\".",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Beki_Adam",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "Adam, Beki",
+    "human_readable": "The full name of Beki Adam is Adam, Beki.",
+    "questions": [
+        {
+            "score": 0.9803677797317505,
+            "question": "What is the full name of Beki Adam?"
+        },
+        {
+            "score": 0.9322561025619507,
+            "question": "Is 'Beki' the first or last name of Beki Adam?"
+        },
+        {
+            "score": 0.9150422811508179,
+            "question": "Which name comes first in Beki Adam's full name?"
+        },
+        {
+            "score": 0.8810051679611206,
+            "question": "What are the two parts of Beki Adam's full name?"
+        },
+        {
+            "score": 0.8448681235313416,
+            "question": "What is the order of Beki Adam's names?"
+        },
+        {
+            "score": 0.8023722171783447,
+            "question": "What is the correct way to spell Beki Adam's first name?"
+        },
+        {
+            "score": 0.7913009524345398,
+            "question": "If someone introduced themselves as 'Adam', could they be referring to Beki Adam?"
+        },
+        {
+            "score": 0.7359206676483154,
+            "question": "How would you write Beki Adam's last name?"
+        },
+        {
+            "score": 0.6909316182136536,
+            "question": "Is there a specific cultural or personal reason for using two names like Beki Adam?"
+        },
+        {
+            "score": 0.48724496364593506,
+            "question": "If you met Beki Adam, how would you address them formally?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The full name of Beki Adam is Adam, Beki.",
+            "html": "dbpedia_4850_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there a specific cultural or personal reason for using two names like Beki Adam?",
+            "html": "dbpedia_4850_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How would you write Beki Adam's last name?",
+            "html": "dbpedia_4850_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If someone introduced themselves as 'Adam', could they be referring to Beki Adam?",
+            "html": "dbpedia_4850_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4850_1.txt"
+        },
+        {
+            "file_id": "dbpedia_4850_24.txt"
+        },
+        {
+            "file_id": "dbpedia_4850_31.txt"
+        },
+        {
+            "file_id": "dbpedia_4850_39.txt"
+        },
+        {
+            "file_id": "dbpedia_4850_41.txt"
+        },
+        {
+            "file_id": "dbpedia_4850_43.txt"
+        },
+        {
+            "file_id": "dbpedia_4850_44.txt"
+        },
+        {
+            "file_id": "dbpedia_4850_48.txt"
+        },
+        {
+            "file_id": "dbpedia_4850_7.txt"
+        },
+        {
+            "file_id": "dbpedia_4850_8.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation:\n\n* Key: \"name\"\n* Value: \"Beki Adam\"\n* Triple: \"The full name of Beki Adam is Adam, Beki.\"\n\nThe documents contain information about a person named \"Beki Adam\", but they do not mention that her full name is \"Adam, Beki\". In fact, the document from file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4850/re-ranker-msmarco/1.txt states that \"Beki Adam\" was born in Cuckfield and has lived in Sussex for 40 years.\n\nSo, the answer is:\n\n`{'output': 'no'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nThe documents do not provide any information about the full name of Beki Adam. They discuss Beki Adam's career and background but do not mention her full name being \"Adam, Beki.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "It contradicts the provided information where Beki Adam states her full name.  Additionally, typical naming conventions don't suggest a reversal like that.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The context information from point 4 already provides Beki Adam's full name as \"Beki Adam\", so the statement that \"The full name of Beki Adam is Adam, Beki\" implies a reversal of the order, which contradicts the existing information.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context provided consistently refers to the name as Beki, which is a short form of Rebecca, without including any middle names or a different order of names. Therefore, \"Beki Adam\" suggests Beki is the first name and Adam is the last name, not the other way around.",
+            "category": 2
+        }
+    }
+}

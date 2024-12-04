@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Weissenau_Abbey",
+    "predicate": "property/commonName",
+    "object": "Weissenau",
+    "human_readable": "The common name of Weissenau Abbey is Weissenau.",
+    "questions": [
+        {
+            "score": 0.9855307340621948,
+            "question": "What is the common name of Weissenau Abbey?"
+        },
+        {
+            "score": 0.9827603101730347,
+            "question": "Is 'Weissenau' a common name for a specific abbey?"
+        },
+        {
+            "score": 0.9819923639297485,
+            "question": "What is the full name of the abbey commonly called 'Weissenau'?"
+        },
+        {
+            "score": 0.9643113613128662,
+            "question": "What is the official name of the abbey known as Weissenau?"
+        },
+        {
+            "score": 0.9391167759895325,
+            "question": "Is 'Weissenau' a nickname for an abbey?"
+        },
+        {
+            "score": 0.9375277161598206,
+            "question": "What is another name for Weissenau Abbey?"
+        },
+        {
+            "score": 0.9180582165718079,
+            "question": "Does Weissenau refer to an abbey?"
+        },
+        {
+            "score": 0.9125798940658569,
+            "question": "If someone referred to an abbey as 'Weissenau', what would they be referring to?"
+        },
+        {
+            "score": 0.6865884065628052,
+            "question": "Is there a difference between 'Weissenau Abbey' and 'Weissenau'?"
+        },
+        {
+            "score": 0.251977801322937,
+            "question": "Can you give me two names for the same abbey?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The common name of Weissenau Abbey is Weissenau.",
+            "html": "dbpedia_8182_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there a difference between 'Weissenau Abbey' and 'Weissenau'?",
+            "html": "dbpedia_8182_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If someone referred to an abbey as 'Weissenau', what would they be referring to?",
+            "html": "dbpedia_8182_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Weissenau refer to an abbey?",
+            "html": "dbpedia_8182_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8182_1.txt"
+        },
+        {
+            "file_id": "dbpedia_8182_10.txt"
+        },
+        {
+            "file_id": "dbpedia_8182_12.txt"
+        },
+        {
+            "file_id": "dbpedia_8182_18.txt"
+        },
+        {
+            "file_id": "dbpedia_8182_23.txt"
+        },
+        {
+            "file_id": "dbpedia_8182_29.txt"
+        },
+        {
+            "file_id": "dbpedia_8182_5.txt"
+        },
+        {
+            "file_id": "dbpedia_8182_6.txt"
+        },
+        {
+            "file_id": "dbpedia_8182_7.txt"
+        },
+        {
+            "file_id": "dbpedia_8182_8.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the answer in the form of a structured JSON format:\n\n{\n  \"output\": \"no\"\n}\n\nThe documents do not contain any information about Weissenau Abbey, and therefore cannot confirm or deny that its common name is Weissenau. The documents mention Weissenau Castle, which is a different entity altogether."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: None of the provided documents mention any information about a \"Weissenau Abbey\" or confirm that there is a common name called \"Weissenau\" for an abbey. The documents discuss various abbeys and monasteries, but specifically about Weissenau, they only provide details about Weissenau Castle, not an abbey with the same name."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n     \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context, there's no document that explicitly mentions Weissenau Abbey or its common name. However, one file refers to a Premonstratensian monastery in Weissenau founded in 1145 (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8182/re-ranker-msmarco/8.txt). This suggests that there is a religious establishment by the name of Weissenau but does not confirm if it is commonly known as \"Weissenau Abbey.\"\n\nGiven this information, we cannot definitively support or refute the statement that the common name of Weissenau Abbey is Weissenau. However, based on the provided instructions and data:\n\n```json\n{\"output\": \"no\"}\n```\n\nThis response assumes a cautious approach given the lack of direct supporting evidence within the documents for the specific claim made in the query."
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "Weissenau Abbey is actually known as Unterseen Abbey according to the context information.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context does not mention any common name for Weissenau Abbey as \"Weissenau,\" instead, it refers to the castle and abbey separately, with no indication that they share a common naming convention.",
+            "category": 2
+        }
+    }
+}

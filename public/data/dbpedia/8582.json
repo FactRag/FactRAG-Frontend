@@ -1,0 +1,142 @@
+{
+    "subject": "resource/NuGet",
+    "predicate": "ontology/programmingLanguage",
+    "object": "resource/C_Sharp_(programming_language)",
+    "human_readable": "NuGet is written in C#.",
+    "questions": [
+        {
+            "score": 0.8743014931678772,
+            "question": "Is NuGet primarily developed using C#?"
+        },
+        {
+            "score": 0.6862644553184509,
+            "question": "Can NuGet be used with other programming languages besides C#?"
+        },
+        {
+            "score": 0.6457197070121765,
+            "question": "What programming language is NuGet written in?"
+        },
+        {
+            "score": 0.4174472689628601,
+            "question": "What is the purpose of NuGet?"
+        },
+        {
+            "score": 0.28593969345092773,
+            "question": "What kind of files does NuGet primarily manage?"
+        },
+        {
+            "score": 0.27881598472595215,
+            "question": "Is NuGet a popular tool within the .NET development ecosystem?"
+        },
+        {
+            "score": 0.26037588715553284,
+            "question": "Can NuGet be used in both web and desktop applications?"
+        },
+        {
+            "score": 0.25948765873908997,
+            "question": "Are there any alternatives to using NuGet?"
+        },
+        {
+            "score": 0.2550770044326782,
+            "question": "What are some common uses for NuGet packages?"
+        },
+        {
+            "score": 0.18911631405353546,
+            "question": "How does NuGet simplify software development?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=NuGet is written in C#.",
+            "html": "dbpedia_8582_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some common uses for NuGet packages?",
+            "html": "dbpedia_8582_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any alternatives to using NuGet?",
+            "html": "dbpedia_8582_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can NuGet be used in both web and desktop applications?",
+            "html": "dbpedia_8582_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8582_11.txt"
+        },
+        {
+            "file_id": "dbpedia_8582_111.txt"
+        },
+        {
+            "file_id": "dbpedia_8582_115.txt"
+        },
+        {
+            "file_id": "dbpedia_8582_18.txt"
+        },
+        {
+            "file_id": "dbpedia_8582_2.txt"
+        },
+        {
+            "file_id": "dbpedia_8582_23.txt"
+        },
+        {
+            "file_id": "dbpedia_8582_43.txt"
+        },
+        {
+            "file_id": "dbpedia_8582_52.txt"
+        },
+        {
+            "file_id": "dbpedia_8582_80.txt"
+        },
+        {
+            "file_id": "dbpedia_8582_89.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```  \n\n\nWhile the provided text discusses NuGet extensively, it never mentions the programming language it's written in. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe context information provided includes details about the use of C# and NuGet, confirming that NuGet can be used with C# projects. While the documents do not explicitly state that NuGet is written in C#, it is reasonable to infer this based on the close integration between C# and .NET, which NuGet serves for package management. Therefore, the triple \"NuGet is written in C#\" is supported by the context information provided."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n      \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "NuGet is not written in C#. It is a package manager for .NET projects, but it itself is written in multiple languages including C#, F#, and Visual Basic.",
+            "category": -1
+        },
+        "gemma2": {
+            "reason": "The provided text describes NuGet as a package manager for .NET, emphasizing its role in managing dependencies and installing packages within the .NET ecosystem. There's no mention of NuGet being written in C# itself.",
+            "category": -1
+        },
+        "llama3.1": {
+            "reason": "NuGet is a package manager for Microsoft .NET, but the context information does not specify that NuGet itself is written in C#, only that C# developers can use it and install various NuGet packages to improve productivity. There is no mention of NuGet's own programming language or implementation details.",
+            "category": -1
+        }
+    }
+}

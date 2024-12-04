@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Derby",
+    "predicate": "ontology/leaderName",
+    "object": "resource/Derby_City_Council",
+    "human_readable": "The leader name of Derby is Derby City Council.",
+    "questions": [
+        {
+            "score": 0.9566402435302734,
+            "question": "What is the name of the council that leads Derby?"
+        },
+        {
+            "score": 0.8719087839126587,
+            "question": "What is the name of the leadership group in Derby?"
+        },
+        {
+            "score": 0.857039213180542,
+            "question": "Who is responsible for leading Derby City?"
+        },
+        {
+            "score": 0.7732973098754883,
+            "question": "Which organization holds leadership in Derby?"
+        },
+        {
+            "score": 0.7450407147407532,
+            "question": "Who leads Derby?"
+        },
+        {
+            "score": 0.6995955109596252,
+            "question": "What is the name of the governing body in Derby?"
+        },
+        {
+            "score": 0.6854708790779114,
+            "question": "What organization has leadership over Derby?"
+        },
+        {
+            "score": 0.6172446608543396,
+            "question": "Who manages Derby City?"
+        },
+        {
+            "score": 0.4004215896129608,
+            "question": "Which body holds authority in Derby?"
+        },
+        {
+            "score": 0.36616089940071106,
+            "question": "What entity governs Derby?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The leader name of Derby is Derby City Council.",
+            "html": "dbpedia_5963_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Which body holds authority in Derby?",
+            "html": "dbpedia_5963_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who manages Derby City?",
+            "html": "dbpedia_5963_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What organization has leadership over Derby?",
+            "html": "dbpedia_5963_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5963_106.txt"
+        },
+        {
+            "file_id": "dbpedia_5963_11.txt"
+        },
+        {
+            "file_id": "dbpedia_5963_114.txt"
+        },
+        {
+            "file_id": "dbpedia_5963_140.txt"
+        },
+        {
+            "file_id": "dbpedia_5963_141.txt"
+        },
+        {
+            "file_id": "dbpedia_5963_27.txt"
+        },
+        {
+            "file_id": "dbpedia_5963_32.txt"
+        },
+        {
+            "file_id": "dbpedia_5963_52.txt"
+        },
+        {
+            "file_id": "dbpedia_5963_56.txt"
+        },
+        {
+            "file_id": "dbpedia_5963_60.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe text states that the new leader of Derby City Council is Councillor Nadine Peatfield, not \"Derby City Council\".  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "After analyzing the provided context information, I can confirm that:\n\n* Triple: \"The leader name of Derby is ...\" (Note: There are multiple mentions of leaders, so this will be evaluated for each mention)\n* Evaluation:\n\t+ Mention 1 (File_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5963/re-ranker-msmarco/32.txt): The leader name is not explicitly mentioned in this document.\n\t+ Mention 2 (File_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5963/re-ranker-msmarco/75.txt): The new Leader of the Council is Councillor Nadine Peatfield.\n\t+ Mention 3 (File_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5963/re-ranker-msmarco/7.txt): The new Leader of the Council is also mentioned as Councillor Nadine Peatfield.\n\nGiven this information, I can confirm that:\n\n```\n{\n  \"output\": \"yes\"\n}\n```\n\nNote: There are multiple mentions of leaders in different documents, but the answer should be consistent across all relevant documents. In this case, it is confirmed that the leader name is Councillor Nadine Peatfield."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nExplanation: The documents mention that the \"Leader\" position has been vacated and filled, but they also discuss the structure of the Derby City Council, indicating that it is the governing body for the city. Therefore, stating that the leader name of Derby is \"Derby City Council\" aligns with the information provided in the context."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context, there isn't a direct statement or clear information that indicates \"Derby City Council\" as the leader name for Derby. Instead, the documents mention specific individuals like Councillor Nadine Peatfield and Councillor Baggy Shanker who are leaders within the council structure of Derby.\n\nTherefore, the correct response is:\n\n```json\n{\"output\": \"no\"}\n```"
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{\n  \"output\": \"no\"\n}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The leader of Derby City Council is referred to as the Leader or Councillor, with specific names mentioned (e.g. Cllr Shanker and Cllr Peatfield), not \"Derby\".",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The leader of Derby City Council has changed to Nadine Peatfield, replacing Councillor Baggy Shanker. The title \"Leader\" refers specifically to the new position held by Councillor Peatfield, not a separate individual named \"Derby.\"",
+            "category": 2
+        }
+    }
+}

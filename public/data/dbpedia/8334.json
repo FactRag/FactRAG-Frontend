@@ -1,0 +1,102 @@
+{
+    "subject": "resource/Ivrea",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "Ivrea",
+    "human_readable": "Ivrea is also known as Ivrea.",
+    "questions": [
+        {
+            "score": 0.9531282186508179,
+            "question": "Is Ivrea known by a different name?"
+        },
+        {
+            "score": 0.9150158166885376,
+            "question": "What is another name for Ivrea?"
+        },
+        {
+            "score": 0.711520791053772,
+            "question": "Besides Ivrea, what other name is used for this place?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Ivrea is also known as Ivrea.",
+            "html": "dbpedia_8334_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is another name for Ivrea?",
+            "html": "dbpedia_8334_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Ivrea known by a different name?",
+            "html": "dbpedia_8334_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8334_16.txt"
+        },
+        {
+            "file_id": "dbpedia_8334_23.txt"
+        },
+        {
+            "file_id": "dbpedia_8334_26.txt"
+        },
+        {
+            "file_id": "dbpedia_8334_30.txt"
+        },
+        {
+            "file_id": "dbpedia_8334_34.txt"
+        },
+        {
+            "file_id": "dbpedia_8334_40.txt"
+        },
+        {
+            "file_id": "dbpedia_8334_57.txt"
+        },
+        {
+            "file_id": "dbpedia_8334_69.txt"
+        },
+        {
+            "file_id": "dbpedia_8334_79.txt"
+        },
+        {
+            "file_id": "dbpedia_8334_89.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple:\n\n{\n  \"output\": \"no\"\n}\n\nThe reason is that none of the documents mention Ivrea being also known as itself. The documents only provide information about the city's history, landmarks, and cultural events, but do not suggest an alternative name for Ivrea."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe query \"Ivrea is also known as Ivrea\" is correct according to the provided context, as each document refers to the city simply as \"Ivrea.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The claim is wrong because there are multiple names and titles associated with Ivrea in the provided context information.",
+            "category": 2
+        }
+    }
+}

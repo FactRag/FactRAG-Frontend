@@ -1,0 +1,142 @@
+{
+    "subject": "resource/DVDA_(band)",
+    "predicate": "ontology/hometown",
+    "object": "resource/United_States",
+    "human_readable": "DVDA (band) was born in the United States.",
+    "questions": [
+        {
+            "score": 0.9259080290794373,
+            "question": "Is DVDA (band) an American band?"
+        },
+        {
+            "score": 0.895995557308197,
+            "question": "Where was DVDA (band) born?"
+        },
+        {
+            "score": 0.6658114790916443,
+            "question": "In which state was DVDA (band) formed?"
+        },
+        {
+            "score": 0.5698716044425964,
+            "question": "Who are the members of DVDA (band)?"
+        },
+        {
+            "score": 0.5530268549919128,
+            "question": "When was DVDA (band) founded?"
+        },
+        {
+            "score": 0.531876802444458,
+            "question": "What country is DVDA (band) from?"
+        },
+        {
+            "score": 0.3265838921070099,
+            "question": "Where has DVDA (band) performed live?"
+        },
+        {
+            "score": 0.3070761561393738,
+            "question": "What genre of music does DVDA (band) play?"
+        },
+        {
+            "score": 0.2436068058013916,
+            "question": "Has DVDA (band) released any albums?"
+        },
+        {
+            "score": 0.2311505824327469,
+            "question": "What is DVDA (band)'s most popular song?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=DVDA (band) was born in the United States.",
+            "html": "dbpedia_9148_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Has DVDA (band) released any albums?",
+            "html": "dbpedia_9148_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What genre of music does DVDA (band) play?",
+            "html": "dbpedia_9148_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where has DVDA (band) performed live?",
+            "html": "dbpedia_9148_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_9148_1.txt"
+        },
+        {
+            "file_id": "dbpedia_9148_10.txt"
+        },
+        {
+            "file_id": "dbpedia_9148_11.txt"
+        },
+        {
+            "file_id": "dbpedia_9148_12.txt"
+        },
+        {
+            "file_id": "dbpedia_9148_15.txt"
+        },
+        {
+            "file_id": "dbpedia_9148_24.txt"
+        },
+        {
+            "file_id": "dbpedia_9148_27.txt"
+        },
+        {
+            "file_id": "dbpedia_9148_30.txt"
+        },
+        {
+            "file_id": "dbpedia_9148_5.txt"
+        },
+        {
+            "file_id": "dbpedia_9148_8.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the context information, here is the response:\n\n{\n  \"output\": \"no\"\n}\n\nThe documents do not mention that DVDA (band) was born in the United States. In fact, one of the files mentions that the band's songs have featured heavily in South Park, which suggests that they are associated with Trey Parker and Matt Stone, who created the show. However, there is no information about their birthplace or origin."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The document states, \"DVDA is the musical comedy outfit of South Park (1997) creators Trey Parker and Matt Stone, and South Park crew members Bruce Howell, D.A. Young, and Nels Dielman.\" Given that South Park is an American show, it can be reasonably inferred that DVDA was born in the United States."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "DVDA (band) is a musical group created by the creators of South Park, Trey Parker and Matt Stone. There is no information provided in the context that suggests they are from the United States.",
+            "category": 4
+        },
+        "gemma2": {
+            "reason": "The text states DVDA is the musical comedy outfit of South Park (1997) creators Trey Parker and Matt Stone, and South Park crew members.  South Park originated in the United States.",
+            "category": 4
+        },
+        "llama3.1": {
+            "reason": "DVDA (band) was actually the musical comedy outfit of South Park creators Trey Parker and Matt Stone, who are from the United States.",
+            "category": 4
+        }
+    }
+}

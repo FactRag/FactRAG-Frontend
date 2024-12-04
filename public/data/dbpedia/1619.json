@@ -1,0 +1,112 @@
+{
+    "subject": "resource/Naoum_Aronson",
+    "predicate": "ontology/occupation",
+    "object": "resource/Naoum_Aronson__1",
+    "human_readable": "Naoum Aronson's occupation is Naoum Aronson.",
+    "questions": [
+        {
+            "score": 0.9754018187522888,
+            "question": "Is Naoum Aronson's occupation the same as his name?"
+        },
+        {
+            "score": 0.9559277296066284,
+            "question": "Who is Naoum Aronson?"
+        },
+        {
+            "score": 0.7254720330238342,
+            "question": "What does Naoum Aronson do for a living?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Naoum Aronson's occupation is Naoum Aronson.",
+            "html": "dbpedia_1619_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is Naoum Aronson?",
+            "html": "dbpedia_1619_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Naoum Aronson's occupation the same as his name?",
+            "html": "dbpedia_1619_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1619_1.txt"
+        },
+        {
+            "file_id": "dbpedia_1619_11.txt"
+        },
+        {
+            "file_id": "dbpedia_1619_13.txt"
+        },
+        {
+            "file_id": "dbpedia_1619_14.txt"
+        },
+        {
+            "file_id": "dbpedia_1619_17.txt"
+        },
+        {
+            "file_id": "dbpedia_1619_21.txt"
+        },
+        {
+            "file_id": "dbpedia_1619_26.txt"
+        },
+        {
+            "file_id": "dbpedia_1619_27.txt"
+        },
+        {
+            "file_id": "dbpedia_1619_28.txt"
+        },
+        {
+            "file_id": "dbpedia_1619_30.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide information about Naoum Aronson, confirming his profession as a sculptor. Therefore, the statement \"Naoum Aronson's occupation is sculptor\" can be considered correct based on the provided context."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {'output': 'no'}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "Naoum Aronson's occupation is actually a sculptor, not just \"Naoum Aronson\".",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The provided context describes Naoum Aronson as a sculptor who studied art, created busts of famous personalities, and had his works exhibited and sold. Therefore, stating that his occupation is simply \"Naoum Aronson\" is inaccurate and fails to reflect his profession or the contributions mentioned in the context.",
+            "category": 2
+        }
+    }
+}

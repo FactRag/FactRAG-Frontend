@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Pressure_4-5",
+    "predicate": "ontology/hometown",
+    "object": "resource/United_States",
+    "human_readable": "The hometown of Pressure 4-5 is United States.",
+    "questions": [
+        {
+            "score": 0.914189338684082,
+            "question": "Is Pressure 4-5 American?"
+        },
+        {
+            "score": 0.9094719290733337,
+            "question": "Which country is the hometown of Pressure 4-5?"
+        },
+        {
+            "score": 0.8759663701057434,
+            "question": "Could Pressure 4-5 be from the United States?"
+        },
+        {
+            "score": 0.8397966027259827,
+            "question": "Does Pressure 4-5 originate from the US?"
+        },
+        {
+            "score": 0.7825538516044617,
+            "question": "Is Pressure 4-5 a product of the United States?"
+        },
+        {
+            "score": 0.7579889297485352,
+            "question": "Where is Pressure 4-5 from?"
+        },
+        {
+            "score": 0.7091047167778015,
+            "question": "Where is Pressure 4-5 based?"
+        },
+        {
+            "score": 0.5935879349708557,
+            "question": "What is the nationality of Pressure 4-5?"
+        },
+        {
+            "score": 0.5746785998344421,
+            "question": "What country is Pressure 4-5 associated with?"
+        },
+        {
+            "score": 0.5054197907447815,
+            "question": "In what nation was Pressure 4-5 born or created?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The hometown of Pressure 4-5 is United States.",
+            "html": "dbpedia_8885_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What country is Pressure 4-5 associated with?",
+            "html": "dbpedia_8885_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the nationality of Pressure 4-5?",
+            "html": "dbpedia_8885_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where is Pressure 4-5 based?",
+            "html": "dbpedia_8885_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8885_10.txt"
+        },
+        {
+            "file_id": "dbpedia_8885_11.txt"
+        },
+        {
+            "file_id": "dbpedia_8885_24.txt"
+        },
+        {
+            "file_id": "dbpedia_8885_27.txt"
+        },
+        {
+            "file_id": "dbpedia_8885_36.txt"
+        },
+        {
+            "file_id": "dbpedia_8885_37.txt"
+        },
+        {
+            "file_id": "dbpedia_8885_40.txt"
+        },
+        {
+            "file_id": "dbpedia_8885_45.txt"
+        },
+        {
+            "file_id": "dbpedia_8885_47.txt"
+        },
+        {
+            "file_id": "dbpedia_8885_7.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n\n\nThe documents state that Pressure 4-5 is from the Santa Barbara, California rock scene.  While Santa Barbara is in the United States, this does not directly say their hometown is the United States. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe documents do not mention the hometown of Pressure 4-5, but they are mentioned to be from the Santa Barbara, California rock scene. While this does imply that they are likely located in the United States, it's not explicitly stated as their hometown."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\n**Explanation:** According to the context information, Pressure 4-5 originated from Santa Barbara, California. Santa Barbara, being a city in the United States, supports the claim that the hometown of Pressure 4-5 is the United States."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nThe provided context information states that the band \"Pressure 4-5\" formed in Santa Barbara, California. While this indicates they are from the United States, the statement \"The hometown of Pressure 4-5 is United States.\" is overly broad and not specific to their actual origin city or state as mentioned in the documents. Therefore, based on the given information, the triple is incorrect."
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Pressure 4-5 blossomed from the Santa Barbara, California rock scene.",
+            "category": 4
+        },
+        "llama3.1": {
+            "reason": "It contradicts the information provided in section 3 where Adam Rich mentions \"being on Ozzfest has been a great way for us to break out and show metal fans that we have a heavy side.  It is also a chance for us to go out and get to know all of these bands that we have been fans of for so long\" which implies the band's origin is not in the United States, but rather they are from California, which was not explicitly mentioned as being part of the United States, although it can be inferred.",
+            "category": 4
+        }
+    }
+}

@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Kingdom_of_Nepal",
+    "predicate": "ontology/currency",
+    "object": "resource/Nepalese_mohar",
+    "human_readable": "The currency of Kingdom of Nepal is Nepalese mohar.",
+    "questions": [
+        {
+            "score": 0.9416625499725342,
+            "question": "Which country uses the Nepalese mohar as its currency?"
+        },
+        {
+            "score": 0.919851541519165,
+            "question": "What is the currency of the Kingdom of Nepal?"
+        },
+        {
+            "score": 0.7787246704101562,
+            "question": "Is the Nepalese rupee the official currency of Nepal?"
+        },
+        {
+            "score": 0.7596337199211121,
+            "question": "What is the value of one Nepalese mohar in US dollars?"
+        },
+        {
+            "score": 0.7502248883247375,
+            "question": "What is the name of the Nepalese currency unit?"
+        },
+        {
+            "score": 0.6593355536460876,
+            "question": "How is the Nepalese mohar represented?"
+        },
+        {
+            "score": 0.6164372563362122,
+            "question": "What are some common uses for the Nepalese mohar?"
+        },
+        {
+            "score": 0.502173662185669,
+            "question": "Where can you exchange Nepalese mohar?"
+        },
+        {
+            "score": 0.4772632420063019,
+            "question": "What historical events have influenced the value of the Nepalese mohar?"
+        },
+        {
+            "score": 0.378589928150177,
+            "question": "Are there any special features or designs on Nepalese mohar?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The currency of Kingdom of Nepal is Nepalese mohar.",
+            "html": "dbpedia_9209_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What historical events have influenced the value of the Nepalese mohar?",
+            "html": "dbpedia_9209_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where can you exchange Nepalese mohar?",
+            "html": "dbpedia_9209_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some common uses for the Nepalese mohar?",
+            "html": "dbpedia_9209_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_9209_103.txt"
+        },
+        {
+            "file_id": "dbpedia_9209_11.txt"
+        },
+        {
+            "file_id": "dbpedia_9209_31.txt"
+        },
+        {
+            "file_id": "dbpedia_9209_57.txt"
+        },
+        {
+            "file_id": "dbpedia_9209_63.txt"
+        },
+        {
+            "file_id": "dbpedia_9209_71.txt"
+        },
+        {
+            "file_id": "dbpedia_9209_78.txt"
+        },
+        {
+            "file_id": "dbpedia_9209_81.txt"
+        },
+        {
+            "file_id": "dbpedia_9209_94.txt"
+        },
+        {
+            "file_id": "dbpedia_9209_95.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "After analyzing the context information, I can conclude that:\n\n{\n  \"output\": \"yes\"\n}\n\nThe documents indeed support the triple \"The currency of Kingdom of Nepal is Nepalese mohar.\" This is evident from various mentions of the Nepalese mohar as the currency of the Kingdom of Nepal in different texts."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: According to the documents, the current official currency of Nepal is the Nepalese rupee (NPR), not the Nepalese mohar. The mohar was a previous coin used in the Kingdom of Nepal but has been replaced by the rupee."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}\n\nThe documents provided indicate that the mohar was indeed the currency used during the Kingdom of Nepal period (1768-1932). Specifically, document paths like `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_9209/re-ranker-msmarco/92.txt` and others mention that the mohar was used before it was replaced by the Nepalese rupee in 1932. Hence, the statement \"The currency of Kingdom of Nepal is Nepalese mohar\" is correct based on the given context."
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{\n  \"output\": \"yes\"\n}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Information provided states that the Nepalese rupee (NPR) replaced the mohar in 1932 as Nepal's official currency.   Furthermore, the text highlights the introduction of the NPR and its denominations.",
+            "category": -1
+        },
+        "qwen2.5": {
+            "reason": "The context information states that the Nepalese mohar was replaced by the Nepalese rupee (NPR) in 1932. Therefore, during the Kingdom of Nepal period mentioned (1768-1932), the primary currency used was the Nepalese mohar, but this was not its official designation as the sole currency after 1932.",
+            "category": -1
+        }
+    }
+}

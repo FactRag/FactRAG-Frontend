@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Arizona_Territory",
+    "predicate": "ontology/capital",
+    "object": "resource/Prescott,_Arizona",
+    "human_readable": "The capital of Arizona Territory is Prescott, Arizona.",
+    "questions": [
+        {
+            "score": 0.9757354259490967,
+            "question": "When was Prescott the capital of Arizona Territory?"
+        },
+        {
+            "score": 0.942678689956665,
+            "question": "Is Prescott still the capital of Arizona?"
+        },
+        {
+            "score": 0.8705856204032898,
+            "question": "What was the capital of Arizona Territory?"
+        },
+        {
+            "score": 0.7614065408706665,
+            "question": "What is the name of the former territory that Prescott served as capital for?"
+        },
+        {
+            "score": 0.7438706159591675,
+            "question": "What other cities were considered as capitals for Arizona Territory?"
+        },
+        {
+            "score": 0.6840447783470154,
+            "question": "What is significant about Prescott's history as a territorial capital?"
+        },
+        {
+            "score": 0.6212142109870911,
+            "question": "Where is Prescott located?"
+        },
+        {
+            "score": 0.5886850953102112,
+            "question": "Why was Prescott chosen as the capital?"
+        },
+        {
+            "score": 0.5250139832496643,
+            "question": "How has Prescott changed since its time as the capital?"
+        },
+        {
+            "score": 0.5248785018920898,
+            "question": "Can you name any important buildings or landmarks from Prescott's time as the capital?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The capital of Arizona Territory is Prescott, Arizona.",
+            "html": "dbpedia_9321_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How has Prescott changed since its time as the capital?",
+            "html": "dbpedia_9321_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Why was Prescott chosen as the capital?",
+            "html": "dbpedia_9321_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where is Prescott located?",
+            "html": "dbpedia_9321_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_9321_1.txt"
+        },
+        {
+            "file_id": "dbpedia_9321_15.txt"
+        },
+        {
+            "file_id": "dbpedia_9321_2.txt"
+        },
+        {
+            "file_id": "dbpedia_9321_26.txt"
+        },
+        {
+            "file_id": "dbpedia_9321_27.txt"
+        },
+        {
+            "file_id": "dbpedia_9321_3.txt"
+        },
+        {
+            "file_id": "dbpedia_9321_31.txt"
+        },
+        {
+            "file_id": "dbpedia_9321_44.txt"
+        },
+        {
+            "file_id": "dbpedia_9321_46.txt"
+        },
+        {
+            "file_id": "dbpedia_9321_7.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the answer in the structured JSON format:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe reason for this answer is that while the documents mention Prescott as a city and county seat in Yavapai County, Arizona, they do not explicitly state that it was the capital of the Arizona Territory. In fact, one of the documents mentions that the territorial capital was moved to Tucson in 1867, then returned to Prescott in 1877, before being finally moved to Phoenix in 1889. This suggests that while Prescott did serve as a capital of the Arizona Territory at various points in time, it was not consistently or exclusively the capital throughout its history. Therefore, the triple \"The capital of Arizona Territory is Prescott, Arizona\" is not supported by the information in the documents."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provided state that Prescott served as the capital of Arizona Territory at different times (1864-1867 and 1877-1889), indicating that it has indeed been the capital of Arizona Territory."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Prescott served as the capital of Arizona Territory for certain periods, but it was not always the capital. The capital was moved to Tucson in 1867 and again to Phoenix in 1889. Therefore, stating that Prescott was the capital of Arizona Territory implies that it was continuously so, which is not accurate according to the context information provided.",
+            "category": -1
+        },
+        "qwen2.5": {
+            "reason": "The context information indicates that Prescott served as the capital of Arizona Territory from 1864 to 1867, then again from 1877 to 1889. It was not continuously the capital throughout its history, and it eventually lost the status to Phoenix in 1889.",
+            "category": -1
+        }
+    }
+}

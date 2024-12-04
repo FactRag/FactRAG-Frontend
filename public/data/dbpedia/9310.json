@@ -1,0 +1,102 @@
+{
+    "subject": "resource/Aaron_Ramsey",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "Aaron Ramsey",
+    "human_readable": "The label of Aaron Ramsey is Aaron Ramsey.",
+    "questions": [
+        {
+            "score": 0.9355199337005615,
+            "question": "Is Aaron Ramsey a person?"
+        },
+        {
+            "score": 0.9307298064231873,
+            "question": "Who is Aaron Ramsey?"
+        },
+        {
+            "score": 0.8868584632873535,
+            "question": "What is the name of Aaron Ramsey?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The label of Aaron Ramsey is Aaron Ramsey.",
+            "html": "dbpedia_9310_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is Aaron Ramsey?",
+            "html": "dbpedia_9310_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Aaron Ramsey a person?",
+            "html": "dbpedia_9310_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_9310_13.txt"
+        },
+        {
+            "file_id": "dbpedia_9310_19.txt"
+        },
+        {
+            "file_id": "dbpedia_9310_22.txt"
+        },
+        {
+            "file_id": "dbpedia_9310_23.txt"
+        },
+        {
+            "file_id": "dbpedia_9310_26.txt"
+        },
+        {
+            "file_id": "dbpedia_9310_51.txt"
+        },
+        {
+            "file_id": "dbpedia_9310_52.txt"
+        },
+        {
+            "file_id": "dbpedia_9310_53.txt"
+        },
+        {
+            "file_id": "dbpedia_9310_63.txt"
+        },
+        {
+            "file_id": "dbpedia_9310_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, here's my evaluation:\n\n* Document 1 mentions \"Aaron Ramsey\" as a Welsh footballer with no mention of any other person or variant name.\n* Documents 2-5 consistently refer to \"Aaron James Ramsey\" (with and without specifying the year of birth) as a Welsh professional footballer, which implies that this is the correct full name for the individual. However, there's also a mention in Document 4 of \"Not to be confused with Aaron Ramsey (born 2003)\" which suggests that there might be another person sharing the same first and last name.\n* None of the documents provide any information about an individual named \"Aaron Ramsey\" without specifying the year of birth or the variant \"James\".\n\nConsidering this analysis, I would say that the triple:\n\n**Pat Frank author Alas, Babylon**: (not relevant to Aaron Ramsey)\nResponse: {'output': 'yes'}\n\nHowever, for the query regarding Aaron Ramsey:\n \nThe label of Aaron Ramsey is Aaron Ramsey.\n\nBased on my evaluation and the provided context information, I would respond with:\n\n{'output': 'no'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nExplanation: The documents consistently refer to an individual named Aaron James Ramsey, confirming that the label \"Aaron Ramsey\" accurately describes the subject of these passages."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "There are multiple individuals with the name Aaron Ramsey (born 1990) and another one born in 2003, indicating that \"the label\" of Aaron Ramsey cannot be a singular, definitive answer.",
+            "category": 2
+        }
+    }
+}

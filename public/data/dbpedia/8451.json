@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Zarangush",
+    "predicate": "property/populationAsOf",
+    "object": "2006",
+    "human_readable": "The population of Zarangush as of 2006 was 2006.",
+    "questions": [
+        {
+            "score": 0.9882674813270569,
+            "question": "What was the population of Zarangush in 2006?"
+        },
+        {
+            "score": 0.9615845680236816,
+            "question": "Could the population of Zarangush have changed since 2006?"
+        },
+        {
+            "score": 0.875659167766571,
+            "question": "What can you infer about the size of Zarangush based on its population in 2006?"
+        },
+        {
+            "score": 0.764618456363678,
+            "question": "Is the population of Zarangush given as a number?"
+        },
+        {
+            "score": 0.6603707075119019,
+            "question": "In what year is the population data for Zarangush reported?"
+        },
+        {
+            "score": 0.6406873464584351,
+            "question": "What kind of sources could provide more detailed information about Zarangush's population?"
+        },
+        {
+            "score": 0.534688413143158,
+            "question": "How might the population of Zarangush be changing over time?"
+        },
+        {
+            "score": 0.47902122139930725,
+            "question": "Are there other data points you would need to understand the population trends of Zarangush better?"
+        },
+        {
+            "score": 0.34002217650413513,
+            "question": "What factors might influence the population growth or decline in Zarangush?"
+        },
+        {
+            "score": 0.08507352322340012,
+            "question": "Could this population figure be used to make comparisons with other cities or regions?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The population of Zarangush as of 2006 was 2006.",
+            "html": "dbpedia_8451_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What factors might influence the population growth or decline in Zarangush?",
+            "html": "dbpedia_8451_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there other data points you would need to understand the population trends of Zarangush better?",
+            "html": "dbpedia_8451_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How might the population of Zarangush be changing over time?",
+            "html": "dbpedia_8451_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8451_1.txt"
+        },
+        {
+            "file_id": "dbpedia_8451_10.txt"
+        },
+        {
+            "file_id": "dbpedia_8451_2.txt"
+        },
+        {
+            "file_id": "dbpedia_8451_3.txt"
+        },
+        {
+            "file_id": "dbpedia_8451_4.txt"
+        },
+        {
+            "file_id": "dbpedia_8451_5.txt"
+        },
+        {
+            "file_id": "dbpedia_8451_6.txt"
+        },
+        {
+            "file_id": "dbpedia_8451_7.txt"
+        },
+        {
+            "file_id": "dbpedia_8451_8.txt"
+        },
+        {
+            "file_id": "dbpedia_8451_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe text says the population of Zarangush in 2006 was **1,605**.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the provided context information, I can infer that the triple is related to the location \"Zarangush\" and its population. Here's my evaluation:\n\n{\n  \"output\": \"yes\"\n}\n\nThe reason for this answer is that in the provided text, there are several mentions of Zarangush as a village in Iran, with specific details such as its location (in Hendmini Rural District, Badreh District, Darreh Shahr County, Ilam Province), population (1,605 at the 2006 census), and time zone (IRST, UTC+3:30). This suggests that the statement \"The population of Zarangush as of 2006 was [some number]\" is indeed supported by the information in the documents."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe document states that the population of Zarangush in 2006 was 1,605. The query asks for the population of Zarangush as of 2006 being 2006, which is correct according to the provided information (considering a possible typo where \"2006\" should be \"1,605\")."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n      \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nThe query states \"The population of Zarangush as of 2006 was 2006,\" which is incorrect. According to the provided context, the population of Zarangush in 2006 was 1,605 people, not 2006. Therefore, the answer should be \"no\"."
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The population of Zarangush as of 2006 was actually 1,605, not 2,006.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "It states the population as the year itself, which is nonsensical.  Population figures are numerical counts of people, not calendar years.",
+            "category": 2
+        }
+    }
+}

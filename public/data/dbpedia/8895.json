@@ -1,0 +1,142 @@
+{
+    "subject": "resource/We_the_Living_(band)",
+    "predicate": "ontology/hometown",
+    "object": "resource/United_States",
+    "human_readable": "The hometown of We the Living (band) is United States.",
+    "questions": [
+        {
+            "score": 0.9284679889678955,
+            "question": "Is We the Living a band from the United States?"
+        },
+        {
+            "score": 0.7336935997009277,
+            "question": "Where is We the Living (band) from?"
+        },
+        {
+            "score": 0.6715489625930786,
+            "question": "What country is considered the hometown of We the Living?"
+        },
+        {
+            "score": 0.5150668621063232,
+            "question": "What is the nationality of We the Living (band)?"
+        },
+        {
+            "score": 0.4928310811519623,
+            "question": "Where are We the Living based?"
+        },
+        {
+            "score": 0.45337459444999695,
+            "question": "What is the home country of the band We the Living?"
+        },
+        {
+            "score": 0.41731810569763184,
+            "question": "Where did We the Living form?"
+        },
+        {
+            "score": 0.3353191018104553,
+            "question": "Can you tell me about the origin place of We the Living?"
+        },
+        {
+            "score": 0.29966220259666443,
+            "question": "Which country calls We the Living as its own musical group?"
+        },
+        {
+            "score": 0.23206375539302826,
+            "question": "In which nation did We the Living originate?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The hometown of We the Living (band) is United States.",
+            "html": "dbpedia_8895_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Which country calls We the Living as its own musical group?",
+            "html": "dbpedia_8895_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me about the origin place of We the Living?",
+            "html": "dbpedia_8895_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where did We the Living form?",
+            "html": "dbpedia_8895_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8895_109.txt"
+        },
+        {
+            "file_id": "dbpedia_8895_113.txt"
+        },
+        {
+            "file_id": "dbpedia_8895_16.txt"
+        },
+        {
+            "file_id": "dbpedia_8895_25.txt"
+        },
+        {
+            "file_id": "dbpedia_8895_27.txt"
+        },
+        {
+            "file_id": "dbpedia_8895_3.txt"
+        },
+        {
+            "file_id": "dbpedia_8895_33.txt"
+        },
+        {
+            "file_id": "dbpedia_8895_47.txt"
+        },
+        {
+            "file_id": "dbpedia_8895_56.txt"
+        },
+        {
+            "file_id": "dbpedia_8895_8.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: The documents do not provide any information about the hometown of the band \"The Living.\" Instead, they mention that the band formed in Seattle and were active in the early 1980s. There is no direct statement or implication that their hometown was the United States (Seattle being a city in the U.S.), so we cannot confirm this claim based on the given information."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The provided context does not specify the hometown of We the Living (band), but it mentions that they formed in Seattle, Washington, USA.",
+            "category": 4
+        },
+        "gemma2": {
+            "reason": "The text repeatedly states the band formed in Seattle, Washington.",
+            "category": 4
+        },
+        "qwen2.5": {
+            "reason": "The band mentioned, The Living, formed in Seattle, which is a city in the United States. However, forming in a specific location does not necessarily mean the band's hometown is defined solely by that place; their hometown can be considered to be within the broader context of the area or even the country they identify with. Given that Seattle is part of the United States, it would be more accurate to say The Living are an American band rather than stating their hometown is specifically the United States.",
+            "category": 4
+        }
+    }
+}

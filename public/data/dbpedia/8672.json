@@ -1,0 +1,102 @@
+{
+    "subject": "resource/Michael_Caine",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "Michael Caine",
+    "human_readable": "Michael Caine's label is Michael Caine.",
+    "questions": [
+        {
+            "score": 0.9704563021659851,
+            "question": "What is Michael Caine's label?"
+        },
+        {
+            "score": 0.8914815783500671,
+            "question": "Who is Michael Caine?"
+        },
+        {
+            "score": 0.8027347922325134,
+            "question": "Is Michael Caine a known figure?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Michael Caine's label is Michael Caine.",
+            "html": "dbpedia_8672_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is Michael Caine?",
+            "html": "dbpedia_8672_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Michael Caine's label?",
+            "html": "dbpedia_8672_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8672_100.txt"
+        },
+        {
+            "file_id": "dbpedia_8672_115.txt"
+        },
+        {
+            "file_id": "dbpedia_8672_120.txt"
+        },
+        {
+            "file_id": "dbpedia_8672_132.txt"
+        },
+        {
+            "file_id": "dbpedia_8672_20.txt"
+        },
+        {
+            "file_id": "dbpedia_8672_23.txt"
+        },
+        {
+            "file_id": "dbpedia_8672_27.txt"
+        },
+        {
+            "file_id": "dbpedia_8672_42.txt"
+        },
+        {
+            "file_id": "dbpedia_8672_54.txt"
+        },
+        {
+            "file_id": "dbpedia_8672_64.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple \"Michael Caine's label is Michael Caine\" according to the provided context information:\n\n{\n  \"output\": \"no\"\n}\n\nThe reason for this answer is that while all the documents mention Michael Caine as his own name, one document (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8672/re-ranker-msmarco/119.txt) and another (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8672/re-ranker-msmarco/54.txt) mention that his real name is Maurice Joseph Micklewhite Jr., which implies that \"Michael Caine\" is a stage name or nickname, rather than the only label for him."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information about Michael Caine\u2019s real name and his career, including references to his birth name Maurice Joseph Micklewhite Jr. Therefore, the triple stating that Michael Caine's label is Michael Caine is supported by the provided context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {'output': 'yes'}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "Michael Caine was born as Maurice Joseph Micklewhite Jr. and not just \"Michael Caine\". The name provided does not match his birth name, which makes the label incorrect.",
+            "category": 2
+        }
+    }
+}

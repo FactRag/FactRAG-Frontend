@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Questacon",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:National_museums_of_Australia",
+    "human_readable": "The subject of Questacon is National museums of Australia.",
+    "questions": [
+        {
+            "score": 0.8763909935951233,
+            "question": "Are there other national museums in Australia besides Questacon?"
+        },
+        {
+            "score": 0.658841609954834,
+            "question": "What role do national museums play in Australia?"
+        },
+        {
+            "score": 0.5540715456008911,
+            "question": "What type of institution is Questacon?"
+        },
+        {
+            "score": 0.5439109206199646,
+            "question": "How does Questacon contribute to Australian culture and education?"
+        },
+        {
+            "score": 0.4786384701728821,
+            "question": "What is the main purpose of Questacon?"
+        },
+        {
+            "score": 0.4278392493724823,
+            "question": "What kind of exhibits would you likely find at Questacon?"
+        },
+        {
+            "score": 0.41085004806518555,
+            "question": "What makes Questacon unique compared to other museums?"
+        },
+        {
+            "score": 0.2469489872455597,
+            "question": "How does Questacon engage with the local community?"
+        },
+        {
+            "score": 0.22333720326423645,
+            "question": "Who are the target audiences for Questacon?"
+        },
+        {
+            "score": 0.21048447489738464,
+            "question": "Is Questacon part of a larger network or organization?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The subject of Questacon is National museums of Australia.",
+            "html": "dbpedia_2378_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who are the target audiences for Questacon?",
+            "html": "dbpedia_2378_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How does Questacon engage with the local community?",
+            "html": "dbpedia_2378_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What makes Questacon unique compared to other museums?",
+            "html": "dbpedia_2378_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2378_16.txt"
+        },
+        {
+            "file_id": "dbpedia_2378_17.txt"
+        },
+        {
+            "file_id": "dbpedia_2378_19.txt"
+        },
+        {
+            "file_id": "dbpedia_2378_24.txt"
+        },
+        {
+            "file_id": "dbpedia_2378_44.txt"
+        },
+        {
+            "file_id": "dbpedia_2378_45.txt"
+        },
+        {
+            "file_id": "dbpedia_2378_54.txt"
+        },
+        {
+            "file_id": "dbpedia_2378_6.txt"
+        },
+        {
+            "file_id": "dbpedia_2378_78.txt"
+        },
+        {
+            "file_id": "dbpedia_2378_82.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the context information, here's my evaluation:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe documents contain information about Questacon being a science museum and technology centre in Canberra, but there is no mention or evidence to suggest that it is a national museum of Australia. The text explicitly states that it is a \"national science and technology centre\", not a national museum."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information about Questacon as a national science and technology centre located in Canberra, which aligns with the statement that its subject is related to national museums of Australia."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Questacon is a science and technology center, not a national museum.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "the provided text describes Questacon as a science museum focused on interactive learning about science and technology, not a general national museum encompassing all aspects of Australian history and culture.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because the subject of Questacon is National Science and Technology Centres, not national museums of Australia.",
+            "category": 2
+        }
+    }
+}
