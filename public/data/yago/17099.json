@@ -116,22 +116,27 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "There is no mention of M\u00e1rton Keleti directing a film called \"Two Confessions\" within the provided context information.",
+            "category": 3
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "There is no mention of M\u00e1rton Keleti directing a film called \"Two Confessions\" anywhere in the provided context information.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "The context information does not mention M\u00e1rton Keleti directing \"Two Confessions.\" Instead, it provides details about his success with films like \"A tizedes \u00e9s a t\u00f6bbiek\" (The Corporal and the Others, 1965), \"A ver\u00e9b is mad\u00e1r\" (Sparrows Are Birds Too, 1968), and \"H\u00e9t tonna doll\u00e1r\" (Seven Tons of Dollar, 1973). There is no reference to \"Two Confessions,\" suggesting this film was not directed by M\u00e1rton Keleti according to the given information.",
+            "category": 3
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

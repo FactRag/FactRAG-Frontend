@@ -9,9 +9,13 @@ export const calculateModelStats = (responses: Record<string, ModelResponse>) =>
 
   Object.values(responses).forEach(response => {
     const ans = response.short_ans
-    if (ans === 1) counts.verified++
-    else if (ans === 0) counts.notVerified++
-    else counts.noAnswer++
+    if (ans === 1) {
+      counts.verified++
+    } else if (ans === 0) {
+      counts.notVerified++
+    } else {
+      counts.noAnswer++
+    }
   })
 
   const totalResponses = Object.keys(responses).length - counts.noAnswer

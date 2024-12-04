@@ -116,22 +116,27 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Information provided states Raquel Torres and Jon Hall are divorced.",
+            "category": 0
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Point 2 mentions that Jon Hall and his second wife, actress Raquel Torres, were married after their Las Vegas wedding on February 14, 1959, which implies that they were already married to each other before this event.",
+            "category": 0
+        },
+        "qwen2.5": {
+            "reason": "The context clearly states that the image shows Raquel Torres after her wedding to Jon Hall, indicating they were married on February 14, 1959. Additionally, information provided later specifies that Raquel Torres and Jon Hall are divorced, contradicting the statement that she is currently married to him.",
+            "category": 0
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

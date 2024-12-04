@@ -116,22 +116,29 @@
     },
     "need_tiebreaker": true,
     "tiebreakers_responses": {
-        "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "mistral-nemo": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
         },
-        "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
         }
     },
-    "final_decision": "true",
-    "actual_decision": "true",
+    "final_decision": -1,
+    "actual_decision": 1,
     "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Gloria Marsh (from the context) was married to Adam Chandler Sr., Dimitri Marick, and Nathaniel Price Paschall, but not at the same time. Dimitri Marick's name does appear in the context, but it is associated with being her ex-husband, not her current spouse.",
+            "category": 0
+        },
+        "gemma2": {
+            "reason": "Several pieces of context state Gloria was married to Adam Chandler Sr. and Dimitri Marick, but both marriages ended in divorce.",
+            "category": 0
+        }
     }
 }

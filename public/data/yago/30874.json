@@ -116,22 +116,31 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Jennifer Rappaport does not have a child named Joey Buchanan. Rather, Joey Buchanan is the brother of Jennifer Rappaport.",
+            "category": 0
+        },
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Jennifer Rappaport divorced Joey Buchanan and they had children together, but the children are not named Joey.",
+            "category": 0
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "The claim is wrong because Jennifer Rappaport has a child named Megan Rappaport, but another character, not her, has a child named Joey Buchanan.",
+            "category": 0
+        },
+        "qwen2.5": {
+            "reason": "Jennifer Rappaport's family relationships do not include a child named Joey Buchanan. The context provided lists her past marriages to Rex Balsom and Joseph \"Joey\" Buchanan, but does not indicate that she had any children with them or any other person by the name of Joey Buchanan.",
+            "category": 0
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

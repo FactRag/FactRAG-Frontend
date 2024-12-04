@@ -116,22 +116,27 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
-        "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
-        },
-        "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
-        }
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
     },
-    "final_decision": "true",
-    "actual_decision": "true",
+    "final_decision": 0,
+    "actual_decision": 1,
     "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Kelly Cramer's marital status as of the provided context information is \"dating\" Joey Buchanan, not married.",
+            "category": 0
+        },
+        "gemma2": {
+            "reason": "Multiple pieces of text state their relationship has ended in divorce.",
+            "category": 0
+        },
+        "qwen2.5": {
+            "reason": "Kelly Cramer has a history of being married to Joey Buchanan but their marriage was divorced. The context provided mentions past marriages between Kelly and Joey, indicating that they are no longer married.",
+            "category": 0
+        }
     }
 }

@@ -116,22 +116,27 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Context information states Phillip Spaulding had an affair with Beth Raines, and the child she was carrying was his. It also states that Harley Cooper was married to Alan-Michael Spaulding.",
+            "category": 0
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "the context information states that Phillip Spaulding bought a house called Pharley's House with his wife Harley, which implies they were married, but it also mentions that Alan-Michael and Harley planned to marry in 1988.",
+            "category": 0
+        },
+        "qwen2.5": {
+            "reason": "The context clearly states that Harley Cooper married Alan-Michael Spaulding, not Phillip Spalding. Additionally, there are mentions of a relationship between Phillip and Harley, but it does not indicate they were married.",
+            "category": 0
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

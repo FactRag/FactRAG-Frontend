@@ -116,22 +116,29 @@
     },
     "need_tiebreaker": true,
     "tiebreakers_responses": {
-        "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "mistral-nemo": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
         },
-        "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
         }
     },
-    "final_decision": "true",
-    "actual_decision": "true",
+    "final_decision": -1,
+    "actual_decision": 1,
     "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "Vittoria married Domenico Augimeri in 1953.",
+            "category": 0
+        },
+        "qwen2.5": {
+            "reason": "The context states that Maria Augimeri married Domenico Augimeri in 1953, not Odoardo Di Santo.",
+            "category": 0
+        }
     }
 }

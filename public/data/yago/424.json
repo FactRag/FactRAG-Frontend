@@ -116,22 +116,31 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Grave Danger was directed by Quentin Tarantino, not created by him.",
+            "category": 3
+        },
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "The provided text explicitly states that Quentin Tarantino directed the CSI two-parter \"Grave Danger\".",
+            "category": 3
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "The provided context information confirms Quentin Tarantino as the creator of Grave Danger, a two-part episode of CSI.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "The context information does not state that Quentin Tarantino created Grave Danger. It mentions that he directed the CSI Season 5 two-parter, \"Grave Danger,\" but did not create it.",
+            "category": 3
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

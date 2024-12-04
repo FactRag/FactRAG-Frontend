@@ -116,22 +116,31 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The film _The Flight of Dragons was produced and directed by Jules Bass and Arthur Rankin Jr., not just Arthur Rankin Jr. as stated in the claim.",
+            "category": 3
+        },
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Information from point 1 states \"loosely combining the speculative natural history book of the same name (1979) by Peter Dickinson with the novel The Dragon and the George (1976) by Gordon R. Dickson\", which does not mention Arthur Rankin Jr. as a writer or director.",
+            "category": 3
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "The text states \"Arthur Rankin, Jr., Jules Bass directed\" the film _The Flight of Dragons.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "The context information clearly states that \"The Flight of Dragons\" was produced and directed by Jules Bass and Arthur Rankin, Jr., not just Arthur Rankin.",
+            "category": 3
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

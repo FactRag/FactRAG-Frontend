@@ -116,22 +116,31 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Arthur Rankin Jr. is the producer of the special, but he is not named as \"Arthur Rankin produced _The Mad Mad Mad Comedians_\". Instead, it's mentioned that the special was produced by \"Rankin/Bass Productions,\" which is the company founded by him and Jules Bass.",
+            "category": 3
+        },
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Information provided states Arthur Rankin Jr. co-founded Rankin/Bass with Jules Bass and they worked closely together directing and producing many projects.   It also lists him as a director on _The Mad, Mad, Mad Comedians_.",
+            "category": 3
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "There is no information in the context that links Arthur Rankin to The Mad, Mad, Mad Comedians.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "The context information indicates that Arthur Rankin, Jr. was a co-founder of the production company Rankin/Bass with Jules Bass and was involved in producing various animated specials, but there is no direct mention of him personally producing \"The Mad, Mad, Mad Comedians.\" The information provided focuses on his roles as director, producer, and writer for Rankin/Bass Productions, without specifying personal production credits for this particular special.",
+            "category": 3
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

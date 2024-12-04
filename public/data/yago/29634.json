@@ -116,22 +116,31 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Todd Manning does not have a child named Blair Cramer. Todd Manning is the father of Starr Manning, but Starr's mother is Blair Cramer, not Blair herself.",
+            "category": 0
+        },
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Blair Cramer is Todd Manning's child's mother, not his child.",
+            "category": 0
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Blair Cramer is actually Todd Manning's wife, not his child.",
+            "category": 0
+        },
+        "qwen2.5": {
+            "reason": "Todd Manning's children are named John and Starr Manning, not Blair Cramer.",
+            "category": 0
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

@@ -116,22 +116,29 @@
     },
     "need_tiebreaker": true,
     "tiebreakers_responses": {
-        "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "mistral-nemo": {
+            "short_ans": 0,
+            "full_ans": "{\"output\": \"no\"}\n\nExplanation:\nWhile the documents do mention that Gaby Dellal was previously married to Eric Fellner, they also state that they are now divorced (as per file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/yago_18598/re-ranker-msmarco/72.txt). Therefore, the statement \"Gaby Dellal is married to Eric Fellner\" is currently incorrect."
         },
-        "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
         }
     },
-    "final_decision": "true",
-    "actual_decision": "true",
+    "final_decision": -1,
+    "actual_decision": 1,
     "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Several sources state that Gaby Dellal and Eric Fellner are divorced.",
+            "category": 0
+        },
+        "qwen2.5": {
+            "reason": "Gaby Dellal is currently recorded as being possibly single, and she was previously married to Eric Fellner who are now divorced.",
+            "category": 0
+        }
     }
 }

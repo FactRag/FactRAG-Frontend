@@ -116,22 +116,29 @@
     },
     "need_tiebreaker": true,
     "tiebreakers_responses": {
-        "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "mistral-nemo": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
         },
-        "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
         }
     },
-    "final_decision": "true",
-    "actual_decision": "true",
+    "final_decision": -1,
+    "actual_decision": 1,
     "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "The provided text states that Warren Beatty was the *producer* of Love Affair, not the creator.  Glenn Gordon Caron directed the film, and Robert Towne and Beatty wrote the screenplay.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "Warren Beatty produced the film but did not direct or write the screenplay. Love Affair was directed by Glenn Gordon Caron and written by Robert Towne and Beatty, based on a 1939 screenplay.",
+            "category": 3
+        }
     }
 }

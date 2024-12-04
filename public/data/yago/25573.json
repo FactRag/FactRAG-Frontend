@@ -116,22 +116,31 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Gloria Marsh is a fictional character on the soap opera All My Children, and Adam Chandler does not have her as his child. Instead, she is the daughter of Adam Chandler Sr. (Adam's father-in-law) with another woman.",
+            "category": 0
+        },
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Gloria Marsh is listed as Adam Chandler's ex-wife, not his child.",
+            "category": 0
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "The context information states that Gloria Marsh (formerly Chandler & Marick) is a fictional character on the ABC daytime soap opera All My Children, and Adam Chandler Sr. is her former husband, not the father of one of her children as implied by the statement \"Adam Chandler has a child named Gloria Marsh\".",
+            "category": 0
+        },
+        "qwen2.5": {
+            "reason": "The context does not mention Adam Chandler having a child named Gloria Marsh. Instead, Gloria Marsh is described as Adam's ex-wife (divorced in 1993) and later as Adam's daughter-in-law through her marriage to his son Adam \"JR\" Chandler, Jr. There is no information suggesting that Gloria Marsh is Adam's biological child.",
+            "category": 0
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

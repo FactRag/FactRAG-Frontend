@@ -116,22 +116,29 @@
     },
     "need_tiebreaker": true,
     "tiebreakers_responses": {
-        "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "mistral-nemo": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\nThe documents mention that David Gest and Liza Minnelli were married, but they also state that they separated in 2003. Therefore, the statement \"Liza Minnelli is married to David Gest\" is not supported by the provided information at the time of writing these documents (in April 2016)."
         },
-        "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
         }
     },
-    "final_decision": "true",
-    "actual_decision": "true",
+    "final_decision": -1,
+    "actual_decision": 1,
     "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Multiple sources state that Gest and Minnelli were married but separated in 2003.",
+            "category": 0
+        },
+        "qwen2.5": {
+            "reason": "David Gest was briefly married to Liza Minnelli from 2002 to 2003, but they separated the following year, and thus were not married at the time of his death.",
+            "category": 0
+        }
     }
 }

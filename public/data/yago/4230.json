@@ -116,22 +116,29 @@
     },
     "need_tiebreaker": true,
     "tiebreakers_responses": {
-        "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "mistral-nemo": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
         },
-        "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
         }
     },
-    "final_decision": "true",
-    "actual_decision": "true",
+    "final_decision": -1,
+    "actual_decision": 1,
     "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Terry Farrell, the actress, was married to Brian Baker from 2002 to 2015. However, according to the context information provided, she is currently married to Adam Nimoy as of March 28, 2023 (according to the dates in the text).",
+            "category": 0
+        },
+        "gemma2": {
+            "reason": "Multiple sources state Terry Farrell retired from acting to focus on her family after marrying actor Brian Baker, but later divorced him.",
+            "category": 0
+        }
     }
 }

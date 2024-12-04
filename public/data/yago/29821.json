@@ -116,22 +116,29 @@
     },
     "need_tiebreaker": true,
     "tiebreakers_responses": {
-        "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "mistral-nemo": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
         },
-        "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nThe documents mention that Padma Lakshmi was married to Salman Rushdie, but they also state that the couple got divorced. Therefore, at the time of the document creation, Padma Lakshmi and Salman Rushdie are no longer married."
         }
     },
-    "final_decision": "true",
-    "actual_decision": "true",
+    "final_decision": -1,
+    "actual_decision": 1,
     "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Multiple sources state they are divorced.",
+            "category": 0
+        },
+        "llama3.1": {
+            "reason": "the context information shows multiple sources stating different marriage dates and circumstances for Padma Lakshmi and Salman Rushdie, indicating inconsistencies and contradictions.",
+            "category": 0
+        }
     }
 }

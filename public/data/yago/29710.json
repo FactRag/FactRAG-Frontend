@@ -116,22 +116,27 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "It states Vajiralongkorn is married to Soamsawali Kitiyakara, but the text says their marriage lasted from 1977 to 1993 and ended in divorce.",
+            "category": 0
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Soamsavali Kitiyakara was already divorced by Vajiralongkorn when the information about Suthida, his fourth wife, was provided.",
+            "category": 0
+        },
+        "qwen2.5": {
+            "reason": "Soamsawali Kitiyakara divorced King Vajiralongkorn in 1993, and he has been married to Suthida since May 2019.",
+            "category": 0
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

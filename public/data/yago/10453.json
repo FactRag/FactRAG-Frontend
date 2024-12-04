@@ -116,22 +116,27 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "The provided text states that Arthur Kent White is the son of Alma White and Kent White. It also mentions census records detailing Arthur Kent White's family, including his parents and siblings. There is no mention of Kathleen Merrell White in any of the provided context.",
+            "category": 0
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "there is no mention of Kathleen Merrell White being married to Arthur Kent White or even existing in the provided context information.",
+            "category": 0
+        },
+        "qwen2.5": {
+            "reason": "The context information does not mention Arthur Kent White being married to anyone named Kathleen Merrell White. It only states that he had a mother, Alma White, and two sons, Ray Bridwell White and Arthur Kent White. There is no information provided about his marital status or any spouse named Kathleen Merrell White.",
+            "category": 0
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

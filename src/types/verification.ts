@@ -9,9 +9,11 @@ export interface VerificationData {
   selected_docs: SelectedDoc[];
   responses: Record<string, ModelResponse>;
   need_tiebreaker: boolean;
-  tiebreakers_responses:Record<string, ModelResponse>;
-  final_decision: string;
+  tiebreakers_responses: Record<string, ModelResponse>;
+  final_decision: number;
+  actual_decision: number;
   analysis: Analysis;
+  errors: Record<string, ErrorAnalysis>;
 }
 
 
@@ -35,12 +37,13 @@ export interface ModelResponse {
 }
 
 export interface Analysis {
-  error_category: string;
-  error_detail: string;
-  category: string;
   stratum: string;
   topic: string;
-  error_reason?: string;
+}
+
+export interface ErrorAnalysis {
+  category: number;
+  reason: string;
 }
 
 export interface ProcessStep {

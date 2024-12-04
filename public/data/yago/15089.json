@@ -116,22 +116,31 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "There is no information provided in the context that suggests Joseph Warder lives in Jeffersonville, Indiana.",
+            "category": 2
+        },
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "There is a photo of a statue at Warder Park in Jeffersonville, Indiana, but none of the provided context information mentions Joseph Warder living there.",
+            "category": 2
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "I couldn't find any information in the context that confirms Joseph Warder lives in Jeffersonville, Indiana. In fact, context 5 mentions a \"Statue at Warder Park\" but doesn't specify that it belongs to or represents Joseph Warder specifically, and there's no mention of him living in Jeffersonville, Indiana.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information does not mention Joseph Warder living in Jeffersonville, Indiana. The only relevant information provided is about a statue at Warder Park in Jeffersonville, Indiana, which likely commemorates the subject but does not indicate that Joseph Warder himself lived there.",
+            "category": 2
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

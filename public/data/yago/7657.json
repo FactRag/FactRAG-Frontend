@@ -116,22 +116,27 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The context information states that Zack Morris and Kelly Kapowski were married for 27 years, but later in the same context, Peter Engel (the show's executive producer) mentions that they probably wouldn't have stayed together and would be married to someone else. This indicates that their marriage ended, thus contradicting the initial claim of them being currently married.",
+            "category": 0
+        },
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Multiple sources state that Saved by the Bell executive producer Peter Engel believes Zack and Kelly would likely be divorced.",
+            "category": 0
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "the executive producer of Saved by the Bell stated that Zack and Kelly would likely be divorced, not married.",
+            "category": 0
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

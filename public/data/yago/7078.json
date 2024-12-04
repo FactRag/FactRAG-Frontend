@@ -116,22 +116,27 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Multiple sources state that Victor Salva wrote and directed Clownhouse, but not that he produced it.",
+            "category": 3
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "According to context information 3, Victor Salva was the writer-director of Clownhouse, not its producer.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "The context information clearly states that Victor Salva wrote and directed Clownhouse, but did not produce it. It mentions Robin Mortarotti as the producer.",
+            "category": 3
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

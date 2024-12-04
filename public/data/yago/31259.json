@@ -116,22 +116,27 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
-        "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Archduchess Maria Theresa of Austria (1862\u20131933) was born in 1862, but the Archduke Charles Stephen of Austria (5 September 1860 \u2013 7 April 1933) she is allegedly married to was born in 1860. Therefore, they cannot have been married since Maria Theresa was born after Charles Stephen.",
+            "category": 0
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Archduchess Maria Theresa of Austria (1862\u20131933) has a different spouse mentioned in the provided context information, which states that she married Archduke Charles Stephen's father, Archduke Karl Ferdinand of Austria, and later became the wife of Archduke Albrecht of Austria.",
+            "category": 0
+        },
+        "qwen2.5": {
+            "reason": "Archduchess Maria Theresa of Austria was the one who married Archduke Charles Stephen of Austria, not the other way around.",
+            "category": 0
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

@@ -116,22 +116,31 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The claim is wrong because Arthur Rankin did not produce _The Daydreamer Jr_. He produced _The Daydreamer_ as part of his work with Jules Bass under the company Rankin/Bass, but there's no evidence or information in the provided context to suggest that he produced a film titled _The Daydreamer Jr_.",
+            "category": 3
+        },
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "The provided context states Arthur Rankin co-produced  _The Daydreamer_ , not _The Daydreamer Jr._",
+            "category": 3
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "The context information only mentions a feature film called \"The Daydreamer\", without any reference to \"_The Daydreamer Jr_.\" being produced by Arthur Rankin.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "Arthur Rankin is noted to be the son of actor Arthur Rankin and a founder of Videocraft International with Jules Bass, not the producer of _The Daydreamer Jr_. Furthermore, there is no information provided about him producing _The Daydreamer Jr_, which suggests this claim is incorrect based on the given context.",
+            "category": 3
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

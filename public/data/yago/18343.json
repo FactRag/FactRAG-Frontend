@@ -116,22 +116,31 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Siva Selliah's place of death was not mentioned in the provided context information. While he was born in Colombo, there's no evidence to suggest that he died there as well.",
+            "category": 2
+        },
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "The provided context states Justice Siva Selliah was born in Colombo and educated there, but it doesn't mention where he died.",
+            "category": 2
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "the context information states that Justice Siva Selliah was born in Colombo and died at the age of 72, but there is no mention of him dying in Colombo.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information provided does not mention anything about Siva Selliah's place of death. Given the details, he died in 1997 but there is no specific information indicating that his death occurred in Colombo. Therefore, without additional evidence supporting this claim, it cannot be considered correct.",
+            "category": 2
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

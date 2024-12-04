@@ -116,22 +116,31 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "There is no information provided in the context indicating that Luis Bay\u00f3n Herrera produced Jettatore.",
+            "category": 3
+        },
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "None of the provided text mentions Luis Bay\u00f3n Herrera producing any films, only directing and writing.",
+            "category": 3
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "There is no mention of Luis Bay\u00f3n Herrera being involved in the production of a film called \"Jettatore\" in any of the provided context information.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "There is no mention of Luis Bay\u00f3n Herrera producing any film titled \"Jettatore\" in the provided context. The information focuses on his work as a Spanish film director and screenwriter in Argentine and Cuban productions during the 1940s and 1950s, but does not include any reference to a film with the title \"Jettatore.\"",
+            "category": 3
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

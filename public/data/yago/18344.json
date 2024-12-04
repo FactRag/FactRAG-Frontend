@@ -116,22 +116,27 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
-        "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Siva Selliah is a person mentioned in the context, but no information suggests that they currently reside or have ever lived in Colombo.",
+            "category": 2
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "There is no information provided about Siva Selliah's current residence or location of work, but the context suggests that his birth, education, and professional affiliations are all connected to Colombo. However, this does not necessarily imply that he still resides there.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information does not mention Siva Selliah living in Colombo after his birth. While he was born there to a stockbroker, the provided details do not indicate where he lived during or after his judicial career.",
+            "category": 2
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

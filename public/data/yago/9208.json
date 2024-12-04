@@ -116,22 +116,27 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "None of the provided context mentions Emilio Fern\u00e1ndez directing a film called \"Rosanna\".",
+            "category": 3
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "The information provided does not mention Emilio Fern\u00e1ndez directing the film \"Rosanna\", but rather mentions a vintage postcard by Soberanas (Sobe), no. 495, with publicity still for the film \"La red/Rosanna\" starring Emilio Fern\u00e1ndez in 1953.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "The context information mentions Emilio \"El Indio\" Fern\u00e1ndez as the director of the film Maria Candelaria, not Rosanna. There is no information provided about him directing a film called Rosanna.",
+            "category": 3
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

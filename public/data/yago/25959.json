@@ -116,22 +116,33 @@
     },
     "need_tiebreaker": true,
     "tiebreakers_responses": {
-        "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "mistral-nemo": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
         },
-        "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
         }
     },
-    "final_decision": "true",
-    "actual_decision": "true",
+    "final_decision": -1,
+    "actual_decision": 1,
     "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Natalia Rivera Aitoro was married to Augustus \"Gus\" Aitoro (dissolved) [2008] before Gus died, but the character Gus Aitoro died in a motorcycle accident (as per context information) and hence cannot be her current spouse.",
+            "category": 0
+        },
+        "gemma2": {
+            "reason": "It states Natalia Rivera Aitoro is married to Gus Aitoro, but context 3 says their marriage was dissolved in 2008.",
+            "category": 0
+        },
+        "llama3.1": {
+            "reason": "Gus died in a motorcycle accident before marrying Natalia.",
+            "category": 0
+        }
     }
 }

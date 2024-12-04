@@ -116,22 +116,31 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "There is no information in the context suggesting that Amy Leslie is married to Frank Buck, the animal collector.",
+            "category": 0
+        },
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "There is no mention of Amy Leslie being married to Frank Buck in the provided context information.",
+            "category": 0
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "The claim is wrong because there is no information provided to support the existence of a person named Frank Buck as Amy Leslie's spouse, nor any context that suggests she has ever been associated with him.",
+            "category": 0
+        },
+        "qwen2.5": {
+            "reason": "There is no information provided about Amy Leslie being married to Frank Buck, the animal collector. The given context only mentions her marriage to Jack Leslie and does not include any details about a marriage to Frank Buck.",
+            "category": 0
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

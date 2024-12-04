@@ -116,22 +116,27 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "All provided texts state that Salman Rushdie and Padma Lakshmi are divorcing.",
+            "category": 0
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Salman Rushdie has reportedly been married to four women, Padma Lakshmi was his fourth wife, but they got divorced.",
+            "category": 0
+        },
+        "qwen2.5": {
+            "reason": "The provided context indicates that Salman Rushdie and Padma Lakshmi are divorcing after less than three years of marriage, with Padma Lakshmi requesting the split. Therefore, they are not currently married but in the process of ending their marriage.",
+            "category": 0
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

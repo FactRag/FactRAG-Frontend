@@ -116,22 +116,27 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Olivia Spencer is Emma Spaulding's mother, not Phillip Spaulding's child.",
+            "category": 0
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "The claim is wrong because Phillip Spaulding's child's mother is actually Phillip Spaulding himself fathered with Olivia Spencer, not the other way around.",
+            "category": 0
+        },
+        "qwen2.5": {
+            "reason": "The context states that Olivia Spencer is Phillip Spaulding's mother, not his child. Emma Spaulding was conceived from a romance between Olivia Spencer and Phillip Spaulding, making Olivia the mother and Phillip the father of Emma.",
+            "category": 0
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

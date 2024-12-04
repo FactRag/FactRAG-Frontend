@@ -116,22 +116,29 @@
     },
     "need_tiebreaker": true,
     "tiebreakers_responses": {
-        "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "mistral-nemo": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
         },
-        "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
         }
     },
-    "final_decision": "true",
-    "actual_decision": "true",
+    "final_decision": -1,
+    "actual_decision": 1,
     "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "Princess Nobuko (not Tomohito) is married to Prince Tomohito of Mikasa.",
+            "category": 0
+        },
+        "qwen2.5": {
+            "reason": "Princess Tomohito of Mikasa and Prince Tomohito of Mikasa are different individuals. The context information clearly states that Princess Tomohito of Mikasa married Nobuko As\u014d, while Prince Tomohito of Mikasa was her husband, making them spouses, not the same person.",
+            "category": 0
+        }
     }
 }

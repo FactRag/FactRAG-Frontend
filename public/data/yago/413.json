@@ -116,22 +116,31 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "There is no evidence in the provided context to suggest that Quentin Tarantino acted in the movie My Best Friend's Birthday. Instead, it states that the film stars a motley collection of Tarantino\u2019s video store co-workers and friends from acting class, implying they were all extras or supporting characters, not the main actor like Tarantino.",
+            "category": 3
+        },
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Several sources state the film starred Tarantino's video store co-workers and acting class friends.",
+            "category": 3
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "There is no mention of Quentin Tarantino acting in the movie My Best Friend's Birthday, but rather that he wrote and directed it.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "The context information does not mention Quentin Tarantino acting in the movie. It only states that he wrote, directed, and co-starred with friends from his video store and acting class.",
+            "category": 3
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

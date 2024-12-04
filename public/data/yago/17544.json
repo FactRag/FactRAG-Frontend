@@ -116,22 +116,31 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Masud Ahmad belongs to the Ahmadiyya sect, who are not allowed to live or practice Islam in Pakistan. The information provided states that he lives in Lahore, not Islamabad.",
+            "category": 2
+        },
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Several news articles mention Masud Ahmad living in Glasgow with his siblings.  Additionally, the articles state he ran a homeopathy clinic in Lahore and was arrested there.",
+            "category": 2
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "there is no information provided about Masud Ahmad living in Islamabad. The context information mentions Lahore, but not Islamabad.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information does not mention Masud Ahmad living in Islamabad. All details provided place him in Lahore, where he was tricked into reading from the Koran and faces blasphemy charges.",
+            "category": 2
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

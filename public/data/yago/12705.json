@@ -116,22 +116,27 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
-        "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
-        },
-        "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
-        }
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
     },
-    "final_decision": "true",
-    "actual_decision": "true",
+    "final_decision": 0,
+    "actual_decision": 1,
     "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "There is no information provided in the context that indicates that Luis Bay\u00f3n Herrera directed the film Jettatore.",
+            "category": 3
+        },
+        "gemma2": {
+            "reason": "None of the provided context mentions Luis Bay\u00f3n Herrera directing a film called \"Jettatore\".",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "There is no mention of a film named \"Jettatore\" directed by Luis Bay\u00f3n Herrera in the provided context information.",
+            "category": 3
+        }
     }
 }

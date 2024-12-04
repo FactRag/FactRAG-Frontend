@@ -116,22 +116,31 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Masud Ahmad, the individual mentioned in the context, has not been explicitly stated to reside in Islamabad Capital Territory. Instead, he appears to be from Pakistan and currently lives in Glasgow (UK) according to the text.",
+            "category": 2
+        },
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Multiple sources state he lives in Glasgow with his family.",
+            "category": 2
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Masud Ahmad does not live in Islamabad Capital Territory.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information does not mention Masud Ahmad living in Islamabad Capital Territory. Instead, it discusses his work as a theoretical physicist and his involvement with the atomic bomb project in the 1970s, as well as his experiences facing blasphemy charges in Pakistan. There is no evidence provided to support the claim that he lives in Islamabad.",
+            "category": 2
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

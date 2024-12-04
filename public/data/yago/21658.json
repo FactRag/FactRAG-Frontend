@@ -116,22 +116,31 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "King Vidor did not direct the film Love Never Dies (1921). There is no information provided in the context that indicates he directed this film.",
+            "category": 3
+        },
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "None of the provided context information mentions King Vidor directing a film titled \"Love Never Dies\" (1921).",
+            "category": 3
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "There is no mention of King Vidor directing the film Love Never Dies (1921) in any of the provided context information, which contradicts the existence of such a fact.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "There is no mention of King Vidor directing a film titled \"Love Never Dies\" (1921) in the provided context. The films listed are either silent or sound movies directed by Vidor, with the earliest being \"The Big Parade\" (1925).",
+            "category": 3
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

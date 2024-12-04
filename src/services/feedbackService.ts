@@ -19,7 +19,7 @@ export interface FeedbackSubmission {
 }
 
 class FeedbackService {
-  private baseUrl: string
+  private readonly baseUrl: string
 
   constructor() {
     this.baseUrl = API_BASE_URL

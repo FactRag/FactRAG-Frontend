@@ -116,22 +116,27 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Several texts mention Tarantino as the writer of the film, not the producer.",
+            "category": 3
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "There is no mention of Quentin Tarantino producing From Dusk Till Dawn in any of the provided context information, but rather that he wrote the script.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "The context clearly states that From Dusk Till Dawn was written by Quentin Tarantino, not produced by him. While he did collaborate with Robert Rodriguez on the project, production credits would typically go to Rodriguez as the director.",
+            "category": 3
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

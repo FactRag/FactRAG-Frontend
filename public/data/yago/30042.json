@@ -116,22 +116,29 @@
     },
     "need_tiebreaker": true,
     "tiebreakers_responses": {
-        "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "mistral-nemo": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
         },
-        "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n\nThis answer is based on the provided context. Although it's mentioned that Saif Ali Khan was married to Amrita Singh before, and they had two children together (Sara Ali Khan and Ibrahim Ali Khan), it also states that \"they parted ways in 2004\" or \"the couple parted ways in 2004\"."
         }
     },
-    "final_decision": "true",
-    "actual_decision": "true",
+    "final_decision": -1,
+    "actual_decision": 1,
     "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "There are multiple statements indicating Saif Ali Khan was married to Amrita Singh in the past but they separated in 2004.  Kareena Kapoor Khan mentions that Saif was married before and has children with Amrita Singh, implying a past relationship rather than a current one.",
+            "category": 0
+        },
+        "qwen2.5": {
+            "reason": "The context clearly states that Saif Ali Khan was married to Amrita Singh from 1991 until their separation in 2004, after which he married Kareena Kapoor in 2012. Therefore, at the time mentioned in the statement, Saif was not married to Amrita Singh.",
+            "category": 0
+        }
     }
 }

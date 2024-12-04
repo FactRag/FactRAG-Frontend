@@ -116,22 +116,29 @@
     },
     "need_tiebreaker": true,
     "tiebreakers_responses": {
-        "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "mistral-nemo": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
         },
-        "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
         }
     },
-    "final_decision": "true",
-    "actual_decision": "true",
+    "final_decision": -1,
+    "actual_decision": 1,
     "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The Eyes on Cinema clip from 1993 shows Robin Williams talking about how he created the loving, Scottish voice for his character Euphegenia Doubtfire, but it does not imply that he \"created\" Mrs. Doubtfire as a person, rather than just portraying her in the film.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "Robin Williams did not create Mrs. Doubtfire; he portrayed the character of Peter Pan, who takes on the guise of the Scottish nanny Euphegenia Doubtfire as an act to remain a part of his children's lives after a messy divorce. The character and concept were created by Anne Fine in her novel \"Alias Madame Doubtfire,\" which served as the inspiration for the film.",
+            "category": 3
+        }
     }
 }

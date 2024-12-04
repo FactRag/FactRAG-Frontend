@@ -116,22 +116,27 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "It states Riazuddin died in Islamabad and the text mentions his death was little noticed in Pakistan.  If he lived there, one would expect more notice upon his death.",
+            "category": 2
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "The text explicitly states that Riazuddin died in Islamabad, which implies he was a resident or lived there, not the other way around.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information states that Riazuddin died in September 2013 in Islamabad, not that he lived there. There is no mention of him living in the Islamabad Capital Territory specifically.",
+            "category": 2
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

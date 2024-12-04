@@ -116,22 +116,29 @@
     },
     "need_tiebreaker": true,
     "tiebreakers_responses": {
-        "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "mistral-nemo": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
         },
-        "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
         }
     },
-    "final_decision": "true",
-    "actual_decision": "true",
+    "final_decision": -1,
+    "actual_decision": 1,
     "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The claim is wrong because Kelly Cramer's marital status was last mentioned as being engaged to Joey Buchanan, but she had previously been married twice (to Kevin Buchanan Sr. and the deceased Drew Buchanan), and her most recent relationship with Joey was stated as \"dating\" [07/2011-present], implying that they were not yet married.",
+            "category": 0
+        },
+        "qwen2.5": {
+            "reason": "Kelly was engaged to Kevin Buchanan Sr. before marrying Joey, and later had a relationship with Max Holden while married to Joey. Additionally, the context explicitly states that Kelly eventually swore off love and romance after Drew and Ian's deaths, agreeing to marry Max instead of Joey.",
+            "category": 0
+        }
     }
 }

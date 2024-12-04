@@ -116,22 +116,29 @@
     },
     "need_tiebreaker": true,
     "tiebreakers_responses": {
-        "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "mistral-nemo": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
         },
-        "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
         }
     },
-    "final_decision": "true",
-    "actual_decision": "true",
+    "final_decision": -1,
+    "actual_decision": 1,
     "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The information states that Pannarai was one of the consorts of Mongkut, but also mentions that her sister, Mom Chao Rampoei Siriwongse, later became Queen Debsirindra, indicating that she had a different marital relationship with Mongkut.",
+            "category": 0
+        },
+        "qwen2.5": {
+            "reason": "Pannarai served as a consort to King Mongkut but was not married to him. The context mentions that Pannarai and her sister became consorts of King Mongkut in 1851, with one of them later becoming Queen Debsirindra.",
+            "category": 0
+        }
     }
 }

@@ -116,22 +116,31 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Harley Cooper has a son named Alan Cooper Spaulding (Zach), not Phillip Spaulding.",
+            "category": 0
+        },
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Phillip Spaulding is Harley Cooper's ex-husband and the father of their son, Alan Cooper Spaulding (nicknamed Zach).",
+            "category": 0
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Harley Cooper's child with Phillip Spaulding was named Alan Cooper Spaulding, not Phillip.",
+            "category": 0
+        },
+        "qwen2.5": {
+            "reason": "The context information clearly states that Alan Cooper Spaulding, not Phillip Spalding, was Harley's son with Phillip Spaulding.",
+            "category": 0
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

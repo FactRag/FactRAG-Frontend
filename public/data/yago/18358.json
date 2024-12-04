@@ -116,22 +116,27 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "The text states Adam Cheng was married to Lydia Shum but then divorced her.  It also says he has a current wife, Koon Jing Wah.",
+            "category": 0
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Lydia Shum was married to Adam Cheng before her death on February 19, 2008. However, the context information states that after her infamous divorce with Adam Cheng, he then married his current wife Koon Jing Wah (officially indicating a separation between Adam and Lydia), making it incorrect to state that Lydia is married to Adam.",
+            "category": 0
+        },
+        "qwen2.5": {
+            "reason": "Lydia Shum was divorced from Adam Cheng before her death, and Joyce Cheng, who is mentioned as their daughter, was born after their divorce.",
+            "category": 0
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

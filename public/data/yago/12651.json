@@ -116,22 +116,27 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Multiple passages state that Clint was married to Victoria Lord and had a relationship with Nora Hanen after Asa's death.",
+            "category": 0
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Clint Buchanan and Nora Hanen start a relationship during the time for the will reading after Asa died, but they don't get married.",
+            "category": 0
+        },
+        "qwen2.5": {
+            "reason": "The context clearly indicates that after Clint Buchanan and Nora Hanen's initial relationship, they began a new one during their time in Texas for the will reading, which \"soon blossomed into love.\" This suggests that their relationship evolved from friends or possibly former partners to a romantic partnership, rather than a marriage.",
+            "category": 0
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

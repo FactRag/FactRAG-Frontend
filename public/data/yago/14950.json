@@ -116,22 +116,31 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "There is no context information indicating that Joe McStravick directed Murphy 771.",
+            "category": -1
+        },
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "There is no mention of Joe McStravick directing Murphy 771 in the provided context.",
+            "category": -1
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Murphy 771 is mentioned as a 2006 Irish crime drama, but there is no indication that Joe McStravick was involved in its production or direction.",
+            "category": -1
+        },
+        "qwen2.5": {
+            "reason": "Murphy 771 is described as a crime drama based on real-life events, and no information about Joe McStravick directing this film is provided. The context focuses on McStravick's work in Film & Television Direction, short films, and his recent role as a 2nd Unit Director on Hope Street (season two), but does not mention him directing Murphy 771.",
+            "category": -1
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

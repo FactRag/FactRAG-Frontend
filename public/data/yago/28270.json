@@ -116,22 +116,29 @@
     },
     "need_tiebreaker": true,
     "tiebreakers_responses": {
-        "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "mistral-nemo": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
         },
-        "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n\nThe documents mention that BMW Films asked Guy Ritchie to direct a short movie as part of The Hire, but they do not state that he created the series."
         }
     },
-    "final_decision": "true",
-    "actual_decision": "true",
+    "final_decision": -1,
+    "actual_decision": 1,
     "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The Hire series of short movies was directed by various directors, not solely Guy Ritchie. Although he did direct one of the episodes (Star), it is incorrect to assert that he created the entire series.",
+            "category": 3
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because The Hire was actually a series of short movies commissioned by BMW Films, where Guy Ritchie directed one of the shorts titled \"Star\" starring Madonna.",
+            "category": 3
+        }
     }
 }

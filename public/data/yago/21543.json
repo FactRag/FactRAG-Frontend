@@ -116,22 +116,27 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Multiple sources state Bruce Willis was married to Demi Moore from 1987 to 2000, and he has since been married to Emma Heming Willis since 2009.",
+            "category": 0
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "The provided context information states that Bruce Willis was married to Demi Moore from 1987 to 2000, but then mentions that he has been married to his wife Emma Heming Willis for a certain number of years since 2009.",
+            "category": 0
+        },
+        "qwen2.5": {
+            "reason": "Bruce Willis has been married to Emma Heming Willis since 2009, not Demi Moore. Although Bruce Willis was previously married to Demi Moore from 1987 to 2000, they divorced and are now just close friends who remain in each other's lives.",
+            "category": 0
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

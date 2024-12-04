@@ -116,22 +116,27 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Multiple pieces of text state David Vickers was married to Dorian Lord, then later left town with her. Other texts mention that they were married by a Buddhist monk and returned to Llanview.   Text also states that David learned he was entitled to the entire fortune per a codicil in Asa's will after his marriage to Dorian.",
+            "category": 0
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "The claim is wrong because the context information provided indicates that Dorian Lord proposed to David Vickers, but he accepted after she had already hired a new campaign manager and was sure to introduce her as \"an out and proud lesbian\" in an episode. This suggests that Dorian's proposal to David may have been motivated by her personal desires rather than any romantic interest in him.",
+            "category": 0
+        },
+        "qwen2.5": {
+            "reason": "The context clearly states that David Vickers married Julie Vickers since May 10, 1986, and mentions he has two children with her. It does not mention any marriage to Dorian Lord.",
+            "category": 0
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

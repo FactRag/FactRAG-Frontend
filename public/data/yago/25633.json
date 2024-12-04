@@ -116,22 +116,19 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
-        "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
-        },
-        "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
-        }
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
     },
-    "final_decision": "true",
-    "actual_decision": "true",
+    "final_decision": 1,
+    "actual_decision": 1,
     "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "La Vengeance d'une femme was actually mentioned as a film of Jacques Doillon, but its release year (1990) is given in the context information which is correct and not denied. However, I evaluate that the fact 'Jacques Doillon created La Vengeance d'une femme.' is wrong compared to the context information 2 where it's stated \"His 1990 film La vengeance d'une femme was entered into the 40th Berlin International Film Festival.\", indicating that it was already existing prior to Doillon making a film with that title in 1990.",
+            "category": 3
+        }
     }
 }

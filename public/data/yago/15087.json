@@ -116,22 +116,31 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Joseph Warder (born October 13, 1825) was born in Logan county, Kentucky, not Jeffersonville, Indiana. This is evident from the context provided.",
+            "category": 2
+        },
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Information provided states Luther F. Warder moved to Jeffersonville, Indiana when he was twenty years old at the start of the Civil War. It also states that Joseph Warder was born in Kentucky and married Ann Thomas a native of Tennessee.",
+            "category": 2
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Joseph Warder (Rev. Joseph W. Warder) was born in Logan county, Kentucky, not Jeffersonville, Indiana.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information states that Joseph W. Warder was born on October 13, 1825, in Logan county, Kentucky, not in Jeffersonville, Indiana.",
+            "category": 2
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

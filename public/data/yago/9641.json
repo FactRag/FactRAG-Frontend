@@ -116,22 +116,29 @@
     },
     "need_tiebreaker": true,
     "tiebreakers_responses": {
-        "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "mistral-nemo": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
         },
-        "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
         }
     },
-    "final_decision": "true",
-    "actual_decision": "true",
+    "final_decision": -1,
+    "actual_decision": 1,
     "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "The text states  \"Bad Karma came next, shot in north London in 1991 which, like Chainsaw Scumfuck, was shot had no discernible budget and was populated by a collection of Chandon\u2019s energetic but talentless friends.\"  It implies that Chandon directed the film.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "The context information does not support the statement that Alex Chandon acted in Bad Karma (1991). It mentions he worked on a number of projects but specifically states his role was as a script advisor for Fags in the Fast Lane (2017) and as Agent Roberts in Witchcraft X: Mistress of the Craft (1998), not as an actor in Bad Karma.",
+            "category": 3
+        }
     }
 }

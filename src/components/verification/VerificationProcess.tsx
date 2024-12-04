@@ -68,7 +68,7 @@ Object: Maria_Feodorovna__Dagmar_of_Denmark_`,
   },
   {
     id: 'finalDecision',
-    title: 'Final Verification',
+    title: 'Analysis',
     description: 'Synthesizing final verification decision'
   }
 ]
@@ -81,26 +81,6 @@ export const VerificationProcess: React.FC<VerificationProcessProps> = ({ data, 
     html: ''
   })
   const { docModal, openDocument, closeDocument } = useDocumentContent()
-
-  const renderFinalAnalysis = () => (
-    <div className='grid grid-cols-1 md:grid-cols-2 gap-4 mb-4'>
-      <Card>
-        <h5 className='text-lg font-bold mb-4'>Error Analysis</h5>
-        <div className='space-y-2'>
-          <p><span className='font-semibold'>Category:</span> {data.analysis.error_category}</p>
-          <p><span className='font-semibold'>Detail:</span> {data.analysis.error_detail}</p>
-        </div>
-      </Card>
-      <Card>
-        <h5 className='text-lg font-bold mb-4'>Classification</h5>
-        <div className='space-y-2'>
-          <p><span className='font-semibold'>Category:</span> {data.analysis.category}</p>
-          <p><span className='font-semibold'>Stratum:</span> {data.analysis.stratum}</p>
-          <p><span className='font-semibold'>Topic:</span> {data.analysis.topic}</p>
-        </div>
-      </Card>
-    </div>
-  )
 
   const renderStepContent = (stepIndex: number) => {
     switch (stepIndex) {
@@ -238,6 +218,17 @@ export const VerificationProcess: React.FC<VerificationProcessProps> = ({ data, 
             <div className='space-y-4'>
               <ModelResponseHeader stats={modelStats} />
 
+              {/*{Actual Decision}*/}
+              <div className='mt-4 p-3 bg-gray-50 rounded-lg'>
+                <div className='text-sm text-gray-600'>
+                  {data.actual_decision === 1 ? (
+                    <span className='font-semibold'>Actual Decision: Verified</span>
+                  ) : (
+                    <span className='font-semibold'>Actual Decision: Not Verified</span>
+                  )}
+                </div>
+              </div>
+
               <div className='space-y-3'>
                 {Object.entries(data.responses).map(([model, response], idx) => (
                   <ModelResponse
@@ -280,14 +271,17 @@ export const VerificationProcess: React.FC<VerificationProcessProps> = ({ data, 
         }
         return
       case 7:
-        return <AnalysisCard analysis={data.analysis}/>
+        return <AnalysisCard analysis={{
+          errors: data.errors,
+          ...data.analysis
+        }}/>
       default:
         return null
     }
   }
 
-  const final_decision_color = data.need_tiebreaker ? 'indigo' : data.final_decision === 'true' ? 'success' : 'failure'
-  const final_decision_text = data.need_tiebreaker ? 'Tiebreaker Required' : data.final_decision === 'true' ? 'Verified' : 'Not Verified'
+  const final_decision_color = data.need_tiebreaker ? 'indigo' : data.final_decision === 1 ? 'success' : 'failure'
+  const final_decision_text = data.need_tiebreaker ? 'Tiebreaker Required' : data.final_decision === 1 ? 'Verified' : 'Not Verified'
   return (
     <div className='max-w-4xl mx-auto'>
       <Alert

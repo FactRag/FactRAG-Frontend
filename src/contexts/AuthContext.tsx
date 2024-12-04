@@ -100,7 +100,9 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const refreshToken = async () => {
     try {
       const refresh = localStorage.getItem('refresh_token')
-      if (!refresh) throw new Error('No refresh token')
+      if (!refresh) {
+        throw new Error('No refresh token')
+      }
 
       const response = await fetch(`${API_BASE_URL}/auth/token/refresh/`, {
         method: 'POST',

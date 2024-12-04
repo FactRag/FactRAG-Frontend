@@ -116,22 +116,27 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Several pieces of text state Ruth Martin was married to Ted Brent first, then to Joe Martin. It also states Joe Martin's children are Jeff, Tara, Bobby, Tad and Jake.  There is no mention of a daughter named Ruth.",
+            "category": 0
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Joe Martin and Ruth Martin are portrayed by different actors (Ray MacDonnell and Mary Fickett/Lee Meriwether, respectively) and have distinct storylines and relationships on the show. Additionally, the context suggests that Ruth Martin was adopted by Joe Martin and his wife, not the other way around.",
+            "category": 0
+        },
+        "qwen2.5": {
+            "reason": "The context information clearly states that Ruth Martin is a separate character from Joe Martin. Ruth Martin was married to Joe Martin, but she is not his biological child.",
+            "category": 0
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

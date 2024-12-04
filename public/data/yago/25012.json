@@ -116,22 +116,31 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Emma Spencer-Spaulding is the child of Olivia Spencer and Phillip Spaulding, not the other way around.",
+            "category": 0
+        },
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Olivia Spencer's child's name is Emma Spencer-Spaulding.",
+            "category": 0
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Olivia Spencer's child is named Emma Spencer-Spaulding, not Phillip Spalding.",
+            "category": 0
+        },
+        "qwen2.5": {
+            "reason": "The context information mentions Phillip Spaulding as Olivia's ex-partner and the father of her daughter Emma Spencer-Spaulding, not as a child she has.",
+            "category": 0
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

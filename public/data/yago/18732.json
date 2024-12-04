@@ -116,22 +116,27 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
-        "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
-        },
-        "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
-        }
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
     },
-    "final_decision": "true",
-    "actual_decision": "true",
+    "final_decision": 0,
+    "actual_decision": 1,
     "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Daniel C. Miller is a politician from Harrisburg, Pennsylvania but not a leader of the city, he currently holds the position of Harrisburg City Treasurer.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "While he holds elected office as Harrisburg City Treasurer and has previously served on the city council,  the provided text doesn't state that he is the leader of Harrisburg, Pennsylvania.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Daniel C. Miller holds multiple positions in Harrisburg but is not listed as the leader of the city. He serves as the Harrisburg City Treasurer, a past Harrisburg City Controller and member of the Harrisburg City Council, but these roles do not make him the overall leader or mayor of Harrisburg.",
+            "category": 2
+        }
     }
 }

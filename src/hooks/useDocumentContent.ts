@@ -12,7 +12,9 @@ export const useDocumentContent = () => {
     setDocModal(prev => ({ ...prev, isLoading: true }))
     try {
       const response = await fetch(`/data/txt/${fileId}`)
-      if (!response.ok) throw new Error('Failed to load document')
+      if (!response.ok) {
+        throw new Error('Failed to load document')
+      }
       const content = await response.text()
       setDocModal(prev => ({
         ...prev,
@@ -33,7 +35,7 @@ export const useDocumentContent = () => {
 
   useEffect(() => {
     if (docModal.fileId) {
-      loadContent(docModal.fileId)
+      loadContent(docModal.fileId).then(r => r)
     }
   }, [docModal.fileId, loadContent])
 

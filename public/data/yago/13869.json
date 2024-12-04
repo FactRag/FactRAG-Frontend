@@ -116,22 +116,27 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "I'm Not Single is a story (not a movie or creation) directed by Hanung Bramantyo and Pierre Andre, not created by Pierre Andre.",
+            "category": 3
+        },
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Context mentions Pierre Andre as a figure involved in skateboarding and the founder of Etnies, while providing details about a TV drama titled \"I'm Not Single\". There's no connection established between these two domains.",
+            "category": 3
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "The context information provided does not mention Pierre Andre as the creator of \"I'm Not Single\", but rather mentions that the drama is an adaptation of the movie \"I'm Not Single\" directed by Hanung Bramantyo and Pierre Andre, which indicates that Pierre Andre was involved in directing the adaptation, not creating the original story.",
+            "category": 3
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

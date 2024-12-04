@@ -116,22 +116,27 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Multiple texts state Carla was married to Bernd von Beyenbach, but they were divorced.",
+            "category": 0
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Carla initially marries Bernd out of convenience to keep her homosexuality a secret from her father, but they eventually get divorced.",
+            "category": 0
+        },
+        "qwen2.5": {
+            "reason": "Carla von Lahnstein is currently married to Susanne Brandner, not Bernd von Beyenbach. The context information clearly states that their marriage has been filed for divorce. Additionally, Carla is currently traveling the world with her fianc\u00e9e Stella Mann.",
+            "category": 0
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

@@ -116,22 +116,27 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
-        "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
-        },
-        "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
-        }
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
     },
-    "final_decision": "true",
-    "actual_decision": "true",
+    "final_decision": 0,
+    "actual_decision": 1,
     "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The claim \"None\" is wrong because Frank Buck was married twice (to Amy Leslie and Muriel Riley) and had a daughter.",
+            "category": 0
+        },
+        "gemma2": {
+            "reason": "Several sources state Frank Buck was married to Nina C. Boardman from 1914 to 1927 and had a subsequent marriage with Muriel Riley in 1928.",
+            "category": 0
+        },
+        "qwen2.5": {
+            "reason": "The provided context clearly mentions several books co-authored by Frank Buck, including \"Bring 'Em Back Alive\" (1930) and \"All in a Lifetime\" (1941), indicating that he did write books. Therefore, stating that he wrote no books is incorrect.",
+            "category": 2
+        }
     }
 }

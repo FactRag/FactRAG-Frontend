@@ -116,22 +116,27 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Brooke English is listed as Jamie Martin's mother.",
+            "category": 0
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Tad Martin does not have a child named Brooke English. The context information indicates that Tad Martin has a romantic relationship with Brooke English, resulting in the birth of James \"Jamie\" Edward Martin, but it does not suggest that Brooke is his child.",
+            "category": 0
+        },
+        "qwen2.5": {
+            "reason": "Jamie Martin was born to Brooke English while Tad Martin was presumed dead at the time of his birth. There is no information suggesting that Tad Martin had a child named Brooke English.",
+            "category": 0
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

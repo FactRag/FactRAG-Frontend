@@ -116,22 +116,29 @@
     },
     "need_tiebreaker": true,
     "tiebreakers_responses": {
-        "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "mistral-nemo": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
         },
-        "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{\n  \"output\": \"yes\"\n}"
         }
     },
-    "final_decision": "true",
-    "actual_decision": "true",
+    "final_decision": -1,
+    "actual_decision": 1,
     "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "Alan Alda did not create War of Nerves (the 127th episode of M*A*S*H), the episode was actually written and directed by Alan Alda, but that does not imply creation.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "Alan Alda wrote \"War of Nerves,\" but he did not create the episode. The context states that \"War of Nerves\" was written and directed by Alan Alda, indicating his role in writing the script rather than creating the concept or episode itself.",
+            "category": 3
+        }
     }
 }

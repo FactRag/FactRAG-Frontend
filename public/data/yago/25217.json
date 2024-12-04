@@ -116,22 +116,29 @@
     },
     "need_tiebreaker": true,
     "tiebreakers_responses": {
-        "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "mistral-nemo": {
+            "short_ans": 0,
+            "full_ans": "{\"output\": \"no\"}"
         },
-        "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n\nAccording to the context information, the documents state that \"Sidney Luft and Camille Keaton were married for 12 years before Sidney Luft died aged 89\" and also mention that they had been married for 12.5 years before his death in 2005. This indicates that Camille Keaton is no longer married to Sidney Luft as he has passed away, but she was indeed married to him in the past."
         }
     },
-    "final_decision": "true",
-    "actual_decision": "true",
+    "final_decision": -1,
+    "actual_decision": 1,
     "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Multiple sources state Sidney Luft died in 2005, and the provided text says Camille Keaton was previously married to him.",
+            "category": 0
+        },
+        "qwen2.5": {
+            "reason": "Camille Keaton is currently single, as stated directly in the context.",
+            "category": 0
+        }
     }
 }

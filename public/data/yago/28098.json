@@ -116,22 +116,29 @@
     },
     "need_tiebreaker": true,
     "tiebreakers_responses": {
-        "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "mistral-nemo": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
         },
-        "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
         }
     },
-    "final_decision": "true",
-    "actual_decision": "true",
+    "final_decision": -1,
+    "actual_decision": 1,
     "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "Victor Emmanuel II of Italy was previously married to Rosa Vercellana (1869 - 1878) and Adelaide of Austria (1842 - 1855), but it is actually his first wife, not the current wife, that is mentioned in the context information.",
+            "category": 0
+        },
+        "qwen2.5": {
+            "reason": "Victor Emmanuel II of Italy was married to Adelaide of Austria, not Maria Adelaide of Austria. The context provides information about his marriages to Rosa Vercellana and Adelaide of Austria, with specific details about their marriage durations.",
+            "category": 0
+        }
     }
 }

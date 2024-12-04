@@ -116,22 +116,31 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Ryan Lavery is married to Greenlee Smythe, not Annie Lavery. Although the text mentions that Ryan and Annie were engaged and married at some point, they are no longer married as per the information provided in context number 5.",
+            "category": 0
+        },
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Context states Ryan Lavery is married to Greenlee Smythe, not Annie Lavery.",
+            "category": 0
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Context information 6 explicitly states that Ryan Lavery married Greenlee Smythe, not Annie Lavery.",
+            "category": 0
+        },
+        "qwen2.5": {
+            "reason": "The context information shows that Ryan Lavery is married to Greenlee Smythe, not Annie Lavery. It mentions his engagement and marriage to Greenlee Smythe, and does not state any marriage between Ryan and Annie Lavery.",
+            "category": 0
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

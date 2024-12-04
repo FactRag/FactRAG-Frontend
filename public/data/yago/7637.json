@@ -116,22 +116,29 @@
     },
     "need_tiebreaker": true,
     "tiebreakers_responses": {
-        "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "mistral-nemo": {
+            "short_ans": 0,
+            "full_ans": "{\"output\": \"no\"}"
         },
-        "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
         }
     },
-    "final_decision": "true",
-    "actual_decision": "true",
+    "final_decision": -1,
+    "actual_decision": 1,
     "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Context information states Princess Tomohito of Mikasa was married to Prince Tomohito of Mikasa.",
+            "category": 0
+        },
+        "qwen2.5": {
+            "reason": "Prince Tomohito of Mikasa is married to Nobuko As\u014d, who was awarded the title \"Princess Tomohito of Mikasa\" after her marriage. Princess Tomohito of Mikasa refers to the individual herself, not her husband.",
+            "category": 0
+        }
     }
 }

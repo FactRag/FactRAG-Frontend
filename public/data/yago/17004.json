@@ -116,22 +116,31 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "R. Kannan is an Indian filmmaker and screenwriter who made his directorial debut with the successful Tamil film Jayamkondaan, not that he created it.",
+            "category": 3
+        },
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Multiple sources state R. Kannan directed Jayamkondaan.",
+            "category": 3
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "All available context information (4 different sources) consistently confirm the fact 'R. Kannan created Jayamkondaan.'",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "R. Kannan did not create Jayamkondaan; he directed it as his directorial debut. The film was produced by someone else, and Kannan's role was to direct the film based on an existing script or story.",
+            "category": 3
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

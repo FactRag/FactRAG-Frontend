@@ -25,9 +25,13 @@ export const SearchBar: React.FC = () => {
   }, [navigate, selectedMatch])
 
   const handleInputChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value
+    const {value} = e.target
     setQuery(value)
-    setShowSuggestions(true)
+    if (value.length > 2) {
+      setShowSuggestions(true)
+    } else {
+      setShowSuggestions(false)
+    }
     setSelectedMatch(null)
   }, [])
 
@@ -43,7 +47,7 @@ export const SearchBar: React.FC = () => {
         <TextInput
           value={query}
           onChange={handleInputChange}
-          placeholder='Search for a fact to verify...'
+          placeholder='Search for a fact to verify... [Enter at least 3 characters]'
           className='w-full'
           data-testid='search-input'
         />

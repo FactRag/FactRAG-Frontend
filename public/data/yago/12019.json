@@ -116,22 +116,27 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
-        "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
-        },
-        "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
-        }
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
     },
-    "final_decision": "true",
-    "actual_decision": "true",
+    "final_decision": 0,
+    "actual_decision": 1,
     "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Nora Hanen and Hank Gannon were married, but they got divorced before Nora moved to Llanview.",
+            "category": 0
+        },
+        "gemma2": {
+            "reason": "It states Nora Hanen is married to Hank Gannon, but the text says they are divorced.",
+            "category": 0
+        },
+        "qwen2.5": {
+            "reason": "Nora Hanen divorced Hank Gannon five years after they met and had a daughter, making their marriage prior to 1992, not a current or ongoing one at the time of her move to Llanview in 1992.",
+            "category": 0
+        }
     }
 }

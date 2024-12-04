@@ -40,7 +40,9 @@ export const ResultsPage = () => {
         }
 
         const response = await fetch(`/data/${dataset}/${searchTerm}.json`)
-        if (!response.ok) throw new Error('Failed to fetch data')
+        if (!response.ok) {
+          throw new Error('Failed to fetch data')
+        }
 
         const verificationData = await response.json()
         setData(verificationData)

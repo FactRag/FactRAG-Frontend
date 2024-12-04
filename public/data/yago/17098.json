@@ -116,22 +116,29 @@
     },
     "need_tiebreaker": true,
     "tiebreakers_responses": {
-        "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "mistral-nemo": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
         },
-        "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
         }
     },
-    "final_decision": "true",
-    "actual_decision": "true",
+    "final_decision": -1,
+    "actual_decision": 1,
     "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "It states M\u00e1rton Keleti created the episode \"Two Confessions\" of the television series *The Commish*. However, the provided context explicitly states that \"Two Confessions\" is the ninth episode of season one of *The Commish* which aired on November 30, 1991. This implies the episode was produced by the show's creators and writers as part of their regular television production, not by an individual named M\u00e1rton Keleti.",
+            "category": 3
+        },
+        "llama3.1": {
+            "reason": "There is no information about M\u00e1rton Keleti creating Two Confessions.",
+            "category": 3
+        }
     }
 }

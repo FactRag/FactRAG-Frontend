@@ -116,22 +116,31 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Martin Millar, not Joe McStravick, composed the music for Murphy 771.",
+            "category": -1
+        },
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Martin Millar composed the soundtrack for Murphy 771, not Joe McStravick.",
+            "category": -1
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Martin Millar (not Joe McStravick) is credited as the composer of Murphy 771.",
+            "category": -1
+        },
+        "qwen2.5": {
+            "reason": "The context information does not mention Joe McStravick producing Murphy 771. It only states that Martin Millar composed music for the film Murphy 771, and there is no information linking Joe McStravick to this production role.",
+            "category": -1
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

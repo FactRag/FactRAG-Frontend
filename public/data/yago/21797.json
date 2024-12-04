@@ -116,22 +116,29 @@
     },
     "need_tiebreaker": true,
     "tiebreakers_responses": {
-        "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "mistral-nemo": {
+            "short_ans": 1,
+            "full_ans": "{\"output\": \"yes\"}"
         },
-        "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
         }
     },
-    "final_decision": "true",
-    "actual_decision": "true",
+    "final_decision": -1,
+    "actual_decision": 1,
     "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The claim is wrong because the information provided earlier states \"It is the first film to be directed by Serge Gainsbourg, the iconic French musician and singer who achieved fame and notoriety throughout much of the 1960s and 1970s. Outside of France, he is probably best known for his 1968 hit pop song, Je t'aime moi non plus (from which the idea of this film was developed), which featured Gainsbourg's then lover Jane Birkin simulating an orgasm.\" This suggests that Serge Gainsbourg did not direct the film \"Je t'aime... moi non plus\" but rather used it as inspiration for his song.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "The context clearly states that the 1976 film \"Je t'aime... moi non plus\" was directed by Serge Gainsbourg, not created by him. While he directed it, the term \"created\" might imply a different role or origin than what the information provided indicates.",
+            "category": 3
+        }
     }
 }

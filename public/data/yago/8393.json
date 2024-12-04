@@ -116,22 +116,31 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "There is no evidence provided in the context information that suggests Marco Ferreri directed a film called *I Love You* (1986).",
+            "category": 3
+        },
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "None of the provided text mentions Marco Ferreri directing a film titled *I Love You* (1986).",
+            "category": 3
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "I couldn't find any information about Marco Ferreri directing a film called *I Love You* (1986) in the provided context, and none of the descriptions or filmographies mentioned in the context include this specific film.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "The provided context does not mention a film titled *I Love You* directed by Marco Ferreri in 1986. All the films listed in the given information are from different years, and none of them include *I Love You* (1986).",
+            "category": 3
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

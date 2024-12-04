@@ -116,22 +116,27 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Information provided in context 3 states Daniel C. Miller was born in Pittsburgh, grew up in Huntington, W.Va., and lived most of his adult life in Florida.",
+            "category": 2
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Daniel C. Miller was actually born on January 1, 1956, but his birthplace is mentioned to be Harrisburg, Pennsylvania, however another Daniel C. Miller's information has also been provided which states that he was born in Pittsburgh and grew up in Huntington, W.Va.,",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context clearly states that Daniel C. Miller was born in Pittsburgh, not Harrisburg.",
+            "category": 2
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

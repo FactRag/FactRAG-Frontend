@@ -116,22 +116,29 @@
     },
     "need_tiebreaker": true,
     "tiebreakers_responses": {
-        "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "mistral-nemo": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
         },
-        "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
         }
     },
-    "final_decision": "true",
-    "actual_decision": "true",
+    "final_decision": -1,
+    "actual_decision": 1,
     "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Parris Glendening and Frances Hughes Glendening were divorced, as indicated by the information that their divorce was finalized in November.",
+            "category": 0
+        },
+        "gemma2": {
+            "reason": "Multiple texts state Glendening and Frances Hughes Glendening divorced while he was governor.  His divorce from her was finalized in November and they were separated since July 2000.  Additionally, it states he married Jennifer Crawford shortly after the divorce.",
+            "category": 0
+        }
     }
 }

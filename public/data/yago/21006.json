@@ -116,22 +116,27 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
-        "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Harry Enfield is a character creator and actor, not a producer. He portrayed the character Kevin in the film, but did not produce it.",
+            "category": 3
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Harry Enfield is actually the one who starred in Kevin & Perry Go Large as the lead character, but there is no information that he produced the film. The production company mentioned (Tiger Aspect Productions, Icon Productions, Fragile Films) does not imply involvement of Harry Enfield himself in producing the film.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "The context information states that Harry Enfield wrote the film along with Dave Cummings, but does not indicate any involvement in producing it. Production credits typically list a separate producer, which is not mentioned here. Therefore, there is no evidence to support that Harry Enfield produced Kevin & Perry Go Large.",
+            "category": 3
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

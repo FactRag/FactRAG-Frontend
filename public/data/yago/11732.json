@@ -116,22 +116,29 @@
     },
     "need_tiebreaker": true,
     "tiebreakers_responses": {
-        "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "mistral-nemo": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
         },
-        "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
         }
     },
-    "final_decision": "true",
-    "actual_decision": "true",
+    "final_decision": -1,
+    "actual_decision": 1,
     "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "Arthur Rankin is not credited with creating The Daydreamer. \n\nThe actual statement from the context information says \"He is also credited with devising the story for many Rankin/Bass productions, including the feature films The Daydreamer and Mad Monster Party?\" which implies that it was Jules Bass who created or devised the story of The Daydreamer along with Arthur Rankin.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "The context information clearly states that Arthur Rankin is credited with devising the story for many Rankin/Bass productions, including the feature films The Daydreamer and Mad Monster Party?, implying he did not create Jr. The Daydreamer but was involved in creating the story for it.",
+            "category": 3
+        }
     }
 }

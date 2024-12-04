@@ -116,22 +116,29 @@
     },
     "need_tiebreaker": true,
     "tiebreakers_responses": {
-        "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "mistral-nemo": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
         },
-        "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
         }
     },
-    "final_decision": "true",
-    "actual_decision": "true",
+    "final_decision": -1,
+    "actual_decision": 1,
     "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "The provided text describes the documentary as chronicling Madonna's Re-Invention Tour and showcasing her performances, rehearsals, and behind-the-scenes experiences. It focuses on her role as a musician and performer, not an actress in a film.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "The context information describes \"I'm Going To Tell You a Secret\" as a documentary film that chronicles Madonna's 2004 Re-Invention Tour and does not mention any acting roles by Madonna in the film.",
+            "category": 3
+        }
     }
 }

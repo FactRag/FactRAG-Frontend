@@ -116,22 +116,27 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Several news articles state that Demi Moore has decided to end her marriage to Ashton Kutcher.",
+            "category": 0
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "the information from multiple sources (2, 4) indicates that Demi Moore was married to Ashton Kutcher in September 2005, but the information from sources (1 and 3) states that they got divorced after a six-year marriage, which suggests that the marriage occurred before their reported divorce.",
+            "category": 0
+        },
+        "qwen2.5": {
+            "reason": "Demi Moore has explicitly stated she is ending her marriage to Ashton Kutcher with the Associated Press, indicating they are no longer married.",
+            "category": 0
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

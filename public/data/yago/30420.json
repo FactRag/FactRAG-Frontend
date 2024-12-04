@@ -116,22 +116,31 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Jessica Buchanan does not have a child named Nash Brennan. Instead, she has a daughter named Bree Victoria Brennan (formerly Brennan Buchanan).",
+            "category": 0
+        },
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Nash Brennan is the name of Jessica Buchanan's husband, not her child.  Additionally, several text passages state that their daughter's name is Bree Brennan.",
+            "category": 0
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "Bree Brennan, not Nash Brennan, is the daughter of Jessica Buchanan.",
+            "category": 0
+        },
+        "qwen2.5": {
+            "reason": "Nash Brennan is a male character, while Jessica Buchanan gave birth to a daughter named Bree Victoria Brennan. The context clearly states that Bree is the daughter of Jessica and Nash, not a child with the same name as Nash.",
+            "category": 0
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

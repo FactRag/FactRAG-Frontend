@@ -11,7 +11,9 @@ export const useSearchData = (searchTerm: string) => {
     const results: SearchMatch[] = []
     const normalizedSearchTerm = searchTerm.toLowerCase().trim()
 
-    if (!normalizedSearchTerm) return results
+    if (!normalizedSearchTerm || normalizedSearchTerm.length < 3) {
+      return results
+    }
 
     Object.entries(realData).forEach(([dataset, identifiers]) => {
       Object.entries(identifiers).forEach(([identifier, triple]) => {

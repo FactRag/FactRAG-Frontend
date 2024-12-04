@@ -116,22 +116,31 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "David Vickers married Addie Cramer (not Tina Lord) as indicated in the first context provided.",
+            "category": 0
+        },
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "It states David Vickers married Tina Lord but other context mentions he was married to her briefly while pretending to be Victor Lord\u2019s son.",
+            "category": 0
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "It conflicts with multiple sources (1 and 5) indicating David Vickers has had many wives, including Addie Cramer, Dorian, and others, but not Tina Lord.",
+            "category": 0
+        },
+        "qwen2.5": {
+            "reason": "David Vickers has been married to Julie Vickers since 1986, not Tina Lord. Additionally, Tina Lord was his first wife, whom he married while pretending to be the long lost son of Victor Lord, but they divorced when David confessed the truth.",
+            "category": 0
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }

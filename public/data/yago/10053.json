@@ -116,22 +116,31 @@
     },
     "need_tiebreaker": false,
     "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Paul Spence did not produce the film FUBAR. He starred in the film as a character, but he was not the producer.",
+            "category": 3
+        },
         "gemma2": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "The text states Paul Spence co-wrote the film FUBAR with friends Dave Lawrence and Michael Dowse. It also mentions he sold his shares of the FUBAR IP to Dave Lawrence in 2019.  These facts suggest Spence was involved in the creative development but not necessarily its production.",
+            "category": 3
         },
         "llama3.1": {
-            "short_ans": "is true",
-            "full_ans": "0.9"
+            "reason": "There is no evidence to suggest Paul Spence produced the film FUBAR, only that he co-wrote it with friends Dave Lawrence and Michael Dowse.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "The context does not mention Paul Spence producing the film FUBAR. He is described as a starring actor in FUBAR and its sequel, but there is no information indicating he produced the film.",
+            "category": 3
         }
-    },
-    "final_decision": "true",
-    "actual_decision": "true",
-    "analysis": {
-        "error_category": "caafscd",
-        "error_detail": "cdscsd",
-        "category": "csdcs",
-        "stratum": "fwefew",
-        "topic": "wefw"
     }
 }
