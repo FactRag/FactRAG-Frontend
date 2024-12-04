@@ -21,6 +21,7 @@ export const useSearchData = (searchTerm: string) => {
     Object.entries(realData).forEach(([dataset, identifiers]) => {
       Object.entries(identifiers).forEach(([identifier, triple]) => {
         const tripleString = `${triple.subject} ${triple.predicate} ${triple.object}`.toLowerCase()
+        console.log(tripleString)
         if (tripleString.includes(normalizedSearchTerm)) {
           results.push({
             text: `${triple.subject} ${triple.predicate} ${triple.object}`,
