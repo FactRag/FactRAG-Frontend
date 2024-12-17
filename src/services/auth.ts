@@ -13,9 +13,12 @@ export const socialAuth = {
     window.location.href = data.auth_url
   },
 
+
   async handleCallback(tokens: string) {
     try {
-      const decodedTokens = JSON.parse(atob(tokens))
+      const base64Url = tokens.split('.')[1]; // Extract the payload part
+      const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/'); // Convert Base64Url to Base64
+      const decodedTokens = JSON.parse(atob(base64));
       localStorage.setItem('access_token', decodedTokens.access)
       localStorage.setItem('refresh_token', decodedTokens.refresh)
       return true

@@ -16,7 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/results" element={<ResultsPage />} />
-            <Route path="/auth/callback/?tokens=:tokens&dataset=:dataset&term_id=:term_id" element={<AuthCallback />}  />
+            <Route path="/auth/callback" element={<AuthCallback />}  />
           </Routes>
         </BrowserRouter>
       </AuthProvider>

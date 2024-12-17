@@ -4,6 +4,7 @@ import { useLocation, useNavigate } from 'react-router-dom'
 import { socialAuth } from '../services/auth'
 
 export const AuthCallback = () => {
+  console.log('AuthCallback')
   const navigate = useNavigate()
   const location = useLocation()
 
@@ -11,6 +12,10 @@ export const AuthCallback = () => {
     const tokens = new URLSearchParams(location.search).get('tokens')
     const term_id = new URLSearchParams(location.search).get('term_id')
     const dataset = new URLSearchParams(location.search).get('dataset')
+
+    console.log('AuthCallback tokens:', tokens)
+    console.log('AuthCallback term_id:', term_id)
+    console.log('AuthCallback dataset:', dataset)
 
     if (tokens) {
       socialAuth
