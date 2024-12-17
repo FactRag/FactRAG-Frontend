@@ -14,6 +14,11 @@ export const AuthSection = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
+  // Fetch dataset and term_id from the url
+  const urlParams = new URLSearchParams(window.location.search)
+  const term_id = urlParams.get('search')
+  const dataset = urlParams.get('dataset')
+
   const handleEmailLogin = async (e: React.FormEvent) => {
     e.preventDefault()
     try {
@@ -47,7 +52,7 @@ export const AuthSection = () => {
             <Button
               color='light'
               className='w-full'
-              onClick={() => socialLogin('google')}
+              onClick={() => socialLogin('google', term_id, dataset)}
             >
               <img src='/static/google-icon.svg' className='w-5 h-5 mr-2' alt='Google' />
               Continue with Google
@@ -56,7 +61,7 @@ export const AuthSection = () => {
             <Button
               color='light'
               className='w-full'
-              onClick={() => socialLogin('orcid')}
+              onClick={() => socialLogin('orcid', term_id, dataset)}
             >
               <img src='/static/orcid-icon.svg' className='w-5 h-5 mr-2' alt='ORCID' />
               Continue with ORCID

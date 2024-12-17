@@ -9,17 +9,20 @@ export const AuthCallback = () => {
 
   useEffect(() => {
     const tokens = new URLSearchParams(location.search).get('tokens')
+    const term_id = new URLSearchParams(location.search).get('term_id')
+    const dataset = new URLSearchParams(location.search).get('dataset')
+
     if (tokens) {
       socialAuth
         .handleCallback(tokens)
         .then(success => {
           if (success) {
-            navigate('/')
+            navigate(term_id && dataset ? `/results?search=${term_id}&dataset=${dataset}` : '/')
           } else {
-            navigate('/login?error=auth_failed')
+            navigate('/')
           }
         })
-        .catch(() => navigate('/login?error=auth_failed'))
+        .catch(() => navigate('/'))
     }
   }, [location, navigate])
 

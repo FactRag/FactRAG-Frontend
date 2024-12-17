@@ -2,6 +2,7 @@
 import React, { createContext, useContext, useEffect, useState } from 'react'
 
 const API_BASE_URL = 'http://localhost:8000/api'
+
 export interface User {
   id: number;
   email: string;
@@ -16,7 +17,7 @@ interface AuthContextType {
   error: string | null;
   registerWithEmail: (credentials: RegisterCredentials) => Promise<void>;
   loginWithEmail: (credentials: LoginCredentials) => Promise<void>;
-  socialLogin: (provider: 'google' | 'orcid') => Promise<void>;
+  socialLogin: (provider: 'google' | 'orcid', term_id: string | null, dataset: string | null) => Promise<void>;
   logout: () => Promise<void>;
   checkAuth: () => Promise<void>;
 }
@@ -168,9 +169,12 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     }
   }
 
-  const socialLogin = async (provider: 'google' | 'orcid') => {
+  const socialLogin = async (provider: 'google' | 'orcid', term_id: string | null, dataset: string | null) => {
     try {
-      const response = await fetch(`${API_BASE_URL}/auth/${provider}/login/`)
+      if (!term_id || !dataset) {
+        throw new Error('Missing term_id or dataset')
+      }
+      const response = await fetch(`${API_BASE_URL}/auth/${provider}/login/?term_id=${term_id}&dataset=${dataset}`)
       const data = await response.json()
       window.location.href = data.auth_url
     } catch (error) {

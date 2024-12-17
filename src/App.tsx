@@ -6,6 +6,7 @@ import { ResultsPage } from './pages/ResultsPage'
 import { AuthProvider } from './contexts/AuthContext'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/react'
+import { AuthCallback } from './components/AuthCallback'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/results" element={<ResultsPage />} />
+            <Route path="/auth/callback/?tokens=:tokens&dataset=:dataset&term_id=:term_id" element={<AuthCallback />}  />
           </Routes>
         </BrowserRouter>
       </AuthProvider>
