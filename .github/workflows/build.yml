@@ -14,6 +14,8 @@ jobs:
           personal_token: ${{ secrets.API_TOKEN_GITHUB }}
           src_path: build
           src_branch: main
+          filter: '**/!(*dbpedia*|*yago*)' # Exclude the files containing Dbpedia and YAGO in their name
+          exclude: '*/(dbpedia|yago)/*' # Exclude the folders for the datasets
           dst_path: /.
           dst_owner: FactRag
           dst_repo_name: FactRAG-Deploy
