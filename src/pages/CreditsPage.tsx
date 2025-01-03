@@ -20,38 +20,38 @@ export const CreditsPage: React.FC = () => {
   const teamMembers: TeamMember[] = [
     {
       id: 1,
-      name: 'Lucy Gray',
-      role: 'Principal Investigator',
+      name: 'Farzad Shami',
+      role: 'Research Trainee',
       image: 'https://gda.dei.unipd.it/static/images/credits/gian_960x960.jpg',
       bio: 'Leading research in knowledge graph verification and large language models.',
       links: {
-        github: 'https://github.com/lucygray',
-        scholar: 'https://scholar.google.com/lucygray',
-        email: 'lucy.gray@university.edu'
+        github: 'https://github.com/fuzsh',
+        scholar: 'https://scholar.google.com/citations?user=DYpHnYgAAAAJ&hl=en&oi=ao',
+        email: 'farzad.shami@studenti.unipd.it'
       }
     },
     {
       id: 2,
-      name: 'Richard Mills',
-      role: 'Senior Researcher',
+      name: 'Stefano Marchesin',
+      role: 'Assistant Professor',
       image: 'https://gda.dei.unipd.it/static/images/credits/gian_960x960.jpg',
       bio: 'Specializing in machine learning and natural language processing.',
       links: {
-        github: 'https://github.com/rmills',
-        scholar: 'https://scholar.google.com/rmills',
-        email: 'r.mills@university.edu'
+        github: 'https://github.com/stefano-marchesin',
+        scholar: 'https://scholar.google.com/citations?user=AVZdcS8AAAAJ&hl=en',
+        email: 'stefano.marchesin@unipd.it'
       }
     },
     {
       id: 3,
-      name: 'Sophie Chamberlain',
-      role: 'Research Scientist',
+      name: 'Gianmaria Silvello',
+      role: 'Full Professor ',
       image: 'https://gda.dei.unipd.it/static/images/credits/gian_960x960.jpg',
       bio: 'Expert in transformer architectures and knowledge representation.',
       links: {
-        github: 'https://github.com/sophiec',
-        scholar: 'https://scholar.google.com/sophiec',
-        email: 's.chamberlain@university.edu'
+        // github: 'https://github.com/sophiec',
+        scholar: 'http://scholar.google.com/citations?user=pY24h-YAAAAJ&hl=en',
+        email: 'silvello@dei.unipd.it'
       }
     }
   ];
