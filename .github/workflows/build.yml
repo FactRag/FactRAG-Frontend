@@ -17,18 +17,27 @@ jobs:
         name: Use Node.js 20
         with:
           node-version: ${{ matrix.node-version }}
-      - run: npm ci
 
+      - run: npm ci
       - run: npm run build --if-present
         env:
           CI: false
-      - run: ls
+
+      - name: Push build to build branch
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git checkout -b build
+          git add build -f
+          git commit -m "Add build files"
+          git push origin build --force
+
       - name: Copy to another repo
         uses: andstor/copycat-action@v3
         with:
           personal_token: ${{ secrets.API_TOKEN_GITHUB }}
           src_path: build
-          src_branch: main
+          src_branch: build
           dst_path: /.
           dst_owner: FactRag
           dst_repo_name: FactRAG-Deploy
