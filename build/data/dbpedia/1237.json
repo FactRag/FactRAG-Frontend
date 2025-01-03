@@ -1,0 +1,102 @@
+{
+    "subject": "resource/Conrad_Letzkau",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "Conrad Letzkau",
+    "human_readable": "The full name of Conrad Letzkau is Conrad Letzkau.",
+    "questions": [
+        {
+            "score": 0.9833276867866516,
+            "question": "What is the full name of Conrad Letzkau?"
+        },
+        {
+            "score": 0.9663639068603516,
+            "question": "Is Conrad Letzkau's full name different from his given name?"
+        },
+        {
+            "score": 0.8647454977035522,
+            "question": "How can we refer to Conrad Letzkau formally?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The full name of Conrad Letzkau is Conrad Letzkau.",
+            "html": "dbpedia_1237_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Conrad Letzkau's full name different from his given name?",
+            "html": "dbpedia_1237_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the full name of Conrad Letzkau?",
+            "html": "dbpedia_1237_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1237_10.txt"
+        },
+        {
+            "file_id": "dbpedia_1237_13.txt"
+        },
+        {
+            "file_id": "dbpedia_1237_2.txt"
+        },
+        {
+            "file_id": "dbpedia_1237_20.txt"
+        },
+        {
+            "file_id": "dbpedia_1237_23.txt"
+        },
+        {
+            "file_id": "dbpedia_1237_31.txt"
+        },
+        {
+            "file_id": "dbpedia_1237_34.txt"
+        },
+        {
+            "file_id": "dbpedia_1237_36.txt"
+        },
+        {
+            "file_id": "dbpedia_1237_38.txt"
+        },
+        {
+            "file_id": "dbpedia_1237_6.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me explain why:\n\n* The provided context mentions \"Conrad Letzkau Danzig Mayor, who was assassinated by the Teutonic Knights.\"  This directly states his full name as Conrad Letzkau. \n\n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple:\n\n`{'output': 'no'}`\n\nThe reason is that the documents mention a \"Conrad Letzkau Danzig Mayor\", but do not provide his full name as \"Conrad Letzkau\". The document from file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1237/re-ranker-msmarco/20.txt mentions that Conrad Letzkau was a Danzig Mayor, but does not mention anything about his full name."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: While the provided context doesn't directly mention the full name of Conrad Letzkau, it references him as \"Conrad Letzkau Danzig Mayor\" which implies his full name includes \"Conrad Letzkau\". The query asks for confirmation that \"The full name of Conrad Letzkau is Conrad Letzkau,\" and based on the context given, this can be inferred to be true."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The full name of Conrad Letzkau Danzig Mayor buried in St. Mary's Church is not mentioned as Conrad Letzkau, but only his first name \"Conrad\" and last name \"Letzkau\".",
+            "category": 2
+        }
+    }
+}

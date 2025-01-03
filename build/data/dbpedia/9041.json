@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Al_Jarreau",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "Jarreau, Al",
+    "human_readable": "The full name of Al Jarreau is Jarreau, Al.",
+    "questions": [
+        {
+            "score": 0.9842256307601929,
+            "question": "What is the full name of Al Jarreau?"
+        },
+        {
+            "score": 0.9410556554794312,
+            "question": "What order do the names appear in Al Jarreau's full name?"
+        },
+        {
+            "score": 0.9385703802108765,
+            "question": "Is 'Jarreau' Al Jarreau's first or last name?"
+        },
+        {
+            "score": 0.9347015619277954,
+            "question": "How many names are in Al Jarreau's full name?"
+        },
+        {
+            "score": 0.933513879776001,
+            "question": "What is Al Jarreau's last name?"
+        },
+        {
+            "score": 0.9068105816841125,
+            "question": "What is Al Jarreau's first name?"
+        },
+        {
+            "score": 0.8350757360458374,
+            "question": "What could you infer about Al Jarreau's identity based on his full name?"
+        },
+        {
+            "score": 0.7806722521781921,
+            "question": "How does knowing Al Jarreau's full name help you understand him better?"
+        },
+        {
+            "score": 0.528673529624939,
+            "question": "If someone referred to him as 'Al', what is his full name?"
+        },
+        {
+            "score": 0.03410835936665535,
+            "question": "If someone only knew his last name, how would they write it?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The full name of Al Jarreau is Jarreau, Al.",
+            "html": "dbpedia_9041_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If someone referred to him as 'Al', what is his full name?",
+            "html": "dbpedia_9041_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How does knowing Al Jarreau's full name help you understand him better?",
+            "html": "dbpedia_9041_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What could you infer about Al Jarreau's identity based on his full name?",
+            "html": "dbpedia_9041_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_9041_10.txt"
+        },
+        {
+            "file_id": "dbpedia_9041_11.txt"
+        },
+        {
+            "file_id": "dbpedia_9041_134.txt"
+        },
+        {
+            "file_id": "dbpedia_9041_136.txt"
+        },
+        {
+            "file_id": "dbpedia_9041_143.txt"
+        },
+        {
+            "file_id": "dbpedia_9041_33.txt"
+        },
+        {
+            "file_id": "dbpedia_9041_40.txt"
+        },
+        {
+            "file_id": "dbpedia_9041_57.txt"
+        },
+        {
+            "file_id": "dbpedia_9041_58.txt"
+        },
+        {
+            "file_id": "dbpedia_9041_77.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe documents provide Al Jarreau's full name as Alwyn Lopez Jarreau or sometimes Alwin Jarreau.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the answer in the form of a structured JSON format:\n\n{\n  \"output\": \"no\"\n}\n\nThe documents mention different names for Al Jarreau, such as Alwin Lopez Jarreau, Alwyn \"Al\" Jarreau, and simply Al Jarreau. None of them mention \"Jarreau, Al\" as his full name."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: None of the provided documents contain information that supports or refutes the triple \"The full name of Al Jarreau is Jarreau, Al.\" The documents provide various pieces of biographical information about Al Jarreau but do not explicitly state his full name in the format given."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Multiple sources clearly state his full name as Alwin Lopez Jarreau, with \"Al\" being a shortened version of his first name.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "the full name of Al Jarreau is mentioned as \"Alwin Lopez Jarreau\", \"Alwyn Lopez Jarreau\" and \"Alwin Jarreau\", but none of them match with \"Jarreau, Al\".",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context clearly states that Al Jarreau's real name is Alwin Jarreau, not just Jarreau, Al.",
+            "category": 2
+        }
+    }
+}

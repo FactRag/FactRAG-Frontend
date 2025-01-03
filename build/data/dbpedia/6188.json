@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Richard_Hotham",
+    "predicate": "ontology/deathPlace",
+    "object": "resource/Bognor_Regis",
+    "human_readable": "Richard Hotham died in Bognor Regis.",
+    "questions": [
+        {
+            "score": 0.8779608011245728,
+            "question": "Were there any famous people buried or living in Bognor Regis at the time of Richard Hotham's death?"
+        },
+        {
+            "score": 0.8368179798126221,
+            "question": "Where did Richard Hotham die?"
+        },
+        {
+            "score": 0.7309955358505249,
+            "question": "Is there any historical significance to Richard Hotham's passing in Bognor Regis?"
+        },
+        {
+            "score": 0.6507389545440674,
+            "question": "Who was Richard Hotham?"
+        },
+        {
+            "score": 0.6262972354888916,
+            "question": "Were there any notable events associated with Richard Hotham's death?"
+        },
+        {
+            "score": 0.5289755463600159,
+            "question": "Was Richard Hotham involved in any notable events or activities before his death?"
+        },
+        {
+            "score": 0.45645108819007874,
+            "question": "What can be inferred about Richard Hotham based on his place of death?"
+        },
+        {
+            "score": 0.40904149413108826,
+            "question": "What is known about Richard Hotham's life?"
+        },
+        {
+            "score": 0.298507422208786,
+            "question": "Can you tell me more about Bognor Regis?"
+        },
+        {
+            "score": 0.28879907727241516,
+            "question": "Do you have any information about Richard Hotham's family or descendants?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Richard Hotham died in Bognor Regis.",
+            "html": "dbpedia_6188_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about Bognor Regis?",
+            "html": "dbpedia_6188_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is known about Richard Hotham's life?",
+            "html": "dbpedia_6188_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What can be inferred about Richard Hotham based on his place of death?",
+            "html": "dbpedia_6188_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6188_1.txt"
+        },
+        {
+            "file_id": "dbpedia_6188_14.txt"
+        },
+        {
+            "file_id": "dbpedia_6188_24.txt"
+        },
+        {
+            "file_id": "dbpedia_6188_29.txt"
+        },
+        {
+            "file_id": "dbpedia_6188_3.txt"
+        },
+        {
+            "file_id": "dbpedia_6188_36.txt"
+        },
+        {
+            "file_id": "dbpedia_6188_66.txt"
+        },
+        {
+            "file_id": "dbpedia_6188_67.txt"
+        },
+        {
+            "file_id": "dbpedia_6188_85.txt"
+        },
+        {
+            "file_id": "dbpedia_6188_91.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple \"Richard Hotham died in Bognor Regis\" based on the provided context information:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation:\nWhile some of the documents mention that Sir Richard Hotham died in Bognor (not Bognor Regis), specifically document 3.txt and document 67.txt, they also specify that he died in March 1799 at Bognor, not necessarily implying that it is now known as Bognor Regis."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information about Sir Richard Hotham, including that he died in Bognor in March 1799 and is buried at St. Mary Magdalene Church in South Bersted. Given this context, the statement \"Richard Hotham died in Bognor Regis\" can be considered correct according to the provided documents."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "It says \"Sir Richard Hotham died in Bognor\" but later it correctly mentions that he actually died at Bognor, but the church where he is buried is in South Bersted.",
+            "category": 2
+        }
+    }
+}

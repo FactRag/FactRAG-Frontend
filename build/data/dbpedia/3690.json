@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Moolah_Beach",
+    "predicate": "property/starring",
+    "object": "resource/Kyle_Searles",
+    "human_readable": "Moolah Beach stars Kyle Searles.",
+    "questions": [
+        {
+            "score": 0.9323331713676453,
+            "question": "Has Kyle Searles won any awards for his role in Moolah Beach?"
+        },
+        {
+            "score": 0.9170824289321899,
+            "question": "Are there any other actors in Moolah Beach besides Kyle Searles?"
+        },
+        {
+            "score": 0.8754590153694153,
+            "question": "Who stars in Moolah Beach?"
+        },
+        {
+            "score": 0.6861454248428345,
+            "question": "What is the name of the show that Kyle Searles stars in?"
+        },
+        {
+            "score": 0.6297222375869751,
+            "question": "Is Kyle Searles an actor?"
+        },
+        {
+            "score": 0.6029001474380493,
+            "question": "Name a television show featuring Kyle Searles."
+        },
+        {
+            "score": 0.5395210981369019,
+            "question": "Is Moolah Beach a popular show?"
+        },
+        {
+            "score": 0.445583701133728,
+            "question": "Where can I watch Moolah Beach?"
+        },
+        {
+            "score": 0.42565932869911194,
+            "question": "What is the plot of Moolah Beach?"
+        },
+        {
+            "score": 0.39495885372161865,
+            "question": "What type of program is Moolah Beach?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Moolah Beach stars Kyle Searles.",
+            "html": "dbpedia_3690_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the plot of Moolah Beach?",
+            "html": "dbpedia_3690_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where can I watch Moolah Beach?",
+            "html": "dbpedia_3690_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Moolah Beach a popular show?",
+            "html": "dbpedia_3690_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3690_10.txt"
+        },
+        {
+            "file_id": "dbpedia_3690_13.txt"
+        },
+        {
+            "file_id": "dbpedia_3690_16.txt"
+        },
+        {
+            "file_id": "dbpedia_3690_2.txt"
+        },
+        {
+            "file_id": "dbpedia_3690_24.txt"
+        },
+        {
+            "file_id": "dbpedia_3690_25.txt"
+        },
+        {
+            "file_id": "dbpedia_3690_55.txt"
+        },
+        {
+            "file_id": "dbpedia_3690_59.txt"
+        },
+        {
+            "file_id": "dbpedia_3690_60.txt"
+        },
+        {
+            "file_id": "dbpedia_3690_62.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple \"Moolah Beach stars Kyle Searles\" based on the provided context information:\n\n{\n  \"output\": \"no\"\n}\n\nThe reason for this answer is that while Kyle Searles is mentioned in one of the documents (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3690/re-ranker-msmarco/24.txt) as a participant in the reality show \"Moolah Beach\" and even being a runner-up, there is no indication that he was a star of the show. The document only mentions his participation in the show, not any starring role."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents mention that Kyle Searles was a runner-up in the reality show \"Moolah Beach,\" which supports the statement that Moolah Beach stars Kyle Searles."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "Kyle Searles was a contestant on Moolah Beach, not a star of the show.",
+            "category": -1
+        }
+    }
+}

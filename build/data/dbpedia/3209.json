@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Windows_Server_2003",
+    "predicate": "http://purl.org/linguistics/gold/hypernym",
+    "object": "resource/Server",
+    "human_readable": "A Windows Server 2003 is a type of Server.",
+    "questions": [
+        {
+            "score": 0.9805523753166199,
+            "question": "Is a Windows Server 2003 a type of software?"
+        },
+        {
+            "score": 0.977342963218689,
+            "question": "What kind of system is a Windows Server 2003?"
+        },
+        {
+            "score": 0.7995396256446838,
+            "question": "What year was Windows Server 2003 released?"
+        },
+        {
+            "score": 0.6287589073181152,
+            "question": "What are some features of a Windows Server?"
+        },
+        {
+            "score": 0.5585609674453735,
+            "question": "Name some common types of servers."
+        },
+        {
+            "score": 0.5546703338623047,
+            "question": "Are there different versions of Windows Server?"
+        },
+        {
+            "score": 0.4266572594642639,
+            "question": "How is a Windows Server used in a network?"
+        },
+        {
+            "score": 0.37946271896362305,
+            "question": "Give an example of a server."
+        },
+        {
+            "score": 0.3356885313987732,
+            "question": "What is the purpose of a server?"
+        },
+        {
+            "score": 0.17192783951759338,
+            "question": "What does 'Server' refer to in this context?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=A Windows Server 2003 is a type of Server.",
+            "html": "dbpedia_3209_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the purpose of a server?",
+            "html": "dbpedia_3209_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Give an example of a server.",
+            "html": "dbpedia_3209_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How is a Windows Server used in a network?",
+            "html": "dbpedia_3209_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3209_104.txt"
+        },
+        {
+            "file_id": "dbpedia_3209_111.txt"
+        },
+        {
+            "file_id": "dbpedia_3209_115.txt"
+        },
+        {
+            "file_id": "dbpedia_3209_118.txt"
+        },
+        {
+            "file_id": "dbpedia_3209_122.txt"
+        },
+        {
+            "file_id": "dbpedia_3209_25.txt"
+        },
+        {
+            "file_id": "dbpedia_3209_27.txt"
+        },
+        {
+            "file_id": "dbpedia_3209_32.txt"
+        },
+        {
+            "file_id": "dbpedia_3209_60.txt"
+        },
+        {
+            "file_id": "dbpedia_3209_73.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "{\n  \"output\": \"yes\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide information that supports the statement \"A Windows Server 2003 is a type of Server.\" Specifically, multiple documents refer to Windows Server 2003 as a server operating system. For example:\n\n- \"Windows Server 2003 is a kind of server operating system of Microsoft.\"\n- \"Windows Server 2003 is the new generation network and server operating system released by Microsoft in 2003.\"\n- \"Windows Server 2003 is the operating system of the Windows NT family intended for work on servers.\"\n\nThese statements clearly indicate that Windows Server 2003 is indeed a type of server."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "A Windows Server 2003 is not just a type of server, but specifically a kind of server operating system developed by Microsoft.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "All the provided context explicitly states Windows Server 2003 is a server operating system.  It repeatedly identifies it as such, leaving no room for interpretation that it is anything other than a type of server.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "It contradicts the provided context information, which states \"Windows Server 2003 is a kind of server operating system of Microsoft\" and \"Windows Server 2003 is the operating system of the Windows NT family intended for work on servers\", indicating that it indeed is a type of server.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context clearly states that Windows Server 2003 is a server operating system, not just \"a type of Server.\" This means it is specifically designed to run on servers and provide services for network resources.",
+            "category": 2
+        }
+    }
+}

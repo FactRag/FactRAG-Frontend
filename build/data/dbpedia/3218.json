@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Alex_Troup",
+    "predicate": "ontology/birthPlace",
+    "object": "resource/Scotland_national_football_team",
+    "human_readable": "Alex Troup was born in Scotland national football team.",
+    "questions": [
+        {
+            "score": 0.8590227365493774,
+            "question": "Where was Alex Troup born?"
+        },
+        {
+            "score": 0.8199699521064758,
+            "question": "Has Alex Troup played internationally for Scotland?"
+        },
+        {
+            "score": 0.7397079467773438,
+            "question": "Is Alex Troup involved in football?"
+        },
+        {
+            "score": 0.6851421594619751,
+            "question": "What is Alex Troup's role on the national football team?"
+        },
+        {
+            "score": 0.6833786368370056,
+            "question": "For what national team does Alex Troup play?"
+        },
+        {
+            "score": 0.6210640668869019,
+            "question": "What nationality is Alex Troup?"
+        },
+        {
+            "score": 0.5403596758842468,
+            "question": "What team does Alex Troup play for?"
+        },
+        {
+            "score": 0.45350101590156555,
+            "question": "What sport is Alex Troup associated with?"
+        },
+        {
+            "score": 0.4412795305252075,
+            "question": "Does Alex Troup represent his country in any sports?"
+        },
+        {
+            "score": 0.43972137570381165,
+            "question": "Is Scotland known for its football?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Alex Troup was born in Scotland national football team.",
+            "html": "dbpedia_3218_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Alex Troup represent his country in any sports?",
+            "html": "dbpedia_3218_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What sport is Alex Troup associated with?",
+            "html": "dbpedia_3218_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What team does Alex Troup play for?",
+            "html": "dbpedia_3218_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3218_12.txt"
+        },
+        {
+            "file_id": "dbpedia_3218_24.txt"
+        },
+        {
+            "file_id": "dbpedia_3218_34.txt"
+        },
+        {
+            "file_id": "dbpedia_3218_35.txt"
+        },
+        {
+            "file_id": "dbpedia_3218_43.txt"
+        },
+        {
+            "file_id": "dbpedia_3218_53.txt"
+        },
+        {
+            "file_id": "dbpedia_3218_62.txt"
+        },
+        {
+            "file_id": "dbpedia_3218_73.txt"
+        },
+        {
+            "file_id": "dbpedia_3218_74.txt"
+        },
+        {
+            "file_id": "dbpedia_3218_83.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'} \n``` \n\n\n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide information that supports the statement \"Alex Troup was born in Scotland and played for the Scottish national football team.\" Specifically, multiple documents mention his birthplace as Forfar, Scotland, and refer to him playing for the Scottish national football team (referred to variously as Scottish international appearances)."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Alex Troup was a Scottish footballer but he did not play for the Scotland national football team; he only represented Scotland at international level on four occasions.",
+            "category": 1
+        },
+        "llama3.1": {
+            "reason": "Alex Troup was a Scottish footballer who played for Scotland at an international level, but the birthplace of his nationality is not mentioned anywhere as being outside Scotland.",
+            "category": 1
+        },
+        "qwen2.5": {
+            "reason": "Alex Troup was born in Forfar, Scotland, not directly stated to be born into the Scottish national football team.",
+            "category": 1
+        }
+    }
+}

@@ -1,0 +1,134 @@
+{
+    "subject": "resource/The_Rockfords",
+    "predicate": "ontology/hometown",
+    "object": "resource/United_States",
+    "human_readable": "The Rockfords are from United States.",
+    "questions": [
+        {
+            "score": 0.9097935557365417,
+            "question": "Is the United States the home of the Rockfords?"
+        },
+        {
+            "score": 0.840570867061615,
+            "question": "Where are the Rockfords from?"
+        },
+        {
+            "score": 0.707443118095398,
+            "question": "What country do the Rockfords originate from?"
+        },
+        {
+            "score": 0.6800353527069092,
+            "question": "Where are the Rockfords based?"
+        },
+        {
+            "score": 0.6716936230659485,
+            "question": "The Rockfords are associated with which country?"
+        },
+        {
+            "score": 0.6570667028427124,
+            "question": "What is the origin of the Rockfords?"
+        },
+        {
+            "score": 0.6469818949699402,
+            "question": "To what nation do the Rockfords belong?"
+        },
+        {
+            "score": 0.6248638033866882,
+            "question": "In which country were the Rockfords raised?"
+        },
+        {
+            "score": 0.49404609203338623,
+            "question": "What is the nationality of the Rockfords?"
+        },
+        {
+            "score": 0.40788522362709045,
+            "question": "Can you tell me about the Rockfords' nationality?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The Rockfords are from United States.",
+            "html": "dbpedia_9308_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the nationality of the Rockfords?",
+            "html": "dbpedia_9308_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In which country were the Rockfords raised?",
+            "html": "dbpedia_9308_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=To what nation do the Rockfords belong?",
+            "html": "dbpedia_9308_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_9308_20.txt"
+        },
+        {
+            "file_id": "dbpedia_9308_29.txt"
+        },
+        {
+            "file_id": "dbpedia_9308_30.txt"
+        },
+        {
+            "file_id": "dbpedia_9308_39.txt"
+        },
+        {
+            "file_id": "dbpedia_9308_4.txt"
+        },
+        {
+            "file_id": "dbpedia_9308_67.txt"
+        },
+        {
+            "file_id": "dbpedia_9308_69.txt"
+        },
+        {
+            "file_id": "dbpedia_9308_74.txt"
+        },
+        {
+            "file_id": "dbpedia_9308_80.txt"
+        },
+        {
+            "file_id": "dbpedia_9308_82.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "The triple is \"The Rockfords are from United States.\"\n\nHere's the evaluation:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation:\n\nWhile some of the documents mention Rockford, IL as a location in the United States, none of them explicitly state that the Rockfords (presumably referring to people named Rockford) are from the United States."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide information about Rockford, Illinois. They mention the ethnic composition and history of Rockford but also indicate that it is located in the United States. Therefore, the statement \"The Rockfords are from United States\" can be considered supported by the context provided."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The claim is wrong because there are actually multiple places called \"Rockford\" in the United States, including Rockford, Illinois, and Rockford, Michigan.",
+            "category": 2
+        }
+    }
+}

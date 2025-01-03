@@ -1,0 +1,122 @@
+{
+    "subject": "resource/James_Tien_(politician)",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "Tien, James",
+    "human_readable": "The name of James Tien (politician) is Tien, James.",
+    "questions": [
+        {
+            "score": 0.9814860224723816,
+            "question": "Is James Tien a politician?"
+        },
+        {
+            "score": 0.9440312385559082,
+            "question": "What is the full name of James Tien?"
+        },
+        {
+            "score": 0.8977840542793274,
+            "question": "What is James Tien's last name?"
+        },
+        {
+            "score": 0.8518581390380859,
+            "question": "What is James Tien's first name?"
+        },
+        {
+            "score": 0.8350505232810974,
+            "question": "If you were to introduce James Tien, what would you say his name is?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of James Tien (politician) is Tien, James.",
+            "html": "dbpedia_7891_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is James Tien's first name?",
+            "html": "dbpedia_7891_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is James Tien's last name?",
+            "html": "dbpedia_7891_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the full name of James Tien?",
+            "html": "dbpedia_7891_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_7891_1.txt"
+        },
+        {
+            "file_id": "dbpedia_7891_13.txt"
+        },
+        {
+            "file_id": "dbpedia_7891_19.txt"
+        },
+        {
+            "file_id": "dbpedia_7891_28.txt"
+        },
+        {
+            "file_id": "dbpedia_7891_38.txt"
+        },
+        {
+            "file_id": "dbpedia_7891_4.txt"
+        },
+        {
+            "file_id": "dbpedia_7891_63.txt"
+        },
+        {
+            "file_id": "dbpedia_7891_71.txt"
+        },
+        {
+            "file_id": "dbpedia_7891_93.txt"
+        },
+        {
+            "file_id": "dbpedia_7891_97.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the answer in JSON format:\n\n{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe documents provide information about multiple individuals named James Tien, one of whom is described as a politician with the name \"Tien, James\" or \"Tian, James\", but this does not align precisely with the given query stating that his name is simply \"Tien, James\". Therefore, the answer is \"no\"."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "The provided text states James Tien Pei-chun (politician) was born on January 8, 1947, and his Chinese name is \u7530\u5317\u4fca (Tien Pei-chun).",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The politician's name mentioned in context 2 is James Tien (politician), with the Chinese name \u7530\u4fca, not Tien, James.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context provides multiple variations of the name for James Tien (politician), including \"James Tien\" and \"\u00e5\u008c\u0097\u00e4\u00bf\u008a\" (Tien, James in pinyin), but does not support the given statement that his name is \"Tien, James.\"",
+            "category": 2
+        }
+    }
+}

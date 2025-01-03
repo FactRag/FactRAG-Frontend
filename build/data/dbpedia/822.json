@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Battle_of_the_Network_Stars",
+    "predicate": "property/company",
+    "object": "resource/IMG_(business)",
+    "human_readable": "The company behind the Battle of the Network Stars is IMG.",
+    "questions": [
+        {
+            "score": 0.8535789847373962,
+            "question": "Name the company that organized the Battle of the Network Stars."
+        },
+        {
+            "score": 0.8337746262550354,
+            "question": "Who is behind the production of Battle of the Network Stars?"
+        },
+        {
+            "score": 0.8075038194656372,
+            "question": "Which company was responsible for the Battle of the Network Stars?"
+        },
+        {
+            "score": 0.7554026246070862,
+            "question": "What company produced the Battle of the Network Stars?"
+        },
+        {
+            "score": 0.6779091358184814,
+            "question": "What type of company is IMG?"
+        },
+        {
+            "score": 0.6681293249130249,
+            "question": "Besides Battle of the Network Stars, what other events might IMG produce?"
+        },
+        {
+            "score": 0.5538280010223389,
+            "question": "What organization produced the televised event known as Battle of the Network Stars?"
+        },
+        {
+            "score": 0.34422722458839417,
+            "question": "What role does IMG play in the entertainment industry?"
+        },
+        {
+            "score": 0.32333865761756897,
+            "question": "Is IMG involved in producing any entertainment events?"
+        },
+        {
+            "score": 0.15988074243068695,
+            "question": "Can you give an example of another event produced by IMG?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The company behind the Battle of the Network Stars is IMG.",
+            "html": "dbpedia_822_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is IMG involved in producing any entertainment events?",
+            "html": "dbpedia_822_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What role does IMG play in the entertainment industry?",
+            "html": "dbpedia_822_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What organization produced the televised event known as Battle of the Network Stars?",
+            "html": "dbpedia_822_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_822_120.txt"
+        },
+        {
+            "file_id": "dbpedia_822_140.txt"
+        },
+        {
+            "file_id": "dbpedia_822_149.txt"
+        },
+        {
+            "file_id": "dbpedia_822_15.txt"
+        },
+        {
+            "file_id": "dbpedia_822_23.txt"
+        },
+        {
+            "file_id": "dbpedia_822_26.txt"
+        },
+        {
+            "file_id": "dbpedia_822_40.txt"
+        },
+        {
+            "file_id": "dbpedia_822_6.txt"
+        },
+        {
+            "file_id": "dbpedia_822_70.txt"
+        },
+        {
+            "file_id": "dbpedia_822_96.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the answer in the requested format:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe information in the documents supports this triple, as it mentions that \"Battle of the Network Stars\" is being produced by Glassman Media and IMG (from files 132.txt and 117.txt), which implies that IMG is indeed behind the production of the show."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nExplanation: The documents repeatedly mention that Glassman Media and IMG are the producers and rights-owners of the show \"Battle of the Network Stars.\" This supports the triple stating that IMG is behind the show."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The company behind the Battle of the Network Stars is not only IMG. Glassman Media is also producing the show, as indicated in multiple context statements.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Multiple sources state IMG owns the format and is involved in producing the show.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "According to the provided context information, \"Battle of the Network Stars is being produced by Glassman Media and IMG\" (point 1) and also \"Battle of the network stars is one of those tv shows that stands as probably one of the best team competitions of all time. The show pins the television stars of the 70's and 80's from all three major networks ABC, NBC, and CBS in head to head competition for prize money... (point 6) it states \"The company behind the Battle of the Network Stars is not identified as being solely owned by IMG but rather that Glassman Media and IMG are the producers, thus indicating a shared ownership or partnership rather than sole ownership.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information mentions that Battle of the Network Stars is produced by Glassman Media and IMG, with executive producers from Glassman Media. While IMG owns the format, it is not explicitly stated that IMG is behind the production of this specific revival.",
+            "category": 2
+        }
+    }
+}

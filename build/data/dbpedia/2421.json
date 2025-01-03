@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Gauhati_University",
+    "predicate": "property/campus",
+    "object": "resource/Urban_area",
+    "human_readable": "The campus of Gauhati University is located in an urban area.",
+    "questions": [
+        {
+            "score": 0.9805659055709839,
+            "question": "Is the campus of Gauhati University in a rural or urban area?"
+        },
+        {
+            "score": 0.9743647575378418,
+            "question": "Where is the campus of Gauhati University located?"
+        },
+        {
+            "score": 0.811613917350769,
+            "question": "Describe the setting of Gauhati University's campus."
+        },
+        {
+            "score": 0.658656656742096,
+            "question": "How might the urban environment influence student life at Gauhati University?"
+        },
+        {
+            "score": 0.6564564108848572,
+            "question": "Would you expect to find many businesses and residential areas near Gauhati University?"
+        },
+        {
+            "score": 0.6465126872062683,
+            "question": "What might be some characteristics of a university located in an urban area?"
+        },
+        {
+            "score": 0.5894374251365662,
+            "question": "What type of environment surrounds Gauhati University's campus?"
+        },
+        {
+            "score": 0.5670860409736633,
+            "question": "Are there any specific features or amenities that are commonly found near urban university campuses?"
+        },
+        {
+            "score": 0.3715827465057373,
+            "question": "What are some potential advantages and disadvantages of a university being situated in an urban area?"
+        },
+        {
+            "score": 0.3054141402244568,
+            "question": "Can you imagine how different the campus experience would be if it were located in a rural area?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The campus of Gauhati University is located in an urban area.",
+            "html": "dbpedia_2421_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some potential advantages and disadvantages of a university being situated in an urban area?",
+            "html": "dbpedia_2421_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any specific features or amenities that are commonly found near urban university campuses?",
+            "html": "dbpedia_2421_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of environment surrounds Gauhati University's campus?",
+            "html": "dbpedia_2421_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2421_107.txt"
+        },
+        {
+            "file_id": "dbpedia_2421_30.txt"
+        },
+        {
+            "file_id": "dbpedia_2421_37.txt"
+        },
+        {
+            "file_id": "dbpedia_2421_51.txt"
+        },
+        {
+            "file_id": "dbpedia_2421_56.txt"
+        },
+        {
+            "file_id": "dbpedia_2421_66.txt"
+        },
+        {
+            "file_id": "dbpedia_2421_70.txt"
+        },
+        {
+            "file_id": "dbpedia_2421_74.txt"
+        },
+        {
+            "file_id": "dbpedia_2421_75.txt"
+        },
+        {
+            "file_id": "dbpedia_2421_82.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me explain:\n\n* **Context:** Several documents mention that Gauhati University is located in Jalukbari, Guwahati city.  Guwahati is a major city in India. \n* **Urban Area:** The term \"urban area\" generally refers to a populated city or town. Since Guwahati is a city, the campus of Gauhati University is indeed located in an urban area. \n\n\n\nLet me know if you have any other triples you'd like me to evaluate!"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the context information provided, here is the evaluation of the triple:\n\n{\n  \"output\": \"no\"\n}\n\nReasoning:\nThe documents mention that the Gauhati University campus is located between a hillock and the Brahmaputra River, which suggests a rural or semi-rural area rather than an urban area. Additionally, one document mentions that the university's campus includes residential quarters for teachers and staff, which implies a more suburban or campus-like environment rather than a typical urban area."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\n**Explanation:** The documents provide information about the location of Gauhati University, stating that it is located in Jalukbari, Guwahati, which is a city (urban area). Therefore, the statement \"The campus of Gauhati University is located in an urban area\" is supported by the given context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {'output': 'yes'}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The context information mentions that the campus of Gauhati University is located between a hillock on the southern end and the mighty Brahmaputra River on the northern end, which suggests a mixed urban-rural or semi-urban area rather than a purely urban one.",
+            "category": 2
+        }
+    }
+}

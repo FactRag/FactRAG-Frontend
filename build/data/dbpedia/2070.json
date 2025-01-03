@@ -1,0 +1,112 @@
+{
+    "subject": "resource/Mi_Fu",
+    "predicate": "http://xmlns.com/foaf/0.1/givenName",
+    "object": "Fu",
+    "human_readable": "Mi Fu's given name is Fu.",
+    "questions": [
+        {
+            "score": 0.9739003777503967,
+            "question": "What is Mi Fu's given name?"
+        },
+        {
+            "score": 0.9087216854095459,
+            "question": "Is 'Fu' the first name of Mi Fu?"
+        },
+        {
+            "score": 0.8754824995994568,
+            "question": "Who is Mi Fu?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Mi Fu's given name is Fu.",
+            "html": "dbpedia_2070_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is 'Fu' the first name of Mi Fu?",
+            "html": "dbpedia_2070_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Mi Fu's given name?",
+            "html": "dbpedia_2070_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2070_1.txt"
+        },
+        {
+            "file_id": "dbpedia_2070_115.txt"
+        },
+        {
+            "file_id": "dbpedia_2070_13.txt"
+        },
+        {
+            "file_id": "dbpedia_2070_21.txt"
+        },
+        {
+            "file_id": "dbpedia_2070_30.txt"
+        },
+        {
+            "file_id": "dbpedia_2070_33.txt"
+        },
+        {
+            "file_id": "dbpedia_2070_37.txt"
+        },
+        {
+            "file_id": "dbpedia_2070_42.txt"
+        },
+        {
+            "file_id": "dbpedia_2070_5.txt"
+        },
+        {
+            "file_id": "dbpedia_2070_90.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, here is the structured JSON response:\n\n```\n{\n  \"output\": \"no\"\n}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: The information provided in the documents does not support the statement that \"Mi Fu's given name is Fu.\" According to the documents, his style name (\u5b57) is Yuanzhang, and he is primarily referred to by his full name \u7c73\u82be or M\u01d0 F\u00fa. His given name, based on the romanization, would be F\u00fa, but typically in Chinese culture, one might focus more on his style name or how he was commonly known rather than his given name when discussing historical figures like Mi Fu."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}\n\nThe documents provide the given name of Mi Fu as \"Fu\" (Chinese: \u7c73\u82be or \u7c73\u9efb; pinyin: M\u01d0 F\u00fa). Thus, the statement that Mi Fu's given name is Fu is supported by the information in the provided context."
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Mi Fu is referred to by multiple names (Mi Fei, Yuanzhang) throughout the context, but there is no mention of his given name being Fu.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Multiple sources state Mi Fu's name as \"Mi Fu\" (\u7c73\u82be) with \"Fu\" listed as his given name.",
+            "category": 2
+        }
+    }
+}

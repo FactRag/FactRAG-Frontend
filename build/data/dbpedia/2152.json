@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Barbara_Loden",
+    "predicate": "property/placeOfDeath",
+    "object": "New York City, New York, U.S.",
+    "human_readable": "Barbara Loden died in New York City, New York, U.S.",
+    "questions": [
+        {
+            "score": 0.96542888879776,
+            "question": "Is Barbara Loden's death associated with New York City?"
+        },
+        {
+            "score": 0.9408243298530579,
+            "question": "Did Barbara Loden die in the United States?"
+        },
+        {
+            "score": 0.9108216166496277,
+            "question": "Barbara Loden died in New York. Is this true or false?"
+        },
+        {
+            "score": 0.8824595212936401,
+            "question": "Where did Barbara Loden die?"
+        },
+        {
+            "score": 0.7858183979988098,
+            "question": "Where was Barbara Loden at the time of her death?"
+        },
+        {
+            "score": 0.7721482515335083,
+            "question": "Was New York City the place of Barbara Loden's passing?"
+        },
+        {
+            "score": 0.7546724677085876,
+            "question": "What was the location of Barbara Loden's death?"
+        },
+        {
+            "score": 0.7412059903144836,
+            "question": "Which state was Barbara Loden's place of death in?"
+        },
+        {
+            "score": 0.5404330492019653,
+            "question": "In what city did Barbara Loden pass away?"
+        },
+        {
+            "score": 0.28464028239250183,
+            "question": "What country is connected to Barbara Loden's passing?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Barbara Loden died in New York City, New York, U.S.",
+            "html": "dbpedia_2152_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In what city did Barbara Loden pass away?",
+            "html": "dbpedia_2152_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Which state was Barbara Loden's place of death in?",
+            "html": "dbpedia_2152_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What was the location of Barbara Loden's death?",
+            "html": "dbpedia_2152_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2152_1.txt"
+        },
+        {
+            "file_id": "dbpedia_2152_10.txt"
+        },
+        {
+            "file_id": "dbpedia_2152_103.txt"
+        },
+        {
+            "file_id": "dbpedia_2152_18.txt"
+        },
+        {
+            "file_id": "dbpedia_2152_33.txt"
+        },
+        {
+            "file_id": "dbpedia_2152_41.txt"
+        },
+        {
+            "file_id": "dbpedia_2152_46.txt"
+        },
+        {
+            "file_id": "dbpedia_2152_56.txt"
+        },
+        {
+            "file_id": "dbpedia_2152_63.txt"
+        },
+        {
+            "file_id": "dbpedia_2152_69.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the answer in JSON format:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents confirm that Barbara Loden died on September 5, 1980, and it is mentioned that she died of cancer (L\u00e9ger 32, IMDB) in New York."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The provided documents do not mention the location of Barbara Loden's death. While it is stated that she died on September 5, 1980, in New York (L\u00e9ger 32, IMDB), there is no specific mention of her dying in New York City. Therefore, the statement cannot be confirmed based solely on the given context information."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "qwen2.5": {
+            "reason": "The provided context mentions that Barbara Loden died on September 5, 1980, in New York (L\u00e9ger 32, IMDB), but it does not specify the exact location within New York City. Therefore, stating she died specifically in New York City, without specifying a borough or neighborhood, is an overgeneralization and potentially inaccurate claim based on the given information.",
+            "category": 2
+        }
+    }
+}

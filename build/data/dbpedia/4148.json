@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Dharma_Chakram",
+    "predicate": "property/title",
+    "object": "Cheppana Cheppana",
+    "human_readable": "The title of Dharma Chakram is 'Cheppana Cheppana'.",
+    "questions": [
+        {
+            "score": 0.8513041138648987,
+            "question": "What is the title of Dharma Chakram?"
+        },
+        {
+            "score": 0.7227051258087158,
+            "question": "What does 'Cheppana Cheppana' refer to?"
+        },
+        {
+            "score": 0.6986808180809021,
+            "question": "Is 'Cheppana Cheppana' a song or a movie title?"
+        },
+        {
+            "score": 0.5005648136138916,
+            "question": "Can you give me some information about Dharma Chakram?"
+        },
+        {
+            "score": 0.4842911660671234,
+            "question": "What genre is Dharma Chakram likely to be?"
+        },
+        {
+            "score": 0.4718765616416931,
+            "question": "Is 'Cheppana Cheppana' a popular phrase in any language?"
+        },
+        {
+            "score": 0.42478254437446594,
+            "question": "What year was Dharma Chakram released?"
+        },
+        {
+            "score": 0.3283006250858307,
+            "question": "Are there any famous actors or directors associated with Dharma Chakram?"
+        },
+        {
+            "score": 0.3225107789039612,
+            "question": "Where was Dharma Chakram likely filmed?"
+        },
+        {
+            "score": 0.31379905343055725,
+            "question": "Can you find any reviews or ratings for Dharma Chakram?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The title of Dharma Chakram is 'Cheppana Cheppana'.",
+            "html": "dbpedia_4148_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where was Dharma Chakram likely filmed?",
+            "html": "dbpedia_4148_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any famous actors or directors associated with Dharma Chakram?",
+            "html": "dbpedia_4148_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What year was Dharma Chakram released?",
+            "html": "dbpedia_4148_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4148_1.txt"
+        },
+        {
+            "file_id": "dbpedia_4148_22.txt"
+        },
+        {
+            "file_id": "dbpedia_4148_26.txt"
+        },
+        {
+            "file_id": "dbpedia_4148_35.txt"
+        },
+        {
+            "file_id": "dbpedia_4148_40.txt"
+        },
+        {
+            "file_id": "dbpedia_4148_48.txt"
+        },
+        {
+            "file_id": "dbpedia_4148_59.txt"
+        },
+        {
+            "file_id": "dbpedia_4148_63.txt"
+        },
+        {
+            "file_id": "dbpedia_4148_76.txt"
+        },
+        {
+            "file_id": "dbpedia_4148_80.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nWhile the document mentions a song titled \"Cheppana Cheppana\" from the movie *Dharma Chakram*, it does not state that this is the title of the film.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation:\n\nThe triple to be evaluated is \"The title of Dharma Chakram is 'Cheppana Cheppana'.\"\n\nGiven the context information, we can see that in the document at file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4148/re-ranker-msmarco/26.txt, there is a section titled \"Dharma Chakram Audio Album Information:\" and then a list of songs with titles like \"Cheppana Cheppana\", but it's not stated that this song is the title track or the main title of the movie.\n\nHowever, in another document at file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4148/re-ranker-msmarco/40.txt, there is a section titled \"Neetho Cheppana\" with lyrics that include the line \"neetho cheppana neekuda thelisina\", which suggests that \"Cheppana Cheppana\" might be related to the movie's title.\n\nDespite this, there is no direct evidence in any of the documents that the main title or title track of the movie \"Dharma Chakram\" is indeed \"Cheppana Cheppana\".\n\nTherefore:\n\n {'output': 'no'}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents do not provide any information to support the claim that the title of the movie *Dharma Chakram* is 'Cheppana Cheppana'. While it lists several songs from the album, none are titled 'Cheppana Cheppana', and no such information is provided for the film's main title."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Dharma Chakram is a 1996 Indian film, not a song from the movie. The provided information pertains to the songs of the Dharma Chakram album, specifically \"Neetho Cheppana\", not the title of the movie itself.",
+            "category": 4
+        },
+        "gemma2": {
+            "reason": "The provided text lists \"Cheppana Cheppana\" as a song title from the Dharma Chakram soundtrack.  Song titles are not typically the same as film titles.",
+            "category": 4
+        },
+        "llama3.1": {
+            "reason": "Dharma Chakram's title was not \"Cheppana Cheppana\", as the correct information from question 3 states that one of the song titles is \"Cheppana Cheppana\" but the actual film title is listed in question 2 and it says \"Dharma Chakram\".",
+            "category": 4
+        },
+        "qwen2.5": {
+            "reason": "The context information provided does not list \"Cheppana Cheppana\" as the title of Dharma Chakram. Instead, it lists several songs from the film's audio album, but does not mention this specific song as the title of the movie.",
+            "category": 4
+        }
+    }
+}

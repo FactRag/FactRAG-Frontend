@@ -1,0 +1,97 @@
+{
+    "subject": "resource/WTYS_(AM)",
+    "predicate": "property/name",
+    "object": "WTYS",
+    "human_readable": "The name of WTYS is WTYS.",
+    "questions": [
+        {
+            "score": 0.9587346315383911,
+            "question": "What is the name of WTYS?"
+        },
+        {
+            "score": 0.855574905872345,
+            "question": "Does WTYS have a different name?"
+        },
+        {
+            "score": 0.751194179058075,
+            "question": "Is WTYS known by another identifier?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of WTYS is WTYS.",
+            "html": "dbpedia_3950_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does WTYS have a different name?",
+            "html": "dbpedia_3950_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of WTYS?",
+            "html": "dbpedia_3950_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3950_107.txt"
+        },
+        {
+            "file_id": "dbpedia_3950_16.txt"
+        },
+        {
+            "file_id": "dbpedia_3950_23.txt"
+        },
+        {
+            "file_id": "dbpedia_3950_30.txt"
+        },
+        {
+            "file_id": "dbpedia_3950_42.txt"
+        },
+        {
+            "file_id": "dbpedia_3950_43.txt"
+        },
+        {
+            "file_id": "dbpedia_3950_47.txt"
+        },
+        {
+            "file_id": "dbpedia_3950_73.txt"
+        },
+        {
+            "file_id": "dbpedia_3950_74.txt"
+        },
+        {
+            "file_id": "dbpedia_3950_92.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation:\n\nThe triple to be evaluated is:\n\"WTYS has a station frequency of 1340 KHz.\"\n\nGiven the context information, we can find several documents related to WTYS.\n\nOne document (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3950/re-ranker-msmarco/43.txt) mentions:\n\"WTYS is an AM radio station broadcasting at 1340 KHz.\"\n\nThis information directly supports the triple, as it confirms that WTYS has a station frequency of 1340 KHz.\n\nAnother document (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3950/re-ranker-msmarco/92.txt) mentions:\n\"WTYS is an FM radio station broadcasting at 94.1 MHz.\"\n\nThis information contradicts the first document and suggests that WTYS has a different station frequency, 94.1 MHz.\n\nHowever, since we are evaluating the triple \"WTYS has a station frequency of 1340 KHz\", the fact that the second document mentions a different frequency does not affect its validity. The presence of contradictory information in another document does not make the initial statement incorrect; it simply means there is conflicting information about WTYS's frequencies.\n\nTherefore, based on the context information provided and focusing only on the triple \"WTYS has a station frequency of 1340 KHz\", we can conclude that this statement is supported by one of the documents related to WTYS.\n\nThe final answer is: \n\n```\n{\n    \"output\": \"yes\"\n}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\nThe query \"The name of WTYS is WTYS\" is correct according to the provided context information, as both documents mention \"WTYS\" as the radio station's identifier."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

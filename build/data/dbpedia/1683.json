@@ -1,0 +1,146 @@
+{
+    "subject": "resource/All_I_Do_Is_Win",
+    "predicate": "ontology/musicalArtist",
+    "object": "resource/DJ_Khaled",
+    "human_readable": "DJ Khaled is a musical artist.",
+    "questions": [
+        {
+            "score": 0.978821873664856,
+            "question": "Is DJ Khaled a musician?"
+        },
+        {
+            "score": 0.8483474254608154,
+            "question": "What genre of music is DJ Khaled associated with?"
+        },
+        {
+            "score": 0.7783803343772888,
+            "question": "What other roles does DJ Khaled have besides being a musical artist?"
+        },
+        {
+            "score": 0.7422295808792114,
+            "question": "What is DJ Khaled known for?"
+        },
+        {
+            "score": 0.6732236742973328,
+            "question": "Is DJ Khaled known for collaborations with other artists?"
+        },
+        {
+            "score": 0.6539294123649597,
+            "question": "Where is DJ Khaled from?"
+        },
+        {
+            "score": 0.638145923614502,
+            "question": "What are some popular songs by DJ Khaled?"
+        },
+        {
+            "score": 0.4566497802734375,
+            "question": "Has DJ Khaled released any albums?"
+        },
+        {
+            "score": 0.23027153313159943,
+            "question": "Has DJ Khaled won any awards?"
+        },
+        {
+            "score": 0.21328043937683105,
+            "question": "What is DJ Khaled's signature catchphrase?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=DJ Khaled is a musical artist.",
+            "html": "dbpedia_1683_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Has DJ Khaled won any awards?",
+            "html": "dbpedia_1683_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Has DJ Khaled released any albums?",
+            "html": "dbpedia_1683_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some popular songs by DJ Khaled?",
+            "html": "dbpedia_1683_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1683_111.txt"
+        },
+        {
+            "file_id": "dbpedia_1683_113.txt"
+        },
+        {
+            "file_id": "dbpedia_1683_119.txt"
+        },
+        {
+            "file_id": "dbpedia_1683_13.txt"
+        },
+        {
+            "file_id": "dbpedia_1683_19.txt"
+        },
+        {
+            "file_id": "dbpedia_1683_23.txt"
+        },
+        {
+            "file_id": "dbpedia_1683_42.txt"
+        },
+        {
+            "file_id": "dbpedia_1683_6.txt"
+        },
+        {
+            "file_id": "dbpedia_1683_69.txt"
+        },
+        {
+            "file_id": "dbpedia_1683_8.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the answer in the form of a structured JSON format:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThis is because all four documents mention DJ Khaled as a musician, with descriptions such as \"popular American DJ\", \"gifted musician\", and \"modern Hip Hop artist\"."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide multiple references that confirm DJ Khaled's status as a musical artist, including information on his albums, songs, and career in the music industry."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "DJ Khaled is not just a musical artist; he is also a record executive, record producer, radio personality, and media personality.",
+            "category": 4
+        },
+        "gemma2": {
+            "reason": "Several sources describe DJ Khaled primarily as a record executive, producer, and radio personality. While he does release music, the emphasis across the provided texts is on his roles beyond being a performing musical artist.",
+            "category": 4
+        },
+        "llama3.1": {
+            "reason": "The information provided clearly states that DJ Khaled is a \"popular American DJ, record executive, and producer\" and that he has released numerous albums featuring collaborations with big names in music.",
+            "category": 4
+        },
+        "qwen2.5": {
+            "reason": "DJ Khaled is explicitly described as a \"DJ, record executive, and producer\" with significant contributions to the music industry through both his production work and collaborations. Therefore, he cannot be considered solely a musical artist in the traditional sense.",
+            "category": 4
+        }
+    }
+}

@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Brad_Sherman",
+    "predicate": "ontology/birthPlace",
+    "object": "resource/Los_Angeles",
+    "human_readable": "The birth place of Brad Sherman is Los Angeles.",
+    "questions": [
+        {
+            "score": 0.9883225560188293,
+            "question": "Is Los Angeles the birthplace of Brad Sherman?"
+        },
+        {
+            "score": 0.9156904220581055,
+            "question": "What is the birth location of Brad Sherman?"
+        },
+        {
+            "score": 0.9104257225990295,
+            "question": "Brad Sherman's birthplace is...?"
+        },
+        {
+            "score": 0.9090327620506287,
+            "question": "Where was Brad Sherman born?"
+        },
+        {
+            "score": 0.8899796009063721,
+            "question": "What is the name of the place where Brad Sherman was born?"
+        },
+        {
+            "score": 0.8422951102256775,
+            "question": "What city is associated with Brad Sherman's birth?"
+        },
+        {
+            "score": 0.6780311465263367,
+            "question": "Can you tell me a place related to Brad Sherman?"
+        },
+        {
+            "score": 0.6438016295433044,
+            "question": "Who was born in Los Angeles?"
+        },
+        {
+            "score": 0.5997195839881897,
+            "question": "Where did Brad Sherman come from?"
+        },
+        {
+            "score": 0.3307710886001587,
+            "question": "In which city did Brad Sherman enter the world?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The birth place of Brad Sherman is Los Angeles.",
+            "html": "dbpedia_6472_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where did Brad Sherman come from?",
+            "html": "dbpedia_6472_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who was born in Los Angeles?",
+            "html": "dbpedia_6472_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me a place related to Brad Sherman?",
+            "html": "dbpedia_6472_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6472_108.txt"
+        },
+        {
+            "file_id": "dbpedia_6472_12.txt"
+        },
+        {
+            "file_id": "dbpedia_6472_13.txt"
+        },
+        {
+            "file_id": "dbpedia_6472_28.txt"
+        },
+        {
+            "file_id": "dbpedia_6472_46.txt"
+        },
+        {
+            "file_id": "dbpedia_6472_53.txt"
+        },
+        {
+            "file_id": "dbpedia_6472_56.txt"
+        },
+        {
+            "file_id": "dbpedia_6472_61.txt"
+        },
+        {
+            "file_id": "dbpedia_6472_65.txt"
+        },
+        {
+            "file_id": "dbpedia_6472_76.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the answer in the form of a structured JSON format:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: While some documents mention that Brad Sherman was born in California, none of them specifically state that his birthplace is Los Angeles. However, one document mentions that he was \"born and raised in Southern California\", which implies that his birthplace might be in the Los Angeles area, but this is not explicitly stated. Therefore, based on the provided information, it cannot be confirmed that Brad Sherman's birthplace is indeed Los Angeles."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents clearly state that Brad Sherman was born in Los Angeles, California. Therefore, the statement \"The birth place of Brad Sherman is Los Angeles\" is supported by the provided context information."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "It contradicts the information provided in all six contexts.",
+            "category": 2
+        }
+    }
+}

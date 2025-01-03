@@ -1,0 +1,129 @@
+{
+    "subject": "resource/WTYS_(AM)",
+    "predicate": "property/city",
+    "object": "resource/Marianna,_Florida",
+    "human_readable": "The city of WTYS (AM) is Marianna, Florida.",
+    "questions": [
+        {
+            "score": 0.9147909283638,
+            "question": "Can you provide another name for Marianna, Florida besides WTYS (AM)?"
+        },
+        {
+            "score": 0.8407633900642395,
+            "question": "What state is Marianna, Florida in?"
+        },
+        {
+            "score": 0.7088911533355713,
+            "question": "Where is Marianna located?"
+        },
+        {
+            "score": 0.6828012466430664,
+            "question": "Is Marianna a city or a different type of location?"
+        },
+        {
+            "score": 0.6272002458572388,
+            "question": "Are there any other locations with the name Marianna?"
+        },
+        {
+            "score": 0.6051048040390015,
+            "question": "What is the official name of the city represented by the abbreviation WTYS?"
+        },
+        {
+            "score": 0.601332426071167,
+            "question": "What is a common way to refer to Marianna, Florida besides its official name?"
+        },
+        {
+            "score": 0.5943191647529602,
+            "question": "How would you describe the geography of Marianna, Florida?"
+        },
+        {
+            "score": 0.3381222188472748,
+            "question": "Could you give an example of a landmark or attraction in Marianna?"
+        },
+        {
+            "score": 0.037361934781074524,
+            "question": "What is the meaning of the abbreviation 'AM' in this context?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The city of WTYS (AM) is Marianna, Florida.",
+            "html": "dbpedia_3949_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Could you give an example of a landmark or attraction in Marianna?",
+            "html": "dbpedia_3949_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How would you describe the geography of Marianna, Florida?",
+            "html": "dbpedia_3949_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is a common way to refer to Marianna, Florida besides its official name?",
+            "html": "dbpedia_3949_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3949_12.txt"
+        },
+        {
+            "file_id": "dbpedia_3949_21.txt"
+        },
+        {
+            "file_id": "dbpedia_3949_34.txt"
+        },
+        {
+            "file_id": "dbpedia_3949_35.txt"
+        },
+        {
+            "file_id": "dbpedia_3949_39.txt"
+        },
+        {
+            "file_id": "dbpedia_3949_44.txt"
+        },
+        {
+            "file_id": "dbpedia_3949_46.txt"
+        },
+        {
+            "file_id": "dbpedia_3949_47.txt"
+        },
+        {
+            "file_id": "dbpedia_3949_61.txt"
+        },
+        {
+            "file_id": "dbpedia_3949_72.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me explain how I arrived at this answer:\n\n* **File 67:** This file states \"Station Infomation Genre: General, Mixed Location: Marianna, Florida\".  This explicitly identifies WTYS (AM)'s location. \n* **File 45:** This file mentions that WTYS is in Marianna.\n\n\nSince the provided documents clearly state that WTYS (AM) is located in Marianna, Florida, the triple is correct."
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here's the structured JSON format containing the evaluation result:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: Based on the provided context information, the documents contain the following relevant information:\n\n* The city of Marianna, Florida (document with file_path ending in \"/34.txt\") is mentioned as the location where WTYS (AM) is situated.\n* There's also a document (file_path ending in \"/67.txt\") containing information about WTYS 1340 AM \u2013 United States Top Radio Station for General, Mixed Listen Online, which mentions that it broadcasts from Marianna, Florida.\n\nTherefore, according to the context information, there is support for the triple \"The city of WTYS (AM) is Marianna, Florida\"."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents mention several details about the radio station WTYS-AM and its location. Specifically, it states that WTYS-AM broadcasts from Marianna, Florida, which supports the query that the city of WTYS (AM) is Marianna, Florida."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

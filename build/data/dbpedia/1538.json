@@ -1,0 +1,134 @@
+{
+    "subject": "resource/List_of_Brickleberry_episodes",
+    "predicate": "property/aux",
+    "object": "0.66",
+    "human_readable": "The average rating of Brickleberry episodes is 0.66.",
+    "questions": [
+        {
+            "score": 0.9497132301330566,
+            "question": "What is the average rating of Brickleberry episodes?"
+        },
+        {
+            "score": 0.7535796165466309,
+            "question": "On a scale of 1 to 10, how would you rate the average episode of Brickleberry?"
+        },
+        {
+            "score": 0.7197462916374207,
+            "question": "Is Brickleberry generally considered a highly-rated show?"
+        },
+        {
+            "score": 0.6565812826156616,
+            "question": "Could you give me an example of a show with a higher average rating than Brickleberry?"
+        },
+        {
+            "score": 0.5840821266174316,
+            "question": "Who might enjoy watching Brickleberry despite its low average rating?"
+        },
+        {
+            "score": 0.5831409096717834,
+            "question": "How does the average rating of Brickleberry compare to other animated comedies?"
+        },
+        {
+            "score": 0.561377763748169,
+            "question": "What factors might contribute to the low average rating of Brickleberry?"
+        },
+        {
+            "score": 0.44807904958724976,
+            "question": "Are there any specific episodes of Brickleberry that are particularly well-received?"
+        },
+        {
+            "score": 0.34240344166755676,
+            "question": "Do you think the average rating reflects the overall quality of the show?"
+        },
+        {
+            "score": 0.17261651158332825,
+            "question": "What type of humor is prevalent in Brickleberry?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The average rating of Brickleberry episodes is 0.66.",
+            "html": "dbpedia_1538_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Do you think the average rating reflects the overall quality of the show?",
+            "html": "dbpedia_1538_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any specific episodes of Brickleberry that are particularly well-received?",
+            "html": "dbpedia_1538_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What factors might contribute to the low average rating of Brickleberry?",
+            "html": "dbpedia_1538_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1538_15.txt"
+        },
+        {
+            "file_id": "dbpedia_1538_2.txt"
+        },
+        {
+            "file_id": "dbpedia_1538_3.txt"
+        },
+        {
+            "file_id": "dbpedia_1538_33.txt"
+        },
+        {
+            "file_id": "dbpedia_1538_48.txt"
+        },
+        {
+            "file_id": "dbpedia_1538_65.txt"
+        },
+        {
+            "file_id": "dbpedia_1538_70.txt"
+        },
+        {
+            "file_id": "dbpedia_1538_83.txt"
+        },
+        {
+            "file_id": "dbpedia_1538_9.txt"
+        },
+        {
+            "file_id": "dbpedia_1538_91.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "To answer the question, I need to evaluate whether the information in the documents supports the triple \"The average rating of Brickleberry episodes is 7.3 / 10.\"\n\nHere's the evaluation:\n\n* The document at file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1538/re-ranker-msmarco/19.txt mentions an average rating, but it doesn't specify that it's for Brickleberry episodes. However, later documents (e.g., /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1538/re-ranker-msmarco/32.txt and /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1538/re-ranker-msmarco/64.txt) mention Brickleberry and its ratings, including an average rating.\n* The document at file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1538/re-ranker-msmarco/32.txt mentions that \"Simply put, the only thing that's not shocking about Brickleberry is its TV-MA rating\", which implies that Brickleberry has a specific average rating. However, it doesn't explicitly mention 7.3 / 10.\n* The document at file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1538/re-ranker-msmarco/64.txt mentions an average rating of Brickleberry (specifically, \"Average rating 7.3 / 10\"), which is consistent with the information in later documents.\n\nBased on this evaluation, I would say that:\n\n```\n{\n    \"output\": \"yes\"\n}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents mention the average rating for Brickleberry as 7.3 / 10, which contradicts the claim that the average rating of Brickleberry episodes is 0.66. Therefore, the information does not support the given triple."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n     \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The claim is wrong because the available information shows that Brickleberry Season 1 Episodes resulted in a 0.80 rating, but when considering all seasons, the average rating of Brickleberry episodes is shown to be 7.3 / 10 which equals approximately 0.73, not 0.66.",
+            "category": 2
+        }
+    }
+}

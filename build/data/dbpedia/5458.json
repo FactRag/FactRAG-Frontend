@@ -1,0 +1,144 @@
+{
+    "subject": "resource/WKSU-FM",
+    "predicate": "property/repeater",
+    "object": "WKSV/",
+    "human_readable": "WKSU-FM is a repeater for WKSV.",
+    "questions": [
+        {
+            "score": 0.9290928244590759,
+            "question": "What is WKSU-FM a repeater for?"
+        },
+        {
+            "score": 0.7013373970985413,
+            "question": "Does WKSV have any other repeaters besides WKSU-FM?"
+        },
+        {
+            "score": 0.5176922678947449,
+            "question": "How does WKSU-FM contribute to the radio landscape in its area?"
+        },
+        {
+            "score": 0.4495064318180084,
+            "question": "What station frequency does WKSU-FM operate on?"
+        },
+        {
+            "score": 0.4467158019542694,
+            "question": "Is WKSU-FM an independent radio station?"
+        },
+        {
+            "score": 0.441166490316391,
+            "question": "Where is WKSU-FM located?"
+        },
+        {
+            "score": 0.42932620644569397,
+            "question": "Who owns WKSU-FM?"
+        },
+        {
+            "score": 0.41877827048301697,
+            "question": "Are there any other stations that are rebroadcast by WKSV?"
+        },
+        {
+            "score": 0.3040928840637207,
+            "question": "What type of programming does WKSU-FM broadcast?"
+        },
+        {
+            "score": 0.2427803874015808,
+            "question": "What is the format of programming on WKSV?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=WKSU-FM is a repeater for WKSV.",
+            "html": "dbpedia_5458_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of programming does WKSU-FM broadcast?",
+            "html": "dbpedia_5458_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any other stations that are rebroadcast by WKSV?",
+            "html": "dbpedia_5458_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who owns WKSU-FM?",
+            "html": "dbpedia_5458_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5458_17.txt"
+        },
+        {
+            "file_id": "dbpedia_5458_20.txt"
+        },
+        {
+            "file_id": "dbpedia_5458_26.txt"
+        },
+        {
+            "file_id": "dbpedia_5458_31.txt"
+        },
+        {
+            "file_id": "dbpedia_5458_39.txt"
+        },
+        {
+            "file_id": "dbpedia_5458_42.txt"
+        },
+        {
+            "file_id": "dbpedia_5458_48.txt"
+        },
+        {
+            "file_id": "dbpedia_5458_58.txt"
+        },
+        {
+            "file_id": "dbpedia_5458_74.txt"
+        },
+        {
+            "file_id": "dbpedia_5458_77.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nWKSU is the main station and WKSV is one of its repeaters.  The document states: \"The station also has repeaters in Thompson (89.1 WKSV), Wooster (89.3 WKRW), Norwalk (90.7 WNRK), New Philadelphia (91.5 WKRJ), Boardman (107.5 W298BA), and Ashland (95.7 W238AZ). WKSU 89.7 and the 4 full-power repeater stations are broadcast in HD Radio\"."
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation of the triple:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information about WKSU-FM and its relationship with other stations, including WKSV. Specifically, it mentions that WKSU serves the Akron radio market but can also be heard in most of the eastern half of the Cleveland market, and that WKSU has repeaters in Thompson (89.1 WKSV), Wooster (89.3 WKRW), Norwalk (90.7 WNRK), New Philadelphia (91.5 WKRJ), Boardman (107.5 W298BA), and Ashland (95.7 W238AZ). This suggests that WKSV is indeed a repeater for WKSU-FM, as the documents describe it."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\"output\": \"yes\"}\n```\n\nThe documents provide information that supports the statement \"WKSU-FM is a repeater for WKSV.\" Specifically, the document mentions \"The station also has repeaters in Thompson (89.1 WKSV), Wooster (89.3 WKRW), Norwalk (90.7 WNRK), New Philadelphia (91.5 WKRJ), Boardman (107.5 W298BA), and Ashland (95.7 W238AZ).\" This indicates that WKSU-FM operates in tandem with other stations like WKSV, confirming the repeater relationship."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n      \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nThe provided context information does not support the statement \"WKSU-FM is a repeater for WKSV.\" In fact, the documents indicate that WKSV (89.1 FM) in Thompson is one of the repeaters for WKSU (89.7 FM), not the other way around."
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "WKSU-FM and WKSV are not repeaters of each other. Instead, WKSU operates as a main station with six regional repeater stations, including WKSV, in the area. WKSU serves as the region's main NPR affiliated news and information station, while WKSV is one of its repeaters. The two stations do not function as repeaters for each other.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "WKSU operates its own repeater stations, including WKSV, rather than being a repeater itself.",
+            "category": 2
+        }
+    }
+}

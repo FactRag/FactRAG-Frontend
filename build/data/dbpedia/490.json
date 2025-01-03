@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Tanya_Blount",
+    "predicate": "ontology/hometown",
+    "object": "resource/United_States",
+    "human_readable": "Tanya Blount was born in United States.",
+    "questions": [
+        {
+            "score": 0.8874430060386658,
+            "question": "Where was Tanya Blount born?"
+        },
+        {
+            "score": 0.7640663385391235,
+            "question": "Where might Tanya Blount have lived besides the United States?"
+        },
+        {
+            "score": 0.675933837890625,
+            "question": "What are some of the cultural influences that Tanya Blount might have experienced growing up in the United States?"
+        },
+        {
+            "score": 0.5456414818763733,
+            "question": "What impact has Tanya Blount's birthplace had on her life?"
+        },
+        {
+            "score": 0.4970601499080658,
+            "question": "What country is Tanya Blount from?"
+        },
+        {
+            "score": 0.3183550238609314,
+            "question": "Can you tell me more about Tanya Blount?"
+        },
+        {
+            "score": 0.3104567229747772,
+            "question": "Is there any other information available about Tanya Blount's early life?"
+        },
+        {
+            "score": 0.30360692739486694,
+            "question": "Are there any famous people who were also born in the United States?"
+        },
+        {
+            "score": 0.15904609858989716,
+            "question": "How does being born in the United States shape a person's identity?"
+        },
+        {
+            "score": 0.15537147223949432,
+            "question": "What are some common characteristics of people born in the United States?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Tanya Blount was born in United States.",
+            "html": "dbpedia_490_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How does being born in the United States shape a person's identity?",
+            "html": "dbpedia_490_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any famous people who were also born in the United States?",
+            "html": "dbpedia_490_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there any other information available about Tanya Blount's early life?",
+            "html": "dbpedia_490_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_490_107.txt"
+        },
+        {
+            "file_id": "dbpedia_490_24.txt"
+        },
+        {
+            "file_id": "dbpedia_490_29.txt"
+        },
+        {
+            "file_id": "dbpedia_490_34.txt"
+        },
+        {
+            "file_id": "dbpedia_490_39.txt"
+        },
+        {
+            "file_id": "dbpedia_490_52.txt"
+        },
+        {
+            "file_id": "dbpedia_490_56.txt"
+        },
+        {
+            "file_id": "dbpedia_490_7.txt"
+        },
+        {
+            "file_id": "dbpedia_490_86.txt"
+        },
+        {
+            "file_id": "dbpedia_490_93.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the answer in JSON format:\n\n{\n  \"output\": \"yes\"\n}\n\nExplanation: The context information contains multiple documents about Tanya Blount, and all of them mention that she was born in Washington, D.C., which is a part of the United States. Therefore, the statement \"Tanya Blount was born in United States\" is supported by the documents."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: All provided documents consistently state that Tanya Blount was born in Washington, D.C., which is located within the United States. Therefore, the statement \"Tanya Blount was born in the United States\" is supported by the given context information."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Tanya Blount was born in Washington, D.C., which is a city within the United States, but specific geographical locations within the country do not qualify as being \"born in the United States\" by themselves.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Several entries state she was born in Washington D.C., which is in the United States.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because all the available information states that Tanya Blount was born in Washington D.C., United States.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The birth date provided (September 25, 1977) and the specific mention of Washington, D.C., as her place of birth clearly indicate that Tanya Blount was born in the United States. Therefore, stating she was not born in the U.S. contradicts this information.",
+            "category": 2
+        }
+    }
+}

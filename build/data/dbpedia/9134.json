@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Kingdom_of_Burundi",
+    "predicate": "ontology/capital",
+    "object": "resource/Bujumbura",
+    "human_readable": "The capital of Kingdom of Burundi is Bujumbura.",
+    "questions": [
+        {
+            "score": 0.9619107246398926,
+            "question": "What is the name of the kingdom whose capital was Bujumbura?"
+        },
+        {
+            "score": 0.9594196677207947,
+            "question": "What kingdom had Bujumbura as its capital?"
+        },
+        {
+            "score": 0.896398663520813,
+            "question": "What country has Bujumbura as its capital?"
+        },
+        {
+            "score": 0.870876133441925,
+            "question": "When was Bujumbura established as the capital?"
+        },
+        {
+            "score": 0.8569191694259644,
+            "question": "What is the capital of Burundi?"
+        },
+        {
+            "score": 0.7887944579124451,
+            "question": "Is Bujumbura a city?"
+        },
+        {
+            "score": 0.7120589017868042,
+            "question": "Where is Bujumbura located?"
+        },
+        {
+            "score": 0.6841871738433838,
+            "question": "What is the history of Bujumbura?"
+        },
+        {
+            "score": 0.683480978012085,
+            "question": "Does Burundi have another major city besides Bujumbura?"
+        },
+        {
+            "score": 0.472526490688324,
+            "question": "How big is Bujumbura?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The capital of Kingdom of Burundi is Bujumbura.",
+            "html": "dbpedia_9134_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Burundi have another major city besides Bujumbura?",
+            "html": "dbpedia_9134_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the history of Bujumbura?",
+            "html": "dbpedia_9134_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where is Bujumbura located?",
+            "html": "dbpedia_9134_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_9134_17.txt"
+        },
+        {
+            "file_id": "dbpedia_9134_21.txt"
+        },
+        {
+            "file_id": "dbpedia_9134_25.txt"
+        },
+        {
+            "file_id": "dbpedia_9134_31.txt"
+        },
+        {
+            "file_id": "dbpedia_9134_36.txt"
+        },
+        {
+            "file_id": "dbpedia_9134_60.txt"
+        },
+        {
+            "file_id": "dbpedia_9134_67.txt"
+        },
+        {
+            "file_id": "dbpedia_9134_71.txt"
+        },
+        {
+            "file_id": "dbpedia_9134_77.txt"
+        },
+        {
+            "file_id": "dbpedia_9134_93.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe documents state that the capital of Burundi shifted from Bujumbura to Gitega in 2019.  While Bujumbura was historically the capital, it is no longer considered the capital of the Kingdom of Burundi. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here's the evaluation of the triple in JSON format:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: According to document 90 (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_9134/re-ranker-msmarco/90.txt), the capital of Burundi is actually Gitega, not Bujumbura. The text states that \"The capital of Burundi is Gitega... Bujumbura was both the political and the economic capital of Burundi, and while it remains the financial capital, the new political capital of Burundi is Gitega.\""
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe provided documents support that the capital of Burundi is Bujumbura. Multiple sources mention Bujumbura as both the capital and largest city in Burundi, aligning with the statement given in the query."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, there seems to be a discrepancy regarding whether Bujumbura has always been the capital of Burundi. Several documents indicate that Bujumbura was indeed the capital city after Burundi gained independence in 1962 until January 2019 when it was moved to Gitega.\n\nGiven this information, the statement \"The capital of Kingdom of Burundi is Bujumbura\" does not accurately represent historical facts according to the documents. The documents do not mention a specific period where Bujumbura was the capital during the time the Kingdom of Burundi existed (if it ever did as an independent kingdom). Furthermore, it conflicts with recent changes indicated in some documents.\n\nTherefore, the correct response is:\n\n```json\n{\"output\": \"no\"}\n```"
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n\nThe information provided suggests that the capital of Burundi was indeed Bujumbura, but it has since been changed to Gitega in January 2019. Therefore, the statement \"The capital of Kingdom of Burundi is Bujumbura\" is incorrect according to the context."
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Context information states the capital of Burundi was moved from Bujumbura to Gitega in 2019.",
+            "category": -1
+        },
+        "llama3.1": {
+            "reason": "The capital of Kingdom of Burundi has been moved to Gitega since January 2019, as stated in point 5 and also confirmed by the BBC in point 6.",
+            "category": -1
+        }
+    }
+}

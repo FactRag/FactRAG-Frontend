@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Maseru",
+    "predicate": "ontology/country",
+    "object": "resource/Lesotho",
+    "human_readable": "Maseru is a country.",
+    "questions": [
+        {
+            "score": 0.9530459046363831,
+            "question": "Is Maseru a city or a country?"
+        },
+        {
+            "score": 0.46716755628585815,
+            "question": "What are some popular tourist destinations in Maseru?"
+        },
+        {
+            "score": 0.4336123764514923,
+            "question": "What is the political status of Maseru?"
+        },
+        {
+            "score": 0.4169568121433258,
+            "question": "Can you tell me about Maseru's geography?"
+        },
+        {
+            "score": 0.3384101390838623,
+            "question": "What are some key features of Maseru?"
+        },
+        {
+            "score": 0.33278465270996094,
+            "question": "Are there any major industries in Maseru?"
+        },
+        {
+            "score": 0.3262401223182678,
+            "question": "Does Maseru have any significant historical landmarks?"
+        },
+        {
+            "score": 0.29195618629455566,
+            "question": "What type of climate does Maseru have?"
+        },
+        {
+            "score": 0.2576921880245209,
+            "question": "What is the main language spoken in Maseru?"
+        },
+        {
+            "score": 0.022651975974440575,
+            "question": "What is the capital city of Lesotho?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Maseru is a country.",
+            "html": "dbpedia_5186_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the main language spoken in Maseru?",
+            "html": "dbpedia_5186_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of climate does Maseru have?",
+            "html": "dbpedia_5186_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Maseru have any significant historical landmarks?",
+            "html": "dbpedia_5186_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5186_18.txt"
+        },
+        {
+            "file_id": "dbpedia_5186_23.txt"
+        },
+        {
+            "file_id": "dbpedia_5186_29.txt"
+        },
+        {
+            "file_id": "dbpedia_5186_45.txt"
+        },
+        {
+            "file_id": "dbpedia_5186_56.txt"
+        },
+        {
+            "file_id": "dbpedia_5186_57.txt"
+        },
+        {
+            "file_id": "dbpedia_5186_63.txt"
+        },
+        {
+            "file_id": "dbpedia_5186_64.txt"
+        },
+        {
+            "file_id": "dbpedia_5186_73.txt"
+        },
+        {
+            "file_id": "dbpedia_5186_97.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n\n\nLet me know if you have more queries!  I'm ready to evaluate them based on the provided text documents. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple in JSON format:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: According to the provided context information, Maseru is described as the capital city of Lesotho, not a country. The documents mention that Maseru is located in Lesotho and borders on the Free State Province of South Africa, which suggests that it is a city or region within a larger country, rather than an independent country itself."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\"output\": \"no\"}\n```\n\nThe documents provide information about Maseru, which is the capital city of Lesotho. They do not state that Maseru itself is a country; rather, it is described as being within the borders of Lesotho. Therefore, the statement \"Maseru is a country\" is incorrect according to the given context."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Maseru is not a country. It is a city and the capital of Lesotho, a nation located in southern Africa.",
+            "category": -1
+        },
+        "gemma2": {
+            "reason": "It states Maseru is a country, but the text repeatedly refers to Maseru as the capital city of Lesotho.",
+            "category": -1
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because Maseru is not a country, but rather the capital city of Lesotho.",
+            "category": -1
+        },
+        "qwen2.5": {
+            "reason": "Maseru is a city, not a country. It serves as the capital of Lesotho, which is an independent nation surrounded by South Africa.",
+            "category": -1
+        }
+    }
+}

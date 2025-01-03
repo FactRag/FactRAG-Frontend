@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Thunderbird_Films",
+    "predicate": "property/locationCity",
+    "object": "resource/Toronto,_Ontario",
+    "human_readable": "Thunderbird Films is located in Toronto, Ontario.",
+    "questions": [
+        {
+            "score": 0.958312451839447,
+            "question": "Is Thunderbird Films in Canada?"
+        },
+        {
+            "score": 0.9109015464782715,
+            "question": "Where is Thunderbird Films located?"
+        },
+        {
+            "score": 0.8435681462287903,
+            "question": "In what city is Thunderbird Films situated?"
+        },
+        {
+            "score": 0.706366240978241,
+            "question": "What is the address of Thunderbird Films' headquarters?"
+        },
+        {
+            "score": 0.6128405332565308,
+            "question": "Does Thunderbird Films produce movies?"
+        },
+        {
+            "score": 0.5827912092208862,
+            "question": "What province or territory is home to Thunderbird Films?"
+        },
+        {
+            "score": 0.5198602676391602,
+            "question": "What type of company is Thunderbird Films?"
+        },
+        {
+            "score": 0.488491415977478,
+            "question": "Are there any famous films produced by Thunderbird Films?"
+        },
+        {
+            "score": 0.4818154275417328,
+            "question": "Who owns or runs Thunderbird Films?"
+        },
+        {
+            "score": 0.32625266909599304,
+            "question": "Could you tell me more about Thunderbird Films' work?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Thunderbird Films is located in Toronto, Ontario.",
+            "html": "dbpedia_318_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who owns or runs Thunderbird Films?",
+            "html": "dbpedia_318_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any famous films produced by Thunderbird Films?",
+            "html": "dbpedia_318_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of company is Thunderbird Films?",
+            "html": "dbpedia_318_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_318_19.txt"
+        },
+        {
+            "file_id": "dbpedia_318_20.txt"
+        },
+        {
+            "file_id": "dbpedia_318_3.txt"
+        },
+        {
+            "file_id": "dbpedia_318_30.txt"
+        },
+        {
+            "file_id": "dbpedia_318_5.txt"
+        },
+        {
+            "file_id": "dbpedia_318_53.txt"
+        },
+        {
+            "file_id": "dbpedia_318_62.txt"
+        },
+        {
+            "file_id": "dbpedia_318_63.txt"
+        },
+        {
+            "file_id": "dbpedia_318_73.txt"
+        },
+        {
+            "file_id": "dbpedia_318_86.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n\n\nThe provided text states that Thunderbird has offices in Vancouver, Los Angeles, Toronto, Ottawa, and London but does not specify a precise location within Toronto.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the answer in JSON format:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: According to the documents, Thunderbird Entertainment Group Inc. has offices in Vancouver, Los Angeles, Toronto, Ottawa, and London, but it does not mention that Thunderbird Films (a subsidiary of Thunderbird Entertainment Group) is specifically located in Toronto. In fact, one document mentions that Thunderbird Films is based in Vancouver, BC, Canada."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The provided documents do not mention any information about Thunderbird Films being located in Toronto, Ontario. Documents discuss Thunderbird Films' location as Vancouver, BC, Canada, and also have mentions of offices in Los Angeles and Toronto but do not specify that the main office is in Toronto, Ontario."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Thunderbird Films is based in Vancouver, BC, Canada.",
+            "category": 3
+        },
+        "gemma2": {
+            "reason": "Several pieces of text state Thunderbird Films is based in Vancouver, BC.  Additionally, the text mentions offices in Los Angeles and Toronto but doesn't specify that their headquarters are in Toronto.",
+            "category": -1
+        },
+        "llama3.1": {
+            "reason": "The text states that Thunderbird Films is \"based in Vancouver, BC, Canada\" and has offices in Los Angeles and Toronto.",
+            "category": -1
+        },
+        "qwen2.5": {
+            "reason": "Thunderbird Films is based in Vancouver, BC, Canada, as stated in the context information.",
+            "category": -1
+        }
+    }
+}

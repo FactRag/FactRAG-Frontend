@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Bruce_Herman",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "Herman, Bruce",
+    "human_readable": "The name of Bruce Herman is Herman, Bruce.",
+    "questions": [
+        {
+            "score": 0.9265103340148926,
+            "question": "What is Bruce Herman's full name?"
+        },
+        {
+            "score": 0.9195403456687927,
+            "question": "What is the last name of Bruce Herman?"
+        },
+        {
+            "score": 0.9027536511421204,
+            "question": "Is 'Herman' Bruce Herman's first or last name?"
+        },
+        {
+            "score": 0.8791211843490601,
+            "question": "What is the first name of Bruce Herman?"
+        },
+        {
+            "score": 0.8330699801445007,
+            "question": "What is the order of Bruce Herman's names?"
+        },
+        {
+            "score": 0.6799964308738708,
+            "question": "Could you use Bruce Herman's name to write a short story?"
+        },
+        {
+            "score": 0.6100733876228333,
+            "question": "How would you write Bruce Herman's name in reverse order?"
+        },
+        {
+            "score": 0.6099610924720764,
+            "question": "Are there any famous people with the last name 'Herman'?"
+        },
+        {
+            "score": 0.47478801012039185,
+            "question": "Is 'Bruce' a common first name?"
+        },
+        {
+            "score": 0.14085815846920013,
+            "question": "If someone called him by his last name, what would they say?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of Bruce Herman is Herman, Bruce.",
+            "html": "dbpedia_4691_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is 'Bruce' a common first name?",
+            "html": "dbpedia_4691_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any famous people with the last name 'Herman'?",
+            "html": "dbpedia_4691_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How would you write Bruce Herman's name in reverse order?",
+            "html": "dbpedia_4691_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4691_102.txt"
+        },
+        {
+            "file_id": "dbpedia_4691_106.txt"
+        },
+        {
+            "file_id": "dbpedia_4691_15.txt"
+        },
+        {
+            "file_id": "dbpedia_4691_31.txt"
+        },
+        {
+            "file_id": "dbpedia_4691_33.txt"
+        },
+        {
+            "file_id": "dbpedia_4691_48.txt"
+        },
+        {
+            "file_id": "dbpedia_4691_50.txt"
+        },
+        {
+            "file_id": "dbpedia_4691_54.txt"
+        },
+        {
+            "file_id": "dbpedia_4691_73.txt"
+        },
+        {
+            "file_id": "dbpedia_4691_97.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'} \n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the provided context information, I can determine that the triple \"The name of Bruce Herman is Herman, Bruce\" is correct according to the documents.\n\nHere's the structured JSON response:\n\n```\n{\n  \"output\": \"yes\"\n}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: None of the provided documents contain information about the name order or spelling for Bruce Herman. They all refer to him as \"Bruce Herman\" without any mention of an alternative order such as \"Herman, Bruce.\" Therefore, based on the given context, the statement that the name of Bruce Herman is \"Herman, Bruce\" cannot be supported and is thus incorrect."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n    \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nThe provided documents do not contain information that directly supports the statement \"The name of Bruce Herman is Herman, Bruce.\" While it is clear from all documents that there is an individual named \"Bruce Herman,\" none of them explicitly state his name as \"Herman, Bruce\" in reverse order. Therefore, based on the given context, we cannot confirm this specific triple to be true."
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{\n  \"output\": \"yes\"\n}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "The provided context consistently presents Bruce Herman's name as \"Bruce Herman,\" with \"Bruce\" as the given name and \"Herman\" as the surname.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context consistently refers to the individual as \"Bruce Herman\" rather than \"Herman, Bruce,\" indicating the correct order of names.",
+            "category": 2
+        }
+    }
+}

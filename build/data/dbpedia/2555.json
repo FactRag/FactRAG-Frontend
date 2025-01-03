@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Niantic,_Inc.",
+    "predicate": "property/website",
+    "object": "http://www.nianticlabs.com/",
+    "human_readable": "Niantic, Inc.'s website is http://www.nianticlabs.com/",
+    "questions": [
+        {
+            "score": 0.9662625193595886,
+            "question": "What company owns the website http://www.nianticlabs.com/?"
+        },
+        {
+            "score": 0.957930862903595,
+            "question": "What is the URL for Niantic, Inc.'s website?"
+        },
+        {
+            "score": 0.9539602994918823,
+            "question": "Is http://www.nianticlabs.com/ a valid website address?"
+        },
+        {
+            "score": 0.9373686909675598,
+            "question": "Who or what organization is associated with the website http://www.nianticlabs.com/?"
+        },
+        {
+            "score": 0.9229482412338257,
+            "question": "What is the website address for Niantic, Inc.?"
+        },
+        {
+            "score": 0.9168342351913452,
+            "question": "What type of information might be found on Niantic, Inc.'s website?"
+        },
+        {
+            "score": 0.9021187424659729,
+            "question": "Where can you find information about Niantic, Inc. online?"
+        },
+        {
+            "score": 0.827884316444397,
+            "question": "How can you access information about Niantic, Inc.?"
+        },
+        {
+            "score": 0.7895798087120056,
+            "question": "If you wanted to learn more about Niantic, Inc., where would you go online?"
+        },
+        {
+            "score": 0.25216493010520935,
+            "question": "Which company has a website ending in '.com'?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Niantic, Inc.'s website is http://www.nianticlabs.com/",
+            "html": "dbpedia_2555_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If you wanted to learn more about Niantic, Inc., where would you go online?",
+            "html": "dbpedia_2555_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How can you access information about Niantic, Inc.?",
+            "html": "dbpedia_2555_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where can you find information about Niantic, Inc. online?",
+            "html": "dbpedia_2555_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2555_1.txt"
+        },
+        {
+            "file_id": "dbpedia_2555_17.txt"
+        },
+        {
+            "file_id": "dbpedia_2555_18.txt"
+        },
+        {
+            "file_id": "dbpedia_2555_31.txt"
+        },
+        {
+            "file_id": "dbpedia_2555_41.txt"
+        },
+        {
+            "file_id": "dbpedia_2555_52.txt"
+        },
+        {
+            "file_id": "dbpedia_2555_62.txt"
+        },
+        {
+            "file_id": "dbpedia_2555_7.txt"
+        },
+        {
+            "file_id": "dbpedia_2555_72.txt"
+        },
+        {
+            "file_id": "dbpedia_2555_90.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents provided do not contain the correct information for the query. According to the given context, Niantic, Inc.'s official website is https://www.nianticlabs.com, not http://www.nianticlabs.com/."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {'output': 'no'}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{\"output\": \"yes\"}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Multiple sources within the context information clearly state Niantic, Inc.'s official website is https://www.nianticlabs.com",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because the provided context information shows multiple references to Niantic's website as \"https://www.nianticlabs.com\" which is consistent throughout, but one of the facts explicitly states that Niantic, Inc.'s official website is https://www.nianticlabs.com, however, another fact seems to contradict it by saying 'Niantic, Inc. spun out of Google in October 2015 in partnership with Nintendo and The Pokemon Company', which could imply another website or company might be related but not the main one, so this information does indeed suggest a different website could exist,",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,129 @@
+{
+    "subject": "resource/WGGS-TV",
+    "predicate": "ontology/location",
+    "object": "resource/Greenville,_South_Carolina",
+    "human_readable": "WGGS-TV is located in Greenville, South Carolina.",
+    "questions": [
+        {
+            "score": 0.8895597457885742,
+            "question": "Where is WGGS-TV located?"
+        },
+        {
+            "score": 0.7743958830833435,
+            "question": "What state is WGGS-TV in?"
+        },
+        {
+            "score": 0.6933959126472473,
+            "question": "Is WGGS-TV a television station?"
+        },
+        {
+            "score": 0.5809741616249084,
+            "question": "What is the name of the state where Greenville is located?"
+        },
+        {
+            "score": 0.4485357105731964,
+            "question": "Are there any other television stations in South Carolina?"
+        },
+        {
+            "score": 0.30564072728157043,
+            "question": "What are some popular tourist destinations in Greenville?"
+        },
+        {
+            "score": 0.21696041524410248,
+            "question": "What type of programming does WGGS-TV likely offer?"
+        },
+        {
+            "score": 0.16521868109703064,
+            "question": "Can you name a city in South Carolina?"
+        },
+        {
+            "score": 0.1492806077003479,
+            "question": "What is the capital of South Carolina?"
+        },
+        {
+            "score": 0.1463412493467331,
+            "question": "Does Greenville have a large population?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=WGGS-TV is located in Greenville, South Carolina.",
+            "html": "dbpedia_6107_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the capital of South Carolina?",
+            "html": "dbpedia_6107_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you name a city in South Carolina?",
+            "html": "dbpedia_6107_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of programming does WGGS-TV likely offer?",
+            "html": "dbpedia_6107_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6107_12.txt"
+        },
+        {
+            "file_id": "dbpedia_6107_15.txt"
+        },
+        {
+            "file_id": "dbpedia_6107_27.txt"
+        },
+        {
+            "file_id": "dbpedia_6107_31.txt"
+        },
+        {
+            "file_id": "dbpedia_6107_35.txt"
+        },
+        {
+            "file_id": "dbpedia_6107_41.txt"
+        },
+        {
+            "file_id": "dbpedia_6107_50.txt"
+        },
+        {
+            "file_id": "dbpedia_6107_69.txt"
+        },
+        {
+            "file_id": "dbpedia_6107_8.txt"
+        },
+        {
+            "file_id": "dbpedia_6107_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation of the triple:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe reason for this answer is that all four documents mention WGGS-TV as being located in Greenville, South Carolina. Document 1 explicitly states \"Located in Greenville, South Carolina\", document 2 mentions \"Greenville, South Carolina\" as the location of the station's virtual and UHF digital channel, document 3 does not mention a specific location but lists Greenville-Spartanburg-Asheville-Anderson market which implies that WGGS-TV is located in one of these cities, and document 4 does not mention a specific location but links to the website \"www.dovebroadcasting.com\" which also suggests that WGGS-TV is located in Greenville, South Carolina."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide multiple references indicating that WGGS-TV is indeed located in Greenville, South Carolina. For instance, document `31.txt` and `69.txt` both mention this location."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n    \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Sani_Emmanuel",
+    "predicate": "property/youthclubs",
+    "object": "resource/My_People_FC",
+    "human_readable": "Sani Emmanuel plays for My People FC.",
+    "questions": [
+        {
+            "score": 0.9086518287658691,
+            "question": "For which team does Sani Emmanuel play?"
+        },
+        {
+            "score": 0.8707522749900818,
+            "question": "What is the name of the football club Sani Emmanuel plays for?"
+        },
+        {
+            "score": 0.8021511435508728,
+            "question": "Does Sani Emmanuel play professional football?"
+        },
+        {
+            "score": 0.802146852016449,
+            "question": "Sani Emmanuel is associated with which football club?"
+        },
+        {
+            "score": 0.7988114356994629,
+            "question": "Who plays for My People FC?"
+        },
+        {
+            "score": 0.7897775173187256,
+            "question": "What sport does Sani Emmanuel play?"
+        },
+        {
+            "score": 0.7691128849983215,
+            "question": "Is Sani Emmanuel a footballer?"
+        },
+        {
+            "score": 0.7148392200469971,
+            "question": "Name a player who belongs to My People FC."
+        },
+        {
+            "score": 0.6310517191886902,
+            "question": "What is the name of the football player who plays for My People FC?"
+        },
+        {
+            "score": 0.5309699773788452,
+            "question": "Who is the footballer from My People FC?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Sani Emmanuel plays for My People FC.",
+            "html": "dbpedia_3336_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of the football player who plays for My People FC?",
+            "html": "dbpedia_3336_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Name a player who belongs to My People FC.",
+            "html": "dbpedia_3336_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Sani Emmanuel a footballer?",
+            "html": "dbpedia_3336_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3336_10.txt"
+        },
+        {
+            "file_id": "dbpedia_3336_15.txt"
+        },
+        {
+            "file_id": "dbpedia_3336_19.txt"
+        },
+        {
+            "file_id": "dbpedia_3336_21.txt"
+        },
+        {
+            "file_id": "dbpedia_3336_28.txt"
+        },
+        {
+            "file_id": "dbpedia_3336_30.txt"
+        },
+        {
+            "file_id": "dbpedia_3336_51.txt"
+        },
+        {
+            "file_id": "dbpedia_3336_53.txt"
+        },
+        {
+            "file_id": "dbpedia_3336_55.txt"
+        },
+        {
+            "file_id": "dbpedia_3336_62.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the answer:\n\n`{'output': 'yes'}`\n\nThe documents mention that \"My People FC\u2019s Sani Emmanuel\" is a phrase, and later state that \"Emmanuel plays for the My People football club in Nigeria\". This indicates that Sani Emmanuel indeed plays for My People FC."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents repeatedly mention that Sani Emmanuel plays for My People Football Club (referred to as My People FC), which is supported by the information provided in the files."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Sani Emmanuel has had trials at Chelsea and Tottenham, and he also had a brief spell with Swedish club Bodens BK, indicating that he doesn't solely play for My People FC.",
+            "category": 1
+        },
+        "gemma2": {
+            "reason": "Multiple sources state he plays for My People FC and detail his performance with the team.",
+            "category": 1
+        },
+        "llama3.1": {
+            "reason": "It contradicts the repeated information throughout the context, which states that Sani Emmanuel plays for My People Football Club (FC) or simply My People football club in Nigeria.",
+            "category": 1
+        },
+        "qwen2.5": {
+            "reason": "In the context, Sani Emmanuel plays for My People FC only after having a brief spell with Swedish club Bodens BK. The initial information suggests he was not playing for My People FC when scoring against Argentina, but rather it was mentioned that \"My People FC\u2019s Sani Emmanuel has been chosen as one of MTN Football\u2019s African Players of the week following his sterling performance.\" This implies he was already part of My People FC at that point.",
+            "category": 1
+        }
+    }
+}

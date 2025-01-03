@@ -1,0 +1,134 @@
+{
+    "subject": "resource/London_Biggin_Hill_Airport",
+    "predicate": "ontology/runwaySurface",
+    "object": "Asphalt",
+    "human_readable": "The runway surface of London Biggin Hill Airport is Asphalt.",
+    "questions": [
+        {
+            "score": 0.952009916305542,
+            "question": "London Biggin Hill Airport has a runway surface of what material?"
+        },
+        {
+            "score": 0.8950172066688538,
+            "question": "What type of surface covers the runway at London Biggin Hill Airport?"
+        },
+        {
+            "score": 0.8942887187004089,
+            "question": "Is the runway surface at London Biggin Hill Airport made of concrete?"
+        },
+        {
+            "score": 0.7881614565849304,
+            "question": "What material is used for the runway at London Biggin Hill Airport?"
+        },
+        {
+            "score": 0.7531202435493469,
+            "question": "Is the runway at London Biggin Hill Airport made of a durable material?"
+        },
+        {
+            "score": 0.7322404980659485,
+            "question": "What is the composition of the runway at London Biggin Hill Airport?"
+        },
+        {
+            "score": 0.7156735062599182,
+            "question": "What type of surface would airplanes land on at London Biggin Hill Airport?"
+        },
+        {
+            "score": 0.6724891662597656,
+            "question": "Which material makes up the landing strip at London Biggin Hill Airport?"
+        },
+        {
+            "score": 0.6315099596977234,
+            "question": "What is the primary material used for the runway at Biggin Hill Airport?"
+        },
+        {
+            "score": 0.41387495398521423,
+            "question": "Is Asphalt a common material used for airport runways?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The runway surface of London Biggin Hill Airport is Asphalt.",
+            "html": "dbpedia_2864_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the primary material used for the runway at Biggin Hill Airport?",
+            "html": "dbpedia_2864_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Which material makes up the landing strip at London Biggin Hill Airport?",
+            "html": "dbpedia_2864_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of surface would airplanes land on at London Biggin Hill Airport?",
+            "html": "dbpedia_2864_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2864_21.txt"
+        },
+        {
+            "file_id": "dbpedia_2864_25.txt"
+        },
+        {
+            "file_id": "dbpedia_2864_35.txt"
+        },
+        {
+            "file_id": "dbpedia_2864_4.txt"
+        },
+        {
+            "file_id": "dbpedia_2864_70.txt"
+        },
+        {
+            "file_id": "dbpedia_2864_72.txt"
+        },
+        {
+            "file_id": "dbpedia_2864_77.txt"
+        },
+        {
+            "file_id": "dbpedia_2864_80.txt"
+        },
+        {
+            "file_id": "dbpedia_2864_84.txt"
+        },
+        {
+            "file_id": "dbpedia_2864_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, the answer to the query \"The runway surface of London Biggin Hill Airport is Asphalt.\" would be:\n\n`{'output': 'no'}`\n\nThis is because while one of the runways (03L/21R) has an asphalt/concrete surface, another runway (11L/29R) has an asphalt surface, and a third runway (1,802 m x 45 m) is mentioned as having an asphalt/concrete surface. Therefore, it's not accurate to say that \"The runway surface of London Biggin Hill Airport is Asphalt.\""
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide information about the runway surfaces at Biggin Hill Airport, including that one of the runways (03L/21R) has an asphalt and asphalt/concrete surface. Therefore, the statement \"The runway surface of London Biggin Hill Airport is Asphalt\" is supported by the given context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The runway surface information contradicts with the provided details under point 1.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Frank_Zappa",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "Frank Zappa",
+    "human_readable": "The label of Frank Zappa is Frank Zappa.",
+    "questions": [
+        {
+            "score": 0.974913477897644,
+            "question": "What is the label of Frank Zappa?"
+        },
+        {
+            "score": 0.9247581362724304,
+            "question": "Who is Frank Zappa?"
+        },
+        {
+            "score": 0.9113327264785767,
+            "question": "Is Frank Zappa a musician?"
+        },
+        {
+            "score": 0.7837228178977966,
+            "question": "Was Frank Zappa involved in any bands or musical groups?"
+        },
+        {
+            "score": 0.7833632826805115,
+            "question": "What genre(s) of music is Frank Zappa known for?"
+        },
+        {
+            "score": 0.7003817558288574,
+            "question": "What are some of Frank Zappa's most famous albums?"
+        },
+        {
+            "score": 0.7002780437469482,
+            "question": "Where was Frank Zappa born?"
+        },
+        {
+            "score": 0.6212643980979919,
+            "question": "When was Frank Zappa born?"
+        },
+        {
+            "score": 0.5845528244972229,
+            "question": "Did Frank Zappa write his own music?"
+        },
+        {
+            "score": 0.5667933225631714,
+            "question": "Is Frank Zappa considered a legendary figure in music history?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The label of Frank Zappa is Frank Zappa.",
+            "html": "dbpedia_8878_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Did Frank Zappa write his own music?",
+            "html": "dbpedia_8878_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=When was Frank Zappa born?",
+            "html": "dbpedia_8878_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where was Frank Zappa born?",
+            "html": "dbpedia_8878_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8878_11.txt"
+        },
+        {
+            "file_id": "dbpedia_8878_15.txt"
+        },
+        {
+            "file_id": "dbpedia_8878_27.txt"
+        },
+        {
+            "file_id": "dbpedia_8878_3.txt"
+        },
+        {
+            "file_id": "dbpedia_8878_39.txt"
+        },
+        {
+            "file_id": "dbpedia_8878_46.txt"
+        },
+        {
+            "file_id": "dbpedia_8878_55.txt"
+        },
+        {
+            "file_id": "dbpedia_8878_63.txt"
+        },
+        {
+            "file_id": "dbpedia_8878_90.txt"
+        },
+        {
+            "file_id": "dbpedia_8878_93.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the provided context information, I will evaluate whether the statement \"The label of Frank Zappa is Frank Zappa\" is supported by the documents.\n\nAfter analyzing the documents, I found that:\n\n* File_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8878/re-ranker-msmarco/3.txt mentions Frank Zappa's albums but does not specifically mention the label.\n* File_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8878/re-ranker-msmarco/44.txt mentions that Frank Vincent Zappa produced almost all of the more than 60 albums he released with the band The Mothers of Invention and as a solo artist, but again does not specifically mention the label.\n* File_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8878/re-ranker-msmarco/42.txt mentions Frank Zappa's albums and legacy, but also does not specify the label.\n\nHowever, I found that:\n\n* File_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8878/re-ranker-msmarco/26.txt specifically mentions a record with Frank Zappa's name as the artist, but it is labeled \"Not On Label (Frank Zappa)\". This suggests that while the label might be unofficial, it still bears Frank Zappa's name.\n\nTherefore, considering this information, I would say that the statement \"The label of Frank Zappa is Frank Zappa\" is not entirely supported by the documents. However, since one of the files does mention a record with Frank Zappa's name as the artist and an unofficial label, I will answer:\n\n{\n  \"output\": \"yes\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: According to the provided documents, there are mentions that Frank Zappa was indeed associated with his own label, as seen in the document at file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8878/re-ranker-msmarco/26.txt, which lists \"Label: Not On Label (Frank Zappa)\". This supports the triple that the label of Frank Zappa is Frank Zappa."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

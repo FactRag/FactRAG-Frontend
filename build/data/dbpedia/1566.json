@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Lotte_Stam-Beese",
+    "predicate": "http://purl.org/linguistics/gold/hypernym",
+    "object": "resource/Architect",
+    "human_readable": "Lotte Stam-Beese is an architect.",
+    "questions": [
+        {
+            "score": 0.9711323380470276,
+            "question": "Is architecture Lotte Stam-Beese's profession?"
+        },
+        {
+            "score": 0.8973894119262695,
+            "question": "What type of building designs are associated with Lotte Stam-Beese?"
+        },
+        {
+            "score": 0.890845537185669,
+            "question": "Did Lotte Stam-Beese work in the field of architecture?"
+        },
+        {
+            "score": 0.8801321387290955,
+            "question": "Can you name a famous building designed by Lotte Stam-Beese?"
+        },
+        {
+            "score": 0.847057580947876,
+            "question": "Is Lotte Stam-Beese an engineer?"
+        },
+        {
+            "score": 0.8413999080657959,
+            "question": "Who is Lotte Stam-Beese?"
+        },
+        {
+            "score": 0.7180241346359253,
+            "question": "What is Lotte Stam-Beese known for?"
+        },
+        {
+            "score": 0.6482827067375183,
+            "question": "What profession does Lotte Stam-Beese have?"
+        },
+        {
+            "score": 0.5481467247009277,
+            "question": "What did Lotte Stam-Beese specialize in?"
+        },
+        {
+            "score": 0.36313092708587646,
+            "question": "What field did Lotte Stam-Beese contribute to?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Lotte Stam-Beese is an architect.",
+            "html": "dbpedia_1566_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What did Lotte Stam-Beese specialize in?",
+            "html": "dbpedia_1566_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What profession does Lotte Stam-Beese have?",
+            "html": "dbpedia_1566_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Lotte Stam-Beese known for?",
+            "html": "dbpedia_1566_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1566_102.txt"
+        },
+        {
+            "file_id": "dbpedia_1566_11.txt"
+        },
+        {
+            "file_id": "dbpedia_1566_115.txt"
+        },
+        {
+            "file_id": "dbpedia_1566_15.txt"
+        },
+        {
+            "file_id": "dbpedia_1566_25.txt"
+        },
+        {
+            "file_id": "dbpedia_1566_52.txt"
+        },
+        {
+            "file_id": "dbpedia_1566_61.txt"
+        },
+        {
+            "file_id": "dbpedia_1566_78.txt"
+        },
+        {
+            "file_id": "dbpedia_1566_82.txt"
+        },
+        {
+            "file_id": "dbpedia_1566_88.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here's the evaluation of the triple:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents contain multiple references to Lotte Stam-Beese as an architect and urban planner. For example, file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1566/re-ranker-msmarco/10.txt states that she was \"a German architect and urban planner who helped with the reconstruction of Rotterdam after World War II.\" Similarly, file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1566/re-ranker-msmarco/26.txt describes her as a \"Silesian-born urban-planning architect\". Therefore, the triple is supported by the information in the documents."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide multiple references to Lotte Stam-Beese's work as an architect, such as her designs for modern post-war housing districts in Rotterdam and her activities in various architectural firms. Therefore, the statement that \"Lotte Stam-Beese is an architect\" is supported by the information given."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Lotte Stam-Beese is an urban-planning architect, not just a regular architect.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "The provided text consistently describes her as an \"architect\" and \"urban-planning architect\".",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because Lotte Stam-Beese is described as an \"urban-planning architect\", which indicates her primary focus is on planning rather than traditional architecture.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Lotte Stam-Beese is described as both an architect and an urban planner throughout the context information.",
+            "category": 2
+        }
+    }
+}

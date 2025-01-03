@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Maxime_de_Zeeuw",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:VOO_Wolves_Verviers-Pepinster_players",
+    "human_readable": "Maxime de Zeeuw's subject category is VOO Wolves Verviers-Pepinster players.",
+    "questions": [
+        {
+            "score": 0.9831404089927673,
+            "question": "Is Maxime de Zeeuw a VOO Wolves Verviers-Pepinster player?"
+        },
+        {
+            "score": 0.8869149088859558,
+            "question": "What is the subject category of Maxime de Zeeuw?"
+        },
+        {
+            "score": 0.8600730299949646,
+            "question": "Which players are part of the VOO Wolves Verviers-Pepinster team?"
+        },
+        {
+            "score": 0.7444143295288086,
+            "question": "Where does VOO Wolves Verviers-Pepinster play their games?"
+        },
+        {
+            "score": 0.7120148539543152,
+            "question": "Can you list other players on the VOO Wolves Verviers-Pepinster team?"
+        },
+        {
+            "score": 0.6974061727523804,
+            "question": "Is Maxime de Zeeuw a well-known player?"
+        },
+        {
+            "score": 0.6196929216384888,
+            "question": "What sport is Maxime de Zeeuw involved in?"
+        },
+        {
+            "score": 0.6156715154647827,
+            "question": "What team does Maxime de Zeeuw play for?"
+        },
+        {
+            "score": 0.5983318090438843,
+            "question": "What is the full name of Maxime de Zeeuw's team?"
+        },
+        {
+            "score": 0.5131511688232422,
+            "question": "Does Maxime de Zeeuw play in a professional league?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Maxime de Zeeuw's subject category is VOO Wolves Verviers-Pepinster players.",
+            "html": "dbpedia_1328_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the full name of Maxime de Zeeuw's team?",
+            "html": "dbpedia_1328_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What team does Maxime de Zeeuw play for?",
+            "html": "dbpedia_1328_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What sport is Maxime de Zeeuw involved in?",
+            "html": "dbpedia_1328_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1328_21.txt"
+        },
+        {
+            "file_id": "dbpedia_1328_23.txt"
+        },
+        {
+            "file_id": "dbpedia_1328_27.txt"
+        },
+        {
+            "file_id": "dbpedia_1328_31.txt"
+        },
+        {
+            "file_id": "dbpedia_1328_33.txt"
+        },
+        {
+            "file_id": "dbpedia_1328_4.txt"
+        },
+        {
+            "file_id": "dbpedia_1328_49.txt"
+        },
+        {
+            "file_id": "dbpedia_1328_52.txt"
+        },
+        {
+            "file_id": "dbpedia_1328_53.txt"
+        },
+        {
+            "file_id": "dbpedia_1328_7.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "After analyzing the provided context information, I can confirm that the triple is indeed supported by the documents. Here's the JSON response:\n\n```\n{\n  \"output\": \"yes\"\n}\n```\n\nThe reason for this answer is that Maxime De Zeeuw's name appears in multiple files (4.txt and 7.txt), where he is mentioned as a Belgian professional basketball player, specifically playing for VOO Wolves Verviers-Pepinster. This information directly supports the triple statement that Maxime de Zeeuw's subject category is VOO Wolves Verviers-Pepinster players."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents do not provide any information that directly links Maxime de Zeeuw to the VOO Wolves Verviers-Pepinster basketball team. While there is information about his career, it does not specify a direct affiliation with this particular team."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Maxime De Zeeuw is a player for Limburg United, not VOO Wolves Verviers-Pepinster. This can be determined from the context that states he plays for Limburg United in the BNXT League, while Voo Wolves Verviers Pepinster is mentioned as one of the teams they are playing against, but there's no information indicating De Zeeuw plays for that team.",
+            "category": 1
+        },
+        "gemma2": {
+            "reason": "Multiple text entries mention Maxime De Zeeuw playing for Limburg United, not VOO Wolves Verviers-Pepinster.",
+            "category": 1
+        },
+        "llama3.1": {
+            "reason": "Maxime de Zeeuw is a Belgian professional basketball player for Limburg United, not VOO Wolves Verviers-Pepinster.",
+            "category": 1
+        }
+    }
+}

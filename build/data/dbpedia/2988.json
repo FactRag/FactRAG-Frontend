@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Ornella_Barra",
+    "predicate": "property/employer",
+    "object": "resource/Alliance_Boots",
+    "human_readable": "Ornella Barra works for Alliance Boots.",
+    "questions": [
+        {
+            "score": 0.9805518984794617,
+            "question": "Is Ornella Barra employed by Alliance Boots?"
+        },
+        {
+            "score": 0.9308843016624451,
+            "question": "For which organization does Ornella Barra work?"
+        },
+        {
+            "score": 0.819038987159729,
+            "question": "What company does Ornella Barra work for?"
+        },
+        {
+            "score": 0.7895421981811523,
+            "question": "Name a person who works at Alliance Boots."
+        },
+        {
+            "score": 0.7819359302520752,
+            "question": "To which company is Ornella Barra affiliated?"
+        },
+        {
+            "score": 0.7777413129806519,
+            "question": "Who works for Alliance Boots?"
+        },
+        {
+            "score": 0.6838101744651794,
+            "question": "Who is employed by Alliance Boots?"
+        },
+        {
+            "score": 0.6687429547309875,
+            "question": "What company does Ornella Barra belong to?"
+        },
+        {
+            "score": 0.4962776005268097,
+            "question": "Find an employee of Alliance Boots."
+        },
+        {
+            "score": 0.38740214705467224,
+            "question": "What is the name of Ornella Barra's employer?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Ornella Barra works for Alliance Boots.",
+            "html": "dbpedia_2988_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Find an employee of Alliance Boots.",
+            "html": "dbpedia_2988_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What company does Ornella Barra belong to?",
+            "html": "dbpedia_2988_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is employed by Alliance Boots?",
+            "html": "dbpedia_2988_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2988_10.txt"
+        },
+        {
+            "file_id": "dbpedia_2988_102.txt"
+        },
+        {
+            "file_id": "dbpedia_2988_121.txt"
+        },
+        {
+            "file_id": "dbpedia_2988_2.txt"
+        },
+        {
+            "file_id": "dbpedia_2988_31.txt"
+        },
+        {
+            "file_id": "dbpedia_2988_38.txt"
+        },
+        {
+            "file_id": "dbpedia_2988_39.txt"
+        },
+        {
+            "file_id": "dbpedia_2988_40.txt"
+        },
+        {
+            "file_id": "dbpedia_2988_44.txt"
+        },
+        {
+            "file_id": "dbpedia_2988_98.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "After analyzing the context information, I can evaluate whether the statement \"Ornella Barra works for Alliance Boots\" is supported by the documents.\n\nHere's the result:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation:\n\n* The document file_path:/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2988/re-ranker-msmarco/31.txt mentions Ornella Barra as a \"board member\" of Alliance Boots.\n* The same document also states that she is the \"Wholesale & Commercial Affairs Director\" and \"heads up Alliance Healthcare, the Wholesale Division of Alliance Boots.\"\n* Additionally, file_path:/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2988/re-ranker-msmarco/33.txt quotes Ornella Barra as saying that she is confident in securing another year of double-digit profit growth for Alliance Boots.\n* File_path:/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2988/re-ranker-msmarco/102.txt also mentions her role as Chief Operating Officer, International for Walgreens Boots Alliance, Inc., which includes overseeing WBA's businesses outside of the United States, but still indicates her connection to Alliance Boots."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide multiple pieces of information indicating that Ornella Barra has worked for Alliance Boots, including her current role as a board member and Wholesale & Commercial Affairs Director of Alliance Boots. Additionally, she has held other executive positions within the company before her current roles, supporting the statement that she works for Alliance Boots."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

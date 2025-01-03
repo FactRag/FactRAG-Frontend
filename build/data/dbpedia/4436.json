@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Umicore",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "Umicore N.V.",
+    "human_readable": "The name of Umicore is Umicore N.V.",
+    "questions": [
+        {
+            "score": 0.8493411540985107,
+            "question": "What is the official name of Umicore?"
+        },
+        {
+            "score": 0.8432579040527344,
+            "question": "What is the full name of Umicore?"
+        },
+        {
+            "score": 0.8132690191268921,
+            "question": "What type of organization is Umicore N.V.?"
+        },
+        {
+            "score": 0.8020147681236267,
+            "question": "Does Umicore have a full name?"
+        },
+        {
+            "score": 0.7707468271255493,
+            "question": "Can you provide the full and official name of Umicore?"
+        },
+        {
+            "score": 0.7384268045425415,
+            "question": "Is there another name for Umicore besides its abbreviated form?"
+        },
+        {
+            "score": 0.7213400602340698,
+            "question": "How is Umicore formally known?"
+        },
+        {
+            "score": 0.7131661772727966,
+            "question": "What name is used to refer to Umicore in its complete form?"
+        },
+        {
+            "score": 0.6186391115188599,
+            "question": "Is Umicore a company?"
+        },
+        {
+            "score": 0.19801506400108337,
+            "question": "What does the abbreviation 'N.V.' stand for in this context?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of Umicore is Umicore N.V.",
+            "html": "dbpedia_4436_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Umicore a company?",
+            "html": "dbpedia_4436_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What name is used to refer to Umicore in its complete form?",
+            "html": "dbpedia_4436_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How is Umicore formally known?",
+            "html": "dbpedia_4436_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4436_40.txt"
+        },
+        {
+            "file_id": "dbpedia_4436_46.txt"
+        },
+        {
+            "file_id": "dbpedia_4436_53.txt"
+        },
+        {
+            "file_id": "dbpedia_4436_57.txt"
+        },
+        {
+            "file_id": "dbpedia_4436_60.txt"
+        },
+        {
+            "file_id": "dbpedia_4436_62.txt"
+        },
+        {
+            "file_id": "dbpedia_4436_64.txt"
+        },
+        {
+            "file_id": "dbpedia_4436_66.txt"
+        },
+        {
+            "file_id": "dbpedia_4436_78.txt"
+        },
+        {
+            "file_id": "dbpedia_4436_88.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here's the evaluation of the triple \"The name of Umicore is Umicore N.V.\":\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation:\nThe documents mention different names for Umicore, such as \"Umicore NV\", \"Umicore NV/SA\", and simply \"Umicore\". However, none of them explicitly state that the name is \"Umicore N.V.\". The name \"Umicore\" (without \"N.V.\") is mentioned in several documents, indicating that it's a widely accepted or commonly used name for the company."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThis answer is derived from the information provided in the documents, specifically from the file_path `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4436/re-ranker-msmarco/64.txt`, which states \"Umicore N.V., stylised as umicore, is a Belgian based multinational materials technology company...\". This confirms that the formal name of Umicore is indeed \"Umicore N.V.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "Umicore's official website and various other sources consistently refer to the company as \"Umicore\" without the suffix \"N.V.\", suggesting that the full name of the company is simply \"Umicore\", with \"N.V.\" being a part of its corporate structure rather than an integral part of its name.",
+            "category": 2
+        }
+    }
+}

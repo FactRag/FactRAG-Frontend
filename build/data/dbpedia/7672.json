@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Arnold_Schwarzenegger",
+    "predicate": "property/years",
+    "object": "20032006",
+    "human_readable": "Arnold Schwarzenegger was active from 2003 to 2006.",
+    "questions": [
+        {
+            "score": 0.886162281036377,
+            "question": "When was Arnold Schwarzenegger active?"
+        },
+        {
+            "score": 0.8527266383171082,
+            "question": "Identify the timeframe during which Arnold Schwarzenegger was active."
+        },
+        {
+            "score": 0.6736239194869995,
+            "question": "From which year to which year was Arnold Schwarzenegger professionally involved?"
+        },
+        {
+            "score": 0.6671563982963562,
+            "question": "During what period was Arnold Schwarzenegger most active?"
+        },
+        {
+            "score": 0.46997761726379395,
+            "question": "Between which years was Arnold Schwarzenegger at the peak of his career?"
+        },
+        {
+            "score": 0.42439964413642883,
+            "question": "In what years did Arnold Schwarzenegger hold a prominent role?"
+        },
+        {
+            "score": 0.4056549668312073,
+            "question": "During which time period did Arnold Schwarzenegger make his significant contributions?"
+        },
+        {
+            "score": 0.3813115954399109,
+            "question": "What years did Arnold Schwarzenegger work in his profession?"
+        },
+        {
+            "score": 0.37525674700737,
+            "question": "What time frame encompasses Arnold Schwarzenegger's activity?"
+        },
+        {
+            "score": 0.26803457736968994,
+            "question": "What is the range of years associated with Arnold Schwarzenegger's professional life?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Arnold Schwarzenegger was active from 2003 to 2006.",
+            "html": "dbpedia_7672_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What time frame encompasses Arnold Schwarzenegger's activity?",
+            "html": "dbpedia_7672_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What years did Arnold Schwarzenegger work in his profession?",
+            "html": "dbpedia_7672_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=During which time period did Arnold Schwarzenegger make his significant contributions?",
+            "html": "dbpedia_7672_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_7672_107.txt"
+        },
+        {
+            "file_id": "dbpedia_7672_13.txt"
+        },
+        {
+            "file_id": "dbpedia_7672_33.txt"
+        },
+        {
+            "file_id": "dbpedia_7672_35.txt"
+        },
+        {
+            "file_id": "dbpedia_7672_40.txt"
+        },
+        {
+            "file_id": "dbpedia_7672_47.txt"
+        },
+        {
+            "file_id": "dbpedia_7672_62.txt"
+        },
+        {
+            "file_id": "dbpedia_7672_81.txt"
+        },
+        {
+            "file_id": "dbpedia_7672_88.txt"
+        },
+        {
+            "file_id": "dbpedia_7672_96.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n\n\nThe documents state that Arnold Schwarzenegger served as the Governor of California from 2003 to 2011, and  he was reelected in 2006. This confirms he was active during the period of 2003 to 2006."
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\n**Explanation:** The documents state that Arnold Schwarzenegger served as the 38th Governor of California, and his term was from 2003 to 2011. While the exact end year (2006 in this triple) is not specified in the provided context, it falls within his stated term, making the statement generally accurate based on the given information."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Arnold Schwarzenegger was active as the Governor of California from 2003 to 2011, not just from 2003 to 2006. He served two full terms in office, with his second term beginning after winning reelection in 2006 and ending in 2011.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Multiple sources state he served two terms as Governor, from 2003 to 2011.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Schwarzenegger was elected on October 7, 2003, for a special recall election to replace Gray Davis and was sworn in on November 17, 2003. He then won re-election on November 7, 2006, serving until January 4, 2011, which is his full term ending date.",
+            "category": 2
+        }
+    }
+}

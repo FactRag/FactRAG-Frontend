@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Christina_Pickles",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:American_stage_actresses",
+    "human_readable": "Christina Pickles' subject is American stage actresses.",
+    "questions": [
+        {
+            "score": 0.6639013886451721,
+            "question": "Is Christina Pickles primarily known for her work on stage or screen?"
+        },
+        {
+            "score": 0.6071735620498657,
+            "question": "Has Christina Pickles performed in other mediums besides stage acting?"
+        },
+        {
+            "score": 0.5183067917823792,
+            "question": "In what country did Christina Pickles work as an actress?"
+        },
+        {
+            "score": 0.4168832302093506,
+            "question": "Has Christina Pickles been recognized for her acting achievements?"
+        },
+        {
+            "score": 0.4088709056377411,
+            "question": "What profession is Christina Pickles known for?"
+        },
+        {
+            "score": 0.3806071877479553,
+            "question": "Can you give an example of a role played by Christina Pickles?"
+        },
+        {
+            "score": 0.32630255818367004,
+            "question": "What type of performances did Christina Pickles participate in?"
+        },
+        {
+            "score": 0.286345511674881,
+            "question": "What are some famous plays or productions that Christina Pickles has appeared in?"
+        },
+        {
+            "score": 0.2738421559333801,
+            "question": "What is the name of the profession that Christina Pickles practiced?"
+        },
+        {
+            "score": 0.17661555111408234,
+            "question": "Is Christina Pickles known for working with any specific theater companies?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Christina Pickles' subject is American stage actresses.",
+            "html": "dbpedia_4898_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of the profession that Christina Pickles practiced?",
+            "html": "dbpedia_4898_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some famous plays or productions that Christina Pickles has appeared in?",
+            "html": "dbpedia_4898_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of performances did Christina Pickles participate in?",
+            "html": "dbpedia_4898_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4898_108.txt"
+        },
+        {
+            "file_id": "dbpedia_4898_118.txt"
+        },
+        {
+            "file_id": "dbpedia_4898_24.txt"
+        },
+        {
+            "file_id": "dbpedia_4898_41.txt"
+        },
+        {
+            "file_id": "dbpedia_4898_45.txt"
+        },
+        {
+            "file_id": "dbpedia_4898_54.txt"
+        },
+        {
+            "file_id": "dbpedia_4898_6.txt"
+        },
+        {
+            "file_id": "dbpedia_4898_68.txt"
+        },
+        {
+            "file_id": "dbpedia_4898_72.txt"
+        },
+        {
+            "file_id": "dbpedia_4898_98.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe documents state that Christina Pickles is an English-American actress. While she is American, the subject of \"American stage actresses\" is too broad. The provided text focuses on her career highlights and roles in television shows like \"Friends\" and \"St. Elsewhere\".  It doesn't explicitly categorize her as primarily a stage actress or limit her to American productions. \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here's the structured JSON response:\n\n{\n  \"output\": \"yes\"\n}\n\nThis is because the context information contains various documents that mention Christina Pickles as an actress, and one of the documents even specifies her nationality as \"English-American\". Therefore, the statement \"Christina Pickles' subject is American stage actresses\" can be confirmed based on the provided context."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information that supports the statement that Christina Pickles is an American stage actress. Multiple documents mention her as an Emmy-nominated actress who has appeared in both television shows and stage productions, confirming her status as a notable American stage actress."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nThe context information provided does not support the statement that \"Christina Pickles' subject is American stage actresses.\" While she is indeed an actress and has performed on both stage and screen, the documents do not specify her as a primary focus on being a stage actress or identify her specifically as an American one. The information focuses more on her roles in television shows like \"Friends\" and \"St. Elsewhere,\" indicating she's primarily known for her work in those mediums rather than strictly as a stage actress."
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Christina Pickles was born in England and holds British nationality, making her not American by birth. However, she has since acquired American citizenship.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "The provided text states she was born in England and has a career in both stage and screen acting.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Northumbria_University_Press",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "Northumbria University Press",
+    "human_readable": "The name of Northumbria University Press is Northumbria University Press.",
+    "questions": [
+        {
+            "score": 0.9879390001296997,
+            "question": "What is the name of Northumbria University Press?"
+        },
+        {
+            "score": 0.9703583121299744,
+            "question": "Is Northumbria University Press affiliated with a university?"
+        },
+        {
+            "score": 0.8997783064842224,
+            "question": "What is the history of Northumbria University Press?"
+        },
+        {
+            "score": 0.8994452953338623,
+            "question": "Where can you find more information about Northumbria University Press?"
+        },
+        {
+            "score": 0.8820440769195557,
+            "question": "Are there any other university presses similar to Northumbria University Press?"
+        },
+        {
+            "score": 0.7880186438560486,
+            "question": "What kind of materials might Northumbria University Press publish?"
+        },
+        {
+            "score": 0.751074492931366,
+            "question": "How might Northumbria University Press contribute to the academic community?"
+        },
+        {
+            "score": 0.7213877439498901,
+            "question": "Does Northumbria University Press publish books?"
+        },
+        {
+            "score": 0.7103273272514343,
+            "question": "Who might be the target audience for publications from Northumbria University Press?"
+        },
+        {
+            "score": 0.6731080412864685,
+            "question": "Can you find any information about specific books published by Northumbria University Press?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of Northumbria University Press is Northumbria University Press.",
+            "html": "dbpedia_947_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who might be the target audience for publications from Northumbria University Press?",
+            "html": "dbpedia_947_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Northumbria University Press publish books?",
+            "html": "dbpedia_947_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How might Northumbria University Press contribute to the academic community?",
+            "html": "dbpedia_947_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_947_114.txt"
+        },
+        {
+            "file_id": "dbpedia_947_13.txt"
+        },
+        {
+            "file_id": "dbpedia_947_130.txt"
+        },
+        {
+            "file_id": "dbpedia_947_133.txt"
+        },
+        {
+            "file_id": "dbpedia_947_22.txt"
+        },
+        {
+            "file_id": "dbpedia_947_3.txt"
+        },
+        {
+            "file_id": "dbpedia_947_37.txt"
+        },
+        {
+            "file_id": "dbpedia_947_40.txt"
+        },
+        {
+            "file_id": "dbpedia_947_43.txt"
+        },
+        {
+            "file_id": "dbpedia_947_85.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the answer in the required format:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe reason for this response is that according to the documents, the name of the imprint launched by Northumbria University Press is actually called \"Northumbria Press\", not \"Northumbria University Press\". This can be seen in the document with file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_947/re-ranker-msmarco/84.txt."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe information provided in the documents supports that the name of Northumbria University Press is indeed Northumbria University Press."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "There are different names mentioned for the publishing imprint of Northumbria University, including \"Northumbria Press\" which seems to be a distinct entity from \"Northumbria University Press\".",
+            "category": 2
+        }
+    }
+}

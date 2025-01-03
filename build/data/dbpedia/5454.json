@@ -1,0 +1,110 @@
+{
+    "subject": "resource/David_Parks_(politician)",
+    "predicate": "http://xmlns.com/foaf/0.1/surname",
+    "object": "Parks",
+    "human_readable": "The surname of David Parks (politician) is Parks.",
+    "questions": [
+        {
+            "score": 0.9622069597244263,
+            "question": "What is the surname of David Parks?"
+        },
+        {
+            "score": 0.9529249668121338,
+            "question": "Is David Parks a politician?"
+        },
+        {
+            "score": 0.9001719355583191,
+            "question": "What is the full name of David Parks?"
+        },
+        {
+            "score": 0.8778279423713684,
+            "question": "Who is David Parks?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The surname of David Parks (politician) is Parks.",
+            "html": "dbpedia_5454_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the full name of David Parks?",
+            "html": "dbpedia_5454_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is David Parks a politician?",
+            "html": "dbpedia_5454_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the surname of David Parks?",
+            "html": "dbpedia_5454_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5454_21.txt"
+        },
+        {
+            "file_id": "dbpedia_5454_25.txt"
+        },
+        {
+            "file_id": "dbpedia_5454_34.txt"
+        },
+        {
+            "file_id": "dbpedia_5454_43.txt"
+        },
+        {
+            "file_id": "dbpedia_5454_44.txt"
+        },
+        {
+            "file_id": "dbpedia_5454_47.txt"
+        },
+        {
+            "file_id": "dbpedia_5454_48.txt"
+        },
+        {
+            "file_id": "dbpedia_5454_49.txt"
+        },
+        {
+            "file_id": "dbpedia_5454_8.txt"
+        },
+        {
+            "file_id": "dbpedia_5454_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "After evaluating the context information, I can provide the following response:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe reason for this answer is that the documents mention a \"David Parks\" who was elected to serve in the Nevada State Assembly and had other political roles, but his surname is not explicitly mentioned as \"Parks\". While one of the documents mentions individuals with the surname \"Parks\", including Rosa Parks, there is no direct confirmation that the David Parks (politician) mentioned has this surname."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provided contain information about a person named David Parks who was involved in politics, which supports the statement that \"David Parks\" has the surname \"Parks.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The claim is wrong because there are multiple individuals with the name David Parks mentioned in the context information, but only one of them is a politician (David Parks from Nevada), and the surname \"Parks\" is not necessarily associated with this particular individual.",
+            "category": 2
+        }
+    }
+}

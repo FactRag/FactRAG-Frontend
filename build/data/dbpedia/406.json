@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Smith_College",
+    "predicate": "property/affiliations",
+    "object": "resource/Oberlin_Group",
+    "human_readable": "Smith College is affiliated with the Oberlin Group.",
+    "questions": [
+        {
+            "score": 0.899861216545105,
+            "question": "What group is Smith College affiliated with?"
+        },
+        {
+            "score": 0.8974915742874146,
+            "question": "Name the group that Smith College belongs to."
+        },
+        {
+            "score": 0.7685112953186035,
+            "question": "What affiliation does Smith College have with other colleges?"
+        },
+        {
+            "score": 0.745927095413208,
+            "question": "Can you list some colleges that are part of the Oberlin Group?"
+        },
+        {
+            "score": 0.5786626935005188,
+            "question": "Does Smith College participate in any collaborative groups?"
+        },
+        {
+            "score": 0.5766672492027283,
+            "question": "Who are some of the other members of the Oberlin Group?"
+        },
+        {
+            "score": 0.5320013761520386,
+            "question": "To which academic network is Smith College connected?"
+        },
+        {
+            "score": 0.5260791778564453,
+            "question": "Is Smith College part of a larger academic organization?"
+        },
+        {
+            "score": 0.5178424119949341,
+            "question": "What does Oberlin Group represent?"
+        },
+        {
+            "score": 0.40398117899894714,
+            "question": "What is the purpose of the Oberlin Group?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Smith College is affiliated with the Oberlin Group.",
+            "html": "dbpedia_406_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What does Oberlin Group represent?",
+            "html": "dbpedia_406_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Smith College part of a larger academic organization?",
+            "html": "dbpedia_406_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=To which academic network is Smith College connected?",
+            "html": "dbpedia_406_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_406_109.txt"
+        },
+        {
+            "file_id": "dbpedia_406_112.txt"
+        },
+        {
+            "file_id": "dbpedia_406_118.txt"
+        },
+        {
+            "file_id": "dbpedia_406_16.txt"
+        },
+        {
+            "file_id": "dbpedia_406_28.txt"
+        },
+        {
+            "file_id": "dbpedia_406_3.txt"
+        },
+        {
+            "file_id": "dbpedia_406_62.txt"
+        },
+        {
+            "file_id": "dbpedia_406_78.txt"
+        },
+        {
+            "file_id": "dbpedia_406_81.txt"
+        },
+        {
+            "file_id": "dbpedia_406_95.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe information from the provided documents supports the statement that Smith College is affiliated with the Oberlin Group. Specifically, document `108.txt` mentions that the 2022 Oberlin Group of Libraries Annual Meeting was hosted by Mount Holyoke College, Smith College, and Amherst College. Additionally, `114.txt` explicitly states that Hendrix College\u2019s Olin C. Bailey Library has joined the Oberlin Group of Libraries alongside other institutions such as Hobart and William Smith Colleges, Hollins University, and the University of Richmond, indicating a broader affiliation among these institutions with the Oberlin Group."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "None of the provided text mentions Smith College being a member of the Oberlin Group.",
+            "category": 2
+        }
+    }
+}

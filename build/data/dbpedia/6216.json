@@ -1,0 +1,146 @@
+{
+    "subject": "resource/WIVM-LD",
+    "predicate": "property/homepage",
+    "object": "http://www.wivmtv.com/",
+    "human_readable": "The homepage of WIVM-LD is http://www.wivmtv.com/.",
+    "questions": [
+        {
+            "score": 0.928738534450531,
+            "question": "Which URL leads to WIVM-LD's homepage?"
+        },
+        {
+            "score": 0.9200974106788635,
+            "question": "What is the URL of WIVM-LD's homepage?"
+        },
+        {
+            "score": 0.8621463179588318,
+            "question": "Provide the web address of WIVM-LD."
+        },
+        {
+            "score": 0.8602318167686462,
+            "question": "What is the official website address for WIVM-LD?"
+        },
+        {
+            "score": 0.853241503238678,
+            "question": "How can you access WIVM-LD's homepage online?"
+        },
+        {
+            "score": 0.8329257965087891,
+            "question": "Where can you find the WIVM-LD website?"
+        },
+        {
+            "score": 0.8093588352203369,
+            "question": "What is the web address for WIVM-LD?"
+        },
+        {
+            "score": 0.7890735268592834,
+            "question": "What is the online location for WIVM-LD?"
+        },
+        {
+            "score": 0.7668103575706482,
+            "question": "Where can you find information about WIVM-LD on the internet?"
+        },
+        {
+            "score": 0.7297536134719849,
+            "question": "What domain name does WIVM-LD use for its website?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The homepage of WIVM-LD is http://www.wivmtv.com/.",
+            "html": "dbpedia_6216_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where can you find information about WIVM-LD on the internet?",
+            "html": "dbpedia_6216_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the online location for WIVM-LD?",
+            "html": "dbpedia_6216_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the web address for WIVM-LD?",
+            "html": "dbpedia_6216_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6216_12.txt"
+        },
+        {
+            "file_id": "dbpedia_6216_18.txt"
+        },
+        {
+            "file_id": "dbpedia_6216_22.txt"
+        },
+        {
+            "file_id": "dbpedia_6216_3.txt"
+        },
+        {
+            "file_id": "dbpedia_6216_31.txt"
+        },
+        {
+            "file_id": "dbpedia_6216_32.txt"
+        },
+        {
+            "file_id": "dbpedia_6216_34.txt"
+        },
+        {
+            "file_id": "dbpedia_6216_6.txt"
+        },
+        {
+            "file_id": "dbpedia_6216_8.txt"
+        },
+        {
+            "file_id": "dbpedia_6216_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "To answer your query, I will evaluate the information in the documents to determine whether they support the statement \"The homepage of WIVM-LD is http://www.wivmtv.com/. \n\nHere's my evaluation:\n\n* The document with file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6216/re-ranker-msmarco/8.txt contains the line \"Also streaming world wide via the internet at www.wivmtv.com...\"\n* This line suggests that http://www.wivmtv.com is indeed a homepage associated with WIVM-LD.\n\nTherefore, my response to your query would be:\n\n{'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe provided context information mentions `www.wivmtv.com` multiple times, which aligns with the query about the homepage of WIVM-LD. Therefore, the triple is correct according to the documents."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Although the context provides the URL for the WIVM-LD's live stream (www.wivmtv.com) and mentions that various shows can be viewed on the website, it does not specify that the homepage of WIVM-LD is www.wivmtv.com.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Multiple instances throughout the text state \"www.wivmtv.com\" as the website address for viewing content, including live streams.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The homepage of WIVM-LD is not mentioned as http://www.wivmtv.com/, but rather the website for another channel, WIVN, with the same domain name.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information provides a homepage for Image Video Teleproductions, Inc., which is www.wivmtv.com, not specifically for WIVM-LD.",
+            "category": 2
+        }
+    }
+}

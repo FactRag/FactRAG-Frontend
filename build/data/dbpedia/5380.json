@@ -1,0 +1,129 @@
+{
+    "subject": "resource/The_Mirror_Has_Two_Faces",
+    "predicate": "ontology/starring",
+    "object": "resource/George_Segal",
+    "human_readable": "The movie 'The Mirror Has Two Faces' stars George Segal.",
+    "questions": [
+        {
+            "score": 0.9292493462562561,
+            "question": "What other actors appeared in 'The Mirror Has Two Faces' besides George Segal?"
+        },
+        {
+            "score": 0.9115937948226929,
+            "question": "Who stars in the movie 'The Mirror Has Two Faces'?"
+        },
+        {
+            "score": 0.8002303242683411,
+            "question": "Who directed 'The Mirror Has Two Faces'?"
+        },
+        {
+            "score": 0.7659456729888916,
+            "question": "What is the name of the movie starring George Segal?"
+        },
+        {
+            "score": 0.6805359125137329,
+            "question": "List some other movies featuring George Segal."
+        },
+        {
+            "score": 0.6781896352767944,
+            "question": "What is the plot of 'The Mirror Has Two Faces'?"
+        },
+        {
+            "score": 0.6129753589630127,
+            "question": "Is 'The Mirror Has Two Faces' a comedy, drama, or another genre?"
+        },
+        {
+            "score": 0.6105954647064209,
+            "question": "Where was 'The Mirror Has Two Faces' filmed?"
+        },
+        {
+            "score": 0.5282461643218994,
+            "question": "Are there any awards associated with 'The Mirror Has Two Faces'?"
+        },
+        {
+            "score": 0.46466630697250366,
+            "question": "What year was 'The Mirror Has Two Faces' released?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The movie 'The Mirror Has Two Faces' stars George Segal.",
+            "html": "dbpedia_5380_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any awards associated with 'The Mirror Has Two Faces'?",
+            "html": "dbpedia_5380_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where was 'The Mirror Has Two Faces' filmed?",
+            "html": "dbpedia_5380_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is 'The Mirror Has Two Faces' a comedy, drama, or another genre?",
+            "html": "dbpedia_5380_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5380_1.txt"
+        },
+        {
+            "file_id": "dbpedia_5380_100.txt"
+        },
+        {
+            "file_id": "dbpedia_5380_11.txt"
+        },
+        {
+            "file_id": "dbpedia_5380_23.txt"
+        },
+        {
+            "file_id": "dbpedia_5380_28.txt"
+        },
+        {
+            "file_id": "dbpedia_5380_32.txt"
+        },
+        {
+            "file_id": "dbpedia_5380_49.txt"
+        },
+        {
+            "file_id": "dbpedia_5380_68.txt"
+        },
+        {
+            "file_id": "dbpedia_5380_85.txt"
+        },
+        {
+            "file_id": "dbpedia_5380_95.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "To answer the query, I'll evaluate the context information and look for any mentions of the movie \"The Mirror Has Two Faces\" starring George Segal.\n\nAfter reviewing the documents, I found that the following files mention the movie \"The Mirror Has Two Faces\" and its cast:\n\n* file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5380/re-ranker-msmarco/23.txt\n\t+ This file lists George Segal as one of the stars in the movie, along with Barbra Streisand, Jeff Bridges, Lauren Bacall, Mimi Rogers, Pierce Brosnan, and Brenda Vaccaro.\n* file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5380/re-ranker-msmarco/1.txt\n\t+ This file also lists George Segal as one of the stars in the movie, along with Barbra Streisand, Jeff Bridges, Lauren Bacall, Mimi Rogers, Pierce Brosnan, and Brenda Vaccaro.\n\nTherefore, based on this information, I can confirm that:\n\n```\n{\n  \"output\": \"yes\"\n}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents clearly indicate that George Segal starred in \"The Mirror Has Two Faces\" (1996), supporting the statement that he is one of the actors in the film."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

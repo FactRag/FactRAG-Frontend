@@ -1,0 +1,144 @@
+{
+    "subject": "resource/The_Settlers:_Rise_of_an_Empire",
+    "predicate": "ontology/developer",
+    "object": "resource/Ubisoft_Blue_Byte",
+    "human_readable": "The Settlers: Rise of an Empire was developed by Ubisoft Blue Byte.",
+    "questions": [
+        {
+            "score": 0.8544718027114868,
+            "question": "Who developed the game The Settlers: Rise of an Empire?"
+        },
+        {
+            "score": 0.7112933397293091,
+            "question": "When was The Settlers: Rise of an Empire released?"
+        },
+        {
+            "score": 0.6855566501617432,
+            "question": "What is the name of the studio that developed The Settlers: Rise of an Empire?"
+        },
+        {
+            "score": 0.6751132607460022,
+            "question": "What platforms is The Settlers: Rise of an Empire available on?"
+        },
+        {
+            "score": 0.6542729139328003,
+            "question": "What type of game is The Settlers: Rise of an Empire?"
+        },
+        {
+            "score": 0.6312163472175598,
+            "question": "Can you name other games developed by Ubisoft Blue Byte?"
+        },
+        {
+            "score": 0.5892257690429688,
+            "question": "Are there any sequels or expansions for The Settlers: Rise of an Empire?"
+        },
+        {
+            "score": 0.5646157264709473,
+            "question": "Is The Settlers: Rise of an Empire a popular video game?"
+        },
+        {
+            "score": 0.5579914450645447,
+            "question": "Is Ubisoft Blue Byte responsible for developing games?"
+        },
+        {
+            "score": 0.5129861831665039,
+            "question": "What is the main theme or genre of The Settlers: Rise of an Empire?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The Settlers: Rise of an Empire was developed by Ubisoft Blue Byte.",
+            "html": "dbpedia_6024_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Ubisoft Blue Byte responsible for developing games?",
+            "html": "dbpedia_6024_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is The Settlers: Rise of an Empire a popular video game?",
+            "html": "dbpedia_6024_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any sequels or expansions for The Settlers: Rise of an Empire?",
+            "html": "dbpedia_6024_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6024_11.txt"
+        },
+        {
+            "file_id": "dbpedia_6024_18.txt"
+        },
+        {
+            "file_id": "dbpedia_6024_25.txt"
+        },
+        {
+            "file_id": "dbpedia_6024_29.txt"
+        },
+        {
+            "file_id": "dbpedia_6024_3.txt"
+        },
+        {
+            "file_id": "dbpedia_6024_33.txt"
+        },
+        {
+            "file_id": "dbpedia_6024_49.txt"
+        },
+        {
+            "file_id": "dbpedia_6024_55.txt"
+        },
+        {
+            "file_id": "dbpedia_6024_56.txt"
+        },
+        {
+            "file_id": "dbpedia_6024_87.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "After evaluating the context information, I can confirm that the statement is correct according to the documents.\n\nHere's the response in JSON format:\n\n```json\n{\n    \"output\": \"yes\"\n}\n```\n\nExplanation:\n\n* The document at file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6024/re-ranker-msmarco/17.txt specifically mentions that \"The Settlers\u00c2\u00ae : Rise of an Empire - History Edition is a Strategy game developed by Ubisoft Blue Byte.\"\n* Although there are other documents mentioning different developers (Blue Byte Software), the correct authorship in the context of \"Rise of an Empire\" is attributed to Ubisoft Blue Byte."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: According to the provided context, The Settlers: Rise of an Empire was developed by Blue Byte and Funatics Software, not Ubisoft Blue Byte. Therefore, the statement is incorrect."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, there is no direct statement that confirms \"The Settlers: Rise of an Empire\" was developed by \"Ubisoft Blue Byte\". However, multiple documents mention development by either Blue Byte or Funatics Software. One document specifically mentions that the game was published by Ubisoft Entertainment and developed by Blue Byte.\n\nTherefore, given the information provided, the claim does not match what is stated in the documents. The answer should be:\n\n```json\n{\"output\": \"no\"}\n```"
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Information from text 5 states \"After a poorly received Heritage of Kings, the previous game, the German developer decided to go back to the good old convention adding a grain of innovations.\" and  text 2 states \"The Settlers: Rise of an Empire is a strategy game developed by Blue Byte and Funatics Software\".",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The Settlers: Rise of an Empire was developed by Blue Byte and Funatics Software, not Ubisoft Blue Byte.",
+            "category": 2
+        }
+    }
+}

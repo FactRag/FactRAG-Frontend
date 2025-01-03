@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Bill_Nunn",
+    "predicate": "property/wordnet_type",
+    "object": "http://www.w3.org/2006/03/wn/wn20/instances/synset-actor-noun-1",
+    "human_readable": "Bill Nunn is a type of actor.",
+    "questions": [
+        {
+            "score": 0.9093213081359863,
+            "question": "Is Bill Nunn known for a particular acting style?"
+        },
+        {
+            "score": 0.9074088931083679,
+            "question": "What roles has Bill Nunn played?"
+        },
+        {
+            "score": 0.7659338116645813,
+            "question": "What is Bill Nunn's background before becoming an actor?"
+        },
+        {
+            "score": 0.7482112646102905,
+            "question": "Is there a specific genre of film that Bill Nunn is known for?"
+        },
+        {
+            "score": 0.7031003832817078,
+            "question": "What profession is Bill Nunn?"
+        },
+        {
+            "score": 0.6659332513809204,
+            "question": "What is Bill Nunn's most famous role?"
+        },
+        {
+            "score": 0.6096773743629456,
+            "question": "Has Bill Nunn done any stage acting?"
+        },
+        {
+            "score": 0.5429881811141968,
+            "question": "In what movies or television shows has Bill Nunn appeared?"
+        },
+        {
+            "score": 0.487969309091568,
+            "question": "Who are some of Bill Nunn's notable colleagues?"
+        },
+        {
+            "score": 0.44873860478401184,
+            "question": "Has Bill Nunn won any awards for his acting?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Bill Nunn is a type of actor.",
+            "html": "dbpedia_5283_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who are some of Bill Nunn's notable colleagues?",
+            "html": "dbpedia_5283_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In what movies or television shows has Bill Nunn appeared?",
+            "html": "dbpedia_5283_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Has Bill Nunn done any stage acting?",
+            "html": "dbpedia_5283_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5283_110.txt"
+        },
+        {
+            "file_id": "dbpedia_5283_20.txt"
+        },
+        {
+            "file_id": "dbpedia_5283_29.txt"
+        },
+        {
+            "file_id": "dbpedia_5283_41.txt"
+        },
+        {
+            "file_id": "dbpedia_5283_52.txt"
+        },
+        {
+            "file_id": "dbpedia_5283_55.txt"
+        },
+        {
+            "file_id": "dbpedia_5283_56.txt"
+        },
+        {
+            "file_id": "dbpedia_5283_73.txt"
+        },
+        {
+            "file_id": "dbpedia_5283_83.txt"
+        },
+        {
+            "file_id": "dbpedia_5283_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here's the response:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation:\n\nThe triple to be evaluated is \"Bill Nunn is a type of actor.\" The context information provided contains multiple documents about Bill Nunn, and all of them consistently describe him as an \"actor\". This includes his birth date, death date, film credits, and other details that confirm his profession. Therefore, the information in the documents supports this triple."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\nThe documents describe Bill Nunn as an American actor, which supports the statement that \"Bill Nunn is a type of actor.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Bill Nunn is an individual, not a type. He is an American actor.",
+            "category": 4
+        },
+        "gemma2": {
+            "reason": "The provided text describes Bill Nunn as an \"American actor\" multiple times, explicitly stating his profession.",
+            "category": 4
+        },
+        "llama3.1": {
+            "reason": "The provided context information consistently describes Bill Nunn as an \"American actor\". This suggests a categorization of his profession, indicating that he is indeed an actor.",
+            "category": 4
+        },
+        "qwen2.5": {
+            "reason": "Bill Nunn III is explicitly described as an American actor in the provided context.",
+            "category": 4
+        }
+    }
+}

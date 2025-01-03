@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Dell",
+    "predicate": "ontology/subsidiary",
+    "object": "resource/SonicWall",
+    "human_readable": "Dell is a subsidiary of SonicWall.",
+    "questions": [
+        {
+            "score": 0.9360709190368652,
+            "question": "Is SonicWall a part of Dell?"
+        },
+        {
+            "score": 0.9042457342147827,
+            "question": "Does Dell belong to SonicWall?"
+        },
+        {
+            "score": 0.8890558481216431,
+            "question": "Is SonicWall the parent company of Dell?"
+        },
+        {
+            "score": 0.8163093328475952,
+            "question": "What company is Dell a subsidiary of?"
+        },
+        {
+            "score": 0.7291791439056396,
+            "question": "What is the relationship between SonicWall and Dell?"
+        },
+        {
+            "score": 0.49834975600242615,
+            "question": "Which company owns Dell?"
+        },
+        {
+            "score": 0.4589977562427521,
+            "question": "To what company does Dell belong?"
+        },
+        {
+            "score": 0.24150200188159943,
+            "question": "Who is the parent company of Dell?"
+        },
+        {
+            "score": 0.20979924499988556,
+            "question": "Name the parent company of Dell."
+        },
+        {
+            "score": 0.15830442309379578,
+            "question": "Under which company's umbrella does Dell operate?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Dell is a subsidiary of SonicWall.",
+            "html": "dbpedia_8591_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Name the parent company of Dell.",
+            "html": "dbpedia_8591_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is the parent company of Dell?",
+            "html": "dbpedia_8591_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=To what company does Dell belong?",
+            "html": "dbpedia_8591_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8591_11.txt"
+        },
+        {
+            "file_id": "dbpedia_8591_25.txt"
+        },
+        {
+            "file_id": "dbpedia_8591_29.txt"
+        },
+        {
+            "file_id": "dbpedia_8591_30.txt"
+        },
+        {
+            "file_id": "dbpedia_8591_35.txt"
+        },
+        {
+            "file_id": "dbpedia_8591_43.txt"
+        },
+        {
+            "file_id": "dbpedia_8591_47.txt"
+        },
+        {
+            "file_id": "dbpedia_8591_56.txt"
+        },
+        {
+            "file_id": "dbpedia_8591_58.txt"
+        },
+        {
+            "file_id": "dbpedia_8591_63.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nThe documents mention that SonicWall was a Dell subsidiary from 2012 to 2016, but it does not indicate that the relationship is still current. In fact, one document mentions that Dell has announced a deal to buy SonicWall, suggesting that the reverse may be true."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: The documents provide information about SonicWall, including its founding year and its history as a company that was previously a Dell subsidiary from 2012 to 2016. However, there is no indication in the provided context that Dell is currently or has ever been a subsidiary of SonicWall. Therefore, the statement \"Dell is a subsidiary of SonicWall\" is incorrect according to the given information."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "SonicWall was a subsidiary of Dell from 2012 to 2016, not the other way around.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "SonicWall was a subsidiary of Dell from 2012 to 2016, indicating Dell was the parent company and SonicWall the subsidiary.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "Dell and SonicWall have been independent companies at different points in time, but never simultaneously a subsidiary of each other.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "SonicWall was a Dell subsidiary from 2012 to 2016, not the other way around.",
+            "category": 2
+        }
+    }
+}

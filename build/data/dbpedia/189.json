@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Cercospora_apii",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+    "object": "Cercospora apii  is a fungal plant pathogen, who causes leaf spot on celery, and found on other plants, including Impatiens. Since the genus Cercospora is one of the largest and most heterogeneous genera of hyphomycetes, numerous species described from diverse hosts and locations are morphologically indistinguishable from C. apii and subsequently are referred to as C. apii sensu lato.",
+    "human_readable": "Cercospora apii is a fungal plant pathogen that causes leaf spot on celery and other plants, including Impatiens.",
+    "questions": [
+        {
+            "score": 0.9526377320289612,
+            "question": "Is celery a plant affected by Cercospora apii?"
+        },
+        {
+            "score": 0.9058638215065002,
+            "question": "Besides celery, what other plant is mentioned as being susceptible to Cercospora apii?"
+        },
+        {
+            "score": 0.8168378472328186,
+            "question": "On which plants can Cercospora apii be found?"
+        },
+        {
+            "score": 0.7817234396934509,
+            "question": "What disease does Cercospora apii cause?"
+        },
+        {
+            "score": 0.716727077960968,
+            "question": "What kind of organism is Cercospora apii?"
+        },
+        {
+            "score": 0.686036229133606,
+            "question": "What type of damage does Cercospora apii inflict on plants?"
+        },
+        {
+            "score": 0.5112678408622742,
+            "question": "Is Cercospora apii a beneficial or harmful organism?"
+        },
+        {
+            "score": 0.42007192969322205,
+            "question": "Are there any known preventative measures against Cercospora apii infection?"
+        },
+        {
+            "score": 0.4005473256111145,
+            "question": "Can Cercospora apii be controlled or treated?"
+        },
+        {
+            "score": 0.3943258821964264,
+            "question": "What are the potential impacts of Cercospora apii on agriculture?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Cercospora apii is a fungal plant pathogen that causes leaf spot on celery and other plants, including Impatiens.",
+            "html": "dbpedia_189_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can Cercospora apii be controlled or treated?",
+            "html": "dbpedia_189_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any known preventative measures against Cercospora apii infection?",
+            "html": "dbpedia_189_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Cercospora apii a beneficial or harmful organism?",
+            "html": "dbpedia_189_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_189_102.txt"
+        },
+        {
+            "file_id": "dbpedia_189_103.txt"
+        },
+        {
+            "file_id": "dbpedia_189_21.txt"
+        },
+        {
+            "file_id": "dbpedia_189_33.txt"
+        },
+        {
+            "file_id": "dbpedia_189_65.txt"
+        },
+        {
+            "file_id": "dbpedia_189_66.txt"
+        },
+        {
+            "file_id": "dbpedia_189_67.txt"
+        },
+        {
+            "file_id": "dbpedia_189_79.txt"
+        },
+        {
+            "file_id": "dbpedia_189_88.txt"
+        },
+        {
+            "file_id": "dbpedia_189_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nWhile the provided text states that *Cercospora apii* causes leaf spot on celery and sugar beet, it does not mention Impatiens as a host plant.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The provided context information does not mention Cercospora apii causing leaf spot on Impatiens. While the documents provide detailed information about Cercospora apii and its effects on celery, sugar beet, and other plants, there is no reference to Impatiens in the given text. Therefore, the statement is not supported by the provided context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information:\n\n- The documents detail the occurrence of **Cercospora apii** in relation to celery (Apium graveolens) and its presence on other hosts such as sugar beet (Beta vulgaris).\n- There is no explicit mention or reference to Cercospora apii causing leaf spot disease specifically on Impatiens.\n\nTherefore, while the documents support that Cercospora apii is a fungal plant pathogen affecting celery and other plants beyond just celery, there is insufficient evidence provided in these texts to confirm it also affects Impatiens.\n\nAnswer: \n```json\n{\"output\": \"no\"}\n```"
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "The provided context information states that  _Cercospora apii_ causes leaf spot on celery and sugar beet, and mentions the discovery of a new species, _C. apiicola_, also associated with celery. It does not mention _Impatiens_ as a host for _Cercospora apii_.",
+            "category": -1
+        },
+        "qwen2.5": {
+            "reason": "The context information does not mention Impatiens as a host for Cercospora apii. Additionally, the text specifies that Cercospora apii causes leaf spot on celery and sugar beet, but does not include Impatiens in the list of hosts.",
+            "category": -1
+        }
+    }
+}

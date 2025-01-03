@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Arthur_Lakes",
+    "predicate": "property/almaMater",
+    "object": "resource/The_Queen's_College,_Oxford",
+    "human_readable": "Arthur Lakes attended The Queen's College, Oxford.",
+    "questions": [
+        {
+            "score": 0.9641799926757812,
+            "question": "Was Arthur Lakes a student at The Queen's College?"
+        },
+        {
+            "score": 0.9219738841056824,
+            "question": "Where did Arthur Lakes attend college?"
+        },
+        {
+            "score": 0.9113995432853699,
+            "question": "Did Arthur Lakes study at a college in England?"
+        },
+        {
+            "score": 0.8819438219070435,
+            "question": "What is the name of the college that Arthur Lakes attended?"
+        },
+        {
+            "score": 0.8782527446746826,
+            "question": "Which university did Arthur Lakes attend?"
+        },
+        {
+            "score": 0.8725298047065735,
+            "question": "In what city did Arthur Lakes attend college?"
+        },
+        {
+            "score": 0.8328957557678223,
+            "question": "What is the name of the institution that Arthur Lakes attended?"
+        },
+        {
+            "score": 0.7870129346847534,
+            "question": "Is The Queen's College located in Oxford?"
+        },
+        {
+            "score": 0.46634015440940857,
+            "question": "What is the location of The Queen's College?"
+        },
+        {
+            "score": 0.4170862138271332,
+            "question": "What type of institution is The Queen's College?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Arthur Lakes attended The Queen's College, Oxford.",
+            "html": "dbpedia_2767_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the location of The Queen's College?",
+            "html": "dbpedia_2767_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is The Queen's College located in Oxford?",
+            "html": "dbpedia_2767_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of the institution that Arthur Lakes attended?",
+            "html": "dbpedia_2767_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2767_1.txt"
+        },
+        {
+            "file_id": "dbpedia_2767_118.txt"
+        },
+        {
+            "file_id": "dbpedia_2767_128.txt"
+        },
+        {
+            "file_id": "dbpedia_2767_14.txt"
+        },
+        {
+            "file_id": "dbpedia_2767_29.txt"
+        },
+        {
+            "file_id": "dbpedia_2767_54.txt"
+        },
+        {
+            "file_id": "dbpedia_2767_55.txt"
+        },
+        {
+            "file_id": "dbpedia_2767_67.txt"
+        },
+        {
+            "file_id": "dbpedia_2767_80.txt"
+        },
+        {
+            "file_id": "dbpedia_2767_91.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have any other triples you want to evaluate!"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "After evaluating the context information and the query, I get:\n\n`{'output': 'no'}`\n\nThe reason is that the documents mention Arthur Lakes attending \"Queen Elizabeth College Guernsey\" (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2767/re-ranker-msmarco/14.txt) and \"Queens College, Oxford, until 1865\" (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2767/re-ranker-msmarco/28.txt), but they do not mention The Queen's College, Oxford."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents mention that Arthur Lakes was educated at Queens College, Oxford. This supports the statement that Arthur Lakes attended The Queen's College, Oxford."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n    \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "Context information 3 contradicts it.",
+            "category": 2
+        }
+    }
+}

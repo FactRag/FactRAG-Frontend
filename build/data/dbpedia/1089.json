@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Sandy_Mart\u00ednez",
+    "predicate": "ontology/birthPlace",
+    "object": "resource/Villa_Mella,_Dominican_Republic",
+    "human_readable": "Sandy Mart\u00ednez was born in Villa Mella, Dominican Republic.",
+    "questions": [
+        {
+            "score": 0.914452850818634,
+            "question": "Is Sandy Mart\u00ednez Dominican?"
+        },
+        {
+            "score": 0.9111502766609192,
+            "question": "Where was Sandy Mart\u00ednez born?"
+        },
+        {
+            "score": 0.6260668635368347,
+            "question": "What is Sandy Mart\u00ednez known for?"
+        },
+        {
+            "score": 0.5069395303726196,
+            "question": "What country is Villa Mella located in?"
+        },
+        {
+            "score": 0.41427522897720337,
+            "question": "Do you know anything about Sandy Mart\u00ednez's family?"
+        },
+        {
+            "score": 0.3528411388397217,
+            "question": "Is there a famous landmark in Villa Mella?"
+        },
+        {
+            "score": 0.26540708541870117,
+            "question": "Who are some famous people from the Dominican Republic?"
+        },
+        {
+            "score": 0.2603849470615387,
+            "question": "Can you tell me more about Villa Mella?"
+        },
+        {
+            "score": 0.1375378519296646,
+            "question": "What is the capital of the Dominican Republic?"
+        },
+        {
+            "score": 0.12458746880292892,
+            "question": "What are some popular cultural traditions in the Dominican Republic?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Sandy Mart\u00ednez was born in Villa Mella, Dominican Republic.",
+            "html": "dbpedia_1089_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the capital of the Dominican Republic?",
+            "html": "dbpedia_1089_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about Villa Mella?",
+            "html": "dbpedia_1089_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who are some famous people from the Dominican Republic?",
+            "html": "dbpedia_1089_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1089_102.txt"
+        },
+        {
+            "file_id": "dbpedia_1089_14.txt"
+        },
+        {
+            "file_id": "dbpedia_1089_21.txt"
+        },
+        {
+            "file_id": "dbpedia_1089_22.txt"
+        },
+        {
+            "file_id": "dbpedia_1089_29.txt"
+        },
+        {
+            "file_id": "dbpedia_1089_36.txt"
+        },
+        {
+            "file_id": "dbpedia_1089_48.txt"
+        },
+        {
+            "file_id": "dbpedia_1089_78.txt"
+        },
+        {
+            "file_id": "dbpedia_1089_81.txt"
+        },
+        {
+            "file_id": "dbpedia_1089_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe information in the documents supports the triple. The document with file_path `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1089/re-ranker-msmarco/47.txt` mentions that Angel Sandy Mart\u00ednez (also known as Sandy Martinez) was born on October 8, 1970, and the document with file_path `/Users/stefanomarchesin/Research/fshamo/ags/dbpedia_1089/re-ranker-msmarco/52.txt` mentions a photo of Sandy Martinez taken in Villa Mella, Dominican Republic."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information that supports the statement \"Sandy Mart\u00ednez was born in Villa Mella, Dominican Republic.\" Specifically, the document `52.txt` mentions:\n\n\"Caption: Sandy Martinez, a native of Villa Mella, Dominican Republic signed his first pro deal with the Toronto Blue Jays in 1990 at the age of 19.\"\n\nThis supports the given statement."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Quicksand_(2003_film)",
+    "predicate": "property/studio",
+    "object": "resource/Artisan_Entertainment",
+    "human_readable": "The studio behind the 2003 film Quicksand is Artisan Entertainment.",
+    "questions": [
+        {
+            "score": 0.8943513631820679,
+            "question": "What film studio produced the 2003 movie Quicksand?"
+        },
+        {
+            "score": 0.7786258459091187,
+            "question": "What is the name of the studio behind Quicksand?"
+        },
+        {
+            "score": 0.761293888092041,
+            "question": "In what year did Artisan Entertainment release Quicksand?"
+        },
+        {
+            "score": 0.7156496047973633,
+            "question": "Who created the 2003 movie Quicksand?"
+        },
+        {
+            "score": 0.5734456181526184,
+            "question": "Artisan Entertainment produced what film?"
+        },
+        {
+            "score": 0.5324608087539673,
+            "question": "Is Artisan Entertainment known for producing films?"
+        },
+        {
+            "score": 0.5299426913261414,
+            "question": "What genre is the movie Quicksand?"
+        },
+        {
+            "score": 0.46894803643226624,
+            "question": "Which company was responsible for making the film Quicksand?"
+        },
+        {
+            "score": 0.46178606152534485,
+            "question": "What other movies has Artisan Entertainment produced?"
+        },
+        {
+            "score": 0.4009668529033661,
+            "question": "Can you name a popular film by Artisan Entertainment?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The studio behind the 2003 film Quicksand is Artisan Entertainment.",
+            "html": "dbpedia_4880_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What other movies has Artisan Entertainment produced?",
+            "html": "dbpedia_4880_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Which company was responsible for making the film Quicksand?",
+            "html": "dbpedia_4880_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What genre is the movie Quicksand?",
+            "html": "dbpedia_4880_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4880_103.txt"
+        },
+        {
+            "file_id": "dbpedia_4880_107.txt"
+        },
+        {
+            "file_id": "dbpedia_4880_109.txt"
+        },
+        {
+            "file_id": "dbpedia_4880_15.txt"
+        },
+        {
+            "file_id": "dbpedia_4880_29.txt"
+        },
+        {
+            "file_id": "dbpedia_4880_30.txt"
+        },
+        {
+            "file_id": "dbpedia_4880_39.txt"
+        },
+        {
+            "file_id": "dbpedia_4880_4.txt"
+        },
+        {
+            "file_id": "dbpedia_4880_82.txt"
+        },
+        {
+            "file_id": "dbpedia_4880_98.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe information in the documents supports the triple that The studio behind the 2003 film Quicksand is Artisan Entertainment. This can be inferred from the document with file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4880/re-ranker-msmarco/14.txt, where it is mentioned that Artisan released the movie \"Quicksand\" in 2002 on D-VHS."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The document mentions that \"On December 15, 2003, Lions Gate Entertainment Corporation acquired Artisan for $220 million[24] and video releases through Artisan have now been re-released under the Lionsgate Home Entertainment banner.\" This indicates a connection between Artisan Entertainment and the studio behind the 2003 film Quicksand. Additionally, \"QUICKSAND continues its success now with a distribution deal through Gravitas Ventures,\" suggesting that Artisan Entertainment produced or was involved in the production of the 2003 film Quicksand."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Quicksand (2003 film) was not produced by Artisan Entertainment. It was produced before Lions Gate Entertainment Corporation acquired Artisan in December 2003.",
+            "category": 3
+        },
+        "gemma2": {
+            "reason": "Information about Artisan Entertainment and its acquisition by Lions Gate Entertainment is present in context #4.",
+            "category": 3
+        },
+        "llama3.1": {
+            "reason": "The studio behind the 2003 film Quicksand is actually Lions Gate Entertainment, not Artisan Entertainment.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "The context information indicates that Artisan Entertainment was acquired by Lions Gate Entertainment Corporation in 2003. Therefore, Quicksand (2003 film) would have been distributed under the Lions Gate banner after the acquisition date of December 15, 2003.",
+            "category": 3
+        }
+    }
+}

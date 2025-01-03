@@ -1,0 +1,146 @@
+{
+    "subject": "Masud_Ahmad",
+    "predicate": "livesIn",
+    "object": "Islamabad",
+    "human_readable": "Masud Ahmad lives in Islamabad.",
+    "questions": [
+        {
+            "score": 0.8558657169342041,
+            "question": "Where does Masud Ahmad live?"
+        },
+        {
+            "score": 0.7487406134605408,
+            "question": "Can you tell me where Masud Ahmad lives?"
+        },
+        {
+            "score": 0.6923753619194031,
+            "question": "Who resides in Islamabad?"
+        },
+        {
+            "score": 0.6518182754516602,
+            "question": "Who lives in Islamabad according to this information?"
+        },
+        {
+            "score": 0.6339175701141357,
+            "question": "What is the current residence of Masud Ahmad?"
+        },
+        {
+            "score": 0.5357994437217712,
+            "question": "Where can we find Masud Ahmad?"
+        },
+        {
+            "score": 0.5328497886657715,
+            "question": "What city is Masud Ahmad from?"
+        },
+        {
+            "score": 0.4756421744823456,
+            "question": "In what city does Masud Ahmad spend his time?"
+        },
+        {
+            "score": 0.2655828297138214,
+            "question": "Name the city that Masud Ahmad calls home."
+        },
+        {
+            "score": 0.23309262096881866,
+            "question": "Islamabad is the home of who?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Masud Ahmad lives in Islamabad.",
+            "html": "yago_17544_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Name the city that Masud Ahmad calls home.",
+            "html": "yago_17544_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In what city does Masud Ahmad spend his time?",
+            "html": "yago_17544_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What city is Masud Ahmad from?",
+            "html": "yago_17544_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "yago_17544_15.txt"
+        },
+        {
+            "file_id": "yago_17544_3.txt"
+        },
+        {
+            "file_id": "yago_17544_35.txt"
+        },
+        {
+            "file_id": "yago_17544_46.txt"
+        },
+        {
+            "file_id": "yago_17544_60.txt"
+        },
+        {
+            "file_id": "yago_17544_69.txt"
+        },
+        {
+            "file_id": "yago_17544_71.txt"
+        },
+        {
+            "file_id": "yago_17544_75.txt"
+        },
+        {
+            "file_id": "yago_17544_92.txt"
+        },
+        {
+            "file_id": "yago_17544_98.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n\n\nMasud Ahmad lived in Lahore and ran a homeopathy clinic there.  He is British but was living in Pakistan. There's no mention of him living in Islamabad."
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "To evaluate whether the information in the documents supports the triple, I will analyze the context provided.\n\nThe triple is:\n\nMasud Ahmad lives in Islamabad.\n\nFrom the context, there are several mentions of Masud Ahmad's location, but none of them mention Islamabad. The following quotes suggest that he lived in Lahore and Glasgow:\n\n* \"Mr Ahmad\u2019s son Abbas, 39, who lives in Glasgow along with a brother and two sisters...\"\n* \"...he was allegedly tricked into publicly reading from the Koran \u2013 an act which is forbidden for members of the minority Ahmadi sect to which he belongs. He now faces three years in jail.\"\n* \"It is believed Mr Ahmad was secretly filmed reading from the Koran in November last year by two men posing as patients at the homeopathy clinic he ran in Lahore.\"\n\nTherefore, based on the context provided, I can confidently say that:\n\n{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe documents do not provide any information about Masud Ahmad living in Islamabad. The documents describe his situation regarding blasphemy charges and his Ahmadiyya faith, but there is no mention of him residing in Islamabad."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Masud Ahmad belongs to the Ahmadiyya sect, who are not allowed to live or practice Islam in Pakistan. The information provided states that he lives in Lahore, not Islamabad.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Several news articles mention Masud Ahmad living in Glasgow with his siblings.  Additionally, the articles state he ran a homeopathy clinic in Lahore and was arrested there.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "there is no information provided about Masud Ahmad living in Islamabad. The context information mentions Lahore, but not Islamabad.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information does not mention Masud Ahmad living in Islamabad. All details provided place him in Lahore, where he was tricked into reading from the Koran and faces blasphemy charges.",
+            "category": 2
+        }
+    }
+}

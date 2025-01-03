@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Number_Nine_Research_Laboratory",
+    "predicate": "property/garrison",
+    "object": "resource/Kanagawa_Prefecture",
+    "human_readable": "The garrison of Number Nine Research Laboratory is Kanagawa Prefecture.",
+    "questions": [
+        {
+            "score": 0.9038441181182861,
+            "question": "What is the garrison responsible for at Number Nine Research Laboratory?"
+        },
+        {
+            "score": 0.9019337296485901,
+            "question": "In which prefecture is Number Nine Research Laboratory situated?"
+        },
+        {
+            "score": 0.6625832915306091,
+            "question": "Where is Number Nine Research Laboratory located?"
+        },
+        {
+            "score": 0.6499748826026917,
+            "question": "What kind of research might be conducted at Number Nine Research Laboratory?"
+        },
+        {
+            "score": 0.5519816279411316,
+            "question": "Is Number Nine Research Laboratory a military facility?"
+        },
+        {
+            "score": 0.5481631755828857,
+            "question": "Can you provide more information about the types of research conducted at Number Nine Research Laboratory?"
+        },
+        {
+            "score": 0.46516308188438416,
+            "question": "Are there any publicly accessible resources or information about Number Nine Research Laboratory?"
+        },
+        {
+            "score": 0.4254803955554962,
+            "question": "What is the significance of 'Number Nine' in relation to the laboratory?"
+        },
+        {
+            "score": 0.353606253862381,
+            "question": "Who or what entity is in charge of Number Nine Research Laboratory's security?"
+        },
+        {
+            "score": 0.317234605550766,
+            "question": "Are there any other notable landmarks or institutions in Kanagawa Prefecture?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The garrison of Number Nine Research Laboratory is Kanagawa Prefecture.",
+            "html": "dbpedia_4101_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who or what entity is in charge of Number Nine Research Laboratory's security?",
+            "html": "dbpedia_4101_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the significance of 'Number Nine' in relation to the laboratory?",
+            "html": "dbpedia_4101_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any publicly accessible resources or information about Number Nine Research Laboratory?",
+            "html": "dbpedia_4101_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4101_11.txt"
+        },
+        {
+            "file_id": "dbpedia_4101_3.txt"
+        },
+        {
+            "file_id": "dbpedia_4101_32.txt"
+        },
+        {
+            "file_id": "dbpedia_4101_60.txt"
+        },
+        {
+            "file_id": "dbpedia_4101_62.txt"
+        },
+        {
+            "file_id": "dbpedia_4101_79.txt"
+        },
+        {
+            "file_id": "dbpedia_4101_8.txt"
+        },
+        {
+            "file_id": "dbpedia_4101_80.txt"
+        },
+        {
+            "file_id": "dbpedia_4101_83.txt"
+        },
+        {
+            "file_id": "dbpedia_4101_85.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, here's the evaluation for the triple:\n\n{\n  \"output\": \"no\"\n}\n\nThe reason for this answer is that the documents mention the garrison/HQ of the 9th Army Technical Research Laboratory as Noborito, Tama-ku, Kawasaki, Kanagawa Prefecture, Japan. However, there's also a mention of the Old Ninth Research Institute having its garrison in Nara (established in 2037) and another mention of the Seventh Research Institute being established in Tokyo."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe document states that the 9th Army Technical Research Laboratory, also known as the Noborito Laboratory, was based in Noborito, Tama-ku, Kawasaki, Kanagawa Prefecture, Japan. This supports the claim that the garrison or headquarters (HQ) of the Number Nine Research Laboratory is located in Kanagawa Prefecture."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The context information provided indicates that the garrison/HQ of the Number Nine Research Laboratory (Noborito Laboratory) was located in Noborito, Tama-ku, Kawasaki, Kanagawa Prefecture, Japan. Therefore, it does not state that the entire lab or its garrison is in Kanagawa Prefecture.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Several pieces of text state the Noborito Laboratory was located in Noborito, Tama-ku, Kawasaki, Kanagawa Prefecture.  Kanagawa Prefecture is a location, not a garrison.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context states that the garrison/headquarters (HQ) of the 9th Army Technical Research Laboratory was located in Noborito, Tama-ku, Kawasaki, Kanagawa Prefecture, Japan. It does not explicitly state that the garrison itself is in Kanagawa Prefecture, but rather provides the specific location within the prefecture where the laboratory was based.",
+            "category": 2
+        }
+    }
+}

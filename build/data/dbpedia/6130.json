@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Galaxis",
+    "predicate": "property/starring",
+    "object": "*",
+    "human_readable": "Galaxis stars *.",
+    "questions": [
+        {
+            "score": 0.7152126431465149,
+            "question": "Do stars exist in galaxies?"
+        },
+        {
+            "score": 0.6160128712654114,
+            "question": "Are there different types of stars found in galaxies?"
+        },
+        {
+            "score": 0.6098809242248535,
+            "question": "Can you describe the relationship between galaxies and stars?"
+        },
+        {
+            "score": 0.5752268433570862,
+            "question": "Do all galaxies have the same number of stars?"
+        },
+        {
+            "score": 0.5157973170280457,
+            "question": "What role do stars play in the formation of galaxies?"
+        },
+        {
+            "score": 0.5118155479431152,
+            "question": "How do astronomers study the stars within galaxies?"
+        },
+        {
+            "score": 0.5030272006988525,
+            "question": "How many stars are typically found in a galaxy?"
+        },
+        {
+            "score": 0.47256121039390564,
+            "question": "What are some examples of galaxies with particularly bright stars?"
+        },
+        {
+            "score": 0.46762099862098694,
+            "question": "What is the life cycle of a star within a galaxy?"
+        },
+        {
+            "score": 0.38650253415107727,
+            "question": "What are galaxies made of?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Galaxis stars *.",
+            "html": "dbpedia_6130_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the life cycle of a star within a galaxy?",
+            "html": "dbpedia_6130_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some examples of galaxies with particularly bright stars?",
+            "html": "dbpedia_6130_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How many stars are typically found in a galaxy?",
+            "html": "dbpedia_6130_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6130_103.txt"
+        },
+        {
+            "file_id": "dbpedia_6130_11.txt"
+        },
+        {
+            "file_id": "dbpedia_6130_114.txt"
+        },
+        {
+            "file_id": "dbpedia_6130_115.txt"
+        },
+        {
+            "file_id": "dbpedia_6130_23.txt"
+        },
+        {
+            "file_id": "dbpedia_6130_47.txt"
+        },
+        {
+            "file_id": "dbpedia_6130_48.txt"
+        },
+        {
+            "file_id": "dbpedia_6130_54.txt"
+        },
+        {
+            "file_id": "dbpedia_6130_66.txt"
+        },
+        {
+            "file_id": "dbpedia_6130_90.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nThe documents repeatedly mention that galaxies are composed of many stars, and provide examples like the Milky Way containing millions upon millions of stars.  Therefore, the statement \"Galaxies stars *\" is supported by the provided information. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: The provided documents do not contain any information related to \"Galaxis\" or stars in a general context that would support the statement \"Galaxis stars *.\" The documents discuss galaxies, which are distinct from \"Galaxis,\" and provide details about their structure and star contents, but there is no direct evidence supporting the given triple."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {'output': 'yes'}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information and without additional knowledge about specific queries such as \"Galaxis stars *.\":\n\nThe text snippets do provide details about galaxies, star formation, and stellar types but don't contain an explicit statement or clear information relevant to the query \"Galaxis stars *.\". Given that this query isn't well-defined in the context of provided documents (it's unclear what \"*.\" implies), we can't affirmatively say whether it's correct based solely on the given content.\n\nHowever, since the task requires a structured response adhering closely to the format used for previous questions, and considering there is no direct evidence supporting or refuting this query:\n\n```json\n{\"output\": \"no\"}\n```\n\nThis JSON structure indicates that we cannot confirm the specific statement regarding galaxies and stars with the given document information."
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Galaxies are not stars. They are massive systems that contain stars, along with gas, dust, and dark matter. Stars are the individual luminous spheres of plasma held together by gravity within a galaxy.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Several passages describe galaxies containing billions of stars, emphasizing the immense number of stars within a single galaxy. The statement \"Galaxis stars *.\" implies a singular star, which directly contradicts the provided information.",
+            "category": 2
+        }
+    }
+}

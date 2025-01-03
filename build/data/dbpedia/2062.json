@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Zhang_Yueran",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:Chinese_short_story_writers",
+    "human_readable": "Zhang Yueran is about Chinese short story writers.",
+    "questions": [
+        {
+            "score": 0.9520710110664368,
+            "question": "Are there any famous Chinese short story writers besides Zhang Yueran?"
+        },
+        {
+            "score": 0.8274951577186584,
+            "question": "What type of writer is Zhang Yueran?"
+        },
+        {
+            "score": 0.7590124011039734,
+            "question": "What country are Chinese short story writers from?"
+        },
+        {
+            "score": 0.6615322828292847,
+            "question": "Who is Zhang Yueran known for being?"
+        },
+        {
+            "score": 0.6437450051307678,
+            "question": "What are the cultural influences on Chinese short story writing?"
+        },
+        {
+            "score": 0.5283531546592712,
+            "question": "What makes a good Chinese short story?"
+        },
+        {
+            "score": 0.5087522864341736,
+            "question": "Can you give an example of a Chinese short story?"
+        },
+        {
+            "score": 0.49654796719551086,
+            "question": "What are some common themes in Chinese short stories?"
+        },
+        {
+            "score": 0.4320504069328308,
+            "question": "Where can you find collections of Chinese short stories?"
+        },
+        {
+            "score": 0.18663333356380463,
+            "question": "How has Chinese literature evolved over time?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Zhang Yueran is about Chinese short story writers.",
+            "html": "dbpedia_2062_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where can you find collections of Chinese short stories?",
+            "html": "dbpedia_2062_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some common themes in Chinese short stories?",
+            "html": "dbpedia_2062_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you give an example of a Chinese short story?",
+            "html": "dbpedia_2062_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2062_12.txt"
+        },
+        {
+            "file_id": "dbpedia_2062_22.txt"
+        },
+        {
+            "file_id": "dbpedia_2062_31.txt"
+        },
+        {
+            "file_id": "dbpedia_2062_37.txt"
+        },
+        {
+            "file_id": "dbpedia_2062_43.txt"
+        },
+        {
+            "file_id": "dbpedia_2062_52.txt"
+        },
+        {
+            "file_id": "dbpedia_2062_54.txt"
+        },
+        {
+            "file_id": "dbpedia_2062_81.txt"
+        },
+        {
+            "file_id": "dbpedia_2062_84.txt"
+        },
+        {
+            "file_id": "dbpedia_2062_90.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here's the structured JSON response:\n\n```\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide several pieces of information that support this triple, including:\n\n* Zhang Yueran being regarded as one of China's most influential young writers (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2062/re-ranker-msmarco/30.txt)\n* Zhang Yueran publishing short story collections and novels in Chinese (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2062/re-ranker-msmarco/30.txt, file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2062/re-ranker-msmarco/42.txt)\n* Zhang Yueran being a teacher of Literary Studies at Renmin University of China (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2062/re-ranker-msmarco/33.txt)\n\nThese pieces of information collectively suggest that the triple \"Zhang Yueran is about Chinese short story writers\" is supported by the documents."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information that supports the statement \"Zhang Yueran is about Chinese short story writers.\" The documents mention her as one of China's most influential young writers, detail her published works such as short story collections and novels, and note her contributions to literature through editing and teaching."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Multiple sources state Zhang Yueran is a novelist and her works include novels like Cocoon, Distant Cherry, Narcissus, and The Promise Bird.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Nathaniel_Gorham",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:Politicians_from_Boston,_Massachusetts",
+    "human_readable": "Nathaniel Gorham is about politicians from Boston, Massachusetts.",
+    "questions": [
+        {
+            "score": 0.85197514295578,
+            "question": "In which state was Nathaniel Gorham a politician?"
+        },
+        {
+            "score": 0.8049045205116272,
+            "question": "What is known about Nathaniel Gorham's political career?"
+        },
+        {
+            "score": 0.7822892665863037,
+            "question": "How is Nathaniel Gorham remembered in Boston's history?"
+        },
+        {
+            "score": 0.7290090918540955,
+            "question": "Was Nathaniel Gorham involved in local or national politics?"
+        },
+        {
+            "score": 0.6482155323028564,
+            "question": "Where is Nathaniel Gorham from?"
+        },
+        {
+            "score": 0.635794997215271,
+            "question": "What were some of the key issues Nathaniel Gorham addressed during his political career?"
+        },
+        {
+            "score": 0.5859541296958923,
+            "question": "Were there any notable events or controversies associated with Nathaniel Gorham's political life?"
+        },
+        {
+            "score": 0.5752690434455872,
+            "question": "Did Nathaniel Gorham hold any significant political offices?"
+        },
+        {
+            "score": 0.5278153419494629,
+            "question": "What was Nathaniel Gorham's profession?"
+        },
+        {
+            "score": 0.4831598699092865,
+            "question": "What are some resources for learning more about Nathaniel Gorham's political contributions?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Nathaniel Gorham is about politicians from Boston, Massachusetts.",
+            "html": "dbpedia_1514_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What was Nathaniel Gorham's profession?",
+            "html": "dbpedia_1514_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Did Nathaniel Gorham hold any significant political offices?",
+            "html": "dbpedia_1514_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Were there any notable events or controversies associated with Nathaniel Gorham's political life?",
+            "html": "dbpedia_1514_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1514_24.txt"
+        },
+        {
+            "file_id": "dbpedia_1514_29.txt"
+        },
+        {
+            "file_id": "dbpedia_1514_34.txt"
+        },
+        {
+            "file_id": "dbpedia_1514_44.txt"
+        },
+        {
+            "file_id": "dbpedia_1514_5.txt"
+        },
+        {
+            "file_id": "dbpedia_1514_54.txt"
+        },
+        {
+            "file_id": "dbpedia_1514_61.txt"
+        },
+        {
+            "file_id": "dbpedia_1514_69.txt"
+        },
+        {
+            "file_id": "dbpedia_1514_8.txt"
+        },
+        {
+            "file_id": "dbpedia_1514_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'} \n``` \n\n\nWhile the documents state that Nathaniel Gorham was a politician and merchant from Massachusetts, they do not specify that he was *about* politicians from Boston specifically.  The provided context suggests his focus was on broader political roles within the Continental Congress and the Constitutional Convention. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information that supports the statement that Nathaniel Gorham was a politician and is associated with Boston, Massachusetts. The details include his roles as a delegate to the Continental Congress and the Constitutional Convention, his service in Massachusetts, and his birthplace and origin from Boston."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, Nathaniel Gorham was indeed a politician from Massachusetts. While he is not specifically mentioned as being from Boston, several documents indicate his involvement in political roles in Massachusetts.\n\nTherefore, the statement \"Nathaniel Gorham is about politicians from Boston, Massachusetts\" can be loosely considered accurate since Boston is part of Massachusetts and Gorham's significant political activities took place within Massachusetts.\n\nHowever, it should be noted that while he was a politician and merchant from Massachusetts, there isn't definitive evidence in the provided texts stating that Nathaniel Gorham was specifically from Boston. He could have been from another city or town in Massachusetts.\n\nGiven these considerations, the closest fitting answer would be:\n\n```json\n{\"output\": \"no\"}\n```\n\nThis is because the statement specifies \"from Boston,\" which is not explicitly confirmed by the given documents."
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Several sources state he was born in Charlestown, Massachusetts, not Boston.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "the majority of the context information provided describes Nathaniel Gorham as a politician from Massachusetts, but also mentions his roles at the Constitutional Convention and as one of the signers of the United States Constitution, indicating a broader involvement in national politics beyond just Boston.",
+            "category": 2
+        }
+    }
+}

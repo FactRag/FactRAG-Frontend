@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Team_Bondi",
+    "predicate": "ontology/location",
+    "object": "resource/Australia",
+    "human_readable": "Team Bondi is located in Australia.",
+    "questions": [
+        {
+            "score": 0.9159510135650635,
+            "question": "Is Team Bondi an Australian company?"
+        },
+        {
+            "score": 0.9144977331161499,
+            "question": "Where is Team Bondi located?"
+        },
+        {
+            "score": 0.6246055960655212,
+            "question": "How has Team Bondi contributed to the Australian gaming industry?"
+        },
+        {
+            "score": 0.43960538506507874,
+            "question": "What is the current status of Team Bondi?"
+        },
+        {
+            "score": 0.40504395961761475,
+            "question": "What type of organization is Team Bondi?"
+        },
+        {
+            "score": 0.3784042298793793,
+            "question": "What are some of the challenges faced by Australian game developers like Team Bondi?"
+        },
+        {
+            "score": 0.3498891592025757,
+            "question": "When was Team Bondi founded?"
+        },
+        {
+            "score": 0.31275418400764465,
+            "question": "Are there any famous people associated with Team Bondi?"
+        },
+        {
+            "score": 0.21288788318634033,
+            "question": "Has Team Bondi worked on any projects with international studios?"
+        },
+        {
+            "score": 0.1933055818080902,
+            "question": "Has Team Bondi developed any well-known video games?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Team Bondi is located in Australia.",
+            "html": "dbpedia_7321_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Has Team Bondi worked on any projects with international studios?",
+            "html": "dbpedia_7321_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any famous people associated with Team Bondi?",
+            "html": "dbpedia_7321_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=When was Team Bondi founded?",
+            "html": "dbpedia_7321_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_7321_1.txt"
+        },
+        {
+            "file_id": "dbpedia_7321_100.txt"
+        },
+        {
+            "file_id": "dbpedia_7321_109.txt"
+        },
+        {
+            "file_id": "dbpedia_7321_14.txt"
+        },
+        {
+            "file_id": "dbpedia_7321_29.txt"
+        },
+        {
+            "file_id": "dbpedia_7321_50.txt"
+        },
+        {
+            "file_id": "dbpedia_7321_6.txt"
+        },
+        {
+            "file_id": "dbpedia_7321_73.txt"
+        },
+        {
+            "file_id": "dbpedia_7321_83.txt"
+        },
+        {
+            "file_id": "dbpedia_7321_91.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation of whether the information in the documents supports the triple:\n\n{\n  \"output\": \"yes\"\n}\n\nReasoning:\nThe documents provide several mentions of Team Bondi being an Australian game studio, developer, or company. For example, from file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_7321/re-ranker-msmarco/63.txt:\n\n\"Team Bondi was an Australian independent third-party game developer...\"\n\nFrom file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_7321/re-ranker-msmarco/51.txt:\n\n\"...Sydney, Australia-based Team Bondi shouldn\u2019t be surprised by this revelation.\"\n\nTherefore, the information in the documents supports the triple that Team Bondi is located in Australia."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information that supports the statement \"Team Bondi is located in Australia.\" For example, multiple entries mention that Team Bondi was an Australian game studio based in Sydney, Australia."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Team Bondi's location was never specified as being outside of Australia, given that it is based in Sydney, Australia.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Multiple sources state Team Bondi was based in Sydney, Australia.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because the context information states \"Team Bondi was an Australian game studio based in Sydney, Australia\" which implies that Team Bondi is indeed located in Australia.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information states that Team Bondi was based in Sydney, Australia, not located elsewhere.",
+            "category": 2
+        }
+    }
+}

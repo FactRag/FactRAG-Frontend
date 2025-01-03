@@ -1,0 +1,129 @@
+{
+    "subject": "resource/WIVM-LD",
+    "predicate": "ontology/location",
+    "object": "resource/Canton,_Ohio",
+    "human_readable": "WIVM- LD is located in Canton, Ohio.",
+    "questions": [
+        {
+            "score": 0.9651708602905273,
+            "question": "What is the history of WIVM-LD in Canton, Ohio?"
+        },
+        {
+            "score": 0.8895670771598816,
+            "question": "Where is WIVM-LD located?"
+        },
+        {
+            "score": 0.7320842742919922,
+            "question": "In which city can you find WIVM-LD?"
+        },
+        {
+            "score": 0.6546729207038879,
+            "question": "Is WIVM-LD situated in a rural or urban area?"
+        },
+        {
+            "score": 0.6319910287857056,
+            "question": "What state is home to WIVM-LD?"
+        },
+        {
+            "score": 0.5047625303268433,
+            "question": "What type of organization is WIVM-LD?"
+        },
+        {
+            "score": 0.5024122595787048,
+            "question": "How might the location of WIVM-LD impact its operations?"
+        },
+        {
+            "score": 0.43897801637649536,
+            "question": "Are there any other notable landmarks or businesses near WIVM-LD?"
+        },
+        {
+            "score": 0.3529701828956604,
+            "question": "What services might WIVM-LD provide to the community?"
+        },
+        {
+            "score": 0.21604779362678528,
+            "question": "Does WIVM-LD have any partnerships or affiliations with other organizations?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=WIVM- LD is located in Canton, Ohio.",
+            "html": "dbpedia_6215_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What services might WIVM-LD provide to the community?",
+            "html": "dbpedia_6215_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any other notable landmarks or businesses near WIVM-LD?",
+            "html": "dbpedia_6215_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How might the location of WIVM-LD impact its operations?",
+            "html": "dbpedia_6215_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6215_1.txt"
+        },
+        {
+            "file_id": "dbpedia_6215_20.txt"
+        },
+        {
+            "file_id": "dbpedia_6215_28.txt"
+        },
+        {
+            "file_id": "dbpedia_6215_32.txt"
+        },
+        {
+            "file_id": "dbpedia_6215_33.txt"
+        },
+        {
+            "file_id": "dbpedia_6215_35.txt"
+        },
+        {
+            "file_id": "dbpedia_6215_50.txt"
+        },
+        {
+            "file_id": "dbpedia_6215_51.txt"
+        },
+        {
+            "file_id": "dbpedia_6215_67.txt"
+        },
+        {
+            "file_id": "dbpedia_6215_80.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "To answer the question, I will evaluate whether the information in the documents supports the triple \"WIVM-LD is located in Canton, Ohio.\"\n\nHere's my evaluation:\n\n* The document at file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6215/re-ranker-msmarco/32.txt mentions WIVM-TV (WIVM-LD) as a low-power television station based in North Canton, Ohio.\n* The document at file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6215/re-ranker-msmarco/1.txt mentions WIVM-LD (channel 39) as one of the low power television stations serving Stark and Tuscarawas counties in Ohio, with another station located in Newcomerstown.\n* The document at file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6215/re-ranker-msmarco/28.txt mentions WIVM-LP (Channel 52) and WIVN-LP (Channel 29) as low power television stations serving Stark and Tuscarawas Counties in Ohio, with their headquarters located in Canton and Newcomerstown respectively.\n\nBased on this information, I can conclude that the triple \"WIVM-LD is located in Canton, Ohio\" is supported by the documents. Therefore:\n\n`{'output': 'yes'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents mention that \"WIVM-LD (channel 39) in Canton, Ohio\" and provide information about stations located in Canton, Ohio, such as WIVM-LP and WIVN-LP. This supports the statement that WIVM-LD is located in Canton, Ohio."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

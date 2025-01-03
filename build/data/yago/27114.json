@@ -1,0 +1,144 @@
+{
+    "subject": "John_Cleese",
+    "predicate": "isMarriedTo",
+    "object": "Alyce_Faye_Eichelberger",
+    "human_readable": "John Cleese is married to Alyce Faye Eichelberger.",
+    "questions": [
+        {
+            "score": 0.9886752367019653,
+            "question": "Is Alyce Faye Eichelberger married to John Cleese?"
+        },
+        {
+            "score": 0.9588136672973633,
+            "question": "Name the person John Cleese is married to."
+        },
+        {
+            "score": 0.9533981680870056,
+            "question": "Who is Alyce Faye Eichelberger married to?"
+        },
+        {
+            "score": 0.9489912390708923,
+            "question": "What is the relationship between John Cleese and Alyce Faye Eichelberger?"
+        },
+        {
+            "score": 0.898807942867279,
+            "question": "Who is John Cleese married to?"
+        },
+        {
+            "score": 0.8485462069511414,
+            "question": "Who is the spouse of John Cleese?"
+        },
+        {
+            "score": 0.8331015706062317,
+            "question": "To whom is John Cleese wed?"
+        },
+        {
+            "score": 0.7727603316307068,
+            "question": "What is the name of John Cleese's wife?"
+        },
+        {
+            "score": 0.7235755324363708,
+            "question": "What is Alyce Faye Eichelberger's marital status?"
+        },
+        {
+            "score": 0.6732251048088074,
+            "question": "Is John Cleese in a relationship?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=John Cleese is married to Alyce Faye Eichelberger.",
+            "html": "yago_27114_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Alyce Faye Eichelberger's marital status?",
+            "html": "yago_27114_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of John Cleese's wife?",
+            "html": "yago_27114_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=To whom is John Cleese wed?",
+            "html": "yago_27114_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "yago_27114_21.txt"
+        },
+        {
+            "file_id": "yago_27114_32.txt"
+        },
+        {
+            "file_id": "yago_27114_41.txt"
+        },
+        {
+            "file_id": "yago_27114_54.txt"
+        },
+        {
+            "file_id": "yago_27114_64.txt"
+        },
+        {
+            "file_id": "yago_27114_71.txt"
+        },
+        {
+            "file_id": "yago_27114_73.txt"
+        },
+        {
+            "file_id": "yago_27114_84.txt"
+        },
+        {
+            "file_id": "yago_27114_90.txt"
+        },
+        {
+            "file_id": "yago_27114_94.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the answer in JSON format:\n\n```\n{\n    \"output\": \"yes\"\n}\n```\n\nThe information in the documents supports the triple. The documents mention that John Cleese and Alyce Faye Eichelberger were married for 15 years, had a divorce settlement, and that she received a significant amount of money from him. This suggests that they were indeed married."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe documents clearly state that John Cleese was married to Alyce Faye Eichelberger, but they also indicate that their marriage ended in divorce. Therefore, the statement that John Cleese is currently married to Alyce Faye Eichelberger is incorrect based on the provided context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "mistral-nemo": {
+            "short_ans": 0,
+            "full_ans": "{\"output\": \"no\"}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Information provided states they were married for 15 years and divorced in 2008.",
+            "category": 0
+        },
+        "qwen2.5": {
+            "reason": "John Cleese was divorced from Alyce Faye Eichelberger by January 2008, as stated in the context.",
+            "category": 0
+        }
+    }
+}

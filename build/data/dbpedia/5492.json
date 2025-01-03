@@ -1,0 +1,124 @@
+{
+    "subject": "resource/Laurence_Olivier",
+    "predicate": "ontology/alias",
+    "object": "Olivier, Laurence Kerr; Olivier, Sir Laurence",
+    "human_readable": "Laurence Olivier's alias is Olivier, Laurence Kerr; Olivier, Sir Laurence.",
+    "questions": [
+        {
+            "score": 0.8671323657035828,
+            "question": "What is Laurence Olivier's primary acting alias?"
+        },
+        {
+            "score": 0.8333103656768799,
+            "question": "Which name is associated with Sir Laurence Olivier's knighthood?"
+        },
+        {
+            "score": 0.7314128875732422,
+            "question": "What is the full formal name of Laurence Olivier?"
+        },
+        {
+            "score": 0.6849184036254883,
+            "question": "Besides 'Olivier', what other name did Laurence Olivier use professionally?"
+        },
+        {
+            "score": 0.6120976805686951,
+            "question": "How many different names are used to identify Laurence Olivier?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Laurence Olivier's alias is Olivier, Laurence Kerr; Olivier, Sir Laurence.",
+            "html": "dbpedia_5492_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Besides 'Olivier', what other name did Laurence Olivier use professionally?",
+            "html": "dbpedia_5492_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the full formal name of Laurence Olivier?",
+            "html": "dbpedia_5492_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Which name is associated with Sir Laurence Olivier's knighthood?",
+            "html": "dbpedia_5492_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5492_109.txt"
+        },
+        {
+            "file_id": "dbpedia_5492_112.txt"
+        },
+        {
+            "file_id": "dbpedia_5492_143.txt"
+        },
+        {
+            "file_id": "dbpedia_5492_26.txt"
+        },
+        {
+            "file_id": "dbpedia_5492_29.txt"
+        },
+        {
+            "file_id": "dbpedia_5492_38.txt"
+        },
+        {
+            "file_id": "dbpedia_5492_47.txt"
+        },
+        {
+            "file_id": "dbpedia_5492_70.txt"
+        },
+        {
+            "file_id": "dbpedia_5492_8.txt"
+        },
+        {
+            "file_id": "dbpedia_5492_97.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nWhile the documents mention Laurence Olivier by various titles (Sir Laurence Olivier, Baron Olivier), they do not state that \"Olivier, Laurence Kerr\" or \"Olivier, Sir Laurence\" are aliases he used.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information and without prior knowledge, I can evaluate whether the information in the documents supports the triple. \n\nHere is the structured JSON format containing the answer:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents mention different aspects of Laurence Olivier's life, such as his birth date, place of death, and notable film roles, but they do not explicitly confirm that his alias is \"Olivier, Laurence Kerr; Olivier, Sir Laurence\". This information seems to be a conclusion drawn from the provided context, rather than an explicit statement supported by the documents."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents list several aliases and names for Laurence Olivier, including \"Laurence Kerr Olivier,\" \"Sir Laurence Olivier,\" which support the statement that his alias is Olivier, Laurence Kerr; Olivier, Sir Laurence."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "None of the provided text mentions Laurence Olivier using any aliases.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The context information shows that \"Laurence Kerr Olivier\" and \"Olivier, Laurence Kerr\" are listed as different versions of the same name, with \"Sir Laurence Olivier\" being another version, but it does not imply that \"Olivier, Sir Laurence\" is an alias for someone else.",
+            "category": 2
+        }
+    }
+}

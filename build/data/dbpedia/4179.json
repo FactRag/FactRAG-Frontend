@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Mathnet",
+    "predicate": "property/title",
+    "object": "The Case of the Unnatural",
+    "human_readable": "The title of Mathnet is 'The Case of the Unnatural'.",
+    "questions": [
+        {
+            "score": 0.8591381907463074,
+            "question": "Who are the main characters in the Mathnet episode 'The Case of the Unnatural'?"
+        },
+        {
+            "score": 0.804905354976654,
+            "question": "Is there a specific mathematical concept featured in the episode 'The Case of the Unnatural'?"
+        },
+        {
+            "score": 0.7599968314170837,
+            "question": "Does Mathnet have any other episodes besides 'The Case of the Unnatural'?"
+        },
+        {
+            "score": 0.6263988614082336,
+            "question": "What is the title of Mathnet?"
+        },
+        {
+            "score": 0.43884700536727905,
+            "question": "What kind of mystery is solved in 'The Case of the Unnatural'?"
+        },
+        {
+            "score": 0.2634498178958893,
+            "question": "What is the name of the Mathnet episode you are referring to?"
+        },
+        {
+            "score": 0.11717893928289413,
+            "question": "What other educational shows were popular during Mathnet's run?"
+        },
+        {
+            "score": 0.11493127048015594,
+            "question": "How has the teaching of math in popular media changed since Mathnet?"
+        },
+        {
+            "score": 0.11333729326725006,
+            "question": "Was Mathnet a popular children's television show?"
+        },
+        {
+            "score": 0.09474647790193558,
+            "question": "How does Mathnet use puzzles to teach math concepts?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The title of Mathnet is 'The Case of the Unnatural'.",
+            "html": "dbpedia_4179_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Was Mathnet a popular children's television show?",
+            "html": "dbpedia_4179_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How has the teaching of math in popular media changed since Mathnet?",
+            "html": "dbpedia_4179_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What other educational shows were popular during Mathnet's run?",
+            "html": "dbpedia_4179_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4179_1.txt"
+        },
+        {
+            "file_id": "dbpedia_4179_14.txt"
+        },
+        {
+            "file_id": "dbpedia_4179_15.txt"
+        },
+        {
+            "file_id": "dbpedia_4179_16.txt"
+        },
+        {
+            "file_id": "dbpedia_4179_23.txt"
+        },
+        {
+            "file_id": "dbpedia_4179_29.txt"
+        },
+        {
+            "file_id": "dbpedia_4179_30.txt"
+        },
+        {
+            "file_id": "dbpedia_4179_35.txt"
+        },
+        {
+            "file_id": "dbpedia_4179_40.txt"
+        },
+        {
+            "file_id": "dbpedia_4179_6.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'} \n``` \n\n\nLet me know if you have any other triples you'd like me to evaluate!"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here's the evaluation:\n\n{\n  \"output\": \"yes\"\n}\n\nExplanation: According to the context information, Mathnet is described as a parody of Dragnet, and one of the episodes is titled \"The Case of the Unnatural\". This suggests that the title of Mathnet is indeed 'The Case of the Unnatural'."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: According to the context information provided, \"The Case of the Unnatural\" refers to a specific case in the Mathnet series and not the title of the show itself. The document mentions this as part of the description for one of the Mathnet cases, but it does not state that \"The Case of the Unnatural\" is the title of Mathnet."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "It is not stated in the context information that the title of Mathnet is 'The Case of the Unnatural'. Instead, it is mentioned that there are different casebooks available for Mathnet, one of which is titled 'The Case of the Unnatural', but no definitive statement about the title of the entire series (Mathnet) is made.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The title of Mathnet Casebook #1 is stated as \"The Case of the Unnatural\" in the provided context, but the correct casebook #1 is actually mentioned as \"Casebook #1: The Case of the Unnatural\", which implies that this is not the actual episode title, but rather a casebook subtitle.",
+            "category": -1
+        }
+    }
+}

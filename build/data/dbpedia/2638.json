@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Franco_Abbiati",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "Abbiati, Franco",
+    "human_readable": "The full name of Franco Abbiati is Abbiati, Franco.",
+    "questions": [
+        {
+            "score": 0.982526957988739,
+            "question": "What is the full name of Franco Abbiati?"
+        },
+        {
+            "score": 0.9657953977584839,
+            "question": "Is 'Abbiati' the last part of Franco Abbiati's full name?"
+        },
+        {
+            "score": 0.9526742100715637,
+            "question": "Is 'Franco' the first part of Franco Abbiati's full name?"
+        },
+        {
+            "score": 0.9404874444007874,
+            "question": "How many names are in Franco Abbiati's full name?"
+        },
+        {
+            "score": 0.9290188550949097,
+            "question": "What is Franco Abbiati's last name?"
+        },
+        {
+            "score": 0.9064091444015503,
+            "question": "If someone only knew Franco Abbiati's first name, would they know his full name?"
+        },
+        {
+            "score": 0.894216001033783,
+            "question": "What is Franco Abbiati's first name?"
+        },
+        {
+            "score": 0.869023859500885,
+            "question": "If you were to write Franco Abbiati's full name alphabetically, what would the order be?"
+        },
+        {
+            "score": 0.5712147951126099,
+            "question": "Could someone use the information about Franco Abbiati to address him formally?"
+        },
+        {
+            "score": 0.0898800641298294,
+            "question": "What is a common way to format someone's full name?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The full name of Franco Abbiati is Abbiati, Franco.",
+            "html": "dbpedia_2638_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Could someone use the information about Franco Abbiati to address him formally?",
+            "html": "dbpedia_2638_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If you were to write Franco Abbiati's full name alphabetically, what would the order be?",
+            "html": "dbpedia_2638_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Franco Abbiati's first name?",
+            "html": "dbpedia_2638_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2638_14.txt"
+        },
+        {
+            "file_id": "dbpedia_2638_19.txt"
+        },
+        {
+            "file_id": "dbpedia_2638_25.txt"
+        },
+        {
+            "file_id": "dbpedia_2638_36.txt"
+        },
+        {
+            "file_id": "dbpedia_2638_46.txt"
+        },
+        {
+            "file_id": "dbpedia_2638_47.txt"
+        },
+        {
+            "file_id": "dbpedia_2638_50.txt"
+        },
+        {
+            "file_id": "dbpedia_2638_58.txt"
+        },
+        {
+            "file_id": "dbpedia_2638_74.txt"
+        },
+        {
+            "file_id": "dbpedia_2638_92.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the context information provided, I will evaluate whether the triple \"The full name of Franco Abbiati is Abbiati, Franco.\" is supported by the documents.\n\nHere is my evaluation:\n\n* In the file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2638/re-ranker-msmarco/14.txt, it is stated that \"Franco Abbiati (14 September 1898 \u2013 22 January 1981) was an Italian musicologist.\"\n* The document does not provide any additional information about the full name of Franco Abbiati.\n\nGiven this evaluation, I conclude that:\n\n{ \"output\": \"no\" }"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: The documents provide information about Franco Abbiati's birth name and profession but do not include his full name as \"Abbiati, Franco.\" The context indicates that his name is given as \"Franco Abbiati,\" without the formal title or comma."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nThe documents provided give information about multiple individuals named \"Franco Abbiati\" and do not specify which one has the full name \"Abbiati, Franco\". It would be more accurate to say that at least one person mentioned is named Franco Abbiati but without additional context, we cannot confirm this as their full name in the requested format."
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The full name of Franco Abbiati mentioned in context information 1 as \"Franco Abbiati (14 September 1898 \u2013 22 January 1981) was an Italian musicologist.\" and the full name of Franco Abbiati mentioned in context information 4 as \"Franco Abbiati (14 September 1898 \u2013 22 January 1981) was an Italian musicologist.\" are same but there is no surname \"Abbiati\" in both, it's written as \"Franco Abbiati\".",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context provides Franco Abbiati's full name as \"Franco Abbiati\" with his first name followed by last name, indicating that \"Abbiati, Franco\" would be the incorrect order.",
+            "category": 2
+        }
+    }
+}

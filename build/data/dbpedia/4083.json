@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Manchester_Museum",
+    "predicate": "ontology/location",
+    "object": "resource/Wilmslow_Road",
+    "human_readable": "The location of Manchester Museum is Wilmslow Road.",
+    "questions": [
+        {
+            "score": 0.9882436990737915,
+            "question": "Is Manchester Museum located on Wilmslow Road?"
+        },
+        {
+            "score": 0.8984289765357971,
+            "question": "On which road is Manchester Museum situated?"
+        },
+        {
+            "score": 0.8763347268104553,
+            "question": "Where is Manchester Museum located?"
+        },
+        {
+            "score": 0.8398250937461853,
+            "question": "What is the location of Manchester Museum?"
+        },
+        {
+            "score": 0.7543225288391113,
+            "question": "Where would you find Manchester Museum?"
+        },
+        {
+            "score": 0.7259387373924255,
+            "question": "Provide the address of Manchester Museum."
+        },
+        {
+            "score": 0.6925719976425171,
+            "question": "What is the address of Manchester Museum?"
+        },
+        {
+            "score": 0.6563613414764404,
+            "question": "Can you give me the street address of Manchester Museum?"
+        },
+        {
+            "score": 0.617324709892273,
+            "question": "What is the full address of Manchester Museum?"
+        },
+        {
+            "score": 0.4965285062789917,
+            "question": "If you wanted to visit Manchester Museum, what road should you go to?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The location of Manchester Museum is Wilmslow Road.",
+            "html": "dbpedia_4083_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the full address of Manchester Museum?",
+            "html": "dbpedia_4083_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you give me the street address of Manchester Museum?",
+            "html": "dbpedia_4083_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the address of Manchester Museum?",
+            "html": "dbpedia_4083_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4083_107.txt"
+        },
+        {
+            "file_id": "dbpedia_4083_108.txt"
+        },
+        {
+            "file_id": "dbpedia_4083_21.txt"
+        },
+        {
+            "file_id": "dbpedia_4083_22.txt"
+        },
+        {
+            "file_id": "dbpedia_4083_52.txt"
+        },
+        {
+            "file_id": "dbpedia_4083_59.txt"
+        },
+        {
+            "file_id": "dbpedia_4083_6.txt"
+        },
+        {
+            "file_id": "dbpedia_4083_61.txt"
+        },
+        {
+            "file_id": "dbpedia_4083_65.txt"
+        },
+        {
+            "file_id": "dbpedia_4083_99.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe documents provide information about the location of Manchester Museum, and it is consistently stated to be located on Oxford Road, part of the University of Manchester campus. There is no mention of Wilmslow Road as the location of Manchester Museum in any of the provided documents."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe documents provide information about the location of Manchester Museum, which is on Oxford Road and part of the University of Manchester campus. They do not mention any connection to Wilmslow Road. Therefore, the statement that the location of Manchester Museum is Wilmslow Road is incorrect based on the given context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Multiple texts state the Manchester Museum is located on Oxford Road as part of the University of Manchester campus.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because Manchester Museum is located on Oxford Road, not Wilmslow Road.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context clearly states that Manchester Museum is located on Oxford Road, not Wilmslow Road.",
+            "category": 2
+        }
+    }
+}

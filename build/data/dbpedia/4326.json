@@ -1,0 +1,102 @@
+{
+    "subject": "resource/Nagoya_Seirei_Junior_College",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "Nagoya Seirei Junior College",
+    "human_readable": "The label of Nagoya Seirei Junior College is Nagoya Seirei Junior College.",
+    "questions": [
+        {
+            "score": 0.9865879416465759,
+            "question": "What is the label of Nagoya Seirei Junior College?"
+        },
+        {
+            "score": 0.9753259420394897,
+            "question": "Is Nagoya Seirei Junior College a school?"
+        },
+        {
+            "score": 0.9614885449409485,
+            "question": "What type of institution is Nagoya Seirei Junior College?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The label of Nagoya Seirei Junior College is Nagoya Seirei Junior College.",
+            "html": "dbpedia_4326_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Nagoya Seirei Junior College a school?",
+            "html": "dbpedia_4326_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the label of Nagoya Seirei Junior College?",
+            "html": "dbpedia_4326_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4326_15.txt"
+        },
+        {
+            "file_id": "dbpedia_4326_18.txt"
+        },
+        {
+            "file_id": "dbpedia_4326_2.txt"
+        },
+        {
+            "file_id": "dbpedia_4326_27.txt"
+        },
+        {
+            "file_id": "dbpedia_4326_30.txt"
+        },
+        {
+            "file_id": "dbpedia_4326_34.txt"
+        },
+        {
+            "file_id": "dbpedia_4326_35.txt"
+        },
+        {
+            "file_id": "dbpedia_4326_37.txt"
+        },
+        {
+            "file_id": "dbpedia_4326_4.txt"
+        },
+        {
+            "file_id": "dbpedia_4326_7.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "**Rewrite**\n\nThe query is asking whether the information in the documents supports \"Sano College\" as the label of Sano College located in Tochigi, which I believe refers to a different institution. However, reviewing the documents suggests that there are multiple mentions of colleges and junior colleges in Japan, but none of them seem to match exactly with the context provided. Therefore, my response is:\n\n{'output': 'no'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe information provided supports that \"Nagoya Seirei Junior College\" is a valid entity and was part of Nanzan Gakuen's educational complex. Therefore, the label \"Nagoya Seirei Junior College\" is correct according to the given context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " Yes, the label of Nagoya Seirei Junior College is indeed Nagoya Seirei Junior College."
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "Nagoya Seirei Junior College was subsumed by Nanzan when the two schools' organizations merged, so its label would be Nanzan.",
+            "category": 2
+        }
+    }
+}

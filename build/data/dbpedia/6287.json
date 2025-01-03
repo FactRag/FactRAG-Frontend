@@ -1,0 +1,129 @@
+{
+    "subject": "resource/A_Little_Princess_(1995_film)",
+    "predicate": "ontology/producer",
+    "object": "resource/Mark_Johnson_(producer)",
+    "human_readable": "The producer of 'A Little Princess' (1995 film) is Mark Johnson.",
+    "questions": [
+        {
+            "score": 0.9778438210487366,
+            "question": "Who produced the 1995 film 'A Little Princess'?"
+        },
+        {
+            "score": 0.9661286473274231,
+            "question": "Mark Johnson is known for producing which film released in 1995?"
+        },
+        {
+            "score": 0.955944299697876,
+            "question": "Who was involved in the production of the movie 'A Little Princess' (1995)?"
+        },
+        {
+            "score": 0.954529345035553,
+            "question": "What is the name of the producer behind the movie 'A Little Princess' (1995)?"
+        },
+        {
+            "score": 0.888882577419281,
+            "question": "Which movie features  Mark Johnson as its producer?"
+        },
+        {
+            "score": 0.8609343767166138,
+            "question": "Is Mark Johnson a film producer? What is one of his notable works?"
+        },
+        {
+            "score": 0.790648341178894,
+            "question": "Name one film produced by Mark Johnson."
+        },
+        {
+            "score": 0.7440987825393677,
+            "question": "What is the name of the person responsible for bringing 'A Little Princess' (1995) to the screen?"
+        },
+        {
+            "score": 0.6844019889831543,
+            "question": "Can you tell me a film produced by Mark Johnson?"
+        },
+        {
+            "score": 0.6718330383300781,
+            "question": "What film did Mark Johnson produce that starred a young girl as the main character?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The producer of 'A Little Princess' (1995 film) is Mark Johnson.",
+            "html": "dbpedia_6287_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me a film produced by Mark Johnson?",
+            "html": "dbpedia_6287_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of the person responsible for bringing 'A Little Princess' (1995) to the screen?",
+            "html": "dbpedia_6287_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Name one film produced by Mark Johnson.",
+            "html": "dbpedia_6287_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6287_12.txt"
+        },
+        {
+            "file_id": "dbpedia_6287_21.txt"
+        },
+        {
+            "file_id": "dbpedia_6287_3.txt"
+        },
+        {
+            "file_id": "dbpedia_6287_32.txt"
+        },
+        {
+            "file_id": "dbpedia_6287_34.txt"
+        },
+        {
+            "file_id": "dbpedia_6287_38.txt"
+        },
+        {
+            "file_id": "dbpedia_6287_43.txt"
+        },
+        {
+            "file_id": "dbpedia_6287_66.txt"
+        },
+        {
+            "file_id": "dbpedia_6287_7.txt"
+        },
+        {
+            "file_id": "dbpedia_6287_83.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "The triple to evaluate is:\n\n\"The producer of 'A Little Princess' (1995 film) is Mark Johnson.\"\n\nGiven the context information, here's the evaluation in JSON format:\n\n```\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation:\n\n* The document at file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6287/re-ranker-msmarco/23.txt explicitly states that Mark Johnson produced Alfonso Cuaron's 1995 debut film \"A Little Princess\".\n* This information is consistent across the provided context documents, reinforcing the accuracy of the triple.\n* Therefore, the output is \"yes\", indicating that the statement is supported by the given context."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\nThis answer is derived from the information provided in `6.txt` and `3.txt`, which both explicitly state that the film \"A Little Princess\" (1995) was produced by Mark Johnson."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

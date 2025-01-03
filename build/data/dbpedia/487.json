@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Bristol_Law_School",
+    "predicate": "property/students",
+    "object": "1700.0",
+    "human_readable": "Bristol Law School has approximately 1700 students.",
+    "questions": [
+        {
+            "score": 0.8865965604782104,
+            "question": "How many students attend Bristol Law School?"
+        },
+        {
+            "score": 0.8600116968154907,
+            "question": "Approximately what is the student population of Bristol Law School?"
+        },
+        {
+            "score": 0.6954258680343628,
+            "question": "What might be some factors that influence the number of students at Bristol Law School?"
+        },
+        {
+            "score": 0.6844133138656616,
+            "question": "How might the number of students impact the learning experience at Bristol Law School?"
+        },
+        {
+            "score": 0.6441275477409363,
+            "question": "Could the number of students at Bristol Law School change in the future?"
+        },
+        {
+            "score": 0.6284106373786926,
+            "question": "Is the student body at Bristol Law School relatively large or small?"
+        },
+        {
+            "score": 0.4716747999191284,
+            "question": "How does the size of Bristol Law School's student body compare to other law schools?"
+        },
+        {
+            "score": 0.46134689450263977,
+            "question": "What is the average class size likely to be at Bristol Law School?"
+        },
+        {
+            "score": 0.2178366333246231,
+            "question": "What are some potential implications of having a large student population at a law school?"
+        },
+        {
+            "score": 0.03997516259551048,
+            "question": "Are there any resources or facilities that might be needed to support a student body of this size?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Bristol Law School has approximately 1700 students.",
+            "html": "dbpedia_487_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some potential implications of having a large student population at a law school?",
+            "html": "dbpedia_487_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the average class size likely to be at Bristol Law School?",
+            "html": "dbpedia_487_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How does the size of Bristol Law School's student body compare to other law schools?",
+            "html": "dbpedia_487_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_487_100.txt"
+        },
+        {
+            "file_id": "dbpedia_487_105.txt"
+        },
+        {
+            "file_id": "dbpedia_487_118.txt"
+        },
+        {
+            "file_id": "dbpedia_487_12.txt"
+        },
+        {
+            "file_id": "dbpedia_487_38.txt"
+        },
+        {
+            "file_id": "dbpedia_487_50.txt"
+        },
+        {
+            "file_id": "dbpedia_487_6.txt"
+        },
+        {
+            "file_id": "dbpedia_487_73.txt"
+        },
+        {
+            "file_id": "dbpedia_487_76.txt"
+        },
+        {
+            "file_id": "dbpedia_487_83.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the answer in JSON format:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: According to the documents, Bristol Law School (BLS) is mentioned as having nearly two thousand students enrolled, with seventeen hundred being enrolled full-time. This suggests that Bristol Law School indeed has approximately 1700 students."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents state that \"Bristol Law School is one of the largest law schools in England and Wales with nearly two thousand students enrolled with seventeen hundred being enrolled full-time.\" This supports the statement that Bristol Law School has approximately 1700 students."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {'output': 'yes'}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Bristol Law School mentioned in the context information is different from the University of Bristol Law School. Therefore, the approximate student count of one school cannot be applied to the other.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "It contradicts the information provided in context point 6, which states that Bristol Law School has nearly two thousand students enrolled.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "It contradicts information provided under point 1 where Bristol Law School (BLS) has \"nearly two thousand students enrolled\" with 1700 being enrolled full-time.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information states that Bristol Law School has nearly two thousand students enrolled with seventeen hundred being enrolled full-time. This indicates the total student enrollment is close to 2000, not approximately 1700 as claimed.",
+            "category": 2
+        }
+    }
+}

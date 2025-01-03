@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Sterba_Propellers",
+    "predicate": "ontology/locationCity",
+    "object": "resource/Holmes_Beach,_Florida",
+    "human_readable": "Sterba Propellers is located in Holmes Beach, Florida.",
+    "questions": [
+        {
+            "score": 0.93117755651474,
+            "question": "What is the address of Sterba Propellers in Holmes Beach?"
+        },
+        {
+            "score": 0.9069693088531494,
+            "question": "Is Sterba Propellers a company based in Florida?"
+        },
+        {
+            "score": 0.9005095958709717,
+            "question": "Where is Sterba Propellers located?"
+        },
+        {
+            "score": 0.4415544867515564,
+            "question": "Who might be the customers of Sterba Propellers?"
+        },
+        {
+            "score": 0.4288758635520935,
+            "question": "What state is Holmes Beach in?"
+        },
+        {
+            "score": 0.35273855924606323,
+            "question": "What kind of business is Sterba Propellers?"
+        },
+        {
+            "score": 0.33938902616500854,
+            "question": "What are propellers used for?"
+        },
+        {
+            "score": 0.2014990597963333,
+            "question": "Can you tell me more about Holmes Beach?"
+        },
+        {
+            "score": 0.19340498745441437,
+            "question": "Are there other businesses in Holmes Beach?"
+        },
+        {
+            "score": 0.13587188720703125,
+            "question": "Does Sterba Propellers sell its products online?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Sterba Propellers is located in Holmes Beach, Florida.",
+            "html": "dbpedia_6307_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there other businesses in Holmes Beach?",
+            "html": "dbpedia_6307_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about Holmes Beach?",
+            "html": "dbpedia_6307_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are propellers used for?",
+            "html": "dbpedia_6307_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6307_18.txt"
+        },
+        {
+            "file_id": "dbpedia_6307_19.txt"
+        },
+        {
+            "file_id": "dbpedia_6307_25.txt"
+        },
+        {
+            "file_id": "dbpedia_6307_27.txt"
+        },
+        {
+            "file_id": "dbpedia_6307_29.txt"
+        },
+        {
+            "file_id": "dbpedia_6307_33.txt"
+        },
+        {
+            "file_id": "dbpedia_6307_40.txt"
+        },
+        {
+            "file_id": "dbpedia_6307_42.txt"
+        },
+        {
+            "file_id": "dbpedia_6307_47.txt"
+        },
+        {
+            "file_id": "dbpedia_6307_6.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nReasoning:\nThe documents mention the following locations related to Sterba Propeller Company:\n\n* \"Ed Sterba Ocala Fla.\"\n* Contact address: \"9660 SE 72nd Ave\"\n\nNone of these mentions indicate that Sterba Propeller Company is located in Holmes Beach, Florida."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: The provided documents do not contain any information indicating that Sterba Propellers is located in Holmes Beach, Florida. The context mentions Ed Sterba and his contact details but does not specify the location of the company as Holmes Beach, Florida."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Multiple messages mention Ed Sterba of Sterba Propeller Company being located in Ocala, Florida.",
+            "category": -1
+        },
+        "llama3.1": {
+            "reason": "The email conversation mentions Ed Sterba Ocala Fla. and the contact information for Sterba Propeller Company being 9660 SE 72nd Ave, which indicates a different location than Holmes Beach, Florida.",
+            "category": -1
+        },
+        "qwen2.5": {
+            "reason": "The context information mentions Ed Sterba Propeller Company's contact details, including a phone number and mailing address, which states \"9660 SE 72nd Ave\". This address is in Ocala, Florida, not Holmes Beach.",
+            "category": -1
+        }
+    }
+}

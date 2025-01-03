@@ -1,0 +1,102 @@
+{
+    "subject": "resource/Collier_Memorial_State_Park",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "Collier Memorial State Park",
+    "human_readable": "The label of Collier Memorial State Park is 'Collier Memorial State Park'.",
+    "questions": [
+        {
+            "score": 0.9559260010719299,
+            "question": "Is 'Collier Memorial State Park' a state park?"
+        },
+        {
+            "score": 0.8994413018226624,
+            "question": "What is the name of Collier Memorial State Park?"
+        },
+        {
+            "score": 0.8914027810096741,
+            "question": "What type of place is Collier Memorial State Park?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The label of Collier Memorial State Park is 'Collier Memorial State Park'.",
+            "html": "dbpedia_2713_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of Collier Memorial State Park?",
+            "html": "dbpedia_2713_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is 'Collier Memorial State Park' a state park?",
+            "html": "dbpedia_2713_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2713_103.txt"
+        },
+        {
+            "file_id": "dbpedia_2713_105.txt"
+        },
+        {
+            "file_id": "dbpedia_2713_111.txt"
+        },
+        {
+            "file_id": "dbpedia_2713_40.txt"
+        },
+        {
+            "file_id": "dbpedia_2713_43.txt"
+        },
+        {
+            "file_id": "dbpedia_2713_61.txt"
+        },
+        {
+            "file_id": "dbpedia_2713_63.txt"
+        },
+        {
+            "file_id": "dbpedia_2713_91.txt"
+        },
+        {
+            "file_id": "dbpedia_2713_96.txt"
+        },
+        {
+            "file_id": "dbpedia_2713_98.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple in JSON format:\n\n{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide information about Collier Memorial State Park, including its name, location, and facilities. Therefore, the statement \"The label of Collier Memorial State Park is 'Collier Memorial State Park'\" is supported by the given context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "the context information explicitly states that \"Collier Memorial State Park\" is indeed the name of the state park.",
+            "category": 2
+        }
+    }
+}

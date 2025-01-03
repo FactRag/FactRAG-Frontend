@@ -1,0 +1,134 @@
+{
+    "subject": "resource/John_Momoh",
+    "predicate": "ontology/almaMater",
+    "object": "resource/University_of_Manchester",
+    "human_readable": "John Momoh's alma mater is University of Manchester.",
+    "questions": [
+        {
+            "score": 0.9598439335823059,
+            "question": "Did John Momoh graduate from the University of Manchester?"
+        },
+        {
+            "score": 0.9591201543807983,
+            "question": "Is University of Manchester John Momoh's educational background?"
+        },
+        {
+            "score": 0.8448849320411682,
+            "question": "What is the name of John Momoh's alma mater?"
+        },
+        {
+            "score": 0.7712679505348206,
+            "question": "John Momoh received his education from which university?"
+        },
+        {
+            "score": 0.7420015335083008,
+            "question": "What is the name of the university John Momoh attended?"
+        },
+        {
+            "score": 0.7403823733329773,
+            "question": "Where did John Momoh attend university?"
+        },
+        {
+            "score": 0.7072380781173706,
+            "question": "Which university awarded John Momoh his degree?"
+        },
+        {
+            "score": 0.6711306571960449,
+            "question": "To which university did John Momoh go to school?"
+        },
+        {
+            "score": 0.6567902565002441,
+            "question": "What institution is associated with John Momoh's education?"
+        },
+        {
+            "score": 0.6501344442367554,
+            "question": "John Momoh's educational journey took place at which university?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=John Momoh's alma mater is University of Manchester.",
+            "html": "dbpedia_3777_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What institution is associated with John Momoh's education?",
+            "html": "dbpedia_3777_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=To which university did John Momoh go to school?",
+            "html": "dbpedia_3777_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Which university awarded John Momoh his degree?",
+            "html": "dbpedia_3777_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3777_10.txt"
+        },
+        {
+            "file_id": "dbpedia_3777_24.txt"
+        },
+        {
+            "file_id": "dbpedia_3777_27.txt"
+        },
+        {
+            "file_id": "dbpedia_3777_34.txt"
+        },
+        {
+            "file_id": "dbpedia_3777_35.txt"
+        },
+        {
+            "file_id": "dbpedia_3777_41.txt"
+        },
+        {
+            "file_id": "dbpedia_3777_45.txt"
+        },
+        {
+            "file_id": "dbpedia_3777_50.txt"
+        },
+        {
+            "file_id": "dbpedia_3777_59.txt"
+        },
+        {
+            "file_id": "dbpedia_3777_7.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nWhile the documents state that John Momoh has professional Diplomas from the UK\u2019s Thomson Foundation and the **University of Manchester**, they do not explicitly state that the University of Manchester is one of his alma maters.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "To evaluate whether the information in the documents supports the triple, I will search for mentions of \"John Momoh\" and \"University of Manchester\".\n\nHere are the relevant documents:\n\n* file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3777/re-ranker-msmarco/40.txt\n\t+ \"John Momoh is a graduate of the University of Lagos with a B.Sc. (honours) in Mass Communication and a Master\u2019s degree in International Law and Diplomacy...\"\n* file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3777/re-ranker-msmarco/49.txt\n\t+ \"John Momoh is a graduate of the University of Lagos with a Masters degree in International Law and Diplomacy and a B.Sc (with honours) in Mass Communication...\"\n* file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3777/re-ranker-msmarco/10.txt\n\t+ \"John Momoh graduated from the University of Lagos with a bachelor\u2019s degree in Mass Communication and a master\u2019s degree in International Law and Diplomacy.\"\n\nThere are no mentions of John Momoh being an alumnus of the University of Manchester.\n\nTherefore, the answer is:\n\n`{'output': 'no'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents do not mention that John Momoh's alma mater is the University of Manchester. Instead, they state that he graduated from the University of Lagos and received professional diplomas from the UK\u2019s Thomson Foundation and the University of Manchester, among other institutions."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "John Momoh received a Diploma from the UK\u2019s Thomson Foundation, but there is no mention that he graduated or earned any degree from the University of Manchester.",
+            "category": 2
+        }
+    }
+}

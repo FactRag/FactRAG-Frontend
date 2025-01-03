@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Heligoland",
+    "predicate": "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+    "object": "54.1825",
+    "human_readable": "Heligoland's latitude is 54.1825.",
+    "questions": [
+        {
+            "score": 0.9813542366027832,
+            "question": "If Heligoland has a latitude of 54.1825, is it located in the northern or southern hemisphere?"
+        },
+        {
+            "score": 0.8080017566680908,
+            "question": "What is Heligoland's latitude?"
+        },
+        {
+            "score": 0.7677891850471497,
+            "question": "Give the latitude coordinates of Heligoland."
+        },
+        {
+            "score": 0.6824052929878235,
+            "question": "What geographical information can be determined from Heligoland's latitude?"
+        },
+        {
+            "score": 0.6528182029724121,
+            "question": "Compare Heligoland's latitude to the equator."
+        },
+        {
+            "score": 0.6353644728660583,
+            "question": "What degree measure represents Heligoland's latitude?"
+        },
+        {
+            "score": 0.6036531329154968,
+            "question": "Can you plot Heligoland on a map using its latitude?"
+        },
+        {
+            "score": 0.5941811800003052,
+            "question": "How does Heligoland's latitude influence its climate?"
+        },
+        {
+            "score": 0.5821807980537415,
+            "question": "Where is Heligoland located?"
+        },
+        {
+            "score": 0.5142772793769836,
+            "question": "How would you express Heligoland's latitude in degrees and minutes?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Heligoland's latitude is 54.1825.",
+            "html": "dbpedia_2104_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where is Heligoland located?",
+            "html": "dbpedia_2104_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How does Heligoland's latitude influence its climate?",
+            "html": "dbpedia_2104_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you plot Heligoland on a map using its latitude?",
+            "html": "dbpedia_2104_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2104_13.txt"
+        },
+        {
+            "file_id": "dbpedia_2104_26.txt"
+        },
+        {
+            "file_id": "dbpedia_2104_27.txt"
+        },
+        {
+            "file_id": "dbpedia_2104_3.txt"
+        },
+        {
+            "file_id": "dbpedia_2104_45.txt"
+        },
+        {
+            "file_id": "dbpedia_2104_50.txt"
+        },
+        {
+            "file_id": "dbpedia_2104_56.txt"
+        },
+        {
+            "file_id": "dbpedia_2104_60.txt"
+        },
+        {
+            "file_id": "dbpedia_2104_63.txt"
+        },
+        {
+            "file_id": "dbpedia_2104_69.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nLet me know if you have any other triples to evaluate! \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the structured JSON format with the answer:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe information in the documents supports that Heligoland's latitude is indeed approximately 54\u00b0, as stated in the triple (54.1803268 and 7.888943799999999 are very close to 54)."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\"output\": \"yes\"}\n```\n\nThe documents provide information about the geographical coordinates of Helgoland, including its latitude, which matches the value given in the query (54.1825). Therefore, the statement \"Heligoland's latitude is 54.1825\" is supported by the provided context."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided documents, there are two different sets of coordinates for Heligoland's latitude:\n\n- In one document (3.txt), it says \"latitude is 54.1814300\".\n- Another document (63.txt) states that the exact geographical coordinates are \"latitude and longitude \u2014 54.1803268, 7.888943799999999\".\n\nThe given query specifies a latitude of 54.1825 for Heligoland, which does not match any of the latitudes provided in the documents.\n\nTherefore, the answer is:\n\n{\"output\": \"no\"}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The provided latitude for Heligoland (54.1825) does not match the one given in the context information (latitude is 54.1814300).",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Multiple sources list Helgoland's latitude as 54.1814300.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Yorkton",
+    "predicate": "property/decPrecipitationDays",
+    "object": "12.11",
+    "human_readable": "Yorkton has 12.11 days of precipitation per year.",
+    "questions": [
+        {
+            "score": 0.7912397384643555,
+            "question": "How many days of precipitation does Yorkton experience annually?"
+        },
+        {
+            "score": 0.7909683585166931,
+            "question": "What is the average annual precipitation in Yorkton?"
+        },
+        {
+            "score": 0.6866328120231628,
+            "question": "How does the precipitation in Yorkton change throughout the year?"
+        },
+        {
+            "score": 0.64997798204422,
+            "question": "What activities are affected by the precipitation levels in Yorkton?"
+        },
+        {
+            "score": 0.6289124488830566,
+            "question": "Compared to other cities, how much precipitation does Yorkton receive?"
+        },
+        {
+            "score": 0.6240971684455872,
+            "question": "What factors might influence the amount of precipitation in Yorkton?"
+        },
+        {
+            "score": 0.5762258768081665,
+            "question": "Are there any historical records of extreme precipitation events in Yorkton?"
+        },
+        {
+            "score": 0.5215070247650146,
+            "question": "What is the significance of knowing the precipitation data for Yorkton?"
+        },
+        {
+            "score": 0.42669183015823364,
+            "question": "Is Yorkton a rainy city?"
+        },
+        {
+            "score": 0.3576187789440155,
+            "question": "How does the precipitation in Yorkton compare to other cities in Canada?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Yorkton has 12.11 days of precipitation per year.",
+            "html": "dbpedia_243_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Yorkton a rainy city?",
+            "html": "dbpedia_243_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the significance of knowing the precipitation data for Yorkton?",
+            "html": "dbpedia_243_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any historical records of extreme precipitation events in Yorkton?",
+            "html": "dbpedia_243_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_243_109.txt"
+        },
+        {
+            "file_id": "dbpedia_243_13.txt"
+        },
+        {
+            "file_id": "dbpedia_243_23.txt"
+        },
+        {
+            "file_id": "dbpedia_243_47.txt"
+        },
+        {
+            "file_id": "dbpedia_243_60.txt"
+        },
+        {
+            "file_id": "dbpedia_243_64.txt"
+        },
+        {
+            "file_id": "dbpedia_243_73.txt"
+        },
+        {
+            "file_id": "dbpedia_243_84.txt"
+        },
+        {
+            "file_id": "dbpedia_243_89.txt"
+        },
+        {
+            "file_id": "dbpedia_243_96.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nLet's break down why:\n\n* **The Documents:** The provided text focuses on the climate and weather patterns in Yorkton, Saskatchewan.  It mentions rainfall amounts and frequency but doesn't specify an exact number of precipitation days per year.\n* **The Query:** \"Yorkton has 12.11 days of precipitation per year\" is a very specific statement. The documents don't provide that exact figure. \n\n\n\nLet me know if you have any other triples to evaluate!"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents provide detailed information about the climate and weather patterns of Yorkton, Saskatchewan, Canada. They mention rainfall and precipitation in various months but do not specify an exact annual total of 12.11 days of precipitation. Therefore, based on the given context, the statement that Yorkton has 12.11 days of precipitation per year is not supported by the provided information."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n    \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The context information provides annual precipitation days as 30.55, which indicates that Yorkton has approximately 30.55 days of precipitation per year, not 12.11.",
+            "category": -1
+        },
+        "gemma2": {
+            "reason": "Multiple sources state Yorkton has a significant amount of rainfall, with an average annual precipitation of 551 mm (21.7 inches) and 30.55 rainy days annually.  12.11 days of precipitation per year is far too low to be consistent with this information.",
+            "category": -1
+        },
+        "llama3.1": {
+            "reason": "The information provided states that Yorkton has 30.55 rainy days (8.37% of the time) annually, which implies a significant amount of rainfall throughout the year, and also mentions that \"Yorkton has a significant amount of rainfall during the year.\" However, it does not directly state or imply that there are only 12.11 days of precipitation per year.",
+            "category": -1
+        },
+        "qwen2.5": {
+            "reason": "The context information states that Yorkton has 30.55 rainy days (8.37% of the time) annually, not 12.11 days.",
+            "category": -1
+        }
+    }
+}

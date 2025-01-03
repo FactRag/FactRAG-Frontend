@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Erik_Thommy",
+    "predicate": "ontology/Person/height",
+    "object": "174.0",
+    "human_readable": "Erik Thommy's height is 174.0.",
+    "questions": [
+        {
+            "score": 0.8616542220115662,
+            "question": "Is Erik Thommy tall?"
+        },
+        {
+            "score": 0.8344650268554688,
+            "question": "What is Erik Thommy's height?"
+        },
+        {
+            "score": 0.7525613307952881,
+            "question": "What is Erik Thommy's approximate height in feet?"
+        },
+        {
+            "score": 0.7058848738670349,
+            "question": "Would Erik Thommy be considered average height?"
+        },
+        {
+            "score": 0.6278517842292786,
+            "question": "Compared to the average person, is Erik Thommy taller or shorter?"
+        },
+        {
+            "score": 0.6013950109481812,
+            "question": "What factors could influence Erik Thommy's height?"
+        },
+        {
+            "score": 0.5797743797302246,
+            "question": "Is there a correlation between Erik Thommy's height and his profession?"
+        },
+        {
+            "score": 0.5608417987823486,
+            "question": "How does Erik Thommy's height compare to his friends or family?"
+        },
+        {
+            "score": 0.37758466601371765,
+            "question": "How many centimeters is Erik Thommy?"
+        },
+        {
+            "score": 0.20040379464626312,
+            "question": "Could Erik Thommy play basketball professionally?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Erik Thommy's height is 174.0.",
+            "html": "dbpedia_1433_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How many centimeters is Erik Thommy?",
+            "html": "dbpedia_1433_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How does Erik Thommy's height compare to his friends or family?",
+            "html": "dbpedia_1433_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there a correlation between Erik Thommy's height and his profession?",
+            "html": "dbpedia_1433_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1433_12.txt"
+        },
+        {
+            "file_id": "dbpedia_1433_13.txt"
+        },
+        {
+            "file_id": "dbpedia_1433_15.txt"
+        },
+        {
+            "file_id": "dbpedia_1433_19.txt"
+        },
+        {
+            "file_id": "dbpedia_1433_33.txt"
+        },
+        {
+            "file_id": "dbpedia_1433_38.txt"
+        },
+        {
+            "file_id": "dbpedia_1433_4.txt"
+        },
+        {
+            "file_id": "dbpedia_1433_40.txt"
+        },
+        {
+            "file_id": "dbpedia_1433_46.txt"
+        },
+        {
+            "file_id": "dbpedia_1433_53.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "To evaluate the triple, we need to check if the information in the documents supports the statement \"Erik Thommy's height is 174.0\".\n\nFrom the context information:\n\n- The first document mentions that Erik Thommy's height is 174 cm.\n- The fourth and fifth documents mention that Erik Thommy's height stands at 175 cm (5'9').\n\nBased on this information, we can see that there are two different heights mentioned: 174 cm and 175 cm. Therefore, the statement \"Erik Thommy's height is 174.0\" cannot be confirmed as true by the documents, since one of them contradicts it.\n\nSo, the answer is:\n\n`{'output': 'no'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents mention that Erik Thommy's height is 174 cm, which supports the statement that his height is 174.0 (assuming the measurement unit is centimeters and the decimal place is implied)."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The context information consistently states Erik Thommy's height as 175 cm (5'9'), starting from point 2, which contradicts the initial statement of 174 cm.",
+            "category": 2
+        }
+    }
+}

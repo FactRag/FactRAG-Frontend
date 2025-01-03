@@ -1,0 +1,129 @@
+{
+    "subject": "Carlos_Thompson",
+    "predicate": "isMarriedTo",
+    "object": "Lilli_Palmer",
+    "human_readable": "Carlos Thompson is married to Lilli Palmer.",
+    "questions": [
+        {
+            "score": 0.9046772718429565,
+            "question": "Name someone married to Lilli Palmer."
+        },
+        {
+            "score": 0.8997036218643188,
+            "question": "Is Carlos Thompson married?"
+        },
+        {
+            "score": 0.89200359582901,
+            "question": "What is the relationship between Carlos Thompson and Lilli Palmer?"
+        },
+        {
+            "score": 0.8901160955429077,
+            "question": "Who is married to Lilli Palmer?"
+        },
+        {
+            "score": 0.7638055682182312,
+            "question": "Does Lilli Palmer have a husband?"
+        },
+        {
+            "score": 0.645267128944397,
+            "question": "What is the name of Carlos Thompson's spouse?"
+        },
+        {
+            "score": 0.623845100402832,
+            "question": "Who is Carlos Thompson?"
+        },
+        {
+            "score": 0.3394690155982971,
+            "question": "What is the profession of Carlos Thompson?"
+        },
+        {
+            "score": 0.33246949315071106,
+            "question": "Is Lilli Palmer known for being an actress?"
+        },
+        {
+            "score": 0.06840889900922775,
+            "question": "Who are some famous couples in entertainment?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Carlos Thompson is married to Lilli Palmer.",
+            "html": "yago_30354_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Lilli Palmer known for being an actress?",
+            "html": "yago_30354_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the profession of Carlos Thompson?",
+            "html": "yago_30354_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is Carlos Thompson?",
+            "html": "yago_30354_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "yago_30354_1.txt"
+        },
+        {
+            "file_id": "yago_30354_12.txt"
+        },
+        {
+            "file_id": "yago_30354_13.txt"
+        },
+        {
+            "file_id": "yago_30354_14.txt"
+        },
+        {
+            "file_id": "yago_30354_18.txt"
+        },
+        {
+            "file_id": "yago_30354_39.txt"
+        },
+        {
+            "file_id": "yago_30354_52.txt"
+        },
+        {
+            "file_id": "yago_30354_74.txt"
+        },
+        {
+            "file_id": "yago_30354_78.txt"
+        },
+        {
+            "file_id": "yago_30354_90.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the context information provided, here's my evaluation:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nMy reasoning is as follows:\n\n* Document 1 (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/yago_30354/re-ranker-msmarco/11.txt) mentions that Lilli Palmer and Carlos Thompson were married for 28 years before Lilli Palmer died aged 71.\n* Documents 2 and 3 (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/yago_30354/re-ranker-msmarco/4.txt and file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/yago_30354/re-ranker-msmarco/22.txt) confirm that Lilli Palmer was married to Carlos Thompson, with the specific date of marriage mentioned in document 2.\n* Document 5 (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/yago_30354/re-ranker-msmarco/51.txt) also confirms that Lilli Palmer was married to Carlos Thompson.\n\nAll these documents collectively provide strong evidence supporting the triple \"Carlos Thompson is married to Lilli Palmer.\""
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information that supports the statement \"Carlos Thompson is married to Lilli Palmer.\" Both `11.txt` and documents with file paths `22.txt`, `31.txt`, and `51.txt` mention their marriage."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {}
+}

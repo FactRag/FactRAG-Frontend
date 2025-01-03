@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Southern_Aurora",
+    "predicate": "property/lineUsed",
+    "object": "resource/North_East_railway_line",
+    "human_readable": "The line used by Southern Aurora is North East railway line.",
+    "questions": [
+        {
+            "score": 0.9735698699951172,
+            "question": "Name the railway line used by the Southern Aurora."
+        },
+        {
+            "score": 0.9257140755653381,
+            "question": "Is there a specific railway line the Southern Aurora uses?"
+        },
+        {
+            "score": 0.923446774482727,
+            "question": "What type of railway line is used by the Southern Aurora?"
+        },
+        {
+            "score": 0.9019612669944763,
+            "question": "What is the name of the railway line used by the Southern Aurora?"
+        },
+        {
+            "score": 0.879359245300293,
+            "question": "Is the Southern Aurora associated with a specific railway line?"
+        },
+        {
+            "score": 0.870721161365509,
+            "question": "Which railway line does the Southern Aurora travel on?"
+        },
+        {
+            "score": 0.8685452342033386,
+            "question": "What railway line connects to the Southern Aurora?"
+        },
+        {
+            "score": 0.8596978187561035,
+            "question": "Does the Southern Aurora operate on a designated railway line?"
+        },
+        {
+            "score": 0.7764649391174316,
+            "question": "Can you tell me the name of the railway line the Southern Aurora runs on?"
+        },
+        {
+            "score": 0.6470652222633362,
+            "question": "What is the primary railway route for the Southern Aurora?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The line used by Southern Aurora is North East railway line.",
+            "html": "dbpedia_1608_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me the name of the railway line the Southern Aurora runs on?",
+            "html": "dbpedia_1608_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does the Southern Aurora operate on a designated railway line?",
+            "html": "dbpedia_1608_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What railway line connects to the Southern Aurora?",
+            "html": "dbpedia_1608_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1608_1.txt"
+        },
+        {
+            "file_id": "dbpedia_1608_14.txt"
+        },
+        {
+            "file_id": "dbpedia_1608_16.txt"
+        },
+        {
+            "file_id": "dbpedia_1608_20.txt"
+        },
+        {
+            "file_id": "dbpedia_1608_36.txt"
+        },
+        {
+            "file_id": "dbpedia_1608_38.txt"
+        },
+        {
+            "file_id": "dbpedia_1608_44.txt"
+        },
+        {
+            "file_id": "dbpedia_1608_50.txt"
+        },
+        {
+            "file_id": "dbpedia_1608_51.txt"
+        },
+        {
+            "file_id": "dbpedia_1608_68.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The provided documents mention that the Southern Aurora operated on a new standard gauge line from Albury to Melbourne, which is part of what can be inferred as the North East railway line. This supports the statement that the line used by the Southern Aurora was the North East railway line."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The claim is wrong because the Southern Aurora used the standard gauge line from Melbourne to Albury.",
+            "category": 2
+        }
+    }
+}

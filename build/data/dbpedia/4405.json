@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Team_and_Concepts",
+    "predicate": "property/type",
+    "object": "resource/Private_company",
+    "human_readable": "Team and Concepts is a private company.",
+    "questions": [
+        {
+            "score": 0.9758517742156982,
+            "question": "Is Team and Concepts a public or private company?"
+        },
+        {
+            "score": 0.856603741645813,
+            "question": "What type of company is Team and Concepts?"
+        },
+        {
+            "score": 0.6318256855010986,
+            "question": "Who are the owners or founders of Team and Concepts?"
+        },
+        {
+            "score": 0.5722603797912598,
+            "question": "What kind of products or services does Team and Concepts offer?"
+        },
+        {
+            "score": 0.5538027286529541,
+            "question": "Can the general public access information about Team and Concepts?"
+        },
+        {
+            "score": 0.4854743182659149,
+            "question": "Where is Team and Concepts located?"
+        },
+        {
+            "score": 0.3979175388813019,
+            "question": "Does Team and Concepts have a website or online presence?"
+        },
+        {
+            "score": 0.390055775642395,
+            "question": "What is the size of Team and Concepts in terms of employees?"
+        },
+        {
+            "score": 0.31075629591941833,
+            "question": "How does Team and Concepts differentiate itself from competitors?"
+        },
+        {
+            "score": 0.07172027975320816,
+            "question": "What are the company's goals and objectives?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Team and Concepts is a private company.",
+            "html": "dbpedia_4405_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How does Team and Concepts differentiate itself from competitors?",
+            "html": "dbpedia_4405_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the size of Team and Concepts in terms of employees?",
+            "html": "dbpedia_4405_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Team and Concepts have a website or online presence?",
+            "html": "dbpedia_4405_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4405_101.txt"
+        },
+        {
+            "file_id": "dbpedia_4405_116.txt"
+        },
+        {
+            "file_id": "dbpedia_4405_135.txt"
+        },
+        {
+            "file_id": "dbpedia_4405_169.txt"
+        },
+        {
+            "file_id": "dbpedia_4405_179.txt"
+        },
+        {
+            "file_id": "dbpedia_4405_54.txt"
+        },
+        {
+            "file_id": "dbpedia_4405_60.txt"
+        },
+        {
+            "file_id": "dbpedia_4405_74.txt"
+        },
+        {
+            "file_id": "dbpedia_4405_91.txt"
+        },
+        {
+            "file_id": "dbpedia_4405_92.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "To evaluate the triple, we need to check if the information in the documents supports the statement \"Team and Concepts is a private company.\"\n\nLooking at the context information:\n\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4405/re-ranker-msmarco/169.txt, it is mentioned that \"Despite our growth over the last 25 years, we remain women-owned and WBE Certified.\"\n* This suggests that Team and Concepts has some ownership structure, but it does not explicitly state whether it is a private or public company.\n* However, in file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4405/re-ranker-msmarco/51.txt, it mentions \"With three decades in business, Team Concepts has a well-established track record.\" This suggests that the company is established and long-running, but again, does not explicitly state whether it is private or public.\n\nBased on this analysis, there is no explicit information to support the statement \"Team and Concepts is a private company.\" The documents suggest some ownership structure and a well-established business presence, but do not provide conclusive evidence of being private.\n\nTherefore, the output should be:\n\n`{'output': 'no'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide information about TEAM Concepts as a business that has been operating for over two decades, mentions their growth, partnerships with business schools, and certification status. There is no explicit mention of the ownership type being public or private, but the tone and context suggest it operates as a private company given its long-term stability and focus on professional services. Therefore, based on the provided information, the statement \"Team Concepts is a private company\" can be reasonably inferred to be correct."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": -1,
+            "full_ans": "Based on the provided context information, there's no explicit statement that \"Team and Concepts\" (likely meant as TEAM Concepts) is a private company. The documents primarily highlight the services offered by TEAM Concepts, their partnerships with business schools and federal government agencies, testimonials from individuals who have used their services for job placement, and descriptions of their training programs.\n\nGiven this context, I can't definitively confirm or deny whether TEAM Concepts operates as a private company based on the provided information alone. However, since the question is phrased in a way that expects a yes/no response regarding a statement not directly supported by the given documents, the appropriate answer is:\n\n{\"output\": \"no\"}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{\n  \"output\": \"yes\"\n}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Several pieces of information point to Team Concepts being publicly recognized and operating within a business ecosystem that requires transparency, including their partnerships with prestigious universities and government agencies. Additionally, their focus on building relationships with companies and individuals suggests a level of public engagement not typically associated with private entities.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "TEAM Concepts states on their \"About Us\" section (point 2) that they are a \"global high performance team formation and leadership development company\", indicating that they have a global presence, which typically implies that they are a publicly traded company to facilitate international business transactions.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Charles_H._Adams_(New_York_politician)",
+    "predicate": "ontology/birthPlace",
+    "object": "resource/New_York",
+    "human_readable": "Charles H. Adams was born in New York.",
+    "questions": [
+        {
+            "score": 0.920263409614563,
+            "question": "Where was Charles H. Adams born?"
+        },
+        {
+            "score": 0.8715779185295105,
+            "question": "When was Charles H. Adams born?"
+        },
+        {
+            "score": 0.778242826461792,
+            "question": "Did Charles H. Adams live in New York his entire life?"
+        },
+        {
+            "score": 0.5830381512641907,
+            "question": "What are some notable events that happened in New York during Charles H. Adams' lifetime?"
+        },
+        {
+            "score": 0.5674373507499695,
+            "question": "What is Charles H. Adams known for?"
+        },
+        {
+            "score": 0.5536085367202759,
+            "question": "Name some famous people born in New York."
+        },
+        {
+            "score": 0.5523608922958374,
+            "question": "How did Charles H. Adams' birthplace influence his life?"
+        },
+        {
+            "score": 0.3143310844898224,
+            "question": "Is there anything else we know about Charles H. Adams?"
+        },
+        {
+            "score": 0.20412862300872803,
+            "question": "What state is New York in?"
+        },
+        {
+            "score": 0.0835454985499382,
+            "question": "Why is it important to know where someone was born?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Charles H. Adams was born in New York.",
+            "html": "dbpedia_3316_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What state is New York in?",
+            "html": "dbpedia_3316_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there anything else we know about Charles H. Adams?",
+            "html": "dbpedia_3316_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How did Charles H. Adams' birthplace influence his life?",
+            "html": "dbpedia_3316_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3316_101.txt"
+        },
+        {
+            "file_id": "dbpedia_3316_19.txt"
+        },
+        {
+            "file_id": "dbpedia_3316_20.txt"
+        },
+        {
+            "file_id": "dbpedia_3316_35.txt"
+        },
+        {
+            "file_id": "dbpedia_3316_5.txt"
+        },
+        {
+            "file_id": "dbpedia_3316_50.txt"
+        },
+        {
+            "file_id": "dbpedia_3316_6.txt"
+        },
+        {
+            "file_id": "dbpedia_3316_64.txt"
+        },
+        {
+            "file_id": "dbpedia_3316_87.txt"
+        },
+        {
+            "file_id": "dbpedia_3316_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nLet me know if you have any other triples you'd like me to evaluate! \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "{\n  \"output\": \"yes\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents do not provide any information to support the statement that Charles H. Adams was born in New York. The first document mentions he was born in Coxsackie, New York, but it is for a different individual named Charles Henry Adams, not Charles H. Adams."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}\n\nThe documents mention that Charles Henry Adams, an American politician and attorney, was \"Born in Coxsackie, New York.\" This supports the statement that Charles H. Adams was born in New York."
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Information provided states Charles Henry Adams was born in Coxsackie, New York.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Charles H. Adams was born in Coxsackie, New York, as stated in the context information.",
+            "category": 2
+        }
+    }
+}

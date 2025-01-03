@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Knowing_Me_Knowing_You_with_Alan_Partridge_(TV_series)",
+    "predicate": "ontology/network",
+    "object": "resource/BBC_Two",
+    "human_readable": "The TV series 'Knowing Me, Knowing You with Alan Partridge' is broadcast on BBC Two.",
+    "questions": [
+        {
+            "score": 0.9747569561004639,
+            "question": "On which channel is the TV series 'Knowing Me, Knowing You with Alan Partridge' broadcast?"
+        },
+        {
+            "score": 0.9456467032432556,
+            "question": "Who is the host of the TV series 'Knowing Me, Knowing You with Alan Partridge'?"
+        },
+        {
+            "score": 0.9011159539222717,
+            "question": "When was the TV series 'Knowing Me, Knowing You with Alan Partridge' first broadcast?"
+        },
+        {
+            "score": 0.8506075143814087,
+            "question": "Is 'Knowing Me, Knowing You with Alan Partridge' a fictional show?"
+        },
+        {
+            "score": 0.8194621801376343,
+            "question": "What type of program is 'Knowing Me, Knowing You with Alan Partridge'?"
+        },
+        {
+            "score": 0.765277624130249,
+            "question": "Has the TV series 'Knowing Me, Knowing You with Alan Partridge' won any awards?"
+        },
+        {
+            "score": 0.7051637172698975,
+            "question": "What is the name of the TV series starring Alan Partridge?"
+        },
+        {
+            "score": 0.6315440535545349,
+            "question": "What kind of humor is typically found in 'Knowing Me, Knowing You with Alan Partridge'?"
+        },
+        {
+            "score": 0.5340600609779358,
+            "question": "Is there a real BBC Two channel?"
+        },
+        {
+            "score": 0.5113033056259155,
+            "question": "Does the TV series feature any recurring characters besides Alan Partridge?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The TV series 'Knowing Me, Knowing You with Alan Partridge' is broadcast on BBC Two.",
+            "html": "dbpedia_3274_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there a real BBC Two channel?",
+            "html": "dbpedia_3274_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What kind of humor is typically found in 'Knowing Me, Knowing You with Alan Partridge'?",
+            "html": "dbpedia_3274_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of the TV series starring Alan Partridge?",
+            "html": "dbpedia_3274_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3274_104.txt"
+        },
+        {
+            "file_id": "dbpedia_3274_128.txt"
+        },
+        {
+            "file_id": "dbpedia_3274_135.txt"
+        },
+        {
+            "file_id": "dbpedia_3274_17.txt"
+        },
+        {
+            "file_id": "dbpedia_3274_40.txt"
+        },
+        {
+            "file_id": "dbpedia_3274_41.txt"
+        },
+        {
+            "file_id": "dbpedia_3274_49.txt"
+        },
+        {
+            "file_id": "dbpedia_3274_54.txt"
+        },
+        {
+            "file_id": "dbpedia_3274_65.txt"
+        },
+        {
+            "file_id": "dbpedia_3274_94.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "To evaluate the query, we need to check if the information in the documents supports the triple \"The TV series 'Knowing Me, Knowing You with Alan Partridge' is broadcast on BBC Two.\"\n\nHere's a JSON response based on the provided context:\n\n{\n  \"output\": \"no\"\n}\n\nThis is because none of the documents mention that the TV series is broadcast on BBC Two. In fact, document 93.txt specifically states that the show is a \"BBC Television comedy series\", but it does not specify which channel it was broadcast on. However, other documents do mention that the show is a BBC Television series, which implies it was broadcast on one of the BBC's main channels (BBC One or BBC Two), but we cannot confirm which one. Since we can't confirm whether the answer is \"yes\" or \"no\", I will default to \"no\"."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: None of the provided documents mention that the TV series 'Knowing Me, Knowing You with Alan Partridge' is broadcast on BBC Two. The documents indicate it was originally broadcast on BBC Radio 4 before moving to television in 1994 and details some specific episodes and content but do not specify the channel as BBC Two."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Several sources state the show aired on BBC One.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The context information specifically mentions that the TV series \"Knowing Me, Knowing You with Alan Partridge\" premiered on BBC (no specific channel mentioned) and later mentions that it is a television comedy series of six episodes (beginning 16 September 1994), which implies that it was broadcast on BBC One, but never BBC Two.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information mentions the show premiered on BBC and details about its episodes and structure, but does not specify a broadcast channel like BBC Two.",
+            "category": 2
+        }
+    }
+}

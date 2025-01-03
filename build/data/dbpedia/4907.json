@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Byron_Anthony",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "Anthony, Byron",
+    "human_readable": "The full name of Byron Anthony is Anthony, Byron.",
+    "questions": [
+        {
+            "score": 0.9856557846069336,
+            "question": "What is the full name of Byron Anthony?"
+        },
+        {
+            "score": 0.9743559956550598,
+            "question": "Which name appears last in Byron Anthony's full name?"
+        },
+        {
+            "score": 0.9600865244865417,
+            "question": "What is the order of names in Byron Anthony's full name?"
+        },
+        {
+            "score": 0.9600796103477478,
+            "question": "If someone said 'Anthony, Byron', what name are they referring to?"
+        },
+        {
+            "score": 0.9539096355438232,
+            "question": "Is 'Anthony' the first or last name of Byron Anthony?"
+        },
+        {
+            "score": 0.9532873034477234,
+            "question": "What is the last name of Byron Anthony?"
+        },
+        {
+            "score": 0.9483386278152466,
+            "question": "Which name comes first in Byron Anthony's full name?"
+        },
+        {
+            "score": 0.9113662838935852,
+            "question": "What is the first name of Byron Anthony?"
+        },
+        {
+            "score": 0.9073391556739807,
+            "question": "How would you write Anthony Byron's full name?"
+        },
+        {
+            "score": 0.6120955348014832,
+            "question": "If you were to introduce Byron Anthony, what would you say?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The full name of Byron Anthony is Anthony, Byron.",
+            "html": "dbpedia_4907_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How would you write Anthony Byron's full name?",
+            "html": "dbpedia_4907_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the first name of Byron Anthony?",
+            "html": "dbpedia_4907_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Which name comes first in Byron Anthony's full name?",
+            "html": "dbpedia_4907_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4907_1.txt"
+        },
+        {
+            "file_id": "dbpedia_4907_19.txt"
+        },
+        {
+            "file_id": "dbpedia_4907_39.txt"
+        },
+        {
+            "file_id": "dbpedia_4907_42.txt"
+        },
+        {
+            "file_id": "dbpedia_4907_43.txt"
+        },
+        {
+            "file_id": "dbpedia_4907_46.txt"
+        },
+        {
+            "file_id": "dbpedia_4907_47.txt"
+        },
+        {
+            "file_id": "dbpedia_4907_51.txt"
+        },
+        {
+            "file_id": "dbpedia_4907_72.txt"
+        },
+        {
+            "file_id": "dbpedia_4907_8.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe documents list his full name as \"Byron Joseph Anthony\".  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation:\n\n{\n  \"output\": \"yes\"\n}\n\nThe triple statement \"The full name of Byron Anthony is Anthony, Byron.\" is supported by the documents. In fact, multiple files mention \"Byron Anthony\" as the full name of the subject."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\"output\": \"no\"}\n```\n\nExplanation: The context information provided does not contain any data that supports the assertion that \"The full name of Byron Anthony is Anthony, Byron.\" According to the documents, his full name is listed as \"Byron Joseph Anthony.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nThe provided documents do not support the statement that \"The full name of Byron Anthony is Anthony, Byron.\" Instead, one of the documents clearly states that his full name is \"Byron Joseph Anthony,\" with \"Byron\" being the first name and \"Anthony\" being part of the last name. Therefore, the correct representation should be \"Byron Anthony\" rather than \"Anthony, Byron.\""
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "The provided text clearly states his full name as \"Byron Anthony\".",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The full name provided in the context is Byron Anthony, not Anthony, Byron.",
+            "category": 2
+        }
+    }
+}

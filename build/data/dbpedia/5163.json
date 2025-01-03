@@ -1,0 +1,134 @@
+{
+    "subject": "resource/The_Orckestra",
+    "predicate": "property/pastMembers",
+    "object": "resource/Paul_Rutherford_(trombone_player)",
+    "human_readable": "The Orckestra had as past member Paul Rutherford.",
+    "questions": [
+        {
+            "score": 0.9865278601646423,
+            "question": "Has Paul Rutherford been a member of the Orckestra?"
+        },
+        {
+            "score": 0.9653902649879456,
+            "question": "Is Paul Rutherford associated with the Orckestra?"
+        },
+        {
+            "score": 0.9503507018089294,
+            "question": "Was Paul Rutherford ever part of the Orckestra?"
+        },
+        {
+            "score": 0.908110499382019,
+            "question": "Who is a past member of the Orckestra?"
+        },
+        {
+            "score": 0.8022855520248413,
+            "question": "Who played in the Orckestra at some point in the past?"
+        },
+        {
+            "score": 0.6884668469429016,
+            "question": "Name a musician who was formerly in the Orckestra."
+        },
+        {
+            "score": 0.6577579975128174,
+            "question": "Name someone who was previously part of the Orckestra."
+        },
+        {
+            "score": 0.6098732948303223,
+            "question": "What musical group did Paul Rutherford play with?"
+        },
+        {
+            "score": 0.5693473815917969,
+            "question": "What musical ensemble has Paul Rutherford played in?"
+        },
+        {
+            "score": 0.46411922574043274,
+            "question": "Can you list an individual who has performed with the Orckestra?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The Orckestra had as past member Paul Rutherford.",
+            "html": "dbpedia_5163_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What musical ensemble has Paul Rutherford played in?",
+            "html": "dbpedia_5163_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What musical group did Paul Rutherford play with?",
+            "html": "dbpedia_5163_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Name someone who was previously part of the Orckestra.",
+            "html": "dbpedia_5163_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5163_11.txt"
+        },
+        {
+            "file_id": "dbpedia_5163_30.txt"
+        },
+        {
+            "file_id": "dbpedia_5163_49.txt"
+        },
+        {
+            "file_id": "dbpedia_5163_50.txt"
+        },
+        {
+            "file_id": "dbpedia_5163_55.txt"
+        },
+        {
+            "file_id": "dbpedia_5163_72.txt"
+        },
+        {
+            "file_id": "dbpedia_5163_80.txt"
+        },
+        {
+            "file_id": "dbpedia_5163_9.txt"
+        },
+        {
+            "file_id": "dbpedia_5163_91.txt"
+        },
+        {
+            "file_id": "dbpedia_5163_95.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple \"The Orckestra had as past member Paul Rutherford\":\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: While it is mentioned that Paul Rutherford helped to organise and appeared in the Moving Left Revues at the Roundhouse in London, and was instrumental in arranging the antimonarchist People's Jubilee at Alexandra Palace, which involved the cooperative Orckestra, there is no mention of him being a past member of The Orckestra."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide information that supports the statement \"The Orckestra had as a past member Paul Rutherford.\" Specifically, the document at file_path `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5163/re-ranker-msmarco/55.txt` mentions:\n\n\"He helped to organise and appeared in the Moving Left Revues at the Roundhouse in London in 1976 and 1977, on behalf of the Communist Party of Great Britain. This led to the formation of the cooperative Orckestra with members of Mike Westbrook\u2019s band, the alternative rock group Henry Cow and the folk singer Henry Armstrong, which toured in France and Italy.\"\n\nAdditionally, Paul Rutherford is mentioned as a member of various ensembles, indicating his active involvement in musical groups during his career. Therefore, the information supports that Paul Rutherford was part of The Orckestra at some point in time."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The Orckestra had a past member Paul Rutherford is stated as incorrect in the text, which mentions that he helped to organise and appeared in the Moving Left Revues and was instrumental in arranging the antimonarchist People's Jubilee at Alexandra Palace.",
+            "category": 2
+        }
+    }
+}

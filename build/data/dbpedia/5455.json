@@ -1,0 +1,129 @@
+{
+    "subject": "resource/David_Parks_(politician)",
+    "predicate": "property/percentage",
+    "object": "34.67",
+    "human_readable": "David Parks got 34.67% of the vote.",
+    "questions": [
+        {
+            "score": 0.8898491859436035,
+            "question": "What percentage of the vote did David Parks receive?"
+        },
+        {
+            "score": 0.8148804306983948,
+            "question": "What does the percentage of 34.67% indicate about the vote?"
+        },
+        {
+            "score": 0.7859481573104858,
+            "question": "What might have influenced David Parks's vote percentage?"
+        },
+        {
+            "score": 0.7159824967384338,
+            "question": "How many votes did David Parks receive?"
+        },
+        {
+            "score": 0.6072633862495422,
+            "question": "Who is David Parks?"
+        },
+        {
+            "score": 0.5919771194458008,
+            "question": "Was David Parks successful in the election?"
+        },
+        {
+            "score": 0.5574519038200378,
+            "question": "Did David Parks win the election?"
+        },
+        {
+            "score": 0.12740710377693176,
+            "question": "Who were the other candidates in the election?"
+        },
+        {
+            "score": 0.12068847566843033,
+            "question": "What kind of election was this?"
+        },
+        {
+            "score": 0.07201974838972092,
+            "question": "Can you compare this result to previous elections?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=David Parks got 34.67% of the vote.",
+            "html": "dbpedia_5455_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What kind of election was this?",
+            "html": "dbpedia_5455_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who were the other candidates in the election?",
+            "html": "dbpedia_5455_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Did David Parks win the election?",
+            "html": "dbpedia_5455_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5455_15.txt"
+        },
+        {
+            "file_id": "dbpedia_5455_28.txt"
+        },
+        {
+            "file_id": "dbpedia_5455_32.txt"
+        },
+        {
+            "file_id": "dbpedia_5455_37.txt"
+        },
+        {
+            "file_id": "dbpedia_5455_59.txt"
+        },
+        {
+            "file_id": "dbpedia_5455_71.txt"
+        },
+        {
+            "file_id": "dbpedia_5455_78.txt"
+        },
+        {
+            "file_id": "dbpedia_5455_85.txt"
+        },
+        {
+            "file_id": "dbpedia_5455_86.txt"
+        },
+        {
+            "file_id": "dbpedia_5455_90.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n\n\nLet me know if you'd like to evaluate more triples! I'm ready."
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "To evaluate whether the information in the documents supports the triple, I will look for a mention of \"David Parks\" and a percentage value corresponding to the query.\n\nThe relevant sentence from file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5455/re-ranker-msmarco/88.txt is:\n\n\"With all 127 precincts reporting, Scow had 3,004 votes, or 33.7 percent, compared with Parks\u2019 2,913 votes, or 32.7 percent.\"\n\nThis sentence does mention David Parks and provides a percentage value (32.7%) for him, but it does not provide this exact percentage for Mary Beth Scow's winning margin or overall vote share in the query question.\n\nHowever, this sentence from file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5455/re-ranker-msmarco/88.txt is:\n\"Scow had 3,004 votes, or 33.7 percent, compared with Parks\u2019 2,913 votes, or 32.7 percent.\"\n\nIt does not mention the vote share of David Parks, it mentions that Mary Beth Scow got 34.0% and David Parks 32.7%.\n\nSo the triple \"David Parks got 34.67% of the vote\" is incorrect according to the documents.\n\nThe output should be:\n{'output': 'no'}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents do not provide any information about David Parks receiving 34.67% of the vote. The closest figure mentioned is that Mary Beth Scow received 34 percent of the votes, while David Parks got 33 percent in a five-way race for the Clark County Commission seat."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

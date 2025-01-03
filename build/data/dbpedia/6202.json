@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Nedor_Publishing",
+    "predicate": "property/imprints",
+    "object": "resource/Standard_Comics",
+    "human_readable": "Nedor Publishing has an imprint called Standard Comics.",
+    "questions": [
+        {
+            "score": 0.9596527814865112,
+            "question": "Does Nedor Publishing have a comic book imprint?"
+        },
+        {
+            "score": 0.869024395942688,
+            "question": "What is the relationship between Nedor Publishing and Standard Comics?"
+        },
+        {
+            "score": 0.8626185059547424,
+            "question": "Is Standard Comics a fictional imprint?"
+        },
+        {
+            "score": 0.8103172183036804,
+            "question": "Who owns the comic book imprint Standard Comics?"
+        },
+        {
+            "score": 0.8017863035202026,
+            "question": "Name an imprint owned by Nedor Publishing."
+        },
+        {
+            "score": 0.7799755334854126,
+            "question": "Is Standard Comics associated with a publishing house?"
+        },
+        {
+            "score": 0.7255986928939819,
+            "question": "What kind of material does Standard Comics publish?"
+        },
+        {
+            "score": 0.7039820551872253,
+            "question": "What is the name of the imprint owned by Nedor Publishing?"
+        },
+        {
+            "score": 0.62408447265625,
+            "question": "Does Standard Comics publish any other types of material besides comics?"
+        },
+        {
+            "score": 0.4778801500797272,
+            "question": "What type of company is Nedor Publishing?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Nedor Publishing has an imprint called Standard Comics.",
+            "html": "dbpedia_6202_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Standard Comics publish any other types of material besides comics?",
+            "html": "dbpedia_6202_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of the imprint owned by Nedor Publishing?",
+            "html": "dbpedia_6202_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What kind of material does Standard Comics publish?",
+            "html": "dbpedia_6202_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6202_118.txt"
+        },
+        {
+            "file_id": "dbpedia_6202_12.txt"
+        },
+        {
+            "file_id": "dbpedia_6202_125.txt"
+        },
+        {
+            "file_id": "dbpedia_6202_27.txt"
+        },
+        {
+            "file_id": "dbpedia_6202_28.txt"
+        },
+        {
+            "file_id": "dbpedia_6202_31.txt"
+        },
+        {
+            "file_id": "dbpedia_6202_35.txt"
+        },
+        {
+            "file_id": "dbpedia_6202_56.txt"
+        },
+        {
+            "file_id": "dbpedia_6202_87.txt"
+        },
+        {
+            "file_id": "dbpedia_6202_97.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe documents state that  Standard Comics was the parent company of Nedor Publishing, not the other way around. \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the provided context information, I can confirm that the statement \"Nedor Publishing has an imprint called Standard Comics\" is indeed supported by the documents.\n\nHere's the structured JSON response:\n\n```\n{\n  \"output\": \"yes\"\n}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents state that \"Standard[1] in turn was the parent company of two comic-book lines: Better Publications[2] and Nedor Publishing[3]\", which indicates a relationship between Nedor Publishing and Standard Comics. Therefore, the statement \"Nedor Publishing has an imprint called Standard Comics\" is supported by the provided context information."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {'output': 'yes'}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Multiple sources state Standard Comics was the parent company of Nedor Publishing, along with Better Publications.",
+            "category": -1
+        }
+    }
+}

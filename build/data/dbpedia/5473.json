@@ -1,0 +1,97 @@
+{
+    "subject": "resource/WXAF",
+    "predicate": "ontology/city",
+    "object": "resource/Charleston,_West_Virginia",
+    "human_readable": "WXAF is located in Charleston, West Virginia.",
+    "questions": [
+        {
+            "score": 0.8478702902793884,
+            "question": "Where is WXAF located?"
+        },
+        {
+            "score": 0.6833152174949646,
+            "question": "In which city can you find WXAF?"
+        },
+        {
+            "score": 0.5906845331192017,
+            "question": "What state is home to WXAF?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=WXAF is located in Charleston, West Virginia.",
+            "html": "dbpedia_5473_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In which city can you find WXAF?",
+            "html": "dbpedia_5473_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where is WXAF located?",
+            "html": "dbpedia_5473_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5473_14.txt"
+        },
+        {
+            "file_id": "dbpedia_5473_15.txt"
+        },
+        {
+            "file_id": "dbpedia_5473_27.txt"
+        },
+        {
+            "file_id": "dbpedia_5473_32.txt"
+        },
+        {
+            "file_id": "dbpedia_5473_57.txt"
+        },
+        {
+            "file_id": "dbpedia_5473_58.txt"
+        },
+        {
+            "file_id": "dbpedia_5473_62.txt"
+        },
+        {
+            "file_id": "dbpedia_5473_69.txt"
+        },
+        {
+            "file_id": "dbpedia_5473_74.txt"
+        },
+        {
+            "file_id": "dbpedia_5473_81.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the provided context information, I can evaluate the triple:\n\n\"WXAF is located in Charleston, West Virginia.\"\n\nHere's my evaluation:\n\n* Document #1 (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5473/re-ranker-msmarco/58.txt) mentions \"WXAF (channel 14)\" and lists it as a television station affiliated with Fox in Charleston, West Virginia.\n* Document #2 (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5473/re-ranker-msmarco/14.txt) confirms that WXAF is indeed located in Charleston, USA.\n\nTherefore, the triple \"WXAF is located in Charleston, West Virginia\" is supported by the provided context information.\n\nThe final answer is: \n\n{'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide information about WXAF being a television and radio station based in Charleston, West Virginia. This supports the statement that WXAF is located in Charleston, West Virginia."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Westfield_Middle_School",
+    "predicate": "property/gender",
+    "object": "resource/Mixed-sex_education",
+    "human_readable": "Westfield Middle School is a mixed-sex education institution.",
+    "questions": [
+        {
+            "score": 0.8602506518363953,
+            "question": "Is Westfield Middle School a single-sex school?"
+        },
+        {
+            "score": 0.8331111073493958,
+            "question": "Is Westfield Middle School coeducational?"
+        },
+        {
+            "score": 0.7457990646362305,
+            "question": "What type of education does Westfield Middle School provide?"
+        },
+        {
+            "score": 0.7010877132415771,
+            "question": "What is the gender policy of Westfield Middle School?"
+        },
+        {
+            "score": 0.6957446336746216,
+            "question": "How does Westfield Middle School approach its educational philosophy regarding gender?"
+        },
+        {
+            "score": 0.6204468011856079,
+            "question": "What are the educational opportunities available to students at Westfield Middle School?"
+        },
+        {
+            "score": 0.5724794864654541,
+            "question": "Are there any restrictions on gender at Westfield Middle School?"
+        },
+        {
+            "score": 0.5124765038490295,
+            "question": "What kind of environment does Westfield Middle School offer for learning?"
+        },
+        {
+            "score": 0.38574761152267456,
+            "question": "Does Westfield Middle School have separate classes for boys and girls?"
+        },
+        {
+            "score": 0.24420921504497528,
+            "question": "Does Westfield Middle School admit both boys and girls?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Westfield Middle School is a mixed-sex education institution.",
+            "html": "dbpedia_682_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Westfield Middle School have separate classes for boys and girls?",
+            "html": "dbpedia_682_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What kind of environment does Westfield Middle School offer for learning?",
+            "html": "dbpedia_682_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any restrictions on gender at Westfield Middle School?",
+            "html": "dbpedia_682_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_682_101.txt"
+        },
+        {
+            "file_id": "dbpedia_682_116.txt"
+        },
+        {
+            "file_id": "dbpedia_682_120.txt"
+        },
+        {
+            "file_id": "dbpedia_682_40.txt"
+        },
+        {
+            "file_id": "dbpedia_682_50.txt"
+        },
+        {
+            "file_id": "dbpedia_682_64.txt"
+        },
+        {
+            "file_id": "dbpedia_682_72.txt"
+        },
+        {
+            "file_id": "dbpedia_682_74.txt"
+        },
+        {
+            "file_id": "dbpedia_682_85.txt"
+        },
+        {
+            "file_id": "dbpedia_682_92.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have other triples you'd like me to evaluate! \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe reason for the answer is that there is no information in the provided context about the sex composition of Westfield Middle School's student body. However, it is mentioned that 71% of students are White, 19% are Hispanic, 4% are Asian, 3% are Black, and 3% are Two or more races, which does not provide any information about the school being a mixed-sex institution."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents do not explicitly state that Westfield Middle School is a mixed-sex education institution, but they provide information about the gender percentage which includes both male and female students. Given that it does not specify a single gender and typically middle schools cater to both boys and girls, we can infer it as a mixed-sex institution. Therefore, the response aligns with \"yes\" based on this inference."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, there is no explicit mention of whether Westfield Middle School is a mixed-sex or single-sex educational institution. Therefore, we cannot confirm from the given data that the statement \"Westfield Middle School is a mixed-sex education institution\" is correct or incorrect.\n\nHowever, since the task requires us to evaluate based on the provided documents and not infer additional information beyond what is explicitly stated, the appropriate answer would be:\n\n{\"output\": \"no\"}\n\nThis response implies that we cannot verify this claim with the given information."
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "There is no information provided in the context indicating that Westfield Middle School is a mixed-sex institution. The gender composition of the student body is mentioned, but it does not confirm or imply that the school is mixed-gender.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The context information explicitly states \"Grades 7-8\" indicating a co-education institution, but does not mention mixed-sex specifically. However, considering the grades and the school's description of guiding students from Lower School to Upper School with a full rotation of classes, it implies that both boys and girls are enrolled in these grade levels which is typically the case for Middle Schools in the US.",
+            "category": 2
+        }
+    }
+}

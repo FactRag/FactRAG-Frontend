@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Mike_Simpson",
+    "predicate": "property/placeOfBirth",
+    "object": "resource/Idaho",
+    "human_readable": "Mike Simpson was born in Idaho.",
+    "questions": [
+        {
+            "score": 0.8936325907707214,
+            "question": "Is Mike Simpson originally from Idaho?"
+        },
+        {
+            "score": 0.8752562403678894,
+            "question": "Where was Mike Simpson born?"
+        },
+        {
+            "score": 0.6216051578521729,
+            "question": "Does Mike Simpson still live in Idaho?"
+        },
+        {
+            "score": 0.17787298560142517,
+            "question": "Can you name a famous person from Idaho?"
+        },
+        {
+            "score": 0.17730046808719635,
+            "question": "What state is Idaho known for?"
+        },
+        {
+            "score": 0.07902266830205917,
+            "question": "What is Idaho's nickname?"
+        },
+        {
+            "score": 0.06461506336927414,
+            "question": "What are some popular attractions in Idaho?"
+        },
+        {
+            "score": 0.06452272087335587,
+            "question": "Is Idaho a mountainous state?"
+        },
+        {
+            "score": 0.06422644853591919,
+            "question": "What is the capital of Idaho?"
+        },
+        {
+            "score": 0.05044320598244667,
+            "question": "What is the climate like in Idaho?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Mike Simpson was born in Idaho.",
+            "html": "dbpedia_3340_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the capital of Idaho?",
+            "html": "dbpedia_3340_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Idaho a mountainous state?",
+            "html": "dbpedia_3340_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some popular attractions in Idaho?",
+            "html": "dbpedia_3340_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3340_12.txt"
+        },
+        {
+            "file_id": "dbpedia_3340_23.txt"
+        },
+        {
+            "file_id": "dbpedia_3340_24.txt"
+        },
+        {
+            "file_id": "dbpedia_3340_25.txt"
+        },
+        {
+            "file_id": "dbpedia_3340_28.txt"
+        },
+        {
+            "file_id": "dbpedia_3340_42.txt"
+        },
+        {
+            "file_id": "dbpedia_3340_52.txt"
+        },
+        {
+            "file_id": "dbpedia_3340_61.txt"
+        },
+        {
+            "file_id": "dbpedia_3340_67.txt"
+        },
+        {
+            "file_id": "dbpedia_3340_90.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the provided context information, I can evaluate whether the statement \"Mike Simpson was born in Idaho\" is supported by the documents.\n\nHere's my evaluation:\n\nThe document at file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3340/re-ranker-msmarco/12.txt states:\n\"An Idaho native, Mike Simpson was born in Burley and raised in Blackfoot.\"\n\nSimilarly, the documents at file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3340/re-ranker-msmarco/43.txt and other related files also mention that Mike Simpson was born in Burley, Idaho.\n\nTherefore, I conclude that the statement \"Mike Simpson was born in Idaho\" is indeed supported by the documents.\n\nThe final answer is:\n{'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents mention that Mike Simpson is an Idaho native, born in Burley, Idaho. This supports the statement that Mike Simpson was born in Idaho."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

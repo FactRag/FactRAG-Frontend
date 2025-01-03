@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Ali_Sokoli",
+    "predicate": "ontology/birthYear",
+    "object": "1921",
+    "human_readable": "Ali Sokoli was born in 1921.",
+    "questions": [
+        {
+            "score": 0.8422574400901794,
+            "question": "When was Ali Sokoli born?"
+        },
+        {
+            "score": 0.7838639616966248,
+            "question": "In what century was Ali Sokoli born?"
+        },
+        {
+            "score": 0.6542356610298157,
+            "question": "What year marks Ali Sokoli's birth?"
+        },
+        {
+            "score": 0.6178791522979736,
+            "question": "If Ali Sokoli was born in the early 20th century, what technological advancements might have influenced his life?"
+        },
+        {
+            "score": 0.5474494099617004,
+            "question": "Is Ali Sokoli older or younger than someone born in 1950?"
+        },
+        {
+            "score": 0.5463575124740601,
+            "question": "What historical events might have been happening during Ali Sokoli's birth year?"
+        },
+        {
+            "score": 0.45861390233039856,
+            "question": "Can you think of any famous people who were also born in 1921?"
+        },
+        {
+            "score": 0.43498215079307556,
+            "question": "How might the world be different if Ali Sokoli hadn't been born?"
+        },
+        {
+            "score": 0.39899811148643494,
+            "question": "How old would Ali Sokoli be today?"
+        },
+        {
+            "score": 0.35738351941108704,
+            "question": "What are some possible hobbies or interests Ali Sokoli might have had based on his birth year?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Ali Sokoli was born in 1921.",
+            "html": "dbpedia_558_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How old would Ali Sokoli be today?",
+            "html": "dbpedia_558_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How might the world be different if Ali Sokoli hadn't been born?",
+            "html": "dbpedia_558_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you think of any famous people who were also born in 1921?",
+            "html": "dbpedia_558_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_558_16.txt"
+        },
+        {
+            "file_id": "dbpedia_558_2.txt"
+        },
+        {
+            "file_id": "dbpedia_558_21.txt"
+        },
+        {
+            "file_id": "dbpedia_558_24.txt"
+        },
+        {
+            "file_id": "dbpedia_558_25.txt"
+        },
+        {
+            "file_id": "dbpedia_558_29.txt"
+        },
+        {
+            "file_id": "dbpedia_558_35.txt"
+        },
+        {
+            "file_id": "dbpedia_558_54.txt"
+        },
+        {
+            "file_id": "dbpedia_558_62.txt"
+        },
+        {
+            "file_id": "dbpedia_558_63.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the provided context information, here is the evaluation of the triple:\n\n{\n  \"output\": \"yes\"\n}\n\nExplanation: According to the documents, particularly the one at `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_558/re-ranker-msmarco/24.txt`, Ali Sokoli was indeed born into an agricultural family and his exact date of birth is stated as May 8 in the year 1921."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents state that Ali Sokoli was born on May 8, 1921. Therefore, the statement that he was born in 1921 is correct but does not match the exact date provided in the context. Since the query asks for a specific year of birth (1921) without specifying the month and day, it cannot be considered fully supported by the documents as they provide more precise information about his birthdate."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "qwen2.5": {
+            "reason": "The context explicitly states that Ali Sokoli was born on May 8, 1921.",
+            "category": 2
+        }
+    }
+}

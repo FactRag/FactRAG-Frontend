@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Tavares_(group)",
+    "predicate": "ontology/hometown",
+    "object": "resource/United_States",
+    "human_readable": "Tavares' hometown is United States.",
+    "questions": [
+        {
+            "score": 0.8612214922904968,
+            "question": "Is Tavares originally from the United States?"
+        },
+        {
+            "score": 0.8450865745544434,
+            "question": "What country is Tavares' hometown in?"
+        },
+        {
+            "score": 0.8309939503669739,
+            "question": "What is the name of Tavares' hometown?"
+        },
+        {
+            "score": 0.7395002841949463,
+            "question": "Does Tavares still live in their hometown?"
+        },
+        {
+            "score": 0.7224214673042297,
+            "question": "Are there any famous people from Tavares' hometown?"
+        },
+        {
+            "score": 0.7018402814865112,
+            "question": "Has Tavares ever spoken about living in the United States?"
+        },
+        {
+            "score": 0.6843868494033813,
+            "question": "What are some popular places to visit in Tavares' hometown?"
+        },
+        {
+            "score": 0.6166849136352539,
+            "question": "What are some things that might be unique to Tavares' hometown?"
+        },
+        {
+            "score": 0.6144015789031982,
+            "question": "Where is Tavares from?"
+        },
+        {
+            "score": 0.22260704636573792,
+            "question": "Can you tell me more about Tavares' upbringing?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Tavares' hometown is United States.",
+            "html": "dbpedia_8877_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where is Tavares from?",
+            "html": "dbpedia_8877_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some things that might be unique to Tavares' hometown?",
+            "html": "dbpedia_8877_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some popular places to visit in Tavares' hometown?",
+            "html": "dbpedia_8877_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8877_10.txt"
+        },
+        {
+            "file_id": "dbpedia_8877_12.txt"
+        },
+        {
+            "file_id": "dbpedia_8877_21.txt"
+        },
+        {
+            "file_id": "dbpedia_8877_35.txt"
+        },
+        {
+            "file_id": "dbpedia_8877_39.txt"
+        },
+        {
+            "file_id": "dbpedia_8877_60.txt"
+        },
+        {
+            "file_id": "dbpedia_8877_74.txt"
+        },
+        {
+            "file_id": "dbpedia_8877_76.txt"
+        },
+        {
+            "file_id": "dbpedia_8877_77.txt"
+        },
+        {
+            "file_id": "dbpedia_8877_78.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n\n\nThe provided text states that Tavares chose to sign with his hometown team in Toronto, Canada.  There is no mention of the United States as his hometown. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the answer:\n\n{\n  \"output\": \"no\"\n}\n\nExplanation: According to the documents, Tavares chose to sign a seven-year contract with his hometown team in Toronto, Canada. This suggests that his hometown is not the United States, but rather Canada."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe context information mentions that Tavares signed a seven-year contract with his hometown team, which implies he considers the United States as his hometown. Additionally, other details such as his birthplace and tax residency discussions further support this conclusion."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Tavares was born in Panorama City, Los Angeles, California which is a part of the United States. Therefore, his hometown is the United States.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Tavares chose to sign with his hometown team the Toronto Maple Leafs. The text states he received more lucrative offers from teams like the New York Islanders and San Jose Sharks but chose the Leafs. This suggests his hometown is in Canada, not the United States.",
+            "category": 1
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because Tavares was born in Panorama City, Los Angeles, California, which suggests he has a strong connection to the United States.",
+            "category": 2
+        }
+    }
+}

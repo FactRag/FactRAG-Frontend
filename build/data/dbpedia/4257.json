@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Bob_Hoskins",
+    "predicate": "ontology/activeYearsStartYear",
+    "object": "1969",
+    "human_readable": "Bob Hoskins started his acting career in 1969.",
+    "questions": [
+        {
+            "score": 0.9543524384498596,
+            "question": "When did Bob Hoskins begin his acting career?"
+        },
+        {
+            "score": 0.9102784395217896,
+            "question": "What decade did Bob Hoskins start his acting career in?"
+        },
+        {
+            "score": 0.6607345342636108,
+            "question": "What was Bob Hoskins' profession?"
+        },
+        {
+            "score": 0.48070505261421204,
+            "question": "Did Bob Hoskins receive any awards for his acting?"
+        },
+        {
+            "score": 0.4240463078022003,
+            "question": "Is Bob Hoskins known for any particular roles or films?"
+        },
+        {
+            "score": 0.384967565536499,
+            "question": "Was Bob Hoskins involved in theatre or television as well as film?"
+        },
+        {
+            "score": 0.36540186405181885,
+            "question": "Were there any notable collaborations or friendships that Bob Hoskins had with other actors or filmmakers?"
+        },
+        {
+            "score": 0.3606148362159729,
+            "question": "What are some of the most memorable moments or performances from Bob Hoskins' career?"
+        },
+        {
+            "score": 0.24172604084014893,
+            "question": "Is there a specific genre of film that Bob Hoskins was particularly known for?"
+        },
+        {
+            "score": 0.18920420110225677,
+            "question": "What kind of impact did Bob Hoskins have on the film industry?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Bob Hoskins started his acting career in 1969.",
+            "html": "dbpedia_4257_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there a specific genre of film that Bob Hoskins was particularly known for?",
+            "html": "dbpedia_4257_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some of the most memorable moments or performances from Bob Hoskins' career?",
+            "html": "dbpedia_4257_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Were there any notable collaborations or friendships that Bob Hoskins had with other actors or filmmakers?",
+            "html": "dbpedia_4257_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4257_117.txt"
+        },
+        {
+            "file_id": "dbpedia_4257_14.txt"
+        },
+        {
+            "file_id": "dbpedia_4257_25.txt"
+        },
+        {
+            "file_id": "dbpedia_4257_44.txt"
+        },
+        {
+            "file_id": "dbpedia_4257_45.txt"
+        },
+        {
+            "file_id": "dbpedia_4257_56.txt"
+        },
+        {
+            "file_id": "dbpedia_4257_69.txt"
+        },
+        {
+            "file_id": "dbpedia_4257_73.txt"
+        },
+        {
+            "file_id": "dbpedia_4257_76.txt"
+        },
+        {
+            "file_id": "dbpedia_4257_99.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the context information provided, here is my evaluation of the triple:\n\n`{'output': 'yes'}`\n\nThis is because there are multiple documents that mention Bob Hoskins starting his acting career in 1969. For example, document 29.txt states: \"Bob Hoskins left school at the age of 15 and took a series of menial jobs before taking up acting at the Unity Theater in 1969.\" Similarly, document 63.txt mentions that \"While Hoskins appeared little on stage in his later career, the Suffolk-born actor began his career at the Unity Theatre in 1969.\". Therefore, the information in the documents supports this triple."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents clearly state that \"Hoskins started his acting career back in 1969,\" which supports the statement \"Bob Hoskins started his acting career in 1969.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Bob Hoskins started his acting career in 1969 according to the context, but he died in 2014 at the age of 71, which indicates that he was active as an actor for at least 45 years. Since a person's entire life span is approximately 71 years (the given age at his death), it is mathematically impossible for him to have started his acting career when he was already 15 years old in 1969, as he left school at the age of 15.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Multiple sources state he began his career at the Unity Theater in 1969.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "Bob Hoskins left school at the age of 15 and took a series of menial jobs before taking up acting, implying that he started his acting career after 1957.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context explicitly states that Bob Hoskins started his acting career back in 1969 with an audacious beginning at the Unity Theatre Bar, not through formal schooling or professional training.",
+            "category": 2
+        }
+    }
+}

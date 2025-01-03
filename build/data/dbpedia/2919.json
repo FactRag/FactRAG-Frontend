@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Cubesat_Space_Protocol",
+    "predicate": "ontology/abstract",
+    "object": "Cubesat Space Protocol (CSP) is a small network-layer delivery protocol designed for Cubesats. The idea was developed by a group of students from Aalborg University in 2008, and further developed for the AAUSAT3 Cubesat mission successfully launched in 2013. The protocol is based on a 32-bit header containing both network and transport layer information. Its implementation is designed for, but not limited to, embedded systems such as the 8-bit AVR microprocessor and the 32-bit ARM and AVR from Atmel. The implementation is written in C and is currently ported to run on FreeRTOS and POSIX and pthreads-based operating systems such as Linux. Support for Mac OS X and Microsoft Windows will be available in version 1.1. The three-letter acronym CSP was originally an abbreviation for CAN Space Protocol because the first MAC-layer driver was written for CAN-bus. The physical layer has since been extended to include several other technologies, and the name was therefore extended to the more general Cubesat Space Protocol without changing the abbreviation.The protocol and the implementation is actively maintained by the students at Aalborg University and the spin-off company GomSpace. The source code is available under an LGPL license and hosted on GitHub.",
+    "human_readable": "The abstract of the Cubesat Space Protocol states that it is a small network-layer delivery protocol designed for Cubesats.",
+    "questions": [
+        {
+            "score": 0.8989133238792419,
+            "question": "At what network layer does the Cubesat Space Protocol operate?"
+        },
+        {
+            "score": 0.826684296131134,
+            "question": "What type of protocol is the Cubesat Space Protocol?"
+        },
+        {
+            "score": 0.8079699277877808,
+            "question": "What is the main purpose of the Cubesat Space Protocol?"
+        },
+        {
+            "score": 0.7760404944419861,
+            "question": "What kind of satellites is the Cubesat Space Protocol designed for?"
+        },
+        {
+            "score": 0.7077404260635376,
+            "question": "Can you give an example of a task that the Cubesat Space Protocol might be used for?"
+        },
+        {
+            "score": 0.7033343315124512,
+            "question": "What are the potential benefits of using the Cubesat Space Protocol?"
+        },
+        {
+            "score": 0.6561492085456848,
+            "question": "How does the Cubesat Space Protocol differ from other space communication protocols?"
+        },
+        {
+            "score": 0.6380628347396851,
+            "question": "Is the Cubesat Space Protocol a high-level or low-level protocol?"
+        },
+        {
+            "score": 0.6211105585098267,
+            "question": "What are some challenges that might need to be addressed when designing a protocol for Cubesats?"
+        },
+        {
+            "score": 0.5942149758338928,
+            "question": "Who might be interested in using or developing the Cubesat Space Protocol?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The abstract of the Cubesat Space Protocol states that it is a small network-layer delivery protocol designed for Cubesats.",
+            "html": "dbpedia_2919_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some challenges that might need to be addressed when designing a protocol for Cubesats?",
+            "html": "dbpedia_2919_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is the Cubesat Space Protocol a high-level or low-level protocol?",
+            "html": "dbpedia_2919_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How does the Cubesat Space Protocol differ from other space communication protocols?",
+            "html": "dbpedia_2919_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2919_11.txt"
+        },
+        {
+            "file_id": "dbpedia_2919_14.txt"
+        },
+        {
+            "file_id": "dbpedia_2919_17.txt"
+        },
+        {
+            "file_id": "dbpedia_2919_29.txt"
+        },
+        {
+            "file_id": "dbpedia_2919_32.txt"
+        },
+        {
+            "file_id": "dbpedia_2919_35.txt"
+        },
+        {
+            "file_id": "dbpedia_2919_50.txt"
+        },
+        {
+            "file_id": "dbpedia_2919_53.txt"
+        },
+        {
+            "file_id": "dbpedia_2919_54.txt"
+        },
+        {
+            "file_id": "dbpedia_2919_68.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, here's the evaluation:\n\n`{ \"output\": \"no\" }`\n\nExplanation:\nWhile there are multiple documents describing the Cubesat Space Protocol (CSP), none of them explicitly state that it is a small network-layer delivery protocol designed for Cubesats. The first document mentions a 32-bit header containing transport and network-layer information, but it doesn't specify its purpose or scope. The subsequent documents describe CSP as a protocol stack written in C, with features like a transport protocol, routing protocol, and MAC-layer interfaces, but they don't explicitly mention network-layer delivery."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe abstract of the Cubesat Space Protocol (CSP) as described in the documents indeed states that it is a small network-layer delivery protocol designed for Cubesats, making the given statement correct according to the provided context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The claim is wrong because the text actually states that \"Cubesat Space Protocol (CSP) is a small protocol stack written in C. CSP is designed to ease communication between distributed embedded systems in smaller networks, such as Cubesats.\" This implies that CSP is not just a network-layer delivery protocol, but rather a full protocol stack including transport and routing protocols, making the initial claim incorrect.",
+            "category": 2
+        }
+    }
+}

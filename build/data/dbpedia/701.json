@@ -1,0 +1,146 @@
+{
+    "subject": "resource/'65_Love_Affair",
+    "predicate": "ontology/previousWork",
+    "object": "resource/Cool_Night_(song)",
+    "human_readable": "The previous work of '65 Love Affair is Cool Night (song).",
+    "questions": [
+        {
+            "score": 0.9790701866149902,
+            "question": "What was the previous work to '65 Love Affair is Cool Night'?"
+        },
+        {
+            "score": 0.9626575112342834,
+            "question": "Is '65 Love Affair is Cool Night' a song?"
+        },
+        {
+            "score": 0.8257719874382019,
+            "question": "When was '65 Love Affair is Cool Night' released?"
+        },
+        {
+            "score": 0.795768141746521,
+            "question": "Who are the featured artists on '65 Love Affair is Cool Night'?"
+        },
+        {
+            "score": 0.7726725339889526,
+            "question": "Can you name another song by the same artist as '65 Love Affair is Cool Night'?"
+        },
+        {
+            "score": 0.7510213851928711,
+            "question": "Where can I listen to '65 Love Affair is Cool Night'?"
+        },
+        {
+            "score": 0.7401189804077148,
+            "question": "What is the overall theme of '65 Love Affair is Cool Night'?"
+        },
+        {
+            "score": 0.7260955572128296,
+            "question": "What instruments are used in '65 Love Affair is Cool Night'?"
+        },
+        {
+            "score": 0.6924970149993896,
+            "question": "What genre might '65 Love Affair is Cool Night' belong to?"
+        },
+        {
+            "score": 0.5935820937156677,
+            "question": "Has '65 Love Affair is Cool Night' been used in any movies or TV shows?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The previous work of '65 Love Affair is Cool Night (song).",
+            "html": "dbpedia_701_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What genre might '65 Love Affair is Cool Night' belong to?",
+            "html": "dbpedia_701_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What instruments are used in '65 Love Affair is Cool Night'?",
+            "html": "dbpedia_701_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the overall theme of '65 Love Affair is Cool Night'?",
+            "html": "dbpedia_701_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_701_118.txt"
+        },
+        {
+            "file_id": "dbpedia_701_122.txt"
+        },
+        {
+            "file_id": "dbpedia_701_17.txt"
+        },
+        {
+            "file_id": "dbpedia_701_23.txt"
+        },
+        {
+            "file_id": "dbpedia_701_39.txt"
+        },
+        {
+            "file_id": "dbpedia_701_64.txt"
+        },
+        {
+            "file_id": "dbpedia_701_78.txt"
+        },
+        {
+            "file_id": "dbpedia_701_79.txt"
+        },
+        {
+            "file_id": "dbpedia_701_8.txt"
+        },
+        {
+            "file_id": "dbpedia_701_96.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "{\n  \"output\": \"yes\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents state that \"'65 Love Affair' was the second single from the album 'Cool Night'.\" This supports the assertion that the previous work of \"'65 Love Affair'\" is indeed the song \"Cool Night\"."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Cool Night is a song, not the previous work of '65 Love Affair. '65 Love Affair was preceded by Cool Night as a single from Paul Davis's album Cool Night.",
+            "category": 3
+        },
+        "gemma2": {
+            "reason": "Several passages state that \"'65 Love Affair\" was released as a single *after* \"Cool Night\" dropped off the charts.",
+            "category": 3
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because \"Cool Night\" was the first single from the album of the same name, which was released before \"'65 Love Affair\". Therefore, \"'65 Love Affair\" cannot be considered as the previous work of \"Cool Night\".",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "\"'65 Love Affair\" was the second single from the album \"Cool Night,\" not a previous work of it. Cool Night was the album that contained both \"Cool Night\" and \"\u201965 Love Affair.\"",
+            "category": 3
+        }
+    }
+}

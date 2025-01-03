@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Giluyeh",
+    "predicate": "property/officialName",
+    "object": "Giluyeh",
+    "human_readable": "The official name of Giluyeh is Giluyeh.",
+    "questions": [
+        {
+            "score": 0.9816790223121643,
+            "question": "What is the official name of Giluyeh?"
+        },
+        {
+            "score": 0.9673923254013062,
+            "question": "Does Giluyeh have an official name?"
+        },
+        {
+            "score": 0.9652824997901917,
+            "question": "Is 'Giluyeh' the official name of a place?"
+        },
+        {
+            "score": 0.9325072765350342,
+            "question": "How is Giluyeh officially known?"
+        },
+        {
+            "score": 0.9094565510749817,
+            "question": "Is there a specific name that should be used for Giluyeh in official contexts?"
+        },
+        {
+            "score": 0.9088094234466553,
+            "question": "If someone wanted to use the official name of Giluyeh, what should they say?"
+        },
+        {
+            "score": 0.8844218850135803,
+            "question": "What is the proper name for Giluyeh?"
+        },
+        {
+            "score": 0.7749918699264526,
+            "question": "What name is most accurate when referring to Giluyeh formally?"
+        },
+        {
+            "score": 0.7041263580322266,
+            "question": "What is another way to refer to Giluyeh?"
+        },
+        {
+            "score": 0.7018448114395142,
+            "question": "Can 'Giluyeh' be used as a formal name?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The official name of Giluyeh is Giluyeh.",
+            "html": "dbpedia_1794_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is another way to refer to Giluyeh?",
+            "html": "dbpedia_1794_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What name is most accurate when referring to Giluyeh formally?",
+            "html": "dbpedia_1794_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the proper name for Giluyeh?",
+            "html": "dbpedia_1794_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1794_11.txt"
+        },
+        {
+            "file_id": "dbpedia_1794_12.txt"
+        },
+        {
+            "file_id": "dbpedia_1794_13.txt"
+        },
+        {
+            "file_id": "dbpedia_1794_14.txt"
+        },
+        {
+            "file_id": "dbpedia_1794_17.txt"
+        },
+        {
+            "file_id": "dbpedia_1794_3.txt"
+        },
+        {
+            "file_id": "dbpedia_1794_32.txt"
+        },
+        {
+            "file_id": "dbpedia_1794_36.txt"
+        },
+        {
+            "file_id": "dbpedia_1794_5.txt"
+        },
+        {
+            "file_id": "dbpedia_1794_6.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'} \n\n\nLet me know if you have any other queries! \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, I will evaluate whether the triple \"The official name of Giluyeh is Giluyeh\" is supported by the documents.\n\nAfter analyzing the documents, I found that:\n\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1794/re-ranker-msmarco/24.txt, there is a mention of \"Bovir Ahmadi and KohkiluyehIR05496,73914,261Yasuj\" which seems to refer to a province in Iran. However, I did not find any information about a place called \"Giluyeh\".\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1794/re-ranker-msmarco/20.txt and 24.txt, there are mentions of provinces in Iran with names like Kermanshah, but not Giluyeh.\n\nTherefore, based on the information provided, I conclude that:\n\n`{ \"output\": \"no\" }`"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: The context information does not contain any relevant details about Giluyeh or its official name, thus the statement \"The official name of Giluyeh is Giluyeh\" cannot be supported by the provided documents."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nThe provided context does not mention the official name or any specific naming details for a place called \"Giluyeh\". Therefore, based on the given information, we cannot confirm that the official name of some place referred to as \"Giluyeh\" is indeed Giluyeh. The document mentions \"Kohgiluyeh and Buyer Ahmad\", but this does not match the query's specific naming claim for \"Giluyeh\"."
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The official name of Giluyeh has been changed to Kohgiluyeh.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information does not mention any official name change for Giluyeh to Giluyeh, and the provided table of provinces lists Gilan as a province without any name alteration.",
+            "category": 2
+        }
+    }
+}

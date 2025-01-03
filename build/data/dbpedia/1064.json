@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Punjabi_Braille",
+    "predicate": "property/fam",
+    "object": "resource/Braille",
+    "human_readable": "Punjabi Braille is a family of.",
+    "questions": [
+        {
+            "score": 0.8560099601745605,
+            "question": "To what category does Punjabi Braille belong?"
+        },
+        {
+            "score": 0.681492805480957,
+            "question": "Who developed Punjabi Braille?"
+        },
+        {
+            "score": 0.6729298830032349,
+            "question": "Can you provide examples of other braille families?"
+        },
+        {
+            "score": 0.6414269804954529,
+            "question": "Is Punjabi Braille a standalone system or part of a larger group?"
+        },
+        {
+            "score": 0.6115989685058594,
+            "question": "What type of system is Punjabi Braille?"
+        },
+        {
+            "score": 0.495798796415329,
+            "question": "What is the relationship between Punjabi Braille and other braille systems?"
+        },
+        {
+            "score": 0.4942929446697235,
+            "question": "How is Punjabi Braille structured?"
+        },
+        {
+            "score": 0.4721526801586151,
+            "question": "Are there any variations within the Punjabi Braille system?"
+        },
+        {
+            "score": 0.45662716031074524,
+            "question": "What purpose does Punjabi Braille serve?"
+        },
+        {
+            "score": 0.404914528131485,
+            "question": "When was Punjabi Braille created?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Punjabi Braille is a family of.",
+            "html": "dbpedia_1064_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What purpose does Punjabi Braille serve?",
+            "html": "dbpedia_1064_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any variations within the Punjabi Braille system?",
+            "html": "dbpedia_1064_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How is Punjabi Braille structured?",
+            "html": "dbpedia_1064_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1064_17.txt"
+        },
+        {
+            "file_id": "dbpedia_1064_18.txt"
+        },
+        {
+            "file_id": "dbpedia_1064_30.txt"
+        },
+        {
+            "file_id": "dbpedia_1064_35.txt"
+        },
+        {
+            "file_id": "dbpedia_1064_36.txt"
+        },
+        {
+            "file_id": "dbpedia_1064_6.txt"
+        },
+        {
+            "file_id": "dbpedia_1064_66.txt"
+        },
+        {
+            "file_id": "dbpedia_1064_71.txt"
+        },
+        {
+            "file_id": "dbpedia_1064_76.txt"
+        },
+        {
+            "file_id": "dbpedia_1064_86.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the provided context information, I will evaluate whether the information supports the triple \"Punjabi Braille is a family of.\"\n\nAfter analyzing the documents, I found that:\n\n* Bharati Braille Standard is mentioned as a unified braille standard for Indian languages, and it includes Punjabi Braille.\n* The text states that \"All major Indian languages can be written using Bharati braille.\"\n* It also mentions that Bharati Braille has been adopted by several countries, including India.\n\nTherefore, the information in the documents supports the triple:\n\n{ \"output\": \"yes\" }"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe documents do not provide any information that would support the statement \"Punjabi Braille is a family of.\" The texts discuss specific details about Punjabi Braille and its relation to other braille standards, but they do not describe it as part of a 'family' in the sense implied by the query."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided documents, there isn't any information that suggests \"Punjabi Braille\" is a family of something. Instead, the documents indicate that Punjabi Braille is part of the Bharati braille standard and is used specifically for writing Punjabi in India.\n\nSo, the correct response to whether the statement \"Punjabi Braille is a family of.\" is supported by the information given would be:\n\n```json\n{\"output\": \"no\"}\n```\n\nThe term \"family\" does not accurately describe what the documents present about Punjabi Braille. It is presented as an alphabet or script used for writing in a specific language (Punjabi) rather than being described as part of a family."
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "It states Punjabi Braille is a *family*, implying multiple, distinct braille systems under one umbrella. The provided text describes Punjabi Braille as a single system based on the Bharati Braille standard.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Punjabi Braille is a specific braille alphabet for the Punjabi language, not part of a family of braille scripts. It conforms to the Bharati braille standard but is distinct and designed specifically for writing Punjabi, rather than being a family or group of related braille scripts.",
+            "category": 2
+        }
+    }
+}

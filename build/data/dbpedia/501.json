@@ -1,0 +1,142 @@
+{
+    "subject": "resource/The_Featherstones",
+    "predicate": "ontology/hometown",
+    "object": "resource/United_States",
+    "human_readable": "The hometown of The Featherstones is United States.",
+    "questions": [
+        {
+            "score": 0.9217797517776489,
+            "question": "Where is The Featherstones' hometown?"
+        },
+        {
+            "score": 0.9119129776954651,
+            "question": "Is the United States where The Featherstones reside?"
+        },
+        {
+            "score": 0.8087355494499207,
+            "question": "The Featherstones are American, right?"
+        },
+        {
+            "score": 0.8060811161994934,
+            "question": "What is the hometown of The Featherstones family?"
+        },
+        {
+            "score": 0.7149760723114014,
+            "question": "Is The Featherstones family originally from the United States?"
+        },
+        {
+            "score": 0.3977431058883667,
+            "question": "What country is The Featherstones from?"
+        },
+        {
+            "score": 0.3955415189266205,
+            "question": "In what nation did The Featherstones grow up?"
+        },
+        {
+            "score": 0.31486302614212036,
+            "question": "What is The Featherstones' nationality?"
+        },
+        {
+            "score": 0.26960909366607666,
+            "question": "Where do The Featherstones call home?"
+        },
+        {
+            "score": 0.2551541030406952,
+            "question": "Can you tell me about The Featherstones' origin?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The hometown of The Featherstones is United States.",
+            "html": "dbpedia_501_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where do The Featherstones call home?",
+            "html": "dbpedia_501_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is The Featherstones' nationality?",
+            "html": "dbpedia_501_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In what nation did The Featherstones grow up?",
+            "html": "dbpedia_501_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_501_104.txt"
+        },
+        {
+            "file_id": "dbpedia_501_110.txt"
+        },
+        {
+            "file_id": "dbpedia_501_35.txt"
+        },
+        {
+            "file_id": "dbpedia_501_41.txt"
+        },
+        {
+            "file_id": "dbpedia_501_47.txt"
+        },
+        {
+            "file_id": "dbpedia_501_54.txt"
+        },
+        {
+            "file_id": "dbpedia_501_56.txt"
+        },
+        {
+            "file_id": "dbpedia_501_71.txt"
+        },
+        {
+            "file_id": "dbpedia_501_79.txt"
+        },
+        {
+            "file_id": "dbpedia_501_83.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'} \n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here's the structured JSON format containing the evaluation result:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe reasoning behind this answer is as follows:\n\n* In the first document, it mentions \"Ralph 'Feather' Featherstone\" and describes his activities in the United States (Washington D.C. and Mississippi).\n* The second document also confirms that Don Featherstone was from Fitchburg, Mass. which is a city in the United States.\n* Although the third document does not explicitly mention any of the Featherstones living in the United States, it talks about the William & Lanaea C. Featherstone Foundation being based in Washington, D.C., which suggests a connection to the country.\n\nOverall, the information provided supports the triple that The hometown of The Featherstones is United States."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\"output\": \"yes\"}\n```\n\nExplanation: While the documents do not explicitly state that the hometown of The Featherstones is the United States, several pieces of information strongly support this conclusion. For instance, Don Featherstone died in Fitchburg, Mass., which is located in the United States. Additionally, the William & Lanaea C. Featherstone Foundation offers scholarships to students who are Mexican nationals or students of Mexican origin living in the United States, indicating a connection to the U.S. context. These details suggest that The Featherstones likely have ties to the United States."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The context does not provide information about the hometown of The Featherstones being the United States. It only mentions that Ralph \"Feather\" Featherstone was raised in Washington D.C., and Don Featherstone died in Fitchburg, Mass. However, there is no mention or implication that these are the hometowns of all the Featherstones.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The hometown of Don Featherstone (point 2) is Fitchburg, Mass.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context provides information about Don Featherstone dying in Fitchburg, Mass., United States, but also mentions Ralph Featherstone, who was raised in Washington D.C., another location within the U.S. There's no clear statement that the hometown of both Featherstones is the United States; their specific hometowns are mentioned as separate cities within the country.",
+            "category": 2
+        }
+    }
+}

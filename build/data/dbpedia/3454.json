@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Yosi_Piamenta",
+    "predicate": "ontology/deathPlace",
+    "object": "resource/New_York",
+    "human_readable": "Yosi Piamenta died in New York.",
+    "questions": [
+        {
+            "score": 0.8976260423660278,
+            "question": "Was Yosi Piamenta born in New York?"
+        },
+        {
+            "score": 0.8957961797714233,
+            "question": "Where did Yosi Piamenta die?"
+        },
+        {
+            "score": 0.8932614922523499,
+            "question": "Is there a memorial for Yosi Piamenta in New York?"
+        },
+        {
+            "score": 0.7796768546104431,
+            "question": "What was the year of Yosi Piamenta's death?"
+        },
+        {
+            "score": 0.58746337890625,
+            "question": "Is there any information about Yosi Piamenta's life besides his death location?"
+        },
+        {
+            "score": 0.484408974647522,
+            "question": "How did Yosi Piamenta's death impact his family and friends?"
+        },
+        {
+            "score": 0.40017563104629517,
+            "question": "What was Yosi Piamenta's profession?"
+        },
+        {
+            "score": 0.3930392265319824,
+            "question": "Are there any famous people who also died in New York?"
+        },
+        {
+            "score": 0.3725079596042633,
+            "question": "Can you tell me more about Yosi Piamenta?"
+        },
+        {
+            "score": 0.298614501953125,
+            "question": "What are some notable events that happened in New York?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Yosi Piamenta died in New York.",
+            "html": "dbpedia_3454_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about Yosi Piamenta?",
+            "html": "dbpedia_3454_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any famous people who also died in New York?",
+            "html": "dbpedia_3454_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What was Yosi Piamenta's profession?",
+            "html": "dbpedia_3454_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3454_1.txt"
+        },
+        {
+            "file_id": "dbpedia_3454_20.txt"
+        },
+        {
+            "file_id": "dbpedia_3454_31.txt"
+        },
+        {
+            "file_id": "dbpedia_3454_37.txt"
+        },
+        {
+            "file_id": "dbpedia_3454_43.txt"
+        },
+        {
+            "file_id": "dbpedia_3454_50.txt"
+        },
+        {
+            "file_id": "dbpedia_3454_53.txt"
+        },
+        {
+            "file_id": "dbpedia_3454_60.txt"
+        },
+        {
+            "file_id": "dbpedia_3454_65.txt"
+        },
+        {
+            "file_id": "dbpedia_3454_7.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the context information provided, here is the evaluation of the triple:\n\n{\n  \"output\": \"yes\"\n}\n\nThe reason for this answer is that all four documents mention Yosi Piamenta's death and location. Specifically, document 7 states that he died in Israel, not New York. Documents 30, 36, and 42 also mention his death but do not specify the location, however, document 7 provides a clear statement about his place of death."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe documents mention that Yosi Piamenta passed away at Cornell Medical Center in New York, but there is no information suggesting he died specifically in New York. The details state his death occurred on Sunday at Cornell Medical Center in New York, and after his condition worsened, which implies the primary location of his passing was likely in a hospital setting rather than explicitly stating he died in New York city itself."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n     \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "qwen2.5": {
+            "reason": "The context information states that Yosi Piamenta passed away on Sunday at Cornell Medical Center in New York, but he was living in Israel when he died. Specifically, it mentions that \"Piamenta lived in Flatbush, New York, for over 20 years before moving back to Israel.\" Additionally, his death is reported as occurring after he had moved back to Israel, with the exact location of his passing being Cornell Medical Center in New York, not in Israel.",
+            "category": 2
+        }
+    }
+}

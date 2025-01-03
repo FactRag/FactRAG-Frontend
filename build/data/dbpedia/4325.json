@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Nagoya_Seirei_Junior_College",
+    "predicate": "property/type",
+    "object": "resource/Private_university",
+    "human_readable": "Nagoya Seirei Junior College is a private university.",
+    "questions": [
+        {
+            "score": 0.9875982403755188,
+            "question": "Is Nagoya Seirei Junior College a public or private university?"
+        },
+        {
+            "score": 0.900133490562439,
+            "question": "What type of institution is Nagoya Seirei Junior College?"
+        },
+        {
+            "score": 0.8258762359619141,
+            "question": "What is the academic reputation of Nagoya Seirei Junior College?"
+        },
+        {
+            "score": 0.8082607984542847,
+            "question": "What are some popular majors at Nagoya Seirei Junior College?"
+        },
+        {
+            "score": 0.8001174330711365,
+            "question": "Where is Nagoya Seirei Junior College located?"
+        },
+        {
+            "score": 0.7758036851882935,
+            "question": "Can you tell me more about Nagoya Seirei Junior College?"
+        },
+        {
+            "score": 0.7363144159317017,
+            "question": "Are there any special programs or research opportunities at Nagoya Seirei Junior College?"
+        },
+        {
+            "score": 0.7290253043174744,
+            "question": "What are the admission requirements for Nagoya Seirei Junior College?"
+        },
+        {
+            "score": 0.6983818411827087,
+            "question": "Does Nagoya Seirei Junior College offer undergraduate or graduate degrees?"
+        },
+        {
+            "score": 0.674468457698822,
+            "question": "Does Nagoya Seirei Junior College have any notable alumni?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Nagoya Seirei Junior College is a private university.",
+            "html": "dbpedia_4325_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Nagoya Seirei Junior College offer undergraduate or graduate degrees?",
+            "html": "dbpedia_4325_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are the admission requirements for Nagoya Seirei Junior College?",
+            "html": "dbpedia_4325_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any special programs or research opportunities at Nagoya Seirei Junior College?",
+            "html": "dbpedia_4325_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4325_13.txt"
+        },
+        {
+            "file_id": "dbpedia_4325_19.txt"
+        },
+        {
+            "file_id": "dbpedia_4325_24.txt"
+        },
+        {
+            "file_id": "dbpedia_4325_27.txt"
+        },
+        {
+            "file_id": "dbpedia_4325_3.txt"
+        },
+        {
+            "file_id": "dbpedia_4325_31.txt"
+        },
+        {
+            "file_id": "dbpedia_4325_38.txt"
+        },
+        {
+            "file_id": "dbpedia_4325_42.txt"
+        },
+        {
+            "file_id": "dbpedia_4325_43.txt"
+        },
+        {
+            "file_id": "dbpedia_4325_6.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: According to the context information, Nagoya Seirei Junior College (name\u53e4\u5c4b\u8056\u970a\u77ed\u671f\u5927\u5b66) is described as a \"private junior college\" in several places. There is no mention of it being a university, so the triple is incorrect."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: The documents provide information about Nagoya Seirei Junior College, which states it is a \"private junior college\" and not a university. Therefore, the statement \"Nagoya Seirei Junior College is a private university\" is incorrect according to the provided context."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Nagoya Seirei Junior College was not a university but rather a junior college, as mentioned in the context information.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "It states Nagoya Seirei Junior College is a university, but the provided context describes it as a \"private junior college\".  Junior colleges and universities are distinct types of educational institutions.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "it was stated as a private junior college earlier in the context information.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Nagoya Seirei Junior College is described as a private junior college, not a university.",
+            "category": 2
+        }
+    }
+}

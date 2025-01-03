@@ -1,0 +1,115 @@
+{
+    "subject": "resource/John_Richardson_(drummer)",
+    "predicate": "http://xmlns.com/foaf/0.1/isPrimaryTopicOf",
+    "object": "http://en.wikipedia.org/wiki/John_Richardson_(drummer)",
+    "human_readable": "John Richardson is the primary topic of Wikipedia page 'John Richardson (drummer)'.",
+    "questions": [
+        {
+            "score": 0.987224817276001,
+            "question": "What is the primary topic covered by the Wikipedia page 'John Richardson (drummer)'?"
+        },
+        {
+            "score": 0.9838460683822632,
+            "question": "Who is the subject of the Wikipedia page 'John Richardson (drummer)'?"
+        },
+        {
+            "score": 0.9089667797088623,
+            "question": "Does the Wikipedia page 'John Richardson (drummer)' provide details about his life and career?"
+        },
+        {
+            "score": 0.8175819516181946,
+            "question": "Can you find information about John Richardson's musical career on Wikipedia?"
+        },
+        {
+            "score": 0.7346675992012024,
+            "question": "Is John Richardson a famous musician?"
+        },
+        {
+            "score": 0.6938121318817139,
+            "question": "What genre of music is John Richardson associated with?"
+        },
+        {
+            "score": 0.6559634804725647,
+            "question": "Is John Richardson known for his work in music?"
+        },
+        {
+            "score": 0.599473774433136,
+            "question": "Has John Richardson collaborated with other musicians?"
+        },
+        {
+            "score": 0.5608161091804504,
+            "question": "What bands or projects has John Richardson been involved in?"
+        },
+        {
+            "score": 0.5454265475273132,
+            "question": "What instrument does John Richardson play?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=John Richardson is the primary topic of Wikipedia page 'John Richardson (drummer)'.",
+            "html": "dbpedia_773_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What bands or projects has John Richardson been involved in?",
+            "html": "dbpedia_773_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Has John Richardson collaborated with other musicians?",
+            "html": "dbpedia_773_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is John Richardson known for his work in music?",
+            "html": "dbpedia_773_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_773_1.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'} \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, I can answer your query as follows:\n\n`{'output': 'no'}`\n\nThe reason for this response is that the main topic of the provided text is not \"John Richardson (drummer)\", but rather a character named Ezekiel Richardson from the Outlander book series."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: The provided context information does not mention any biography or specific details about a person named \"John Richardson\" being the primary topic of a Wikipedia page. Therefore, the statement is not supported by the given documents."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Ezekiel Richardson (not John Richardson) is the primary topic of the context information provided.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "the context information provided refers to a character named Ezekiel Richardson, not John Richardson, which suggests that the topic of the Wikipedia page is actually about the former, not the latter.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The provided context focuses on Ezekiel Richardson as a character in the Outlander series, not a drummer or any other profession related to music. There is no information linking him to a Wikipedia page about a drummer named John Richardson.",
+            "category": 2
+        }
+    }
+}

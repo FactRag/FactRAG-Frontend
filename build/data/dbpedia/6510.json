@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Kalash,_Ardabil",
+    "predicate": "ontology/country",
+    "object": "resource/Iran",
+    "human_readable": "Kalash village in Ardabil is located in Iran.",
+    "questions": [
+        {
+            "score": 0.9452047348022461,
+            "question": "Is Kalash village in Iran?"
+        },
+        {
+            "score": 0.9184075593948364,
+            "question": "Is Kalash village a part of Iran?"
+        },
+        {
+            "score": 0.9165797829627991,
+            "question": "In which province of Iran is Kalash village situated?"
+        },
+        {
+            "score": 0.8533186912536621,
+            "question": "Where is Kalash village located?"
+        },
+        {
+            "score": 0.8096524477005005,
+            "question": "Name the village located in Ardabil."
+        },
+        {
+            "score": 0.7855485081672668,
+            "question": "What is the location of Kalash village?"
+        },
+        {
+            "score": 0.7107914090156555,
+            "question": "Where can you find Kalash village?"
+        },
+        {
+            "score": 0.709939181804657,
+            "question": "What country is Kalash village in?"
+        },
+        {
+            "score": 0.6127689480781555,
+            "question": "What is the name of the village in Ardabil?"
+        },
+        {
+            "score": 0.5751608610153198,
+            "question": "To which country does Kalash village belong?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Kalash village in Ardabil is located in Iran.",
+            "html": "dbpedia_6510_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of the village in Ardabil?",
+            "html": "dbpedia_6510_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What country is Kalash village in?",
+            "html": "dbpedia_6510_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where can you find Kalash village?",
+            "html": "dbpedia_6510_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6510_105.txt"
+        },
+        {
+            "file_id": "dbpedia_6510_116.txt"
+        },
+        {
+            "file_id": "dbpedia_6510_119.txt"
+        },
+        {
+            "file_id": "dbpedia_6510_122.txt"
+        },
+        {
+            "file_id": "dbpedia_6510_17.txt"
+        },
+        {
+            "file_id": "dbpedia_6510_22.txt"
+        },
+        {
+            "file_id": "dbpedia_6510_35.txt"
+        },
+        {
+            "file_id": "dbpedia_6510_4.txt"
+        },
+        {
+            "file_id": "dbpedia_6510_40.txt"
+        },
+        {
+            "file_id": "dbpedia_6510_73.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n\n\nThe text states that the Kalash Village is \"dubbed Kalash Village in Iran\" but doesn't say it's actually *located* in Iran. The documents mostly focus on Pakistan and its regions where Kalash people live.  Ardabil is a province in **northern Iran**, not associated with the Kalash villages described. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the response in JSON format:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe reason for this answer is that none of the documents mention a Kalash village in Ardabil, Iran. The documents do mention villages with the name Kalash or Kalasha, but they are located in Pakistan's North-West Frontier Province (now Khyber Pakhtunkhwa), not in Iran. Specifically, the documents mention three isolated mountain valleys: Bumboret, Rumbur, and Birir, which are home to the Kalash people in Pakistan."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: None of the provided documents mention a Kalash village in Ardabil, Iran. The information provided places Kalash villages in the North-West Frontier Province of Pakistan, not in Iran."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n      \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The Kalash Village is not located in Ardabil, Iran. It is actually located in the North-West Frontier Province of Pakistan, specifically in three isolated mountain valleys: Bumboret (Kalash: Mumret), Rumbur (Rukmu), and Birir (Biriu).",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Context information states Kalash village is in Iran but also describes the Kalash people living in Pakistan mountain valleys.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "Kalash is traditionally made in Iran, but the context provided shows that the village mentioned earlier (Kalash Village) is located in Marivan, western Iran, which might be a different place from Ardabil.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information clearly states that the village associated with Kalash is located in Marivan, western Iran, and not Ardabil. Furthermore, it mentions that the village is dubbed \"Kalash Village\" in Iran, indicating its location there specifically.",
+            "category": 2
+        }
+    }
+}

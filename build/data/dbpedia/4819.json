@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Graham_Stokoe",
+    "predicate": "property/name",
+    "object": "Stokoe, Graham",
+    "human_readable": "The name of Graham Stokoe is Stokoe, Graham.",
+    "questions": [
+        {
+            "score": 0.9819685816764832,
+            "question": "Is 'Graham'  part of Graham Stokoe's name?"
+        },
+        {
+            "score": 0.9732081890106201,
+            "question": "Is 'Stokoe' Graham Stokoe's given name?"
+        },
+        {
+            "score": 0.9557275176048279,
+            "question": "What is the middle name of Graham Stokoe?"
+        },
+        {
+            "score": 0.9393231868743896,
+            "question": "What is Graham Stokoe's last name?"
+        },
+        {
+            "score": 0.9163040518760681,
+            "question": "What is Graham Stokoe's first name?"
+        },
+        {
+            "score": 0.9118462800979614,
+            "question": "If someone introduced themselves as 'Stokoe, Graham', would you know their full name?"
+        },
+        {
+            "score": 0.9079695343971252,
+            "question": "What is the order of Graham Stokoe's names?"
+        },
+        {
+            "score": 0.8667481541633606,
+            "question": "How would you write Graham Stokoe's full name?"
+        },
+        {
+            "score": 0.7880135774612427,
+            "question": "Could you rearrange the name 'Graham Stokoe' to its reverse order?"
+        },
+        {
+            "score": 0.7029635906219482,
+            "question": "If you were to address Graham Stokoe formally, what would you say?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of Graham Stokoe is Stokoe, Graham.",
+            "html": "dbpedia_4819_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Could you rearrange the name 'Graham Stokoe' to its reverse order?",
+            "html": "dbpedia_4819_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How would you write Graham Stokoe's full name?",
+            "html": "dbpedia_4819_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the order of Graham Stokoe's names?",
+            "html": "dbpedia_4819_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4819_12.txt"
+        },
+        {
+            "file_id": "dbpedia_4819_17.txt"
+        },
+        {
+            "file_id": "dbpedia_4819_19.txt"
+        },
+        {
+            "file_id": "dbpedia_4819_20.txt"
+        },
+        {
+            "file_id": "dbpedia_4819_23.txt"
+        },
+        {
+            "file_id": "dbpedia_4819_31.txt"
+        },
+        {
+            "file_id": "dbpedia_4819_34.txt"
+        },
+        {
+            "file_id": "dbpedia_4819_39.txt"
+        },
+        {
+            "file_id": "dbpedia_4819_42.txt"
+        },
+        {
+            "file_id": "dbpedia_4819_55.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'} \n``` \n\n\nLet me know if you'd like me to evaluate any more triples! \ud83d\ude0a  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the context information provided, I will evaluate whether the statement \"The name of Graham Stokoe is Stokoe, Graham.\" is supported by the documents.\n\nAfter reviewing the documents, I found that one of them mentions:\n\n\"Graham Stokoe is known for Keyhole (2007) and A Test of Faith (2009).\"\n\nThis information supports the triple, indicating that the name associated with Graham Stokoe is indeed \"Stokoe, Graham\".\n\nTherefore, the response in JSON format would be:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe context information provided mentions \"Graham Stokoe,\" confirming that the name \"Stokoe, Graham\" (in a reversed order) is correct. Therefore, the triple \"The name of Graham Stokoe is Stokoe, Graham\" is supported by the documents."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "There is no mention of the name \"Graham\" associated with James Stokoe in the provided context.",
+            "category": 1
+        },
+        "llama3.1": {
+            "reason": "The name provided as Graham Stokoe in the context information 1 actually matches with a different person, James Stokoe.",
+            "category": -1
+        },
+        "qwen2.5": {
+            "reason": "The context information clearly states that the artist's name is James Stokoe, not Graham Stokoe.",
+            "category": 1
+        }
+    }
+}

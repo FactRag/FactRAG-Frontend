@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Sir_Charles_Carteret,_3rd_Baronet",
+    "predicate": "property/name",
+    "object": "Carteret, Charles",
+    "human_readable": "Sir Charles Carteret's name is Carteret, Charles.",
+    "questions": [
+        {
+            "score": 0.9707651734352112,
+            "question": "What is Sir Charles Carteret's last name?"
+        },
+        {
+            "score": 0.9615833759307861,
+            "question": "Is 'Charles' the first or last part of Sir Charles Carteret's name?"
+        },
+        {
+            "score": 0.9584499597549438,
+            "question": "What is Sir Charles Carteret's first name?"
+        },
+        {
+            "score": 0.9445346593856812,
+            "question": "What is the order of Sir Charles Carteret's names?"
+        },
+        {
+            "score": 0.9270051717758179,
+            "question": "Is there more than one way to write Sir Charles Carteret's name?"
+        },
+        {
+            "score": 0.8932439088821411,
+            "question": "How would you write Sir Charles Carteret's full name?"
+        },
+        {
+            "score": 0.8431002497673035,
+            "question": "Can you provide a possible scenario where someone would use the name 'Carteret' instead of 'Sir Charles Carteret'?"
+        },
+        {
+            "score": 0.7931033968925476,
+            "question": "If someone referred to him as 'Carteret', who are they likely talking about?"
+        },
+        {
+            "score": 0.6613802313804626,
+            "question": "If someone said 'Carteret', would they be referring to a person or a place?"
+        },
+        {
+            "score": 0.2625395953655243,
+            "question": "What is the significance of using the title 'Sir' before his name?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Sir Charles Carteret's name is Carteret, Charles.",
+            "html": "dbpedia_2596_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If someone said 'Carteret', would they be referring to a person or a place?",
+            "html": "dbpedia_2596_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If someone referred to him as 'Carteret', who are they likely talking about?",
+            "html": "dbpedia_2596_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you provide a possible scenario where someone would use the name 'Carteret' instead of 'Sir Charles Carteret'?",
+            "html": "dbpedia_2596_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2596_18.txt"
+        },
+        {
+            "file_id": "dbpedia_2596_31.txt"
+        },
+        {
+            "file_id": "dbpedia_2596_46.txt"
+        },
+        {
+            "file_id": "dbpedia_2596_58.txt"
+        },
+        {
+            "file_id": "dbpedia_2596_59.txt"
+        },
+        {
+            "file_id": "dbpedia_2596_60.txt"
+        },
+        {
+            "file_id": "dbpedia_2596_73.txt"
+        },
+        {
+            "file_id": "dbpedia_2596_83.txt"
+        },
+        {
+            "file_id": "dbpedia_2596_85.txt"
+        },
+        {
+            "file_id": "dbpedia_2596_86.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n\n\nThe text refers to him as Sir Charles de Carteret, not Carteret, Charles.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation of the triple:\n\n{\n  \"output\": \"yes\"\n}\n\nExplanation:\nThe triple states that Sir Charles Carteret's name is Carteret, Charles. The documents provide information about a person named Sir George Carteret, and also mention a Sir Philip de Carteret, 1st Bart of St. Ouen (who is likely the father or grandfather of Sir George) and another son Sir Charles de Carteret, 2nd Bart of St. Ouen. Given this context, it appears that there was indeed a person named Carteret, Charles, who was a member of the Carteret family."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: The documents do not contain any information supporting the triple \"Sir Charles Carteret's name is Carteret, Charles.\" The provided text mentions a \"Sir Charles de Carteret\" but does not provide his full name in that exact format."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nThe provided context information does not contain any details that confirm the name \"Carteret, Charles\" for Sir Charles Carteret. Therefore, based on the given documents, we cannot support this statement as accurate."
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "The provided text states Sir Charles de Carteret's full name as \"Sir Charles de Carteret, 2nd Bart of St.  Ouen\" and lists his birthdate and other relevant details. \n\n\n\nLet me know if you have any other statements you'd like me to evaluate!",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The given context mentions \"Sir Charles de Carteret, 2nd Bart of St. Ouen\", which indicates that the name is indeed \"Charles\" but with a different spelling and title. Therefore, the statement \"Sir Charles Carteret's name is Carteret, Charles\" is incorrect due to the discrepancy in spelling and title.",
+            "category": 2
+        }
+    }
+}

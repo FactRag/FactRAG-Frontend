@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Michael_P._Sullivan",
+    "predicate": "ontology/almaMater",
+    "object": "resource/Marquette_University",
+    "human_readable": "Michael P. Sullivan attended Marquette University.",
+    "questions": [
+        {
+            "score": 0.9702354073524475,
+            "question": "Did Michael P. Sullivan receive his education from Marquette University?"
+        },
+        {
+            "score": 0.9632644653320312,
+            "question": "Is Marquette University connected to Michael P. Sullivan's education?"
+        },
+        {
+            "score": 0.9562506079673767,
+            "question": "What university was attended by Michael P. Sullivan?"
+        },
+        {
+            "score": 0.9499807953834534,
+            "question": "Where did Michael P. Sullivan attend university?"
+        },
+        {
+            "score": 0.8848890066146851,
+            "question": "Michael P. Sullivan's educational background includes attending which university?"
+        },
+        {
+            "score": 0.8388345241546631,
+            "question": "What university is associated with Michael P. Sullivan?"
+        },
+        {
+            "score": 0.835491955280304,
+            "question": "Name the institution of higher learning that Michael P. Sullivan attended."
+        },
+        {
+            "score": 0.8278962969779968,
+            "question": "Which university did Michael P. Sullivan graduate from?"
+        },
+        {
+            "score": 0.7202239632606506,
+            "question": "What is the name of the university that Michael P. Sullivan studied at?"
+        },
+        {
+            "score": 0.6412893533706665,
+            "question": "What is the name of the institution Michael P. Sullivan studied at?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Michael P. Sullivan attended Marquette University.",
+            "html": "dbpedia_3339_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of the university that Michael P. Sullivan studied at?",
+            "html": "dbpedia_3339_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Which university did Michael P. Sullivan graduate from?",
+            "html": "dbpedia_3339_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Name the institution of higher learning that Michael P. Sullivan attended.",
+            "html": "dbpedia_3339_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3339_102.txt"
+        },
+        {
+            "file_id": "dbpedia_3339_105.txt"
+        },
+        {
+            "file_id": "dbpedia_3339_116.txt"
+        },
+        {
+            "file_id": "dbpedia_3339_12.txt"
+        },
+        {
+            "file_id": "dbpedia_3339_13.txt"
+        },
+        {
+            "file_id": "dbpedia_3339_5.txt"
+        },
+        {
+            "file_id": "dbpedia_3339_89.txt"
+        },
+        {
+            "file_id": "dbpedia_3339_90.txt"
+        },
+        {
+            "file_id": "dbpedia_3339_91.txt"
+        },
+        {
+            "file_id": "dbpedia_3339_95.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "After analyzing the context information, I found that:\n\n* There are multiple documents mentioning different individuals with the name \"Sullivan\" (e.g., Mike Sullivan, Owen J. Sullivan, Bob Eck as successor to Owen Sullivan), but only one of them is explicitly mentioned as attending Marquette University.\n* However, Owen J. Sullivan's profile in document 95.txt mentions that he is a 1979 graduate of Marquette University's Klingler College of Arts and Sciences.\n\nGiven this information, the query \"Michael P. Sullivan attended Marquette University\" seems to be referring to Mike Sullivan (document 100.txt), but the documents actually mention Owen J. Sullivan as the one who attended Marquette University.\n\nTherefore:\n\n{'output': 'no'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents mention Mike (Michael) Sullivan's affiliation with Marquette University, which supports the statement that Michael P. Sullivan attended Marquette University."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "It contradicts the information provided in point 1 where Mike Sullivan is a graduate of Williams College and the University of Michigan Law School, with no mention of him attending Marquette University.",
+            "category": 2
+        }
+    }
+}

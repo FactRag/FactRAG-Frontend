@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Imad_Abu_Zahra",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "Abu Zahra, Imad",
+    "human_readable": "The full name of Imad Abu Zahra is Abu Zahra, Imad.",
+    "questions": [
+        {
+            "score": 0.9792535305023193,
+            "question": "What is the full name of Imad Abu Zahra?"
+        },
+        {
+            "score": 0.9623430967330933,
+            "question": "Is 'Abu Zahra, Imad' the correct order of Imad Abu Zahra's names?"
+        },
+        {
+            "score": 0.9408743381500244,
+            "question": "Write Imad Abu Zahra's full name backwards."
+        },
+        {
+            "score": 0.9213230013847351,
+            "question": "If you were to introduce Imad Abu Zahra, what would you say his full name is?"
+        },
+        {
+            "score": 0.9144968390464783,
+            "question": "What is Imad Abu Zahra's last name?"
+        },
+        {
+            "score": 0.910580575466156,
+            "question": "Does Imad Abu Zahra have a middle name?"
+        },
+        {
+            "score": 0.8836193680763245,
+            "question": "What is Imad Abu Zahra's first name?"
+        },
+        {
+            "score": 0.8724558353424072,
+            "question": "What comes first in Imad Abu Zahra's full name?"
+        },
+        {
+            "score": 0.8721493482589722,
+            "question": "How many parts does Imad Abu Zahra's full name have?"
+        },
+        {
+            "score": 0.8075861930847168,
+            "question": "If someone asked you 'What's his last name?' what would you say about Imad Abu Zahra?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The full name of Imad Abu Zahra is Abu Zahra, Imad.",
+            "html": "dbpedia_2001_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How many parts does Imad Abu Zahra's full name have?",
+            "html": "dbpedia_2001_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What comes first in Imad Abu Zahra's full name?",
+            "html": "dbpedia_2001_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Imad Abu Zahra's first name?",
+            "html": "dbpedia_2001_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2001_1.txt"
+        },
+        {
+            "file_id": "dbpedia_2001_11.txt"
+        },
+        {
+            "file_id": "dbpedia_2001_13.txt"
+        },
+        {
+            "file_id": "dbpedia_2001_2.txt"
+        },
+        {
+            "file_id": "dbpedia_2001_21.txt"
+        },
+        {
+            "file_id": "dbpedia_2001_22.txt"
+        },
+        {
+            "file_id": "dbpedia_2001_36.txt"
+        },
+        {
+            "file_id": "dbpedia_2001_40.txt"
+        },
+        {
+            "file_id": "dbpedia_2001_51.txt"
+        },
+        {
+            "file_id": "dbpedia_2001_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple in JSON format:\n\n{\n  \"output\": \"no\"\n}\n\nThe reason for this answer is that the documents contain multiple sources with different information about Imad Abu Zahra's full name. Some sources mention his full name as \"Imad Subhi Abu Zahrah\" (document 39.txt), while others simply refer to him as \"Abu Zahra, Imad\" or \"Imad Abu Zahra\" without providing a middle name. Therefore, the triple statement \"The full name of Imad Abu Zahra is Abu Zahra, Imad\" cannot be confirmed as correct based on the available information."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: The documents provide information about Imad Abu Zahra, including his full name as \"Imad Subhi Abu Zahrah,\" which differs from the query stating his full name as \"Abu Zahra, Imad.\" Therefore, the information does not support the given triple."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, there isn't a direct mention that Imad Abu Zahra's full name is \"Abu Zahra, Imad.\" While his first and last names are clearly stated as Imad Subhi Abu Zahrah, the exact format of his full name being listed with the family name first followed by the given name is not mentioned. Therefore, without definitive evidence within the documents supporting this specific format for the full name, we cannot confirm the triple.\n\nAnswer:\n```json\n{\"output\": \"no\"}\n```"
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The full name of Imad Abu Zahra was stated as \"Imad Subhi Abu Zahrah\" in point 4 of the context information, which includes a first name \"Subhi\", indicating that \"Abu Zahra, Imad\" does not contain his complete given name.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The full name provided in the context is \"Imad Subhi Abu Zahrah,\" which includes a first name (Imad), a middle name (Subhi), and a last name (Abu Zahrah). The given fact only mentions \"Imad Abu Zahra\" without the middle name, making it an incomplete representation of his full name.",
+            "category": 2
+        }
+    }
+}

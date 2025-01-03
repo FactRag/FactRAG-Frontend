@@ -1,0 +1,146 @@
+{
+    "subject": "resource/1989\u201390_European_Cup",
+    "predicate": "property/stadium",
+    "object": "resource/Argosstadion_Achter_de_Kazerne",
+    "human_readable": "The stadium of the 1989-90 European Cup was Argosstadion Achter de Kazerne.",
+    "questions": [
+        {
+            "score": 0.9868180751800537,
+            "question": "How was the Argosstadion Achter de Kazerne known at the time of the 1989-90 European Cup?"
+        },
+        {
+            "score": 0.9820998907089233,
+            "question": "Which sporting event was hosted at Argosstadion Achter de Kazerne in 1989-90?"
+        },
+        {
+            "score": 0.9530224800109863,
+            "question": "What was the name of the stadium that hosted the 1989-90 European Cup?"
+        },
+        {
+            "score": 0.9494064450263977,
+            "question": "In what year did the European Cup take place at Argosstadion Achter de Kazerne?"
+        },
+        {
+            "score": 0.9197726249694824,
+            "question": "Where was the 1989-90 European Cup held?"
+        },
+        {
+            "score": 0.8399571180343628,
+            "question": "What competition was played at the stadium during the 1989-90 season?"
+        },
+        {
+            "score": 0.7919115424156189,
+            "question": "What is another name for Argosstadion Achter de Kazerne?"
+        },
+        {
+            "score": 0.7841667532920837,
+            "question": "What is special about the Argosstadion Achter de Kazerne?"
+        },
+        {
+            "score": 0.3196326196193695,
+            "question": "Can you name a stadium that hosted a major European football competition?"
+        },
+        {
+            "score": 0.20385684072971344,
+            "question": "Why is the stadium name significant in the context of football history?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The stadium of the 1989-90 European Cup was Argosstadion Achter de Kazerne.",
+            "html": "dbpedia_3252_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you name a stadium that hosted a major European football competition?",
+            "html": "dbpedia_3252_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is special about the Argosstadion Achter de Kazerne?",
+            "html": "dbpedia_3252_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is another name for Argosstadion Achter de Kazerne?",
+            "html": "dbpedia_3252_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3252_11.txt"
+        },
+        {
+            "file_id": "dbpedia_3252_12.txt"
+        },
+        {
+            "file_id": "dbpedia_3252_28.txt"
+        },
+        {
+            "file_id": "dbpedia_3252_31.txt"
+        },
+        {
+            "file_id": "dbpedia_3252_40.txt"
+        },
+        {
+            "file_id": "dbpedia_3252_42.txt"
+        },
+        {
+            "file_id": "dbpedia_3252_52.txt"
+        },
+        {
+            "file_id": "dbpedia_3252_53.txt"
+        },
+        {
+            "file_id": "dbpedia_3252_54.txt"
+        },
+        {
+            "file_id": "dbpedia_3252_6.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nThe information in the documents does not support this triple. According to the document with file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3252/re-ranker-msmarco/28.txt, the final of the 1989-90 European Cup was played at the Praterstadion in Vienna, not Argosstadion Achter de Kazerne."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The context information does not contain any details about the stadium where the 1989\u201390 European Cup final was played. While it mentions Argosstadion Achter de Kazerne as the home ground of KV Mechelen, there is no indication that this was the venue for the European Cup final in question. The correct information provided in the documents states that the final was played at the Praterstadion in Vienna on 23 May 1990."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The stadium for the 1989-90 European Cup was not Argosstadion Achter de Kazerne, but Praterstadion in Vienna.",
+            "category": 1
+        },
+        "gemma2": {
+            "reason": "Information about the stadium used for the 1989-90 European Cup final is provided in text excerpt 2, and it states that the final was played at the Praterstadion in Vienna.",
+            "category": 1
+        },
+        "llama3.1": {
+            "reason": "The 1989-90 European Cup final was played at the Praterstadion in Vienna, not Argosstadion Achter de Kazerne.",
+            "category": 1
+        },
+        "qwen2.5": {
+            "reason": "The context information states that the 1989\u201390 European Cup final was played at the Praterstadion in Vienna, not at Argosstadion Achter de Kazerne.",
+            "category": 1
+        }
+    }
+}

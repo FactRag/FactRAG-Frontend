@@ -1,0 +1,122 @@
+{
+    "subject": "resource/Roman_Catholic_Diocese_of_Udupi",
+    "predicate": "ontology/jurisdiction",
+    "object": "resource/Diocese",
+    "human_readable": "The Roman Catholic Diocese of Udupi has jurisdiction over the Diocese.",
+    "questions": [
+        {
+            "score": 0.988278329372406,
+            "question": "Over which diocese does the Roman Catholic Diocese of Udupi have jurisdiction?"
+        },
+        {
+            "score": 0.9730403423309326,
+            "question": "What is the jurisdiction of the Roman Catholic Diocese of Udupi?"
+        },
+        {
+            "score": 0.887653112411499,
+            "question": "Is the Roman Catholic Diocese of Udupi a part of a larger diocese?"
+        },
+        {
+            "score": 0.8457280397415161,
+            "question": "What religious denomination does the Roman Catholic Diocese of Udupi belong to?"
+        },
+        {
+            "score": 0.8018590211868286,
+            "question": "What type of organization is the Roman Catholic Diocese of Udupi?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The Roman Catholic Diocese of Udupi has jurisdiction over the Diocese.",
+            "html": "dbpedia_5688_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What religious denomination does the Roman Catholic Diocese of Udupi belong to?",
+            "html": "dbpedia_5688_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is the Roman Catholic Diocese of Udupi a part of a larger diocese?",
+            "html": "dbpedia_5688_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the jurisdiction of the Roman Catholic Diocese of Udupi?",
+            "html": "dbpedia_5688_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5688_21.txt"
+        },
+        {
+            "file_id": "dbpedia_5688_27.txt"
+        },
+        {
+            "file_id": "dbpedia_5688_39.txt"
+        },
+        {
+            "file_id": "dbpedia_5688_55.txt"
+        },
+        {
+            "file_id": "dbpedia_5688_63.txt"
+        },
+        {
+            "file_id": "dbpedia_5688_67.txt"
+        },
+        {
+            "file_id": "dbpedia_5688_75.txt"
+        },
+        {
+            "file_id": "dbpedia_5688_77.txt"
+        },
+        {
+            "file_id": "dbpedia_5688_78.txt"
+        },
+        {
+            "file_id": "dbpedia_5688_85.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, here is the answer to your question:\n\n{\n  \"output\": \"no\"\n}\n\nExplanation: The documents mention that the Diocese of Udupi was separated from the domain of the Diocese of Mangalore and erected as a new diocese, making it a suffragan to the Archdiocese of Bangalore. This implies that the Diocese of Udupi is not under the jurisdiction of the Diocese of Udupi itself, but rather has its own jurisdiction over certain territories."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents discuss the formation and structure of the Roman Catholic Diocese of Udupi but do not indicate that it has jurisdiction over another diocese. On the contrary, it states that the newly formed Diocese of Udupi is a suffragan to the Archdiocese of Bangalore."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "The text states that the Diocese of Udupi is a suffragan to the Archdiocese of Bangalore, meaning it is subordinate to the Archdiocese, not the other way around.  Additionally, the text refers to the Roman Catholic Diocese of Mangalore as having jurisdiction over the Udupi District prior to 2012.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The Roman Catholic Diocese of Udupi was actually separated from the domain of the Diocese of Mangalore, making it a suffragan to the Archdiocese of Bangalore.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The Roman Catholic Diocese of Udupi was erected as a new diocese separate from the Diocese of Mangalore, making it a suffragan to the Archdiocese of Bangalore.",
+            "category": 2
+        }
+    }
+}

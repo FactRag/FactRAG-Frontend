@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Ibrahim_Pasha_of_Egypt",
+    "predicate": "ontology/placeOfBurial",
+    "object": "resource/Egypt",
+    "human_readable": "Ibrahim Pasha of Egypt was buried in Egypt.",
+    "questions": [
+        {
+            "score": 0.9881563186645508,
+            "question": "Was Ibrahim Pasha of Egypt buried in Egypt?"
+        },
+        {
+            "score": 0.9840113520622253,
+            "question": "Where was Ibrahim Pasha of Egypt buried?"
+        },
+        {
+            "score": 0.9563760757446289,
+            "question": "What country is the burial site of Ibrahim Pasha of Egypt located in?"
+        },
+        {
+            "score": 0.9503166079521179,
+            "question": "What is known about the burial rituals of Ibrahim Pasha of Egypt?"
+        },
+        {
+            "score": 0.9502152800559998,
+            "question": "Is there a monument or memorial dedicated to Ibrahim Pasha of Egypt in Egypt?"
+        },
+        {
+            "score": 0.9477770924568176,
+            "question": "Which nation claimed Ibrahim Pasha of Egypt's remains for burial?"
+        },
+        {
+            "score": 0.9223803281784058,
+            "question": "Did Ibrahim Pasha of Egypt choose to be buried in his homeland?"
+        },
+        {
+            "score": 0.9060866236686707,
+            "question": "What is the location of Ibrahim Pasha of Egypt's tomb?"
+        },
+        {
+            "score": 0.4582280218601227,
+            "question": "Is Egypt the final resting place of Ibrahim Pasha of Egypt?"
+        },
+        {
+            "score": 0.4395523965358734,
+            "question": "Where did Ibrahim Pasha of Egypt spend his final days?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Ibrahim Pasha of Egypt was buried in Egypt.",
+            "html": "dbpedia_7269_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Egypt the final resting place of Ibrahim Pasha of Egypt?",
+            "html": "dbpedia_7269_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the location of Ibrahim Pasha of Egypt's tomb?",
+            "html": "dbpedia_7269_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Did Ibrahim Pasha of Egypt choose to be buried in his homeland?",
+            "html": "dbpedia_7269_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_7269_1.txt"
+        },
+        {
+            "file_id": "dbpedia_7269_16.txt"
+        },
+        {
+            "file_id": "dbpedia_7269_20.txt"
+        },
+        {
+            "file_id": "dbpedia_7269_23.txt"
+        },
+        {
+            "file_id": "dbpedia_7269_31.txt"
+        },
+        {
+            "file_id": "dbpedia_7269_37.txt"
+        },
+        {
+            "file_id": "dbpedia_7269_55.txt"
+        },
+        {
+            "file_id": "dbpedia_7269_61.txt"
+        },
+        {
+            "file_id": "dbpedia_7269_68.txt"
+        },
+        {
+            "file_id": "dbpedia_7269_94.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "To evaluate the triple, we need to analyze the information provided in the context.\n\nThe triple is:\n\"Ibrahim Pasha of Egypt was buried in Egypt.\"\n\nLet's see if the documents support this statement:\n\n* File_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_7269/re-ranker-msmarco/55.txt\nThis document mentions \"Tomb of Ibrahim Pasha (1789-1848) was a military man and worthy of Egypt.\" However, it does not explicitly state that he was buried in Egypt.\n\n* File_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_7269/re-ranker-msmarco/33.txt\nThis document tells the story of Mehemet Ali's funeral procession and burial. However, it does not mention Ibrahim Pasha's burial.\n\n* File_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_7269/re-ranker-msmarco/59.txt\nThis document provides a timeline of events related to Ibrahim Pasha's life, but there is no information about his burial.\n\nConsidering the above points, we can conclude that the documents do not provide explicit support for the statement \"Ibrahim Pasha of Egypt was buried in Egypt.\"\n\nTherefore, the answer should be:\n\n`{'output': 'no'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents provide information about Ibrahim Pasha, including his burial. While the exact document states, \"Old 19th century engraved illustration from El Mundo Ilustrado 1880\" without explicit confirmation of the burial location, previous documents mention that Mehmet Ali was buried in Cairo. Given the historical context and familial relationship, it is reasonable to infer that Ibrahim Pasha, as his son, would also be buried in Egypt, specifically Cairo. Therefore, the statement \"Ibrahim Pasha of Egypt was buried in Egypt\" can be supported by the provided documents."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "Based on the provided context, there is no explicit information stating that Ibrahim Pasha of Egypt was buried in Egypt. However, given the historical context described (such as his death and funeral procession to Cairo), it can be reasonably inferred that he was indeed buried in Egypt.\n\nThus, the response should reflect this inference:\n\n{\n  \"output\": \"yes\"\n}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Several text passages mention Ibrahim Pasha's father, Muhammad Ali, being buried in a new alabaster mosque built by himself in the citadel of Cairo.   The context implies a familial burial tradition or preference for prominent Egyptians to be laid to rest within Egypt.  Furthermore, given that Ibrahim Pasha was highly revered and known as \"the architect of most of the victorious campaigns\" under his father's rule, it is logical to assume he would also be buried in Egypt, considering the prominence his actions hold within Egyptian history.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "Ibrahim Pasha was actually buried in the new alabaster mosque built by his father, Muhammad Ali, in the citadel of Cairo, but after his death on November 10, 1849, not after he was given control of upper Egypt or during another time period mentioned.",
+            "category": 2
+        }
+    }
+}

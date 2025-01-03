@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Paul_Verdzekov",
+    "predicate": "property/name",
+    "object": "Verdzekov, Paul",
+    "human_readable": "The name of Paul Verdzekov is Verdzekov, Paul.",
+    "questions": [
+        {
+            "score": 0.973010778427124,
+            "question": "What is the full name of Paul Verdzekov?"
+        },
+        {
+            "score": 0.940460205078125,
+            "question": "Is Paul Verdzekov's full name the same as his last name followed by his first name?"
+        },
+        {
+            "score": 0.9370443224906921,
+            "question": "What is Paul Verdzekov's last name?"
+        },
+        {
+            "score": 0.9128395915031433,
+            "question": "What is Paul Verdzekov's first name?"
+        },
+        {
+            "score": 0.8329494595527649,
+            "question": "How might this information be useful if you were researching individuals named Paul Verdzekov?"
+        },
+        {
+            "score": 0.810999870300293,
+            "question": "If you were to refer to Paul Verdzekov formally, what would you say?"
+        },
+        {
+            "score": 0.8057885766029358,
+            "question": "Is there any additional information you would need to know about Paul Verdzekov?"
+        },
+        {
+            "score": 0.7781602740287781,
+            "question": "What information is given about Paul Verdzekov in this statement?"
+        },
+        {
+            "score": 0.6798166036605835,
+            "question": "Can you think of any other ways to represent this information about Paul Verdzekov?"
+        },
+        {
+            "score": 0.6113167405128479,
+            "question": "Could 'Paul Verdzekov' be used as a unique identifier for this person?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of Paul Verdzekov is Verdzekov, Paul.",
+            "html": "dbpedia_2277_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you think of any other ways to represent this information about Paul Verdzekov?",
+            "html": "dbpedia_2277_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What information is given about Paul Verdzekov in this statement?",
+            "html": "dbpedia_2277_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there any additional information you would need to know about Paul Verdzekov?",
+            "html": "dbpedia_2277_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2277_10.txt"
+        },
+        {
+            "file_id": "dbpedia_2277_11.txt"
+        },
+        {
+            "file_id": "dbpedia_2277_18.txt"
+        },
+        {
+            "file_id": "dbpedia_2277_23.txt"
+        },
+        {
+            "file_id": "dbpedia_2277_27.txt"
+        },
+        {
+            "file_id": "dbpedia_2277_3.txt"
+        },
+        {
+            "file_id": "dbpedia_2277_34.txt"
+        },
+        {
+            "file_id": "dbpedia_2277_37.txt"
+        },
+        {
+            "file_id": "dbpedia_2277_43.txt"
+        },
+        {
+            "file_id": "dbpedia_2277_53.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation:\n\nThe triple \"The name of Paul Verdzekov is Verdzekov, Paul\" can be broken down into three parts:\n\n* Subject: Paul Verdzekov\n* Predicate: The name of (X)\n* Object: X = Verdzekov, Paul\n\nEvaluating the documents, we find that:\n\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2277/re-ranker-msmarco/25.txt and others, the name \"Paul Verdzekov\" is mentioned as the Archbishop of Bamenda.\n* However, in file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2277/re-ranker-msmarco/21.txt and others, a journalist quotes someone who refers to him as \"late Father Paul Vedzekov\", which is slightly different.\n\nGiven the context of the documents, it seems that the name \"Paul Verdzekov\" is indeed correct, but there might be slight variations in how he is referred to (e.g., with or without the \"c\" in \"Vedzekov\").\n\nHowever, upon closer inspection, I notice that the \"c\" variation is not a typo or an error on the part of the authors, but rather a reflection of how his name is pronounced or written differently. Nonetheless, considering the information available, it seems more plausible to consider that the correct answer could be:\n\nResponse: {'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nExplanation: The documents provide information about the late Archbishop Paul Verdzekov, confirming his full name as Paul Verdzekov. Therefore, the statement \"The name of Paul Verdzekov is Verdzekov, Paul\" is supported by the given context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

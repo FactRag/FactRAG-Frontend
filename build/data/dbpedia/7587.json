@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Anne_Sjerp_Troelstra",
+    "predicate": "ontology/doctoralStudent",
+    "object": "resource/Daniel_Leivant",
+    "human_readable": "Anne Sjerp Troelstra was a doctoral student of Daniel Leivant.",
+    "questions": [
+        {
+            "score": 0.9819492697715759,
+            "question": "Who was Anne Sjerp Troelstra a doctoral student of?"
+        },
+        {
+            "score": 0.9533540606498718,
+            "question": "Can you tell me about the academic connection between Anne Sjerp Troelstra and Daniel Leivant?"
+        },
+        {
+            "score": 0.9401743412017822,
+            "question": "What field of study might Anne Sjerp Troelstra and Daniel Leivant be involved in?"
+        },
+        {
+            "score": 0.9176585078239441,
+            "question": "What was Daniel Leivant's role in relation to Anne Sjerp Troelstra?"
+        },
+        {
+            "score": 0.87675541639328,
+            "question": "Was Anne Sjerp Troelstra a student at any point?"
+        },
+        {
+            "score": 0.7699591517448425,
+            "question": "What type of relationship existed between Anne Sjerp Troelstra and Daniel Leivant?"
+        },
+        {
+            "score": 0.6787459850311279,
+            "question": "Who mentored Anne Sjerp Troelstra during her doctoral studies?"
+        },
+        {
+            "score": 0.6629530787467957,
+            "question": "Who is Daniel Leivant?"
+        },
+        {
+            "score": 0.6625317931175232,
+            "question": "Did Anne Sjerp Troelstra pursue higher education?"
+        },
+        {
+            "score": 0.020401233807206154,
+            "question": "What is the nature of the connection described in this statement?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Anne Sjerp Troelstra was a doctoral student of Daniel Leivant.",
+            "html": "dbpedia_7587_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Did Anne Sjerp Troelstra pursue higher education?",
+            "html": "dbpedia_7587_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is Daniel Leivant?",
+            "html": "dbpedia_7587_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who mentored Anne Sjerp Troelstra during her doctoral studies?",
+            "html": "dbpedia_7587_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_7587_1.txt"
+        },
+        {
+            "file_id": "dbpedia_7587_12.txt"
+        },
+        {
+            "file_id": "dbpedia_7587_15.txt"
+        },
+        {
+            "file_id": "dbpedia_7587_16.txt"
+        },
+        {
+            "file_id": "dbpedia_7587_17.txt"
+        },
+        {
+            "file_id": "dbpedia_7587_18.txt"
+        },
+        {
+            "file_id": "dbpedia_7587_20.txt"
+        },
+        {
+            "file_id": "dbpedia_7587_21.txt"
+        },
+        {
+            "file_id": "dbpedia_7587_4.txt"
+        },
+        {
+            "file_id": "dbpedia_7587_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'} \n\nThe information in the documents supports this triple. The document file_path:/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_7587/re-ranker-msmarco/4.txt mentions that \"His first PhD student Daniel Leivant finished a thesis in 1975 on the meta-mathematics of intuitionistic arithmetic, and later made his career in computer science.\" This implies that Anne Sjerp Troelstra supervised Daniel Leivant's PhD research."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: The documents do not support the statement that Anne Sjerp Troelstra was a doctoral student of Daniel Leivant. In fact, it is stated that Daniel Leivant was one of Troelstra's PhD students. Therefore, the triple is incorrect according to the provided information."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Anne Sjerp Troelstra was not a doctoral student of Daniel Leivant, but rather the opposite; Daniel Leivant was Anne Sjerp Troelstra's first PhD student.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Troelstra was a doctoral advisor to Leivant, not the other way around.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Anne Sjerp Troelstra was Daniel Leivant's PhD advisor, not a doctoral student of his. The context information states that Daniel Leivant finished a thesis in 1975 under the supervision of Anne Sjerp Troelstra.",
+            "category": 2
+        }
+    }
+}

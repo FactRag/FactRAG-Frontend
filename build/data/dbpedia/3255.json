@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Miroslav_Svoboda_(ice_hockey)",
+    "predicate": "ontology/birthPlace",
+    "object": "resource/Vset\u00edn",
+    "human_readable": "Miroslav Svoboda was born in Vset\u00edn.",
+    "questions": [
+        {
+            "score": 0.9318040609359741,
+            "question": "Name the city where Miroslav Svoboda was born."
+        },
+        {
+            "score": 0.9205746650695801,
+            "question": "Where was Miroslav Svoboda born?"
+        },
+        {
+            "score": 0.7771177291870117,
+            "question": "What nationality is Miroslav Svoboda?"
+        },
+        {
+            "score": 0.6090394258499146,
+            "question": "What is Miroslav Svoboda known for?"
+        },
+        {
+            "score": 0.5143094062805176,
+            "question": "What is Miroslav Svoboda's profession?"
+        },
+        {
+            "score": 0.5010642409324646,
+            "question": "Is Miroslav Svoboda still alive?"
+        },
+        {
+            "score": 0.435648649930954,
+            "question": "Does Miroslav Svoboda have any siblings?"
+        },
+        {
+            "score": 0.42980605363845825,
+            "question": "Where does Miroslav Svoboda currently live?"
+        },
+        {
+            "score": 0.3351184129714966,
+            "question": "Is Miroslav Svoboda married?"
+        },
+        {
+            "score": 0.3161744773387909,
+            "question": "What are Miroslav Svoboda's hobbies?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Miroslav Svoboda was born in Vset\u00edn.",
+            "html": "dbpedia_3255_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Miroslav Svoboda married?",
+            "html": "dbpedia_3255_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where does Miroslav Svoboda currently live?",
+            "html": "dbpedia_3255_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Miroslav Svoboda have any siblings?",
+            "html": "dbpedia_3255_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3255_10.txt"
+        },
+        {
+            "file_id": "dbpedia_3255_120.txt"
+        },
+        {
+            "file_id": "dbpedia_3255_41.txt"
+        },
+        {
+            "file_id": "dbpedia_3255_43.txt"
+        },
+        {
+            "file_id": "dbpedia_3255_44.txt"
+        },
+        {
+            "file_id": "dbpedia_3255_48.txt"
+        },
+        {
+            "file_id": "dbpedia_3255_78.txt"
+        },
+        {
+            "file_id": "dbpedia_3255_81.txt"
+        },
+        {
+            "file_id": "dbpedia_3255_83.txt"
+        },
+        {
+            "file_id": "dbpedia_3255_97.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "After analyzing the context information, I can confirm that:\n\n{\n  \"output\": \"no\"\n}\n\nThe documents mention a person named Miroslav Svoboda, but his birthplace is not explicitly stated as Vset\u00edn. The correct birthplaces mentioned in the documents are Prague (twice) and \u010c\u00e1slav."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe document at file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3255/re-ranker-msmarco/44.txt states that Miroslav Svoboda's place of birth is Vsetin, CZE (Czech Republic). Therefore, the statement \"Miroslav Svoboda was born in Vset\u00edn\" is supported by the provided information."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "There are multiple distinct individuals named Miroslav Svoboda with different birthdates, professions, and backgrounds described in the context.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The provided information states two different birthplaces for Miroslav Svoboda (Vset\u00edn in one and Prague, Bohemia, Austria-Hungary in the other), which suggests a discrepancy. However, it also mentions that there are three different individuals named Miroslav Svoboda with different ages, dates of birth, and occupations, making it unclear which one is being referred to when stating he was born in Vset\u00edn.",
+            "category": 2
+        }
+    }
+}

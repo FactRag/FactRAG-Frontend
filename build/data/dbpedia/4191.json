@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Atari_7800",
+    "predicate": "property/releaseDate",
+    "object": "EU: 1987",
+    "human_readable": "The release date of Atari 7800 in Europe is 1987.",
+    "questions": [
+        {
+            "score": 0.9687867164611816,
+            "question": "What was the release date of the Atari 7800 in Europe?"
+        },
+        {
+            "score": 0.965610146522522,
+            "question": "When was the Atari 7800 released in Europe?"
+        },
+        {
+            "score": 0.9164389371871948,
+            "question": "In which year did Atari release the 7800 console in Europe?"
+        },
+        {
+            "score": 0.9018334150314331,
+            "question": "What year did the Atari 7800 launch in Europe?"
+        },
+        {
+            "score": 0.8627598285675049,
+            "question": "What year marked the arrival of the Atari 7800 in Europe?"
+        },
+        {
+            "score": 0.7873120307922363,
+            "question": "What was the launch date of the Atari 7800 console for European buyers?"
+        },
+        {
+            "score": 0.7504296898841858,
+            "question": "When did the Atari 7800 become available in European markets?"
+        },
+        {
+            "score": 0.6906416416168213,
+            "question": "At what point in time was the Atari 7800 introduced to European consumers?"
+        },
+        {
+            "score": 0.6325547099113464,
+            "question": "If someone wanted to buy an Atari 7800 in Europe, what year would they have had to wait until?"
+        },
+        {
+            "score": 0.598684549331665,
+            "question": "1987 is associated with which event related to Atari?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The release date of Atari 7800 in Europe is 1987.",
+            "html": "dbpedia_4191_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If someone wanted to buy an Atari 7800 in Europe, what year would they have had to wait until?",
+            "html": "dbpedia_4191_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=At what point in time was the Atari 7800 introduced to European consumers?",
+            "html": "dbpedia_4191_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=When did the Atari 7800 become available in European markets?",
+            "html": "dbpedia_4191_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4191_1.txt"
+        },
+        {
+            "file_id": "dbpedia_4191_14.txt"
+        },
+        {
+            "file_id": "dbpedia_4191_16.txt"
+        },
+        {
+            "file_id": "dbpedia_4191_23.txt"
+        },
+        {
+            "file_id": "dbpedia_4191_26.txt"
+        },
+        {
+            "file_id": "dbpedia_4191_39.txt"
+        },
+        {
+            "file_id": "dbpedia_4191_61.txt"
+        },
+        {
+            "file_id": "dbpedia_4191_62.txt"
+        },
+        {
+            "file_id": "dbpedia_4191_7.txt"
+        },
+        {
+            "file_id": "dbpedia_4191_90.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents support that the European release date for the Atari 7800 was indeed in 1987. Specifically, the document at path `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4191/re-ranker-msmarco/23.txt` states \"EU 1987\", confirming the release date as 1987."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n    \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "There are multiple conflicting dates provided for the European release of Atari 7800, suggesting a lack of consensus. However, cross-referencing with other reliable sources indicates that the console was actually released in Europe in late 1986 or early 1987, making the claim of \"1987\" accurate but not specific enough.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "The text states that the Atari XEGS was released in Europe on September 1st, 1987, and the Atari 7800 ProSystem followed later that year. It would be unusual for a successor console to be released after its predecessor.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The European release date of the Atari 7800 ProSystem is actually mentioned as \"1987\" (PAL) in section 5, which implies that it was released in Europe at the same time as the North American release date mentioned earlier in section 1 as January 1986.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information clearly states that the Atari 7800 was released in Europe in 1987 for PAL regions, but also mentions \"US June 1984 (original release) US January 1986 (re-release)\", indicating an earlier release date. Additionally, it specifies \"EU 1987\" under quick facts, which aligns with European releases being in early to mid-1986 based on other details provided.",
+            "category": 2
+        }
+    }
+}

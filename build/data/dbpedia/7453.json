@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Robert_Ford_(poet)",
+    "predicate": "ontology/birthPlace",
+    "object": "resource/Ontario",
+    "human_readable": "Robert Ford was born in Ontario.",
+    "questions": [
+        {
+            "score": 0.8969370126724243,
+            "question": "Where was Robert Ford born?"
+        },
+        {
+            "score": 0.8849168419837952,
+            "question": "In what province was Robert Ford born?"
+        },
+        {
+            "score": 0.7961103320121765,
+            "question": "What year was Robert Ford born?"
+        },
+        {
+            "score": 0.6820324659347534,
+            "question": "Where did Robert Ford grow up?"
+        },
+        {
+            "score": 0.5113713145256042,
+            "question": "What is Robert Ford's nationality?"
+        },
+        {
+            "score": 0.44862714409828186,
+            "question": "What is Robert Ford known for?"
+        },
+        {
+            "score": 0.3477676510810852,
+            "question": "Is there any information about Robert Ford's family?"
+        },
+        {
+            "score": 0.2833298146724701,
+            "question": "Did Robert Ford have any notable achievements?"
+        },
+        {
+            "score": 0.2549852728843689,
+            "question": "Can you tell me more about Robert Ford's life?"
+        },
+        {
+            "score": 0.23134735226631165,
+            "question": "Is there anything else interesting about Robert Ford?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Robert Ford was born in Ontario.",
+            "html": "dbpedia_7453_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about Robert Ford's life?",
+            "html": "dbpedia_7453_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Did Robert Ford have any notable achievements?",
+            "html": "dbpedia_7453_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there any information about Robert Ford's family?",
+            "html": "dbpedia_7453_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_7453_122.txt"
+        },
+        {
+            "file_id": "dbpedia_7453_125.txt"
+        },
+        {
+            "file_id": "dbpedia_7453_127.txt"
+        },
+        {
+            "file_id": "dbpedia_7453_135.txt"
+        },
+        {
+            "file_id": "dbpedia_7453_136.txt"
+        },
+        {
+            "file_id": "dbpedia_7453_20.txt"
+        },
+        {
+            "file_id": "dbpedia_7453_40.txt"
+        },
+        {
+            "file_id": "dbpedia_7453_45.txt"
+        },
+        {
+            "file_id": "dbpedia_7453_78.txt"
+        },
+        {
+            "file_id": "dbpedia_7453_80.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "{\n  \"output\": \"yes\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide information that supports the statement \"Robert Ford was born in Ontario.\" Specifically, several files mention his birthplace as Etobicoke, which is a city in Ontario, Canada."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Rob Ford was born specifically in Etobicoke, Ontario, not just Ontario as a whole.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "The context provides specific details about several individuals named Robert Ford, including their birthplaces. Some are from Ontario, while others are from different locations. This indicates that not all individuals named Robert Ford were born in Ontario.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "It conflicts with the multiple sources stating that Robert Ford was born in Etobicoke, Ontario, Canada.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context specifies that Robert Bruce Ford was born in Etobicoke, Ontario, Canada, not just Ontario.",
+            "category": 2
+        }
+    }
+}

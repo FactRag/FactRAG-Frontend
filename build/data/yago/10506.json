@@ -1,0 +1,134 @@
+{
+    "subject": "Ola_Rapace",
+    "predicate": "isMarriedTo",
+    "object": "Noomi_Rapace",
+    "human_readable": "Ola Rapace is married to Noomi Rapace.",
+    "questions": [
+        {
+            "score": 0.9641096591949463,
+            "question": "Name one of the spouses in the couple Ola Rapace and Noomi Rapace."
+        },
+        {
+            "score": 0.9305946230888367,
+            "question": "Is Noomi Rapace married?"
+        },
+        {
+            "score": 0.9173721671104431,
+            "question": "What is the name of one spouse in the couple Ola Rapace and Noomi Rapace?"
+        },
+        {
+            "score": 0.9109821915626526,
+            "question": "Who is Ola Rapace married to?"
+        },
+        {
+            "score": 0.8749161958694458,
+            "question": "What is the relationship between Ola Rapace and Noomi Rapace?"
+        },
+        {
+            "score": 0.7775014638900757,
+            "question": "Are Ola Rapace and Noomi Rapace related?"
+        },
+        {
+            "score": 0.7334997057914734,
+            "question": "Who is Ola Rapace?"
+        },
+        {
+            "score": 0.6276249885559082,
+            "question": "Are Ola Rapace and Noomi Rapace actors?"
+        },
+        {
+            "score": 0.43907734751701355,
+            "question": "Do Ola Rapace and Noomi Rapace work in the same industry?"
+        },
+        {
+            "score": 0.39300355315208435,
+            "question": "Is Ola Rapace Swedish?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Ola Rapace is married to Noomi Rapace.",
+            "html": "yago_10506_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Do Ola Rapace and Noomi Rapace work in the same industry?",
+            "html": "yago_10506_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are Ola Rapace and Noomi Rapace actors?",
+            "html": "yago_10506_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is Ola Rapace?",
+            "html": "yago_10506_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "yago_10506_101.txt"
+        },
+        {
+            "file_id": "yago_10506_132.txt"
+        },
+        {
+            "file_id": "yago_10506_21.txt"
+        },
+        {
+            "file_id": "yago_10506_32.txt"
+        },
+        {
+            "file_id": "yago_10506_36.txt"
+        },
+        {
+            "file_id": "yago_10506_41.txt"
+        },
+        {
+            "file_id": "yago_10506_55.txt"
+        },
+        {
+            "file_id": "yago_10506_66.txt"
+        },
+        {
+            "file_id": "yago_10506_84.txt"
+        },
+        {
+            "file_id": "yago_10506_90.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation of the triple:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation:\nThe documents mention that \"Noomi Rapache is married to actor Ola Rapace\" (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/yago_10506/re-ranker-msmarco/46.txt) and also state that \"Before dating Victor, Noomi was married to Ola Rapace from 2001 to 2011.\" (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/yago_10506/re-ranker-msmarco/11.txt). These statements suggest that Noomi and Ola are married, not the other way around."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: The documents state that \"Rapace was married to Swedish actor Ola Norell\" and later that \"Currently, she is single.\" This indicates that Noomi Rapace was previously married to Ola Norell but is currently not married. Therefore, the statement \"Ola Rapace is married to Noomi Rapace\" is incorrect according to the given documents."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "qwen2.5": {
+            "reason": "Ola Rapace was previously married to Noomi Rapace from 2001 to 2011, and they are currently divorced. The context clearly states that she is currently single and not married to anyone mentioned as \"Rapace Wave.\"",
+            "category": 0
+        }
+    }
+}

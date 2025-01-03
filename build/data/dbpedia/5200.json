@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Kabul",
+    "predicate": "property/sepHumidity",
+    "object": "39",
+    "human_readable": "The humidity in Kabul is 39.",
+    "questions": [
+        {
+            "score": 0.7933158874511719,
+            "question": "What is the humidity level in Kabul?"
+        },
+        {
+            "score": 0.7341787815093994,
+            "question": "Is the humidity in Kabul currently high or low?"
+        },
+        {
+            "score": 0.6497822403907776,
+            "question": "What factors might influence the humidity in Kabul?"
+        },
+        {
+            "score": 0.6397854089736938,
+            "question": "How would you describe the weather conditions in Kabul based on the humidity level?"
+        },
+        {
+            "score": 0.6108866930007935,
+            "question": "Would a person feel comfortable outdoors in Kabul with this humidity level?"
+        },
+        {
+            "score": 0.5837295651435852,
+            "question": "How does the humidity in Kabul compare to other cities you know?"
+        },
+        {
+            "score": 0.5748134255409241,
+            "question": "Is there a specific time of year when Kabul experiences higher humidity?"
+        },
+        {
+            "score": 0.5567945837974548,
+            "question": "What impact could high humidity have on daily life in Kabul?"
+        },
+        {
+            "score": 0.09605469554662704,
+            "question": "Can you explain the relationship between humidity and temperature?"
+        },
+        {
+            "score": 0.06414826959371567,
+            "question": "What are some ways to stay comfortable in humid weather?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The humidity in Kabul is 39.",
+            "html": "dbpedia_5200_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you explain the relationship between humidity and temperature?",
+            "html": "dbpedia_5200_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What impact could high humidity have on daily life in Kabul?",
+            "html": "dbpedia_5200_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there a specific time of year when Kabul experiences higher humidity?",
+            "html": "dbpedia_5200_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5200_108.txt"
+        },
+        {
+            "file_id": "dbpedia_5200_17.txt"
+        },
+        {
+            "file_id": "dbpedia_5200_45.txt"
+        },
+        {
+            "file_id": "dbpedia_5200_51.txt"
+        },
+        {
+            "file_id": "dbpedia_5200_52.txt"
+        },
+        {
+            "file_id": "dbpedia_5200_54.txt"
+        },
+        {
+            "file_id": "dbpedia_5200_69.txt"
+        },
+        {
+            "file_id": "dbpedia_5200_79.txt"
+        },
+        {
+            "file_id": "dbpedia_5200_88.txt"
+        },
+        {
+            "file_id": "dbpedia_5200_92.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe provided text states that the humidity in Kabul is around 63% and doesn't mention a humidity level of 39%.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe query \"The humidity in Kabul is 39.\" is incorrect according to the provided documents. The documents state that the humidity in Kabul does not vary significantly over the course of the year and remains at a virtually constant 0%, indicating very low humidity rather than 39%."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n      \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The text provided indicates that the perceived humidity level in Kabul, as measured by the percentage of time in which the humidity comfort level is muggy, oppressive, or miserable, does not vary significantly over the course of the year, remaining a virtually constant 0% throughout. There is no mention of any specific humidity value (such as 39) for Kabul during any month.",
+            "category": -1
+        },
+        "gemma2": {
+            "reason": "The provided text states that the perceived humidity level in Kabul remains a virtually constant 0% throughout the year.",
+            "category": -1
+        },
+        "llama3.1": {
+            "reason": "The provided context information states that the humidity comfort levels in Kabul are measured by a percentage of time in which the humidity comfort level is muggy, oppressive, or miserable, and it remains virtually constant 0% throughout the year, indicating no significant variation in overall humidity.",
+            "category": -1
+        },
+        "qwen2.5": {
+            "reason": "The context explicitly states that the perceived humidity level in Kabul does not vary significantly over the course of the year and remains a virtually constant 0%, indicating no muggy, oppressive, or miserable conditions. Therefore, a humidity reading of 39% is inconsistent with the described climate conditions.",
+            "category": -1
+        }
+    }
+}

@@ -1,0 +1,134 @@
+{
+    "subject": "resource/WTWW",
+    "predicate": "ontology/broadcastArea",
+    "object": "resource/Middle_East",
+    "human_readable": "WTWW broadcasts in the Middle East.",
+    "questions": [
+        {
+            "score": 0.8788133263587952,
+            "question": "How does WTWW reach its audience in the Middle East?"
+        },
+        {
+            "score": 0.8334189057350159,
+            "question": "Where does WTWW broadcast?"
+        },
+        {
+            "score": 0.6844226717948914,
+            "question": "Is WTWW a local or international broadcaster?"
+        },
+        {
+            "score": 0.64292973279953,
+            "question": "What region does WTWW target with its broadcasts?"
+        },
+        {
+            "score": 0.6256164908409119,
+            "question": "Who is the intended audience for WTWW broadcasts?"
+        },
+        {
+            "score": 0.5430113673210144,
+            "question": "Are there any other broadcasters that target the Middle East?"
+        },
+        {
+            "score": 0.54107266664505,
+            "question": "What are some of the challenges faced by broadcasters in the Middle East?"
+        },
+        {
+            "score": 0.540329098701477,
+            "question": "What languages might WTWW broadcast in?"
+        },
+        {
+            "score": 0.4284646213054657,
+            "question": "What type of programming might WTWW broadcast?"
+        },
+        {
+            "score": 0.2693977952003479,
+            "question": "What is the impact of WTWW on its audience?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=WTWW broadcasts in the Middle East.",
+            "html": "dbpedia_6178_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of programming might WTWW broadcast?",
+            "html": "dbpedia_6178_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What languages might WTWW broadcast in?",
+            "html": "dbpedia_6178_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some of the challenges faced by broadcasters in the Middle East?",
+            "html": "dbpedia_6178_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6178_102.txt"
+        },
+        {
+            "file_id": "dbpedia_6178_113.txt"
+        },
+        {
+            "file_id": "dbpedia_6178_25.txt"
+        },
+        {
+            "file_id": "dbpedia_6178_40.txt"
+        },
+        {
+            "file_id": "dbpedia_6178_74.txt"
+        },
+        {
+            "file_id": "dbpedia_6178_78.txt"
+        },
+        {
+            "file_id": "dbpedia_6178_79.txt"
+        },
+        {
+            "file_id": "dbpedia_6178_82.txt"
+        },
+        {
+            "file_id": "dbpedia_6178_88.txt"
+        },
+        {
+            "file_id": "dbpedia_6178_94.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": -1,
+            "full_ans": "Based on the provided context information, I will evaluate whether the statement \"WTWW broadcasts in the Middle East\" is supported by the documents.\n\nThe relevant documents are:\n\n* file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6178/re-ranker-msmarco/73.txt\n* file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6178/re-ranker-msmarco/78.txt\n* file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6178/re-ranker-msmarco/87.txt\n* file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6178/re-ranker-msmarco/112.txt\n\nAccording to the documents, WTWW broadcasts programming to eastern Canada, Europe, northern Africa, and the Middle East (files 73.txt, 78.txt). Additionally, file 87.txt states that the signal was coming from the Lebanon 100kW transmitter in Tennessee, USA, which is broadcasting on 5085 kHz in the English language. This suggests that WTWW's broadcast does reach the Middle East.\n\nHowever, I did not find any direct information confirming that WTWW specifically broadcasts content targeted at or aimed towards the Middle East audience (as opposed to just reaching them).\n\nTherefore:\n\n* {'output': 'maybe'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide information that supports the statement \"WTWW broadcasts in the Middle East.\" Specifically, file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6178/re-ranker-msmarco/78.txt mentions that WTWW broadcasts to \"eastern Canada, Europe, northern Africa, and the Middle East,\" confirming its coverage area includes the Middle East."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "There is no mention of the Middle East being a broadcasting region for WTWW in any of the provided context information, which contradicts the initial claim.",
+            "category": 2
+        }
+    }
+}

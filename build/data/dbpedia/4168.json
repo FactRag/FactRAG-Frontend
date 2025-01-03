@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Lightning_Strikes_Twice_(1934_film)",
+    "predicate": "property/title",
+    "object": "Lightning Strikes Twice",
+    "human_readable": "The title of Lightning Strikes Twice (1934 film) is Lightning Strikes Twice.",
+    "questions": [
+        {
+            "score": 0.9170314073562622,
+            "question": "What year was the film 'Lightning Strikes Twice' released?"
+        },
+        {
+            "score": 0.8875792026519775,
+            "question": "What genre is likely associated with a film titled 'Lightning Strikes Twice'?"
+        },
+        {
+            "score": 0.8174543380737305,
+            "question": "What is the title of the 1934 film?"
+        },
+        {
+            "score": 0.6498265266418457,
+            "question": "What is the significance of the word 'twice' in the film title?"
+        },
+        {
+            "score": 0.5898018479347229,
+            "question": "Can you tell me the title of a film released in 1934?"
+        },
+        {
+            "score": 0.40612122416496277,
+            "question": "Is the title of the film the same as its name?"
+        },
+        {
+            "score": 0.27133503556251526,
+            "question": "Do you know of any other films with similar titles?"
+        },
+        {
+            "score": 0.24654045701026917,
+            "question": "What might be a plot idea for a film with this title?"
+        },
+        {
+            "score": 0.20337100327014923,
+            "question": "Why do you think the filmmakers chose this title?"
+        },
+        {
+            "score": 0.07671306282281876,
+            "question": "Are there any famous actors who appeared in this film?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The title of Lightning Strikes Twice (1934 film) is Lightning Strikes Twice.",
+            "html": "dbpedia_4168_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Why do you think the filmmakers chose this title?",
+            "html": "dbpedia_4168_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What might be a plot idea for a film with this title?",
+            "html": "dbpedia_4168_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Do you know of any other films with similar titles?",
+            "html": "dbpedia_4168_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4168_16.txt"
+        },
+        {
+            "file_id": "dbpedia_4168_23.txt"
+        },
+        {
+            "file_id": "dbpedia_4168_25.txt"
+        },
+        {
+            "file_id": "dbpedia_4168_45.txt"
+        },
+        {
+            "file_id": "dbpedia_4168_47.txt"
+        },
+        {
+            "file_id": "dbpedia_4168_6.txt"
+        },
+        {
+            "file_id": "dbpedia_4168_61.txt"
+        },
+        {
+            "file_id": "dbpedia_4168_63.txt"
+        },
+        {
+            "file_id": "dbpedia_4168_68.txt"
+        },
+        {
+            "file_id": "dbpedia_4168_73.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the context information, I can evaluate the triple as follows:\n\n{\n  \"output\": \"no\"\n}\n\nThe reason for this answer is that there are two films with the title \"Lightning Strikes Twice\" in the provided documents. One was released in 1951 and another in 1934. The triple statement only mentions the year 1934, but it's not clear which film is being referred to, as there are multiple films with this title mentioned in the documents."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents mention the movie \"Lightning Strikes Twice\" multiple times, and in one document, it explicitly states the release date as December 7, 1934. This supports the title of the 1934 film being \"Lightning Strikes Twice.\""
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n    \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{\"output\": \"yes\"}\n\nThe documents indicate that there indeed was a movie titled \"Lightning Strikes Twice\" released on December 7, 1934. However, the document also mentions another film noir named \"Lightning Strikes Twice\" from 1951 which seems to be different and directed by King Vidor. The query specifically asks if the title of the 1934 film is \"Lightning Strikes Twice,\" which matches the information provided in one of the documents. Therefore, the answer is \"yes\"."
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The provided context mentions a film titled Lightning Strikes Twice, but it was released in 1951, not 1934. The 1934 reference in the context seems to be related to the plot of that film, and not its release date.",
+            "category": 3
+        },
+        "llama3.1": {
+            "reason": "The title of the 1934 film is actually \"Lightning Strikes Twice\" not, as previously stated, but the fact that there is a different movie with the same name (1951) makes it clear that the earlier statement was incorrect.",
+            "category": 3
+        }
+    }
+}

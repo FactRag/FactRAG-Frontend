@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Stan_Rosenberg",
+    "predicate": "http://xmlns.com/foaf/0.1/depiction",
+    "object": "http://commons.wikimedia.org/wiki/Special:FilePath/Senator_Stan_Rosenberg.JPG",
+    "human_readable": "Stan Rosenberg has a depiction of Senator Stan Rosenberg.jpg.",
+    "questions": [
+        {
+            "score": 0.9745440483093262,
+            "question": "Is the depiction in 'Senator Stan Rosenberg.jpg' a photograph or a drawing?"
+        },
+        {
+            "score": 0.9631896018981934,
+            "question": "Who is depicted in the image 'Senator Stan Rosenberg.jpg'?"
+        },
+        {
+            "score": 0.9430130124092102,
+            "question": "Who might have created the image 'Senator Stan Rosenberg.jpg'?"
+        },
+        {
+            "score": 0.9317486882209778,
+            "question": "What information does the image 'Senator Stan Rosenberg.jpg' convey about Stan Rosenberg?"
+        },
+        {
+            "score": 0.9225247502326965,
+            "question": "What is the subject of the image 'Senator Stan Rosenberg.jpg'?"
+        },
+        {
+            "score": 0.9180396199226379,
+            "question": "Where might one find the image 'Senator Stan Rosenberg.jpg'?"
+        },
+        {
+            "score": 0.885170042514801,
+            "question": "Could there be multiple depictions of Senator Stan Rosenberg?"
+        },
+        {
+            "score": 0.8772547245025635,
+            "question": "Does Stan Rosenberg have a depiction of himself?"
+        },
+        {
+            "score": 0.8707218170166016,
+            "question": "What is the purpose of having a depiction of Senator Stan Rosenberg?"
+        },
+        {
+            "score": 0.8309915661811829,
+            "question": "What type of file is 'Senator Stan Rosenberg.jpg'?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Stan Rosenberg has a depiction of Senator Stan Rosenberg.jpg.",
+            "html": "dbpedia_1454_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the purpose of having a depiction of Senator Stan Rosenberg?",
+            "html": "dbpedia_1454_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Stan Rosenberg have a depiction of himself?",
+            "html": "dbpedia_1454_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Could there be multiple depictions of Senator Stan Rosenberg?",
+            "html": "dbpedia_1454_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1454_15.txt"
+        },
+        {
+            "file_id": "dbpedia_1454_19.txt"
+        },
+        {
+            "file_id": "dbpedia_1454_30.txt"
+        },
+        {
+            "file_id": "dbpedia_1454_38.txt"
+        },
+        {
+            "file_id": "dbpedia_1454_4.txt"
+        },
+        {
+            "file_id": "dbpedia_1454_48.txt"
+        },
+        {
+            "file_id": "dbpedia_1454_49.txt"
+        },
+        {
+            "file_id": "dbpedia_1454_6.txt"
+        },
+        {
+            "file_id": "dbpedia_1454_64.txt"
+        },
+        {
+            "file_id": "dbpedia_1454_69.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, here is the evaluation of whether the statement \"Stan Rosenberg has a depiction of Senator Stan Rosenberg.jpg\" is supported by the documents:\n\n{\n  \"output\": \"no\"\n}\n\nThe reason for this answer is that while there are multiple documents related to Stan Rosenberg, including one with an image file named \"rosenberg.JPG\", none of them mention or depict Senator Stan Rosenberg directly. The context information includes images and articles about Stan Rosenberg, but the depiction in question specifically mentions a \"Senator Stan Rosenberg.jpg\" which is not mentioned in any of the provided documents."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents provide several images and descriptions that depict or mention Senator Stan Rosenberg, supporting the statement that there is a depiction of him named \"Senator Stan Rosenberg.jpg\"."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The first piece of context information (number 1) contains a picture file named \"rosenberg.JPG\" which depicts Senate President Stan Rosenberg, implying that there actually exists an image file with this name.",
+            "category": 2
+        }
+    }
+}

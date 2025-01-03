@@ -1,0 +1,114 @@
+{
+    "subject": "resource/Jens_Truckenbrod",
+    "predicate": "property/name",
+    "object": "Truckenbrod, Jens",
+    "human_readable": "Jens Truckenbrod's name is Jens Truckenbrod.",
+    "questions": [
+        {
+            "score": 0.9849093556404114,
+            "question": "What is Jens Truckenbrod's name?"
+        },
+        {
+            "score": 0.9772042036056519,
+            "question": "Is Jens Truckenbrod his own name?"
+        },
+        {
+            "score": 0.8159300684928894,
+            "question": "Can you tell me more about Jens Truckenbrod?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Jens Truckenbrod's name is Jens Truckenbrod.",
+            "html": "dbpedia_2364_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Jens Truckenbrod his own name?",
+            "html": "dbpedia_2364_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Jens Truckenbrod's name?",
+            "html": "dbpedia_2364_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2364_10.txt"
+        },
+        {
+            "file_id": "dbpedia_2364_15.txt"
+        },
+        {
+            "file_id": "dbpedia_2364_17.txt"
+        },
+        {
+            "file_id": "dbpedia_2364_18.txt"
+        },
+        {
+            "file_id": "dbpedia_2364_21.txt"
+        },
+        {
+            "file_id": "dbpedia_2364_3.txt"
+        },
+        {
+            "file_id": "dbpedia_2364_30.txt"
+        },
+        {
+            "file_id": "dbpedia_2364_41.txt"
+        },
+        {
+            "file_id": "dbpedia_2364_65.txt"
+        },
+        {
+            "file_id": "dbpedia_2364_69.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the structured JSON format with the evaluation of whether the information in the documents supports the triple \"Jens Truckenbrod's name is Jens Truckenbrod.\":\n\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe reason for this answer is that the document contains a section labeled \"Jens Truckenbrod Bio\", which clearly states that the subject of the text is indeed named \"Jens Truckenbrod\"."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents clearly state \"Jens Truckenbrod Bio\" and provide detailed information about his career and personal traits, including the confirmation of his name. Therefore, the statement \"Jens Truckenbrod's name is Jens Truckenbrod\" is correct according to the provided context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {'output': 'yes'}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "It is a redundant statement, as the name of a person by definition does not change.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "The provided context repeatedly states \"Jens Truckenbrod\" as his name.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The context information consistently refers to the person as Jens Truckenbrod with a proper noun, suggesting that the name itself is a fact and not subject to evaluation.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information clearly provides multiple bios and descriptions of Jens Truckenbrod without any indication that his name is incorrect. His name and biographical details are consistently mentioned throughout the provided texts, suggesting no error in this specific fact.",
+            "category": 2
+        }
+    }
+}

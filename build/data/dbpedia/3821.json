@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Usuran",
+    "predicate": "property/pushpinMapCaption",
+    "object": "Location in Iran",
+    "human_readable": "The pushpin map caption of Usuran is 'Location in Iran'.",
+    "questions": [
+        {
+            "score": 0.8997597098350525,
+            "question": "Is Usuran located in Iran?"
+        },
+        {
+            "score": 0.7078776955604553,
+            "question": "What does the caption on the pushpin map of Usuran say?"
+        },
+        {
+            "score": 0.6919177770614624,
+            "question": "Where is Usuran located?"
+        },
+        {
+            "score": 0.4999193549156189,
+            "question": "Can you describe the location of Usuran based on the given information?"
+        },
+        {
+            "score": 0.4895135760307312,
+            "question": "What other details might be included on a map about Usuran?"
+        },
+        {
+            "score": 0.435235857963562,
+            "question": "What type of information is provided by the caption on the pushpin map?"
+        },
+        {
+            "score": 0.40704476833343506,
+            "question": "What country is Usuran in?"
+        },
+        {
+            "score": 0.24094651639461517,
+            "question": "Do you know of any other places in Iran?"
+        },
+        {
+            "score": 0.23895218968391418,
+            "question": "How could this information about Usuran be useful?"
+        },
+        {
+            "score": 0.18923038244247437,
+            "question": "If someone were looking for Usuran, what information would be helpful to them?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The pushpin map caption of Usuran is 'Location in Iran'.",
+            "html": "dbpedia_3821_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How could this information about Usuran be useful?",
+            "html": "dbpedia_3821_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Do you know of any other places in Iran?",
+            "html": "dbpedia_3821_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What country is Usuran in?",
+            "html": "dbpedia_3821_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3821_19.txt"
+        },
+        {
+            "file_id": "dbpedia_3821_21.txt"
+        },
+        {
+            "file_id": "dbpedia_3821_23.txt"
+        },
+        {
+            "file_id": "dbpedia_3821_28.txt"
+        },
+        {
+            "file_id": "dbpedia_3821_35.txt"
+        },
+        {
+            "file_id": "dbpedia_3821_4.txt"
+        },
+        {
+            "file_id": "dbpedia_3821_50.txt"
+        },
+        {
+            "file_id": "dbpedia_3821_7.txt"
+        },
+        {
+            "file_id": "dbpedia_3821_70.txt"
+        },
+        {
+            "file_id": "dbpedia_3821_71.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe provided text doesn't mention a caption for the Usuran map.  It does state that Usuran is located in East Azarbayejan, Iran."
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the provided context information, I can evaluate the triple \"The pushpin map caption of Usuran is 'Location in Iran'\".\n\nHere's my evaluation:\n\n* The document contains a section titled \"Usuran Map \u2014 Satellite Images of Usuran\" which suggests that the topic is about Usuran.\n* Within this section, there is a paragraph stating \"This place is situated in East Azarbayejan, Iran...\" which implies that the geographical location of Usuran is indeed in Iran.\n\nTherefore, my evaluation is:\n\n{'output': 'yes'}\n\nThe triple is supported by the information in the documents."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The context information does not contain any specific mention about a pushpin map or its caption stating \"Location in Iran.\" Instead, it provides geographical coordinates and mentions that Usuran is located in East Azarbayejan, Iran. There is no direct reference to the pushpin map's caption as specified in the query."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": -1,
+            "full_ans": "Based on the given context information, there is no specific mention of a \"pushpin map\" or a caption stating that \"Usuran's location is in Iran\". However, the documents do confirm that Usuran is located in East Azarbayejan, Iran. Therefore, while not explicitly stated as a pushpin map caption, the implication is correct according to the information provided.\n\nGiven this interpretation and the instruction to evaluate based on explicit support from the documents:\n\n```json\n{\"output\": \"yes\"}\n```\n\nThis response assumes that the implicit location detail within the context supports the statement about the caption. If strict adherence to explicitly stated captions in the document text is required, then it would be \"no\", as no such exact phrase appears in the provided content."
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "The provided text explicitly states Usuran's geographical location as \"East Azarbayejan, Iran\".",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information does not mention a pushpin map caption for Usuran, nor does it state that the location of Usuran is simply \"Location in Iran.\" Instead, it provides specific geographical coordinates and details about its location in East Azarbayejan, Iran.",
+            "category": 2
+        }
+    }
+}

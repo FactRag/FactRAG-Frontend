@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Phillip_Johnston",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:Living_people",
+    "human_readable": "Phillip Johnston's subject is Living people.",
+    "questions": [
+        {
+            "score": 0.9445138573646545,
+            "question": "Who are some important people in Phillip Johnston's life?"
+        },
+        {
+            "score": 0.8372093439102173,
+            "question": "What does Phillip Johnston do for a living?"
+        },
+        {
+            "score": 0.7336083650588989,
+            "question": "Can you tell me more about Phillip Johnston's life?"
+        },
+        {
+            "score": 0.7247269153594971,
+            "question": "How has Phillip Johnston contributed to society?"
+        },
+        {
+            "score": 0.6359660029411316,
+            "question": "Is Phillip Johnston still alive?"
+        },
+        {
+            "score": 0.560704231262207,
+            "question": "What are some of Phillip Johnston's accomplishments?"
+        },
+        {
+            "score": 0.5317135453224182,
+            "question": "What is Phillip Johnston known for?"
+        },
+        {
+            "score": 0.4870419502258301,
+            "question": "What are Phillip Johnston's hobbies and interests?"
+        },
+        {
+            "score": 0.42880234122276306,
+            "question": "Is Phillip Johnston involved in any notable projects or organizations?"
+        },
+        {
+            "score": 0.36996519565582275,
+            "question": "Where was Phillip Johnston born?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Phillip Johnston's subject is Living people.",
+            "html": "dbpedia_4318_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Phillip Johnston involved in any notable projects or organizations?",
+            "html": "dbpedia_4318_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are Phillip Johnston's hobbies and interests?",
+            "html": "dbpedia_4318_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Phillip Johnston known for?",
+            "html": "dbpedia_4318_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4318_105.txt"
+        },
+        {
+            "file_id": "dbpedia_4318_113.txt"
+        },
+        {
+            "file_id": "dbpedia_4318_116.txt"
+        },
+        {
+            "file_id": "dbpedia_4318_119.txt"
+        },
+        {
+            "file_id": "dbpedia_4318_17.txt"
+        },
+        {
+            "file_id": "dbpedia_4318_29.txt"
+        },
+        {
+            "file_id": "dbpedia_4318_62.txt"
+        },
+        {
+            "file_id": "dbpedia_4318_80.txt"
+        },
+        {
+            "file_id": "dbpedia_4318_81.txt"
+        },
+        {
+            "file_id": "dbpedia_4318_85.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nLet me explain why the answer is \"no\":\n\n* While the documents provide information about Phillip Johnston's life and work (music, writing, connection to L'Abri), they don't state that his subject matter *exclusively* revolves around living people.  \n\nIt's possible he writes or composes about other things as well. \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "To evaluate whether the information in the documents supports the triple \"Phillip Johnston's subject is Living people\", I need to extract relevant information from the text.\n\nHere's a possible extraction:\n\n* From file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4318/re-ranker-msmarco/29.txt:\n\t+ Phillip Johnston is a saxophonist, composer and arranger of both jazz and new music.\n* From file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4318/re-ranker-msmarco/78.txt:\n\t+ He continues to travel to New York or Europe several times a year to play with the people he's been playing with for decades.\n\nBased on this information, it appears that Phillip Johnston is indeed a living person, as he is still actively working in his field (music) and traveling frequently. Therefore:\n\n```\n{\n  \"output\": \"yes\"\n}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\"output\": \"yes\"}\n```\n\nThe documents provide information about Phillip Johnston, confirming that he is a living person involved in musical and cultural activities. Therefore, the triple stating that Phillip Johnston's subject is \"Living people\" is correct according to the given context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n    \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Phillip Johnston's work involves music composition for silent films which are not living things.  He also discusses themes of religion, culture, and freedom, which do not solely pertain to living people.",
+            "category": 3
+        }
+    }
+}

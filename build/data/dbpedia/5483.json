@@ -1,0 +1,112 @@
+{
+    "subject": "resource/Scratch_tape",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "Scratch tape",
+    "human_readable": "The label of Scratch tape is 'Scratch tape'.",
+    "questions": [
+        {
+            "score": 0.9622913002967834,
+            "question": "What is the label of Scratch tape?"
+        },
+        {
+            "score": 0.8960448503494263,
+            "question": "What information does the label of Scratch tape provide?"
+        },
+        {
+            "score": 0.8532588481903076,
+            "question": "How is Scratch tape identified?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The label of Scratch tape is 'Scratch tape'.",
+            "html": "dbpedia_5483_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What information does the label of Scratch tape provide?",
+            "html": "dbpedia_5483_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the label of Scratch tape?",
+            "html": "dbpedia_5483_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5483_25.txt"
+        },
+        {
+            "file_id": "dbpedia_5483_4.txt"
+        },
+        {
+            "file_id": "dbpedia_5483_46.txt"
+        },
+        {
+            "file_id": "dbpedia_5483_53.txt"
+        },
+        {
+            "file_id": "dbpedia_5483_69.txt"
+        },
+        {
+            "file_id": "dbpedia_5483_72.txt"
+        },
+        {
+            "file_id": "dbpedia_5483_81.txt"
+        },
+        {
+            "file_id": "dbpedia_5483_82.txt"
+        },
+        {
+            "file_id": "dbpedia_5483_89.txt"
+        },
+        {
+            "file_id": "dbpedia_5483_90.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nWhile the documents discuss scratch tapes and their properties, they don't explicitly state that the label of a scratch tape is \"Scratch tape\".  They mention that scratch volumes *contain* a label but don't specify what that label must be. \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe context information provided does not contain any specific details about the label of scratch tapes. While it discusses what a scratch tape is and how they are used, there is no mention or indication that the label of a scratch tape would be 'Scratch tape'."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, there is no explicit statement that confirms or denies whether a scratch tape's label must be \"Scratch tape\". However, from the information provided:\n\n- A scratch volume contains a label and can change status to PRIVATE when data is written to it.\n- The term \"scratch\" in relation to tapes refers to their availability for applications to write data on.\n\nThere isn't any specific detail about what exactly a scratch tape's label should be. Therefore, we cannot confirm that the label of a Scratch tape must specifically read 'Scratch tape' based on this context alone.\n\nResponse: {'output': 'no'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "The provided context explicitly states that scratch tapes contain a label, but doesn't specify the content of that label.  It's therefore inaccurate to assume the label's content is always \"Scratch tape\".",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information does not mention any specific label for scratch tapes. Scratch tape refers to a tape that has been allocated as available for writing data, but the label on the physical tape itself may vary and is not specified as 'Scratch tape' in the given context.",
+            "category": 2
+        }
+    }
+}

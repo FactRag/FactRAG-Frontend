@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Emil_Sick",
+    "predicate": "ontology/deathPlace",
+    "object": "resource/Seattle",
+    "human_readable": "Emil Sick died in Seattle.",
+    "questions": [
+        {
+            "score": 0.8615720272064209,
+            "question": "Where did Emil Sick die?"
+        },
+        {
+            "score": 0.5602492690086365,
+            "question": "Were there any notable events associated with Emil Sick's death?"
+        },
+        {
+            "score": 0.5193721055984497,
+            "question": "Were there any famous people who also died in Seattle?"
+        },
+        {
+            "score": 0.32094547152519226,
+            "question": "What is known about Emil Sick's life?"
+        },
+        {
+            "score": 0.2585528790950775,
+            "question": "Are there any memorials or landmarks dedicated to Emil Sick?"
+        },
+        {
+            "score": 0.24648363888263702,
+            "question": "Has Emil Sick's passing been documented in any historical records?"
+        },
+        {
+            "score": 0.23426631093025208,
+            "question": "Is there any information about Emil Sick's profession or background?"
+        },
+        {
+            "score": 0.19820424914360046,
+            "question": "What is the significance of Seattle as a place of death for notable individuals?"
+        },
+        {
+            "score": 0.12621331214904785,
+            "question": "Can you tell me more about Seattle?"
+        },
+        {
+            "score": 0.04595763236284256,
+            "question": "What is the general climate and culture of Seattle?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Emil Sick died in Seattle.",
+            "html": "dbpedia_2855_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about Seattle?",
+            "html": "dbpedia_2855_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the significance of Seattle as a place of death for notable individuals?",
+            "html": "dbpedia_2855_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there any information about Emil Sick's profession or background?",
+            "html": "dbpedia_2855_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2855_11.txt"
+        },
+        {
+            "file_id": "dbpedia_2855_16.txt"
+        },
+        {
+            "file_id": "dbpedia_2855_37.txt"
+        },
+        {
+            "file_id": "dbpedia_2855_46.txt"
+        },
+        {
+            "file_id": "dbpedia_2855_48.txt"
+        },
+        {
+            "file_id": "dbpedia_2855_58.txt"
+        },
+        {
+            "file_id": "dbpedia_2855_6.txt"
+        },
+        {
+            "file_id": "dbpedia_2855_68.txt"
+        },
+        {
+            "file_id": "dbpedia_2855_76.txt"
+        },
+        {
+            "file_id": "dbpedia_2855_78.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "After analyzing the context information, I can conclude that:\n\n{\n  \"output\": \"no\"\n}\n\nThis is because the documents mention that Emil George Sick died on November 10, 1964, at age 70 in Swedish Hospital, but do not specify whether it was in Seattle. The document from file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2855/re-ranker-msmarco/11.txt mentions that he died early yesterday morning in Swedish Hospital of a stroke following an operation, but does not mention the location of the hospital or where he died."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\n**Explanation:** The documents mention that Emil G. Sick died on November 10, 1964, at the Swedish Hospital in Seattle due to a stroke following an operation. This supports the statement that Emil Sick died in Seattle."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "Emil Sick was born in Tacoma, Washington to Canadian parents, but his early work experience and career progression indicate a strong connection to Canada, where he likely maintained close ties.",
+            "category": 2
+        }
+    }
+}

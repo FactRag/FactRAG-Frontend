@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Nicholas_Brown,_Jr.",
+    "predicate": "ontology/almaMater",
+    "object": "resource/Brown_University",
+    "human_readable": "Nicholas Brown Jr. attended Brown University.",
+    "questions": [
+        {
+            "score": 0.9789546132087708,
+            "question": "What is the name of the university that Nicholas Brown Jr. attended?"
+        },
+        {
+            "score": 0.9624104499816895,
+            "question": "Did Nicholas Brown Jr. graduate from Brown University?"
+        },
+        {
+            "score": 0.9479158520698547,
+            "question": "Where did Nicholas Brown Jr. attend?"
+        },
+        {
+            "score": 0.9440495371818542,
+            "question": "Was Nicholas Brown Jr. a student?"
+        },
+        {
+            "score": 0.9362485408782959,
+            "question": "Is there a connection between Nicholas Brown Jr. and Brown University?"
+        },
+        {
+            "score": 0.6985653042793274,
+            "question": "Are there any notable alumni of Brown University?"
+        },
+        {
+            "score": 0.6109879612922668,
+            "question": "What is the location of Brown University?"
+        },
+        {
+            "score": 0.6103629469871521,
+            "question": "What type of institution is Brown University?"
+        },
+        {
+            "score": 0.601942241191864,
+            "question": "Can you tell me more about Nicholas Brown Jr.?"
+        },
+        {
+            "score": 0.3803386688232422,
+            "question": "What makes Brown University unique?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Nicholas Brown Jr. attended Brown University.",
+            "html": "dbpedia_2844_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about Nicholas Brown Jr.?",
+            "html": "dbpedia_2844_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of institution is Brown University?",
+            "html": "dbpedia_2844_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the location of Brown University?",
+            "html": "dbpedia_2844_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2844_100.txt"
+        },
+        {
+            "file_id": "dbpedia_2844_13.txt"
+        },
+        {
+            "file_id": "dbpedia_2844_17.txt"
+        },
+        {
+            "file_id": "dbpedia_2844_24.txt"
+        },
+        {
+            "file_id": "dbpedia_2844_52.txt"
+        },
+        {
+            "file_id": "dbpedia_2844_58.txt"
+        },
+        {
+            "file_id": "dbpedia_2844_74.txt"
+        },
+        {
+            "file_id": "dbpedia_2844_79.txt"
+        },
+        {
+            "file_id": "dbpedia_2844_80.txt"
+        },
+        {
+            "file_id": "dbpedia_2844_99.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation of the triple:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe document at `file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2844/re-ranker-msmarco/57.txt` mentions that Nicholas Brown, Jr.'s father was a co-founder of the College in the English Colony of Rhode Island and Providence Plantations (which is today known as Brown University), and it also mentions that his grandfather was Nicholas Brown Sr., who was a brother of John Brown, Moses Brown, and Joseph Brown, who were involved in founding the college. However, there is no direct mention of Nicholas Brown Jr. attending Brown University.\n\nHowever, another document at `file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2844/re-ranker-msmarco/98.txt` mentions that \"Nicholas Brown, Sr. co-founded the College in the English Colony of Rhode Island and Providence Plantations, which was renamed Brown University after Brown's son Nicholas Brown, Jr. in 1804.\" This suggests a connection between Nicholas Brown Jr. and Brown University, although it does not explicitly state that he attended the university.\n\nConsidering these points, I conclude that the information in the documents supports the triple \"Nicholas Brown Jr. attended Brown University\", but with some ambiguity."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information that supports the statement \"Nicholas Brown Jr. attended Brown University.\" Specifically, one of the documents mentions that Nicholas Brown III (who is likely a descendant or related to Nicholas Sr., based on the naming patterns and context) graduated from Brown University in 1811. While it does not explicitly state that Nicholas Brown Jr. attended the university, given the family connection, it can be reasonably inferred that Nicholas Brown Jr. also attended the same institution, especially considering the historical context and the nature of the documents provided."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

@@ -1,0 +1,134 @@
+{
+    "subject": "resource/The_National_Memo",
+    "predicate": "http://xmlns.com/foaf/0.1/homepage",
+    "object": "http://www.nationalmemo.com",
+    "human_readable": "The homepage of The National Memo is http://www.nationalmemo.com.",
+    "questions": [
+        {
+            "score": 0.968936026096344,
+            "question": "Give me the web address for The National Memo's homepage."
+        },
+        {
+            "score": 0.9507190585136414,
+            "question": "What is the URL of The National Memo's homepage?"
+        },
+        {
+            "score": 0.9253318309783936,
+            "question": "Provide the URL of The National Memo."
+        },
+        {
+            "score": 0.910092830657959,
+            "question": "Where can you find The National Memo's homepage online?"
+        },
+        {
+            "score": 0.8744561672210693,
+            "question": "What is the URL link to The National Memo?"
+        },
+        {
+            "score": 0.8740742802619934,
+            "question": "What is the web address for The National Memo?"
+        },
+        {
+            "score": 0.8426002860069275,
+            "question": "Where online can you find The National Memo?"
+        },
+        {
+            "score": 0.8167678713798523,
+            "question": "How can you access The National Memo website?"
+        },
+        {
+            "score": 0.8016492128372192,
+            "question": "What is the internet address for The National Memo?"
+        },
+        {
+            "score": 0.8005857467651367,
+            "question": "If you want to visit The National Memo's website, what address should you enter?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The homepage of The National Memo is http://www.nationalmemo.com.",
+            "html": "dbpedia_2007_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the internet address for The National Memo?",
+            "html": "dbpedia_2007_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How can you access The National Memo website?",
+            "html": "dbpedia_2007_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where online can you find The National Memo?",
+            "html": "dbpedia_2007_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2007_105.txt"
+        },
+        {
+            "file_id": "dbpedia_2007_106.txt"
+        },
+        {
+            "file_id": "dbpedia_2007_116.txt"
+        },
+        {
+            "file_id": "dbpedia_2007_117.txt"
+        },
+        {
+            "file_id": "dbpedia_2007_118.txt"
+        },
+        {
+            "file_id": "dbpedia_2007_20.txt"
+        },
+        {
+            "file_id": "dbpedia_2007_48.txt"
+        },
+        {
+            "file_id": "dbpedia_2007_57.txt"
+        },
+        {
+            "file_id": "dbpedia_2007_60.txt"
+        },
+        {
+            "file_id": "dbpedia_2007_85.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe provided text documents do not mention the homepage URL for The National Memo.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the provided context information, I will evaluate whether the statement \"The homepage of The National Memo is http://www.nationalmemo.com\" is supported by the documents.\n\nHere is my evaluation:\n\n* Document path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2007/re-ranker-msmarco/106.txt\n\t+ Contains information about The National Memo, including its website URL.\n\t+ Mentions \"The National Memo.com\" as the website URL in the section \"Read our profile on the United States government and media.\"\n\nGiven this information, my answer is:\n\n{'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\"output\": \"yes\"}\n```\n\nThe provided context information mentions that The National Memo is an American online news site and newsletter, which supports the existence of a homepage for it. However, the specific URL `http://www.nationalmemo.com` is not explicitly mentioned in the given documents; the documents refer to it as \"The National Memo\" without providing a direct URL. Given this context and assuming that such information might be available elsewhere, we can infer that the statement about the homepage being `http://www.nationalmemo.com` could be correct based on general knowledge of The National Memo. Therefore, following the instructions, we answer with 'yes'."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "It contradicts information stating the website address as NationalMemo.com  \n\n\nLet me know if you have any other statements you'd like me to evaluate!",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Ohorongo_Cement",
+    "predicate": "ontology/location",
+    "object": "resource/Windhoek",
+    "human_readable": "Ohorongo Cement is located in Windhoek.",
+    "questions": [
+        {
+            "score": 0.9409685730934143,
+            "question": "Where is Ohorongo Cement located?"
+        },
+        {
+            "score": 0.9092260599136353,
+            "question": "What is the significance of Ohorongo Cement to Windhoek?"
+        },
+        {
+            "score": 0.8408939838409424,
+            "question": "What is the name of the city where Ohorongo Cement is located?"
+        },
+        {
+            "score": 0.807155966758728,
+            "question": "Is Ohorongo Cement found in a city?"
+        },
+        {
+            "score": 0.7730482816696167,
+            "question": "Does Ohorongo Cement have multiple locations?"
+        },
+        {
+            "score": 0.7439555525779724,
+            "question": "Are there other cement companies located in Windhoek?"
+        },
+        {
+            "score": 0.6097487211227417,
+            "question": "What type of company is Ohorongo Cement?"
+        },
+        {
+            "score": 0.5750455260276794,
+            "question": "What industry does Ohorongo Cement operate in?"
+        },
+        {
+            "score": 0.49307551980018616,
+            "question": "What products or services does Ohorongo Cement provide?"
+        },
+        {
+            "score": 0.2636319696903229,
+            "question": "Is Windhoek a major city?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Ohorongo Cement is located in Windhoek.",
+            "html": "dbpedia_6150_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What products or services does Ohorongo Cement provide?",
+            "html": "dbpedia_6150_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What industry does Ohorongo Cement operate in?",
+            "html": "dbpedia_6150_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of company is Ohorongo Cement?",
+            "html": "dbpedia_6150_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6150_12.txt"
+        },
+        {
+            "file_id": "dbpedia_6150_18.txt"
+        },
+        {
+            "file_id": "dbpedia_6150_3.txt"
+        },
+        {
+            "file_id": "dbpedia_6150_32.txt"
+        },
+        {
+            "file_id": "dbpedia_6150_33.txt"
+        },
+        {
+            "file_id": "dbpedia_6150_39.txt"
+        },
+        {
+            "file_id": "dbpedia_6150_43.txt"
+        },
+        {
+            "file_id": "dbpedia_6150_45.txt"
+        },
+        {
+            "file_id": "dbpedia_6150_56.txt"
+        },
+        {
+            "file_id": "dbpedia_6150_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe documents state that Ohorongo Cement is located near Otavi, not Windhoek.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the answer in the requested format:\n\n`{'output': 'no'}`\n\nThe documents mention that Ohorongo Cement is located in the Otavi region of Namibia, not in Windhoek. This can be inferred from multiple sources, including file_path `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6150/re-ranker-msmarco/45.txt` and file_path `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6150/re-ranker-msmarco/41.txt`."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The context information does not support the statement that Ohorongo Cement is located in Windhoek. According to the documents, Ohorongo Cement is situated near Otavi and is part of the Otjozondjupa Region in Namibia, not in Windhoek which is the capital city of Namibia."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n    \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Ohorongo Cement is located in the Otavi region of Namibia, not in Windhoek.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Several sources state the location as Otavi, a region north of Windhoek.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "It explicitly states in multiple sources (e.g. source 2 and source 6) that Ohorongo Cement is located near Otavi, not Windhoek, which is the capital city of Namibia.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Ohorongo Cement is explicitly stated to be located in the Otavi region of Namibia, not in Windhoek. The context clearly mentions its location in Otjozondjupa, specifically near Otavi.",
+            "category": 2
+        }
+    }
+}

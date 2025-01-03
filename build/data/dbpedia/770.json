@@ -1,0 +1,129 @@
+{
+    "subject": "resource/John_Richardson_(drummer)",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:Musicians_from_Champaign,_Illinois",
+    "human_readable": "John Richardson is a musician from Champaign, Illinois.",
+    "questions": [
+        {
+            "score": 0.9855438470840454,
+            "question": "Is John Richardson from Champaign, Illinois?"
+        },
+        {
+            "score": 0.8718060255050659,
+            "question": "Where is John Richardson from?"
+        },
+        {
+            "score": 0.8187467455863953,
+            "question": "Where has John Richardson performed?"
+        },
+        {
+            "score": 0.7350170016288757,
+            "question": "What kind of music does John Richardson play?"
+        },
+        {
+            "score": 0.5565780401229858,
+            "question": "Does John Richardson perform live?"
+        },
+        {
+            "score": 0.5371049642562866,
+            "question": "What is the name of John Richardson's band, if he has one?"
+        },
+        {
+            "score": 0.5248839855194092,
+            "question": "Is there a website where I can learn more about John Richardson's music?"
+        },
+        {
+            "score": 0.4940509796142578,
+            "question": "Can you tell me more about John Richardson's musical career?"
+        },
+        {
+            "score": 0.43240800499916077,
+            "question": "Has John Richardson released any albums or songs?"
+        },
+        {
+            "score": 0.29669761657714844,
+            "question": "What does John Richardson do for a living?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=John Richardson is a musician from Champaign, Illinois.",
+            "html": "dbpedia_770_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Has John Richardson released any albums or songs?",
+            "html": "dbpedia_770_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about John Richardson's musical career?",
+            "html": "dbpedia_770_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there a website where I can learn more about John Richardson's music?",
+            "html": "dbpedia_770_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_770_102.txt"
+        },
+        {
+            "file_id": "dbpedia_770_119.txt"
+        },
+        {
+            "file_id": "dbpedia_770_12.txt"
+        },
+        {
+            "file_id": "dbpedia_770_149.txt"
+        },
+        {
+            "file_id": "dbpedia_770_150.txt"
+        },
+        {
+            "file_id": "dbpedia_770_168.txt"
+        },
+        {
+            "file_id": "dbpedia_770_30.txt"
+        },
+        {
+            "file_id": "dbpedia_770_44.txt"
+        },
+        {
+            "file_id": "dbpedia_770_60.txt"
+        },
+        {
+            "file_id": "dbpedia_770_90.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "After analyzing the provided context information, I can evaluate whether it supports the triple:\n\n\"John Richardson is a musician from Champaign, Illinois.\"\n\nThe output of my evaluation is:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThis is because John Richardson's professional career started in Champaign, Illinois (from file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_770/re-ranker-msmarco/147.txt), and he has worked with various musicians and bands from the area, such as The Martyrs, Nix86, and The Vertebrats. Additionally, his collaboration with Paul Chastain (Velvet Crush) also has roots in Champaign, Illinois (from file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_770/re-ranker-msmarco/28.txt)."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information that supports the statement \"John Richardson is a musician from Champaign, Illinois.\" The details in files 147.txt and 69.txt describe John Richardson's musical career, including his roles as a drummer for various bands and artists. Additionally, his birthplace is mentioned as Champaign, Illinois, in file 147.txt."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

@@ -1,0 +1,142 @@
+{
+    "subject": "resource/C._D._Gopinath",
+    "predicate": "property/international",
+    "object": "true",
+    "human_readable": "C.D. Gopinath is an international artist.",
+    "questions": [
+        {
+            "score": 0.9597634673118591,
+            "question": "Is C.D. Gopinath recognized internationally?"
+        },
+        {
+            "score": 0.9298387169837952,
+            "question": "What type of artist is C.D. Gopinath?"
+        },
+        {
+            "score": 0.851209282875061,
+            "question": "Can you describe C.D. Gopinath's artistic style?"
+        },
+        {
+            "score": 0.7780903577804565,
+            "question": "Where might you find C.D. Gopinath's artwork?"
+        },
+        {
+            "score": 0.7778796553611755,
+            "question": "What is C.D. Gopinath known for?"
+        },
+        {
+            "score": 0.7176021337509155,
+            "question": "What inspires C.D. Gopinath's artwork?"
+        },
+        {
+            "score": 0.6527338624000549,
+            "question": "Are there any specific art movements associated with C.D. Gopinath?"
+        },
+        {
+            "score": 0.5838589668273926,
+            "question": "Does C.D. Gopinath's work have global appeal?"
+        },
+        {
+            "score": 0.44188299775123596,
+            "question": "In what field does C.D. Gopinath work?"
+        },
+        {
+            "score": 0.38195231556892395,
+            "question": "Has C.D. Gopinath received any awards or recognition for their work?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=C.D. Gopinath is an international artist.",
+            "html": "dbpedia_3234_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In what field does C.D. Gopinath work?",
+            "html": "dbpedia_3234_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does C.D. Gopinath's work have global appeal?",
+            "html": "dbpedia_3234_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any specific art movements associated with C.D. Gopinath?",
+            "html": "dbpedia_3234_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3234_31.txt"
+        },
+        {
+            "file_id": "dbpedia_3234_37.txt"
+        },
+        {
+            "file_id": "dbpedia_3234_46.txt"
+        },
+        {
+            "file_id": "dbpedia_3234_48.txt"
+        },
+        {
+            "file_id": "dbpedia_3234_52.txt"
+        },
+        {
+            "file_id": "dbpedia_3234_57.txt"
+        },
+        {
+            "file_id": "dbpedia_3234_58.txt"
+        },
+        {
+            "file_id": "dbpedia_3234_60.txt"
+        },
+        {
+            "file_id": "dbpedia_3234_68.txt"
+        },
+        {
+            "file_id": "dbpedia_3234_89.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, here's the evaluation of the triple:\n\n{\n  \"output\": \"no\"\n}\n\nThe reason for this answer is that none of the documents mention C.D. Gopinath as an international artist. The documents describe two different individuals named Gopinath: \n\n1. Gopinath (first name not mentioned) - a female economist who has worked at the IMF and Harvard University.\n2. Gopinath Muthukad - a male magician from Kerala, India.\n\nThere is no mention of C.D. Gopinath in any of the documents."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\"output\": \"yes\"}\n```\n\nThe document mentions \"Magician Gopinath Muthukad,\" which indicates that there is at least one individual named Gopinath who is associated with magic, supporting the statement that C.D. Gopinath (assuming it's a variant of Gopinath Muthukad) is an international artist in the context of being a magician."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The context provides information about two individuals named Gopinath, one being a magician (Gopinath Muthukad) and the other an economist (C.D. Gopinath). There is no indication that the economist, C.D. Gopinath, is involved in art, particularly as an international artist.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "The provided text describes Gopinath as an economist and researcher specializing in international finance and macroeconomics. There is no mention of her being involved in the arts or performing as an artist.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "There are two different individuals with the name Gopinath mentioned in the context, one being an economist (C.D. Gopinath) and the other being a magician (Gopinath Muthukad), making it unlikely for C.D. Gopinath to be referred to as an \"international artist\".",
+            "category": 2
+        }
+    }
+}

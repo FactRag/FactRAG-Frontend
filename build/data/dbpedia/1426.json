@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Yours_Fatally",
+    "predicate": "property/album",
+    "object": "resource/Re-Entry_(Big_Brovaz_album)",
+    "human_readable": "The album 'Re-Entry' by Big Brovaz is Yours Fatally.",
+    "questions": [
+        {
+            "score": 0.7939109802246094,
+            "question": "Is there a connection between the album title and the phrase 'Yours Fatally'?"
+        },
+        {
+            "score": 0.7545595169067383,
+            "question": "What is the title of the Big Brovaz album?"
+        },
+        {
+            "score": 0.6311017274856567,
+            "question": "Can you name other albums by Big Brovaz?"
+        },
+        {
+            "score": 0.611214816570282,
+            "question": "Who released the album 'Re-Entry'?"
+        },
+        {
+            "score": 0.5326167941093445,
+            "question": "What is the theme of the album 'Re-Entry'?"
+        },
+        {
+            "score": 0.47449877858161926,
+            "question": "Are there any popular songs from the album 'Re-Entry'?"
+        },
+        {
+            "score": 0.4714776277542114,
+            "question": "Which record label released 'Re-Entry'?"
+        },
+        {
+            "score": 0.4029451906681061,
+            "question": "How was the album 'Re-Entry' received by critics?"
+        },
+        {
+            "score": 0.3379630148410797,
+            "question": "What year was 'Re-Entry' released?"
+        },
+        {
+            "score": 0.2945128083229065,
+            "question": "What genre of music does 'Re-Entry' belong to?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The album 'Re-Entry' by Big Brovaz is Yours Fatally.",
+            "html": "dbpedia_1426_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What year was 'Re-Entry' released?",
+            "html": "dbpedia_1426_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How was the album 'Re-Entry' received by critics?",
+            "html": "dbpedia_1426_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Which record label released 'Re-Entry'?",
+            "html": "dbpedia_1426_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1426_18.txt"
+        },
+        {
+            "file_id": "dbpedia_1426_2.txt"
+        },
+        {
+            "file_id": "dbpedia_1426_21.txt"
+        },
+        {
+            "file_id": "dbpedia_1426_26.txt"
+        },
+        {
+            "file_id": "dbpedia_1426_48.txt"
+        },
+        {
+            "file_id": "dbpedia_1426_50.txt"
+        },
+        {
+            "file_id": "dbpedia_1426_61.txt"
+        },
+        {
+            "file_id": "dbpedia_1426_81.txt"
+        },
+        {
+            "file_id": "dbpedia_1426_86.txt"
+        },
+        {
+            "file_id": "dbpedia_1426_92.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe documents state that \"Yours Fatally\" is a single by Big Brovaz, not the name of their album \"Re-Entry\".  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "After analyzing the context information, I can confirm that the triple is supported by the documents. Here's my response:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation:\n\n* The first document mentions a song called \"Yours Fatally\" and a group called Big Brovaz.\n* The second document states that Big Brovaz have released an album called \"Re-Entry\", which includes the single \"Big Bro Thang\".\n* The third document mentions that Big Brovaz's new release is called \"Yours Fatally\" and was only entered this week's charts at Number 15 after being dropped by their record label.\n* Finally, the fourth document confirms that the album \"Re-Entry\" by Big Brovaz includes a song called \"Yours Fatally\".\n\nTherefore, based on the context information, it is indeed correct to say that the album 'Re-Entry' by Big Brovaz is \"Yours Fatally\"."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents mention the album \"Re-Entry\" by Big Brovaz and include a song from that album titled \"Yours Fatally,\" which supports the statement that \"The album 'Re-Entry' by Big Brovaz is Yours Fatally.\""
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The album name provided, \"Yours Fatally\", is not the same as the album title mentioned in the context information, which is \"Re-Entry\".",
+            "category": 4
+        },
+        "gemma2": {
+            "reason": "Different songs from the album 'Re-Entry' are mentioned, including 'Big Bro Thang', while 'Yours Fatally' is described as a single from a later point.",
+            "category": 4
+        }
+    }
+}

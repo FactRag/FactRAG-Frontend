@@ -1,0 +1,129 @@
+{
+    "subject": "resource/WGAC-FM",
+    "predicate": "property/city",
+    "object": "resource/Harlem,_Georgia",
+    "human_readable": "WGAC-FM is located in Harlem, Georgia.",
+    "questions": [
+        {
+            "score": 0.8378532528877258,
+            "question": "Where is WGAC-FM located?"
+        },
+        {
+            "score": 0.746147632598877,
+            "question": "How popular is WGAC-FM in the Harlem community?"
+        },
+        {
+            "score": 0.7291029691696167,
+            "question": "Are there other radio stations in Harlem, Georgia?"
+        },
+        {
+            "score": 0.6962671279907227,
+            "question": "What state is Harlem, Georgia in?"
+        },
+        {
+            "score": 0.4803256094455719,
+            "question": "Is WGAC-FM a radio station?"
+        },
+        {
+            "score": 0.41024598479270935,
+            "question": "Who owns and operates WGAC-FM?"
+        },
+        {
+            "score": 0.40312907099723816,
+            "question": "What is the history of WGAC-FM?"
+        },
+        {
+            "score": 0.2633550465106964,
+            "question": "Does WGAC-FM have a website or social media presence?"
+        },
+        {
+            "score": 0.22928547859191895,
+            "question": "Does WGAC-FM sponsor any local events or charities?"
+        },
+        {
+            "score": 0.18633539974689484,
+            "question": "What type of programming does WGAC-FM likely broadcast?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=WGAC-FM is located in Harlem, Georgia.",
+            "html": "dbpedia_6334_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does WGAC-FM sponsor any local events or charities?",
+            "html": "dbpedia_6334_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does WGAC-FM have a website or social media presence?",
+            "html": "dbpedia_6334_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the history of WGAC-FM?",
+            "html": "dbpedia_6334_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6334_108.txt"
+        },
+        {
+            "file_id": "dbpedia_6334_112.txt"
+        },
+        {
+            "file_id": "dbpedia_6334_116.txt"
+        },
+        {
+            "file_id": "dbpedia_6334_22.txt"
+        },
+        {
+            "file_id": "dbpedia_6334_44.txt"
+        },
+        {
+            "file_id": "dbpedia_6334_5.txt"
+        },
+        {
+            "file_id": "dbpedia_6334_50.txt"
+        },
+        {
+            "file_id": "dbpedia_6334_56.txt"
+        },
+        {
+            "file_id": "dbpedia_6334_60.txt"
+        },
+        {
+            "file_id": "dbpedia_6334_94.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "To evaluate the triple \"WGAC-FM is located in Harlem, Georgia\", we need to check if any of the provided documents mention that WGAC-FM is located in Harlem, Georgia.\n\nFrom the context information, we can see that document `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6334/re-ranker-msmarco/59.txt` mentions \"WGAC-FM 95.1 FM Harlem\", which indicates that WGAC-FM is indeed located in Harlem.\n\nTherefore, the answer to the query is:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe document indicates that \"WGAC-FM 95.1 MHz\" is associated with \"Harlem, Georgia\", which supports the statement that WGAC-FM is located in Harlem, Georgia."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

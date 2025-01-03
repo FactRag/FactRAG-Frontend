@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Pat_Green",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "Green, Pat",
+    "human_readable": "The full name of Pat Green is Green, Pat.",
+    "questions": [
+        {
+            "score": 0.9832562208175659,
+            "question": "What is the full name of Pat Green?"
+        },
+        {
+            "score": 0.9623621702194214,
+            "question": "Is 'Green, Pat' the correct order of Pat Green's name?"
+        },
+        {
+            "score": 0.9256894588470459,
+            "question": "If you met someone named Pat Green, what would their full name be?"
+        },
+        {
+            "score": 0.9215393662452698,
+            "question": "What is Pat Green's last name?"
+        },
+        {
+            "score": 0.9213008284568787,
+            "question": "How many names are in Pat Green's full name?"
+        },
+        {
+            "score": 0.8850241899490356,
+            "question": "What is Pat Green's first name?"
+        },
+        {
+            "score": 0.8110342025756836,
+            "question": "How might Pat Green's full name be used in a formal setting?"
+        },
+        {
+            "score": 0.4917970597743988,
+            "question": "If someone introduced themselves as 'Pat Green', how would you address them?"
+        },
+        {
+            "score": 0.02364152856171131,
+            "question": "What does the format 'Last, First' indicate about a name?"
+        },
+        {
+            "score": 0.01798327825963497,
+            "question": "Can you provide an example of another person with a similar naming convention?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The full name of Pat Green is Green, Pat.",
+            "html": "dbpedia_517_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What does the format 'Last, First' indicate about a name?",
+            "html": "dbpedia_517_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If someone introduced themselves as 'Pat Green', how would you address them?",
+            "html": "dbpedia_517_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How might Pat Green's full name be used in a formal setting?",
+            "html": "dbpedia_517_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_517_15.txt"
+        },
+        {
+            "file_id": "dbpedia_517_26.txt"
+        },
+        {
+            "file_id": "dbpedia_517_34.txt"
+        },
+        {
+            "file_id": "dbpedia_517_39.txt"
+        },
+        {
+            "file_id": "dbpedia_517_50.txt"
+        },
+        {
+            "file_id": "dbpedia_517_57.txt"
+        },
+        {
+            "file_id": "dbpedia_517_58.txt"
+        },
+        {
+            "file_id": "dbpedia_517_74.txt"
+        },
+        {
+            "file_id": "dbpedia_517_78.txt"
+        },
+        {
+            "file_id": "dbpedia_517_86.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nLet me know if you have other triples to evaluate!"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation in JSON format:\n\n```\n{\n  \"output\": \"yes\"\n}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe documents provided do not contain any information about Pat Green's full name being \"Green, Pat.\" The context primarily discusses his career as a Texas Country artist and some biographical details such as his birthplace and early influences. There is no mention of his full name format."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {'output': 'no'}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Pat Green's full name is not Green, Pat. His given name is Pat, and his family name is Green, as stated in the context information provided.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "The provided context consistently refers to him as \"Pat Green\" without any indication of a middle name.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context provides Pat Green's first name as \"Pat\" and surnames \"Green,\" but does not indicate that his full name is simply \"Green, Pat.\"",
+            "category": 2
+        }
+    }
+}

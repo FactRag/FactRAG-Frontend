@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Southwest_Airlines",
+    "predicate": "ontology/numberOfEmployees",
+    "object": "47000",
+    "human_readable": "Southwest Airlines has 47,000 employees.",
+    "questions": [
+        {
+            "score": 0.8512648940086365,
+            "question": "How many employees does Southwest Airlines have?"
+        },
+        {
+            "score": 0.6674586534500122,
+            "question": "Has the number of employees at Southwest Airlines changed over time?"
+        },
+        {
+            "score": 0.6030290722846985,
+            "question": "Compare the number of employees at Southwest Airlines to other major airlines."
+        },
+        {
+            "score": 0.5800281763076782,
+            "question": "Is Southwest Airlines a large company in terms of employee count?"
+        },
+        {
+            "score": 0.5212599635124207,
+            "question": "What is the average number of employees per aircraft at Southwest Airlines?"
+        },
+        {
+            "score": 0.46004632115364075,
+            "question": "What is the approximate size of Southwest Airlines' workforce?"
+        },
+        {
+            "score": 0.44446611404418945,
+            "question": "How does the employee count at Southwest Airlines compare to its competitors?"
+        },
+        {
+            "score": 0.41091835498809814,
+            "question": "What are the roles and responsibilities of different types of employees at Southwest Airlines?"
+        },
+        {
+            "score": 0.35670220851898193,
+            "question": "What are some potential implications of having a large workforce for Southwest Airlines?"
+        },
+        {
+            "score": 0.31144994497299194,
+            "question": "What factors might contribute to the size of Southwest Airlines' workforce?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Southwest Airlines has 47,000 employees.",
+            "html": "dbpedia_4710_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some potential implications of having a large workforce for Southwest Airlines?",
+            "html": "dbpedia_4710_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are the roles and responsibilities of different types of employees at Southwest Airlines?",
+            "html": "dbpedia_4710_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How does the employee count at Southwest Airlines compare to its competitors?",
+            "html": "dbpedia_4710_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4710_11.txt"
+        },
+        {
+            "file_id": "dbpedia_4710_110.txt"
+        },
+        {
+            "file_id": "dbpedia_4710_148.txt"
+        },
+        {
+            "file_id": "dbpedia_4710_15.txt"
+        },
+        {
+            "file_id": "dbpedia_4710_22.txt"
+        },
+        {
+            "file_id": "dbpedia_4710_34.txt"
+        },
+        {
+            "file_id": "dbpedia_4710_47.txt"
+        },
+        {
+            "file_id": "dbpedia_4710_53.txt"
+        },
+        {
+            "file_id": "dbpedia_4710_56.txt"
+        },
+        {
+            "file_id": "dbpedia_4710_91.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'} \n\nThis is because the document mentions that \"Southwest operates more than 3,600 flights a day, serving 95 destinations across the United States and six additional countries. ... In its 45th year of service, Dallas-based Southwest Airlines (NYSE: LUV) continues to differentiate itself from other air carriers with exemplary Customer Service delivered by more than **47,000** Employees...\""
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The document at file_path `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4710/re-ranker-msmarco/83.txt` and the document at file_path `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4710/re-ranker-msmarco/65.txt` both mention that Southwest Airlines has more than 47,000 employees. Therefore, the statement \"Southwest Airlines has 47,000 employees\" is supported by the documents, even though it slightly undercounts the actual number mentioned (more than 47,000)."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "According to the context information provided, Southwest Airlines currently has approximately 72,000 employees (with plans to reach close to 100,000 in the next five years). Therefore, the statement that Southwest Airlines has 47,000 employees is incorrect.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "It contradicts the statement that Southwest Airlines has plans to reach close to 100,000 employees in the next five years, implying a significantly larger workforce than the stated 47,000.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because it contradicts the information provided in point 1 of the context, which states that Southwest Airlines has 72,000 employees.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context states that Southwest Airlines has 72,000 employees (with plans to reach close to 100,000 in the next five years), which contradicts the fact that it has 47,000 employees.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Hellville_de_Luxe",
+    "predicate": "property/nextAlbum",
+    "object": "Las Consecuencias",
+    "human_readable": "The next album of Hellville de Luxe is Las Consecuencias.",
+    "questions": [
+        {
+            "score": 0.875150203704834,
+            "question": "What is the title of Hellville de Luxe's next album?"
+        },
+        {
+            "score": 0.8342569470405579,
+            "question": "Is 'Las Consecuencias' a new album?"
+        },
+        {
+            "score": 0.7650483250617981,
+            "question": "Who is releasing the album 'Las Consecuencias'?"
+        },
+        {
+            "score": 0.6659069061279297,
+            "question": "What is Hellville de Luxe's previous album titled?"
+        },
+        {
+            "score": 0.636262059211731,
+            "question": "Where can fans pre-order the album 'Las Consecuencias'?"
+        },
+        {
+            "score": 0.6212672591209412,
+            "question": "Has Hellville de Luxe released any other albums besides this one?"
+        },
+        {
+            "score": 0.5873734354972839,
+            "question": "Are there any singles from 'Las Consecuencias' available yet?"
+        },
+        {
+            "score": 0.5266305208206177,
+            "question": "When is the release date for 'Las Consecuencias'?"
+        },
+        {
+            "score": 0.4122588336467743,
+            "question": "What genre of music does Hellville de Luxe typically perform?"
+        },
+        {
+            "score": 0.39853665232658386,
+            "question": "What themes are explored in 'Las Consecuencias'?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The next album of Hellville de Luxe is Las Consecuencias.",
+            "html": "dbpedia_1266_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What genre of music does Hellville de Luxe typically perform?",
+            "html": "dbpedia_1266_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=When is the release date for 'Las Consecuencias'?",
+            "html": "dbpedia_1266_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any singles from 'Las Consecuencias' available yet?",
+            "html": "dbpedia_1266_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1266_1.txt"
+        },
+        {
+            "file_id": "dbpedia_1266_10.txt"
+        },
+        {
+            "file_id": "dbpedia_1266_11.txt"
+        },
+        {
+            "file_id": "dbpedia_1266_21.txt"
+        },
+        {
+            "file_id": "dbpedia_1266_38.txt"
+        },
+        {
+            "file_id": "dbpedia_1266_57.txt"
+        },
+        {
+            "file_id": "dbpedia_1266_61.txt"
+        },
+        {
+            "file_id": "dbpedia_1266_77.txt"
+        },
+        {
+            "file_id": "dbpedia_1266_79.txt"
+        },
+        {
+            "file_id": "dbpedia_1266_86.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The provided context does not mention any direct relationship between the albums \"Hellville de Luxe\" and \"Las Consecuencias.\" While both albums are mentioned, there is no information to suggest that one is a predecessor or successor to the other."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "Based on the context provided:\n\n- \"Hellville de Luxe\" was released by Enrique Bunbury in 2008, according to one document.\n- Another document states that \"Las Consecuencias\" was released by Enrique Bunbury as his sixth album on February 16, 2010.\n\nGiven these facts, the documents suggest a sequence of albums from Enrique Bunbury where \"Hellville de Luxe\" precedes \"Las Consecuencias\". Therefore, it is accurate to say that \"The next album after Hellville de Luxe by Enrique Bunbury was Las Consecuencias.\"\n\nAnswer:\n{\"output\": \"yes\"}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Enrique Bunbury released \"Las Consecuencias\" in 2010, while \"Hellville de Luxe\" was released in 2008. Therefore, \"Las Consecuencias\" cannot be the next album of \"Hellville de Luxe\".",
+            "category": 4
+        },
+        "qwen2.5": {
+            "reason": "The context information indicates that Enrique Bunbury released \"Las Consecuencias\" in 2010, which follows \"Hellville de Luxe,\" making it the next album after \"Hellville de Luxe.\" Therefore, \"Las Consecuencias\" cannot be considered the next album after \"Hellville de Luxe\" if its release date is earlier than any potential unnamed albums that might have been released between \"Hellville de Luxe\" and \"Las Consecuencias.\"",
+            "category": 4
+        }
+    }
+}

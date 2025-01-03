@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Acid_Row",
+    "predicate": "http://xmlns.com/foaf/0.1/isPrimaryTopicOf",
+    "object": "http://en.wikipedia.org/wiki/Acid_Row",
+    "human_readable": "Acid Row is primarily about http://en.wikipedia.org/wiki/Acid_Row.",
+    "questions": [
+        {
+            "score": 0.9556214213371277,
+            "question": "What topic does the URL http://en.wikipedia.org/wiki/Acid_Row refer to?"
+        },
+        {
+            "score": 0.9129775762557983,
+            "question": "What is Acid Row primarily about?"
+        },
+        {
+            "score": 0.8814456462860107,
+            "question": "Is there a Wikipedia page dedicated to Acid Row?"
+        },
+        {
+            "score": 0.8521181344985962,
+            "question": "Can you tell me about Acid Row based on its Wikipedia page?"
+        },
+        {
+            "score": 0.8302708864212036,
+            "question": "Does the provided URL lead to a specific article about Acid Row?"
+        },
+        {
+            "score": 0.8149267435073853,
+            "question": "What kind of information might be found on the Acid Row Wikipedia page?"
+        },
+        {
+            "score": 0.6859778761863708,
+            "question": "Is Acid Row a known concept or place?"
+        },
+        {
+            "score": 0.6831300854682922,
+            "question": "Where can you find more information about Acid Row?"
+        },
+        {
+            "score": 0.5979249477386475,
+            "question": "Is there a reliable source of information about Acid Row available online?"
+        },
+        {
+            "score": 0.28859710693359375,
+            "question": "What is the main subject of the given Wikipedia link?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Acid Row is primarily about http://en.wikipedia.org/wiki/Acid_Row.",
+            "html": "dbpedia_2180_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there a reliable source of information about Acid Row available online?",
+            "html": "dbpedia_2180_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where can you find more information about Acid Row?",
+            "html": "dbpedia_2180_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Acid Row a known concept or place?",
+            "html": "dbpedia_2180_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2180_16.txt"
+        },
+        {
+            "file_id": "dbpedia_2180_19.txt"
+        },
+        {
+            "file_id": "dbpedia_2180_21.txt"
+        },
+        {
+            "file_id": "dbpedia_2180_33.txt"
+        },
+        {
+            "file_id": "dbpedia_2180_37.txt"
+        },
+        {
+            "file_id": "dbpedia_2180_45.txt"
+        },
+        {
+            "file_id": "dbpedia_2180_52.txt"
+        },
+        {
+            "file_id": "dbpedia_2180_61.txt"
+        },
+        {
+            "file_id": "dbpedia_2180_64.txt"
+        },
+        {
+            "file_id": "dbpedia_2180_73.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the context information, here's my evaluation of the triple:\n\nThe documents describe two different entities with the name \"Acid Row\":\n\n1. A housing project in London, where a missing 10-year-old girl is the central plot point (document 16 and 21).\n2. A Czech band that combines genres related to stoner rock and punk music (documents 72 and 63).\n\nSince there are two different entities with the same name \"Acid Row\", it's not possible for the triple \"Acid Row is primarily about http://en.wikipedia.org/wiki/Acid_Row\" to be correct.\n\nTherefore, my response is:\n\n`{'output': 'no'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\nThe documents provide information that Acid Row refers to both a housing project and an album by the band Acid Row, thus supporting the statement that Acid Row is primarily about acid row (the suburb)."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Acid Row (the book) does not primarily refer to the real-life housing project known as \"Acid Row\" or Bassindale Estates, but rather it uses the name as a metaphorical backdrop for the story set in a fictional location.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "The provided text describes a novel titled \"Acid Row\" by author Minette Walters, focusing on a crime-ridden housing project and its inhabitants. It does not mention any connection to the Wikipedia page you linked.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "Acid Row refers to a housing project in London in the novel by Minette Walters, whereas the musical group Acid Row from Prague has no connection to the novel or its plot.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Dallas_County,_Texas",
+    "predicate": "property/north",
+    "object": "resource/Collin_County,_Texas",
+    "human_readable": "Dallas County, Texas lies to the north of Collin County, Texas.",
+    "questions": [
+        {
+            "score": 0.9302573800086975,
+            "question": "Which county is located north of Collin County, Texas?"
+        },
+        {
+            "score": 0.9177738428115845,
+            "question": "If you were traveling from Collin County to Dallas County, would you be heading north or south?"
+        },
+        {
+            "score": 0.9154573082923889,
+            "question": "Is Dallas County located south or north of Collin County?"
+        },
+        {
+            "score": 0.9117531180381775,
+            "question": "Where is Collin County situated relative to Dallas County?"
+        },
+        {
+            "score": 0.9035404920578003,
+            "question": "What state do Dallas County and Collin County lie in?"
+        },
+        {
+            "score": 0.8324784636497498,
+            "question": "What geographic relationship exists between Dallas County and Collin County?"
+        },
+        {
+            "score": 0.7729348540306091,
+            "question": "Describe the spatial arrangement of Dallas County and Collin County."
+        },
+        {
+            "score": 0.7672877311706543,
+            "question": "What direction would you need to travel to go from Collin County to Dallas County?"
+        },
+        {
+            "score": 0.5917137861251831,
+            "question": "In Texas, which county is considered to be north of the other?"
+        },
+        {
+            "score": 0.25486913323402405,
+            "question": "Name the two counties mentioned in the statement."
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Dallas County, Texas lies to the north of Collin County, Texas.",
+            "html": "dbpedia_5185_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In Texas, which county is considered to be north of the other?",
+            "html": "dbpedia_5185_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What direction would you need to travel to go from Collin County to Dallas County?",
+            "html": "dbpedia_5185_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Describe the spatial arrangement of Dallas County and Collin County.",
+            "html": "dbpedia_5185_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5185_120.txt"
+        },
+        {
+            "file_id": "dbpedia_5185_15.txt"
+        },
+        {
+            "file_id": "dbpedia_5185_2.txt"
+        },
+        {
+            "file_id": "dbpedia_5185_48.txt"
+        },
+        {
+            "file_id": "dbpedia_5185_59.txt"
+        },
+        {
+            "file_id": "dbpedia_5185_6.txt"
+        },
+        {
+            "file_id": "dbpedia_5185_60.txt"
+        },
+        {
+            "file_id": "dbpedia_5185_63.txt"
+        },
+        {
+            "file_id": "dbpedia_5185_71.txt"
+        },
+        {
+            "file_id": "dbpedia_5185_81.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n\n\nLet me explain:\n\nThe text states that Collin County lies north of Dallas County and that Dallas County is bordered by Collin County to the north.  This means that while both counties are located in north-central Texas, Dallas County is actually *north* of Collin County. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe provided documents support that Collin County is located north of Dallas County. Both `6.txt`, `58.txt`, and `48.txt` mention the geographical relationship between Dallas County and Collin County, indicating that Collin County lies to the north of Dallas County."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n      \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Collin County lies to the north of Dallas County.",
+            "category": -1
+        },
+        "gemma2": {
+            "reason": "Collin County borders Dallas County to the north.",
+            "category": -1
+        },
+        "llama3.1": {
+            "reason": "The map of counties in the North Central Texas Region clearly shows Collin County to the north of Dallas County.",
+            "category": -1
+        }
+    }
+}

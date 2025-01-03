@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Maradona_by_Kusturica",
+    "predicate": "ontology/imdbId",
+    "object": "0454976",
+    "human_readable": "The IMDB ID of Maradona by Kusturica is 0454976.",
+    "questions": [
+        {
+            "score": 0.951828122138977,
+            "question": "What is the IMDB ID of Maradona by Kusturica?"
+        },
+        {
+            "score": 0.9496285915374756,
+            "question": "Is there an IMDB ID associated with the film Maradona by Kusturica?"
+        },
+        {
+            "score": 0.8898802399635315,
+            "question": "What is the title of the film with IMDB ID 0454976?"
+        },
+        {
+            "score": 0.7766504287719727,
+            "question": "Is there a film titled 'Maradona' by Kusturica?"
+        },
+        {
+            "score": 0.6756138205528259,
+            "question": "Can you find information about a film directed by Kusturica named Maradona?"
+        },
+        {
+            "score": 0.4970565140247345,
+            "question": "What kind of information can you find using an IMDB ID?"
+        },
+        {
+            "score": 0.4370085299015045,
+            "question": "Who directed the film Maradona?"
+        },
+        {
+            "score": 0.37306293845176697,
+            "question": "What films has Emir Kusturica directed?"
+        },
+        {
+            "score": 0.30961933732032776,
+            "question": "Do you have access to film databases like IMDB?"
+        },
+        {
+            "score": 0.03868287801742554,
+            "question": "What is the relationship between a film director and their work?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The IMDB ID of Maradona by Kusturica is 0454976.",
+            "html": "dbpedia_2729_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Do you have access to film databases like IMDB?",
+            "html": "dbpedia_2729_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What films has Emir Kusturica directed?",
+            "html": "dbpedia_2729_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who directed the film Maradona?",
+            "html": "dbpedia_2729_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2729_1.txt"
+        },
+        {
+            "file_id": "dbpedia_2729_10.txt"
+        },
+        {
+            "file_id": "dbpedia_2729_14.txt"
+        },
+        {
+            "file_id": "dbpedia_2729_17.txt"
+        },
+        {
+            "file_id": "dbpedia_2729_24.txt"
+        },
+        {
+            "file_id": "dbpedia_2729_3.txt"
+        },
+        {
+            "file_id": "dbpedia_2729_4.txt"
+        },
+        {
+            "file_id": "dbpedia_2729_6.txt"
+        },
+        {
+            "file_id": "dbpedia_2729_8.txt"
+        },
+        {
+            "file_id": "dbpedia_2729_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nWhile the text mentions *Maradona by Kusturica*, it does not provide its IMDb ID.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation:\n\nThe triple to be evaluated is:\n\"Maradona by Kusturica (2008) has an IMDb user rating of 6.8\"\n\nGiven the context information, I found that:\n\n* The movie \"Maradona by Kusturica\" is mentioned in several files.\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2729/re-ranker-msmarco/20.txt, it is mentioned that \" #89.  Maradona by Kusturica (2008) - IMDb user rating: 6.8\".\n* This matches the triple to be evaluated.\n\nTherefore, the answer is:\n\n```\n{\n    \"output\": \"yes\"\n}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The provided documents do not contain any information about the IMDB ID for \"Maradona by Kusturica.\" The closest related document mentions a Stacker score and other details but does not provide an IMDB ID."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n      \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "There is no specific IMDB ID provided for \"Maradona by Kusturica\" in the given context information.",
+            "category": 3
+        },
+        "gemma2": {
+            "reason": "The provided context lists details about \"Maradona by Kusturica\" including its director, release year, runtime, Stacker score, Metascore, IMDb user rating, and even mentions it being a documentary about Diego Maradona.  It also contrasts this film with \"Diego Maradona\" (2019) directed by Asif Kapadia, implying that these are distinct films about the same subject.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "The context information does not provide an IMDB ID for Maradona by Kusturica, only for other documentaries.",
+            "category": 3
+        }
+    }
+}

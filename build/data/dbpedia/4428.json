@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Scottish_Fuels",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:Companies_established_in_2001",
+    "human_readable": "The subject of Scottish Fuels is Category:Companies established in 2001.",
+    "questions": [
+        {
+            "score": 0.8834659457206726,
+            "question": "Is Scottish Fuels a company?"
+        },
+        {
+            "score": 0.797450840473175,
+            "question": "What category does Scottish Fuels belong to?"
+        },
+        {
+            "score": 0.7964158654212952,
+            "question": "When was Scottish Fuels established?"
+        },
+        {
+            "score": 0.7856386303901672,
+            "question": "What type of organization is Scottish Fuels?"
+        },
+        {
+            "score": 0.7542856335639954,
+            "question": "What industry is Scottish Fuels likely involved in?"
+        },
+        {
+            "score": 0.6437015533447266,
+            "question": "In what year did Scottish Fuels begin operations?"
+        },
+        {
+            "score": 0.6277711987495422,
+            "question": "What might be some of Scottish Fuels' products or services?"
+        },
+        {
+            "score": 0.5665169954299927,
+            "question": "Are there any other companies similar to Scottish Fuels?"
+        },
+        {
+            "score": 0.506513774394989,
+            "question": "How has Scottish Fuels contributed to the economy?"
+        },
+        {
+            "score": 0.49566155672073364,
+            "question": "Can you tell me more about the history of Scottish Fuels?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The subject of Scottish Fuels is Category:Companies established in 2001.",
+            "html": "dbpedia_4428_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How has Scottish Fuels contributed to the economy?",
+            "html": "dbpedia_4428_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any other companies similar to Scottish Fuels?",
+            "html": "dbpedia_4428_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What might be some of Scottish Fuels' products or services?",
+            "html": "dbpedia_4428_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4428_12.txt"
+        },
+        {
+            "file_id": "dbpedia_4428_16.txt"
+        },
+        {
+            "file_id": "dbpedia_4428_17.txt"
+        },
+        {
+            "file_id": "dbpedia_4428_2.txt"
+        },
+        {
+            "file_id": "dbpedia_4428_26.txt"
+        },
+        {
+            "file_id": "dbpedia_4428_41.txt"
+        },
+        {
+            "file_id": "dbpedia_4428_58.txt"
+        },
+        {
+            "file_id": "dbpedia_4428_72.txt"
+        },
+        {
+            "file_id": "dbpedia_4428_79.txt"
+        },
+        {
+            "file_id": "dbpedia_4428_90.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, here's my evaluation:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nMy reasoning is as follows:\n\nThe text mentions that \"We\u2019re proud to have been providing fuel, lubricants and so much more to Scottish homes, farms and businesses since 2001\". However, it does not explicitly state that Scottish Fuels was established in 2001. It actually says \"since 2001\", which implies that the company existed before 2001, but started providing services under the current name and scope after 2001."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents mention that \"We\u2019re proud to have been providing fuel, lubricants and so much more to Scottish homes, farms and businesses since 2001,\" which supports the triple stating that Scottish Fuels is categorized as a company established in 2001."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Scottish Fuels was founded in 1967, not in 2001.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Scottish Fuels was founded in 2001. The provided text states \"We\u2019re proud to have been providing fuel, lubricants and so much more to Scottish homes, farms and businesses since 2001.\"",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "Scottish Fuels was established before 2001 as mentioned in the text \"We\u2019re proud to have been providing fuel, lubricants and so much more to Scottish homes, farms and businesses since 2001\" implies that they were already existing before that year.",
+            "category": 2
+        }
+    }
+}

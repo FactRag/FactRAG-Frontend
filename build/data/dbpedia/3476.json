@@ -1,0 +1,112 @@
+{
+    "subject": "resource/Lottie_Williams",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "Lottie Williams",
+    "human_readable": "The label of Lottie Williams is Lottie Williams.",
+    "questions": [
+        {
+            "score": 0.9617283344268799,
+            "question": "Who is Lottie Williams?"
+        },
+        {
+            "score": 0.9215481877326965,
+            "question": "What is Lottie Williams known as?"
+        },
+        {
+            "score": 0.9012799263000488,
+            "question": "Is there more information available about Lottie Williams?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The label of Lottie Williams is Lottie Williams.",
+            "html": "dbpedia_3476_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Lottie Williams known as?",
+            "html": "dbpedia_3476_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is Lottie Williams?",
+            "html": "dbpedia_3476_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3476_17.txt"
+        },
+        {
+            "file_id": "dbpedia_3476_24.txt"
+        },
+        {
+            "file_id": "dbpedia_3476_25.txt"
+        },
+        {
+            "file_id": "dbpedia_3476_36.txt"
+        },
+        {
+            "file_id": "dbpedia_3476_44.txt"
+        },
+        {
+            "file_id": "dbpedia_3476_58.txt"
+        },
+        {
+            "file_id": "dbpedia_3476_71.txt"
+        },
+        {
+            "file_id": "dbpedia_3476_73.txt"
+        },
+        {
+            "file_id": "dbpedia_3476_74.txt"
+        },
+        {
+            "file_id": "dbpedia_3476_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "After analyzing the context information, I can see that there are multiple documents with different information about a person named \"Lottie Williams\". Some documents mention her as an actress and provide details about her life, while others describe her as an adidas employee and mention her enthusiasm for the brand.\n\nHowever, none of the documents consistently label or describe Lottie Williams as \"Lottie Williams\" across all documents. In fact, one document mentions a different birthdate and location for Lottie Williams, which seems to be inconsistent with another document that also lists multiple facts about an actress named Lottie Williams.\n\nTherefore, based on the context information provided, I would say that:\n\n```\n{\n  \"output\": \"no\"\n}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: The documents do not contain any information about the label or identity confirmation for \"Lottie Williams\" beyond her name and brief biographical details. There's no assertion that \"the label of Lottie Williams is Lottie Williams,\" which would be redundant and nonsensical based on the provided context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The first two context information point to two different people with the same name, one being an actress (born in 1874) and another being a woman who works as an outlet salesperson at adidas.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The provided context does not mention any label or title associated with Lottie Williams other than her profession as an actress and her birth and death details. Therefore, labeling her simply as \"Lottie Williams\" without any additional descriptor or identification from the given information would be incomplete and potentially misleading.",
+            "category": 2
+        }
+    }
+}

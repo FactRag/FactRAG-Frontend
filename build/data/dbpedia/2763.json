@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Arthur_Lakes",
+    "predicate": "ontology/deathPlace",
+    "object": "resource/Ymir,_British_Columbia",
+    "human_readable": "Arthur Lakes died at Ymir, British Columbia.",
+    "questions": [
+        {
+            "score": 0.9174001812934875,
+            "question": "Was Arthur Lakes born in Ymir, British Columbia?"
+        },
+        {
+            "score": 0.8796698451042175,
+            "question": "What are some historical events that occurred in Ymir, British Columbia around the time of Arthur Lakes' death?"
+        },
+        {
+            "score": 0.826642632484436,
+            "question": "Where did Arthur Lakes die?"
+        },
+        {
+            "score": 0.7431426048278809,
+            "question": "When did Arthur Lakes die?"
+        },
+        {
+            "score": 0.6910046339035034,
+            "question": "What is the name of the city where Arthur Lakes died?"
+        },
+        {
+            "score": 0.46576017141342163,
+            "question": "What was Arthur Lakes known for?"
+        },
+        {
+            "score": 0.41419267654418945,
+            "question": "In which province did Arthur Lakes pass away?"
+        },
+        {
+            "score": 0.31620100140571594,
+            "question": "Is there any further information available about Arthur Lakes' passing?"
+        },
+        {
+            "score": 0.29303082823753357,
+            "question": "Can you tell me more about Arthur Lakes' life?"
+        },
+        {
+            "score": 0.2705976665019989,
+            "question": "Are there any other notable individuals associated with Ymir, British Columbia?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Arthur Lakes died at Ymir, British Columbia.",
+            "html": "dbpedia_2763_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about Arthur Lakes' life?",
+            "html": "dbpedia_2763_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there any further information available about Arthur Lakes' passing?",
+            "html": "dbpedia_2763_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In which province did Arthur Lakes pass away?",
+            "html": "dbpedia_2763_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2763_1.txt"
+        },
+        {
+            "file_id": "dbpedia_2763_11.txt"
+        },
+        {
+            "file_id": "dbpedia_2763_32.txt"
+        },
+        {
+            "file_id": "dbpedia_2763_33.txt"
+        },
+        {
+            "file_id": "dbpedia_2763_37.txt"
+        },
+        {
+            "file_id": "dbpedia_2763_64.txt"
+        },
+        {
+            "file_id": "dbpedia_2763_71.txt"
+        },
+        {
+            "file_id": "dbpedia_2763_76.txt"
+        },
+        {
+            "file_id": "dbpedia_2763_8.txt"
+        },
+        {
+            "file_id": "dbpedia_2763_82.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "After analyzing the context information, I can confirm that:\n\n{\n  \"output\": \"yes\"\n}\n\nThe text mentions that Arthur Lakes died in 1917 and was living in Ymir, British Columbia, indicating that he indeed died at that location."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\nThe documents state that \"Arthur Lakes died there in 1917, still 'tanned from the outdoors life he led.' \" and also mention that \"After retiring, Lakes moved from Colorado to Ymir, British Columbia in 1910 to be with his two sons who were involved in the mining business.\" This supports the statement that Arthur Lakes died at Ymir, British Columbia."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Arthur Lakes died in 1917, and according to the context information, he moved to Ymir, British Columbia in 1910. Therefore, he had nine years left to live when he moved there, not enough time to die there as stated in the claim.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Information from texts 1 and 2 state Arthur Lakes died in Ymir, British Columbia in 1917.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "It conflicts with the information provided in statement 2 and 3 that Arthur Lakes died in 1917.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context states that Lakes moved to Ymir, British Columbia in 1912 but died there in 1917. Therefore, he did not die at Ymir, British Columbia; he lived there for about five years before his death.",
+            "category": 2
+        }
+    }
+}

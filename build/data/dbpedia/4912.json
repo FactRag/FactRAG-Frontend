@@ -1,0 +1,102 @@
+{
+    "subject": "resource/Takuya_Taniyama",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "Takuya Taniyama",
+    "human_readable": "Takuya Taniyama's name is Takuya Taniyama.",
+    "questions": [
+        {
+            "score": 0.9795666337013245,
+            "question": "What is Takuya Taniyama's name?"
+        },
+        {
+            "score": 0.9544702172279358,
+            "question": "Is Takuya Taniyama a person?"
+        },
+        {
+            "score": 0.06037381291389465,
+            "question": "Does the statement refer to a specific individual?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Takuya Taniyama's name is Takuya Taniyama.",
+            "html": "dbpedia_4912_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Takuya Taniyama a person?",
+            "html": "dbpedia_4912_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Takuya Taniyama's name?",
+            "html": "dbpedia_4912_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4912_113.txt"
+        },
+        {
+            "file_id": "dbpedia_4912_115.txt"
+        },
+        {
+            "file_id": "dbpedia_4912_15.txt"
+        },
+        {
+            "file_id": "dbpedia_4912_25.txt"
+        },
+        {
+            "file_id": "dbpedia_4912_27.txt"
+        },
+        {
+            "file_id": "dbpedia_4912_4.txt"
+        },
+        {
+            "file_id": "dbpedia_4912_5.txt"
+        },
+        {
+            "file_id": "dbpedia_4912_69.txt"
+        },
+        {
+            "file_id": "dbpedia_4912_73.txt"
+        },
+        {
+            "file_id": "dbpedia_4912_95.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the answer in JSON format:\n\n{\n  \"output\": \"no\"\n}\n\nThe reason for this answer is that while the documents mention a person named Takuya Taniyama, they do not indicate that his first and last names are both \"Takuya Taniyama\". In fact, one of the documents mentions a person named \"Taniyama Kisho\" which suggests that the name \"Taniyama\" can be associated with different first names."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide information about a person named Takuya Taniyama, including his full name and role as an instructor of Shotokan karate. This supports the statement that Takuya Taniyama's name is indeed \"Takuya Taniyama.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The name \"Takuya Taniyama\" given as the first fact is actually correct, but I evaluated that statement based on my own understanding of the context, without considering the possibility that it could be true.",
+            "category": 2
+        }
+    }
+}

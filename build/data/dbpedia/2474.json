@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Jo_Van_Fleet",
+    "predicate": "property/birthDate",
+    "object": "1915-12-29",
+    "human_readable": "Jo Van Fleet was born on December 29, 1915.",
+    "questions": [
+        {
+            "score": 0.8861309289932251,
+            "question": "When was Jo Van Fleet born?"
+        },
+        {
+            "score": 0.7889604568481445,
+            "question": "Where was Jo Van Fleet born?"
+        },
+        {
+            "score": 0.7172816395759583,
+            "question": "What month was Jo Van Fleet born in?"
+        },
+        {
+            "score": 0.4730183780193329,
+            "question": "What was Jo Van Fleet's profession?"
+        },
+        {
+            "score": 0.44081419706344604,
+            "question": "Is Jo Van Fleet known for acting?"
+        },
+        {
+            "score": 0.4137386679649353,
+            "question": "In what year did Jo Van Fleet enter the world?"
+        },
+        {
+            "score": 0.31395331025123596,
+            "question": "Can you tell me more about Jo Van Fleet's career?"
+        },
+        {
+            "score": 0.3019621670246124,
+            "question": "Is there anything else notable about Jo Van Fleet's life?"
+        },
+        {
+            "score": 0.2312704622745514,
+            "question": "Did Jo Van Fleet win any awards?"
+        },
+        {
+            "score": 0.22034411132335663,
+            "question": "What are some of Jo Van Fleet's most famous roles?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Jo Van Fleet was born on December 29, 1915.",
+            "html": "dbpedia_2474_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Did Jo Van Fleet win any awards?",
+            "html": "dbpedia_2474_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there anything else notable about Jo Van Fleet's life?",
+            "html": "dbpedia_2474_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about Jo Van Fleet's career?",
+            "html": "dbpedia_2474_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2474_18.txt"
+        },
+        {
+            "file_id": "dbpedia_2474_23.txt"
+        },
+        {
+            "file_id": "dbpedia_2474_27.txt"
+        },
+        {
+            "file_id": "dbpedia_2474_35.txt"
+        },
+        {
+            "file_id": "dbpedia_2474_48.txt"
+        },
+        {
+            "file_id": "dbpedia_2474_5.txt"
+        },
+        {
+            "file_id": "dbpedia_2474_58.txt"
+        },
+        {
+            "file_id": "dbpedia_2474_72.txt"
+        },
+        {
+            "file_id": "dbpedia_2474_75.txt"
+        },
+        {
+            "file_id": "dbpedia_2474_80.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the answer in the form of a structured JSON format:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation:\n\nThe triple states that \"Jo Van Fleet was born on December 29, 1915.\" However, according to the documents provided, there are multiple instances mentioning Jo Van Fleet's birthdate. Some mention December 29, 1915 (files 55 and 17), while others mention December 30, 1914 (files 69 and 72). Therefore, the information in the documents does not support the triple with certainty, as it contains conflicting dates."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThis answer is derived from the information provided in the documents, which consistently state that Jo Van Fleet was born on December 29, 1915."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The context information contains multiple statements about Jo Van Fleet's birthdate, with three of them consistently stating December 29, 1915, and only one statement (from the \"Biography\" section) listing her birthdate as December 30, 1914.",
+            "category": 2
+        }
+    }
+}

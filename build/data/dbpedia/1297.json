@@ -1,0 +1,102 @@
+{
+    "subject": "resource/Matt_McColm",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "Matt McColm",
+    "human_readable": "The label of Matt McColm is Matt McColm.",
+    "questions": [
+        {
+            "score": 0.9810729026794434,
+            "question": "What is the label of Matt McColm?"
+        },
+        {
+            "score": 0.9270084500312805,
+            "question": "Who is Matt McColm?"
+        },
+        {
+            "score": 0.7294052243232727,
+            "question": "How would you describe Matt McColm?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The label of Matt McColm is Matt McColm.",
+            "html": "dbpedia_1297_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is Matt McColm?",
+            "html": "dbpedia_1297_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the label of Matt McColm?",
+            "html": "dbpedia_1297_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1297_114.txt"
+        },
+        {
+            "file_id": "dbpedia_1297_42.txt"
+        },
+        {
+            "file_id": "dbpedia_1297_45.txt"
+        },
+        {
+            "file_id": "dbpedia_1297_47.txt"
+        },
+        {
+            "file_id": "dbpedia_1297_5.txt"
+        },
+        {
+            "file_id": "dbpedia_1297_54.txt"
+        },
+        {
+            "file_id": "dbpedia_1297_72.txt"
+        },
+        {
+            "file_id": "dbpedia_1297_80.txt"
+        },
+        {
+            "file_id": "dbpedia_1297_89.txt"
+        },
+        {
+            "file_id": "dbpedia_1297_95.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple \"The label of Matt McColm is Matt McColm\" based on the provided context information:\n\n{\n  \"output\": \"no\"\n}\n\nExplanation:\n\nThe documents mention various facts about Matt McColm, such as his birthdate, career, and roles in different movies and TV series. However, none of them explicitly state that his label or name is \"Matt McColm\" (note the capitalization). In fact, most of the documents use a lowercase \"m\" when referring to him.\n\nThis subtle detail suggests that the triple might be incorrect, as it implies a specific capitalization convention for Matt McColm's name."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThis response indicates that the documents support the triple stating \"The label of Matt McColm is Matt McColm,\" as all the provided text snippets mention \"Matt McColm\" by name."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The label of Matt McColm as \"Matt McColm\" is not a characteristic or fact about him, but rather his name.",
+            "category": 2
+        }
+    }
+}

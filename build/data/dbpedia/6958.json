@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Ferret_Music",
+    "predicate": "ontology/distributingCompany",
+    "object": "resource/Fontana_Distribution",
+    "human_readable": "Ferret Music is distributed by Fontana Distribution.",
+    "questions": [
+        {
+            "score": 0.9535983204841614,
+            "question": "What is the relationship between Ferret Music and Fontana Distribution?"
+        },
+        {
+            "score": 0.8947980403900146,
+            "question": "Is Fontana Distribution involved in music distribution?"
+        },
+        {
+            "score": 0.8797390460968018,
+            "question": "Who distributes Ferret Music?"
+        },
+        {
+            "score": 0.8445066809654236,
+            "question": "Which band or artist's music is distributed by Fontana Distribution?"
+        },
+        {
+            "score": 0.8378584980964661,
+            "question": "Does Ferret Music have a distribution agreement?"
+        },
+        {
+            "score": 0.8338814377784729,
+            "question": "Name a music label distributed by Fontana Distribution."
+        },
+        {
+            "score": 0.7618247866630554,
+            "question": "What is the name of the distribution company for Ferret Music?"
+        },
+        {
+            "score": 0.7553718090057373,
+            "question": "Who are some other artists distributed by Fontana Distribution?"
+        },
+        {
+            "score": 0.5841618776321411,
+            "question": "What type of content does Fontana Distribution handle?"
+        },
+        {
+            "score": 0.34210142493247986,
+            "question": "What does it mean for music to be 'distributed'?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Ferret Music is distributed by Fontana Distribution.",
+            "html": "dbpedia_6958_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of content does Fontana Distribution handle?",
+            "html": "dbpedia_6958_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who are some other artists distributed by Fontana Distribution?",
+            "html": "dbpedia_6958_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of the distribution company for Ferret Music?",
+            "html": "dbpedia_6958_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6958_100.txt"
+        },
+        {
+            "file_id": "dbpedia_6958_104.txt"
+        },
+        {
+            "file_id": "dbpedia_6958_109.txt"
+        },
+        {
+            "file_id": "dbpedia_6958_19.txt"
+        },
+        {
+            "file_id": "dbpedia_6958_4.txt"
+        },
+        {
+            "file_id": "dbpedia_6958_64.txt"
+        },
+        {
+            "file_id": "dbpedia_6958_68.txt"
+        },
+        {
+            "file_id": "dbpedia_6958_71.txt"
+        },
+        {
+            "file_id": "dbpedia_6958_72.txt"
+        },
+        {
+            "file_id": "dbpedia_6958_80.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "The query is asking whether the statement \"Ferret Music is distributed by Fontana Distribution\" is supported by the provided context information.\n\nFrom the context information, we can see that:\n\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6958/re-ranker-msmarco/19.txt, it says \"Ferret recently started an imprint called New Weathermen Records.  Warner Music Group's Alternative Distribution Alliance acquired a stake in Ferret Music in August, 2006, and as a result is currently distributed by Fontana Distribution, Alternative Distribution Alliance and eOne Music.\"\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6958/re-ranker-msmarco/72.txt, it says \"Distributors Fontana Distribution, Entertainment One Distribution, Alternative Distribution Alliance\"\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6958/re-ranker-msmarco/68.txt and 19.txt, it says similar information about Ferret Music being distributed by Fontana Distribution.\n\nTherefore, the answer is:\n\n{'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information that Warner Music Group's Alternative Distribution Alliance acquired a stake in Ferret Music and that as a result, it is currently distributed by Fontana Distribution. Therefore, the statement \"Ferret Music is distributed by Fontana Distribution\" is supported by the given context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

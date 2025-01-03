@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Jean-Louis_Verdier",
+    "predicate": "property/workplaces",
+    "object": "resource/Paris_Diderot_University",
+    "human_readable": "Jean-Louis Verdier worked at Paris Diderot University.",
+    "questions": [
+        {
+            "score": 0.9153233170509338,
+            "question": "What type of institution did Jean-Louis Verdier work at?"
+        },
+        {
+            "score": 0.9097596406936646,
+            "question": "What is the name of the university where Jean-Louis Verdier worked?"
+        },
+        {
+            "score": 0.8999707102775574,
+            "question": "Is there any information about Jean-Louis Verdier's role at the university?"
+        },
+        {
+            "score": 0.8946194052696228,
+            "question": "Where did Jean-Louis Verdier work?"
+        },
+        {
+            "score": 0.841716468334198,
+            "question": "What university is associated with Jean-Louis Verdier?"
+        },
+        {
+            "score": 0.8188876509666443,
+            "question": "Does Jean-Louis Verdier have a connection to Paris?"
+        },
+        {
+            "score": 0.7113868594169617,
+            "question": "Is Jean-Louis Verdier affiliated with an educational institution?"
+        },
+        {
+            "score": 0.6321078538894653,
+            "question": "Can you tell me about Jean-Louis Verdier's professional background?"
+        },
+        {
+            "score": 0.5821965336799622,
+            "question": "If someone wanted to learn more about Jean-Louis Verdier, what institution would be a good place to start?"
+        },
+        {
+            "score": 0.5747917294502258,
+            "question": "Jean-Louis Verdier's work is likely related to what field?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Jean-Louis Verdier worked at Paris Diderot University.",
+            "html": "dbpedia_1740_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If someone wanted to learn more about Jean-Louis Verdier, what institution would be a good place to start?",
+            "html": "dbpedia_1740_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me about Jean-Louis Verdier's professional background?",
+            "html": "dbpedia_1740_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Jean-Louis Verdier affiliated with an educational institution?",
+            "html": "dbpedia_1740_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1740_12.txt"
+        },
+        {
+            "file_id": "dbpedia_1740_22.txt"
+        },
+        {
+            "file_id": "dbpedia_1740_23.txt"
+        },
+        {
+            "file_id": "dbpedia_1740_24.txt"
+        },
+        {
+            "file_id": "dbpedia_1740_30.txt"
+        },
+        {
+            "file_id": "dbpedia_1740_41.txt"
+        },
+        {
+            "file_id": "dbpedia_1740_47.txt"
+        },
+        {
+            "file_id": "dbpedia_1740_76.txt"
+        },
+        {
+            "file_id": "dbpedia_1740_77.txt"
+        },
+        {
+            "file_id": "dbpedia_1740_84.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe documents state that Jean-Louis Verdier was a Professor at the University of Paris VII, not Paris Diderot University.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nHere's the reasoning:\n\nThe information in the documents does not support that Jean-Louis Verdier worked at Paris Diderot University. According to the context, Verdier was a student and later became director of studies at the elite \u00c9cole Normale Sup\u00e9rieure (ENS) in Paris, as well as a Professor at the University of Paris VII (not Paris Diderot University), which is a different institution."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: According to the provided context, Jean-Louis Verdier was a Professor at the University of Paris VII. Paris Diderot University is another name for the University of Paris VII, so the statement that Jean-Louis Verdier worked at Paris Diderot University is supported by the documents."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nThe provided context mentions that Jean-Louis Verdier was a Professor at the University of Paris VII, but there is no mention of him working at Paris Diderot University. Since Paris Diderot University (also known as Universit\u00e9 Paris 7 Denis Diderot) is a different institution from the University of Paris VII (though they are related as Paris Diderot University was created after restructuring and renaming), we cannot confirm this statement based on the given information."
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Context information states he was a Professor at the University of Paris VII.  Additionally, it mentions his position as Director of Studies at the \u00c9cole Normale Sup\u00e9rieure and his participation in a seminar there with Adrien Douady.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "It is stated in the context information that Jean-Louis Verdier was a Professor at the University of Paris VII, which was later renamed to Universit\u00e9 Paris Diderot. However, it is not explicitly mentioned that he worked at Paris Diderot University; rather, it mentions his affiliation with the University of Paris VII.",
+            "category": 2
+        }
+    }
+}

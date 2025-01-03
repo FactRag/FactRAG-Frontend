@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Hard_Boiled_(1919_film)",
+    "predicate": "ontology/Work/runtime",
+    "object": "50.0",
+    "human_readable": "The runtime of the film 'Hard Boiled' is 50.0 minutes.",
+    "questions": [
+        {
+            "score": 0.8724694848060608,
+            "question": "What is the runtime of the movie 'Hard Boiled' in minutes?"
+        },
+        {
+            "score": 0.6551365256309509,
+            "question": "Is 'Hard Boiled' a short or long film based on its runtime?"
+        },
+        {
+            "score": 0.6353317499160767,
+            "question": "Compare the runtime of 'Hard Boiled' to an average movie."
+        },
+        {
+            "score": 0.49258875846862793,
+            "question": "How long is the film 'Hard Boiled'?"
+        },
+        {
+            "score": 0.3548775911331177,
+            "question": "What is the duration of the film 'Hard Boiled' expressed as a decimal number of hours?"
+        },
+        {
+            "score": 0.2531094551086426,
+            "question": "Is 'Hard Boiled' a film that could be easily watched in one sitting?"
+        },
+        {
+            "score": 0.25043630599975586,
+            "question": "What is the approximate length of time required to watch 'Hard Boiled'?"
+        },
+        {
+            "score": 0.23729398846626282,
+            "question": "Would a typical movie marathon include a film like 'Hard Boiled'?"
+        },
+        {
+            "score": 0.21401765942573547,
+            "question": "How much time would you need to set aside to watch 'Hard Boiled'?"
+        },
+        {
+            "score": 0.10273638367652893,
+            "question": "Could you watch 'Hard Boiled' during your lunch break?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The runtime of the film 'Hard Boiled' is 50.0 minutes.",
+            "html": "dbpedia_3499_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How much time would you need to set aside to watch 'Hard Boiled'?",
+            "html": "dbpedia_3499_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Would a typical movie marathon include a film like 'Hard Boiled'?",
+            "html": "dbpedia_3499_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the approximate length of time required to watch 'Hard Boiled'?",
+            "html": "dbpedia_3499_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3499_20.txt"
+        },
+        {
+            "file_id": "dbpedia_3499_25.txt"
+        },
+        {
+            "file_id": "dbpedia_3499_26.txt"
+        },
+        {
+            "file_id": "dbpedia_3499_30.txt"
+        },
+        {
+            "file_id": "dbpedia_3499_5.txt"
+        },
+        {
+            "file_id": "dbpedia_3499_50.txt"
+        },
+        {
+            "file_id": "dbpedia_3499_67.txt"
+        },
+        {
+            "file_id": "dbpedia_3499_8.txt"
+        },
+        {
+            "file_id": "dbpedia_3499_82.txt"
+        },
+        {
+            "file_id": "dbpedia_3499_85.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'} \n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": -1,
+            "full_ans": "To evaluate whether the information in the documents supports the triple, I'll need to look for relevant text.\n\nUpon reviewing the context information:\n\n...I found that the runtime of the film \"Hard Boiled\" is mentioned in one of the files (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3499/re-ranker-msmarco/49.txt) as 128 mins.\n\nHowever, this does not directly support or refute the statement about the runtime being 50.0 minutes."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: According to the provided context, the runtime of the film 'Hard Boiled' is mentioned as approximately 128 minutes in one of the documents. Therefore, stating that its runtime is 50.0 minutes contradicts the information given, hence the answer is \"no\"."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n     \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The runtime of the film 'Hard Boiled' is not 50.0 minutes. According to the context provided, the runtime of the film is 128 minutes.",
+            "category": 3
+        },
+        "gemma2": {
+            "reason": "Multiple sources state the runtime of Hard Boiled is 128 minutes.",
+            "category": 3
+        },
+        "llama3.1": {
+            "reason": "The runtime of the film 'Hard Boiled' is stated as 128 minutes in context information 2, which contradicts the given fact.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "The context clearly states the runtime of Hard Boiled as 128 minutes, not 50.0 minutes.",
+            "category": 3
+        }
+    }
+}

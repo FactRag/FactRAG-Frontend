@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Doug_Turner",
+    "predicate": "property/residence",
+    "object": "resource/Albuquerque,_New_Mexico",
+    "human_readable": "Doug Turner resides in Albuquerque, New Mexico.",
+    "questions": [
+        {
+            "score": 0.9851815104484558,
+            "question": "Is Albuquerque, New Mexico, where Doug Turner lives?"
+        },
+        {
+            "score": 0.9707059860229492,
+            "question": "Is Doug Turner from Albuquerque?"
+        },
+        {
+            "score": 0.8830187916755676,
+            "question": "Where does Doug Turner reside?"
+        },
+        {
+            "score": 0.83782958984375,
+            "question": "What city in New Mexico is Doug Turner's home?"
+        },
+        {
+            "score": 0.7238924503326416,
+            "question": "In which US state does Doug Turner live?"
+        },
+        {
+            "score": 0.6997284889221191,
+            "question": "Where is Doug Turner currently located?"
+        },
+        {
+            "score": 0.6116471290588379,
+            "question": "Can you tell me the location of Doug Turner?"
+        },
+        {
+            "score": 0.48554810881614685,
+            "question": "If you were to visit Doug Turner, where would you go?"
+        },
+        {
+            "score": 0.43385863304138184,
+            "question": "What state is Albuquerque in?"
+        },
+        {
+            "score": 0.42580029368400574,
+            "question": "What city is Doug Turner's home?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Doug Turner resides in Albuquerque, New Mexico.",
+            "html": "dbpedia_6264_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What state is Albuquerque in?",
+            "html": "dbpedia_6264_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If you were to visit Doug Turner, where would you go?",
+            "html": "dbpedia_6264_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me the location of Doug Turner?",
+            "html": "dbpedia_6264_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6264_12.txt"
+        },
+        {
+            "file_id": "dbpedia_6264_19.txt"
+        },
+        {
+            "file_id": "dbpedia_6264_20.txt"
+        },
+        {
+            "file_id": "dbpedia_6264_34.txt"
+        },
+        {
+            "file_id": "dbpedia_6264_4.txt"
+        },
+        {
+            "file_id": "dbpedia_6264_40.txt"
+        },
+        {
+            "file_id": "dbpedia_6264_41.txt"
+        },
+        {
+            "file_id": "dbpedia_6264_43.txt"
+        },
+        {
+            "file_id": "dbpedia_6264_46.txt"
+        },
+        {
+            "file_id": "dbpedia_6264_5.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the context information provided, I can evaluate whether the statement \"Doug Turner resides in Albuquerque, New Mexico\" is supported by the documents.\n\nHere's my evaluation:\n\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6264/re-ranker-msmarco/33.txt, it is mentioned that \"A native New Mexican, Doug owns and operates DW Turner, an 11 year old public relations firm in Albuquerque, New Mexico.\"\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6264/re-ranker-msmarco/45.txt, it is mentioned that \"Most of them live in Albuquerque, followed by Santa Fe and Gallup.\" However, this refers to multiple people named Doug Turner, not a specific individual.\n\nGiven the above information, I would say that the statement \"Doug Turner resides in Albuquerque, New Mexico\" is supported for one instance (the individual mentioned in file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6264/re-ranker-msmarco/33.txt), but not necessarily universally applicable to all individuals named Doug Turner.\n\nTherefore, my response would be:\n\n`{'output': 'yes'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThis answer is based on the information provided in the document `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6264/re-ranker-msmarco/33.txt` which states that Doug Turner owns and operates DW Turner, an 11-year-old public relations firm in Albuquerque, New Mexico. Additionally, the document `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6264/re-ranker-msmarco/60.txt` mentions that Doug Turner lives in Atlanta, GA; however, since the query specifically asks about his residence in Albuquerque, New Mexico, and there is no conflicting information in other documents suggesting otherwise, we can conclude that he resides in Albuquerque, New Mexico."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

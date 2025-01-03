@@ -1,0 +1,126 @@
+{
+    "subject": "resource/Yorkton",
+    "predicate": "property/decMaximumHumidex",
+    "object": "12.4",
+    "human_readable": "The maximum humidex in Yorkton is 12.4.",
+    "questions": [
+        {
+            "score": 0.9339405298233032,
+            "question": "What is the maximum humidex in Yorkton?"
+        },
+        {
+            "score": 0.9294780492782593,
+            "question": "Is 12.4 a common humidex reading for Yorkton?"
+        },
+        {
+            "score": 0.7351802587509155,
+            "question": "How high can the humidex go in Yorkton?"
+        },
+        {
+            "score": 0.2565959095954895,
+            "question": "What does 'humidex' measure?"
+        },
+        {
+            "score": 0.1993466168642044,
+            "question": "How might high humidity affect people in Yorkton?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The maximum humidex in Yorkton is 12.4.",
+            "html": "dbpedia_241_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What does 'humidex' measure?",
+            "html": "dbpedia_241_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How high can the humidex go in Yorkton?",
+            "html": "dbpedia_241_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is 12.4 a common humidex reading for Yorkton?",
+            "html": "dbpedia_241_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_241_18.txt"
+        },
+        {
+            "file_id": "dbpedia_241_19.txt"
+        },
+        {
+            "file_id": "dbpedia_241_30.txt"
+        },
+        {
+            "file_id": "dbpedia_241_49.txt"
+        },
+        {
+            "file_id": "dbpedia_241_50.txt"
+        },
+        {
+            "file_id": "dbpedia_241_6.txt"
+        },
+        {
+            "file_id": "dbpedia_241_61.txt"
+        },
+        {
+            "file_id": "dbpedia_241_68.txt"
+        },
+        {
+            "file_id": "dbpedia_241_69.txt"
+        },
+        {
+            "file_id": "dbpedia_241_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe provided text does not mention a specific humidex value for Yorkton.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "To evaluate whether the information in the documents supports the triple, I need to search for relevant phrases and data.\n\nThe query is \"The maximum humidex in Yorkton is 12.4.\"\n\nI can see that there's a section on humidity comfort levels in one of the documents:\n\nHumidity Comfort Levels in Yorkton\n\n...\n\nHumidity comfort level is not directly related to humidex, but I can see another section on climate and weather:\n\nfile_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_241/re-ranker-msmarco/33.txt\n\nBest time to go to Yorkton Average weather of Yorkton, Canada\n\nWhen is the best time to go to Yorkton?\n\n...\n\nAnnual weather in Yorkton\n\nFor full information about the climate and weather in Yorkton a specific month, click on the corresponding line below:\n\nMonth Our opinion January -16\u00b0C/-10\u00b0C 32mm very bad weather Yorkton in january February -17\u00b0C/-10\u00b0C 18mm very bad weather Yorkton in february ...\n\nHowever, I couldn't find any direct information about humidex values in Yorkton.\n\nSince there's no clear evidence supporting the claim that the maximum humidex in Yorkton is 12.4, I'll answer:\n\n{'output': 'no'}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\n**Explanation:** The provided documents do not mention any information related to the humidex in Yorkton. The context provides details about temperature ranges, climate classification, and other meteorological data but does not include specific information about the humidex or its maximum value."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "There is no information provided in the context about the calculation or measurement of humidex in Yorkton. Humidex is a measure of how hot the air feels when combined with humidity, and it's not mentioned anywhere in the provided context.",
+            "category": -1
+        },
+        "gemma2": {
+            "reason": "The provided text discusses humidity comfort levels and dew points, which are indicators of how humid air feels, but it doesn't mention humidex values or provide any information about maximum humidex readings in Yorkton.",
+            "category": -1
+        },
+        "llama3.1": {
+            "reason": "The maximum temperature ever recorded in Yorkton was 40.6 \u00b0C (105 \u00b0F), which would correspond to a humidex value significantly higher than 12.4, suggesting that the actual maximum humidex value should be closer to this threshold.",
+            "category": -1
+        },
+        "qwen2.5": {
+            "reason": "The provided context does not mention any humidex value for Yorkton. Additionally, the humidity comfort levels vary only slightly throughout the year, staying within 2% of 2%, which suggests consistently dry conditions rather than high humidity that would support a high humidex.",
+            "category": -1
+        }
+    }
+}

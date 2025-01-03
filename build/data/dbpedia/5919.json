@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Derby",
+    "predicate": "property/leaderTitle",
+    "object": "resource/Local_government_in_England",
+    "human_readable": "The leader title of Derby is Local government in England.",
+    "questions": [
+        {
+            "score": 0.8246424198150635,
+            "question": "What is the title of the leader in Derby?"
+        },
+        {
+            "score": 0.6628518104553223,
+            "question": "Who is the current leader of Derby?"
+        },
+        {
+            "score": 0.6090101599693298,
+            "question": "What type of government does Derby have?"
+        },
+        {
+            "score": 0.5634402632713318,
+            "question": "Are there any other political positions in Derby besides the leader?"
+        },
+        {
+            "score": 0.5507141351699829,
+            "question": "How is the leader of Derby chosen?"
+        },
+        {
+            "score": 0.549656867980957,
+            "question": "What are the responsibilities of the leader in Derby?"
+        },
+        {
+            "score": 0.3236181437969208,
+            "question": "What country is Derby in?"
+        },
+        {
+            "score": 0.29721707105636597,
+            "question": "Where is Derby located?"
+        },
+        {
+            "score": 0.21833379566669464,
+            "question": "Is Derby a city or a town?"
+        },
+        {
+            "score": 0.19124087691307068,
+            "question": "Does Derby have a mayor?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The leader title of Derby is Local government in England.",
+            "html": "dbpedia_5919_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Derby a city or a town?",
+            "html": "dbpedia_5919_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where is Derby located?",
+            "html": "dbpedia_5919_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What country is Derby in?",
+            "html": "dbpedia_5919_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5919_10.txt"
+        },
+        {
+            "file_id": "dbpedia_5919_102.txt"
+        },
+        {
+            "file_id": "dbpedia_5919_116.txt"
+        },
+        {
+            "file_id": "dbpedia_5919_158.txt"
+        },
+        {
+            "file_id": "dbpedia_5919_26.txt"
+        },
+        {
+            "file_id": "dbpedia_5919_27.txt"
+        },
+        {
+            "file_id": "dbpedia_5919_45.txt"
+        },
+        {
+            "file_id": "dbpedia_5919_50.txt"
+        },
+        {
+            "file_id": "dbpedia_5919_77.txt"
+        },
+        {
+            "file_id": "dbpedia_5919_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "To evaluate the triple, I'll need to extract information from the documents.\n\nHere's a structured JSON format for the evaluation:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nMy reasoning is as follows:\n\n* The documents mention various leaders and officials associated with Derby City Council, but they do not explicitly state that the leader title of Derby is \"Local government in England\".\n* In fact, the documents mention a mayor-council-manager form of government (in document 44) and describe the role of the Mayor and City Council as the Governing Body (also in document 44). This suggests that the leadership structure of Derby is more specific than just \"Local government in England\", which is a broader category.\n* The documents also mention various leaders and officials, such as Councillor Chris Poulter (in document 113), who is described as the Leader of Derby City Council. This further supports the idea that the leader title of Derby is not simply \"Local government in England\".\n* Therefore, based on this analysis, I conclude that the triple is incorrect, and the value should be \"no\"."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The context information discusses the governance structure of Derby, mentioning that it operates under a mayor-council-manager form of government. This aligns with the general local government structures found in England, supporting the triple that \"The leader title of Derby is Local government in England.\""
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n      \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "qwen2.5": {
+            "reason": "The context clearly states that Derby operates under a mayor-council-manager form of government, which indicates it has a structured local governance system with specific roles for the Mayor and City Council, rather than just being referred to as \"Local government in England\" without specifying its exact form.",
+            "category": 2
+        }
+    }
+}

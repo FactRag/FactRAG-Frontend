@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Clarissa_S._Williams",
+    "predicate": "property/successor",
+    "object": "resource/Jennie_B._Knight",
+    "human_readable": "The successor of Clarissa S. Williams is Jennie B. Knight.",
+    "questions": [
+        {
+            "score": 0.9887534379959106,
+            "question": "Is Jennie B. Knight the successor of Clarissa S. Williams?"
+        },
+        {
+            "score": 0.9387017488479614,
+            "question": "Who is Jennie B. Knight in relation to Clarissa S. Williams?"
+        },
+        {
+            "score": 0.8592553734779358,
+            "question": "What is the relationship between Clarissa S. Williams and Jennie B. Knight?"
+        },
+        {
+            "score": 0.853813111782074,
+            "question": "Who succeeded Clarissa S. Williams?"
+        },
+        {
+            "score": 0.7536568641662598,
+            "question": "What is the name of the person who replaced Clarissa S. Williams?"
+        },
+        {
+            "score": 0.5724866390228271,
+            "question": "Who held the position before Jennie B. Knight?"
+        },
+        {
+            "score": 0.4752989411354065,
+            "question": "What happened to the position held by Clarissa S. Williams?"
+        },
+        {
+            "score": 0.3836403489112854,
+            "question": "What position did Clarissa S. Williams hold?"
+        },
+        {
+            "score": 0.2869514524936676,
+            "question": "If Clarissa S. Williams stepped down, who took over?"
+        },
+        {
+            "score": 0.03066583350300789,
+            "question": "Can you tell me the names of both individuals mentioned?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The successor of Clarissa S. Williams is Jennie B. Knight.",
+            "html": "dbpedia_2266_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If Clarissa S. Williams stepped down, who took over?",
+            "html": "dbpedia_2266_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What position did Clarissa S. Williams hold?",
+            "html": "dbpedia_2266_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What happened to the position held by Clarissa S. Williams?",
+            "html": "dbpedia_2266_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2266_14.txt"
+        },
+        {
+            "file_id": "dbpedia_2266_15.txt"
+        },
+        {
+            "file_id": "dbpedia_2266_23.txt"
+        },
+        {
+            "file_id": "dbpedia_2266_28.txt"
+        },
+        {
+            "file_id": "dbpedia_2266_30.txt"
+        },
+        {
+            "file_id": "dbpedia_2266_4.txt"
+        },
+        {
+            "file_id": "dbpedia_2266_41.txt"
+        },
+        {
+            "file_id": "dbpedia_2266_45.txt"
+        },
+        {
+            "file_id": "dbpedia_2266_6.txt"
+        },
+        {
+            "file_id": "dbpedia_2266_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'} \n``` \n\n\nWhile the documents mention both Clarissa S. Williams and Jennie B. Knight as figures in the Relief Society,  they don't explicitly state that Jennie B. Knight succeeded Clarissa S. Williams. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation:\nThe information provided does not mention a successor to Clarissa S. Williams. The text only lists her as the President of the Relief Society, but it does not provide any information about who succeeded her."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents mention that Mrs. Jennie Brimhall Knight was the First Counselor under Mrs. Clarissa Smith Williams in the General Board of the Relief Society of the Church of Jesus Christ of Latter-day Saints, indicating she succeeded her as a leader within the organization."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "Based on the given context information, there's no explicit statement indicating that Jennie B. Knight succeeded Clarissa S. Williams as president or first counselor in the Relief Society of the Church of Jesus Christ of Latter-day Saints.\n\nThe documents show both Clarissa Smith Williams and Jennie Brimhall Knight mentioned together but do not provide a clear succession line regarding their positions within the organization. Therefore, the information provided does not confirm the statement that Jennie B. Knight succeeded Clarissa S. Williams.\n\nResponse: {'output': 'no'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "The provided text states Clarissa Smith Williams is the President of the Relief Society and Jennie Brimhall Knight is the First Counselor.  This structure indicates a hierarchical relationship where Williams holds the highest position, not that Knight is her successor.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The context information provided shows a different sequence of General Board members for the Relief Society, but does not directly contradict the fact that Jennie B. Knight succeeded Clarissa S. Williams as First Counselor. However, it can be inferred that the correct evaluation should be based on the given context about another specific female leader's role in the church and her title, which may suggest that the provided information is a list of female leaders or counselors, but does not necessarily imply that Jennie B. Knight succeeded Clarissa S. Williams as First Counselor, whereas the text only lists her alongside Clarissa S. Williams.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Susan_Saint_James",
+    "predicate": "ontology/birthPlace",
+    "object": "resource/California",
+    "human_readable": "Susan Saint James was born in California.",
+    "questions": [
+        {
+            "score": 0.9442300796508789,
+            "question": "Where was Susan Saint James born?"
+        },
+        {
+            "score": 0.8431828618049622,
+            "question": "When was Susan Saint James born?"
+        },
+        {
+            "score": 0.7926324009895325,
+            "question": "In which state did Susan Saint James grow up?"
+        },
+        {
+            "score": 0.5987746715545654,
+            "question": "What is Susan Saint James's nationality?"
+        },
+        {
+            "score": 0.5611415505409241,
+            "question": "What is Susan Saint James known for?"
+        },
+        {
+            "score": 0.3818700313568115,
+            "question": "What is Susan Saint James's full name?"
+        },
+        {
+            "score": 0.23676487803459167,
+            "question": "Did Susan Saint James have a successful acting career?"
+        },
+        {
+            "score": 0.21898752450942993,
+            "question": "Was Susan Saint James involved in any notable television shows?"
+        },
+        {
+            "score": 0.21108070015907288,
+            "question": "Is Susan Saint James still active in the entertainment industry?"
+        },
+        {
+            "score": 0.16139324009418488,
+            "question": "What type of roles did Susan Saint James often play?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Susan Saint James was born in California.",
+            "html": "dbpedia_4113_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Susan Saint James still active in the entertainment industry?",
+            "html": "dbpedia_4113_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Was Susan Saint James involved in any notable television shows?",
+            "html": "dbpedia_4113_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Did Susan Saint James have a successful acting career?",
+            "html": "dbpedia_4113_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4113_1.txt"
+        },
+        {
+            "file_id": "dbpedia_4113_12.txt"
+        },
+        {
+            "file_id": "dbpedia_4113_20.txt"
+        },
+        {
+            "file_id": "dbpedia_4113_28.txt"
+        },
+        {
+            "file_id": "dbpedia_4113_35.txt"
+        },
+        {
+            "file_id": "dbpedia_4113_53.txt"
+        },
+        {
+            "file_id": "dbpedia_4113_54.txt"
+        },
+        {
+            "file_id": "dbpedia_4113_72.txt"
+        },
+        {
+            "file_id": "dbpedia_4113_79.txt"
+        },
+        {
+            "file_id": "dbpedia_4113_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the response:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe information in the documents supports this triple. The birthplace of Susan Saint James is mentioned as Los Angeles, California in multiple files (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4113/re-ranker-msmarco/1.txt, file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4113/re-ranker-msmarco/28.txt, file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4113/re-ranker-msmarco/35.txt)."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: While the documents mention that Susan Saint James was born in Los Angeles, California, and had a connection to Connecticut through her family background, none of them explicitly state or strongly imply that she was born in California. Therefore, based on the given information, the statement \"Susan Saint James was born in California\" cannot be confirmed as correct, hence the response is \"no.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "qwen2.5": {
+            "reason": "The context clearly states that Susan Saint James was born in Los Angeles, California, not just California.",
+            "category": 2
+        }
+    }
+}

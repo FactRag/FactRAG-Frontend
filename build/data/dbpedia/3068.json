@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Zorro's_Black_Whip",
+    "predicate": "ontology/writer",
+    "object": "resource/Johnston_McCulley",
+    "human_readable": "Zorro's Black Whip was written by Johnston McCulley.",
+    "questions": [
+        {
+            "score": 0.9486401081085205,
+            "question": "Who wrote the book 'Zorro's Black Whip'?"
+        },
+        {
+            "score": 0.7879555821418762,
+            "question": "What is the title of the book written by Johnston McCulley?"
+        },
+        {
+            "score": 0.7831791043281555,
+            "question": "Why do you think Johnston McCulley chose to write about Zorro?"
+        },
+        {
+            "score": 0.6792897582054138,
+            "question": "Who is the main character in 'Zorro's Black Whip'?"
+        },
+        {
+            "score": 0.5727381110191345,
+            "question": "Is 'Zorro's Black Whip' a work of fiction?"
+        },
+        {
+            "score": 0.5351505279541016,
+            "question": "What makes 'Zorro's Black Whip' a memorable book?"
+        },
+        {
+            "score": 0.432787150144577,
+            "question": "What genre is 'Zorro's Black Whip' likely to be?"
+        },
+        {
+            "score": 0.37336447834968567,
+            "question": "What time period might the story of 'Zorro's Black Whip' take place in?"
+        },
+        {
+            "score": 0.2647385895252228,
+            "question": "Are there other books featuring Zorro?"
+        },
+        {
+            "score": 0.19210956990718842,
+            "question": "What are some common themes found in Zorro stories?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Zorro's Black Whip was written by Johnston McCulley.",
+            "html": "dbpedia_3068_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there other books featuring Zorro?",
+            "html": "dbpedia_3068_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What time period might the story of 'Zorro's Black Whip' take place in?",
+            "html": "dbpedia_3068_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What genre is 'Zorro's Black Whip' likely to be?",
+            "html": "dbpedia_3068_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3068_104.txt"
+        },
+        {
+            "file_id": "dbpedia_3068_113.txt"
+        },
+        {
+            "file_id": "dbpedia_3068_12.txt"
+        },
+        {
+            "file_id": "dbpedia_3068_5.txt"
+        },
+        {
+            "file_id": "dbpedia_3068_53.txt"
+        },
+        {
+            "file_id": "dbpedia_3068_63.txt"
+        },
+        {
+            "file_id": "dbpedia_3068_81.txt"
+        },
+        {
+            "file_id": "dbpedia_3068_83.txt"
+        },
+        {
+            "file_id": "dbpedia_3068_89.txt"
+        },
+        {
+            "file_id": "dbpedia_3068_90.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, I will evaluate whether the information in the documents supports the triple \"Zorro's Black Whip was written by Johnston McCulley\".\n\nThe relevant texts are:\n\n* file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3068/re-ranker-msmarco/11.txt:\n\t+ The Mark of Zorro By Johnston McCulley\n* file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3068/re-ranker-msmarco/34.txt:\n\t+ The Mark of Zorro (1924) is a novel by Johnston McCulley.\n* file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3068/re-ranker-msmarco/64.txt:\n\t+ The Mark of Zorro (1924) is a novel by Johnston McCulley.\n* file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3068/re-ranker-msmarco/97.txt:\n\t+ ...McCulley's novel was rereleased to capitalize on the success of the 1920 silent film of the same name starring Douglas Fairbanks.\n\nThere is no mention of \"Zorro's Black Whip\" in any of these texts. However, there are multiple mentions of \"The Mark of Zorro\", a novel written by Johnston McCulley.\n\nSince the triple \"Zorro's Black Whip was written by Johnston McCulley\" is not supported by the provided documents (which only mention \"The Mark of Zorro\"), I conclude that:\n\n{'output': 'no'}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: The provided documents do not mention \"Zorro's Black Whip\" or any work by Johnston McCulley titled as such. The information in the given context is about Zorro\u2019s origin and his association with Johnston McCulley, but it does not confirm that McCulley wrote a specific novel named \"Zorro's Black Whip.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "The provided context states that Johnston McCulley wrote \"The Curse of Capistrano,\" which was later re-released as \"The Mark of Zorro.\" There is no mention of a book or story titled \"Zorro's Black Whip\" being written by him.",
+            "category": 3
+        },
+        "llama3.1": {
+            "reason": "There is no mention of a \"Black Whip\" being written by Johnston McCulley or associated with the character Zorro in any of the provided context information.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "The context information provided does not mention a black whip, and the writings by Johnston McCulley are described as the original story of Zorro published in 1919 under the title \"The Curse of Capistrano,\" which was later adapted into a silent film starring Douglas Fairbanks. There is no information suggesting that a black whip was part of Zorro's arsenal or that it was written by Johnston McCulley.",
+            "category": 3
+        }
+    }
+}

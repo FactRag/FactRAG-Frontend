@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Jean-Louis_Verdier",
+    "predicate": "ontology/deathYear",
+    "object": "1989",
+    "human_readable": "Jean-Louis Verdier died in the year 1989.",
+    "questions": [
+        {
+            "score": 0.9722895622253418,
+            "question": "If someone was born in 1989, would they have been alive when Jean-Louis Verdier died?"
+        },
+        {
+            "score": 0.9520618915557861,
+            "question": "Jean-Louis Verdier died in what year?"
+        },
+        {
+            "score": 0.9263411164283752,
+            "question": "When did Jean-Louis Verdier die?"
+        },
+        {
+            "score": 0.8657852411270142,
+            "question": "At what point in time did Jean-Louis Verdier die?"
+        },
+        {
+            "score": 0.8629077672958374,
+            "question": "What was the year of Jean-Louis Verdier's death?"
+        },
+        {
+            "score": 0.6347489953041077,
+            "question": "What year marked the passing of Jean-Louis Verdier?"
+        },
+        {
+            "score": 0.5061930418014526,
+            "question": "When did Jean-Louis Verdier pass away?"
+        },
+        {
+            "score": 0.4742896258831024,
+            "question": "What year did Jean-Louis Verdier leave this world?"
+        },
+        {
+            "score": 0.43290168046951294,
+            "question": "In what year was Jean-Louis Verdier's life cut short?"
+        },
+        {
+            "score": 0.35076093673706055,
+            "question": "1989 is associated with the passing of whom?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Jean-Louis Verdier died in the year 1989.",
+            "html": "dbpedia_1738_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In what year was Jean-Louis Verdier's life cut short?",
+            "html": "dbpedia_1738_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What year did Jean-Louis Verdier leave this world?",
+            "html": "dbpedia_1738_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=When did Jean-Louis Verdier pass away?",
+            "html": "dbpedia_1738_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1738_10.txt"
+        },
+        {
+            "file_id": "dbpedia_1738_12.txt"
+        },
+        {
+            "file_id": "dbpedia_1738_15.txt"
+        },
+        {
+            "file_id": "dbpedia_1738_20.txt"
+        },
+        {
+            "file_id": "dbpedia_1738_22.txt"
+        },
+        {
+            "file_id": "dbpedia_1738_28.txt"
+        },
+        {
+            "file_id": "dbpedia_1738_36.txt"
+        },
+        {
+            "file_id": "dbpedia_1738_39.txt"
+        },
+        {
+            "file_id": "dbpedia_1738_45.txt"
+        },
+        {
+            "file_id": "dbpedia_1738_52.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation of the triple:\n\n{\n  \"output\": \"yes\"\n}\n\nExplanation:\n\nThe documents contain information about a person named Jean-Louis Verdier, and one of them states that \"Since 2020 the record price for this artist at auction is 560 USD for Troupeau s'abreuvant \u00e0 la mare, sold at Herbelin in 2021.\" However, another document mentions a different person named Jean-Antoine Verdier who died in 1839.\n\nHowever, there are no documents that mention the year of death of Jean-Louis Verdier as 1989. There is a document mentioning another person with the same last name (Verdier) who died in 1989, but it does not specify if he was Jean-Louis Verdier or another person with the same name.\n\nTherefore, based on the available information, the statement \"Jean-Louis Verdier died in the year 1989\" is not explicitly supported by the documents."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The document titled \"/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1738/re-ranker-msmarco/44.txt\" mentions that Jean-Louis Verdier died on August 25, 1989. Therefore, the statement \"Jean-Louis Verdier died in the year 1989\" is supported by the provided information."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Information in context 2 states a conference was held as a tribute to Jean-Louis Verdier after his death in 1989 and that the conference occurred in 1991.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Silicon_Graphics",
+    "predicate": "property/url",
+    "object": "//www.sgi.com",
+    "human_readable": "The URL of Silicon Graphics is //www.sgi.com.",
+    "questions": [
+        {
+            "score": 0.8457852602005005,
+            "question": "Provide the URL of Silicon Graphics' official website."
+        },
+        {
+            "score": 0.816820502281189,
+            "question": "What is the URL of Silicon Graphics?"
+        },
+        {
+            "score": 0.6693462133407593,
+            "question": "Which website belongs to Silicon Graphics?"
+        },
+        {
+            "score": 0.6366710066795349,
+            "question": "How do you access the website for Silicon Graphics?"
+        },
+        {
+            "score": 0.6124780178070068,
+            "question": "What is the online address for Silicon Graphics?"
+        },
+        {
+            "score": 0.6056336164474487,
+            "question": "What is the web address for Silicon Graphics?"
+        },
+        {
+            "score": 0.5650599598884583,
+            "question": "Give me the web address of Silicon Graphics."
+        },
+        {
+            "score": 0.5602763891220093,
+            "question": "Where can you find information about Silicon Graphics online?"
+        },
+        {
+            "score": 0.5431056022644043,
+            "question": "What is the internet address for Silicon Graphics?"
+        },
+        {
+            "score": 0.47093114256858826,
+            "question": "Where would you go online to learn more about Silicon Graphics?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The URL of Silicon Graphics is //www.sgi.com.",
+            "html": "dbpedia_5017_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the internet address for Silicon Graphics?",
+            "html": "dbpedia_5017_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where can you find information about Silicon Graphics online?",
+            "html": "dbpedia_5017_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Give me the web address of Silicon Graphics.",
+            "html": "dbpedia_5017_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5017_100.txt"
+        },
+        {
+            "file_id": "dbpedia_5017_109.txt"
+        },
+        {
+            "file_id": "dbpedia_5017_11.txt"
+        },
+        {
+            "file_id": "dbpedia_5017_13.txt"
+        },
+        {
+            "file_id": "dbpedia_5017_16.txt"
+        },
+        {
+            "file_id": "dbpedia_5017_20.txt"
+        },
+        {
+            "file_id": "dbpedia_5017_4.txt"
+        },
+        {
+            "file_id": "dbpedia_5017_44.txt"
+        },
+        {
+            "file_id": "dbpedia_5017_49.txt"
+        },
+        {
+            "file_id": "dbpedia_5017_65.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation of the triple:\n\n**Triple:** Silicon Graphics (SGI) was a developer and manufacturer of Graphics Workstation.\n\n**Context information:** \n\n* file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5017/re-ranker-msmarco/15.txt\n* Text: Silicon Graphics (SGI) was a developer and manufacturer of Graphics Workstation, their computers were considered by many to be gold standard for high-end 3D graphics from the early 80s to the mid-2000s...\n\n**Evaluation:** The information in the document supports the triple. Therefore:\n\n`{ \"output\": \"yes\" }`"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: None of the provided documents contain information about the URL of Silicon Graphics, Inc. Therefore, the statement \"The URL of Silicon Graphics is //www.sgi.com\" cannot be confirmed or supported by the given context."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {'output': 'no'}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The context information provided contains a variety of sources, including Wikipedia, which states that Silicon Graphics was known as SGI (Silicon Graphics International), and the company's own website, which does not use the URL //www.sgi.com.",
+            "category": 2
+        }
+    }
+}

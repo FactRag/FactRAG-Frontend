@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Chelsea_Clinton",
+    "predicate": "property/spouse",
+    "object": "2010",
+    "human_readable": "The spouse of Chelsea Clinton in 2010 was not specified.",
+    "questions": [
+        {
+            "score": 0.8867992162704468,
+            "question": "Is there information available about Chelsea Clinton's spouse in 2010?"
+        },
+        {
+            "score": 0.8846521377563477,
+            "question": "Was Chelsea Clinton married in 2010?"
+        },
+        {
+            "score": 0.683565080165863,
+            "question": "What is the name of Chelsea Clinton's husband?"
+        },
+        {
+            "score": 0.5866836905479431,
+            "question": "When did Chelsea Clinton get married?"
+        },
+        {
+            "score": 0.5115234851837158,
+            "question": "Who is Chelsea Clinton?"
+        },
+        {
+            "score": 0.33555448055267334,
+            "question": "What is Chelsea Clinton known for?"
+        },
+        {
+            "score": 0.31455206871032715,
+            "question": "What year was Chelsea Clinton born?"
+        },
+        {
+            "score": 0.3101676106452942,
+            "question": "Does Chelsea Clinton have any siblings?"
+        },
+        {
+            "score": 0.2796252369880676,
+            "question": "Who are Chelsea Clinton's parents?"
+        },
+        {
+            "score": 0.2442319691181183,
+            "question": "Is there any public information about Chelsea Clinton's personal life?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The spouse of Chelsea Clinton in 2010 was not specified.",
+            "html": "dbpedia_5346_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who are Chelsea Clinton's parents?",
+            "html": "dbpedia_5346_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Chelsea Clinton have any siblings?",
+            "html": "dbpedia_5346_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What year was Chelsea Clinton born?",
+            "html": "dbpedia_5346_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5346_129.txt"
+        },
+        {
+            "file_id": "dbpedia_5346_13.txt"
+        },
+        {
+            "file_id": "dbpedia_5346_14.txt"
+        },
+        {
+            "file_id": "dbpedia_5346_146.txt"
+        },
+        {
+            "file_id": "dbpedia_5346_166.txt"
+        },
+        {
+            "file_id": "dbpedia_5346_32.txt"
+        },
+        {
+            "file_id": "dbpedia_5346_34.txt"
+        },
+        {
+            "file_id": "dbpedia_5346_36.txt"
+        },
+        {
+            "file_id": "dbpedia_5346_54.txt"
+        },
+        {
+            "file_id": "dbpedia_5346_59.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe documents clearly state that Chelsea Clinton married Marc Mezvinsky in 2010.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the structured JSON response:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation:\n\nThe triple to be evaluated is: \"The father of Chelsea Clinton's husband is a former congressman who pled guilty to fraud charges.\"\n\nIn document 51.txt, it is stated that Marc Mezvinsky married Chelsea Clinton in 2010, and it does not mention anything about his father being a former congressman who pled guilty to fraud charges. However, in document 1.txt (which has the same file_path as 51.txt), it mentions that Chelsea Clinton's husband is Marc Mezvinsky, but again, there is no information about his father.\n\nIn document 51.txt, though, on July 31st, 2010, Chelsea Clinton married Marc Mezvinsky, and then later in the text, it mentions that Marc Mezvinsky's father, Edward Mezvinsky, was a former congressman who pled guilty to fraud charges. This confirms the information in the triple.\n\nSo, based on this context, the answer is \"yes\"."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: According to the documents provided, Marc Mezvinsky was Chelsea Clinton's husband in 2010. Specifically, document `51.txt` states, \"On 31 July 2010, 30-year-old Chelsea Clinton (the daughter of former U.S. president Bill Clinton and Secretary of State Hillary Clinton), who had recently received a master's degree from Columbia University's Joseph L. Mailman School of Public Health, married 32-year-old Marc Mezvinsky, an investment banker.\" Therefore, the query \"The spouse of Chelsea Clinton in 2010 was not specified\" is incorrect, and the answer is \"no\"."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Marc Mezvinsky was Chelsea Clinton's spouse in 2010.",
+            "category": 0
+        },
+        "gemma2": {
+            "reason": "Context information states Chelsea Clinton married Marc Mezvinsky in 2010.",
+            "category": 0
+        },
+        "qwen2.5": {
+            "reason": "The context clearly states that Chelsea Clinton married Marc Mezvinsky on July 31, 2010.",
+            "category": 0
+        }
+    }
+}

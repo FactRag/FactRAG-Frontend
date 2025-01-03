@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Paul_Randolph_(musician)",
+    "predicate": "ontology/hometown",
+    "object": "resource/United_States",
+    "human_readable": "Paul Randolph (musician) was born in United States.",
+    "questions": [
+        {
+            "score": 0.9670686721801758,
+            "question": "Is Paul Randolph an American musician?"
+        },
+        {
+            "score": 0.8702352046966553,
+            "question": "Where was Paul Randolph born?"
+        },
+        {
+            "score": 0.8627790212631226,
+            "question": "When was Paul Randolph born?"
+        },
+        {
+            "score": 0.6651450395584106,
+            "question": "What is Paul Randolph's nationality?"
+        },
+        {
+            "score": 0.6378530263900757,
+            "question": "What is Paul Randolph known for?"
+        },
+        {
+            "score": 0.45089736580848694,
+            "question": "Who are some of Paul Randolph's musical influences?"
+        },
+        {
+            "score": 0.4496726989746094,
+            "question": "What kind of music does Paul Randolph play?"
+        },
+        {
+            "score": 0.3381357491016388,
+            "question": "What instruments does Paul Randolph play?"
+        },
+        {
+            "score": 0.30135008692741394,
+            "question": "Where does Paul Randolph live now?"
+        },
+        {
+            "score": 0.25731104612350464,
+            "question": "Has Paul Randolph released any albums?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Paul Randolph (musician) was born in United States.",
+            "html": "dbpedia_9336_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where does Paul Randolph live now?",
+            "html": "dbpedia_9336_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What instruments does Paul Randolph play?",
+            "html": "dbpedia_9336_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What kind of music does Paul Randolph play?",
+            "html": "dbpedia_9336_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_9336_100.txt"
+        },
+        {
+            "file_id": "dbpedia_9336_104.txt"
+        },
+        {
+            "file_id": "dbpedia_9336_111.txt"
+        },
+        {
+            "file_id": "dbpedia_9336_117.txt"
+        },
+        {
+            "file_id": "dbpedia_9336_36.txt"
+        },
+        {
+            "file_id": "dbpedia_9336_37.txt"
+        },
+        {
+            "file_id": "dbpedia_9336_52.txt"
+        },
+        {
+            "file_id": "dbpedia_9336_55.txt"
+        },
+        {
+            "file_id": "dbpedia_9336_76.txt"
+        },
+        {
+            "file_id": "dbpedia_9336_92.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nWhile the documents mention that Paul Randolph is an American musician, they state he was born in Detroit, Michigan.  They don't explicitly say he was born in the United States.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information that supports the statement \"Paul Randolph (musician) was born in the United States.\" Specifically, document 63.txt states that Paul Randolph was born on October 10, 1927, in Henderson, Tennessee, United States."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}\n\nExplanation: The documents mention that Paul Randolph is an American musician who was born and raised in Detroit, Michigan. This confirms that he was indeed born in the United States."
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Information from text 2 states he was born in Philadelphia, Pennsylvania.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "Paul Randolph was actually born in Henderson, Tennessee, United States, which makes the initial statement that he was born in the United States correct, but not specific enough.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Larry_Larra\u00f1aga",
+    "predicate": "ontology/birthPlace",
+    "object": "resource/Encino,_New_Mexico",
+    "human_readable": "Larry Larra\u00f1aga was born in Encino, New Mexico.",
+    "questions": [
+        {
+            "score": 0.9378108382225037,
+            "question": "Where was Larry Larra\u00f1aga born?"
+        },
+        {
+            "score": 0.8800047039985657,
+            "question": "What year was Larry Larra\u00f1aga born?"
+        },
+        {
+            "score": 0.8082541823387146,
+            "question": "Is Larry Larra\u00f1aga still living in Encino?"
+        },
+        {
+            "score": 0.5408504009246826,
+            "question": "Can you tell me more about Larry Larra\u00f1aga?"
+        },
+        {
+            "score": 0.4035494327545166,
+            "question": "What state was Encino in?"
+        },
+        {
+            "score": 0.3835501968860626,
+            "question": "Does Larry Larra\u00f1aga have any notable accomplishments?"
+        },
+        {
+            "score": 0.270389199256897,
+            "question": "Are there any famous people from Encino?"
+        },
+        {
+            "score": 0.2201034277677536,
+            "question": "Is Encino a well-known place?"
+        },
+        {
+            "score": 0.1836349219083786,
+            "question": "Is Encino a city or town?"
+        },
+        {
+            "score": 0.09569674730300903,
+            "question": "What is the climate like in Encino?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Larry Larra\u00f1aga was born in Encino, New Mexico.",
+            "html": "dbpedia_1501_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Encino a city or town?",
+            "html": "dbpedia_1501_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Encino a well-known place?",
+            "html": "dbpedia_1501_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any famous people from Encino?",
+            "html": "dbpedia_1501_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1501_1.txt"
+        },
+        {
+            "file_id": "dbpedia_1501_11.txt"
+        },
+        {
+            "file_id": "dbpedia_1501_15.txt"
+        },
+        {
+            "file_id": "dbpedia_1501_22.txt"
+        },
+        {
+            "file_id": "dbpedia_1501_39.txt"
+        },
+        {
+            "file_id": "dbpedia_1501_61.txt"
+        },
+        {
+            "file_id": "dbpedia_1501_63.txt"
+        },
+        {
+            "file_id": "dbpedia_1501_65.txt"
+        },
+        {
+            "file_id": "dbpedia_1501_78.txt"
+        },
+        {
+            "file_id": "dbpedia_1501_86.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the response in the structured JSON format:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents provided do not mention the birthplace of Larry Larra\u00f1aga as Encino, New Mexico. In fact, the documents state that he was \"born and raised on a ranch in central New Mexico\", but they do not specify the exact location within central New Mexico."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\"output\": \"yes\"}\n```\n\nThe document states that \"Raised on a ranch in the central New Mexico town of Encino,\" which supports the statement that Larry Larra\u00f1aga was born or raised in Encino, New Mexico."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The context information states that Larry Larra\u00f1aga was \"Raised on a ranch in the central New Mexico town of Encino\", which implies that he was raised there, but not necessarily born there. Later, it mentions that he earned a civil engineering degree at the University of New Mexico and served in the U.S. Army before working for the state highway department, suggesting that he spent time in various parts of New Mexico, making it unclear where exactly he was born.",
+            "category": 2
+        }
+    }
+}

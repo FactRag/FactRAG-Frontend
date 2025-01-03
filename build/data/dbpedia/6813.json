@@ -1,0 +1,144 @@
+{
+    "subject": "resource/The_Golden_Bullet_(1917_film)",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:1917_films",
+    "human_readable": "The Golden Bullet (1917 film) is about 1917 films.",
+    "questions": [
+        {
+            "score": 0.8123946189880371,
+            "question": "Are there any other films from 1917 that are similar to 'The Golden Bullet'?"
+        },
+        {
+            "score": 0.5658944845199585,
+            "question": "What year was the film 'The Golden Bullet' released?"
+        },
+        {
+            "score": 0.4857708513736725,
+            "question": "What is the subject matter of the film 'The Golden Bullet'?"
+        },
+        {
+            "score": 0.4376404881477356,
+            "question": "What genres might the film 'The Golden Bullet' belong to?"
+        },
+        {
+            "score": 0.43178534507751465,
+            "question": "What impact did 'The Golden Bullet' have on the film industry?"
+        },
+        {
+            "score": 0.4036030173301697,
+            "question": "What historical context surrounded the production of 'The Golden Bullet'?"
+        },
+        {
+            "score": 0.33885911107063293,
+            "question": "How was 'The Golden Bullet' received by audiences upon its release?"
+        },
+        {
+            "score": 0.33124837279319763,
+            "question": "Are there any notable scenes or sequences from 'The Golden Bullet'?"
+        },
+        {
+            "score": 0.2857873737812042,
+            "question": "Who were some of the key figures involved in making 'The Golden Bullet'?"
+        },
+        {
+            "score": 0.23207153379917145,
+            "question": "Where could one watch or learn more about 'The Golden Bullet' today?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The Golden Bullet (1917 film) is about 1917 films.",
+            "html": "dbpedia_6813_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who were some of the key figures involved in making 'The Golden Bullet'?",
+            "html": "dbpedia_6813_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any notable scenes or sequences from 'The Golden Bullet'?",
+            "html": "dbpedia_6813_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How was 'The Golden Bullet' received by audiences upon its release?",
+            "html": "dbpedia_6813_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6813_1.txt"
+        },
+        {
+            "file_id": "dbpedia_6813_103.txt"
+        },
+        {
+            "file_id": "dbpedia_6813_113.txt"
+        },
+        {
+            "file_id": "dbpedia_6813_12.txt"
+        },
+        {
+            "file_id": "dbpedia_6813_123.txt"
+        },
+        {
+            "file_id": "dbpedia_6813_39.txt"
+        },
+        {
+            "file_id": "dbpedia_6813_42.txt"
+        },
+        {
+            "file_id": "dbpedia_6813_44.txt"
+        },
+        {
+            "file_id": "dbpedia_6813_62.txt"
+        },
+        {
+            "file_id": "dbpedia_6813_98.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the structured JSON format with the evaluation result:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The triple to be evaluated is \"The Golden Bullet (1917 film) is about 1917 films\". However, according to the context information, there are two separate documents: one about a film called \"The Golden Bullet\" and another about a film called \"1917\". The first document mentions that \"1917\" is a film about war, not about 1917 films in general. Therefore, the triple is incorrect, and the value should be \"no\"."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe information provided in the documents supports the statement that \"The Golden Bullet (1917 film) is about 1917 films\" because it explicitly states that The Golden Bullet is a \"Silent Film - Western Film directed by Fred Kelsey\" and was released in 1917."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "The provided text focuses on a film called \"1917\" and discusses a list of popular movies from 1917. There is no mention of a film titled \"The Golden Bullet (1917 film)\"  being about 1917 films.",
+            "category": 3
+        },
+        "llama3.1": {
+            "reason": "The Golden Bullet (1917 film) is actually about a Silent Films - Western Film directed by Fred Kelsey, but the text clearly discusses a different film called \"1917\" which was released in 2019, not 1917.",
+            "category": 3
+        }
+    }
+}

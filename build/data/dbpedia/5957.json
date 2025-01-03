@@ -1,0 +1,144 @@
+{
+    "subject": "resource/On_the_Black_Hill_(film)",
+    "predicate": "property/language",
+    "object": "English",
+    "human_readable": "The language of the film 'On the Black Hill' is English.",
+    "questions": [
+        {
+            "score": 0.9861530065536499,
+            "question": "Is 'On the Black Hill' an English-language film?"
+        },
+        {
+            "score": 0.8649183511734009,
+            "question": "Does the film 'On the Black Hill' feature any other languages besides English?"
+        },
+        {
+            "score": 0.8474587798118591,
+            "question": "What language was the film 'On the Black Hill' made in?"
+        },
+        {
+            "score": 0.8439025282859802,
+            "question": "Is the film 'On the Black Hill' dubbed into different languages?"
+        },
+        {
+            "score": 0.7981165647506714,
+            "question": "What is the primary language used in the film 'On the Black Hill'?"
+        },
+        {
+            "score": 0.7246212363243103,
+            "question": "How does the use of English in 'On the Black Hill' contribute to the film?"
+        },
+        {
+            "score": 0.6823114156723022,
+            "question": "What can you say about the language used in 'On the Black Hill'?"
+        },
+        {
+            "score": 0.6140654683113098,
+            "question": "In what language is the dialogue spoken in 'On the Black Hill'?"
+        },
+        {
+            "score": 0.48959916830062866,
+            "question": "If someone doesn't speak English, would they understand 'On the Black Hill'?"
+        },
+        {
+            "score": 0.4860484302043915,
+            "question": "What can we infer about the target audience of 'On the Black Hill' based on its language?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The language of the film 'On the Black Hill' is English.",
+            "html": "dbpedia_5957_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If someone doesn't speak English, would they understand 'On the Black Hill'?",
+            "html": "dbpedia_5957_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In what language is the dialogue spoken in 'On the Black Hill'?",
+            "html": "dbpedia_5957_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What can you say about the language used in 'On the Black Hill'?",
+            "html": "dbpedia_5957_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5957_10.txt"
+        },
+        {
+            "file_id": "dbpedia_5957_112.txt"
+        },
+        {
+            "file_id": "dbpedia_5957_12.txt"
+        },
+        {
+            "file_id": "dbpedia_5957_18.txt"
+        },
+        {
+            "file_id": "dbpedia_5957_2.txt"
+        },
+        {
+            "file_id": "dbpedia_5957_24.txt"
+        },
+        {
+            "file_id": "dbpedia_5957_42.txt"
+        },
+        {
+            "file_id": "dbpedia_5957_64.txt"
+        },
+        {
+            "file_id": "dbpedia_5957_66.txt"
+        },
+        {
+            "file_id": "dbpedia_5957_90.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe reason for this answer is that none of the documents mention that the language of the film \"On the Black Hill\" is English. The texts only provide information about the plot, characters, and production details of the movie."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nExplanation: The documents mention \"On the Black Hill\" by Bruce Chatwin, which includes dialogues and descriptions in English. There's also a discussion about the adaptation into a film that captures the essence of the source material written originally in English, supporting the statement that the language of the film is English."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "Based on the provided context information, which discusses the novel \"On the Black Hill\" by Bruce Chatwin and its adaptation into a film, there's no explicit mention or indication that specifies the primary language used in the film version of \"On the Black Hill\". However, given the context primarily revolves around the original English-language novel and its characters who are Welsh farmers, it is reasonable to infer that the film is likely conducted in English. Without any conflicting information suggesting otherwise within the provided text, we can lean towards supporting this statement.\n\nTherefore, the answer would be:\n\n{\"output\": \"yes\"}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Several passages mention the book being translated into French (\"Translated into French by Georges and Marion Scali\") and reference a French title for the novel.  This strongly suggests that the source material, at least, was not originally in English.",
+            "category": 3
+        },
+        "llama3.1": {
+            "reason": "The film is described as being between Sir Peter Hall's Akenfield and Edgar Reitz's Heimat, both of which are films with English language soundtracks.",
+            "category": 3
+        }
+    }
+}

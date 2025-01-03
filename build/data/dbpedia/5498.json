@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Regent_University",
+    "predicate": "http://xmlns.com/foaf/0.1/isPrimaryTopicOf",
+    "object": "http://en.wikipedia.org/wiki/Regent_University",
+    "human_readable": "Regent University is the primary topic of Wikipedia.",
+    "questions": [
+        {
+            "score": 0.9791436791419983,
+            "question": "What is the primary topic of Wikipedia that Regent University relates to?"
+        },
+        {
+            "score": 0.8654295802116394,
+            "question": "What other topics on Wikipedia might be related to Regent University?"
+        },
+        {
+            "score": 0.7860236763954163,
+            "question": "What kind of information might a Wikipedia page about Regent University contain?"
+        },
+        {
+            "score": 0.7651538252830505,
+            "question": "Who might be interested in reading a Wikipedia page about Regent University?"
+        },
+        {
+            "score": 0.7632483243942261,
+            "question": "Could you find more specific details about Regent University's programs or faculty on Wikipedia?"
+        },
+        {
+            "score": 0.7020492553710938,
+            "question": "How could a Wikipedia page about Regent University be helpful?"
+        },
+        {
+            "score": 0.5713033080101013,
+            "question": "What type of institution is Regent University?"
+        },
+        {
+            "score": 0.5640082955360413,
+            "question": "Is Regent University a well-known institution?"
+        },
+        {
+            "score": 0.4414057731628418,
+            "question": "Does Regent University have a notable history or any unique characteristics?"
+        },
+        {
+            "score": 0.3010985255241394,
+            "question": "Where is Regent University likely located?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Regent University is the primary topic of Wikipedia.",
+            "html": "dbpedia_5498_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Regent University have a notable history or any unique characteristics?",
+            "html": "dbpedia_5498_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Regent University a well-known institution?",
+            "html": "dbpedia_5498_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of institution is Regent University?",
+            "html": "dbpedia_5498_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5498_1.txt"
+        },
+        {
+            "file_id": "dbpedia_5498_18.txt"
+        },
+        {
+            "file_id": "dbpedia_5498_2.txt"
+        },
+        {
+            "file_id": "dbpedia_5498_28.txt"
+        },
+        {
+            "file_id": "dbpedia_5498_33.txt"
+        },
+        {
+            "file_id": "dbpedia_5498_35.txt"
+        },
+        {
+            "file_id": "dbpedia_5498_38.txt"
+        },
+        {
+            "file_id": "dbpedia_5498_50.txt"
+        },
+        {
+            "file_id": "dbpedia_5498_7.txt"
+        },
+        {
+            "file_id": "dbpedia_5498_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the structured JSON format containing the evaluation:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nThe reason for this answer is that while one of the documents mentions Gregory Toth giving a talk about using Wikipedia in HE, and mentions Regent's University, it does not explicitly state that Regent University is the primary topic of Wikipedia. The document actually talks about how academics might view Wikipedia with skepticism, but also mentions its potential uses for students as a starting point for research and a place to check citations. There is no indication that Regent University is the central subject of the talk or discussion about Wikipedia."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents provided do not contain any information related to Regent University being the primary topic of Wikipedia. While there are mentions of Regent\u2019s University London and Regent University, the focus is on financial data, organizational structure, and academic programs rather than stating that these institutions are primarily covered by Wikipedia entries."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Several pieces of text mention Regent's University London as a real institution with specific details about its finances, governance, and history. Additionally, there's a mention of the university's relationship with Wikipedia through a talk by Gregory Toth, a librarian at Regent's University.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "Regent University is actually the primary topic of a different Wikipedia article (as indicated by the context provided), not the general Wikipedia page.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context provided does not support the assertion that Regent University is the primary topic of Wikipedia. While Gregory Toth, Collections Librarian at Regent\u2019s University, gave a talk on using Wikipedia in higher education, there is no information suggesting that Regent University itself is extensively covered or primarily featured as a subject on Wikipedia. The focus of the context is more on Regent University's operations, financials, and academic programs rather than its representation on Wikipedia.",
+            "category": 2
+        }
+    }
+}

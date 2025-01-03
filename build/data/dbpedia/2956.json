@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Ali_(film)",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:American_biographical_films",
+    "human_readable": "The subject of the film 'Ali' is American biographical films.",
+    "questions": [
+        {
+            "score": 0.9071395397186279,
+            "question": "Is 'Ali' a fictional or biographical film?"
+        },
+        {
+            "score": 0.8511655330657959,
+            "question": "Who is the subject of the film 'Ali'?"
+        },
+        {
+            "score": 0.6528021097183228,
+            "question": "Are there other biographical films about American figures?"
+        },
+        {
+            "score": 0.5064368844032288,
+            "question": "What genre of film is 'Ali'?"
+        },
+        {
+            "score": 0.36764606833457947,
+            "question": "What makes a good biographical film?"
+        },
+        {
+            "score": 0.35578078031539917,
+            "question": "Why might someone choose to watch a biographical film?"
+        },
+        {
+            "score": 0.3474564552307129,
+            "question": "What kind of information can we learn from films like 'Ali'?"
+        },
+        {
+            "score": 0.261214941740036,
+            "question": "What is the main focus of 'Ali'?"
+        },
+        {
+            "score": 0.18626902997493744,
+            "question": "What type of story does 'Ali' tell?"
+        },
+        {
+            "score": 0.11887763440608978,
+            "question": "What country are the films described as being from?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The subject of the film 'Ali' is American biographical films.",
+            "html": "dbpedia_2956_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of story does 'Ali' tell?",
+            "html": "dbpedia_2956_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the main focus of 'Ali'?",
+            "html": "dbpedia_2956_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What kind of information can we learn from films like 'Ali'?",
+            "html": "dbpedia_2956_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2956_10.txt"
+        },
+        {
+            "file_id": "dbpedia_2956_103.txt"
+        },
+        {
+            "file_id": "dbpedia_2956_18.txt"
+        },
+        {
+            "file_id": "dbpedia_2956_31.txt"
+        },
+        {
+            "file_id": "dbpedia_2956_40.txt"
+        },
+        {
+            "file_id": "dbpedia_2956_61.txt"
+        },
+        {
+            "file_id": "dbpedia_2956_62.txt"
+        },
+        {
+            "file_id": "dbpedia_2956_69.txt"
+        },
+        {
+            "file_id": "dbpedia_2956_98.txt"
+        },
+        {
+            "file_id": "dbpedia_2956_99.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "The query is asking whether the information in the documents supports the triple \"The subject of the film 'Ali' is American biographical sports drama films.\"\n\nAfter evaluating the context information, I can answer as follows:\n\n{\n  \"output\": \"yes\"\n}\n\nThis is because all the documents mention that the film \"Ali\" is an American biographical sports drama film, written and directed by Michael Mann, starring Will Smith as Muhammad Ali, and focusing on his life from 1964 to 1974."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\n**Explanation:** The documents provide information about various films related to Muhammad Ali, including a biopic titled \"Ali\" directed by Michael Mann and starring Will Smith. This confirms that the film 'Ali' is indeed an American biographical drama, thereby supporting the statement in the query."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n      \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "'Ali' is an American biographical sports drama film, focusing on the life of Muhammad Ali, rather than being a film about his life in general.",
+            "category": 3
+        },
+        "gemma2": {
+            "reason": "The provided context states that \"Ali\" is a 2001 American biographical sports drama film.",
+            "category": 3
+        }
+    }
+}

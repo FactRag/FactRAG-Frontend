@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Renault",
+    "predicate": "ontology/owningCompany",
+    "object": "resource/Nissan",
+    "human_readable": "Renault is owned by Nissan.",
+    "questions": [
+        {
+            "score": 0.9191626310348511,
+            "question": "Is Renault a subsidiary of Nissan?"
+        },
+        {
+            "score": 0.8970533609390259,
+            "question": "Is Nissan the parent company of Renault?"
+        },
+        {
+            "score": 0.831173300743103,
+            "question": "Who owns Renault?"
+        },
+        {
+            "score": 0.8181072473526001,
+            "question": "Who has ownership of Renault?"
+        },
+        {
+            "score": 0.8124809861183167,
+            "question": "Name the company that owns Renault."
+        },
+        {
+            "score": 0.8029775023460388,
+            "question": "What company is the owner of Renault?"
+        },
+        {
+            "score": 0.7338182926177979,
+            "question": "Which automotive manufacturer acquired Renault?"
+        },
+        {
+            "score": 0.607471227645874,
+            "question": "What is the relationship between Renault and Nissan?"
+        },
+        {
+            "score": 0.5726011991500854,
+            "question": "To which company does Renault belong?"
+        },
+        {
+            "score": 0.34163010120391846,
+            "question": "What is the parent company of Renault called?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Renault is owned by Nissan.",
+            "html": "dbpedia_7318_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=To which company does Renault belong?",
+            "html": "dbpedia_7318_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the relationship between Renault and Nissan?",
+            "html": "dbpedia_7318_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Which automotive manufacturer acquired Renault?",
+            "html": "dbpedia_7318_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_7318_102.txt"
+        },
+        {
+            "file_id": "dbpedia_7318_104.txt"
+        },
+        {
+            "file_id": "dbpedia_7318_109.txt"
+        },
+        {
+            "file_id": "dbpedia_7318_119.txt"
+        },
+        {
+            "file_id": "dbpedia_7318_151.txt"
+        },
+        {
+            "file_id": "dbpedia_7318_16.txt"
+        },
+        {
+            "file_id": "dbpedia_7318_166.txt"
+        },
+        {
+            "file_id": "dbpedia_7318_2.txt"
+        },
+        {
+            "file_id": "dbpedia_7318_43.txt"
+        },
+        {
+            "file_id": "dbpedia_7318_98.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'} \n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple \"Renault is owned by Nissan\" based on the provided context information:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe documents indicate that Renault owns a significant stake in Nissan (43%), but do not provide evidence that Nissan owns Renault. In fact, one document mentions that Renault and Nissan are discussing a plan to rebalance their alliance under more equitable terms, which suggests that the ownership structure may be changing, but does not confirm that Nissan currently owns Renault."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\"output\": \"no\"}\n```\n\nExplanation: None of the provided documents contain any information suggesting that Renault is owned by Nissan. In fact, multiple documents indicate that Renault owns a significant stake in Nissan (43%), while Nissan owns a smaller stake in Renault (15%). Therefore, the statement \"Renault is owned by Nissan\" is incorrect according to the given context."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n      \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Renault owns a stake in Nissan (43%), but the reverse is not true. Nissan does not own Renault.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Renault currently owns 43% of Nissan, while Nissan only owns 15% of Renault.  This demonstrates that Renault has a controlling stake in Nissan, not the other way around.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because Renault currently owns 43% of Nissan while Nissan owns 15% of Renault.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context clearly states that Renault currently owns 43% of Nissan, while Nissan owns 15% of Renault. There is no indication that Renault is owned by Nissan.",
+            "category": 2
+        }
+    }
+}

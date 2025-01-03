@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Demob_(TV_series)",
+    "predicate": "property/episodenumber",
+    "object": "3",
+    "human_readable": "Demob (TV series) has episode number 3.",
+    "questions": [
+        {
+            "score": 0.9434897303581238,
+            "question": "Is episode number 3 the final episode of Demob?"
+        },
+        {
+            "score": 0.9094628691673279,
+            "question": "What is the plot of episode number 3 of Demob?"
+        },
+        {
+            "score": 0.763957679271698,
+            "question": "What is the episode number of Demob?"
+        },
+        {
+            "score": 0.5338788032531738,
+            "question": "What type of show is Demob?"
+        },
+        {
+            "score": 0.50064617395401,
+            "question": "Does Demob have more than two episodes?"
+        },
+        {
+            "score": 0.4948805868625641,
+            "question": "What network airs Demob?"
+        },
+        {
+            "score": 0.406183660030365,
+            "question": "When was Demob first aired?"
+        },
+        {
+            "score": 0.34347110986709595,
+            "question": "Is there a season 2 of Demob?"
+        },
+        {
+            "score": 0.3179548382759094,
+            "question": "Who are the main actors in Demob?"
+        },
+        {
+            "score": 0.24669991433620453,
+            "question": "Has Demob won any awards?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Demob (TV series) has episode number 3.",
+            "html": "dbpedia_3363_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who are the main actors in Demob?",
+            "html": "dbpedia_3363_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there a season 2 of Demob?",
+            "html": "dbpedia_3363_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=When was Demob first aired?",
+            "html": "dbpedia_3363_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3363_116.txt"
+        },
+        {
+            "file_id": "dbpedia_3363_119.txt"
+        },
+        {
+            "file_id": "dbpedia_3363_128.txt"
+        },
+        {
+            "file_id": "dbpedia_3363_3.txt"
+        },
+        {
+            "file_id": "dbpedia_3363_34.txt"
+        },
+        {
+            "file_id": "dbpedia_3363_42.txt"
+        },
+        {
+            "file_id": "dbpedia_3363_43.txt"
+        },
+        {
+            "file_id": "dbpedia_3363_47.txt"
+        },
+        {
+            "file_id": "dbpedia_3363_54.txt"
+        },
+        {
+            "file_id": "dbpedia_3363_83.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of whether the information in the documents supports the triple:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nThe reason for this answer is that none of the documents mention an episode number 3, but rather provide general information about the series or mention specific episodes (e.g. a six-episode series) without specifying which one is episode 3."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information about the TV series \"Demob\" and mention details related to its episodes, including that it had an episode in Season 3. While the exact number of the third episode is not specified, the existence of multiple episodes within seasons is established. Therefore, the statement that \"Demob (TV series) has episode number 3\" can be supported as true based on the provided context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{\"output\": \"no\"}\n\nThe documents provided do not contain any information about a TV series called \"Demob\" having an episode number 3. The context information details the setting and characters of the show but does not mention specific episodes or their numbers. Therefore, based on the given data, we cannot confirm that \"Demob (TV series)\" has an episode numbered 3."
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Demob (TV series) does not have an episode number 3. It only screened for one six-episode series, as stated in the context information provided.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The provided context does not mention any episode number for the TV series Demob. It only states that the series aired as one six-episode series, without specifying an individual episode number like 3.",
+            "category": 2
+        }
+    }
+}

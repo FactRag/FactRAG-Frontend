@@ -1,0 +1,142 @@
+{
+    "subject": "Harley_Cooper",
+    "predicate": "isMarriedTo",
+    "object": "Phillip_Spaulding",
+    "human_readable": "Harley Cooper is married to Phillip Spalding.",
+    "questions": [
+        {
+            "score": 0.9632962346076965,
+            "question": "Is there a relationship between Harley Cooper and Phillip Spalding?"
+        },
+        {
+            "score": 0.9106670022010803,
+            "question": "Are Harley Cooper and Phillip Spalding in a relationship?"
+        },
+        {
+            "score": 0.9051004648208618,
+            "question": "To whom is Harley Cooper married?"
+        },
+        {
+            "score": 0.8978391289710999,
+            "question": "Is Harley Cooper married?"
+        },
+        {
+            "score": 0.8817824125289917,
+            "question": "Who is married to Phillip Spalding?"
+        },
+        {
+            "score": 0.877068817615509,
+            "question": "What can you tell me about the relationship between Harley Cooper and Phillip Spalding?"
+        },
+        {
+            "score": 0.8665292263031006,
+            "question": "Who are Harley Cooper and Phillip Spalding?"
+        },
+        {
+            "score": 0.7683488726615906,
+            "question": "Name Phillip Spalding's wife."
+        },
+        {
+            "score": 0.6315692663192749,
+            "question": "Who is Harley Cooper?"
+        },
+        {
+            "score": 0.6280311942100525,
+            "question": "What is the name of Phillip Spalding's spouse?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Harley Cooper is married to Phillip Spalding.",
+            "html": "yago_25017_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is Harley Cooper?",
+            "html": "yago_25017_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Name Phillip Spalding's wife.",
+            "html": "yago_25017_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who are Harley Cooper and Phillip Spalding?",
+            "html": "yago_25017_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "yago_25017_11.txt"
+        },
+        {
+            "file_id": "yago_25017_14.txt"
+        },
+        {
+            "file_id": "yago_25017_31.txt"
+        },
+        {
+            "file_id": "yago_25017_32.txt"
+        },
+        {
+            "file_id": "yago_25017_33.txt"
+        },
+        {
+            "file_id": "yago_25017_44.txt"
+        },
+        {
+            "file_id": "yago_25017_49.txt"
+        },
+        {
+            "file_id": "yago_25017_66.txt"
+        },
+        {
+            "file_id": "yago_25017_68.txt"
+        },
+        {
+            "file_id": "yago_25017_94.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n\n\nThe provided text states that Harley Cooper was married to Alan-Michael Spaulding, but not Phillip Spaulding.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here's the evaluation of the triple \"Harley Cooper is married to Phillip Spalding\" based on the provided context information:\n\n{\n  \"output\": \"no\"\n}\n\nThe reason for this answer is that while there are multiple mentions of Harley Cooper being married, specifically to Alan-Michael Spaulding (see file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/yago_25017/re-ranker-msmarco/15.txt and file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/yago_25017/re-ranker-msmarco/17.txt), there is no mention of her being married to Phillip Spalding."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents provided do not contain any information supporting that Harley Cooper is married to Phillip Spaulding. In fact, the documents mention that Harley Cooper was married to Alan-Michael Spaulding and that she had a relationship with Phillip Spaulding but they were not married according to the given context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n    \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Context information states Phillip Spaulding had an affair with Beth Raines, and the child she was carrying was his. It also states that Harley Cooper was married to Alan-Michael Spaulding.",
+            "category": 0
+        },
+        "llama3.1": {
+            "reason": "the context information states that Phillip Spaulding bought a house called Pharley's House with his wife Harley, which implies they were married, but it also mentions that Alan-Michael and Harley planned to marry in 1988.",
+            "category": 0
+        },
+        "qwen2.5": {
+            "reason": "The context clearly states that Harley Cooper married Alan-Michael Spaulding, not Phillip Spalding. Additionally, there are mentions of a relationship between Phillip and Harley, but it does not indicate they were married.",
+            "category": 0
+        }
+    }
+}

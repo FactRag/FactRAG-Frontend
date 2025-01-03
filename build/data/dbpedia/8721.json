@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Wagon_Master",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:Black-and-white_films",
+    "human_readable": "The subject of Wagon Master is Black-and-white films.",
+    "questions": [
+        {
+            "score": 0.8682530522346497,
+            "question": "Is Wagon Master a color film?"
+        },
+        {
+            "score": 0.725322425365448,
+            "question": "What genre is the film Wagon Master?"
+        },
+        {
+            "score": 0.650519847869873,
+            "question": "What filmmaking style was used for Wagon Master?"
+        },
+        {
+            "score": 0.5667387843132019,
+            "question": "What are some characteristics of black-and-white films?"
+        },
+        {
+            "score": 0.5032469630241394,
+            "question": "Can you think of any modern films that have a similar aesthetic to Wagon Master?"
+        },
+        {
+            "score": 0.3929806053638458,
+            "question": "Are there any other famous black-and-white films you know of?"
+        },
+        {
+            "score": 0.3640812933444977,
+            "question": "Why were black-and-white films so prevalent in the past?"
+        },
+        {
+            "score": 0.35054659843444824,
+            "question": "When were black-and-white films most popular?"
+        },
+        {
+            "score": 0.3022823929786682,
+            "question": "How does the lack of color affect the storytelling in black-and-white films?"
+        },
+        {
+            "score": 0.28650152683258057,
+            "question": "What are some examples of famous directors who worked with black-and-white films?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The subject of Wagon Master is Black-and-white films.",
+            "html": "dbpedia_8721_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How does the lack of color affect the storytelling in black-and-white films?",
+            "html": "dbpedia_8721_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=When were black-and-white films most popular?",
+            "html": "dbpedia_8721_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Why were black-and-white films so prevalent in the past?",
+            "html": "dbpedia_8721_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8721_1.txt"
+        },
+        {
+            "file_id": "dbpedia_8721_10.txt"
+        },
+        {
+            "file_id": "dbpedia_8721_108.txt"
+        },
+        {
+            "file_id": "dbpedia_8721_11.txt"
+        },
+        {
+            "file_id": "dbpedia_8721_17.txt"
+        },
+        {
+            "file_id": "dbpedia_8721_28.txt"
+        },
+        {
+            "file_id": "dbpedia_8721_47.txt"
+        },
+        {
+            "file_id": "dbpedia_8721_53.txt"
+        },
+        {
+            "file_id": "dbpedia_8721_71.txt"
+        },
+        {
+            "file_id": "dbpedia_8721_8.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation:\n\n{\n  \"output\": \"no\"\n}\n\nThe documents mention that \"Wagon Master is shot in black and white\", but this does not mean that the subject of Wagon Master is Black-and-white films. The documents actually discuss the cinematography of Wagon Master, mentioning its use of black and white as a stylistic choice, rather than identifying it as the subject of the film."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents mention that Wagon Master is shot in black and white, which supports the statement that the subject of Wagon Master includes black-and-white films."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n      \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Wagon Master was shot in black and white.",
+            "category": 3
+        },
+        "gemma2": {
+            "reason": "Multiple pieces of text directly state the film was shot in black and white.",
+            "category": 3
+        },
+        "llama3.1": {
+            "reason": "It directly contradicts information stated in part 2 of the context, which specifically mentions that Wagon Master is shot in black and white.",
+            "category": 3
+        }
+    }
+}

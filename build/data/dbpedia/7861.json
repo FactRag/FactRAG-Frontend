@@ -1,0 +1,146 @@
+{
+    "subject": "resource/John_Denver",
+    "predicate": "ontology/associatedBand",
+    "object": "resource/Olivia_Newton-John",
+    "human_readable": "John Denver was associated with Olivia Newton-John.",
+    "questions": [
+        {
+            "score": 0.9460148811340332,
+            "question": "What type of relationship did John Denver have with Olivia Newton-John?"
+        },
+        {
+            "score": 0.9435520768165588,
+            "question": "Were John Denver and Olivia Newton-John collaborators?"
+        },
+        {
+            "score": 0.9115321636199951,
+            "question": "Who was John Denver associated with?"
+        },
+        {
+            "score": 0.8963615894317627,
+            "question": "What is the connection between John Denver and Olivia Newton-John?"
+        },
+        {
+            "score": 0.8541898131370544,
+            "question": "Were John Denver and Olivia Newton-John known for performing together?"
+        },
+        {
+            "score": 0.8450526595115662,
+            "question": "In what genre were both John Denver and Olivia Newton-John prominent?"
+        },
+        {
+            "score": 0.8052105903625488,
+            "question": "How were the careers of John Denver and Olivia Newton-John similar?"
+        },
+        {
+            "score": 0.7828416228294373,
+            "question": "Can you name any songs or albums that involved both John Denver and Olivia Newton-John?"
+        },
+        {
+            "score": 0.7312878966331482,
+            "question": "Did John Denver and Olivia Newton-John have any public appearances together?"
+        },
+        {
+            "score": 0.6976646780967712,
+            "question": "Did John Denver and Olivia Newton-John work together on any projects?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=John Denver was associated with Olivia Newton-John.",
+            "html": "dbpedia_7861_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Did John Denver and Olivia Newton-John have any public appearances together?",
+            "html": "dbpedia_7861_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you name any songs or albums that involved both John Denver and Olivia Newton-John?",
+            "html": "dbpedia_7861_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How were the careers of John Denver and Olivia Newton-John similar?",
+            "html": "dbpedia_7861_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_7861_125.txt"
+        },
+        {
+            "file_id": "dbpedia_7861_138.txt"
+        },
+        {
+            "file_id": "dbpedia_7861_3.txt"
+        },
+        {
+            "file_id": "dbpedia_7861_42.txt"
+        },
+        {
+            "file_id": "dbpedia_7861_46.txt"
+        },
+        {
+            "file_id": "dbpedia_7861_60.txt"
+        },
+        {
+            "file_id": "dbpedia_7861_7.txt"
+        },
+        {
+            "file_id": "dbpedia_7861_81.txt"
+        },
+        {
+            "file_id": "dbpedia_7861_86.txt"
+        },
+        {
+            "file_id": "dbpedia_7861_97.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation of the triple:\n\n```\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide several instances where John Denver and Olivia Newton-John are mentioned together, including their collaborations on music projects (e.g., \"Take Me Home, Country Roads\" and \"Fly Away\") and a benefit concert celebrating John Denver's life. This suggests that the two musicians were associated with each other."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents support the assertion that John Denver was associated with Olivia Newton-John. They mention their collaboration on the song \"Take Me Home, Country Roads,\" her cover of it in the UK, and their joint performances at a benefit concert celebrating Denver's induction into the Colorado Music Hall of Fame."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Although Olivia Newton-John collaborated with John Denver on some songs, there is no evidence to suggest that John Denver was solely associated with her. In fact, John Denver had a successful career of his own before and after their collaboration, making the association misleading if it implies he was only known through her.",
+            "category": 4
+        },
+        "gemma2": {
+            "reason": "Multiple pieces of text state that John Denver and Olivia Newton-John collaborated on the song \"Fly Away\" and she performed backing vocals. The text also mentions a concert hosted by Newton-John in honor of Denver's induction into the Colorado Music Hall of Fame.",
+            "category": 4
+        },
+        "llama3.1": {
+            "reason": "Context information reveals John Denver was associated with Olivia Newton-John through shared music projects, collaborations, and mutual performances, directly contradicting the initial evaluation.",
+            "category": 4
+        },
+        "qwen2.5": {
+            "reason": "While Olivia Newton-John covered John Denver's \"Take Me Home, Country Roads\" and performed with him on a benefit concert, there is no evidence they had a significant musical collaboration beyond that. The context emphasizes their respective careers and achievements separately, indicating they were not closely associated musically in the way the claim suggests.",
+            "category": 4
+        }
+    }
+}

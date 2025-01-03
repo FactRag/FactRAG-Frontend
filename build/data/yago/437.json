@@ -1,0 +1,134 @@
+{
+    "subject": "Robin_Wright_Penn",
+    "predicate": "isMarriedTo",
+    "object": "Sean_Penn",
+    "human_readable": "Robin Wright Penn is married to Sean Penn.",
+    "questions": [
+        {
+            "score": 0.9884051084518433,
+            "question": "Is Sean Penn married to Robin Wright Penn?"
+        },
+        {
+            "score": 0.9653961658477783,
+            "question": "Who is Robin Wright Penn married to?"
+        },
+        {
+            "score": 0.959276556968689,
+            "question": "Is Robin Wright Penn in a relationship with Sean Penn?"
+        },
+        {
+            "score": 0.9539906978607178,
+            "question": "To whom is Robin Wright Penn currently married?"
+        },
+        {
+            "score": 0.874040424823761,
+            "question": "What is the relationship between Robin Wright Penn and Sean Penn?"
+        },
+        {
+            "score": 0.7992532253265381,
+            "question": "Who are Robin Wright Penn and Sean Penn?"
+        },
+        {
+            "score": 0.7751624584197998,
+            "question": "What is the name of Sean Penn's wife?"
+        },
+        {
+            "score": 0.7366068363189697,
+            "question": "What is the marital status of Sean Penn?"
+        },
+        {
+            "score": 0.10179849714040756,
+            "question": "Who are some famous actors who have been married to each other?"
+        },
+        {
+            "score": 0.07078342139720917,
+            "question": "Can you name a celebrity couple?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Robin Wright Penn is married to Sean Penn.",
+            "html": "yago_437_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who are some famous actors who have been married to each other?",
+            "html": "yago_437_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the marital status of Sean Penn?",
+            "html": "yago_437_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of Sean Penn's wife?",
+            "html": "yago_437_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "yago_437_125.txt"
+        },
+        {
+            "file_id": "yago_437_130.txt"
+        },
+        {
+            "file_id": "yago_437_141.txt"
+        },
+        {
+            "file_id": "yago_437_149.txt"
+        },
+        {
+            "file_id": "yago_437_37.txt"
+        },
+        {
+            "file_id": "yago_437_46.txt"
+        },
+        {
+            "file_id": "yago_437_66.txt"
+        },
+        {
+            "file_id": "yago_437_80.txt"
+        },
+        {
+            "file_id": "yago_437_87.txt"
+        },
+        {
+            "file_id": "yago_437_91.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "After analyzing the provided context information, I can confirm that:\n\n`{'output': 'yes'}`\n\nThis is because there are multiple documents indicating that Robin Wright was indeed married to Sean Penn. For example, file_path:/Users/stefanomarchesin/Research/fshami/Rag/docs/yago_437/re-ranker-msmarco/64.txt and other files all confirm their marriage."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\n**Explanation:** The documents provided clearly indicate that Robin Wright and Sean Penn have divorced, not that they are still married. Therefore, the statement \"Robin Wright Penn is married to Sean Penn\" is incorrect according to the given context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "qwen2.5": {
+            "reason": "Robin Wright has divorced Sean Penn, as reported by multiple sources including People magazine and various news articles.",
+            "category": 0
+        }
+    }
+}

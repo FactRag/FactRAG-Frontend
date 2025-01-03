@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Santa_Maria,_California",
+    "predicate": "property/sepPrecipitationDays",
+    "object": "1.1",
+    "human_readable": "Santa Maria, California receives precipitation on approximately 1.1 days per September.",
+    "questions": [
+        {
+            "score": 0.9657906293869019,
+            "question": "How many days of precipitation does Santa Maria, California typically receive in September?"
+        },
+        {
+            "score": 0.9436918497085571,
+            "question": "What is the average amount of precipitation in Santa Maria, California during September?"
+        },
+        {
+            "score": 0.9232032895088196,
+            "question": "What factors influence the amount of precipitation received by Santa Maria, California in September?"
+        },
+        {
+            "score": 0.8987509608268738,
+            "question": "What is the impact of the average precipitation in Santa Maria, California on its climate during September?"
+        },
+        {
+            "score": 0.8661801218986511,
+            "question": "Is Santa Maria, California known for frequent rain in September?"
+        },
+        {
+            "score": 0.8413638472557068,
+            "question": "How does the amount of precipitation in Santa Maria, California compare to other Californian cities in September?"
+        },
+        {
+            "score": 0.8372582793235779,
+            "question": "Are there typically more or fewer rainy days in Santa Maria, California during other months compared to September?"
+        },
+        {
+            "score": 0.8336221575737,
+            "question": "Would you expect rain if you visited Santa Maria, California in September?"
+        },
+        {
+            "score": 0.8210379481315613,
+            "question": "Can you predict the likelihood of a rainy day in Santa Maria, California on any given day in September?"
+        },
+        {
+            "score": 0.7355262637138367,
+            "question": "Are there any seasonal trends in precipitation for Santa Maria, California?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Santa Maria, California receives precipitation on approximately 1.1 days per September.",
+            "html": "dbpedia_3633_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you predict the likelihood of a rainy day in Santa Maria, California on any given day in September?",
+            "html": "dbpedia_3633_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Would you expect rain if you visited Santa Maria, California in September?",
+            "html": "dbpedia_3633_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there typically more or fewer rainy days in Santa Maria, California during other months compared to September?",
+            "html": "dbpedia_3633_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3633_1.txt"
+        },
+        {
+            "file_id": "dbpedia_3633_10.txt"
+        },
+        {
+            "file_id": "dbpedia_3633_20.txt"
+        },
+        {
+            "file_id": "dbpedia_3633_28.txt"
+        },
+        {
+            "file_id": "dbpedia_3633_37.txt"
+        },
+        {
+            "file_id": "dbpedia_3633_48.txt"
+        },
+        {
+            "file_id": "dbpedia_3633_50.txt"
+        },
+        {
+            "file_id": "dbpedia_3633_66.txt"
+        },
+        {
+            "file_id": "dbpedia_3633_84.txt"
+        },
+        {
+            "file_id": "dbpedia_3633_89.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'} \n``` \n\n\n**Explanation:**\n\nThe provided text states \"Average rainfall days in September: 2 days\" for Santa Maria, CA. This means  Santa Maria receives precipitation on an average of 2 days per September, not 1.1 days. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the response in the required format:\n\n`{'output': 'no'}`\n\nThe documents do not provide information about the number of precipitation days in September for Santa Maria, California. The closest related information is from file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3633/re-ranker-msmarco/28.txt, which mentions that \"Average rainfall days in September\" for Santa Maria, CA is 2 days, but this does not provide a basis to infer the number of precipitation days."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents provide information about the average number of rainy or precipitation days in September for Santa Maria, California, which is around 2 days based on the data given. It does not support the claim that it receives precipitation on approximately 1.1 days per September."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The context information states that Santa Maria, California gets precipitation on average, 45 days per year. September has only one month, so if we divide the total number of precipitation days by 12 (the number of months in a year), we find an approximate value of 3.75 days per month. Since September is the 9th month, we can estimate approximately 4 days of precipitation for September, which is significantly more than 1.1 days.",
+            "category": -1
+        },
+        "gemma2": {
+            "reason": "The provided context states that the average rainfall days in September are 2 days.",
+            "category": -1
+        },
+        "llama3.1": {
+            "reason": "The context information states that the average rainfall days in September for Santa Maria, CA are 2 days.",
+            "category": -1
+        },
+        "qwen2.5": {
+            "reason": "Santa Maria averages 17 inches of rain per year, with September having an average rainfall of 0.08 inches, and 2 rainy days on average, which translates to approximately 0.656 days of precipitation, not 1.1 days.",
+            "category": -1
+        }
+    }
+}

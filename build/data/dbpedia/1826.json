@@ -1,0 +1,142 @@
+{
+    "subject": "resource/John_of_Eltham,_Earl_of_Cornwall",
+    "predicate": "property/dateOfBirth",
+    "object": "1316-08-25",
+    "human_readable": "John of Eltham, Earl of Cornwall was born on August 25, 1316.",
+    "questions": [
+        {
+            "score": 0.9389135837554932,
+            "question": "In what year did John of Eltham become Earl of Cornwall?"
+        },
+        {
+            "score": 0.8475419878959656,
+            "question": "When was John of Eltham born?"
+        },
+        {
+            "score": 0.7025540471076965,
+            "question": "What was John of Eltham known for?"
+        },
+        {
+            "score": 0.6788044571876526,
+            "question": "Was John of Eltham a nobleman?"
+        },
+        {
+            "score": 0.6632238626480103,
+            "question": "What is the full name of John of Eltham?"
+        },
+        {
+            "score": 0.6434135437011719,
+            "question": "Where did John of Eltham live?"
+        },
+        {
+            "score": 0.5656489729881287,
+            "question": "What title did John of Eltham hold?"
+        },
+        {
+            "score": 0.5649909973144531,
+            "question": "Who were John of Eltham's parents?"
+        },
+        {
+            "score": 0.4980165660381317,
+            "question": "What were some significant events during John of Eltham's lifetime?"
+        },
+        {
+            "score": 0.45577549934387207,
+            "question": "Did John of Eltham have any siblings?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=John of Eltham, Earl of Cornwall was born on August 25, 1316.",
+            "html": "dbpedia_1826_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What were some significant events during John of Eltham's lifetime?",
+            "html": "dbpedia_1826_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who were John of Eltham's parents?",
+            "html": "dbpedia_1826_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What title did John of Eltham hold?",
+            "html": "dbpedia_1826_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1826_35.txt"
+        },
+        {
+            "file_id": "dbpedia_1826_44.txt"
+        },
+        {
+            "file_id": "dbpedia_1826_65.txt"
+        },
+        {
+            "file_id": "dbpedia_1826_66.txt"
+        },
+        {
+            "file_id": "dbpedia_1826_75.txt"
+        },
+        {
+            "file_id": "dbpedia_1826_81.txt"
+        },
+        {
+            "file_id": "dbpedia_1826_88.txt"
+        },
+        {
+            "file_id": "dbpedia_1826_94.txt"
+        },
+        {
+            "file_id": "dbpedia_1826_95.txt"
+        },
+        {
+            "file_id": "dbpedia_1826_97.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "After analyzing the context information, I found that there are multiple documents mentioning different birth dates for John of Eltham, Earl of Cornwall. \n\nOne document (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1826/re-ranker-msmarco/79.txt) states that he was born on August 25, 1316.\n\nHowever, another document (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1826/re-ranker-msmarco/95.txt) states that he was born on August 15, 1316. \n\nAnd yet another document (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1826/re-ranker-msmarco/63.txt) states that he was born on August 15, 1316 as well.\n\nSince there are conflicting information about the birth date of John of Eltham, Earl of Cornwall, I conclude that the triple is incorrect according to the documents.\n\nTherefore, my response is:\n\n```json\n{\n  \"output\": \"no\"\n}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents provide different birth dates for John of Eltham, Earl of Cornwall. One document states he was born on August 15, 1316, while another mentions August 25, 1316. Therefore, the specific date in the query is not supported by all documents."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Multiple sources state his birthdate as August 15, 1316.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "August 25, 1316 does not match the birthdate mentioned in the other sources which are August 15, 1316.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information states that John of Eltham was born on August 15, 1316, not August 25, 1316.",
+            "category": 2
+        }
+    }
+}

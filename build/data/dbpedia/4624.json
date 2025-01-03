@@ -1,0 +1,142 @@
+{
+    "subject": "resource/WVVW-LP",
+    "predicate": "http://www.georss.org/georss/point",
+    "object": "39.31 -81.59694444444445",
+    "human_readable": "The coordinates of WVVW-LP are (39.31, -81.59694444444445).",
+    "questions": [
+        {
+            "score": 0.9509610533714294,
+            "question": "What are the coordinates of WVVW-LP?"
+        },
+        {
+            "score": 0.9400618672370911,
+            "question": "What is the latitude of WVVW-LP?"
+        },
+        {
+            "score": 0.9289438128471375,
+            "question": "Is there a place named WVVW-LP at these coordinates?"
+        },
+        {
+            "score": 0.9166857004165649,
+            "question": "What is the longitude of WVVW-LP?"
+        },
+        {
+            "score": 0.8986256122589111,
+            "question": "What information could you find about WVVW-LP using these coordinates?"
+        },
+        {
+            "score": 0.86543208360672,
+            "question": "Where is WVVW-LP located?"
+        },
+        {
+            "score": 0.366168737411499,
+            "question": "What type of location might have these coordinates?"
+        },
+        {
+            "score": 0.3462226092815399,
+            "question": "Can you find a location with these coordinates?"
+        },
+        {
+            "score": 0.19432640075683594,
+            "question": "Do these coordinates appear to be in the United States?"
+        },
+        {
+            "score": 0.1407316029071808,
+            "question": "Could these coordinates represent a radio tower?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The coordinates of WVVW-LP are (39.31, -81.59694444444445).",
+            "html": "dbpedia_4624_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Do these coordinates appear to be in the United States?",
+            "html": "dbpedia_4624_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you find a location with these coordinates?",
+            "html": "dbpedia_4624_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of location might have these coordinates?",
+            "html": "dbpedia_4624_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4624_35.txt"
+        },
+        {
+            "file_id": "dbpedia_4624_46.txt"
+        },
+        {
+            "file_id": "dbpedia_4624_49.txt"
+        },
+        {
+            "file_id": "dbpedia_4624_51.txt"
+        },
+        {
+            "file_id": "dbpedia_4624_57.txt"
+        },
+        {
+            "file_id": "dbpedia_4624_6.txt"
+        },
+        {
+            "file_id": "dbpedia_4624_63.txt"
+        },
+        {
+            "file_id": "dbpedia_4624_65.txt"
+        },
+        {
+            "file_id": "dbpedia_4624_7.txt"
+        },
+        {
+            "file_id": "dbpedia_4624_82.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe provided text states that the latitude of WVVW-LP is 39\u00b0 18' 21.60\" N and the longitude is -81\u00b0 35' 29.39\" W.  This does not match the coordinates (39.31, -81.59694444444445) in the query. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, I will evaluate whether the statement about the coordinates of WVVW-LP is correct.\n\nHere's the evaluation:\n\nThe documents contain information about WVVW-LP, including its location and coordinates in the format \"Latitude: 39\u00b0 18' 21.60\" N / Longitude: -81\u00b0 35' 29.39\" W\". However, this does not match the given coordinates (39.31, -81.59694444444445).\n\nSince the provided coordinates do not match the information in the documents, I conclude that:\n\nResponse: {'output': 'no'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nExplanation: The provided context information contains the latitude and longitude of WVVW-LP, which are approximately (39.31, -81.59694444444445). This matches the coordinates given in the query, thus supporting the triple as correct."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " Response: {'output': 'no'}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The claim is wrong because there is no WVVW-LP station mentioned anywhere in the context provided.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "The provided context states the latitude as 39\u00b0 18' 21.60\" N and longitude as -81\u00b0 35' 29.39\" W, which are different from the coordinates (39.31, -81.59694444444445).",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The given latitude (39.31) does not match the provided information which states Latitude: 39\u00b0 18' 21.60\" N, indicating a much higher value than what was stated in the claim.",
+            "category": 2
+        }
+    }
+}

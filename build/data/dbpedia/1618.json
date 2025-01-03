@@ -1,0 +1,134 @@
+{
+    "subject": "resource/West_of_Scotland_F.C.",
+    "predicate": "http://xmlns.com/foaf/0.1/homepage",
+    "object": "http://www.westofscotlandfc.co.uk/",
+    "human_readable": "The homepage of West of Scotland F.C. is http://www.westofscotlandfc.co.uk/.",
+    "questions": [
+        {
+            "score": 0.9745500087738037,
+            "question": "Which organization owns the website http://www.westofscotlandfc.co.uk/?"
+        },
+        {
+            "score": 0.9735183715820312,
+            "question": "What is the URL of the West of Scotland F.C. homepage?"
+        },
+        {
+            "score": 0.9587054252624512,
+            "question": "What type of information might be found on the West of Scotland F.C. homepage?"
+        },
+        {
+            "score": 0.9422759413719177,
+            "question": "Is there a website for West of Scotland Football Club?"
+        },
+        {
+            "score": 0.9321233630180359,
+            "question": "Who is likely to visit the West of Scotland F.C. website?"
+        },
+        {
+            "score": 0.9163336753845215,
+            "question": "Where can you find information about West of Scotland F.C. online?"
+        },
+        {
+            "score": 0.9020790457725525,
+            "question": "Can you find any clues about the nature of West of Scotland F.C. from its website address?"
+        },
+        {
+            "score": 0.3262404501438141,
+            "question": "What does the domain name '.co.uk' suggest about the website?"
+        },
+        {
+            "score": 0.24193386733531952,
+            "question": "What are some potential features you might expect to see on a football club's website?"
+        },
+        {
+            "score": 0.0787963941693306,
+            "question": "How might the content on the website reflect the team's goals and objectives?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The homepage of West of Scotland F.C. is http://www.westofscotlandfc.co.uk/.",
+            "html": "dbpedia_1618_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some potential features you might expect to see on a football club's website?",
+            "html": "dbpedia_1618_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What does the domain name '.co.uk' suggest about the website?",
+            "html": "dbpedia_1618_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you find any clues about the nature of West of Scotland F.C. from its website address?",
+            "html": "dbpedia_1618_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1618_100.txt"
+        },
+        {
+            "file_id": "dbpedia_1618_112.txt"
+        },
+        {
+            "file_id": "dbpedia_1618_115.txt"
+        },
+        {
+            "file_id": "dbpedia_1618_30.txt"
+        },
+        {
+            "file_id": "dbpedia_1618_43.txt"
+        },
+        {
+            "file_id": "dbpedia_1618_64.txt"
+        },
+        {
+            "file_id": "dbpedia_1618_76.txt"
+        },
+        {
+            "file_id": "dbpedia_1618_8.txt"
+        },
+        {
+            "file_id": "dbpedia_1618_83.txt"
+        },
+        {
+            "file_id": "dbpedia_1618_94.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe provided text mentions a link to the club's news section: `https://www.westofscotlandfc.co.uk/news/burnbrae-bulletin-may-2022/`, but doesn't state the homepage URL.  "
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple:\n\nTriple: The homepage of West of Scotland F.C. is http://www.westofscotlandfc.co.uk/.\n\nThe information in the documents does not mention the homepage URL of West of Scotland F.C. However, one of the files (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1618/re-ranker-msmarco/27.txt) mentions a link to purchase something online from Stringsports, but it does not mention anything about West of Scotland F.C.'s homepage.\n\nTherefore, the value is \"no\", because there is no information in the documents that supports this triple.\n\nThe final answer is: \n\n{'output': 'no'}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The provided documents do not contain any information that supports the statement about the homepage of West of Scotland F.C. being <http://www.westofscotlandfc.co.uk/>. The relevant document mentions `https://www.westofscotlandfc.co.uk/news/burnbrae-bulletin-may-2022/`, but this is likely a specific news or bulletin page and not the main homepage."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "There is no direct link to the homepage of West of Scotland F.C. provided in the context information.",
+            "category": 2
+        }
+    }
+}

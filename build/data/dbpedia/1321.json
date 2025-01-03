@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Zoya_Ivanova",
+    "predicate": "property/name",
+    "object": "Ivanova, Zoya",
+    "human_readable": "The name of Zoya Ivanova is Ivanova, Zoya.",
+    "questions": [
+        {
+            "score": 0.9646795392036438,
+            "question": "What is the surname of Zoya Ivanova?"
+        },
+        {
+            "score": 0.958764374256134,
+            "question": "What is the given name of Zoya Ivanova?"
+        },
+        {
+            "score": 0.943609893321991,
+            "question": "What is Zoya Ivanova's full name?"
+        },
+        {
+            "score": 0.9045606851577759,
+            "question": "What is the order of Zoya Ivanova's name?"
+        },
+        {
+            "score": 0.8517633080482483,
+            "question": "How is Zoya Ivanova's first name spelled?"
+        },
+        {
+            "score": 0.8314818739891052,
+            "question": "How would you refer to Zoya Ivanova formally?"
+        },
+        {
+            "score": 0.8150553107261658,
+            "question": "If you were writing a letter to Zoya Ivanova, what name would you use?"
+        },
+        {
+            "score": 0.4316158592700958,
+            "question": "What is the meaning of 'Zoya'?"
+        },
+        {
+            "score": 0.41011857986450195,
+            "question": "Is 'Ivanova' a common surname in Russia?"
+        },
+        {
+            "score": 0.17381416261196136,
+            "question": "Which part of her name is typically used as her last name?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of Zoya Ivanova is Ivanova, Zoya.",
+            "html": "dbpedia_1321_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is 'Ivanova' a common surname in Russia?",
+            "html": "dbpedia_1321_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the meaning of 'Zoya'?",
+            "html": "dbpedia_1321_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If you were writing a letter to Zoya Ivanova, what name would you use?",
+            "html": "dbpedia_1321_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1321_1.txt"
+        },
+        {
+            "file_id": "dbpedia_1321_12.txt"
+        },
+        {
+            "file_id": "dbpedia_1321_14.txt"
+        },
+        {
+            "file_id": "dbpedia_1321_22.txt"
+        },
+        {
+            "file_id": "dbpedia_1321_34.txt"
+        },
+        {
+            "file_id": "dbpedia_1321_51.txt"
+        },
+        {
+            "file_id": "dbpedia_1321_55.txt"
+        },
+        {
+            "file_id": "dbpedia_1321_61.txt"
+        },
+        {
+            "file_id": "dbpedia_1321_75.txt"
+        },
+        {
+            "file_id": "dbpedia_1321_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n**Explanation:**  The documents repeatedly state \"Zoya Ivanova\" as her full name.  While they don't always list it in that exact order, the information clearly identifies both her first and last names. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nThe reason for this answer is that the documents contain information about different people named Zoya Ivanova, with varying details. However, there is no conclusive evidence to support that any of these Zoya Ivanovas are the one associated with a specific personality type (e.g., 16 personality type)."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide sufficient information to confirm that Zoya Ivanova's name can be written as \"Ivanova, Zoya.\" Therefore, the statement \"The name of Zoya Ivanova is Ivanova, Zoya\" is correct according to the given context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "There are multiple individuals named Zoya Ivanova in the context information, each with different backgrounds. One is a celebrity from Russia (born on April 26, 1934), another is a Kazakhstani marathon runner (born on March 14, 1952). The claim does not specify which Zoya Ivanova it refers to, thus making the claim incorrect as it lacks necessary context.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Names are typically structured with the last name first followed by the given name.  Zoya Ivanova places \"Ivanova\" as the last name, indicating it is her surname.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information consistently refers to her name as \"Zoya Ivanova\" and does not mention a different order or spelling of the name.",
+            "category": 2
+        }
+    }
+}

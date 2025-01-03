@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Bennett_High_School_(Buffalo,_New_York)",
+    "predicate": "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+    "object": "-78.8322",
+    "human_readable": "Bennett High School (Buffalo, New York) has a longitude of -78.8322.",
+    "questions": [
+        {
+            "score": 0.883316695690155,
+            "question": "What is the longitude of Bennett High School?"
+        },
+        {
+            "score": 0.8396175503730774,
+            "question": "Bennett High School has a specific longitude. What does this tell us about its location?"
+        },
+        {
+            "score": 0.8298406004905701,
+            "question": "What geographical coordinate represents Bennett High School's longitude?"
+        },
+        {
+            "score": 0.7823607325553894,
+            "question": "What is the numerical representation of Bennett High School's longitude?"
+        },
+        {
+            "score": 0.7510407567024231,
+            "question": "Where is Bennett High School located?"
+        },
+        {
+            "score": 0.7286431789398193,
+            "question": "Imagine you are using a map app to find Bennett High School.  What information would the longitude provide?"
+        },
+        {
+            "score": 0.7218644618988037,
+            "question": "In which state is Bennett High School situated?"
+        },
+        {
+            "score": 0.7033781409263611,
+            "question": "If you were navigating to Bennett High School, what longitude value would you use?"
+        },
+        {
+            "score": 0.661139190196991,
+            "question": "How can you express the location of Bennett High School using coordinates?"
+        },
+        {
+            "score": 0.5680502653121948,
+            "question": "What city is home to Bennett High School?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Bennett High School (Buffalo, New York) has a longitude of -78.8322.",
+            "html": "dbpedia_2442_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How can you express the location of Bennett High School using coordinates?",
+            "html": "dbpedia_2442_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If you were navigating to Bennett High School, what longitude value would you use?",
+            "html": "dbpedia_2442_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In which state is Bennett High School situated?",
+            "html": "dbpedia_2442_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2442_16.txt"
+        },
+        {
+            "file_id": "dbpedia_2442_23.txt"
+        },
+        {
+            "file_id": "dbpedia_2442_43.txt"
+        },
+        {
+            "file_id": "dbpedia_2442_45.txt"
+        },
+        {
+            "file_id": "dbpedia_2442_50.txt"
+        },
+        {
+            "file_id": "dbpedia_2442_52.txt"
+        },
+        {
+            "file_id": "dbpedia_2442_53.txt"
+        },
+        {
+            "file_id": "dbpedia_2442_58.txt"
+        },
+        {
+            "file_id": "dbpedia_2442_8.txt"
+        },
+        {
+            "file_id": "dbpedia_2442_82.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you'd like to evaluate more triples!  I can help with that. \ud83d\ude0a \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe information in the documents confirms that Bennett High School is located in Buffalo, New York, and its coordinates are Latitude: 42.94388889, Longitude: -78.83222222, which matches the query value of -78.8322."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nExplanation: The context information provided includes the latitude and longitude for Bennett High School in Buffalo, New York, which are given as 42.94388889,-78.83222222. This confirms that the longitude of Bennett High School (Buffalo, New York) is indeed -78.8322 when rounded to three decimal places."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Multiple pieces of context state Bennett High School's latitude and longitude are 42.94388889,-78.83222222.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "Bennett High School is actually mentioned in two different contexts with the same information (distance, latitude, and longitude), which is unusual for a single school. However, its location is consistently associated with the University Heights section of Buffalo, New York. The provided context also lists Lewis J. Bennett School of Innovative Technology with the same distance, latitude, and longitude as Bennett High School, suggesting that these two schools are likely the same entity or share a common location. Given this information, it's reasonable to conclude that the listed coordinates (-78.83222222) may actually belong to Lewis J. Bennett School of Innovative Technology or another nearby entity rather than Bennett High School itself.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context provides the longitude as -78.83011 for LaSalle station, which is close to but not exactly the same as -78.8322 for Bennett High School. Additionally, the specific longitude for Bennett High School (494 meters away from LaSalle station) is given as -78.83222222, confirming it's different from -78.8322.",
+            "category": 2
+        }
+    }
+}

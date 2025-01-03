@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Conquest_of_the_Planet_of_the_Apes",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:English-language_films",
+    "human_readable": "The subject of the film Conquest of the Planet of the Apes is English-language films.",
+    "questions": [
+        {
+            "score": 0.9117900729179382,
+            "question": "What language is the film 'Conquest of the Planet of the Apes' in?"
+        },
+        {
+            "score": 0.7448697090148926,
+            "question": "Is 'Conquest of the Planet of the Apes' a popular film?"
+        },
+        {
+            "score": 0.68243008852005,
+            "question": "Is 'Conquest of the Planet of the Apes' a foreign film?"
+        },
+        {
+            "score": 0.5987093448638916,
+            "question": "Who directed 'Conquest of the Planet of the Apes'?"
+        },
+        {
+            "score": 0.5549706816673279,
+            "question": "What are some critical reviews of 'Conquest of the Planet of the Apes'?"
+        },
+        {
+            "score": 0.5335337519645691,
+            "question": "How does 'Conquest of the Planet of the Apes' compare to other films in the series?"
+        },
+        {
+            "score": 0.43841636180877686,
+            "question": "What is the main theme explored in 'Conquest of the Planet of the Apes'?"
+        },
+        {
+            "score": 0.4081016182899475,
+            "question": "To what genre does 'Conquest of the Planet of the Apes' belong?"
+        },
+        {
+            "score": 0.37885957956314087,
+            "question": "Name some actors who appeared in 'Conquest of the Planet of the Apes'."
+        },
+        {
+            "score": 0.2713872492313385,
+            "question": "What year was 'Conquest of the Planet of the Apes' released?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The subject of the film Conquest of the Planet of the Apes is English-language films.",
+            "html": "dbpedia_5439_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Name some actors who appeared in 'Conquest of the Planet of the Apes'.",
+            "html": "dbpedia_5439_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=To what genre does 'Conquest of the Planet of the Apes' belong?",
+            "html": "dbpedia_5439_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the main theme explored in 'Conquest of the Planet of the Apes'?",
+            "html": "dbpedia_5439_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5439_120.txt"
+        },
+        {
+            "file_id": "dbpedia_5439_13.txt"
+        },
+        {
+            "file_id": "dbpedia_5439_15.txt"
+        },
+        {
+            "file_id": "dbpedia_5439_34.txt"
+        },
+        {
+            "file_id": "dbpedia_5439_40.txt"
+        },
+        {
+            "file_id": "dbpedia_5439_48.txt"
+        },
+        {
+            "file_id": "dbpedia_5439_63.txt"
+        },
+        {
+            "file_id": "dbpedia_5439_69.txt"
+        },
+        {
+            "file_id": "dbpedia_5439_71.txt"
+        },
+        {
+            "file_id": "dbpedia_5439_74.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here's the evaluation of the triple:\n\n{\n    \"output\": \"no\"\n}\n\nThe reason for this answer is that none of the documents mention English-language films as the subject of the film Conquest of the Planet of the Apes. The subject is actually related to science fiction, apes, and social commentary, as mentioned in several documents (e.g., file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5439/re-ranker-msmarco/120.txt)."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: The documents provide information about \"Conquest of the Planet of the Apes\" as a science fiction film, not specifically categorized as an English-language film. While it was produced and distributed in the United States (USA) and would likely be in English, the documents do not explicitly state this is the sole subject or categorization for the film's language."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The Conquest of the Planet of the Apes is an English-language film, but the claim does not specify that it is about English-language films.",
+            "category": 3
+        },
+        "gemma2": {
+            "reason": "Multiple pieces of text explicitly state the film was released in English, including details about its credits and dialogue.",
+            "category": 3
+        },
+        "llama3.1": {
+            "reason": "The text explicitly states \"Unlike the previous films, apes are not just subject to sign language and can speak in full English sentences\" which indicates that the film Conquest of the Planet of the Apes does feature apes speaking in English.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "The film Conquest of the Planet of the Apes is explicitly stated to be an American science-fiction film, not limited to English-language films.",
+            "category": 3
+        }
+    }
+}

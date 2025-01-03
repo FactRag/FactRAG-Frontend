@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Derby",
+    "predicate": "property/leaderName",
+    "object": "resource/Amanda_Solloway",
+    "human_readable": "The leader name of Derby is Amanda Solloway.",
+    "questions": [
+        {
+            "score": 0.9273190498352051,
+            "question": "What is Amanda Solloway's role in Derby?"
+        },
+        {
+            "score": 0.8747034072875977,
+            "question": "How long has Amanda Solloway been the leader of Derby?"
+        },
+        {
+            "score": 0.8440781235694885,
+            "question": "What are the priorities of Amanda Solloway's leadership in Derby?"
+        },
+        {
+            "score": 0.8263698816299438,
+            "question": "What are some of the challenges facing Derby under Amanda Solloway's leadership?"
+        },
+        {
+            "score": 0.7881219983100891,
+            "question": "Who is the leader of Derby?"
+        },
+        {
+            "score": 0.6819390654563904,
+            "question": "Are there any notable achievements during Amanda Solloway's leadership?"
+        },
+        {
+            "score": 0.6686172485351562,
+            "question": "Is Amanda Solloway a politician?"
+        },
+        {
+            "score": 0.5465378165245056,
+            "question": "How does the public perceive Amanda Solloway's leadership?"
+        },
+        {
+            "score": 0.4934178590774536,
+            "question": "Can you tell me more about Amanda Solloway?"
+        },
+        {
+            "score": 0.4060455858707428,
+            "question": "What political party does Amanda Solloway represent?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The leader name of Derby is Amanda Solloway.",
+            "html": "dbpedia_5918_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about Amanda Solloway?",
+            "html": "dbpedia_5918_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How does the public perceive Amanda Solloway's leadership?",
+            "html": "dbpedia_5918_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Amanda Solloway a politician?",
+            "html": "dbpedia_5918_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5918_110.txt"
+        },
+        {
+            "file_id": "dbpedia_5918_18.txt"
+        },
+        {
+            "file_id": "dbpedia_5918_25.txt"
+        },
+        {
+            "file_id": "dbpedia_5918_37.txt"
+        },
+        {
+            "file_id": "dbpedia_5918_38.txt"
+        },
+        {
+            "file_id": "dbpedia_5918_49.txt"
+        },
+        {
+            "file_id": "dbpedia_5918_53.txt"
+        },
+        {
+            "file_id": "dbpedia_5918_59.txt"
+        },
+        {
+            "file_id": "dbpedia_5918_78.txt"
+        },
+        {
+            "file_id": "dbpedia_5918_97.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nThe documents state that Amanda Solloway is the MP for Derby North.  While \"leader\" isn't used explicitly, it's implied she holds a prominent role in Derby politics based on her description as an MP and previous committee work."
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the response in JSON format:\n\n```\n{\n    \"output\": \"no\"\n}\n```\n\nThe reason for this answer is that while Amanda Solloway is indeed a Member of Parliament (MP) for Derby North, there is no information provided in the documents that suggests she is the leader of Derby. The documents mention her as an MP and describe her activities, but do not indicate any leadership role."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The provided context does not mention Amanda Solloway as the leader or mayor of Derby. It only states that she is a Member of Parliament for Derby North, which implies leadership in politics but not necessarily over the entire city's governance."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nThe provided documents indicate that Amanda Solloway is the Member of Parliament (MP) for Derby North, not the leader of Derby. Therefore, the statement \"The leader name of Derby is Amanda Solloway\" is incorrect based on the given information."
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Derby is a city, not a leader, and Amanda Solloway is its Member of Parliament, not its leader.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Amanda Solloway is described as the Member of Parliament for Derby North, not the leader of Derby.",
+            "category": 2
+        }
+    }
+}

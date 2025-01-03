@@ -1,0 +1,144 @@
+{
+    "subject": "resource/San_Andres_Apostol_Church_(Candaba)",
+    "predicate": "property/mapCaption",
+    "object": "Location in the Philippines",
+    "human_readable": "The map caption of San Andres Apostol Church (Candaba) is 'Location in the Philippines'.",
+    "questions": [
+        {
+            "score": 0.8368529677391052,
+            "question": "Where is San Andres Apostol Church located?"
+        },
+        {
+            "score": 0.773557722568512,
+            "question": "What does the caption describe about San Andres Apostol Church?"
+        },
+        {
+            "score": 0.7487844824790955,
+            "question": "In what country is San Andres Apostol Church situated?"
+        },
+        {
+            "score": 0.7442062497138977,
+            "question": "Is San Andres Apostol Church located in a specific region?"
+        },
+        {
+            "score": 0.5487300753593445,
+            "question": "What type of building is San Andres Apostol Church?"
+        },
+        {
+            "score": 0.4410398602485657,
+            "question": "What historical significance might San Andres Apostol Church have?"
+        },
+        {
+            "score": 0.40363308787345886,
+            "question": "Are there any festivals or events associated with San Andres Apostol Church?"
+        },
+        {
+            "score": 0.2815888822078705,
+            "question": "Can you tell me more about Candaba?"
+        },
+        {
+            "score": 0.2588537037372589,
+            "question": "Are there any other churches in the Philippines with similar names?"
+        },
+        {
+            "score": 0.24760155379772186,
+            "question": "To which country does 'the Philippines' refer?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The map caption of San Andres Apostol Church (Candaba) is 'Location in the Philippines'.",
+            "html": "dbpedia_3967_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any other churches in the Philippines with similar names?",
+            "html": "dbpedia_3967_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about Candaba?",
+            "html": "dbpedia_3967_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any festivals or events associated with San Andres Apostol Church?",
+            "html": "dbpedia_3967_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3967_105.txt"
+        },
+        {
+            "file_id": "dbpedia_3967_26.txt"
+        },
+        {
+            "file_id": "dbpedia_3967_37.txt"
+        },
+        {
+            "file_id": "dbpedia_3967_4.txt"
+        },
+        {
+            "file_id": "dbpedia_3967_41.txt"
+        },
+        {
+            "file_id": "dbpedia_3967_67.txt"
+        },
+        {
+            "file_id": "dbpedia_3967_69.txt"
+        },
+        {
+            "file_id": "dbpedia_3967_77.txt"
+        },
+        {
+            "file_id": "dbpedia_3967_79.txt"
+        },
+        {
+            "file_id": "dbpedia_3967_92.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "The triple to be evaluated is:\n\n\"The Parish Church of San Andr\u00e9s Ap\u00f3stol is in Candaba, Pampanga, Philippines.\"\n\nHere's the evaluation result in structured JSON format:\n\n{\n  \"output\": \"yes\"\n}\n\nReasoning:\n- Document 2 mentions San Andres Apostol Church (Candaba) without specifying a location other than Candaba.\n- Document 3 confirms that Candaba is located in Pampanga, Philippines.\n\nThe provided context information supports the statement that the Parish Church of San Andr\u00e9s Ap\u00f3stol is indeed located in Candaba, Pampanga, Philippines."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: None of the provided documents contain information about the location of San Andr\u00e9s Apostol Church (Candaba), nor do they mention a map caption for this church. The documents discuss the church's location in Candaba, Pampanga, Philippines, but do not provide a specific map caption as part of their content."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, there's no specific mention or direct evidence about a map caption for \"San Andres Apostol Church (Candaba)\" stating it's located in the Philippines. The documents provide details about different churches around the world named after San Andr\u00e9s but do not include a caption specifically mentioning its location within the Philippines.\n\nTherefore, the answer to the query would be:\n```json\n{\"output\": \"no\"}\n```\n\nThis is because while we know that one of these churches does indeed exist in Candaba, Pampanga, Philippines (from file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3967/re-ranker-msmarco/26.txt), the provided context doesn't contain a caption that directly states \"Location in the Philippines\" for San Andres Apostol Church (Candaba)."
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The context information provides the location of San Andres Apostol Church as Candaba, which is a town in the Pampanga province in the Philippines. Therefore, the map caption should be 'Location in Pampanga, Philippines' rather than 'Location in the Philippines'.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information does not provide any map caption for San Andres Apostol Church (Candaba) and instead gives details about the church's location in Candaba, Pampanga, Philippines.",
+            "category": 2
+        }
+    }
+}

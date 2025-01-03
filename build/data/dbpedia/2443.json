@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Bennett_High_School_(Buffalo,_New_York)",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:1920_establishments_in_New_York",
+    "human_readable": "Bennett High School (Buffalo, New York) is about 1920 establishments in New York.",
+    "questions": [
+        {
+            "score": 0.809482753276825,
+            "question": "Is Bennett High School a recent establishment?"
+        },
+        {
+            "score": 0.7604047656059265,
+            "question": "What type of establishment is Bennett High School?"
+        },
+        {
+            "score": 0.736106276512146,
+            "question": "Where is Bennett High School located?"
+        },
+        {
+            "score": 0.7302641272544861,
+            "question": "What year was Bennett High School established?"
+        },
+        {
+            "score": 0.718433141708374,
+            "question": "In which state is Bennett High School situated?"
+        },
+        {
+            "score": 0.6183313727378845,
+            "question": "What other notable institutions might be found in Buffalo, New York?"
+        },
+        {
+            "score": 0.5496936440467834,
+            "question": "What city is home to Bennett High School?"
+        },
+        {
+            "score": 0.4833301305770874,
+            "question": "Does Bennett High School have a long history?"
+        },
+        {
+            "score": 0.35380789637565613,
+            "question": "Is Bennett High School known for any specific program or achievement?"
+        },
+        {
+            "score": 0.33779093623161316,
+            "question": "How might the age of Bennett High School influence its architectural style?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Bennett High School (Buffalo, New York) is about 1920 establishments in New York.",
+            "html": "dbpedia_2443_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Bennett High School known for any specific program or achievement?",
+            "html": "dbpedia_2443_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Bennett High School have a long history?",
+            "html": "dbpedia_2443_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What city is home to Bennett High School?",
+            "html": "dbpedia_2443_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2443_101.txt"
+        },
+        {
+            "file_id": "dbpedia_2443_103.txt"
+        },
+        {
+            "file_id": "dbpedia_2443_109.txt"
+        },
+        {
+            "file_id": "dbpedia_2443_25.txt"
+        },
+        {
+            "file_id": "dbpedia_2443_39.txt"
+        },
+        {
+            "file_id": "dbpedia_2443_5.txt"
+        },
+        {
+            "file_id": "dbpedia_2443_53.txt"
+        },
+        {
+            "file_id": "dbpedia_2443_72.txt"
+        },
+        {
+            "file_id": "dbpedia_2443_96.txt"
+        },
+        {
+            "file_id": "dbpedia_2443_98.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: While the documents mention that Bennett High School was built in the 1920s and established in 1925, this does not necessarily mean that it was about 1920 establishments in New York. The establishment year is indeed mentioned to be 1925, but the exact meaning of \"about 1920 establishments\" is unclear without further context or information."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents support that Bennett High School was established around 1925, which falls within the category of establishments from about 1920."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Bennett High School was established in 1925, not around 1920.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Context information states Bennett High School was established in 1925.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context specifically states that Bennett High School was established in 1925, not an establishment around 1920.",
+            "category": 2
+        }
+    }
+}

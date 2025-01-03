@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Francia",
+    "predicate": "property/capital",
+    "object": "resource/Tournai",
+    "human_readable": "The capital of Francia is Tournai.",
+    "questions": [
+        {
+            "score": 0.7827953696250916,
+            "question": "What is the capital of Francia?"
+        },
+        {
+            "score": 0.6927211880683899,
+            "question": "What are some key features of Tournai as a capital city?"
+        },
+        {
+            "score": 0.6619312167167664,
+            "question": "Is Tournai a city?"
+        },
+        {
+            "score": 0.4660130739212036,
+            "question": "Are there any famous landmarks in Tournai?"
+        },
+        {
+            "score": 0.45690661668777466,
+            "question": "What country does Tournai belong to?"
+        },
+        {
+            "score": 0.39889800548553467,
+            "question": "What is the population of Tournai?"
+        },
+        {
+            "score": 0.38665005564689636,
+            "question": "What are some popular tourist attractions in Tournai?"
+        },
+        {
+            "score": 0.33404648303985596,
+            "question": "How would you describe the culture of Tournai?"
+        },
+        {
+            "score": 0.33302363753318787,
+            "question": "Does Tournai have any historical significance?"
+        },
+        {
+            "score": 0.2304641604423523,
+            "question": "What is another name for Francia?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The capital of Francia is Tournai.",
+            "html": "dbpedia_7160_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Tournai have any historical significance?",
+            "html": "dbpedia_7160_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How would you describe the culture of Tournai?",
+            "html": "dbpedia_7160_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some popular tourist attractions in Tournai?",
+            "html": "dbpedia_7160_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_7160_1.txt"
+        },
+        {
+            "file_id": "dbpedia_7160_118.txt"
+        },
+        {
+            "file_id": "dbpedia_7160_120.txt"
+        },
+        {
+            "file_id": "dbpedia_7160_136.txt"
+        },
+        {
+            "file_id": "dbpedia_7160_15.txt"
+        },
+        {
+            "file_id": "dbpedia_7160_36.txt"
+        },
+        {
+            "file_id": "dbpedia_7160_44.txt"
+        },
+        {
+            "file_id": "dbpedia_7160_50.txt"
+        },
+        {
+            "file_id": "dbpedia_7160_52.txt"
+        },
+        {
+            "file_id": "dbpedia_7160_62.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me explain why. \n\nThe documents clearly state that under King Childeric I, \"Tournai was the capital of the Frankish empire\".  While Paris later became the center of power, the text explicitly mentions Tournai as a former capital of Francia. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the structured JSON answer:\n\n```\n{\n    \"output\": \"no\"\n}\n```\n\nExplanation: According to the provided context information, while Tournai was indeed a place of importance in the Frankish empire and even served as the capital under king Childeric I, it was later moved to Paris by Clovis in 486. Therefore, Tournai was not the capital of Francia (Western Francia) at any point when that term might refer specifically to what would become modern-day France, or even France proper, given the scope and history of Frankish territories."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents mention that Tournai was the first capital of France (as referred to in the context), which supports the statement that Tournai was the capital of Francia."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n    \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Tournai was the first capital of France in the 5th century, but over time, the capital moved to other cities, with Paris becoming the permanent capital. Therefore, at no point in history was Tournai the permanent capital of Francia or modern-day France.",
+            "category": -1
+        },
+        "gemma2": {
+            "reason": "The text states that Clovis moved the center of power to Paris in 486. It also says that Charles the Bald made Tournai the seat of the County of Flanders in 862, not the capital of Francia.",
+            "category": -1
+        },
+        "qwen2.5": {
+            "reason": "Tournai was the capital of the Frankish empire under King Childeric I, but this occurred before Francia became a unified entity. Francia as a political and territorial concept emerged later with Clovis moving the center of power to Paris in 486, long after Tournai's significance as a capital city.",
+            "category": -1
+        }
+    }
+}

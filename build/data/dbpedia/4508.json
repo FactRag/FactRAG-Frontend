@@ -1,0 +1,142 @@
+{
+    "subject": "resource/The_Sounds",
+    "predicate": "property/associatedActs",
+    "object": "resource/Krezip",
+    "human_readable": "The Sounds are associated with Krezip.",
+    "questions": [
+        {
+            "score": 0.915924608707428,
+            "question": "Is there a connection between The Sounds and Krezip?"
+        },
+        {
+            "score": 0.8812862634658813,
+            "question": "What is the relationship between 'The Sounds' and 'Krezip'?"
+        },
+        {
+            "score": 0.8712762594223022,
+            "question": "Is there any collaboration between The Sounds and Krezip?"
+        },
+        {
+            "score": 0.8150111436843872,
+            "question": "What genre of music is associated with Krezip?"
+        },
+        {
+            "score": 0.7557812333106995,
+            "question": "What musical group is associated with Krezip?"
+        },
+        {
+            "score": 0.6183063387870789,
+            "question": "What is Krezip famous for?"
+        },
+        {
+            "score": 0.11668801307678223,
+            "question": "Who or what are 'The Sounds' known for?"
+        },
+        {
+            "score": 0.09525324404239655,
+            "question": "Are The Sounds a Dutch band?"
+        },
+        {
+            "score": 0.08374304324388504,
+            "question": "Can you tell me more about the band 'The Sounds'?"
+        },
+        {
+            "score": 0.07028778642416,
+            "question": "What kind of music do The Sounds play?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The Sounds are associated with Krezip.",
+            "html": "dbpedia_4508_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about the band 'The Sounds'?",
+            "html": "dbpedia_4508_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are The Sounds a Dutch band?",
+            "html": "dbpedia_4508_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who or what are 'The Sounds' known for?",
+            "html": "dbpedia_4508_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4508_16.txt"
+        },
+        {
+            "file_id": "dbpedia_4508_25.txt"
+        },
+        {
+            "file_id": "dbpedia_4508_35.txt"
+        },
+        {
+            "file_id": "dbpedia_4508_38.txt"
+        },
+        {
+            "file_id": "dbpedia_4508_44.txt"
+        },
+        {
+            "file_id": "dbpedia_4508_59.txt"
+        },
+        {
+            "file_id": "dbpedia_4508_62.txt"
+        },
+        {
+            "file_id": "dbpedia_4508_7.txt"
+        },
+        {
+            "file_id": "dbpedia_4508_73.txt"
+        },
+        {
+            "file_id": "dbpedia_4508_78.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "The JSON response is:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The text describes Krezip as a Dutch pop rock band, mentions collaborations with other artists such as Armin Van Buuren and Danny Vera, but does not mention any association with another band called \"The Sounds\"."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe context information mentions that Krezip is a Dutch pop rock band and lists several songs they have produced, including collaborations. This supports the idea that The Sounds (presumably referring to another band or music group) could be associated with Krezip through collaborations or shared genres."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Krezip is a Dutch Pop Rock band, not a sound.",
+            "category": 4
+        },
+        "gemma2": {
+            "reason": "The provided context focuses on Krezip's musical style, collaborations, popular songs, and live performances. There is no mention of any association between \"The Sounds\" and Krezip.",
+            "category": 4
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because there is no information provided to suggest an association between The Sounds and Krezip. In fact, the context only discusses Krezip as a band, their music, collaborations, and performances, with no mention of The Sounds whatsoever.",
+            "category": 4
+        }
+    }
+}

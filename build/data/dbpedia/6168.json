@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Duke_University",
+    "predicate": "ontology/athletics",
+    "object": "resource/NCAA_Division_I",
+    "human_readable": "Duke University participates in NCAA Division I athletics.",
+    "questions": [
+        {
+            "score": 0.9794179797172546,
+            "question": "What division of college athletics does Duke University participate in?"
+        },
+        {
+            "score": 0.976642370223999,
+            "question": "Is Duke University involved in NCAA athletics?"
+        },
+        {
+            "score": 0.9303979873657227,
+            "question": "Does Duke University participate in college sports?"
+        },
+        {
+            "score": 0.9224442839622498,
+            "question": "In what collegiate athletic division does Duke compete?"
+        },
+        {
+            "score": 0.8936347365379333,
+            "question": "Which organization oversees Duke University's athletic programs?"
+        },
+        {
+            "score": 0.8312329053878784,
+            "question": "Are Duke University athletes part of any major athletic organizations?"
+        },
+        {
+            "score": 0.8246572613716125,
+            "question": "What type of athletics program does Duke University have?"
+        },
+        {
+            "score": 0.7970019578933716,
+            "question": "Does Duke University have a sports program?"
+        },
+        {
+            "score": 0.6945872902870178,
+            "question": "At what level of competition does Duke University's athletic program compete?"
+        },
+        {
+            "score": 0.32287806272506714,
+            "question": "What level of competition is NCAA Division I?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Duke University participates in NCAA Division I athletics.",
+            "html": "dbpedia_6168_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=At what level of competition does Duke University's athletic program compete?",
+            "html": "dbpedia_6168_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Duke University have a sports program?",
+            "html": "dbpedia_6168_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of athletics program does Duke University have?",
+            "html": "dbpedia_6168_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6168_116.txt"
+        },
+        {
+            "file_id": "dbpedia_6168_117.txt"
+        },
+        {
+            "file_id": "dbpedia_6168_129.txt"
+        },
+        {
+            "file_id": "dbpedia_6168_13.txt"
+        },
+        {
+            "file_id": "dbpedia_6168_146.txt"
+        },
+        {
+            "file_id": "dbpedia_6168_36.txt"
+        },
+        {
+            "file_id": "dbpedia_6168_63.txt"
+        },
+        {
+            "file_id": "dbpedia_6168_79.txt"
+        },
+        {
+            "file_id": "dbpedia_6168_9.txt"
+        },
+        {
+            "file_id": "dbpedia_6168_95.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the provided context information, here is the evaluation of the query:\n\n* Triple: Duke University participates in NCAA Division I athletics.\n\nAfter analyzing the documents, it appears that the triple is supported by the following sentences:\n\n* \"The school is a member of the NCAA Division I and participates in the competitive Atlantic Coast Conference (ACC).\" (from file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6168/re-ranker-msmarco/60.txt)\n* \"The university\u2019s athletic teams are prominent competitors in NCAA Division I sports.\" (from file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6168/re-ranker-msmarco/8.txt)\n\nTherefore, the output is:\n\n`{'output': 'yes'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents clearly state that Duke University is a member of the NCAA Division I and participates in the Atlantic Coast Conference (ACC), which confirms that Duke University does participate in NCAA Division I athletics."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

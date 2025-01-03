@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Eel",
+    "predicate": "ontology/class",
+    "object": "resource/Neopterygii",
+    "human_readable": "Eel belongs to the class Neopterygii.",
+    "questions": [
+        {
+            "score": 0.7303931713104248,
+            "question": "What class of animals does an eel belong to?"
+        },
+        {
+            "score": 0.6820838451385498,
+            "question": "What is the scientific name for the class that eels belong to?"
+        },
+        {
+            "score": 0.6348598599433899,
+            "question": "Name some other animals in the same class as eels."
+        },
+        {
+            "score": 0.6207241415977478,
+            "question": "To which group do eels belong scientifically?"
+        },
+        {
+            "score": 0.5686033368110657,
+            "question": "Neopterygii is a classification for what type of animal?"
+        },
+        {
+            "score": 0.46650856733322144,
+            "question": "Are all fish classified under Neopterygii?"
+        },
+        {
+            "score": 0.43690744042396545,
+            "question": "What characteristics define the Neopterygii class?"
+        },
+        {
+            "score": 0.42482948303222656,
+            "question": "Give an example of an animal in the class Neopterygii."
+        },
+        {
+            "score": 0.41625165939331055,
+            "question": "What makes Neopterygii different from other fish classifications?"
+        },
+        {
+            "score": 0.29818522930145264,
+            "question": "Is 'Neopterygii' a type of mammal, reptile, or fish?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Eel belongs to the class Neopterygii.",
+            "html": "dbpedia_3770_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What makes Neopterygii different from other fish classifications?",
+            "html": "dbpedia_3770_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Give an example of an animal in the class Neopterygii.",
+            "html": "dbpedia_3770_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What characteristics define the Neopterygii class?",
+            "html": "dbpedia_3770_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3770_105.txt"
+        },
+        {
+            "file_id": "dbpedia_3770_108.txt"
+        },
+        {
+            "file_id": "dbpedia_3770_21.txt"
+        },
+        {
+            "file_id": "dbpedia_3770_35.txt"
+        },
+        {
+            "file_id": "dbpedia_3770_36.txt"
+        },
+        {
+            "file_id": "dbpedia_3770_6.txt"
+        },
+        {
+            "file_id": "dbpedia_3770_63.txt"
+        },
+        {
+            "file_id": "dbpedia_3770_74.txt"
+        },
+        {
+            "file_id": "dbpedia_3770_88.txt"
+        },
+        {
+            "file_id": "dbpedia_3770_96.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nEels belong to the class **Actinopterygii**, not Neopterygii, as stated in multiple documents.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the response in the structured JSON format:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation:\n\nThe query asks whether an eel belongs to the class Neopterygii. However, according to the documents provided, an eel actually belongs to the Class Actinopterygii (e.g., file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3770/re-ranker-msmarco/35.txt). This indicates that the triple is incorrect."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: The documents provided do not mention the class of eels being Neopterygii. According to the information given, eels belong to the Class Actinopterygii, not Neopterygii."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Eels belong to the Class Actinopterygii, not Neopterygii.",
+            "category": -1
+        },
+        "gemma2": {
+            "reason": "The provided text states eels belong to the class Actinopterygii.",
+            "category": -1
+        },
+        "llama3.1": {
+            "reason": "The text states that the eel features a notochord, dorsal nerve chord, pharyngeal pouches, an endostyle, and a post-anal tail during development, placing it into the Phylum Chordata. This information indicates that the eel belongs to the class Actinopterygii, which is a subclass of Neopterygii, but not Neopterygii itself.",
+            "category": -1
+        },
+        "qwen2.5": {
+            "reason": "The context clearly states that eels belong to the Class Actinopterygii, not Neopterygii.",
+            "category": -1
+        }
+    }
+}

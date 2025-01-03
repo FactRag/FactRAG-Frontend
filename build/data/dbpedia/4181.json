@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Mathnet",
+    "predicate": "property/director",
+    "object": "Bill Schreiner",
+    "human_readable": "The director of Mathnet is Bill Schreiner.",
+    "questions": [
+        {
+            "score": 0.940306544303894,
+            "question": "Is Bill Schreiner involved with Mathnet?"
+        },
+        {
+            "score": 0.8030455112457275,
+            "question": "Who is the director of Mathnet?"
+        },
+        {
+            "score": 0.7877309322357178,
+            "question": "Is there a director for Mathnet?"
+        },
+        {
+            "score": 0.6812304258346558,
+            "question": "What is Bill Schreiner's role?"
+        },
+        {
+            "score": 0.6717537045478821,
+            "question": "Who holds the position of director at Mathnet?"
+        },
+        {
+            "score": 0.6293407082557678,
+            "question": "What is Bill Schreiner known for?"
+        },
+        {
+            "score": 0.5511725544929504,
+            "question": "What organization does Bill Schreiner lead?"
+        },
+        {
+            "score": 0.3503628373146057,
+            "question": "Name the person in charge of Mathnet."
+        },
+        {
+            "score": 0.3299824595451355,
+            "question": "Does Mathnet have a leader?"
+        },
+        {
+            "score": 0.3235383629798889,
+            "question": "Who leads the organization Mathnet?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The director of Mathnet is Bill Schreiner.",
+            "html": "dbpedia_4181_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Mathnet have a leader?",
+            "html": "dbpedia_4181_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Name the person in charge of Mathnet.",
+            "html": "dbpedia_4181_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What organization does Bill Schreiner lead?",
+            "html": "dbpedia_4181_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4181_10.txt"
+        },
+        {
+            "file_id": "dbpedia_4181_15.txt"
+        },
+        {
+            "file_id": "dbpedia_4181_20.txt"
+        },
+        {
+            "file_id": "dbpedia_4181_37.txt"
+        },
+        {
+            "file_id": "dbpedia_4181_4.txt"
+        },
+        {
+            "file_id": "dbpedia_4181_40.txt"
+        },
+        {
+            "file_id": "dbpedia_4181_46.txt"
+        },
+        {
+            "file_id": "dbpedia_4181_5.txt"
+        },
+        {
+            "file_id": "dbpedia_4181_63.txt"
+        },
+        {
+            "file_id": "dbpedia_4181_7.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nWhile the documents mention William Schreiner as the director of \"A Sinful Life\", they don't attribute any directing roles to him for \"Mathnet\".  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: According to the documents, William Schreiner is mentioned as a director, but there is no information linking him specifically to the show \"Mathnet.\" The context provided does not establish that Bill Schreiner directed Mathnet."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n    \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Mathnet is a segment on the PBS series Square One Television, not a standalone show directed by William Schreiner.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Information about the director of Mathnet is not mentioned in any of the provided text passages.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information states that William Schreiner directed the 1989 film \"A Sinful Life,\" not the TV show segment \"Mathnet.\" Mathnet's director is mentioned as William Schreiner in one of the provided overviews, but he is clearly associated with directing a different production.",
+            "category": 2
+        }
+    }
+}

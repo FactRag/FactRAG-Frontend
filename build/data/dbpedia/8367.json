@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Climie_Fisher",
+    "predicate": "ontology/hometown",
+    "object": "resource/England",
+    "human_readable": "Climie Fisher's hometown is England.",
+    "questions": [
+        {
+            "score": 0.9320712089538574,
+            "question": "Where is Climie Fisher's hometown?"
+        },
+        {
+            "score": 0.9064339995384216,
+            "question": "Is Climie Fisher originally from England?"
+        },
+        {
+            "score": 0.6678288578987122,
+            "question": "Can you tell me more about life in Climie Fisher's hometown?"
+        },
+        {
+            "score": 0.5420522093772888,
+            "question": "What country is Climie Fisher from?"
+        },
+        {
+            "score": 0.24365638196468353,
+            "question": "Do you know anything else about Climie Fisher?"
+        },
+        {
+            "score": 0.21445780992507935,
+            "question": "Are there any famous people from England?"
+        },
+        {
+            "score": 0.17986418306827545,
+            "question": "What is England known for?"
+        },
+        {
+            "score": 0.14514265954494476,
+            "question": "What are some popular places to visit in England?"
+        },
+        {
+            "score": 0.08784804493188858,
+            "question": "Can you describe the culture of England?"
+        },
+        {
+            "score": 0.08210400491952896,
+            "question": "What is the climate like in England?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Climie Fisher's hometown is England.",
+            "html": "dbpedia_8367_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you describe the culture of England?",
+            "html": "dbpedia_8367_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some popular places to visit in England?",
+            "html": "dbpedia_8367_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is England known for?",
+            "html": "dbpedia_8367_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8367_12.txt"
+        },
+        {
+            "file_id": "dbpedia_8367_22.txt"
+        },
+        {
+            "file_id": "dbpedia_8367_29.txt"
+        },
+        {
+            "file_id": "dbpedia_8367_40.txt"
+        },
+        {
+            "file_id": "dbpedia_8367_50.txt"
+        },
+        {
+            "file_id": "dbpedia_8367_57.txt"
+        },
+        {
+            "file_id": "dbpedia_8367_63.txt"
+        },
+        {
+            "file_id": "dbpedia_8367_75.txt"
+        },
+        {
+            "file_id": "dbpedia_8367_76.txt"
+        },
+        {
+            "file_id": "dbpedia_8367_85.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "The triple to be evaluated is:\n\nClimie Fisher's hometown is England.\n\nHere is the evaluation result in JSON format:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nReasoning:\n\nThe context information does not mention Climie Fisher's hometown as England. The documents only provide information about their career, discography, and biography, but do not specify their place of origin or hometown."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\n**Explanation:** The documents mention that Simon Climie was born in Fulham, England, and Rob Fisher was a British pop duo member. While the specific town of their hometown is not explicitly stated for both members, the context strongly supports that they are from England given Rob Fisher's designation as a \"British pop duo\" member. Therefore, based on the provided information, it can be reasonably inferred that Climie Fisher's hometown is England."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{\"output\": \"yes\"}\n\nThe documents provided do not explicitly mention the hometown of Climie Fisher, but they consistently refer to them as a UK or British pop duo, and both members are described with English backgrounds. Therefore, it can be reasonably inferred that their hometown is in England."
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Simon Climie was born in Fulham, England.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "None of the provided context information mentions Climie Fisher's hometown as England, but rather states that Simon Climie was born in Fulham, England.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Auburn_Hills,_Michigan",
+    "predicate": "property/west",
+    "object": "resource/Pontiac,_Michigan",
+    "human_readable": "Auburn Hills, Michigan is located to the west of Pontiac, Michigan.",
+    "questions": [
+        {
+            "score": 0.9590864181518555,
+            "question": "Which city is located to the west of Pontiac, Michigan?"
+        },
+        {
+            "score": 0.9488836526870728,
+            "question": "What is the geographical relationship between Auburn Hills and Pontiac, Michigan?"
+        },
+        {
+            "score": 0.9479036331176758,
+            "question": "Is Auburn Hills located east or west of Pontiac?"
+        },
+        {
+            "score": 0.8924052715301514,
+            "question": "Which city is geographically further west: Auburn Hills or Pontiac?"
+        },
+        {
+            "score": 0.8129515647888184,
+            "question": "Are Auburn Hills and Pontiac located in the same state?"
+        },
+        {
+            "score": 0.8037347793579102,
+            "question": "What state do Auburn Hills and Pontiac reside in?"
+        },
+        {
+            "score": 0.6884433627128601,
+            "question": "If you were traveling from Auburn Hills to Pontiac, which direction would you go?"
+        },
+        {
+            "score": 0.6603363752365112,
+            "question": "If you were driving from Auburn Hills to Pontiac, what direction would be indicated on a map?"
+        },
+        {
+            "score": 0.629530668258667,
+            "question": "Can you describe the relative positions of Auburn Hills and Pontiac?"
+        },
+        {
+            "score": 0.25656893849372864,
+            "question": "Name two cities in Michigan that are geographically near each other."
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Auburn Hills, Michigan is located to the west of Pontiac, Michigan.",
+            "html": "dbpedia_3585_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you describe the relative positions of Auburn Hills and Pontiac?",
+            "html": "dbpedia_3585_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If you were driving from Auburn Hills to Pontiac, what direction would be indicated on a map?",
+            "html": "dbpedia_3585_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If you were traveling from Auburn Hills to Pontiac, which direction would you go?",
+            "html": "dbpedia_3585_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3585_15.txt"
+        },
+        {
+            "file_id": "dbpedia_3585_19.txt"
+        },
+        {
+            "file_id": "dbpedia_3585_24.txt"
+        },
+        {
+            "file_id": "dbpedia_3585_26.txt"
+        },
+        {
+            "file_id": "dbpedia_3585_28.txt"
+        },
+        {
+            "file_id": "dbpedia_3585_29.txt"
+        },
+        {
+            "file_id": "dbpedia_3585_38.txt"
+        },
+        {
+            "file_id": "dbpedia_3585_44.txt"
+        },
+        {
+            "file_id": "dbpedia_3585_60.txt"
+        },
+        {
+            "file_id": "dbpedia_3585_61.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n\n\nThe document states that Auburn Hills is located  \"7 kilometers or 4 miles \u2191 N of the city [Pontiac]\". This indicates Auburn Hills is north of Pontiac, not west. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents provide information about Auburn Hills and its proximity to other cities such as Pontiac but do not specify that Auburn Hills is located to the west of Pontiac. Therefore, based on the given context, this statement cannot be confirmed."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Auburn Hills, Michigan is located to the north of Pontiac, Michigan.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Multiple sources state Auburn Hills is located north of Pontiac.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "Geographical coordinates of Pontiac (42.63892\u00b0 N, -83.29105\u00b0 W) and Auburn Hills (42\u00b0 41' 15\" N, 83\u00b0 14' 3\" W) both show that Auburn Hills is to the east of Pontiac, not to the west.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Auburn Hills is located approximately 4 miles north of Pontiac according to the context information.",
+            "category": 2
+        }
+    }
+}

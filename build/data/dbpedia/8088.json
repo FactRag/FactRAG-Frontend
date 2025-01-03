@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Ameritech",
+    "predicate": "ontology/subsidiary",
+    "object": "resource/Ohio_Bell",
+    "human_readable": "Ameritech is a subsidiary of Ohio Bell.",
+    "questions": [
+        {
+            "score": 0.9461283087730408,
+            "question": "Is Ohio Bell the parent company of Ameritech?"
+        },
+        {
+            "score": 0.86432945728302,
+            "question": "What company is Ameritech a subsidiary of?"
+        },
+        {
+            "score": 0.8479979634284973,
+            "question": "What is the relationship between Ameritech and Ohio Bell?"
+        },
+        {
+            "score": 0.6713874340057373,
+            "question": "Who owns Ameritech?"
+        },
+        {
+            "score": 0.5844708681106567,
+            "question": "Is Ameritech an independent company?"
+        },
+        {
+            "score": 0.485430508852005,
+            "question": "To which larger company does Ameritech belong?"
+        },
+        {
+            "score": 0.4622598886489868,
+            "question": "Ameritech reports to which organization?"
+        },
+        {
+            "score": 0.39801692962646484,
+            "question": "Ameritech belongs to which telecommunications group?"
+        },
+        {
+            "score": 0.3477935194969177,
+            "question": "What is the higher-level entity that Ameritech is part of?"
+        },
+        {
+            "score": 0.3157466948032379,
+            "question": "Under which company's umbrella does Ameritech operate?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Ameritech is a subsidiary of Ohio Bell.",
+            "html": "dbpedia_8088_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the higher-level entity that Ameritech is part of?",
+            "html": "dbpedia_8088_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Ameritech belongs to which telecommunications group?",
+            "html": "dbpedia_8088_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Ameritech reports to which organization?",
+            "html": "dbpedia_8088_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8088_13.txt"
+        },
+        {
+            "file_id": "dbpedia_8088_14.txt"
+        },
+        {
+            "file_id": "dbpedia_8088_15.txt"
+        },
+        {
+            "file_id": "dbpedia_8088_16.txt"
+        },
+        {
+            "file_id": "dbpedia_8088_2.txt"
+        },
+        {
+            "file_id": "dbpedia_8088_20.txt"
+        },
+        {
+            "file_id": "dbpedia_8088_23.txt"
+        },
+        {
+            "file_id": "dbpedia_8088_5.txt"
+        },
+        {
+            "file_id": "dbpedia_8088_6.txt"
+        },
+        {
+            "file_id": "dbpedia_8088_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe provided documents state that Ohio Bell was a subsidiary of Ameritech, not the other way around. \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "The triple \"Ameritech is a subsidiary of Ohio Bell\" can be evaluated as follows:\n\nAccording to the documents, Ameritech was created out of the 1984 AT&T divestiture and was one of the seven Regional Bell Operating Companies that was created following the breakup of the Bell System. Specifically, it is stated in document 9.txt that \"Ameritech was created out of the 1984 divestiture AT&T, and was one of the seven Regional Bell Operating Companies that was created following the breakup of the Bell System.\"\n\nAdditionally, document 5.txt states that \"Prior to the reorganization, Ohio Bell was a subsidiary of AT & T. Following the reorganization, Ameritech was formed as one of seven new regional telephone companies... Ohio Bell became a wholly-owned subsidiary of Ameritech.\"\n\nBased on this information, it can be inferred that Ameritech is indeed a parent company of Ohio Bell, and not the other way around.\n\nTherefore, the answer is:\n\n{'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: The documents do not support the statement that \"Ameritech is a subsidiary of Ohio Bell.\" In fact, the information provided indicates that Ohio Bell became a wholly-owned subsidiary of Ameritech after the 1984 divestiture of AT&T."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Ameritech was created as a holding company, owning five former Bell System companies in the Midwest including Ohio Bell, but Ohio Bell was not a subsidiary of Ameritech. Instead, Ameritech was the parent company that owned Ohio Bell as one of its wholly-owned subsidiaries.",
+            "category": -1
+        },
+        "gemma2": {
+            "reason": "Ameritech was formed as a holding company which owned Ohio Bell, meaning Ohio Bell is a subsidiary of Ameritech, not the other way around.",
+            "category": -1
+        },
+        "qwen2.5": {
+            "reason": "Ameritech Corporation was created as a result of the 1984 AT&T divestiture, becoming one of seven Regional Bell Operating Companies. Ohio Bell Telephone Company became a wholly-owned subsidiary of Ameritech Corporation in 1984, not the other way around.",
+            "category": -1
+        }
+    }
+}

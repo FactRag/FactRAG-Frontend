@@ -1,0 +1,114 @@
+{
+    "subject": "resource/Grattan_Bridge",
+    "predicate": "property/spans",
+    "object": "5",
+    "human_readable": "The Grattan Bridge spans 5.",
+    "questions": [
+        {
+            "score": 0.5711939930915833,
+            "question": "What structure is the Grattan Bridge?"
+        },
+        {
+            "score": 0.5546734929084778,
+            "question": "Is the Grattan Bridge a short bridge?"
+        },
+        {
+            "score": 0.38834860920906067,
+            "question": "How many units long is the Grattan Bridge?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The Grattan Bridge spans 5.",
+            "html": "dbpedia_2824_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is the Grattan Bridge a short bridge?",
+            "html": "dbpedia_2824_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What structure is the Grattan Bridge?",
+            "html": "dbpedia_2824_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2824_18.txt"
+        },
+        {
+            "file_id": "dbpedia_2824_20.txt"
+        },
+        {
+            "file_id": "dbpedia_2824_23.txt"
+        },
+        {
+            "file_id": "dbpedia_2824_24.txt"
+        },
+        {
+            "file_id": "dbpedia_2824_57.txt"
+        },
+        {
+            "file_id": "dbpedia_2824_59.txt"
+        },
+        {
+            "file_id": "dbpedia_2824_72.txt"
+        },
+        {
+            "file_id": "dbpedia_2824_86.txt"
+        },
+        {
+            "file_id": "dbpedia_2824_88.txt"
+        },
+        {
+            "file_id": "dbpedia_2824_92.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe provided text excerpts do not mention the length of Grattan Bridge.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the structured JSON response:\n\n{\n    \"output\": \"no\"\n}\n\nExplanation: According to the documents, Grattan Bridge spans the River Liffey, not a number (5)."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: None of the provided documents contain any information about the length or span of Grattan Bridge, making it impossible to confirm whether the statement \"The Grattan Bridge spans 5.\" is correct. Therefore, based on the given context, the answer is \"no\"."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Grattan Bridge spans the River Liffey, not five things. It joins Capel Street to Parliament Street and the south quays, making it a bridge over one river (the River Liffey) and connecting three land areas (Capel Street, Parliament Street, and the south quays).",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "There are multiple descriptions of Grattan Bridge's purpose and location, all mentioning its function as a road bridge spanning the River Liffey, connecting Capel Street to Parliament Street and the south quays.   Nowhere does it mention a specific length measurement of 5 units.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "There is no information provided about the Grattan Bridge spanning 5 anything, including feet, meters, or any other unit of measurement. The context mentions that it spans the River Liffey and connects Capel Street to Parliament Street and the south quays, but does not provide a numerical value for its span.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information provides details about the location, history, and features of Grattan Bridge but does not mention anything about its spanning length being 5 units.",
+            "category": 2
+        }
+    }
+}

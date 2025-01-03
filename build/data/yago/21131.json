@@ -1,0 +1,134 @@
+{
+    "subject": "Dudley_Moore",
+    "predicate": "isMarriedTo",
+    "object": "Suzy_Kendall",
+    "human_readable": "Dudley Moore is married to Suzy Kendall.",
+    "questions": [
+        {
+            "score": 0.9515292048454285,
+            "question": "Are Dudley Moore and Suzy Kendall a couple?"
+        },
+        {
+            "score": 0.9123760461807251,
+            "question": "Who is Dudley Moore married to?"
+        },
+        {
+            "score": 0.8615157604217529,
+            "question": "Is Suzy Kendall married?"
+        },
+        {
+            "score": 0.8285121917724609,
+            "question": "Does Dudley Moore have a spouse?"
+        },
+        {
+            "score": 0.7510189414024353,
+            "question": "What movies have Dudley Moore and Suzy Kendall appeared in together?"
+        },
+        {
+            "score": 0.7101065516471863,
+            "question": "Who is Dudley Moore?"
+        },
+        {
+            "score": 0.709232747554779,
+            "question": "What is the name of Dudley Moore's wife?"
+        },
+        {
+            "score": 0.41469621658325195,
+            "question": "What is known about Suzy Kendall's relationship status?"
+        },
+        {
+            "score": 0.29796308279037476,
+            "question": "Can you tell me more about Suzy Kendall's career?"
+        },
+        {
+            "score": 0.07397511601448059,
+            "question": "Who are some famous people who have been married to actors?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Dudley Moore is married to Suzy Kendall.",
+            "html": "yago_21131_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about Suzy Kendall's career?",
+            "html": "yago_21131_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is known about Suzy Kendall's relationship status?",
+            "html": "yago_21131_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of Dudley Moore's wife?",
+            "html": "yago_21131_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "yago_21131_105.txt"
+        },
+        {
+            "file_id": "yago_21131_15.txt"
+        },
+        {
+            "file_id": "yago_21131_16.txt"
+        },
+        {
+            "file_id": "yago_21131_3.txt"
+        },
+        {
+            "file_id": "yago_21131_33.txt"
+        },
+        {
+            "file_id": "yago_21131_51.txt"
+        },
+        {
+            "file_id": "yago_21131_77.txt"
+        },
+        {
+            "file_id": "yago_21131_91.txt"
+        },
+        {
+            "file_id": "yago_21131_95.txt"
+        },
+        {
+            "file_id": "yago_21131_97.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe text indicates that Dudley Moore and Suzy Kendall were married from June 1968 to 1972, but ultimately divorced.  They are not currently married."
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the structured JSON response:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation:\n\nThe documents contain information about Dudley Moore and his relationships. According to file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/yago_21131/re-ranker-msmarco/101.txt, Moore revealed that he and Suzy Kendall have separated after their arrival in Sydney. This implies that they were married at some point.\n\nSimilarly, file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/yago_21131/re-ranker-msmarco/15.txt mentions that Dudley Moore's first wife was Suzy Kendall, and that they tied the knot in 1968."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide multiple references that Dudley Moore was married to Suzy Kendall. For instance, the document at file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/yago_21131/re-ranker-msmarco/105.txt mentions \"Model and actress Suzy Kendall with her husband, the actor and comedian, Dudley Moore (1935 - 2002)\". Additionally, another document states that they separated but were previously married: \"The couple wed in June 1968, at a secret ceremony in the London suburb of Hampstead.\" Therefore, the statement is supported by the documents."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Several pieces of context state that Moore and Kendall separated or divorced.",
+            "category": 0
+        }
+    }
+}

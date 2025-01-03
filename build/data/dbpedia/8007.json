@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Donna_Summer",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "Donna Summer",
+    "human_readable": "The label of Donna Summer is Donna Summer.",
+    "questions": [
+        {
+            "score": 0.975795567035675,
+            "question": "What is Donna Summer's label?"
+        },
+        {
+            "score": 0.9373418688774109,
+            "question": "Who is Donna Summer?"
+        },
+        {
+            "score": 0.8381350040435791,
+            "question": "Where was Donna Summer from?"
+        },
+        {
+            "score": 0.7711291313171387,
+            "question": "Is Donna Summer a singer?"
+        },
+        {
+            "score": 0.762164294719696,
+            "question": "What genre of music is Donna Summer known for?"
+        },
+        {
+            "score": 0.6756432056427002,
+            "question": "When was Donna Summer born?"
+        },
+        {
+            "score": 0.657871425151825,
+            "question": "Has Donna Summer won any awards?"
+        },
+        {
+            "score": 0.6352989673614502,
+            "question": "Is Donna Summer still making music today?"
+        },
+        {
+            "score": 0.5883206129074097,
+            "question": "What were some of Donna Summer's biggest achievements?"
+        },
+        {
+            "score": 0.5653365850448608,
+            "question": "What are some of Donna Summer's most popular songs?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The label of Donna Summer is Donna Summer.",
+            "html": "dbpedia_8007_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What were some of Donna Summer's biggest achievements?",
+            "html": "dbpedia_8007_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Donna Summer still making music today?",
+            "html": "dbpedia_8007_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Has Donna Summer won any awards?",
+            "html": "dbpedia_8007_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8007_18.txt"
+        },
+        {
+            "file_id": "dbpedia_8007_23.txt"
+        },
+        {
+            "file_id": "dbpedia_8007_26.txt"
+        },
+        {
+            "file_id": "dbpedia_8007_40.txt"
+        },
+        {
+            "file_id": "dbpedia_8007_48.txt"
+        },
+        {
+            "file_id": "dbpedia_8007_54.txt"
+        },
+        {
+            "file_id": "dbpedia_8007_58.txt"
+        },
+        {
+            "file_id": "dbpedia_8007_70.txt"
+        },
+        {
+            "file_id": "dbpedia_8007_90.txt"
+        },
+        {
+            "file_id": "dbpedia_8007_91.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of whether the information in the documents supports the triple:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents mention several facts about Donna Summer, including her birth name (LaDonna Adrian Gaines), her nickname (\"The Queen of Disco\"), and some of her notable songs and albums. However, they do not provide information that would directly support the statement \"The label of Donna Summer is Donna Summer.\" This triple suggests a specific label or category that describes Donna Summer, but none of the documents mention such a label. Therefore, based on the provided context, it does not appear to be supported by the information in the documents."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe response for the query \"The label of Donna Summer is Donna Summer\" is correct because the documents provide information about Donna Summer's career and achievements, confirming she was indeed a singer under her own name."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nThe provided context does not contain any information that would confirm or deny whether \"Donna Summer\" is the label for Donna Summer. The documents discuss her musical career, discography, and legacy but do not mention anything about a label named after her or calling herself by such a label in an official capacity."
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "It seems to be stating a basic identity in an unnecessarily roundabout way. Her label, like any artist's, would usually be the name of her record company or imprint rather than her own name.",
+            "category": 4
+        },
+        "llama3.1": {
+            "reason": "Donna Summer was a title used to refer to LaDonna Adrian Gaines, the real name of the singer.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,134 @@
+{
+    "subject": "resource/When_We_Were_Twenty-One",
+    "predicate": "property/name",
+    "object": "When We Were Twenty-One",
+    "human_readable": "When We Were Twenty-One is named 'When We Were Twenty-One'.",
+    "questions": [
+        {
+            "score": 0.8794279098510742,
+            "question": "What is the name of the work titled 'When We Were Twenty-One'?"
+        },
+        {
+            "score": 0.8285827040672302,
+            "question": "Is the title of the work 'When We Were Twenty-One' different from its actual name?"
+        },
+        {
+            "score": 0.7720198631286621,
+            "question": "What themes or ideas might be explored in a work titled 'When We Were Twenty-One'?"
+        },
+        {
+            "score": 0.7650126218795776,
+            "question": "Do you know any details about the author of 'When We Were Twenty-One'?"
+        },
+        {
+            "score": 0.6622506380081177,
+            "question": "How does the title 'When We Were Twenty-One' evoke a specific feeling or mood?"
+        },
+        {
+            "score": 0.6360148191452026,
+            "question": "What genre might the work 'When We Were Twenty-One' belong to?"
+        },
+        {
+            "score": 0.017634250223636627,
+            "question": "Could you provide another example of a work with a similar title?"
+        },
+        {
+            "score": 0.015140516683459282,
+            "question": "Why do you think authors choose titles that are evocative and meaningful?"
+        },
+        {
+            "score": 0.01264842040836811,
+            "question": "What are some common literary devices used in titles?"
+        },
+        {
+            "score": 0.012516134418547153,
+            "question": "Can you think of any famous works that deal with the theme of youth?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=When We Were Twenty-One is named 'When We Were Twenty-One'.",
+            "html": "dbpedia_3085_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some common literary devices used in titles?",
+            "html": "dbpedia_3085_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Why do you think authors choose titles that are evocative and meaningful?",
+            "html": "dbpedia_3085_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Could you provide another example of a work with a similar title?",
+            "html": "dbpedia_3085_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3085_101.txt"
+        },
+        {
+            "file_id": "dbpedia_3085_103.txt"
+        },
+        {
+            "file_id": "dbpedia_3085_106.txt"
+        },
+        {
+            "file_id": "dbpedia_3085_115.txt"
+        },
+        {
+            "file_id": "dbpedia_3085_127.txt"
+        },
+        {
+            "file_id": "dbpedia_3085_23.txt"
+        },
+        {
+            "file_id": "dbpedia_3085_30.txt"
+        },
+        {
+            "file_id": "dbpedia_3085_33.txt"
+        },
+        {
+            "file_id": "dbpedia_3085_52.txt"
+        },
+        {
+            "file_id": "dbpedia_3085_59.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the structured JSON response:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation:\n\nThe query asks whether \"Twenty-Five, Twenty-One\" is named \"When We Were Twenty-One\". However, according to the documents, \"Twenty-Five, Twenty-One\" and \"Twenty One Pilots\" are two different entities: a K-Drama and a band, respectively. There is no mention of a work titled \"When We Were Twenty-One\". Therefore, the information in the documents does not support the triple, and the value should be \"no\"."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe query \"When We Were Twenty-One is named 'When We Were Twenty-One'\" aligns with the context provided in the document \"/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3085/re-ranker-msmarco/103.txt\", which mentions the title \"Twenty-Five, Twenty-One\" (though the exact query is about 'When We Were Twenty-One', the format and nature of naming a show or book align with the context provided)."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n    \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The title \"Twenty Five Twenty One\" refers to the main couple's ages at the time they begin their romance, not a year that corresponds to an event related to one of them.",
+            "category": 0
+        }
+    }
+}

@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Man_in_the_Moon_(film)",
+    "predicate": "property/country",
+    "object": "United Kingdom",
+    "human_readable": "The film 'Man in the Moon' is from the United Kingdom.",
+    "questions": [
+        {
+            "score": 0.9361382126808167,
+            "question": "Is the film 'Man in the Moon' a British production?"
+        },
+        {
+            "score": 0.7994491457939148,
+            "question": "Is 'Man in the Moon' an American film?"
+        },
+        {
+            "score": 0.7297930717468262,
+            "question": "Can you tell me about the origin of the film 'Man in the Moon'?"
+        },
+        {
+            "score": 0.7063677906990051,
+            "question": "Where was the film 'Man in the Moon' made?"
+        },
+        {
+            "score": 0.6743091344833374,
+            "question": "Which country is known for producing the film 'Man in the Moon'?"
+        },
+        {
+            "score": 0.6630462408065796,
+            "question": "What country produced the film 'Man in the Moon'?"
+        },
+        {
+            "score": 0.5899693369865417,
+            "question": "Where was 'Man in the Moon' filmed?"
+        },
+        {
+            "score": 0.5499712228775024,
+            "question": "What nationality are the filmmakers of 'Man in the Moon' likely to be?"
+        },
+        {
+            "score": 0.45160800218582153,
+            "question": "Is there any information about the cultural influences on the film 'Man in the Moon'?"
+        },
+        {
+            "score": 0.1647564172744751,
+            "question": "What can you tell me about the filmmaking industry in the United Kingdom?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The film 'Man in the Moon' is from the United Kingdom.",
+            "html": "dbpedia_5979_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there any information about the cultural influences on the film 'Man in the Moon'?",
+            "html": "dbpedia_5979_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What nationality are the filmmakers of 'Man in the Moon' likely to be?",
+            "html": "dbpedia_5979_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where was 'Man in the Moon' filmed?",
+            "html": "dbpedia_5979_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5979_105.txt"
+        },
+        {
+            "file_id": "dbpedia_5979_113.txt"
+        },
+        {
+            "file_id": "dbpedia_5979_115.txt"
+        },
+        {
+            "file_id": "dbpedia_5979_12.txt"
+        },
+        {
+            "file_id": "dbpedia_5979_152.txt"
+        },
+        {
+            "file_id": "dbpedia_5979_156.txt"
+        },
+        {
+            "file_id": "dbpedia_5979_23.txt"
+        },
+        {
+            "file_id": "dbpedia_5979_42.txt"
+        },
+        {
+            "file_id": "dbpedia_5979_51.txt"
+        },
+        {
+            "file_id": "dbpedia_5979_63.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "After analyzing the context information, I found that:\n\n* None of the documents mention the country where \"The Man in the Moon\" is from. However, some texts describe the film as a \"hidden gem\" and mention its impact on audiences, but there's no specific information about its origin.\n* There are two mentions of the title \"Man in the Moon\", which seems to be another movie (with Kevin Spacey) rather than the one being discussed.\n\nGiven this information:\n\n```\n{\n  \"output\": \"no\"\n}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: None of the provided documents mention that the film \"The Man in the Moon\" is from the United Kingdom. Instead, document 146 refers to it as a hidden gem and a coming-of-age movie, which suggests it might be an American film given its thematic focus and context of production, but this cannot be confirmed with the information provided."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The film 'Man in the Moon' is not from the United Kingdom. It is a Chinese film, as mentioned in context fact 2.",
+            "category": 3
+        },
+        "gemma2": {
+            "reason": "Information provided states the film was a British production directed by Bruce Gordon and J.L.V. Leigh, but released in 1919.   Additionally,  a later fact discusses how \"Moon Man\" had a brief release in UK cinemas.",
+            "category": 3
+        },
+        "llama3.1": {
+            "reason": "The context information points to \"Moon Man\" being a Chinese film, with no mention of the UK.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "The context mentions \"The Man in the Moon\" as a film that resonates with audiences, but does not indicate any connection to the United Kingdom. Furthermore, \"Moon Man,\" discussed in another context, is from China and has no relation to \"The Man in the Moon.\"",
+            "category": 3
+        }
+    }
+}

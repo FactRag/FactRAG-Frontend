@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Demi_Moore",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "Demi Moore",
+    "human_readable": "The label of Demi Moore is Demi Moore.",
+    "questions": [
+        {
+            "score": 0.9727643132209778,
+            "question": "Is 'Demi Moore' a label for someone?"
+        },
+        {
+            "score": 0.970033586025238,
+            "question": "What is the label of Demi Moore?"
+        },
+        {
+            "score": 0.8844797015190125,
+            "question": "Who is Demi Moore?"
+        },
+        {
+            "score": 0.7892029881477356,
+            "question": "How is Demi Moore identified?"
+        },
+        {
+            "score": 0.7420658469200134,
+            "question": "What name is associated with Demi Moore?"
+        },
+        {
+            "score": 0.7215232253074646,
+            "question": "What is the name used to refer to Demi Moore?"
+        },
+        {
+            "score": 0.7120755910873413,
+            "question": "Can you tell me Demi Moore's designation?"
+        },
+        {
+            "score": 0.6441248655319214,
+            "question": "What term describes Demi Moore?"
+        },
+        {
+            "score": 0.5493897199630737,
+            "question": "What word best summarizes who Demi Moore is?"
+        },
+        {
+            "score": 0.5370851159095764,
+            "question": "If you were to describe Demi Moore, what would you say?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The label of Demi Moore is Demi Moore.",
+            "html": "dbpedia_447_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What word best summarizes who Demi Moore is?",
+            "html": "dbpedia_447_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What term describes Demi Moore?",
+            "html": "dbpedia_447_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me Demi Moore's designation?",
+            "html": "dbpedia_447_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_447_114.txt"
+        },
+        {
+            "file_id": "dbpedia_447_116.txt"
+        },
+        {
+            "file_id": "dbpedia_447_20.txt"
+        },
+        {
+            "file_id": "dbpedia_447_23.txt"
+        },
+        {
+            "file_id": "dbpedia_447_27.txt"
+        },
+        {
+            "file_id": "dbpedia_447_28.txt"
+        },
+        {
+            "file_id": "dbpedia_447_39.txt"
+        },
+        {
+            "file_id": "dbpedia_447_53.txt"
+        },
+        {
+            "file_id": "dbpedia_447_57.txt"
+        },
+        {
+            "file_id": "dbpedia_447_99.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe query \"The label of Demi Moore is Demi Moore\" is technically correct as the documents refer to her by that name. However, if by \"label\" we mean a brand or category she is associated with (like an actress), then this might be more accurately stated based on the context provided. The response given assumes that \"the label of\" refers to her professional identity."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "It doesn't follow the convention of naming a clothing brand after its celebrity collaborator, whereas DTC (previously Del Core) has done that with Taraji P. Henson and Julianne Hough, but Demi Moore's limited-edition line is still referred to as \"DTC\", not \"Demi Moore\".",
+            "category": 2
+        }
+    }
+}

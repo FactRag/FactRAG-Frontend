@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Frank_Lebby_Stanton",
+    "predicate": "ontology/birthPlace",
+    "object": "resource/United_States",
+    "human_readable": "Frank Lebby Stanton was born in United States.",
+    "questions": [
+        {
+            "score": 0.9197094440460205,
+            "question": "Where was Frank Lebby Stanton born?"
+        },
+        {
+            "score": 0.9040679931640625,
+            "question": "Is Frank Lebby Stanton American?"
+        },
+        {
+            "score": 0.7698733806610107,
+            "question": "Were there any significant events in Frank Lebby Stanton's life that occurred in the United States?"
+        },
+        {
+            "score": 0.6814814209938049,
+            "question": "What are some interesting facts about Frank Lebby Stanton's birthplace?"
+        },
+        {
+            "score": 0.6107826232910156,
+            "question": "What is Frank Lebby Stanton known for?"
+        },
+        {
+            "score": 0.5922471880912781,
+            "question": "What country is Frank Lebby Stanton from?"
+        },
+        {
+            "score": 0.3864421546459198,
+            "question": "Is there anything else you know about Frank Lebby Stanton?"
+        },
+        {
+            "score": 0.37594491243362427,
+            "question": "Did Frank Lebby Stanton travel to other countries?"
+        },
+        {
+            "score": 0.3752457797527313,
+            "question": "Can you tell me more about Frank Lebby Stanton's early life?"
+        },
+        {
+            "score": 0.3151892125606537,
+            "question": "What impact did Frank Lebby Stanton have on his home country?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Frank Lebby Stanton was born in United States.",
+            "html": "dbpedia_5342_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about Frank Lebby Stanton's early life?",
+            "html": "dbpedia_5342_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Did Frank Lebby Stanton travel to other countries?",
+            "html": "dbpedia_5342_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there anything else you know about Frank Lebby Stanton?",
+            "html": "dbpedia_5342_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5342_15.txt"
+        },
+        {
+            "file_id": "dbpedia_5342_20.txt"
+        },
+        {
+            "file_id": "dbpedia_5342_25.txt"
+        },
+        {
+            "file_id": "dbpedia_5342_28.txt"
+        },
+        {
+            "file_id": "dbpedia_5342_31.txt"
+        },
+        {
+            "file_id": "dbpedia_5342_41.txt"
+        },
+        {
+            "file_id": "dbpedia_5342_47.txt"
+        },
+        {
+            "file_id": "dbpedia_5342_49.txt"
+        },
+        {
+            "file_id": "dbpedia_5342_51.txt"
+        },
+        {
+            "file_id": "dbpedia_5342_67.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "To answer the query \"Frank Lebby Stanton was born in United States.\", I need to evaluate whether the information in the documents supports this triple.\n\nAccording to the documents, Frank Lebby Stanton was born on February 22, 1857 in:\n\n* Charleston, South Carolina (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5342/re-ranker-msmarco/15.txt)\n* Charleston, South Carolina (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5342/re-ranker-msmarco/64.txt)\n\nThis information indicates that Frank Lebby Stanton was born in South Carolina, which is part of the United States. However, since his birthplace is specifically mentioned as Charleston, South Carolina, I can infer that he was not born in a state other than South Carolina.\n\nTherefore, based on this reasoning and the available context information, the answer to the query would be:\n\n{'output': 'yes'}\n\nThis indicates that the triple \"Frank Lebby Stanton was born in United States\" is supported by the documents."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents provide information that Frank Lebby Stanton was born in Charleston, South Carolina, which is part of the United States. Therefore, the statement \"Frank Lebby Stanton was born in the United States\" is supported by the given context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Several entries state he was born in Charleston, South Carolina.",
+            "category": 2
+        }
+    }
+}

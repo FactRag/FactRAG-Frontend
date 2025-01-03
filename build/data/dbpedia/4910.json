@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Takuya_Taniyama",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "Taniyama, Takuya",
+    "human_readable": "The name of Takuya Taniyama is Taniyama, Takuya.",
+    "questions": [
+        {
+            "score": 0.9625331163406372,
+            "question": "What is the full name of Takuya Taniyama?"
+        },
+        {
+            "score": 0.8799940943717957,
+            "question": "What is Takuya Taniyama's first name?"
+        },
+        {
+            "score": 0.8618632555007935,
+            "question": "If you were to introduce Takuya Taniyama, what name would you use?"
+        },
+        {
+            "score": 0.8508945107460022,
+            "question": "Can you create a sentence using the full name 'Takuya Taniyama'?"
+        },
+        {
+            "score": 0.8380061984062195,
+            "question": "What is the first part of Takuya Taniyama's name?"
+        },
+        {
+            "score": 0.7039382457733154,
+            "question": "How would you write Takuya Taniyama's name in reverse order?"
+        },
+        {
+            "score": 0.6573655009269714,
+            "question": "What is Taniyama's last name?"
+        },
+        {
+            "score": 0.6117346882820129,
+            "question": "If someone only knew 'Taniyama', would they know the full name of the person?"
+        },
+        {
+            "score": 0.5759370923042297,
+            "question": "Is 'Taniyama' a common first or last name?"
+        },
+        {
+            "score": 0.054746922105550766,
+            "question": "What is the significance of knowing someone's full name?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of Takuya Taniyama is Taniyama, Takuya.",
+            "html": "dbpedia_4910_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is 'Taniyama' a common first or last name?",
+            "html": "dbpedia_4910_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If someone only knew 'Taniyama', would they know the full name of the person?",
+            "html": "dbpedia_4910_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Taniyama's last name?",
+            "html": "dbpedia_4910_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4910_10.txt"
+        },
+        {
+            "file_id": "dbpedia_4910_24.txt"
+        },
+        {
+            "file_id": "dbpedia_4910_25.txt"
+        },
+        {
+            "file_id": "dbpedia_4910_26.txt"
+        },
+        {
+            "file_id": "dbpedia_4910_29.txt"
+        },
+        {
+            "file_id": "dbpedia_4910_36.txt"
+        },
+        {
+            "file_id": "dbpedia_4910_41.txt"
+        },
+        {
+            "file_id": "dbpedia_4910_61.txt"
+        },
+        {
+            "file_id": "dbpedia_4910_64.txt"
+        },
+        {
+            "file_id": "dbpedia_4910_95.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have other queries to evaluate! \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple:\n\n{\n  \"output\": \"no\"\n}\n\nExplanation: The documents contain information about a person named Takuya Taniyama, but they do not mention that his name is Taniyama, Takuya. In fact, each document shows him being referred to with a different format for his name, e.g., \"Takuya Taniyama\", \"Taniyama Takuya\"."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\"output\": \"yes\"}\n```\n\nThe documents provide information about Takuya Taniyama, including his full name as given in the document (\"Takuya Taniyama\"). Therefore, the statement that the name of Takuya Taniyama is Taniyama, Takuya is supported by the context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The given context does not provide any information to suggest that the name of Takuya Taniyama is incorrect. It only mentions his full name and some details about him, but no indication of an error in his name is present.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "The provided text consistently refers to Takuya Taniyama as a name, not two separate names.  It mentions his achievements and attributes, all under the single name \"Takuya Taniyama\".",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context explicitly states that Takuya Taniyama's name is written as \"Taniyama Takuya,\" indicating the family name followed by the given name, which contradicts the statement.",
+            "category": 2
+        }
+    }
+}

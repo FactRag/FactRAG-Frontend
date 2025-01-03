@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Gary_Wilhelms",
+    "predicate": "property/birthDate",
+    "object": "1938-01-17",
+    "human_readable": "Gary Wilhelms was born on January 17, 1938.",
+    "questions": [
+        {
+            "score": 0.924410343170166,
+            "question": "When was Gary Wilhelms born?"
+        },
+        {
+            "score": 0.8945460319519043,
+            "question": "Is Gary Wilhelms' birthday in January?"
+        },
+        {
+            "score": 0.8044992089271545,
+            "question": "What is Gary Wilhelms' birthdate?"
+        },
+        {
+            "score": 0.7702004313468933,
+            "question": "Is Gary Wilhelms a relatively recent birth?"
+        },
+        {
+            "score": 0.7643486261367798,
+            "question": "On which day of the month was Gary Wilhelms born?"
+        },
+        {
+            "score": 0.6985041499137878,
+            "question": "What is the month of Gary Wilhelms' birth?"
+        },
+        {
+            "score": 0.6089684963226318,
+            "question": "What can you tell me about Gary Wilhelms' birthdate?"
+        },
+        {
+            "score": 0.5149540901184082,
+            "question": "In what year did Gary Wilhelms come into the world?"
+        },
+        {
+            "score": 0.48517927527427673,
+            "question": "What information do we have about Gary Wilhelms' early life?"
+        },
+        {
+            "score": 0.3575674295425415,
+            "question": "How old would Gary Wilhelms be in the year 2023?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Gary Wilhelms was born on January 17, 1938.",
+            "html": "dbpedia_1759_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What information do we have about Gary Wilhelms' early life?",
+            "html": "dbpedia_1759_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In what year did Gary Wilhelms come into the world?",
+            "html": "dbpedia_1759_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What can you tell me about Gary Wilhelms' birthdate?",
+            "html": "dbpedia_1759_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1759_11.txt"
+        },
+        {
+            "file_id": "dbpedia_1759_15.txt"
+        },
+        {
+            "file_id": "dbpedia_1759_18.txt"
+        },
+        {
+            "file_id": "dbpedia_1759_3.txt"
+        },
+        {
+            "file_id": "dbpedia_1759_40.txt"
+        },
+        {
+            "file_id": "dbpedia_1759_51.txt"
+        },
+        {
+            "file_id": "dbpedia_1759_54.txt"
+        },
+        {
+            "file_id": "dbpedia_1759_63.txt"
+        },
+        {
+            "file_id": "dbpedia_1759_74.txt"
+        },
+        {
+            "file_id": "dbpedia_1759_85.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe provided text states that Gary Wilhelms was born in 1979, not January 17, 1938. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "To evaluate the triple \"Gary Wilhelms was born on January 17, 1938\", I'll look for information about Gary Wilhelms's date of birth in the context documents.\n\nAccording to the documents:\n\n* \"What is Gary Wilhelms's date of birth?\" and the answer is: \"Gary Wilhelms was born on 1979.\"\n\nThe provided date of birth (January 17, 1938) does not match the information in the documents. The document states that Gary Wilhelms was born in 1979.\n\nTherefore, the output should be:\n```json\n{\n    \"output\": \"no\"\n}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe documents state that Gary Wilhelms was born on 1979, not on January 17, 1938. Therefore, the statement \"Gary Wilhelms was born on January 17, 1938\" is incorrect according to the provided information."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {'output': 'no'}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "There is no information provided in the context indicating that Gary Wilhelms was born on January 17, 1938. The context only provides information about Gary Wilhelms's birth year (1979), his age (44 years old), and the email address, phone number, and address associated with him. Therefore, it cannot be concluded that he was born on January 17, 1938.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Context information states Gary Wilhelms was born on 1979.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The context information provides Gary Wilhelms's date of birth as 1979, not January 17, 1938.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information states that Gary Wilhelms was born on 1979, not January 17, 1938.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,97 @@
+{
+    "subject": "resource/Mike_Wallace",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "Mike Wallace",
+    "human_readable": "The label of Mike Wallace is Mike Wallace.",
+    "questions": [
+        {
+            "score": 0.9081312417984009,
+            "question": "Is Mike Wallace a person?"
+        },
+        {
+            "score": 0.8944032192230225,
+            "question": "Who is Mike Wallace?"
+        },
+        {
+            "score": 0.8032204508781433,
+            "question": "What is the name of Mike Wallace?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The label of Mike Wallace is Mike Wallace.",
+            "html": "dbpedia_7675_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is Mike Wallace?",
+            "html": "dbpedia_7675_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Mike Wallace a person?",
+            "html": "dbpedia_7675_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_7675_124.txt"
+        },
+        {
+            "file_id": "dbpedia_7675_14.txt"
+        },
+        {
+            "file_id": "dbpedia_7675_153.txt"
+        },
+        {
+            "file_id": "dbpedia_7675_154.txt"
+        },
+        {
+            "file_id": "dbpedia_7675_175.txt"
+        },
+        {
+            "file_id": "dbpedia_7675_37.txt"
+        },
+        {
+            "file_id": "dbpedia_7675_5.txt"
+        },
+        {
+            "file_id": "dbpedia_7675_55.txt"
+        },
+        {
+            "file_id": "dbpedia_7675_75.txt"
+        },
+        {
+            "file_id": "dbpedia_7675_78.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the provided context information, I will evaluate whether the statement \"The label of Mike Wallace is Mike Wallace\" is supported by the documents.\n\nAfter analyzing the documents, I found that there are multiple mentions of a person named Mike Wallace with different professions and biographical information. However, all of them share the same name \"Mike Wallace\".\n\nBased on this analysis, my response would be:\n\n`{'output': 'yes'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide information about Mike Wallace's career and roles, which supports the triple stating that \"Mike Wallace\" is a label for himself."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

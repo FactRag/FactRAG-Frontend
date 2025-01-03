@@ -1,0 +1,146 @@
+{
+    "subject": "resource/HotRuby",
+    "predicate": "ontology/programmingLanguage",
+    "object": "resource/ActionScript",
+    "human_readable": "HotRuby is written in ActionScript.",
+    "questions": [
+        {
+            "score": 0.784418523311615,
+            "question": "How does HotRuby's use of ActionScript influence its development?"
+        },
+        {
+            "score": 0.750992476940155,
+            "question": "What programming language is HotRuby written in?"
+        },
+        {
+            "score": 0.6688797473907471,
+            "question": "How does HotRuby's use of ActionScript differ from traditional Ruby implementations?"
+        },
+        {
+            "score": 0.5065844058990479,
+            "question": "What is the primary purpose of HotRuby?"
+        },
+        {
+            "score": 0.43844643235206604,
+            "question": "Can you provide examples of applications built with HotRuby?"
+        },
+        {
+            "score": 0.3567698001861572,
+            "question": "Who are the main contributors to the development of HotRuby?"
+        },
+        {
+            "score": 0.34660571813583374,
+            "question": "What are some common misconceptions about HotRuby?"
+        },
+        {
+            "score": 0.32643046975135803,
+            "question": "Are there any notable projects or libraries developed specifically for HotRuby?"
+        },
+        {
+            "score": 0.2718062102794647,
+            "question": "What is the current status and future direction of HotRuby development?"
+        },
+        {
+            "score": 0.198892742395401,
+            "question": "What are the advantages and disadvantages of using HotRuby compared to other Ruby implementations?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=HotRuby is written in ActionScript.",
+            "html": "dbpedia_8300_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the current status and future direction of HotRuby development?",
+            "html": "dbpedia_8300_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any notable projects or libraries developed specifically for HotRuby?",
+            "html": "dbpedia_8300_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some common misconceptions about HotRuby?",
+            "html": "dbpedia_8300_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8300_10.txt"
+        },
+        {
+            "file_id": "dbpedia_8300_20.txt"
+        },
+        {
+            "file_id": "dbpedia_8300_21.txt"
+        },
+        {
+            "file_id": "dbpedia_8300_22.txt"
+        },
+        {
+            "file_id": "dbpedia_8300_25.txt"
+        },
+        {
+            "file_id": "dbpedia_8300_26.txt"
+        },
+        {
+            "file_id": "dbpedia_8300_28.txt"
+        },
+        {
+            "file_id": "dbpedia_8300_29.txt"
+        },
+        {
+            "file_id": "dbpedia_8300_38.txt"
+        },
+        {
+            "file_id": "dbpedia_8300_7.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe text states \"HotRuby is written in JavaScript which also works in Flash, which is used for a few nice demos, eg.  the Pinball Demo.\"   \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nThe documents mention that HotRuby is written in JavaScript, which also works in Flash, but it does not say that it is written in ActionScript."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: According to the context information provided, HotRuby is explicitly stated to be written in JavaScript. There is no mention of it being written in ActionScript. Therefore, the statement that HotRuby is written in ActionScript is incorrect."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "HotRuby is written in JavaScript, not ActionScript.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "The text states that HotRuby works in Flash, which uses ActionScript. It also explicitly mentions that HotRuby can run Ruby code directly in a browser using JavaScript or indirectly using ActionScript in Flash. This implies that while ActionScript is involved in running HotRuby within Flash,  the core of HotRuby itself is written in JavaScript.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "HotRuby is written in JavaScript, not ActionScript.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "HotRuby is explicitly stated to be written in JavaScript, not ActionScript. The context mentions that HotRuby works in Flash, which uses ActionScript, but the actual implementation of HotRuby, including its opcode interpreter and runtime, is a ~40 KB JavaScript file.",
+            "category": 2
+        }
+    }
+}

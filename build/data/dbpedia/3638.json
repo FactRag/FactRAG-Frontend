@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Princess_Maria_Francesca_of_Savoy",
+    "predicate": "ontology/deathPlace",
+    "object": "resource/Mandelieu-la-Napoule",
+    "human_readable": "Princess Maria Francesca of Savoy died at Mandelieu-la-Napoule.",
+    "questions": [
+        {
+            "score": 0.9885960221290588,
+            "question": "Was Princess Maria Francesca of Savoy's death in Mandelieu-la-Napoule?"
+        },
+        {
+            "score": 0.9253342151641846,
+            "question": "Where did Princess Maria Francesca of Savoy die?"
+        },
+        {
+            "score": 0.9099819660186768,
+            "question": "Who was Princess Maria Francesca of Savoy?"
+        },
+        {
+            "score": 0.8078982830047607,
+            "question": "What is known about Princess Maria Francesca of Savoy?"
+        },
+        {
+            "score": 0.7828614711761475,
+            "question": "What is the name of the place where Princess Maria Francesca of Savoy passed away?"
+        },
+        {
+            "score": 0.666111171245575,
+            "question": "Can you tell me more about Princess Maria Francesca of Savoy?"
+        },
+        {
+            "score": 0.6657494902610779,
+            "question": "Where else might we find information about Princess Maria Francesca of Savoy?"
+        },
+        {
+            "score": 0.6396811008453369,
+            "question": "What time period did Princess Maria Francesca of Savoy live in?"
+        },
+        {
+            "score": 0.6013549566268921,
+            "question": "Are there any historical records about Princess Maria Francesca of Savoy?"
+        },
+        {
+            "score": 0.39690884947776794,
+            "question": "Is Mandelieu-la-Napoule a city?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Princess Maria Francesca of Savoy died at Mandelieu-la-Napoule.",
+            "html": "dbpedia_3638_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any historical records about Princess Maria Francesca of Savoy?",
+            "html": "dbpedia_3638_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What time period did Princess Maria Francesca of Savoy live in?",
+            "html": "dbpedia_3638_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where else might we find information about Princess Maria Francesca of Savoy?",
+            "html": "dbpedia_3638_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3638_1.txt"
+        },
+        {
+            "file_id": "dbpedia_3638_15.txt"
+        },
+        {
+            "file_id": "dbpedia_3638_19.txt"
+        },
+        {
+            "file_id": "dbpedia_3638_2.txt"
+        },
+        {
+            "file_id": "dbpedia_3638_21.txt"
+        },
+        {
+            "file_id": "dbpedia_3638_31.txt"
+        },
+        {
+            "file_id": "dbpedia_3638_4.txt"
+        },
+        {
+            "file_id": "dbpedia_3638_42.txt"
+        },
+        {
+            "file_id": "dbpedia_3638_51.txt"
+        },
+        {
+            "file_id": "dbpedia_3638_75.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nAlthough the documents state that Princess Maria Francesca lived in Mandelieu-la-Napoule after returning from a Nazi concentration camp, they do not say she died there.  They state she died on December 4th, 2001. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the answer:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents state that Princess Maria Francesca of Savoy lived in France after being interned by the Nazis during WWII, and specifically mentioned living at Mandelieu-la-Napoule, near Cannes. However, this does not imply that she died there. In fact, one of the documents mentions her death on December 4, 2001, with no specific location mentioned."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information that supports the statement \"Princess Maria Francesca of Savoy died at Mandelieu-la-Napoule, near Cannes.\" Specifically, one of the documents mentions she and her husband were interned during WWII and later returned to France to live at Mandelieu-la-Napoule, near Cannes. While it does not explicitly state where she died, given that they lived there until her death in 2001, it is reasonable to infer that this was also the place of her death."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nThe documents do not explicitly state that Princess Maria Francesca of Savoy died at Mandelieu-la-Napoule. They only mention that she and her family returned to live there after being interned by the Nazis during WWII, but her place of death is not specified in the provided context."
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n\nThe documents do not specify the location where Princess Maria Francesca of Savoy died. They mention that she lived in Mandelieu-la-Napoule, near Cannes, after being interned by the Nazis during WWII and returning to France with her husband Prince Luigi of Bourbon-Parma. However, it is only mentioned in file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3638/re-ranker-msmarco/15.txt that she died on this day in 2001 but the location of death is not specified."
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "The text states that after being interned by the Nazis during WWII, they returned to France to live at Mandelieu-la-Napoule.  This implies they lived there after the war, not that she died there.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "Princess Maria Francesca of Savoy died on December 4, 2001, not at Mandelieu-la-Napoule.",
+            "category": 0
+        }
+    }
+}

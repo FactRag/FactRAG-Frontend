@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Lake_Tegel",
+    "predicate": "ontology/nearestCity",
+    "object": "resource/Konradsh\u00f6he",
+    "human_readable": "Lake Tegel's nearest city is Konradsh\u00f6he.",
+    "questions": [
+        {
+            "score": 0.9291775822639465,
+            "question": "What city is closest to Lake Tegel?"
+        },
+        {
+            "score": 0.9156194925308228,
+            "question": "Name a city near Lake Tegel."
+        },
+        {
+            "score": 0.9134969711303711,
+            "question": "Konradsh\u00f6he is the nearest city to which body of water?"
+        },
+        {
+            "score": 0.9134610891342163,
+            "question": "Is Konradsh\u00f6he located near a lake?"
+        },
+        {
+            "score": 0.8853662610054016,
+            "question": "What is the name of the lake near Konradsh\u00f6he?"
+        },
+        {
+            "score": 0.8794633150100708,
+            "question": "Which location is known as being close to Konradsh\u00f6he?"
+        },
+        {
+            "score": 0.8216259479522705,
+            "question": "Find a city associated with Lake Tegel."
+        },
+        {
+            "score": 0.7218754887580872,
+            "question": "Which city borders Lake Tegel?"
+        },
+        {
+            "score": 0.677318274974823,
+            "question": "What geographical feature is Konradsh\u00f6he near?"
+        },
+        {
+            "score": 0.4834430515766144,
+            "question": "If you were visiting Lake Tegel, what city would be most convenient to stay in?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Lake Tegel's nearest city is Konradsh\u00f6he.",
+            "html": "dbpedia_2983_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What geographical feature is Konradsh\u00f6he near?",
+            "html": "dbpedia_2983_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Which city borders Lake Tegel?",
+            "html": "dbpedia_2983_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Find a city associated with Lake Tegel.",
+            "html": "dbpedia_2983_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2983_101.txt"
+        },
+        {
+            "file_id": "dbpedia_2983_13.txt"
+        },
+        {
+            "file_id": "dbpedia_2983_28.txt"
+        },
+        {
+            "file_id": "dbpedia_2983_32.txt"
+        },
+        {
+            "file_id": "dbpedia_2983_37.txt"
+        },
+        {
+            "file_id": "dbpedia_2983_59.txt"
+        },
+        {
+            "file_id": "dbpedia_2983_74.txt"
+        },
+        {
+            "file_id": "dbpedia_2983_79.txt"
+        },
+        {
+            "file_id": "dbpedia_2983_91.txt"
+        },
+        {
+            "file_id": "dbpedia_2983_98.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe provided text states that Lake Tegel is located in the Reinickendorf suburb of Berlin and within the Tegel district. There is no mention of Konradsh\u00f6he being the nearest city to Lake Tegel.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\"output\": \"no\"}\n```\n\n**Explanation:** The provided documents do not contain any information about the nearest city to Lake Tegel. While they provide details such as its location within Berlin, the specific claim that its nearest city is Konradsh\u00f6he is not supported by the given context."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Lake Tegel is located within the district of Tegel, not Konradsh\u00f6he.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Several sources state Lake Tegel is located in the Reinickendorf suburb of Berlin and within the Tegel district. Konradsh\u00f6he is mentioned as a locality within Tegel, not as a city near Lake Tegel.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "Lake Tegel's nearest city is actually Berlin, not Konradsh\u00f6he, as stated in context information 3.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Lake Tegel is located in the Reinickendorf borough of Berlin, not Konradsh\u00f6he. The context mentions that \"Lake Tegel, located in the Reinickendorf suburb of Berlin, is the second largest lake of the city,\" indicating its proximity to Reinickendorf rather than Konradsh\u00f6he.",
+            "category": 2
+        }
+    }
+}

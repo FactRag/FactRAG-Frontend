@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Grand_Duchy_of_Lithuania",
+    "predicate": "ontology/capital",
+    "object": "resource/Vilnius",
+    "human_readable": "Vilnius is the capital of the Grand Duchy of Lithuania.",
+    "questions": [
+        {
+            "score": 0.9268826842308044,
+            "question": "What is the capital of the Grand Duchy of Lithuania?"
+        },
+        {
+            "score": 0.7327173352241516,
+            "question": "When was Vilnius established as the capital?"
+        },
+        {
+            "score": 0.6074521541595459,
+            "question": "Is Vilnius a city?"
+        },
+        {
+            "score": 0.5647982358932495,
+            "question": "What was the name of the political entity that had Vilnius as its capital?"
+        },
+        {
+            "score": 0.5160005688667297,
+            "question": "Where is Vilnius located?"
+        },
+        {
+            "score": 0.4708888530731201,
+            "question": "What is a Grand Duchy?"
+        },
+        {
+            "score": 0.2823919355869293,
+            "question": "What is the population of Vilnius?"
+        },
+        {
+            "score": 0.24634146690368652,
+            "question": "Does Vilnius have any significant historical landmarks?"
+        },
+        {
+            "score": 0.1537007838487625,
+            "question": "What are some major industries in Vilnius?"
+        },
+        {
+            "score": 0.1387738287448883,
+            "question": "What language is spoken primarily in Vilnius?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Vilnius is the capital of the Grand Duchy of Lithuania.",
+            "html": "dbpedia_9183_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some major industries in Vilnius?",
+            "html": "dbpedia_9183_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Vilnius have any significant historical landmarks?",
+            "html": "dbpedia_9183_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the population of Vilnius?",
+            "html": "dbpedia_9183_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_9183_1.txt"
+        },
+        {
+            "file_id": "dbpedia_9183_109.txt"
+        },
+        {
+            "file_id": "dbpedia_9183_123.txt"
+        },
+        {
+            "file_id": "dbpedia_9183_22.txt"
+        },
+        {
+            "file_id": "dbpedia_9183_49.txt"
+        },
+        {
+            "file_id": "dbpedia_9183_59.txt"
+        },
+        {
+            "file_id": "dbpedia_9183_61.txt"
+        },
+        {
+            "file_id": "dbpedia_9183_75.txt"
+        },
+        {
+            "file_id": "dbpedia_9183_84.txt"
+        },
+        {
+            "file_id": "dbpedia_9183_99.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the context information provided, here's my evaluation:\n\nThe triple to be evaluated is:\n\"Vilnius is the capital of the Grand Duchy of Lithuania.\"\n\nFrom the documents:\n\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_9183/re-ranker-msmarco/57.txt, it is mentioned that \"In the 14th century, Vilnius became the capital of the Grand Duchy of Lithuania, one of the most influential Eastern European states.\"\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_9183/re-ranker-msmarco/103.txt, it is mentioned that \"Vilnius, became the capital of the Grand Principality of Lithuania in 1323.\"\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_9183/re-ranker-msmarco/59.txt, it is mentioned that \"Vilnius remained the capital of the Grand Duchy of Lithuania until the end of the eighteenth century...\"\n\nTherefore, based on the context information provided, the answer is:\n\n`{ 'output': 'yes' }`"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide information that supports the statement \"Vilnius is the capital of the Grand Duchy of Lithuania.\" Specifically, multiple entries mention Vilnius being the capital during different historical periods, including references to its role as the capital of the Grand Duchy of Lithuania in the 14th century and beyond."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

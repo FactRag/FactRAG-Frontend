@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Richard_C._Mangam",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "Mangam, Richard C.",
+    "human_readable": "The full name of Richard Mangam is Mangam, Richard C.",
+    "questions": [
+        {
+            "score": 0.9713573455810547,
+            "question": "What is Richard Mangam's full name?"
+        },
+        {
+            "score": 0.9684670567512512,
+            "question": "Is 'Richard C. Mangam' a valid way to write Richard Mangam's full name?"
+        },
+        {
+            "score": 0.905270516872406,
+            "question": "What is the middle name of Richard Mangam?"
+        },
+        {
+            "score": 0.9038955569267273,
+            "question": "What is the last name of Richard Mangam?"
+        },
+        {
+            "score": 0.8569892048835754,
+            "question": "How many parts are there to Richard Mangam's full name?"
+        },
+        {
+            "score": 0.8566612601280212,
+            "question": "What is the first name of Richard Mangam?"
+        },
+        {
+            "score": 0.8050291538238525,
+            "question": "Which part of Richard Mangam's name comes first?"
+        },
+        {
+            "score": 0.6949772834777832,
+            "question": "If someone only knew 'Mangam', would they know this person's full name?"
+        },
+        {
+            "score": 0.6000467538833618,
+            "question": "How would you write Richard Mangam's name in formal order?"
+        },
+        {
+            "score": 0.5185998678207397,
+            "question": "If you saw 'Mangam, Richard C.', who might this person be?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The full name of Richard Mangam is Mangam, Richard C.",
+            "html": "dbpedia_531_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How would you write Richard Mangam's name in formal order?",
+            "html": "dbpedia_531_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If someone only knew 'Mangam', would they know this person's full name?",
+            "html": "dbpedia_531_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Which part of Richard Mangam's name comes first?",
+            "html": "dbpedia_531_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_531_109.txt"
+        },
+        {
+            "file_id": "dbpedia_531_110.txt"
+        },
+        {
+            "file_id": "dbpedia_531_28.txt"
+        },
+        {
+            "file_id": "dbpedia_531_51.txt"
+        },
+        {
+            "file_id": "dbpedia_531_6.txt"
+        },
+        {
+            "file_id": "dbpedia_531_60.txt"
+        },
+        {
+            "file_id": "dbpedia_531_72.txt"
+        },
+        {
+            "file_id": "dbpedia_531_77.txt"
+        },
+        {
+            "file_id": "dbpedia_531_85.txt"
+        },
+        {
+            "file_id": "dbpedia_531_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have other triples you'd like to evaluate!  I'm ready for more."
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe information in the documents does not support the triple. While there are multiple mentions of \"Richard Mangam\" and \"Mangam\", they refer to different individuals. The first document describes a Medal of Honor recipient named Richard Christopher Mangam, while the second document seems to be describing a general information about the surname \"Mangam\". There is no connection between these two individuals."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents provide information that supports the statement \"The full name of Richard Mangam is Mangam, Richard C.\" Both `51.txt` and `76.txt` refer to an individual with the surname Mangam and the given name Richard C., which aligns with the provided query."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "There is context information stating \"Also Known As: Mangan, Richard C.\", which suggests that Mangam and Mangan are different spellings of the same name, indicating that Richard Mangam's full name is actually Richard C. Mangan, not Mangam.",
+            "category": 2
+        }
+    }
+}

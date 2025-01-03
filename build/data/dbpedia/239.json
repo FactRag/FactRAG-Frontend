@@ -1,0 +1,142 @@
+{
+    "subject": "resource/The_Wise_Guy",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:American_films",
+    "human_readable": "The Wise Guy is about American films.",
+    "questions": [
+        {
+            "score": 0.8801943063735962,
+            "question": "Does 'The Wise Guy' analyze the themes and narratives common in American films?"
+        },
+        {
+            "score": 0.8474489450454712,
+            "question": "What aspects of American culture might be reflected in the films discussed in 'The Wise Guy'?"
+        },
+        {
+            "score": 0.8279147148132324,
+            "question": "Could 'The Wise Guy' include discussions about the impact of American films on global cinema?"
+        },
+        {
+            "score": 0.8020357489585876,
+            "question": "Does 'The Wise Guy' explore specific directors or actors within American films?"
+        },
+        {
+            "score": 0.7249237298965454,
+            "question": "Could 'The Wise Guy' cover different periods in American film history?"
+        },
+        {
+            "score": 0.7210158705711365,
+            "question": "What country are the films discussed in 'The Wise Guy' about?"
+        },
+        {
+            "score": 0.5856943130493164,
+            "question": "What genre of film does 'The Wise Guy' focus on?"
+        },
+        {
+            "score": 0.5523767471313477,
+            "question": "Is 'The Wise Guy' a documentary or a fictional work?"
+        },
+        {
+            "score": 0.2809498608112335,
+            "question": "What type of audience might 'The Wise Guy' be targeted towards?"
+        },
+        {
+            "score": 0.138477623462677,
+            "question": "What makes American films unique compared to other national film industries?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The Wise Guy is about American films.",
+            "html": "dbpedia_239_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of audience might 'The Wise Guy' be targeted towards?",
+            "html": "dbpedia_239_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is 'The Wise Guy' a documentary or a fictional work?",
+            "html": "dbpedia_239_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What genre of film does 'The Wise Guy' focus on?",
+            "html": "dbpedia_239_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_239_118.txt"
+        },
+        {
+            "file_id": "dbpedia_239_121.txt"
+        },
+        {
+            "file_id": "dbpedia_239_25.txt"
+        },
+        {
+            "file_id": "dbpedia_239_55.txt"
+        },
+        {
+            "file_id": "dbpedia_239_68.txt"
+        },
+        {
+            "file_id": "dbpedia_239_74.txt"
+        },
+        {
+            "file_id": "dbpedia_239_82.txt"
+        },
+        {
+            "file_id": "dbpedia_239_89.txt"
+        },
+        {
+            "file_id": "dbpedia_239_91.txt"
+        },
+        {
+            "file_id": "dbpedia_239_99.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple:\n\n`{ \"output\": \"no\" }`\n\nThe reason is that while one document mentions a film called \"Wise Guys\", it is actually an American gangster film, not a coming-of-age comedy-drama as implied by the triple. The coming-of-age comedy-drama mentioned in the other documents is actually titled \"The Wise Guy\"."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents provide information that confirms \"The Wise Guy\" is a coming-of-age comedy-drama and mentions it as an upcoming film, which falls under the category of American films. However, the documents do not explicitly state that \"The Wise Guy\" is about American films, but given the context of the other movies mentioned (e.g., \"Wise Guys\"), it can be reasonably inferred. Thus, the answer aligns with the information provided."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The provided context does not indicate that \"The Wise Guy\" is an American film. It mentions the debut film of Sam O'Mahony, which is filmed in Northern Ireland and produced by a local production outfit called Out of Orbit.",
+            "category": 3
+        },
+        "gemma2": {
+            "reason": "The provided text describes \"The Wise Guy\" as a Northern Ireland production, focusing on a lonely boy finding an unconventional mentor who happens to be an American Gangster hiding in the woods.  There's no indication that the film itself is *about* American films.",
+            "category": 3
+        },
+        "llama3.1": {
+            "reason": "The Wise Guy (2019) from Northern Ireland Screen is actually a coming-of-age comedy-drama that tells the story of Francis Burns, a lonely boy who finds an unconventional mentor hiding in the nearby woods; an American Gangster, but it's not about American films.",
+            "category": 3
+        }
+    }
+}

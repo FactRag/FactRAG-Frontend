@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Sea_Fury_(film)",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:English-language_films",
+    "human_readable": "The subject of the film 'Sea Fury' is English-language films.",
+    "questions": [
+        {
+            "score": 0.899820864200592,
+            "question": "What language is the film 'Sea Fury' in?"
+        },
+        {
+            "score": 0.8967064619064331,
+            "question": "Would someone who enjoys English-language films likely enjoy 'Sea Fury'?"
+        },
+        {
+            "score": 0.7115262150764465,
+            "question": "What other films are similar to 'Sea Fury' in terms of language?"
+        },
+        {
+            "score": 0.6856893301010132,
+            "question": "Is 'Sea Fury' a documentary or a fictional film?"
+        },
+        {
+            "score": 0.6580020189285278,
+            "question": "What type of films does 'Sea Fury' belong to?"
+        },
+        {
+            "score": 0.6562758088111877,
+            "question": "Is 'Sea Fury' a foreign film?"
+        },
+        {
+            "score": 0.42571479082107544,
+            "question": "Could someone who doesn't speak English easily understand 'Sea Fury'?"
+        },
+        {
+            "score": 0.41812950372695923,
+            "question": "What are some popular genres within English-language films?"
+        },
+        {
+            "score": 0.36006516218185425,
+            "question": "Can you name other famous English-language films?"
+        },
+        {
+            "score": 0.2761791944503784,
+            "question": "Are there subtitles available for 'Sea Fury'?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The subject of the film 'Sea Fury' is English-language films.",
+            "html": "dbpedia_5733_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you name other famous English-language films?",
+            "html": "dbpedia_5733_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some popular genres within English-language films?",
+            "html": "dbpedia_5733_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Could someone who doesn't speak English easily understand 'Sea Fury'?",
+            "html": "dbpedia_5733_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5733_111.txt"
+        },
+        {
+            "file_id": "dbpedia_5733_14.txt"
+        },
+        {
+            "file_id": "dbpedia_5733_19.txt"
+        },
+        {
+            "file_id": "dbpedia_5733_55.txt"
+        },
+        {
+            "file_id": "dbpedia_5733_56.txt"
+        },
+        {
+            "file_id": "dbpedia_5733_63.txt"
+        },
+        {
+            "file_id": "dbpedia_5733_65.txt"
+        },
+        {
+            "file_id": "dbpedia_5733_73.txt"
+        },
+        {
+            "file_id": "dbpedia_5733_87.txt"
+        },
+        {
+            "file_id": "dbpedia_5733_90.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the context information provided, here's the evaluation of the triple:\n\n{\n  \"output\": \"no\"\n}\n\nThis is because none of the documents mention that the subject of the film 'Sea Fury' is English-language films. The document at file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5733/re-ranker-msmarco/70.txt mentions a Hawker Sea Fury, which seems to be related to the aircraft, not the film. Another document at file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5733/re-ranker-msmarco/106.txt mentions a different film called 'Fury', but it's not related to the Sea Fury discussed in the other documents. The only relevant information is that the document at file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5733/re-ranker-msmarco/53.txt mentions a film called 'Sea Fury', but it doesn't specify its language or any other details about the film."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\"output\": \"no\"}\n```\n\nExplanation: The provided documents discuss a film titled \"Sea Fury,\" which features actors Stanley Baker and Victor McLaglen, but there is no information suggesting that the subject or language of the film is specifically about English-language films. Therefore, the statement that the subject of the film 'Sea Fury' is English-language films cannot be supported by the given context."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The context information provided does not specify the language of the film as English. It only mentions that Sea Fury was directed by a British director and produced by a British production company, but it does not explicitly state that it is an English-language film.",
+            "category": 3
+        },
+        "llama3.1": {
+            "reason": "The film \"Sea Fury\" has a Spanish coastal setting and the actors are Stanley Baker, Victor McLaglen, and Luciana Paluzzi, which does not indicate an English-language film.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "The film \"Sea Fury\" is set in Spain and involves Spanish characters, indicating that while the language used in the film might be English (as was common for British productions of the time), the subject matter and cultural context suggest a foreign setting rather than being confined to English-language films exclusively.",
+            "category": 3
+        }
+    }
+}

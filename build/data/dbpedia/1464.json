@@ -1,0 +1,144 @@
+{
+    "subject": "resource/2014_Icelandic_Cup",
+    "predicate": "property/goals",
+    "object": "Grizelj",
+    "human_readable": "Grizelj scored goals in the 2014 Icelandic Cup.",
+    "questions": [
+        {
+            "score": 0.9616327285766602,
+            "question": "Who scored goals in the 2014 Icelandic Cup?"
+        },
+        {
+            "score": 0.9531420469284058,
+            "question": "Did Grizelj win the 2014 Icelandic Cup?"
+        },
+        {
+            "score": 0.8590918779373169,
+            "question": "Were there any other players who scored goals in the 2014 Icelandic Cup?"
+        },
+        {
+            "score": 0.7874009013175964,
+            "question": "In what year did Grizelj score goals?"
+        },
+        {
+            "score": 0.7640560269355774,
+            "question": "What type of goals did Grizelj score?"
+        },
+        {
+            "score": 0.4762241244316101,
+            "question": "What competition did Grizelj participate in?"
+        },
+        {
+            "score": 0.45782792568206787,
+            "question": "Was Grizelj involved in a football match?"
+        },
+        {
+            "score": 0.4098101854324341,
+            "question": "Can you tell me more about Grizelj's football career?"
+        },
+        {
+            "score": 0.376324325799942,
+            "question": "What is the significance of the Icelandic Cup?"
+        },
+        {
+            "score": 0.3763118386268616,
+            "question": "Are there any other notable achievements associated with Grizelj?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Grizelj scored goals in the 2014 Icelandic Cup.",
+            "html": "dbpedia_1464_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the significance of the Icelandic Cup?",
+            "html": "dbpedia_1464_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about Grizelj's football career?",
+            "html": "dbpedia_1464_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Was Grizelj involved in a football match?",
+            "html": "dbpedia_1464_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1464_110.txt"
+        },
+        {
+            "file_id": "dbpedia_1464_2.txt"
+        },
+        {
+            "file_id": "dbpedia_1464_3.txt"
+        },
+        {
+            "file_id": "dbpedia_1464_33.txt"
+        },
+        {
+            "file_id": "dbpedia_1464_38.txt"
+        },
+        {
+            "file_id": "dbpedia_1464_55.txt"
+        },
+        {
+            "file_id": "dbpedia_1464_63.txt"
+        },
+        {
+            "file_id": "dbpedia_1464_65.txt"
+        },
+        {
+            "file_id": "dbpedia_1464_89.txt"
+        },
+        {
+            "file_id": "dbpedia_1464_94.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe provided text mentions Juraj Grizelj scoring in various Icelandic Division 2 matches during the 2013/2014 season, but it doesn't mention him playing in or scoring goals in any Icelandic Cup matches.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the response:\n\n`{ \"output\": \"yes\" }`\n\nThis is because, according to the provided context information, Juraj Grizelj indeed scored a goal for Iceland in the 2013/2014 Division 2 (see file_path /Users/stefanomarchesin/Research/fsham/Rag/docs/dbpedia_1464/re-ranker-msmarco/87.txt)."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents mention multiple instances of players named Gr\u00edzelj (spelled as Juraj Grizelj) participating in Icelandic division matches during the 2013/2014 season, which supports the statement that a player scored goals in an Icelandic cup match around that time."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{\"output\": \"no\"}\n\nThe provided context information does not mention any player named Grizelj scoring goals in the 2014 Icelandic Cup. The context details some matches and substitutions that took place, but there is no reference to a player by the name of Grizelj or any results from the 2014 Icelandic Cup. Therefore, based on the information given, we cannot confirm this statement as true."
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The context information mentions specific competitions where Icelandic players scored goals (e.g. FA Cup 2019/2020, Division 2 2013/2014), but it does not mention the 2014 Icelandic Cup as one of those competitions. Therefore, it is unlikely that Juraj Grizelj scored goals in the 2014 Icelandic Cup, making this fact incorrect.",
+            "category": 1
+        },
+        "qwen2.5": {
+            "reason": "The provided context does not mention Grizelj scoring goals in the 2014 Icelandic Cup. The information given is about a match between Iceland and the Netherlands during Euro 2016 qualifiers, where Gylfi Sigurdsson scored two goals. There is no reference to any player named Grizelj or any Icelandic Cup competitions from 2014 in the given context.",
+            "category": 1
+        }
+    }
+}

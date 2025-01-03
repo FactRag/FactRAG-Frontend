@@ -1,0 +1,144 @@
+{
+    "subject": "resource/XNU",
+    "predicate": "ontology/programmingLanguage",
+    "object": "resource/C++",
+    "human_readable": "The programming language of XNU is C++.",
+    "questions": [
+        {
+            "score": 0.908120334148407,
+            "question": "Is C++ the primary language used in XNU development?"
+        },
+        {
+            "score": 0.8316347002983093,
+            "question": "Besides C++, are there other languages used in XNU development?"
+        },
+        {
+            "score": 0.7856795191764832,
+            "question": "What programming language is used for XNU?"
+        },
+        {
+            "score": 0.6038191318511963,
+            "question": "What type of software is XNU?"
+        },
+        {
+            "score": 0.5035605430603027,
+            "question": "Why might C++ be a suitable choice for developing XNU?"
+        },
+        {
+            "score": 0.44955259561538696,
+            "question": "Which language powers the core functionalities of XNU?"
+        },
+        {
+            "score": 0.4295192062854767,
+            "question": "What are the benefits and drawbacks of using C++ for XNU?"
+        },
+        {
+            "score": 0.40781405568122864,
+            "question": "XNU's development relies heavily on which programming paradigm?"
+        },
+        {
+            "score": 0.4043194353580475,
+            "question": "What does XNU primarily utilize for its codebase?"
+        },
+        {
+            "score": 0.40280774235725403,
+            "question": "Can you give examples of systems that use XNU?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The programming language of XNU is C++.",
+            "html": "dbpedia_464_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What does XNU primarily utilize for its codebase?",
+            "html": "dbpedia_464_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=XNU's development relies heavily on which programming paradigm?",
+            "html": "dbpedia_464_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are the benefits and drawbacks of using C++ for XNU?",
+            "html": "dbpedia_464_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_464_11.txt"
+        },
+        {
+            "file_id": "dbpedia_464_19.txt"
+        },
+        {
+            "file_id": "dbpedia_464_23.txt"
+        },
+        {
+            "file_id": "dbpedia_464_41.txt"
+        },
+        {
+            "file_id": "dbpedia_464_49.txt"
+        },
+        {
+            "file_id": "dbpedia_464_56.txt"
+        },
+        {
+            "file_id": "dbpedia_464_59.txt"
+        },
+        {
+            "file_id": "dbpedia_464_60.txt"
+        },
+        {
+            "file_id": "dbpedia_464_70.txt"
+        },
+        {
+            "file_id": "dbpedia_464_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nWhile the documents state that XNU uses a C++ API for writing drivers called IOKit, they don't explicitly say that the programming language of XNU itself is C++.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here's the evaluation in JSON format:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation:\n\nThe documents mention that \"XNU is a hybrid kernel combining the Mach kernel developed at Carnegie Mellon University with components from FreeBSD and a C++ API for writing drivers called IOKit.\" This implies that XNU has a C++ API, which supports the statement that the programming language of XNU is C++."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents do not state that the programming language used for XNU is C++. They describe XNU as a hybrid kernel combining the Mach kernel with components from FreeBSD, and mention an API called IOKit, but do not specify that it is written in C++."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {'output': 'yes'}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context, the documents mention that XNU uses a \"C++ API for writing drivers called IOKit.\" However, this does not imply that the entire kernel or core components of XNU are programmed in C++. Therefore, the statement \"The programming language of XNU is C++\" cannot be supported by the information provided.\n\nAnswer:\n```json\n{\"output\": \"no\"}\n```"
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n\nExplanation: The documents mention that XNU has a \"C++ API for writing drivers called IOKit\", but it does not explicitly state that the programming language of XNU is C++. It only mentions that C++ is used for writing drivers, which is a specific part of the kernel."
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "While XNU utilizes C++ for its IOKit driver API, the core kernel itself is primarily written in C.  Multiple sources explicitly mention the Mach kernel foundation and components derived from FreeBSD, both languages traditionally rooted in C.  \n\n\n\n\nLet me know if you have any other statements you'd like me to evaluate!",
+            "category": -1
+        },
+        "qwen2.5": {
+            "reason": "XNU primarily uses C for its implementation, not C++. While it does include a C++ API for writing drivers called IOKit, the majority of the kernel codebase is written in C.",
+            "category": -1
+        }
+    }
+}

@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Marcel_van_Eeden",
+    "predicate": "property/name",
+    "object": "Eeden, Marcel Van",
+    "human_readable": "The name of Marcel van Eeden is Eeden, Marcel Van.",
+    "questions": [
+        {
+            "score": 0.9707159399986267,
+            "question": "What is the surname of Marcel van Eeden?"
+        },
+        {
+            "score": 0.964831531047821,
+            "question": "What is the full name of Marcel van Eeden?"
+        },
+        {
+            "score": 0.9449968934059143,
+            "question": "What are the given names of Marcel van Eeden?"
+        },
+        {
+            "score": 0.895146369934082,
+            "question": "If someone only knew 'Eeden' as Marcel van Eeden's name, would they have the complete information?"
+        },
+        {
+            "score": 0.8928113579750061,
+            "question": "Is 'Eeden, Marcel Van' a possible way to represent his full name?"
+        },
+        {
+            "score": 0.8779222965240479,
+            "question": "What is the order of Marcel van Eeden's names?"
+        },
+        {
+            "score": 0.8555993437767029,
+            "question": "If you were to address Marcel van Eeden formally, what name would you use?"
+        },
+        {
+            "score": 0.6851940155029297,
+            "question": "How should Marcel van Eeden's name be written in formal settings?"
+        },
+        {
+            "score": 0.6731906533241272,
+            "question": "Why might it be important to know both the given and surname of a person like Marcel van Eeden?"
+        },
+        {
+            "score": 0.26368120312690735,
+            "question": "Which part of his name comes first, his given name or surname?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of Marcel van Eeden is Eeden, Marcel Van.",
+            "html": "dbpedia_2120_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Why might it be important to know both the given and surname of a person like Marcel van Eeden?",
+            "html": "dbpedia_2120_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How should Marcel van Eeden's name be written in formal settings?",
+            "html": "dbpedia_2120_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If you were to address Marcel van Eeden formally, what name would you use?",
+            "html": "dbpedia_2120_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2120_1.txt"
+        },
+        {
+            "file_id": "dbpedia_2120_105.txt"
+        },
+        {
+            "file_id": "dbpedia_2120_11.txt"
+        },
+        {
+            "file_id": "dbpedia_2120_2.txt"
+        },
+        {
+            "file_id": "dbpedia_2120_53.txt"
+        },
+        {
+            "file_id": "dbpedia_2120_57.txt"
+        },
+        {
+            "file_id": "dbpedia_2120_72.txt"
+        },
+        {
+            "file_id": "dbpedia_2120_80.txt"
+        },
+        {
+            "file_id": "dbpedia_2120_89.txt"
+        },
+        {
+            "file_id": "dbpedia_2120_94.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'} \n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here's the evaluation:\n\n* The triple to evaluate is \"Marcel Van Eeden\" as the artist's full name.\n* Based on the context information:\n\t+ In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2120/re-ranker-msmarco/57.txt, it says \"Marcel van Eeden is a Dutch artist, born on November 22, 1965.\"\n\t+ In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2120/re-ranker-msmarco/104.txt, it says \"Marcel van Eeden... (born in 1965 in The Hague, Netherlands)\"\n\t+ In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2120/re-ranker-msmarco/About the Author, it says \"Marcel van Eeden (born 22 November 1965, in The Hague, Netherlands)\"\n\nAll documents consistently refer to him as \"Marcel van Eeden\", not \"Eeden, Marcel Van\".\n\nTherefore, the answer is:\n```json\n{'output': 'no'}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nThe context information provided does not contain any reference to the name \"Eeden, Marcel Van\" or any related variations. It only mentions \"Marcel van Eeden.\" Therefore, based on the given documents, the statement is incorrect."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n    \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Marcel van Eeden's full name is already provided in the context as \"Marcel van Eeden.\"",
+            "category": 2
+        }
+    }
+}

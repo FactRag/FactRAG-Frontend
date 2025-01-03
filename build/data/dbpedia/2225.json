@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Arthur_Wagner",
+    "predicate": "ontology/almaMater",
+    "object": "resource/Eton_College",
+    "human_readable": "Arthur Wagner attended Eton College.",
+    "questions": [
+        {
+            "score": 0.9336745142936707,
+            "question": "Where did Arthur Wagner attend school?"
+        },
+        {
+            "score": 0.9054896235466003,
+            "question": "What prestigious institution did Arthur Wagner attend?"
+        },
+        {
+            "score": 0.8980750441551208,
+            "question": "What is the name of the school Arthur Wagner attended?"
+        },
+        {
+            "score": 0.8936869502067566,
+            "question": "Was Arthur Wagner a student?"
+        },
+        {
+            "score": 0.6395307183265686,
+            "question": "Name a school that Arthur Wagner might have gone to."
+        },
+        {
+            "score": 0.5601693391799927,
+            "question": "What type of students typically attend Eton College?"
+        },
+        {
+            "score": 0.38763922452926636,
+            "question": "What level of education is offered at Eton College?"
+        },
+        {
+            "score": 0.3374164402484894,
+            "question": "Is Eton College a secondary school?"
+        },
+        {
+            "score": 0.30124905705451965,
+            "question": "Eton College is known for what type of education?"
+        },
+        {
+            "score": 0.2959457039833069,
+            "question": "Can you tell me about the history of Eton College?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Arthur Wagner attended Eton College.",
+            "html": "dbpedia_2225_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Eton College is known for what type of education?",
+            "html": "dbpedia_2225_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Eton College a secondary school?",
+            "html": "dbpedia_2225_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What level of education is offered at Eton College?",
+            "html": "dbpedia_2225_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2225_125.txt"
+        },
+        {
+            "file_id": "dbpedia_2225_13.txt"
+        },
+        {
+            "file_id": "dbpedia_2225_24.txt"
+        },
+        {
+            "file_id": "dbpedia_2225_39.txt"
+        },
+        {
+            "file_id": "dbpedia_2225_4.txt"
+        },
+        {
+            "file_id": "dbpedia_2225_41.txt"
+        },
+        {
+            "file_id": "dbpedia_2225_49.txt"
+        },
+        {
+            "file_id": "dbpedia_2225_52.txt"
+        },
+        {
+            "file_id": "dbpedia_2225_67.txt"
+        },
+        {
+            "file_id": "dbpedia_2225_90.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the answer in the form of a structured JSON format:\n\n```\n{\n    \"output\": \"no\"\n}\n```\n\nExplanation: The information in the documents does not mention that Arthur Wagner attended Eton College. In fact, one of the documents mentions that Arthur Wagner found the classics uninteresting and graduated with a third in Literae humaniores from Balliol College, Oxford, but it does not mention Eton College at all."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents mention that Arthur Wagner \"attended Eton College and Balliol College, Oxford, on scholarships,\" which confirms that he did attend Eton College."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "the information from context 3 contradicts with context 1 and 2 where he attended Eton College.",
+            "category": 2
+        }
+    }
+}

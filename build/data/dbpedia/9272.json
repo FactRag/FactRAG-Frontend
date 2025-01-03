@@ -1,0 +1,144 @@
+{
+    "subject": "resource/PFFR",
+    "predicate": "ontology/hometown",
+    "object": "resource/United_States",
+    "human_readable": "PFFR is from United States.",
+    "questions": [
+        {
+            "score": 0.9587159156799316,
+            "question": "Is PFFR located in the United States?"
+        },
+        {
+            "score": 0.8990516066551208,
+            "question": "What is the significance of PFFR being from the United States?"
+        },
+        {
+            "score": 0.8498290181159973,
+            "question": "How might PFFR's origin in the United States influence its work?"
+        },
+        {
+            "score": 0.7926950454711914,
+            "question": "Are there any other organizations similar to PFFR from the United States?"
+        },
+        {
+            "score": 0.7711829543113708,
+            "question": "Where is PFFR from?"
+        },
+        {
+            "score": 0.6120221614837646,
+            "question": "What country is associated with PFFR?"
+        },
+        {
+            "score": 0.579081654548645,
+            "question": "Where might PFFR be based?"
+        },
+        {
+            "score": 0.5725245475769043,
+            "question": "What is known about PFFR's origins?"
+        },
+        {
+            "score": 0.40827009081840515,
+            "question": "Is there any information available about PFFR's activities?"
+        },
+        {
+            "score": 0.3825473189353943,
+            "question": "Can you tell me more about PFFR?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=PFFR is from United States.",
+            "html": "dbpedia_9272_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there any information available about PFFR's activities?",
+            "html": "dbpedia_9272_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is known about PFFR's origins?",
+            "html": "dbpedia_9272_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where might PFFR be based?",
+            "html": "dbpedia_9272_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_9272_16.txt"
+        },
+        {
+            "file_id": "dbpedia_9272_18.txt"
+        },
+        {
+            "file_id": "dbpedia_9272_25.txt"
+        },
+        {
+            "file_id": "dbpedia_9272_29.txt"
+        },
+        {
+            "file_id": "dbpedia_9272_37.txt"
+        },
+        {
+            "file_id": "dbpedia_9272_43.txt"
+        },
+        {
+            "file_id": "dbpedia_9272_47.txt"
+        },
+        {
+            "file_id": "dbpedia_9272_62.txt"
+        },
+        {
+            "file_id": "dbpedia_9272_63.txt"
+        },
+        {
+            "file_id": "dbpedia_9272_8.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nExplanation:\n\nThe context information mentions that the PFFR (band/art collective) has been based in Brooklyn, New York, USA. This implies that they are from the United States, but also specifies their location as Brooklyn, New York, which is a city within the country. However, when evaluating whether this supports the triple \"PFFR is from United States\", we should consider if the statement is an exhaustive and correct representation of PFFR's origin. The information provided does indeed indicate that PFFR is based in the United States, but there is no contradiction or evidence to suggest otherwise. However, given the context, it seems more accurate to evaluate this as 'no' because the original triple is too broad and could be interpreted as saying they are solely from the US (ignoring their Brooklyn, New York location), which isn't explicitly supported by the provided information."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents provide information that PFFR (P-F-R) is based in Brooklyn, New York, which is in the United States. Therefore, the statement \"PFFR is from United States\" is supported by the context provided."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {'output': 'yes'}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{\"output\": \"yes\"}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Background information states PFFR is a Brooklyn based electro-rock band/art collective.   Brooklyn is a borough of New York City, which is located in the United States.",
+            "category": 4
+        },
+        "llama3.1": {
+            "reason": "The context information states that PFFR is based in Brooklyn, New York, but does not specify the country as United States; the only reference to a specific country is COP=United States in section 4, which appears to be related to delivery/collection and not directly related to PFFR's origin.",
+            "category": 4
+        }
+    }
+}

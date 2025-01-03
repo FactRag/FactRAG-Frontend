@@ -1,0 +1,146 @@
+{
+    "subject": "Joseph_Warder",
+    "predicate": "wasBornIn",
+    "object": "Jeffersonville _Indiana",
+    "human_readable": "Joseph Warder was born in Jeffersonville, Indiana.",
+    "questions": [
+        {
+            "score": 0.912908136844635,
+            "question": "Where was Joseph Warder born?"
+        },
+        {
+            "score": 0.861804723739624,
+            "question": "What state was Joseph Warder born in?"
+        },
+        {
+            "score": 0.8109639883041382,
+            "question": "In what country was Joseph Warder born?"
+        },
+        {
+            "score": 0.8056395053863525,
+            "question": "What is the name of the city where Joseph Warder was born?"
+        },
+        {
+            "score": 0.7708221077919006,
+            "question": "What year was Joseph Warder born?"
+        },
+        {
+            "score": 0.6426016688346863,
+            "question": "Is there any historical significance associated with Joseph Warder's birthplace?"
+        },
+        {
+            "score": 0.39771130681037903,
+            "question": "Was Joseph Warder known for anything specific?"
+        },
+        {
+            "score": 0.37885618209838867,
+            "question": "Do you have any information about Joseph Warder's family?"
+        },
+        {
+            "score": 0.34872952103614807,
+            "question": "Can you tell me more about Joseph Warder?"
+        },
+        {
+            "score": 0.29539403319358826,
+            "question": "Is there anything else known about Joseph Warder's life?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Joseph Warder was born in Jeffersonville, Indiana.",
+            "html": "yago_15087_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about Joseph Warder?",
+            "html": "yago_15087_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Do you have any information about Joseph Warder's family?",
+            "html": "yago_15087_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Was Joseph Warder known for anything specific?",
+            "html": "yago_15087_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "yago_15087_12.txt"
+        },
+        {
+            "file_id": "yago_15087_19.txt"
+        },
+        {
+            "file_id": "yago_15087_27.txt"
+        },
+        {
+            "file_id": "yago_15087_30.txt"
+        },
+        {
+            "file_id": "yago_15087_42.txt"
+        },
+        {
+            "file_id": "yago_15087_54.txt"
+        },
+        {
+            "file_id": "yago_15087_60.txt"
+        },
+        {
+            "file_id": "yago_15087_62.txt"
+        },
+        {
+            "file_id": "yago_15087_71.txt"
+        },
+        {
+            "file_id": "yago_15087_75.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nLet me explain why: While the documents mention several individuals named \"Joseph Warder\", none of them are stated to have been born in Jeffersonville, Indiana.  The text describes Joseph Warder as having been born in Kentucky and later residing in various locations including Flemingsburg, Maysville, and possibly other areas within Kentucky. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "To evaluate the triple, I will search for information related to \"Joseph Warder\" and his birthplace.\n\nAfter reviewing the provided context information:\n\n* File_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/yago_15087/re-ranker-msmarco/27.txt contains a biography of Joseph W. Warder, born October 13, 1825, in Logan county, Kentucky.\n* No other file path mentions Joseph Warder's birthplace as Jeffersonville, Indiana.\n\nBased on this information:\n\n```\n{\n  \"output\": \"no\"\n}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe documents do not contain any information supporting the claim that Joseph Warder was born in Jeffersonville, Indiana. The relevant document mentions Luther F. Warder, who lived and worked in Jeffersonville, Indiana, but there is no mention of Joseph Warder's birthplace being Jeffersonville, Indiana."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Joseph Warder (born October 13, 1825) was born in Logan county, Kentucky, not Jeffersonville, Indiana. This is evident from the context provided.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Information provided states Luther F. Warder moved to Jeffersonville, Indiana when he was twenty years old at the start of the Civil War. It also states that Joseph Warder was born in Kentucky and married Ann Thomas a native of Tennessee.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "Joseph Warder (Rev. Joseph W. Warder) was born in Logan county, Kentucky, not Jeffersonville, Indiana.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information states that Joseph W. Warder was born on October 13, 1825, in Logan county, Kentucky, not in Jeffersonville, Indiana.",
+            "category": 2
+        }
+    }
+}

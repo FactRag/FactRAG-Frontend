@@ -1,0 +1,112 @@
+{
+    "subject": "resource/Gard\u0113z\u012b_Sadaat",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "Gard\u0113z\u012b Sadaat",
+    "human_readable": "Gard\u0113z\u012b Sadaat's full name is Gard\u0113z\u012b Sadaat.",
+    "questions": [
+        {
+            "score": 0.9884875416755676,
+            "question": "What is Gard\u0113z\u012b Sadaat's full name?"
+        },
+        {
+            "score": 0.9882518649101257,
+            "question": "Is 'Gard\u0113z\u012b Sadaat' a person's full name?"
+        },
+        {
+            "score": 0.9042736291885376,
+            "question": "Could you provide more information about Gard\u0113z\u012b Sadaat?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Gard\u0113z\u012b Sadaat's full name is Gard\u0113z\u012b Sadaat.",
+            "html": "dbpedia_588_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is 'Gard\u0113z\u012b Sadaat' a person's full name?",
+            "html": "dbpedia_588_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Gard\u0113z\u012b Sadaat's full name?",
+            "html": "dbpedia_588_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_588_12.txt"
+        },
+        {
+            "file_id": "dbpedia_588_17.txt"
+        },
+        {
+            "file_id": "dbpedia_588_18.txt"
+        },
+        {
+            "file_id": "dbpedia_588_22.txt"
+        },
+        {
+            "file_id": "dbpedia_588_23.txt"
+        },
+        {
+            "file_id": "dbpedia_588_27.txt"
+        },
+        {
+            "file_id": "dbpedia_588_28.txt"
+        },
+        {
+            "file_id": "dbpedia_588_3.txt"
+        },
+        {
+            "file_id": "dbpedia_588_5.txt"
+        },
+        {
+            "file_id": "dbpedia_588_6.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe provided text mentions \"Gard\u0113z\u012b Sadaat\" as a family name, but it doesn't state that the full name of  \"Gard\u0113z\u012b Sadaat\" is \"Gard\u0113z\u012b Sadaat\". This implies redundancy and makes the statement incorrect."
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nExplanation: The documents provide information about the Gard\u0113z\u012b Sadaat family and their origin from Gardez, Afghanistan. While they do not explicitly state \"Gard\u0113z\u012b Sadaat's full name is Gard\u0113z\u012b Sadaat,\" it can be reasonably inferred that the term refers to a family or lineage named after the place Gardez, supporting the statement in the query."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context, there isn't any information that specifies the \"full name\" of Gard\u0113z\u012b Sadaat beyond identifying them as a family and not an individual. Therefore, while the statement might be true in terms of redundancy (\"Gard\u0113z\u012b Sadaat's full name is Gard\u0113z\u012b Sadaat\") it doesn't provide any additional meaningful information that isn't already implied by the term itself.\n\nHowever, given we are asked to evaluate according to whether the documents support this triple:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe context provided does not give specific details about Gard\u0113z\u012b Sadaat having a \"full name\" in the sense queried. The information is more about their origin and historical significance rather than naming conventions or details regarding full names of the family entity."
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Context information states \"The Gard\u0113z\u012b Sadaat (Persian: \u06af\u0631\u062f\u06cc\u0632 \u0633\u0627\u062f\u0629) is a Sadaat Muslim family of Sayyid from Gardez, Afghanistan; consequently known as \u2018Gard\u0113z\u012b Sadaat\u2019 in South Asia.\"",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because the context suggests that Gard\u0113z\u012b Sadaat is a family name or surname, but \"Gard\u0113z\u012b Sadaat\" itself appears to be the full name of a specific Sadaat Muslim family.",
+            "category": 2
+        }
+    }
+}

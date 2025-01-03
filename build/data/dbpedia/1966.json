@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Hirotoshi_Masui",
+    "predicate": "ontology/birthDate",
+    "object": "1984-06-25",
+    "human_readable": "Hirotoshi Masui was born on June 25, 1984.",
+    "questions": [
+        {
+            "score": 0.8925077319145203,
+            "question": "When was Hirotoshi Masui born?"
+        },
+        {
+            "score": 0.790382981300354,
+            "question": "What is Hirotoshi Masui's birth date?"
+        },
+        {
+            "score": 0.7598013281822205,
+            "question": "What month was Hirotoshi Masui born in?"
+        },
+        {
+            "score": 0.7498147487640381,
+            "question": "What day of the week was Hirotoshi Masui born on?"
+        },
+        {
+            "score": 0.6495769619941711,
+            "question": "How old is Hirotoshi Masui?"
+        },
+        {
+            "score": 0.5238203406333923,
+            "question": "In what year did Hirotoshi Masui come into the world?"
+        },
+        {
+            "score": 0.4849453568458557,
+            "question": "Is Hirotoshi Masui's birthday in spring or summer?"
+        },
+        {
+            "score": 0.45063576102256775,
+            "question": "If Hirotoshi Masui's birthday were tomorrow, how old would he be?"
+        },
+        {
+            "score": 0.4192800521850586,
+            "question": "What is Hirotoshi Masui's age in months?"
+        },
+        {
+            "score": 0.37898167967796326,
+            "question": "If today is October 26th, 2023, how many days have passed since Hirotoshi Masui's birth?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Hirotoshi Masui was born on June 25, 1984.",
+            "html": "dbpedia_1966_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Hirotoshi Masui's age in months?",
+            "html": "dbpedia_1966_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If Hirotoshi Masui's birthday were tomorrow, how old would he be?",
+            "html": "dbpedia_1966_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Hirotoshi Masui's birthday in spring or summer?",
+            "html": "dbpedia_1966_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1966_1.txt"
+        },
+        {
+            "file_id": "dbpedia_1966_11.txt"
+        },
+        {
+            "file_id": "dbpedia_1966_20.txt"
+        },
+        {
+            "file_id": "dbpedia_1966_23.txt"
+        },
+        {
+            "file_id": "dbpedia_1966_39.txt"
+        },
+        {
+            "file_id": "dbpedia_1966_42.txt"
+        },
+        {
+            "file_id": "dbpedia_1966_44.txt"
+        },
+        {
+            "file_id": "dbpedia_1966_53.txt"
+        },
+        {
+            "file_id": "dbpedia_1966_64.txt"
+        },
+        {
+            "file_id": "dbpedia_1966_71.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents do not contain any information that supports the claim that Hirotoshi Masui was born on June 25, 1984. Instead, they state that he was born on July 22, 1976."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}\n\nThe provided documents contain information about a person named Hirotoshi Masui who is identified as being born on June 25, 1984. Although the context includes two individuals with similar names or aliases (one being an actor born in Tokyo and another being a baseball player), the specific birth date of June 25, 1984 matches the details given for Hirotoshi Masui who is described as a Japanese professional baseball pitcher. Therefore, the information provided supports the statement that \"Hirotoshi Masui was born on June 25, 1984.\""
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Several entries consistently state his birthdate as July 22, 1976.  Additionally, entries 4 and 6 provide biographical details about him as a baseball player, including his career dates (2010-2022), which conflicts with the stated birthdate of June 25, 1984.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "the birthdate information provided for Hirotoshi Masui varies across different contexts, with some sources listing July 22, 1976, and others listing June 25, 1984. This discrepancy suggests that the later birthdate might be incorrect, as it contradicts more consistent information in other sources.",
+            "category": 2
+        }
+    }
+}

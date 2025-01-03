@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Phase_One_(company)",
+    "predicate": "ontology/subsidiary",
+    "object": "resource/Mamiya",
+    "human_readable": "Phase One is a subsidiary of Mamiya.",
+    "questions": [
+        {
+            "score": 0.9069138765335083,
+            "question": "Is Mamiya the parent company of Phase One?"
+        },
+        {
+            "score": 0.8005293607711792,
+            "question": "What company is Phase One a subsidiary of?"
+        },
+        {
+            "score": 0.7914517521858215,
+            "question": "Are there any other subsidiaries of Mamiya?"
+        },
+        {
+            "score": 0.7645907998085022,
+            "question": "What is the relationship between Mamiya and Phase One?"
+        },
+        {
+            "score": 0.5754027366638184,
+            "question": "What are some well-known brands in the photography industry besides Mamiya and Phase One?"
+        },
+        {
+            "score": 0.5675799250602722,
+            "question": "Who owns Phase One?"
+        },
+        {
+            "score": 0.5661931037902832,
+            "question": "What type of company is Phase One?"
+        },
+        {
+            "score": 0.3446263074874878,
+            "question": "What products or services does Phase One offer?"
+        },
+        {
+            "score": 0.2132052481174469,
+            "question": "Is Phase One involved in the photography industry?"
+        },
+        {
+            "score": 0.19316008687019348,
+            "question": "Does Mamiya manufacture cameras?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Phase One is a subsidiary of Mamiya.",
+            "html": "dbpedia_8221_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Phase One involved in the photography industry?",
+            "html": "dbpedia_8221_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What products or services does Phase One offer?",
+            "html": "dbpedia_8221_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of company is Phase One?",
+            "html": "dbpedia_8221_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8221_15.txt"
+        },
+        {
+            "file_id": "dbpedia_8221_19.txt"
+        },
+        {
+            "file_id": "dbpedia_8221_24.txt"
+        },
+        {
+            "file_id": "dbpedia_8221_3.txt"
+        },
+        {
+            "file_id": "dbpedia_8221_48.txt"
+        },
+        {
+            "file_id": "dbpedia_8221_50.txt"
+        },
+        {
+            "file_id": "dbpedia_8221_56.txt"
+        },
+        {
+            "file_id": "dbpedia_8221_71.txt"
+        },
+        {
+            "file_id": "dbpedia_8221_75.txt"
+        },
+        {
+            "file_id": "dbpedia_8221_8.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here's the structured JSON response:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation:\n\nThe documents provide evidence that Phase One and Mamiya have a close relationship, with Phase One investing in Mamiya in 2009 and becoming a 45% shareholder. In fact, one document even describes Mamiya as \"'a Phase One company'\" on its global website. Additionally, the acquisition of Mamiya Digital Imaging Company Ltd by Phase One is mentioned in several documents, which further supports the notion that Phase One has taken control of Mamiya.\n\nTherefore, based on this information, it can be concluded that Phase One is indeed a subsidiary of Mamiya."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents provided do not indicate that Phase One is a subsidiary of Mamiya. Instead, the information suggests that Phase One made significant investments and acquisitions related to Mamiya, including becoming a major shareholder and then acquiring full ownership through an add-on acquisition."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Phase One made a significant financial investment in Mamiya, but it did not state that Phase One is a subsidiary of Mamiya. Instead, the relationship between the two companies appears to be one of partnership, with joint ownership and collaboration in product development and manufacturing processes.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Several pieces of information state that Phase One acquired Mamiya, making Mamiya a subsidiary of Phase One, not the other way around.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Phase One made a significant financial investment in Mamiya Digital Imaging, becoming a major shareholder and later acquiring its assets, not the other way around. This indicates that Mamiya is now under Phase One's control, making it inaccurate to say Phase One is a subsidiary of Mamiya.",
+            "category": 2
+        }
+    }
+}

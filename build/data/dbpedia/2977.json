@@ -1,0 +1,114 @@
+{
+    "subject": "resource/Matthew_McDonough",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "Matthew McDonough",
+    "human_readable": "Matthew McDonough's label is Matthew McDonough.",
+    "questions": [
+        {
+            "score": 0.979332447052002,
+            "question": "What is Matthew McDonough's label?"
+        },
+        {
+            "score": 0.9644804000854492,
+            "question": "Is Matthew McDonough a person?"
+        },
+        {
+            "score": 0.7788016200065613,
+            "question": "Can you tell me more about Matthew McDonough?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Matthew McDonough's label is Matthew McDonough.",
+            "html": "dbpedia_2977_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Matthew McDonough a person?",
+            "html": "dbpedia_2977_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Matthew McDonough's label?",
+            "html": "dbpedia_2977_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2977_1.txt"
+        },
+        {
+            "file_id": "dbpedia_2977_103.txt"
+        },
+        {
+            "file_id": "dbpedia_2977_2.txt"
+        },
+        {
+            "file_id": "dbpedia_2977_28.txt"
+        },
+        {
+            "file_id": "dbpedia_2977_56.txt"
+        },
+        {
+            "file_id": "dbpedia_2977_60.txt"
+        },
+        {
+            "file_id": "dbpedia_2977_69.txt"
+        },
+        {
+            "file_id": "dbpedia_2977_79.txt"
+        },
+        {
+            "file_id": "dbpedia_2977_86.txt"
+        },
+        {
+            "file_id": "dbpedia_2977_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}  \n"
+        },
+        "llama3.1": {
+            "short_ans": -1,
+            "full_ans": "Based on the context information provided, I will evaluate whether the statement \"Matthew McDonough's label is Matthew McDonough\" is correct or not.\n\nHere's my evaluation:\n\nThe first document mentions \"MjDawn\" as a wide-ranging artist, but it does not mention Matthew McDonough. \n\nThe second and fourth documents mention Matthew McDonough, but they do not provide any information about his labels.\n\nThe third document mentions Matthew McDonough, but it states that he is currently working as the Vice President of Sales & Operations for System Loco, which is a company name, not a label.\n\nHowever, the fifth document does not contain enough context to evaluate the statement."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe documents do not provide any information to support the statement that Matthew McDonough's label is Matthew McDonough. The documents mention his work with bands and his current professional role but do not indicate a \"label\" in the context of a music record label or other such entity."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n      \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "A person cannot be his own label. Matthew McDonough is a person, not a record label.",
+            "category": 4
+        },
+        "gemma2": {
+            "reason": "The provided text describes Matthew McDonough as an artist, musician, and business professional. There is no mention of him having a record label or being associated with one.",
+            "category": 4
+        },
+        "llama3.1": {
+            "reason": "It appears to be self-referential and tautological, as \"Matthew McDonough\" being his own label implies a non-standard or nonsensical concept.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context clearly identifies Matthew McDonough by his full name as \"Matthew McDonough\" throughout, and there is no information suggesting he has a different label or alias.",
+            "category": 2
+        }
+    }
+}

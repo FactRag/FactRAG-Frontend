@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Kano_(Mortal_Kombat)",
+    "predicate": "http://xmlns.com/foaf/0.1/isPrimaryTopicOf",
+    "object": "http://en.wikipedia.org/wiki/Kano_(Mortal_Kombat)",
+    "human_readable": "Kano is the primary topic of the Wikipedia article.",
+    "questions": [
+        {
+            "score": 0.8686133027076721,
+            "question": "Is there information about Kano's significance in the article?"
+        },
+        {
+            "score": 0.8528197407722473,
+            "question": "How comprehensive is the Wikipedia article about Kano?"
+        },
+        {
+            "score": 0.7816543579101562,
+            "question": "What is the main subject of the Wikipedia article?"
+        },
+        {
+            "score": 0.7251867651939392,
+            "question": "What type of content does the Wikipedia article about Kano likely contain?"
+        },
+        {
+            "score": 0.6594571471214294,
+            "question": "Does the Wikipedia article mention any controversies related to Kano?"
+        },
+        {
+            "score": 0.5658844709396362,
+            "question": "What are some keywords associated with Kano based on the article title?"
+        },
+        {
+            "score": 0.48782798647880554,
+            "question": "Where would you find more detailed information about Kano?"
+        },
+        {
+            "score": 0.4629041254520416,
+            "question": "What are some important aspects related to Kano?"
+        },
+        {
+            "score": 0.4084162414073944,
+            "question": "Can you tell me something about Kano's history?"
+        },
+        {
+            "score": 0.27956798672676086,
+            "question": "Is Kano a person, place, or thing?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Kano is the primary topic of the Wikipedia article.",
+            "html": "dbpedia_1475_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me something about Kano's history?",
+            "html": "dbpedia_1475_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some important aspects related to Kano?",
+            "html": "dbpedia_1475_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where would you find more detailed information about Kano?",
+            "html": "dbpedia_1475_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1475_11.txt"
+        },
+        {
+            "file_id": "dbpedia_1475_31.txt"
+        },
+        {
+            "file_id": "dbpedia_1475_33.txt"
+        },
+        {
+            "file_id": "dbpedia_1475_34.txt"
+        },
+        {
+            "file_id": "dbpedia_1475_46.txt"
+        },
+        {
+            "file_id": "dbpedia_1475_6.txt"
+        },
+        {
+            "file_id": "dbpedia_1475_73.txt"
+        },
+        {
+            "file_id": "dbpedia_1475_90.txt"
+        },
+        {
+            "file_id": "dbpedia_1475_97.txt"
+        },
+        {
+            "file_id": "dbpedia_1475_98.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the context information provided, here's my evaluation:\n\nThe triple to be evaluated is: \"Kano is the primary topic of the Wikipedia article.\"\n\nUpon reviewing the documents, I find that there are multiple mentions of Kano, but none of them explicitly state that it is the primary topic of a Wikipedia article. However, one document (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1475/re-ranker-msmarco/93.txt) does mention that \"You can read more in Wikipedia\" about Kano's significance and Islamic identity.\n\nGiven this information, I would say that the statement is not directly supported by the documents. Therefore:\n\n`{ 'output': 'no' }`"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe context information mentions multiple documents related to Kano, including its urban settlement and cultural identity. While there isn't a direct reference to a specific Wikipedia article for Kano, the repeated mention of Kano's various aspects (e.g., urban development, Islamic history, cultural preservation, political unity) strongly supports the idea that Kano is indeed the primary topic discussed in these documents, which are likely derived from or related to a broader discussion on Kano."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context, there is no mention or indication that \"Kano\" is the primary topic of a specific Wikipedia article. The snippets discuss aspects related to Kano, such as its identity, Islamic traditions, and cultural preservation but do not establish it as being the main subject of any particular Wikipedia page.\n\nTherefore, the response should be:\n\n{'output': 'no'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The provided context does not explicitly state or imply that Kano is the primary topic of a Wikipedia article. Instead, it provides information about various aspects related to Kano, such as its history, culture, and the Kano model, but there's no direct mention of a Wikipedia article about Kano.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "Kano is actually the name of a city, not an article topic itself. The context information suggests that there are multiple articles and sources related to Kano, but it does not imply that \"Kano\" is the primary topic of a Wikipedia article.",
+            "category": 2
+        }
+    }
+}

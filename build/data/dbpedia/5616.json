@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Julia_Roberts",
+    "predicate": "property/wordnet_type",
+    "object": "http://www.w3.org/2006/03/wn/wn20/instances/synset-actor-noun-1",
+    "human_readable": "Julia Roberts is an actor.",
+    "questions": [
+        {
+            "score": 0.8442237973213196,
+            "question": "In what type of movies has Julia Roberts starred?"
+        },
+        {
+            "score": 0.82268226146698,
+            "question": "What is one famous role played by Julia Roberts?"
+        },
+        {
+            "score": 0.7379420399665833,
+            "question": "What is the name of one movie starring Julia Roberts?"
+        },
+        {
+            "score": 0.7251230478286743,
+            "question": "Is acting Julia Roberts's only career?"
+        },
+        {
+            "score": 0.6470364928245544,
+            "question": "What profession is Julia Roberts known for?"
+        },
+        {
+            "score": 0.5972106456756592,
+            "question": "Is Julia Roberts a musician?"
+        },
+        {
+            "score": 0.5713583827018738,
+            "question": "Has Julia Roberts appeared in any television shows?"
+        },
+        {
+            "score": 0.5483130812644958,
+            "question": "Has Julia Roberts won any awards for her acting?"
+        },
+        {
+            "score": 0.4756341874599457,
+            "question": "Is Julia Roberts a well-known public figure?"
+        },
+        {
+            "score": 0.26374551653862,
+            "question": "What is Julia Roberts's primary area of expertise?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Julia Roberts is an actor.",
+            "html": "dbpedia_5616_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Julia Roberts a well-known public figure?",
+            "html": "dbpedia_5616_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Has Julia Roberts won any awards for her acting?",
+            "html": "dbpedia_5616_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Has Julia Roberts appeared in any television shows?",
+            "html": "dbpedia_5616_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5616_1.txt"
+        },
+        {
+            "file_id": "dbpedia_5616_103.txt"
+        },
+        {
+            "file_id": "dbpedia_5616_114.txt"
+        },
+        {
+            "file_id": "dbpedia_5616_16.txt"
+        },
+        {
+            "file_id": "dbpedia_5616_37.txt"
+        },
+        {
+            "file_id": "dbpedia_5616_4.txt"
+        },
+        {
+            "file_id": "dbpedia_5616_49.txt"
+        },
+        {
+            "file_id": "dbpedia_5616_58.txt"
+        },
+        {
+            "file_id": "dbpedia_5616_59.txt"
+        },
+        {
+            "file_id": "dbpedia_5616_86.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have any other triples to evaluate! \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the context information provided, here's the evaluation of the triple:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents contain multiple descriptions of Julia Roberts as an actress, which supports the statement that she is an actor."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```"
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n    \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Julia Roberts is not an actor but an actress. In the film industry, female performers are referred to as actresses, while male performers are called actors.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Multiple passages describe her as an actress, highlighting her film roles and accolades within the acting industry.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because the context information explicitly states that Julia Roberts is an actress.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Julia Roberts is explicitly described as an actress throughout the provided context, not an actor. In acting, there is typically a distinction where \"actor\" refers to male performers and \"actress\" to female performers. Since Julia Roberts' gender is female, she is correctly referred to as an actress in the given information.",
+            "category": 2
+        }
+    }
+}

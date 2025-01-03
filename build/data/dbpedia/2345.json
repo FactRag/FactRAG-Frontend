@@ -1,0 +1,152 @@
+{
+    "subject": "resource/Grigoriy_Rechkalov",
+    "predicate": "property/placeofburial",
+    "object": "cemetery of settlement Bobrovskiy, Sysertskiy DC",
+    "human_readable": "Grigoriy Rechkalov was buried in the cemetery of settlement Bobrovskiy, Sysertskiy DC.",
+    "questions": [
+        {
+            "score": 0.9861621856689453,
+            "question": "Where in Sysertskiy DC was Grigoriy Rechkalov buried?"
+        },
+        {
+            "score": 0.9672661423683167,
+            "question": "What is the name of the settlement where Grigoriy Rechkalov was buried?"
+        },
+        {
+            "score": 0.9655673503875732,
+            "question": "Where was Grigoriy Rechkalov buried?"
+        },
+        {
+            "score": 0.9254406690597534,
+            "question": "Is there a specific cemetery associated with Grigoriy Rechkalov?"
+        },
+        {
+            "score": 0.8935773968696594,
+            "question": "What information can you tell me about the location of Grigoriy Rechkalov's burial?"
+        },
+        {
+            "score": 0.8880884051322937,
+            "question": "Which cemetery is located in Bobrovskiy settlement?"
+        },
+        {
+            "score": 0.7483915686607361,
+            "question": "In which district was Bobrovskiy cemetery located?"
+        },
+        {
+            "score": 0.7077694535255432,
+            "question": "Is there a connection between Grigoriy Rechkalov and the Sysertskiy district?"
+        },
+        {
+            "score": 0.5103598833084106,
+            "question": "What type of place was Bobrovskiy?"
+        },
+        {
+            "score": 0.33871862292289734,
+            "question": "Can you name the location where Grigoriy Rechkalov's final resting place is?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Grigoriy Rechkalov was buried in the cemetery of settlement Bobrovskiy, Sysertskiy DC.",
+            "html": "dbpedia_2345_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of place was Bobrovskiy?",
+            "html": "dbpedia_2345_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there a connection between Grigoriy Rechkalov and the Sysertskiy district?",
+            "html": "dbpedia_2345_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In which district was Bobrovskiy cemetery located?",
+            "html": "dbpedia_2345_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2345_12.txt"
+        },
+        {
+            "file_id": "dbpedia_2345_13.txt"
+        },
+        {
+            "file_id": "dbpedia_2345_24.txt"
+        },
+        {
+            "file_id": "dbpedia_2345_30.txt"
+        },
+        {
+            "file_id": "dbpedia_2345_37.txt"
+        },
+        {
+            "file_id": "dbpedia_2345_44.txt"
+        },
+        {
+            "file_id": "dbpedia_2345_5.txt"
+        },
+        {
+            "file_id": "dbpedia_2345_64.txt"
+        },
+        {
+            "file_id": "dbpedia_2345_71.txt"
+        },
+        {
+            "file_id": "dbpedia_2345_8.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": -1,
+            "full_ans": "Grigoriy Rechkalov was laid to rest in Moscow's Troyekurovskoye Cemetery. \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "**Repeat**\n\n{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe provided context does not mention any information about Grigoriy Rechkalov being buried in a specific cemetery. The text states that he is buried in the Troyekurovskom cemetery, which contradicts the given triple."
+        },
+        "mistral": {
+            "short_ans": -1,
+            "full_ans": " The information provided does not specify whether Grigoriy Rechkalov was buried in the cemetery of settlement Bobrovskiy, Sysertskiy DC."
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{\"output\": \"no\"}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "Yes."
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Trofimov, the subject discussed earlier, is buried in the Troyekurovskom cemetery, not Rechkalov.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "It contradicts the provided information stating that Rechkalov was buried in the Troyekurovskoye cemetery in Moscow.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "It contradicts the information provided that states he was buried in Bobrovskoy, Sysert district of Sverdlovsk region, not settlement Bobrovskiy.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The provided context does not mention any burial location for Grigoriy Rechkalov, and based on the information given about his death and where he lived, it states that he is buried in the Troyekurovskom cemetery in Moscow.",
+            "category": 2
+        }
+    }
+}

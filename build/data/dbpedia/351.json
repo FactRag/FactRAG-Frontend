@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Horseshoes_(film)",
+    "predicate": "property/wordnet_type",
+    "object": "http://www.w3.org/2006/03/wn/wn20/instances/synset-movie-noun-1",
+    "human_readable": "The type of Horseshoes (film) is a movie.",
+    "questions": [
+        {
+            "score": 0.9131017923355103,
+            "question": "What genre is the movie 'Horseshoes'?"
+        },
+        {
+            "score": 0.8829085826873779,
+            "question": "Who directed the film 'Horseshoes'?"
+        },
+        {
+            "score": 0.8570974469184875,
+            "question": "Is 'Horseshoes' a documentary?"
+        },
+        {
+            "score": 0.8199582099914551,
+            "question": "Is there a sequel to the movie 'Horseshoes'?"
+        },
+        {
+            "score": 0.8089412450790405,
+            "question": "What actors are in the movie 'Horseshoes'?"
+        },
+        {
+            "score": 0.6921464204788208,
+            "question": "What year was the movie 'Horseshoes' released?"
+        },
+        {
+            "score": 0.5621069669723511,
+            "question": "Has the movie 'Horseshoes' won any awards?"
+        },
+        {
+            "score": 0.5487217307090759,
+            "question": "What type of work is 'Horseshoes'?"
+        },
+        {
+            "score": 0.5048257112503052,
+            "question": "Where was 'Horseshoes' filmed?"
+        },
+        {
+            "score": 0.3492312729358673,
+            "question": "Could 'Horseshoes' be considered fiction?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The type of Horseshoes (film) is a movie.",
+            "html": "dbpedia_351_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where was 'Horseshoes' filmed?",
+            "html": "dbpedia_351_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of work is 'Horseshoes'?",
+            "html": "dbpedia_351_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Has the movie 'Horseshoes' won any awards?",
+            "html": "dbpedia_351_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_351_109.txt"
+        },
+        {
+            "file_id": "dbpedia_351_28.txt"
+        },
+        {
+            "file_id": "dbpedia_351_33.txt"
+        },
+        {
+            "file_id": "dbpedia_351_39.txt"
+        },
+        {
+            "file_id": "dbpedia_351_41.txt"
+        },
+        {
+            "file_id": "dbpedia_351_42.txt"
+        },
+        {
+            "file_id": "dbpedia_351_53.txt"
+        },
+        {
+            "file_id": "dbpedia_351_65.txt"
+        },
+        {
+            "file_id": "dbpedia_351_69.txt"
+        },
+        {
+            "file_id": "dbpedia_351_81.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "The query is whether the information in the documents supports the triple \"The type of Horseshoes (film) is a movie.\"\n\nUpon reviewing the documents, I see that there are several mentions of a film called \"Horseshoes\" (1923), which includes details such as director, cast, and genres. Specifically:\n\n* The document with file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_351/re-ranker-msmarco/67.txt mentions that the movie is a \"Silent film\" and also lists it under various genres such as \"Comedy\", \"Short\".\n* Later in the same document, there are multiple references to the movie being related to other films and actors, further solidifying its classification as a movie.\n\nBased on this analysis, I can confidently conclude that the information in the documents supports the triple \"The type of Horseshoes (film) is a movie.\"\n\nTherefore, the final answer is:\n\n`{'output': 'yes'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\nThe documents provide information about the film \"Horseshoes\" including its release year, cast, and genre. Specifically, it mentions that Larry Semon directed the 1923 silent comedy short film \"Horseshoes,\" which aligns with the query stating that \"Horseshoes (film) is a movie.\" Therefore, the information supports the triple."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Julia_Roberts",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:Actresses_from_Atlanta,_Georgia",
+    "human_readable": "Julia Roberts is subject to Category: Actresses from Atlanta, Georgia.",
+    "questions": [
+        {
+            "score": 0.8334323763847351,
+            "question": "Is Julia Roberts an actress?"
+        },
+        {
+            "score": 0.7415311932563782,
+            "question": "What category does Julia Roberts belong to?"
+        },
+        {
+            "score": 0.7238353490829468,
+            "question": "Where is Julia Roberts from?"
+        },
+        {
+            "score": 0.6834640502929688,
+            "question": "List some famous actresses from Atlanta, Georgia."
+        },
+        {
+            "score": 0.6527429819107056,
+            "question": "Name a city associated with Julia Roberts."
+        },
+        {
+            "score": 0.6439574956893921,
+            "question": "Can you name a popular actress who hails from Atlanta?"
+        },
+        {
+            "score": 0.603790283203125,
+            "question": "What profession is associated with Julia Roberts?"
+        },
+        {
+            "score": 0.4844353199005127,
+            "question": "What is Julia Roberts known for?"
+        },
+        {
+            "score": 0.41671475768089294,
+            "question": "Where was Julia Roberts born?"
+        },
+        {
+            "score": 0.3962487280368805,
+            "question": "What is the nationality of Julia Roberts?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Julia Roberts is subject to Category: Actresses from Atlanta, Georgia.",
+            "html": "dbpedia_5614_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where was Julia Roberts born?",
+            "html": "dbpedia_5614_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Julia Roberts known for?",
+            "html": "dbpedia_5614_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What profession is associated with Julia Roberts?",
+            "html": "dbpedia_5614_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5614_148.txt"
+        },
+        {
+            "file_id": "dbpedia_5614_160.txt"
+        },
+        {
+            "file_id": "dbpedia_5614_30.txt"
+        },
+        {
+            "file_id": "dbpedia_5614_34.txt"
+        },
+        {
+            "file_id": "dbpedia_5614_36.txt"
+        },
+        {
+            "file_id": "dbpedia_5614_37.txt"
+        },
+        {
+            "file_id": "dbpedia_5614_43.txt"
+        },
+        {
+            "file_id": "dbpedia_5614_45.txt"
+        },
+        {
+            "file_id": "dbpedia_5614_46.txt"
+        },
+        {
+            "file_id": "dbpedia_5614_56.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple:\n\n`{ \"output\": \"no\" }`\n\nThe reason for this answer is that according to the provided documents, Julia Roberts' birthplace is Smyrna, Georgia (not Atlanta), and she has been classified under Category: Actresses from Georgia (not Atlanta, Georgia)."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\n**Explanation:** The documents provide information about Julia Roberts being an American actress born in Atlanta, Georgia. While the specific category \"Actresses from Atlanta, Georgia\" is not mentioned, the context indicates that she is indeed an actress from Atlanta, making it reasonable to infer that such a category exists and could apply to her."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, there is no specific mention that Julia Roberts falls under the category \"Actresses from Atlanta, Georgia.\" However, it mentions she was born in Smyrna, Georgia, which could imply a connection if Smyrna is considered part of or closely associated with Atlanta. Nevertheless, none of the documents explicitly state that she belongs to the category \"Actresses from Atlanta, Georgia.\"\n\nTherefore, the answer would be:\n\n{\"output\": \"no\"}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Context states she was born in Smyrna, Georgia.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "Julia Roberts was born in Smyrna, Georgia, not Atlanta, Georgia.",
+            "category": 2
+        }
+    }
+}

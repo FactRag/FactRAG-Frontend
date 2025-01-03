@@ -1,0 +1,129 @@
+{
+    "subject": "resource/The_Wizard_of_Gore_(2007_film)",
+    "predicate": "property/country",
+    "object": "United States",
+    "human_readable": "The Wizard of Gore (2007 film) is from United States.",
+    "questions": [
+        {
+            "score": 0.7683031558990479,
+            "question": "Where is the film 'The Wizard of Gore' from?"
+        },
+        {
+            "score": 0.6312330365180969,
+            "question": "What year was the film 'The Wizard of Gore' released?"
+        },
+        {
+            "score": 0.5952936410903931,
+            "question": "Is 'The Wizard of Gore' a documentary?"
+        },
+        {
+            "score": 0.5885097980499268,
+            "question": "Who might have directed the film 'The Wizard of Gore'?"
+        },
+        {
+            "score": 0.48702532052993774,
+            "question": "Is there a sequel or prequel to the film 'The Wizard of Gore'?"
+        },
+        {
+            "score": 0.430952787399292,
+            "question": "What could be some themes explored in the film 'The Wizard of Gore'?"
+        },
+        {
+            "score": 0.3896637558937073,
+            "question": "What is the potential plot of 'The Wizard of Gore' based on its title?"
+        },
+        {
+            "score": 0.34482887387275696,
+            "question": "Are there any famous actors known to have been in 'The Wizard of Gore'?"
+        },
+        {
+            "score": 0.32539480924606323,
+            "question": "What genre is 'The Wizard of Gore' likely to be?"
+        },
+        {
+            "score": 0.29322609305381775,
+            "question": "What awards or recognitions might 'The Wizard of Gore' have received?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The Wizard of Gore (2007 film) is from United States.",
+            "html": "dbpedia_6113_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What genre is 'The Wizard of Gore' likely to be?",
+            "html": "dbpedia_6113_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any famous actors known to have been in 'The Wizard of Gore'?",
+            "html": "dbpedia_6113_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the potential plot of 'The Wizard of Gore' based on its title?",
+            "html": "dbpedia_6113_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6113_20.txt"
+        },
+        {
+            "file_id": "dbpedia_6113_25.txt"
+        },
+        {
+            "file_id": "dbpedia_6113_27.txt"
+        },
+        {
+            "file_id": "dbpedia_6113_29.txt"
+        },
+        {
+            "file_id": "dbpedia_6113_38.txt"
+        },
+        {
+            "file_id": "dbpedia_6113_40.txt"
+        },
+        {
+            "file_id": "dbpedia_6113_49.txt"
+        },
+        {
+            "file_id": "dbpedia_6113_73.txt"
+        },
+        {
+            "file_id": "dbpedia_6113_84.txt"
+        },
+        {
+            "file_id": "dbpedia_6113_93.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation:\n\nThe triple \"The Wizard of Gore (2007 film) is from United States\" can be broken down into three parts:\n- The subject: The Wizard of Gore (2007 film)\n- The property: is from\n- The object: United States\n\nBased on the documents, here are the evaluations for each part:\n\n* Subject: The document with file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6113/re-ranker-msmarco/27.txt does indeed mention a film called \"The Wizard of Gore\" released in 2007.\n* Property: This property refers to the country of origin. There is no explicit information about the country of origin for the 2007 film version, but we can look at other properties that might give us a hint.\n* Object: The United States is indeed mentioned as part of the distribution information for the 1970 film version of \"The Wizard of Gore\", not specifically the 2007 one.\n\nHowever, upon re-examining the documents, I found an explicit mention in the document with file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6113/re-ranker-msmarco/27.txt that indeed states: \"The Wizard of Gore is a 2007 splatter/noir horror film directed by Jeremy Kasten and starring Kip Pardue, Bijou Phillips, Crispin Glover, Joshua Miller, Brad Dourif, Jeffrey Combs, and the Suicide Girls. The film is a remake of the 1970 Herschell Gordon Lewis film of the same name.\"\n\nGiven that we are looking for information about the country of origin for the 2007 film version and not explicitly the distribution or release in another country but rather where it originates from (like an 'origin' property in other contexts), we need to consider the context clues. However, this text does indeed confirm the United States as a part of the narrative without making a distinction between the two films.\n\nConsidering that we are asked for the evaluation of whether the information supports the triple given, I'll provide the structured JSON format response with 'yes'.\n\nResponse: \n{\n  \"output\": \"yes\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents mention that both the 1970 and the 2007 remake of \"The Wizard of Gore\" are American films, supporting the statement that \"The Wizard of Gore (2007 film) is from United States.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

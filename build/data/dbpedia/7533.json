@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Karl_Marx",
+    "predicate": "ontology/influencedBy",
+    "object": "resource/Adam_Smith",
+    "human_readable": "Karl Marx was influenced by Adam Smith.",
+    "questions": [
+        {
+            "score": 0.8469338417053223,
+            "question": "Who influenced Karl Marx?"
+        },
+        {
+            "score": 0.801726758480072,
+            "question": "How did Adam Smith's work impact Karl Marx's thinking?"
+        },
+        {
+            "score": 0.7110150456428528,
+            "question": "Did Karl Marx agree with Adam Smith's ideas?"
+        },
+        {
+            "score": 0.6866562962532043,
+            "question": "What is the relationship between Karl Marx and Adam Smith?"
+        },
+        {
+            "score": 0.5907500386238098,
+            "question": "What are some key differences between the philosophies of Karl Marx and Adam Smith?"
+        },
+        {
+            "score": 0.5664610862731934,
+            "question": "In what historical period did both Adam Smith and Karl Marx live?"
+        },
+        {
+            "score": 0.5412192940711975,
+            "question": "What economic theories did Adam Smith develop?"
+        },
+        {
+            "score": 0.4826079308986664,
+            "question": "What was Adam Smith known for?"
+        },
+        {
+            "score": 0.36958205699920654,
+            "question": "What were the major contributions of Adam Smith to economics?"
+        },
+        {
+            "score": 0.14261183142662048,
+            "question": "Can you name some of Karl Marx's most famous works?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Karl Marx was influenced by Adam Smith.",
+            "html": "dbpedia_7533_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What were the major contributions of Adam Smith to economics?",
+            "html": "dbpedia_7533_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What was Adam Smith known for?",
+            "html": "dbpedia_7533_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What economic theories did Adam Smith develop?",
+            "html": "dbpedia_7533_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_7533_100.txt"
+        },
+        {
+            "file_id": "dbpedia_7533_24.txt"
+        },
+        {
+            "file_id": "dbpedia_7533_28.txt"
+        },
+        {
+            "file_id": "dbpedia_7533_29.txt"
+        },
+        {
+            "file_id": "dbpedia_7533_38.txt"
+        },
+        {
+            "file_id": "dbpedia_7533_47.txt"
+        },
+        {
+            "file_id": "dbpedia_7533_61.txt"
+        },
+        {
+            "file_id": "dbpedia_7533_8.txt"
+        },
+        {
+            "file_id": "dbpedia_7533_81.txt"
+        },
+        {
+            "file_id": "dbpedia_7533_86.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the structured JSON response:\n\n```\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents support this triple as follows:\n\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_7533/re-ranker-msmarco/35.txt, it is mentioned that Marx Skousen author of \u2018The big three in economics\u2019 points out that Adam Smith was one of the leading proponents of Capitalism and contrarily Marx developed the communist ideology. This implies that Marx's ideas were influenced by or contrasted with those of Adam Smith.\n\nHowever, more directly, file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_7533/re-ranker-msmarco/6.txt states that \"Amongst the most influential and prominent economists of the last few centuries, Adam Smith and Karl Marx, are noted for their distinct theoretical contributions.\", which implies a relationship between them. Later in this file, it mentions that Marx was inspired by great political economists like Adam Smith.\n\nAdditionally, file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_7533/re-ranker-msmarco/40.txt states that \"Marxian Economics was not a favoured branch of economics during that time among the mainstream activists. But soon, Marx\u2019s ideologies and theories had a significant impact on the people, most notably among the communists like China, USSR, and Cuba.\" This implies that Marx's ideas were influenced by or contrasted with those of Adam Smith.\n\nTherefore, the information in the documents supports this triple as \"yes\"."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nThe documents do not support the claim that Karl Marx was influenced by Adam Smith. In fact, one of the documents states that Karl Marx was inspired by \"great political economists like Adam Smith and David Ricardo and the German idealist philosophy,\" but it does not indicate that Adam Smith had a direct influence on Marx's work or theories."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "qwen2.5": {
+            "reason": "Karl Marx was influenced by Adam Smith, but his theories fundamentally challenged and contrasted those of Smith. Adam Smith advocated for free market principles and capitalism, whereas Marx criticized these concepts and developed communist ideology based on different economic and philosophical foundations. Therefore, it would be inaccurate to say that Marx was influenced by Smith in a way that aligns with his core beliefs.",
+            "category": 2
+        }
+    }
+}

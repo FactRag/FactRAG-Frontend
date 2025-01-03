@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Lilian_Velez",
+    "predicate": "ontology/deathPlace",
+    "object": "resource/Metro_Manila",
+    "human_readable": "Lilian Velez died in Metro Manila.",
+    "questions": [
+        {
+            "score": 0.8393212556838989,
+            "question": "Where did Lilian Velez die?"
+        },
+        {
+            "score": 0.609449028968811,
+            "question": "Were there any notable events associated with Lilian Velez's death?"
+        },
+        {
+            "score": 0.3694831430912018,
+            "question": "Can you tell me about Lilian Velez's life?"
+        },
+        {
+            "score": 0.2417587786912918,
+            "question": "What is Metro Manila known for?"
+        },
+        {
+            "score": 0.1690545231103897,
+            "question": "What is the history of Metro Manila?"
+        },
+        {
+            "score": 0.1597004532814026,
+            "question": "What are some famous landmarks in Metro Manila?"
+        },
+        {
+            "score": 0.14139556884765625,
+            "question": "What is the climate like in Metro Manila?"
+        },
+        {
+            "score": 0.13759660720825195,
+            "question": "Is Metro Manila a popular tourist destination?"
+        },
+        {
+            "score": 0.13520100712776184,
+            "question": "What are some cultural traditions in Metro Manila?"
+        },
+        {
+            "score": 0.13323159515857697,
+            "question": "What is the population of Metro Manila?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Lilian Velez died in Metro Manila.",
+            "html": "dbpedia_5434_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some cultural traditions in Metro Manila?",
+            "html": "dbpedia_5434_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Metro Manila a popular tourist destination?",
+            "html": "dbpedia_5434_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the climate like in Metro Manila?",
+            "html": "dbpedia_5434_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5434_15.txt"
+        },
+        {
+            "file_id": "dbpedia_5434_18.txt"
+        },
+        {
+            "file_id": "dbpedia_5434_28.txt"
+        },
+        {
+            "file_id": "dbpedia_5434_32.txt"
+        },
+        {
+            "file_id": "dbpedia_5434_4.txt"
+        },
+        {
+            "file_id": "dbpedia_5434_50.txt"
+        },
+        {
+            "file_id": "dbpedia_5434_55.txt"
+        },
+        {
+            "file_id": "dbpedia_5434_63.txt"
+        },
+        {
+            "file_id": "dbpedia_5434_69.txt"
+        },
+        {
+            "file_id": "dbpedia_5434_78.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the context information provided, here is the evaluation of whether the information in the documents supports the triple:\n\n{\n  \"output\": \"yes\"\n}\n\nExplanation:\n\nThe text mentions that Lilian Velez was born and died in the Philippines. The specific cities mentioned are Cebu City (for birth) and Quezon City (for death). Metro Manila is a metropolitan area in the Philippines, which includes Quezon City. Therefore, it can be inferred that Lilian Velez died in Metro Manila.\n\nNote: This answer assumes that \"Metro Manila\" refers to the metropolitan area that includes Quezon City, which is a reasonable interpretation given the context. If you meant something else by \"Metro Manila\", please clarify!"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents indicate that Lilian Velez died in Quezon City, Philippines. Quezon City is part of Metro Manila. Therefore, the statement \"Lilian Velez died in Metro Manila\" is supported by the information provided."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n    \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "Based on the provided documents, Lilian Velez's death is mentioned to have occurred in Quezon City, Philippines. Since Quezon City is part of Metro Manila, this supports the statement that she died in Metro Manila.\n\nThe response should be:\n\n```json\n{\"output\": \"yes\"}\n```"
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Lilian Velez died in Quezon City, which is a part of Metro Manila but is not the same as Metro Manila itself.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Information provided states she died in Quezon City, Philippines.  Quezon City is a part of Metro Manila.",
+            "category": 2
+        }
+    }
+}

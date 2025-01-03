@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Lionel_Casson",
+    "predicate": "ontology/birthPlace",
+    "object": "resource/Brooklyn",
+    "human_readable": "Lionel Casson was born in Brooklyn.",
+    "questions": [
+        {
+            "score": 0.8913893103599548,
+            "question": "Where was Lionel Casson born?"
+        },
+        {
+            "score": 0.7471274733543396,
+            "question": "Did Lionel Casson live in Brooklyn his entire life?"
+        },
+        {
+            "score": 0.7257658839225769,
+            "question": "Was Lionel Casson born in the United States?"
+        },
+        {
+            "score": 0.6939753890037537,
+            "question": "What city is associated with Lionel Casson's birth?"
+        },
+        {
+            "score": 0.5287615656852722,
+            "question": "What is Lionel Casson known for?"
+        },
+        {
+            "score": 0.40402910113334656,
+            "question": "Is there any information available about Lionel Casson's family?"
+        },
+        {
+            "score": 0.37800320982933044,
+            "question": "What are some interesting facts about Lionel Casson?"
+        },
+        {
+            "score": 0.355555921792984,
+            "question": "What were some of the major events in Lionel Casson's life?"
+        },
+        {
+            "score": 0.30521655082702637,
+            "question": "Can you tell me more about Lionel Casson?"
+        },
+        {
+            "score": 0.22761614620685577,
+            "question": "How has Lionel Casson impacted society?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Lionel Casson was born in Brooklyn.",
+            "html": "dbpedia_3870_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about Lionel Casson?",
+            "html": "dbpedia_3870_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What were some of the major events in Lionel Casson's life?",
+            "html": "dbpedia_3870_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some interesting facts about Lionel Casson?",
+            "html": "dbpedia_3870_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3870_18.txt"
+        },
+        {
+            "file_id": "dbpedia_3870_2.txt"
+        },
+        {
+            "file_id": "dbpedia_3870_27.txt"
+        },
+        {
+            "file_id": "dbpedia_3870_28.txt"
+        },
+        {
+            "file_id": "dbpedia_3870_35.txt"
+        },
+        {
+            "file_id": "dbpedia_3870_37.txt"
+        },
+        {
+            "file_id": "dbpedia_3870_39.txt"
+        },
+        {
+            "file_id": "dbpedia_3870_41.txt"
+        },
+        {
+            "file_id": "dbpedia_3870_47.txt"
+        },
+        {
+            "file_id": "dbpedia_3870_6.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "The query is \"Lionel Casson was born in Brooklyn\".\n\nHere's the evaluation:\n\n{\n  \"output\": \"no\"\n}\n\nExplanation: The documents mention that Lionel Casson was one of two sons in a Brooklyn Jewish family, but they do not explicitly state that he was born in Brooklyn. They mention his father owned a lumberyard in Brooklyn, and that Lionel Casson attended New York University, which is located nearby, but there is no direct information about his birthplace."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\n**Explanation:** The documents provide information that supports the statement \"Lionel Casson was born in Brooklyn.\" Specifically, the context mentions \"Lionel Casson's is 64 years old\" and \"Lionel Casson was one of two sons in a Brooklyn Jewish family,\" which directly supports his birthplace being Brooklyn."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The claim is wrong because Lionel Casson was born as \"Lionel Cohen\", and later changed his name to Casson, but there is no mention of him being born in Brooklyn.",
+            "category": 2
+        }
+    }
+}

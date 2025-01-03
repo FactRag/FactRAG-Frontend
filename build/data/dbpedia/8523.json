@@ -1,0 +1,134 @@
+{
+    "subject": "resource/David_Holden",
+    "predicate": "ontology/birthPlace",
+    "object": "resource/Sunderland,_Tyne_and_Wear",
+    "human_readable": "David Holden was born in Sunderland, Tyne and Wear.",
+    "questions": [
+        {
+            "score": 0.8639320135116577,
+            "question": "Where was David Holden born?"
+        },
+        {
+            "score": 0.6638453602790833,
+            "question": "What other notable people were born in Sunderland?"
+        },
+        {
+            "score": 0.44713473320007324,
+            "question": "What is Tyne and Wear a region of?"
+        },
+        {
+            "score": 0.3262205719947815,
+            "question": "What is Sunderland known for?"
+        },
+        {
+            "score": 0.246711865067482,
+            "question": "What is the history of Sunderland?"
+        },
+        {
+            "score": 0.23601166903972626,
+            "question": "Describe the culture of Sunderland."
+        },
+        {
+            "score": 0.22351394593715668,
+            "question": "What is life like for residents in Sunderland?"
+        },
+        {
+            "score": 0.21479059755802155,
+            "question": "Is Sunderland located in England?"
+        },
+        {
+            "score": 0.19167818129062653,
+            "question": "What are some popular tourist destinations in Sunderland?"
+        },
+        {
+            "score": 0.0616229884326458,
+            "question": "What industries are important to Sunderland's economy?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=David Holden was born in Sunderland, Tyne and Wear.",
+            "html": "dbpedia_8523_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some popular tourist destinations in Sunderland?",
+            "html": "dbpedia_8523_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Sunderland located in England?",
+            "html": "dbpedia_8523_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is life like for residents in Sunderland?",
+            "html": "dbpedia_8523_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8523_102.txt"
+        },
+        {
+            "file_id": "dbpedia_8523_18.txt"
+        },
+        {
+            "file_id": "dbpedia_8523_3.txt"
+        },
+        {
+            "file_id": "dbpedia_8523_44.txt"
+        },
+        {
+            "file_id": "dbpedia_8523_51.txt"
+        },
+        {
+            "file_id": "dbpedia_8523_59.txt"
+        },
+        {
+            "file_id": "dbpedia_8523_65.txt"
+        },
+        {
+            "file_id": "dbpedia_8523_70.txt"
+        },
+        {
+            "file_id": "dbpedia_8523_76.txt"
+        },
+        {
+            "file_id": "dbpedia_8523_8.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple:\n\n{\n  \"output\": \"no\"\n}\n\nReasoning:\nThe context information contains multiple documents about different individuals named David Holden. The first document (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8523/re-ranker-msmarco/70.txt) mentions a David Holden born in Sunderland, Tyne and Wear, England, but the second document (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8523/re-ranker-msmarco/102.txt) mentions a different David Holden born in Great Thurlow, Suffolk, England. There is no information to confirm that these two individuals are the same person."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The document at `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8523/re-ranker-msmarco/70.txt` states that David Holden was born in Sunderland, Tyne and Wear, England. Therefore, the statement \"David Holden was born in Sunderland, Tyne and Wear\" is supported by the information provided."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "It contradicts the information provided for David Holden #2, which states that he was born in the Village of Great Thurlow, Suffolk, England.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Nathaniel_Gorham",
+    "predicate": "property/placeOfDeath",
+    "object": "resource/Charlestown,_Boston",
+    "human_readable": "Nathaniel Gorham died in Charlestown, Boston.",
+    "questions": [
+        {
+            "score": 0.8768890500068665,
+            "question": "Was Nathaniel Gorham from Charlestown?"
+        },
+        {
+            "score": 0.7916973829269409,
+            "question": "Where did Nathaniel Gorham die?"
+        },
+        {
+            "score": 0.6278626322746277,
+            "question": "What is known about Nathaniel Gorham's death?"
+        },
+        {
+            "score": 0.607087254524231,
+            "question": "Was Charlestown the place of Nathaniel Gorham's final resting place?"
+        },
+        {
+            "score": 0.5818972587585449,
+            "question": "What city is associated with Nathaniel Gorham's death?"
+        },
+        {
+            "score": 0.556747317314148,
+            "question": "Who was Nathaniel Gorham?"
+        },
+        {
+            "score": 0.500503659248352,
+            "question": "What historical events might have coincided with Nathaniel Gorham's death?"
+        },
+        {
+            "score": 0.3480300307273865,
+            "question": "Can you tell me more about Nathaniel Gorham's life?"
+        },
+        {
+            "score": 0.3107725977897644,
+            "question": "In which location was Nathaniel Gorham's passing recorded?"
+        },
+        {
+            "score": 0.2892985939979553,
+            "question": "Are there any records or sources that provide further details about Nathaniel Gorham?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Nathaniel Gorham died in Charlestown, Boston.",
+            "html": "dbpedia_1511_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In which location was Nathaniel Gorham's passing recorded?",
+            "html": "dbpedia_1511_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about Nathaniel Gorham's life?",
+            "html": "dbpedia_1511_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What historical events might have coincided with Nathaniel Gorham's death?",
+            "html": "dbpedia_1511_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1511_16.txt"
+        },
+        {
+            "file_id": "dbpedia_1511_18.txt"
+        },
+        {
+            "file_id": "dbpedia_1511_2.txt"
+        },
+        {
+            "file_id": "dbpedia_1511_20.txt"
+        },
+        {
+            "file_id": "dbpedia_1511_24.txt"
+        },
+        {
+            "file_id": "dbpedia_1511_3.txt"
+        },
+        {
+            "file_id": "dbpedia_1511_34.txt"
+        },
+        {
+            "file_id": "dbpedia_1511_45.txt"
+        },
+        {
+            "file_id": "dbpedia_1511_61.txt"
+        },
+        {
+            "file_id": "dbpedia_1511_7.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple \"Nathaniel Gorham died in Charlestown, Boston\" based on the provided context information:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation:\n\nThe context information mentions that Nathaniel Gorham died in Charlestown, Massachusetts (not Boston) on June 11, 1796."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents state that \"Gorham died in Charlestown, Massachusetts,\" which supports the statement that Nathaniel Gorham died in Charlestown, Boston. Massachusetts was a part of the Province of Massachusetts Bay and is now known as part of the state of Massachusetts."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n     \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, there is no document that explicitly states that Nathaniel Gorham died in Charlestown, Boston. However, multiple documents mention that he died in Charlestown, Massachusetts (which could be confused with Charlestown, a part of Boston). Since \"Charlestown\" can refer to both the town and the neighborhood within Boston, without specific clarification, we should lean towards the information given: Nathaniel Gorham died in Charlestown, Massachusetts. Therefore, the statement is not accurate as it specifically states \"Boston\".\n\nThe answer would be:\n\n```json\n{\"output\": \"no\"}\n```\n\nIf further research shows that Charlestown, Massachusetts and Charlestown, Boston are considered synonymous for historical contexts, then this might need re-evaluation based on additional context. However, strictly following the given information, the statement is incorrect as written."
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Multiple sources state Gorham died in Charlestown, Massachusetts, not Boston.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The information points to multiple different dates of death for Nathaniel Gorham, which would be impossible if he indeed died on May 27, 1738 as stated in point 1 and June 11, 1796 as stated in point 5.",
+            "category": 2
+        }
+    }
+}

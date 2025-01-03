@@ -1,0 +1,142 @@
+{
+    "subject": "resource/WAGA-TV",
+    "predicate": "ontology/formerBroadcastNetwork",
+    "object": "resource/American_Broadcasting_Company",
+    "human_readable": "WAGA-TV was formerly a broadcast network for American Broadcasting Company.",
+    "questions": [
+        {
+            "score": 0.9453672766685486,
+            "question": "What kind of broadcasting company was WAGA-TV?"
+        },
+        {
+            "score": 0.9402388334274292,
+            "question": "Was WAGA-TV ever associated with American Broadcasting Company?"
+        },
+        {
+            "score": 0.8828226327896118,
+            "question": "Does WAGA-TV still belong to American Broadcasting Company?"
+        },
+        {
+            "score": 0.8410128951072693,
+            "question": "What type of programming did WAGA-TV air during its association with American Broadcasting Company?"
+        },
+        {
+            "score": 0.8261495232582092,
+            "question": "How long was WAGA-TV associated with American Broadcasting Company?"
+        },
+        {
+            "score": 0.7893022298812866,
+            "question": "What was the former name of WAGA-TV?"
+        },
+        {
+            "score": 0.6662905812263489,
+            "question": "To which network did WAGA-TV previously belong?"
+        },
+        {
+            "score": 0.6580542922019958,
+            "question": "Are there any other former affiliations of WAGA-TV?"
+        },
+        {
+            "score": 0.5586997270584106,
+            "question": "What is the current affiliation of WAGA-TV?"
+        },
+        {
+            "score": 0.3683241605758667,
+            "question": "Can you tell me more about WAGA-TV's history?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=WAGA-TV was formerly a broadcast network for American Broadcasting Company.",
+            "html": "dbpedia_5337_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the current affiliation of WAGA-TV?",
+            "html": "dbpedia_5337_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any other former affiliations of WAGA-TV?",
+            "html": "dbpedia_5337_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=To which network did WAGA-TV previously belong?",
+            "html": "dbpedia_5337_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5337_10.txt"
+        },
+        {
+            "file_id": "dbpedia_5337_100.txt"
+        },
+        {
+            "file_id": "dbpedia_5337_16.txt"
+        },
+        {
+            "file_id": "dbpedia_5337_28.txt"
+        },
+        {
+            "file_id": "dbpedia_5337_34.txt"
+        },
+        {
+            "file_id": "dbpedia_5337_5.txt"
+        },
+        {
+            "file_id": "dbpedia_5337_57.txt"
+        },
+        {
+            "file_id": "dbpedia_5337_65.txt"
+        },
+        {
+            "file_id": "dbpedia_5337_78.txt"
+        },
+        {
+            "file_id": "dbpedia_5337_79.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the context information provided, here is the evaluation of the triple:\n\n`{ \"output\": \"no\" }`\n\nThe reason for this answer is that there is no mention in the provided documents that WAGA-TV was formerly a broadcast network for American Broadcasting Company (ABC). The only mention of ABC affiliation is related to the radio station WAGA, which was affiliated with CBS and carried ABC and DuMont shows under secondary affiliation."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nExplanation: The documents provide information about the history and affiliations of WAGA-TV, including that it was once an affiliate of networks other than Fox, such as CBS. Specifically, one document states, \"Their original studio building was the same West Peachtree Street site where WJRJ/channel 17 (now WPCH) would occupy later. On cable, the station is available on Comcast Xfinity channels 804 and 1005 and Charter Spectrum channel 5.\" While it does not directly state that WAGA-TV was formerly an ABC affiliate, the context of its history as a multi-network affiliate supports the possibility that it could have been associated with American Broadcasting Company (ABC) at some point."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "WAGA-TV was never a broadcast network for the American Broadcasting Company (ABC). It was originally affiliated with CBS, and later became a Fox owned-and-operated station. There is no historical record suggesting an association with ABC.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "The provided context states WAGA-TV carried ABC shows under secondary affiliation, not that it was a broadcast network for American Broadcasting Company.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because WAGA-TV was a CBS television affiliate when they started broadcasting.",
+            "category": 2
+        }
+    }
+}

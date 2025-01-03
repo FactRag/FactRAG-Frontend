@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Direct_Line",
+    "predicate": "ontology/locationCity",
+    "object": "resource/Leeds",
+    "human_readable": "The location city of Direct Line is Leeds.",
+    "questions": [
+        {
+            "score": 0.9505420923233032,
+            "question": "Is Leeds the main city associated with Direct Line?"
+        },
+        {
+            "score": 0.9442755579948425,
+            "question": "Leeds is the city where Direct Line is primarily based, correct?"
+        },
+        {
+            "score": 0.7010519504547119,
+            "question": "Where is the headquarters of Direct Line located?"
+        },
+        {
+            "score": 0.5914015769958496,
+            "question": "In which UK city does Direct Line operate?"
+        },
+        {
+            "score": 0.5654754638671875,
+            "question": "Direct Line's main branch is situated in which English city?"
+        },
+        {
+            "score": 0.5559259057044983,
+            "question": "Where can you find the headquarters of Direct Line?"
+        },
+        {
+            "score": 0.5417416095733643,
+            "question": "What city in England is home to Direct Line?"
+        },
+        {
+            "score": 0.44653958082199097,
+            "question": "Which city is known for being the base of operations for Direct Line?"
+        },
+        {
+            "score": 0.38005176186561584,
+            "question": "What is the location of Direct Line's offices?"
+        },
+        {
+            "score": 0.33405056595802307,
+            "question": "What English city serves as the home for Direct Line?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The location city of Direct Line is Leeds.",
+            "html": "dbpedia_2904_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the location of Direct Line's offices?",
+            "html": "dbpedia_2904_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Which city is known for being the base of operations for Direct Line?",
+            "html": "dbpedia_2904_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What city in England is home to Direct Line?",
+            "html": "dbpedia_2904_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2904_1.txt"
+        },
+        {
+            "file_id": "dbpedia_2904_133.txt"
+        },
+        {
+            "file_id": "dbpedia_2904_16.txt"
+        },
+        {
+            "file_id": "dbpedia_2904_25.txt"
+        },
+        {
+            "file_id": "dbpedia_2904_29.txt"
+        },
+        {
+            "file_id": "dbpedia_2904_32.txt"
+        },
+        {
+            "file_id": "dbpedia_2904_4.txt"
+        },
+        {
+            "file_id": "dbpedia_2904_52.txt"
+        },
+        {
+            "file_id": "dbpedia_2904_73.txt"
+        },
+        {
+            "file_id": "dbpedia_2904_94.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here's the evaluation in JSON format:\n\n```\n{\n  \"output\": \"yes\"\n}\n```\n\nThe reason for this answer is that there are multiple mentions of Direct Line being located in Leeds throughout the provided documents, including a specific reference to a building in Leeds city centre (Direct Line House) and a statement from the company itself regarding an incident outside one of their buildings in Leeds."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe context information mentions the presence of a Direct Line office in Leeds, specifically stating that it is located at Direct Line House, which is described as the regional office of the Direct Line Insurance Group in Leeds City Centre. This supports the query that the location city of Direct Line is Leeds."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Direct Line is already located in Leeds.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Several passages mention Direct Line having a building/office in Leeds, and the image provided shows the Direct Line Group headquarters in Leeds.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The statement from Direct Line in response to the incident outside one of their buildings in Leeds, where they mention having spoken to the individuals concerned and provided them with assistance, suggests that Direct Line does not necessarily reside at this specific location, but rather operates a building there.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Direct Line Insurance Group has a regional office in Leeds but is not headquartered there. The context mentions \"Direct Line House, regional office of the Direct Line Insurance Group in Leeds City Centre,\" indicating that while Direct Line operates in Leeds, it does not have its primary location in the city.",
+            "category": 2
+        }
+    }
+}

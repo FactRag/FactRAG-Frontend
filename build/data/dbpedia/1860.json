@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Santa_Cruz_de_Tenerife",
+    "predicate": "property/latd",
+    "object": "28",
+    "human_readable": "Santa Cruz de Tenerife has latitude 28.",
+    "questions": [
+        {
+            "score": 0.8997890949249268,
+            "question": "What is the latitude of Santa Cruz de Tenerife?"
+        },
+        {
+            "score": 0.7777553796768188,
+            "question": "What information does '28' provide about Santa Cruz de Tenerife?"
+        },
+        {
+            "score": 0.6787734627723694,
+            "question": "What coordinate defines Santa Cruz de Tenerife's location?"
+        },
+        {
+            "score": 0.609358549118042,
+            "question": "Is Santa Cruz de Tenerife located in the Northern or Southern Hemisphere?"
+        },
+        {
+            "score": 0.5072788000106812,
+            "question": "How far north or south is Santa Cruz de Tenerife from the equator?"
+        },
+        {
+            "score": 0.48082435131073,
+            "question": "If traveling from the equator, would you go north or south to reach Santa Cruz de Tenerife?"
+        },
+        {
+            "score": 0.33623215556144714,
+            "question": "At what degree north or south is Santa Cruz de Tenerife located?"
+        },
+        {
+            "score": 0.18839479982852936,
+            "question": "Can latitude be expressed in degrees?"
+        },
+        {
+            "score": 0.17279872298240662,
+            "question": "What does 'latitude' refer to on a map?"
+        },
+        {
+            "score": 0.1623796671628952,
+            "question": "What unit of measurement is used for latitude?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Santa Cruz de Tenerife has latitude 28.",
+            "html": "dbpedia_1860_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What does 'latitude' refer to on a map?",
+            "html": "dbpedia_1860_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can latitude be expressed in degrees?",
+            "html": "dbpedia_1860_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=At what degree north or south is Santa Cruz de Tenerife located?",
+            "html": "dbpedia_1860_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1860_119.txt"
+        },
+        {
+            "file_id": "dbpedia_1860_12.txt"
+        },
+        {
+            "file_id": "dbpedia_1860_33.txt"
+        },
+        {
+            "file_id": "dbpedia_1860_34.txt"
+        },
+        {
+            "file_id": "dbpedia_1860_4.txt"
+        },
+        {
+            "file_id": "dbpedia_1860_67.txt"
+        },
+        {
+            "file_id": "dbpedia_1860_7.txt"
+        },
+        {
+            "file_id": "dbpedia_1860_81.txt"
+        },
+        {
+            "file_id": "dbpedia_1860_84.txt"
+        },
+        {
+            "file_id": "dbpedia_1860_85.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n**Explanation:**\n\nThe provided text states that the latitude of Santa Cruz de Tenerife is 28.46824.  Since 28.46824 is greater than 28, the statement \"Santa Cruz de Tenerife has latitude 28\" is supported by the document."
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation of the query:\n\n**Query:** Santa Cruz de Tenerife has latitude 28.\n\nGiven the context information, I found several documents that mention the latitude of Santa Cruz de Tenerife. Specifically:\n\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1860/re-ranker-msmarco/33.txt, it is mentioned that \"Santa Cruz de Tenerife is located at latitude 28.46824 and longitude -16.25462.\"\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1860/re-ranker-msmarco/4.txt, it is mentioned that \"DMS latitude longitude coordinates for Santa Cruz de Tenerife are: 28\u00b028'5.66\"N, 16\u00b015'16.63\"W.\"\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1860/re-ranker-msmarco/137.txt, it is mentioned that \"Latitude and longitude of Santa Cruz de Tenerife have been calculated based on the geodetic datum WGS84\" with latitude 28.46824.\n\nAll three documents mention the latitude of Santa Cruz de Tenerife as being around 28, although one document provides a more precise decimal value (28.46824).\n\nTherefore:\n\n```\n{\n  \"output\": \"yes\"\n}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents provide information about the latitude of Santa Cruz de Tenerife, including coordinates such as \"28\u00b028'5.66\"N\" and \"28.46824 [latitude in decimal degrees]\". Therefore, stating that Santa Cruz de Tenerife has a latitude of 28 is supported by the provided context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n    \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Bennett_High_School_(Buffalo,_New_York)",
+    "predicate": "property/streetaddress",
+    "object": "2885",
+    "human_readable": "Bennett High School (Buffalo, New York) is located at 2885.",
+    "questions": [
+        {
+            "score": 0.8612621426582336,
+            "question": "Is Bennett High School in New York State?"
+        },
+        {
+            "score": 0.8565731644630432,
+            "question": "Where is Bennett High School located?"
+        },
+        {
+            "score": 0.8461834788322449,
+            "question": "In which city is Bennett High School situated?"
+        },
+        {
+            "score": 0.7321649789810181,
+            "question": "What is the address of Bennett High School?"
+        },
+        {
+            "score": 0.6740615367889404,
+            "question": "What type of institution is Bennett High School?"
+        },
+        {
+            "score": 0.6247832775115967,
+            "question": "What is the name of the school district that Bennett High School belongs to?"
+        },
+        {
+            "score": 0.5980092287063599,
+            "question": "What number is associated with the address of Bennett High School?"
+        },
+        {
+            "score": 0.5631518363952637,
+            "question": "What year was Bennett High School founded?"
+        },
+        {
+            "score": 0.4880661070346832,
+            "question": "Can you find any other schools in Buffalo, New York?"
+        },
+        {
+            "score": 0.4830302596092224,
+            "question": "Are there any famous alumni from Bennett High School?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Bennett High School (Buffalo, New York) is located at 2885.",
+            "html": "dbpedia_2441_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you find any other schools in Buffalo, New York?",
+            "html": "dbpedia_2441_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What year was Bennett High School founded?",
+            "html": "dbpedia_2441_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What number is associated with the address of Bennett High School?",
+            "html": "dbpedia_2441_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2441_119.txt"
+        },
+        {
+            "file_id": "dbpedia_2441_17.txt"
+        },
+        {
+            "file_id": "dbpedia_2441_26.txt"
+        },
+        {
+            "file_id": "dbpedia_2441_34.txt"
+        },
+        {
+            "file_id": "dbpedia_2441_36.txt"
+        },
+        {
+            "file_id": "dbpedia_2441_48.txt"
+        },
+        {
+            "file_id": "dbpedia_2441_50.txt"
+        },
+        {
+            "file_id": "dbpedia_2441_51.txt"
+        },
+        {
+            "file_id": "dbpedia_2441_72.txt"
+        },
+        {
+            "file_id": "dbpedia_2441_98.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the response in JSON format:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents provide information about Bennett High School's location, but it is not confirmed to be at 2885. In fact, one of the documents (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2441/re-ranker-msmarco/96.txt) mentions that the school is located at \"2885 Main St, Buffalo, NY 14214\", but it does not explicitly confirm that the location is exactly at 2885."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe document mentions the address of Bennett High School as \"Address: 2885 Main Street, Buffalo, NY 14214\", which supports that Bennett High School in Buffalo, New York is located at 2885 Main Street."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n    \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "All the other sources confirm that Bennett High School (Buffalo, New York) is located at 2885 Main Street, not just at \"2885\".",
+            "category": 2
+        }
+    }
+}

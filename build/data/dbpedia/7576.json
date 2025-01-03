@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Zagreb",
+    "predicate": "property/julHighC",
+    "object": "26.7",
+    "human_readable": "The high temperature of Zagreb in July is 26.7.",
+    "questions": [
+        {
+            "score": 0.9129243493080139,
+            "question": "What is the average high temperature in Zagreb during July?"
+        },
+        {
+            "score": 0.6288054585456848,
+            "question": "Is Zagreb hotter or colder in July compared to other months?"
+        },
+        {
+            "score": 0.5852775573730469,
+            "question": "How does the temperature in Zagreb in July compare to other European cities?"
+        },
+        {
+            "score": 0.5634947419166565,
+            "question": "How might the high temperature in Zagreb affect daily life for residents?"
+        },
+        {
+            "score": 0.49723777174949646,
+            "question": "What activities might be enjoyable in Zagreb during a hot July day?"
+        },
+        {
+            "score": 0.439862459897995,
+            "question": "What precautions should someone take when visiting Zagreb during a hot month like July?"
+        },
+        {
+            "score": 0.3916066586971283,
+            "question": "Would you need sunscreen if you were visiting Zagreb in July?"
+        },
+        {
+            "score": 0.3910094201564789,
+            "question": "What type of clothing would be most suitable for a visit to Zagreb in July?"
+        },
+        {
+            "score": 0.36089402437210083,
+            "question": "Is it common to find people wearing shorts and t-shirts in Zagreb during July?"
+        },
+        {
+            "score": 0.31657612323760986,
+            "question": "Would you expect a swimming pool to be popular in Zagreb during July?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The high temperature of Zagreb in July is 26.7.",
+            "html": "dbpedia_7576_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is it common to find people wearing shorts and t-shirts in Zagreb during July?",
+            "html": "dbpedia_7576_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of clothing would be most suitable for a visit to Zagreb in July?",
+            "html": "dbpedia_7576_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Would you need sunscreen if you were visiting Zagreb in July?",
+            "html": "dbpedia_7576_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_7576_10.txt"
+        },
+        {
+            "file_id": "dbpedia_7576_100.txt"
+        },
+        {
+            "file_id": "dbpedia_7576_104.txt"
+        },
+        {
+            "file_id": "dbpedia_7576_11.txt"
+        },
+        {
+            "file_id": "dbpedia_7576_117.txt"
+        },
+        {
+            "file_id": "dbpedia_7576_146.txt"
+        },
+        {
+            "file_id": "dbpedia_7576_18.txt"
+        },
+        {
+            "file_id": "dbpedia_7576_38.txt"
+        },
+        {
+            "file_id": "dbpedia_7576_76.txt"
+        },
+        {
+            "file_id": "dbpedia_7576_86.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe information from the documents supports that the high temperature in Zagreb during July is 26.7\u00b0C, as stated in file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_7576/re-ranker-msmarco/37.txt."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The context information states that the average high temperature in July in Zagreb is 25\u00b0C (approximately 77\u00b0F), not 26.7\u00b0C as claimed.",
+            "category": -1
+        },
+        "gemma2": {
+            "reason": "Multiple sources provide high temperature ranges for July that are significantly higher than 26.7\u00b0C, including figures of 85\u00b0F (29\u00b0C) and highs rarely exceeding 91\u00b0F (33\u00b0C).",
+            "category": -1
+        },
+        "llama3.1": {
+            "reason": "It contradicts information from context 5 which states that July has an average high temperature of 26.7\u00b0C, but the same source also lists the average low temperature for July as 14.7\u00b0C, and another part of the same source states that the warmest month (with the highest average high temperature) is indeed July (with a value not given), however context 2 directly provides the mean temperature in July as 25\u00b0C.",
+            "category": -1
+        },
+        "qwen2.5": {
+            "reason": "The context information provided states that the warmest month in Zagreb is July with an average high temperature of 26.7\u00b0C, not just a high temperature of 26.7\u00b0C.",
+            "category": -1
+        }
+    }
+}

@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Joan_Huffman",
+    "predicate": "ontology/birthPlace",
+    "object": "resource/Southside_Place,_Texas",
+    "human_readable": "Joan Huffman was born in Southside Place, Texas.",
+    "questions": [
+        {
+            "score": 0.9208047986030579,
+            "question": "Where was Joan Huffman born?"
+        },
+        {
+            "score": 0.9164620637893677,
+            "question": "Is Joan Huffman from Texas?"
+        },
+        {
+            "score": 0.8577609658241272,
+            "question": "What state was Joan Huffman born in?"
+        },
+        {
+            "score": 0.45547357201576233,
+            "question": "Who are some other notable people from Southside Place?"
+        },
+        {
+            "score": 0.4409573972225189,
+            "question": "Can you tell me more about Southside Place, Texas?"
+        },
+        {
+            "score": 0.4377262592315674,
+            "question": "What is the population of Southside Place, Texas?"
+        },
+        {
+            "score": 0.41723182797431946,
+            "question": "What is Southside Place known for?"
+        },
+        {
+            "score": 0.36076417565345764,
+            "question": "What is Joan Huffman's profession?"
+        },
+        {
+            "score": 0.28970202803611755,
+            "question": "What are some of Joan Huffman's accomplishments?"
+        },
+        {
+            "score": 0.19488202035427094,
+            "question": "Has Joan Huffman held any public office?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Joan Huffman was born in Southside Place, Texas.",
+            "html": "dbpedia_4857_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some of Joan Huffman's accomplishments?",
+            "html": "dbpedia_4857_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Joan Huffman's profession?",
+            "html": "dbpedia_4857_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Southside Place known for?",
+            "html": "dbpedia_4857_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4857_11.txt"
+        },
+        {
+            "file_id": "dbpedia_4857_17.txt"
+        },
+        {
+            "file_id": "dbpedia_4857_19.txt"
+        },
+        {
+            "file_id": "dbpedia_4857_3.txt"
+        },
+        {
+            "file_id": "dbpedia_4857_4.txt"
+        },
+        {
+            "file_id": "dbpedia_4857_58.txt"
+        },
+        {
+            "file_id": "dbpedia_4857_59.txt"
+        },
+        {
+            "file_id": "dbpedia_4857_74.txt"
+        },
+        {
+            "file_id": "dbpedia_4857_75.txt"
+        },
+        {
+            "file_id": "dbpedia_4857_94.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the context information provided, I can try to evaluate the triple.\n\nHere is my response:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThis is because none of the documents mention Joan Huffman's birthplace as Southside Place, Texas. In fact, one document mentions that she is a Senator from the 17th district in Texas, but does not provide her birthplace. Another document mentions a different person with the same name and birthdate (June 17th, 1936), but this does not match the triple statement about Joan Huffman's birth in Southside Place, Texas."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: None of the provided documents contain information about Joan Huffman being born in Southside Place, Texas. The documents mention her as a member of the Texas Senate representing District 17 and refer to \"R-Southside Place\" but do not specify her birthplace."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The context information provided does not specify that Joan Huffman was born in Southside Place, Texas. Information about her birthplace indicates she was born in Baltimore, Maryland (context 2).",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Multiple entries mention Joan Huffman being born in different locations (Baltimore, MD; Kewanee, IL; Morristown) and none mention Southside Place, Texas.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The provided context information does not mention the birthplace of the Joan Huffman mentioned in point 1 as Southside Place, Texas. In fact, point 1 only mentions that she represents District 17 which includes portions of Brazoria, Fort Bend, and Harris county, but it does not provide her birthplace. Point 3, however, attributes Senate Bill 2556 to a Joan Huffman with the address R-Southside Place, but this is likely referring to her current residence or official address in the Texas State Senate, rather than her birthplace.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information does not mention Joan Huffman being born in Southside Place, Texas. Her birthplace is not provided in the given details, and she is identified as an American politician representing District 17 in Texas, without specifying her exact birth location.",
+            "category": 2
+        }
+    }
+}

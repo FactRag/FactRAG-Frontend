@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Horizon_Christian_Schools",
+    "predicate": "http://xmlns.com/foaf/0.1/homepage",
+    "object": "http://www.horizonchristianschools.org/",
+    "human_readable": "The homepage of Horizon Christian Schools is http://www.horizonchristianschools.org/.",
+    "questions": [
+        {
+            "score": 0.9698390364646912,
+            "question": "Is http://www.horizonchristianschools.org/ a valid URL?"
+        },
+        {
+            "score": 0.9635809063911438,
+            "question": "What is the URL of Horizon Christian Schools' homepage?"
+        },
+        {
+            "score": 0.9606195092201233,
+            "question": "Where can you find the homepage for Horizon Christian Schools?"
+        },
+        {
+            "score": 0.951197624206543,
+            "question": "Does the URL http://www.horizonchristianschools.org/ suggest anything about the institution?"
+        },
+        {
+            "score": 0.9467241168022156,
+            "question": "What information might you find on the Horizon Christian Schools homepage?"
+        },
+        {
+            "score": 0.9442645311355591,
+            "question": "How can you access the homepage of Horizon Christian Schools?"
+        },
+        {
+            "score": 0.9436120390892029,
+            "question": "What type of institution is represented by http://www.horizonchristianschools.org/?"
+        },
+        {
+            "score": 0.9433673024177551,
+            "question": "What is the purpose of a website like http://www.horizonchristianschools.org/?"
+        },
+        {
+            "score": 0.9212377667427063,
+            "question": "If you wanted to visit the website for Horizon Christian Schools, what address would you use?"
+        },
+        {
+            "score": 0.8343030214309692,
+            "question": "Is there a specific domain name associated with Horizon Christian Schools?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The homepage of Horizon Christian Schools is http://www.horizonchristianschools.org/.",
+            "html": "dbpedia_6866_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If you wanted to visit the website for Horizon Christian Schools, what address would you use?",
+            "html": "dbpedia_6866_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the purpose of a website like http://www.horizonchristianschools.org/?",
+            "html": "dbpedia_6866_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of institution is represented by http://www.horizonchristianschools.org/?",
+            "html": "dbpedia_6866_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6866_10.txt"
+        },
+        {
+            "file_id": "dbpedia_6866_12.txt"
+        },
+        {
+            "file_id": "dbpedia_6866_18.txt"
+        },
+        {
+            "file_id": "dbpedia_6866_19.txt"
+        },
+        {
+            "file_id": "dbpedia_6866_2.txt"
+        },
+        {
+            "file_id": "dbpedia_6866_27.txt"
+        },
+        {
+            "file_id": "dbpedia_6866_31.txt"
+        },
+        {
+            "file_id": "dbpedia_6866_44.txt"
+        },
+        {
+            "file_id": "dbpedia_6866_6.txt"
+        },
+        {
+            "file_id": "dbpedia_6866_8.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you'd like to evaluate more triples! \ud83d\ude0a \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the context information provided, here's my evaluation:\n\n**Triple:** The homepage of Horizon Christian Schools is http://www.horizonchristianschools.org.\n\nThe documents contain a \"Website\" section with the following text:\n> Website\n>\n> http://horizonchristianschools.org\n\nThis information explicitly states that the website URL of Horizon Christian Schools is indeed http://horizonchristianschools.org. However, the URL is not preceded by \"www.\" as stated in the triple. Nevertheless, since both URLs are equivalent (http:// and www.http:// being treated as the same protocol), we can still consider this a correct match.\n\nTherefore:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThis indicates that the triple is supported by the documents provided."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe query and response match the information provided in the context, specifically from the file_path `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6866/re-ranker-msmarco/10.txt`, which states: `Website http://horizonchristianschools.org`."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The homepage URL provided (http://www.horizonchristianschools.org/) does not match the one mentioned in the context information (http://horizonchristianschools.org).",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Context information states the website is http://horizonchristianschools.org.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The website \"http://www.horizonchristianschools.org/\" is not mentioned anywhere in the provided context information.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The provided context information does not mention http://www.horizonchristianschools.org/ as the homepage. Instead, it lists another URL, http://horizonchristianschools.org/, which might be the correct one based on slight formatting differences.",
+            "category": 2
+        }
+    }
+}

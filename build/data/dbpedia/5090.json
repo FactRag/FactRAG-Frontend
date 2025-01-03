@@ -1,0 +1,129 @@
+{
+    "subject": "resource/The_Legend_of_Bagger_Vance",
+    "predicate": "ontology/distributor",
+    "object": "resource/DreamWorks",
+    "human_readable": "The Legend of Bagger Vance was distributed by DreamWorks.",
+    "questions": [
+        {
+            "score": 0.8380738496780396,
+            "question": "Who distributed the movie 'The Legend of Bagger Vance'?"
+        },
+        {
+            "score": 0.8288419246673584,
+            "question": "Was 'The Legend of Bagger Vance' distributed by a major studio?"
+        },
+        {
+            "score": 0.8000425696372986,
+            "question": "Can you tell me which studio was responsible for distributing 'The Legend of Bagger Vance'?"
+        },
+        {
+            "score": 0.7905058264732361,
+            "question": "What movie studio was involved in distributing 'The Legend of Bagger Vance'?"
+        },
+        {
+            "score": 0.748022735118866,
+            "question": "What film distribution company is behind 'The Legend of Bagger Vance'?"
+        },
+        {
+            "score": 0.7362592220306396,
+            "question": "'The Legend of Bagger Vance' was released by which film company?"
+        },
+        {
+            "score": 0.6283912658691406,
+            "question": "What is the name of the production company behind 'The Legend of Bagger Vance'?"
+        },
+        {
+            "score": 0.5232313275337219,
+            "question": "Name the studio that handled the release of 'The Legend of Bagger Vance'."
+        },
+        {
+            "score": 0.463555246591568,
+            "question": "Which company brought 'The Legend of Bagger Vance' to theaters?"
+        },
+        {
+            "score": 0.4559174180030823,
+            "question": "What is the name of the movie studio that released 'The Legend of Bagger Vance'?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The Legend of Bagger Vance was distributed by DreamWorks.",
+            "html": "dbpedia_5090_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Which company brought 'The Legend of Bagger Vance' to theaters?",
+            "html": "dbpedia_5090_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Name the studio that handled the release of 'The Legend of Bagger Vance'.",
+            "html": "dbpedia_5090_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of the production company behind 'The Legend of Bagger Vance'?",
+            "html": "dbpedia_5090_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5090_104.txt"
+        },
+        {
+            "file_id": "dbpedia_5090_13.txt"
+        },
+        {
+            "file_id": "dbpedia_5090_21.txt"
+        },
+        {
+            "file_id": "dbpedia_5090_27.txt"
+        },
+        {
+            "file_id": "dbpedia_5090_46.txt"
+        },
+        {
+            "file_id": "dbpedia_5090_58.txt"
+        },
+        {
+            "file_id": "dbpedia_5090_6.txt"
+        },
+        {
+            "file_id": "dbpedia_5090_64.txt"
+        },
+        {
+            "file_id": "dbpedia_5090_67.txt"
+        },
+        {
+            "file_id": "dbpedia_5090_73.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "The triple to evaluate is:\n\n\"The Legend of Bagger Vance was distributed by DreamWorks.\"\n\nGiven the context information, here's the evaluation:\n\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5090/re-ranker-msmarco/62.txt, it is mentioned that \"Each episode of The Legend of Bagger Vance is distributed by DreamWorks.\"\n* However, in file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5090/re-ranker-msmarco/71.txt, it is mentioned that \"The film stars Will Smith and Charlize Theron\" but does not mention distribution.\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5090/re-ranker-msmarco/65.txt, it is mentioned that \"Domestic Distributor: DreamWorks\", which implies that DreamWorks distributed the film in the United States.\n* There is no information provided to contradict this statement.\n\nTherefore, based on the context information, the answer is:\n\n{'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe information in the documents supports that The Legend of Bagger Vance is distributed by DreamWorks."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

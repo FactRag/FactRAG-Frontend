@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Southern_Aurora",
+    "predicate": "property/status",
+    "object": "Ceased",
+    "human_readable": "The Southern Aurora has ceased.",
+    "questions": [
+        {
+            "score": 0.7604773640632629,
+            "question": "What impact did the cessation of the Southern Aurora have?"
+        },
+        {
+            "score": 0.7321974635124207,
+            "question": "Why did the Southern Aurora cease operations?"
+        },
+        {
+            "score": 0.7220765948295593,
+            "question": "When did the Southern Aurora cease operations?"
+        },
+        {
+            "score": 0.6568814516067505,
+            "question": "What happened to the Southern Aurora?"
+        },
+        {
+            "score": 0.38989725708961487,
+            "question": "Were there any notable events associated with the Southern Aurora?"
+        },
+        {
+            "score": 0.38926559686660767,
+            "question": "Where did the Southern Aurora operate?"
+        },
+        {
+            "score": 0.38014906644821167,
+            "question": "What was the significance of the Southern Aurora?"
+        },
+        {
+            "score": 0.2985963523387909,
+            "question": "Was the Southern Aurora a train?"
+        },
+        {
+            "score": 0.2869989275932312,
+            "question": "Are there any historical records about the Southern Aurora?"
+        },
+        {
+            "score": 0.23406311869621277,
+            "question": "Was the Southern Aurora a popular mode of transportation?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The Southern Aurora has ceased.",
+            "html": "dbpedia_1607_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any historical records about the Southern Aurora?",
+            "html": "dbpedia_1607_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Was the Southern Aurora a train?",
+            "html": "dbpedia_1607_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What was the significance of the Southern Aurora?",
+            "html": "dbpedia_1607_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1607_10.txt"
+        },
+        {
+            "file_id": "dbpedia_1607_111.txt"
+        },
+        {
+            "file_id": "dbpedia_1607_137.txt"
+        },
+        {
+            "file_id": "dbpedia_1607_140.txt"
+        },
+        {
+            "file_id": "dbpedia_1607_143.txt"
+        },
+        {
+            "file_id": "dbpedia_1607_148.txt"
+        },
+        {
+            "file_id": "dbpedia_1607_36.txt"
+        },
+        {
+            "file_id": "dbpedia_1607_37.txt"
+        },
+        {
+            "file_id": "dbpedia_1607_40.txt"
+        },
+        {
+            "file_id": "dbpedia_1607_44.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have any other triples to evaluate!"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation of the triple in JSON format:\n\n```\n{\n  \"output\": \"yes\"\n}\n```\n\nThe reason for this answer is that according to the documents, when the Southern Aurora train ceased operating, it did not cease to exist. In fact, most of its carriages were sold or donated to various groups and museums, and some preserved cars are still possible to see and ride on. A preserved Southern Aurora even passed through Wagga in 2012. Therefore, the statement \"The Southern Aurora has ceased\" is correct according to the documents."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide information that the Southern Aurora train ceased operations on August 2nd, 1986. Therefore, the statement \"The Southern Aurora has ceased\" is supported by the given context."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Several passages state that the Southern Aurora ran for the last time on August 2nd, 1986 and that preserved carriages passed through Wagga in 2012.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because the information provided states that most of the carriage fleet was sold, or donated to various groups, and museums, and it is still possible to see, and ride on them. A preserved Southern Aurora passed through Wagga in 2012. This implies that the train has not ceased operations entirely.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The Southern Aurora train ran for the last time on 2nd August 1986, indicating that it did cease operations.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Bob_Franklin_(comedian)",
+    "predicate": "property/name",
+    "object": "Franklin, Bob",
+    "human_readable": "The name of Bob Franklin (comedian) is Franklin, Bob.",
+    "questions": [
+        {
+            "score": 0.9095368385314941,
+            "question": "What is the full name of Bob Franklin?"
+        },
+        {
+            "score": 0.8646460771560669,
+            "question": "What is the last name of Bob Franklin?"
+        },
+        {
+            "score": 0.8173966407775879,
+            "question": "What is the first name of Bob Franklin?"
+        },
+        {
+            "score": 0.8041881322860718,
+            "question": "What comes before 'Franklin' in Bob Franklin's name?"
+        },
+        {
+            "score": 0.746783435344696,
+            "question": "What is Bob Franklin's profession?"
+        },
+        {
+            "score": 0.7295796275138855,
+            "question": "Is Bob Franklin a musician?"
+        },
+        {
+            "score": 0.7279625535011292,
+            "question": "Does the name 'Bob Franklin' contain two words?"
+        },
+        {
+            "score": 0.5030407905578613,
+            "question": "How would you write Bob Franklin's name in reverse order?"
+        },
+        {
+            "score": 0.4725058376789093,
+            "question": "If someone wanted to introduce Bob Franklin, what could they say?"
+        },
+        {
+            "score": 0.2668392062187195,
+            "question": "If you were to write a letter to Bob Franklin, what would you put in the recipient line?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of Bob Franklin (comedian) is Franklin, Bob.",
+            "html": "dbpedia_5335_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If someone wanted to introduce Bob Franklin, what could they say?",
+            "html": "dbpedia_5335_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How would you write Bob Franklin's name in reverse order?",
+            "html": "dbpedia_5335_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does the name 'Bob Franklin' contain two words?",
+            "html": "dbpedia_5335_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5335_106.txt"
+        },
+        {
+            "file_id": "dbpedia_5335_113.txt"
+        },
+        {
+            "file_id": "dbpedia_5335_114.txt"
+        },
+        {
+            "file_id": "dbpedia_5335_14.txt"
+        },
+        {
+            "file_id": "dbpedia_5335_32.txt"
+        },
+        {
+            "file_id": "dbpedia_5335_39.txt"
+        },
+        {
+            "file_id": "dbpedia_5335_42.txt"
+        },
+        {
+            "file_id": "dbpedia_5335_64.txt"
+        },
+        {
+            "file_id": "dbpedia_5335_97.txt"
+        },
+        {
+            "file_id": "dbpedia_5335_98.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "The correct answer is:\n\n{'output': 'yes'} \n\nThis is because the documents contain information that matches the query:\n\n\"The name of Bob Franklin (comedian) is Franklin, Bob.\"\n\nFor example, in the document with file path /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5335/re-ranker-msmarco/112.txt, it says \"Bob Franklin is a British-born comedian...\".\n\nIn another document (/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5335/re-ranker-msmarco/37.txt), it also refers to him as \"Robert Andrew Franklin\" which is likely the full name of the comedian, but still confirms that his surname is indeed Franklin."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide information about a comedian named Bob Franklin. While the exact wording \"Bob Franklin's name is Franklin, Bob\" isn't directly stated, the consistent use of his name in various contexts across different files supports that he is indeed referred to as Bob Franklin, confirming this triple is correct according to the provided context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

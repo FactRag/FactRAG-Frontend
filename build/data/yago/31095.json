@@ -1,0 +1,144 @@
+{
+    "subject": "Gloria_Marsh",
+    "predicate": "isMarriedTo",
+    "object": "Dimitri_Marick",
+    "human_readable": "Gloria Marsh is married to Dimitri Marick.",
+    "questions": [
+        {
+            "score": 0.9622983932495117,
+            "question": "Is there a known relationship between Dimitri Marick and Gloria Marsh?"
+        },
+        {
+            "score": 0.9047144055366516,
+            "question": "To whom is Gloria Marsh married?"
+        },
+        {
+            "score": 0.9022819995880127,
+            "question": "Is Gloria Marsh married?"
+        },
+        {
+            "score": 0.8752461671829224,
+            "question": "Who are Dimitri Marick and Gloria Marsh?"
+        },
+        {
+            "score": 0.8738220930099487,
+            "question": "Who is married to Dimitri Marick?"
+        },
+        {
+            "score": 0.8359246850013733,
+            "question": "Name one person married to Dimitri Marick."
+        },
+        {
+            "score": 0.8242226243019104,
+            "question": "Does Gloria Marsh have a spouse?"
+        },
+        {
+            "score": 0.6942552328109741,
+            "question": "What is the name of Dimitri Marick's spouse?"
+        },
+        {
+            "score": 0.6269258856773376,
+            "question": "What is the marital status of Gloria Marsh?"
+        },
+        {
+            "score": 0.5287519693374634,
+            "question": "Who shares a marital bond with Dimitri Marick?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Gloria Marsh is married to Dimitri Marick.",
+            "html": "yago_31095_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the marital status of Gloria Marsh?",
+            "html": "yago_31095_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of Dimitri Marick's spouse?",
+            "html": "yago_31095_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Gloria Marsh have a spouse?",
+            "html": "yago_31095_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "yago_31095_100.txt"
+        },
+        {
+            "file_id": "yago_31095_12.txt"
+        },
+        {
+            "file_id": "yago_31095_17.txt"
+        },
+        {
+            "file_id": "yago_31095_18.txt"
+        },
+        {
+            "file_id": "yago_31095_28.txt"
+        },
+        {
+            "file_id": "yago_31095_54.txt"
+        },
+        {
+            "file_id": "yago_31095_55.txt"
+        },
+        {
+            "file_id": "yago_31095_7.txt"
+        },
+        {
+            "file_id": "yago_31095_85.txt"
+        },
+        {
+            "file_id": "yago_31095_95.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "{\n  \"output\": \"yes\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe information from the document at file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/yago_31095/re-ranker-msmarco/83.txt supports that Gloria Marsh was married to Dimitri Marick. The text states, \"Dimitri always had his eye on Gloria Marsh. ... Eventually, Dimitri convinced Gloria that Tad had cheated on her with Liza, and she agreed to marry Dimitri.\""
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "mistral-nemo": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Gloria Marsh (from the context) was married to Adam Chandler Sr., Dimitri Marick, and Nathaniel Price Paschall, but not at the same time. Dimitri Marick's name does appear in the context, but it is associated with being her ex-husband, not her current spouse.",
+            "category": 0
+        },
+        "gemma2": {
+            "reason": "Several pieces of context state Gloria was married to Adam Chandler Sr. and Dimitri Marick, but both marriages ended in divorce.",
+            "category": 0
+        }
+    }
+}

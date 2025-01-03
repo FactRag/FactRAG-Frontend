@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Jesus_of_Montreal",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+    "object": "Jesus of Montreal (French: J\u00e9sus de Montr\u00e9al) is a 1989 Canadian film directed by Denys Arcand.",
+    "human_readable": "The comment of Jesus of Montreal is 'Jesus of Montreal (French: J\u00e9sus de Montr\u00e9al) is a 1989 Canadian film directed by Denys Arcand'.",
+    "questions": [
+        {
+            "score": 0.869621217250824,
+            "question": "Who directed the film 'Jesus of Montreal'?"
+        },
+        {
+            "score": 0.8060120940208435,
+            "question": "Is 'Jesus of Montreal' a fictional or documentary film?"
+        },
+        {
+            "score": 0.8040232062339783,
+            "question": "In what country was the film 'Jesus of Montreal' made?"
+        },
+        {
+            "score": 0.7898221015930176,
+            "question": "What is another name for the film 'Jesus of Montreal'?"
+        },
+        {
+            "score": 0.7784131765365601,
+            "question": "What year was the film 'Jesus of Montreal' released?"
+        },
+        {
+            "score": 0.7774966955184937,
+            "question": "What genre is the film 'Jesus of Montreal'?"
+        },
+        {
+            "score": 0.7082075476646423,
+            "question": "What themes might be explored in a film titled 'Jesus of Montreal'?"
+        },
+        {
+            "score": 0.7037603855133057,
+            "question": "How has the film 'Jesus of Montreal' been received by critics and audiences?"
+        },
+        {
+            "score": 0.641588032245636,
+            "question": "What language is the original title of the film 'Jesus of Montreal' in?"
+        },
+        {
+            "score": 0.540583074092865,
+            "question": "Who are some actors who might have starred in a film like 'Jesus of Montreal'?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The comment of Jesus of Montreal is 'Jesus of Montreal (French: J\u00e9sus de Montr\u00e9al) is a 1989 Canadian film directed by Denys Arcand'.",
+            "html": "dbpedia_1025_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What language is the original title of the film 'Jesus of Montreal' in?",
+            "html": "dbpedia_1025_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How has the film 'Jesus of Montreal' been received by critics and audiences?",
+            "html": "dbpedia_1025_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What themes might be explored in a film titled 'Jesus of Montreal'?",
+            "html": "dbpedia_1025_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1025_106.txt"
+        },
+        {
+            "file_id": "dbpedia_1025_121.txt"
+        },
+        {
+            "file_id": "dbpedia_1025_126.txt"
+        },
+        {
+            "file_id": "dbpedia_1025_25.txt"
+        },
+        {
+            "file_id": "dbpedia_1025_42.txt"
+        },
+        {
+            "file_id": "dbpedia_1025_46.txt"
+        },
+        {
+            "file_id": "dbpedia_1025_61.txt"
+        },
+        {
+            "file_id": "dbpedia_1025_78.txt"
+        },
+        {
+            "file_id": "dbpedia_1025_8.txt"
+        },
+        {
+            "file_id": "dbpedia_1025_94.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the context information provided, here's the evaluation for the triple:\n\n\"Jesus Of Montr\u00e9al, which was released in 1989, is a political drama, written and directed by [Director]\".\n\nEvaluation:\n{'output': 'no'}\n\nThe reason is that while the documents mention \"Denys Arcand\" as the director of Jesus Of Montr\u00e9al, none of them describe the film as a \"political drama\". The descriptions vary, with some mentioning it's an allegory, a Passion play, or a film about representing Jesus in film.\n\nSo, the value is 'no' because the triple does not accurately represent the information available in the documents."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe provided context information clearly states that \"Jesus of Montreal\" is a 1989 Canadian film directed by Denys Arcand, which matches the given comment."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {'output': 'yes'}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The film was released in 1989, as stated, but the comment says 'Jesus of Montreal (French: J\u00e9sus de Montr\u00e9al) is a 1990 Canadian film directed by Denys Arcand.' which suggests that it was actually released in 1990.",
+            "category": 3
+        }
+    }
+}

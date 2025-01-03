@@ -1,0 +1,144 @@
+{
+    "subject": "resource/W.E.",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:Russian-language_films",
+    "human_readable": "W.E. is about Russian-language films.",
+    "questions": [
+        {
+            "score": 0.7758447527885437,
+            "question": "What is the cultural significance of Russian-language films?"
+        },
+        {
+            "score": 0.749334990978241,
+            "question": "Can you provide examples of Russian-language films?"
+        },
+        {
+            "score": 0.7334995269775391,
+            "question": "Is W.E. about English-language films?"
+        },
+        {
+            "score": 0.7240585088729858,
+            "question": "What language are the films W.E. focuses on?"
+        },
+        {
+            "score": 0.6334835886955261,
+            "question": "Are there any specific themes or motifs commonly found in Russian-language films?"
+        },
+        {
+            "score": 0.5983143448829651,
+            "question": "What are some notable achievements of Russian cinema?"
+        },
+        {
+            "score": 0.5684417486190796,
+            "question": "What are some popular genres in Russian cinema?"
+        },
+        {
+            "score": 0.45888903737068176,
+            "question": "How has Russian cinema evolved over time?"
+        },
+        {
+            "score": 0.3461030423641205,
+            "question": "What is the main topic of W.E.?"
+        },
+        {
+            "score": 0.3440512716770172,
+            "question": "What are some famous Russian film directors?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=W.E. is about Russian-language films.",
+            "html": "dbpedia_7084_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the main topic of W.E.?",
+            "html": "dbpedia_7084_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How has Russian cinema evolved over time?",
+            "html": "dbpedia_7084_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some popular genres in Russian cinema?",
+            "html": "dbpedia_7084_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_7084_129.txt"
+        },
+        {
+            "file_id": "dbpedia_7084_148.txt"
+        },
+        {
+            "file_id": "dbpedia_7084_15.txt"
+        },
+        {
+            "file_id": "dbpedia_7084_18.txt"
+        },
+        {
+            "file_id": "dbpedia_7084_22.txt"
+        },
+        {
+            "file_id": "dbpedia_7084_31.txt"
+        },
+        {
+            "file_id": "dbpedia_7084_51.txt"
+        },
+        {
+            "file_id": "dbpedia_7084_76.txt"
+        },
+        {
+            "file_id": "dbpedia_7084_8.txt"
+        },
+        {
+            "file_id": "dbpedia_7084_90.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "{\n  \"output\": \"yes\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nThe documents do not mention any information related to the film \"W.E.\" or its content being about Russian-language films. The provided context talks about various Russian films and their potential benefits for learning Russian, but does not discuss a film called \"W.E.\""
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n      \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "The provided text discusses various Russian films, their suitability for different language learning levels, and the benefits of using movies for language acquisition.  There is no mention of a film titled \"W.E.\" or any indication that it pertains to Russian-language cinema.",
+            "category": 3
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because the context information explicitly states that most of the films mentioned are able to be found on YouTube or Vkontakte, but also mentions W.E. (a film about the marriage of King Edward VIII and Wallis Simpson) in a completely unrelated section discussing additional movie suggestions at https://lidenz.ru/russian-movies/, implying it is not a Russian-language film.",
+            "category": 3
+        }
+    }
+}

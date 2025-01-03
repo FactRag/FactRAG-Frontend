@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Mike_Brewer_(television_presenter)",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "Brewer, Mike",
+    "human_readable": "The full name of Mike Brewer (television presenter) is Brewer, Mike.",
+    "questions": [
+        {
+            "score": 0.9712833166122437,
+            "question": "What is the full name of Mike Brewer?"
+        },
+        {
+            "score": 0.8665787577629089,
+            "question": "What is the spelling of Mike Brewer's surname?"
+        },
+        {
+            "score": 0.8184825778007507,
+            "question": "Is 'Mike Brewer' his legal name?"
+        },
+        {
+            "score": 0.7929040789604187,
+            "question": "What are Mike Brewer's two given names?"
+        },
+        {
+            "score": 0.7681681513786316,
+            "question": "How many parts make up Mike Brewer's full name?"
+        },
+        {
+            "score": 0.7298513650894165,
+            "question": "What is Mike Brewer's profession?"
+        },
+        {
+            "score": 0.16472840309143066,
+            "question": "What is the meaning of his last name?"
+        },
+        {
+            "score": 0.12261153012514114,
+            "question": "What is the meaning of his first name?"
+        },
+        {
+            "score": 0.07186947017908096,
+            "question": "In what order do his first and last names appear?"
+        },
+        {
+            "score": 0.03469964489340782,
+            "question": "If you were to address him formally, what would you say?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The full name of Mike Brewer (television presenter) is Brewer, Mike.",
+            "html": "dbpedia_5352_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In what order do his first and last names appear?",
+            "html": "dbpedia_5352_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the meaning of his first name?",
+            "html": "dbpedia_5352_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the meaning of his last name?",
+            "html": "dbpedia_5352_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5352_104.txt"
+        },
+        {
+            "file_id": "dbpedia_5352_11.txt"
+        },
+        {
+            "file_id": "dbpedia_5352_19.txt"
+        },
+        {
+            "file_id": "dbpedia_5352_25.txt"
+        },
+        {
+            "file_id": "dbpedia_5352_43.txt"
+        },
+        {
+            "file_id": "dbpedia_5352_55.txt"
+        },
+        {
+            "file_id": "dbpedia_5352_7.txt"
+        },
+        {
+            "file_id": "dbpedia_5352_8.txt"
+        },
+        {
+            "file_id": "dbpedia_5352_80.txt"
+        },
+        {
+            "file_id": "dbpedia_5352_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe provided text says that his full name is \"Mike Brewer\".  It does not state that his full name is \"Brewer, Mike\".  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation in JSON format:\n\n```\n{\n  \"output\": \"yes\"\n}\n```\n\nThe reason for this answer is that all documents mention Mike Brewer's first name as \"Mike\" and his last name as \"Brewer\", which supports the triple statement."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: According to the provided context, Mike Brewer's full name as given is \"Michael Brewer,\" not just \"Brewer, Mike.\" Therefore, the statement that his full name is \"Brewer, Mike\" is incorrect."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nThe provided documents give the full name of Mike Brewer as Michael Brewer. They mention that he was born on August 28th, 1964. Therefore, the statement \"The full name of Mike Brewer (television presenter) is Brewer, Mike\" is not supported by the information in the documents and should be evaluated as incorrect."
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Mike Brewer's full name is mentioned as Michael Brewer, not Brewer, Mike.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The context information shows multiple references to Mike Brewer's full name as \"Michael Brewer\" or simply \"Mike Brewer\", but none of them mention the last name being \"Brewer\" instead of \"Brewer\".",
+            "category": 2
+        }
+    }
+}

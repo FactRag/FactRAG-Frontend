@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Dodge_Center,_Minnesota",
+    "predicate": "property/latns",
+    "object": "N",
+    "human_readable": "The latitude notation of Dodge Center, Minnesota is N.",
+    "questions": [
+        {
+            "score": 0.9799777865409851,
+            "question": "What is the latitude notation of Dodge Center, Minnesota?"
+        },
+        {
+            "score": 0.7930710911750793,
+            "question": "How does the latitude of Dodge Center compare to other cities in Minnesota?"
+        },
+        {
+            "score": 0.6872252225875854,
+            "question": "What does 'N' stand for in latitude notation?"
+        },
+        {
+            "score": 0.6719207763671875,
+            "question": "Does the latitude notation for Dodge Center indicate a northern or southern location?"
+        },
+        {
+            "score": 0.4844822287559509,
+            "question": "Can you determine the longitude of Dodge Center using only the provided information?"
+        },
+        {
+            "score": 0.4184219241142273,
+            "question": "What information can be derived from the latitude notation of a place?"
+        },
+        {
+            "score": 0.41152581572532654,
+            "question": "Where is Dodge Center located?"
+        },
+        {
+            "score": 0.31943777203559875,
+            "question": "What other geographic data might be useful in describing Dodge Center?"
+        },
+        {
+            "score": 0.19606006145477295,
+            "question": "How is latitude used to locate places on Earth?"
+        },
+        {
+            "score": 0.1871362328529358,
+            "question": "What are some examples of places with different latitude notations?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The latitude notation of Dodge Center, Minnesota is N.",
+            "html": "dbpedia_71_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How is latitude used to locate places on Earth?",
+            "html": "dbpedia_71_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What other geographic data might be useful in describing Dodge Center?",
+            "html": "dbpedia_71_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where is Dodge Center located?",
+            "html": "dbpedia_71_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_71_1.txt"
+        },
+        {
+            "file_id": "dbpedia_71_10.txt"
+        },
+        {
+            "file_id": "dbpedia_71_22.txt"
+        },
+        {
+            "file_id": "dbpedia_71_25.txt"
+        },
+        {
+            "file_id": "dbpedia_71_3.txt"
+        },
+        {
+            "file_id": "dbpedia_71_37.txt"
+        },
+        {
+            "file_id": "dbpedia_71_39.txt"
+        },
+        {
+            "file_id": "dbpedia_71_46.txt"
+        },
+        {
+            "file_id": "dbpedia_71_48.txt"
+        },
+        {
+            "file_id": "dbpedia_71_68.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe documents state the latitude of Dodge Center, Minnesota is 44.02802.  This doesn't include a directional indicator (N, S, etc.). \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The context information provided includes the latitude of Dodge Center, Minnesota as 44.02802, which corresponds to a northern latitude (N). Therefore, the statement that the latitude notation for Dodge Center, Minnesota is N is supported by the documents."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Latitude values are positive for Northern locations and negative for Southern locations, so a latitude of N (North) would be expected to have a positive value. However, the provided coordinates for Dodge Center, Minnesota are negative, which contradicts the claim that it's a North location.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The context information provides the latitude of Dodge Center, Minnesota as 44.02802, which is a decimal notation, not a notation using \"N\" or \"S\".",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The latitude of Dodge Center, Minnesota is given as 44.02802, which falls within the range of northern latitudes (between 0\u00b0 and 90\u00b0N), thus it should be noted with a \"N\" to indicate north latitude. Therefore, the notation \"N\" is correctly implied even though not explicitly stated.",
+            "category": 2
+        }
+    }
+}

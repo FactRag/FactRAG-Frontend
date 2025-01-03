@@ -1,0 +1,97 @@
+{
+    "subject": "resource/Denis_Perger",
+    "predicate": "property/fullname",
+    "object": "Denis Perger",
+    "human_readable": "The full name of Denis Perger is Denis Perger.",
+    "questions": [
+        {
+            "score": 0.984635055065155,
+            "question": "What is the full name of Denis Perger?"
+        },
+        {
+            "score": 0.9818337559700012,
+            "question": "Is 'Denis Perger' the full name of this person?"
+        },
+        {
+            "score": 0.8754101395606995,
+            "question": "How would you write the complete name of Denis Perger?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The full name of Denis Perger is Denis Perger.",
+            "html": "dbpedia_1559_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is 'Denis Perger' the full name of this person?",
+            "html": "dbpedia_1559_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the full name of Denis Perger?",
+            "html": "dbpedia_1559_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1559_1.txt"
+        },
+        {
+            "file_id": "dbpedia_1559_17.txt"
+        },
+        {
+            "file_id": "dbpedia_1559_22.txt"
+        },
+        {
+            "file_id": "dbpedia_1559_38.txt"
+        },
+        {
+            "file_id": "dbpedia_1559_46.txt"
+        },
+        {
+            "file_id": "dbpedia_1559_5.txt"
+        },
+        {
+            "file_id": "dbpedia_1559_55.txt"
+        },
+        {
+            "file_id": "dbpedia_1559_58.txt"
+        },
+        {
+            "file_id": "dbpedia_1559_6.txt"
+        },
+        {
+            "file_id": "dbpedia_1559_61.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nThe text repeatedly states \"Denis Perger\" as his name.  There are no other names associated with him in these documents."
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here's the evaluation for the triple:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation:\nThe triple states that \"The full name of Denis Perger is Denis Perger.\" The documents provide information about a person named Denis Perger, but they do not explicitly state that this is his full name. However, since the document does not contradict this statement either and it mentions \"Denis Perger\" as the name of the subject in various contexts (e.g., football player profile), we can infer that the triple is likely correct based on the available information."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nExplanation: The documents provide information about Denis Perger, including his full name, age, height, and the team he plays for. Since the triple states that \"The full name of Denis Perger is Denis Perger,\" which matches the information given in the documents, the answer is \"yes.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

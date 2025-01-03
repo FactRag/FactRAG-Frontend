@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Gravedigger_Five",
+    "predicate": "ontology/hometown",
+    "object": "resource/California",
+    "human_readable": "Gravedigger Five's hometown is California.",
+    "questions": [
+        {
+            "score": 0.9728797674179077,
+            "question": "Is Gravedigger Five from California?"
+        },
+        {
+            "score": 0.9580225944519043,
+            "question": "Where is Gravedigger Five's hometown?"
+        },
+        {
+            "score": 0.7976419925689697,
+            "question": "Do you know any other details about Gravedigger Five besides his hometown?"
+        },
+        {
+            "score": 0.6936953067779541,
+            "question": "Where did Gravedigger Five grow up?"
+        },
+        {
+            "score": 0.6908596754074097,
+            "question": "What state is Gravedigger Five originally from?"
+        },
+        {
+            "score": 0.5655938386917114,
+            "question": "What is the name of the state where Gravedigger Five lives?"
+        },
+        {
+            "score": 0.5633732676506042,
+            "question": "Is California known for producing famous gravediggers?"
+        },
+        {
+            "score": 0.5154973268508911,
+            "question": "Can you tell me about Gravedigger Five's origins?"
+        },
+        {
+            "score": 0.470873087644577,
+            "question": "Why might someone be interested in knowing where Gravedigger Five is from?"
+        },
+        {
+            "score": 0.143269345164299,
+            "question": "Are there any famous people who are also from California?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Gravedigger Five's hometown is California.",
+            "html": "dbpedia_344_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Why might someone be interested in knowing where Gravedigger Five is from?",
+            "html": "dbpedia_344_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me about Gravedigger Five's origins?",
+            "html": "dbpedia_344_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is California known for producing famous gravediggers?",
+            "html": "dbpedia_344_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_344_109.txt"
+        },
+        {
+            "file_id": "dbpedia_344_12.txt"
+        },
+        {
+            "file_id": "dbpedia_344_122.txt"
+        },
+        {
+            "file_id": "dbpedia_344_15.txt"
+        },
+        {
+            "file_id": "dbpedia_344_30.txt"
+        },
+        {
+            "file_id": "dbpedia_344_32.txt"
+        },
+        {
+            "file_id": "dbpedia_344_58.txt"
+        },
+        {
+            "file_id": "dbpedia_344_69.txt"
+        },
+        {
+            "file_id": "dbpedia_344_78.txt"
+        },
+        {
+            "file_id": "dbpedia_344_89.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have any other triples you'd like me to evaluate!  I'm ready for more."
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "To answer this question, we need to evaluate the triple \"Gravedigger Five's hometown is California\" based on the provided context information.\n\nThe context information contains multiple files with different contents. We need to look for any mention of Gravedigger Five's hometown in these files.\n\nAfter analyzing the files, I found that:\n\n* File 88.txt mentions that Gravedigger Five was \"formed in 1984 in San Diego, California, United States.\"\n* File 107.txt and File 12.txt both quote John Hanrattie recounting his experience with Gravedigger Five, but neither of them mention the band's hometown.\n* Files 15.txt and 15.txt (with a different content) are about a wrestler named Gravedigger, which is not related to the garage rock revival band.\n\nBased on this analysis, we can conclude that the triple \"Gravedigger Five's hometown is California\" is supported by at least one document (File 88.txt), so:\n\n`{'output': 'yes'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents provide information about the Gravedigger Five, a band formed in San Diego, California. This supports the statement that their hometown is California."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The provided context does not specify the hometown of Gravedigger Five, but only mentions that they were formed in San Diego, California. Therefore, it cannot be confirmed that their hometown is California.",
+            "category": 4
+        },
+        "gemma2": {
+            "reason": "It states the band was part of the Paisley Underground, a movement centered on Los Angeles, California.",
+            "category": 4
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because Gravedigger Five was formed in San Diego, California.",
+            "category": 4
+        },
+        "qwen2.5": {
+            "reason": "The context states that Gravedigger Five was formed in San Diego, California, not their hometown. While they were part of the Paisley Underground movement centered on Los Angeles, their origin and formation place are specified as San Diego.",
+            "category": 4
+        }
+    }
+}

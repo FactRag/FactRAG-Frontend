@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Two_Bits",
+    "predicate": "ontology/director",
+    "object": "resource/James_Foley_(director)",
+    "human_readable": "The director of Two Bits is James Foley.",
+    "questions": [
+        {
+            "score": 0.9350443482398987,
+            "question": "Is James Foley a director?"
+        },
+        {
+            "score": 0.8844923973083496,
+            "question": "Which film was directed by James Foley?"
+        },
+        {
+            "score": 0.8611903190612793,
+            "question": "Who directed the film Two Bits?"
+        },
+        {
+            "score": 0.8341787457466125,
+            "question": "James Foley directed which movie?"
+        },
+        {
+            "score": 0.8124500513076782,
+            "question": "What is the title of the film directed by James Foley?"
+        },
+        {
+            "score": 0.8116256594657898,
+            "question": "Name a film directed by James Foley."
+        },
+        {
+            "score": 0.8046392798423767,
+            "question": "Who is responsible for directing Two Bits?"
+        },
+        {
+            "score": 0.7836101055145264,
+            "question": "What is the name of the director of Two Bits?"
+        },
+        {
+            "score": 0.7551570534706116,
+            "question": "Can you tell me the name of the director of Two Bits?"
+        },
+        {
+            "score": 0.565841019153595,
+            "question": "What film did James Foley direct?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The director of Two Bits is James Foley.",
+            "html": "dbpedia_4517_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me the name of the director of Two Bits?",
+            "html": "dbpedia_4517_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of the director of Two Bits?",
+            "html": "dbpedia_4517_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is responsible for directing Two Bits?",
+            "html": "dbpedia_4517_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4517_112.txt"
+        },
+        {
+            "file_id": "dbpedia_4517_12.txt"
+        },
+        {
+            "file_id": "dbpedia_4517_130.txt"
+        },
+        {
+            "file_id": "dbpedia_4517_141.txt"
+        },
+        {
+            "file_id": "dbpedia_4517_4.txt"
+        },
+        {
+            "file_id": "dbpedia_4517_43.txt"
+        },
+        {
+            "file_id": "dbpedia_4517_44.txt"
+        },
+        {
+            "file_id": "dbpedia_4517_73.txt"
+        },
+        {
+            "file_id": "dbpedia_4517_83.txt"
+        },
+        {
+            "file_id": "dbpedia_4517_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe information in the documents supports the triple. In particular, the document at file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4517/re-ranker-msmarco/126.txt mentions James Foley as the helmer of the movie \"Two Bits\", which confirms that James Foley is the director of Two Bits."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information that supports the statement that the director of \"Two Bits\" is James Foley. For instance, one document mentions \"Two Bits is helmed by 'Glengarry Glen Ross' director James Foley\"."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Henry_Baldwin_(judge)",
+    "predicate": "ontology/deathPlace",
+    "object": "resource/Pennsylvania",
+    "human_readable": "Henry Baldwin (judge) died in Pennsylvania.",
+    "questions": [
+        {
+            "score": 0.8326684236526489,
+            "question": "Where did Henry Baldwin die?"
+        },
+        {
+            "score": 0.48615124821662903,
+            "question": "In which state did Henry Baldwin pass away?"
+        },
+        {
+            "score": 0.48600146174430847,
+            "question": "Do any historical records mention Henry Baldwin's cause of death?"
+        },
+        {
+            "score": 0.4392538368701935,
+            "question": "What was Henry Baldwin known for during his lifetime?"
+        },
+        {
+            "score": 0.4383225440979004,
+            "question": "Was Henry Baldwin a lawyer?"
+        },
+        {
+            "score": 0.4001465141773224,
+            "question": "Were there any significant legal cases involving Henry Baldwin?"
+        },
+        {
+            "score": 0.3962613046169281,
+            "question": "What was Henry Baldwin's profession?"
+        },
+        {
+            "score": 0.306709885597229,
+            "question": "Are there any memorials or tributes dedicated to Henry Baldwin?"
+        },
+        {
+            "score": 0.2770785987377167,
+            "question": "What was the historical context of Henry Baldwin's life and career?"
+        },
+        {
+            "score": 0.24440307915210724,
+            "question": "Did Henry Baldwin have any notable family members?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Henry Baldwin (judge) died in Pennsylvania.",
+            "html": "dbpedia_6275_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What was the historical context of Henry Baldwin's life and career?",
+            "html": "dbpedia_6275_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any memorials or tributes dedicated to Henry Baldwin?",
+            "html": "dbpedia_6275_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What was Henry Baldwin's profession?",
+            "html": "dbpedia_6275_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6275_15.txt"
+        },
+        {
+            "file_id": "dbpedia_6275_16.txt"
+        },
+        {
+            "file_id": "dbpedia_6275_2.txt"
+        },
+        {
+            "file_id": "dbpedia_6275_33.txt"
+        },
+        {
+            "file_id": "dbpedia_6275_39.txt"
+        },
+        {
+            "file_id": "dbpedia_6275_41.txt"
+        },
+        {
+            "file_id": "dbpedia_6275_69.txt"
+        },
+        {
+            "file_id": "dbpedia_6275_70.txt"
+        },
+        {
+            "file_id": "dbpedia_6275_8.txt"
+        },
+        {
+            "file_id": "dbpedia_6275_89.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation:\n\n{\n  \"output\": \"yes\"\n}\n\nThe information in the documents supports the triple. According to the text, Henry Baldwin (judge) was born in New Haven, Connecticut, and later re-interred in Greendale Cemetery, Meadville, Crawford County, Pennsylvania, which implies that he died in Pennsylvania."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents support that Henry Baldwin, who served as an Associate Justice of the Supreme Court of the United States and was born in New Haven, Connecticut, died at the age of 65. The information indicates he died in Philadelphia, Pennsylvania, which aligns with the statement that he died in Pennsylvania."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Henry Baldwin (judge) died in Philadelphia, Pennsylvania, not in any specific location within the state of Pennsylvania. His remains were later re-interred in Greendale Cemetery, Meadville, Crawford County, Pennsylvania, but he did not die there.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Several sources state he died in Philadelphia, Pennsylvania.  Additionally, his remains were re-interred in Greendale Cemetery, Meadville, Crawford County, Pennsylvania.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "the correct location of death for Henry Baldwin (judge) is stated to be Philadelphia, PA, which is different from Pennsylvania.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context states that Henry Baldwin died at his lodgings, the Merchants' Hotel, in Philadelphia, Pennsylvania. Therefore, he did not die in Pennsylvania but specifically in Philadelphia.",
+            "category": 2
+        }
+    }
+}

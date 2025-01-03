@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Century_Milstead",
+    "predicate": "property/playingTeam",
+    "object": "resource/New_York_Giants",
+    "human_readable": "Century Milstead played for the New York Giants.",
+    "questions": [
+        {
+            "score": 0.9873100519180298,
+            "question": "When did Century Milstead play for the New York Giants?"
+        },
+        {
+            "score": 0.9698858857154846,
+            "question": "Is there any information available about Century Milstead's career after playing for the New York Giants?"
+        },
+        {
+            "score": 0.8478469848632812,
+            "question": "What team did Century Milstead play for?"
+        },
+        {
+            "score": 0.7704657316207886,
+            "question": "Who played for the New York Giants?"
+        },
+        {
+            "score": 0.7111829519271851,
+            "question": "What position did Century Milstead likely play?"
+        },
+        {
+            "score": 0.6704759001731873,
+            "question": "Was Century Milstead a football player?"
+        },
+        {
+            "score": 0.5997246503829956,
+            "question": "What are some notable achievements of Century Milstead?"
+        },
+        {
+            "score": 0.5619572401046753,
+            "question": "Is Century Milstead known for playing in the NFL?"
+        },
+        {
+            "score": 0.4685104191303253,
+            "question": "Can you name any other famous players who played for the New York Giants?"
+        },
+        {
+            "score": 0.3799777925014496,
+            "question": "What is Century Milstead's legacy in the world of sports?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Century Milstead played for the New York Giants.",
+            "html": "dbpedia_195_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you name any other famous players who played for the New York Giants?",
+            "html": "dbpedia_195_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Century Milstead known for playing in the NFL?",
+            "html": "dbpedia_195_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some notable achievements of Century Milstead?",
+            "html": "dbpedia_195_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_195_11.txt"
+        },
+        {
+            "file_id": "dbpedia_195_12.txt"
+        },
+        {
+            "file_id": "dbpedia_195_19.txt"
+        },
+        {
+            "file_id": "dbpedia_195_21.txt"
+        },
+        {
+            "file_id": "dbpedia_195_29.txt"
+        },
+        {
+            "file_id": "dbpedia_195_44.txt"
+        },
+        {
+            "file_id": "dbpedia_195_50.txt"
+        },
+        {
+            "file_id": "dbpedia_195_72.txt"
+        },
+        {
+            "file_id": "dbpedia_195_80.txt"
+        },
+        {
+            "file_id": "dbpedia_195_85.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "To evaluate whether the information in the documents supports the triple \"Century Milstead played for the New York Giants\", I will check each relevant document.\n\n**Document 1**\nfile_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_195/re-ranker-msmarco/29.txt\nThis document mentions Century Milstead playing 3 seasons for the Giants, but it does not specify that he played for the New York Giants. It only mentions \"the Giants\".\n\n**Document 2**\nfile_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_195/re-ranker-msmarco/44.txt\nThis document explicitly states that Century Allen \"Wally\" Milstead played with the New York Giants of the National Football League (NFL).\n\n**Document 3**\nfile_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_195/re-ranker-msmarco/19.txt\nThis document mentions Century Milstead playing tackle for the 1925 Giants, but it does not specify that he played for the New York Giants. It only mentions \"the Giants\".\n\n**Document 4**\nfile_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_195/re-ranker-msmarco/11.txt\nThis document mentions Century Milstead, American College Football Hall of Fame tackle (Yale; NFL C'ship 1927, NY Giants), but it is unclear if \"NY\" refers to New York or not.\n\n**Document 5**\nfile_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_195/re-ranker-msmarco/19.txt\nThis document is a duplicate of Document 3, and the same reasoning applies.\n\nBased on the information in the documents, there are some inconsistencies. However, considering that Document 2 explicitly states that Century Allen \"Wally\" Milstead played with the New York Giants of the National Football League (NFL), I will give the benefit of the doubt and conclude that the triple is supported by the documents.\n\nTherefore, my response is:\n```json\n{\n  \"output\": \"yes\"\n}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide information that supports the statement \"Century Milstead played for the New York Giants.\" Specifically, document 44.txt mentions that \"Milstead went on to play with... the New York Giants of the National Football League (NFL).\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

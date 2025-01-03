@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Dead_Game",
+    "predicate": "property/name",
+    "object": "Dead Game",
+    "human_readable": "The name of Dead Game is Dead Game.",
+    "questions": [
+        {
+            "score": 0.9715756177902222,
+            "question": "Is the name of the game 'Dead Game'?"
+        },
+        {
+            "score": 0.8644337058067322,
+            "question": "What can you tell me about the game named 'Dead Game'?"
+        },
+        {
+            "score": 0.7890598177909851,
+            "question": "Who developed the game 'Dead Game'?"
+        },
+        {
+            "score": 0.6543435454368591,
+            "question": "Could you provide more details about the gameplay of 'Dead Game'?"
+        },
+        {
+            "score": 0.6075981855392456,
+            "question": "What genre does 'Dead Game' belong to?"
+        },
+        {
+            "score": 0.5592477917671204,
+            "question": "When was 'Dead Game' released?"
+        },
+        {
+            "score": 0.3599652647972107,
+            "question": "Are there any reviews or ratings for 'Dead Game' available?"
+        },
+        {
+            "score": 0.3559642434120178,
+            "question": "What is the name of the game?"
+        },
+        {
+            "score": 0.1976284235715866,
+            "question": "Does the game have a different name than what is stated?"
+        },
+        {
+            "score": 0.08037934452295303,
+            "question": "Is there any additional information available about the game?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of Dead Game is Dead Game.",
+            "html": "dbpedia_4659_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does the game have a different name than what is stated?",
+            "html": "dbpedia_4659_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of the game?",
+            "html": "dbpedia_4659_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any reviews or ratings for 'Dead Game' available?",
+            "html": "dbpedia_4659_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4659_25.txt"
+        },
+        {
+            "file_id": "dbpedia_4659_29.txt"
+        },
+        {
+            "file_id": "dbpedia_4659_30.txt"
+        },
+        {
+            "file_id": "dbpedia_4659_32.txt"
+        },
+        {
+            "file_id": "dbpedia_4659_4.txt"
+        },
+        {
+            "file_id": "dbpedia_4659_41.txt"
+        },
+        {
+            "file_id": "dbpedia_4659_42.txt"
+        },
+        {
+            "file_id": "dbpedia_4659_49.txt"
+        },
+        {
+            "file_id": "dbpedia_4659_5.txt"
+        },
+        {
+            "file_id": "dbpedia_4659_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have any other triples you'd like me to evaluate! \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation result in JSON format:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe reason for this response is that, based on the documents provided, a game being called a \"dead game\" does not necessarily mean it has the name \"Dead Game\". The term \"dead game\" refers to games that are no longer popular or have low player counts, and the examples given include Palworld, Suicide Squad: Kill the Justice League, Helldivers 2, Skull & Bones, Overwatch 2, Concord, Exoprimal, etc. None of these games have the name \"Dead Game\"."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\nThe context information provided discusses the concept of \"dead games\" and provides various definitions, examples, and perspectives on what constitutes a dead game. Therefore, the statement that the name of Dead Game is Dead Game is supported by the given documents."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The definition of a \"Dead Game\" seems to be intentionally vague or self-referential, as the statement itself says it's a \"Dead Game\", which implies that the game has already met its own criteria for being considered dead. This creates a paradox and undermines the validity of the statement, as it is essentially saying \"this game is dead because it's dead\".",
+            "category": 2
+        }
+    }
+}

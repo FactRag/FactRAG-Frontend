@@ -1,0 +1,142 @@
+{
+    "subject": "resource/John_Vesey_(archbishop_of_Tuam)",
+    "predicate": "property/title",
+    "object": "resource/Dean_of_Cork",
+    "human_readable": "The title of John Vesey (archbishop of Tuam) is Dean of Cork.",
+    "questions": [
+        {
+            "score": 0.8772861957550049,
+            "question": "What is the connection between John Vesey's titles of Archbishop and Dean?"
+        },
+        {
+            "score": 0.8252842426300049,
+            "question": "What title did John Vesey hold besides being Archbishop of Tuam?"
+        },
+        {
+            "score": 0.8129233717918396,
+            "question": "Where was John Vesey Dean?"
+        },
+        {
+            "score": 0.7776378989219666,
+            "question": "What is the name of the city where John Vesey served as Dean?"
+        },
+        {
+            "score": 0.7157291173934937,
+            "question": "Who was John Vesey?"
+        },
+        {
+            "score": 0.5752315521240234,
+            "question": "What position did John Vesey hold in Tuam?"
+        },
+        {
+            "score": 0.5626732110977173,
+            "question": "John Vesey held a position in which city besides Cork?"
+        },
+        {
+            "score": 0.4118001461029053,
+            "question": "What significant role did John Vesey play in the Church?"
+        },
+        {
+            "score": 0.38631153106689453,
+            "question": "What does the title 'Dean' signify within the Church?"
+        },
+        {
+            "score": 0.3559945225715637,
+            "question": "Can you name two positions held by John Vesey?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The title of John Vesey (archbishop of Tuam) is Dean of Cork.",
+            "html": "dbpedia_2326_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What does the title 'Dean' signify within the Church?",
+            "html": "dbpedia_2326_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What significant role did John Vesey play in the Church?",
+            "html": "dbpedia_2326_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=John Vesey held a position in which city besides Cork?",
+            "html": "dbpedia_2326_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2326_11.txt"
+        },
+        {
+            "file_id": "dbpedia_2326_17.txt"
+        },
+        {
+            "file_id": "dbpedia_2326_2.txt"
+        },
+        {
+            "file_id": "dbpedia_2326_37.txt"
+        },
+        {
+            "file_id": "dbpedia_2326_40.txt"
+        },
+        {
+            "file_id": "dbpedia_2326_47.txt"
+        },
+        {
+            "file_id": "dbpedia_2326_60.txt"
+        },
+        {
+            "file_id": "dbpedia_2326_62.txt"
+        },
+        {
+            "file_id": "dbpedia_2326_76.txt"
+        },
+        {
+            "file_id": "dbpedia_2326_94.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` "
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "After analyzing the context information, I can conclude that:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe reason for this answer is that while John Vesey's career as a clergyman and archbishop are mentioned in the documents, there is no mention of him being the Dean of Cork. The only relevant information about his title comes from the \"Fasti Ecclesiae Hibernicae vol 1 p196\" which states that he was educated at Westminster School, and at Trinity College, Dublin, but it does not mention any specific title like Dean of Cork."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: According to the document containing the Fasti Ecclesiae Hibernicae, it states that \"1666/7. JOHN VESEY, M.A. a native of Coleraine,\" was appointed Dean of Cork. This supports the claim that John Vesey (archbishop of Tuam) held the title of Dean of Cork."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "There is no evidence provided in the context that John Vesey, the archbishop of Tuam, held the title of Dean of Cork. His occupation and titles mentioned in the context are clergyman and Archbishop of Tuam.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Context information states he was Archbishop of Tuam. It also states that a John Vesey was Dean of Cork, but doesn't say it was the same person.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "It contradicts information provided in the Fasti Ecclesiae Hibernicae, which states that John Vesey was educated at Westminster School and Trinity College, Dublin, but does not mention a position as Dean of Cork.",
+            "category": 2
+        }
+    }
+}

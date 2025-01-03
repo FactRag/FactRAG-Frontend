@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Auburn_Hills,_Michigan",
+    "predicate": "ontology/areaCode",
+    "object": "248,947",
+    "human_readable": "The area code of Auburn Hills, Michigan is 248,947.",
+    "questions": [
+        {
+            "score": 0.9161056280136108,
+            "question": "What is the area code for Auburn Hills, Michigan?"
+        },
+        {
+            "score": 0.8355485200881958,
+            "question": "Is there an area code associated with Auburn Hills?"
+        },
+        {
+            "score": 0.8042789101600647,
+            "question": "Is Auburn Hills in the same area code as Detroit?"
+        },
+        {
+            "score": 0.5165759325027466,
+            "question": "Which state is Auburn Hills located in?"
+        },
+        {
+            "score": 0.500623881816864,
+            "question": "What numerical code identifies calls made to and from Auburn Hills?"
+        },
+        {
+            "score": 0.44562995433807373,
+            "question": "Can you provide the area code for a city in Michigan?"
+        },
+        {
+            "score": 0.4338371753692627,
+            "question": "What are the digits used to call a phone number in Auburn Hills?"
+        },
+        {
+            "score": 0.3416052460670471,
+            "question": "What is the purpose of area codes?"
+        },
+        {
+            "score": 0.2901268005371094,
+            "question": "How can you determine the area code for a specific city?"
+        },
+        {
+            "score": 0.1720724254846573,
+            "question": "Does every city have a unique area code?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The area code of Auburn Hills, Michigan is 248,947.",
+            "html": "dbpedia_3587_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How can you determine the area code for a specific city?",
+            "html": "dbpedia_3587_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the purpose of area codes?",
+            "html": "dbpedia_3587_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are the digits used to call a phone number in Auburn Hills?",
+            "html": "dbpedia_3587_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3587_134.txt"
+        },
+        {
+            "file_id": "dbpedia_3587_19.txt"
+        },
+        {
+            "file_id": "dbpedia_3587_28.txt"
+        },
+        {
+            "file_id": "dbpedia_3587_30.txt"
+        },
+        {
+            "file_id": "dbpedia_3587_31.txt"
+        },
+        {
+            "file_id": "dbpedia_3587_34.txt"
+        },
+        {
+            "file_id": "dbpedia_3587_45.txt"
+        },
+        {
+            "file_id": "dbpedia_3587_48.txt"
+        },
+        {
+            "file_id": "dbpedia_3587_61.txt"
+        },
+        {
+            "file_id": "dbpedia_3587_97.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents indicate that Auburn Hills, Michigan has an area code overlay where both 248 and 947 serve the same geographic area. However, the triple suggests only one area code (248 or 947), which is not correct according to the provided information."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "qwen2.5": {
+            "reason": "The context clearly states that Auburn Hills, MI is utilizing an area code overlay where both 248 and 947 serve the same geographic area, not just 248 or 947 alone.",
+            "category": 2
+        }
+    }
+}

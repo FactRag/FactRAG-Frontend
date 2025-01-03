@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Anne_Charles_Basset_Montaigu",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "Montaigu, Anne Charles Basett",
+    "human_readable": "The name of Anne Charles Basset Montaigu is Montaigu, Anne Charles Basset.",
+    "questions": [
+        {
+            "score": 0.9869289398193359,
+            "question": "What is the full name of Anne Charles Basset Montaigu?"
+        },
+        {
+            "score": 0.9827811121940613,
+            "question": "What is Anne Charles Basset Montaigu's given name?"
+        },
+        {
+            "score": 0.9822563529014587,
+            "question": "What is the middle name of Anne Charles Basset Montaigu?"
+        },
+        {
+            "score": 0.9815149903297424,
+            "question": "What is Anne Charles Basset Montaigu's surname?"
+        },
+        {
+            "score": 0.9797931909561157,
+            "question": "What is the order of Anne Charles Basset Montaigu's name?"
+        },
+        {
+            "score": 0.945756196975708,
+            "question": "How would you refer to Anne Charles Basset Montaigu formally?"
+        },
+        {
+            "score": 0.9453632235527039,
+            "question": "If someone wanted to address Anne Charles Basset Montaigu by her last name, what should they say?"
+        },
+        {
+            "score": 0.9394593238830566,
+            "question": "Can you list the different components of Anne Charles Basset Montaigu's name?"
+        },
+        {
+            "score": 0.9392507076263428,
+            "question": "If someone only knew her middle name, how would they identify Anne Charles Basset Montaigu?"
+        },
+        {
+            "score": 0.7183531522750854,
+            "question": "Is 'Montaigu' a given name or a surname?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of Anne Charles Basset Montaigu is Montaigu, Anne Charles Basset.",
+            "html": "dbpedia_3427_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If someone only knew her middle name, how would they identify Anne Charles Basset Montaigu?",
+            "html": "dbpedia_3427_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you list the different components of Anne Charles Basset Montaigu's name?",
+            "html": "dbpedia_3427_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If someone wanted to address Anne Charles Basset Montaigu by her last name, what should they say?",
+            "html": "dbpedia_3427_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3427_10.txt"
+        },
+        {
+            "file_id": "dbpedia_3427_15.txt"
+        },
+        {
+            "file_id": "dbpedia_3427_18.txt"
+        },
+        {
+            "file_id": "dbpedia_3427_22.txt"
+        },
+        {
+            "file_id": "dbpedia_3427_26.txt"
+        },
+        {
+            "file_id": "dbpedia_3427_3.txt"
+        },
+        {
+            "file_id": "dbpedia_3427_42.txt"
+        },
+        {
+            "file_id": "dbpedia_3427_46.txt"
+        },
+        {
+            "file_id": "dbpedia_3427_53.txt"
+        },
+        {
+            "file_id": "dbpedia_3427_6.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe text states his full name as \"Anne Charles Basset de Montaigu\"  and not the other way around. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "The triple statement is \"Anne Charles Basset Montaigu was a general.\" \n\nHere's the evaluation:\n\n{\n\"output\": \"no\"\n}\n\nThere is no mention of Anne Charles Basset Montaigu being a general in the provided context information. However, there is a mention of \"Anne Charles Basset de Montaigu, French Divisional General during the French Revolutionary and Napoleonic Wars from 1789 to 1815\", but this is referring to a different person with a slightly different name (\"de\" is included)."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents confirm that the name \"Anne Charles Basset de Montaigu\" can be broken down into \"Anne Charles Basset\" and \"de Montaigu,\" which supports the triple stating that the name of Anne Charles Basset Montaigu is Montaigu, Anne Charles Basset."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n    \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "The provided context consistently lists \"Anne Charles Basset de Montaigu\" as her full name, with \"Montaigu\" being part of her surname.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because the name provided \"Montaigu, Anne Charles Basset\" has a reversed order of last name first and then first name, whereas typically, it should be \"Basset Montaigu, Anne Charles\".",
+            "category": 2
+        }
+    }
+}

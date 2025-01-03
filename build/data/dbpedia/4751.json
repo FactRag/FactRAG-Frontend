@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Shuttle_America",
+    "predicate": "property/hubs",
+    "object": "resource/New_York_LaGuardia",
+    "human_readable": "Shuttle America has hubs at New York LaGuardia.",
+    "questions": [
+        {
+            "score": 0.9869756698608398,
+            "question": "Is New York LaGuardia a hub for Shuttle America?"
+        },
+        {
+            "score": 0.9706370234489441,
+            "question": "Which airline has hubs at New York LaGuardia?"
+        },
+        {
+            "score": 0.9698528051376343,
+            "question": "Does Shuttle America operate flights from New York LaGuardia?"
+        },
+        {
+            "score": 0.968898594379425,
+            "question": "Besides New York LaGuardia, are there other hubs for Shuttle America?"
+        },
+        {
+            "score": 0.9452193379402161,
+            "question": "Is LaGuardia Airport a major hub for Shuttle America?"
+        },
+        {
+            "score": 0.8435526490211487,
+            "question": "Where does Shuttle America have hubs?"
+        },
+        {
+            "score": 0.7227644324302673,
+            "question": "Name an airport where Shuttle America operates hubs."
+        },
+        {
+            "score": 0.6133858561515808,
+            "question": "What city is home to one of Shuttle America's hubs?"
+        },
+        {
+            "score": 0.4023708701133728,
+            "question": "What type of air service does Shuttle America provide?"
+        },
+        {
+            "score": 0.32566702365875244,
+            "question": "Where are Shuttle America's main operational bases located?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Shuttle America has hubs at New York LaGuardia.",
+            "html": "dbpedia_4751_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of air service does Shuttle America provide?",
+            "html": "dbpedia_4751_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What city is home to one of Shuttle America's hubs?",
+            "html": "dbpedia_4751_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Name an airport where Shuttle America operates hubs.",
+            "html": "dbpedia_4751_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4751_104.txt"
+        },
+        {
+            "file_id": "dbpedia_4751_105.txt"
+        },
+        {
+            "file_id": "dbpedia_4751_37.txt"
+        },
+        {
+            "file_id": "dbpedia_4751_4.txt"
+        },
+        {
+            "file_id": "dbpedia_4751_41.txt"
+        },
+        {
+            "file_id": "dbpedia_4751_42.txt"
+        },
+        {
+            "file_id": "dbpedia_4751_51.txt"
+        },
+        {
+            "file_id": "dbpedia_4751_65.txt"
+        },
+        {
+            "file_id": "dbpedia_4751_79.txt"
+        },
+        {
+            "file_id": "dbpedia_4751_94.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the provided context information and without prior knowledge, here is my evaluation of whether the information supports the triple:\n\n{\n  \"output\": \"yes\"\n}\n\nThe documents mention Delta's new service that will operate at LaGuardia Airport (LGA) with more than 400 daily domestic departures, which implies that there are hubs or significant presence of Delta and possibly other airlines (like American Airlines, mentioned later) at LGA. Additionally, the context provides information about various transportation options available from LaGuardia Airport, including shuttle services and car services operated by different companies."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents mention \"LaGuardia Airport\" and provide information about shuttle services to and from the airport, which implicitly supports that a company like Shuttle America operates with a hub at New York LaGuardia."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Shuttle America is not an airline but a regional airline brand operated by parent companies, such as Mesa Airlines and Republic Airways. They don't have hubs at any airport, they operate flights under contractual agreements with other airlines.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "There is no information provided in the given context about Shuttle America having hubs at New York LaGuardia, whereas all other facts related to airports and airlines are mentioned.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information does not mention Shuttle America having any hubs at New York LaGuardia. It only discusses shuttle services to LaGuardia, including those offered by GO Airport Shuttle and American Airlines, but does not specify Shuttle America as a provider or mention its presence at the airport.",
+            "category": 2
+        }
+    }
+}

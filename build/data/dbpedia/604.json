@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Apodida",
+    "predicate": "property/ordo",
+    "object": "Apodida",
+    "human_readable": "The ordo of Apodida is Apodida.",
+    "questions": [
+        {
+            "score": 0.7448095679283142,
+            "question": "What name is given to the order containing Apodida?"
+        },
+        {
+            "score": 0.7295230627059937,
+            "question": "What is the order of Apodida?"
+        },
+        {
+            "score": 0.7266894578933716,
+            "question": "Is Apodida a type of animal classification?"
+        },
+        {
+            "score": 0.6777517795562744,
+            "question": "Can you provide examples of animals belonging to Apodida?"
+        },
+        {
+            "score": 0.6529538631439209,
+            "question": "To which taxonomic group does Apodida belong?"
+        },
+        {
+            "score": 0.6418089270591736,
+            "question": "Are there other orders within Apodida?"
+        },
+        {
+            "score": 0.5891156792640686,
+            "question": "How does Apodida relate to other animal orders?"
+        },
+        {
+            "score": 0.5866583585739136,
+            "question": "What are the defining characteristics of Apodida?"
+        },
+        {
+            "score": 0.5771082043647766,
+            "question": "What is the scientific classification of Apodida?"
+        },
+        {
+            "score": 0.5292760133743286,
+            "question": "Are there any suborders within Apodida?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The ordo of Apodida is Apodida.",
+            "html": "dbpedia_604_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the scientific classification of Apodida?",
+            "html": "dbpedia_604_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are the defining characteristics of Apodida?",
+            "html": "dbpedia_604_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How does Apodida relate to other animal orders?",
+            "html": "dbpedia_604_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_604_17.txt"
+        },
+        {
+            "file_id": "dbpedia_604_24.txt"
+        },
+        {
+            "file_id": "dbpedia_604_26.txt"
+        },
+        {
+            "file_id": "dbpedia_604_28.txt"
+        },
+        {
+            "file_id": "dbpedia_604_32.txt"
+        },
+        {
+            "file_id": "dbpedia_604_4.txt"
+        },
+        {
+            "file_id": "dbpedia_604_51.txt"
+        },
+        {
+            "file_id": "dbpedia_604_65.txt"
+        },
+        {
+            "file_id": "dbpedia_604_69.txt"
+        },
+        {
+            "file_id": "dbpedia_604_83.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n\n\nLet me know if you have any other queries!"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, here's the evaluation for the triple \"The ordo of Apodida is Apodida.\":\n\n{\n  \"output\": \"no\"\n}\n\nExplanation:\nWhile the documents do mention that \"Apodida\" is an order within the class Holothuroidea (e.g., in /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_604/re-ranker-msmarco/49.txt), they also explicitly state that \"Apodida\" is an order, and list its hypernyms and hyponyms. However, the documents do not provide information on what the ordo (order) of Apodida is. In fact, one of the documents (/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_604/re-ranker-msmarco/31.txt) even lists \"Apodida\" as an order under the class Holothuroidea, and its families (Chiridotidae, Myriotrochidae, Synaptidae). Therefore, the statement that the ordo of Apodida is Apodida does not accurately reflect the information provided in the documents."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\nThe documents provide information that supports the statement \"The order of Apodida is Apodida.\" Specifically, multiple entries mention it as an order within the class Holothuroidea."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The claim is wrong because the statement \"The ordo of Apodida is Apodida\" seems to be a tautology, as the word \"ordo\" itself refers to Apodida. It appears to be stating that the order (ordo) within the class Holothuroidea is actually called Apodida, which is already implied by the fact that it's an order with that name.",
+            "category": -1
+        }
+    }
+}

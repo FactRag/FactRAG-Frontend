@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Jan_Montyn",
+    "predicate": "ontology/birthPlace",
+    "object": "resource/Netherlands",
+    "human_readable": "Jan Montyn was born in Netherlands.",
+    "questions": [
+        {
+            "score": 0.8852304220199585,
+            "question": "Where was Jan Montyn born?"
+        },
+        {
+            "score": 0.7742917537689209,
+            "question": "Where might Jan Montyn have lived besides the Netherlands?"
+        },
+        {
+            "score": 0.6605862975120544,
+            "question": "What nationality is Jan Montyn?"
+        },
+        {
+            "score": 0.6265555620193481,
+            "question": "What country is associated with Jan Montyn's birthplace?"
+        },
+        {
+            "score": 0.5229355692863464,
+            "question": "Are there any famous people who were also born in the Netherlands?"
+        },
+        {
+            "score": 0.35549065470695496,
+            "question": "Is there any other information available about Jan Montyn?"
+        },
+        {
+            "score": 0.31140875816345215,
+            "question": "Can you tell me more about Jan Montyn?"
+        },
+        {
+            "score": 0.11060669273138046,
+            "question": "What language is spoken primarily in the Netherlands?"
+        },
+        {
+            "score": 0.09641654044389725,
+            "question": "What are some interesting facts about the Netherlands?"
+        },
+        {
+            "score": 0.060004089027643204,
+            "question": "What is the capital city of the Netherlands?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Jan Montyn was born in Netherlands.",
+            "html": "dbpedia_3116_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some interesting facts about the Netherlands?",
+            "html": "dbpedia_3116_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What language is spoken primarily in the Netherlands?",
+            "html": "dbpedia_3116_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about Jan Montyn?",
+            "html": "dbpedia_3116_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3116_10.txt"
+        },
+        {
+            "file_id": "dbpedia_3116_26.txt"
+        },
+        {
+            "file_id": "dbpedia_3116_32.txt"
+        },
+        {
+            "file_id": "dbpedia_3116_36.txt"
+        },
+        {
+            "file_id": "dbpedia_3116_39.txt"
+        },
+        {
+            "file_id": "dbpedia_3116_45.txt"
+        },
+        {
+            "file_id": "dbpedia_3116_49.txt"
+        },
+        {
+            "file_id": "dbpedia_3116_52.txt"
+        },
+        {
+            "file_id": "dbpedia_3116_59.txt"
+        },
+        {
+            "file_id": "dbpedia_3116_6.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "After analyzing the context information, I can evaluate whether the statement \"Jan Montyn was born in Netherlands\" is supported by the documents.\n\nThe output is:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: While most of the documents mention Jan Montyn's birth year (1924) and some mention his birthplace as Oudewater, none explicitly state that he was born in the Netherlands. In fact, one document mentions his birthplace as \"Oudewater\" without specifying the country, and another document states that he was born in Oudewater, Nederland (with \"Nederland\" being the Dutch name for the Netherlands), but this is not a strong evidence to confirm that he was born in the Netherlands. The statement could be considered incorrect according to the documents provided."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\n**Explanation:** The documents provide information about Jan Montyn's birthplace, stating he was born in Oudewater, which is in the Netherlands. Therefore, the statement that Jan Montyn was born in the Netherlands is supported by the given context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The birth year and month of Jan Montyn are given as June 28, 1924 in statement 1, but as November 13, 1924 in statement 5.",
+            "category": 2
+        }
+    }
+}

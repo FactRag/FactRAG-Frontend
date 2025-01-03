@@ -1,0 +1,144 @@
+{
+    "subject": "resource/WVVW-LP",
+    "predicate": "ontology/broadcastArea",
+    "object": "resource/Parkersburg,_West_Virginia",
+    "human_readable": "The broadcast area of WVVW-LP is Parkersburg, West Virginia.",
+    "questions": [
+        {
+            "score": 0.9773250818252563,
+            "question": "Could someone living in Parkersburg, West Virginia receive WVVW-LP's broadcasts?"
+        },
+        {
+            "score": 0.9768205881118774,
+            "question": "Where is the broadcast area of WVVW-LP located?"
+        },
+        {
+            "score": 0.88743656873703,
+            "question": "What type of content might WVVW-LP broadcast?"
+        },
+        {
+            "score": 0.8513794541358948,
+            "question": "What is the significance of a broadcast area for a station like WVVW-LP?"
+        },
+        {
+            "score": 0.8449719548225403,
+            "question": "What state is Parkersburg, West Virginia in?"
+        },
+        {
+            "score": 0.7944470643997192,
+            "question": "What city is associated with WVVW-LP?"
+        },
+        {
+            "score": 0.7603294849395752,
+            "question": "Are there any other broadcast stations with similar call signs to WVVW-LP?"
+        },
+        {
+            "score": 0.7262922525405884,
+            "question": "Is WVVW-LP a television or radio station?"
+        },
+        {
+            "score": 0.5811220407485962,
+            "question": "What does 'LP' stand for in the call sign WVVW-LP?"
+        },
+        {
+            "score": 0.5051631927490234,
+            "question": "Could WVVW-LP be a commercial or non-commercial station?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The broadcast area of WVVW-LP is Parkersburg, West Virginia.",
+            "html": "dbpedia_4623_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What does 'LP' stand for in the call sign WVVW-LP?",
+            "html": "dbpedia_4623_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is WVVW-LP a television or radio station?",
+            "html": "dbpedia_4623_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any other broadcast stations with similar call signs to WVVW-LP?",
+            "html": "dbpedia_4623_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4623_113.txt"
+        },
+        {
+            "file_id": "dbpedia_4623_118.txt"
+        },
+        {
+            "file_id": "dbpedia_4623_134.txt"
+        },
+        {
+            "file_id": "dbpedia_4623_3.txt"
+        },
+        {
+            "file_id": "dbpedia_4623_42.txt"
+        },
+        {
+            "file_id": "dbpedia_4623_48.txt"
+        },
+        {
+            "file_id": "dbpedia_4623_6.txt"
+        },
+        {
+            "file_id": "dbpedia_4623_62.txt"
+        },
+        {
+            "file_id": "dbpedia_4623_66.txt"
+        },
+        {
+            "file_id": "dbpedia_4623_84.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n\n\nWhile the text mentions that WVVW-LP serves the Parkersburg-Marietta area, it doesn't explicitly state that its broadcast area is solely Parkersburg, West Virginia. \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "{\n  \"output\": \"yes\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nExplanation: The context information mentions \"WVVW-LP (98.1 FM) is a radio station broadcasting a Southern Gospel format. Licensed to Belpre, Ohio, USA, it serves the Parkersburg-Marietta area.\" This indicates that the broadcast area of WVVW-LP includes Parkersburg, West Virginia, which supports the given statement."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nExplanation: According to the provided documents, WVVW-LP serves the Parkersburg-Marietta area, not specifically Parkersburg, West Virginia. While it does serve parts of Parkersburg, WV, it also serves Marietta and other areas in Ohio, which makes the statement inaccurate as it doesn't reflect the full coverage area described in the documents."
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "WVVW-LP is licensed to Belpre, Ohio, not Parkersburg, West Virginia.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "WVVW-LP is licensed to Belpre, Ohio, and serves the Parkersburg-Marietta area.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,144 @@
+{
+    "subject": "resource/David_Grose",
+    "predicate": "ontology/birthYear",
+    "object": "1944",
+    "human_readable": "David Grose was born in 1944.",
+    "questions": [
+        {
+            "score": 0.848502516746521,
+            "question": "In what year was David Grose born?"
+        },
+        {
+            "score": 0.7603827118873596,
+            "question": "Where was David Grose born?"
+        },
+        {
+            "score": 0.5332856774330139,
+            "question": "What age is David Grose?"
+        },
+        {
+            "score": 0.4548814594745636,
+            "question": "What is David Grose known for?"
+        },
+        {
+            "score": 0.44170427322387695,
+            "question": "How old was David Grose when he started his career?"
+        },
+        {
+            "score": 0.3597157597541809,
+            "question": "Is David Grose still alive?"
+        },
+        {
+            "score": 0.2961690127849579,
+            "question": "What is David Grose's legacy?"
+        },
+        {
+            "score": 0.2713618874549866,
+            "question": "Who were some of David Grose's collaborators?"
+        },
+        {
+            "score": 0.2515391707420349,
+            "question": "What are some of David Grose's notable works?"
+        },
+        {
+            "score": 0.16742125153541565,
+            "question": "Has David Grose won any awards?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=David Grose was born in 1944.",
+            "html": "dbpedia_1785_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some of David Grose's notable works?",
+            "html": "dbpedia_1785_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who were some of David Grose's collaborators?",
+            "html": "dbpedia_1785_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is David Grose's legacy?",
+            "html": "dbpedia_1785_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1785_13.txt"
+        },
+        {
+            "file_id": "dbpedia_1785_2.txt"
+        },
+        {
+            "file_id": "dbpedia_1785_23.txt"
+        },
+        {
+            "file_id": "dbpedia_1785_30.txt"
+        },
+        {
+            "file_id": "dbpedia_1785_32.txt"
+        },
+        {
+            "file_id": "dbpedia_1785_5.txt"
+        },
+        {
+            "file_id": "dbpedia_1785_50.txt"
+        },
+        {
+            "file_id": "dbpedia_1785_71.txt"
+        },
+        {
+            "file_id": "dbpedia_1785_78.txt"
+        },
+        {
+            "file_id": "dbpedia_1785_8.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the answer in the requested format:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe information provided does not support the triple. While there are multiple documents related to individuals named \"David Grose\", none of them mention a birth year of 1944. The documents do provide birth years for different David Groses (e.g., 1922, 1932, 1936, etc.), but not specifically a David Grose born in 1944."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: The documents mention a David Paul Grose who was born on February 21st, 1943, not 1944. Therefore, the statement \"David Grose was born in 1944\" is incorrect according to the provided context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "David Paul Grose was born February 21st, 1943.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information clearly states that David Paul Grose was born on February 21st, 1943, not 1944.",
+            "category": 2
+        }
+    }
+}

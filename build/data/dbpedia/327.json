@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Techtron",
+    "predicate": "property/location",
+    "object": "resource/Melbourne,_Australia",
+    "human_readable": "Techtron is located in Melbourne, Australia.",
+    "questions": [
+        {
+            "score": 0.9744659066200256,
+            "question": "Techtron is situated in which Australian city?"
+        },
+        {
+            "score": 0.9535380601882935,
+            "question": "Is Techtron in Australia?"
+        },
+        {
+            "score": 0.7954166531562805,
+            "question": "Where is Techtron located?"
+        },
+        {
+            "score": 0.6013455986976624,
+            "question": "In which city would you find Techtron?"
+        },
+        {
+            "score": 0.5945596694946289,
+            "question": "Can you tell me about Techtron's location?"
+        },
+        {
+            "score": 0.5856153964996338,
+            "question": "What country is Techtron in?"
+        },
+        {
+            "score": 0.5344713926315308,
+            "question": "What is the location of Techtron's headquarters?"
+        },
+        {
+            "score": 0.4724016487598419,
+            "question": "What city is the home of Techtron?"
+        },
+        {
+            "score": 0.35279884934425354,
+            "question": "If you were to visit Techtron, what city would you go to?"
+        },
+        {
+            "score": 0.1817898005247116,
+            "question": "Melbourne is known as the home of which company?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Techtron is located in Melbourne, Australia.",
+            "html": "dbpedia_327_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If you were to visit Techtron, what city would you go to?",
+            "html": "dbpedia_327_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What city is the home of Techtron?",
+            "html": "dbpedia_327_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the location of Techtron's headquarters?",
+            "html": "dbpedia_327_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_327_105.txt"
+        },
+        {
+            "file_id": "dbpedia_327_108.txt"
+        },
+        {
+            "file_id": "dbpedia_327_111.txt"
+        },
+        {
+            "file_id": "dbpedia_327_14.txt"
+        },
+        {
+            "file_id": "dbpedia_327_29.txt"
+        },
+        {
+            "file_id": "dbpedia_327_3.txt"
+        },
+        {
+            "file_id": "dbpedia_327_70.txt"
+        },
+        {
+            "file_id": "dbpedia_327_77.txt"
+        },
+        {
+            "file_id": "dbpedia_327_93.txt"
+        },
+        {
+            "file_id": "dbpedia_327_99.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "To evaluate the triple \"Techtron is located in Melbourne, Australia\", I will search for any information in the provided context that matches this statement.\n\nUpon examining the context, I found multiple mentions of \"Techtron\" with varying locations:\n\n* A company called Global Techtron Corp. is located in San Dimas, CA.\n* A business named Techtron deals with Laser Projection System and is located at No. 430A, 1st Floor, Sant Nagar, East Of Kailash New Delhi - 110065, Delhi, India.\n* Another entity called Techtron Systems is an independent company located in Gwinnett County, Georgia.\n* A clinical laboratory named Techtron Engineering is located in Anoka.\n\nNone of these locations are mentioned as Melbourne, Australia. Therefore, based on the provided context information:\n\n{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\n**Explanation:** The provided documents do not contain any information about Techtron being located in Melbourne, Australia. Instead, the documents reference multiple companies named Techtron but provide locations such as San Dimas, CA; New Delhi, India; Gwinnett County, Georgia; and Anoka, which are all different from Melbourne, Australia."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "There is no information provided in the context indicating that Techtron is located in Melbourne, Australia.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "The provided context information lists multiple Techtron businesses located in different parts of the world, including California, India, Georgia, and Minnesota.  There is no mention of a Techtron location in Melbourne, Australia.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "There is no mention of Melbourne, Australia being associated with any entity or information related to Techtron in the provided context.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information clearly states that Global Techtron Corp is located in San Dimas, CA, USA, and there is no mention of any presence or location of the company in Melbourne, Australia.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Westminster_School",
+    "predicate": "property/houses",
+    "object": "Milne's",
+    "human_readable": "Westminster School has houses called Milne's.",
+    "questions": [
+        {
+            "score": 0.9849168658256531,
+            "question": "Is Milne's a house at Westminster School?"
+        },
+        {
+            "score": 0.9637516140937805,
+            "question": "Can you name a house at Westminster School besides Milne's?"
+        },
+        {
+            "score": 0.9405431151390076,
+            "question": "Which school has houses called Milne's?"
+        },
+        {
+            "score": 0.9149623513221741,
+            "question": "What are the houses called at Westminster School?"
+        },
+        {
+            "score": 0.874631404876709,
+            "question": "What is the name of a house at Westminster School?"
+        },
+        {
+            "score": 0.8435953259468079,
+            "question": "Does Westminster School have houses named after people?"
+        },
+        {
+            "score": 0.8070570230484009,
+            "question": "Are there multiple houses at Westminster School?"
+        },
+        {
+            "score": 0.631681501865387,
+            "question": "What type of institution is Westminster School?"
+        },
+        {
+            "score": 0.4739501178264618,
+            "question": "Who might Milne be?"
+        },
+        {
+            "score": 0.45711377263069153,
+            "question": "What other names could houses at schools have?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Westminster School has houses called Milne's.",
+            "html": "dbpedia_3145_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who might Milne be?",
+            "html": "dbpedia_3145_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of institution is Westminster School?",
+            "html": "dbpedia_3145_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there multiple houses at Westminster School?",
+            "html": "dbpedia_3145_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3145_108.txt"
+        },
+        {
+            "file_id": "dbpedia_3145_11.txt"
+        },
+        {
+            "file_id": "dbpedia_3145_120.txt"
+        },
+        {
+            "file_id": "dbpedia_3145_22.txt"
+        },
+        {
+            "file_id": "dbpedia_3145_31.txt"
+        },
+        {
+            "file_id": "dbpedia_3145_32.txt"
+        },
+        {
+            "file_id": "dbpedia_3145_35.txt"
+        },
+        {
+            "file_id": "dbpedia_3145_65.txt"
+        },
+        {
+            "file_id": "dbpedia_3145_66.txt"
+        },
+        {
+            "file_id": "dbpedia_3145_87.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "After analyzing the provided context information, I can confirm that:\n\n{\n  \"output\": \"yes\"\n}\n\nThe reason for this answer is that the documents contain information about Alan Alexander Milne attending Westminster School, and one of the school's notable alumni includes A. A. Milne. Furthermore, a document mentions that H.G. Wells was among the teachers at Henley House, where Milne's father ran a small independent school called \"Milne's\" is not explicitly mentioned in the documents, however, one of the buildings notable for unique qualities, age, and history is associated with A.A. Milne, but it does not explicitly mention houses named after him, the document mentions \"houses\" as cubicles at Westminster School (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3145/re-ranker-msmarco/15.txt)."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\"output\": \"no\"}\n```\n\nExplanation: The provided documents do not mention any information about Westminster School having houses named after Milne. While the documents do provide some details about Alan Alexander Milne and his education at Westminster School, they do not indicate that a school house was named in his honor."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "There is no information in the context that supports the existence of houses called \"Milne\" at Westminster School.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "There is no mention of any houses named \"Milne's\" within the provided text about Westminster School.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context does not mention any houses at Westminster School being named after Milne. It only describes some of the school\u2019s history, facilities, and notable alumni, without reference to naming any specific structures after Milne or his son.",
+            "category": 2
+        }
+    }
+}

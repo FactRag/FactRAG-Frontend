@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Adam_Soilleux",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:People_from_Southend-on-Sea",
+    "human_readable": "Adam Soilleux is a subject of Category:People from Southend-on-Sea.",
+    "questions": [
+        {
+            "score": 0.8384634256362915,
+            "question": "Who else is a subject of 'People from Southend-on-Sea'?"
+        },
+        {
+            "score": 0.8210681080818176,
+            "question": "What category does Adam Soilleux belong to?"
+        },
+        {
+            "score": 0.7771432399749756,
+            "question": "Is Adam Soilleux a person?"
+        },
+        {
+            "score": 0.7705920934677124,
+            "question": "Where is Adam Soilleux from?"
+        },
+        {
+            "score": 0.7585813403129578,
+            "question": "Can you tell me about people from Southend-on-Sea?"
+        },
+        {
+            "score": 0.7313705682754517,
+            "question": "What are some characteristics of people from Southend-on-Sea?"
+        },
+        {
+            "score": 0.6890145540237427,
+            "question": "Name a city that Adam Soilleux is associated with."
+        },
+        {
+            "score": 0.6872803568840027,
+            "question": "Are there any famous people from Southend-on-Sea?"
+        },
+        {
+            "score": 0.6277520656585693,
+            "question": "Is Adam Soilleux a well-known person?"
+        },
+        {
+            "score": 0.5877037644386292,
+            "question": "What makes someone from Southend-on-Sea unique?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Adam Soilleux is a subject of Category:People from Southend-on-Sea.",
+            "html": "dbpedia_3376_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Adam Soilleux a well-known person?",
+            "html": "dbpedia_3376_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any famous people from Southend-on-Sea?",
+            "html": "dbpedia_3376_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Name a city that Adam Soilleux is associated with.",
+            "html": "dbpedia_3376_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3376_1.txt"
+        },
+        {
+            "file_id": "dbpedia_3376_12.txt"
+        },
+        {
+            "file_id": "dbpedia_3376_14.txt"
+        },
+        {
+            "file_id": "dbpedia_3376_15.txt"
+        },
+        {
+            "file_id": "dbpedia_3376_16.txt"
+        },
+        {
+            "file_id": "dbpedia_3376_18.txt"
+        },
+        {
+            "file_id": "dbpedia_3376_21.txt"
+        },
+        {
+            "file_id": "dbpedia_3376_28.txt"
+        },
+        {
+            "file_id": "dbpedia_3376_4.txt"
+        },
+        {
+            "file_id": "dbpedia_3376_8.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nThe text clearly states that Adam Soilleux was born in Southend-on-Sea.  Category:People from Southend-on-Sea would therefore include him as a subject."
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here's the evaluation of the triple based on the provided context information:\n\n{\n  \"output\": \"no\"\n}\n\nThe reason for this answer is that while Adam Soilleux is indeed a person (as stated in the first document), there is no explicit mention in any of the documents that he is from Southend-on-Sea. The name \"Southend-on-Sea\" appears only as his place of birth, but it's not explicitly mentioned as a category or label associated with him."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents provide information about Adam Soilleux, including his place of birth as Southend-on-Sea. This supports the triple that Adam Soilleux is a subject of Category:People from Southend-on-Sea."
+        },
+        "mistral": {
+            "short_ans": -1,
+            "full_ans": " {\"output\": \"unknown\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Adam Soilleux's place of birth is Southend-on-Sea, but the category \"People from Southend-on-Sea\" typically refers to individuals who were born in that location and grew up there. Adam, being a professional cricket player, was likely not raised in Southend-on-Sea as his cricket career would have taken him elsewhere for training and matches at an early age.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The context information does not provide any direct connection between Adam Soilleux and Southend-on-Sea, but rather provides general information about Adam Soilleux, his birthdate, zodiac sign, occupation, etc., without mentioning a specific link to Southend-on-Sea.",
+            "category": 2
+        }
+    }
+}

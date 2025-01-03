@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Love_Crime",
+    "predicate": "property/language",
+    "object": "English",
+    "human_readable": "The language of the Love Crime is English.",
+    "questions": [
+        {
+            "score": 0.8483510613441467,
+            "question": "Could someone who speaks English understand The Love Crime?"
+        },
+        {
+            "score": 0.8066161870956421,
+            "question": "What language is the Love Crime written in?"
+        },
+        {
+            "score": 0.6569353938102722,
+            "question": "Is the Love Crime written in a foreign language?"
+        },
+        {
+            "score": 0.06542232632637024,
+            "question": "What other types of texts might be written in English?"
+        },
+        {
+            "score": 0.042621880769729614,
+            "question": "Are there any famous books written in English?"
+        },
+        {
+            "score": 0.03551390767097473,
+            "question": "Does the language of a book influence its popularity?"
+        },
+        {
+            "score": 0.03253139555454254,
+            "question": "What are some examples of other languages used in literature?"
+        },
+        {
+            "score": 0.030886080116033554,
+            "question": "How does knowing the language of a book help you understand it better?"
+        },
+        {
+            "score": 0.018765343353152275,
+            "question": "What are some benefits of learning to read in multiple languages?"
+        },
+        {
+            "score": 0.014730204828083515,
+            "question": "Are there any challenges to reading books in a different language?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The language of the Love Crime is English.",
+            "html": "dbpedia_3445_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some benefits of learning to read in multiple languages?",
+            "html": "dbpedia_3445_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How does knowing the language of a book help you understand it better?",
+            "html": "dbpedia_3445_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some examples of other languages used in literature?",
+            "html": "dbpedia_3445_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3445_111.txt"
+        },
+        {
+            "file_id": "dbpedia_3445_127.txt"
+        },
+        {
+            "file_id": "dbpedia_3445_136.txt"
+        },
+        {
+            "file_id": "dbpedia_3445_23.txt"
+        },
+        {
+            "file_id": "dbpedia_3445_4.txt"
+        },
+        {
+            "file_id": "dbpedia_3445_40.txt"
+        },
+        {
+            "file_id": "dbpedia_3445_48.txt"
+        },
+        {
+            "file_id": "dbpedia_3445_6.txt"
+        },
+        {
+            "file_id": "dbpedia_3445_92.txt"
+        },
+        {
+            "file_id": "dbpedia_3445_97.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe documents state that \"Love Crime\" is in French and English with English subtitles, meaning it's not exclusively in English. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple in JSON format:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nThis is because none of the documents mention that the language of the film \"Love Crime\" is English. However, it is mentioned that the film is available in French and English with English subtitles (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3445/re-ranker-msmarco/5.txt). This suggests that while the film may have some dialogue or subtitles in English, it is not the primary language of the film."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: According to the context provided, \"Love Crime\" is a film that has \"In French and English with English subtitles,\" indicating that it is not solely in English. Therefore, the statement that the language of \"Love Crime\" is English is incorrect."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The language of the film \"Love Crime\" is French and English, not just English.",
+            "category": 3
+        },
+        "gemma2": {
+            "reason": "Multiple sources state the film is \"In French and English with English subtitles.\"",
+            "category": 3
+        },
+        "llama3.1": {
+            "reason": "The film is stated to be \"In French and English with English subtitles\" which indicates the primary language of the film is not English, but rather a mix of French and English.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "The context information states that the film \"Love Crime\" is \"In French and English with English subtitles,\" indicating it is primarily in French.",
+            "category": 3
+        }
+    }
+}

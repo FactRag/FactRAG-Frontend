@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Hawking_(2013_film)",
+    "predicate": "property/name",
+    "object": "Hawking",
+    "human_readable": "The name of the film 'Hawking' (2013) is Hawking.",
+    "questions": [
+        {
+            "score": 0.8109228610992432,
+            "question": "Is the title of the film 'Hawking' the same as the name it portrays?"
+        },
+        {
+            "score": 0.7536006569862366,
+            "question": "What is the name of the film released in 2013?"
+        },
+        {
+            "score": 0.7380473613739014,
+            "question": "What is the subject of the film 'Hawking'?"
+        },
+        {
+            "score": 0.7159846425056458,
+            "question": "Is the film 'Hawking' a biographical film?"
+        },
+        {
+            "score": 0.6412080526351929,
+            "question": "What year was the film 'Hawking' produced?"
+        },
+        {
+            "score": 0.6284189224243164,
+            "question": "When was the film 'Hawking' released?"
+        },
+        {
+            "score": 0.5796447396278381,
+            "question": "Can you name any actors who might have been involved in the film 'Hawking'?"
+        },
+        {
+            "score": 0.46841296553611755,
+            "question": "What are some possible themes explored in the film 'Hawking'?"
+        },
+        {
+            "score": 0.42879360914230347,
+            "question": "What genre is the film 'Hawking' likely to belong to?"
+        },
+        {
+            "score": 0.42569658160209656,
+            "question": "Does the film 'Hawking' focus on a real person?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of the film 'Hawking' (2013) is Hawking.",
+            "html": "dbpedia_3536_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What genre is the film 'Hawking' likely to belong to?",
+            "html": "dbpedia_3536_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some possible themes explored in the film 'Hawking'?",
+            "html": "dbpedia_3536_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you name any actors who might have been involved in the film 'Hawking'?",
+            "html": "dbpedia_3536_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3536_31.txt"
+        },
+        {
+            "file_id": "dbpedia_3536_32.txt"
+        },
+        {
+            "file_id": "dbpedia_3536_42.txt"
+        },
+        {
+            "file_id": "dbpedia_3536_46.txt"
+        },
+        {
+            "file_id": "dbpedia_3536_53.txt"
+        },
+        {
+            "file_id": "dbpedia_3536_54.txt"
+        },
+        {
+            "file_id": "dbpedia_3536_65.txt"
+        },
+        {
+            "file_id": "dbpedia_3536_80.txt"
+        },
+        {
+            "file_id": "dbpedia_3536_83.txt"
+        },
+        {
+            "file_id": "dbpedia_3536_99.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple in the form of a structured JSON format:\n\n{\n  \"output\": \"no\"\n}\n\nThis is because the documents do not confirm that the movie's title, \"The Theory of Everything\", is indeed trying for something more real and intimate in its study of the compromises made within a marriage with unique pressures, but rather it is stated to be a film about Hawking, where Hawking's breakthrough was inspired by his 1973 meeting in Moscow with two leading Soviet black hole experts."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nExplanation: The context information provided includes details about a film titled \"Hawking\" released in 2013, which aligns with the query stating that the name of the film 'Hawking' (2013) is Hawking."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The context information already states that there was a 2004 BBC film Hawking, which implies that the 2013 documentary of the same title has a different name.",
+            "category": 3
+        }
+    }
+}

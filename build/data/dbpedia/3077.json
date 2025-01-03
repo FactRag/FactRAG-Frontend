@@ -1,0 +1,142 @@
+{
+    "subject": "resource/The_Angry_God",
+    "predicate": "property/story",
+    "object": "Emma-Lindsay Squier",
+    "human_readable": "The story of The Angry God is written by Emma-Lindsay Squier.",
+    "questions": [
+        {
+            "score": 0.9040268659591675,
+            "question": "Who wrote the story of The Angry God?"
+        },
+        {
+            "score": 0.8999863266944885,
+            "question": "What is the title of the story written by Emma-Lindsay Squier?"
+        },
+        {
+            "score": 0.6430187821388245,
+            "question": "Is Emma-Lindsay Squier known for writing fiction?"
+        },
+        {
+            "score": 0.5970113277435303,
+            "question": "When was The Angry God likely written?"
+        },
+        {
+            "score": 0.43658551573753357,
+            "question": "What themes might be explored in The Angry God?"
+        },
+        {
+            "score": 0.39963024854660034,
+            "question": "How is The Angry God received by readers?"
+        },
+        {
+            "score": 0.3661118447780609,
+            "question": "Are there any other works by Emma-Lindsay Squier?"
+        },
+        {
+            "score": 0.32582172751426697,
+            "question": "Who are the main characters in The Angry God?"
+        },
+        {
+            "score": 0.2997048795223236,
+            "question": "Can you tell me more about The Angry God?"
+        },
+        {
+            "score": 0.2173314094543457,
+            "question": "What genre might The Angry God fall into?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The story of The Angry God is written by Emma-Lindsay Squier.",
+            "html": "dbpedia_3077_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about The Angry God?",
+            "html": "dbpedia_3077_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who are the main characters in The Angry God?",
+            "html": "dbpedia_3077_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any other works by Emma-Lindsay Squier?",
+            "html": "dbpedia_3077_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3077_1.txt"
+        },
+        {
+            "file_id": "dbpedia_3077_19.txt"
+        },
+        {
+            "file_id": "dbpedia_3077_22.txt"
+        },
+        {
+            "file_id": "dbpedia_3077_41.txt"
+        },
+        {
+            "file_id": "dbpedia_3077_49.txt"
+        },
+        {
+            "file_id": "dbpedia_3077_56.txt"
+        },
+        {
+            "file_id": "dbpedia_3077_59.txt"
+        },
+        {
+            "file_id": "dbpedia_3077_69.txt"
+        },
+        {
+            "file_id": "dbpedia_3077_83.txt"
+        },
+        {
+            "file_id": "dbpedia_3077_95.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n\n\nLet me know if you have more triples to evaluate!"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe information in the documents does not support the triple that \"The story of The Angry God is written by Emma-Lindsay Squier.\" In fact, there are multiple references to a sermon called \"Sinners in the Hands of an Angry God\" which was authored by Jonathan Edwards."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe context information mentions \"Sinners in the Hands of an Angry God,\" which is incorrectly referenced as \"The Angry God\" in the query, and states that it was authored by Jonathan Edwards. However, another document references a story titled \"The Soul of Caliban\" by Emma-Lindsay Squier, supporting the corrected query that the story of \"The Angry God\" (assuming it refers to this particular work) is written by Emma-Lindsay Squier. Therefore, the information supports the revised statement in the query."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The provided context does not indicate that \"Sinners in the Hands of an Angry God\" is written by Emma-Lindsay Squier. In fact, it states that Jonathan Edwards wrote the sermon with the same title.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Various pieces of text identify Emma-Lindsay Squier as a writer of weird tales and fantastical stories, while the provided information about \"Sinners In the Hands of an Angry God\" describes it as a serious religious sermon by Jonathan Edwards.   These genres and subjects are very different, making it unlikely that the same author would create both.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "Jonathan Edwards is the author of \"Sinners in the Hands of an Angry God\", not Emma-Lindsay Squier.",
+            "category": 2
+        }
+    }
+}

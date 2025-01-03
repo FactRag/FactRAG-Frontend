@@ -1,0 +1,144 @@
+{
+    "subject": "resource/WAYF",
+    "predicate": "ontology/owner",
+    "object": "resource/WAY-FM_Network",
+    "human_readable": "WAYF owns WAY-FM Network.",
+    "questions": [
+        {
+            "score": 0.9069030284881592,
+            "question": "Who owns WAY-FM Network?"
+        },
+        {
+            "score": 0.8923044800758362,
+            "question": "Is WAYF a network owner?"
+        },
+        {
+            "score": 0.8349756598472595,
+            "question": "Does WAYF own any other networks besides WAY-FM Network?"
+        },
+        {
+            "score": 0.8249337077140808,
+            "question": "What is the name of the company that owns WAY-FM Network?"
+        },
+        {
+            "score": 0.6700409054756165,
+            "question": "How does WAY-FM Network operate?"
+        },
+        {
+            "score": 0.6433429718017578,
+            "question": "What type of network is WAY-FM Network?"
+        },
+        {
+            "score": 0.5867630243301392,
+            "question": "Is WAYF a publicly traded company?"
+        },
+        {
+            "score": 0.5820285081863403,
+            "question": "What kind of programming is typically found on WAY-FM Network?"
+        },
+        {
+            "score": 0.5186315178871155,
+            "question": "Can you name a company that owns a radio network?"
+        },
+        {
+            "score": 0.1906377375125885,
+            "question": "What are some examples of popular radio networks?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=WAYF owns WAY-FM Network.",
+            "html": "dbpedia_2801_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you name a company that owns a radio network?",
+            "html": "dbpedia_2801_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What kind of programming is typically found on WAY-FM Network?",
+            "html": "dbpedia_2801_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is WAYF a publicly traded company?",
+            "html": "dbpedia_2801_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2801_10.txt"
+        },
+        {
+            "file_id": "dbpedia_2801_110.txt"
+        },
+        {
+            "file_id": "dbpedia_2801_112.txt"
+        },
+        {
+            "file_id": "dbpedia_2801_28.txt"
+        },
+        {
+            "file_id": "dbpedia_2801_29.txt"
+        },
+        {
+            "file_id": "dbpedia_2801_36.txt"
+        },
+        {
+            "file_id": "dbpedia_2801_40.txt"
+        },
+        {
+            "file_id": "dbpedia_2801_51.txt"
+        },
+        {
+            "file_id": "dbpedia_2801_57.txt"
+        },
+        {
+            "file_id": "dbpedia_2801_60.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "After analyzing the context information, I can provide the following evaluation:\n\n`{'output': 'yes'}`\n\nThe documents mention that WAY Media Network Services is a division of WAY Media, Inc., also known as WAY-FM. Additionally, one of the documents mentions that WAY-FM owns and operates 14 full power FM radio stations, including KCWA, which is part of the WAY-FM Network. This suggests that WAYF (WAY Media Network Services) does indeed own the WAY-FM Network."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: The information provided does not mention any ownership relationship between WAYF and WAY-FM Network.WAY-FM is mentioned as being owned by the WAY-FM Network, but there's no explicit statement about WAYF owning WAY-FM Network."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "WAYF-DT2 is a Fox affiliated station serving the Myrtle Beach, South Carolina broadcast area while WAY Media Network Services (WMNS) serves over 25 additional radio stations nationwide with satellite programming.  They are different entities.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "WAY-FM Network is owned by WAY-FM, not the other way around. The context states that \"WAY-FM owns and operates 14 full power FM radio stations including, newly added stations in Denver, Colorado; Wichita, Kansas and Tallahassee, Florida,\" which implies WAY-FM owns these stations. Additionally, WAY Media Network Services is described as a division of WAY Media, Inc., or WAY-FM, further supporting that WAY-FM has ownership over its network services and radio stations.",
+            "category": 2
+        }
+    }
+}

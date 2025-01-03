@@ -1,0 +1,114 @@
+{
+    "subject": "resource/Casey_Desmond",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "Casey Desmond",
+    "human_readable": "The name of Casey Desmond is Casey Desmond.",
+    "questions": [
+        {
+            "score": 0.9821391701698303,
+            "question": "What is the name of Casey Desmond?"
+        },
+        {
+            "score": 0.967201828956604,
+            "question": "Is Casey Desmond a person?"
+        },
+        {
+            "score": 0.9500420093536377,
+            "question": "Does Casey Desmond have a different name?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of Casey Desmond is Casey Desmond.",
+            "html": "dbpedia_1864_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Casey Desmond a person?",
+            "html": "dbpedia_1864_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of Casey Desmond?",
+            "html": "dbpedia_1864_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1864_11.txt"
+        },
+        {
+            "file_id": "dbpedia_1864_14.txt"
+        },
+        {
+            "file_id": "dbpedia_1864_20.txt"
+        },
+        {
+            "file_id": "dbpedia_1864_23.txt"
+        },
+        {
+            "file_id": "dbpedia_1864_24.txt"
+        },
+        {
+            "file_id": "dbpedia_1864_28.txt"
+        },
+        {
+            "file_id": "dbpedia_1864_29.txt"
+        },
+        {
+            "file_id": "dbpedia_1864_39.txt"
+        },
+        {
+            "file_id": "dbpedia_1864_42.txt"
+        },
+        {
+            "file_id": "dbpedia_1864_93.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the response:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe information in the documents supports the triple that the name of Casey Desmond is indeed Casey Desmond. This is confirmed by multiple sources, including a biography and several articles about her music career."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide consistent information about Casey Desmond, including her full name and origin. There is no contradictory or conflicting information that would make the statement \"The name of Casey Desmond is Casey Desmond\" incorrect based on the given context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The context does not provide new information about Casey Desmond's name. It only reiterates that her name is Casey Desmond, which was already established earlier in the provided text.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "The provided text consistently refers to the individual as \"Casey Desmond\".",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The name of Casey Desmond as mentioned multiple times throughout the context information remains consistent with \"Casey Desmond\".",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context explicitly states \"Casey Patricia Desmond (born June 25, 1986, in Boston, Massachusetts)\" which includes her full name, confirming that the given name \"Casey Desmond\" is correct.",
+            "category": 2
+        }
+    }
+}

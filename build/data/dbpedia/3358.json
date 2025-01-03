@@ -1,0 +1,129 @@
+{
+    "subject": "resource/J._D._Hayworth",
+    "predicate": "ontology/birthPlace",
+    "object": "resource/North_Carolina",
+    "human_readable": "J.D. Hayworth was born in North Carolina.",
+    "questions": [
+        {
+            "score": 0.9030374884605408,
+            "question": "Where was J.D. Hayworth born?"
+        },
+        {
+            "score": 0.7872781753540039,
+            "question": "What year was J.D. Hayworth born?"
+        },
+        {
+            "score": 0.4598460793495178,
+            "question": "Can you name any famous people born in North Carolina?"
+        },
+        {
+            "score": 0.4190230965614319,
+            "question": "Is there anything else you know about J.D. Hayworth?"
+        },
+        {
+            "score": 0.377909392118454,
+            "question": "Does J.D. Hayworth have any siblings?"
+        },
+        {
+            "score": 0.3052158057689667,
+            "question": "What state is North Carolina known for?"
+        },
+        {
+            "score": 0.1427115499973297,
+            "question": "What are some popular tourist destinations in North Carolina?"
+        },
+        {
+            "score": 0.12005147337913513,
+            "question": "What is the climate like in North Carolina?"
+        },
+        {
+            "score": 0.11527525633573532,
+            "question": "What is North Carolina's capital city?"
+        },
+        {
+            "score": 0.1082526445388794,
+            "question": "Are there any universities located in North Carolina?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=J.D. Hayworth was born in North Carolina.",
+            "html": "dbpedia_3358_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is North Carolina's capital city?",
+            "html": "dbpedia_3358_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the climate like in North Carolina?",
+            "html": "dbpedia_3358_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some popular tourist destinations in North Carolina?",
+            "html": "dbpedia_3358_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3358_1.txt"
+        },
+        {
+            "file_id": "dbpedia_3358_17.txt"
+        },
+        {
+            "file_id": "dbpedia_3358_18.txt"
+        },
+        {
+            "file_id": "dbpedia_3358_19.txt"
+        },
+        {
+            "file_id": "dbpedia_3358_21.txt"
+        },
+        {
+            "file_id": "dbpedia_3358_38.txt"
+        },
+        {
+            "file_id": "dbpedia_3358_52.txt"
+        },
+        {
+            "file_id": "dbpedia_3358_54.txt"
+        },
+        {
+            "file_id": "dbpedia_3358_6.txt"
+        },
+        {
+            "file_id": "dbpedia_3358_60.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the context information, I will evaluate whether the statement \"J.D. Hayworth was born in North Carolina\" is supported by the documents.\n\nHere is my evaluation:\n\n* Document 1 (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3358/re-ranker-msmarco/54.txt) mentions that \"Hayworth was born in High Point, North Carolina.\"\n* Documents 3 and 4 (file_paths: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3358/re-ranker-msmarco/38.txt and /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3358/re-ranker-msmarco/54.txt) confirm that J.D. Hayworth was indeed born in High Point, North Carolina.\n\nTherefore, the answer is:\n\n`{'output': 'yes'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents confirm that J.D. Hayworth, also referred to as John David HAYWORTH, was indeed born in High Point, North Carolina."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

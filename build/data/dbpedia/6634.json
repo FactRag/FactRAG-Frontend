@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Haim_Saban",
+    "predicate": "property/residence",
+    "object": "resource/California",
+    "human_readable": "Haim Saban resides in California.",
+    "questions": [
+        {
+            "score": 0.9730100631713867,
+            "question": "Is Haim Saban currently living in California?"
+        },
+        {
+            "score": 0.9639410376548767,
+            "question": "Has Haim Saban always lived in California?"
+        },
+        {
+            "score": 0.9405544996261597,
+            "question": "Is there anything notable about Haim Saban's residence in California?"
+        },
+        {
+            "score": 0.9236984252929688,
+            "question": "Does Haim Saban own property in California?"
+        },
+        {
+            "score": 0.9114700555801392,
+            "question": "Are there any famous people living near Haim Saban in California?"
+        },
+        {
+            "score": 0.8512279391288757,
+            "question": "What is known about Haim Saban's life in California?"
+        },
+        {
+            "score": 0.8341976404190063,
+            "question": "What are some popular attractions in California that Haim Saban might visit?"
+        },
+        {
+            "score": 0.8286679983139038,
+            "question": "Where does Haim Saban live?"
+        },
+        {
+            "score": 0.718513011932373,
+            "question": "What state is Haim Saban's residence in?"
+        },
+        {
+            "score": 0.3181295096874237,
+            "question": "Can you tell me more about Haim Saban?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Haim Saban resides in California.",
+            "html": "dbpedia_6634_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What state is Haim Saban's residence in?",
+            "html": "dbpedia_6634_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where does Haim Saban live?",
+            "html": "dbpedia_6634_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some popular attractions in California that Haim Saban might visit?",
+            "html": "dbpedia_6634_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6634_1.txt"
+        },
+        {
+            "file_id": "dbpedia_6634_100.txt"
+        },
+        {
+            "file_id": "dbpedia_6634_108.txt"
+        },
+        {
+            "file_id": "dbpedia_6634_29.txt"
+        },
+        {
+            "file_id": "dbpedia_6634_33.txt"
+        },
+        {
+            "file_id": "dbpedia_6634_41.txt"
+        },
+        {
+            "file_id": "dbpedia_6634_45.txt"
+        },
+        {
+            "file_id": "dbpedia_6634_6.txt"
+        },
+        {
+            "file_id": "dbpedia_6634_79.txt"
+        },
+        {
+            "file_id": "dbpedia_6634_96.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the structured JSON format with the answer:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation:\n\nThe documents mention that Cheryl Saban, Haim's wife, founded a nonprofit organization and was nominated by President Obama, indicating that she may reside in California. However, there is no direct information about Haim Saban's current residence in the provided texts."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents do not provide any information supporting that Haim Saban resides in California. While it mentions his residence in the United States for nearly thirty years and his frequent travels to Israel, there is no specific mention of him residing in California."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n    \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context, there is no explicit statement that confirms or denies whether Haim Saban resides in California. However, one of the documents mentions Cheryl Saban (likely referring to his wife) as a \"California resident,\" but this does not necessarily mean Haim Saban also lives in California.\n\nGiven the lack of direct evidence supporting the claim that Haim Saban resides in California:\n\n```json\n{\"output\": \"no\"}\n```\n\nThis response is based on the absence of clear confirmation and the document's emphasis on his connections to Israel."
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "it contradicts information from context 1, 2, 3, 5, and 6 that state Haim Saban lives in Los Angeles.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context repeatedly mentions Haim Saban living in the United States for nearly thirty years but does not specify that he resides in California. In fact, his activities such as representing at the United Nations General Assembly suggest a presence beyond just one state.",
+            "category": 2
+        }
+    }
+}

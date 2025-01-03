@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Tom_Clancy's_Splinter_Cell",
+    "predicate": "property/publisher",
+    "object": "resource/Gameloft",
+    "human_readable": "Tom Clancy's Splinter Cell is published by Gameloft.",
+    "questions": [
+        {
+            "score": 0.9873544573783875,
+            "question": "Is Gameloft the publisher of Tom Clancy's Splinter Cell?"
+        },
+        {
+            "score": 0.9419060945510864,
+            "question": "Besides Tom Clancy's Splinter Cell, what other games has Gameloft published?"
+        },
+        {
+            "score": 0.9316772818565369,
+            "question": "Who publishes Tom Clancy's Splinter Cell?"
+        },
+        {
+            "score": 0.8055456876754761,
+            "question": "What company is responsible for publishing the game Tom Clancy's Splinter Cell?"
+        },
+        {
+            "score": 0.7732222676277161,
+            "question": "Is there a connection between Tom Clancy and Gameloft?"
+        },
+        {
+            "score": 0.6349067091941833,
+            "question": "Which video game franchise is published by Gameloft?"
+        },
+        {
+            "score": 0.6110447645187378,
+            "question": "Are there any other well-known franchises published by Gameloft?"
+        },
+        {
+            "score": 0.5489547848701477,
+            "question": "What type of games does Gameloft typically publish?"
+        },
+        {
+            "score": 0.5339486002922058,
+            "question": "What genre does Tom Clancy's Splinter Cell belong to?"
+        },
+        {
+            "score": 0.40836867690086365,
+            "question": "Does Gameloft develop games in addition to publishing them?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Tom Clancy's Splinter Cell is published by Gameloft.",
+            "html": "dbpedia_5122_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What genre does Tom Clancy's Splinter Cell belong to?",
+            "html": "dbpedia_5122_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of games does Gameloft typically publish?",
+            "html": "dbpedia_5122_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any other well-known franchises published by Gameloft?",
+            "html": "dbpedia_5122_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5122_28.txt"
+        },
+        {
+            "file_id": "dbpedia_5122_36.txt"
+        },
+        {
+            "file_id": "dbpedia_5122_38.txt"
+        },
+        {
+            "file_id": "dbpedia_5122_42.txt"
+        },
+        {
+            "file_id": "dbpedia_5122_44.txt"
+        },
+        {
+            "file_id": "dbpedia_5122_61.txt"
+        },
+        {
+            "file_id": "dbpedia_5122_69.txt"
+        },
+        {
+            "file_id": "dbpedia_5122_72.txt"
+        },
+        {
+            "file_id": "dbpedia_5122_73.txt"
+        },
+        {
+            "file_id": "dbpedia_5122_87.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n\n\nLet me explain why:\n\nWhile several documents mention  \"Tom Clancy's Splinter Cell,\" they state that it was published by various companies like Ubi Soft, Ubisoft, and even Gameloft for the N-Gage version. It never explicitly mentions Gameloft as the publisher for the main series. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, here is the evaluation of the triple:\n\n{\n  \"output\": \"no\"\n}\n\nExplanation: According to the documents, Tom Clancy's Splinter Cell was developed and published by Ubi Soft Montreal and Ubi Soft (in file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5122/re-ranker-msmarco/73.txt), not Gameloft."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: The documents mention that \"Tom Clancy's Splinter Cell: Team Stealth Action\" was developed and published by Gameloft, but they also state that \"Tom Clancy\u2019s Splinter Cell\" (without specifying a title) was developed by Ubi Soft Montreal and published by Ubi Soft. Therefore, the statement that \"Tom Clancy's Splinter Cell is published by Gameloft\" is incorrect based on the given information."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The first game mentioned (Tom Clancy's Splinter Cell) was developed by Ubi Soft Montreal and published by Ubi Soft, not Gameloft. The game mentioned later in the context, Tom Clancy's Splinter Cell 3D, was developed by Gameloft but it is a remake of Splinter Cell: Chaos Theory, which was originally published by Ubisoft. Thus, neither of these games were published by Gameloft as the initial claim states.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Context information states Splinter Cell (2003) was developed by Ubi Soft Montreal and published by Ubi Soft.  It also describes various other Splinter Cell titles published by Ubisoft.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "Gameloft is mentioned as the publisher of Splinter Cell on N-Gage, but the main game Tom Clancy's Splinter Cell was published by Ubi Soft.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Tom Clancy's Splinter Cell: Team Stealth Action was developed and published by Gameloft for the N-Gage, while Tom Clancy\u2019s Splinter Cell itself was developed by Ubi Soft Montreal and published by Ubi Soft.",
+            "category": 2
+        }
+    }
+}

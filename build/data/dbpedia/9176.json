@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Mavis_Staples",
+    "predicate": "ontology/hometown",
+    "object": "resource/United_States",
+    "human_readable": "Mavis Staples' hometown is United States.",
+    "questions": [
+        {
+            "score": 0.9043096899986267,
+            "question": "What is the location of Mavis Staples' hometown?"
+        },
+        {
+            "score": 0.8816677927970886,
+            "question": "Is Mavis Staples originally from the United States?"
+        },
+        {
+            "score": 0.8160629272460938,
+            "question": "Could Mavis Staples be considered a US citizen?"
+        },
+        {
+            "score": 0.7894604802131653,
+            "question": "Does Mavis Staples identify as American?"
+        },
+        {
+            "score": 0.7491621375083923,
+            "question": "What country calls Mavis Staples as a hometown resident?"
+        },
+        {
+            "score": 0.7227047681808472,
+            "question": "Where is Mavis Staples from?"
+        },
+        {
+            "score": 0.575870156288147,
+            "question": "Where did Mavis Staples grow up?"
+        },
+        {
+            "score": 0.4707258641719818,
+            "question": "What is Mavis Staples' home nation?"
+        },
+        {
+            "score": 0.4706662893295288,
+            "question": "What is the nationality of Mavis Staples?"
+        },
+        {
+            "score": 0.4669201970100403,
+            "question": "In what country was Mavis Staples born?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Mavis Staples' hometown is United States.",
+            "html": "dbpedia_9176_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the nationality of Mavis Staples?",
+            "html": "dbpedia_9176_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Mavis Staples' home nation?",
+            "html": "dbpedia_9176_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where did Mavis Staples grow up?",
+            "html": "dbpedia_9176_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_9176_1.txt"
+        },
+        {
+            "file_id": "dbpedia_9176_10.txt"
+        },
+        {
+            "file_id": "dbpedia_9176_117.txt"
+        },
+        {
+            "file_id": "dbpedia_9176_123.txt"
+        },
+        {
+            "file_id": "dbpedia_9176_24.txt"
+        },
+        {
+            "file_id": "dbpedia_9176_48.txt"
+        },
+        {
+            "file_id": "dbpedia_9176_5.txt"
+        },
+        {
+            "file_id": "dbpedia_9176_81.txt"
+        },
+        {
+            "file_id": "dbpedia_9176_84.txt"
+        },
+        {
+            "file_id": "dbpedia_9176_94.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "After analyzing the context information, I can conclude that:\n\n{\n  \"output\": \"no\"\n} \n\nThe reason for this answer is that Mavis Staples' birthplace and hometown are mentioned in the text as Chicago, Illinois (not the United States)."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\nThe documents state that Mavis Staples was born in Chicago, Illinois. Chicago is a city located in the United States. Therefore, it can be inferred that Mavis Staples' hometown is the United States."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nThe provided context information indicates that Mavis Staples was born and raised in Chicago, Illinois. While this places her hometown within the United States, stating simply that her hometown is \"United States\" would be too vague and imprecise based on the detailed information given about her birthplace being Chicago, Illinois. Therefore, the statement \"Mavis Staples' hometown is United States.\" is not accurate according to the documents provided."
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Mavis Staples was born in Chicago, Illinois, United States. Therefore, her hometown is not the United States as a whole but specifically Chicago, Illinois within the United States.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Mavis Staples was born in Chicago, Illinois, United States, which makes her hometown the city of Chicago, not the entire United States.",
+            "category": 2
+        }
+    }
+}

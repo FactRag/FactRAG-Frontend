@@ -7,37 +7,14 @@ jobs:
     name: create-package
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [20.x]
-
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        name: Use Node.js 20
-        with:
-          node-version: ${{ matrix.node-version }}
-
-      - run: npm ci
-      - run: npm run build --if-present
-        env:
-          CI: false
-
-      - name: Push build to build branch
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git checkout -b build
-          git add build -f
-          git commit -m "Add build files"
-          git push origin build --force
-
       - name: Copy to another repo
         uses: andstor/copycat-action@v3
         with:
           personal_token: ${{ secrets.API_TOKEN_GITHUB }}
           src_path: build
-          src_branch: build
+          src_branch: main
           dst_path: /.
           dst_owner: FactRag
           dst_repo_name: FactRAG-Deploy

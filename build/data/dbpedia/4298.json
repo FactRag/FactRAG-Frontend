@@ -1,0 +1,134 @@
+{
+    "subject": "resource/John_Addison",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "John Addison",
+    "human_readable": "The label of John Addison is John Addison.",
+    "questions": [
+        {
+            "score": 0.9666981101036072,
+            "question": "What label is associated with John Addison?"
+        },
+        {
+            "score": 0.9133104085922241,
+            "question": "Who is John Addison?"
+        },
+        {
+            "score": 0.8944737315177917,
+            "question": "Is there a title associated with John Addison?"
+        },
+        {
+            "score": 0.8735747337341309,
+            "question": "Is there a known identity for John Addison?"
+        },
+        {
+            "score": 0.8096303343772888,
+            "question": "What is the name given to John Addison?"
+        },
+        {
+            "score": 0.7931717038154602,
+            "question": "What is the identifier for John Addison?"
+        },
+        {
+            "score": 0.7727072238922119,
+            "question": "Is there another name used for John Addison?"
+        },
+        {
+            "score": 0.733451783657074,
+            "question": "Can you tell me about John Addison?"
+        },
+        {
+            "score": 0.7277180552482605,
+            "question": "What name is used to refer to John Addison?"
+        },
+        {
+            "score": 0.6918260455131531,
+            "question": "How would you describe John Addison?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The label of John Addison is John Addison.",
+            "html": "dbpedia_4298_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What name is used to refer to John Addison?",
+            "html": "dbpedia_4298_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me about John Addison?",
+            "html": "dbpedia_4298_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there another name used for John Addison?",
+            "html": "dbpedia_4298_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4298_10.txt"
+        },
+        {
+            "file_id": "dbpedia_4298_105.txt"
+        },
+        {
+            "file_id": "dbpedia_4298_109.txt"
+        },
+        {
+            "file_id": "dbpedia_4298_23.txt"
+        },
+        {
+            "file_id": "dbpedia_4298_35.txt"
+        },
+        {
+            "file_id": "dbpedia_4298_53.txt"
+        },
+        {
+            "file_id": "dbpedia_4298_68.txt"
+        },
+        {
+            "file_id": "dbpedia_4298_97.txt"
+        },
+        {
+            "file_id": "dbpedia_4298_98.txt"
+        },
+        {
+            "file_id": "dbpedia_4298_99.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the context information provided, I will evaluate whether the statement \"The label of John Addison is John Addison\" is supported by the documents.\n\nHere's my evaluation:\n\n* In multiple documents (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4298/re-ranker-msmarco/68.txt, file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4298/re-ranker-msmarco/60.txt, file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4298/re-ranker-msmarco/51.txt), the full name of the person is indeed \"John Addison\".\n* There are no documents that suggest a different label for John Addison.\n\nTherefore, my answer is:\n\n```\n{\n  \"output\": \"yes\"\n}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents provide information about a musical composer named John Addison, not to be confused with the businessperson or the individual mentioned in the incorrect query. There is no mention of any label for John Addison being \"John Addison\" itself; instead, it provides details such as his birth date (March 16, 1920), place of birth (Chobham, England), and dates of existence (1920-1998). The information given does not support the triple stating that the label of John Addison is \"John Addison.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "qwen2.5": {
+            "reason": "The context provides information about a John Addison who was a musical composer born in 1920, not a label or title. Therefore, stating that \"the label of John Addison is John Addison\" does not align with the provided biographical details and historical context.",
+            "category": 4
+        }
+    }
+}

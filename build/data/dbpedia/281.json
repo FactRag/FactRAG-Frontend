@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Gilan_Province",
+    "predicate": "property/seatType",
+    "object": "resource/Capital_city",
+    "human_readable": "Gilan Province is a capital city.",
+    "questions": [
+        {
+            "score": 0.9884880185127258,
+            "question": "Is Gilan Province a capital city?"
+        },
+        {
+            "score": 0.8608449101448059,
+            "question": "Where is Gilan Province located?"
+        },
+        {
+            "score": 0.7869743704795837,
+            "question": "What type of location is Gilan Province?"
+        },
+        {
+            "score": 0.49667486548423767,
+            "question": "What are some important landmarks or attractions in Gilan Province?"
+        },
+        {
+            "score": 0.47673162817955017,
+            "question": "What is the population of Gilan Province?"
+        },
+        {
+            "score": 0.41865378618240356,
+            "question": "Does Gilan Province have a significant history?"
+        },
+        {
+            "score": 0.30778276920318604,
+            "question": "What is the climate like in Gilan Province?"
+        },
+        {
+            "score": 0.2915152609348297,
+            "question": "What industries or economic activities are important to Gilan Province?"
+        },
+        {
+            "score": 0.25344499945640564,
+            "question": "What are some cultural traditions or festivals celebrated in Gilan Province?"
+        },
+        {
+            "score": 0.1938503086566925,
+            "question": "What is the main language spoken in Gilan Province?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Gilan Province is a capital city.",
+            "html": "dbpedia_281_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some cultural traditions or festivals celebrated in Gilan Province?",
+            "html": "dbpedia_281_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What industries or economic activities are important to Gilan Province?",
+            "html": "dbpedia_281_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the climate like in Gilan Province?",
+            "html": "dbpedia_281_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_281_106.txt"
+        },
+        {
+            "file_id": "dbpedia_281_111.txt"
+        },
+        {
+            "file_id": "dbpedia_281_20.txt"
+        },
+        {
+            "file_id": "dbpedia_281_5.txt"
+        },
+        {
+            "file_id": "dbpedia_281_53.txt"
+        },
+        {
+            "file_id": "dbpedia_281_63.txt"
+        },
+        {
+            "file_id": "dbpedia_281_70.txt"
+        },
+        {
+            "file_id": "dbpedia_281_79.txt"
+        },
+        {
+            "file_id": "dbpedia_281_87.txt"
+        },
+        {
+            "file_id": "dbpedia_281_94.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here's the structured JSON response:\n\n```\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents contain information that mentions Rasht as the capital city of Gilan Province, indicating that Rasht serves as the administrative center and hub for cultural and economic activities within the province. This supports the claim that Gilan Province is a capital city, with Rasht being its designated capital."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents provide information about Rasht being the capital city of Gilan Province, not Gilan Province itself. Therefore, stating that Gilan Province is a capital city is incorrect."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "Gilan Province is actually a province, not a capital city. It has Rasht as its capital city.",
+            "category": 2
+        }
+    }
+}

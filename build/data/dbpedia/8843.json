@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Moving_Units",
+    "predicate": "ontology/hometown",
+    "object": "resource/United_States",
+    "human_readable": "The hometown of Moving Units is United States.",
+    "questions": [
+        {
+            "score": 0.8301056623458862,
+            "question": "Which country is considered the hometown of Moving Units?"
+        },
+        {
+            "score": 0.8009603023529053,
+            "question": "Is Moving Units associated with the United States?"
+        },
+        {
+            "score": 0.6290073394775391,
+            "question": "Where is Moving Units from?"
+        },
+        {
+            "score": 0.520999014377594,
+            "question": "What is the hometown of the music group Moving Units?"
+        },
+        {
+            "score": 0.5174720287322998,
+            "question": "Is Moving Units an American band?"
+        },
+        {
+            "score": 0.4856763780117035,
+            "question": "In which nation did Moving Units originate?"
+        },
+        {
+            "score": 0.4055612087249756,
+            "question": "What country are Moving Units based in?"
+        },
+        {
+            "score": 0.35962581634521484,
+            "question": "What is the origin country of Moving Units?"
+        },
+        {
+            "score": 0.33031973242759705,
+            "question": "Moving Units hails from which country?"
+        },
+        {
+            "score": 0.24904640018939972,
+            "question": "Where do Moving Units call home?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The hometown of Moving Units is United States.",
+            "html": "dbpedia_8843_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Moving Units hails from which country?",
+            "html": "dbpedia_8843_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the origin country of Moving Units?",
+            "html": "dbpedia_8843_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What country are Moving Units based in?",
+            "html": "dbpedia_8843_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8843_24.txt"
+        },
+        {
+            "file_id": "dbpedia_8843_27.txt"
+        },
+        {
+            "file_id": "dbpedia_8843_48.txt"
+        },
+        {
+            "file_id": "dbpedia_8843_49.txt"
+        },
+        {
+            "file_id": "dbpedia_8843_52.txt"
+        },
+        {
+            "file_id": "dbpedia_8843_62.txt"
+        },
+        {
+            "file_id": "dbpedia_8843_63.txt"
+        },
+        {
+            "file_id": "dbpedia_8843_65.txt"
+        },
+        {
+            "file_id": "dbpedia_8843_67.txt"
+        },
+        {
+            "file_id": "dbpedia_8843_8.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nWhile the documents mention Moving Units being from Los Angeles and having a sound rooted in \"LA life\", they don't explicitly state their hometown as the United States.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, here's the evaluation:\n\n{\n  \"output\": \"no\"\n}\n\nExplanation:\nThe documents mention that Moving Units is a band with various members and releases, but none of them provide information about the hometown or origin of the band. While it can be inferred that they are likely from the United States given their presence at festivals in California (e.g., Viva PHX festival), the text does not explicitly state this fact. Therefore, based on the provided context, we cannot confirm whether the triple \"The hometown of Moving Units is United States\" is correct or not."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: While the documents do not explicitly state that the hometown of Moving Units is the United States, several pieces of information imply this. For instance:\n\n- The band's album release mentions a \"Silver Lake home,\" which suggests they are based in Los Angeles, California.\n- They have performed at venues like Bar Smith and participated in events such as Viva PHX festival, indicating an American setting.\n- The description refers to \"LA life circa 2002\" for the band's sound and style.\n\nThese contextual clues strongly suggest that Moving Units are based in the United States."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}\n\nThe documents provided indicate that Moving Units is a band with activities and mentions across different cities and states within the U.S., such as Silver Lake (which is in Los Angeles, California) and Bar Smith associated with Viva PHX festival. This implies that Moving Units operates within the United States, supporting the statement that their hometown is the United States."
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{\"output\": \"yes\"}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Textual evidence mentions Moving Units performing at a festival in Phoenix, Arizona. It also states the band's founder lives in Silver Lake, California. This indicates they are based in the United States.",
+            "category": 4
+        },
+        "llama3.1": {
+            "reason": "The context information provided does not mention the hometown of Moving Units at all. It only mentions that Blake Miller, a member of the band, resides in Silver Lake, California, which might be a location associated with the band, but it's not explicitly stated as their hometown.",
+            "category": 4
+        }
+    }
+}

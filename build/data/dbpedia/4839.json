@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Ollie_Cahill",
+    "predicate": "property/clubs",
+    "object": "resource/Northampton_Town_F.C.",
+    "human_readable": "Ollie Cahill plays for Northampton Town F.C.",
+    "questions": [
+        {
+            "score": 0.9693967700004578,
+            "question": "Is Ollie Cahill associated with Northampton Town?"
+        },
+        {
+            "score": 0.8773812651634216,
+            "question": "Name the team Ollie Cahill plays for."
+        },
+        {
+            "score": 0.7412502765655518,
+            "question": "Who is Ollie Cahill?"
+        },
+        {
+            "score": 0.7133454084396362,
+            "question": "For which football club does Ollie Cahill play?"
+        },
+        {
+            "score": 0.6262074708938599,
+            "question": "What team is Northampton Town F.C.?"
+        },
+        {
+            "score": 0.6150525212287903,
+            "question": "Where does Ollie Cahill play football?"
+        },
+        {
+            "score": 0.5927526354789734,
+            "question": "Does Ollie Cahill play for a professional football club?"
+        },
+        {
+            "score": 0.572769045829773,
+            "question": "What sport is Ollie Cahill involved in?"
+        },
+        {
+            "score": 0.5045711398124695,
+            "question": "Is Ollie Cahill a footballer?"
+        },
+        {
+            "score": 0.376882940530777,
+            "question": "What is Ollie Cahill's profession?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Ollie Cahill plays for Northampton Town F.C.",
+            "html": "dbpedia_4839_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Ollie Cahill a footballer?",
+            "html": "dbpedia_4839_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What sport is Ollie Cahill involved in?",
+            "html": "dbpedia_4839_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Ollie Cahill play for a professional football club?",
+            "html": "dbpedia_4839_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4839_115.txt"
+        },
+        {
+            "file_id": "dbpedia_4839_139.txt"
+        },
+        {
+            "file_id": "dbpedia_4839_14.txt"
+        },
+        {
+            "file_id": "dbpedia_4839_16.txt"
+        },
+        {
+            "file_id": "dbpedia_4839_29.txt"
+        },
+        {
+            "file_id": "dbpedia_4839_34.txt"
+        },
+        {
+            "file_id": "dbpedia_4839_41.txt"
+        },
+        {
+            "file_id": "dbpedia_4839_65.txt"
+        },
+        {
+            "file_id": "dbpedia_4839_94.txt"
+        },
+        {
+            "file_id": "dbpedia_4839_96.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nWhile the text mentions Ollie Cahill played for Northampton Town, it states he signed for Cork City in 1996 from Northampton Town.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the context information provided, I can answer your question as follows:\n\n{\n  \"output\": \"yes\"\n}\n\nThe reason is that according to document file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4839/re-ranker-msmarco/32.txt, Ollie Cahill signed for Northampton Town and it is also mentioned in other documents that he came from English side Northampton Town. Therefore, the information supports the triple \"Ollie Cahill plays for Northampton Town F.C.\""
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents do not provide any information to support that Ollie Cahill played for Northampton Town F.C. While it mentions that he signed with the club in 1996, there is no explicit statement confirming his active playing career with them."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{\"output\": \"yes\"}\n\nThe documents mention that Ollie Cahill signed for Northampton Town from the Leesiders (Cork City) in 1996. However, there is a detail suggesting he initially came from Northampton Town to Cork City in 1996. Therefore, it can be inferred that Ollie Cahill indeed played for Northampton Town before joining Cork City."
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Multiple sources state he signed for Northampton Town from there, not currently plays for them.",
+            "category": 1
+        },
+        "qwen2.5": {
+            "reason": "Ollie Cahill signed for Shelbourne (the Leesiders) in 1996 from Northampton Town, not the other way around.",
+            "category": 1
+        }
+    }
+}

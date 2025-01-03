@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Mechel_Scheuer",
+    "predicate": "property/placeOfBirth",
+    "object": "resource/Frankfurt_am_Main",
+    "human_readable": "Mechel Scheuer was born in Frankfurt am Main.",
+    "questions": [
+        {
+            "score": 0.9681805968284607,
+            "question": "Is Mechel Scheuer from Frankfurt am Main?"
+        },
+        {
+            "score": 0.8698866367340088,
+            "question": "Who was born in Frankfurt am Main?"
+        },
+        {
+            "score": 0.8697049021720886,
+            "question": "Where was Mechel Scheuer born?"
+        },
+        {
+            "score": 0.8654607534408569,
+            "question": "Name a person born in Frankfurt am Main."
+        },
+        {
+            "score": 0.7791908383369446,
+            "question": "What is the name of the place where Mechel Scheuer was born?"
+        },
+        {
+            "score": 0.6665687561035156,
+            "question": "Can you tell me the birthplace of Mechel Scheuer?"
+        },
+        {
+            "score": 0.6626103520393372,
+            "question": "Frankfurt am Main is known for being the birthplace of whom?"
+        },
+        {
+            "score": 0.6276335120201111,
+            "question": "What city is associated with Mechel Scheuer's birth?"
+        },
+        {
+            "score": 0.6031445264816284,
+            "question": "Mechel Scheuer's birthplace is...?"
+        },
+        {
+            "score": 0.494344562292099,
+            "question": "In which German city did Mechel Scheuer come into the world?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Mechel Scheuer was born in Frankfurt am Main.",
+            "html": "dbpedia_4015_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Mechel Scheuer's birthplace is...?",
+            "html": "dbpedia_4015_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What city is associated with Mechel Scheuer's birth?",
+            "html": "dbpedia_4015_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Frankfurt am Main is known for being the birthplace of whom?",
+            "html": "dbpedia_4015_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4015_1.txt"
+        },
+        {
+            "file_id": "dbpedia_4015_20.txt"
+        },
+        {
+            "file_id": "dbpedia_4015_21.txt"
+        },
+        {
+            "file_id": "dbpedia_4015_34.txt"
+        },
+        {
+            "file_id": "dbpedia_4015_35.txt"
+        },
+        {
+            "file_id": "dbpedia_4015_53.txt"
+        },
+        {
+            "file_id": "dbpedia_4015_57.txt"
+        },
+        {
+            "file_id": "dbpedia_4015_69.txt"
+        },
+        {
+            "file_id": "dbpedia_4015_89.txt"
+        },
+        {
+            "file_id": "dbpedia_4015_93.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents do not provide any information suggesting that Mechel Scheuer was born in Frankfurt am Main. Instead, the documents mention Abraham Naftali Hertz Scheuer and Michel Scheuer, but there is no connection to Mechel being born in Frankfurt am Main."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {'output': 'yes'}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Michel Scheuer (a different spelling) was born in Rodange, Luxembourg. It seems likely that there is confusion between two individuals named \"Scheuer\".",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "There is no mention of Mechel Scheuer's birthplace being Frankfurt am Main in any of the provided context information.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information does not provide any birthplace for Rabbi Mechel Scheuer. It only mentions that Abraham Naftali Hertz Scheuer took over his father's yeshiva from Mechel, indicating a familial relationship but not a birthplace. Furthermore, Michel Scheuer, a completely different person mentioned in the contexts, was born in Rodange, Luxembourg.",
+            "category": 2
+        }
+    }
+}

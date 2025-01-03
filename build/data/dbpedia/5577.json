@@ -1,0 +1,118 @@
+{
+    "subject": "resource/Luigi_Barzini,_Jr.",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "Luigi Barzini",
+    "human_readable": "The full name of Luigi Barzini, Jr. is Luigi Barzini.",
+    "questions": [
+        {
+            "score": 0.9885216951370239,
+            "question": "Is Luigi Barzini, Jr. also known as Luigi Barzini?"
+        },
+        {
+            "score": 0.9862678050994873,
+            "question": "What is the full name of Luigi Barzini, Jr.?"
+        },
+        {
+            "score": 0.9788923263549805,
+            "question": "What is the surname of Luigi Barzini, Jr.?"
+        },
+        {
+            "score": 0.9768081903457642,
+            "question": "What is the given name of Luigi Barzini, Jr.?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The full name of Luigi Barzini, Jr. is Luigi Barzini.",
+            "html": "dbpedia_5577_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the surname of Luigi Barzini, Jr.?",
+            "html": "dbpedia_5577_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the full name of Luigi Barzini, Jr.?",
+            "html": "dbpedia_5577_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Luigi Barzini, Jr. also known as Luigi Barzini?",
+            "html": "dbpedia_5577_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5577_1.txt"
+        },
+        {
+            "file_id": "dbpedia_5577_10.txt"
+        },
+        {
+            "file_id": "dbpedia_5577_13.txt"
+        },
+        {
+            "file_id": "dbpedia_5577_18.txt"
+        },
+        {
+            "file_id": "dbpedia_5577_22.txt"
+        },
+        {
+            "file_id": "dbpedia_5577_24.txt"
+        },
+        {
+            "file_id": "dbpedia_5577_33.txt"
+        },
+        {
+            "file_id": "dbpedia_5577_47.txt"
+        },
+        {
+            "file_id": "dbpedia_5577_66.txt"
+        },
+        {
+            "file_id": "dbpedia_5577_85.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nLet me know if you'd like to test more triples!  \ud83d\ude0a \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the structured JSON format for the query:\n\n{\n  \"output\": \"no\"\n}\n\nExplanation: While the documents provide information about Luigi Barzini, Jr., they do not confirm that his full name is simply \"Luigi Barzini\". The documents suggest that he had a father named Luigi Barzini, Sr. and a son also named Luigi Barzini, but it does not state that he was known by the same name as his father or son."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\nThe documents provide information about Luigi Barzini, Jr., including his full name and details of his career as a journalist and writer. Therefore, the statement that the full name of Luigi Barzini, Jr. is Luigi Barzini is supported by the provided context."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Luigi Barzini, Jr. has a different name than his father, Luigi Barzini, Sr., as evidenced by the context information stating that \"Luigi Barzini Jr.\" was born to Luigi Barzini, Sr.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "The provided text states his full name was Luigi Barzini Jr.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The context information provides a detailed biography of Luigi Barzini, Jr., including his full name \"Luigi Barzini, Jr.\" which is explicitly stated as his birthname.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,146 @@
+{
+    "subject": "resource/GoldenSource",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:Software_companies_based_in_New_York",
+    "human_readable": "GoldenSource is subject to Category:Software companies based in New York.",
+    "questions": [
+        {
+            "score": 0.8761915564537048,
+            "question": "Is GoldenSource based in a city other than New York?"
+        },
+        {
+            "score": 0.7662815451622009,
+            "question": "How does GoldenSource compare to other software companies in its category?"
+        },
+        {
+            "score": 0.7549502849578857,
+            "question": "What type of company is GoldenSource?"
+        },
+        {
+            "score": 0.7057993412017822,
+            "question": "Are there any other well-known software companies based in New York?"
+        },
+        {
+            "score": 0.6312410831451416,
+            "question": "Where is GoldenSource headquartered?"
+        },
+        {
+            "score": 0.5876489877700806,
+            "question": "What are some of the challenges faced by software companies based in New York?"
+        },
+        {
+            "score": 0.5850972533226013,
+            "question": "What industry does GoldenSource operate in?"
+        },
+        {
+            "score": 0.44671037793159485,
+            "question": "What products or services does GoldenSource offer?"
+        },
+        {
+            "score": 0.3870498239994049,
+            "question": "What are the key factors contributing to GoldenSource's growth?"
+        },
+        {
+            "score": 0.3776969909667969,
+            "question": "How has GoldenSource's location influenced its success?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=GoldenSource is subject to Category:Software companies based in New York.",
+            "html": "dbpedia_1543_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are the key factors contributing to GoldenSource's growth?",
+            "html": "dbpedia_1543_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What products or services does GoldenSource offer?",
+            "html": "dbpedia_1543_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What industry does GoldenSource operate in?",
+            "html": "dbpedia_1543_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1543_114.txt"
+        },
+        {
+            "file_id": "dbpedia_1543_117.txt"
+        },
+        {
+            "file_id": "dbpedia_1543_129.txt"
+        },
+        {
+            "file_id": "dbpedia_1543_136.txt"
+        },
+        {
+            "file_id": "dbpedia_1543_19.txt"
+        },
+        {
+            "file_id": "dbpedia_1543_24.txt"
+        },
+        {
+            "file_id": "dbpedia_1543_39.txt"
+        },
+        {
+            "file_id": "dbpedia_1543_71.txt"
+        },
+        {
+            "file_id": "dbpedia_1543_83.txt"
+        },
+        {
+            "file_id": "dbpedia_1543_90.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": -1,
+            "full_ans": "Here's the evaluation of the triple:\n\n**Triple:** GoldenSource is subject to Category:Software companies based in New York.\n\n**Evaluation:**\n\nThe context information provided contains various articles about GoldenSource, a provider of Enterprise Data Management and Master Data Management solutions. While the articles mention that GoldenSource was founded in 1984 and is headquartered in New York City, they do not explicitly state that GoldenSource is subject to Category:Software companies based in New York.\n\nHowever, the context information does provide some clues:\n\n* Article 39.txt mentions that GoldenSource provides software to investment banks, asset managers, and capital markets services firms.\n* Article 90.txt mentions that GoldenSource provides software that enables many of the world's largest and most prominent investment banks, asset managers, and capital markets services firms to manage and derive insights from their data in a more streamlined manner.\n* The other articles mention various aspects of GoldenSource's business, but none of them explicitly state its subject category.\n\nGiven this information, it is reasonable to assume that GoldenSource could be categorized as a software company based in New York. However, without explicit confirmation from the context information, we cannot be 100% sure.\n\nTherefore, I would say:\n\n**Response:** {'output': 'maybe'}\n\nIf you'd like me to change it to yes or no, please let me know!"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\"output\": \"yes\"}\n```\n\nThe information provided in the documents supports that GoldenSource provides software solutions, and it is headquartered in New York City. This aligns with the statement that GoldenSource is a software company based in New York."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n     \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "GoldenSource is not based in New York City. It is headquartered in New York City, but the company was founded in 1984 and has been operating from there; however, its current location or headquarters may have changed since then.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Multiple sources state GoldenSource was founded in 1984 and is headquartered in New York City.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "GoldenSource's headquarters is actually in New York City, not Norwood, Massachusetts where Amplix is based.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "GoldenSource is based in New York City, not just New York. The context clearly states that \"GoldenSource is based in New York City.\"",
+            "category": 2
+        }
+    }
+}

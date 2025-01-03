@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Pozsony_County",
+    "predicate": "ontology/capital",
+    "object": "resource/Bratislava",
+    "human_readable": "The capital of Pozsony County is Bratislava.",
+    "questions": [
+        {
+            "score": 0.9275460839271545,
+            "question": "Which county has Bratislava as its capital?"
+        },
+        {
+            "score": 0.9031713604927063,
+            "question": "What is the capital of Pozsony County?"
+        },
+        {
+            "score": 0.607218325138092,
+            "question": "Is Bratislava a city?"
+        },
+        {
+            "score": 0.5767223834991455,
+            "question": "Where is Bratislava located?"
+        },
+        {
+            "score": 0.5009702444076538,
+            "question": "What is another name for Pozsony County?"
+        },
+        {
+            "score": 0.4937334358692169,
+            "question": "Are there any other counties in Slovakia besides Pozsony County?"
+        },
+        {
+            "score": 0.37966468930244446,
+            "question": "What are some notable landmarks in Bratislava?"
+        },
+        {
+            "score": 0.32938283681869507,
+            "question": "What is the population of Bratislava?"
+        },
+        {
+            "score": 0.18986080586910248,
+            "question": "What is the currency used in Bratislava?"
+        },
+        {
+            "score": 0.14760802686214447,
+            "question": "What language is spoken primarily in Bratislava?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The capital of Pozsony County is Bratislava.",
+            "html": "dbpedia_8871_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the currency used in Bratislava?",
+            "html": "dbpedia_8871_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the population of Bratislava?",
+            "html": "dbpedia_8871_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some notable landmarks in Bratislava?",
+            "html": "dbpedia_8871_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8871_22.txt"
+        },
+        {
+            "file_id": "dbpedia_8871_41.txt"
+        },
+        {
+            "file_id": "dbpedia_8871_5.txt"
+        },
+        {
+            "file_id": "dbpedia_8871_54.txt"
+        },
+        {
+            "file_id": "dbpedia_8871_69.txt"
+        },
+        {
+            "file_id": "dbpedia_8871_77.txt"
+        },
+        {
+            "file_id": "dbpedia_8871_81.txt"
+        },
+        {
+            "file_id": "dbpedia_8871_82.txt"
+        },
+        {
+            "file_id": "dbpedia_8871_87.txt"
+        },
+        {
+            "file_id": "dbpedia_8871_92.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have more queries!  I'm ready to analyze them based on the provided context. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here's the evaluation of the triple \"The capital of Pozsony County is Bratislava\" based on the provided context information:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation:\n\n* While it is mentioned that Pozsony was a part of the Kingdom of Hungary and is today the westernmost part of Slovakia, there is no direct statement that Bratislava is the capital of Pozsony County.\n* In fact, document file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8871/re-ranker-msmarco/52.txt mentions that \"Pozsony County was a part of the Kingdom of Hungary, and is today the westernmost part of Slovakia\", but it does not specify Bratislava as its capital."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents mention that Bratislava was previously known as Pozsony and was part of the Kingdom of Hungary. They also provide information about the location and history of Bratislava, which indirectly supports the statement that the capital of Pozsony County is Bratislava."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The capital of Pozsony County was mentioned to be a part of the Kingdom of Hungary, but now Slovakia, and Bratislava is stated as the westernmost part of Slovakia, implying that the county's capital is actually Bratislava.",
+            "category": -1
+        }
+    }
+}

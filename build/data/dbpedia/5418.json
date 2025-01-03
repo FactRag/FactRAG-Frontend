@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Azuara",
+    "predicate": "property/utcOffset",
+    "object": "+1",
+    "human_readable": "Azuara's UTC offset is +1.",
+    "questions": [
+        {
+            "score": 0.9294887185096741,
+            "question": "What is Azuara's UTC offset?"
+        },
+        {
+            "score": 0.8302756547927856,
+            "question": "Are there other locations with the same UTC offset as Azuara?"
+        },
+        {
+            "score": 0.6031158566474915,
+            "question": "Is Azuara ahead of or behind Coordinated Universal Time (UTC)?"
+        },
+        {
+            "score": 0.5081201791763306,
+            "question": "If it is 10:00 AM UTC, what time would it be in Azuara?"
+        },
+        {
+            "score": 0.48816949129104614,
+            "question": "By how many hours does Azuara's time differ from UTC?"
+        },
+        {
+            "score": 0.43614304065704346,
+            "question": "What factors influence a location's UTC offset?"
+        },
+        {
+            "score": 0.3973195254802704,
+            "question": "Can you give an example of how UTC offset might impact travel plans?"
+        },
+        {
+            "score": 0.3569929003715515,
+            "question": "How can UTC offset affect scheduling meetings across different time zones?"
+        },
+        {
+            "score": 0.18174372613430023,
+            "question": "What does UTC stand for?"
+        },
+        {
+            "score": 0.032934240996837616,
+            "question": "Why is it important to consider time zones when communicating internationally?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Azuara's UTC offset is +1.",
+            "html": "dbpedia_5418_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What does UTC stand for?",
+            "html": "dbpedia_5418_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How can UTC offset affect scheduling meetings across different time zones?",
+            "html": "dbpedia_5418_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you give an example of how UTC offset might impact travel plans?",
+            "html": "dbpedia_5418_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5418_18.txt"
+        },
+        {
+            "file_id": "dbpedia_5418_23.txt"
+        },
+        {
+            "file_id": "dbpedia_5418_28.txt"
+        },
+        {
+            "file_id": "dbpedia_5418_30.txt"
+        },
+        {
+            "file_id": "dbpedia_5418_31.txt"
+        },
+        {
+            "file_id": "dbpedia_5418_35.txt"
+        },
+        {
+            "file_id": "dbpedia_5418_46.txt"
+        },
+        {
+            "file_id": "dbpedia_5418_47.txt"
+        },
+        {
+            "file_id": "dbpedia_5418_48.txt"
+        },
+        {
+            "file_id": "dbpedia_5418_7.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n\n\nAzuara's UTC offset is listed as +2 hours in the provided text. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of whether the information in the documents supports the triple \"Azuara's UTC offset is +1\":\n\n{\n  \"output\": \"no\"\n}\n\nExplanation:\n\n* The document mentions that \"Time zone in Azuara is UTC+2 (GMT+2).\", which indicates that Azuara's UTC offset is indeed +2, not +1."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe context information clearly states that the UTC offset for Azuara, Spain is +2 (GMT+02:00), not +1 as suggested in the query. Therefore, the statement \"Azuara's UTC offset is +1\" is incorrect according to the provided documents."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {'output': 'no'}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Azuara is located in the Central European Time zone (CEST), which has an offset of UTC+2 during standard time and UTC+1 during summer time. Therefore, it does not have a constant UTC offset of +1.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Multiple instances state Azuara's time zone is UTC+2 (GMT+2).",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "Azuara's UTC offset is stated to be +2 hours in the context information, not +1.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Azuara's UTC offset is +2, not +1. The context information clearly states that the time zone in Azuara is UTC+2 (GMT+2).",
+            "category": 2
+        }
+    }
+}

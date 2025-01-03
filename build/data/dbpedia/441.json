@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Claude_Shannon",
+    "predicate": "ontology/doctoralAdvisor",
+    "object": "resource/Frank_Lauren_Hitchcock",
+    "human_readable": "Claude Shannon's doctoral advisor was Frank Lauren Hitchcock.",
+    "questions": [
+        {
+            "score": 0.9757754802703857,
+            "question": "Was Frank Lauren Hitchcock involved in Claude Shannon's academic journey?"
+        },
+        {
+            "score": 0.9231175184249878,
+            "question": "Frank Lauren Hitchcock's role in relation to Claude Shannon was what?"
+        },
+        {
+            "score": 0.8807737231254578,
+            "question": "What is the name of the person who was Claude Shannon's doctoral advisor?"
+        },
+        {
+            "score": 0.8722267746925354,
+            "question": "What is the name of Claude Shannon's doctoral advisor?"
+        },
+        {
+            "score": 0.8606497645378113,
+            "question": "Who advised Claude Shannon on his doctoral studies?"
+        },
+        {
+            "score": 0.8256497383117676,
+            "question": "Who provided mentorship to Claude Shannon during his doctoral studies?"
+        },
+        {
+            "score": 0.8033692836761475,
+            "question": "What is the relationship between Claude Shannon and Frank Lauren Hitchcock?"
+        },
+        {
+            "score": 0.7957735061645508,
+            "question": "Claude Shannon's doctoral advisor was a prominent figure in which field?"
+        },
+        {
+            "score": 0.7159839272499084,
+            "question": "Who guided Claude Shannon during his doctoral work?"
+        },
+        {
+            "score": 0.6867707967758179,
+            "question": "To whom did Claude Shannon report during his doctoral program?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Claude Shannon's doctoral advisor was Frank Lauren Hitchcock.",
+            "html": "dbpedia_441_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who guided Claude Shannon during his doctoral work?",
+            "html": "dbpedia_441_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Claude Shannon's doctoral advisor was a prominent figure in which field?",
+            "html": "dbpedia_441_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the relationship between Claude Shannon and Frank Lauren Hitchcock?",
+            "html": "dbpedia_441_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_441_104.txt"
+        },
+        {
+            "file_id": "dbpedia_441_110.txt"
+        },
+        {
+            "file_id": "dbpedia_441_116.txt"
+        },
+        {
+            "file_id": "dbpedia_441_32.txt"
+        },
+        {
+            "file_id": "dbpedia_441_36.txt"
+        },
+        {
+            "file_id": "dbpedia_441_48.txt"
+        },
+        {
+            "file_id": "dbpedia_441_63.txt"
+        },
+        {
+            "file_id": "dbpedia_441_67.txt"
+        },
+        {
+            "file_id": "dbpedia_441_78.txt"
+        },
+        {
+            "file_id": "dbpedia_441_95.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe reason for this answer is that the text mentions Vannevar Bush as Claude Shannon's graduate advisor, not Frank Lauren Hitchcock. This information can be found in the document with file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_441/re-ranker-msmarco/104.txt."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: The provided context does not mention any information about Claude Shannon's doctoral advisor being Frank Lauren Hitchcock. Instead, it mentions Vannevar Bush as a significant mentor and influence on Shannon\u2019s career. Therefore, the statement is not supported by the given documents."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n      \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "There is no information provided in the context indicating that Claude Shannon's doctoral advisor was Frank Lauren Hitchcock. The given context only mentions Vannevar Bush as a significant figure in Shannon's academic and career life, but there is no evidence of Hitchcock serving as an advisor during Shannon's PhD studies.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "The text states that Shannon's graduate advisor was Vannevar Bush.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "Claude Shannon's doctoral advisor was actually Vannevar Bush.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Vannevar Bush mentored Claude Shannon in the fields of electrical engineering and applied math during his graduate studies, as indicated by the context information. There is no mention of Frank Lauren Hitchcock being Shannon's doctoral advisor.",
+            "category": 2
+        }
+    }
+}

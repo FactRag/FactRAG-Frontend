@@ -1,0 +1,109 @@
+{
+    "subject": "resource/William_H._Lewis",
+    "predicate": "ontology/almaMater",
+    "object": "resource/Harvard_Law_School",
+    "human_readable": "William H. Lewis attended Harvard Law School.",
+    "questions": [
+        {
+            "score": 0.9875341653823853,
+            "question": "Was William H. Lewis a student at Harvard Law School?"
+        },
+        {
+            "score": 0.9040011167526245,
+            "question": "Where did William H. Lewis attend school?"
+        },
+        {
+            "score": 0.8845150470733643,
+            "question": "What type of school did William H. Lewis attend?"
+        },
+        {
+            "score": 0.874268114566803,
+            "question": "What is the name of the school that William H. Lewis attended?"
+        },
+        {
+            "score": 0.7811849117279053,
+            "question": "What field of study was likely focused on at the school William H. Lewis attended?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=William H. Lewis attended Harvard Law School.",
+            "html": "dbpedia_3372_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of the school that William H. Lewis attended?",
+            "html": "dbpedia_3372_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of school did William H. Lewis attend?",
+            "html": "dbpedia_3372_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where did William H. Lewis attend school?",
+            "html": "dbpedia_3372_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3372_17.txt"
+        },
+        {
+            "file_id": "dbpedia_3372_23.txt"
+        },
+        {
+            "file_id": "dbpedia_3372_38.txt"
+        },
+        {
+            "file_id": "dbpedia_3372_4.txt"
+        },
+        {
+            "file_id": "dbpedia_3372_43.txt"
+        },
+        {
+            "file_id": "dbpedia_3372_45.txt"
+        },
+        {
+            "file_id": "dbpedia_3372_47.txt"
+        },
+        {
+            "file_id": "dbpedia_3372_50.txt"
+        },
+        {
+            "file_id": "dbpedia_3372_62.txt"
+        },
+        {
+            "file_id": "dbpedia_3372_82.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation of whether the information in the documents supports the triple:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe reason for this answer is that, according to multiple documents (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3372/re-ranker-msmarco/4.txt and file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3372/re-ranker-msmarco/38.txt), William H. Lewis did indeed attend Harvard Law School, as stated in the triple."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide information that William H. Lewis enrolled at and graduated from Harvard Law School, which supports the statement that he attended Harvard Law School."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

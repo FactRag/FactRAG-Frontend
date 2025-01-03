@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Robert_Redford",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "Redford, Robert",
+    "human_readable": "The name of Robert Redford is Redford, Robert.",
+    "questions": [
+        {
+            "score": 0.9791172742843628,
+            "question": "What is the full name of Robert Redford?"
+        },
+        {
+            "score": 0.9639865159988403,
+            "question": "Is 'Robert' the given name and 'Redford' the surname in this case?"
+        },
+        {
+            "score": 0.9597440958023071,
+            "question": "What is the last name of Robert Redford?"
+        },
+        {
+            "score": 0.9300438761711121,
+            "question": "What is the first name of Robert Redford?"
+        },
+        {
+            "score": 0.9268894195556641,
+            "question": "How would you refer to Robert Redford by his full name?"
+        },
+        {
+            "score": 0.9203832149505615,
+            "question": "What is the correct order of the names in Robert Redford's full name?"
+        },
+        {
+            "score": 0.9185019731521606,
+            "question": "Is 'Redford, Robert' the given and surname combination for this person?"
+        },
+        {
+            "score": 0.9073274731636047,
+            "question": "If someone said 'Robert Redford,' would they be using his full name?"
+        },
+        {
+            "score": 0.754742443561554,
+            "question": "What information does 'Redford, Robert' tell us about this person?"
+        },
+        {
+            "score": 0.6615550518035889,
+            "question": "Could 'Redford' be used as a shortened version of his full name?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of Robert Redford is Redford, Robert.",
+            "html": "dbpedia_6882_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What information does 'Redford, Robert' tell us about this person?",
+            "html": "dbpedia_6882_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If someone said 'Robert Redford,' would they be using his full name?",
+            "html": "dbpedia_6882_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is 'Redford, Robert' the given and surname combination for this person?",
+            "html": "dbpedia_6882_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6882_107.txt"
+        },
+        {
+            "file_id": "dbpedia_6882_118.txt"
+        },
+        {
+            "file_id": "dbpedia_6882_134.txt"
+        },
+        {
+            "file_id": "dbpedia_6882_20.txt"
+        },
+        {
+            "file_id": "dbpedia_6882_33.txt"
+        },
+        {
+            "file_id": "dbpedia_6882_45.txt"
+        },
+        {
+            "file_id": "dbpedia_6882_47.txt"
+        },
+        {
+            "file_id": "dbpedia_6882_59.txt"
+        },
+        {
+            "file_id": "dbpedia_6882_79.txt"
+        },
+        {
+            "file_id": "dbpedia_6882_89.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe documents provide the name \"Robert Redford\" and various details about him, but they do not present it as \"Redford, Robert\".  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the answer in JSON format:\n\n```\n{\n  \"output\": \"yes\"\n}\n```\n\nThe reason for this answer is that the documents provide evidence supporting the statement. In the files `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6882/re-ranker-msmarco/128.txt` and `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6882/re-ranker-msmarco/29.txt`, Robert Redford's full name is mentioned as Charles Robert Redford Jr., which confirms that his last name is indeed \"Redford\"."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n**Explanation:** The documents provide sufficient information to confirm that Robert Redford's full name is indeed Charles Robert Redford Jr., which can be abbreviated as \"Robert Redford.\" Therefore, the statement \"The name of Robert Redford is Redford, Robert\" is correct according to the provided context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {'output': 'yes'}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "The provided text consistently refers to him as Robert Redford, indicating that \"Redford\" is his surname.",
+            "category": 2
+        }
+    }
+}

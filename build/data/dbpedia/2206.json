@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Charlie_Chan's_Chance",
+    "predicate": "property/studio",
+    "object": "resource/Fox_Film",
+    "human_readable": "Charlie Chan's Chance was produced by Fox Film.",
+    "questions": [
+        {
+            "score": 0.9047172665596008,
+            "question": "Who produced the film 'Charlie Chan's Chance'?"
+        },
+        {
+            "score": 0.8185146450996399,
+            "question": "What is the name of the film production company that produced 'Charlie Chan's Chance'?"
+        },
+        {
+            "score": 0.8085958361625671,
+            "question": "Which film studio was involved in making 'Charlie Chan's Chance'?"
+        },
+        {
+            "score": 0.7326903343200684,
+            "question": "When was 'Charlie Chan's Chance' likely produced?"
+        },
+        {
+            "score": 0.6950608491897583,
+            "question": "Was 'Charlie Chan's Chance' a successful film?"
+        },
+        {
+            "score": 0.6560525298118591,
+            "question": "Is 'Charlie Chan's Chance' a known film title?"
+        },
+        {
+            "score": 0.5048187375068665,
+            "question": "Can you name another film produced by Fox Film?"
+        },
+        {
+            "score": 0.4989286959171295,
+            "question": "What genre is likely associated with the film 'Charlie Chan's Chance'?"
+        },
+        {
+            "score": 0.42458245158195496,
+            "question": "Are there any actors known for being in films by Fox Film?"
+        },
+        {
+            "score": 0.3552744388580322,
+            "question": "What type of company is Fox Film?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Charlie Chan's Chance was produced by Fox Film.",
+            "html": "dbpedia_2206_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any actors known for being in films by Fox Film?",
+            "html": "dbpedia_2206_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What genre is likely associated with the film 'Charlie Chan's Chance'?",
+            "html": "dbpedia_2206_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you name another film produced by Fox Film?",
+            "html": "dbpedia_2206_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2206_17.txt"
+        },
+        {
+            "file_id": "dbpedia_2206_19.txt"
+        },
+        {
+            "file_id": "dbpedia_2206_25.txt"
+        },
+        {
+            "file_id": "dbpedia_2206_27.txt"
+        },
+        {
+            "file_id": "dbpedia_2206_33.txt"
+        },
+        {
+            "file_id": "dbpedia_2206_38.txt"
+        },
+        {
+            "file_id": "dbpedia_2206_53.txt"
+        },
+        {
+            "file_id": "dbpedia_2206_55.txt"
+        },
+        {
+            "file_id": "dbpedia_2206_64.txt"
+        },
+        {
+            "file_id": "dbpedia_2206_8.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nThe provided documents state that \"Charlie Chan's chance / Fox Film Corporation\"  multiple times. This indicates that Fox Film produced the film. \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "To evaluate the triple, we need to determine if the documents support the statement \"Charlie Chan's Chance was produced by Fox Film.\"\n\nHere are the relevant excerpts from the documents:\n\n* File_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2206/re-ranker-msmarco/15.txt:\n\t+ \"Victor matrix CVE-71455.  Charlie Chan's chance / Fox Film Corporation.\"\n\t+ This implies that the recording of \"Charlie Chan's Chance\" was produced by Fox Film, but it does not directly state that the film itself (as opposed to the recording) was produced by Fox Film.\n* File_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2206/re-ranker-msmarco/57.txt:\n\t+ \"Victor matrix CVE-71459.  Charlie Chan's chance / Fox Film Corporation.\"\n\t+ Similar to the previous excerpt, this implies that the recording of \"Charlie Chan's Chance\" was produced by Fox Film.\n* File_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2206/re-ranker-msmarco/25.txt:\n\t+ This excerpt is about the 1932 film and mentions Warner Oland as Chan, but it does not mention Fox Film as the producer.\n\nBased on this analysis, the documents do suggest that the recordings of \"Charlie Chan's Chance\" were produced by Fox Film, but they do not directly support the statement that the film itself was produced by Fox Film. However, considering the context and the fact that the title and description of the file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2206/re-ranker-msmarco/25.txt is about the 1932 film, it can be inferred that the film was also produced by Fox Film.\n\nTherefore:\n\n{ \"output\": \"yes\" }"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe context information provided indicates that \"Charlie Chan's chance\" is associated with Fox Film Corporation. This supports the statement that \"Charlie Chan's Chance was produced by Fox Film.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

@@ -1,0 +1,122 @@
+{
+    "subject": "resource/Luis_Cruz",
+    "predicate": "property/bats",
+    "object": "Right",
+    "human_readable": "Luis Cruz bats right.",
+    "questions": [
+        {
+            "score": 0.9061805009841919,
+            "question": "Does Luis Cruz bat left or right?"
+        },
+        {
+            "score": 0.827689528465271,
+            "question": "Is Luis Cruz a right-handed batter?"
+        },
+        {
+            "score": 0.7901756167411804,
+            "question": "What is Luis Cruz's batting stance?"
+        },
+        {
+            "score": 0.6810975074768066,
+            "question": "What hand does Luis Cruz use to bat?"
+        },
+        {
+            "score": 0.6464646458625793,
+            "question": "Which way does Luis Cruz swing the bat?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Luis Cruz bats right.",
+            "html": "dbpedia_4772_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What hand does Luis Cruz use to bat?",
+            "html": "dbpedia_4772_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Luis Cruz's batting stance?",
+            "html": "dbpedia_4772_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Luis Cruz a right-handed batter?",
+            "html": "dbpedia_4772_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4772_122.txt"
+        },
+        {
+            "file_id": "dbpedia_4772_19.txt"
+        },
+        {
+            "file_id": "dbpedia_4772_35.txt"
+        },
+        {
+            "file_id": "dbpedia_4772_44.txt"
+        },
+        {
+            "file_id": "dbpedia_4772_48.txt"
+        },
+        {
+            "file_id": "dbpedia_4772_57.txt"
+        },
+        {
+            "file_id": "dbpedia_4772_6.txt"
+        },
+        {
+            "file_id": "dbpedia_4772_73.txt"
+        },
+        {
+            "file_id": "dbpedia_4772_74.txt"
+        },
+        {
+            "file_id": "dbpedia_4772_85.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the structured JSON response:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThis is because none of the documents mention that Luis Cruz bats right. In fact, one document mentions that he has shown his pop to the left and right center gaps (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4772/re-ranker-msmarco/11.txt), but it does not specify whether he bats right or left."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe documents provided do not contain any information about Luis Cruz's batting hand. There are no statements indicating whether he bats right or left, so we cannot confirm the triple \"Luis Cruz bats right\" based on the given context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Several passages mention Cruz hitting for power to the left and right center gaps, suggesting a right-handed hitter. Additionally, there are references to him being able to hit home runs to both sides of the field.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because Luis Cruz has been mentioned as making RBI singles in the fourth and sixth inning while playing second base, indicating that he can also bat from the left side.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information does not provide any specific detail about Luis Cruz's batting side. Therefore, without additional information confirming he bats right or left, we cannot evaluate the correctness of the statement that \"Luis Cruz bats right.\"",
+            "category": 2
+        }
+    }
+}

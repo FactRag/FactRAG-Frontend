@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Martijn_de_Zwart",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "Martijn de Zwart",
+    "human_readable": "The label of Martijn de Zwart is Martijn de Zwart.",
+    "questions": [
+        {
+            "score": 0.9804132580757141,
+            "question": "What is the label of Martijn de Zwart?"
+        },
+        {
+            "score": 0.9529291987419128,
+            "question": "What information does the label provide about Martijn de Zwart?"
+        },
+        {
+            "score": 0.9379912614822388,
+            "question": "Who is Martijn de Zwart?"
+        },
+        {
+            "score": 0.9329406023025513,
+            "question": "Is Martijn de Zwart a person?"
+        },
+        {
+            "score": 0.919108510017395,
+            "question": "Does the label 'Martijn de Zwart' describe something specific?"
+        },
+        {
+            "score": 0.9156912565231323,
+            "question": "How is Martijn de Zwart represented?"
+        },
+        {
+            "score": 0.8081567287445068,
+            "question": "What can you tell me about Martijn de Zwart?"
+        },
+        {
+            "score": 0.7867158651351929,
+            "question": "Is 'Martijn de Zwart' a unique identifier?"
+        },
+        {
+            "score": 0.2409307360649109,
+            "question": "Can you give an example of how this label might be used?"
+        },
+        {
+            "score": 0.14583824574947357,
+            "question": "What are some possible contexts where this label would be relevant?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The label of Martijn de Zwart is Martijn de Zwart.",
+            "html": "dbpedia_2398_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you give an example of how this label might be used?",
+            "html": "dbpedia_2398_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is 'Martijn de Zwart' a unique identifier?",
+            "html": "dbpedia_2398_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What can you tell me about Martijn de Zwart?",
+            "html": "dbpedia_2398_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2398_102.txt"
+        },
+        {
+            "file_id": "dbpedia_2398_11.txt"
+        },
+        {
+            "file_id": "dbpedia_2398_24.txt"
+        },
+        {
+            "file_id": "dbpedia_2398_29.txt"
+        },
+        {
+            "file_id": "dbpedia_2398_37.txt"
+        },
+        {
+            "file_id": "dbpedia_2398_50.txt"
+        },
+        {
+            "file_id": "dbpedia_2398_54.txt"
+        },
+        {
+            "file_id": "dbpedia_2398_83.txt"
+        },
+        {
+            "file_id": "dbpedia_2398_85.txt"
+        },
+        {
+            "file_id": "dbpedia_2398_89.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation:\n\n`{'output': 'no'}`\n\nThe reason is that the provided documents mention a person named \"Martijn de Zwart\", but they do not confirm that \"Martijn de Zwart\" is the label of Martijn de Zwart. The label is explicitly stated in the first document: \"Martijn de Zwart is a Dutch football player...\". Therefore, it's unlikely that \"Martijn de Zwart\" is just an alias for himself."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThis answer is based on the fact that all provided documents refer to an individual named \"Martijn de Zwart\" and consistently use this name throughout, confirming the label of \"Martijn de Zwart.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The given context information describes two different individuals with the name Martijn de Zwart, one being a Dutch football player and the other a professor who passed away in 2004.",
+            "category": 1
+        }
+    }
+}

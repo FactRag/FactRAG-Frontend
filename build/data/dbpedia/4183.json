@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Justin_R._Durban",
+    "predicate": "ontology/birthDate",
+    "object": "1977-12-07",
+    "human_readable": "Justin R. Durban was born on December 7, 1977.",
+    "questions": [
+        {
+            "score": 0.9023022055625916,
+            "question": "When was Justin R. Durban born?"
+        },
+        {
+            "score": 0.854723334312439,
+            "question": "December 7th of which year marks Justin R. Durban's birthday?"
+        },
+        {
+            "score": 0.8400173187255859,
+            "question": "What day was Justin R. Durban born on?"
+        },
+        {
+            "score": 0.7736842036247253,
+            "question": "What is Justin R. Durban's birthdate?"
+        },
+        {
+            "score": 0.7274835109710693,
+            "question": "What month was Justin R. Durban born in?"
+        },
+        {
+            "score": 0.5709349513053894,
+            "question": "Is Justin R. Durban older or younger than someone born in 1980?"
+        },
+        {
+            "score": 0.5586923360824585,
+            "question": "How old is Justin R. Durban now?"
+        },
+        {
+            "score": 0.46670079231262207,
+            "question": "In what year did Justin R. Durban come into the world?"
+        },
+        {
+            "score": 0.29835599660873413,
+            "question": "Is December 7th a common birthdate?"
+        },
+        {
+            "score": 0.2533295154571533,
+            "question": "If today is January 1st, 2024, how many years has Justin R. Durban lived?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Justin R. Durban was born on December 7, 1977.",
+            "html": "dbpedia_4183_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is December 7th a common birthdate?",
+            "html": "dbpedia_4183_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In what year did Justin R. Durban come into the world?",
+            "html": "dbpedia_4183_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How old is Justin R. Durban now?",
+            "html": "dbpedia_4183_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4183_10.txt"
+        },
+        {
+            "file_id": "dbpedia_4183_35.txt"
+        },
+        {
+            "file_id": "dbpedia_4183_46.txt"
+        },
+        {
+            "file_id": "dbpedia_4183_49.txt"
+        },
+        {
+            "file_id": "dbpedia_4183_50.txt"
+        },
+        {
+            "file_id": "dbpedia_4183_63.txt"
+        },
+        {
+            "file_id": "dbpedia_4183_68.txt"
+        },
+        {
+            "file_id": "dbpedia_4183_69.txt"
+        },
+        {
+            "file_id": "dbpedia_4183_71.txt"
+        },
+        {
+            "file_id": "dbpedia_4183_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents mention that Justin R. Durban was born in 1977 and later also mention that he was born in 1986 (in file_path:/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4183/re-ranker-msmarco/71.txt). This inconsistency makes the triple incorrect."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The context information correctly states that Justin R. Durban was born on December 7th, 1977, not on December 7, 1986 as implied in the provided triple. Therefore, the statement is incorrect according to the documents."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n    \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{\"output\": \"yes\"}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "It directly contradicts information found in multiple other facts which consistently state Justin R. Durban was born on December 7th, 1977.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information provided in all four entries clearly states that Justin R. Durban was born on December 7th, 1977, which contradicts the fact presented as incorrect.",
+            "category": 2
+        }
+    }
+}

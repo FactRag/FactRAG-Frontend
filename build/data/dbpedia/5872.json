@@ -1,0 +1,142 @@
+{
+    "subject": "resource/G\u00e9rard_Debreu",
+    "predicate": "ontology/almaMater",
+    "object": "resource/University_of_California,_Berkeley",
+    "human_readable": "G\u00e9rard Debreu's alma mater is University of California, Berkeley.",
+    "questions": [
+        {
+            "score": 0.9502084255218506,
+            "question": "What field of study might G\u00e9rard Debreu have pursued at University of California, Berkeley?"
+        },
+        {
+            "score": 0.8546419143676758,
+            "question": "Name the university that G\u00e9rard Debreu studied at."
+        },
+        {
+            "score": 0.7835914492607117,
+            "question": "Where did G\u00e9rard Debreu attend university?"
+        },
+        {
+            "score": 0.6831285357475281,
+            "question": "What university is associated with G\u00e9rard Debreu's education?"
+        },
+        {
+            "score": 0.6737943291664124,
+            "question": "What is the name of the university G\u00e9rard Debreu graduated from?"
+        },
+        {
+            "score": 0.6570786237716675,
+            "question": "Did G\u00e9rard Debreu study at a well-known university?"
+        },
+        {
+            "score": 0.6400640606880188,
+            "question": "What is the location of the University of California, Berkeley?"
+        },
+        {
+            "score": 0.63099604845047,
+            "question": "Which institution awarded G\u00e9rard Debreu his degree?"
+        },
+        {
+            "score": 0.4838504493236542,
+            "question": "Is University of California, Berkeley known for economics?"
+        },
+        {
+            "score": 0.2870674729347229,
+            "question": "Is there a connection between G\u00e9rard Debreu and economics?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=G\u00e9rard Debreu's alma mater is University of California, Berkeley.",
+            "html": "dbpedia_5872_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is University of California, Berkeley known for economics?",
+            "html": "dbpedia_5872_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Which institution awarded G\u00e9rard Debreu his degree?",
+            "html": "dbpedia_5872_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the location of the University of California, Berkeley?",
+            "html": "dbpedia_5872_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5872_12.txt"
+        },
+        {
+            "file_id": "dbpedia_5872_25.txt"
+        },
+        {
+            "file_id": "dbpedia_5872_32.txt"
+        },
+        {
+            "file_id": "dbpedia_5872_40.txt"
+        },
+        {
+            "file_id": "dbpedia_5872_41.txt"
+        },
+        {
+            "file_id": "dbpedia_5872_45.txt"
+        },
+        {
+            "file_id": "dbpedia_5872_48.txt"
+        },
+        {
+            "file_id": "dbpedia_5872_49.txt"
+        },
+        {
+            "file_id": "dbpedia_5872_74.txt"
+        },
+        {
+            "file_id": "dbpedia_5872_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the structured JSON response:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe documents do not support that G\u00e9rard Debreu's alma mater is University of California, Berkeley. According to the files (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5872/re-ranker-msmarco/74.txt), Debreu studied mathematics in his youth and graduated from the University of Paris in 1946, not from the University of California, Berkeley."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents do not mention that the University of California, Berkeley was G\u00e9rard Debreu's alma mater. While it states that he worked there from 1962 to 1991 and was a professor there, it does not indicate that this was his place of higher education."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n     \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Text states Debreu started his professorship at UC Berkeley in 1962, implying he received his education elsewhere. Additionally, text mentions he graduated from the University of Paris in 1946.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because G\u00e9rard Debreu studied mathematics at the University of Paris before joining UC Berkeley.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Debreu studied mathematics at the University of Paris, not UC Berkeley.",
+            "category": 2
+        }
+    }
+}

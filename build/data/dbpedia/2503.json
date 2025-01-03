@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Nina_Breeder",
+    "predicate": "ontology/occupation",
+    "object": "resource/Artist",
+    "human_readable": "Nina Breeder is an Artist.",
+    "questions": [
+        {
+            "score": 0.977601170539856,
+            "question": "Is Nina Breeder a musician?"
+        },
+        {
+            "score": 0.948505699634552,
+            "question": "Are there any famous artworks created by Nina Breeder?"
+        },
+        {
+            "score": 0.9333142638206482,
+            "question": "Who are some artists that Nina Breeder admires?"
+        },
+        {
+            "score": 0.9029062986373901,
+            "question": "What is Nina Breeder's background in art?"
+        },
+        {
+            "score": 0.8225639462471008,
+            "question": "What kind of art does Nina Breeder create?"
+        },
+        {
+            "score": 0.809651255607605,
+            "question": "What influences Nina Breeder's artistic style?"
+        },
+        {
+            "score": 0.7595201134681702,
+            "question": "What is Nina Breeder known for?"
+        },
+        {
+            "score": 0.7291305661201477,
+            "question": "What are some common themes in Nina Breeder's art?"
+        },
+        {
+            "score": 0.4013667404651642,
+            "question": "Has Nina Breeder had any exhibitions of her work?"
+        },
+        {
+            "score": 0.2785801887512207,
+            "question": "Where does Nina Breeder live and work?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Nina Breeder is an Artist.",
+            "html": "dbpedia_2503_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Has Nina Breeder had any exhibitions of her work?",
+            "html": "dbpedia_2503_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some common themes in Nina Breeder's art?",
+            "html": "dbpedia_2503_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Nina Breeder known for?",
+            "html": "dbpedia_2503_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2503_104.txt"
+        },
+        {
+            "file_id": "dbpedia_2503_11.txt"
+        },
+        {
+            "file_id": "dbpedia_2503_113.txt"
+        },
+        {
+            "file_id": "dbpedia_2503_131.txt"
+        },
+        {
+            "file_id": "dbpedia_2503_162.txt"
+        },
+        {
+            "file_id": "dbpedia_2503_28.txt"
+        },
+        {
+            "file_id": "dbpedia_2503_38.txt"
+        },
+        {
+            "file_id": "dbpedia_2503_46.txt"
+        },
+        {
+            "file_id": "dbpedia_2503_60.txt"
+        },
+        {
+            "file_id": "dbpedia_2503_78.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe reason for this answer is that while Nina Breeder's bio mentions her work in various fields, including acting and modeling, there is no mention of her being an artist. The closest mention to art-related activities is her involvement in experimental films and performances in Florence (1997), but it does not explicitly state that she is an artist."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe context information clearly states that \"Nina Breeder (born in 1982 in Genova, Italy), is an Italian contemporary artist based in New York City.\" This supports the statement that Nina Breeder is an artist."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The provided context information does not support the conclusion that Nina Breeder is an artist, as it mentions her profession as acting, modeling, and philanthropy, but not explicitly states that she is an artist.",
+            "category": 2
+        }
+    }
+}

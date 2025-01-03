@@ -1,0 +1,134 @@
+{
+    "subject": "resource/W._C._Leng",
+    "predicate": "property/birthPlace",
+    "object": "resource/Kingston_upon_Hull",
+    "human_readable": "W. C. Leng was born in Kingston upon Hull.",
+    "questions": [
+        {
+            "score": 0.8655914664268494,
+            "question": "What year did W. C. Leng live in Kingston upon Hull?"
+        },
+        {
+            "score": 0.8359715938568115,
+            "question": "What might have influenced W. C. Leng growing up in Kingston upon Hull?"
+        },
+        {
+            "score": 0.7981520891189575,
+            "question": "Where was W. C. Leng born?"
+        },
+        {
+            "score": 0.7901194095611572,
+            "question": "Where did W. C. Leng go after leaving Kingston upon Hull?"
+        },
+        {
+            "score": 0.7765125036239624,
+            "question": "How long did W. C. Leng live in Kingston upon Hull?"
+        },
+        {
+            "score": 0.7634708881378174,
+            "question": "Are there any famous people from Kingston upon Hull besides W. C. Leng?"
+        },
+        {
+            "score": 0.7445170879364014,
+            "question": "When was W. C. Leng born?"
+        },
+        {
+            "score": 0.4375176727771759,
+            "question": "What is Kingston upon Hull known for?"
+        },
+        {
+            "score": 0.4276488721370697,
+            "question": "Is there anything else notable about W. C. Leng's birthplace?"
+        },
+        {
+            "score": 0.3570254147052765,
+            "question": "Can you tell me more about W. C. Leng?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=W. C. Leng was born in Kingston upon Hull.",
+            "html": "dbpedia_138_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there anything else notable about W. C. Leng's birthplace?",
+            "html": "dbpedia_138_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Kingston upon Hull known for?",
+            "html": "dbpedia_138_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=When was W. C. Leng born?",
+            "html": "dbpedia_138_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_138_1.txt"
+        },
+        {
+            "file_id": "dbpedia_138_100.txt"
+        },
+        {
+            "file_id": "dbpedia_138_112.txt"
+        },
+        {
+            "file_id": "dbpedia_138_35.txt"
+        },
+        {
+            "file_id": "dbpedia_138_44.txt"
+        },
+        {
+            "file_id": "dbpedia_138_5.txt"
+        },
+        {
+            "file_id": "dbpedia_138_70.txt"
+        },
+        {
+            "file_id": "dbpedia_138_8.txt"
+        },
+        {
+            "file_id": "dbpedia_138_88.txt"
+        },
+        {
+            "file_id": "dbpedia_138_92.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have any other triples to evaluate!"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the provided context information, here is the evaluation of the triple:\n\n{\n  \"output\": \"yes\"\n}\n\nThis is because one of the documents (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_138/re-ranker-msmarco/8.txt) explicitly states that William Leng was born in Hull in 1825."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents mention that William Christopher Leng (Sir William Christopher Leng) was born in Hull, which supports the statement that W. C. Leng was born in Kingston upon Hull (another name for Hull)."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Both William Christopher Leng and John Leng were born in Kingston upon Hull, not Kingston upon Thames.",
+            "category": 2
+        }
+    }
+}

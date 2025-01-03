@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Tarikmah",
+    "predicate": "ontology/isPartOf",
+    "object": "resource/Qaleh_Ganj_County",
+    "human_readable": "Tarikmah is part of Qaleh Ganj County.",
+    "questions": [
+        {
+            "score": 0.924537718296051,
+            "question": "What county is Tarikmah part of?"
+        },
+        {
+            "score": 0.8378826379776001,
+            "question": "What is the name of the county that Tarikmah belongs to?"
+        },
+        {
+            "score": 0.824487030506134,
+            "question": "Is Tarikmah in a city or a county?"
+        },
+        {
+            "score": 0.7331696152687073,
+            "question": "Where is Tarikmah located?"
+        },
+        {
+            "score": 0.5464169383049011,
+            "question": "Is there any other information you can tell me about Tarikmah?"
+        },
+        {
+            "score": 0.542559802532196,
+            "question": "Give an example of a place within Qaleh Ganj County."
+        },
+        {
+            "score": 0.5270740985870361,
+            "question": "Does Qaleh Ganj County contain any other notable places?"
+        },
+        {
+            "score": 0.4972929358482361,
+            "question": "What is the administrative division of Tarikmah?"
+        },
+        {
+            "score": 0.4525558650493622,
+            "question": "Is there a specific reason you are asking about Tarikmah?"
+        },
+        {
+            "score": 0.3918188810348511,
+            "question": "How can I find more information about Tarikmah?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Tarikmah is part of Qaleh Ganj County.",
+            "html": "dbpedia_3630_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there a specific reason you are asking about Tarikmah?",
+            "html": "dbpedia_3630_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the administrative division of Tarikmah?",
+            "html": "dbpedia_3630_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Qaleh Ganj County contain any other notable places?",
+            "html": "dbpedia_3630_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3630_1.txt"
+        },
+        {
+            "file_id": "dbpedia_3630_13.txt"
+        },
+        {
+            "file_id": "dbpedia_3630_18.txt"
+        },
+        {
+            "file_id": "dbpedia_3630_19.txt"
+        },
+        {
+            "file_id": "dbpedia_3630_21.txt"
+        },
+        {
+            "file_id": "dbpedia_3630_24.txt"
+        },
+        {
+            "file_id": "dbpedia_3630_27.txt"
+        },
+        {
+            "file_id": "dbpedia_3630_4.txt"
+        },
+        {
+            "file_id": "dbpedia_3630_5.txt"
+        },
+        {
+            "file_id": "dbpedia_3630_8.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nThe document  /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3630/re-ranker-msmarco/18.txt states that Chah-e Zahid is a village in Qaleh Ganj Rural District, in the Central District of Qaleh Ganj County, Kerman Province, Iran.  While Tarikmah isn't explicitly mentioned, it is likely that this document refers to locations within Qaleh Ganj County.   "
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "After analyzing the provided context information, I can evaluate whether the statement \"Tarikmah is part of Qaleh Ganj County\" is supported by the documents.\n\nHere's the structured JSON response:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation:\n\nThe document at file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3630/re-ranker-msmarco/18.txt mentions Chah-e Zahid as a village in Qaleh Ganj Rural District, but there is no mention of Tarikmah. Similarly, the other documents do not provide any information about Tarikmah being part of Qaleh Ganj County. Therefore, based on the provided context, I conclude that the statement \"Tarikmah is part of Qaleh Ganj County\" is not supported by the documents."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents mention \"Chah-e Zahid\" and \"Kahur Abbas\" as villages within the Qaleh Ganj Rural District, which implies that areas like these (and by extension, Tarikmah if it is similarly located) are part of Qaleh Ganj County."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "There is no mention of Tarikmah in the provided context information.",
+            "category": 2
+        }
+    }
+}

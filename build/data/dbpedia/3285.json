@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Spider-Man_Unlimited",
+    "predicate": "ontology/network",
+    "object": "resource/Fox_Broadcasting_Company",
+    "human_readable": "Spider-Man Unlimited is a network of Fox Broadcasting Company.",
+    "questions": [
+        {
+            "score": 0.8857243657112122,
+            "question": "Which company owns the network 'Spider-Man Unlimited'?"
+        },
+        {
+            "score": 0.8805018663406372,
+            "question": "Is Spider-Man Unlimited associated with a television broadcast?"
+        },
+        {
+            "score": 0.7375705242156982,
+            "question": "What is Spider-Man Unlimited?"
+        },
+        {
+            "score": 0.5211472511291504,
+            "question": "What kind of content might be found on 'Spider-Man Unlimited'?"
+        },
+        {
+            "score": 0.4340245723724365,
+            "question": "Are there any other notable properties associated with the Fox Broadcasting Company?"
+        },
+        {
+            "score": 0.40998339653015137,
+            "question": "What genre would you classify 'Spider-Man Unlimited' as?"
+        },
+        {
+            "score": 0.40674808621406555,
+            "question": "Does 'Spider-Man Unlimited' have any spin-offs or related media?"
+        },
+        {
+            "score": 0.37160077691078186,
+            "question": "Does Fox Broadcasting Company produce any other popular shows or networks?"
+        },
+        {
+            "score": 0.3703400790691376,
+            "question": "Who are some of the main characters featured in 'Spider-Man Unlimited'?"
+        },
+        {
+            "score": 0.23221111297607422,
+            "question": "What year did 'Spider-Man Unlimited' first air?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Spider-Man Unlimited is a network of Fox Broadcasting Company.",
+            "html": "dbpedia_3285_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who are some of the main characters featured in 'Spider-Man Unlimited'?",
+            "html": "dbpedia_3285_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Fox Broadcasting Company produce any other popular shows or networks?",
+            "html": "dbpedia_3285_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does 'Spider-Man Unlimited' have any spin-offs or related media?",
+            "html": "dbpedia_3285_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3285_11.txt"
+        },
+        {
+            "file_id": "dbpedia_3285_13.txt"
+        },
+        {
+            "file_id": "dbpedia_3285_14.txt"
+        },
+        {
+            "file_id": "dbpedia_3285_31.txt"
+        },
+        {
+            "file_id": "dbpedia_3285_39.txt"
+        },
+        {
+            "file_id": "dbpedia_3285_46.txt"
+        },
+        {
+            "file_id": "dbpedia_3285_5.txt"
+        },
+        {
+            "file_id": "dbpedia_3285_86.txt"
+        },
+        {
+            "file_id": "dbpedia_3285_89.txt"
+        },
+        {
+            "file_id": "dbpedia_3285_95.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nThe documents provide information about the TV series \"Spider-Man Unlimited\", its plot, characters, and production details. However, they do not mention that it is a network of Fox Broadcasting Company, which suggests that the triple statement is incorrect. The relevant information can be found in the file_path: /Users/stanomarchesin/Research/fshami/Rag/docs/dbpedia_3285/re-ranker-msmarco/46.txt, where it states \"Network(s): Fox (Fox Kids)\" indicating that Spider-Man Unlimited was a TV series airing on the Fox Kids network, not a network itself."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information about the animated series \"Spider-Man Unlimited\" airing on Fox, which supports the statement that it is associated with the Fox Broadcasting Company."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n      \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Spider-Man Unlimited was aired on Fox Kids, which is a programming block owned by the Fox Broadcasting Company, not the Fox Broadcasting Company itself.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "It states Spider-Man Unlimited *is* a network, but the provided text describes it as an animated television series that aired on the Fox network.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The context information clearly states that Spider-Man Unlimited aired on Fox Kids from 1999 to 2001, but it does not say that it is a network of the Fox Broadcasting Company. It actually contradicts this idea by mentioning that Spider-Man Unlimited was set in an alternate universe called Counter-Earth and showcased the many adventures of Peter Parker who embarks on a daring mission to rescue his lover Mary Jane, indicating that it is a show, not a network.",
+            "category": 2
+        }
+    }
+}

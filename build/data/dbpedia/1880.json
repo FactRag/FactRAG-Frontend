@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Andrew_Sterett",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "Sterett, Andrew",
+    "human_readable": "Andrew Sterett's name is Sterett, Andrew.",
+    "questions": [
+        {
+            "score": 0.969401478767395,
+            "question": "What is Andrew Sterett's full name?"
+        },
+        {
+            "score": 0.956695020198822,
+            "question": "Is 'Sterett' Andrew's first or last name?"
+        },
+        {
+            "score": 0.939624011516571,
+            "question": "If you were to introduce Andrew Sterett, what would you say his name is?"
+        },
+        {
+            "score": 0.9141573905944824,
+            "question": "Is 'Sterett, Andrew' a common way to write a person's name?"
+        },
+        {
+            "score": 0.9120765328407288,
+            "question": "Which part of Andrew Sterett's name comes first?"
+        },
+        {
+            "score": 0.9038946628570557,
+            "question": "What is the first part of Andrew Sterett's name?"
+        },
+        {
+            "score": 0.8744949698448181,
+            "question": "What order do the parts of Andrew Sterett's name appear in?"
+        },
+        {
+            "score": 0.870793342590332,
+            "question": "How many parts are there to Andrew Sterett's name?"
+        },
+        {
+            "score": 0.8668251037597656,
+            "question": "What is the last part of Andrew Sterett's name?"
+        },
+        {
+            "score": 0.6249916553497314,
+            "question": "If someone only knew 'Andrew', would they know the full name of this person?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Andrew Sterett's name is Sterett, Andrew.",
+            "html": "dbpedia_1880_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the last part of Andrew Sterett's name?",
+            "html": "dbpedia_1880_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How many parts are there to Andrew Sterett's name?",
+            "html": "dbpedia_1880_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What order do the parts of Andrew Sterett's name appear in?",
+            "html": "dbpedia_1880_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1880_106.txt"
+        },
+        {
+            "file_id": "dbpedia_1880_29.txt"
+        },
+        {
+            "file_id": "dbpedia_1880_32.txt"
+        },
+        {
+            "file_id": "dbpedia_1880_36.txt"
+        },
+        {
+            "file_id": "dbpedia_1880_41.txt"
+        },
+        {
+            "file_id": "dbpedia_1880_59.txt"
+        },
+        {
+            "file_id": "dbpedia_1880_62.txt"
+        },
+        {
+            "file_id": "dbpedia_1880_84.txt"
+        },
+        {
+            "file_id": "dbpedia_1880_9.txt"
+        },
+        {
+            "file_id": "dbpedia_1880_99.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, here is my evaluation of the triple:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: According to the documents, the correct spelling of the name is \"Sterrett\" (Note 1 in file_path:/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1880/re-ranker-msmarco/77.txt) or \"Sterett\" with a different date of birth and death (file_path:/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1880/re-ranker-msmarco/9.txt). The triple states that the correct spelling is \"Sterett, Andrew.\", which is only partially supported by one document."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents consistently refer to the individual as \"Andrew Sterrett\" or \"Andrew Sterett,\" which supports the triple stating that his name is \"Sterret, Andrew.\""
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "It is not stated anywhere in the context information that Andrew Sterett's name was Sterett. His last name, as confirmed in the text, is Sterett.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Several references in the text clearly state Andrew Sterett's full name as \"Andrew Sterett\".",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "multiple primary sources including the US Supreme Court case report (References: U.S. Reports) explicitly state that the correct spelling of the name is \"Sterett\", not \"Sterrett\".",
+            "category": 2
+        }
+    }
+}

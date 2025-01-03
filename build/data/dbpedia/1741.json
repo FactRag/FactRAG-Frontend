@@ -1,0 +1,102 @@
+{
+    "subject": "resource/Jean-Louis_Verdier",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "Jean-Louis Verdier",
+    "human_readable": "The label of Jean-Louis Verdier is Jean-Louis Verdier.",
+    "questions": [
+        {
+            "score": 0.9875457882881165,
+            "question": "Is there a label for Jean-Louis Verdier?"
+        },
+        {
+            "score": 0.9605886936187744,
+            "question": "Who is Jean-Louis Verdier?"
+        },
+        {
+            "score": 0.9128432869911194,
+            "question": "What is the name associated with Jean-Louis Verdier?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The label of Jean-Louis Verdier is Jean-Louis Verdier.",
+            "html": "dbpedia_1741_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is Jean-Louis Verdier?",
+            "html": "dbpedia_1741_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there a label for Jean-Louis Verdier?",
+            "html": "dbpedia_1741_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1741_22.txt"
+        },
+        {
+            "file_id": "dbpedia_1741_27.txt"
+        },
+        {
+            "file_id": "dbpedia_1741_36.txt"
+        },
+        {
+            "file_id": "dbpedia_1741_48.txt"
+        },
+        {
+            "file_id": "dbpedia_1741_60.txt"
+        },
+        {
+            "file_id": "dbpedia_1741_65.txt"
+        },
+        {
+            "file_id": "dbpedia_1741_73.txt"
+        },
+        {
+            "file_id": "dbpedia_1741_8.txt"
+        },
+        {
+            "file_id": "dbpedia_1741_88.txt"
+        },
+        {
+            "file_id": "dbpedia_1741_98.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of whether the information in the documents supports the triple:\n\n{\n  \"output\": \"no\"\n}\n\nThe reason for this answer is that the text mentions multiple individuals with the name Verdier, including Jean-Louis Verdier (1849-1895), Jean-Antoine Verdier (1767-1839), Paul Verdier, and Jean Baptiste Verdier. Therefore, the statement \"The label of Jean-Louis Verdier is Jean-Louis Verdier\" does not uniquely identify a single individual based on the provided context."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\"output\": \"yes\"}\n```\n\nThe documents provide information about Jean-Louis Verdier, including his name and details related to his academic work. There is no conflicting or contradictory information suggesting that the label of Jean-Louis Verdier should be anything other than \"Jean-Louis Verdier.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The label \"Jean-Louis Verdier\" corresponds to two different individuals with the same name, one a mathematician (points 1 and 3) and another a military general (point 4).",
+            "category": 2
+        }
+    }
+}

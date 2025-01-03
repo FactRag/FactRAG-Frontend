@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Sinopharm",
+    "predicate": "property/locationCity",
+    "object": "resource/Beijing",
+    "human_readable": "Sinopharm is located in Beijing.",
+    "questions": [
+        {
+            "score": 0.9801622629165649,
+            "question": "Is Sinopharm based in Beijing?"
+        },
+        {
+            "score": 0.8446851372718811,
+            "question": "Where is Sinopharm located?"
+        },
+        {
+            "score": 0.7992490530014038,
+            "question": "In which country is Sinopharm located?"
+        },
+        {
+            "score": 0.7543831467628479,
+            "question": "Are there other companies headquartered in Beijing besides Sinopharm?"
+        },
+        {
+            "score": 0.5360693335533142,
+            "question": "What is the significance of Sinopharm's location?"
+        },
+        {
+            "score": 0.5248568058013916,
+            "question": "Does Sinopharm operate internationally?"
+        },
+        {
+            "score": 0.5223139524459839,
+            "question": "What city is associated with Sinopharm?"
+        },
+        {
+            "score": 0.2958082854747772,
+            "question": "What type of organization is Sinopharm?"
+        },
+        {
+            "score": 0.22567275166511536,
+            "question": "Can you provide examples of other notable companies located in Beijing?"
+        },
+        {
+            "score": 0.07669416815042496,
+            "question": "What industries are prevalent in Beijing?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Sinopharm is located in Beijing.",
+            "html": "dbpedia_6044_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you provide examples of other notable companies located in Beijing?",
+            "html": "dbpedia_6044_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of organization is Sinopharm?",
+            "html": "dbpedia_6044_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What city is associated with Sinopharm?",
+            "html": "dbpedia_6044_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6044_121.txt"
+        },
+        {
+            "file_id": "dbpedia_6044_134.txt"
+        },
+        {
+            "file_id": "dbpedia_6044_148.txt"
+        },
+        {
+            "file_id": "dbpedia_6044_169.txt"
+        },
+        {
+            "file_id": "dbpedia_6044_173.txt"
+        },
+        {
+            "file_id": "dbpedia_6044_18.txt"
+        },
+        {
+            "file_id": "dbpedia_6044_20.txt"
+        },
+        {
+            "file_id": "dbpedia_6044_60.txt"
+        },
+        {
+            "file_id": "dbpedia_6044_68.txt"
+        },
+        {
+            "file_id": "dbpedia_6044_82.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you'd like to evaluate any more triples!"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here's the evaluation of the triple \"Sinopharm is located in Beijing\" based on the provided context information:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: While some documents mention locations related to Sinopharm, such as vaccine production plants in Beijing and Wuhan (document 118.txt), others mention its headquarters as being in Shanghai, China (document 97.txt). There is no explicit information that directly states Sinopharm's main location is Beijing."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents mention several instances related to Sinopharm's operations and facilities being located in Beijing, China. For example:\n- A staff member displays a sample of the COVID-19 inactivated vaccine at a production plant in Beijing.\n- The chairman of Sinopharm Group mentioned expanding production and packaging capacity by also making use of institutes in cities such as Changchun, Shanghai, Lanzhou, and Chengdu, which are all located within China. Since Beijing is explicitly named as one of the locations for their vaccine production plants, it supports that Sinopharm has operations or is located in Beijing."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {'output': 'yes'}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The context information mentions Sinopharm vaccine production plants in Beijing, but also mentions other locations such as Changchun, Shanghai, Lanzhou, and Chengdu, which suggests that the company has a presence in multiple cities across China.",
+            "category": 2
+        }
+    }
+}

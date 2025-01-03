@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Westminster_School",
+    "predicate": "ontology/foundedBy",
+    "object": "resource/Henry_VIII_of_England",
+    "human_readable": "Westminster School was founded by Henry VIII of England.",
+    "questions": [
+        {
+            "score": 0.9205173850059509,
+            "question": "Who founded Westminster School?"
+        },
+        {
+            "score": 0.9178251624107361,
+            "question": "Which school was founded by Henry VIII?"
+        },
+        {
+            "score": 0.8825603127479553,
+            "question": "What role did Henry VIII play in the establishment of Westminster School?"
+        },
+        {
+            "score": 0.8806613087654114,
+            "question": "When was Westminster School founded?"
+        },
+        {
+            "score": 0.7729432582855225,
+            "question": "What is the name of the king who founded Westminster School?"
+        },
+        {
+            "score": 0.6276053190231323,
+            "question": "Is Westminster School a well-known school?"
+        },
+        {
+            "score": 0.594624400138855,
+            "question": "What is the historical significance of Westminster School?"
+        },
+        {
+            "score": 0.5653675198554993,
+            "question": "In what country is Westminster School located?"
+        },
+        {
+            "score": 0.5459653735160828,
+            "question": "What type of institution is Westminster School?"
+        },
+        {
+            "score": 0.18651598691940308,
+            "question": "Can you tell me more about Henry VIII's reign?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Westminster School was founded by Henry VIII of England.",
+            "html": "dbpedia_3143_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of institution is Westminster School?",
+            "html": "dbpedia_3143_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In what country is Westminster School located?",
+            "html": "dbpedia_3143_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the historical significance of Westminster School?",
+            "html": "dbpedia_3143_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3143_110.txt"
+        },
+        {
+            "file_id": "dbpedia_3143_140.txt"
+        },
+        {
+            "file_id": "dbpedia_3143_19.txt"
+        },
+        {
+            "file_id": "dbpedia_3143_31.txt"
+        },
+        {
+            "file_id": "dbpedia_3143_36.txt"
+        },
+        {
+            "file_id": "dbpedia_3143_41.txt"
+        },
+        {
+            "file_id": "dbpedia_3143_61.txt"
+        },
+        {
+            "file_id": "dbpedia_3143_64.txt"
+        },
+        {
+            "file_id": "dbpedia_3143_69.txt"
+        },
+        {
+            "file_id": "dbpedia_3143_83.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n\n\nLet me know if you have any other triples you'd like me to evaluate!  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the structured JSON answer:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents provide conflicting information about the founder of Westminster School. While one document (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3143/re-ranker-msmarco/134.txt) mentions that it was properly established under the Tudors, and Queen Elizabeth I has been credited with founding the Westminster School in 1560, another document (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3143/re-ranker-msmarco/75.txt) states that the school was first founded by Henry VIII. However, it also mentions that Elizabeth I re-founded the school in 1560, making Elizabeth I a co-founder, rather than the sole founder. Therefore, the statement that Westminster School was founded by Henry VIII of England is not entirely accurate according to the documents."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nExplanation: The documents provide information that supports the statement \"Westminster School was founded by Henry VIII of England.\" While the primary founding is attributed to Queen Elizabeth I in 1560, one document mentions the school being \"first founded by Henry VIII,\" indicating his role in its establishment."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n     \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "qwen2.5": {
+            "reason": "The context clearly states that Westminster School was first founded by Henry VIII, but then re-founded by Elizabeth I in 1560. It specifically mentions that \"This year [1560] is acknowledged as their official founding date.\" Therefore, it cannot be said that Henry VIII founded the school; he ensured its survival through statute.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,97 @@
+{
+    "subject": "resource/Phil_Urso",
+    "predicate": "http://xmlns.com/foaf/0.1/surname",
+    "object": "Urso",
+    "human_readable": "The surname of Phil Urso is Urso.",
+    "questions": [
+        {
+            "score": 0.9761250615119934,
+            "question": "What is Phil Urso's surname?"
+        },
+        {
+            "score": 0.941412627696991,
+            "question": "Is 'Urso' Phil Urso's last name?"
+        },
+        {
+            "score": 0.8774453997612,
+            "question": "Who is Phil Urso?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The surname of Phil Urso is Urso.",
+            "html": "dbpedia_1911_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is 'Urso' Phil Urso's last name?",
+            "html": "dbpedia_1911_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Phil Urso's surname?",
+            "html": "dbpedia_1911_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1911_11.txt"
+        },
+        {
+            "file_id": "dbpedia_1911_114.txt"
+        },
+        {
+            "file_id": "dbpedia_1911_15.txt"
+        },
+        {
+            "file_id": "dbpedia_1911_20.txt"
+        },
+        {
+            "file_id": "dbpedia_1911_27.txt"
+        },
+        {
+            "file_id": "dbpedia_1911_32.txt"
+        },
+        {
+            "file_id": "dbpedia_1911_46.txt"
+        },
+        {
+            "file_id": "dbpedia_1911_58.txt"
+        },
+        {
+            "file_id": "dbpedia_1911_79.txt"
+        },
+        {
+            "file_id": "dbpedia_1911_95.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation of whether the information in the documents supports the triple:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe reason for this answer is that the document with path `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1911/re-ranker-msmarco/27.txt` contains information about the surname Urso, and one of the variants mentioned in that document is \"Urso\", which matches the given triple."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThis response is based on the context provided, which mentions the surname \"Urso\" associated with individuals named Phil and Philip Urso. Therefore, confirming that the surname of Phil Urso (and similarly, Philip Urso) is indeed Urso."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

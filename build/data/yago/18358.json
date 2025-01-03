@@ -1,0 +1,142 @@
+{
+    "subject": "Lydia_Shum",
+    "predicate": "isMarriedTo",
+    "object": "Adam_Cheng",
+    "human_readable": "Lydia Shum is married to Adam Cheng.",
+    "questions": [
+        {
+            "score": 0.9883047342300415,
+            "question": "Is Adam Cheng married to Lydia Shum?"
+        },
+        {
+            "score": 0.9627687335014343,
+            "question": "If Lydia Shum is married to Adam Cheng, what does this imply about their relationship status?"
+        },
+        {
+            "score": 0.8823767900466919,
+            "question": "Is Adam Cheng related to Lydia Shum?"
+        },
+        {
+            "score": 0.8330239653587341,
+            "question": "Who is Lydia Shum married to?"
+        },
+        {
+            "score": 0.8298277854919434,
+            "question": "What type of relationship exists between Lydia Shum and Adam Cheng?"
+        },
+        {
+            "score": 0.5998840928077698,
+            "question": "What is the name of Lydia Shum's spouse?"
+        },
+        {
+            "score": 0.40258458256721497,
+            "question": "What is the name of Lydia Shum's partner?"
+        },
+        {
+            "score": 0.13544991612434387,
+            "question": "Who are the individuals involved in a marriage relationship according to the statement?"
+        },
+        {
+            "score": 0.12164019793272018,
+            "question": "Based on the statement, who are the husband and wife?"
+        },
+        {
+            "score": 0.06829699873924255,
+            "question": "Can you identify the two people mentioned as being in a marital union?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Lydia Shum is married to Adam Cheng.",
+            "html": "yago_18358_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Based on the statement, who are the husband and wife?",
+            "html": "yago_18358_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who are the individuals involved in a marriage relationship according to the statement?",
+            "html": "yago_18358_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of Lydia Shum's partner?",
+            "html": "yago_18358_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "yago_18358_10.txt"
+        },
+        {
+            "file_id": "yago_18358_14.txt"
+        },
+        {
+            "file_id": "yago_18358_18.txt"
+        },
+        {
+            "file_id": "yago_18358_21.txt"
+        },
+        {
+            "file_id": "yago_18358_33.txt"
+        },
+        {
+            "file_id": "yago_18358_43.txt"
+        },
+        {
+            "file_id": "yago_18358_45.txt"
+        },
+        {
+            "file_id": "yago_18358_6.txt"
+        },
+        {
+            "file_id": "yago_18358_60.txt"
+        },
+        {
+            "file_id": "yago_18358_65.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, I can evaluate the query \"Lydia Shum is married to Adam Cheng\".\n\nHere's the structured JSON response:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nThis is because while the documents mention that Lydia Shum was divorced from Adam Cheng and they have a daughter together (Joyce Cheng), there is no information that suggests they are currently married. In fact, the documents imply that they were divorced at some point in their relationship."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents mention that Lydia Shum was married to Adam Cheng, but they also state that she later divorced him. Therefore, the statement \"Lydia Shum is married to Adam Cheng\" is not supported by the given context and is incorrect according to the provided information."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "The text states Adam Cheng was married to Lydia Shum but then divorced her.  It also says he has a current wife, Koon Jing Wah.",
+            "category": 0
+        },
+        "llama3.1": {
+            "reason": "Lydia Shum was married to Adam Cheng before her death on February 19, 2008. However, the context information states that after her infamous divorce with Adam Cheng, he then married his current wife Koon Jing Wah (officially indicating a separation between Adam and Lydia), making it incorrect to state that Lydia is married to Adam.",
+            "category": 0
+        },
+        "qwen2.5": {
+            "reason": "Lydia Shum was divorced from Adam Cheng before her death, and Joyce Cheng, who is mentioned as their daughter, was born after their divorce.",
+            "category": 0
+        }
+    }
+}

@@ -1,0 +1,142 @@
+{
+    "subject": "resource/University_of_Helmstedt",
+    "predicate": "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+    "object": "11.0086",
+    "human_readable": "The longitude of University of Helmstedt is 11.0086.",
+    "questions": [
+        {
+            "score": 0.86549973487854,
+            "question": "What is the longitude of the University of Helmstedt?"
+        },
+        {
+            "score": 0.8394580483436584,
+            "question": "What is the approximate longitude of the University of Helmstedt?"
+        },
+        {
+            "score": 0.7373846769332886,
+            "question": "Can you provide the geographical coordinates of the University of Helmstedt?"
+        },
+        {
+            "score": 0.7169053554534912,
+            "question": "Is the University of Helmstedt located in the eastern or western hemisphere based on its longitude?"
+        },
+        {
+            "score": 0.6928151845932007,
+            "question": "Is the University of Helmstedt's longitude significant in any historical context?"
+        },
+        {
+            "score": 0.691846489906311,
+            "question": "How can we use the longitude to find the University of Helmstedt on a map?"
+        },
+        {
+            "score": 0.6250702738761902,
+            "question": "What other information about the University of Helmstedt could be helpful besides its longitude?"
+        },
+        {
+            "score": 0.6048843860626221,
+            "question": "Where is the University of Helmstedt located?"
+        },
+        {
+            "score": 0.5003916621208191,
+            "question": "Are there any famous landmarks near the University of Helmstedt?"
+        },
+        {
+            "score": 0.19700202345848083,
+            "question": "What is the difference between latitude and longitude?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The longitude of University of Helmstedt is 11.0086.",
+            "html": "dbpedia_1272_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any famous landmarks near the University of Helmstedt?",
+            "html": "dbpedia_1272_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where is the University of Helmstedt located?",
+            "html": "dbpedia_1272_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What other information about the University of Helmstedt could be helpful besides its longitude?",
+            "html": "dbpedia_1272_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1272_14.txt"
+        },
+        {
+            "file_id": "dbpedia_1272_20.txt"
+        },
+        {
+            "file_id": "dbpedia_1272_22.txt"
+        },
+        {
+            "file_id": "dbpedia_1272_29.txt"
+        },
+        {
+            "file_id": "dbpedia_1272_30.txt"
+        },
+        {
+            "file_id": "dbpedia_1272_34.txt"
+        },
+        {
+            "file_id": "dbpedia_1272_37.txt"
+        },
+        {
+            "file_id": "dbpedia_1272_38.txt"
+        },
+        {
+            "file_id": "dbpedia_1272_7.txt"
+        },
+        {
+            "file_id": "dbpedia_1272_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the structured JSON format containing the evaluation result:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThis is because the document mentions that \"Latitude and longitude: 52.22916667,11.00861111\", which does not match the query's value of \"11.0086\"."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: According to the provided documents, the longitude of the University of Helmstedt is stated as 11.00861111, not just 11.0086."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The provided context does not specify the longitude of the University of Helmstedt. It only mentions its latitude and does not provide a value for the longitude.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "the latitude of University of Helmstedt is given as 52.22916667, but the longitude for both University of Helmstedt and town of Helmstedt are the same, which is 11.01055556 or 11.00861111, so it should be one of these values not 11.0086.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The longitude provided for the University of Helmstedt is 11.0086, which does not match the longitude given for Helmstedt town (11.01055556) or the coordinates for the specific university location (11.00861111).",
+            "category": 2
+        }
+    }
+}

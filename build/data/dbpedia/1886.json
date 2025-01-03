@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Ibarreta",
+    "predicate": "http://purl.org/linguistics/gold/hypernym",
+    "object": "resource/Settlement",
+    "human_readable": "Ibarreta is a type of Settlement.",
+    "questions": [
+        {
+            "score": 0.8700448870658875,
+            "question": "What kind of place is Ibarreta?"
+        },
+        {
+            "score": 0.5855640769004822,
+            "question": "Is Ibarreta a city or something else?"
+        },
+        {
+            "score": 0.37211745977401733,
+            "question": "Give an example of another type of settlement."
+        },
+        {
+            "score": 0.2894279658794403,
+            "question": "What are some characteristics of a settlement?"
+        },
+        {
+            "score": 0.2816939651966095,
+            "question": "What services are typically found in a settlement?"
+        },
+        {
+            "score": 0.24721242487430573,
+            "question": "What is the purpose of a settlement?"
+        },
+        {
+            "score": 0.2116299271583557,
+            "question": "Are there different sizes of settlements?"
+        },
+        {
+            "score": 0.20228073000907898,
+            "question": "Where might you find a settlement?"
+        },
+        {
+            "score": 0.19533579051494598,
+            "question": "How do settlements differ from other types of geographical locations?"
+        },
+        {
+            "score": 0.11649022996425629,
+            "question": "Can you name any famous settlements?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Ibarreta is a type of Settlement.",
+            "html": "dbpedia_1886_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How do settlements differ from other types of geographical locations?",
+            "html": "dbpedia_1886_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where might you find a settlement?",
+            "html": "dbpedia_1886_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there different sizes of settlements?",
+            "html": "dbpedia_1886_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1886_106.txt"
+        },
+        {
+            "file_id": "dbpedia_1886_34.txt"
+        },
+        {
+            "file_id": "dbpedia_1886_49.txt"
+        },
+        {
+            "file_id": "dbpedia_1886_53.txt"
+        },
+        {
+            "file_id": "dbpedia_1886_59.txt"
+        },
+        {
+            "file_id": "dbpedia_1886_62.txt"
+        },
+        {
+            "file_id": "dbpedia_1886_69.txt"
+        },
+        {
+            "file_id": "dbpedia_1886_79.txt"
+        },
+        {
+            "file_id": "dbpedia_1886_80.txt"
+        },
+        {
+            "file_id": "dbpedia_1886_98.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of whether the information in the documents supports the triple:\n\n{\n  \"output\": \"no\"\n}\n\nThe reason for this answer is that the documents contain information about Ibarreta, but it is described as an \"Urban Settlement\", a \"city\", a \"town\", and not as a type of settlement (e.g. dispersed settlement) in general. The texts do mention dispersed settlements in general, but they do not explicitly state that Ibarreta is one."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information that supports the statement that \"Ibarreta is a type of Settlement.\" Specifically, in the document with file_path `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1886/re-ranker-msmarco/48.txt`, it mentions Ibarreta as a city and further describes its geographical location and nearby towns, indicating that Ibarreta fits the definition of a settlement."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "Ibarreta is specifically described as an \"urban settlement\" (point 1), a \"city\" (point 2), and a \"town\" (points 3 and 5) in the provided context, which contradicts the notion that it's a type of settlement.",
+            "category": 2
+        }
+    }
+}

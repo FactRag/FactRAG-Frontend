@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Shock_to_the_System_(Gemma_Hayes_song)",
+    "predicate": "property/length",
+    "object": "221.0",
+    "human_readable": "The length of Shock to the System (Gemma Hayes song) is 221.0.",
+    "questions": [
+        {
+            "score": 0.9512185454368591,
+            "question": "What is the length of the song 'Shock to the System' by Gemma Hayes?"
+        },
+        {
+            "score": 0.8198022246360779,
+            "question": "Is the song 'Shock to the System' a well-known hit for Gemma Hayes?"
+        },
+        {
+            "score": 0.8041136264801025,
+            "question": "Is the song 'Shock to the System' an original composition by Gemma Hayes?"
+        },
+        {
+            "score": 0.7450032234191895,
+            "question": "What is the approximate length of the song 'Shock to the System'?"
+        },
+        {
+            "score": 0.6602813601493835,
+            "question": "How many seconds long is the song 'Shock to the System'?"
+        },
+        {
+            "score": 0.5716838836669922,
+            "question": "What is the title of the Gemma Hayes song?"
+        },
+        {
+            "score": 0.5443049073219299,
+            "question": "Who is the artist behind the song 'Shock to the System'?"
+        },
+        {
+            "score": 0.42362889647483826,
+            "question": "Can you identify the album or release that features the song 'Shock to the System'?"
+        },
+        {
+            "score": 0.37251099944114685,
+            "question": "In what genre does the song 'Shock to the System' belong?"
+        },
+        {
+            "score": 0.348536878824234,
+            "question": "Does the song 'Shock to the System' have any notable collaborations?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The length of Shock to the System (Gemma Hayes song) is 221.0.",
+            "html": "dbpedia_0_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In what genre does the song 'Shock to the System' belong?",
+            "html": "dbpedia_0_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you identify the album or release that features the song 'Shock to the System'?",
+            "html": "dbpedia_0_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is the artist behind the song 'Shock to the System'?",
+            "html": "dbpedia_0_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_0_103.txt"
+        },
+        {
+            "file_id": "dbpedia_0_108.txt"
+        },
+        {
+            "file_id": "dbpedia_0_28.txt"
+        },
+        {
+            "file_id": "dbpedia_0_31.txt"
+        },
+        {
+            "file_id": "dbpedia_0_56.txt"
+        },
+        {
+            "file_id": "dbpedia_0_6.txt"
+        },
+        {
+            "file_id": "dbpedia_0_63.txt"
+        },
+        {
+            "file_id": "dbpedia_0_73.txt"
+        },
+        {
+            "file_id": "dbpedia_0_75.txt"
+        },
+        {
+            "file_id": "dbpedia_0_78.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'} \n``` \n\n\nThe documents state that \"The total playtime duration of Shock to My System is 3 min 29 sec\".  This translates to roughly 209 seconds, not 221.   \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "To evaluate whether the information supports the triple, we need to identify the three components of the triple.\n\nThe query is about \"Shock to My System\" by Gemma Hayes, but it's missing the third component which seems to be related to the length or duration of the song.\n\nAssuming the correct query is:\n\nQuery: The song duration of the album/movie Shock to My System?\n\nAnd given that we have a document with the following information:\n\nWhat is the song duration of the album/movie Shock to My System?\n\nThe total playtime duration of Shock to My System is 3 min 29 sec.\n\nWe can now answer the query as follows:\n\n\n{'output': 'yes'}\n\nExplanation: The documents provide an exact answer to the question \"The song duration of the album/movie Shock to My System?\" which matches the format and value (3 minutes 29 seconds) mentioned in the triple."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: According to the provided context, the duration of the album/movie \"Shock to My System\" is stated as 3 minutes and 29 seconds, which converts to approximately 229 seconds. The query states that the length is 221.0 seconds, which does not match the information given in the documents. Therefore, the answer is \"no.\""
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The provided context information states that the total playtime duration of Shock to My System is 3 min 29 sec, not 221.0 seconds.",
+            "category": 3
+        }
+    }
+}

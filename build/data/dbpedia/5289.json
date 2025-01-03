@@ -1,0 +1,97 @@
+{
+    "subject": "resource/Thomas_Mansfield",
+    "predicate": "property/name",
+    "object": "Thomas Mansfield",
+    "human_readable": "Thomas Mansfield's name is Thomas Mansfield.",
+    "questions": [
+        {
+            "score": 0.9827349781990051,
+            "question": "What is Thomas Mansfield's name?"
+        },
+        {
+            "score": 0.9738311767578125,
+            "question": "Is Thomas Mansfield a person?"
+        },
+        {
+            "score": 0.6960136294364929,
+            "question": "Could you tell me more about Thomas Mansfield?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Thomas Mansfield's name is Thomas Mansfield.",
+            "html": "dbpedia_5289_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Thomas Mansfield a person?",
+            "html": "dbpedia_5289_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Thomas Mansfield's name?",
+            "html": "dbpedia_5289_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5289_1.txt"
+        },
+        {
+            "file_id": "dbpedia_5289_11.txt"
+        },
+        {
+            "file_id": "dbpedia_5289_12.txt"
+        },
+        {
+            "file_id": "dbpedia_5289_16.txt"
+        },
+        {
+            "file_id": "dbpedia_5289_2.txt"
+        },
+        {
+            "file_id": "dbpedia_5289_29.txt"
+        },
+        {
+            "file_id": "dbpedia_5289_31.txt"
+        },
+        {
+            "file_id": "dbpedia_5289_44.txt"
+        },
+        {
+            "file_id": "dbpedia_5289_90.txt"
+        },
+        {
+            "file_id": "dbpedia_5289_96.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation of the query:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The information in the documents supports that Thomas Mansfield's name is indeed Thomas Mansfield. This can be seen from multiple documents, where Thomas Mansfield is consistently referred to by this name (e.g., file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5289/re-ranker-msmarco/3.txt, file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5289/re-ranker-msmarco/12.txt)."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\"output\": \"yes\"}\n```\n\nThe documents provide information about a person named Thomas Mansfield, including his birth year and place of birth (Maryland, around 1757), as well as details about his life in Ohio. Therefore, the statement that \"Thomas Mansfield's name is Thomas Mansfield\" is supported by the given context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

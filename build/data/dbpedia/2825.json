@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Grattan_Bridge",
+    "predicate": "http://purl.org/linguistics/gold/hypernym",
+    "object": "resource/Bridge",
+    "human_readable": "The Grattan Bridge is a type of Bridge.",
+    "questions": [
+        {
+            "score": 0.967246413230896,
+            "question": "What kind of structure is the Grattan Bridge?"
+        },
+        {
+            "score": 0.8459546566009521,
+            "question": "Where might you find a Grattan Bridge?"
+        },
+        {
+            "score": 0.8035005927085876,
+            "question": "Is the Grattan Bridge a man-made structure?"
+        },
+        {
+            "score": 0.6010634303092957,
+            "question": "What are some common types of bridges?"
+        },
+        {
+            "score": 0.5977696776390076,
+            "question": "Does the term 'bridge' refer to a type of building?"
+        },
+        {
+            "score": 0.3918069303035736,
+            "question": "What is the purpose of a bridge?"
+        },
+        {
+            "score": 0.36726194620132446,
+            "question": "Can you give an example of a bridge?"
+        },
+        {
+            "score": 0.3002646863460541,
+            "question": "Are there different designs for bridges?"
+        },
+        {
+            "score": 0.20703069865703583,
+            "question": "Can you name another famous bridge?"
+        },
+        {
+            "score": 0.1969572901725769,
+            "question": "What materials are often used to build bridges?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The Grattan Bridge is a type of Bridge.",
+            "html": "dbpedia_2825_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you name another famous bridge?",
+            "html": "dbpedia_2825_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there different designs for bridges?",
+            "html": "dbpedia_2825_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you give an example of a bridge?",
+            "html": "dbpedia_2825_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2825_101.txt"
+        },
+        {
+            "file_id": "dbpedia_2825_111.txt"
+        },
+        {
+            "file_id": "dbpedia_2825_4.txt"
+        },
+        {
+            "file_id": "dbpedia_2825_43.txt"
+        },
+        {
+            "file_id": "dbpedia_2825_47.txt"
+        },
+        {
+            "file_id": "dbpedia_2825_73.txt"
+        },
+        {
+            "file_id": "dbpedia_2825_77.txt"
+        },
+        {
+            "file_id": "dbpedia_2825_8.txt"
+        },
+        {
+            "file_id": "dbpedia_2825_88.txt"
+        },
+        {
+            "file_id": "dbpedia_2825_98.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of whether the information in the documents supports the triple \"The Grattan Bridge is a type of Bridge\":\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation:\n\nWhile all the documents agree on the fact that Grattan Bridge is indeed a bridge, they also provide more specific details about its characteristics and features (e.g., it's a road bridge, spans the River Liffey in Dublin, Ireland, joins Capel Street to Parliament Street and the south quays). This suggests that the question \"The Grattan Bridge is a type of Bridge\" is not particularly informative or surprising given the context. The answer would be \"yes\", but it's implied rather than explicitly stated.\n\nHowever, strictly speaking, the answer could be argued to be \"no\" because the documents already specify what kind of bridge Grattan Bridge is (road bridge), making the question about its type a bit redundant. But in the spirit of providing a clear and concise evaluation, I've chosen to provide an answer of \"yes\"."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information about the Grattan Bridge, describing it as a road bridge spanning the River Liffey in Dublin. This supports the statement that the Grattan Bridge is a type of bridge."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "It's a tautology, as the information explicitly states that Grattan Bridge \"is a road bridge spanning the River Liffey in Dublin, Ireland\", which inherently implies it's a type of bridge.",
+            "category": 2
+        }
+    }
+}

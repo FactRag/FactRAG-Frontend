@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Saiyuki_(manga)",
+    "predicate": "ontology/numberOfVolumes",
+    "object": "10",
+    "human_readable": "Saiyuki (manga) has 10 volumes.",
+    "questions": [
+        {
+            "score": 0.8617433905601501,
+            "question": "How many volumes does the Saiyuki manga have?"
+        },
+        {
+            "score": 0.619322657585144,
+            "question": "Is the Saiyuki manga a complete series?"
+        },
+        {
+            "score": 0.6167487502098083,
+            "question": "What is the genre of the Saiyuki manga?"
+        },
+        {
+            "score": 0.541897177696228,
+            "question": "Where can readers find the Saiyuki manga?"
+        },
+        {
+            "score": 0.5387988686561584,
+            "question": "Who are the main characters in the Saiyuki manga?"
+        },
+        {
+            "score": 0.48168861865997314,
+            "question": "What is the overall theme of the Saiyuki manga?"
+        },
+        {
+            "score": 0.47564563155174255,
+            "question": "Has the Saiyuki manga been adapted into other media?"
+        },
+        {
+            "score": 0.4466927647590637,
+            "question": "What are some popular storylines in the Saiyuki manga?"
+        },
+        {
+            "score": 0.3623420000076294,
+            "question": "Who is the author of the Saiyuki manga?"
+        },
+        {
+            "score": 0.30946090817451477,
+            "question": "What year did the Saiyuki manga first begin serialization?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Saiyuki (manga) has 10 volumes.",
+            "html": "dbpedia_3204_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is the author of the Saiyuki manga?",
+            "html": "dbpedia_3204_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some popular storylines in the Saiyuki manga?",
+            "html": "dbpedia_3204_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Has the Saiyuki manga been adapted into other media?",
+            "html": "dbpedia_3204_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3204_107.txt"
+        },
+        {
+            "file_id": "dbpedia_3204_117.txt"
+        },
+        {
+            "file_id": "dbpedia_3204_15.txt"
+        },
+        {
+            "file_id": "dbpedia_3204_18.txt"
+        },
+        {
+            "file_id": "dbpedia_3204_26.txt"
+        },
+        {
+            "file_id": "dbpedia_3204_54.txt"
+        },
+        {
+            "file_id": "dbpedia_3204_55.txt"
+        },
+        {
+            "file_id": "dbpedia_3204_66.txt"
+        },
+        {
+            "file_id": "dbpedia_3204_85.txt"
+        },
+        {
+            "file_id": "dbpedia_3204_90.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the response:\n\n{\n    \"output\": \"no\"\n}\n\nExplanation:\nThe context information mentions that \"Saiyuki consists of nine volumes.\" and \"Saiyuki Gaiden comprised four volumes\" but it does not mention that Saiyuki (manga) has 10 volumes."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents do not support the statement that Saiyuki (manga) has exactly 10 volumes. According to the provided information, the original series of Saiyuki manga had nine volumes, and the third series Saiyuki Reload comprised ten volumes. However, there is no mention of any other series having exactly 10 volumes."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The original Saiyuki manga series consists of nine volumes, not ten. However, there are other separate series that make up the Saiyuki franchise, which together might total more than ten volumes. But the specific claim refers to the original series only, and thus is incorrect.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Context states the original Saiyuki series had nine volumes and a later series called Saiyuki Reload had ten volumes.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because Saiyuki Reload, a spin-off series of the original manga, has 10 volumes. The total volume count for all separate series (Saiyuki Gaiden and Saiyuki Ibun) should be included in calculating the overall number of volumes. Therefore, the statement that Saiyuki has 10 volumes is incorrect.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The original Saiyuki series comprises nine volumes, not ten.",
+            "category": 2
+        }
+    }
+}

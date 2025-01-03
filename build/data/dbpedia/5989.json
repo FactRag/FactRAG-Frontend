@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Dmitry_Kramkov",
+    "predicate": "ontology/doctoralStudent",
+    "object": "resource/David_German",
+    "human_readable": "Dmitry Kramkov was a doctoral student of David German.",
+    "questions": [
+        {
+            "score": 0.9882218241691589,
+            "question": "Was Dmitry Kramkov a student of David German?"
+        },
+        {
+            "score": 0.8625917434692383,
+            "question": "What was David German's role in relation to Dmitry Kramkov?"
+        },
+        {
+            "score": 0.8392989039421082,
+            "question": "In what capacity did David German work with Dmitry Kramkov?"
+        },
+        {
+            "score": 0.815591037273407,
+            "question": "Who was Dmitry Kramkov's doctoral advisor?"
+        },
+        {
+            "score": 0.7770160436630249,
+            "question": "What is the relationship between Dmitry Kramkov and David German?"
+        },
+        {
+            "score": 0.7686275839805603,
+            "question": "What is the connection between David German and Dmitry Kramkov?"
+        },
+        {
+            "score": 0.6740214228630066,
+            "question": "To whom did Dmitry Kramkov submit his doctoral thesis?"
+        },
+        {
+            "score": 0.6333565711975098,
+            "question": "Who was Dmitry Kramkov's professor?"
+        },
+        {
+            "score": 0.5832260251045227,
+            "question": "Who mentored Dmitry Kramkov during his doctoral studies?"
+        },
+        {
+            "score": 0.5212740302085876,
+            "question": "Who guided Dmitry Kramkov's academic journey?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Dmitry Kramkov was a doctoral student of David German.",
+            "html": "dbpedia_5989_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who mentored Dmitry Kramkov during his doctoral studies?",
+            "html": "dbpedia_5989_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who was Dmitry Kramkov's professor?",
+            "html": "dbpedia_5989_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=To whom did Dmitry Kramkov submit his doctoral thesis?",
+            "html": "dbpedia_5989_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5989_12.txt"
+        },
+        {
+            "file_id": "dbpedia_5989_13.txt"
+        },
+        {
+            "file_id": "dbpedia_5989_16.txt"
+        },
+        {
+            "file_id": "dbpedia_5989_20.txt"
+        },
+        {
+            "file_id": "dbpedia_5989_24.txt"
+        },
+        {
+            "file_id": "dbpedia_5989_25.txt"
+        },
+        {
+            "file_id": "dbpedia_5989_3.txt"
+        },
+        {
+            "file_id": "dbpedia_5989_5.txt"
+        },
+        {
+            "file_id": "dbpedia_5989_8.txt"
+        },
+        {
+            "file_id": "dbpedia_5989_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\"output\": \"no\"}\n``` \n\n\n\n\nThe text provided states that David German is a graduate student at Carnegie Mellon University, and his advisor is professor Dmitry Kramkov.  This means that the relationship between them is student-advisor, not the other way around."
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nExplanation: The document mentions \"My advisor is professor Dmitry Kramkov,\" which suggests that David German was advised by Dmitry Kramkov, fitting the query's structure and content."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "David German states he is a graduate student advised by Professor Dmitry Kramkov. It is highly unlikely for a graduate student to be the doctoral advisor of another, more advanced, graduate student.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The context information shows David German as a graduate student with Dmitry Kramkov as his advisor, indicating that Dmitry Kramkov is likely an older and more senior academic than David German.",
+            "category": 2
+        }
+    }
+}

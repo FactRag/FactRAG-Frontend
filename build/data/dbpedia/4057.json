@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Devrekani",
+    "predicate": "http://www.georss.org/georss/point",
+    "object": "41.60027777777778 33.833333333333336",
+    "human_readable": "Devrekani is located at coordinates 41.60027777777778 33.833333333333336.",
+    "questions": [
+        {
+            "score": 0.9126869440078735,
+            "question": "Where is Devrekani located?"
+        },
+        {
+            "score": 0.8962578773498535,
+            "question": "What are the precise location coordinates of Devrekani?"
+        },
+        {
+            "score": 0.8876887559890747,
+            "question": "What are the coordinates of Devrekani?"
+        },
+        {
+            "score": 0.8352328538894653,
+            "question": "What is the latitude of Devrekani?"
+        },
+        {
+            "score": 0.8188326954841614,
+            "question": "What is the longitude of Devrekani?"
+        },
+        {
+            "score": 0.7961592674255371,
+            "question": "Where on Earth is Devrekani situated?"
+        },
+        {
+            "score": 0.7927005887031555,
+            "question": "Can you provide the geographical coordinates for Devrekani?"
+        },
+        {
+            "score": 0.7676583528518677,
+            "question": "Is Devrekani located in a specific region or country?"
+        },
+        {
+            "score": 0.7494392991065979,
+            "question": "Give the latitude and longitude of Devrekani."
+        },
+        {
+            "score": 0.7482122182846069,
+            "question": "What is the geographical position of Devrekani?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Devrekani is located at coordinates 41.60027777777778 33.833333333333336.",
+            "html": "dbpedia_4057_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Give the latitude and longitude of Devrekani.",
+            "html": "dbpedia_4057_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Devrekani located in a specific region or country?",
+            "html": "dbpedia_4057_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you provide the geographical coordinates for Devrekani?",
+            "html": "dbpedia_4057_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4057_10.txt"
+        },
+        {
+            "file_id": "dbpedia_4057_14.txt"
+        },
+        {
+            "file_id": "dbpedia_4057_18.txt"
+        },
+        {
+            "file_id": "dbpedia_4057_29.txt"
+        },
+        {
+            "file_id": "dbpedia_4057_32.txt"
+        },
+        {
+            "file_id": "dbpedia_4057_46.txt"
+        },
+        {
+            "file_id": "dbpedia_4057_48.txt"
+        },
+        {
+            "file_id": "dbpedia_4057_53.txt"
+        },
+        {
+            "file_id": "dbpedia_4057_56.txt"
+        },
+        {
+            "file_id": "dbpedia_4057_57.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n**Explanation:**\n\nSeveral documents mention Devrekani's coordinates:\n\n* **file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4057/re-ranker-msmarco/30.txt:** States \"Latitude: 41.60303000 Longitude: 33.83922000\"\n* **file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_4057/re-ranker-msmarco/16.txt:** Provides \"geographical coordinates: 41\u00b0 36' 1\" North, 33\u00b0 50' 0\" East\".  While this is in degrees, minutes, and seconds, converting it to decimal format would align with the query's values.\n\nThe slight variation in the provided coordinates likely stems from rounding or different methods of representation.  \n\n\n\nLet me know if you have any other triples you'd like me to evaluate!"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents provide geographic coordinates for Devrekani, which are close to the ones in the query (41.60303000, 33.83922000 vs 41.60027777777778, 33.833333333333336). While not an exact match, the coordinates are sufficiently close to consider the statement correct given the context information provided."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {'output': 'no'}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Multiple sources consistently provide coordinates of 41.60303000 and 33.83922000 for Devrekani.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "the coordinates 41.60027777777778 33.833333333333336 differ from the other given coordinates, which are 41.60303000 and 41\u00b0 36' 1\" North, 33\u00b0 50' 0\" East.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The given coordinates (41.60303000, 33.83922000) do not match the coordinates provided in the context information (41\u00b0 36' 1\" North, 33\u00b0 50' 0\" East), which are 41.60027777777778, 33.833333333333336 when converted to decimal format.",
+            "category": 2
+        }
+    }
+}

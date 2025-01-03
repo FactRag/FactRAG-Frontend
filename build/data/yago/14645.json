@@ -1,0 +1,134 @@
+{
+    "subject": "Jeffrey_Byron",
+    "predicate": "isMarriedTo",
+    "object": "Gail_O'Grady",
+    "human_readable": "Jeffrey Byron is married to Gail O'Grady.",
+    "questions": [
+        {
+            "score": 0.9461379051208496,
+            "question": "Is Jeffrey Byron known for being married to someone named Gail?"
+        },
+        {
+            "score": 0.9140225052833557,
+            "question": "To whom is Jeffrey Byron married?"
+        },
+        {
+            "score": 0.9093698859214783,
+            "question": "Is Jeffrey Byron married?"
+        },
+        {
+            "score": 0.8939321041107178,
+            "question": "Who is married to Gail O'Grady?"
+        },
+        {
+            "score": 0.8466306924819946,
+            "question": "Who are Gail O'Grady and Jeffrey Byron in relation to each other?"
+        },
+        {
+            "score": 0.7704052925109863,
+            "question": "Does the information state if Gail O'Grady is married?"
+        },
+        {
+            "score": 0.6966463327407837,
+            "question": "What is the name of Gail O'Grady's spouse?"
+        },
+        {
+            "score": 0.5851358771324158,
+            "question": "What can you say about the marital status of Gail O'Grady?"
+        },
+        {
+            "score": 0.15648473799228668,
+            "question": "Who are the spouses in this relationship?"
+        },
+        {
+            "score": 0.1506507843732834,
+            "question": "Name two people involved in a marriage described in this statement."
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Jeffrey Byron is married to Gail O'Grady.",
+            "html": "yago_14645_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who are the spouses in this relationship?",
+            "html": "yago_14645_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What can you say about the marital status of Gail O'Grady?",
+            "html": "yago_14645_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of Gail O'Grady's spouse?",
+            "html": "yago_14645_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "yago_14645_10.txt"
+        },
+        {
+            "file_id": "yago_14645_116.txt"
+        },
+        {
+            "file_id": "yago_14645_17.txt"
+        },
+        {
+            "file_id": "yago_14645_18.txt"
+        },
+        {
+            "file_id": "yago_14645_25.txt"
+        },
+        {
+            "file_id": "yago_14645_31.txt"
+        },
+        {
+            "file_id": "yago_14645_66.txt"
+        },
+        {
+            "file_id": "yago_14645_68.txt"
+        },
+        {
+            "file_id": "yago_14645_80.txt"
+        },
+        {
+            "file_id": "yago_14645_94.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe provided text states that Jeffrey Byron and Gail O'Grady were *married* but the relationship ended in divorce.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the response in JSON format:\n\n{\n  \"output\": \"yes\"\n}\n\nExplanation:\n\nThe documents contain multiple mentions of Jeffrey Byron and Gail O'Grady being married, specifically:\n\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/yago_14645/re-ranker-msmarco/16.txt and 24.txt: \"Byron was married to Gail O'Grady.\"\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/yago_14645/re-ranker-msmarco/65.txt: \"Jeffrey Byron was married to Gail O'Grady.  They started dating in 1989.  They were married on 9th December, 1990.  Less than a year later they divorced in 1991.\"\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/yago_14645/re-ranker-msmarco/111.txt: \"Jeffrey Byron and Gail O'Grady were married for 7 months.  They dated for 1 year after getting together in 1989 and married on 9th Dec 1990.\"\n\nThese mentions collectively confirm that Jeffrey Byron was indeed married to Gail O'Grady, although they divorced in 1991."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide multiple instances confirming that Jeffrey Byron was married to Gail O'Grady, including specific dates and durations of their marriage."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Multiple entries state they were married for a short period (7 months) and divorced.   They had a relationship, but not a sustained marriage.",
+            "category": 0
+        }
+    }
+}

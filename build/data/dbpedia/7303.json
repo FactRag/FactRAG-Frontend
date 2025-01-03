@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Pink_Floyd",
+    "predicate": "ontology/recordLabel",
+    "object": "resource/Columbia_Graphophone_Company",
+    "human_readable": "Pink Floyd is recorded by Columbia Graphophone Company.",
+    "questions": [
+        {
+            "score": 0.8649514317512512,
+            "question": "What is the relationship between Pink Floyd and Columbia Graphophone Company?"
+        },
+        {
+            "score": 0.8459198474884033,
+            "question": "Which famous band has been recorded by Columbia Graphophone Company?"
+        },
+        {
+            "score": 0.8393807411193848,
+            "question": "Is Columbia Graphophone Company known for recording music?"
+        },
+        {
+            "score": 0.7650631666183472,
+            "question": "What type of records did Columbia Graphophone Company produce?"
+        },
+        {
+            "score": 0.7610028386116028,
+            "question": "What company was responsible for recording Pink Floyd?"
+        },
+        {
+            "score": 0.689867377281189,
+            "question": "What is the name of the company that recorded Pink Floyd's albums?"
+        },
+        {
+            "score": 0.6383613348007202,
+            "question": "Who recorded Pink Floyd's music?"
+        },
+        {
+            "score": 0.634825587272644,
+            "question": "Has Columbia Graphophone Company worked with other musicians?"
+        },
+        {
+            "score": 0.4117601215839386,
+            "question": "How long has Columbia Graphophone Company been in business?"
+        },
+        {
+            "score": 0.34968170523643494,
+            "question": "Was Pink Floyd a popular music group?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Pink Floyd is recorded by Columbia Graphophone Company.",
+            "html": "dbpedia_7303_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How long has Columbia Graphophone Company been in business?",
+            "html": "dbpedia_7303_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Has Columbia Graphophone Company worked with other musicians?",
+            "html": "dbpedia_7303_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who recorded Pink Floyd's music?",
+            "html": "dbpedia_7303_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_7303_1.txt"
+        },
+        {
+            "file_id": "dbpedia_7303_10.txt"
+        },
+        {
+            "file_id": "dbpedia_7303_19.txt"
+        },
+        {
+            "file_id": "dbpedia_7303_37.txt"
+        },
+        {
+            "file_id": "dbpedia_7303_47.txt"
+        },
+        {
+            "file_id": "dbpedia_7303_53.txt"
+        },
+        {
+            "file_id": "dbpedia_7303_62.txt"
+        },
+        {
+            "file_id": "dbpedia_7303_71.txt"
+        },
+        {
+            "file_id": "dbpedia_7303_84.txt"
+        },
+        {
+            "file_id": "dbpedia_7303_91.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the answer in the structured JSON format:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents mention that Pink Floyd has recorded for various labels, including Columbia. However, there is no specific information about Columbia Graphophone Company being one of them. Nevertheless, it can be inferred from the text that Columbia (not specifically Columbia Graphophone Company) was a label that Pink Floyd has worked with."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\n**Explanation**: The documents mention that Pink Floyd has recorded for Columbia, and while the term \"Columbia Graphophone Company\" is not explicitly used in the provided texts, it can be inferred from context that Columbia refers to Columbia Records, which is discussed throughout the documents. Therefore, the statement \"Pink Floyd is recorded by Columbia Graphophone Company\" aligns with the information given, as Columbia (Records) has a long history of recording artists including Pink Floyd."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Columbia Graphophone Company was an early name of EMI Records, which later became known as Columbia Records. However, Pink Floyd did not record for the original Columbia Graphophone Company but for EMI Records in the UK, and their records were released under the label \"Columbia\".",
+            "category": 4
+        },
+        "gemma2": {
+            "reason": "It states Pink Floyd was recorded by Columbia Graphophone Company, but the provided text lists Columbia Records as the label for Pink Floyd's album \"More\".  Columbia Records and Columbia Graphophone Company are distinct entities.",
+            "category": 4
+        },
+        "llama3.1": {
+            "reason": "According to the provided information, Pink Floyd is mentioned as one of the artists who have recorded for Columbia, but not specifically with Columbia Graphophone Company.",
+            "category": 4
+        },
+        "qwen2.5": {
+            "reason": "The context information specifically mentions that Columbia Records is one of Sony Music's four flagship record labels, and it lists Pink Floyd as an artist who has recorded for Columbia. There is no mention of a separate \"Columbia Graphophone Company\" in the provided information. Therefore, it can be inferred that any reference to \"Columbia Graphophone Company\" recording Pink Floyd is incorrect based on the given context.",
+            "category": 4
+        }
+    }
+}

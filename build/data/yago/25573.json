@@ -1,0 +1,146 @@
+{
+    "subject": "Adam_Chandler",
+    "predicate": "hasChild",
+    "object": "Gloria_Marsh",
+    "human_readable": "Adam Chandler has a child named Gloria Marsh.",
+    "questions": [
+        {
+            "score": 0.9687259793281555,
+            "question": "Is Gloria Marsh Adam Chandler's daughter?"
+        },
+        {
+            "score": 0.9626602530479431,
+            "question": "Is Gloria Marsh related to Adam Chandler?"
+        },
+        {
+            "score": 0.8305243253707886,
+            "question": "What is the name of Gloria Marsh's parent?"
+        },
+        {
+            "score": 0.8226686120033264,
+            "question": "What is the name of Adam Chandler's child?"
+        },
+        {
+            "score": 0.817518949508667,
+            "question": "Who is Adam Chandler's child?"
+        },
+        {
+            "score": 0.7387295365333557,
+            "question": "What is the relationship between Adam Chandler and Gloria Marsh?"
+        },
+        {
+            "score": 0.7299948930740356,
+            "question": "Who is Gloria Marsh?"
+        },
+        {
+            "score": 0.702942430973053,
+            "question": "Who are the parents of Gloria Marsh?"
+        },
+        {
+            "score": 0.5711247324943542,
+            "question": "Does Adam Chandler have any children?"
+        },
+        {
+            "score": 0.3028193712234497,
+            "question": "Can you tell me about Adam Chandler's family?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Adam Chandler has a child named Gloria Marsh.",
+            "html": "yago_25573_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Adam Chandler have any children?",
+            "html": "yago_25573_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who are the parents of Gloria Marsh?",
+            "html": "yago_25573_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is Gloria Marsh?",
+            "html": "yago_25573_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "yago_25573_13.txt"
+        },
+        {
+            "file_id": "yago_25573_31.txt"
+        },
+        {
+            "file_id": "yago_25573_36.txt"
+        },
+        {
+            "file_id": "yago_25573_39.txt"
+        },
+        {
+            "file_id": "yago_25573_4.txt"
+        },
+        {
+            "file_id": "yago_25573_66.txt"
+        },
+        {
+            "file_id": "yago_25573_73.txt"
+        },
+        {
+            "file_id": "yago_25573_8.txt"
+        },
+        {
+            "file_id": "yago_25573_81.txt"
+        },
+        {
+            "file_id": "yago_25573_88.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the structured JSON response:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation:\n\nThe triple statement is \"Adam Chandler has a child named Gloria Marsh.\"\n\nAccording to the provided documents, Gloria Marsh is indeed related to Adam Chandler, but she is his former wife (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/yago_25573/re-ranker-msmarco/12.txt), not his child. She has a daughter named Anna Chandler with Adam (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/yago_25573/re-ranker-msmarco/12.txt). Therefore, the statement is incorrect according to the documents, and the output value should be \"no\"."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The context provided does not mention Adam Chandler having any children named Gloria Marsh. The document about Gloria Marsh (Gloria Marick) states that she is the daughter of Adam Chandler Sr., but this information contradicts the query, making the statement incorrect based on the given documents."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Gloria Marsh is a fictional character on the soap opera All My Children, and Adam Chandler does not have her as his child. Instead, she is the daughter of Adam Chandler Sr. (Adam's father-in-law) with another woman.",
+            "category": 0
+        },
+        "gemma2": {
+            "reason": "Gloria Marsh is listed as Adam Chandler's ex-wife, not his child.",
+            "category": 0
+        },
+        "llama3.1": {
+            "reason": "The context information states that Gloria Marsh (formerly Chandler & Marick) is a fictional character on the ABC daytime soap opera All My Children, and Adam Chandler Sr. is her former husband, not the father of one of her children as implied by the statement \"Adam Chandler has a child named Gloria Marsh\".",
+            "category": 0
+        },
+        "qwen2.5": {
+            "reason": "The context does not mention Adam Chandler having a child named Gloria Marsh. Instead, Gloria Marsh is described as Adam's ex-wife (divorced in 1993) and later as Adam's daughter-in-law through her marriage to his son Adam \"JR\" Chandler, Jr. There is no information suggesting that Gloria Marsh is Adam's biological child.",
+            "category": 0
+        }
+    }
+}

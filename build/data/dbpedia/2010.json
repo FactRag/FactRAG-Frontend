@@ -1,0 +1,144 @@
+{
+    "subject": "resource/The_National_Memo",
+    "predicate": "property/commercial",
+    "object": "Yes",
+    "human_readable": "The National Memo is a commercial publication.",
+    "questions": [
+        {
+            "score": 0.8196432590484619,
+            "question": "What type of publication is The National Memo?"
+        },
+        {
+            "score": 0.6537602543830872,
+            "question": "What kind of content does The National Memo publish?"
+        },
+        {
+            "score": 0.5514886379241943,
+            "question": "How often is The National Memo published?"
+        },
+        {
+            "score": 0.546005129814148,
+            "question": "Who are the target readers of The National Memo?"
+        },
+        {
+            "score": 0.435194730758667,
+            "question": "Does The National Memo have a website?"
+        },
+        {
+            "score": 0.4095224142074585,
+            "question": "Is The National Memo primarily focused on news reporting or opinion pieces?"
+        },
+        {
+            "score": 0.40593093633651733,
+            "question": "Where can people access The National Memo?"
+        },
+        {
+            "score": 0.3853664696216583,
+            "question": "Is The National Memo a non-profit organization?"
+        },
+        {
+            "score": 0.383126825094223,
+            "question": "What are some common themes covered in The National Memo?"
+        },
+        {
+            "score": 0.36159875988960266,
+            "question": "What are the goals of The National Memo?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The National Memo is a commercial publication.",
+            "html": "dbpedia_2010_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some common themes covered in The National Memo?",
+            "html": "dbpedia_2010_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is The National Memo a non-profit organization?",
+            "html": "dbpedia_2010_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where can people access The National Memo?",
+            "html": "dbpedia_2010_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2010_1.txt"
+        },
+        {
+            "file_id": "dbpedia_2010_100.txt"
+        },
+        {
+            "file_id": "dbpedia_2010_104.txt"
+        },
+        {
+            "file_id": "dbpedia_2010_120.txt"
+        },
+        {
+            "file_id": "dbpedia_2010_127.txt"
+        },
+        {
+            "file_id": "dbpedia_2010_146.txt"
+        },
+        {
+            "file_id": "dbpedia_2010_26.txt"
+        },
+        {
+            "file_id": "dbpedia_2010_40.txt"
+        },
+        {
+            "file_id": "dbpedia_2010_69.txt"
+        },
+        {
+            "file_id": "dbpedia_2010_8.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have any other triples to evaluate!"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the JSON response:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: According to the context information, The National Memo is described as an American online news site and newsletter, not a commercial publication. The document states that it is funded through advertising, sponsored content, and merchandise sales, but this is done by the owner/founder Joe Conason, not necessarily making it a commercial publication in the classical sense."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nExplanation: The documents describe \"The National Memo\" as an American online news site and newsletter, founded by Joe Conason. While not explicitly stated that it is a commercial publication, the mention of revenue derived through advertising, sponsored content, and merchandise indicates it operates commercially. Therefore, the statement \"The National Memo is a commercial publication\" aligns with the information provided."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Several passages mention revenue streams like advertising, sponsored content, and merchandise sales.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The National Memo is described as an online news site and newsletter, which typically functions as a non-commercial media outlet providing content to readers. While it does derive revenue through advertising, sponsored content, and merchandise sales, this does not classify it as a commercial publication in the traditional sense, such as a company brochure or advertisement.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,142 @@
+{
+    "subject": "resource/United_States_Army_Armament_Research,_Development_and_Engineering_Center",
+    "predicate": "property/garrison",
+    "object": "resource/Picatinny_Arsenal",
+    "human_readable": "The United States Army Armament Research, Development and Engineering Center has Picatinny Arsenal as its garrison.",
+    "questions": [
+        {
+            "score": 0.959121584892273,
+            "question": "Which organization has Picatinny Arsenal as its garrison?"
+        },
+        {
+            "score": 0.957459568977356,
+            "question": "What is the relationship between the United States Army Armament Research, Development and Engineering Center and Picatinny Arsenal?"
+        },
+        {
+            "score": 0.9521452188491821,
+            "question": "What is the name of the garrison for the United States Army Armament Research, Development and Engineering Center?"
+        },
+        {
+            "score": 0.9038498401641846,
+            "question": "Is Picatinny Arsenal a research facility?"
+        },
+        {
+            "score": 0.8809451460838318,
+            "question": "What does the United States Army Armament Research, Development and Engineering Center focus on?"
+        },
+        {
+            "score": 0.8439716100692749,
+            "question": "Where is the United States Army Armament Research, Development and Engineering Center headquartered?"
+        },
+        {
+            "score": 0.817846953868866,
+            "question": "Does the United States Army Armament Research, Development and Engineering Center conduct experiments?"
+        },
+        {
+            "score": 0.7920995950698853,
+            "question": "What type of facility is Picatinny Arsenal?"
+        },
+        {
+            "score": 0.7764688730239868,
+            "question": "What military branch oversees Picatinny Arsenal?"
+        },
+        {
+            "score": 0.576313316822052,
+            "question": "What is the primary function of Picatinny Arsenal?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The United States Army Armament Research, Development and Engineering Center has Picatinny Arsenal as its garrison.",
+            "html": "dbpedia_2975_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What military branch oversees Picatinny Arsenal?",
+            "html": "dbpedia_2975_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of facility is Picatinny Arsenal?",
+            "html": "dbpedia_2975_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does the United States Army Armament Research, Development and Engineering Center conduct experiments?",
+            "html": "dbpedia_2975_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2975_10.txt"
+        },
+        {
+            "file_id": "dbpedia_2975_11.txt"
+        },
+        {
+            "file_id": "dbpedia_2975_13.txt"
+        },
+        {
+            "file_id": "dbpedia_2975_24.txt"
+        },
+        {
+            "file_id": "dbpedia_2975_31.txt"
+        },
+        {
+            "file_id": "dbpedia_2975_43.txt"
+        },
+        {
+            "file_id": "dbpedia_2975_48.txt"
+        },
+        {
+            "file_id": "dbpedia_2975_66.txt"
+        },
+        {
+            "file_id": "dbpedia_2975_70.txt"
+        },
+        {
+            "file_id": "dbpedia_2975_8.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple in JSON format:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation:\n\nThe triple to be evaluated is: \"The United States Army Armament Research, Development and Engineering Center has Picatinny Arsenal as its garrison.\"\n\nHowever, according to the context information, Picatinny Arsenal is described as the \"headquarters\" of the United States Army Armament Research, Development and Engineering Center, not a garrison. A garrison typically refers to a military unit stationed in a particular place, whereas headquarters implies a central administrative or command location.\n\nTherefore, the triple does not accurately reflect the relationship between the two entities, as described in the context information."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information that supports the statement. Specifically, they mention that \"The Arsenal is the headquarters of the United States Army Armament Research, Development and Engineering Center,\" which indicates Picatinny Arsenal houses this center."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Picatinny Arsenal serves as the headquarters for the United States Army Armament Research, Development and Engineering Center, not its garrison. A garrison is a military base or station where troops are permanently assigned, while Picatinny Arsenal is a research and manufacturing facility focused on weapons and ammunition development and testing, not housing troops on a permanent basis.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Picatinny Arsenal is described as the headquarters of the United States Army Armament Research, Development and Engineering Center.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information explicitly states that \"The Arsenal is the headquarters of the United States Army Armament Research, Development and Engineering Center,\" which implies Picatinny Arsenal hosts this center rather than it having a garrison there.",
+            "category": 2
+        }
+    }
+}

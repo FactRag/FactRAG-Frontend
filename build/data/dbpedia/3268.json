@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Jupiter_Ascending",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:Village_Roadshow_Pictures_films",
+    "human_readable": "Jupiter Ascending is about http://dbpedia.org/resource/Category:Village_Roadshow_Pictures_films.",
+    "questions": [
+        {
+            "score": 0.9660164713859558,
+            "question": "Is Jupiter Ascending a Village Roadshow Pictures film?"
+        },
+        {
+            "score": 0.7712765336036682,
+            "question": "What type of films are associated with Village Roadshow Pictures?"
+        },
+        {
+            "score": 0.7075909376144409,
+            "question": "Are there any common themes in Village Roadshow Pictures films?"
+        },
+        {
+            "score": 0.6708361506462097,
+            "question": "Are there any upcoming films produced by Village Roadshow Pictures?"
+        },
+        {
+            "score": 0.6693277955055237,
+            "question": "Can you name another film produced by Village Roadshow Pictures?"
+        },
+        {
+            "score": 0.6685792803764343,
+            "question": "How has Village Roadshow Pictures contributed to the film industry?"
+        },
+        {
+            "score": 0.6576550006866455,
+            "question": "What makes a film successful according to Village Roadshow Pictures?"
+        },
+        {
+            "score": 0.6460489630699158,
+            "question": "What film studio produced Jupiter Ascending?"
+        },
+        {
+            "score": 0.5657528042793274,
+            "question": "What genre is Jupiter Ascending likely to be?"
+        },
+        {
+            "score": 0.5283783078193665,
+            "question": "Who are some notable actors or directors associated with Village Roadshow Pictures?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Jupiter Ascending is about http://dbpedia.org/resource/Category:Village_Roadshow_Pictures_films.",
+            "html": "dbpedia_3268_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What genre is Jupiter Ascending likely to be?",
+            "html": "dbpedia_3268_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What film studio produced Jupiter Ascending?",
+            "html": "dbpedia_3268_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What makes a film successful according to Village Roadshow Pictures?",
+            "html": "dbpedia_3268_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3268_109.txt"
+        },
+        {
+            "file_id": "dbpedia_3268_114.txt"
+        },
+        {
+            "file_id": "dbpedia_3268_125.txt"
+        },
+        {
+            "file_id": "dbpedia_3268_32.txt"
+        },
+        {
+            "file_id": "dbpedia_3268_34.txt"
+        },
+        {
+            "file_id": "dbpedia_3268_5.txt"
+        },
+        {
+            "file_id": "dbpedia_3268_51.txt"
+        },
+        {
+            "file_id": "dbpedia_3268_55.txt"
+        },
+        {
+            "file_id": "dbpedia_3268_69.txt"
+        },
+        {
+            "file_id": "dbpedia_3268_97.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have more triples to evaluate!"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "To evaluate the query, we need to check if the documents support the triple \"Jupiter Ascending is about http://dbpedia.org/resource/Category:Village_Roadshow_Pictures_films\".\n\nLet's analyze the context information:\n\n* The documents mention that Jupiter Ascending is a science fiction epic adventure film from filmmakers Lana and Andy Wachowski.\n* They also mention that Jupiter Ascending was produced by Warner Bros. Pictures and Village Roadshow Pictures.\n* However, there is no explicit statement in the documents linking Jupiter Ascending to http://dbpedia.org/resource/Category:Village_Roadshow_Pictures_films.\n\nBased on this analysis, we can conclude that:\n\n{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents mention that \"Jupiter Ascending\" is produced by Village Roadshow Pictures, which aligns with the query stating it belongs to the category of Village Roadshow Pictures films."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "Jupiter Ascending is a Warner Bros. Pictures and Village Roadshow Pictures film but it is actually about http://dbpedia.org/resource/Category:Science_fiction_films, not a category specifically for Village Roadshow Pictures films.",
+            "category": 3
+        }
+    }
+}

@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Down_Peninsula_Audio",
+    "predicate": "http://xmlns.com/foaf/0.1/isPrimaryTopicOf",
+    "object": "http://en.wikipedia.org/wiki/Down_Peninsula_Audio",
+    "human_readable": "The Down Peninsula Audio is the primary topic of.",
+    "questions": [
+        {
+            "score": 0.9847080707550049,
+            "question": "What is the primary topic of The Down Peninsula Audio?"
+        },
+        {
+            "score": 0.8503207564353943,
+            "question": "Where might you find information about The Down Peninsula Audio?"
+        },
+        {
+            "score": 0.8147681951522827,
+            "question": "Is there a specific audio recording called 'The Down Peninsula Audio'?"
+        },
+        {
+            "score": 0.7781618237495422,
+            "question": "Why is The Down Peninsula Audio considered important?"
+        },
+        {
+            "score": 0.7559711337089539,
+            "question": "Are there any specific events or stories covered in The Down Peninsula Audio?"
+        },
+        {
+            "score": 0.7497658729553223,
+            "question": "What kind of content might be found in The Down Peninsula Audio?"
+        },
+        {
+            "score": 0.6703676581382751,
+            "question": "Who or what organization might have created The Down Peninsula Audio?"
+        },
+        {
+            "score": 0.6353548765182495,
+            "question": "Who would be interested in listening to The Down Peninsula Audio?"
+        },
+        {
+            "score": 0.6175991296768188,
+            "question": "What other audio recordings are related to the Down Peninsula?"
+        },
+        {
+            "score": 0.5913539528846741,
+            "question": "Can you provide examples of similar audio recordings to The Down Peninsula Audio?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The Down Peninsula Audio is the primary topic of.",
+            "html": "dbpedia_2562_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What other audio recordings are related to the Down Peninsula?",
+            "html": "dbpedia_2562_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who would be interested in listening to The Down Peninsula Audio?",
+            "html": "dbpedia_2562_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who or what organization might have created The Down Peninsula Audio?",
+            "html": "dbpedia_2562_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2562_104.txt"
+        },
+        {
+            "file_id": "dbpedia_2562_109.txt"
+        },
+        {
+            "file_id": "dbpedia_2562_112.txt"
+        },
+        {
+            "file_id": "dbpedia_2562_14.txt"
+        },
+        {
+            "file_id": "dbpedia_2562_36.txt"
+        },
+        {
+            "file_id": "dbpedia_2562_46.txt"
+        },
+        {
+            "file_id": "dbpedia_2562_58.txt"
+        },
+        {
+            "file_id": "dbpedia_2562_61.txt"
+        },
+        {
+            "file_id": "dbpedia_2562_88.txt"
+        },
+        {
+            "file_id": "dbpedia_2562_92.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'} \n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, I will evaluate whether the triple \"The Down Peninsula Audio is the primary topic of\" is supported by the documents.\n\nAfter analyzing the files, I found that file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2562/re-ranker-msmarco/13.txt contains information related to \"Peninsula Corridor\", but it's not primarily about an audio topic. The other files seem unrelated to the triple as well.\n\nTherefore, the answer is:\n\n{'output': 'no'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The context provided contains information about properties and locations in the Upper Peninsula, which suggests that discussions or topics related to this area are prominent. Given that the audio content mentioned includes stories from Michigan\u2019s Upper Peninsula, it supports that the primary topic of \"The Down Peninsula Audio\" could indeed be related to such narratives."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Multiple distinct topics are presented including real estate listings, a historical narrative about Isle Royale, political discussion about Upper Michigan, a critique of a train simulation game, an account of sound recording techniques used in music production, and details about an audio tour application.",
+            "category": 4
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because the primary topic of \"The Down Peninsula Audio\" is actually the real estate listing of 125 Peninsula Dr, with its price being $1,495,000 and details about the property. The narrative style of writing in point 1 suggests that it's a scripted audio, but the main focus is on describing the property, not on being an \"audio story\" like other points imply.",
+            "category": 4
+        }
+    }
+}

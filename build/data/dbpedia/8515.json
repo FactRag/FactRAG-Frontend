@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Kroonstad",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:Populated_places_established_in_1855",
+    "human_readable": "Kroonstad is a subject of Category:Populated places established in 1855.",
+    "questions": [
+        {
+            "score": 0.917539119720459,
+            "question": "Is Kroonstad classified as a populated area?"
+        },
+        {
+            "score": 0.8973110914230347,
+            "question": "Is Kroonstad a populated place?"
+        },
+        {
+            "score": 0.8656802773475647,
+            "question": "To which category does Kroonstad belong according to its establishment?"
+        },
+        {
+            "score": 0.8142627477645874,
+            "question": "What is the establishment year of Kroonstad?"
+        },
+        {
+            "score": 0.8136935234069824,
+            "question": "What category does Kroonstad belong to?"
+        },
+        {
+            "score": 0.8037416934967041,
+            "question": "When was Kroonstad established?"
+        },
+        {
+            "score": 0.771128237247467,
+            "question": "In what year was Kroonstad founded?"
+        },
+        {
+            "score": 0.7348030805587769,
+            "question": "What type of location is Kroonstad?"
+        },
+        {
+            "score": 0.6793537735939026,
+            "question": "What year marks the founding of Kroonstad?"
+        },
+        {
+            "score": 0.4756379723548889,
+            "question": "When did Kroonstad come into existence?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Kroonstad is a subject of Category:Populated places established in 1855.",
+            "html": "dbpedia_8515_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What year marks the founding of Kroonstad?",
+            "html": "dbpedia_8515_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of location is Kroonstad?",
+            "html": "dbpedia_8515_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In what year was Kroonstad founded?",
+            "html": "dbpedia_8515_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8515_12.txt"
+        },
+        {
+            "file_id": "dbpedia_8515_14.txt"
+        },
+        {
+            "file_id": "dbpedia_8515_16.txt"
+        },
+        {
+            "file_id": "dbpedia_8515_19.txt"
+        },
+        {
+            "file_id": "dbpedia_8515_39.txt"
+        },
+        {
+            "file_id": "dbpedia_8515_4.txt"
+        },
+        {
+            "file_id": "dbpedia_8515_45.txt"
+        },
+        {
+            "file_id": "dbpedia_8515_49.txt"
+        },
+        {
+            "file_id": "dbpedia_8515_50.txt"
+        },
+        {
+            "file_id": "dbpedia_8515_58.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of whether the information in the documents supports the triple:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: According to the context information, Kroonstad was established by Joseph Orpen in 1855 (document with file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8515/re-ranker-msmarco/15.txt). However, the triple states that it is a subject of Category:Populated places established in **1860**, not 1855."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents provide information that supports the statement. Specifically, document 36.txt mentions, \"This Free State town was established in 1855 by none other than the Irish man by the name of Joseph Orpen.\" This indicates that Kroonstad is a populated place established in 1855, aligning with the query's assertion about the category and establishment year."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n     \"output\": \"yes\"\n    }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The claim is wrong because Kroonstad was actually established by Joseph Orpen around the year 1900, not in 1855.",
+            "category": 2
+        }
+    }
+}

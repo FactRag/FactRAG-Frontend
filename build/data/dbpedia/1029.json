@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Jesus_of_Montreal",
+    "predicate": "property/caption",
+    "object": "Movie poster",
+    "human_readable": "The caption of Jesus of Montreal is Movie poster.",
+    "questions": [
+        {
+            "score": 0.875810980796814,
+            "question": "What is the caption of Jesus of Montreal?"
+        },
+        {
+            "score": 0.6964050531387329,
+            "question": "What type of object is depicted in the caption 'Jesus of Montreal'?"
+        },
+        {
+            "score": 0.6939573884010315,
+            "question": "How does the caption 'Jesus of Montreal' influence our understanding of the movie?"
+        },
+        {
+            "score": 0.6788308024406433,
+            "question": "Is the caption 'Jesus of Montreal' referring to a physical item or a concept?"
+        },
+        {
+            "score": 0.6643635630607605,
+            "question": "What artistic medium might be associated with the caption 'Jesus of Montreal'?"
+        },
+        {
+            "score": 0.6080530881881714,
+            "question": "What other visual elements might accompany the caption 'Jesus of Montreal'?"
+        },
+        {
+            "score": 0.5954835414886475,
+            "question": "Why do you think this specific caption was chosen for 'Jesus of Montreal'?"
+        },
+        {
+            "score": 0.5646809935569763,
+            "question": "What emotions or ideas might the caption 'Jesus of Montreal' evoke?"
+        },
+        {
+            "score": 0.10171191394329071,
+            "question": "What information does a caption typically provide about an object?"
+        },
+        {
+            "score": 0.0441742017865181,
+            "question": "Can you think of other movie titles that have similar captions?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The caption of Jesus of Montreal is Movie poster.",
+            "html": "dbpedia_1029_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What information does a caption typically provide about an object?",
+            "html": "dbpedia_1029_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What emotions or ideas might the caption 'Jesus of Montreal' evoke?",
+            "html": "dbpedia_1029_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Why do you think this specific caption was chosen for 'Jesus of Montreal'?",
+            "html": "dbpedia_1029_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1029_102.txt"
+        },
+        {
+            "file_id": "dbpedia_1029_103.txt"
+        },
+        {
+            "file_id": "dbpedia_1029_18.txt"
+        },
+        {
+            "file_id": "dbpedia_1029_19.txt"
+        },
+        {
+            "file_id": "dbpedia_1029_20.txt"
+        },
+        {
+            "file_id": "dbpedia_1029_27.txt"
+        },
+        {
+            "file_id": "dbpedia_1029_29.txt"
+        },
+        {
+            "file_id": "dbpedia_1029_33.txt"
+        },
+        {
+            "file_id": "dbpedia_1029_57.txt"
+        },
+        {
+            "file_id": "dbpedia_1029_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the answer to your question:\n\n{\n  \"output\": \"yes\"\n}\n\nThe context documents mention a movie poster for \"Jesus of Montreal\" several times, including one document that explicitly states \"Movie poster 70x100cm used condition GD-FN original L O W\". This suggests that the caption \"Movie poster\" is indeed correct."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents mention that the file `28.txt` describes an \"ORIGINAL FRENCH CINEMA POSTER\" for the movie \"JESUS OF MONTREAL (1989)\". Therefore, the statement \"The caption of Jesus of Montreal is Movie poster\" is supported by the provided context information."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "A movie poster is an advertisement for the film, not the actual title of the movie itself.",
+            "category": 3
+        },
+        "gemma2": {
+            "reason": "Multiple pieces of context describe details about the movie poster itself, like its size, condition, year printed, and even mention that it's for sale.  If the caption was simply \"Movie poster,\" it wouldn't provide these specific details.",
+            "category": 3
+        },
+        "llama3.1": {
+            "reason": "The caption of Jesus of Montreal being Movie poster is wrong because the context information provided includes descriptions of a film (Jesus of Montreal) such as its director, actors, plot, and themes, which are not typically found on movie posters.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "The context information describes \"Jesus of Montreal\" as a film rather than just a movie poster, providing details about its content, director, actors, and themes.",
+            "category": 3
+        }
+    }
+}

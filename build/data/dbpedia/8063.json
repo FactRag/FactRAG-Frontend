@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Untitled_Woody_Allen_film",
+    "predicate": "ontology/starring",
+    "object": "resource/Steve_Carell",
+    "human_readable": "Steve Carell stars in Untitled Woody Allen film.",
+    "questions": [
+        {
+            "score": 0.9469162821769714,
+            "question": "What is the name of the Woody Allen film starring Steve Carell?"
+        },
+        {
+            "score": 0.9444543123245239,
+            "question": "Who stars in the Untitled Woody Allen film?"
+        },
+        {
+            "score": 0.7634304165840149,
+            "question": "What is the plot of the Untitled Woody Allen film?"
+        },
+        {
+            "score": 0.6454136967658997,
+            "question": "What genre is the Untitled Woody Allen film likely to be?"
+        },
+        {
+            "score": 0.564675509929657,
+            "question": "When is the Untitled Woody Allen film scheduled for release?"
+        },
+        {
+            "score": 0.5147154331207275,
+            "question": "Is Steve Carell known for his comedic roles?"
+        },
+        {
+            "score": 0.4082997143268585,
+            "question": "Has Woody Allen directed any other films besides this one?"
+        },
+        {
+            "score": 0.3548855781555176,
+            "question": "What are some of Steve Carell's most popular films?"
+        },
+        {
+            "score": 0.30410584807395935,
+            "question": "Has Woody Allen won any awards for his directing?"
+        },
+        {
+            "score": 0.1743001490831375,
+            "question": "Are there any other notable actors in the film?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Steve Carell stars in Untitled Woody Allen film.",
+            "html": "dbpedia_8063_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Has Woody Allen won any awards for his directing?",
+            "html": "dbpedia_8063_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some of Steve Carell's most popular films?",
+            "html": "dbpedia_8063_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Has Woody Allen directed any other films besides this one?",
+            "html": "dbpedia_8063_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8063_1.txt"
+        },
+        {
+            "file_id": "dbpedia_8063_120.txt"
+        },
+        {
+            "file_id": "dbpedia_8063_128.txt"
+        },
+        {
+            "file_id": "dbpedia_8063_129.txt"
+        },
+        {
+            "file_id": "dbpedia_8063_165.txt"
+        },
+        {
+            "file_id": "dbpedia_8063_171.txt"
+        },
+        {
+            "file_id": "dbpedia_8063_193.txt"
+        },
+        {
+            "file_id": "dbpedia_8063_49.txt"
+        },
+        {
+            "file_id": "dbpedia_8063_5.txt"
+        },
+        {
+            "file_id": "dbpedia_8063_69.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "After analyzing the context information, I found that:\n\n* Bruce Willis was initially cast in the Untitled Woody Allen film (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8063/re-ranker-msmarco/169.txt)\n* Steve Carell replaced Bruce Willis in the film due to scheduling conflicts with his Broadway appearance in Stephen King's Misery (multiple file_paths)\n* Steve Carell is indeed starring in the Untitled Woody Allen film, replacing Bruce Willis (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8063/re-ranker-msmarco/125.txt)\n\nTherefore, the response to the query \"Steve Carell stars in Untitled Woody Allen film.\" is:\n\n`{'output': 'yes'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents indicate that Steve Carell has replaced Bruce Willis in an untitled Woody Allen project, confirming that he indeed stars in the unnamed film."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The context information states that Steve Carell has replaced Bruce Willis in the movie, indicating that he will be appearing in the film, not starring.",
+            "category": 3
+        },
+        "gemma2": {
+            "reason": "Bruce Willis was replaced by Steve Carell in the Untitled Woody Allen film.",
+            "category": 3
+        },
+        "llama3.1": {
+            "reason": "Steve Carell has been reported to replace Bruce Willis in the Untitled Woody Allen film, indicating that Bruce Willis was initially cast in the project.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "The context information clearly states that Steve Carell has replaced Bruce Willis in the untitled Woody Allen film, not that he stars in it. Carell is joining an already assembled cast, including Bruce Willis, who was previously announced to star in the project before his departure due to scheduling conflicts.",
+            "category": 3
+        }
+    }
+}

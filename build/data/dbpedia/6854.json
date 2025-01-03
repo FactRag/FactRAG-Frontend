@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Peter_Raw",
+    "predicate": "property/dateOfDeath",
+    "object": "1988-07-14",
+    "human_readable": "Peter Raw died on July 14, 1988.",
+    "questions": [
+        {
+            "score": 0.8302656412124634,
+            "question": "When did Peter Raw die?"
+        },
+        {
+            "score": 0.8137709498405457,
+            "question": "Did Peter Raw live past 1988?"
+        },
+        {
+            "score": 0.7878738045692444,
+            "question": "Was Peter Raw alive in 1989?"
+        },
+        {
+            "score": 0.7628124356269836,
+            "question": "Is July the month of Peter Raw's death?"
+        },
+        {
+            "score": 0.7245334386825562,
+            "question": "What month did Peter Raw die?"
+        },
+        {
+            "score": 0.6554010510444641,
+            "question": "What is the date of Peter Raw's death?"
+        },
+        {
+            "score": 0.5854424238204956,
+            "question": "What is the day of Peter Raw's death?"
+        },
+        {
+            "score": 0.48734232783317566,
+            "question": "In what year did Peter Raw pass away?"
+        },
+        {
+            "score": 0.45561617612838745,
+            "question": "How would you express the date of Peter Raw's death in full?"
+        },
+        {
+            "score": 0.047901809215545654,
+            "question": "Is July a summer month?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Peter Raw died on July 14, 1988.",
+            "html": "dbpedia_6854_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How would you express the date of Peter Raw's death in full?",
+            "html": "dbpedia_6854_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In what year did Peter Raw pass away?",
+            "html": "dbpedia_6854_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the day of Peter Raw's death?",
+            "html": "dbpedia_6854_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6854_14.txt"
+        },
+        {
+            "file_id": "dbpedia_6854_25.txt"
+        },
+        {
+            "file_id": "dbpedia_6854_32.txt"
+        },
+        {
+            "file_id": "dbpedia_6854_36.txt"
+        },
+        {
+            "file_id": "dbpedia_6854_5.txt"
+        },
+        {
+            "file_id": "dbpedia_6854_69.txt"
+        },
+        {
+            "file_id": "dbpedia_6854_77.txt"
+        },
+        {
+            "file_id": "dbpedia_6854_78.txt"
+        },
+        {
+            "file_id": "dbpedia_6854_9.txt"
+        },
+        {
+            "file_id": "dbpedia_6854_95.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: According to the provided documents, Air Commodore Peter Frank Raw passed away on July 15, 1988, not July 14, 1988."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n    \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "qwen2.5": {
+            "reason": "The context information states that Peter Raw died on 15 July 1988, not July 14, 1988.",
+            "category": 2
+        }
+    }
+}

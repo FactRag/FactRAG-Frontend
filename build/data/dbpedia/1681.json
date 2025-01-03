@@ -1,0 +1,146 @@
+{
+    "subject": "resource/All_I_Do_Is_Win",
+    "predicate": "property/writer",
+    "object": "resource/Fabolous",
+    "human_readable": "The writer of 'All I Do Is Win' is Fabolous.",
+    "questions": [
+        {
+            "score": 0.8416599035263062,
+            "question": "Is Fabolous a songwriter?"
+        },
+        {
+            "score": 0.8124210238456726,
+            "question": "Who wrote the song 'All I Do Is Win'?"
+        },
+        {
+            "score": 0.7683728337287903,
+            "question": "What is the name of the artist who wrote 'All I Do Is Win'?"
+        },
+        {
+            "score": 0.5026731491088867,
+            "question": "Are there any other artists featured on 'All I Do Is Win'?"
+        },
+        {
+            "score": 0.48172086477279663,
+            "question": "Has 'All I Do Is Win' achieved commercial success?"
+        },
+        {
+            "score": 0.46515169739723206,
+            "question": "What is the main theme of 'All I Do Is Win'?"
+        },
+        {
+            "score": 0.44410571455955505,
+            "question": "When was 'All I Do Is Win' released?"
+        },
+        {
+            "score": 0.4097179174423218,
+            "question": "What other songs are popular by Fabolous?"
+        },
+        {
+            "score": 0.38907918334007263,
+            "question": "Name a song by Fabolous."
+        },
+        {
+            "score": 0.36492422223091125,
+            "question": "What genre of music is 'All I Do Is Win' typically classified as?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The writer of 'All I Do Is Win' is Fabolous.",
+            "html": "dbpedia_1681_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Name a song by Fabolous.",
+            "html": "dbpedia_1681_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What other songs are popular by Fabolous?",
+            "html": "dbpedia_1681_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=When was 'All I Do Is Win' released?",
+            "html": "dbpedia_1681_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1681_11.txt"
+        },
+        {
+            "file_id": "dbpedia_1681_27.txt"
+        },
+        {
+            "file_id": "dbpedia_1681_35.txt"
+        },
+        {
+            "file_id": "dbpedia_1681_5.txt"
+        },
+        {
+            "file_id": "dbpedia_1681_61.txt"
+        },
+        {
+            "file_id": "dbpedia_1681_64.txt"
+        },
+        {
+            "file_id": "dbpedia_1681_65.txt"
+        },
+        {
+            "file_id": "dbpedia_1681_85.txt"
+        },
+        {
+            "file_id": "dbpedia_1681_88.txt"
+        },
+        {
+            "file_id": "dbpedia_1681_98.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the response in JSON format:\n\n```\n{\n  \"output\": \"no\"\n}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: The provided context does not mention that Fabolous wrote \"All I Do Is Win.\" According to the documents, DJ Khaled released this song in 2010 and it features contributions from Ludacris and Snoop Dogg. There is no information about Fabolous being associated with this track."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "DJ Khaled, not Fabolous, is the writer of 'All I Do Is Win.'",
+            "category": 4
+        },
+        "gemma2": {
+            "reason": "The text explicitly states DJ Khaled released \"All I Do Is Win\" in 2010 and that he claims in the song to \"all [he does] is win.\"  It also mentions Ludacris and Snoop Dogg as co-authors of the song.",
+            "category": 4
+        },
+        "llama3.1": {
+            "reason": "The name \"DJ Khaled\" was mentioned throughout the context information as the writer of \"All I Do Is Win\", but Fabolous was not mentioned at all, indicating that Fabolous did not write the song.",
+            "category": 4
+        },
+        "qwen2.5": {
+            "reason": "The context information clearly states that DJ Khaled released \"All I Do Is Win\" in 2010, and the writers of the song are mentioned as including Ludacris and Snoop Dogg. There is no mention of Fabolous being involved in the writing of the song.",
+            "category": 4
+        }
+    }
+}

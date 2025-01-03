@@ -1,0 +1,144 @@
+{
+    "subject": "Michael_Bell__mayor_",
+    "predicate": "wasBornIn",
+    "object": "Toledo _Ohio",
+    "human_readable": "Michael Bell, the mayor, was born in Toledo, Ohio.",
+    "questions": [
+        {
+            "score": 0.9865772724151611,
+            "question": "Is Michael Bell the mayor of Toledo, Ohio?"
+        },
+        {
+            "score": 0.7930982112884521,
+            "question": "Where was Michael Bell born?"
+        },
+        {
+            "score": 0.7483462691307068,
+            "question": "In what state was Michael Bell born?"
+        },
+        {
+            "score": 0.5102837681770325,
+            "question": "What city is associated with Michael Bell?"
+        },
+        {
+            "score": 0.38011130690574646,
+            "question": "What is the name of the state where Toledo is located?"
+        },
+        {
+            "score": 0.286989688873291,
+            "question": "What is Michael Bell's profession?"
+        },
+        {
+            "score": 0.24461032450199127,
+            "question": "What does 'mayor' mean?"
+        },
+        {
+            "score": 0.23401235044002533,
+            "question": "Name a US city where someone could be a mayor."
+        },
+        {
+            "score": 0.10092270374298096,
+            "question": "Name a US state that borders Ohio."
+        },
+        {
+            "score": 0.016529230400919914,
+            "question": "Can you give an example of a profession that might involve leading a city?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Michael Bell, the mayor, was born in Toledo, Ohio.",
+            "html": "yago_19071_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Name a US state that borders Ohio.",
+            "html": "yago_19071_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Name a US city where someone could be a mayor.",
+            "html": "yago_19071_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What does 'mayor' mean?",
+            "html": "yago_19071_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "yago_19071_138.txt"
+        },
+        {
+            "file_id": "yago_19071_16.txt"
+        },
+        {
+            "file_id": "yago_19071_162.txt"
+        },
+        {
+            "file_id": "yago_19071_17.txt"
+        },
+        {
+            "file_id": "yago_19071_29.txt"
+        },
+        {
+            "file_id": "yago_19071_37.txt"
+        },
+        {
+            "file_id": "yago_19071_42.txt"
+        },
+        {
+            "file_id": "yago_19071_49.txt"
+        },
+        {
+            "file_id": "yago_19071_5.txt"
+        },
+        {
+            "file_id": "yago_19071_77.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the answer in JSON format:\n\n```\n{\n    \"output\": \"yes\"\n}\n```\n\nExplanation:\n\nThe document with file_path \"/Users/stefanomarchesin/Research/fshami/Rag/docs/yago_19071/re-ranker-msmarco/16.txt\" mentions that Michael P. Bell was raised and educated in Toledo, Ohio, implying that he was born there. Additionally, the document with file_path \"/Users/stefanomarchesin/Research/fshami/Rag/docs/yago_19071/re-ranker-msmarco/34.txt\" mentions Brian Michael Bell, who has a different background and is not mentioned as being the mayor, so it can be inferred that this person is not the same Michael Bell."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents do not provide any information about Michael Bell being born in Toledo, Ohio. Instead, they mention that he is associated with Toledo as a politician and mayor but do not specify his birthplace."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "mistral-nemo": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Several sources state he was raised and educated in Toledo, but also mention his past roles as chief of the Toledo Fire Department and mayor. If he wasn't born there, it's unlikely he would have had such deep involvement and recognition within the city throughout his career.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context states that Michael Bell was \"raised and educated in Toledo, Ohio,\" not born there.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Cape_Fear_(1991_film)",
+    "predicate": "property/starring",
+    "object": "resource/Gregory_Peck",
+    "human_readable": "Gregory Peck stars in the 1991 film Cape Fear.",
+    "questions": [
+        {
+            "score": 0.9428907632827759,
+            "question": "In which film did Gregory Peck star that was released in 1991?"
+        },
+        {
+            "score": 0.9375414252281189,
+            "question": "Which film is known for starring Gregory Peck and being released in 1991?"
+        },
+        {
+            "score": 0.9230534434318542,
+            "question": "Who starred in the 1991 film Cape Fear?"
+        },
+        {
+            "score": 0.9217979907989502,
+            "question": "What is the name of the film starring Gregory Peck released in 1991?"
+        },
+        {
+            "score": 0.89702969789505,
+            "question": "Name a film featuring Gregory Peck released in 1991."
+        },
+        {
+            "score": 0.8215059638023376,
+            "question": "Gregory Peck was an actor in what film?"
+        },
+        {
+            "score": 0.7593632340431213,
+            "question": "What movie did Gregory Peck appear in?"
+        },
+        {
+            "score": 0.7346220016479492,
+            "question": "Name a movie featuring Gregory Peck."
+        },
+        {
+            "score": 0.7131599187850952,
+            "question": "What film did Gregory Peck act in?"
+        },
+        {
+            "score": 0.48965373635292053,
+            "question": "What year was the film Cape Fear released?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Gregory Peck stars in the 1991 film Cape Fear.",
+            "html": "dbpedia_5901_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What film did Gregory Peck act in?",
+            "html": "dbpedia_5901_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Name a movie featuring Gregory Peck.",
+            "html": "dbpedia_5901_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What movie did Gregory Peck appear in?",
+            "html": "dbpedia_5901_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5901_19.txt"
+        },
+        {
+            "file_id": "dbpedia_5901_20.txt"
+        },
+        {
+            "file_id": "dbpedia_5901_43.txt"
+        },
+        {
+            "file_id": "dbpedia_5901_45.txt"
+        },
+        {
+            "file_id": "dbpedia_5901_49.txt"
+        },
+        {
+            "file_id": "dbpedia_5901_65.txt"
+        },
+        {
+            "file_id": "dbpedia_5901_70.txt"
+        },
+        {
+            "file_id": "dbpedia_5901_72.txt"
+        },
+        {
+            "file_id": "dbpedia_5901_78.txt"
+        },
+        {
+            "file_id": "dbpedia_5901_8.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the structured JSON format with the evaluation result:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation:\nThe triple is \"Gregory Peck stars in the 1991 film Cape Fear.\" However, according to the documents, Gregory Peck actually stars in the 1962 film Cape Fear. In the 1991 remake of Cape Fear, Nick Nolte plays the role of Sam Bowden, not Gregory Peck."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\nThis answer is derived from the fact that both the documents mentioning the 1991 remake of Cape Fear explicitly state that Gregory Peck, along with Robert De Niro and Nick Nolte, starred in this film."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n     \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Gregory Peck only appeared as a cameo in the 1991 film Cape Fear, not as a star.",
+            "category": 3
+        },
+        "gemma2": {
+            "reason": "Information provided states that Gregory Peck appears in the 1991 film Cape Fear, but only in a cameo role and that Robert De Niro stars as Max Cady.",
+            "category": 3
+        },
+        "llama3.1": {
+            "reason": "It states that Gregory Peck stars in the 1991 film Cape Fear, but the information provided shows that he actually appeared in a cameo role in the 1991 remake, whereas Nick Nolte played the lead character of Sam Bowden.",
+            "category": 3
+        }
+    }
+}

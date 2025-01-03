@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Platinum_Equity",
+    "predicate": "property/headquarters",
+    "object": "resource/Beverly_Hills",
+    "human_readable": "The headquarters of Platinum Equity are located in Beverly Hills.",
+    "questions": [
+        {
+            "score": 0.9483033418655396,
+            "question": "Where is the headquarters of Platinum Equity located?"
+        },
+        {
+            "score": 0.9236775040626526,
+            "question": "In which city are Platinum Equity's headquarters situated?"
+        },
+        {
+            "score": 0.8487473726272583,
+            "question": "Does Platinum Equity have offices in other locations besides Beverly Hills?"
+        },
+        {
+            "score": 0.4886525273323059,
+            "question": "What type of company is Platinum Equity?"
+        },
+        {
+            "score": 0.4018104374408722,
+            "question": "When was Platinum Equity founded?"
+        },
+        {
+            "score": 0.28416708111763,
+            "question": "What is the address of Platinum Equity's main office?"
+        },
+        {
+            "score": 0.2173721045255661,
+            "question": "Who is the CEO of Platinum Equity?"
+        },
+        {
+            "score": 0.18004249036312103,
+            "question": "What industries does Platinum Equity primarily invest in?"
+        },
+        {
+            "score": 0.1725408285856247,
+            "question": "How many employees does Platinum Equity have?"
+        },
+        {
+            "score": 0.11869654804468155,
+            "question": "What is the size of Platinum Equity's investment portfolio?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The headquarters of Platinum Equity are located in Beverly Hills.",
+            "html": "dbpedia_6196_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How many employees does Platinum Equity have?",
+            "html": "dbpedia_6196_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What industries does Platinum Equity primarily invest in?",
+            "html": "dbpedia_6196_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is the CEO of Platinum Equity?",
+            "html": "dbpedia_6196_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6196_10.txt"
+        },
+        {
+            "file_id": "dbpedia_6196_127.txt"
+        },
+        {
+            "file_id": "dbpedia_6196_17.txt"
+        },
+        {
+            "file_id": "dbpedia_6196_22.txt"
+        },
+        {
+            "file_id": "dbpedia_6196_43.txt"
+        },
+        {
+            "file_id": "dbpedia_6196_49.txt"
+        },
+        {
+            "file_id": "dbpedia_6196_57.txt"
+        },
+        {
+            "file_id": "dbpedia_6196_60.txt"
+        },
+        {
+            "file_id": "dbpedia_6196_67.txt"
+        },
+        {
+            "file_id": "dbpedia_6196_8.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me explain why.  \n\nThe text states: \"Platinum Equity is based in Beverly Hills, California.\" and \"Headquarters for Platinum Equity\" multiple times across various files.  Therefore, the triple is supported by the documents."
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the response in the structured JSON format:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe information in the documents supports this triple. According to file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6196/re-ranker-msmarco/17.txt, Platinum Equity, LLC is based in Beverly Hills, CA. Additionally, file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6196/re-ranker-msmarco/22.txt mentions that Platinum Equity's headquarters are located in Beverly Hills, California."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe information in the documents supports that the headquarters of Platinum Equity are indeed located in Beverly Hills, California. Multiple documents mention this fact explicitly."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

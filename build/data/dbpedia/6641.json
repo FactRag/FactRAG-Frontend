@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Time_(magazine)",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:English-language_magazines",
+    "human_readable": "The subject of Time magazine is English-language magazines.",
+    "questions": [
+        {
+            "score": 0.9169902205467224,
+            "question": "Is Time magazine published in English?"
+        },
+        {
+            "score": 0.8014276623725891,
+            "question": "What type of publication is Time magazine?"
+        },
+        {
+            "score": 0.7918932437896729,
+            "question": "Time magazine caters primarily to readers who speak which language?"
+        },
+        {
+            "score": 0.7856746912002563,
+            "question": "What language are Time magazine articles written in?"
+        },
+        {
+            "score": 0.7515756487846375,
+            "question": "Does Time magazine primarily use a specific language for its content?"
+        },
+        {
+            "score": 0.7425966858863831,
+            "question": "What language would you expect to find in Time magazine articles?"
+        },
+        {
+            "score": 0.69509357213974,
+            "question": "Can you read Time magazine if you only speak English?"
+        },
+        {
+            "score": 0.6725996732711792,
+            "question": "What is the primary language used by Time magazine?"
+        },
+        {
+            "score": 0.6616878509521484,
+            "question": "Is Time magazine known for using translations?"
+        },
+        {
+            "score": 0.6468543410301208,
+            "question": "Time magazine is an example of which kind of publication?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The subject of Time magazine is English-language magazines.",
+            "html": "dbpedia_6641_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Time magazine known for using translations?",
+            "html": "dbpedia_6641_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the primary language used by Time magazine?",
+            "html": "dbpedia_6641_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you read Time magazine if you only speak English?",
+            "html": "dbpedia_6641_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6641_105.txt"
+        },
+        {
+            "file_id": "dbpedia_6641_30.txt"
+        },
+        {
+            "file_id": "dbpedia_6641_36.txt"
+        },
+        {
+            "file_id": "dbpedia_6641_4.txt"
+        },
+        {
+            "file_id": "dbpedia_6641_43.txt"
+        },
+        {
+            "file_id": "dbpedia_6641_51.txt"
+        },
+        {
+            "file_id": "dbpedia_6641_73.txt"
+        },
+        {
+            "file_id": "dbpedia_6641_75.txt"
+        },
+        {
+            "file_id": "dbpedia_6641_76.txt"
+        },
+        {
+            "file_id": "dbpedia_6641_80.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nLet me explain why:\n\n* While the text discusses TIME Magazine extensively, it doesn't state that the subject of TIME Magazine *is* English-language magazines.  It focuses on TIME Magazine as a specific publication covering news and current events. \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe information in the documents supports this triple. According to the context, TIME Magazine is described as an International weekly news magazine, and its content includes news, analysis, and reviews on current situations worldwide, which implies that it covers English-language magazines."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents describe Time Magazine as an international weekly news magazine known for covering a wide range of topics including current affairs, world news, politics, business, technology, science, and entertainment. This aligns with the statement that its subject is English-language magazines."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n      \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Time magazine covers a wide range of subjects including politics, health, business, technology, science, entertainment, and world news, but it is not limited to English-language magazines.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Multiple sources state Time Magazine is an international weekly news magazine covering a wide range of topics, including politics, health, business, technology, science, entertainment, and world news.  There's no mention that it focuses specifically on English-language magazines.",
+            "category": 2
+        }
+    }
+}

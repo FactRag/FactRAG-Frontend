@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Aaron_Provincial_Park",
+    "predicate": "ontology/owner",
+    "object": "resource/Ontario_Parks",
+    "human_readable": "Aaron Provincial Park is owned by Ontario Parks.",
+    "questions": [
+        {
+            "score": 0.9837478995323181,
+            "question": "Who owns Aaron Provincial Park?"
+        },
+        {
+            "score": 0.9760837554931641,
+            "question": "Is Aaron Provincial Park publicly or privately owned?"
+        },
+        {
+            "score": 0.9132798910140991,
+            "question": "Where is Aaron Provincial Park located?"
+        },
+        {
+            "score": 0.83948814868927,
+            "question": "What recreational opportunities might be found at Aaron Provincial Park?"
+        },
+        {
+            "score": 0.8276200890541077,
+            "question": "Does Ontario Parks offer any programs or guided tours at Aaron Provincial Park?"
+        },
+        {
+            "score": 0.7933820486068726,
+            "question": "Can you name a provincial park in Ontario?"
+        },
+        {
+            "score": 0.7697685956954956,
+            "question": "What type of organization manages Aaron Provincial Park?"
+        },
+        {
+            "score": 0.5575752258300781,
+            "question": "Are there any specific regulations or rules for visiting Aaron Provincial Park?"
+        },
+        {
+            "score": 0.5315138101577759,
+            "question": "What are some ways to learn more about the history and natural features of Aaron Provincial Park?"
+        },
+        {
+            "score": 0.47908079624176025,
+            "question": "What is the name of the organization that manages many parks in Ontario?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Aaron Provincial Park is owned by Ontario Parks.",
+            "html": "dbpedia_6205_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some ways to learn more about the history and natural features of Aaron Provincial Park?",
+            "html": "dbpedia_6205_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any specific regulations or rules for visiting Aaron Provincial Park?",
+            "html": "dbpedia_6205_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of organization manages Aaron Provincial Park?",
+            "html": "dbpedia_6205_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6205_1.txt"
+        },
+        {
+            "file_id": "dbpedia_6205_16.txt"
+        },
+        {
+            "file_id": "dbpedia_6205_21.txt"
+        },
+        {
+            "file_id": "dbpedia_6205_26.txt"
+        },
+        {
+            "file_id": "dbpedia_6205_28.txt"
+        },
+        {
+            "file_id": "dbpedia_6205_47.txt"
+        },
+        {
+            "file_id": "dbpedia_6205_73.txt"
+        },
+        {
+            "file_id": "dbpedia_6205_9.txt"
+        },
+        {
+            "file_id": "dbpedia_6205_93.txt"
+        },
+        {
+            "file_id": "dbpedia_6205_99.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have any other triples to evaluate!"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of whether the information in the documents supports the triple:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe reason for this answer is that while the documents mention a partnership agreement between Ontario Parks and the City of Dryden (Section 8.3), they do not explicitly state that Aaron Provincial Park is owned by Ontario Parks. The text mentions that the park was established in 1958 under Ontario regulation 251/58, but it does not provide information on ownership."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents mention that Aaron Provincial Park falls under the management of Ontario Parks, supporting the statement that it is owned by them. For instance, document 100.txt states, \"Aaron Provincial Park is a must-visit this summer,\" and another excerpt indicates its location relative to Ontario's administrative districts, suggesting oversight by Ontario Parks. Therefore, based on the provided context, the statement aligns with the documents."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The text states \"Even though Aaron Provincial Park is classified as an Ontario Park it is managed instead by the town of Dryden.\" which implies that management, but not ownership, of the park lies with the town of Dryden.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Fifth_Avenue",
+    "predicate": "property/junction",
+    "object": "Madison Avenue Bridge in Harlem",
+    "human_readable": "Fifth Avenue junctions with the Madison Avenue Bridge in Harlem.",
+    "questions": [
+        {
+            "score": 0.9578790068626404,
+            "question": "What is the name of the bridge connected to Fifth Avenue in Harlem?"
+        },
+        {
+            "score": 0.708741307258606,
+            "question": "What two streets meet at the Madison Avenue Bridge in Harlem?"
+        },
+        {
+            "score": 0.607343852519989,
+            "question": "Where does Fifth Avenue intersect?"
+        },
+        {
+            "score": 0.22418537735939026,
+            "question": "What is the significance of this intersection in Harlem?"
+        },
+        {
+            "score": 0.16943086683750153,
+            "question": "Which borough of New York City is Harlem located in?"
+        },
+        {
+            "score": 0.09892967343330383,
+            "question": "Is there any notable landmark near this intersection?"
+        },
+        {
+            "score": 0.07184312492609024,
+            "question": "Can you describe the geographical location of this intersection?"
+        },
+        {
+            "score": 0.048957470804452896,
+            "question": "Are there any transportation options available at this intersection?"
+        },
+        {
+            "score": 0.04733184725046158,
+            "question": "What architectural style characterizes buildings in this area?"
+        },
+        {
+            "score": 0.0412091389298439,
+            "question": "In what part of Manhattan does this intersection occur?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Fifth Avenue junctions with the Madison Avenue Bridge in Harlem.",
+            "html": "dbpedia_2769_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What architectural style characterizes buildings in this area?",
+            "html": "dbpedia_2769_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any transportation options available at this intersection?",
+            "html": "dbpedia_2769_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you describe the geographical location of this intersection?",
+            "html": "dbpedia_2769_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2769_10.txt"
+        },
+        {
+            "file_id": "dbpedia_2769_119.txt"
+        },
+        {
+            "file_id": "dbpedia_2769_120.txt"
+        },
+        {
+            "file_id": "dbpedia_2769_122.txt"
+        },
+        {
+            "file_id": "dbpedia_2769_123.txt"
+        },
+        {
+            "file_id": "dbpedia_2769_124.txt"
+        },
+        {
+            "file_id": "dbpedia_2769_42.txt"
+        },
+        {
+            "file_id": "dbpedia_2769_60.txt"
+        },
+        {
+            "file_id": "dbpedia_2769_82.txt"
+        },
+        {
+            "file_id": "dbpedia_2769_98.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n\n\nLet me know if you have any other triples to evaluate! \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "After analyzing the documents, I found that:\n\n* The document at file_path `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2769/re-ranker-msmarco/17.txt` mentions that Harlem River Drive meets exit 22, a junction to 142nd Street and Fifth Avenue.\n* However, the same document also mentions that in a northbound direction, Harlem River Drive continues under the Madison Avenue Bridge before reaching other exits.\n\nTherefore, based on this information, I would say that:\n\n```json\n{'output': 'no'}\n```\n\nThis is because the text does not explicitly state that Fifth Avenue junctions with the Madison Avenue Bridge in Harlem. Instead, it mentions a junction to 142nd Street and Fifth Avenue under exit 22, which is a different location."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe information from the documents supports the statement that Fifth Avenue junctions with the Madison Avenue Bridge in Harlem. This can be inferred from the details provided about the connections and intersections of various roads and bridges, including mentions of the Madison Avenue Bridge and its relation to Fifth Avenue in the context of Harlem."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n    \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Fifth Avenue does not junction with the Madison Avenue Bridge. According to the provided context, the Madison Avenue Bridge connects Manhattan and the Bronx, but there is no mention of a connection between the Madison Avenue Bridge and Fifth Avenue. On the Manhattan approach, motorists must take side streets to connect to Harlem River Drive (which does not intersect with Fifth Avenue), not Fifth Avenue itself.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Several text passages detail the intersection of Harlem River Drive with various avenues, including Frederick Douglass Boulevard and Seventh Avenue, but never mention Fifth Avenue connecting to the Madison Avenue Bridge.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The Madison Avenue Bridge does not directly connect to Fifth Avenue. According to the information provided, the bridge connects to 138th Street and an enlarged Madison Avenue in Harlem, and southbound connections include exits to 142nd Street and Fifth Avenue, but this is through other junctions like exit 22, not a direct connection with the Madison Avenue Bridge itself.",
+            "category": 2
+        }
+    }
+}

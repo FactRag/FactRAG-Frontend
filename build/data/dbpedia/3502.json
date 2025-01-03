@@ -1,0 +1,129 @@
+{
+    "subject": "resource/A_Special_Christmas",
+    "predicate": "ontology/artist",
+    "object": "resource/SWV",
+    "human_readable": "A Special Christmas was performed by SWV.",
+    "questions": [
+        {
+            "score": 0.6567597389221191,
+            "question": "Who performed the song 'A Special Christmas'?"
+        },
+        {
+            "score": 0.5250141620635986,
+            "question": "Has SWV released other holiday music?"
+        },
+        {
+            "score": 0.5174016356468201,
+            "question": "What is the title of the song performed by SWV?"
+        },
+        {
+            "score": 0.31996357440948486,
+            "question": "What are some other popular songs by SWV?"
+        },
+        {
+            "score": 0.3141233026981354,
+            "question": "Is 'A Special Christmas' a popular holiday song?"
+        },
+        {
+            "score": 0.30058008432388306,
+            "question": "Where can one listen to 'A Special Christmas'?"
+        },
+        {
+            "score": 0.29160064458847046,
+            "question": "When was the song 'A Special Christmas' likely released?"
+        },
+        {
+            "score": 0.2243877649307251,
+            "question": "What genre of music is typically associated with SWV?"
+        },
+        {
+            "score": 0.22051309049129486,
+            "question": "Are there any famous covers or remixes of 'A Special Christmas'?"
+        },
+        {
+            "score": 0.1698247194290161,
+            "question": "What is the overall theme of 'A Special Christmas'?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=A Special Christmas was performed by SWV.",
+            "html": "dbpedia_3502_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any famous covers or remixes of 'A Special Christmas'?",
+            "html": "dbpedia_3502_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What genre of music is typically associated with SWV?",
+            "html": "dbpedia_3502_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=When was the song 'A Special Christmas' likely released?",
+            "html": "dbpedia_3502_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3502_13.txt"
+        },
+        {
+            "file_id": "dbpedia_3502_5.txt"
+        },
+        {
+            "file_id": "dbpedia_3502_60.txt"
+        },
+        {
+            "file_id": "dbpedia_3502_63.txt"
+        },
+        {
+            "file_id": "dbpedia_3502_69.txt"
+        },
+        {
+            "file_id": "dbpedia_3502_87.txt"
+        },
+        {
+            "file_id": "dbpedia_3502_9.txt"
+        },
+        {
+            "file_id": "dbpedia_3502_94.txt"
+        },
+        {
+            "file_id": "dbpedia_3502_97.txt"
+        },
+        {
+            "file_id": "dbpedia_3502_98.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the structured JSON format containing the evaluation of the triple:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe information in the documents supports the triple. The documents mention that \"A Special Christmas\" is an album by R&B group SWV, and that it was released by them on November 16, 1997 (in one document) or November 18, 1997 (in another document), both of which confirm that the album was performed by SWV."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information that supports the statement \"A Special Christmas was performed by SWV.\" Specifically, the document at file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3502/re-ranker-msmarco/13.txt and others mention that \"A Special Christmas\" is an album by R&B group SWV released in 1997."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Christina_Pickles",
+    "predicate": "property/wordnet_type",
+    "object": "http://www.w3.org/2006/03/wn/wn20/instances/synset-actor-noun-1",
+    "human_readable": "Christina Pickles is an actor.",
+    "questions": [
+        {
+            "score": 0.9186701774597168,
+            "question": "Is Christina Pickles known for acting?"
+        },
+        {
+            "score": 0.9181380867958069,
+            "question": "What roles has Christina Pickles played?"
+        },
+        {
+            "score": 0.9114046096801758,
+            "question": "Is Christina Pickles a well-known actress?"
+        },
+        {
+            "score": 0.777866542339325,
+            "question": "Where has Christina Pickles acted?"
+        },
+        {
+            "score": 0.6867572665214539,
+            "question": "What is Christina Pickles's occupation?"
+        },
+        {
+            "score": 0.6470646262168884,
+            "question": "Has Christina Pickles appeared in any movies or television shows?"
+        },
+        {
+            "score": 0.644274890422821,
+            "question": "What profession does Christina Pickles have?"
+        },
+        {
+            "score": 0.5121904015541077,
+            "question": "What is Christina Pickles best known for?"
+        },
+        {
+            "score": 0.3561893701553345,
+            "question": "In what field does Christina Pickles work?"
+        },
+        {
+            "score": 0.27947738766670227,
+            "question": "What are some of Christina Pickles's most famous works?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Christina Pickles is an actor.",
+            "html": "dbpedia_4900_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In what field does Christina Pickles work?",
+            "html": "dbpedia_4900_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Christina Pickles best known for?",
+            "html": "dbpedia_4900_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What profession does Christina Pickles have?",
+            "html": "dbpedia_4900_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4900_1.txt"
+        },
+        {
+            "file_id": "dbpedia_4900_10.txt"
+        },
+        {
+            "file_id": "dbpedia_4900_24.txt"
+        },
+        {
+            "file_id": "dbpedia_4900_3.txt"
+        },
+        {
+            "file_id": "dbpedia_4900_31.txt"
+        },
+        {
+            "file_id": "dbpedia_4900_32.txt"
+        },
+        {
+            "file_id": "dbpedia_4900_69.txt"
+        },
+        {
+            "file_id": "dbpedia_4900_81.txt"
+        },
+        {
+            "file_id": "dbpedia_4900_86.txt"
+        },
+        {
+            "file_id": "dbpedia_4900_89.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the response to the query \"Christina Pickles is an actor.\":\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThis is because all of the documents mention that Christina Pickles is an actress, which implies that she is also an actor. The information in the documents supports this triple."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents consistently describe Christina Pickles as an actress or actor, supporting the statement that \"Christina Pickles is an actor.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Christina Pickles is an actress, but the information provided specifically mentions her profession as \"Emmy Award winning actress\" which includes both acting and award-winning aspects. Thus, simply stating that she is an actor does not accurately represent the complete professional identity mentioned in the context.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Multiple sources state she is an actress.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because Christina Pickles is actually an actress.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Christina Pickles is specifically described as an actress, not an actor. The distinction between \"actor\" and \"actress\" typically refers to the gender of the performer, with \"actress\" being used for females. Therefore, describing her as an \"actor\" would be incorrect.",
+            "category": 2
+        }
+    }
+}

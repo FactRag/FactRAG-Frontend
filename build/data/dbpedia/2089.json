@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Pajwar",
+    "predicate": "property/longd",
+    "object": "71",
+    "human_readable": "Pajwar's longitude is 71.",
+    "questions": [
+        {
+            "score": 0.7634533047676086,
+            "question": "What is the longitude of Pajwar?"
+        },
+        {
+            "score": 0.6201905608177185,
+            "question": "How can you find Pajwar's location using its longitude?"
+        },
+        {
+            "score": 0.5187466144561768,
+            "question": "What other information might be helpful to know about Pajwar besides its longitude?"
+        },
+        {
+            "score": 0.44991761445999146,
+            "question": "Can you give an example of a place with a similar longitude to Pajwar?"
+        },
+        {
+            "score": 0.4012230634689331,
+            "question": "Where is Pajwar located?"
+        },
+        {
+            "score": 0.23789472877979279,
+            "question": "Are there any famous landmarks or geographical features near Pajwar?"
+        },
+        {
+            "score": 0.19971390068531036,
+            "question": "How has the understanding of longitude changed over time?"
+        },
+        {
+            "score": 0.18373042345046997,
+            "question": "How do longitudes vary around the world?"
+        },
+        {
+            "score": 0.16969290375709534,
+            "question": "What is the difference between latitude and longitude?"
+        },
+        {
+            "score": 0.16792599856853485,
+            "question": "What are some tools used for measuring longitude?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Pajwar's longitude is 71.",
+            "html": "dbpedia_2089_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the difference between latitude and longitude?",
+            "html": "dbpedia_2089_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How do longitudes vary around the world?",
+            "html": "dbpedia_2089_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How has the understanding of longitude changed over time?",
+            "html": "dbpedia_2089_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2089_13.txt"
+        },
+        {
+            "file_id": "dbpedia_2089_14.txt"
+        },
+        {
+            "file_id": "dbpedia_2089_19.txt"
+        },
+        {
+            "file_id": "dbpedia_2089_20.txt"
+        },
+        {
+            "file_id": "dbpedia_2089_21.txt"
+        },
+        {
+            "file_id": "dbpedia_2089_22.txt"
+        },
+        {
+            "file_id": "dbpedia_2089_28.txt"
+        },
+        {
+            "file_id": "dbpedia_2089_3.txt"
+        },
+        {
+            "file_id": "dbpedia_2089_31.txt"
+        },
+        {
+            "file_id": "dbpedia_2089_33.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\"output\": \"no\"}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "To answer this question, we need to extract the relevant information from the provided context.\n\nThe relevant information for Pajwar's coordinates is:\n\n...the Pakawarai city of Pakistan lies on the geographical coordinates of 33\u00b0 54' 33\" N, 71\u00b0 3' 10\" E.\nWhat is Latitude and Longitude of Pajwar city?\n...\n\nThis suggests that Pajwar's longitude is not explicitly stated as 71, but rather it shares the same coordinates as Pakawarai.\n\nTherefore, based on this information:\n\n{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\"output\": \"no\"}\n```\n\nThe query asks about the longitude of Pajwar city, which is stated to be 71\u00b0 3' 0\" E in one of the documents. Since 71 degrees does not match with 71\u00b0 3' 0\" E, the response is \"no\"."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The longitude of Pajwar city is given as 70.0 degrees in the context information, not 71.0 degrees.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Multiple instances of Panjwar city's longitude being 73\u00b0 3' 0\" E are provided.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "the context information repeatedly states the longitude of various cities including Pakawarai as 71\u00b0 3' 10\" E, which implies consistency in reporting a specific longitude value for different locations. If Pajwar's longitude were indeed 71, it would contradict this established pattern and suggest an inconsistency in the reported geographic data.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information clearly states that the longitude of Pakawarai city is 71\u00b0 3' 10\" E, not 71. Similarly, for Panjwar city, its longitude is given as 73\u00b0 3' 0\" E in the provided context, which also does not support a longitude value of 71.",
+            "category": 2
+        }
+    }
+}

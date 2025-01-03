@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Laurie_Lewis",
+    "predicate": "ontology/hometown",
+    "object": "resource/United_States",
+    "human_readable": "Laurie Lewis's hometown is United States.",
+    "questions": [
+        {
+            "score": 0.8801214098930359,
+            "question": "What country is Laurie Lewis's hometown in?"
+        },
+        {
+            "score": 0.8445063233375549,
+            "question": "Is Laurie Lewis originally from the United States?"
+        },
+        {
+            "score": 0.772086501121521,
+            "question": "What are some popular places or landmarks in Laurie Lewis's hometown?"
+        },
+        {
+            "score": 0.7387881278991699,
+            "question": "Is there anything interesting about the history of Laurie Lewis's hometown?"
+        },
+        {
+            "score": 0.7355833053588867,
+            "question": "Do any famous people share Laurie Lewis's hometown?"
+        },
+        {
+            "score": 0.6716569066047668,
+            "question": "Where is Laurie Lewis from?"
+        },
+        {
+            "score": 0.6205106973648071,
+            "question": "What are some things that define life in Laurie Lewis's hometown?"
+        },
+        {
+            "score": 0.6095350384712219,
+            "question": "How might Laurie Lewis's hometown have influenced her life?"
+        },
+        {
+            "score": 0.29713064432144165,
+            "question": "Where did Laurie Lewis likely spend her childhood?"
+        },
+        {
+            "score": 0.255258172750473,
+            "question": "Can you tell me more about Laurie Lewis's upbringing?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Laurie Lewis's hometown is United States.",
+            "html": "dbpedia_9012_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where did Laurie Lewis likely spend her childhood?",
+            "html": "dbpedia_9012_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How might Laurie Lewis's hometown have influenced her life?",
+            "html": "dbpedia_9012_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some things that define life in Laurie Lewis's hometown?",
+            "html": "dbpedia_9012_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_9012_13.txt"
+        },
+        {
+            "file_id": "dbpedia_9012_18.txt"
+        },
+        {
+            "file_id": "dbpedia_9012_20.txt"
+        },
+        {
+            "file_id": "dbpedia_9012_22.txt"
+        },
+        {
+            "file_id": "dbpedia_9012_25.txt"
+        },
+        {
+            "file_id": "dbpedia_9012_29.txt"
+        },
+        {
+            "file_id": "dbpedia_9012_33.txt"
+        },
+        {
+            "file_id": "dbpedia_9012_45.txt"
+        },
+        {
+            "file_id": "dbpedia_9012_50.txt"
+        },
+        {
+            "file_id": "dbpedia_9012_87.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nWhile the documents state that Laurie Lewis is from Berkeley, California and mentions performances at venues in California, it does not explicitly say that her hometown is the United States.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\n**Explanation**: The documents provide information about Laurie Lewis, an American musician from Berkeley, California. Since Berkeley is a city in the United States, it can be inferred that her hometown is the United States. Therefore, the statement \"Laurie Lewis's hometown is United States\" is supported by the provided context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context, there isn't a specific document that states Laurie Lewis\u2019s hometown as the entire country of the United States. The documents mention that she lives in Berkeley, CA, which is part of the United States but does not equate to the whole country being her hometown.\n\nTherefore, the answer should be:\n\n```json\n{\"output\": \"no\"}\n```\n\nThe triple is incorrect according to the information provided as it incorrectly generalizes Laurie Lewis's hometown."
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Several passages mention Laurie Lewis' hometown being Berkeley, CA, which is a city in the United States.  Additionally, references to \"the Bay Area\u2019s storied bluegrass scene\" and \"Oakland\u2019s own HighTone label\" further solidify that she resides in the U.S.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "Laurie Lewis's hometown is Oklahoma City.",
+            "category": 2
+        }
+    }
+}

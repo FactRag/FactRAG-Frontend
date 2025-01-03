@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Drammen_Station",
+    "predicate": "property/prestation",
+    "object": "resource/Gulskogen_Station",
+    "human_readable": "Drammen Station provides service to Gulskogen Station.",
+    "questions": [
+        {
+            "score": 0.9849542379379272,
+            "question": "Is Gulskogen Station served by Drammen Station?"
+        },
+        {
+            "score": 0.9667025804519653,
+            "question": "Can you travel from Drammen Station to Gulskogen Station?"
+        },
+        {
+            "score": 0.9617660641670227,
+            "question": "Are Drammen Station and Gulskogen Station connected?"
+        },
+        {
+            "score": 0.937130331993103,
+            "question": "What is the relationship between Drammen Station and Gulskogen Station?"
+        },
+        {
+            "score": 0.8773818016052246,
+            "question": "Which station does Drammen Station provide service to?"
+        },
+        {
+            "score": 0.8438655138015747,
+            "question": "Where does Drammen Station provide service to?"
+        },
+        {
+            "score": 0.8181954026222229,
+            "question": "What kind of station is Gulskogen Station?"
+        },
+        {
+            "score": 0.8101804852485657,
+            "question": "What transportation service does Drammen Station provide?"
+        },
+        {
+            "score": 0.802550733089447,
+            "question": "Name a station served by Drammen Station."
+        },
+        {
+            "score": 0.621938943862915,
+            "question": "Does Drammen Station have connections to other stations?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Drammen Station provides service to Gulskogen Station.",
+            "html": "dbpedia_2829_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Name a station served by Drammen Station.",
+            "html": "dbpedia_2829_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What transportation service does Drammen Station provide?",
+            "html": "dbpedia_2829_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What kind of station is Gulskogen Station?",
+            "html": "dbpedia_2829_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2829_18.txt"
+        },
+        {
+            "file_id": "dbpedia_2829_19.txt"
+        },
+        {
+            "file_id": "dbpedia_2829_26.txt"
+        },
+        {
+            "file_id": "dbpedia_2829_30.txt"
+        },
+        {
+            "file_id": "dbpedia_2829_32.txt"
+        },
+        {
+            "file_id": "dbpedia_2829_34.txt"
+        },
+        {
+            "file_id": "dbpedia_2829_37.txt"
+        },
+        {
+            "file_id": "dbpedia_2829_40.txt"
+        },
+        {
+            "file_id": "dbpedia_2829_47.txt"
+        },
+        {
+            "file_id": "dbpedia_2829_65.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "After analyzing the context information, I found that:\n\n* The document with file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2829/re-ranker-msmarco/34.txt mentions that Scandinavian Property Group is developing a new and sustainable residential area focusing on active seniors next to Gulskogen Station in Drammen municipality.\n* However, there is no mention of a service or connection between Drammen Station and Gulskogen Station.\n\nGiven this information, I conclude that the statement \"Drammen Station provides service to Gulskogen Station\" cannot be confirmed by the documents. Therefore:\n\n`{ 'output': 'no' }`"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents provide information about the infrastructure and developments around Drammen, including details about train stations. Specifically, the document at file_path `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2829/re-ranker-msmarco/34.txt` mentions that \"Scandinavian Property Group is developing a new and sustainable residential area focusing on active seniors next to Gulskogen Station in Drammen municipality.\" While it doesn't explicitly state the service between the two stations, other documents describe the station as facilitating easy access to local transport and mention services like luggage storage. This context supports the inference that Drammen Station provides service to Gulskogen Station."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "the context information states that Drammen-Kobbervikdalen project includes a 6 km long rock tunnel, which implies that there are two separate stations, but it does not mention any direct connection between them.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,114 @@
+{
+    "subject": "resource/Mike_Wallace",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "Mike Wallace",
+    "human_readable": "The name of Mike Wallace is Mike Wallace.",
+    "questions": [
+        {
+            "score": 0.9732984304428101,
+            "question": "Is 'Mike Wallace' a person's name?"
+        },
+        {
+            "score": 0.9730554819107056,
+            "question": "What is the name of Mike Wallace?"
+        },
+        {
+            "score": 0.7948809266090393,
+            "question": "Does Mike Wallace have any other names?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of Mike Wallace is Mike Wallace.",
+            "html": "dbpedia_7674_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of Mike Wallace?",
+            "html": "dbpedia_7674_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is 'Mike Wallace' a person's name?",
+            "html": "dbpedia_7674_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_7674_133.txt"
+        },
+        {
+            "file_id": "dbpedia_7674_39.txt"
+        },
+        {
+            "file_id": "dbpedia_7674_48.txt"
+        },
+        {
+            "file_id": "dbpedia_7674_55.txt"
+        },
+        {
+            "file_id": "dbpedia_7674_57.txt"
+        },
+        {
+            "file_id": "dbpedia_7674_61.txt"
+        },
+        {
+            "file_id": "dbpedia_7674_70.txt"
+        },
+        {
+            "file_id": "dbpedia_7674_74.txt"
+        },
+        {
+            "file_id": "dbpedia_7674_79.txt"
+        },
+        {
+            "file_id": "dbpedia_7674_84.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have more triples to evaluate!  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "{\n  \"output\": \"yes\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```"
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The name provided, \"Mike Wallace,\" is already stated in the context information. Therefore, repeating the same claim is redundant and incorrect.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "It is a redundant and obvious statement.  Mike Wallace's name is indeed Mike Wallace, as stated throughout the provided text.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "It states a redundant fact. The name \"Mike Wallace\" is already mentioned in the context as the subject of the biographical information, so stating that his name is indeed \"Mike Wallace\" adds no new information and is unnecessary.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information clearly states that Mike Wallace was born as Myron Leon \u201cMike\u201d Wallace, indicating that \"Mike\" was his nickname or what he was billed as during his early career. Therefore, the full name is Myron Leon Wallace, not just Mike Wallace.",
+            "category": 2
+        }
+    }
+}

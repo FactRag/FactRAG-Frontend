@@ -1,0 +1,146 @@
+{
+    "subject": "resource/George_E._Leach",
+    "predicate": "property/years",
+    "object": "1921",
+    "human_readable": "George E. Leach was born in 1921.",
+    "questions": [
+        {
+            "score": 0.8542516827583313,
+            "question": "In what year was George E. Leach born?"
+        },
+        {
+            "score": 0.7884134650230408,
+            "question": "What historical events occurred during the year George E. Leach was born?"
+        },
+        {
+            "score": 0.7299677133560181,
+            "question": "What is the birth year of George E. Leach?"
+        },
+        {
+            "score": 0.7035321593284607,
+            "question": "What year marks the birth of George E. Leach?"
+        },
+        {
+            "score": 0.655510425567627,
+            "question": "What significant event happened in the year of George E. Leach's birth?"
+        },
+        {
+            "score": 0.6482614278793335,
+            "question": "Was George E. Leach born before or after World War I?"
+        },
+        {
+            "score": 0.44126033782958984,
+            "question": "When did George E. Leach come into this world?"
+        },
+        {
+            "score": 0.43566828966140747,
+            "question": "How old was George E. Leach in 1950?"
+        },
+        {
+            "score": 0.393121600151062,
+            "question": "If today is 2023, how old would George E. Leach be?"
+        },
+        {
+            "score": 0.17308834195137024,
+            "question": "Is 1921 a leap year?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=George E. Leach was born in 1921.",
+            "html": "dbpedia_2469_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If today is 2023, how old would George E. Leach be?",
+            "html": "dbpedia_2469_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How old was George E. Leach in 1950?",
+            "html": "dbpedia_2469_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=When did George E. Leach come into this world?",
+            "html": "dbpedia_2469_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2469_13.txt"
+        },
+        {
+            "file_id": "dbpedia_2469_21.txt"
+        },
+        {
+            "file_id": "dbpedia_2469_26.txt"
+        },
+        {
+            "file_id": "dbpedia_2469_32.txt"
+        },
+        {
+            "file_id": "dbpedia_2469_35.txt"
+        },
+        {
+            "file_id": "dbpedia_2469_39.txt"
+        },
+        {
+            "file_id": "dbpedia_2469_42.txt"
+        },
+        {
+            "file_id": "dbpedia_2469_55.txt"
+        },
+        {
+            "file_id": "dbpedia_2469_69.txt"
+        },
+        {
+            "file_id": "dbpedia_2469_83.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "To evaluate whether the information in the documents supports the triple, I will check if George E. Leach was indeed born in 1921.\n\nAccording to the context information:\n\n* file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2469/re-ranker-msmarco/13.txt\n\t+ Major General George Emerson Leach (July 14, 1876 \u2013 July 17, 1955) was born in Cedar Rapids, Iowa on July 14, 1876.\n* file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2469/re-ranker-msmarco/42.txt\n\t+ George E. Leach was born July 7, 1912, in Fredonia Township.\n\nThe documents do not support the triple that George E. Leach was born in 1921. Two different dates are provided: July 14, 1876 and July 7, 1912. However, neither of these dates matches 1921.\n\nTherefore, the final answer is:\n\n`{'output': 'no'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: The documents provide information about George E. Leach, stating that he was born in 1876 (in multiple sources), not 1921. Therefore, the statement \"George E. Leach was born in 1921\" is incorrect according to the provided context."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n    \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "George E. Leach was born in 1876, not in 1921.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Multiple sources state his birth year as 1876.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "the multiple accounts of George E. Leach's life provide conflicting birth years (1876, 1912, 1921), but none of them match 1921.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context clearly states that George Emerson Leach was born on July 14, 1876, not 1921.",
+            "category": 2
+        }
+    }
+}

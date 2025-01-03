@@ -1,0 +1,129 @@
+{
+    "subject": "Antonio_Vega",
+    "predicate": "isMarriedTo",
+    "object": "Jessica_Buchanan",
+    "human_readable": "Antonio Vega is married to Jessica Buchanan.",
+    "questions": [
+        {
+            "score": 0.9859768152236938,
+            "question": "Is Antonio Vega's wife named Jessica Buchanan?"
+        },
+        {
+            "score": 0.9191082119941711,
+            "question": "Are Antonio Vega and Jessica Buchanan in a relationship?"
+        },
+        {
+            "score": 0.9057920575141907,
+            "question": "To whom is Antonio Vega married?"
+        },
+        {
+            "score": 0.8991017937660217,
+            "question": "Is Antonio Vega married?"
+        },
+        {
+            "score": 0.8974222540855408,
+            "question": "Who is Antonio Vega married to?"
+        },
+        {
+            "score": 0.7161781787872314,
+            "question": "Does Jessica Buchanan have a husband?"
+        },
+        {
+            "score": 0.6752438545227051,
+            "question": "What is the name of Antonio Vega's spouse?"
+        },
+        {
+            "score": 0.6247445940971375,
+            "question": "What is the marital status of Antonio Vega?"
+        },
+        {
+            "score": 0.5782724618911743,
+            "question": "What is the name of Jessica Buchanan's husband?"
+        },
+        {
+            "score": 0.5510402917861938,
+            "question": "Who is Jessica Buchanan?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Antonio Vega is married to Jessica Buchanan.",
+            "html": "yago_30795_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of Jessica Buchanan's husband?",
+            "html": "yago_30795_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the marital status of Antonio Vega?",
+            "html": "yago_30795_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of Antonio Vega's spouse?",
+            "html": "yago_30795_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "yago_30795_10.txt"
+        },
+        {
+            "file_id": "yago_30795_25.txt"
+        },
+        {
+            "file_id": "yago_30795_31.txt"
+        },
+        {
+            "file_id": "yago_30795_39.txt"
+        },
+        {
+            "file_id": "yago_30795_42.txt"
+        },
+        {
+            "file_id": "yago_30795_44.txt"
+        },
+        {
+            "file_id": "yago_30795_45.txt"
+        },
+        {
+            "file_id": "yago_30795_57.txt"
+        },
+        {
+            "file_id": "yago_30795_69.txt"
+        },
+        {
+            "file_id": "yago_30795_89.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "After analyzing the documents, I found that:\n\n* Antonio Vega is mentioned as having a romantic relationship with Jessica Buchanan (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/yago_30795/re-ranker-msmarco/68.txt and file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/yago_30795/re-ranker-msmarco/57.txt)\n* Jessica Buchanan is mentioned as being married to Antonio Vega (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/yago_30795/re-ranker-msmarco/69.txt)\n\nTherefore, the information in the documents supports the triple.\n\nResponse:\n{'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe information provided in the documents supports that Antonio Vega is married to Jessica Buchanan. Multiple documents mention their marriage, including `10.txt` and `69.txt`."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {}
+}

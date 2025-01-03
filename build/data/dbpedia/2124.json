@@ -1,0 +1,102 @@
+{
+    "subject": "resource/It's_All_About_the_Stragglers",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "It's All About the Stragglers",
+    "human_readable": "The name of It's All About the Stragglers is It's All About the Stragglers.",
+    "questions": [
+        {
+            "score": 0.9095691442489624,
+            "question": "Could you tell me more about 'It's All About the Stragglers'?"
+        },
+        {
+            "score": 0.1507096141576767,
+            "question": "Is the title of the work the same as its name?"
+        },
+        {
+            "score": 0.1153070330619812,
+            "question": "What is the name of the work?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of It's All About the Stragglers is It's All About the Stragglers.",
+            "html": "dbpedia_2124_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is the title of the work the same as its name?",
+            "html": "dbpedia_2124_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Could you tell me more about 'It's All About the Stragglers'?",
+            "html": "dbpedia_2124_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2124_103.txt"
+        },
+        {
+            "file_id": "dbpedia_2124_129.txt"
+        },
+        {
+            "file_id": "dbpedia_2124_133.txt"
+        },
+        {
+            "file_id": "dbpedia_2124_17.txt"
+        },
+        {
+            "file_id": "dbpedia_2124_4.txt"
+        },
+        {
+            "file_id": "dbpedia_2124_5.txt"
+        },
+        {
+            "file_id": "dbpedia_2124_52.txt"
+        },
+        {
+            "file_id": "dbpedia_2124_61.txt"
+        },
+        {
+            "file_id": "dbpedia_2124_69.txt"
+        },
+        {
+            "file_id": "dbpedia_2124_75.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have more queries!"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe reason for this answer is that, according to the documents, the album title is actually \"It's All About The Stragglers\", not \"It's All About the Stragglers\"."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe context clearly mentions \"It\u2019s All About The Stragglers\" multiple times, confirming that this is indeed the name of the album in question."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The name \"It's All About the Stragglers\" was mentioned multiple times throughout the context as being correct, with no indication that it might be incorrect.",
+            "category": 2
+        }
+    }
+}

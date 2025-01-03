@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Pleurotomella_marshalli",
+    "predicate": "ontology/family",
+    "object": "resource/Conoidea",
+    "human_readable": "Pleurotomella marshalli belongs to the family Conoidea.",
+    "questions": [
+        {
+            "score": 0.9615261554718018,
+            "question": "What family does Pleurotomella marshalli belong to?"
+        },
+        {
+            "score": 0.767797589302063,
+            "question": "How is Pleurotomella marshalli named?"
+        },
+        {
+            "score": 0.660666823387146,
+            "question": "Is Pleurotomella marshalli classified as a type of mollusk?"
+        },
+        {
+            "score": 0.6568251252174377,
+            "question": "How is Pleurotomella marshalli studied by scientists?"
+        },
+        {
+            "score": 0.6282309293746948,
+            "question": "Are there any conservation concerns associated with Pleurotomella marshalli?"
+        },
+        {
+            "score": 0.6233972311019897,
+            "question": "What are some unique adaptations that Pleurotomella marshalli might possess?"
+        },
+        {
+            "score": 0.616283655166626,
+            "question": "What type of habitat might Pleurotomella marshalli live in?"
+        },
+        {
+            "score": 0.4958551228046417,
+            "question": "Are there any other known species within the Pleurotomella genus?"
+        },
+        {
+            "score": 0.4618566334247589,
+            "question": "What are some characteristics common to members of the Conoidea family?"
+        },
+        {
+            "score": 0.3974529206752777,
+            "question": "Give an example of a creature in the Conoidea family."
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Pleurotomella marshalli belongs to the family Conoidea.",
+            "html": "dbpedia_210_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some characteristics common to members of the Conoidea family?",
+            "html": "dbpedia_210_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any other known species within the Pleurotomella genus?",
+            "html": "dbpedia_210_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of habitat might Pleurotomella marshalli live in?",
+            "html": "dbpedia_210_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_210_1.txt"
+        },
+        {
+            "file_id": "dbpedia_210_27.txt"
+        },
+        {
+            "file_id": "dbpedia_210_31.txt"
+        },
+        {
+            "file_id": "dbpedia_210_36.txt"
+        },
+        {
+            "file_id": "dbpedia_210_41.txt"
+        },
+        {
+            "file_id": "dbpedia_210_5.txt"
+        },
+        {
+            "file_id": "dbpedia_210_51.txt"
+        },
+        {
+            "file_id": "dbpedia_210_52.txt"
+        },
+        {
+            "file_id": "dbpedia_210_7.txt"
+        },
+        {
+            "file_id": "dbpedia_210_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'} \n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "The triple to be evaluated is:\n\nPleurotomella marshalli belongs to the family Conoidea.\n\nAfter analyzing the context information, I found that:\n\n* File_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_210/re-ranker-msmarco/27.txt\n\t+ Description: English: Pleurotomella marshalli (Sykes, 1906); family Raphitomidae; Portugal.\n* This suggests that Pleurotomella marshalli is indeed a species that belongs to the family Raphitomidae, not Conoidea.\n\nTherefore, my response is:\n\n```json\n{\n  \"output\": \"no\"\n}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe context information mentions \"Pleurotomella marshalli (Sykes, 1906); family Raphitomidae\", which indicates that Pleurotomella marshalli belongs to the family Raphitomidae. However, based on additional context about Conoidea and its constituents, it can be inferred that this species, while specifically placed in Raphitomidae, is part of the larger group Conoidea, supporting the statement that Pleurotomella marshalli belongs to the family Conoidea."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {'output': 'no'}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "qwen2.5": {
+            "reason": "Pleurotomella marshalli is described as belonging to the family Raphitomidae, not Conoidea. The context does not mention any affiliation of Pleurotomella marshalli with Conoidea.",
+            "category": -1
+        }
+    }
+}

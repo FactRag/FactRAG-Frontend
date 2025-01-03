@@ -1,0 +1,144 @@
+{
+    "subject": "resource/A_Special_Christmas",
+    "predicate": "property/artist",
+    "object": "resource/SWV",
+    "human_readable": "The artist of A Special Christmas is SWV.",
+    "questions": [
+        {
+            "score": 0.8565549254417419,
+            "question": "Is SWV responsible for creating the music for A Special Christmas?"
+        },
+        {
+            "score": 0.6785947680473328,
+            "question": "Which group or artist is known for A Special Christmas?"
+        },
+        {
+            "score": 0.6440125107765198,
+            "question": "What is the name of the artist behind A Special Christmas?"
+        },
+        {
+            "score": 0.5105880498886108,
+            "question": "Who created the music for A Special Christmas?"
+        },
+        {
+            "score": 0.43650227785110474,
+            "question": "In what genre of music is SWV known for?"
+        },
+        {
+            "score": 0.34688684344291687,
+            "question": "Can you name a popular song by SWV?"
+        },
+        {
+            "score": 0.33706510066986084,
+            "question": "Where can one listen to A Special Christmas?"
+        },
+        {
+            "score": 0.32916712760925293,
+            "question": "What musical album is A Special Christmas associated with?"
+        },
+        {
+            "score": 0.2775636911392212,
+            "question": "Are there any notable collaborations on A Special Christmas?"
+        },
+        {
+            "score": 0.20410898327827454,
+            "question": "What year was A Special Christmas released?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The artist of A Special Christmas is SWV.",
+            "html": "dbpedia_3501_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any notable collaborations on A Special Christmas?",
+            "html": "dbpedia_3501_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What musical album is A Special Christmas associated with?",
+            "html": "dbpedia_3501_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where can one listen to A Special Christmas?",
+            "html": "dbpedia_3501_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3501_1.txt"
+        },
+        {
+            "file_id": "dbpedia_3501_14.txt"
+        },
+        {
+            "file_id": "dbpedia_3501_155.txt"
+        },
+        {
+            "file_id": "dbpedia_3501_161.txt"
+        },
+        {
+            "file_id": "dbpedia_3501_164.txt"
+        },
+        {
+            "file_id": "dbpedia_3501_169.txt"
+        },
+        {
+            "file_id": "dbpedia_3501_30.txt"
+        },
+        {
+            "file_id": "dbpedia_3501_52.txt"
+        },
+        {
+            "file_id": "dbpedia_3501_56.txt"
+        },
+        {
+            "file_id": "dbpedia_3501_65.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provided mention that SWV released an album titled \"A Special Christmas\" in the early 1990s, which directly supports the triple stating that the artist of A Special Christmas is SWV."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nThe provided context information does not mention \"A Special Christmas\" being associated with the group SWV as its artist. While there are references to SWV and their music activities, including a specific album titled \"A Special Christmas,\" this appears to be a holiday album rather than an artist of another project named \"A Special Christmas.\" The given information doesn't support that SWV is the artist of some other entity or album called \"A Special Christmas\" apart from their own work. Therefore, based on the context provided, the statement does not hold true according to the documents."
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The context information provided does not indicate that the artist of A Special Christmas album, if there exists one, is SWV. It mentions the release of \"A Very Special Christmas\" albums in different years and with various artists but none of these include SWV as far as the given context suggests.",
+            "category": 4
+        },
+        "gemma2": {
+            "reason": "SWV are a 90s R&B group mentioned as having a comeback, while the provided text focuses on music albums with various artists associated with \"A Very Special Christmas\".",
+            "category": 4
+        }
+    }
+}

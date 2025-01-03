@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Moscow_24_(TV_channel)",
+    "predicate": "ontology/headquarter",
+    "object": "resource/Russia",
+    "human_readable": "The headquarters of Moscow 24 (TV channel) are located in Russia.",
+    "questions": [
+        {
+            "score": 0.9745528697967529,
+            "question": "Where is the headquarters of Moscow 24 located?"
+        },
+        {
+            "score": 0.9565007090568542,
+            "question": "Moscow 24's headquarters is situated in which country?"
+        },
+        {
+            "score": 0.9516273140907288,
+            "question": "Is Moscow 24 a Russian television channel?"
+        },
+        {
+            "score": 0.92120361328125,
+            "question": "In Russia, where are the offices of Moscow 24?"
+        },
+        {
+            "score": 0.9175644516944885,
+            "question": "Which TV channel has its headquarters in Russia?"
+        },
+        {
+            "score": 0.8835054039955139,
+            "question": "In what nation is Moscow 24 headquartered?"
+        },
+        {
+            "score": 0.8828679919242859,
+            "question": "Where is Moscow 24 based?"
+        },
+        {
+            "score": 0.8672829866409302,
+            "question": "What country is home to the headquarters of Moscow 24?"
+        },
+        {
+            "score": 0.6653106808662415,
+            "question": "What is the location of Moscow 24's main offices?"
+        },
+        {
+            "score": 0.5751131772994995,
+            "question": "What country does Moscow 24 operate from?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The headquarters of Moscow 24 (TV channel) are located in Russia.",
+            "html": "dbpedia_1014_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the location of Moscow 24's main offices?",
+            "html": "dbpedia_1014_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What country is home to the headquarters of Moscow 24?",
+            "html": "dbpedia_1014_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where is Moscow 24 based?",
+            "html": "dbpedia_1014_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1014_108.txt"
+        },
+        {
+            "file_id": "dbpedia_1014_22.txt"
+        },
+        {
+            "file_id": "dbpedia_1014_23.txt"
+        },
+        {
+            "file_id": "dbpedia_1014_33.txt"
+        },
+        {
+            "file_id": "dbpedia_1014_51.txt"
+        },
+        {
+            "file_id": "dbpedia_1014_59.txt"
+        },
+        {
+            "file_id": "dbpedia_1014_60.txt"
+        },
+        {
+            "file_id": "dbpedia_1014_75.txt"
+        },
+        {
+            "file_id": "dbpedia_1014_81.txt"
+        },
+        {
+            "file_id": "dbpedia_1014_85.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n**Explanation:**\n\nThe provided text states that \"The Channel is headquartered in Moscow City with its production facilities and operations\". While it doesn't explicitly say \"Russia\", Moscow City is a part of Moscow, which is located within Russia. Therefore, the triple can be considered correct. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the context information, here is the response:\n\n{\n  \"output\": \"no\"\n}\n\nExplanation: While it is mentioned that Moscow 24 is a Russian TV channel and has a production facility in Moscow City, there is no explicit statement about its headquarters being located in Russia. The document only mentions that the Channel is headquartered in Moscow City, which could imply a location within the city of Moscow rather than specifically in Russia as a country."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information that supports the statement that the headquarters of Moscow 24 TV channel are located in Russia, specifically mentioning that it is headquartered in Moscow City."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The headquarters of Moscow 24 (TV channel) are actually located in Moscow City, which is not explicitly stated to be different from Russia. However, considering the context that Moscow 24 is a Russian TV channel and the fact that Moscow City is where its production facilities and operations are, it can be reasonably inferred that Moscow City refers to Moscow within Russia itself.",
+            "category": 2
+        }
+    }
+}

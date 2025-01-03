@@ -1,0 +1,114 @@
+{
+    "subject": "resource/Erik_Thommy",
+    "predicate": "property/name",
+    "object": "Thommy, Erik",
+    "human_readable": "The name of Erik Thommy is Erik Thommy.",
+    "questions": [
+        {
+            "score": 0.9801656007766724,
+            "question": "What is the name of Erik Thommy?"
+        },
+        {
+            "score": 0.9755070805549622,
+            "question": "Is Erik Thommy's name actually Erik Thommy?"
+        },
+        {
+            "score": 0.9561216831207275,
+            "question": "Who is Erik Thommy?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of Erik Thommy is Erik Thommy.",
+            "html": "dbpedia_1430_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Erik Thommy's name actually Erik Thommy?",
+            "html": "dbpedia_1430_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of Erik Thommy?",
+            "html": "dbpedia_1430_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1430_10.txt"
+        },
+        {
+            "file_id": "dbpedia_1430_15.txt"
+        },
+        {
+            "file_id": "dbpedia_1430_29.txt"
+        },
+        {
+            "file_id": "dbpedia_1430_35.txt"
+        },
+        {
+            "file_id": "dbpedia_1430_36.txt"
+        },
+        {
+            "file_id": "dbpedia_1430_4.txt"
+        },
+        {
+            "file_id": "dbpedia_1430_55.txt"
+        },
+        {
+            "file_id": "dbpedia_1430_56.txt"
+        },
+        {
+            "file_id": "dbpedia_1430_66.txt"
+        },
+        {
+            "file_id": "dbpedia_1430_7.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "After reviewing the context information, I found that it indeed supports the triple. Here's the JSON response:\n\n```\n{\n  \"output\": \"yes\"\n}\n```\n\nThe reason is that the documents contain multiple references to a person named \"Erik Thommy\", including their name, birthdate, nationality, position as a midfielder, and other details. This suggests that Erik Thommy is indeed an individual with these characteristics."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe query \"The name of Erik Thommy is Erik Thommy\" is supported by the documents, as multiple sources confirm his name. For example, one document specifies \"Firstname: Erik\", and another mentions \"Erik Thommy - Player Info\"."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The information provided does not include any statement that states the name of Erik Thommy. However, we can deduce his full name from the context as Erik Thommy.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Several pieces of information explicitly state his name as Erik Thommy.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The name \"Erik Thommy\" provided in the context information is already confirmed to be correct in sections 3, 5, and 6.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context clearly states Erik Thommy's first name as Erik and last name as Thommy, confirming his full name is Erik Thommy.",
+            "category": 2
+        }
+    }
+}

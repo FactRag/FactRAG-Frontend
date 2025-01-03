@@ -1,0 +1,146 @@
+{
+    "subject": "resource/The_Golden_Bullet_(1917_film)",
+    "predicate": "ontology/abstract",
+    "object": "The Golden Bullet is a 1917 American Western film featuring Harry Carey.",
+    "human_readable": "The abstract of The Golden Bullet (1917 film) states that it is a 1917 American Western film featuring Harry Carey.",
+    "questions": [
+        {
+            "score": 0.6018136143684387,
+            "question": "What genre is the film 'The Golden Bullet'?"
+        },
+        {
+            "score": 0.5795494914054871,
+            "question": "What year was the film 'The Golden Bullet' released?"
+        },
+        {
+            "score": 0.571369469165802,
+            "question": "Was 'The Golden Bullet' a successful film?"
+        },
+        {
+            "score": 0.5384394526481628,
+            "question": "Who starred in the film 'The Golden Bullet'?"
+        },
+        {
+            "score": 0.533430278301239,
+            "question": "Is 'The Golden Bullet' a foreign film?"
+        },
+        {
+            "score": 0.4542880058288574,
+            "question": "Where was 'The Golden Bullet' filmed?"
+        },
+        {
+            "score": 0.40425869822502136,
+            "question": "What is the main theme of 'The Golden Bullet'?"
+        },
+        {
+            "score": 0.3326200246810913,
+            "question": "How is 'The Golden Bullet' viewed by film critics today?"
+        },
+        {
+            "score": 0.2807060480117798,
+            "question": "What were Harry Carey's other notable roles?"
+        },
+        {
+            "score": 0.16669920086860657,
+            "question": "What are some common elements found in Western films?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The abstract of The Golden Bullet (1917 film) states that it is a 1917 American Western film featuring Harry Carey.",
+            "html": "dbpedia_6814_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What were Harry Carey's other notable roles?",
+            "html": "dbpedia_6814_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How is 'The Golden Bullet' viewed by film critics today?",
+            "html": "dbpedia_6814_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the main theme of 'The Golden Bullet'?",
+            "html": "dbpedia_6814_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6814_1.txt"
+        },
+        {
+            "file_id": "dbpedia_6814_11.txt"
+        },
+        {
+            "file_id": "dbpedia_6814_15.txt"
+        },
+        {
+            "file_id": "dbpedia_6814_19.txt"
+        },
+        {
+            "file_id": "dbpedia_6814_35.txt"
+        },
+        {
+            "file_id": "dbpedia_6814_4.txt"
+        },
+        {
+            "file_id": "dbpedia_6814_52.txt"
+        },
+        {
+            "file_id": "dbpedia_6814_54.txt"
+        },
+        {
+            "file_id": "dbpedia_6814_56.txt"
+        },
+        {
+            "file_id": "dbpedia_6814_62.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of whether the information in the documents supports the triple:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nThe reason for this answer is that the document at file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6814/re-ranker-msmarco/1.txt states that The Golden Bullet (1917 film) was a Silent Film directed by Fred Kelsey, not an American Western film featuring Harry Carey."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: None of the provided documents contain information about The Golden Bullet (1917 film) stating that it is an American Western film featuring Harry Carey. The only relevant document mentions it as a Silent Film - Western Film directed by Fred Kelsey, but does not provide any details on its cast or origin."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The provided context information does not specify the director, cast, or genre of The Golden Bullet (1917 film), making it impossible to conclusively state that it is an American Western featuring Harry Carey.",
+            "category": 3
+        },
+        "gemma2": {
+            "reason": "There is no mention of Harry Carey being in the film in the provided context.",
+            "category": 3
+        },
+        "llama3.1": {
+            "reason": "There is no mention of Harry Carey being involved with The Golden Bullet (1917 film) in the provided context information.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "The context information provided does not mention Harry Carey as an actor in the 1917 film. It only states that \"The Golden Bullet (1917) was a Silent Films - Western Film directed by Fred Kelsey,\" without providing any details about the cast.",
+            "category": 3
+        }
+    }
+}

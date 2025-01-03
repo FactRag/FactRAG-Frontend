@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Cercospora_apii",
+    "predicate": "ontology/class",
+    "object": "resource/Dothideomycetes",
+    "human_readable": "Cercospora apii belongs to the class Dothideomycetes.",
+    "questions": [
+        {
+            "score": 0.9870763421058655,
+            "question": "Is Cercospora apii a member of the Dothideomycetes class?"
+        },
+        {
+            "score": 0.9677706360816956,
+            "question": "To which class does Cercospora apii belong?"
+        },
+        {
+            "score": 0.900706946849823,
+            "question": "Name the fungal class that includes Cercospora apii."
+        },
+        {
+            "score": 0.8756370544433594,
+            "question": "What class of fungi does Cercospora apii belong to?"
+        },
+        {
+            "score": 0.8122438192367554,
+            "question": "Which fungal class encompasses Cercospora apii?"
+        },
+        {
+            "score": 0.7997848391532898,
+            "question": "What is the taxonomic classification of Cercospora apii?"
+        },
+        {
+            "score": 0.7793425917625427,
+            "question": "Can you provide the fungal class of Cercospora apii?"
+        },
+        {
+            "score": 0.7705742120742798,
+            "question": "Cercospora apii is classified under which fungal group?"
+        },
+        {
+            "score": 0.7180489897727966,
+            "question": "What is the scientific classification of Cercospora apii at the class level?"
+        },
+        {
+            "score": 0.6146894097328186,
+            "question": "Give an example of a fungus belonging to the Dothideomycetes class."
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Cercospora apii belongs to the class Dothideomycetes.",
+            "html": "dbpedia_192_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the scientific classification of Cercospora apii at the class level?",
+            "html": "dbpedia_192_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Cercospora apii is classified under which fungal group?",
+            "html": "dbpedia_192_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you provide the fungal class of Cercospora apii?",
+            "html": "dbpedia_192_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_192_1.txt"
+        },
+        {
+            "file_id": "dbpedia_192_2.txt"
+        },
+        {
+            "file_id": "dbpedia_192_28.txt"
+        },
+        {
+            "file_id": "dbpedia_192_38.txt"
+        },
+        {
+            "file_id": "dbpedia_192_47.txt"
+        },
+        {
+            "file_id": "dbpedia_192_49.txt"
+        },
+        {
+            "file_id": "dbpedia_192_53.txt"
+        },
+        {
+            "file_id": "dbpedia_192_55.txt"
+        },
+        {
+            "file_id": "dbpedia_192_6.txt"
+        },
+        {
+            "file_id": "dbpedia_192_8.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple:\n\n`{ \"output\": \"no\" }`\n\nThe reason for this answer is that there is no mention of a class called Dothideomycetes in any of the provided documents. The document mentions the genus Cercospora, but not its classification within a specific class."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information that supports this statement. Specifically, one of the documents details the classification within the Dothideomycetes class for Cercospora species, including Cercospora apii."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{\"output\": \"yes\"}\n\nThe provided documents mention that Cercospora is a genus of hyphomycetes and discuss species such as Cercospora apii in relation to other fungi. Given the context from the first document about the class Dothideomycetes, which includes a broad range of fungal taxa including those belonging to genera like Cercospora, it can be inferred that Cercospora apii belongs to the class Dothideomycetes."
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Context information states that Dothideomycetes is a class of fungi characterized by bitunicate asci with fissitunicate dehiscence and includes diverse groups like endophytes, epiphytes, saprobes, pathogens, lichens, etc. While the text discusses Cercospora species which are hyphomycetes, it doesn't mention their classification within Dothideomycetes or any connection between them.",
+            "category": -1
+        },
+        "llama3.1": {
+            "reason": "Cercospora apii belongs to the genus Cercospora which was not mentioned in the context information as being part of the class Dothideomycetes.",
+            "category": -1
+        }
+    }
+}

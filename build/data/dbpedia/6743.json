@@ -1,0 +1,97 @@
+{
+    "subject": "resource/Brooks_School",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "Brooks School",
+    "human_readable": "The label of Brooks School is Brooks School.",
+    "questions": [
+        {
+            "score": 0.9792216420173645,
+            "question": "What is the label of Brooks School?"
+        },
+        {
+            "score": 0.9471721053123474,
+            "question": "Is Brooks School a school?"
+        },
+        {
+            "score": 0.8282214403152466,
+            "question": "What type of institution is Brooks School?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The label of Brooks School is Brooks School.",
+            "html": "dbpedia_6743_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Brooks School a school?",
+            "html": "dbpedia_6743_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the label of Brooks School?",
+            "html": "dbpedia_6743_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6743_105.txt"
+        },
+        {
+            "file_id": "dbpedia_6743_111.txt"
+        },
+        {
+            "file_id": "dbpedia_6743_115.txt"
+        },
+        {
+            "file_id": "dbpedia_6743_13.txt"
+        },
+        {
+            "file_id": "dbpedia_6743_26.txt"
+        },
+        {
+            "file_id": "dbpedia_6743_30.txt"
+        },
+        {
+            "file_id": "dbpedia_6743_59.txt"
+        },
+        {
+            "file_id": "dbpedia_6743_65.txt"
+        },
+        {
+            "file_id": "dbpedia_6743_7.txt"
+        },
+        {
+            "file_id": "dbpedia_6743_78.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me explain how I arrived at the answer:\n\nThe document states:  \"Brooks School is a distinguished educational institution...\" and \"Brooks School provides an environment that fosters passion for learning...\" \n\nTherefore, the label of Brooks School *is* indeed Brooks School."
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here's the evaluation:\n\nThe triple to be evaluated is: \"The label of Brooks School is Brooks School.\"\n\nUpon reviewing the context information, we can see that there are multiple documents related to Brooks School, but they all consistently refer to it as \"Brooks School\". There is no variation in the name used across different documents.\n\nTherefore, the answer is:\n\n`{'output': 'yes'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe information provided in the documents supports that \"Brooks School\" is indeed labeled as \"Brooks School\", even though it provides additional details about the school."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

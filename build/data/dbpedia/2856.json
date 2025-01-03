@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Emil_Sick",
+    "predicate": "ontology/restingPlace",
+    "object": "resource/King_County,_Washington",
+    "human_readable": "Emil Sick's resting place is King County, Washington.",
+    "questions": [
+        {
+            "score": 0.9331445097923279,
+            "question": "Which county holds Emil Sick's resting place?"
+        },
+        {
+            "score": 0.780142605304718,
+            "question": "In which location does Emil Sick's resting place reside?"
+        },
+        {
+            "score": 0.7684122920036316,
+            "question": "Where was Emil Sick laid to rest?"
+        },
+        {
+            "score": 0.6706825494766235,
+            "question": "Is Emil Sick buried in Washington?"
+        },
+        {
+            "score": 0.6147300601005554,
+            "question": "Can you identify the final resting place of Emil Sick?"
+        },
+        {
+            "score": 0.5033625960350037,
+            "question": "What state is King County in?"
+        },
+        {
+            "score": 0.4417062997817993,
+            "question": "What is the burial location of Emil Sick?"
+        },
+        {
+            "score": 0.44158992171287537,
+            "question": "Where is Emil Sick buried?"
+        },
+        {
+            "score": 0.417187362909317,
+            "question": "Who is buried in King County, Washington?"
+        },
+        {
+            "score": 0.3401777148246765,
+            "question": "In what region is Emil Sick buried?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Emil Sick's resting place is King County, Washington.",
+            "html": "dbpedia_2856_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is buried in King County, Washington?",
+            "html": "dbpedia_2856_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where is Emil Sick buried?",
+            "html": "dbpedia_2856_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the burial location of Emil Sick?",
+            "html": "dbpedia_2856_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2856_108.txt"
+        },
+        {
+            "file_id": "dbpedia_2856_119.txt"
+        },
+        {
+            "file_id": "dbpedia_2856_120.txt"
+        },
+        {
+            "file_id": "dbpedia_2856_134.txt"
+        },
+        {
+            "file_id": "dbpedia_2856_22.txt"
+        },
+        {
+            "file_id": "dbpedia_2856_36.txt"
+        },
+        {
+            "file_id": "dbpedia_2856_62.txt"
+        },
+        {
+            "file_id": "dbpedia_2856_74.txt"
+        },
+        {
+            "file_id": "dbpedia_2856_81.txt"
+        },
+        {
+            "file_id": "dbpedia_2856_90.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "After analyzing the context information provided, I can evaluate whether the triple \"Emil Sick's resting place is King County, Washington\" is correct.\n\nThe relevant document for this query is:\n\nfile_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2856/re-ranker-msmarco/22.txt\n\nThis document mentions that Emil Sick managed his brewing empire out of Lethbridge, Alberta, and later expanded to the U.S. market with breweries in Montana, Washington state (Spokane and Seattle), and Oregon.\n\nHowever, there is no mention of King County, Washington being related to Emil Sick's resting place or death. The only other document that might be relevant is:\n\nfile_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2856/re-ranker-msmarco/134.txt\n\nThis document mentions the death of Emil Lauf (not Emil Sick), who was laid to rest in North Dakota Veteran\u2019s Cemetery, Mandan, ND.\n\nGiven this information, I can conclude that the triple \"Emil Sick's resting place is King County, Washington\" is not supported by the documents provided.\n\nTherefore, my answer is:\n\n{'output': 'no'}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The provided documents do not contain any information about Emil Sick's resting place. The closest related content discusses his burial in Meridian, Mississippi, but does not specify the location as King County, Washington."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n      \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Emil Sick's resting place is not mentioned or indicated to be King County, Washington in the provided context information.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Emil Sick and his father managed their brewing empire out of Lethbridge, Alberta, and expanded into the U.S. market. They first bought breweries in Montana, then Washington state with Spokane and Seattle.  Their presence was also in Oregon . They did not mention King County, Washington as a place where they had business or resided.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because Emil Sick's resting place is actually North Dakota Veteran's Cemetery, Mandan, ND, not King County, Washington.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information mentions that Washington's first case of Candida auris was identified at Kindred Hospital Seattle First Hill, but there is no mention of Emil Sick's resting place. Additionally, the only burial details provided are for King Mitchell in Meridian, Mississippi, and Emil Mitchell in North Dakota. There is no information suggesting Emil Sick's final resting place is in King County, Washington.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Michael_Caine",
+    "predicate": "ontology/birthPlace",
+    "object": "resource/England",
+    "human_readable": "Michael Caine was born in England.",
+    "questions": [
+        {
+            "score": 0.8471168875694275,
+            "question": "Where was Michael Caine born?"
+        },
+        {
+            "score": 0.6993923187255859,
+            "question": "Has Michael Caine ever lived outside of England?"
+        },
+        {
+            "score": 0.691210925579071,
+            "question": "What country is associated with Michael Caine's birth?"
+        },
+        {
+            "score": 0.6813631653785706,
+            "question": "Is Michael Caine British?"
+        },
+        {
+            "score": 0.5175158381462097,
+            "question": "What is the significance of Michael Caine's birthplace?"
+        },
+        {
+            "score": 0.4320911765098572,
+            "question": "What is Michael Caine known for?"
+        },
+        {
+            "score": 0.34951403737068176,
+            "question": "Are there any famous actors from England besides Michael Caine?"
+        },
+        {
+            "score": 0.2634281516075134,
+            "question": "Can you tell me about Michael Caine's early life?"
+        },
+        {
+            "score": 0.12995801866054535,
+            "question": "Has Michael Caine won any awards for his acting?"
+        },
+        {
+            "score": 0.09112302958965302,
+            "question": "What are some of Michael Caine's most popular films?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Michael Caine was born in England.",
+            "html": "dbpedia_8669_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Has Michael Caine won any awards for his acting?",
+            "html": "dbpedia_8669_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me about Michael Caine's early life?",
+            "html": "dbpedia_8669_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any famous actors from England besides Michael Caine?",
+            "html": "dbpedia_8669_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8669_12.txt"
+        },
+        {
+            "file_id": "dbpedia_8669_17.txt"
+        },
+        {
+            "file_id": "dbpedia_8669_2.txt"
+        },
+        {
+            "file_id": "dbpedia_8669_31.txt"
+        },
+        {
+            "file_id": "dbpedia_8669_36.txt"
+        },
+        {
+            "file_id": "dbpedia_8669_46.txt"
+        },
+        {
+            "file_id": "dbpedia_8669_48.txt"
+        },
+        {
+            "file_id": "dbpedia_8669_50.txt"
+        },
+        {
+            "file_id": "dbpedia_8669_56.txt"
+        },
+        {
+            "file_id": "dbpedia_8669_6.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple:\n\n{\n  \"output\": \"no\"\n}\n\nExplanation:\nThe documents provide multiple birthplaces for Michael Caine, including Rotherhithe, London (according to files 6 and 45) and Bermondsey, South London (according to file 43). While some sources mention England as his place of birth, the specific location is not consistently reported across all documents. Therefore, it cannot be definitively stated that Michael Caine was born in England based on this information."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents support that Sir Michael Caine was born in England. Multiple sources mention his birthplace as London, which is part of England."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "All provided sources consistently state that Michael Caine was born in London, England.",
+            "category": 2
+        }
+    }
+}

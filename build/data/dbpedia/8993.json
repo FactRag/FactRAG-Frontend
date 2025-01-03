@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Summitville,_New_York",
+    "predicate": "property/coordinatesDisplay",
+    "object": "inline,title",
+    "human_readable": "The coordinates display of Summitville, New York is inline, title.",
+    "questions": [
+        {
+            "score": 0.9763649106025696,
+            "question": "What is displayed inline for Summitville, New York?"
+        },
+        {
+            "score": 0.9548288583755493,
+            "question": "Can you find the coordinates for Summitville, New York?"
+        },
+        {
+            "score": 0.9532071352005005,
+            "question": "What type of display shows the coordinates for Summitville, New York?"
+        },
+        {
+            "score": 0.9494763016700745,
+            "question": "Is there a specific format used to display the title for Summitville, New York?"
+        },
+        {
+            "score": 0.9447123408317566,
+            "question": "Is the information about Summitville, New York displayed inline or separately?"
+        },
+        {
+            "score": 0.943125307559967,
+            "question": "What is the relationship between the title and the coordinates display for Summitville, New York?"
+        },
+        {
+            "score": 0.9398944973945618,
+            "question": "What additional information could be displayed alongside the coordinates and title for Summitville, New York?"
+        },
+        {
+            "score": 0.9299185872077942,
+            "question": "Where is the title found for Summitville, New York?"
+        },
+        {
+            "score": 0.7409300208091736,
+            "question": "What is the purpose of displaying information about Summitville, New York?"
+        },
+        {
+            "score": 0.7072195410728455,
+            "question": "How might the display of information for Summitville, New York be improved?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The coordinates display of Summitville, New York is inline, title.",
+            "html": "dbpedia_8993_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the purpose of displaying information about Summitville, New York?",
+            "html": "dbpedia_8993_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where is the title found for Summitville, New York?",
+            "html": "dbpedia_8993_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What additional information could be displayed alongside the coordinates and title for Summitville, New York?",
+            "html": "dbpedia_8993_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8993_13.txt"
+        },
+        {
+            "file_id": "dbpedia_8993_19.txt"
+        },
+        {
+            "file_id": "dbpedia_8993_20.txt"
+        },
+        {
+            "file_id": "dbpedia_8993_21.txt"
+        },
+        {
+            "file_id": "dbpedia_8993_26.txt"
+        },
+        {
+            "file_id": "dbpedia_8993_35.txt"
+        },
+        {
+            "file_id": "dbpedia_8993_37.txt"
+        },
+        {
+            "file_id": "dbpedia_8993_4.txt"
+        },
+        {
+            "file_id": "dbpedia_8993_5.txt"
+        },
+        {
+            "file_id": "dbpedia_8993_8.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n\n\nThe text describes the coordinates of Summitville but doesn't mention them being displayed inline or in a title.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here's the response:\n\n{\n    \"output\": \"yes\"\n}\n\nThe information in the documents supports the triple. According to the documents, Summitville has a geographical location in Sullivan County, New York, United States (see file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8993/re-ranker-msmarco/24.txt)."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The provided documents do not contain any information about the geographical coordinate display or its title for Summitville, New York. Therefore, we cannot confirm the given statement as correct based on the available context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {'output': 'yes'}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{\"output\": \"yes\"}\n\nThe documents provide the geographical coordinates for Summitville as \"41\u00b0 37' 17\" North, 74\u00b0 27' 4\" West\", which can be displayed in an inline format with a title that includes these values. Therefore, the statement about the display of Summitville's coordinates is correct according to the provided context."
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The context provides the coordinates for Summitville, New York but does not mention any title associated with those coordinates.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "There are multiple entries for Summitville in the provided context information with different geographical coordinates, suggesting that the title \"Summitville\" might be referring to a location in Lee County (which has a different set of coordinates) rather than Sullivan County where most other references point.",
+            "category": 2
+        }
+    }
+}

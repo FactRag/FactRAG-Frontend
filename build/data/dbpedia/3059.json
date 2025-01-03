@@ -1,0 +1,109 @@
+{
+    "subject": "resource/Compelled",
+    "predicate": "ontology/starring",
+    "object": "resource/Ronald_Howard_(British_actor)",
+    "human_readable": "Ronald Howard stars in Compelled.",
+    "questions": [
+        {
+            "score": 0.9606531858444214,
+            "question": "What role did Ronald Howard play in Compelled?"
+        },
+        {
+            "score": 0.7305373549461365,
+            "question": "What is the name of the movie that Ronald Howard starred in?"
+        },
+        {
+            "score": 0.6990553140640259,
+            "question": "Who starred in the movie Compelled?"
+        },
+        {
+            "score": 0.5725845694541931,
+            "question": "Is Ronald Howard known for acting?"
+        },
+        {
+            "score": 0.5543717741966248,
+            "question": "Are there any other movies starring Ronald Howard?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Ronald Howard stars in Compelled.",
+            "html": "dbpedia_3059_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Ronald Howard known for acting?",
+            "html": "dbpedia_3059_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who starred in the movie Compelled?",
+            "html": "dbpedia_3059_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of the movie that Ronald Howard starred in?",
+            "html": "dbpedia_3059_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3059_108.txt"
+        },
+        {
+            "file_id": "dbpedia_3059_126.txt"
+        },
+        {
+            "file_id": "dbpedia_3059_132.txt"
+        },
+        {
+            "file_id": "dbpedia_3059_14.txt"
+        },
+        {
+            "file_id": "dbpedia_3059_15.txt"
+        },
+        {
+            "file_id": "dbpedia_3059_20.txt"
+        },
+        {
+            "file_id": "dbpedia_3059_45.txt"
+        },
+        {
+            "file_id": "dbpedia_3059_47.txt"
+        },
+        {
+            "file_id": "dbpedia_3059_66.txt"
+        },
+        {
+            "file_id": "dbpedia_3059_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "The triple to evaluate is:\n\nRonald Howard stars in Compelled.\n\nLet's analyze the documents:\n\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3059/re-ranker-msmarco/20.txt, it mentions \"An ex-con (Ronald Howard) is forced to participate in a robbery.\" This suggests that Ronald Howard was involved in the film Compelled.\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3059/re-ranker-msmarco/46.txt, it mentions \"Compelled - Original Vintage Film Poster\" and lists Ronald Howard as one of the stars.\n\nBased on this analysis, the answer is:\n\n{'output': 'yes'}\n\nThis indicates that the triple \"Ronald Howard stars in Compelled.\" is supported by the documents."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents mention that Ronald Howard appeared in the film \"Compelled,\" which was released in 1960. Therefore, the triple stating that Ronald Howard stars in \"Compelled\" is supported by the provided information."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

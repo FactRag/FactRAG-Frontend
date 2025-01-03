@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Derby",
+    "predicate": "property/southeast",
+    "object": "resource/Kegworth",
+    "human_readable": "Derby is located in the southeast.",
+    "questions": [
+        {
+            "score": 0.941999077796936,
+            "question": "Give an example of a city located southeast of Derby."
+        },
+        {
+            "score": 0.858941912651062,
+            "question": "Where is Derby located?"
+        },
+        {
+            "score": 0.7789628505706787,
+            "question": "Is Derby found in a northern or southern region?"
+        },
+        {
+            "score": 0.686467170715332,
+            "question": "Can you describe the geographical location of Derby?"
+        },
+        {
+            "score": 0.6422870755195618,
+            "question": "What direction is Derby situated in?"
+        },
+        {
+            "score": 0.3159721791744232,
+            "question": "Are there any major cities or landmarks near Derby?"
+        },
+        {
+            "score": 0.3103761076927185,
+            "question": "Would you say Derby is close to the coast?"
+        },
+        {
+            "score": 0.22829081118106842,
+            "question": "What are some characteristics of a region in the southeast?"
+        },
+        {
+            "score": 0.2158004194498062,
+            "question": "What part of England is Derby in?"
+        },
+        {
+            "score": 0.13517865538597107,
+            "question": "If you were traveling from Derby, which direction would you go to reach London?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Derby is located in the southeast.",
+            "html": "dbpedia_5917_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What part of England is Derby in?",
+            "html": "dbpedia_5917_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some characteristics of a region in the southeast?",
+            "html": "dbpedia_5917_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Would you say Derby is close to the coast?",
+            "html": "dbpedia_5917_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5917_10.txt"
+        },
+        {
+            "file_id": "dbpedia_5917_124.txt"
+        },
+        {
+            "file_id": "dbpedia_5917_142.txt"
+        },
+        {
+            "file_id": "dbpedia_5917_154.txt"
+        },
+        {
+            "file_id": "dbpedia_5917_26.txt"
+        },
+        {
+            "file_id": "dbpedia_5917_33.txt"
+        },
+        {
+            "file_id": "dbpedia_5917_35.txt"
+        },
+        {
+            "file_id": "dbpedia_5917_42.txt"
+        },
+        {
+            "file_id": "dbpedia_5917_60.txt"
+        },
+        {
+            "file_id": "dbpedia_5917_69.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the structured JSON format for the query:\n\n{\n  \"output\": \"no\"\n}\n\nExplanation: The documents provide information about a city called Derby, but they do not mention its location as being in the southeast. In fact, one document states that Derby is located in the county of Derbyshire, East Midlands, seven miles south of the town of Belper, which suggests that it is more likely to be in the northwest or southwest rather than the southeast."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe documents indicate that Derby is located in the county of Derbyshire, East Midlands, and not specifically in the southeast. Therefore, the statement \"Derby is located in the southeast\" is incorrect according to the given context."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Derby is located in the south of Derbyshire, not the southeast.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "The context states Derby is located in the county of Derbyshire, East Midlands, seven miles south of Belper, and 113 miles north-west of London. This indicates a location northwest of major cities, not southeast.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The information provided explicitly states that Derby is located 7 miles south of Belper, 113 miles north-west of London, and within the county of Derbyshire, which suggests a northern or central location in England, not southeast. Additionally, statement 3 mentions that Derby is surrounded by the shire county of Derbyshire, implying a more northerly position than southeast.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Derby is located in the county of Derbyshire, East Midlands, not in the southeast.",
+            "category": 2
+        }
+    }
+}

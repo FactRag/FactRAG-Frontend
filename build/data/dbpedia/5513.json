@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Diocese_of_Shirak",
+    "predicate": "ontology/territory",
+    "object": "resource/Shirak_Province",
+    "human_readable": "The territory of Diocese of Shirak is Shirak Province.",
+    "questions": [
+        {
+            "score": 0.9846318960189819,
+            "question": "What province encompasses the territory of the Diocese of Shirak?"
+        },
+        {
+            "score": 0.982276976108551,
+            "question": "Is the Diocese of Shirak situated within a province?"
+        },
+        {
+            "score": 0.9819183349609375,
+            "question": "Which province is associated with the Diocese of Shirak?"
+        },
+        {
+            "score": 0.9770997166633606,
+            "question": "Is there a specific province associated with the Diocese of Shirak?"
+        },
+        {
+            "score": 0.9654181599617004,
+            "question": "What is the name of the province that includes the Diocese of Shirak?"
+        },
+        {
+            "score": 0.944499135017395,
+            "question": "Can you identify the territory that belongs to the Diocese of Shirak?"
+        },
+        {
+            "score": 0.9225261807441711,
+            "question": "Where is the Diocese of Shirak located?"
+        },
+        {
+            "score": 0.9103110432624817,
+            "question": "Does the Diocese of Shirak cover multiple provinces?"
+        },
+        {
+            "score": 0.8700289726257324,
+            "question": "What geographical region encompasses the Diocese of Shirak?"
+        },
+        {
+            "score": 0.7115519046783447,
+            "question": "What administrative division contains the Diocese of Shirak?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The territory of Diocese of Shirak is Shirak Province.",
+            "html": "dbpedia_5513_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What geographical region encompasses the Diocese of Shirak?",
+            "html": "dbpedia_5513_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does the Diocese of Shirak cover multiple provinces?",
+            "html": "dbpedia_5513_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where is the Diocese of Shirak located?",
+            "html": "dbpedia_5513_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5513_1.txt"
+        },
+        {
+            "file_id": "dbpedia_5513_11.txt"
+        },
+        {
+            "file_id": "dbpedia_5513_15.txt"
+        },
+        {
+            "file_id": "dbpedia_5513_27.txt"
+        },
+        {
+            "file_id": "dbpedia_5513_31.txt"
+        },
+        {
+            "file_id": "dbpedia_5513_42.txt"
+        },
+        {
+            "file_id": "dbpedia_5513_43.txt"
+        },
+        {
+            "file_id": "dbpedia_5513_47.txt"
+        },
+        {
+            "file_id": "dbpedia_5513_59.txt"
+        },
+        {
+            "file_id": "dbpedia_5513_77.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "To evaluate the triple, I'll need to identify the subject (Diocese of Shirak), the relationship (is located in), and the object (Shirak Province) and check if the information in the documents supports this triple.\n\nFrom the documents, I can see that:\n\n* Diocese of Shirak is mentioned as covering the northern, central, and south-western parts of the Shirak Province.\n* The city of Gyumri is mentioned as the seat of the Diocese of Shirak.\n* The text does not explicitly state that the territory of the Diocese of Shirak is only limited to Shirak Province.\n\nHowever, based on the context provided by the first document:\n\"covering the northern, central and south-western parts of the Shirak Province\"\n\nI would say that the triple \"The territory of Diocese of Shirak is Shirak Province\" is actually not entirely accurate. The Diocese covers a significant portion of the province but not all of it.\n\nSo, my answer in JSON format:\n```json\n{\n  \"output\": \"no\"\n}\n```\nThis indicates that the information in the documents does not support the triple being correct."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information that supports the statement \"The territory of Diocese of Shirak is Shirak Province.\" Specifically, it states, \"Diocese of Shirak (Armenian: \u0547\u056b\u0580\u0561\u056f\u056b \u0569\u0565\u0574 Shiraki t'em), is one of the dioceses of the Armenian Apostolic Church covering the northern, central and south-western parts of the Shirak Province of Armenia.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n    \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The claim is wrong because the Diocese of Artik has been established out of the Shirak Diocese, which covers only 4/5th of the Shirak Province. The south-eastern town of Artik and its surrounding villages are excluded from the Diocese of Shirak.",
+            "category": 2
+        }
+    }
+}

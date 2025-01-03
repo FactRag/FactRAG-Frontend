@@ -1,0 +1,144 @@
+{
+    "subject": "Kenneth_Branagh",
+    "predicate": "isMarriedTo",
+    "object": "Emma_Thompson",
+    "human_readable": "Kenneth Branagh is married to Emma Thompson.",
+    "questions": [
+        {
+            "score": 0.9884185194969177,
+            "question": "Is Emma Thompson married to Kenneth Branagh?"
+        },
+        {
+            "score": 0.9080720543861389,
+            "question": "Who is Kenneth Branagh married to?"
+        },
+        {
+            "score": 0.8889252543449402,
+            "question": "What is the relationship between Kenneth Branagh and Emma Thompson?"
+        },
+        {
+            "score": 0.5416051745414734,
+            "question": "Have Kenneth Branagh and Emma Thompson worked together in any films?"
+        },
+        {
+            "score": 0.29241201281547546,
+            "question": "What is Kenneth Branagh's nationality?"
+        },
+        {
+            "score": 0.2774844765663147,
+            "question": "Who are some famous actors who have worked with Kenneth Branagh?"
+        },
+        {
+            "score": 0.19212685525417328,
+            "question": "What type of roles is Emma Thompson known for playing?"
+        },
+        {
+            "score": 0.17996609210968018,
+            "question": "What are some notable works by Kenneth Branagh as a director?"
+        },
+        {
+            "score": 0.16927671432495117,
+            "question": "Has Emma Thompson written any screenplays?"
+        },
+        {
+            "score": 0.14571352303028107,
+            "question": "Has Emma Thompson won any Academy Awards?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Kenneth Branagh is married to Emma Thompson.",
+            "html": "yago_1512_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Has Emma Thompson written any screenplays?",
+            "html": "yago_1512_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some notable works by Kenneth Branagh as a director?",
+            "html": "yago_1512_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of roles is Emma Thompson known for playing?",
+            "html": "yago_1512_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "yago_1512_14.txt"
+        },
+        {
+            "file_id": "yago_1512_23.txt"
+        },
+        {
+            "file_id": "yago_1512_25.txt"
+        },
+        {
+            "file_id": "yago_1512_4.txt"
+        },
+        {
+            "file_id": "yago_1512_41.txt"
+        },
+        {
+            "file_id": "yago_1512_43.txt"
+        },
+        {
+            "file_id": "yago_1512_48.txt"
+        },
+        {
+            "file_id": "yago_1512_6.txt"
+        },
+        {
+            "file_id": "yago_1512_89.txt"
+        },
+        {
+            "file_id": "yago_1512_98.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "After analyzing the provided context information, I found that:\n\n* File_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/yago_1512/re-ranker-msmarco/41.txt mentions Emma Thompson and Kenneth Branagh were married from 1989 to 1995.\n* Other file paths (40, 88, 103, and 79) also mention their marriage, but the focus is on the end of their marriage due to infidelity.\n\nGiven this information, I can confirm that:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe triple \"Kenneth Branagh is married to Emma Thompson\" is supported by the documents."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe documents clearly indicate that Emma Thompson and Kenneth Branagh were married from 1989 to 1995 but they are no longer married. Therefore, the statement \"Kenneth Branagh is married to Emma Thompson\" is incorrect according to the provided context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n    \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "mistral-nemo": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Multiple sources state their marriage ended in 1995.",
+            "category": 0
+        },
+        "qwen2.5": {
+            "reason": "Emma Thompson and Kenneth Branagh were divorced by 1995, as mentioned in multiple sources indicating their marriage lasted from 1989 to 1995 and ended after Branagh's affair with Helena Bonham Carter.",
+            "category": 0
+        }
+    }
+}

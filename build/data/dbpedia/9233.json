@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Summitville,_New_York",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:Hamlets_in_New_York",
+    "human_readable": "Summitville, New York is about Hamlets in New York.",
+    "questions": [
+        {
+            "score": 0.9791298508644104,
+            "question": "What is the relationship between Summitville, New York and Hamlets in New York?"
+        },
+        {
+            "score": 0.9456014037132263,
+            "question": "How is Summitville different from other Hamlets in New York?"
+        },
+        {
+            "score": 0.9019186496734619,
+            "question": "Can you provide examples of other Hamlets in New York besides Summitville?"
+        },
+        {
+            "score": 0.7315230965614319,
+            "question": "Can you tell me more about Hamlets in New York?"
+        },
+        {
+            "score": 0.6987941265106201,
+            "question": "Where is Summitville located?"
+        },
+        {
+            "score": 0.6924685835838318,
+            "question": "Are there any other locations similar to Summitville in New York?"
+        },
+        {
+            "score": 0.6069211363792419,
+            "question": "Are there any notable features of Summitville?"
+        },
+        {
+            "score": 0.32819750905036926,
+            "question": "What kind of information can you find about Hamlets in general?"
+        },
+        {
+            "score": 0.11507602781057358,
+            "question": "What makes a location a Hamlet in New York?"
+        },
+        {
+            "score": 0.020363472402095795,
+            "question": "Is there a connection between the size of a Hamlet and its population?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Summitville, New York is about Hamlets in New York.",
+            "html": "dbpedia_9233_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What makes a location a Hamlet in New York?",
+            "html": "dbpedia_9233_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What kind of information can you find about Hamlets in general?",
+            "html": "dbpedia_9233_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any notable features of Summitville?",
+            "html": "dbpedia_9233_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_9233_13.txt"
+        },
+        {
+            "file_id": "dbpedia_9233_16.txt"
+        },
+        {
+            "file_id": "dbpedia_9233_28.txt"
+        },
+        {
+            "file_id": "dbpedia_9233_3.txt"
+        },
+        {
+            "file_id": "dbpedia_9233_30.txt"
+        },
+        {
+            "file_id": "dbpedia_9233_4.txt"
+        },
+        {
+            "file_id": "dbpedia_9233_41.txt"
+        },
+        {
+            "file_id": "dbpedia_9233_5.txt"
+        },
+        {
+            "file_id": "dbpedia_9233_6.txt"
+        },
+        {
+            "file_id": "dbpedia_9233_8.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have more triples to evaluate! \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide information that supports the statement \"Summitville, New York is about hamlets in New York.\" The texts describe Summitville as a small hamlet located in Sullivan County, New York, and mention other hamlets and towns in the area."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The majority of the provided context information focuses on describing Summitville as a hamlet, emphasizing its small size, rural setting, and lack of major transportation infrastructure (specifically mentioning that it's not connected by train), which seems to contradict the idea that Summitville, New York is about Hamlets in New York.",
+            "category": 2
+        }
+    }
+}

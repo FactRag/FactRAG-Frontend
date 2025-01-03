@@ -1,0 +1,142 @@
+{
+    "subject": "resource/List_of_counties_in_Texas",
+    "predicate": "property/name",
+    "object": "Burnet",
+    "human_readable": "The name of List of counties in Texas is Burnet.",
+    "questions": [
+        {
+            "score": 0.90962153673172,
+            "question": "Is Burnet a county in Texas?"
+        },
+        {
+            "score": 0.6612618565559387,
+            "question": "Can you give me the full list of counties in Texas?"
+        },
+        {
+            "score": 0.6292561888694763,
+            "question": "What are some examples of counties found in Texas?"
+        },
+        {
+            "score": 0.610309362411499,
+            "question": "What is the name of one county in Texas?"
+        },
+        {
+            "score": 0.5871192812919617,
+            "question": "Are there many counties in Texas?"
+        },
+        {
+            "score": 0.550430417060852,
+            "question": "What other information might be associated with a county like Burnet?"
+        },
+        {
+            "score": 0.4751167297363281,
+            "question": "Where is Burnet located?"
+        },
+        {
+            "score": 0.4562140107154846,
+            "question": "Can you name a county located in Texas?"
+        },
+        {
+            "score": 0.44628360867500305,
+            "question": "How many counties are there in Texas?"
+        },
+        {
+            "score": 0.0724821537733078,
+            "question": "What makes a county unique?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of List of counties in Texas is Burnet.",
+            "html": "dbpedia_175_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How many counties are there in Texas?",
+            "html": "dbpedia_175_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you name a county located in Texas?",
+            "html": "dbpedia_175_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where is Burnet located?",
+            "html": "dbpedia_175_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_175_115.txt"
+        },
+        {
+            "file_id": "dbpedia_175_25.txt"
+        },
+        {
+            "file_id": "dbpedia_175_30.txt"
+        },
+        {
+            "file_id": "dbpedia_175_34.txt"
+        },
+        {
+            "file_id": "dbpedia_175_44.txt"
+        },
+        {
+            "file_id": "dbpedia_175_65.txt"
+        },
+        {
+            "file_id": "dbpedia_175_67.txt"
+        },
+        {
+            "file_id": "dbpedia_175_79.txt"
+        },
+        {
+            "file_id": "dbpedia_175_82.txt"
+        },
+        {
+            "file_id": "dbpedia_175_86.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation:\n\n* Query: The name of List of counties in Texas is Burnet.\nResponse: \n\nContext information indicates that Burnet County is indeed a county in Texas, but it does not confirm that this is part of the \"List of counties in Texas\". However, since the query specifically asks for the name and we have confirmed that Burnet is a county in Texas, it can be considered correct.\n\nTherefore:\n\n{\n  \"output\": \"yes\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: The provided documents do not contain any information about the \"List of counties in Texas\" or specifically naming Burnet as a county. They primarily discuss various details about Burnet County, including its population, geography, and cities within it, but there is no direct statement naming the list of counties that includes Burnet."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "A county cannot be a list of counties. Burnet is a county, not a list of counties in Texas.",
+            "category": -1
+        },
+        "gemma2": {
+            "reason": "The provided text describes Burnet County, Texas, not a list of counties in Texas.  There is no mention of a list of counties in Texas within the context.",
+            "category": -1
+        },
+        "qwen2.5": {
+            "reason": "The provided context does not mention a \"List of counties in Texas\" named Burnet. Instead, the context discusses Burnet County, which is one of many counties in Texas. Counties in Texas are typically named after people or places and are administrative divisions within the state, but they do not form lists titled by their names.",
+            "category": -1
+        }
+    }
+}

@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Acid_Row",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "Acid Row",
+    "human_readable": "The label of Acid Row is Acid Row.",
+    "questions": [
+        {
+            "score": 0.9594786763191223,
+            "question": "What is the label of Acid Row?"
+        },
+        {
+            "score": 0.7276746034622192,
+            "question": "Why do you think someone would label something as 'Acid Row'?"
+        },
+        {
+            "score": 0.6917398571968079,
+            "question": "Where might we find something called 'Acid Row'?"
+        },
+        {
+            "score": 0.676145613193512,
+            "question": "Is 'Acid Row' a name or a description?"
+        },
+        {
+            "score": 0.6745814085006714,
+            "question": "What might the term 'Acid Row' refer to?"
+        },
+        {
+            "score": 0.6601318120956421,
+            "question": "Can you give me an example of a place that might be called 'Acid Row'?"
+        },
+        {
+            "score": 0.602226734161377,
+            "question": "What context could the term 'Acid Row' be used in?"
+        },
+        {
+            "score": 0.5821985006332397,
+            "question": "Is there anything else associated with 'Acid Row'?"
+        },
+        {
+            "score": 0.5179485082626343,
+            "question": "Could you tell me more about Acid Row?"
+        },
+        {
+            "score": 0.490189790725708,
+            "question": "What comes to mind when you hear the term 'Acid Row'?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The label of Acid Row is Acid Row.",
+            "html": "dbpedia_2183_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Could you tell me more about Acid Row?",
+            "html": "dbpedia_2183_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there anything else associated with 'Acid Row'?",
+            "html": "dbpedia_2183_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What context could the term 'Acid Row' be used in?",
+            "html": "dbpedia_2183_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2183_17.txt"
+        },
+        {
+            "file_id": "dbpedia_2183_27.txt"
+        },
+        {
+            "file_id": "dbpedia_2183_34.txt"
+        },
+        {
+            "file_id": "dbpedia_2183_38.txt"
+        },
+        {
+            "file_id": "dbpedia_2183_39.txt"
+        },
+        {
+            "file_id": "dbpedia_2183_48.txt"
+        },
+        {
+            "file_id": "dbpedia_2183_63.txt"
+        },
+        {
+            "file_id": "dbpedia_2183_7.txt"
+        },
+        {
+            "file_id": "dbpedia_2183_76.txt"
+        },
+        {
+            "file_id": "dbpedia_2183_85.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe documents describe Acid Row as a band, not a record label.  While they refer to themselves as an \"Acid cult\" this implies a devoted fanbase rather than a formal record label structure. \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the response in JSON format:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: According to the documents, Acid Row is indeed a band with that name, and one of their albums has the name \"Acid Row\" as well (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2183/re-ranker-msmarco/27.txt). Additionally, the documents mention Acid Row in various contexts, such as describing a crime-infested housing project and a band releasing an album. Therefore, the information supports the triple that \"The label of Acid Row is Acid Row.\""
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: The documents provided do not contain any information suggesting that \"Acid Row\" (the band) has a label named \"Acid Row.\" The documents discuss the band's history, members, and music releases but do not mention any record label."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{\"output\": \"no\"}\n\nThe documents provided do not contain any information that would suggest that the band Acid Row has a label named after them or that they are referred to as \"Acid Row\" in the context of a label. Instead, the documents discuss the band's music style, live performances, and background history, but there is no mention of an entity called \"The label of Acid Row.\""
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Multiple pieces of text describe Acid Row as a band (a musical group) rather than a record label.",
+            "category": 4
+        },
+        "qwen2.5": {
+            "reason": "The context provides information about a band named Acid Row, including their musical genre, members, and album details. There is no mention of an \"Acid Row\" label associated with the band. Instead, the band seems to be self-named and active in the Czech music scene.",
+            "category": 4
+        }
+    }
+}

@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Andrew_Sterett",
+    "predicate": "property/laterwork",
+    "object": "resource/United_States_Merchant_Marines",
+    "human_readable": "Andrew Sterett worked for United States Merchant Marines.",
+    "questions": [
+        {
+            "score": 0.9064369201660156,
+            "question": "Who worked for the United States Merchant Marines?"
+        },
+        {
+            "score": 0.809421718120575,
+            "question": "Was Andrew Sterett involved in maritime activities?"
+        },
+        {
+            "score": 0.7488318681716919,
+            "question": "What organization did Andrew Sterett work for?"
+        },
+        {
+            "score": 0.6626399159431458,
+            "question": "Did Andrew Sterett serve in the military?"
+        },
+        {
+            "score": 0.652684211730957,
+            "question": "What is the United States Merchant Marines known for?"
+        },
+        {
+            "score": 0.6053693294525146,
+            "question": "In what field did Andrew Sterett work?"
+        },
+        {
+            "score": 0.546009361743927,
+            "question": "What was Andrew Sterett's profession?"
+        },
+        {
+            "score": 0.5354102849960327,
+            "question": "What type of service did Andrew Sterett provide?"
+        },
+        {
+            "score": 0.42833471298217773,
+            "question": "Who might have been a colleague of Andrew Sterett's?"
+        },
+        {
+            "score": 0.4086519181728363,
+            "question": "Can you tell me about Andrew Sterett's work history?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Andrew Sterett worked for United States Merchant Marines.",
+            "html": "dbpedia_1876_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who might have been a colleague of Andrew Sterett's?",
+            "html": "dbpedia_1876_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of service did Andrew Sterett provide?",
+            "html": "dbpedia_1876_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What was Andrew Sterett's profession?",
+            "html": "dbpedia_1876_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1876_21.txt"
+        },
+        {
+            "file_id": "dbpedia_1876_28.txt"
+        },
+        {
+            "file_id": "dbpedia_1876_34.txt"
+        },
+        {
+            "file_id": "dbpedia_1876_42.txt"
+        },
+        {
+            "file_id": "dbpedia_1876_43.txt"
+        },
+        {
+            "file_id": "dbpedia_1876_6.txt"
+        },
+        {
+            "file_id": "dbpedia_1876_65.txt"
+        },
+        {
+            "file_id": "dbpedia_1876_86.txt"
+        },
+        {
+            "file_id": "dbpedia_1876_92.txt"
+        },
+        {
+            "file_id": "dbpedia_1876_98.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of whether the information in the documents supports the triple:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe reason for this answer is that the documents mention Andrew Sterett as an officer in the United States Navy, not the United States Merchant Marines. For example, from document `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1876/re-ranker-msmarco/97.txt`:\n\n\"Despite this, he resolved to join the Navy, and was commissioned as a lieutenant on 25 March 1798.\"\n\nThis information suggests that Andrew Sterett worked for the United States Navy, not the United States Merchant Marines."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: The provided documents consistently state that Andrew Sterett was an officer in the United States Navy, not the United States Merchant Marine. There is no information supporting his work with the Merchant Marines."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Andrew Sterett served in the United States Navy, not the Merchant Marines.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Multiple sources state he was a commissioned officer in the United States Navy.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The context information only mentions Andrew Sterett being an officer in the United States Navy, with no mention of him working for the United States Merchant Marines.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Andrew Sterett joined the United States Navy as a commissioned officer on 25 March 1798, not the United States Merchant Marine. His service was with the Navy throughout his career, including combat during the Quasi-War with France and in the Barbary Wars.",
+            "category": 2
+        }
+    }
+}

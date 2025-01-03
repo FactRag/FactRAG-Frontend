@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Mikouya",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "Mikouya",
+    "human_readable": "Mikouya is labeled as 'Mikouya'.",
+    "questions": [
+        {
+            "score": 0.8860170841217041,
+            "question": "What is Mikouya?"
+        },
+        {
+            "score": 0.8621515035629272,
+            "question": "Is there more information about Mikouya?"
+        },
+        {
+            "score": 0.8596514463424683,
+            "question": "What category does Mikouya belong to?"
+        },
+        {
+            "score": 0.8204150199890137,
+            "question": "Are there any other names for Mikouya?"
+        },
+        {
+            "score": 0.8078295588493347,
+            "question": "What are some related terms to Mikouya?"
+        },
+        {
+            "score": 0.7900356650352478,
+            "question": "What is the significance of the name 'Mikouya'?"
+        },
+        {
+            "score": 0.7728802561759949,
+            "question": "Is Mikouya a real place or a concept?"
+        },
+        {
+            "score": 0.7694603800773621,
+            "question": "Can you provide examples of where Mikouya appears?"
+        },
+        {
+            "score": 0.701213538646698,
+            "question": "How is Mikouya used or referenced in different contexts?"
+        },
+        {
+            "score": 0.6629152894020081,
+            "question": "Can you tell me anything else about Mikouya?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Mikouya is labeled as 'Mikouya'.",
+            "html": "dbpedia_6533_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How is Mikouya used or referenced in different contexts?",
+            "html": "dbpedia_6533_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you provide examples of where Mikouya appears?",
+            "html": "dbpedia_6533_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Mikouya a real place or a concept?",
+            "html": "dbpedia_6533_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6533_23.txt"
+        },
+        {
+            "file_id": "dbpedia_6533_24.txt"
+        },
+        {
+            "file_id": "dbpedia_6533_25.txt"
+        },
+        {
+            "file_id": "dbpedia_6533_29.txt"
+        },
+        {
+            "file_id": "dbpedia_6533_3.txt"
+        },
+        {
+            "file_id": "dbpedia_6533_32.txt"
+        },
+        {
+            "file_id": "dbpedia_6533_42.txt"
+        },
+        {
+            "file_id": "dbpedia_6533_65.txt"
+        },
+        {
+            "file_id": "dbpedia_6533_69.txt"
+        },
+        {
+            "file_id": "dbpedia_6533_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nThe text states \"Mikouya (Ogoou\u00e9-Lolo, Gabon)\" multiple times.  This clearly labels the entity \"Mikouya\"."
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation:\n\nThe triple to be evaluated is: \"Mikouya\" (entity) has label \"Mikouya\".\n\nFrom the documents, we can see that:\n\n* In file_path:/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6533/re-ranker-msmarco/65.txt, there is a mention of \"Okumura Mikoya\" which seems to be related to a dance hall called \"Mikouya\".\n* In file_path:/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6533/re-ranker-msmarco/42.txt, we have the first sentence stating that \"Mikouya is a town in the Ogoou\u00e9-Lolo region of Gabon.\"\n* There are other sentences mentioning \"Mikouya\" as a place or entity.\n\nHowever, it seems that there's no explicit confirmation that \"Mikouya\" has label \"Mikouya\". The documents provide information about what Mikouya is (a dance hall or a town in Gabon), but they don't explicitly state its label as \"Mikouya\".\n\nTherefore, based on the provided context and without prior knowledge, I would say that:\n\n`{'output': 'no'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents do support that \"Mikouya\" can be referred to as 'Mikouya'. This can be seen in the document paths `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6533/re-ranker-msmarco/42.txt` and `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6533/re-ranker-msmarco/9.txt`, where \"Mikouya\" is mentioned as a town in Gabon and also listed with variations including 'Mikouya'."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "It contradicts the provided context information which consistently refers to the place as \"Mikouya\" without any variation or correction, indicating that labeling it as such is not an error.",
+            "category": 2
+        }
+    }
+}

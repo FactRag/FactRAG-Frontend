@@ -1,0 +1,102 @@
+{
+    "subject": "resource/WSBR",
+    "predicate": "property/name",
+    "object": "WSBR",
+    "human_readable": "The name of WSBR is WSBR.",
+    "questions": [
+        {
+            "score": 0.9709359407424927,
+            "question": "What is the name of WSBR?"
+        },
+        {
+            "score": 0.8236441612243652,
+            "question": "Does WSBR refer to itself?"
+        },
+        {
+            "score": 0.5749365091323853,
+            "question": "Could you tell me more about WSBR?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of WSBR is WSBR.",
+            "html": "dbpedia_6244_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does WSBR refer to itself?",
+            "html": "dbpedia_6244_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of WSBR?",
+            "html": "dbpedia_6244_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6244_11.txt"
+        },
+        {
+            "file_id": "dbpedia_6244_30.txt"
+        },
+        {
+            "file_id": "dbpedia_6244_42.txt"
+        },
+        {
+            "file_id": "dbpedia_6244_48.txt"
+        },
+        {
+            "file_id": "dbpedia_6244_56.txt"
+        },
+        {
+            "file_id": "dbpedia_6244_65.txt"
+        },
+        {
+            "file_id": "dbpedia_6244_67.txt"
+        },
+        {
+            "file_id": "dbpedia_6244_75.txt"
+        },
+        {
+            "file_id": "dbpedia_6244_8.txt"
+        },
+        {
+            "file_id": "dbpedia_6244_95.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple:\n\n* Subject: The name of WSBR\n* Predicate: Is\n* Object: WSBR\n\nThe information in the documents does not provide a clear answer to this question. While the name \"WSBR\" appears multiple times in the context, it is always accompanied by additional descriptive phrases such as \"WSBR Realty Private Limited\", \"WSBR Realty\", \"WSBR 740 AM MoneyTalk Radio\", etc.\n\nTherefore, based on the given context, I would say that:\n\n`{'output': 'no'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents contain information about various entities and their attributes, but they consistently refer to the entity \"WSBR\". Given that the triple states \"The name of WSBR is WSBR,\" which is correct based on the provided context (e.g., \"WSBR Realty Private Limited\" or \"WSBR 740 AM MoneyTalk Radio\"), the answer is \"yes.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The context information describes multiple entities with the name \"WSBR\" but they seem to be distinct companies operating in different locations (Covina, CA and Pune, India) and even a radio station (South Florida), which suggests that there are different WSBRs rather than a single one named as such.",
+            "category": 2
+        }
+    }
+}

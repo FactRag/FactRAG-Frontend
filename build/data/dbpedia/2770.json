@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Fifth_Avenue",
+    "predicate": "ontology/abstract",
+    "object": "Fifth Avenue is a major thoroughfare going through the borough of Manhattan in New York City, United States. It stretches from West 143rd Street in Harlem to Washington Square North at Washington Square Park in Greenwich Village. It is considered among the most expensive and best shopping streets in the world.",
+    "human_readable": "Fifth Avenue's abstract description is Fifth Avenue is a major thoroughfare going through the borough of Manhattan in New York City, United States. It stretches from West 143rd Street in Harlem to Washington Square North at Washington Square Park in Greenwich Village. It is considered among the most expensive and best shopping streets in the world.",
+    "questions": [
+        {
+            "score": 0.9247488975524902,
+            "question": "What borough in New York City is Fifth Avenue in?"
+        },
+        {
+            "score": 0.8391238451004028,
+            "question": "What type of street is Fifth Avenue considered to be?"
+        },
+        {
+            "score": 0.8341838717460632,
+            "question": "Which district in Manhattan does Fifth Avenue start in?"
+        },
+        {
+            "score": 0.8080594539642334,
+            "question": "Where is Fifth Avenue located?"
+        },
+        {
+            "score": 0.7990294694900513,
+            "question": "Is Fifth Avenue known for its shopping?"
+        },
+        {
+            "score": 0.6513729095458984,
+            "question": "What makes Fifth Avenue special compared to other streets?"
+        },
+        {
+            "score": 0.5795400142669678,
+            "question": "What is the northern end of Fifth Avenue?"
+        },
+        {
+            "score": 0.5495469570159912,
+            "question": "What characteristic makes Fifth Avenue famous internationally?"
+        },
+        {
+            "score": 0.5463276505470276,
+            "question": "Which park is located at the southern end of Fifth Avenue?"
+        },
+        {
+            "score": 0.5406030416488647,
+            "question": "What is the southern end of Fifth Avenue?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Fifth Avenue's abstract description is Fifth Avenue is a major thoroughfare going through the borough of Manhattan in New York City, United States. It stretches from West 143rd Street in Harlem to Washington Square North at Washington Square Park in Greenwich Village. It is considered among the most expensive and best shopping streets in the world.",
+            "html": "dbpedia_2770_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Which park is located at the southern end of Fifth Avenue?",
+            "html": "dbpedia_2770_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What characteristic makes Fifth Avenue famous internationally?",
+            "html": "dbpedia_2770_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the northern end of Fifth Avenue?",
+            "html": "dbpedia_2770_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2770_108.txt"
+        },
+        {
+            "file_id": "dbpedia_2770_112.txt"
+        },
+        {
+            "file_id": "dbpedia_2770_25.txt"
+        },
+        {
+            "file_id": "dbpedia_2770_33.txt"
+        },
+        {
+            "file_id": "dbpedia_2770_46.txt"
+        },
+        {
+            "file_id": "dbpedia_2770_48.txt"
+        },
+        {
+            "file_id": "dbpedia_2770_83.txt"
+        },
+        {
+            "file_id": "dbpedia_2770_84.txt"
+        },
+        {
+            "file_id": "dbpedia_2770_87.txt"
+        },
+        {
+            "file_id": "dbpedia_2770_93.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you'd like to try another query!  I'm ready."
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "To evaluate whether the information in the documents supports the triple, we need to compare the abstract description provided with the actual information present in the documents.\n\nUpon reviewing the documents, it appears that there are multiple descriptions of Fifth Avenue, but here is a summary of what can be inferred from them:\n\n* Fifth Avenue originates at Washington Square Park in Greenwich Village and runs northwards through Midtown, along the eastern side of Central Park (document 4).\n* It terminates at West 143rd Street in Harlem (documents 1, 3, and 4).\n\nBased on this information, it seems that the abstract description is partially accurate. However, there are some discrepancies:\n\n* The abstract states that Fifth Avenue stretches from Washington Square North to West 143rd Street, while the documents indicate that it starts at Washington Square Park in Greenwich Village.\n* There is no mention of it stretching from Washington Square North.\n\nConsidering these points, I would evaluate the triple as follows:\n\n\n{'output': 'no'}\n\nWhile some aspects of the abstract description are accurate, others contain inaccuracies or omissions."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe provided documents indeed support the description of Fifth Avenue as a major thoroughfare going through Manhattan, New York City, United States, stretching from West 143rd Street in Harlem to Washington Square Park in Greenwich Village. The documents also confirm that it is considered one of the most expensive and best shopping streets in the world."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {'output': 'yes'}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The information states that Fifth Avenue stretches north from Washington Square Park in Greenwich Village to West 143rd Street in Harlem, not south. This means the direction of the thoroughfare is opposite to what's described in the abstract statement.",
+            "category": 2
+        }
+    }
+}

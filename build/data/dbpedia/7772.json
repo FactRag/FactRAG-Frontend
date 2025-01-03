@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Mitch_Daniels",
+    "predicate": "property/termStart",
+    "object": "2001-01-20",
+    "human_readable": "Mitch Daniels started his term on January 20, 2001.",
+    "questions": [
+        {
+            "score": 0.9381973147392273,
+            "question": "When did Mitch Daniels begin his term?"
+        },
+        {
+            "score": 0.885829508304596,
+            "question": "What year marked the start of Mitch Daniels' term?"
+        },
+        {
+            "score": 0.8835068941116333,
+            "question": "Which individual started their term on January 20, 2001?"
+        },
+        {
+            "score": 0.7377780675888062,
+            "question": "Who was the president in office when Mitch Daniels started his term?"
+        },
+        {
+            "score": 0.716754674911499,
+            "question": "What position did Mitch Daniels assume in 2001?"
+        },
+        {
+            "score": 0.6449618935585022,
+            "question": "What were some major events happening during Mitch Daniels' term?"
+        },
+        {
+            "score": 0.5611509084701538,
+            "question": "January 20th, 2001 is significant for which event?"
+        },
+        {
+            "score": 0.28205591440200806,
+            "question": "Is January 20th a significant date in American history?"
+        },
+        {
+            "score": 0.07109294086694717,
+            "question": "Can you provide an example of a term start date?"
+        },
+        {
+            "score": 0.014913970604538918,
+            "question": "What are some common dates associated with political transitions?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Mitch Daniels started his term on January 20, 2001.",
+            "html": "dbpedia_7772_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you provide an example of a term start date?",
+            "html": "dbpedia_7772_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is January 20th a significant date in American history?",
+            "html": "dbpedia_7772_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=January 20th, 2001 is significant for which event?",
+            "html": "dbpedia_7772_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_7772_128.txt"
+        },
+        {
+            "file_id": "dbpedia_7772_142.txt"
+        },
+        {
+            "file_id": "dbpedia_7772_149.txt"
+        },
+        {
+            "file_id": "dbpedia_7772_46.txt"
+        },
+        {
+            "file_id": "dbpedia_7772_50.txt"
+        },
+        {
+            "file_id": "dbpedia_7772_67.txt"
+        },
+        {
+            "file_id": "dbpedia_7772_75.txt"
+        },
+        {
+            "file_id": "dbpedia_7772_87.txt"
+        },
+        {
+            "file_id": "dbpedia_7772_90.txt"
+        },
+        {
+            "file_id": "dbpedia_7772_97.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nLet me know if you'd like to try another query! \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the answer in the structured JSON format:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents mention that Mitch Daniels was appointed as Director of the Office of Management and Budget (OMB) under President George W. Bush from 2001 to 2003, but they do not specify the exact date when his term started. However, one document mentions that he served as governor of Indiana from 2005 to 2013, which implies that his first term as governor likely began in 2005, not January 20, 2001."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\n**Explanation:** The documents do not provide any information supporting the claim that Mitch Daniels' term as governor began on January 20, 2001. In fact, the documents indicate that Mitch Daniels began his first four-year term as Governor of Indiana on January 10, 2005 (as mentioned in the document with file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_7772/re-ranker-msmarco/89.txt)."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Mitch Daniels started his term as the Director of the Office of Management and Budget (OMB) on January 20, 2001, but he did not start his term as Governor of Indiana in 2001.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Several pieces of text state he served as OMB Director from 2001 to 2003, and then ran for governor of Indiana in 2004.  It's highly unlikely his gubernatorial term would have started before the end of his OMB role.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "It contradicts the information provided in context point 2 which states that Mitch Daniels began his first four-year term as governor on January 10, 2005.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Mitch Daniels began his term as the 49th Governor of Indiana on January 10, 2005, not January 20, 2001. His appointment as Director of the Office of Management and Budget was from 2001 to 2003 under President George W. Bush, but this does not correspond to his term as governor of Indiana.",
+            "category": 2
+        }
+    }
+}

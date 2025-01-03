@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Th\u00e9ophile_Gautier",
+    "predicate": "ontology/birthName",
+    "object": "Pierre Jules Th\u00e9ophile Gautier",
+    "human_readable": "The birth name of Th\u00e9ophile Gautier is Pierre Jules Th\u00e9ophile Gautier.",
+    "questions": [
+        {
+            "score": 0.975883960723877,
+            "question": "What was the birth name of Th\u00e9ophile Gautier?"
+        },
+        {
+            "score": 0.9471203684806824,
+            "question": "Is 'Th\u00e9ophile Gautier' the same as his birth name?"
+        },
+        {
+            "score": 0.9266024827957153,
+            "question": "What was the complete name given to Th\u00e9ophile Gautier at birth?"
+        },
+        {
+            "score": 0.8982362151145935,
+            "question": "What is the first name of Th\u00e9ophile Gautier at birth?"
+        },
+        {
+            "score": 0.8839640021324158,
+            "question": "Which part of his full birth name is 'Th\u00e9ophile'?"
+        },
+        {
+            "score": 0.8605815172195435,
+            "question": "Is 'Pierre Jules' part of Th\u00e9ophile Gautier's known writing name?"
+        },
+        {
+            "score": 0.8581067323684692,
+            "question": "How many names are included in Th\u00e9ophile Gautier's full birth name?"
+        },
+        {
+            "score": 0.8350749611854553,
+            "question": "What are all parts of Th\u00e9ophile Gautier's full birth name?"
+        },
+        {
+            "score": 0.8176385760307312,
+            "question": "Does Pierre Jules Th\u00e9ophile Gautier include all his given names?"
+        },
+        {
+            "score": 0.3321847915649414,
+            "question": "If someone referred to him by his birth name, what would they say?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The birth name of Th\u00e9ophile Gautier is Pierre Jules Th\u00e9ophile Gautier.",
+            "html": "dbpedia_5096_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Pierre Jules Th\u00e9ophile Gautier include all his given names?",
+            "html": "dbpedia_5096_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are all parts of Th\u00e9ophile Gautier's full birth name?",
+            "html": "dbpedia_5096_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How many names are included in Th\u00e9ophile Gautier's full birth name?",
+            "html": "dbpedia_5096_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5096_11.txt"
+        },
+        {
+            "file_id": "dbpedia_5096_121.txt"
+        },
+        {
+            "file_id": "dbpedia_5096_125.txt"
+        },
+        {
+            "file_id": "dbpedia_5096_30.txt"
+        },
+        {
+            "file_id": "dbpedia_5096_54.txt"
+        },
+        {
+            "file_id": "dbpedia_5096_58.txt"
+        },
+        {
+            "file_id": "dbpedia_5096_75.txt"
+        },
+        {
+            "file_id": "dbpedia_5096_88.txt"
+        },
+        {
+            "file_id": "dbpedia_5096_89.txt"
+        },
+        {
+            "file_id": "dbpedia_5096_91.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: While some documents mention \"Pierre Jules Th\u00e9ophile Gautier\" as his birth name, others simply use \"Th\u00e9ophile Gautier\", which does not necessarily confirm that \"Pierre Jules Th\u00e9ophile Gautier\" is the full or correct birth name. In particular, the document with `file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_5096/re-ranker-msmarco/118.txt` uses \"Th\u00e9ophile Gautier\" as his full name, without mentioning \"Pierre Jules\" or \"Gautier (US: goh-TYAY, French: [pj\u025b\u0281 \u0292yl te\u0254fil \u0261otje];)\" in the context of his birth name."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\nThe documents provide multiple references to Th\u00e9ophile Gautier being born as \"Pierre Jules Th\u00e9ophile Gautier,\" confirming the birth name mentioned in the query."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The claim is wrong because the birth name of Th\u00e9ophile Gautier is indeed Pierre Jules Th\u00e9ophile Gautier, as stated in multiple sources.",
+            "category": 2
+        }
+    }
+}

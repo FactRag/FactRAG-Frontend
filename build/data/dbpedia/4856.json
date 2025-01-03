@@ -1,0 +1,125 @@
+{
+    "subject": "resource/Praga_Rugby",
+    "predicate": "property/coach",
+    "object": "Eduard Kr\u00fctzner, Jr.",
+    "human_readable": "The coach of Praga Rugby is Eduard Kr\u00fctzner Jr.",
+    "questions": [
+        {
+            "score": 0.9704448580741882,
+            "question": "Which rugby team does Eduard Kr\u00fctzner Jr. coach?"
+        },
+        {
+            "score": 0.9610025882720947,
+            "question": "Is Eduard Kr\u00fctzner Jr. a coach?"
+        },
+        {
+            "score": 0.9331125617027283,
+            "question": " Eduard Kr\u00fctzner Jr.'s role in Praga Rugby?"
+        },
+        {
+            "score": 0.9068328142166138,
+            "question": "Who is the coach of Praga Rugby?"
+        },
+        {
+            "score": 0.8595715165138245,
+            "question": "Does Praga Rugby have a coach?"
+        },
+        {
+            "score": 0.8499376773834229,
+            "question": "Is Eduard Kr\u00fctzner Jr. associated with a rugby team?"
+        },
+        {
+            "score": 0.8401137590408325,
+            "question": "What is the name of Praga Rugby's coach?"
+        },
+        {
+            "score": 0.7631344795227051,
+            "question": "What is Eduard Kr\u00fctzner Jr.'s profession?"
+        },
+        {
+            "score": 0.6519707441329956,
+            "question": "What team does Eduard Kr\u00fctzner Jr. lead?"
+        },
+        {
+            "score": 0.48072075843811035,
+            "question": "Who leads Praga Rugby?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The coach of Praga Rugby is Eduard Kr\u00fctzner Jr.",
+            "html": "dbpedia_4856_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What team does Eduard Kr\u00fctzner Jr. lead?",
+            "html": "dbpedia_4856_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Eduard Kr\u00fctzner Jr.'s profession?",
+            "html": "dbpedia_4856_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of Praga Rugby's coach?",
+            "html": "dbpedia_4856_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_4856_1.txt"
+        },
+        {
+            "file_id": "dbpedia_4856_2.txt"
+        },
+        {
+            "file_id": "dbpedia_4856_3.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nThe provided text clearly states \"Team Management Head Coach: Eduard Kr\u00fctzner, Jr.\"  making the statement true."
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\nThe document clearly states that the Head Coach of Praga Rugby is Eduard Kr\u00fctzner, Jr., thus supporting the given triple."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "There is no information provided about the coach of Praga Rugby in the context.",
+            "category": 1
+        },
+        "gemma2": {
+            "reason": "The provided text focuses on Praga Rugby and doesn't mention anything about Eduard Kr\u00fctzner Jr. being the coach. It only states that he is a part of the current squad.",
+            "category": 1
+        },
+        "llama3.1": {
+            "reason": "It contradicts the information provided about Eduard Kr\u00fctzner, Jr. being the head coach of Praga Rugby in 2013-14, but no information is given that he is still the coach or that his title has changed to \"coach\" without any further context.",
+            "category": 1
+        },
+        "qwen2.5": {
+            "reason": "The context information states that the Head Coach of Praga Rugby is Eduard Kr\u00fctzner, Jr., not just 'coach'. Therefore, referring to him simply as 'the coach' without specifying his role title (Head Coach) is incorrect.",
+            "category": 1
+        }
+    }
+}

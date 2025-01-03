@@ -1,0 +1,134 @@
+{
+    "subject": "resource/William_Davis_(Royal_Navy_officer)",
+    "predicate": "ontology/award",
+    "object": "resource/Distinguished_Service_Order",
+    "human_readable": "William Davis (Royal Navy officer) received the Distinguished Service Order.",
+    "questions": [
+        {
+            "score": 0.9695260524749756,
+            "question": "For what achievements did William Davis receive the Distinguished Service Order?"
+        },
+        {
+            "score": 0.9677858352661133,
+            "question": "What type of service did William Davis perform to receive the Distinguished Service Order?"
+        },
+        {
+            "score": 0.7718709111213684,
+            "question": "What kind of officer was William Davis?"
+        },
+        {
+            "score": 0.7129103541374207,
+            "question": "Is the Distinguished Service Order a military honor?"
+        },
+        {
+            "score": 0.5866329669952393,
+            "question": "What does the Distinguished Service Order recognize?"
+        },
+        {
+            "score": 0.5485913753509521,
+            "question": "What prestigious award did William Davis receive?"
+        },
+        {
+            "score": 0.5441192388534546,
+            "question": "What was William Davis's profession?"
+        },
+        {
+            "score": 0.5396968126296997,
+            "question": "Which organization was William Davis a member of?"
+        },
+        {
+            "score": 0.5278089046478271,
+            "question": "What are some examples of acts that would merit receiving the Distinguished Service Order?"
+        },
+        {
+            "score": 0.1587478369474411,
+            "question": "What is another example of a prestigious award given in the Royal Navy?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=William Davis (Royal Navy officer) received the Distinguished Service Order.",
+            "html": "dbpedia_1056_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some examples of acts that would merit receiving the Distinguished Service Order?",
+            "html": "dbpedia_1056_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Which organization was William Davis a member of?",
+            "html": "dbpedia_1056_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What was William Davis's profession?",
+            "html": "dbpedia_1056_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_1056_102.txt"
+        },
+        {
+            "file_id": "dbpedia_1056_107.txt"
+        },
+        {
+            "file_id": "dbpedia_1056_123.txt"
+        },
+        {
+            "file_id": "dbpedia_1056_20.txt"
+        },
+        {
+            "file_id": "dbpedia_1056_29.txt"
+        },
+        {
+            "file_id": "dbpedia_1056_5.txt"
+        },
+        {
+            "file_id": "dbpedia_1056_50.txt"
+        },
+        {
+            "file_id": "dbpedia_1056_61.txt"
+        },
+        {
+            "file_id": "dbpedia_1056_79.txt"
+        },
+        {
+            "file_id": "dbpedia_1056_99.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": -1,
+            "full_ans": "After analyzing the provided context information, I found that:\n\n* The first mention of Admiral Sir William Wellclose Davis GCB DSO does not mention any awards he received. However, later mentions do not contradict this either.\n* But then there is a mention in file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1056/re-ranker-msmarco/49.txt that \"After the War he was made Director of Underwater Weapons at the Admiralty and then, from 1948, Chief of Staff to the Commander-in-Chief, Home Fleet.\" This mention is not specific about awards.\n* A later mention in file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1056/re-ranker-msmarco/49.txt, which has the same content as file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_1056/re-ranker-msmarco/97.txt and then also mentions that he became GCB in 1959.\n\nHowever I did find an mention of William Davis (Royal Navy officer) receiving the DSO, this is a later mention of him as \"Director of Underwater Weapons at the Admiralty and then, from 1948, Chief of Staff to the Commander-in-Chief, Home Fleet. [2] He became Naval Secretary in 1950 and Flag Officer, Second in Command of the Mediterranean Fleet in 1952.\""
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\n**Explanation:** The documents mention that Admiral Sir William Wellclose Davis GCB DSO served in various capacities within the Royal Navy, and the title GCB (Knight Commander of the Order of the Bath) and DSO (Distinguished Service Order) are listed among his honors. Therefore, the information supports the triple that William Davis received the Distinguished Service Order."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The text mentions a William Davis who served in the Royal Navy, but his career and honors are different from those of Admiral Sir William Wellclose Davis GCB DSO mentioned in the same context.",
+            "category": 2
+        }
+    }
+}

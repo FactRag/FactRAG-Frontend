@@ -1,0 +1,142 @@
+{
+    "subject": "resource/IPad_Air",
+    "predicate": "http://purl.org/linguistics/gold/hypernym",
+    "object": "resource/Computer",
+    "human_readable": "An IPad Air is a type of Computer.",
+    "questions": [
+        {
+            "score": 0.9769057035446167,
+            "question": "Is an iPad Air considered a computer?"
+        },
+        {
+            "score": 0.8762279152870178,
+            "question": "What type of device is an iPad Air?"
+        },
+        {
+            "score": 0.6061868071556091,
+            "question": "What operating system does an iPad Air use?"
+        },
+        {
+            "score": 0.5795236825942993,
+            "question": "Are there different models of iPad Air available?"
+        },
+        {
+            "score": 0.5663132667541504,
+            "question": "How does an iPad Air compare to a traditional laptop computer?"
+        },
+        {
+            "score": 0.5348020792007446,
+            "question": "What are some accessories that can be used with an iPad Air?"
+        },
+        {
+            "score": 0.5134203433990479,
+            "question": "Who manufactures the iPad Air?"
+        },
+        {
+            "score": 0.4597056210041046,
+            "question": "What are some features that make an iPad Air suitable for certain uses?"
+        },
+        {
+            "score": 0.295293390750885,
+            "question": "Can you give examples of tasks you can perform on an iPad Air?"
+        },
+        {
+            "score": 0.28027334809303284,
+            "question": "What are some other types of computers?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=An IPad Air is a type of Computer.",
+            "html": "dbpedia_3165_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you give examples of tasks you can perform on an iPad Air?",
+            "html": "dbpedia_3165_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some features that make an iPad Air suitable for certain uses?",
+            "html": "dbpedia_3165_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who manufactures the iPad Air?",
+            "html": "dbpedia_3165_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3165_112.txt"
+        },
+        {
+            "file_id": "dbpedia_3165_114.txt"
+        },
+        {
+            "file_id": "dbpedia_3165_123.txt"
+        },
+        {
+            "file_id": "dbpedia_3165_126.txt"
+        },
+        {
+            "file_id": "dbpedia_3165_37.txt"
+        },
+        {
+            "file_id": "dbpedia_3165_44.txt"
+        },
+        {
+            "file_id": "dbpedia_3165_51.txt"
+        },
+        {
+            "file_id": "dbpedia_3165_59.txt"
+        },
+        {
+            "file_id": "dbpedia_3165_81.txt"
+        },
+        {
+            "file_id": "dbpedia_3165_83.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have any other triples you'd like me to evaluate! \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "After analyzing the context information, I can provide an answer to your query.\n\n{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe information across the documents supports that an iPad Air can function as a computer, particularly for tasks like writing and light work. While not entirely replacing a laptop for everyone, it is described in multiple contexts as versatile enough to serve as a portable computing device or \"computer-lite.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n    \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "An iPad Air is a type of tablet, not a computer. Although it functions similarly to a computer due to its advanced software and the optional Magic Keyboard attachment, it lacks essential hardware components like a physical keyboard, hard drive, and external connectivity options that are typical for computers.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Several pieces of text express doubt about the iPad Air fully replacing a traditional laptop for certain tasks due to software limitations and user needs.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "An iPad Air is primarily designed as a tablet for general use such as browsing the internet, consuming media, and running apps, not as a full-fledged computer intended for intensive tasks like coding, graphic design, video production, or handling large documents. While it can perform some functions typically associated with computers, its capabilities are limited compared to traditional laptops or desktops, making it unsuitable for most professional computing needs.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,102 @@
+{
+    "subject": "resource/The_Birthday_Party_(film)",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "The Birthday Party (film)",
+    "human_readable": "The label of The Birthday Party (film) is The Birthday Party (film).",
+    "questions": [
+        {
+            "score": 0.9714795351028442,
+            "question": "Is The Birthday Party a film?"
+        },
+        {
+            "score": 0.9451520442962646,
+            "question": "What is the label of The Birthday Party?"
+        },
+        {
+            "score": 0.635243833065033,
+            "question": "What type of work is The Birthday Party?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The label of The Birthday Party (film) is The Birthday Party (film).",
+            "html": "dbpedia_2968_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the label of The Birthday Party?",
+            "html": "dbpedia_2968_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is The Birthday Party a film?",
+            "html": "dbpedia_2968_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2968_104.txt"
+        },
+        {
+            "file_id": "dbpedia_2968_108.txt"
+        },
+        {
+            "file_id": "dbpedia_2968_109.txt"
+        },
+        {
+            "file_id": "dbpedia_2968_154.txt"
+        },
+        {
+            "file_id": "dbpedia_2968_16.txt"
+        },
+        {
+            "file_id": "dbpedia_2968_28.txt"
+        },
+        {
+            "file_id": "dbpedia_2968_31.txt"
+        },
+        {
+            "file_id": "dbpedia_2968_59.txt"
+        },
+        {
+            "file_id": "dbpedia_2968_8.txt"
+        },
+        {
+            "file_id": "dbpedia_2968_99.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nLet me know if you'd like me to analyze other triples! \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the provided context information and the query \"The label of The Birthday Party (film) is The Birthday Party (film).\", I evaluate whether the information in the documents supports this triple.\n\nUpon reviewing the documents, I find that they discuss a film adaptation of Harold Pinter's play \"The Birthday Party\" directed by William Friedkin. The text mentions that \"The Birthday Party\" is the title of both the play and the film adaptation, which implies that the label of the film is indeed \"The Birthday Party (film)\".\n\nTherefore, my response to the query is:\n\n{\n  \"output\": \"yes\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nExplanation: The documents discuss \"The Birthday Party\" extensively, providing details about both the play by Harold Pinter and the film adaptation directed by William Friedkin. There are no contradictions regarding the title of the film or its connection to the play."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Different pieces of text discuss \"The Birthday Party\" as a film, a play, and a band. The labels would be specific to each of these different interpretations.",
+            "category": 3
+        }
+    }
+}

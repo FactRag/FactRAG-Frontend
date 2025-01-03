@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Adam_Matthew_Digital",
+    "predicate": "http://xmlns.com/foaf/0.1/homepage",
+    "object": "http://www.amdigital.co.uk/",
+    "human_readable": "The homepage of Adam Matthew Digital is 'http://www.amdigital.co.uk/'.",
+    "questions": [
+        {
+            "score": 0.9544684886932373,
+            "question": "What is the homepage URL for Adam Matthew Digital?"
+        },
+        {
+            "score": 0.943230390548706,
+            "question": "Give me the web address of the Adam Matthew Digital homepage."
+        },
+        {
+            "score": 0.9353288412094116,
+            "question": "What is the URL for accessing Adam Matthew Digital's homepage?"
+        },
+        {
+            "score": 0.8988088369369507,
+            "question": "Provide the web address for the Adam Matthew Digital website."
+        },
+        {
+            "score": 0.8961355090141296,
+            "question": "Where can you find the website for Adam Matthew Digital?"
+        },
+        {
+            "score": 0.880573034286499,
+            "question": "What address is used to access the Adam Matthew Digital homepage?"
+        },
+        {
+            "score": 0.8762712478637695,
+            "question": "If you wanted to visit the Adam Matthew Digital homepage, what URL would you enter?"
+        },
+        {
+            "score": 0.8411136269569397,
+            "question": "Where can you find information about Adam Matthew Digital online?"
+        },
+        {
+            "score": 0.8336079716682434,
+            "question": "What is the online location of Adam Matthew Digital?"
+        },
+        {
+            "score": 0.8111187815666199,
+            "question": "How do you access the Adam Matthew Digital website?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The homepage of Adam Matthew Digital is 'http://www.amdigital.co.uk/'.",
+            "html": "dbpedia_2870_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the online location of Adam Matthew Digital?",
+            "html": "dbpedia_2870_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where can you find information about Adam Matthew Digital online?",
+            "html": "dbpedia_2870_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If you wanted to visit the Adam Matthew Digital homepage, what URL would you enter?",
+            "html": "dbpedia_2870_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2870_28.txt"
+        },
+        {
+            "file_id": "dbpedia_2870_33.txt"
+        },
+        {
+            "file_id": "dbpedia_2870_36.txt"
+        },
+        {
+            "file_id": "dbpedia_2870_53.txt"
+        },
+        {
+            "file_id": "dbpedia_2870_59.txt"
+        },
+        {
+            "file_id": "dbpedia_2870_62.txt"
+        },
+        {
+            "file_id": "dbpedia_2870_65.txt"
+        },
+        {
+            "file_id": "dbpedia_2870_7.txt"
+        },
+        {
+            "file_id": "dbpedia_2870_71.txt"
+        },
+        {
+            "file_id": "dbpedia_2870_76.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have more triples to evaluate!  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here's the answer to your question:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: According to the provided context, the home page of Adam Matthew Digital is indeed `http://www.amdigital.co.uk/`. This information is stated in several documents, including file_path: `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2870/re-ranker-msmarco/53.txt` and file_path: `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2870/re-ranker-msmarco/59.txt`."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nExplanation: According to the provided context information, \"We seek to inspire students, enhance learning environments, and aid scholarly research by making important primary sources available to a global audience.\" -- http://www.amdigital.co.uk/about-us/ (February 2015) \u2014 this supports that the homepage of Adam Matthew Digital is 'http://www.amdigital.co.uk/'."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "There is no explicit mention of the homepage URL on the provided context information.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "The provided context states \"Visit the Adam Matthew Digital website www.amdigital.co.uk\"  which indicates that this is the correct URL for their homepage.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The homepage of Adam Matthew Digital is actually \"www.amdigital.co.uk\" (not including the \"http://\") as stated directly on their own website, not \"http://\".",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The homepage provided in the context information is for Adam Matthew Publications Ltd, not Adam Matthew Digital. The correct homepage for Adam Matthew Digital is mentioned as www.amdigital.co.uk, which is different from http://www.amdigital.co.uk/ provided in the fact.",
+            "category": 2
+        }
+    }
+}

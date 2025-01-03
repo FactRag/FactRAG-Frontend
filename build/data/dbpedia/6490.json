@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Verran_Sparebank",
+    "predicate": "property/foundation",
+    "object": "1907",
+    "human_readable": "Verran Sparebank was founded in 1907.",
+    "questions": [
+        {
+            "score": 0.9697383046150208,
+            "question": "How has Verran Sparebank evolved since its founding in 1907?"
+        },
+        {
+            "score": 0.9494749307632446,
+            "question": "In what century was Verran Sparebank founded?"
+        },
+        {
+            "score": 0.9467901587486267,
+            "question": "When was Verran Sparebank founded?"
+        },
+        {
+            "score": 0.9119213819503784,
+            "question": "What is the significance of 1907 for Verran Sparebank?"
+        },
+        {
+            "score": 0.7922928929328918,
+            "question": "What year marks the establishment of Verran Sparebank?"
+        },
+        {
+            "score": 0.7668676376342773,
+            "question": "What were the circumstances surrounding the founding of Verran Sparebank?"
+        },
+        {
+            "score": 0.658673882484436,
+            "question": "Was there a particular need or event that led to the establishment of Verran Sparebank?"
+        },
+        {
+            "score": 0.5533000230789185,
+            "question": "Could you tell me more about the history of Verran Sparebank?"
+        },
+        {
+            "score": 0.4074368476867676,
+            "question": "What type of institution is Verran Sparebank?"
+        },
+        {
+            "score": 0.4051761031150818,
+            "question": "Is Verran Sparebank a relatively new or old financial institution?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Verran Sparebank was founded in 1907.",
+            "html": "dbpedia_6490_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of institution is Verran Sparebank?",
+            "html": "dbpedia_6490_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Could you tell me more about the history of Verran Sparebank?",
+            "html": "dbpedia_6490_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Was there a particular need or event that led to the establishment of Verran Sparebank?",
+            "html": "dbpedia_6490_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6490_1.txt"
+        },
+        {
+            "file_id": "dbpedia_6490_10.txt"
+        },
+        {
+            "file_id": "dbpedia_6490_11.txt"
+        },
+        {
+            "file_id": "dbpedia_6490_12.txt"
+        },
+        {
+            "file_id": "dbpedia_6490_13.txt"
+        },
+        {
+            "file_id": "dbpedia_6490_14.txt"
+        },
+        {
+            "file_id": "dbpedia_6490_2.txt"
+        },
+        {
+            "file_id": "dbpedia_6490_7.txt"
+        },
+        {
+            "file_id": "dbpedia_6490_8.txt"
+        },
+        {
+            "file_id": "dbpedia_6490_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe statement \"Verran Sparebank was founded in 1907\" is supported by the information provided in the documents, which states \"Verran Sparebank was founded in 1907 to serve as a local bank for the municipalities of Verran and Mosvik.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Verran Sparebank was founded in 1907, but the given context states that it created grunnfondsbevis (a type of shares) in 1994, which implies that the bank was already existing before 1994. Since the bank didn't exist before 1907, the initial claim is incorrect.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Text 4 describes Sparebanken Midt-Norge, formed in 1984 from the merger of 23 savings banks, some dating back to 1823.  If Verran Sparebank was founded in 1907, it wouldn't be part of a group with roots back to 1823.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because it contradicts the information provided in other parts of the context where Verran Sparebank's history is mentioned, specifically in point 4 and 5. According to those points, Sparebanken Midt-Norge was created in 1984, which implies that Verran Sparebank did not exist as a separate entity prior to that date.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information provided states that Verran Sparebank was founded in 1907, which aligns with the given fact. There is no evidence within the context to suggest otherwise. Therefore, without additional contradictory information, the founding year of 1907 stands as accurate based on the available data.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Otto_H\u00f6lder",
+    "predicate": "ontology/deathPlace",
+    "object": "resource/Nazi_Germany",
+    "human_readable": "Otto H\u00f6lder died in Nazi Germany.",
+    "questions": [
+        {
+            "score": 0.8017243146896362,
+            "question": "Where did Otto H\u00f6lder die?"
+        },
+        {
+            "score": 0.7941585183143616,
+            "question": "What can we learn about the broader historical context from Otto H\u00f6lder's death in Nazi Germany?"
+        },
+        {
+            "score": 0.6567437052726746,
+            "question": "During what historical period did Otto H\u00f6lder die?"
+        },
+        {
+            "score": 0.5995096564292908,
+            "question": "What is known about Otto H\u00f6lder's life during the Nazi era?"
+        },
+        {
+            "score": 0.3392108082771301,
+            "question": "Did Otto H\u00f6lder face any persecution due to his profession or beliefs?"
+        },
+        {
+            "score": 0.17827610671520233,
+            "question": "Were there any consequences for mathematicians in Nazi Germany?"
+        },
+        {
+            "score": 0.14220595359802246,
+            "question": "Was Otto H\u00f6lder known for any specific mathematical theories or concepts?"
+        },
+        {
+            "score": 0.11943835020065308,
+            "question": "What were some of Otto H\u00f6lder's significant contributions to mathematics?"
+        },
+        {
+            "score": 0.09472212940454483,
+            "question": "How did the political climate of Nazi Germany impact intellectual pursuits?"
+        },
+        {
+            "score": 0.02689150720834732,
+            "question": "Are there any other notable mathematicians who died during this period?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Otto H\u00f6lder died in Nazi Germany.",
+            "html": "dbpedia_3825_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How did the political climate of Nazi Germany impact intellectual pursuits?",
+            "html": "dbpedia_3825_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What were some of Otto H\u00f6lder's significant contributions to mathematics?",
+            "html": "dbpedia_3825_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Was Otto H\u00f6lder known for any specific mathematical theories or concepts?",
+            "html": "dbpedia_3825_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3825_12.txt"
+        },
+        {
+            "file_id": "dbpedia_3825_15.txt"
+        },
+        {
+            "file_id": "dbpedia_3825_19.txt"
+        },
+        {
+            "file_id": "dbpedia_3825_25.txt"
+        },
+        {
+            "file_id": "dbpedia_3825_3.txt"
+        },
+        {
+            "file_id": "dbpedia_3825_30.txt"
+        },
+        {
+            "file_id": "dbpedia_3825_41.txt"
+        },
+        {
+            "file_id": "dbpedia_3825_52.txt"
+        },
+        {
+            "file_id": "dbpedia_3825_71.txt"
+        },
+        {
+            "file_id": "dbpedia_3825_79.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nReasoning:\nThe documents provided contain information about Otto H\u00f6lder, a German mathematician. However, none of the documents mention his death in Nazi Germany. They do provide details about his birth, education, and contributions to mathematics, but they also specify that he died on August 29, 1937, in Leipzig, Germany, which was not part of Nazi Germany at the time (the Nazi regime took power in 1933)."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe documents provide information about Otto H\u00f6lder's death, stating that he passed away on August 29, 1937, in Leipzig, Germany. There is no indication or support for the claim that he died in Nazi Germany specifically."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Text states H\u00f6lder died in Leipzig, Germany on August 29, 1937. It does not state he died *during* the Nazi regime, which lasted from 1933 to 1945.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The information provided about Otto H\u00f6lder's death was stated to be on August 29, 1937, which predates the rise of Nazi Germany and its peak during World War II.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The given context states that Otto H\u00f6lder died on August 29, 1937, in Leipzig, Germany. While Nazi Germany was in power during the early to mid-1930s, H\u00f6lder passed away after it had already been established and there is no information suggesting he died outside of Germany. Therefore, the statement that Otto H\u00f6lder died in Nazi Germany cannot be supported by the provided context.",
+            "category": 2
+        }
+    }
+}

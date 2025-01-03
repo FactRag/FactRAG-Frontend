@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Eleanor_of_Navarre",
+    "predicate": "ontology/parent",
+    "object": "resource/John_II_of_Aragon",
+    "human_readable": "Eleanor of Navarre is the parent of John II of Aragon.",
+    "questions": [
+        {
+            "score": 0.9885501265525818,
+            "question": "Is John II of Aragon the child of Eleanor of Navarre?"
+        },
+        {
+            "score": 0.9815389513969421,
+            "question": "Is there a known family connection between Eleanor of Navarre and John II of Aragon?"
+        },
+        {
+            "score": 0.9367502927780151,
+            "question": "Eleanor of Navarre is a parent to whom?"
+        },
+        {
+            "score": 0.9361854195594788,
+            "question": "What is the relationship between Eleanor of Navarre and John II of Aragon?"
+        },
+        {
+            "score": 0.9192360639572144,
+            "question": "Who was the parent of John II of Aragon?"
+        },
+        {
+            "score": 0.9160144925117493,
+            "question": "Name a parent of John II of Aragon."
+        },
+        {
+            "score": 0.8034484386444092,
+            "question": "Who is Eleanor of Navarre related to?"
+        },
+        {
+            "score": 0.7952619194984436,
+            "question": "Who are some potential relatives of John II of Aragon?"
+        },
+        {
+            "score": 0.5108602643013,
+            "question": "What can you tell me about the parentage of John II of Aragon?"
+        },
+        {
+            "score": 0.03356409817934036,
+            "question": "Can you identify any familial ties based on the given information?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Eleanor of Navarre is the parent of John II of Aragon.",
+            "html": "dbpedia_7085_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What can you tell me about the parentage of John II of Aragon?",
+            "html": "dbpedia_7085_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who are some potential relatives of John II of Aragon?",
+            "html": "dbpedia_7085_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is Eleanor of Navarre related to?",
+            "html": "dbpedia_7085_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_7085_18.txt"
+        },
+        {
+            "file_id": "dbpedia_7085_24.txt"
+        },
+        {
+            "file_id": "dbpedia_7085_33.txt"
+        },
+        {
+            "file_id": "dbpedia_7085_35.txt"
+        },
+        {
+            "file_id": "dbpedia_7085_4.txt"
+        },
+        {
+            "file_id": "dbpedia_7085_42.txt"
+        },
+        {
+            "file_id": "dbpedia_7085_46.txt"
+        },
+        {
+            "file_id": "dbpedia_7085_51.txt"
+        },
+        {
+            "file_id": "dbpedia_7085_94.txt"
+        },
+        {
+            "file_id": "dbpedia_7085_99.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the structured JSON response:\n\n```\n{\n  \"output\": \"yes\"\n}\n```\n\nThis is because the documents contain information about Eleanor of Navarre being the mother of Blanche of Navarre and John II of Aragon, as stated in files `22.txt` and `23.txt`."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThis answer is based on the information provided in the document located at `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_7085/re-ranker-msmarco/3.txt`, which states that John II of Aragon was the son of Ferdinand I and Eleanor of Albuquerque. Although \"Eleanor of Albuquerque\" is not explicitly named as \"Eleanor of Navarre,\" the context strongly implies a connection given the roles described, such as her role as regent and general governor of Navarre. Therefore, based on the information provided, it can be inferred that Eleanor of Navarre is indeed the parent of John II of Aragon."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n    \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, there is no direct evidence that links Eleanor of Navarre as a parent to John II of Aragon. The documents mention Eleanor of Navarre in relation to her children and relations with Gaston IV, Count of Foix, but do not establish any connection between her and John II of Aragon as his parent.\n\nTherefore, the answer is:\n\n{\"output\": \"no\"}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Eleanor of Navarre was the spouse of John II of Aragon, not his parent.",
+            "category": 0
+        },
+        "gemma2": {
+            "reason": "John II of Aragon's parents are stated as Ferdinand I and Eleanor of Albuquerque.  Eleanor of Navarre is mentioned as John II's sister, not his mother.",
+            "category": 0
+        }
+    }
+}

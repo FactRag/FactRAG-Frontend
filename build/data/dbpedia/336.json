@@ -1,0 +1,144 @@
+{
+    "subject": "resource/WVPG",
+    "predicate": "property/sisterStations",
+    "object": "resource/WVPB_(FM)",
+    "human_readable": "WVPG has a sister station called WVPB (FM).",
+    "questions": [
+        {
+            "score": 0.9640686511993408,
+            "question": "What is the name of WVPG's sister station?"
+        },
+        {
+            "score": 0.9125316739082336,
+            "question": "Are WVPG and WVPB both radio stations?"
+        },
+        {
+            "score": 0.882910966873169,
+            "question": "Is WVPB an AM or FM station?"
+        },
+        {
+            "score": 0.856743335723877,
+            "question": "What might be some reasons for having sister stations like WVPG and WVPB?"
+        },
+        {
+            "score": 0.8242456316947937,
+            "question": "What type of station is WVPB?"
+        },
+        {
+            "score": 0.7525292038917542,
+            "question": "Does WVPG have any related stations?"
+        },
+        {
+            "score": 0.6471243500709534,
+            "question": "How are WVPG and WVPB connected?"
+        },
+        {
+            "score": 0.6074835658073425,
+            "question": "Could WVPB be located in the same region as WVPG?"
+        },
+        {
+            "score": 0.325157105922699,
+            "question": "What format of programming do WVPG and WVPB likely share?"
+        },
+        {
+            "score": 0.10868921130895615,
+            "question": "Would listeners expect similar content on both stations?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=WVPG has a sister station called WVPB (FM).",
+            "html": "dbpedia_336_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What format of programming do WVPG and WVPB likely share?",
+            "html": "dbpedia_336_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Could WVPB be located in the same region as WVPG?",
+            "html": "dbpedia_336_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How are WVPG and WVPB connected?",
+            "html": "dbpedia_336_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_336_23.txt"
+        },
+        {
+            "file_id": "dbpedia_336_32.txt"
+        },
+        {
+            "file_id": "dbpedia_336_4.txt"
+        },
+        {
+            "file_id": "dbpedia_336_43.txt"
+        },
+        {
+            "file_id": "dbpedia_336_47.txt"
+        },
+        {
+            "file_id": "dbpedia_336_65.txt"
+        },
+        {
+            "file_id": "dbpedia_336_69.txt"
+        },
+        {
+            "file_id": "dbpedia_336_74.txt"
+        },
+        {
+            "file_id": "dbpedia_336_79.txt"
+        },
+        {
+            "file_id": "dbpedia_336_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nLet me know if you'd like to evaluate more triples!  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "{\n  \"output\": \"yes\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: The context provided does not mention any information about a sister station called WVPB (FM) associated with WVPG. The documents discuss stations WVPB and WVPW but do not provide information linking them in the way suggested by the query."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Multiple passages state WVPB has a sister station called WVPW, not WVPG.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context mentions WVPB and WVPW as sister stations operating together under West Virginia Public Radio, with WVPW referred to as a satellite station. There is no mention of WVPG in the provided information.",
+            "category": 2
+        }
+    }
+}

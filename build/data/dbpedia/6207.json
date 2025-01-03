@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Aaron_Provincial_Park",
+    "predicate": "ontology/owningOrganisation",
+    "object": "resource/Ontario_Parks",
+    "human_readable": "Aaron Provincial Park is owned by Ontario Parks.",
+    "questions": [
+        {
+            "score": 0.9837478995323181,
+            "question": "Who owns Aaron Provincial Park?"
+        },
+        {
+            "score": 0.9722386002540588,
+            "question": "Is Aaron Provincial Park publicly owned and managed?"
+        },
+        {
+            "score": 0.910697340965271,
+            "question": "Is Aaron Provincial Park under the jurisdiction of a provincial park system?"
+        },
+        {
+            "score": 0.8399145603179932,
+            "question": "Who has authority over Aaron Provincial Park?"
+        },
+        {
+            "score": 0.8057265877723694,
+            "question": "What is the name of the organization that manages Aaron Provincial Park?"
+        },
+        {
+            "score": 0.8028008341789246,
+            "question": "Is Aaron Provincial Park part of a larger network of parks?"
+        },
+        {
+            "score": 0.7984225153923035,
+            "question": "What is the name of the organization responsible for maintaining Aaron Provincial Park?"
+        },
+        {
+            "score": 0.7933820486068726,
+            "question": "Can you name a provincial park in Ontario?"
+        },
+        {
+            "score": 0.769769012928009,
+            "question": "What type of organization manages Aaron Provincial Park?"
+        },
+        {
+            "score": 0.5985148549079895,
+            "question": "Does Ontario have a system for managing its provincial parks?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Aaron Provincial Park is owned by Ontario Parks.",
+            "html": "dbpedia_6207_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of organization manages Aaron Provincial Park?",
+            "html": "dbpedia_6207_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you name a provincial park in Ontario?",
+            "html": "dbpedia_6207_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of the organization responsible for maintaining Aaron Provincial Park?",
+            "html": "dbpedia_6207_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6207_102.txt"
+        },
+        {
+            "file_id": "dbpedia_6207_108.txt"
+        },
+        {
+            "file_id": "dbpedia_6207_11.txt"
+        },
+        {
+            "file_id": "dbpedia_6207_113.txt"
+        },
+        {
+            "file_id": "dbpedia_6207_30.txt"
+        },
+        {
+            "file_id": "dbpedia_6207_52.txt"
+        },
+        {
+            "file_id": "dbpedia_6207_70.txt"
+        },
+        {
+            "file_id": "dbpedia_6207_88.txt"
+        },
+        {
+            "file_id": "dbpedia_6207_96.txt"
+        },
+        {
+            "file_id": "dbpedia_6207_98.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me explain how I arrived at the answer:\n\n* **The Context:** The provided context contains several documents about Aaron Provincial Park.\n* **Key Phrases:**  One document specifically states, \"Aaron Provincial Park is a recreation class park of 117 hectares.  The park is located in Zealand Township, on the TransCanada Highway (Hwy 17) east of Dryden...\" Later, another document mentions,  \"Ontario Parks will support in principle the acquisition of property for addition to Aaron Provincial Park...\"\n\n* **Conclusion:** These phrases strongly indicate that Aaron Provincial Park is managed and likely owned by Ontario Parks.\n\n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the context information provided, I can evaluate whether the triple \"Aaron Provincial Park is owned by Ontario Parks\" is supported.\n\nHere's my evaluation:\n\n* The document at `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6207/re-ranker-msmarco/30.txt` mentions that \"All research at Aaron Provincial Park will be conducted by, or authorized by, Ontario Parks.\"\n* However, it does not explicitly state that the park is owned by Ontario Parks.\n* The document at `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6207/re-ranker-msmarco/30.txt` mentions that \"Lands within Aaron Provincial Park are zoned in accordance with their environmental and cultural features and values, and their sensitivity to development,\" which implies that the park is managed by Ontario Parks.\n* The document at `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6207/re-ranker-msmarco/107.txt` mentions that \"Aaron Provincial Park was established in 1958 and is the spot for all outdoor enthusiasts,\" which implies that the park was created by Ontario Parks.\n\nBased on this evaluation, I would say that the triple \"Aaron Provincial Park is owned by Ontario Parks\" is partially supported. While it's not explicitly stated, the documents suggest that the park is managed and zoned by Ontario Parks, which implies some level of ownership or control. Therefore:\n\n`{'output': 'yes'}` (with a note that this answer is based on partial support)"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\n**Explanation:** The context information mentions that \"Ontario Parks encourages scientific research by qualified individuals who can contribute to the knowledge of natural and cultural history and to environmental management in provincial parks\" and discusses how \"All research at Aaron Provincial Park will be conducted by, or authorized by, Ontario Parks.\" This implies that Ontario Parks is involved with managing and overseeing activities within Aaron Provincial Park, which supports the statement that it is owned by Ontario Parks."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

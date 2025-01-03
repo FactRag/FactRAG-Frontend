@@ -1,0 +1,144 @@
+{
+    "subject": "resource/The_Neighbourhood",
+    "predicate": "property/label",
+    "object": "Columbia Records, the Revolve Group",
+    "human_readable": "The label of The Neighbourhood is Columbia Records, the Revolve Group.",
+    "questions": [
+        {
+            "score": 0.6819720268249512,
+            "question": "What is the full name of the record label that represents The Neighbourhood?"
+        },
+        {
+            "score": 0.6576088070869446,
+            "question": "What record label is The Neighbourhood signed to?"
+        },
+        {
+            "score": 0.5350282788276672,
+            "question": "Besides a record label, what other company is associated with The Neighbourhood?"
+        },
+        {
+            "score": 0.25966426730155945,
+            "question": "Name the two companies that represent The Neighbourhood."
+        },
+        {
+            "score": 0.208670511841774,
+            "question": "Is The Neighbourhood associated with more than one company?"
+        },
+        {
+            "score": 0.16726316511631012,
+            "question": "What type of companies are associated with The Neighbourhood?"
+        },
+        {
+            "score": 0.14158514142036438,
+            "question": "Which companies are involved in The Neighbourhood's career?"
+        },
+        {
+            "score": 0.12238071858882904,
+            "question": "Can you list the companies that work with The Neighbourhood?"
+        },
+        {
+            "score": 0.1103496253490448,
+            "question": "Besides music, what other industry is The Neighbourhood connected to?"
+        },
+        {
+            "score": 0.06238925829529762,
+            "question": "Who manages The Neighbourhood's music distribution?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The label of The Neighbourhood is Columbia Records, the Revolve Group.",
+            "html": "dbpedia_5717_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Besides music, what other industry is The Neighbourhood connected to?",
+            "html": "dbpedia_5717_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you list the companies that work with The Neighbourhood?",
+            "html": "dbpedia_5717_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Which companies are involved in The Neighbourhood's career?",
+            "html": "dbpedia_5717_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_5717_113.txt"
+        },
+        {
+            "file_id": "dbpedia_5717_124.txt"
+        },
+        {
+            "file_id": "dbpedia_5717_130.txt"
+        },
+        {
+            "file_id": "dbpedia_5717_132.txt"
+        },
+        {
+            "file_id": "dbpedia_5717_29.txt"
+        },
+        {
+            "file_id": "dbpedia_5717_43.txt"
+        },
+        {
+            "file_id": "dbpedia_5717_49.txt"
+        },
+        {
+            "file_id": "dbpedia_5717_66.txt"
+        },
+        {
+            "file_id": "dbpedia_5717_69.txt"
+        },
+        {
+            "file_id": "dbpedia_5717_77.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nLet me explain why: While several documents state that The Neighbourhood is signed to Columbia Records, none of them mention \"The Revolve Group\" as being associated with the band's label.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here's my evaluation of the triple:\n\n`'output': 'yes'`\n\nThe reason for this answer is that all the documents provided contain information about The Neighbourhood being signed to Columbia Records (as mentioned in files 43, 69, and 76) or being associated with Columbia Records (in file 49), but none of them mention \"the Revolve Group\" as a label of The Neighbourhood. However, one document (file 49) does mention that the album \"Wiped Out!\" is released by \"The Revolve Group/Columbia Records\", which implies that The Revolve Group is indeed a record label associated with Columbia Records, but not necessarily The Neighbourhood's primary or only label."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information that supports this statement. Specifically, it mentions that The Neighbourhood signed onto Columbia Records and released multiple albums under the label. Additionally, it states \"Wiped Out!,\" their second full-length album, was released \"by way of\" The Revolve Group/Columbia Records."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{\"output\": \"yes\"}\n\nBased on the provided context information, it can be inferred that The Neighbourhood has been associated with both Columbia Records and The Revolve Group. The documents mention multiple times that the band signed onto Columbia Records, releasing albums under this label. Additionally, one of the files states \"The Revolve Group/Columbia Records,\" indicating a relationship between the two entities in relation to the band."
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The label of The Neighbourhood is not currently The Revolve Group. The Revolve Group was previously Columbia Records' parent company, but Sony Music Entertainment now owns and operates Columbia Records as of the provided context information.",
+            "category": 4
+        },
+        "gemma2": {
+            "reason": "Multiple sources state The Neighbourhood is signed to Columbia Records, and while the Revolve Group might be involved in some aspects of their promotion or merchandise, it doesn't make them the label.",
+            "category": 4
+        }
+    }
+}

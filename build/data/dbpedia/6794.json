@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Insignificance_(film)",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:Films_shot_in_New_York_City",
+    "human_readable": "The film Insignificance is about Films shot in New York City.",
+    "questions": [
+        {
+            "score": 0.81703782081604,
+            "question": "What is the film Insignificance about?"
+        },
+        {
+            "score": 0.8157190084457397,
+            "question": "Where were Films shot in New York City filmed?"
+        },
+        {
+            "score": 0.7763338088989258,
+            "question": "Is there a theme that connects films shot in New York City?"
+        },
+        {
+            "score": 0.7719724178314209,
+            "question": "What kind of films are typically shot in New York City?"
+        },
+        {
+            "score": 0.6989562511444092,
+            "question": "Why might a filmmaker choose to shoot a film in New York City?"
+        },
+        {
+            "score": 0.6857585310935974,
+            "question": "Can you name other films that were shot in New York City?"
+        },
+        {
+            "score": 0.6425338387489319,
+            "question": "What is the genre of the film Insignificance?"
+        },
+        {
+            "score": 0.5119438171386719,
+            "question": "Is the film Insignificance a fictional story?"
+        },
+        {
+            "score": 0.4428848624229431,
+            "question": "What are some of the iconic locations in New York City often featured in films?"
+        },
+        {
+            "score": 0.25183701515197754,
+            "question": "Does Insignificance feature any famous actors or directors?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The film Insignificance is about Films shot in New York City.",
+            "html": "dbpedia_6794_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some of the iconic locations in New York City often featured in films?",
+            "html": "dbpedia_6794_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is the film Insignificance a fictional story?",
+            "html": "dbpedia_6794_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the genre of the film Insignificance?",
+            "html": "dbpedia_6794_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6794_152.txt"
+        },
+        {
+            "file_id": "dbpedia_6794_155.txt"
+        },
+        {
+            "file_id": "dbpedia_6794_29.txt"
+        },
+        {
+            "file_id": "dbpedia_6794_37.txt"
+        },
+        {
+            "file_id": "dbpedia_6794_56.txt"
+        },
+        {
+            "file_id": "dbpedia_6794_6.txt"
+        },
+        {
+            "file_id": "dbpedia_6794_69.txt"
+        },
+        {
+            "file_id": "dbpedia_6794_76.txt"
+        },
+        {
+            "file_id": "dbpedia_6794_93.txt"
+        },
+        {
+            "file_id": "dbpedia_6794_96.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\nThe documents describe the 1985 film \"Insignificance\" and mention several scenes set in New York City, such as filming a famous actress on the streets. Therefore, it is reasonable to infer that the film was shot in New York City, supporting the given triple."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n      \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, the documents discuss the film \"Insignificance\" directed by Nicolas Roeg and set partly in New York City during the 1950s. However, the query asks whether the film \"Insignificance is about Films shot in New York City,\" which isn't supported by the given text.\n\nThe content primarily focuses on the narrative of the film itself, including its themes of fame, cultural transition, and celebrity worship rather than focusing on films that are shot within New York City. Therefore, the information does not support this specific claim.\n\nAnswer:\n```json\n{\"output\": \"no\"}\n```"
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The film Insignificance is set in New York City but the plot itself does not revolve around films being shot there.",
+            "category": 3
+        },
+        "llama3.1": {
+            "reason": "The film Insignificance is actually about fame and cultural transition, not films shot in New York City.",
+            "category": 3
+        }
+    }
+}

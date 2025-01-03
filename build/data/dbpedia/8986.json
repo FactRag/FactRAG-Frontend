@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Eric_Brittingham",
+    "predicate": "ontology/hometown",
+    "object": "resource/United_States",
+    "human_readable": "Eric Brittingham's hometown is United States.",
+    "questions": [
+        {
+            "score": 0.9249783158302307,
+            "question": "Does Eric Brittingham currently live in his hometown?"
+        },
+        {
+            "score": 0.9062862396240234,
+            "question": "Is Eric Brittingham's hometown in a different country?"
+        },
+        {
+            "score": 0.900700569152832,
+            "question": "Has Eric Brittingham ever lived outside of the United States?"
+        },
+        {
+            "score": 0.8641054630279541,
+            "question": "What is significant about Eric Brittingham's hometown?"
+        },
+        {
+            "score": 0.7301770448684692,
+            "question": "Where is Eric Brittingham from?"
+        },
+        {
+            "score": 0.6501359343528748,
+            "question": "Where was Eric Brittingham raised?"
+        },
+        {
+            "score": 0.5718275904655457,
+            "question": "Where did Eric Brittingham grow up?"
+        },
+        {
+            "score": 0.5128729343414307,
+            "question": "What is the nationality of Eric Brittingham?"
+        },
+        {
+            "score": 0.3511607348918915,
+            "question": "Can you tell me more about Eric Brittingham's upbringing?"
+        },
+        {
+            "score": 0.3033214509487152,
+            "question": "What country does Eric Brittingham call home?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Eric Brittingham's hometown is United States.",
+            "html": "dbpedia_8986_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about Eric Brittingham's upbringing?",
+            "html": "dbpedia_8986_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the nationality of Eric Brittingham?",
+            "html": "dbpedia_8986_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where did Eric Brittingham grow up?",
+            "html": "dbpedia_8986_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8986_13.txt"
+        },
+        {
+            "file_id": "dbpedia_8986_2.txt"
+        },
+        {
+            "file_id": "dbpedia_8986_3.txt"
+        },
+        {
+            "file_id": "dbpedia_8986_34.txt"
+        },
+        {
+            "file_id": "dbpedia_8986_4.txt"
+        },
+        {
+            "file_id": "dbpedia_8986_44.txt"
+        },
+        {
+            "file_id": "dbpedia_8986_52.txt"
+        },
+        {
+            "file_id": "dbpedia_8986_56.txt"
+        },
+        {
+            "file_id": "dbpedia_8986_59.txt"
+        },
+        {
+            "file_id": "dbpedia_8986_63.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe documents state that Eric Brittingham is from Salisbury, England.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the answer to your query:\n\n{\n    \"output\": \"no\"\n}\n\nThe reason for this answer is that, according to the documents provided, Eric Brittingham is from Salisbury, England (not United States), and was born in that same city on May 8, 1965."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: The documents state that Eric Brittingham was born in Salisbury, England. Therefore, his hometown cannot be the United States based on the provided information."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Eric Brittingham was born in Salisbury, Maryland (United States), not Salisbury, England.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Several pieces of text state Eric Brittingham is from Salisbury, England and was born there.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because Eric Brittingham was born in Salisbury, Maryland, which is in the United States, not England.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context clearly states that Eric Brittingham was born in Salisbury, Maryland, United States, not in Salisbury, England.",
+            "category": 2
+        }
+    }
+}

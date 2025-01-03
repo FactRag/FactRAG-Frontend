@@ -1,0 +1,102 @@
+{
+    "subject": "resource/Yemen",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "Yemen",
+    "human_readable": "The label of Yemen is Yemen.",
+    "questions": [
+        {
+            "score": 0.9627055525779724,
+            "question": "What is the label of Yemen?"
+        },
+        {
+            "score": 0.7877189517021179,
+            "question": "Is 'Yemen' a country?"
+        },
+        {
+            "score": 0.5798777937889099,
+            "question": "What name is used to refer to Yemen?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The label of Yemen is Yemen.",
+            "html": "dbpedia_8957_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is 'Yemen' a country?",
+            "html": "dbpedia_8957_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the label of Yemen?",
+            "html": "dbpedia_8957_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8957_101.txt"
+        },
+        {
+            "file_id": "dbpedia_8957_38.txt"
+        },
+        {
+            "file_id": "dbpedia_8957_40.txt"
+        },
+        {
+            "file_id": "dbpedia_8957_42.txt"
+        },
+        {
+            "file_id": "dbpedia_8957_5.txt"
+        },
+        {
+            "file_id": "dbpedia_8957_51.txt"
+        },
+        {
+            "file_id": "dbpedia_8957_55.txt"
+        },
+        {
+            "file_id": "dbpedia_8957_6.txt"
+        },
+        {
+            "file_id": "dbpedia_8957_66.txt"
+        },
+        {
+            "file_id": "dbpedia_8957_72.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the response to your query:\n\n{\n  \"output\": \"no\"\n}\n\nExplanation:\nThe text provides multiple information about the country of Yemen, but it does not explicitly confirm that its label is simply \"Yemen\". While it mentions that some Arab narrators called it \"Yemen\" as an indication of blessing or because of its location at the right side of the \"Holy Kaaba\", others used different names (e.g., \"Arabia Felix\", \"South Queen\", etc.)."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide multiple references to the official name and labels of Yemen, including \"The Republic of Yemen\" and simply \"Yemen,\" which confirms that the statement \"The label of Yemen is Yemen\" is correct according to the given context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "there are different narrations about the origin of the name Yemen, such as its connection to a son of Qahtan Al-Humaisa', an indication of blessing, location at the right side of the Holy Kaaba, or the southern side in relation to the Holy Kaaba.",
+            "category": -1
+        }
+    }
+}

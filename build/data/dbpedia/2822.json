@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Maria_Schell",
+    "predicate": "ontology/deathPlace",
+    "object": "resource/Carinthia_(state)",
+    "human_readable": "Maria Schell died in Carinthia.",
+    "questions": [
+        {
+            "score": 0.8484617471694946,
+            "question": "Where did Maria Schell die?"
+        },
+        {
+            "score": 0.6929435729980469,
+            "question": "What year did Maria Schell die?"
+        },
+        {
+            "score": 0.5495511293411255,
+            "question": "Who was Maria Schell?"
+        },
+        {
+            "score": 0.4960581958293915,
+            "question": "Were there any significant events related to Maria Schell's death?"
+        },
+        {
+            "score": 0.39450308680534363,
+            "question": "Was Maria Schell an actress?"
+        },
+        {
+            "score": 0.25761836767196655,
+            "question": "What was Maria Schell's legacy?"
+        },
+        {
+            "score": 0.1977287083864212,
+            "question": "What is Carinthia known for?"
+        },
+        {
+            "score": 0.19323280453681946,
+            "question": "In what country is Carinthia located?"
+        },
+        {
+            "score": 0.15291987359523773,
+            "question": "Did Maria Schell have any family members who also worked in the arts?"
+        },
+        {
+            "score": 0.14591540396213531,
+            "question": "What are some famous landmarks in Carinthia?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Maria Schell died in Carinthia.",
+            "html": "dbpedia_2822_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Did Maria Schell have any family members who also worked in the arts?",
+            "html": "dbpedia_2822_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In what country is Carinthia located?",
+            "html": "dbpedia_2822_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Carinthia known for?",
+            "html": "dbpedia_2822_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2822_16.txt"
+        },
+        {
+            "file_id": "dbpedia_2822_27.txt"
+        },
+        {
+            "file_id": "dbpedia_2822_33.txt"
+        },
+        {
+            "file_id": "dbpedia_2822_35.txt"
+        },
+        {
+            "file_id": "dbpedia_2822_39.txt"
+        },
+        {
+            "file_id": "dbpedia_2822_40.txt"
+        },
+        {
+            "file_id": "dbpedia_2822_46.txt"
+        },
+        {
+            "file_id": "dbpedia_2822_52.txt"
+        },
+        {
+            "file_id": "dbpedia_2822_71.txt"
+        },
+        {
+            "file_id": "dbpedia_2822_79.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have any other triples you'd like me to evaluate!"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provided contain information about Maria Schell's death, stating that she \"lived as a recluse in Carinthia in the Austrian Alps until her death from pneumonia in Preitenegg, Austria on April 26, 2005.\" This supports the statement that Maria Schell died in Carinthia."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Maria Schell died in Preitenegg, which is located in the Austrian province of Carinthia. Therefore, she didn't die in Carinthia per se, but rather in a town within Carinthia (Preitenegg).",
+            "category": -1
+        },
+        "gemma2": {
+            "reason": "Text states she died in Preitenegg, Austria.  Preitenegg is located within Carinthia.",
+            "category": -1
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because the context information specifies that Maria Schell died in Preitenegg, Carinthia, which is actually her home at the time of death, and not necessarily the location where she passed away. However, another piece of context states that Maria Schell lived as a recluse in Carinthia until her death from pneumonia in Preitenegg, implying that she was indeed located in Preitenegg when she died, but not necessarily specifying that Carinthia is the place where she died.",
+            "category": -1
+        },
+        "qwen2.5": {
+            "reason": "The context states that Maria Schell died in Preitenegg, Austria, which is located in the Austrian province of Carinthia. Therefore, while she did pass away in Carinthia, the specific location given (Preitenegg) makes the blanket statement about her death place being solely in Carinthia inaccurate.",
+            "category": -1
+        }
+    }
+}

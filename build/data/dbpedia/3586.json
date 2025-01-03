@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Auburn_Hills,_Michigan",
+    "predicate": "http://purl.org/linguistics/gold/hypernym",
+    "object": "resource/City",
+    "human_readable": "Auburn Hills, Michigan is a city.",
+    "questions": [
+        {
+            "score": 0.8845033645629883,
+            "question": "Is Auburn Hills a city or a town?"
+        },
+        {
+            "score": 0.803511381149292,
+            "question": "Where is Auburn Hills located?"
+        },
+        {
+            "score": 0.7314966320991516,
+            "question": "What type of place is Auburn Hills?"
+        },
+        {
+            "score": 0.7303708791732788,
+            "question": "What state is Auburn Hills in?"
+        },
+        {
+            "score": 0.5839350819587708,
+            "question": "Are there any notable landmarks in Auburn Hills?"
+        },
+        {
+            "score": 0.4387739300727844,
+            "question": "What is the population of Auburn Hills?"
+        },
+        {
+            "score": 0.4349202513694763,
+            "question": "Is Auburn Hills known for anything specific?"
+        },
+        {
+            "score": 0.412148654460907,
+            "question": "Where would you find Auburn Hills on a map?"
+        },
+        {
+            "score": 0.37359821796417236,
+            "question": "Can you tell me something about Auburn Hills?"
+        },
+        {
+            "score": 0.33205363154411316,
+            "question": "What are some popular activities to do in Auburn Hills?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Auburn Hills, Michigan is a city.",
+            "html": "dbpedia_3586_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me something about Auburn Hills?",
+            "html": "dbpedia_3586_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where would you find Auburn Hills on a map?",
+            "html": "dbpedia_3586_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Auburn Hills known for anything specific?",
+            "html": "dbpedia_3586_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_3586_10.txt"
+        },
+        {
+            "file_id": "dbpedia_3586_101.txt"
+        },
+        {
+            "file_id": "dbpedia_3586_22.txt"
+        },
+        {
+            "file_id": "dbpedia_3586_4.txt"
+        },
+        {
+            "file_id": "dbpedia_3586_50.txt"
+        },
+        {
+            "file_id": "dbpedia_3586_64.txt"
+        },
+        {
+            "file_id": "dbpedia_3586_70.txt"
+        },
+        {
+            "file_id": "dbpedia_3586_71.txt"
+        },
+        {
+            "file_id": "dbpedia_3586_74.txt"
+        },
+        {
+            "file_id": "dbpedia_3586_78.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the context information provided, here's the evaluation of whether the statement \"Auburn Hills, Michigan is a city\" is supported by the documents:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation:\n\nThe document file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3586/re-ranker-msmarco/4.txt explicitly mentions \"City of Auburn Hills, MI\", indicating that Auburn Hills is indeed a city in Michigan.\n\nAdditionally, the document file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_3586/re-ranker-msmarco/70.txt, and others, refer to Auburn Hills as \"the City of Auburn Hills\", further supporting this statement.\n\nTherefore, based on the provided context information, it is confirmed that Auburn Hills, Michigan is a city."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information about Auburn Hills, Michigan, including its status as a city with various business and community amenities. Therefore, the statement that \"Auburn Hills, Michigan is a city\" is supported by the given context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Less Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

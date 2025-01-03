@@ -1,0 +1,134 @@
+{
+    "subject": "resource/The_Alphabet_Murders",
+    "predicate": "property/language",
+    "object": "English",
+    "human_readable": "The Alphabet Murders is written in English.",
+    "questions": [
+        {
+            "score": 0.9048636555671692,
+            "question": "Who wrote The Alphabet Murders?"
+        },
+        {
+            "score": 0.8883939385414124,
+            "question": "What language is The Alphabet Murders written in?"
+        },
+        {
+            "score": 0.6221124529838562,
+            "question": "When was The Alphabet Murders published?"
+        },
+        {
+            "score": 0.5943209528923035,
+            "question": "Can you provide some themes explored in The Alphabet Murders?"
+        },
+        {
+            "score": 0.5713136196136475,
+            "question": "What is the plot of The Alphabet Murders about?"
+        },
+        {
+            "score": 0.5491933822631836,
+            "question": "What genre is The Alphabet Murders likely to belong to?"
+        },
+        {
+            "score": 0.49386417865753174,
+            "question": "Is The Alphabet Murders a work of fiction?"
+        },
+        {
+            "score": 0.47689467668533325,
+            "question": "Are there any notable characters in The Alphabet Murders?"
+        },
+        {
+            "score": 0.46124669909477234,
+            "question": "Is there a sequel to The Alphabet Murders?"
+        },
+        {
+            "score": 0.37625154852867126,
+            "question": "Has The Alphabet Murders been adapted into other media?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The Alphabet Murders is written in English.",
+            "html": "dbpedia_6918_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there a sequel to The Alphabet Murders?",
+            "html": "dbpedia_6918_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any notable characters in The Alphabet Murders?",
+            "html": "dbpedia_6918_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is The Alphabet Murders a work of fiction?",
+            "html": "dbpedia_6918_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6918_12.txt"
+        },
+        {
+            "file_id": "dbpedia_6918_124.txt"
+        },
+        {
+            "file_id": "dbpedia_6918_20.txt"
+        },
+        {
+            "file_id": "dbpedia_6918_34.txt"
+        },
+        {
+            "file_id": "dbpedia_6918_37.txt"
+        },
+        {
+            "file_id": "dbpedia_6918_53.txt"
+        },
+        {
+            "file_id": "dbpedia_6918_6.txt"
+        },
+        {
+            "file_id": "dbpedia_6918_70.txt"
+        },
+        {
+            "file_id": "dbpedia_6918_77.txt"
+        },
+        {
+            "file_id": "dbpedia_6918_97.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nExplanation:\n\nThe documents do not provide any information about the language in which \"The Alphabet Murders\" was written. However, it can be inferred from the context that the novel is likely to be written in English, as it is an Agatha Christie novel and the quotes provided are in English. But there's no explicit mention of the language.\n\nHowever, since we're evaluating whether the information supports the triple \"The Alphabet Murders is written in English\" without prior knowledge, and given that the documents don't explicitly state this, the answer should be 'no' as it cannot be confirmed from the provided context."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents mention the novel \"The Alphabet Murders\" and provide details about its publication and adaptations, which are consistent with it being written in English. Therefore, the statement that \"The Alphabet Murders is written in English\" is supported by the given context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The context information contains a German author \"Lars Schutz\" and the title of the book \"The Alphabet Murders (2019)\" which suggests that at least one version or edition of the novel was written in English, but it's also possible that other versions were not.",
+            "category": 2
+        }
+    }
+}

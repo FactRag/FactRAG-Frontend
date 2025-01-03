@@ -1,0 +1,109 @@
+{
+    "subject": "resource/Michael_Bauer_(officer)",
+    "predicate": "ontology/deathYear",
+    "object": "1943",
+    "human_readable": "Michael Bauer (officer) died in 1943.",
+    "questions": [
+        {
+            "score": 0.8103669285774231,
+            "question": "In what year did Michael Bauer die?"
+        },
+        {
+            "score": 0.6955657601356506,
+            "question": "Was Michael Bauer a police officer?"
+        },
+        {
+            "score": 0.472280353307724,
+            "question": "When did Michael Bauer pass away?"
+        },
+        {
+            "score": 0.47042331099510193,
+            "question": "What was Michael Bauer's profession?"
+        },
+        {
+            "score": 0.33855655789375305,
+            "question": "Can you tell me more about Michael Bauer's life?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Michael Bauer (officer) died in 1943.",
+            "html": "dbpedia_2486_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What was Michael Bauer's profession?",
+            "html": "dbpedia_2486_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=When did Michael Bauer pass away?",
+            "html": "dbpedia_2486_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Was Michael Bauer a police officer?",
+            "html": "dbpedia_2486_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_2486_11.txt"
+        },
+        {
+            "file_id": "dbpedia_2486_12.txt"
+        },
+        {
+            "file_id": "dbpedia_2486_31.txt"
+        },
+        {
+            "file_id": "dbpedia_2486_34.txt"
+        },
+        {
+            "file_id": "dbpedia_2486_39.txt"
+        },
+        {
+            "file_id": "dbpedia_2486_4.txt"
+        },
+        {
+            "file_id": "dbpedia_2486_60.txt"
+        },
+        {
+            "file_id": "dbpedia_2486_76.txt"
+        },
+        {
+            "file_id": "dbpedia_2486_89.txt"
+        },
+        {
+            "file_id": "dbpedia_2486_97.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the context information, I can evaluate whether the statement \"Michael Bauer (officer) died in 1943\" is supported by the documents.\n\nThe relevant document for this query is:\n\n`file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_2486/re-ranker-msmarco/60.txt`\n\n...which contains the following information:\n```\nMichael Bauer (24 November 1895 \u2013 15 February 1943) was a highly decorated Oberst in the Wehrmacht during World War II.  He was also a recipient of the Knight's Cross of the Iron Cross.  The Knight's Cross of the Iron Cross was awarded to recognise extreme battlefield bravery or successful military leadership.  Michael Bauer suffered a stroke on 3 February 1943 and died on 15 February 1943 in Sclobodka, Russia.\n```\nThis document explicitly states that Michael Bauer died in 1943.\n\nTherefore, my response is:\n```\n{'output': 'yes'}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe query \"Michael Bauer (officer) died in 1943\" is supported by the information provided, as multiple documents state that Michael Bauer died on February 15, 1943."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

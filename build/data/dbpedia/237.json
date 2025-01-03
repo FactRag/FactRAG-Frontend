@@ -1,0 +1,134 @@
+{
+    "subject": "resource/The_Wise_Guy",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:Films_directed_by_Frank_Lloyd",
+    "human_readable": "The Wise Guy is about Films directed by Frank Lloyd.",
+    "questions": [
+        {
+            "score": 0.9819285869598389,
+            "question": "What is the genre of films directed by Frank Lloyd about The Wise Guy?"
+        },
+        {
+            "score": 0.9681302905082703,
+            "question": "What is unique about the films directed by Frank Lloyd about The Wise Guy?"
+        },
+        {
+            "score": 0.9326229095458984,
+            "question": "Who directed films about The Wise Guy?"
+        },
+        {
+            "score": 0.9319206476211548,
+            "question": "Name a film director who made films about The Wise Guy."
+        },
+        {
+            "score": 0.8789594769477844,
+            "question": "Are there any other famous directors who made films about The Wise Guy besides Frank Lloyd?"
+        },
+        {
+            "score": 0.6471601724624634,
+            "question": "What other works are known for being directed by Frank Lloyd?"
+        },
+        {
+            "score": 0.593717634677887,
+            "question": "Can you tell me more about Frank Lloyd's directing style?"
+        },
+        {
+            "score": 0.4826812446117401,
+            "question": "What is Frank Lloyd known for?"
+        },
+        {
+            "score": 0.45759451389312744,
+            "question": "Is The Wise Guy a book, movie, or something else?"
+        },
+        {
+            "score": 0.4489355683326721,
+            "question": "What type of media is The Wise Guy associated with?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The Wise Guy is about Films directed by Frank Lloyd.",
+            "html": "dbpedia_237_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is The Wise Guy a book, movie, or something else?",
+            "html": "dbpedia_237_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Frank Lloyd known for?",
+            "html": "dbpedia_237_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about Frank Lloyd's directing style?",
+            "html": "dbpedia_237_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_237_102.txt"
+        },
+        {
+            "file_id": "dbpedia_237_14.txt"
+        },
+        {
+            "file_id": "dbpedia_237_2.txt"
+        },
+        {
+            "file_id": "dbpedia_237_21.txt"
+        },
+        {
+            "file_id": "dbpedia_237_30.txt"
+        },
+        {
+            "file_id": "dbpedia_237_42.txt"
+        },
+        {
+            "file_id": "dbpedia_237_45.txt"
+        },
+        {
+            "file_id": "dbpedia_237_6.txt"
+        },
+        {
+            "file_id": "dbpedia_237_76.txt"
+        },
+        {
+            "file_id": "dbpedia_237_98.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have any other triples you'd like me to evaluate!  I'm ready for more."
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "The triple to be evaluated is: \"The Wise Guy is about Films directed by Frank Lloyd.\"\n\nGiven the context information, here's the evaluation:\n\n* There are multiple mentions of \"The Wise Guy\" in different contexts.\n* One of them (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_237/re-ranker-msmarco/93.txt) mentions a 1926 silent film crime drama directed by Frank Lloyd, and this is indeed about \"The Wise Guy\".\n* However, another mention (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_237/re-ranker-msmarco/97.txt) refers to a different movie called \"Wise Guys\" directed by Barry Levinson.\n* The context does not provide any information that directly connects the 1926 silent film drama with Frank Lloyd's directing style, nor is there any mention of Frank Lloyd being associated with the 1950s mobster film.\n\nGiven this analysis:\n\n`{'output': 'no'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents mention that the original film \"The Wise Guy\" from 1926 was directed by Frank Lloyd, which aligns with the query stating that \"The Wise Guy is about films directed by Frank Lloyd.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n    \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The Wise Guy in the context refers to a 1926 silent film crime drama directed by Frank Lloyd, but another film \"The Wise Guy\" mentioned later is about the coming-of-age comedy-drama from writer-director Sam O'Mahony and then there's also the period gangster film directed by Barry Levinson.",
+            "category": 3
+        }
+    }
+}
