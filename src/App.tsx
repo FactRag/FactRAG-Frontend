@@ -17,7 +17,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/results" element={<ResultsPage />} />
-            <Route path="/auth/callback" element={<AuthCallback />}  />
+            <Route path="/callback" element={<AuthCallback />}  />
             <Route path='/credits' element={<CreditsPage />} />
           </Routes>
         </BrowserRouter>
