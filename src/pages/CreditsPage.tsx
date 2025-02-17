@@ -22,8 +22,8 @@ export const CreditsPage: React.FC = () => {
       id: 1,
       name: 'Farzad Shami',
       role: 'Research Trainee',
-      image: 'https://gda.dei.unipd.it/static/images/credits/gian_960x960.jpg',
-      bio: 'Leading research in knowledge graph verification and large language models.',
+      image: '/images/farzadshami.jpeg',
+      bio: 'Interested in fact verification, knowledge graphs, and LLMs.',
       links: {
         github: 'https://github.com/fuzsh',
         scholar: 'https://scholar.google.com/citations?user=DYpHnYgAAAAJ&hl=en&oi=ao',
@@ -34,8 +34,8 @@ export const CreditsPage: React.FC = () => {
       id: 2,
       name: 'Stefano Marchesin',
       role: 'Assistant Professor',
-      image: 'https://gda.dei.unipd.it/static/images/credits/gian_960x960.jpg',
-      bio: 'Specializing in machine learning and natural language processing.',
+      image: 'https://hereditary.dei.unipd.it/challenges/gutbrainie/2025/images/organizers/marchesin.png',
+      bio: 'Expert in information extraction, retrieval, and data quality.',
       links: {
         github: 'https://github.com/stefano-marchesin',
         scholar: 'https://scholar.google.com/citations?user=AVZdcS8AAAAJ&hl=en',
@@ -47,7 +47,7 @@ export const CreditsPage: React.FC = () => {
       name: 'Gianmaria Silvello',
       role: 'Full Professor ',
       image: 'https://gda.dei.unipd.it/static/images/credits/gian_960x960.jpg',
-      bio: 'Expert in transformer architectures and knowledge representation.',
+      bio: 'Expert in knowledge management, information access, and algorithmic fairness.',
       links: {
         // github: 'https://github.com/sophiec',
         scholar: 'http://scholar.google.com/citations?user=pY24h-YAAAAJ&hl=en',
@@ -142,7 +142,7 @@ const ProjectLinks: React.FC = () => (
     <h2 className="text-lg font-semibold mb-3">Project Links</h2>
     <div className="space-y-2">
       <a
-        href="https://github.com/yourusername/project"
+        href="https://github.com/FactRag"
         target="_blank"
         rel="noopener noreferrer"
         className="flex items-center gap-2 p-3 bg-white rounded-md border hover:border-gray-400"
@@ -162,7 +162,7 @@ const ProjectLinks: React.FC = () => (
         <BookOpen className="w-5 h-5" />
         <div>
           <div className="font-medium text-sm">Research Paper</div>
-          <div className="text-xs text-gray-500">Read on arXiv</div>
+          <div className="text-xs text-gray-500">Read on SIGIR</div>
         </div>
       </a>
     </div>
@@ -173,11 +173,11 @@ const ProjectLinks: React.FC = () => (
 const CiteSection: React.FC = () => {
   const [copied, setCopied] = useState(false)
 
-  const citation = `@inproceedings{knowledge-graph-verification-2024,
-  title={Knowledge Graph Verification using Large Language Models},
-  author={Gray, Lucy and Mills, Richard and Chamberlain, Sophie},
-  booktitle={ACL 2024},
-  year={2024}
+  const citation = `@inproceedings{knowledge-graph-verification-2025,
+  title={Fact Verification in Knowledge Graphs Using LLMs},
+  author={Shami, Farzad and Marchesin, Stefano and Silvello, Gianmaria},
+  booktitle={SIGIR 2025},
+  year={2025}
 }`
 
   const copyToClipboard = () => {

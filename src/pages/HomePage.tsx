@@ -27,9 +27,9 @@ export const HomePage = () => {
       <main className="flex-1 container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto mb-8">
           <img
-            src="/images/comics.png"
+            src="/images/comics_1.png"
             alt="Knowledge Graph Verification"
-            className="w-full h-auto rounded-lg shadow-lg"
+            className="w-full h-auto rounded-lg"
           />
         </div>
 

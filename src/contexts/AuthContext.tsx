@@ -1,7 +1,7 @@
 // src/contexts/AuthContext.tsx
 import React, { createContext, useContext, useEffect, useState } from 'react'
 
-const API_BASE_URL = 'http://localhost:8000/api'
+const API_BASE_URL = 'https://factcheck.dei.unipd.it/api'
 
 export interface User {
   id: number;
