@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Battle_of_the_Network_Stars",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "Battle of the Network Stars",
+    "human_readable": "The label of Battle of the Network Stars is 'Battle of the Network Stars'.",
+    "questions": [
+        {
+            "score": 0.9762425422668457,
+            "question": "What is the label of Battle of the Network Stars?"
+        },
+        {
+            "score": 0.9038728475570679,
+            "question": "What networks are involved in 'Battle of the Network Stars'?"
+        },
+        {
+            "score": 0.875180184841156,
+            "question": "Is 'Battle of the Network Stars' a show title?"
+        },
+        {
+            "score": 0.8619385957717896,
+            "question": "Who participates in 'Battle of the Network Stars'?"
+        },
+        {
+            "score": 0.8614017963409424,
+            "question": "What is the format of 'Battle of the Network Stars'?"
+        },
+        {
+            "score": 0.8530013561248779,
+            "question": "Is 'Battle of the Network Stars' a recent event?"
+        },
+        {
+            "score": 0.8486419916152954,
+            "question": "What kind of event is  'Battle of the Network Stars'?"
+        },
+        {
+            "score": 0.7967171669006348,
+            "question": "Does 'Battle of the Network Stars' involve competition?"
+        },
+        {
+            "score": 0.7195828557014465,
+            "question": "Can you tell me more about 'Battle of the Network Stars'?"
+        },
+        {
+            "score": 0.6084153652191162,
+            "question": "What year was 'Battle of the Network Stars' first aired?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The label of Battle of the Network Stars is 'Battle of the Network Stars'.",
+            "html": "dbpedia_824_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about 'Battle of the Network Stars'?",
+            "html": "dbpedia_824_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does 'Battle of the Network Stars' involve competition?",
+            "html": "dbpedia_824_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What kind of event is  'Battle of the Network Stars'?",
+            "html": "dbpedia_824_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_824_12.txt"
+        },
+        {
+            "file_id": "dbpedia_824_15.txt"
+        },
+        {
+            "file_id": "dbpedia_824_26.txt"
+        },
+        {
+            "file_id": "dbpedia_824_30.txt"
+        },
+        {
+            "file_id": "dbpedia_824_46.txt"
+        },
+        {
+            "file_id": "dbpedia_824_47.txt"
+        },
+        {
+            "file_id": "dbpedia_824_83.txt"
+        },
+        {
+            "file_id": "dbpedia_824_88.txt"
+        },
+        {
+            "file_id": "dbpedia_824_93.txt"
+        },
+        {
+            "file_id": "dbpedia_824_94.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe reason for this answer is that the labels associated with the different documents are:\n\n* File_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_824/re-ranker-msmarco/82.txt: \"Battle of the network stars\"\n* File_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_824/re-ranker-msmarco/26.txt: \"Battle of the Network Stars was a series of competitions where television stars from ABC, CBS, and NBC would compete in various sporting events.\"\n* File_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_824/re-ranker-msmarco/30.txt: The label is not explicitly mentioned in this file.\n* File_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_824/re-ranker-msmarco/15.txt: \"Battle of the Network Stars was a series of competitions where television stars from ABC, CBS, and NBC would compete in various sporting events.\"\n* File_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_824/re-ranker-msmarco/82.txt: The label is mentioned as \"Battle of the network stars\" (lower case 's').\n\nThe triple states that the label of Battle of the Network Stars is 'Battle of the Network Stars', which does not match with most of the labels present in the files."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe label \"Battle of the Network Stars\" consistently appears across multiple documents, confirming its accuracy."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The original show (context 1) used the label \"Battle of the Network Stars\" while context 3 and 4 confirm that the new show uses a similar title, which implies that the original title was not changed.",
+            "category": 2
+        }
+    }
+}

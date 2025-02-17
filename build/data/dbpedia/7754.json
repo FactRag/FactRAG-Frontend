@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Samuel_Karlin",
+    "predicate": "ontology/doctoralStudent",
+    "object": "resource/Christopher_Burge",
+    "human_readable": "Samuel Karlin was a doctoral student of Christopher Burge.",
+    "questions": [
+        {
+            "score": 0.9824103116989136,
+            "question": "Was Christopher Burge a professor at the time Samuel Karlin was his student?"
+        },
+        {
+            "score": 0.8170803785324097,
+            "question": "Who was Samuel Karlin's doctoral advisor?"
+        },
+        {
+            "score": 0.7750839591026306,
+            "question": "What is Christopher Burge's role in relation to Samuel Karlin?"
+        },
+        {
+            "score": 0.7193314433097839,
+            "question": "Is there any information available about Samuel Karlin's career path after completing his doctoral studies?"
+        },
+        {
+            "score": 0.6517342925071716,
+            "question": "How might the relationship between Samuel Karlin and Christopher Burge have influenced their respective careers?"
+        },
+        {
+            "score": 0.638343095779419,
+            "question": "Were there any specific publications or projects that resulted from Samuel Karlin's work under Christopher Burge's supervision?"
+        },
+        {
+            "score": 0.594250500202179,
+            "question": "Do you know any other students who studied under Christopher Burge?"
+        },
+        {
+            "score": 0.5408256649971008,
+            "question": "Can you tell me more about Samuel Karlin's academic background?"
+        },
+        {
+            "score": 0.4854043126106262,
+            "question": "What field of study might Samuel Karlin have pursued based on his advisor?"
+        },
+        {
+            "score": 0.31104668974876404,
+            "question": "What are some notable research areas associated with Christopher Burge's work?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Samuel Karlin was a doctoral student of Christopher Burge.",
+            "html": "dbpedia_7754_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What field of study might Samuel Karlin have pursued based on his advisor?",
+            "html": "dbpedia_7754_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about Samuel Karlin's academic background?",
+            "html": "dbpedia_7754_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Do you know any other students who studied under Christopher Burge?",
+            "html": "dbpedia_7754_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_7754_1.txt"
+        },
+        {
+            "file_id": "dbpedia_7754_18.txt"
+        },
+        {
+            "file_id": "dbpedia_7754_23.txt"
+        },
+        {
+            "file_id": "dbpedia_7754_24.txt"
+        },
+        {
+            "file_id": "dbpedia_7754_25.txt"
+        },
+        {
+            "file_id": "dbpedia_7754_32.txt"
+        },
+        {
+            "file_id": "dbpedia_7754_42.txt"
+        },
+        {
+            "file_id": "dbpedia_7754_48.txt"
+        },
+        {
+            "file_id": "dbpedia_7754_52.txt"
+        },
+        {
+            "file_id": "dbpedia_7754_53.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'} \n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe information provided does not support the triple that Samuel Karlin was a doctoral student of Christopher Burge. According to the documents, Christopher Burge worked in Dr. Samuel Karlin's research group at Stanford, but it is stated that he completed his PhD degrees at Stanford under unknown advisors, and there is no indication that he supervised Samuel Karlin or was his advisor."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents do not contain any information suggesting that Christopher Burge was a doctoral student of Samuel Karlin. Instead, the documents indicate that Christopher Burge worked in Dr. Samuel Karlin\u2019s research group during his time at Stanford but does not mention any doctoral student relationship between them."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Samuel Karlin was a professor (at various institutions) and not a doctoral student.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "The text states that Christopher Burge was a PhD student in Samuel Karlin's research group at Stanford.  It also says that Burge did postdoctoral work at MIT after receiving his PhD from Stanford, indicating that he was the student, not the advisor.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "Christopher Burge was a postdoctoral fellow in Dr. Samuel Karlin's research group at Stanford, but he was not a doctoral student of Karlin's.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Christopher Burge was a doctoral student of Samuel Karlin, not the other way around. The context states that Burge completed his PhD under Samuel Karlin\u2019s supervision at Stanford University.",
+            "category": 2
+        }
+    }
+}

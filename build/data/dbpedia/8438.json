@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Malawi",
+    "predicate": "property/commonName",
+    "object": "Malawi",
+    "human_readable": "The common name of Malawi is Malawi.",
+    "questions": [
+        {
+            "score": 0.982607901096344,
+            "question": "What is the common name of Malawi?"
+        },
+        {
+            "score": 0.898084819316864,
+            "question": "What other names might be used to refer to Malawi?"
+        },
+        {
+            "score": 0.8653002977371216,
+            "question": "Is 'Malawi' a nickname for another country?"
+        },
+        {
+            "score": 0.8034706711769104,
+            "question": "Is Malawi known for any specific cultural traditions?"
+        },
+        {
+            "score": 0.6996613144874573,
+            "question": "What are some interesting facts about Malawi?"
+        },
+        {
+            "score": 0.6056757569313049,
+            "question": "What is the official language spoken in Malawi?"
+        },
+        {
+            "score": 0.5194177627563477,
+            "question": "What type of climate does Malawi have?"
+        },
+        {
+            "score": 0.490937739610672,
+            "question": "Can you tell me about the geography of Malawi?"
+        },
+        {
+            "score": 0.3589962422847748,
+            "question": "What is the capital city of Malawi?"
+        },
+        {
+            "score": 0.3333878219127655,
+            "question": "Are there any major industries or exports from Malawi?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The common name of Malawi is Malawi.",
+            "html": "dbpedia_8438_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the capital city of Malawi?",
+            "html": "dbpedia_8438_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me about the geography of Malawi?",
+            "html": "dbpedia_8438_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of climate does Malawi have?",
+            "html": "dbpedia_8438_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8438_1.txt"
+        },
+        {
+            "file_id": "dbpedia_8438_10.txt"
+        },
+        {
+            "file_id": "dbpedia_8438_3.txt"
+        },
+        {
+            "file_id": "dbpedia_8438_30.txt"
+        },
+        {
+            "file_id": "dbpedia_8438_37.txt"
+        },
+        {
+            "file_id": "dbpedia_8438_43.txt"
+        },
+        {
+            "file_id": "dbpedia_8438_46.txt"
+        },
+        {
+            "file_id": "dbpedia_8438_55.txt"
+        },
+        {
+            "file_id": "dbpedia_8438_85.txt"
+        },
+        {
+            "file_id": "dbpedia_8438_98.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have any other triples you'd like me to evaluate! \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the context information, I can evaluate the triple \"The common name of Malawi is Malawi\".\n\nHere's my evaluation:\n\n* File path 36.txt states that \"Malawi (formally known as Nyasaland)...\" which implies that Malawi and Nyasaland are not the same thing.\n* File path 42.txt states that \"Malawi officially the Republic of Malawi,...\" which suggests that Malawi is an alternative name for the country, but not its common name.\n* File path 10.txt states that \"The origin of the name Malawi is a bit uncertain; it was originally attributed to the lake itself: Lake Malawi.\" This implies that there might be multiple names associated with the country, including Malawi and Nyasaland.\n\nGiven this information, I would say that the triple \"The common name of Malawi is Malawi\" is **not** supported by the documents. \n\nTherefore, my response is:\n\n`{'output': 'no'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\nThe documents consistently refer to the country as \"Malawi,\" supporting the statement that the common name of the country is indeed Malawi."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The name \"Malawi\" itself refers to the country's identity, but the question asks if \"Malawi\" is a common name for Malawi, implying another name is also used commonly. However, none of the context information suggests any other name is as widely recognized or commonly referred to as \"Malawi\".",
+            "category": 2
+        }
+    }
+}

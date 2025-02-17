@@ -1,0 +1,134 @@
+{
+    "subject": "resource/John_Tharp",
+    "predicate": "property/appointer",
+    "object": "resource/Barack_Obama",
+    "human_readable": "John Tharp was appointed by Barack Obama.",
+    "questions": [
+        {
+            "score": 0.8855037093162537,
+            "question": "Who appointed John Tharp?"
+        },
+        {
+            "score": 0.8543975353240967,
+            "question": "What is the relationship between John Tharp and Barack Obama?"
+        },
+        {
+            "score": 0.8344272375106812,
+            "question": "What role was John Tharp appointed to?"
+        },
+        {
+            "score": 0.7675705552101135,
+            "question": "During what period was John Tharp appointed?"
+        },
+        {
+            "score": 0.6536820530891418,
+            "question": "Who was Barack Obama?"
+        },
+        {
+            "score": 0.5279874801635742,
+            "question": "Can you give an example of another person appointed by Barack Obama?"
+        },
+        {
+            "score": 0.22528105974197388,
+            "question": "What were some of Barack Obama's key policies?"
+        },
+        {
+            "score": 0.07848704606294632,
+            "question": "What is the significance of appointments made by a president?"
+        },
+        {
+            "score": 0.030809719115495682,
+            "question": "What are some factors considered when making political appointments?"
+        },
+        {
+            "score": 0.02307000383734703,
+            "question": "How do presidential appointments impact government functions?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=John Tharp was appointed by Barack Obama.",
+            "html": "dbpedia_8678_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some factors considered when making political appointments?",
+            "html": "dbpedia_8678_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the significance of appointments made by a president?",
+            "html": "dbpedia_8678_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What were some of Barack Obama's key policies?",
+            "html": "dbpedia_8678_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8678_23.txt"
+        },
+        {
+            "file_id": "dbpedia_8678_3.txt"
+        },
+        {
+            "file_id": "dbpedia_8678_30.txt"
+        },
+        {
+            "file_id": "dbpedia_8678_31.txt"
+        },
+        {
+            "file_id": "dbpedia_8678_33.txt"
+        },
+        {
+            "file_id": "dbpedia_8678_45.txt"
+        },
+        {
+            "file_id": "dbpedia_8678_47.txt"
+        },
+        {
+            "file_id": "dbpedia_8678_66.txt"
+        },
+        {
+            "file_id": "dbpedia_8678_73.txt"
+        },
+        {
+            "file_id": "dbpedia_8678_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "After evaluating the context information, I found that:\n\n* The document mentions President Obama nominating John Tharp and John Lee to fill two vacancies on the U.S. District Court in the Northern District of Illinois.\n* However, there is no mention of Judge John J. Tharp Jr. being appointed by Barack Obama.\n\nTherefore, the correct answer is:\n```json\n{\n  \"output\": \"no\"\n}\n```\nThe triple \"John Tharp was appointed by Barack Obama\" is not supported by the information in the documents."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents support that John Tharp was nominated by President Barack Obama to serve on the U.S. District Court bench in the Northern District of Illinois."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "Context information 3 clearly states that Judge John J. Tharp, Jr. became a United States District Judge on June 4, 2012, and his nomination was confirmed by the United States Senate on May 14, 2012, both of which occurred after Barack Obama took office as President in January 2009.",
+            "category": -1
+        }
+    }
+}

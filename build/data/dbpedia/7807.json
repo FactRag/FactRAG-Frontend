@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Leonard_Susskind",
+    "predicate": "ontology/birthPlace",
+    "object": "resource/New_York",
+    "human_readable": "Leonard Susskind was born in New York.",
+    "questions": [
+        {
+            "score": 0.9349470138549805,
+            "question": "Where was Leonard Susskind born?"
+        },
+        {
+            "score": 0.5736116170883179,
+            "question": "What is Leonard Susskind known for?"
+        },
+        {
+            "score": 0.4173121750354767,
+            "question": "Where did Leonard Susskind receive his education?"
+        },
+        {
+            "score": 0.28865981101989746,
+            "question": "In what field does Leonard Susskind work?"
+        },
+        {
+            "score": 0.2778340280056,
+            "question": "Which universities has Leonard Susskind been affiliated with?"
+        },
+        {
+            "score": 0.2477000504732132,
+            "question": "Is Leonard Susskind a theoretical physicist?"
+        },
+        {
+            "score": 0.24289140105247498,
+            "question": "Has Leonard Susskind won any awards for his work?"
+        },
+        {
+            "score": 0.2417616844177246,
+            "question": "What are some of Leonard Susskind's most famous theories?"
+        },
+        {
+            "score": 0.2363562285900116,
+            "question": "What are some of the major contributions Leonard Susskind has made to science?"
+        },
+        {
+            "score": 0.17662902176380157,
+            "question": "What is Leonard Susskind's area of expertise within physics?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Leonard Susskind was born in New York.",
+            "html": "dbpedia_7807_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some of the major contributions Leonard Susskind has made to science?",
+            "html": "dbpedia_7807_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some of Leonard Susskind's most famous theories?",
+            "html": "dbpedia_7807_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Has Leonard Susskind won any awards for his work?",
+            "html": "dbpedia_7807_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_7807_1.txt"
+        },
+        {
+            "file_id": "dbpedia_7807_24.txt"
+        },
+        {
+            "file_id": "dbpedia_7807_33.txt"
+        },
+        {
+            "file_id": "dbpedia_7807_37.txt"
+        },
+        {
+            "file_id": "dbpedia_7807_4.txt"
+        },
+        {
+            "file_id": "dbpedia_7807_40.txt"
+        },
+        {
+            "file_id": "dbpedia_7807_46.txt"
+        },
+        {
+            "file_id": "dbpedia_7807_49.txt"
+        },
+        {
+            "file_id": "dbpedia_7807_53.txt"
+        },
+        {
+            "file_id": "dbpedia_7807_54.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the structured JSON response:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe documents contain multiple birthdates for Leonard Susskind, including June 1, 1940 (from file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_7807/re-ranker-msmarco/37.txt), and June 19, 1940 (from file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_7807/re-ranker-msmarco/50.txt). The birthdate \"New York\" is not mentioned in the documents."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\nThis answer is derived from the information provided in the documents, which state that Leonard Susskind was born on June 1, 1940, in the Bronx, New York. Therefore, the statement \"Leonard Susskind was born in New York\" is supported by the given context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The context information consistently states his birthplace as the Bronx (New York City) or New York, with no variation.",
+            "category": 2
+        }
+    }
+}

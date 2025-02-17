@@ -1,0 +1,102 @@
+{
+    "subject": "resource/George_W._Bush",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "George W. Bush",
+    "human_readable": "The label of George W. Bush is 'George W. Bush'.",
+    "questions": [
+        {
+            "score": 0.9396262168884277,
+            "question": "What is the label associated with George W. Bush?"
+        },
+        {
+            "score": 0.7864636182785034,
+            "question": "Who is George W. Bush?"
+        },
+        {
+            "score": 0.4878281056880951,
+            "question": "Can you tell me something about George W. Bush?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The label of George W. Bush is 'George W. Bush'.",
+            "html": "dbpedia_9228_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is George W. Bush?",
+            "html": "dbpedia_9228_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the label associated with George W. Bush?",
+            "html": "dbpedia_9228_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_9228_32.txt"
+        },
+        {
+            "file_id": "dbpedia_9228_35.txt"
+        },
+        {
+            "file_id": "dbpedia_9228_54.txt"
+        },
+        {
+            "file_id": "dbpedia_9228_59.txt"
+        },
+        {
+            "file_id": "dbpedia_9228_63.txt"
+        },
+        {
+            "file_id": "dbpedia_9228_72.txt"
+        },
+        {
+            "file_id": "dbpedia_9228_78.txt"
+        },
+        {
+            "file_id": "dbpedia_9228_82.txt"
+        },
+        {
+            "file_id": "dbpedia_9228_89.txt"
+        },
+        {
+            "file_id": "dbpedia_9228_90.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here's the evaluation of the triple \"The label of George W. Bush is 'George W. Bush'\":\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation:\n\nThe information in the documents does not explicitly confirm that the label of George W. Bush is indeed \"George W. Bush\". The name \"George W. Bush\" appears multiple times across different documents, but none of them provide explicit confirmation that this is the only correct label for him.\n\nHowever, it's worth noting that the documents do consistently refer to the subject as \"George W. Bush\", without any apparent confusion or alternative labels being proposed. Nevertheless, based on the evaluation criteria, I cannot confirm the triple with absolute certainty, hence the output is \"no\"."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe information provided in the documents supports the triple \"The label of George W. Bush is 'George W. Bush'\". All documents consistently refer to him as George W. Bush, confirming his name and label as stated in the triple."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The label of George W. Bush is actually just \"Bush\" as mentioned in context 3, where it states \"Here we will just call him Bush.\"",
+            "category": 2
+        }
+    }
+}

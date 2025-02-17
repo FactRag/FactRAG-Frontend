@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Young_Fabians_Finance_Network",
+    "predicate": "ontology/parentOrganisation",
+    "object": "resource/Young_Fabians",
+    "human_readable": "The parent organisation of Young Fabians Finance Network is Young Fabians.",
+    "questions": [
+        {
+            "score": 0.988675594329834,
+            "question": "Name the parent organization of Young Fabians Finance Network."
+        },
+        {
+            "score": 0.987612783908844,
+            "question": "What is the parent organization of Young Fabians Finance Network?"
+        },
+        {
+            "score": 0.9753976464271545,
+            "question": "Is Young Fabians Finance Network a part of Young Fabians?"
+        },
+        {
+            "score": 0.9613862037658691,
+            "question": "What organization is responsible for Young Fabians Finance Network?"
+        },
+        {
+            "score": 0.946426510810852,
+            "question": "Who or what oversees Young Fabians Finance Network?"
+        },
+        {
+            "score": 0.9142140746116638,
+            "question": "Which organization provides support and direction to Young Fabians Finance Network?"
+        },
+        {
+            "score": 0.8666365742683411,
+            "question": "What is the relationship between Young Fabians and Young Fabians Finance Network?"
+        },
+        {
+            "score": 0.8150537610054016,
+            "question": "Under whose umbrella does Young Fabians Finance Network operate?"
+        },
+        {
+            "score": 0.8073939085006714,
+            "question": "To which larger group does Young Fabians Finance Network belong?"
+        },
+        {
+            "score": 0.7251707911491394,
+            "question": "What is the higher-level entity that encompasses Young Fabians Finance Network?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The parent organisation of Young Fabians Finance Network is Young Fabians.",
+            "html": "dbpedia_7534_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=To which larger group does Young Fabians Finance Network belong?",
+            "html": "dbpedia_7534_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Under whose umbrella does Young Fabians Finance Network operate?",
+            "html": "dbpedia_7534_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the relationship between Young Fabians and Young Fabians Finance Network?",
+            "html": "dbpedia_7534_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_7534_102.txt"
+        },
+        {
+            "file_id": "dbpedia_7534_16.txt"
+        },
+        {
+            "file_id": "dbpedia_7534_22.txt"
+        },
+        {
+            "file_id": "dbpedia_7534_25.txt"
+        },
+        {
+            "file_id": "dbpedia_7534_29.txt"
+        },
+        {
+            "file_id": "dbpedia_7534_35.txt"
+        },
+        {
+            "file_id": "dbpedia_7534_51.txt"
+        },
+        {
+            "file_id": "dbpedia_7534_66.txt"
+        },
+        {
+            "file_id": "dbpedia_7534_80.txt"
+        },
+        {
+            "file_id": "dbpedia_7534_98.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n\n\nLet me explain why:\n\n* **The context states:** \"Within the group are five special interest communities called Networks that are run by voluntary steering groups and elect their own Chair and officers.  The current Networks are Economy & Finance, Health, International Affairs, Education, Communications (Industry), Environment, Tech, Devolution & Local Government, Law, and Arts & Culture.\"\n* **It also states:** \"As the under-31 section of the Fabian Society, the Young Fabians is the only left-of-centre think tank run by and for young people.\"\n\nTherefore,  the Finance Network is part of the Young Fabians. \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the structured JSON format with the evaluation:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThis is because according to the documents, the Young Fabians has a \"Finance\" network among others (Environment, Health, etc.), but there is no information about a specific \"Young Fabians Finance Network\" being a separate entity within the Young Fabians organization. The networks are mentioned as sub-groups within the Young Fabians in the document with file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_7534/re-ranker-msmarco/22.txt, but they are not referred to as separate organizations or entities, and specifically a \"Finance Network\" of Young Fabians is not mentioned."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nExplanation: The documents clearly state that the Young Fabians run various events and activities, including policy workshops. Since the Young Fabians organization itself runs these networks (e.g., Economy & Finance), it can be logically inferred that the parent organization of a specific Young Fabians network, such as the Finance Network, is indeed Young Fabians."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The Young Fabians Finance Network is not a separate entity within the organization, but rather one of the networks run by the Young Fabians themselves.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "It states a parent-child relationship where the provided context describes networks as branches within Young Fabians, not hierarchical structures.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information states that the Young Fabians have several policy networks run by voluntary steering groups, each focusing on specific policy areas. It does not mention anything about a finance network being directly under Young Fabians' finance department or any financial management structure within the organisation. Therefore, it's incorrect to assume there is a parent-organisation relationship in this context.",
+            "category": 2
+        }
+    }
+}

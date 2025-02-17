@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Arnold_Schwarzenegger",
+    "predicate": "ontology/lieutenant",
+    "object": "resource/Cruz_Bustamante",
+    "human_readable": "Arnold Schwarzenegger was the lieutenant of Cruz Bustamante.",
+    "questions": [
+        {
+            "score": 0.9198333621025085,
+            "question": "What was the relationship between Arnold Schwarzenegger and Cruz Bustamante?"
+        },
+        {
+            "score": 0.8913462162017822,
+            "question": "Who was Arnold Schwarzenegger's lieutenant?"
+        },
+        {
+            "score": 0.7471520900726318,
+            "question": "What position did Cruz Bustamante hold?"
+        },
+        {
+            "score": 0.7395322918891907,
+            "question": "In what capacity did Arnold Schwarzenegger have a lieutenant?"
+        },
+        {
+            "score": 0.7161282300949097,
+            "question": "What can you tell me about the political careers of Arnold Schwarzenegger and Cruz Bustamante?"
+        },
+        {
+            "score": 0.4702603816986084,
+            "question": "Who served under Arnold Schwarzenegger?"
+        },
+        {
+            "score": 0.3688231408596039,
+            "question": "Who were some notable figures associated with Arnold Schwarzenegger's career?"
+        },
+        {
+            "score": 0.33258742094039917,
+            "question": "Was Arnold Schwarzenegger ever involved in politics?"
+        },
+        {
+            "score": 0.2913442552089691,
+            "question": "Can you name a political figure associated with Arnold Schwarzenegger?"
+        },
+        {
+            "score": 0.23628456890583038,
+            "question": "Did Arnold Schwarzenegger hold a high-ranking position in government?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Arnold Schwarzenegger was the lieutenant of Cruz Bustamante.",
+            "html": "dbpedia_8415_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you name a political figure associated with Arnold Schwarzenegger?",
+            "html": "dbpedia_8415_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Was Arnold Schwarzenegger ever involved in politics?",
+            "html": "dbpedia_8415_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who were some notable figures associated with Arnold Schwarzenegger's career?",
+            "html": "dbpedia_8415_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8415_18.txt"
+        },
+        {
+            "file_id": "dbpedia_8415_21.txt"
+        },
+        {
+            "file_id": "dbpedia_8415_39.txt"
+        },
+        {
+            "file_id": "dbpedia_8415_53.txt"
+        },
+        {
+            "file_id": "dbpedia_8415_7.txt"
+        },
+        {
+            "file_id": "dbpedia_8415_74.txt"
+        },
+        {
+            "file_id": "dbpedia_8415_84.txt"
+        },
+        {
+            "file_id": "dbpedia_8415_86.txt"
+        },
+        {
+            "file_id": "dbpedia_8415_93.txt"
+        },
+        {
+            "file_id": "dbpedia_8415_96.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n\n\nLet me know if you have more triples to evaluate!  I'm ready for them."
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "After analyzing the provided context information, I found that it does not provide explicit evidence to support or refute the statement \"Arnold Schwarzenegger was the lieutenant of Cruz Bustamante.\" However, it can be inferred from the texts that:\n\n* Cruz Bustamante is mentioned as the Lieutenant Governor of California.\n* Arnold Schwarzenegger is referred to as the Governor of California.\n* There are mentions of Schwarzenegger and Bustamante being in positions of authority at different times, but there is no direct statement indicating a lieutenant-lieutenant relationship.\n\nGiven this information, I would say that the statement \"Arnold Schwarzenegger was the lieutenant of Cruz Bustamante\" is not directly supported or refuted by the provided context. However, since it's phrased as a question and given the lack of explicit evidence to refute it, I'll provide an answer based on the absence of strong counter-evidence.\n\nTherefore, my response would be:\n\n`{'output': 'yes'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe documents do not support the statement that Arnold Schwarzenegger was the lieutenant of Cruz Bustamante. In fact, the information provided indicates that Cruz Bustamante was the deputy (lieutenant) of Gray Davis and later ran against Arnold Schwarzenegger in a recall election."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n    \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Arnold Schwarzenegger was not the lieutenant of Cruz Bustamante. In reality, Cruz Bustamante served as Lieutenant Governor under Gray Davis, while Arnold Schwarzenegger replaced Davis in a recall election and became governor.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Cruz Bustamante was the lieutenant governor under Governor Gray Davis, not Arnold Schwarzenegger.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Cruz Bustamante was the lieutenant governor of California under Arnold Schwarzenegger, not the other way around. The context clearly states that Cruz Bustamante served as acting governor when Schwarzenegger was out of state due to various reasons, including a skiing accident.",
+            "category": 2
+        }
+    }
+}

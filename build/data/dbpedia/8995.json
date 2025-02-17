@@ -1,0 +1,129 @@
+{
+    "subject": "resource/James_Stroud",
+    "predicate": "ontology/hometown",
+    "object": "resource/United_States",
+    "human_readable": "James Stroud was born in the United States.",
+    "questions": [
+        {
+            "score": 0.9074710607528687,
+            "question": "What state was James Stroud born in?"
+        },
+        {
+            "score": 0.8728957772254944,
+            "question": "Where was James Stroud born?"
+        },
+        {
+            "score": 0.8569554090499878,
+            "question": "Is James Stroud American?"
+        },
+        {
+            "score": 0.8245444297790527,
+            "question": "What year was James Stroud born?"
+        },
+        {
+            "score": 0.7259683012962341,
+            "question": "Is there anything notable about the place where James Stroud was born?"
+        },
+        {
+            "score": 0.5634562373161316,
+            "question": "What is the population of James Stroud's birthplace?"
+        },
+        {
+            "score": 0.5108281970024109,
+            "question": "Can you tell me more about James Stroud's birthplace?"
+        },
+        {
+            "score": 0.4898553192615509,
+            "question": "What country is James Stroud from?"
+        },
+        {
+            "score": 0.2836093306541443,
+            "question": "Who are some famous people born in the United States?"
+        },
+        {
+            "score": 0.15148639678955078,
+            "question": "What are some common characteristics of people born in the United States?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=James Stroud was born in the United States.",
+            "html": "dbpedia_8995_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who are some famous people born in the United States?",
+            "html": "dbpedia_8995_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What country is James Stroud from?",
+            "html": "dbpedia_8995_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about James Stroud's birthplace?",
+            "html": "dbpedia_8995_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8995_23.txt"
+        },
+        {
+            "file_id": "dbpedia_8995_31.txt"
+        },
+        {
+            "file_id": "dbpedia_8995_34.txt"
+        },
+        {
+            "file_id": "dbpedia_8995_46.txt"
+        },
+        {
+            "file_id": "dbpedia_8995_52.txt"
+        },
+        {
+            "file_id": "dbpedia_8995_59.txt"
+        },
+        {
+            "file_id": "dbpedia_8995_6.txt"
+        },
+        {
+            "file_id": "dbpedia_8995_62.txt"
+        },
+        {
+            "file_id": "dbpedia_8995_70.txt"
+        },
+        {
+            "file_id": "dbpedia_8995_74.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the provided context information, here is the evaluation of the triple:\n\n{\n  \"output\": \"yes\"\n}\n\nThe reason for this answer is that one of the documents (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8995/re-ranker-msmarco/23.txt) mentions James Clyde Stroud, and in his background information, it is stated that he was \"born on September 9, 1952 in Paoli, Indiana, United States.\""
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents provide information about multiple individuals named James Stroud, but none of them are explicitly linked to being born in the United States. However, since at least one document mentions that James Clyde Stroud was born on September 9, 1952, in Paoli, Indiana, United States, and considering \"Paoli\" is a town in Indiana, which is within the United States, we can infer that there is support for this statement. Given no contradictory information and the presence of relevant details, the response aligns with the assumption that James Stroud was born in the United States."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

@@ -1,0 +1,129 @@
+{
+    "subject": "resource/WXKB",
+    "predicate": "ontology/abstract",
+    "object": "WXKB is a commercial radio station located in Cape Coral, Florida, broadcasting to Fort Myers and Naples, Florida on 103.9 FM.  WXKB airs a Rhythmic Top 40 music format branded as \"B-103.9 All The Hits\", sometimes called \"The Killer B\".",
+    "human_readable": "WXKB is a commercial radio station located in Cape Coral, Florida, broadcasting to Fort Myers and Naples, Florida on 103.9 FM, and airs a Rhythmic Top 40 music format branded as 'B-103.9 All The Hits', sometimes called 'The Killer B'.",
+    "questions": [
+        {
+            "score": 0.9369646310806274,
+            "question": "Is WXKB a commercial radio station?"
+        },
+        {
+            "score": 0.8586211800575256,
+            "question": "Which city does WXKB broadcast to in Florida?"
+        },
+        {
+            "score": 0.8153625130653381,
+            "question": "Where is WXKB located?"
+        },
+        {
+            "score": 0.8075510263442993,
+            "question": "What is another name for WXKB's branding?"
+        },
+        {
+            "score": 0.7943288087844849,
+            "question": "On which FM frequency does WXKB broadcast?"
+        },
+        {
+            "score": 0.7617478370666504,
+            "question": "Which two cities in Florida are served by WXKB's broadcasts?"
+        },
+        {
+            "score": 0.7593772411346436,
+            "question": "What format of music does WXKB play?"
+        },
+        {
+            "score": 0.7399440407752991,
+            "question": "What is the nickname sometimes used for WXKB?"
+        },
+        {
+            "score": 0.6499859094619751,
+            "question": "What genre of music defines WXKB's programming?"
+        },
+        {
+            "score": 0.3653657138347626,
+            "question": "What is the call letters of the radio station?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=WXKB is a commercial radio station located in Cape Coral, Florida, broadcasting to Fort Myers and Naples, Florida on 103.9 FM, and airs a Rhythmic Top 40 music format branded as 'B-103.9 All The Hits', sometimes called 'The Killer B'.",
+            "html": "dbpedia_6874_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What genre of music defines WXKB's programming?",
+            "html": "dbpedia_6874_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the nickname sometimes used for WXKB?",
+            "html": "dbpedia_6874_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What format of music does WXKB play?",
+            "html": "dbpedia_6874_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6874_21.txt"
+        },
+        {
+            "file_id": "dbpedia_6874_28.txt"
+        },
+        {
+            "file_id": "dbpedia_6874_30.txt"
+        },
+        {
+            "file_id": "dbpedia_6874_35.txt"
+        },
+        {
+            "file_id": "dbpedia_6874_42.txt"
+        },
+        {
+            "file_id": "dbpedia_6874_6.txt"
+        },
+        {
+            "file_id": "dbpedia_6874_62.txt"
+        },
+        {
+            "file_id": "dbpedia_6874_70.txt"
+        },
+        {
+            "file_id": "dbpedia_6874_82.txt"
+        },
+        {
+            "file_id": "dbpedia_6874_88.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the context information provided, here is the evaluation of the triple:\n\n{\n  \"output\": \"yes\"\n}\n\nHere's why:\n\n* The file_path contains multiple documents that mention WXKB as a commercial radio station.\n* Document 1 at path /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6874/re-ranker-msmarco/21.txt mentions WXKB as a commercial radio station located in Cape Coral, Florida.\n* Document 2 at path /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6874/re-ranker-msmarco/6.txt mentions WXKB as broadcasting to Fort Myers and Southwest Florida on 103.9 FM.\n* Document 3 at path /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6874/re-ranker-msmarco/28.txt mentions the format of WXKB as Top 40, which is consistent with being branded as 'B-103.9 All The Hits', sometimes called 'The Killer B'.\n\nTherefore, based on this information, the triple is supported by the documents and the answer should be \"yes\"."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nExplanation:\n- WXKB is indeed a commercial radio station located in Cape Coral, Florida.\n- It broadcasts to the Fort Myers-Naples market (Fort Myers and Naples).\n- The document states that it airs a Top 40 music format branded as \"B-103.9 All the Hits,\" which aligns with the Rhythmic Top 40 mentioned.\n- The station is also referred to by its nickname, \"The Killer B.\"\n- The frequency (103.9 FM) matches the query.\nTherefore, the information in the documents supports the given triple."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {'output': 'yes'}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

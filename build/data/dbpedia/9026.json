@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Maya_Ford",
+    "predicate": "ontology/hometown",
+    "object": "resource/United_States",
+    "human_readable": "Maya Ford's hometown is United States.",
+    "questions": [
+        {
+            "score": 0.9885262250900269,
+            "question": "Is Maya Ford's hometown in the United States?"
+        },
+        {
+            "score": 0.8623199462890625,
+            "question": "In what country would you find Maya Ford's hometown?"
+        },
+        {
+            "score": 0.7709805965423584,
+            "question": "What country considers Maya Ford a hometown resident?"
+        },
+        {
+            "score": 0.7083070874214172,
+            "question": "Where is Maya Ford from?"
+        },
+        {
+            "score": 0.5394842624664307,
+            "question": "Where did Maya Ford grow up?"
+        },
+        {
+            "score": 0.496799111366272,
+            "question": "Maya Ford's birthplace is located in which country?"
+        },
+        {
+            "score": 0.48776915669441223,
+            "question": "What is the nationality of Maya Ford?"
+        },
+        {
+            "score": 0.37432533502578735,
+            "question": "Maya Ford considers which place her home?"
+        },
+        {
+            "score": 0.3493765592575073,
+            "question": "Can you tell me about Maya Ford's origins?"
+        },
+        {
+            "score": 0.34864193201065063,
+            "question": "Which nation can claim Maya Ford as one of its own?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Maya Ford's hometown is United States.",
+            "html": "dbpedia_9026_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me about Maya Ford's origins?",
+            "html": "dbpedia_9026_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Maya Ford considers which place her home?",
+            "html": "dbpedia_9026_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the nationality of Maya Ford?",
+            "html": "dbpedia_9026_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_9026_2.txt"
+        },
+        {
+            "file_id": "dbpedia_9026_20.txt"
+        },
+        {
+            "file_id": "dbpedia_9026_32.txt"
+        },
+        {
+            "file_id": "dbpedia_9026_45.txt"
+        },
+        {
+            "file_id": "dbpedia_9026_49.txt"
+        },
+        {
+            "file_id": "dbpedia_9026_57.txt"
+        },
+        {
+            "file_id": "dbpedia_9026_59.txt"
+        },
+        {
+            "file_id": "dbpedia_9026_67.txt"
+        },
+        {
+            "file_id": "dbpedia_9026_73.txt"
+        },
+        {
+            "file_id": "dbpedia_9026_92.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the provided context information and query, I will evaluate whether the statement \"Maya Ford's hometown is United States\" is supported by the documents.\n\nHere is my analysis:\n\nThe documents mention Maya Angelou (not Maya Ford), and there are multiple mentions of her birthplace and childhood. However, none of these mentions directly state that she was born or grew up in a specific country within the United States (e.g., Missouri is mentioned as her birthplace).\n\nHowever, one of the documents (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_9026/re-ranker-msmarco/70.txt) mentions that Maya Angelou grew up in Stamps, Arkansas, and experienced racial discrimination in the American South. This implies that she spent her childhood in the United States.\n\nTherefore, based on this indirect evidence, I will provide a response that is \"yes\", but with a note that it's not a direct statement from the documents:\n\nResponse: {'output': 'maybe'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\"output\": \"yes\"}\n```\n\nExplanation: The context information mentions that Maya worked at the Ford Foundation, which is located in the United States. Although it does not explicitly state that her hometown is the U.S., given her work and involvement with organizations based in the U.S., we can infer that she has a connection to the country. Therefore, the statement \"Maya Ford's hometown is United States\" aligns with the provided context information."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Multiple passages state Maya Angelou was born in St. Louis, Missouri and lived in Stamps, Arkansas.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Gazprom",
+    "predicate": "ontology/subsidiary",
+    "object": "resource/List_of_Gazprom_subsidiaries",
+    "human_readable": "Gazprom is a subsidiary of List of Gazprom subsidiaries.",
+    "questions": [
+        {
+            "score": 0.9716253280639648,
+            "question": "What kind of organization is List of Gazprom subsidiaries?"
+        },
+        {
+            "score": 0.9504526853561401,
+            "question": "What is the purpose of a list of Gazprom subsidiaries?"
+        },
+        {
+            "score": 0.9335879683494568,
+            "question": "What is the relationship between Gazprom and List of Gazprom subsidiaries?"
+        },
+        {
+            "score": 0.9038487672805786,
+            "question": "Does Gazprom have any subsidiaries?"
+        },
+        {
+            "score": 0.898707926273346,
+            "question": "Is Gazprom a parent company or subsidiary?"
+        },
+        {
+            "score": 0.8970108032226562,
+            "question": "Can you provide examples of Gazprom subsidiaries?"
+        },
+        {
+            "score": 0.8502280116081238,
+            "question": "Is there any information about the size or scope of Gazprom subsidiaries?"
+        },
+        {
+            "score": 0.8483936190605164,
+            "question": "How many subsidiaries does Gazprom have?"
+        },
+        {
+            "score": 0.847490131855011,
+            "question": "Are there any public resources that provide more details about Gazprom and its subsidiaries?"
+        },
+        {
+            "score": 0.7199174165725708,
+            "question": "Which entity does Gazprom belong to?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Gazprom is a subsidiary of List of Gazprom subsidiaries.",
+            "html": "dbpedia_8223_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any public resources that provide more details about Gazprom and its subsidiaries?",
+            "html": "dbpedia_8223_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How many subsidiaries does Gazprom have?",
+            "html": "dbpedia_8223_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there any information about the size or scope of Gazprom subsidiaries?",
+            "html": "dbpedia_8223_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8223_10.txt"
+        },
+        {
+            "file_id": "dbpedia_8223_20.txt"
+        },
+        {
+            "file_id": "dbpedia_8223_33.txt"
+        },
+        {
+            "file_id": "dbpedia_8223_35.txt"
+        },
+        {
+            "file_id": "dbpedia_8223_46.txt"
+        },
+        {
+            "file_id": "dbpedia_8223_48.txt"
+        },
+        {
+            "file_id": "dbpedia_8223_6.txt"
+        },
+        {
+            "file_id": "dbpedia_8223_61.txt"
+        },
+        {
+            "file_id": "dbpedia_8223_7.txt"
+        },
+        {
+            "file_id": "dbpedia_8223_76.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nGazprom is not a subsidiary, it is the parent company to many subsidiaries listed in the provided documents.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, here's the evaluation:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation:\nThe triple to be evaluated is: Gazprom is a subsidiary of List of Gazprom subsidiaries.\n\nHowever, according to the documents, Gazprom is not explicitly stated as a subsidiary of List of Gazprom subsidiaries. In fact, the context information suggests that List of Gazprom subsidiaries is actually a list of entities and branches engaged in gas supply network operations, which includes Gazprom itself, but also numerous other companies and subsidiaries. Therefore, the relationship between Gazprom and List of Gazprom subsidiaries is more like a containment or inclusivity (Gazprom being part of the larger list), rather than a strict subsidiary-parent relationship."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The provided context information does not indicate that Gazprom itself is a subsidiary. Instead, the documents list multiple entities and subsidiaries under the Gazprom Group, such as Gazprom Dobycha Astrakhan LLC, Gazprom Transgaz Volgograd LLC, Gazprom Germania GmbH, etc., but it explicitly states these are subsidiaries or companies in which Gazprom has a stake or operates rather than being a subsidiary of Gazprom."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Gazprom is described as a parent company with subsidiaries listed, not the other way around.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "Gazprom appears to be the parent company, not a subsidiary, as it has its own subsidiaries listed under \"List of entities included in the Integrated System of Process Safety Management\".",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Gazprom itself is the parent company listed in the context information, and all the entities mentioned are subsidiaries of Gazprom.",
+            "category": 2
+        }
+    }
+}

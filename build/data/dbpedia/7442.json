@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Darunta_Dam",
+    "predicate": "ontology/river",
+    "object": "resource/Kabul_River",
+    "human_readable": "The Darunta Dam is a river.",
+    "questions": [
+        {
+            "score": 0.7143214344978333,
+            "question": "What kind of waterway is associated with the Darunta Dam?"
+        },
+        {
+            "score": 0.6136391758918762,
+            "question": "Is the Darunta Dam a natural feature?"
+        },
+        {
+            "score": 0.5774516463279724,
+            "question": "Can the Darunta Dam be used for transportation?"
+        },
+        {
+            "score": 0.5684491991996765,
+            "question": "What type of structure is the Darunta Dam?"
+        },
+        {
+            "score": 0.5173598527908325,
+            "question": "Where would you find the Darunta Dam?"
+        },
+        {
+            "score": 0.4900253713130951,
+            "question": "How was the Darunta Dam constructed?"
+        },
+        {
+            "score": 0.44500237703323364,
+            "question": "What is the main characteristic of the Darunta Dam?"
+        },
+        {
+            "score": 0.4241805374622345,
+            "question": "Does the Darunta Dam have any impact on the surrounding environment?"
+        },
+        {
+            "score": 0.4134295582771301,
+            "question": "Does the Darunta Dam serve a specific purpose?"
+        },
+        {
+            "score": 0.35897016525268555,
+            "question": "What are some potential benefits of the Darunta Dam?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The Darunta Dam is a river.",
+            "html": "dbpedia_7442_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does the Darunta Dam serve a specific purpose?",
+            "html": "dbpedia_7442_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does the Darunta Dam have any impact on the surrounding environment?",
+            "html": "dbpedia_7442_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the main characteristic of the Darunta Dam?",
+            "html": "dbpedia_7442_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_7442_18.txt"
+        },
+        {
+            "file_id": "dbpedia_7442_21.txt"
+        },
+        {
+            "file_id": "dbpedia_7442_23.txt"
+        },
+        {
+            "file_id": "dbpedia_7442_27.txt"
+        },
+        {
+            "file_id": "dbpedia_7442_32.txt"
+        },
+        {
+            "file_id": "dbpedia_7442_43.txt"
+        },
+        {
+            "file_id": "dbpedia_7442_47.txt"
+        },
+        {
+            "file_id": "dbpedia_7442_53.txt"
+        },
+        {
+            "file_id": "dbpedia_7442_65.txt"
+        },
+        {
+            "file_id": "dbpedia_7442_73.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nLet me know if you have any more triples to evaluate!"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the structured JSON response:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: None of the provided documents mention anything about The Darunta Dam being a river. In fact, the documents describe it as a hydroelectric power dam located on the Kabul River."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nThe documents provide information about the Darunta Dam, describing it as a hydroelectric power dam located on the Kabul River. However, they do not state that it is a river itself; rather, they indicate it is situated on the Kabul River."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Darunta Dam is not a river; it is a hydroelectric power dam located on the Kabul River.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "It explicitly states \"The Darunta Dam is a hydroelectric power dam located on the Kabul River\".  Dams are built on rivers.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The Darunta Dam is actually a hydroelectric power dam located on the Kabul River, not just a river itself.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The Darunta Dam is described as a hydroelectric power dam located on the Kabul River, not a river itself.",
+            "category": 2
+        }
+    }
+}

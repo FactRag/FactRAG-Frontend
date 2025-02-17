@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Malawi",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "Malawi",
+    "human_readable": "Malawi's label is Malawi.",
+    "questions": [
+        {
+            "score": 0.9606350064277649,
+            "question": "What is the label of Malawi?"
+        },
+        {
+            "score": 0.8484453558921814,
+            "question": "Is Malawi a country?"
+        },
+        {
+            "score": 0.7305089235305786,
+            "question": "Where is Malawi located?"
+        },
+        {
+            "score": 0.6924622654914856,
+            "question": "What is the capital of Malawi?"
+        },
+        {
+            "score": 0.6701502203941345,
+            "question": "What is the official language of Malawi?"
+        },
+        {
+            "score": 0.6141768097877502,
+            "question": "What are some interesting facts about Malawi?"
+        },
+        {
+            "score": 0.6069555878639221,
+            "question": "Can you tell me more about Malawi?"
+        },
+        {
+            "score": 0.6007694602012634,
+            "question": "What is the currency used in Malawi?"
+        },
+        {
+            "score": 0.5609128475189209,
+            "question": "What are some popular tourist destinations in Malawi?"
+        },
+        {
+            "score": 0.49063169956207275,
+            "question": "What is the climate like in Malawi?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Malawi's label is Malawi.",
+            "html": "dbpedia_8437_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some popular tourist destinations in Malawi?",
+            "html": "dbpedia_8437_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the currency used in Malawi?",
+            "html": "dbpedia_8437_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about Malawi?",
+            "html": "dbpedia_8437_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8437_111.txt"
+        },
+        {
+            "file_id": "dbpedia_8437_113.txt"
+        },
+        {
+            "file_id": "dbpedia_8437_127.txt"
+        },
+        {
+            "file_id": "dbpedia_8437_14.txt"
+        },
+        {
+            "file_id": "dbpedia_8437_28.txt"
+        },
+        {
+            "file_id": "dbpedia_8437_30.txt"
+        },
+        {
+            "file_id": "dbpedia_8437_43.txt"
+        },
+        {
+            "file_id": "dbpedia_8437_44.txt"
+        },
+        {
+            "file_id": "dbpedia_8437_94.txt"
+        },
+        {
+            "file_id": "dbpedia_8437_97.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the structured JSON format for the query \"Malawi's label is Malawi\":\n\n{\n  \"output\": \"no\"\n}\n\nThe reason for this answer is that while one of the documents mentions a new record label called Spare Dog Records, which was set up by someone who visited Malawi and was struck by the music he came across there, there is no indication in any of the documents that this record label has the word \"Malawi\" as part of its name. Therefore, it cannot be concluded that Malawi's label is Malawi."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThis response evaluates the given query based on the provided context information. The statement \"Malawi's label is Malawi\" is correct according to the documents, as they describe various aspects of Malawi but do not contradict this statement. Therefore, the output is \"yes\"."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n     \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{\"output\": \"yes\"}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The record label launched in Malawi is named Spare Dog Records, not Malawi. The luxury menswear brand is Be More Malawi, but it's not the name of the country itself.",
+            "category": 4
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because Malawi is the name of a country, not a record label.",
+            "category": 4
+        }
+    }
+}

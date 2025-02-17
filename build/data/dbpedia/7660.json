@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Maverick_(film)",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "Maverick (film)",
+    "human_readable": "The label of Maverick (film) is Maverick (film).",
+    "questions": [
+        {
+            "score": 0.9650797247886658,
+            "question": "Is Maverick a film?"
+        },
+        {
+            "score": 0.9284136295318604,
+            "question": "What is the label of Maverick?"
+        },
+        {
+            "score": 0.861500084400177,
+            "question": "Who directed Maverick?"
+        },
+        {
+            "score": 0.8092663288116455,
+            "question": "Who starred in Maverick?"
+        },
+        {
+            "score": 0.7485271692276001,
+            "question": "What is Maverick known for?"
+        },
+        {
+            "score": 0.7446135878562927,
+            "question": "What genre is Maverick?"
+        },
+        {
+            "score": 0.676369309425354,
+            "question": "What type of thing is Maverick?"
+        },
+        {
+            "score": 0.6463949084281921,
+            "question": "What are some popular scenes from Maverick?"
+        },
+        {
+            "score": 0.6358848214149475,
+            "question": "Where was Maverick filmed?"
+        },
+        {
+            "score": 0.5444791316986084,
+            "question": "When was Maverick released?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The label of Maverick (film) is Maverick (film).",
+            "html": "dbpedia_7660_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where was Maverick filmed?",
+            "html": "dbpedia_7660_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some popular scenes from Maverick?",
+            "html": "dbpedia_7660_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of thing is Maverick?",
+            "html": "dbpedia_7660_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_7660_121.txt"
+        },
+        {
+            "file_id": "dbpedia_7660_124.txt"
+        },
+        {
+            "file_id": "dbpedia_7660_130.txt"
+        },
+        {
+            "file_id": "dbpedia_7660_132.txt"
+        },
+        {
+            "file_id": "dbpedia_7660_146.txt"
+        },
+        {
+            "file_id": "dbpedia_7660_169.txt"
+        },
+        {
+            "file_id": "dbpedia_7660_41.txt"
+        },
+        {
+            "file_id": "dbpedia_7660_49.txt"
+        },
+        {
+            "file_id": "dbpedia_7660_89.txt"
+        },
+        {
+            "file_id": "dbpedia_7660_93.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'} \n``` \n\n\nLet me explain why. None of the provided text mentions a film titled \"Maverick\" and its associated label.  The documents primarily focus on:\n\n* **Maverick Recording Company:** An American record label owned by Warner Music Group.\n* **Maverick Label:** A printing company specializing in custom labels. \n\n\nThere's no connection to a film within the given context."
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "To evaluate the triple, we need to identify the subject, predicate, and object. In this case, the triple is:\n\nSubject: The label of Maverick (film)\nPredicate: is\nObject: Maverick (film)\n\nAccording to the context information, there are multiple documents related to \"Maverick\", but only one seems relevant to the film. From file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_7660/re-ranker-msmarco/130.txt:\n\nA new film shines a spotlight on this made-in-America name\n\nThis document suggests that the film \"Maverick\" is related to the concept of \"maverick\", which has multiple meanings and associations.\n\nHowever, there are other documents mentioning \"Maverick\" as a record label or printing company, but none of them seem directly related to the film. Therefore, based on the available information:\n\n{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The provided documents contain information about the company Maverick Recording Company and its association with Warner Music Group, as well as a brief mention of the term \"maverick\" in a different context. There is no information linking the name \"Maverick\" to a specific film or confirming that \"The label of Maverick (film) is Maverick (film).\" Therefore, based on the given documents, the statement cannot be verified as correct."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Maverick (film) and Maverick Record Company are two separate entities, one being a record label owned by Warner Music Group and the other being a film. Therefore, it's incorrect to state that the label of Maverick (film) is Maverick (film).",
+            "category": 4
+        },
+        "gemma2": {
+            "reason": "The provided context discusses Maverick Recording Company and Maverick Label, both separate entities. There's no mention of a film titled \"Maverick\" or any connection between the existing Mavericks and a film with that name.",
+            "category": -1
+        },
+        "llama3.1": {
+            "reason": "Maverick refers to a film released in 2021 starring Jared Leto, which has no direct relation to the record label or printing company mentioned earlier.",
+            "category": -1
+        },
+        "qwen2.5": {
+            "reason": "The context information does not mention a film called Maverick with a label. Instead, it discusses Maverick Recording Company, which is an American record label, and Maverick Label, a printing company for custom labels. There is no evidence to support the existence of a film labeled as Maverick based on the provided information.",
+            "category": 4
+        }
+    }
+}

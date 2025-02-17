@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Noralma_Vera_Arrata",
+    "predicate": "ontology/birthPlace",
+    "object": "resource/Guayaquil",
+    "human_readable": "Noralma Vera Arrata was born in Guayaquil.",
+    "questions": [
+        {
+            "score": 0.9164407849311829,
+            "question": "Where was Noralma Vera Arrata born?"
+        },
+        {
+            "score": 0.45260342955589294,
+            "question": "Does Noralma Vera Arrata have any siblings?"
+        },
+        {
+            "score": 0.42830097675323486,
+            "question": "Is Noralma Vera Arrata still living?"
+        },
+        {
+            "score": 0.4118470549583435,
+            "question": "What country is Guayaquil located in?"
+        },
+        {
+            "score": 0.3976271450519562,
+            "question": "What is Guayaquil known for?"
+        },
+        {
+            "score": 0.3858267068862915,
+            "question": "Are there any famous people from Guayaquil?"
+        },
+        {
+            "score": 0.296318382024765,
+            "question": "What are some notable landmarks in Guayaquil?"
+        },
+        {
+            "score": 0.2648981809616089,
+            "question": "What are some popular cultural events in Guayaquil?"
+        },
+        {
+            "score": 0.25812506675720215,
+            "question": "What is the population of Guayaquil?"
+        },
+        {
+            "score": 0.1978708803653717,
+            "question": "What is the climate like in Guayaquil?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Noralma Vera Arrata was born in Guayaquil.",
+            "html": "dbpedia_8114_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the population of Guayaquil?",
+            "html": "dbpedia_8114_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some popular cultural events in Guayaquil?",
+            "html": "dbpedia_8114_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some notable landmarks in Guayaquil?",
+            "html": "dbpedia_8114_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8114_1.txt"
+        },
+        {
+            "file_id": "dbpedia_8114_14.txt"
+        },
+        {
+            "file_id": "dbpedia_8114_17.txt"
+        },
+        {
+            "file_id": "dbpedia_8114_2.txt"
+        },
+        {
+            "file_id": "dbpedia_8114_20.txt"
+        },
+        {
+            "file_id": "dbpedia_8114_25.txt"
+        },
+        {
+            "file_id": "dbpedia_8114_27.txt"
+        },
+        {
+            "file_id": "dbpedia_8114_3.txt"
+        },
+        {
+            "file_id": "dbpedia_8114_5.txt"
+        },
+        {
+            "file_id": "dbpedia_8114_8.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "To determine whether the triple is supported by the context information, I'll search for the following:\n\n* Name: Noralma Vera Arrata\n* Statement: was born in Guayaquil.\n\nHere are the relevant documents:\n- file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8114/re-ranker-msmarco/5.txt\n\nNoralma Vera Arrata (born 28 August 1936) is a former Ecuadorian prima ballerina and choreographer.\n\nVera Arrata was born in Guayaquil, Ecuador where she grew up as the only daughter among three sons of the distinguished politician and former Culture minister Alfredo Vera Vera and his wife, Baltita Arrata Macias. She comes from a prominent intellectual family in the country.\n\n- file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8114/re-ranker-msmarco/14.txt\n\nNoralma Vera Arrata - Noralma Vera Arrata (born 28 August 1936) is a former Ecuadorian prima ballerina and choreographer.\n\n- file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8114/re-ranker-msmarco/3.txt\n\nPlace of Birth: Guayaquil\n\nAll the documents confirm that Noralma Vera Arrata was born in Guayaquil. Therefore, the triple is supported by the context information.\n\nHere's the response in JSON format:\n{\n  \"output\": \"yes\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents state that \"Noralma Vera Arrata (born 28 August 1936) is a former Ecuadorian prima ballerina and choreographer.\" Additionally, it mentions she \"was born in Guayaquil, Ecuador,\" which directly supports the statement that Noralma Vera Arrata was born in Guayaquil."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

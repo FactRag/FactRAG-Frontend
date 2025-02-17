@@ -1,0 +1,142 @@
+{
+    "subject": "resource/State_of_Brazil",
+    "predicate": "ontology/capital",
+    "object": "resource/Salvador,_Bahia",
+    "human_readable": "The capital of Brazil is Salvador.",
+    "questions": [
+        {
+            "score": 0.9863492250442505,
+            "question": "Is Salvador the capital city of Brazil?"
+        },
+        {
+            "score": 0.8153102993965149,
+            "question": "Which country has Salvador as its capital?"
+        },
+        {
+            "score": 0.6703786849975586,
+            "question": "What is the capital of Brazil?"
+        },
+        {
+            "score": 0.13123264908790588,
+            "question": "Name a major city in Brazil."
+        },
+        {
+            "score": 0.11789948493242264,
+            "question": "Describe the climate of Salvador."
+        },
+        {
+            "score": 0.08631892502307892,
+            "question": "What are some popular tourist destinations in Brazil?"
+        },
+        {
+            "score": 0.04862331226468086,
+            "question": "What is the currency used in Brazil?"
+        },
+        {
+            "score": 0.037167616188526154,
+            "question": "When was Brazil declared independent from Portugal?"
+        },
+        {
+            "score": 0.03244396671652794,
+            "question": "What is the official language spoken in Brazil?"
+        },
+        {
+            "score": 0.03004409372806549,
+            "question": "What is a famous Brazilian cultural export?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The capital of Brazil is Salvador.",
+            "html": "dbpedia_9106_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the official language spoken in Brazil?",
+            "html": "dbpedia_9106_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=When was Brazil declared independent from Portugal?",
+            "html": "dbpedia_9106_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the currency used in Brazil?",
+            "html": "dbpedia_9106_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_9106_19.txt"
+        },
+        {
+            "file_id": "dbpedia_9106_2.txt"
+        },
+        {
+            "file_id": "dbpedia_9106_24.txt"
+        },
+        {
+            "file_id": "dbpedia_9106_29.txt"
+        },
+        {
+            "file_id": "dbpedia_9106_42.txt"
+        },
+        {
+            "file_id": "dbpedia_9106_43.txt"
+        },
+        {
+            "file_id": "dbpedia_9106_60.txt"
+        },
+        {
+            "file_id": "dbpedia_9106_66.txt"
+        },
+        {
+            "file_id": "dbpedia_9106_76.txt"
+        },
+        {
+            "file_id": "dbpedia_9106_87.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the provided context information, I can evaluate whether the statement \"The capital of Brazil is Salvador\" is correct.\n\nHere's my evaluation:\n\n* **Triple:** The capital of Brazil is Salvador\n* **Documents:** Five documents with descriptions about Salvador, its history, and its significance in Brazil.\n* **Supporting evidence:**\n\t+ Document 1: \"Salvador was the capital in the heyday of the slave trade. ... Founded in 1549...\"\n\t+ Document 2: \"Salvador was the Brazilian capital until 1763.\"\n\t+ Document 3: \"...its capital city is Salvador, which was once the Capital of Brazil.\"\n\t+ Document 4: \"Founded by the Portuguese in 1549, Salvador was the first capital of Brazil until 1763.\"\n\t+ Document 5: \"...Salvador, also known as S\u00e3o Salvador da Bahia de Todos os Santos , is the capital of the Brazilian state of Bahia.\"\n\nAll five documents support the statement that Salvador was a capital city of Brazil at some point in history. However, only one document (Document 2) explicitly states that Salvador was the \"Brazilian capital\" until 1763.\n\nGiven this information, I conclude that:\n\n* **Answer:** {'output': 'yes'}\n\nThe triple is correct according to the documents, but it's essential to note that Salvador was not a current or sole capital of Brazil, as stated in some documents. However, considering the original query, the answer remains \"yes\" because all documents support the fact that Salvador was indeed a capital city of Brazil at some point in history."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information that supports the statement \"The capital of Brazil is Salvador.\" Multiple sources mention that Salvador was the capital city of Brazil until 1763, and some also refer to it as the current capital city of the state of Bahia in Northeastern Brazil."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Salvador was the capital of Brazil until 1763, but the current capital is Bras\u00edlia.",
+            "category": -1
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because it contradicts statement 2 which explicitly states that Salvador was the Brazilian capital until 1763, implying that it is no longer the current capital.",
+            "category": -1
+        },
+        "qwen2.5": {
+            "reason": "Salvador was the capital of Brazil until 1763, but it has not been the capital since then. The current capital of Brazil is Bras\u00edlia, a city founded specifically to serve as the country's federal district and capital in 1960.",
+            "category": -1
+        }
+    }
+}

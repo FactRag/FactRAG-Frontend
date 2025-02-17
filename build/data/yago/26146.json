@@ -1,0 +1,134 @@
+{
+    "subject": "Gloria_Marsh",
+    "predicate": "isMarriedTo",
+    "object": "Adam_Chandler",
+    "human_readable": "Gloria Marsh is married to Adam Chandler.",
+    "questions": [
+        {
+            "score": 0.912209153175354,
+            "question": "Who is Gloria Marsh married to?"
+        },
+        {
+            "score": 0.8915002346038818,
+            "question": "What is the relationship between Gloria Marsh and Adam Chandler?"
+        },
+        {
+            "score": 0.8597066402435303,
+            "question": "Can you tell me more about the relationship between Gloria Marsh and Adam Chandler?"
+        },
+        {
+            "score": 0.8490871787071228,
+            "question": "Are Adam Chandler and Gloria Marsh in a romantic relationship?"
+        },
+        {
+            "score": 0.8453518152236938,
+            "question": "To whom is Adam Chandler married?"
+        },
+        {
+            "score": 0.8250473737716675,
+            "question": "Is Adam Chandler married?"
+        },
+        {
+            "score": 0.6831347942352295,
+            "question": "Who is Gloria Marsh?"
+        },
+        {
+            "score": 0.6600555777549744,
+            "question": "What is the name of Gloria Marsh's husband?"
+        },
+        {
+            "score": 0.4489896297454834,
+            "question": "Who are some potential relatives of Gloria Marsh?"
+        },
+        {
+            "score": 0.4016663432121277,
+            "question": "Who are some potential relatives of Adam Chandler?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Gloria Marsh is married to Adam Chandler.",
+            "html": "yago_26146_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who are some potential relatives of Gloria Marsh?",
+            "html": "yago_26146_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of Gloria Marsh's husband?",
+            "html": "yago_26146_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is Gloria Marsh?",
+            "html": "yago_26146_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "yago_26146_12.txt"
+        },
+        {
+            "file_id": "yago_26146_26.txt"
+        },
+        {
+            "file_id": "yago_26146_30.txt"
+        },
+        {
+            "file_id": "yago_26146_34.txt"
+        },
+        {
+            "file_id": "yago_26146_45.txt"
+        },
+        {
+            "file_id": "yago_26146_48.txt"
+        },
+        {
+            "file_id": "yago_26146_5.txt"
+        },
+        {
+            "file_id": "yago_26146_60.txt"
+        },
+        {
+            "file_id": "yago_26146_7.txt"
+        },
+        {
+            "file_id": "yago_26146_90.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "After evaluating the context information, I can provide the following response:\n\n`{'output': 'yes'}`\n\nThe documents mention that \"Adam's next wife was first involved with his brother Stuart. However, Adam fell for her and eventually won her over.\" (from file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/yago_26146/re-ranker-msmarco/33.txt) This implies that Gloria Marsh is married to Adam Chandler."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information about Gloria Marsh's marital history, stating that she was married to both Adam Chandler Sr. and Dimitri Marick. This supports the triple that Gloria Marsh is married to Adam Chandler, albeit in a past tense context indicating a divorced status at some point."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "It states Gloria Marsh is married to Adam Chandler but the text says they were divorced.",
+            "category": 0
+        }
+    }
+}

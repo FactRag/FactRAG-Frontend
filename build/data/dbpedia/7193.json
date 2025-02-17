@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Man_of_the_Moment_(1955_film)",
+    "predicate": "property/name",
+    "object": "Man of the Moment",
+    "human_readable": "The name of the 1955 film 'Man of the Moment' is 'Man of the Moment'.",
+    "questions": [
+        {
+            "score": 0.923648476600647,
+            "question": "What is the name of the 1955 film?"
+        },
+        {
+            "score": 0.8550336956977844,
+            "question": "Is the title of the film 'Man of the Moment' correct?"
+        },
+        {
+            "score": 0.7982673645019531,
+            "question": "Who directed the film 'Man of the Moment'?"
+        },
+        {
+            "score": 0.7257324457168579,
+            "question": "When was the film 'Man of the Moment' released?"
+        },
+        {
+            "score": 0.7146794199943542,
+            "question": "What is the plot of the film 'Man of the Moment'?"
+        },
+        {
+            "score": 0.6394382119178772,
+            "question": "Was the film 'Man of the Moment' a success?"
+        },
+        {
+            "score": 0.6211663484573364,
+            "question": "What genre is the film 'Man of the Moment'?"
+        },
+        {
+            "score": 0.601945161819458,
+            "question": "What year did the film 'Man of the Moment' premiere?"
+        },
+        {
+            "score": 0.540595293045044,
+            "question": "Does the film 'Man of the Moment' have a different title?"
+        },
+        {
+            "score": 0.4516294002532959,
+            "question": "Are there any famous actors in the film 'Man of the Moment'?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of the 1955 film 'Man of the Moment' is 'Man of the Moment'.",
+            "html": "dbpedia_7193_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does the film 'Man of the Moment' have a different title?",
+            "html": "dbpedia_7193_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What year did the film 'Man of the Moment' premiere?",
+            "html": "dbpedia_7193_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What genre is the film 'Man of the Moment'?",
+            "html": "dbpedia_7193_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_7193_1.txt"
+        },
+        {
+            "file_id": "dbpedia_7193_113.txt"
+        },
+        {
+            "file_id": "dbpedia_7193_129.txt"
+        },
+        {
+            "file_id": "dbpedia_7193_142.txt"
+        },
+        {
+            "file_id": "dbpedia_7193_2.txt"
+        },
+        {
+            "file_id": "dbpedia_7193_40.txt"
+        },
+        {
+            "file_id": "dbpedia_7193_54.txt"
+        },
+        {
+            "file_id": "dbpedia_7193_70.txt"
+        },
+        {
+            "file_id": "dbpedia_7193_91.txt"
+        },
+        {
+            "file_id": "dbpedia_7193_97.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'} \n``` \n\n\n\n\nLet me know if you have any other triples you'd like me to evaluate! \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, I will evaluate the triple \"The name of the 1955 film 'Man of the Moment' is 'Man of the Moment'\".\n\nHere's the evaluation:\n\n* The first document mentions a film titled \"Lady and the Tramp\" released in 1955.\n* The second and third documents mention a director named Anthony Mann, but do not provide information about a film titled \"Man of the Moment\".\n* There are no further mentions of a film with this title in any of the provided documents.\n\nTherefore, based on the context information, I conclude that:\n\n`{'output': 'no'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: The query suggests that the title \"Man of the Moment\" is for a 1955 film. However, based on the provided context, the document with file path `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_7193/re-ranker-msmarco/89.txt` mentions \"Man of the West (1958 USA 100 mins)\" as a film by Anthony Mann, not \"Man of the Moment.\" Therefore, the information in the documents does not support this triple."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n      \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "There is no mention of a film titled \"Man of the Moment\" in the provided context.",
+            "category": 3
+        },
+        "gemma2": {
+            "reason": "The provided text discusses multiple films, including \"Man of the West\" (1958), and focuses on film analysis, particularly concerning Anthony Mann's work. There's no mention of a film titled \"Man of the Moment.\"",
+            "category": 3
+        },
+        "llama3.1": {
+            "reason": "The 1955 film mentioned in context information 3 as a \"Man of the West\" (1958 USA 100 mins) is actually about the same title, but it's from different year and context; however, another context information 4 mentions that 'Man of the West' is a triumph, unqualified masterpiece, and the capstone to his cycle of Westerns, which makes it clear that this film 'Man of the West' is made in 1958, not 'Man of the Moment'.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "The context information refers to \"Man of the West\" (1958) as Anthony Mann's unqualified masterpiece, not \"Man of the Moment\".",
+            "category": 3
+        }
+    }
+}

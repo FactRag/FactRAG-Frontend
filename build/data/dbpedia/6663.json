@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Sarasota_Thunder",
+    "predicate": "ontology/stadium",
+    "object": "resource/Robarts_Arena",
+    "human_readable": "Sarasota Thunder plays at Robarts Arena.",
+    "questions": [
+        {
+            "score": 0.9457138776779175,
+            "question": "Is Robarts Arena located in Sarasota?"
+        },
+        {
+            "score": 0.9374436140060425,
+            "question": "Who might use Robarts Arena besides the Sarasota Thunder?"
+        },
+        {
+            "score": 0.911590576171875,
+            "question": "What is the relationship between the Sarasota Thunder and Robarts Arena?"
+        },
+        {
+            "score": 0.9081842303276062,
+            "question": "Can you name an arena where the Sarasota Thunder plays?"
+        },
+        {
+            "score": 0.8833304047584534,
+            "question": "What is the name of the arena where the Sarasota Thunder plays?"
+        },
+        {
+            "score": 0.8481032848358154,
+            "question": "Does the Sarasota Thunder have a home arena?"
+        },
+        {
+            "score": 0.7988400459289551,
+            "question": "Which team plays at Robarts Arena?"
+        },
+        {
+            "score": 0.7546418905258179,
+            "question": "Where does the Sarasota Thunder play its games?"
+        },
+        {
+            "score": 0.6427889466285706,
+            "question": "What type of sport does the Sarasota Thunder play?"
+        },
+        {
+            "score": 0.45714858174324036,
+            "question": "If you were going to see a Sarasota Thunder game, where would you go?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Sarasota Thunder plays at Robarts Arena.",
+            "html": "dbpedia_6663_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of sport does the Sarasota Thunder play?",
+            "html": "dbpedia_6663_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where does the Sarasota Thunder play its games?",
+            "html": "dbpedia_6663_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Which team plays at Robarts Arena?",
+            "html": "dbpedia_6663_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6663_27.txt"
+        },
+        {
+            "file_id": "dbpedia_6663_29.txt"
+        },
+        {
+            "file_id": "dbpedia_6663_42.txt"
+        },
+        {
+            "file_id": "dbpedia_6663_65.txt"
+        },
+        {
+            "file_id": "dbpedia_6663_67.txt"
+        },
+        {
+            "file_id": "dbpedia_6663_72.txt"
+        },
+        {
+            "file_id": "dbpedia_6663_74.txt"
+        },
+        {
+            "file_id": "dbpedia_6663_75.txt"
+        },
+        {
+            "file_id": "dbpedia_6663_82.txt"
+        },
+        {
+            "file_id": "dbpedia_6663_92.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "The triple to be evaluated is:\n\n\"Robarts Arena\" \"plays at\" \"Sarasota Thunder\"\n\nAfter analyzing the documents, I can see that:\n\n* There are multiple mentions of Robarts Arena in different contexts.\n* One of the documents (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6663/re-ranker-msmarco/42.txt) explicitly states that \"The Sarasota Thunder initially announced Robarts Arena as their home venue\".\n* However, another document (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6663/re-ranker-msmarco/42.txt) also states that \"though they played all their games on the road\", which implies that Robarts Arena was not actually used as a home venue.\n\nGiven this information, I would say that:\n\nResponse: {'output': 'no'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents mention that the Sarasota Thunder announced Robarts Arena as their home venue. Although they ultimately played all games on the road, the initial announcement supports the statement that the team was intended to play at Robarts Arena."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "There are multiple sources stating that the team actually played all their games on the road, despite initially announcing Robarts Arena as their home venue.",
+            "category": -1
+        }
+    }
+}

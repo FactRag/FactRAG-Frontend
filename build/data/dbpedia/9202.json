@@ -1,0 +1,134 @@
+{
+    "subject": "resource/The_Perry_Sisters",
+    "predicate": "ontology/hometown",
+    "object": "resource/United_States",
+    "human_readable": "The hometown of The Perry Sisters is United States.",
+    "questions": [
+        {
+            "score": 0.8631905913352966,
+            "question": "What country is considered the hometown of The Perry Sisters?"
+        },
+        {
+            "score": 0.8603194952011108,
+            "question": "Can you tell me the hometown of The Perry Sisters?"
+        },
+        {
+            "score": 0.75798499584198,
+            "question": "Where are The Perry Sisters from?"
+        },
+        {
+            "score": 0.6860275268554688,
+            "question": "Where are The Perry Sisters based?"
+        },
+        {
+            "score": 0.5371173024177551,
+            "question": "What is the nationality of The Perry Sisters?"
+        },
+        {
+            "score": 0.5310874581336975,
+            "question": "Where did The Perry Sisters originally come from?"
+        },
+        {
+            "score": 0.40659382939338684,
+            "question": "In what nation were The Perry Sisters born or raised?"
+        },
+        {
+            "score": 0.3693522810935974,
+            "question": "Identify the home country of The Perry Sisters."
+        },
+        {
+            "score": 0.3367304503917694,
+            "question": "The Perry Sisters hail from which country?"
+        },
+        {
+            "score": 0.3212638795375824,
+            "question": "Which country is associated with The Perry Sisters' roots?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The hometown of The Perry Sisters is United States.",
+            "html": "dbpedia_9202_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=The Perry Sisters hail from which country?",
+            "html": "dbpedia_9202_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Identify the home country of The Perry Sisters.",
+            "html": "dbpedia_9202_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In what nation were The Perry Sisters born or raised?",
+            "html": "dbpedia_9202_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_9202_12.txt"
+        },
+        {
+            "file_id": "dbpedia_9202_13.txt"
+        },
+        {
+            "file_id": "dbpedia_9202_16.txt"
+        },
+        {
+            "file_id": "dbpedia_9202_19.txt"
+        },
+        {
+            "file_id": "dbpedia_9202_28.txt"
+        },
+        {
+            "file_id": "dbpedia_9202_32.txt"
+        },
+        {
+            "file_id": "dbpedia_9202_4.txt"
+        },
+        {
+            "file_id": "dbpedia_9202_42.txt"
+        },
+        {
+            "file_id": "dbpedia_9202_54.txt"
+        },
+        {
+            "file_id": "dbpedia_9202_98.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'} \n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\n**Explanation:** The documents mention that The Perry Sisters originated in Huntington, West Virginia, which is located in the United States. Therefore, it can be inferred that their hometown is the United States."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Context information states The Perry Sisters originated in Huntington, West Virginia in 1974.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,144 @@
+{
+    "subject": "Padma_Lakshmi",
+    "predicate": "isMarriedTo",
+    "object": "Salman_Rushdie",
+    "human_readable": "Padma Lakshmi is married to Salman Rushdie.",
+    "questions": [
+        {
+            "score": 0.9885071516036987,
+            "question": "Is Salman Rushdie married to Padma Lakshmi?"
+        },
+        {
+            "score": 0.9180336594581604,
+            "question": "What is the relationship between Padma Lakshmi and Salman Rushdie?"
+        },
+        {
+            "score": 0.9024215936660767,
+            "question": "Who are Padma Lakshmi and Salman Rushdie?"
+        },
+        {
+            "score": 0.8431974649429321,
+            "question": "Who is Padma Lakshmi married to?"
+        },
+        {
+            "score": 0.8411256074905396,
+            "question": "Name a notable person married to Padma Lakshmi."
+        },
+        {
+            "score": 0.6285499334335327,
+            "question": "Is there a famous author married to Padma Lakshmi?"
+        },
+        {
+            "score": 0.4099593162536621,
+            "question": "What is the profession of Salman Rushdie?"
+        },
+        {
+            "score": 0.21843834221363068,
+            "question": "Is there a connection between Padma Lakshmi and the literary world?"
+        },
+        {
+            "score": 0.058710068464279175,
+            "question": "Can you name a celebrity couple?"
+        },
+        {
+            "score": 0.017277168110013008,
+            "question": "Who are some notable figures in literature?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Padma Lakshmi is married to Salman Rushdie.",
+            "html": "yago_29821_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you name a celebrity couple?",
+            "html": "yago_29821_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there a connection between Padma Lakshmi and the literary world?",
+            "html": "yago_29821_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the profession of Salman Rushdie?",
+            "html": "yago_29821_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "yago_29821_10.txt"
+        },
+        {
+            "file_id": "yago_29821_106.txt"
+        },
+        {
+            "file_id": "yago_29821_107.txt"
+        },
+        {
+            "file_id": "yago_29821_113.txt"
+        },
+        {
+            "file_id": "yago_29821_127.txt"
+        },
+        {
+            "file_id": "yago_29821_17.txt"
+        },
+        {
+            "file_id": "yago_29821_28.txt"
+        },
+        {
+            "file_id": "yago_29821_30.txt"
+        },
+        {
+            "file_id": "yago_29821_61.txt"
+        },
+        {
+            "file_id": "yago_29821_75.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation:\n\nThe documents provide information about Padma Lakshmi's marriage to Salman Rushdie, but they also mention that the couple is divorcing. Specifically, document `file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/yago_29821/re-ranker-msmarco/124.txt` states that \"Salman Rushdie has agreed to divorce his wife, Padma Lakshmi...\". This indicates that the couple was married at some point in the past but is no longer together. Therefore, the statement \"Padma Lakshmi is married to Salman Rushdie\" is not supported by the documents, and the answer should be \"no\"."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide several pieces of information that confirm the marriage between Padma Lakshmi and Salman Rushdie. For example, from one document: \"Satanic Verses author Salman Rushdie and his Indian actress wife, Padma Lakshmi are divorcing at her request,\" and another states: \"Rushdie married Lakshmi, a former model born in 1970 in India, in 2004. She was his fourth wife.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "mistral-nemo": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nThe documents mention that Padma Lakshmi was married to Salman Rushdie, but they also state that the couple got divorced. Therefore, at the time of the document creation, Padma Lakshmi and Salman Rushdie are no longer married."
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Multiple sources state they are divorced.",
+            "category": 0
+        },
+        "llama3.1": {
+            "reason": "the context information shows multiple sources stating different marriage dates and circumstances for Padma Lakshmi and Salman Rushdie, indicating inconsistencies and contradictions.",
+            "category": 0
+        }
+    }
+}

@@ -1,0 +1,122 @@
+{
+    "subject": "resource/High_Five_Drive",
+    "predicate": "ontology/hometown",
+    "object": "resource/Canada",
+    "human_readable": "The hometown of High Five Drive is Canada.",
+    "questions": [
+        {
+            "score": 0.9883782267570496,
+            "question": "Is Canada the hometown of High Five Drive?"
+        },
+        {
+            "score": 0.9120019674301147,
+            "question": "Where is the hometown of High Five Drive?"
+        },
+        {
+            "score": 0.8293506503105164,
+            "question": "What country is considered the hometown of High Five Drive?"
+        },
+        {
+            "score": 0.6859920024871826,
+            "question": "Where are High Five Drive from?"
+        },
+        {
+            "score": 0.39147427678108215,
+            "question": "What is the origin country of High Five Drive?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The hometown of High Five Drive is Canada.",
+            "html": "dbpedia_8700_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where are High Five Drive from?",
+            "html": "dbpedia_8700_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What country is considered the hometown of High Five Drive?",
+            "html": "dbpedia_8700_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where is the hometown of High Five Drive?",
+            "html": "dbpedia_8700_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8700_17.txt"
+        },
+        {
+            "file_id": "dbpedia_8700_18.txt"
+        },
+        {
+            "file_id": "dbpedia_8700_19.txt"
+        },
+        {
+            "file_id": "dbpedia_8700_55.txt"
+        },
+        {
+            "file_id": "dbpedia_8700_58.txt"
+        },
+        {
+            "file_id": "dbpedia_8700_6.txt"
+        },
+        {
+            "file_id": "dbpedia_8700_69.txt"
+        },
+        {
+            "file_id": "dbpedia_8700_71.txt"
+        },
+        {
+            "file_id": "dbpedia_8700_76.txt"
+        },
+        {
+            "file_id": "dbpedia_8700_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\"output\": \"no\"}\n```\n\nExplanation: The documents describe the installation named \"High Five\" located on Waterfront Drive in Winnipeg, Canada. There is no information about a \"High Five Drive\" being associated with the hometown or any other place in Canada. Therefore, the statement that the hometown of High Five Drive is Canada is not supported by the given context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Context 2 states the artwork is located on Waterfront Drive in Winnipeg, Canada.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The hometown of High Five Drive is actually Winnipeg, Canada, but the context information mentions two different locations for \"High Five\" - one being a public artwork installed on Waterfront Drive in Winnipeg, and the other being a hiking route called High Five Route that links up five peaks along the headwall ridge of the Little Rock Creek canyon in the Bitterroot mountains. This implies that there is no single hometown or location for all instances of \"High Five\".",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context mentions that the High Five art piece is located on Waterfront Drive in Winnipeg, Canada. However, there is no information suggesting that \"High Five Drive\" refers to a hometown or another location. Therefore, stating that the hometown of High Five Drive is Canada is incorrect based on the given context.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,97 @@
+{
+    "subject": "resource/Gene_Hackman",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "Gene Hackman",
+    "human_readable": "Gene Hackman's name is Gene Hackman.",
+    "questions": [
+        {
+            "score": 0.9819921255111694,
+            "question": "Is 'Gene Hackman' a person's name?"
+        },
+        {
+            "score": 0.9752004742622375,
+            "question": "What is Gene Hackman's name?"
+        },
+        {
+            "score": 0.05673123523592949,
+            "question": "Does the statement refer to someone famous?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Gene Hackman's name is Gene Hackman.",
+            "html": "dbpedia_8693_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Gene Hackman's name?",
+            "html": "dbpedia_8693_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is 'Gene Hackman' a person's name?",
+            "html": "dbpedia_8693_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8693_119.txt"
+        },
+        {
+            "file_id": "dbpedia_8693_126.txt"
+        },
+        {
+            "file_id": "dbpedia_8693_127.txt"
+        },
+        {
+            "file_id": "dbpedia_8693_133.txt"
+        },
+        {
+            "file_id": "dbpedia_8693_158.txt"
+        },
+        {
+            "file_id": "dbpedia_8693_170.txt"
+        },
+        {
+            "file_id": "dbpedia_8693_36.txt"
+        },
+        {
+            "file_id": "dbpedia_8693_81.txt"
+        },
+        {
+            "file_id": "dbpedia_8693_90.txt"
+        },
+        {
+            "file_id": "dbpedia_8693_94.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation of the triple:\n\n{\n  \"output\": \"yes\"\n}\n\nThe reason for this answer is that all three documents contain information about a person named Gene Hackman, and in two of them (files 87.txt and 128.txt), his full name is explicitly stated as Eugene Allen \"Gene\" Hackman."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\nThis response is based on the provided documents which consistently refer to the actor as \"Gene Hackman,\" confirming that his name is indeed Gene Hackman."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

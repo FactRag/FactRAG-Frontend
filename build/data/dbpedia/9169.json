@@ -1,0 +1,144 @@
+{
+    "subject": "resource/David_Rovics",
+    "predicate": "ontology/hometown",
+    "object": "resource/United_States",
+    "human_readable": "David Rovics' hometown is United States.",
+    "questions": [
+        {
+            "score": 0.8853519558906555,
+            "question": "Which country is associated with David Rovics' hometown?"
+        },
+        {
+            "score": 0.8850292563438416,
+            "question": "Is David Rovics American?"
+        },
+        {
+            "score": 0.7832428812980652,
+            "question": "What country considers David Rovics as a hometown resident?"
+        },
+        {
+            "score": 0.6889365315437317,
+            "question": "Where is David Rovics from?"
+        },
+        {
+            "score": 0.5215819478034973,
+            "question": "Where did David Rovics grow up?"
+        },
+        {
+            "score": 0.47410762310028076,
+            "question": "In which nation was David Rovics raised?"
+        },
+        {
+            "score": 0.45485198497772217,
+            "question": "What is David Rovics' place of origin?"
+        },
+        {
+            "score": 0.43416067957878113,
+            "question": "Can you tell me the nationality of David Rovics?"
+        },
+        {
+            "score": 0.3126772344112396,
+            "question": "What is the nationality of David Rovics based on the given fact?"
+        },
+        {
+            "score": 0.3084314465522766,
+            "question": "According to the information provided, where does David Rovics call home?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=David Rovics' hometown is United States.",
+            "html": "dbpedia_9169_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the nationality of David Rovics based on the given fact?",
+            "html": "dbpedia_9169_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me the nationality of David Rovics?",
+            "html": "dbpedia_9169_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is David Rovics' place of origin?",
+            "html": "dbpedia_9169_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_9169_11.txt"
+        },
+        {
+            "file_id": "dbpedia_9169_16.txt"
+        },
+        {
+            "file_id": "dbpedia_9169_2.txt"
+        },
+        {
+            "file_id": "dbpedia_9169_30.txt"
+        },
+        {
+            "file_id": "dbpedia_9169_41.txt"
+        },
+        {
+            "file_id": "dbpedia_9169_45.txt"
+        },
+        {
+            "file_id": "dbpedia_9169_52.txt"
+        },
+        {
+            "file_id": "dbpedia_9169_55.txt"
+        },
+        {
+            "file_id": "dbpedia_9169_56.txt"
+        },
+        {
+            "file_id": "dbpedia_9169_6.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the answer in the form of a structured JSON format:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nThe reason for this answer is that, according to the documents, David Rovics was born in New York City and his family moved to Wilton, Connecticut when he was young. There is no information provided about him living or being associated with the United States as an adult, let alone making it his hometown."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\n**Explanation:** The documents provide information about David Rovics's background, including his birthplace (New York City) and that he moved to Wilton, Connecticut when young. This supports the statement that his hometown is in the United States."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context, the information does not specify that David Rovics' hometown is the entire United States. His family moved to Wilton, Connecticut when he was young and he was politically inspired by his experiences in this conservative-oriented, Christian milieu of his home town.\n\nTherefore, the answer is:\n```json\n{\"output\": \"no\"}\n```\n\nThis response indicates that while David Rovics is from a specific location within the United States (Wilton, Connecticut), it would be inaccurate to say his hometown is the entire country."
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Multiple passages state he was born in New York City and later moved to Wilton, Connecticut.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "David Rovics was born in New York City, but his family moved to Wilton, Connecticut when he was young.",
+            "category": 2
+        }
+    }
+}

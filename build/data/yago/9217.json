@@ -1,0 +1,134 @@
+{
+    "subject": "Emilio_Fern\u00e1ndez",
+    "predicate": "created",
+    "object": "La_Choca",
+    "human_readable": "Emilio Fern\u00e1ndez created La Choca.",
+    "questions": [
+        {
+            "score": 0.7663655281066895,
+            "question": "Who created the film La Choca?"
+        },
+        {
+            "score": 0.7201309204101562,
+            "question": "Has Emilio Fern\u00e1ndez created other notable works?"
+        },
+        {
+            "score": 0.7184109687805176,
+            "question": "When was La Choca created?"
+        },
+        {
+            "score": 0.677912175655365,
+            "question": "What is the name of the film created by Emilio Fern\u00e1ndez?"
+        },
+        {
+            "score": 0.5696433782577515,
+            "question": "What type of work did Emilio Fern\u00e1ndez produce?"
+        },
+        {
+            "score": 0.4861217439174652,
+            "question": "Are there any famous actors involved in La Choca?"
+        },
+        {
+            "score": 0.42332926392555237,
+            "question": "What is known about the content of La Choca?"
+        },
+        {
+            "score": 0.3977174162864685,
+            "question": "What awards or recognition has La Choca received?"
+        },
+        {
+            "score": 0.348917156457901,
+            "question": "Is La Choca a film?"
+        },
+        {
+            "score": 0.3062727451324463,
+            "question": "Can you name any films directed by Emilio Fern\u00e1ndez?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Emilio Fern\u00e1ndez created La Choca.",
+            "html": "yago_9217_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is La Choca a film?",
+            "html": "yago_9217_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What awards or recognition has La Choca received?",
+            "html": "yago_9217_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is known about the content of La Choca?",
+            "html": "yago_9217_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "yago_9217_129.txt"
+        },
+        {
+            "file_id": "yago_9217_142.txt"
+        },
+        {
+            "file_id": "yago_9217_17.txt"
+        },
+        {
+            "file_id": "yago_9217_19.txt"
+        },
+        {
+            "file_id": "yago_9217_27.txt"
+        },
+        {
+            "file_id": "yago_9217_74.txt"
+        },
+        {
+            "file_id": "yago_9217_76.txt"
+        },
+        {
+            "file_id": "yago_9217_84.txt"
+        },
+        {
+            "file_id": "yago_9217_90.txt"
+        },
+        {
+            "file_id": "yago_9217_92.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple:\n\nThe triple is: Emilio Fern\u00e1ndez created La Choca.\n\nDocuments:\n- file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/yago_9217/re-ranker-msmarco/86.txt\ncontains a filmography of Emilio Fern\u00e1ndez's works, but it does not mention \"La Choca\" as one of his creations.\n\nDocuments:\n- file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/yago_9217/re-ranker-msmarco/104.txt\ncontains an abstract about Emilio Fern\u00e1ndez's films and mentions three specific works, but \"La Choca\" is not among them.\n\nDocuments:\n- file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/yago_9217/re-ranker-msmarco/16.txt\ncontains a brief biography of Emilio Fern\u00e1ndez, which does mention that he was the director of various films, but \"La Choca\" is not mentioned.\n\nDocuments:\n- file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/yago_9217/re-ranker-msmarco/74.txt\ncontains a passage that mentions Emilio Fern\u00e1ndez's turbulent personality and past, including an incident where he killed a farm laborer in 1976. However, it does not mention \"La Choca\" or any connection to the film.\n\nTherefore, based on the documents provided:\n\n`{'output': 'no'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents mention that Emilio Fern\u00e1ndez directed the film \"La choca\" (1974), which directly supports the statement that Emilio Fern\u00e1ndez created \"La Choca.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "There is no mention of La Choca being directed by Emilio Fern\u00e1ndez in the provided context information.",
+            "category": 3
+        }
+    }
+}

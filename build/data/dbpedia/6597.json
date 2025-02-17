@@ -1,0 +1,126 @@
+{
+    "subject": "resource/Bob_Bender",
+    "predicate": "http://xmlns.com/foaf/0.1/givenName",
+    "object": "Bob",
+    "human_readable": "Bob Bender's given name is Bob.",
+    "questions": [
+        {
+            "score": 0.9775980114936829,
+            "question": "What is Bob Bender's given name?"
+        },
+        {
+            "score": 0.9263629913330078,
+            "question": "Is 'Bob' Bob Bender's first name?"
+        },
+        {
+            "score": 0.9186179637908936,
+            "question": "What name is used to refer to Bob Bender formally?"
+        },
+        {
+            "score": 0.9184555411338806,
+            "question": "Does Bob Bender go by the name 'Bob'?"
+        },
+        {
+            "score": 0.44193002581596375,
+            "question": "How would you address Bob Bender directly?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Bob Bender's given name is Bob.",
+            "html": "dbpedia_6597_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Bob Bender go by the name 'Bob'?",
+            "html": "dbpedia_6597_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What name is used to refer to Bob Bender formally?",
+            "html": "dbpedia_6597_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is 'Bob' Bob Bender's first name?",
+            "html": "dbpedia_6597_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6597_15.txt"
+        },
+        {
+            "file_id": "dbpedia_6597_17.txt"
+        },
+        {
+            "file_id": "dbpedia_6597_27.txt"
+        },
+        {
+            "file_id": "dbpedia_6597_35.txt"
+        },
+        {
+            "file_id": "dbpedia_6597_40.txt"
+        },
+        {
+            "file_id": "dbpedia_6597_52.txt"
+        },
+        {
+            "file_id": "dbpedia_6597_70.txt"
+        },
+        {
+            "file_id": "dbpedia_6597_77.txt"
+        },
+        {
+            "file_id": "dbpedia_6597_81.txt"
+        },
+        {
+            "file_id": "dbpedia_6597_90.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "{\n  \"output\": \"yes\"\n}\nThe context information clearly states, \"Bob Bender...,\" and throughout the documents, he is consistently referred to as Bob, confirming that his given name is indeed Bob."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The given context does not specify Bob Bender's first name, but it is mentioned that he was the beloved husband of Terri Ann (nee Cogar), which implies his name is not Bob.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Different text excerpts refer to him as \"Bob Bender\" while others use \"Robert D. Bender\" or \"Robert Bender\".",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "Bob Bender's full name is Robert D. Bender, as mentioned in context 3 and 4.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "In the context information, Bob Bender's given name is Robert, not Bob. His full name is provided as Robert D. Bender and Robert \"Bob\" Bender, indicating that \"Bob\" is a nickname or shortened version of his given name \"Robert.\"",
+            "category": 2
+        }
+    }
+}

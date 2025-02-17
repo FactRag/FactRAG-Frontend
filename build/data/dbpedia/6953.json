@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Hey_Girl_(group)",
+    "predicate": "ontology/occupation",
+    "object": "resource/Singing",
+    "human_readable": "Hey Girl (group) is a singer.",
+    "questions": [
+        {
+            "score": 0.9564304947853088,
+            "question": "Is Hey Girl (group) a musician?"
+        },
+        {
+            "score": 0.8200682997703552,
+            "question": "Who are the members of Hey Girl (group)?"
+        },
+        {
+            "score": 0.8026138544082642,
+            "question": "What is Hey Girl (group) known for?"
+        },
+        {
+            "score": 0.7000967264175415,
+            "question": "Where is Hey Girl (group) from?"
+        },
+        {
+            "score": 0.6163632273674011,
+            "question": "Are there any famous songs by Hey Girl (group)?"
+        },
+        {
+            "score": 0.5908733010292053,
+            "question": "Have Hey Girl (group) collaborated with any other artists?"
+        },
+        {
+            "score": 0.5833650231361389,
+            "question": "What genre of music does Hey Girl (group) perform?"
+        },
+        {
+            "score": 0.536383867263794,
+            "question": "What are some of the themes explored in Hey Girl (group)'s music?"
+        },
+        {
+            "score": 0.42131122946739197,
+            "question": "When did Hey Girl (group) become popular?"
+        },
+        {
+            "score": 0.38755500316619873,
+            "question": "Has Hey Girl (group) won any awards?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Hey Girl (group) is a singer.",
+            "html": "dbpedia_6953_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=When did Hey Girl (group) become popular?",
+            "html": "dbpedia_6953_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some of the themes explored in Hey Girl (group)'s music?",
+            "html": "dbpedia_6953_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What genre of music does Hey Girl (group) perform?",
+            "html": "dbpedia_6953_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6953_1.txt"
+        },
+        {
+            "file_id": "dbpedia_6953_10.txt"
+        },
+        {
+            "file_id": "dbpedia_6953_11.txt"
+        },
+        {
+            "file_id": "dbpedia_6953_2.txt"
+        },
+        {
+            "file_id": "dbpedia_6953_3.txt"
+        },
+        {
+            "file_id": "dbpedia_6953_4.txt"
+        },
+        {
+            "file_id": "dbpedia_6953_6.txt"
+        },
+        {
+            "file_id": "dbpedia_6953_7.txt"
+        },
+        {
+            "file_id": "dbpedia_6953_8.txt"
+        },
+        {
+            "file_id": "dbpedia_6953_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the context information provided, here's the evaluation of the triple:\n\nQuery: Hey Girl (group) is a singer.\n\nThe documents mention \"Hey Girl\" as a Taiwanese Mandopop group (document 2), and also as a South Korean girl group under Moai Entertainment (documents 5 and 6). However, there is no indication that any member of these groups is referred to as a singer in the context provided. The only reference to a person named \"Hey Girl\" is in document 1, which mentions a girl group called \"HeyGirls\", but does not imply that this name refers to an individual singer.\n\nTherefore:\n\n {'output': 'no'}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents provide information about the group Hey Girl, detailing their members, discography, and history. However, they do not mention anything about Hey Girl being a singer or performing singing activities. Instead, the context suggests that Hey Girl is a girl group involved in music (as evidenced by their albums and singles), but it does not explicitly state that each member of the group sings individually. Therefore, based on the provided information, we cannot confirm that \"Hey Girl (group) is a singer\" as a standalone statement without additional supporting evidence."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Hey Girl (group) is not a singer, they are a group of singers.",
+            "category": 4
+        },
+        "gemma2": {
+            "reason": "Several pieces of text describe Hey Girl as a group formed through a talent show or audition process, emphasizing their participation in a variety show and their subsequent musical releases.  None of the provided context suggests individual members are singers outside the group context.",
+            "category": 4
+        },
+        "llama3.1": {
+            "reason": "In the given context information, there are multiple groups named \"Hey Girl\" or similar variations, including a Taiwanese Mandopop group, a Taiwanese girl group, and a South Korean girl group, indicating that \"Hey Girl\" refers to different musical entities.",
+            "category": 4
+        },
+        "qwen2.5": {
+            "reason": "Hey Girl (\u9ed1Girl) is a Taiwanese girl group with multiple members and a discography, indicating they are a musical act rather than a single singer.",
+            "category": 4
+        }
+    }
+}

@@ -1,0 +1,146 @@
+{
+    "subject": "Ryan_Lavery",
+    "predicate": "isMarriedTo",
+    "object": "Annie_Lavery",
+    "human_readable": "Ryan Lavery is married to Annie Lavery.",
+    "questions": [
+        {
+            "score": 0.9464182257652283,
+            "question": "Who is married to Annie Lavery?"
+        },
+        {
+            "score": 0.7906579375267029,
+            "question": "Is Ryan Lavery in a marital relationship?"
+        },
+        {
+            "score": 0.7279294729232788,
+            "question": "Who is Ryan Lavery?"
+        },
+        {
+            "score": 0.6800557971000671,
+            "question": "What is the relationship between Ryan and Annie?"
+        },
+        {
+            "score": 0.5204648375511169,
+            "question": "Are Ryan and Annie related?"
+        },
+        {
+            "score": 0.4858151376247406,
+            "question": "Does Ryan Lavery have siblings?"
+        },
+        {
+            "score": 0.44448938965797424,
+            "question": "What can you tell me about Annie Lavery?"
+        },
+        {
+            "score": 0.29571691155433655,
+            "question": "What is the last name of Ryan's spouse?"
+        },
+        {
+            "score": 0.2607399821281433,
+            "question": "Is there any information available about Ryan's family?"
+        },
+        {
+            "score": 0.23180122673511505,
+            "question": "Do Ryan and Annie share a last name?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Ryan Lavery is married to Annie Lavery.",
+            "html": "yago_30717_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there any information available about Ryan's family?",
+            "html": "yago_30717_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the last name of Ryan's spouse?",
+            "html": "yago_30717_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What can you tell me about Annie Lavery?",
+            "html": "yago_30717_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "yago_30717_11.txt"
+        },
+        {
+            "file_id": "yago_30717_25.txt"
+        },
+        {
+            "file_id": "yago_30717_3.txt"
+        },
+        {
+            "file_id": "yago_30717_34.txt"
+        },
+        {
+            "file_id": "yago_30717_37.txt"
+        },
+        {
+            "file_id": "yago_30717_38.txt"
+        },
+        {
+            "file_id": "yago_30717_4.txt"
+        },
+        {
+            "file_id": "yago_30717_5.txt"
+        },
+        {
+            "file_id": "yago_30717_70.txt"
+        },
+        {
+            "file_id": "yago_30717_8.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here's the evaluation of the triple \"Ryan Lavery is married to Annie Lavery\" based on the provided context information:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThis is because the documents mention that Ryan Lavery has a daughter with ex-wife Annie Lavery (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/yago_30717/re-ranker-msmarco/70.txt), but they also state that he later married Greenlee Smythe (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/yago_30717/re-ranker-msmarco/40.txt). This indicates that Ryan Lavery was previously married to Annie Lavery, but not currently."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: According to the documents, Ryan Lavery is married to Greenlee Smythe, not Annie Lavery. The document states: \"Ryan also met his brother, Jonathan Lavery, and learned that his real father was Patrick Lavery. As Jonathan went crazy and turned deadly, Ryan was forced to shoot him to protect Kendall and Greenlee.\" This indicates that Ryan's marital status is with Greenlee Smythe, not Annie Lavery."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Ryan Lavery is married to Greenlee Smythe, not Annie Lavery. Although the text mentions that Ryan and Annie were engaged and married at some point, they are no longer married as per the information provided in context number 5.",
+            "category": 0
+        },
+        "gemma2": {
+            "reason": "Context states Ryan Lavery is married to Greenlee Smythe, not Annie Lavery.",
+            "category": 0
+        },
+        "llama3.1": {
+            "reason": "Context information 6 explicitly states that Ryan Lavery married Greenlee Smythe, not Annie Lavery.",
+            "category": 0
+        },
+        "qwen2.5": {
+            "reason": "The context information shows that Ryan Lavery is married to Greenlee Smythe, not Annie Lavery. It mentions his engagement and marriage to Greenlee Smythe, and does not state any marriage between Ryan and Annie Lavery.",
+            "category": 0
+        }
+    }
+}

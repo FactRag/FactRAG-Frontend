@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Courteney_Cox",
+    "predicate": "property/birthPlace",
+    "object": "Mountain Brook, Alabama, U.S.",
+    "human_readable": "Courteney Cox was born in Mountain Brook, Alabama, U.S.",
+    "questions": [
+        {
+            "score": 0.9224520325660706,
+            "question": "Where was Courteney Cox born?"
+        },
+        {
+            "score": 0.8717621564865112,
+            "question": "In what country was Courteney Cox born?"
+        },
+        {
+            "score": 0.8444899916648865,
+            "question": "Is Courteney Cox American?"
+        },
+        {
+            "score": 0.8200944662094116,
+            "question": "What is the name of the city where Courteney Cox was born?"
+        },
+        {
+            "score": 0.7631545066833496,
+            "question": "Where did Courteney Cox grow up?"
+        },
+        {
+            "score": 0.625380277633667,
+            "question": "What is Courteney Cox known for?"
+        },
+        {
+            "score": 0.5466702580451965,
+            "question": "What state is Mountain Brook, Alabama in?"
+        },
+        {
+            "score": 0.28350135684013367,
+            "question": "Has Courteney Cox won any awards for her acting?"
+        },
+        {
+            "score": 0.25668057799339294,
+            "question": "What roles has Courteney Cox played in movies or television?"
+        },
+        {
+            "score": 0.2225540727376938,
+            "question": "Is Mountain Brook a town or a city?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Courteney Cox was born in Mountain Brook, Alabama, U.S.",
+            "html": "dbpedia_7358_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What roles has Courteney Cox played in movies or television?",
+            "html": "dbpedia_7358_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Has Courteney Cox won any awards for her acting?",
+            "html": "dbpedia_7358_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What state is Mountain Brook, Alabama in?",
+            "html": "dbpedia_7358_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_7358_12.txt"
+        },
+        {
+            "file_id": "dbpedia_7358_26.txt"
+        },
+        {
+            "file_id": "dbpedia_7358_27.txt"
+        },
+        {
+            "file_id": "dbpedia_7358_32.txt"
+        },
+        {
+            "file_id": "dbpedia_7358_47.txt"
+        },
+        {
+            "file_id": "dbpedia_7358_56.txt"
+        },
+        {
+            "file_id": "dbpedia_7358_78.txt"
+        },
+        {
+            "file_id": "dbpedia_7358_79.txt"
+        },
+        {
+            "file_id": "dbpedia_7358_88.txt"
+        },
+        {
+            "file_id": "dbpedia_7358_96.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "{\n  \"output\": \"yes\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide multiple pieces of information that support the statement that Courteney Cox was born and raised in Mountain Brook, Alabama. For example:\n\n- Document `26.txt` states she was \"raised in an exclusive society town, Mountain Brook, Alabama.\"\n- Document `12.txt` mentions she was \"raised in Mountain Brook, a suburb of Birmingham, Alabama.\"\n- Document `87.txt` also confirms she was \"born and raised in the Birmingham, Alabama suburb of Mountain Brook.\"\nThese confirmations across multiple documents support the statement that Courteney Cox was born in Mountain Brook, Alabama."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Courteney Cox was born in Birmingham, Alabama, not Mountain Brook. Although she was raised in Mountain Brook, it is a different location from where she was born.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The information states that Courteney Cox was born in Birmingham, Alabama, not Mountain Brook.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Courteney Cox was born in Birmingham, Alabama, not Mountain Brook. While she was raised in Mountain Brook, the birthplace stated in the context is Birmingham.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,134 @@
+{
+    "subject": "Marco_Ferreri",
+    "predicate": "created",
+    "object": "Liza__film_",
+    "human_readable": "Marco Ferreri created the film Liza.",
+    "questions": [
+        {
+            "score": 0.8660878539085388,
+            "question": "What is the name of the film created by Marco Ferreri?"
+        },
+        {
+            "score": 0.6930782794952393,
+            "question": "What kind of work did Marco Ferreri create?"
+        },
+        {
+            "score": 0.6759396195411682,
+            "question": "Who directed the film Liza?"
+        },
+        {
+            "score": 0.5754063129425049,
+            "question": "What is Marco Ferreri known for?"
+        },
+        {
+            "score": 0.5252783894538879,
+            "question": "Are there any other films directed by Marco Ferreri?"
+        },
+        {
+            "score": 0.46984538435935974,
+            "question": "What genre is the film Liza?"
+        },
+        {
+            "score": 0.4236114025115967,
+            "question": "Where was the film Liza filmed?"
+        },
+        {
+            "score": 0.35941028594970703,
+            "question": "Can you tell me about the film Liza?"
+        },
+        {
+            "score": 0.2936577796936035,
+            "question": "What year was Liza released?"
+        },
+        {
+            "score": 0.27855929732322693,
+            "question": "Is Liza a novel, painting, or film?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Marco Ferreri created the film Liza.",
+            "html": "yago_8388_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What year was Liza released?",
+            "html": "yago_8388_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me about the film Liza?",
+            "html": "yago_8388_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where was the film Liza filmed?",
+            "html": "yago_8388_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "yago_8388_112.txt"
+        },
+        {
+            "file_id": "yago_8388_120.txt"
+        },
+        {
+            "file_id": "yago_8388_124.txt"
+        },
+        {
+            "file_id": "yago_8388_13.txt"
+        },
+        {
+            "file_id": "yago_8388_139.txt"
+        },
+        {
+            "file_id": "yago_8388_147.txt"
+        },
+        {
+            "file_id": "yago_8388_37.txt"
+        },
+        {
+            "file_id": "yago_8388_51.txt"
+        },
+        {
+            "file_id": "yago_8388_57.txt"
+        },
+        {
+            "file_id": "yago_8388_6.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the provided context information, here is the evaluation of the triple:\n\n* Subject: Marco Ferreri\n* Predicate: created the film Liza\n* Object: (not specified)\n\nThe documents provide information about Marco Ferreri's life and career as a film director, but there is no mention of him creating a film called \"Liza\". However, one of the documents mentions that Catherine Deneuve starred in a film called \"Liza\" directed by Marco Ferreri. This suggests that Marco Ferreri did not create the film \"Liza\", but rather directed it.\n\nTherefore, the answer to the query is:\n\n`{'output': 'no'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information about Marco Ferreri, including his films such as \"Liza,\" which confirms that Marco Ferreri created the film \"Liza.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n     \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "Ferreri's film \"Liza\" actually starred Catherine Deneuve, not Marco Ferreri himself.",
+            "category": 3
+        }
+    }
+}

@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Lucy_Angel",
+    "predicate": "ontology/hometown",
+    "object": "resource/United_States",
+    "human_readable": "Lucy Angel was born in the United States.",
+    "questions": [
+        {
+            "score": 0.840478241443634,
+            "question": "Is Lucy Angel American?"
+        },
+        {
+            "score": 0.8314430713653564,
+            "question": "Where was Lucy Angel born?"
+        },
+        {
+            "score": 0.8147681951522827,
+            "question": "In what nationality was Lucy Angel born?"
+        },
+        {
+            "score": 0.6773508787155151,
+            "question": "Could Lucy Angel be considered a US citizen?"
+        },
+        {
+            "score": 0.5409178137779236,
+            "question": "Where did Lucy Angel originate from?"
+        },
+        {
+            "score": 0.4060414135456085,
+            "question": "Does Lucy Angel's birthplace tell us anything about her cultural background?"
+        },
+        {
+            "score": 0.4034338593482971,
+            "question": "What country is Lucy Angel from?"
+        },
+        {
+            "score": 0.28769025206565857,
+            "question": "Can you name other notable individuals who were born in the US?"
+        },
+        {
+            "score": 0.18845151364803314,
+            "question": "What are some famous people born in the United States?"
+        },
+        {
+            "score": 0.029220493510365486,
+            "question": "Are there any prominent figures from the United States in entertainment?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Lucy Angel was born in the United States.",
+            "html": "dbpedia_8989_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some famous people born in the United States?",
+            "html": "dbpedia_8989_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you name other notable individuals who were born in the US?",
+            "html": "dbpedia_8989_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What country is Lucy Angel from?",
+            "html": "dbpedia_8989_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8989_10.txt"
+        },
+        {
+            "file_id": "dbpedia_8989_105.txt"
+        },
+        {
+            "file_id": "dbpedia_8989_111.txt"
+        },
+        {
+            "file_id": "dbpedia_8989_31.txt"
+        },
+        {
+            "file_id": "dbpedia_8989_43.txt"
+        },
+        {
+            "file_id": "dbpedia_8989_50.txt"
+        },
+        {
+            "file_id": "dbpedia_8989_57.txt"
+        },
+        {
+            "file_id": "dbpedia_8989_58.txt"
+        },
+        {
+            "file_id": "dbpedia_8989_63.txt"
+        },
+        {
+            "file_id": "dbpedia_8989_85.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the answer in the structured JSON format:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: According to document file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8989/re-ranker-msmarco/49.txt, Lucy Angel was born and raised in Wollongong, NSW (New South Wales), which is a state in Australia, not the United States."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe document for file_path `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8989/re-ranker-msmarco/49.txt` states that Lucy Angel was born and raised in Wollongong, NSW, which is located in Australia. However, the query suggests she was born in the United States, which contradicts this information. Given the provided context, the correct answer based on the documents would be \"no\" if we strictly follow the given triple, but since the task specifies to evaluate without prior knowledge and the provided context does not explicitly deny her U.S. origin, we infer that she is indeed born in the United States as per common understanding or missing data in the context. Thus, answering affirmatively aligns with typical assumptions unless contradicted directly by the documents."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Lucy Angel was born and raised in Wollongong, NSW.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "Lucy Angel was born and raised in Wollongong, NSW, indicating she was born in Australia.",
+            "category": 2
+        }
+    }
+}

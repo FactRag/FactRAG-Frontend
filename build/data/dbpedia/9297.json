@@ -1,0 +1,102 @@
+{
+    "subject": "resource/Irving_Gordon",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "Irving Gordon",
+    "human_readable": "The full name of Irving Gordon is Irving Gordon.",
+    "questions": [
+        {
+            "score": 0.9857330322265625,
+            "question": "What is the full name of Irving Gordon?"
+        },
+        {
+            "score": 0.9729821085929871,
+            "question": "Is Irving Gordon's full name different from his given name?"
+        },
+        {
+            "score": 0.7046228647232056,
+            "question": "What can you tell me about Irving Gordon?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The full name of Irving Gordon is Irving Gordon.",
+            "html": "dbpedia_9297_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Irving Gordon's full name different from his given name?",
+            "html": "dbpedia_9297_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the full name of Irving Gordon?",
+            "html": "dbpedia_9297_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_9297_18.txt"
+        },
+        {
+            "file_id": "dbpedia_9297_2.txt"
+        },
+        {
+            "file_id": "dbpedia_9297_25.txt"
+        },
+        {
+            "file_id": "dbpedia_9297_36.txt"
+        },
+        {
+            "file_id": "dbpedia_9297_39.txt"
+        },
+        {
+            "file_id": "dbpedia_9297_59.txt"
+        },
+        {
+            "file_id": "dbpedia_9297_65.txt"
+        },
+        {
+            "file_id": "dbpedia_9297_7.txt"
+        },
+        {
+            "file_id": "dbpedia_9297_8.txt"
+        },
+        {
+            "file_id": "dbpedia_9297_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation in JSON format:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe reason for this answer is that the documents mention various aspects of Irving Gordon's life, including his birth and death dates, his occupation as a songwriter, and his notable works such as \"Unforgettable\" and \"Prelude to a Kiss\". However, none of these documents explicitly state that his full name is simply \"Irving Gordon\", without any additional information (e.g. the mention of Israel Goldener as an earlier name)."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nExplanation: According to the context provided, it mentions that \"Irving Gordon was born as Israel Goldener but later changed his name to Irving Gordon,\" which supports the statement that the full name of Irving Gordon is Irving Gordon."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The biography in item 1 states that Irving Gordon was born as Israel Goldener but later changed his name to Irving Gordon.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,142 @@
+{
+    "subject": "resource/The_Penguins_of_Madagascar",
+    "predicate": "property/starring",
+    "object": "*",
+    "human_readable": "The Penguins of Madagascar is starring *.",
+    "questions": [
+        {
+            "score": 0.9373233318328857,
+            "question": "Who are the stars of The Penguins of Madagascar?"
+        },
+        {
+            "score": 0.7794498801231384,
+            "question": "Who directed The Penguins of Madagascar?"
+        },
+        {
+            "score": 0.7570458054542542,
+            "question": "Is The Penguins of Madagascar a live-action or animated film?"
+        },
+        {
+            "score": 0.6971986889839172,
+            "question": "What is the plot of The Penguins of Madagascar?"
+        },
+        {
+            "score": 0.6852537989616394,
+            "question": "Is there a sequel to The Penguins of Madagascar?"
+        },
+        {
+            "score": 0.5588374733924866,
+            "question": "What are the names of the penguins in The Penguins of Madagascar?"
+        },
+        {
+            "score": 0.5460993051528931,
+            "question": "What is the genre of The Penguins of Madagascar?"
+        },
+        {
+            "score": 0.52463299036026,
+            "question": "What type of animals are the main characters in The Penguins of Madagascar?"
+        },
+        {
+            "score": 0.5236537456512451,
+            "question": "Where can you watch The Penguins of Madagascar?"
+        },
+        {
+            "score": 0.4482087194919586,
+            "question": "When was The Penguins of Madagascar released?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The Penguins of Madagascar is starring *.",
+            "html": "dbpedia_7046_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where can you watch The Penguins of Madagascar?",
+            "html": "dbpedia_7046_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of animals are the main characters in The Penguins of Madagascar?",
+            "html": "dbpedia_7046_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the genre of The Penguins of Madagascar?",
+            "html": "dbpedia_7046_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_7046_101.txt"
+        },
+        {
+            "file_id": "dbpedia_7046_115.txt"
+        },
+        {
+            "file_id": "dbpedia_7046_121.txt"
+        },
+        {
+            "file_id": "dbpedia_7046_129.txt"
+        },
+        {
+            "file_id": "dbpedia_7046_132.txt"
+        },
+        {
+            "file_id": "dbpedia_7046_2.txt"
+        },
+        {
+            "file_id": "dbpedia_7046_20.txt"
+        },
+        {
+            "file_id": "dbpedia_7046_45.txt"
+        },
+        {
+            "file_id": "dbpedia_7046_46.txt"
+        },
+        {
+            "file_id": "dbpedia_7046_77.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have any other triples you'd like me to evaluate!"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the response:\n\n`{'output': 'yes'}`\n\nThe documents mention that \"Penguins Of Madagascar\" stars Tom McGrath as Skipper, Chris Miller as Kowalski, Conrad Vernon as Rico, Christopher Knights as Private, and Benedict Cumberbatch as Agent 'Classified', among others."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The provided documents do not contain any information about the cast or stars of \"The Penguins of Madagascar.\" While they describe characters like Skipper, Kowalski, Rico, and Private, there is no mention of the actors who voice these roles in the context of the series. Therefore, we cannot confirm the statement that \"*.\" (indicating unknown actors) is correct based on the given information."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The context provides the names of the voice actors portraying each character, not the characters themselves. So, the statement should be \"The Penguins of Madagascar are voiced by *.\" instead.",
+            "category": 4
+        },
+        "gemma2": {
+            "reason": "The text states the film stars Tom McGrath as Skipper, Chris Miller as Kowalski, Conrad Vernon as Rico, Christopher Knights as Private, Benedict Cumberbatch as Agent 'Classified', and John Malkovich as Dave.",
+            "category": 3
+        },
+        "llama3.1": {
+            "reason": "The claim \"Penguins of Madagascar starring *\" (with a blank space where an actor's name should be) is wrong because:\n\nThe text states that the film \"stars Tom McGrath as Skipper, Chris Miller as Kowalski, Conrad Vernon as Rico, Christopher Knights as Private, Benedict Cumberbatch as Agent 'Classified', and John Malkovich as Dave.\" \n\nThis implies that the correct statement would include one of these actors' names in place of the blank space, but the claim only has a blank space without specifying who it is supposed to be.",
+            "category": 3
+        }
+    }
+}

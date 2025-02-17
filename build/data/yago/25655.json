@@ -1,0 +1,105 @@
+{
+    "subject": "Suvadhana",
+    "predicate": "isMarriedTo",
+    "object": "Vajiravudh",
+    "human_readable": "Suvadhana is married to Vajiravudh.",
+    "questions": [
+        {
+            "score": 0.9089953303337097,
+            "question": "What is the relationship between Suvadhana and Vajiravudh?"
+        },
+        {
+            "score": 0.8709959387779236,
+            "question": "Who is married to Vajiravudh?"
+        },
+        {
+            "score": 0.8470069169998169,
+            "question": "Is Vajiravudh married?"
+        },
+        {
+            "score": 0.7902623414993286,
+            "question": "Who is Suvadhana?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Suvadhana is married to Vajiravudh.",
+            "html": "yago_25655_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Vajiravudh married?",
+            "html": "yago_25655_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is married to Vajiravudh?",
+            "html": "yago_25655_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the relationship between Suvadhana and Vajiravudh?",
+            "html": "yago_25655_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "yago_25655_19.txt"
+        },
+        {
+            "file_id": "yago_25655_2.txt"
+        },
+        {
+            "file_id": "yago_25655_37.txt"
+        },
+        {
+            "file_id": "yago_25655_39.txt"
+        },
+        {
+            "file_id": "yago_25655_4.txt"
+        },
+        {
+            "file_id": "yago_25655_41.txt"
+        },
+        {
+            "file_id": "yago_25655_58.txt"
+        },
+        {
+            "file_id": "yago_25655_59.txt"
+        },
+        {
+            "file_id": "yago_25655_62.txt"
+        },
+        {
+            "file_id": "yago_25655_72.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the structured JSON format for the query \"Suvadhana is married to Vajiravudh\":\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe reasoning behind this answer is as follows:\n\n* The document at file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/yago_25655/re-ranker-msmarco/70.txt states that Phra Nang Chao Suvadhana Phra Vora Raja Devi was the \"royal consort of King Vajiravudh, Rama VI\", which implies a marital relationship.\n* The document at file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/yago_25655/re-ranker-msmarco/56.txt states that Suvadhana was elevated to the rank of Phra Nang Chao, Princess Consort of Siam, which further supports the idea that she was married to Vajiravudh.\n* The document at file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/yago_25655/re-ranker-msmarco/37.txt and 57.txt also mention Vajiravudh's concubine, Suvadhana, visiting the Federated Malay States in 1924 with him, which suggests a close relationship between them.\n\nTherefore, based on the context information provided, it is reasonable to conclude that Suvadhana was indeed married to Vajiravudh."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents state that Phra Nang Chao Suvadhana was the royal consort of King Vajiravudh, Rama VI, which supports the statement that Suvadhana is married to Vajiravudh."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n    \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {}
+}

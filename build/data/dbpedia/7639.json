@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Laurence_Leamer",
+    "predicate": "ontology/nationality",
+    "object": "resource/United_States",
+    "human_readable": "Laurence Leamer's nationality is United States.",
+    "questions": [
+        {
+            "score": 0.9221599698066711,
+            "question": "What is Laurence Leamer's nationality?"
+        },
+        {
+            "score": 0.9037488698959351,
+            "question": "What is the nationality of Laurence Leamer?"
+        },
+        {
+            "score": 0.8452703356742859,
+            "question": "Is Laurence Leamer American?"
+        },
+        {
+            "score": 0.7988443970680237,
+            "question": "Is Laurence Leamer a US citizen?"
+        },
+        {
+            "score": 0.776821494102478,
+            "question": "What nationality does Laurence Leamer hold?"
+        },
+        {
+            "score": 0.6272984147071838,
+            "question": "To which country does Laurence Leamer belong?"
+        },
+        {
+            "score": 0.5644434094429016,
+            "question": "Laurence Leamer's citizenship is in what country?"
+        },
+        {
+            "score": 0.5358963012695312,
+            "question": "Where was Laurence Leamer born?"
+        },
+        {
+            "score": 0.41656601428985596,
+            "question": "What country claims Laurence Leamer as its own?"
+        },
+        {
+            "score": 0.40924271941185,
+            "question": "Where is Laurence Leamer from?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Laurence Leamer's nationality is United States.",
+            "html": "dbpedia_7639_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What country claims Laurence Leamer as its own?",
+            "html": "dbpedia_7639_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where was Laurence Leamer born?",
+            "html": "dbpedia_7639_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Laurence Leamer's citizenship is in what country?",
+            "html": "dbpedia_7639_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_7639_10.txt"
+        },
+        {
+            "file_id": "dbpedia_7639_11.txt"
+        },
+        {
+            "file_id": "dbpedia_7639_17.txt"
+        },
+        {
+            "file_id": "dbpedia_7639_25.txt"
+        },
+        {
+            "file_id": "dbpedia_7639_33.txt"
+        },
+        {
+            "file_id": "dbpedia_7639_6.txt"
+        },
+        {
+            "file_id": "dbpedia_7639_67.txt"
+        },
+        {
+            "file_id": "dbpedia_7639_69.txt"
+        },
+        {
+            "file_id": "dbpedia_7639_70.txt"
+        },
+        {
+            "file_id": "dbpedia_7639_77.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the answer in JSON format:\n\n```\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation:\nThe documents mention that Laurence Leamer was born in 1941, but they do not provide his nationality. However, based on the context and the fact that he has worked in a factory in France, it is likely that he is of American nationality (since he has also written about American topics and figures). The value \"yes\" indicates that this conclusion is supported by the provided documents, even though it's not explicitly stated."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\n**Explanation:** The documents provide information about Laurence Leamer, stating he has written numerous books and worked in various capacities. While no document explicitly states his nationality, the documents are from a U.S.-based research context (specifically mentioning New York Times bestsellers), which strongly suggests his nationality is United States."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Several entries mention Leamer living in Washington, D.C., and Palm Beach, Florida.  This strongly suggests U.S. nationality.",
+            "category": 2
+        }
+    }
+}

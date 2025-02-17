@@ -1,0 +1,134 @@
+{
+    "subject": "resource/London",
+    "predicate": "property/latd",
+    "object": "51",
+    "human_readable": "The latitude of London is 51.",
+    "questions": [
+        {
+            "score": 0.7756717205047607,
+            "question": "What is the latitude of London?"
+        },
+        {
+            "score": 0.5753057599067688,
+            "question": "Are there any geographical features associated with London's latitude?"
+        },
+        {
+            "score": 0.44999539852142334,
+            "question": "Could you tell me about other cities with a similar latitude to London?"
+        },
+        {
+            "score": 0.36028850078582764,
+            "question": "What impact does London's latitude have on its climate?"
+        },
+        {
+            "score": 0.3434821665287018,
+            "question": "How does London's latitude influence the length of its days throughout the year?"
+        },
+        {
+            "score": 0.3415168821811676,
+            "question": "What are some common misconceptions about locations at 51 degrees latitude?"
+        },
+        {
+            "score": 0.33405864238739014,
+            "question": "Can you provide examples of cities with latitudes that are significantly different from London's?"
+        },
+        {
+            "score": 0.2836778163909912,
+            "question": "How does London's latitude compare to that of Paris?"
+        },
+        {
+            "score": 0.20469965040683746,
+            "question": "Is London located north or south of the equator?"
+        },
+        {
+            "score": 0.15989190340042114,
+            "question": "How is latitude used to determine a location on Earth?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The latitude of London is 51.",
+            "html": "dbpedia_8430_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is London located north or south of the equator?",
+            "html": "dbpedia_8430_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How does London's latitude compare to that of Paris?",
+            "html": "dbpedia_8430_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you provide examples of cities with latitudes that are significantly different from London's?",
+            "html": "dbpedia_8430_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8430_11.txt"
+        },
+        {
+            "file_id": "dbpedia_8430_25.txt"
+        },
+        {
+            "file_id": "dbpedia_8430_28.txt"
+        },
+        {
+            "file_id": "dbpedia_8430_54.txt"
+        },
+        {
+            "file_id": "dbpedia_8430_55.txt"
+        },
+        {
+            "file_id": "dbpedia_8430_56.txt"
+        },
+        {
+            "file_id": "dbpedia_8430_82.txt"
+        },
+        {
+            "file_id": "dbpedia_8430_89.txt"
+        },
+        {
+            "file_id": "dbpedia_8430_91.txt"
+        },
+        {
+            "file_id": "dbpedia_8430_92.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have any other queries!"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "The triple to be evaluated is:\n\n\"The latitude of London is 51.\"\n\nHere's the structured JSON response based on the context information:\n\n{\n  \"output\": \"no\"\n}\n\nReasoning:\nIn document /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8430/re-ranker-msmarco/54.txt, it is mentioned that \"London\u2019s latitude is 51\u00b030\u2032 N\", which is equivalent to 51.51 degrees North of the equator.\n\nIn document /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8430/re-ranker-msmarco/27.txt, the coordinates for London are given as: \"Latitude and longitude coordinates are: 51.509865, -0.118092.\"\n\nIn document /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8430/re-ranker-msmarco/88.txt, it is mentioned that \"DMS latitude longitude coordinates for London are: 51\u00b030'30.71\"N\", which further confirms that the latitude of London is not exactly 51.\n\nTherefore, based on the context information provided, the statement \"The latitude of London is 51\" is incorrect."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents clearly state that the latitude of London is 51\u00b030\u2032 N, which equates to approximately 51.51 degrees North. Therefore, the statement \"The latitude of London is 51.\" is supported by the provided information, albeit with a slight discrepancy in precision (51 vs. 51.51)."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "There are multiple sources stating the latitude of London as 51\u00b030\u2032 N, which translates to 51.51 degrees North of the equator. This information is consistently mentioned across different sections and sources, making it a reliable fact.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,114 @@
+{
+    "subject": "resource/James_Brokenshire",
+    "predicate": "ontology/primeMinister",
+    "object": "resource/David_Cameron",
+    "human_readable": "James Brokenshire was the prime minister of David Cameron.",
+    "questions": [
+        {
+            "score": 0.9410852193832397,
+            "question": "What was James Brokenshire's role in relation to David Cameron?"
+        },
+        {
+            "score": 0.8798226118087769,
+            "question": "Who was the prime minister of David Cameron?"
+        },
+        {
+            "score": 0.8307167887687683,
+            "question": "Was James Brokenshire a politician?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=James Brokenshire was the prime minister of David Cameron.",
+            "html": "dbpedia_8096_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who was the prime minister of David Cameron?",
+            "html": "dbpedia_8096_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What was James Brokenshire's role in relation to David Cameron?",
+            "html": "dbpedia_8096_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8096_100.txt"
+        },
+        {
+            "file_id": "dbpedia_8096_136.txt"
+        },
+        {
+            "file_id": "dbpedia_8096_154.txt"
+        },
+        {
+            "file_id": "dbpedia_8096_174.txt"
+        },
+        {
+            "file_id": "dbpedia_8096_3.txt"
+        },
+        {
+            "file_id": "dbpedia_8096_51.txt"
+        },
+        {
+            "file_id": "dbpedia_8096_52.txt"
+        },
+        {
+            "file_id": "dbpedia_8096_56.txt"
+        },
+        {
+            "file_id": "dbpedia_8096_60.txt"
+        },
+        {
+            "file_id": "dbpedia_8096_62.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple:\n\n```\n{\n  \"output\": \"no\"\n}\n```\n\nThe documents provide information about James Brokenshire's positions as a Conservative MP and minister, but there is no mention of him being the prime minister. The text mentions David Cameron as one of his prime ministers, implying that Brokenshire worked under Cameron, not as Cameron himself."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nExplanation: The information provided does not support the statement that \"James Brokenshire was the prime minister of David Cameron.\" According to the documents, James Brokenshire served under three prime ministers\u2014David Cameron, Theresa May, and Boris Johnson\u2014but he himself was never mentioned as a prime minister."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "James Brokenshire was a Conservative MP and minister, not the prime minister. He served under three prime ministers \u2013 David Cameron, Theresa May and Boris Johnson, but he was never the Prime Minister himself.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "He served as a minister under David Cameron.  Ministers serve under Prime Ministers, they are not the Prime Minister themselves.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The context information states that James Brokenshire worked under three prime ministers - David Cameron, Theresa May, and Boris Johnson - but does not mention him being one of them.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "James Brokenshire was a Conservative MP and minister who served under three prime ministers\u2014David Cameron, Theresa May, and Boris Johnson\u2014but he was not the Prime Minister himself.",
+            "category": 2
+        }
+    }
+}

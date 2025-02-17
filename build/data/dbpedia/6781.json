@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Sri_Lanka",
+    "predicate": "property/gdpNominalPerCapita",
+    "object": "3818.0",
+    "human_readable": "The GDP nominal per capita of Sri Lanka is 3818.0.",
+    "questions": [
+        {
+            "score": 0.9873758554458618,
+            "question": "What does a GDP nominal per capita of 3818.0 USD represent for Sri Lanka?"
+        },
+        {
+            "score": 0.9638121128082275,
+            "question": "What is the nominal GDP per capita of Sri Lanka?"
+        },
+        {
+            "score": 0.9587448239326477,
+            "question": "What are some potential implications of a 3818.0 USD GDP per capita for the Sri Lankan population?"
+        },
+        {
+            "score": 0.7661131024360657,
+            "question": "Is Sri Lanka considered to have a high or low GDP per capita?"
+        },
+        {
+            "score": 0.7576069831848145,
+            "question": "How does Sri Lanka's GDP per capita compare to other countries in the region?"
+        },
+        {
+            "score": 0.7521749138832092,
+            "question": "How much is the average income per person in Sri Lanka (in nominal GDP)?"
+        },
+        {
+            "score": 0.7520747184753418,
+            "question": "What factors might influence the GDP per capita of a country like Sri Lanka?"
+        },
+        {
+            "score": 0.6587733030319214,
+            "question": "What is the relationship between GDP per capita and quality of life in a country like Sri Lanka?"
+        },
+        {
+            "score": 0.6554173231124878,
+            "question": "How might changes in economic policies affect Sri Lanka's GDP per capita?"
+        },
+        {
+            "score": 0.32586631178855896,
+            "question": "Are there any other economic indicators that are important to consider alongside GDP per capita?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The GDP nominal per capita of Sri Lanka is 3818.0.",
+            "html": "dbpedia_6781_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How might changes in economic policies affect Sri Lanka's GDP per capita?",
+            "html": "dbpedia_6781_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the relationship between GDP per capita and quality of life in a country like Sri Lanka?",
+            "html": "dbpedia_6781_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What factors might influence the GDP per capita of a country like Sri Lanka?",
+            "html": "dbpedia_6781_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6781_17.txt"
+        },
+        {
+            "file_id": "dbpedia_6781_2.txt"
+        },
+        {
+            "file_id": "dbpedia_6781_20.txt"
+        },
+        {
+            "file_id": "dbpedia_6781_21.txt"
+        },
+        {
+            "file_id": "dbpedia_6781_3.txt"
+        },
+        {
+            "file_id": "dbpedia_6781_30.txt"
+        },
+        {
+            "file_id": "dbpedia_6781_31.txt"
+        },
+        {
+            "file_id": "dbpedia_6781_32.txt"
+        },
+        {
+            "file_id": "dbpedia_6781_34.txt"
+        },
+        {
+            "file_id": "dbpedia_6781_35.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe closest figure mentioned is $3,827.96 in the document about Sri Lanka's economic indicators.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "To answer the question, we need to evaluate whether the information in the documents supports the triple \"The GDP nominal per capita of Sri Lanka is 3818.0\".\n\nLet's analyze the relevant parts of the context information:\n\n* From file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6781/re-ranker-msmarco/32.txt, we have:\n\t+ \"Sri Lanka's GDP(Nominal) per Capita in 2023 was $3827.96\"\n* From file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6781/re-ranker-msmarco/32.txt, we have:\n\t+ \"Sri Lanka's GDP(Nominal) per Capita in 2023 was $3827.96\"\n\nBased on this information, the statement \"The GDP nominal per capita of Sri Lanka is 3818.0\" is close to but not exactly equal to the values mentioned in the documents ($3827.96).\n\nTherefore, the answer is:\n\n`{'output': 'no'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe document provided at file_path `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6781/re-ranker-msmarco/32.txt` states that \"Sri Lanka's GDP(Nominal) per Capita in 2023 was 3,827.96 dollars,\" which supports the query stating that \"The GDP nominal per capita of Sri Lanka is 3818.0.\" (Note: The value provided in the documents and the query are very close, with a minor difference likely due to rounding.)"
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "Based on the information provided:\n\n- In 2022, Sri Lanka's nominal GDP per capita was $3,347.\n- In 2023, Sri Lanka's nominal GDP per capita increased to $3,827.96.\n\nThe statement \"The GDP nominal per capita of Sri Lanka is 3818.0\" is slightly incorrect according to the documents as it should be around $3,827.96 (based on the most recent data provided). However, considering a slight rounding difference might still indicate that the given value is reasonable.\n\nGiven this context and allowing for minor discrepancies in numerical values due to potential rounding or timing differences, we'll take the closest match as accurate.\n\n**Answer:**\n```json\n{\"output\": \"yes\"}\n```\n\nThis allows for a small margin of error in numerical reporting but confirms general accuracy."
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The correct GDP nominal per capita of Sri Lanka, as provided in the context information, is $3827.96.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information provided states that the nominal GDP per capita for Sri Lanka in 2023 was $3827.96, not $3818.0.",
+            "category": 2
+        }
+    }
+}

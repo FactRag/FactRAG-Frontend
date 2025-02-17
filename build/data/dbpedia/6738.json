@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Tiempo_(magazine)",
+    "predicate": "ontology/language",
+    "object": "resource/Spanish_language",
+    "human_readable": "Tiempo magazine is written in Spanish.",
+    "questions": [
+        {
+            "score": 0.7839055061340332,
+            "question": "Are there any popular Spanish-language magazines besides Tiempo?"
+        },
+        {
+            "score": 0.7811036705970764,
+            "question": "What language is Tiempo magazine written in?"
+        },
+        {
+            "score": 0.7119879126548767,
+            "question": "Are there any other magazines written in Spanish?"
+        },
+        {
+            "score": 0.6603519320487976,
+            "question": "What type of publication is Tiempo magazine?"
+        },
+        {
+            "score": 0.6406139731407166,
+            "question": "Can someone who doesn't speak Spanish read Tiempo magazine?"
+        },
+        {
+            "score": 0.6321868896484375,
+            "question": "Is Tiempo magazine written in English?"
+        },
+        {
+            "score": 0.4332619309425354,
+            "question": "For what audience is Tiempo magazine likely intended?"
+        },
+        {
+            "score": 0.4310623109340668,
+            "question": "Why might someone choose to read a magazine in Spanish?"
+        },
+        {
+            "score": 0.30091041326522827,
+            "question": "What are some common topics covered in Spanish-language magazines?"
+        },
+        {
+            "score": 0.21158041059970856,
+            "question": "What other types of media are available in Spanish?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Tiempo magazine is written in Spanish.",
+            "html": "dbpedia_6738_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some common topics covered in Spanish-language magazines?",
+            "html": "dbpedia_6738_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Why might someone choose to read a magazine in Spanish?",
+            "html": "dbpedia_6738_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=For what audience is Tiempo magazine likely intended?",
+            "html": "dbpedia_6738_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6738_110.txt"
+        },
+        {
+            "file_id": "dbpedia_6738_114.txt"
+        },
+        {
+            "file_id": "dbpedia_6738_30.txt"
+        },
+        {
+            "file_id": "dbpedia_6738_32.txt"
+        },
+        {
+            "file_id": "dbpedia_6738_37.txt"
+        },
+        {
+            "file_id": "dbpedia_6738_53.txt"
+        },
+        {
+            "file_id": "dbpedia_6738_61.txt"
+        },
+        {
+            "file_id": "dbpedia_6738_62.txt"
+        },
+        {
+            "file_id": "dbpedia_6738_84.txt"
+        },
+        {
+            "file_id": "dbpedia_6738_94.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the answer in JSON format:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe reason for this answer is that according to document `file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6738/re-ranker-msmarco/107.txt`, it is stated: \n\n\"TIEMPO\n\nTiempo is a national newspaper printed in Spanish.\"\n\nThis sentence directly supports the triple that Tiempo magazine (also referred to as Tiempo newspaper) is written in Spanish."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThis answer is derived from the information provided in `108.txt` and `111.txt`, which confirm that \"Tiempo\" is a newspaper published in Spanish."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Michael_Wolff",
+    "predicate": "ontology/hometown",
+    "object": "resource/United_States",
+    "human_readable": "Michael Wolff was born in United States.",
+    "questions": [
+        {
+            "score": 0.8594043254852295,
+            "question": "Where was Michael Wolff born?"
+        },
+        {
+            "score": 0.47180283069610596,
+            "question": "What is Michael Wolff known for?"
+        },
+        {
+            "score": 0.3170802891254425,
+            "question": "Who are some of Michael Wolff's notable subjects?"
+        },
+        {
+            "score": 0.31616032123565674,
+            "question": "Is Michael Wolff a journalist?"
+        },
+        {
+            "score": 0.29951512813568115,
+            "question": "Where does Michael Wolff currently reside?"
+        },
+        {
+            "score": 0.19304019212722778,
+            "question": "What political events has Michael Wolff covered?"
+        },
+        {
+            "score": 0.1719161719083786,
+            "question": "Has Michael Wolff received any awards for his writing?"
+        },
+        {
+            "score": 0.15977580845355988,
+            "question": "What type of work does Michael Wolff produce?"
+        },
+        {
+            "score": 0.14823399484157562,
+            "question": "Is Michael Wolff a fiction or non-fiction writer?"
+        },
+        {
+            "score": 0.13870590925216675,
+            "question": "Has Michael Wolff written any books?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Michael Wolff was born in United States.",
+            "html": "dbpedia_9042_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Michael Wolff a fiction or non-fiction writer?",
+            "html": "dbpedia_9042_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of work does Michael Wolff produce?",
+            "html": "dbpedia_9042_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Has Michael Wolff received any awards for his writing?",
+            "html": "dbpedia_9042_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_9042_17.txt"
+        },
+        {
+            "file_id": "dbpedia_9042_33.txt"
+        },
+        {
+            "file_id": "dbpedia_9042_34.txt"
+        },
+        {
+            "file_id": "dbpedia_9042_45.txt"
+        },
+        {
+            "file_id": "dbpedia_9042_5.txt"
+        },
+        {
+            "file_id": "dbpedia_9042_53.txt"
+        },
+        {
+            "file_id": "dbpedia_9042_54.txt"
+        },
+        {
+            "file_id": "dbpedia_9042_61.txt"
+        },
+        {
+            "file_id": "dbpedia_9042_75.txt"
+        },
+        {
+            "file_id": "dbpedia_9042_81.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have more queries! \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of whether the information in the documents supports the triple:\n\n{\n  \"output\": \"no\"\n}\n\nExplanation:\nThe document for file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_9042/re-ranker-msmarco/5.txt mentions that Michael Wolff was born on August 27, 1953 in Paterson, New Jersey, USA. This contradicts the triple's statement that he was born in the United States, which is too broad and does not specify a state or city."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents clearly state that Michael Wolff was born in Paterson, New Jersey, U.S., which is within the United States. Therefore, the statement \"Michael Wolff was born in the United States\" is supported by the provided context information."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "There are multiple sources confirming Michael Wolff's birthplace as Paterson, New Jersey, U.S., which is within the United States.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,142 @@
+{
+    "subject": "resource/USA_Network",
+    "predicate": "ontology/headquarter",
+    "object": "resource/New_York_City",
+    "human_readable": "The headquarters of USA Network are located in New York City.",
+    "questions": [
+        {
+            "score": 0.9278640151023865,
+            "question": "Where are the headquarters of USA Network located?"
+        },
+        {
+            "score": 0.8941082954406738,
+            "question": "In what city is USA Network headquartered?"
+        },
+        {
+            "score": 0.8221291303634644,
+            "question": "What is the address of USA Network headquarters?"
+        },
+        {
+            "score": 0.6322557926177979,
+            "question": "What urban center is home to the USA Network headquarters?"
+        },
+        {
+            "score": 0.4352882504463196,
+            "question": "Which major city is the location of USA Network's main offices?"
+        },
+        {
+            "score": 0.41945505142211914,
+            "question": "Which city serves as the base of operations for USA Network?"
+        },
+        {
+            "score": 0.3822064697742462,
+            "question": "What US city houses the main offices of USA Network?"
+        },
+        {
+            "score": 0.37509313225746155,
+            "question": "Can you name the city where USA Network has its main offices?"
+        },
+        {
+            "score": 0.32923048734664917,
+            "question": "Where is the principal office of USA Network situated?"
+        },
+        {
+            "score": 0.28454917669296265,
+            "question": "Where are the primary operations of USA Network conducted from?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The headquarters of USA Network are located in New York City.",
+            "html": "dbpedia_7330_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where is the principal office of USA Network situated?",
+            "html": "dbpedia_7330_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you name the city where USA Network has its main offices?",
+            "html": "dbpedia_7330_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What US city houses the main offices of USA Network?",
+            "html": "dbpedia_7330_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_7330_104.txt"
+        },
+        {
+            "file_id": "dbpedia_7330_12.txt"
+        },
+        {
+            "file_id": "dbpedia_7330_19.txt"
+        },
+        {
+            "file_id": "dbpedia_7330_25.txt"
+        },
+        {
+            "file_id": "dbpedia_7330_4.txt"
+        },
+        {
+            "file_id": "dbpedia_7330_52.txt"
+        },
+        {
+            "file_id": "dbpedia_7330_63.txt"
+        },
+        {
+            "file_id": "dbpedia_7330_69.txt"
+        },
+        {
+            "file_id": "dbpedia_7330_91.txt"
+        },
+        {
+            "file_id": "dbpedia_7330_99.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n\n\nThe provided context does not mention the location of USA Network's headquarters. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "To answer this question, we need to determine whether the information in the documents supports the triple \"The headquarters of USA Network are located in New York City\".\n\nLet's analyze the context information:\n\n* None of the files mention the location of USA Network's headquarters.\n* Some files mention NBCUniversal and Comcast as owning the network, but there is no specific information about the location of the headquarters.\n\nTherefore, based on the available information, we cannot determine whether the headquarters of USA Network are located in New York City or not.\n\nThe final answer is:\n\n`{'output': 'no'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: None of the provided documents mention that the headquarters of USA Network are located in New York City. While there is information about USA Network's history and programming, the specific detail about its headquarters location is not present in the given context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "The text states that the network was founded by cable provider UA-Columbia Cablevision and the Madison Square Garden Corp. and was run by chairwoman and CEO Kay Koplovitz, implying a strong association with New York City.  It also mentions the channel's origins as the Madison Square Garden Sports Network, further supporting the link to NYC. However, it doesn't explicitly mention the headquarters being in New York City.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The context information does not mention the location of USA Network's headquarters. It only talks about its existence, programming, and historical events related to its name changes and affiliations with other companies. There is no specific reference to a physical address or city for the network's headquarters.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information does not provide specific details about the headquarters location of USA Network. While it mentions the network originated from Madison Square Garden, which is in New York City, there's no explicit statement confirming that the network's current headquarters are there. Therefore, based on the given information, we cannot conclude that the claim is correct.",
+            "category": 2
+        }
+    }
+}

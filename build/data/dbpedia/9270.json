@@ -1,0 +1,114 @@
+{
+    "subject": "resource/Tarumanagara",
+    "predicate": "ontology/capital",
+    "object": "resource/Bekasi",
+    "human_readable": "The capital of Tarumanagara is Bekasi.",
+    "questions": [
+        {
+            "score": 0.988187849521637,
+            "question": "Is Bekasi the capital of Tarumanagara?"
+        },
+        {
+            "score": 0.9108253121376038,
+            "question": "What is the capital of Tarumanagara?"
+        },
+        {
+            "score": 0.5779209136962891,
+            "question": "Where is Tarumanagara located?"
+        },
+        {
+            "score": 0.47633689641952515,
+            "question": "Are there other capitals in Indonesian history besides Bekasi?"
+        },
+        {
+            "score": 0.27432435750961304,
+            "question": "Does Bekasi have any historical significance?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The capital of Tarumanagara is Bekasi.",
+            "html": "dbpedia_9270_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there other capitals in Indonesian history besides Bekasi?",
+            "html": "dbpedia_9270_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where is Tarumanagara located?",
+            "html": "dbpedia_9270_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the capital of Tarumanagara?",
+            "html": "dbpedia_9270_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_9270_25.txt"
+        },
+        {
+            "file_id": "dbpedia_9270_27.txt"
+        },
+        {
+            "file_id": "dbpedia_9270_28.txt"
+        },
+        {
+            "file_id": "dbpedia_9270_29.txt"
+        },
+        {
+            "file_id": "dbpedia_9270_34.txt"
+        },
+        {
+            "file_id": "dbpedia_9270_41.txt"
+        },
+        {
+            "file_id": "dbpedia_9270_58.txt"
+        },
+        {
+            "file_id": "dbpedia_9270_62.txt"
+        },
+        {
+            "file_id": "dbpedia_9270_66.txt"
+        },
+        {
+            "file_id": "dbpedia_9270_75.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nWhile the documents state that Bekasi was once the capital of the Kingdom of Tarumanagara, they do not explicitly say that Tarumanagara's capital *is* Bekasi.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation of the triple \"The capital of Tarumanagara is Bekasi\" based on the provided context information:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation:\n\nThe context information contains multiple documents that mention the Kingdom of Tarumanagara and its capital. Specifically, documents with file paths `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_9270/re-ranker-msmarco/24.txt`, `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_9270/re-ranker-msmarco/26.txt`, and `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_9270/re-ranker-msmarco/38.txt` mention that Bekasi was once the capital city of the Kingdom of Tarumanagara, known as Dayeuh Sundasembawa or Jayagiri. This information supports the triple \"The capital of Tarumanagara is Bekasi\"."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents provide information that supports the statement \"The capital of Tarumanagara is Bekasi.\" Specifically, several passages mention that Bekasi was once the capital city of the Kingdom of Tarumanagara. For example:\n\n- \"Bekasi is one of the oldest city in Indonesia, and has a history of being the capital city of the Kingdom of Tarumanagara.\"\n- \"According to the 2020 Census by Statistics Indonesia (BPS), Bekasi had a population of 2,543,676. By mid-2023, the population was estimated to have increased to 2,627,207, with a near-even split between males (1,320,682) and females (1,306,525).\" This passage also indirectly supports this claim by mentioning Bekasi's history as the capital of Tarumanagara."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Multiple sources state that the capital of Tarumanagara was Dayeuh Sundasembawa or Jayagiri, and these locations are within the current Bekasi region, not Bekasi itself.  \n\n\n\n\nLet me know if you'd like to explore any other claims!",
+            "category": 2
+        }
+    }
+}

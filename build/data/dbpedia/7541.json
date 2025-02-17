@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Toronto",
+    "predicate": "property/subdivisionName",
+    "object": "resource/York,_Toronto",
+    "human_readable": "The subdivision name of Toronto is York.",
+    "questions": [
+        {
+            "score": 0.949281632900238,
+            "question": "Name one subdivision within Toronto."
+        },
+        {
+            "score": 0.9332077503204346,
+            "question": "Is York a part of Toronto?"
+        },
+        {
+            "score": 0.9212095737457275,
+            "question": "What is the subdivision name of Toronto?"
+        },
+        {
+            "score": 0.8642760515213013,
+            "question": "Can you name other subdivisions besides York in Toronto?"
+        },
+        {
+            "score": 0.6492215991020203,
+            "question": "How did the name 'York' come to be associated with this subdivision?"
+        },
+        {
+            "score": 0.5220887064933777,
+            "question": "What is the population of the York subdivision?"
+        },
+        {
+            "score": 0.4479171335697174,
+            "question": "What are some key characteristics that define the York subdivision?"
+        },
+        {
+            "score": 0.35124289989471436,
+            "question": "Are there any famous landmarks or attractions within the York subdivision?"
+        },
+        {
+            "score": 0.28550541400909424,
+            "question": "What are subdivisions in a city called?"
+        },
+        {
+            "score": 0.2805621027946472,
+            "question": "Where is York located?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The subdivision name of Toronto is York.",
+            "html": "dbpedia_7541_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are subdivisions in a city called?",
+            "html": "dbpedia_7541_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any famous landmarks or attractions within the York subdivision?",
+            "html": "dbpedia_7541_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some key characteristics that define the York subdivision?",
+            "html": "dbpedia_7541_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_7541_123.txt"
+        },
+        {
+            "file_id": "dbpedia_7541_139.txt"
+        },
+        {
+            "file_id": "dbpedia_7541_178.txt"
+        },
+        {
+            "file_id": "dbpedia_7541_21.txt"
+        },
+        {
+            "file_id": "dbpedia_7541_33.txt"
+        },
+        {
+            "file_id": "dbpedia_7541_44.txt"
+        },
+        {
+            "file_id": "dbpedia_7541_47.txt"
+        },
+        {
+            "file_id": "dbpedia_7541_6.txt"
+        },
+        {
+            "file_id": "dbpedia_7541_67.txt"
+        },
+        {
+            "file_id": "dbpedia_7541_82.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have other triples to evaluate!  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe information in the documents does not support the triple. According to the text, \"Toronto was known as York until an 1834 decision to re-designate the name.\" This implies that Toronto's subdivision name was indeed York at one point in time, but it is no longer its current name."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nExplanation: According to the provided context, \"Toronto was known as York until an 1834 decision to re-designate the name.\" This supports the statement that the subdivision (or former name) of Toronto is York."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "The text explicitly states that Toronto was known as York until an 1834 decision to re-designate the name, implying that York was an earlier or different subdivision of Toronto. However, it also specifies that this change occurred in 1834, and does not suggest that the name \"York\" was a subdivision name before that date.",
+            "category": 2
+        }
+    }
+}

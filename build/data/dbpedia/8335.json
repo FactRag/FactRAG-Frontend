@@ -1,0 +1,146 @@
+{
+    "subject": "resource/U.S._Music_Corporation",
+    "predicate": "ontology/subsidiary",
+    "object": "resource/Marshall_Amplification",
+    "human_readable": "U.S. Music Corporation is a subsidiary of Marshall Amplification.",
+    "questions": [
+        {
+            "score": 0.9587175846099854,
+            "question": "What industry are U.S. Music Corporation and Marshall Amplification involved in?"
+        },
+        {
+            "score": 0.9193968176841736,
+            "question": "What is the relationship between U.S. Music Corporation and Marshall Amplification?"
+        },
+        {
+            "score": 0.8970838785171509,
+            "question": "Can you name another subsidiary of Marshall Amplification?"
+        },
+        {
+            "score": 0.8727318644523621,
+            "question": "Is Marshall Amplification a parent or subsidiary company?"
+        },
+        {
+            "score": 0.7649906277656555,
+            "question": "What company owns U.S. Music Corporation?"
+        },
+        {
+            "score": 0.6633802652359009,
+            "question": "Where is Marshall Amplification headquartered?"
+        },
+        {
+            "score": 0.6396910548210144,
+            "question": "What are some popular types of music that use Marshall Amplification equipment?"
+        },
+        {
+            "score": 0.588661789894104,
+            "question": "Do you know any famous musicians who use Marshall Amplification products?"
+        },
+        {
+            "score": 0.5859008431434631,
+            "question": "What type of products does Marshall Amplification likely produce?"
+        },
+        {
+            "score": 0.4282405972480774,
+            "question": "Would U.S. Music Corporation be considered a large or small company?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=U.S. Music Corporation is a subsidiary of Marshall Amplification.",
+            "html": "dbpedia_8335_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of products does Marshall Amplification likely produce?",
+            "html": "dbpedia_8335_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Do you know any famous musicians who use Marshall Amplification products?",
+            "html": "dbpedia_8335_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some popular types of music that use Marshall Amplification equipment?",
+            "html": "dbpedia_8335_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8335_105.txt"
+        },
+        {
+            "file_id": "dbpedia_8335_15.txt"
+        },
+        {
+            "file_id": "dbpedia_8335_24.txt"
+        },
+        {
+            "file_id": "dbpedia_8335_30.txt"
+        },
+        {
+            "file_id": "dbpedia_8335_50.txt"
+        },
+        {
+            "file_id": "dbpedia_8335_55.txt"
+        },
+        {
+            "file_id": "dbpedia_8335_65.txt"
+        },
+        {
+            "file_id": "dbpedia_8335_68.txt"
+        },
+        {
+            "file_id": "dbpedia_8335_69.txt"
+        },
+        {
+            "file_id": "dbpedia_8335_89.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nLet me explain: The documents clearly state that US Music Corp is a subsidiary of Jam Industries, Ltd., not Marshall Amplification.  The text repeatedly mentions this relationship. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the context information provided, I can evaluate the query as follows:\n\n* The documents mention that Marshall Amplification is distributed in the USA by US Music Corp (multiple instances).\n* However, there is no information that suggests U.S. Music Corporation is a subsidiary of Marshall Amplification.\n\nTherefore, my answer would be:\n\n`{'output': 'no'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents provided do not support the statement that U.S. Music Corporation is a subsidiary of Marshall Amplification. Instead, the documents indicate that U.S. Music Corp is a subsidiary of Jam Industries, Ltd., and Marshall Amplification is distributed by US Music Corp in the USA."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Marshall Amplification PLC is the parent company of Marshall USA, which handles US distribution directly for a few years now (since 2010). U.S. Music Corporation is merely a distributor for Marshall in the US and is not a subsidiary of Marshall Amplification.",
+            "category": -1
+        },
+        "gemma2": {
+            "reason": "Several pieces of text state that US Music Corp. is a subsidiary of Jam Industries, Ltd., not Marshall Amplification PLC. Additionally, the provided financial statements list subsidiaries of Marshall Amplification PLC and US Music Corp. is not among them.",
+            "category": -1
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because US Music Corp is stated to be a subsidiary of Jam Industries, Ltd.",
+            "category": -1
+        },
+        "qwen2.5": {
+            "reason": "US Music Corp. is described as a subsidiary of Jam Industries, Ltd., not Marshall Amplification PLC.",
+            "category": -1
+        }
+    }
+}

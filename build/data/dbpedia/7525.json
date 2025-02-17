@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Hans_Grundig",
+    "predicate": "ontology/birthPlace",
+    "object": "resource/Saxony",
+    "human_readable": "Hans Grundig was born in Saxony.",
+    "questions": [
+        {
+            "score": 0.857871413230896,
+            "question": "Where was Hans Grundig born?"
+        },
+        {
+            "score": 0.8057851195335388,
+            "question": "In what year was Hans Grundig born?"
+        },
+        {
+            "score": 0.5585906505584717,
+            "question": "What is Hans Grundig known for?"
+        },
+        {
+            "score": 0.41554316878318787,
+            "question": "Where did Hans Grundig live?"
+        },
+        {
+            "score": 0.37585559487342834,
+            "question": "Who are some other notable people from Saxony?"
+        },
+        {
+            "score": 0.3002111315727234,
+            "question": "Describe Hans Grundig's life."
+        },
+        {
+            "score": 0.2881995737552643,
+            "question": "Name a city in Saxony."
+        },
+        {
+            "score": 0.2835346460342407,
+            "question": "What is Saxony famous for?"
+        },
+        {
+            "score": 0.24048496782779694,
+            "question": "What is the history of Saxony?"
+        },
+        {
+            "score": 0.1791362315416336,
+            "question": "What are the geographical features of Saxony?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Hans Grundig was born in Saxony.",
+            "html": "dbpedia_7525_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the history of Saxony?",
+            "html": "dbpedia_7525_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Saxony famous for?",
+            "html": "dbpedia_7525_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Name a city in Saxony.",
+            "html": "dbpedia_7525_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_7525_19.txt"
+        },
+        {
+            "file_id": "dbpedia_7525_2.txt"
+        },
+        {
+            "file_id": "dbpedia_7525_31.txt"
+        },
+        {
+            "file_id": "dbpedia_7525_34.txt"
+        },
+        {
+            "file_id": "dbpedia_7525_4.txt"
+        },
+        {
+            "file_id": "dbpedia_7525_48.txt"
+        },
+        {
+            "file_id": "dbpedia_7525_64.txt"
+        },
+        {
+            "file_id": "dbpedia_7525_68.txt"
+        },
+        {
+            "file_id": "dbpedia_7525_87.txt"
+        },
+        {
+            "file_id": "dbpedia_7525_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe documents state that Hans Grundig was born in Dresden, not Saxony. \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the answer in the required format:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation:\nThe context information contains multiple documents that provide details about Hans Grundig's life and birthplace. While the birth year (1901) and date (February 19th, February 19th, or not specified) vary across different documents, all of them consistently mention that he was born in Dresden. Although one document does not specify Saxony as his birthplace explicitly, it is implied by the fact that Dresden is a city within Saxony."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\n**Explanation:** The documents indicate that Hans Grundig was born in Dresden, which is a city located in the German state of Saxony. Therefore, the statement \"Hans Grundig was born in Saxony\" is supported by the provided information."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Context information states Hans Grundig was born in Dresden.  Dresden is located in Saxony.",
+            "category": 2
+        }
+    }
+}

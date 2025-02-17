@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Tony_Diprose",
+    "predicate": "ontology/school",
+    "object": "resource/Campion_School,_Hornchurch",
+    "human_readable": "Tony Diprose attended Campion School, Hornchurch.",
+    "questions": [
+        {
+            "score": 0.9386823177337646,
+            "question": "Who attended Campion School in Hornchurch?"
+        },
+        {
+            "score": 0.8780703544616699,
+            "question": "Where did Tony Diprose attend school?"
+        },
+        {
+            "score": 0.82701575756073,
+            "question": "What is the name of the school Tony Diprose attended?"
+        },
+        {
+            "score": 0.7199516892433167,
+            "question": "How has Campion School contributed to the community of Hornchurch?"
+        },
+        {
+            "score": 0.7148550152778625,
+            "question": "Are there any notable alumni from Campion School besides Tony Diprose?"
+        },
+        {
+            "score": 0.42799973487854004,
+            "question": "What type of institution is Campion School?"
+        },
+        {
+            "score": 0.3885776400566101,
+            "question": "In which town is Campion School located?"
+        },
+        {
+            "score": 0.34575188159942627,
+            "question": "What is the history of Campion School?"
+        },
+        {
+            "score": 0.25740623474121094,
+            "question": "What are some extracurricular activities offered at Campion School?"
+        },
+        {
+            "score": 0.2490110695362091,
+            "question": "Is Campion School known for a particular subject or area of study?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Tony Diprose attended Campion School, Hornchurch.",
+            "html": "dbpedia_7626_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some extracurricular activities offered at Campion School?",
+            "html": "dbpedia_7626_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the history of Campion School?",
+            "html": "dbpedia_7626_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In which town is Campion School located?",
+            "html": "dbpedia_7626_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_7626_12.txt"
+        },
+        {
+            "file_id": "dbpedia_7626_14.txt"
+        },
+        {
+            "file_id": "dbpedia_7626_34.txt"
+        },
+        {
+            "file_id": "dbpedia_7626_39.txt"
+        },
+        {
+            "file_id": "dbpedia_7626_41.txt"
+        },
+        {
+            "file_id": "dbpedia_7626_49.txt"
+        },
+        {
+            "file_id": "dbpedia_7626_62.txt"
+        },
+        {
+            "file_id": "dbpedia_7626_64.txt"
+        },
+        {
+            "file_id": "dbpedia_7626_77.txt"
+        },
+        {
+            "file_id": "dbpedia_7626_82.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "To answer your question, I will search for evidence in the provided context information.\n\nHere is my evaluation:\n\n* The documents mention Tony Diprose as a former England National Rugby Union Captain and a head of sport at Canford School. However, there is no direct connection made between Tony Diprose and attending Campion School, Hornchurch.\n* One document mentions that Tony Diprose attended Saracens and was the captain of England's tour to Australia in June 1998, but it does not mention his educational background.\n* Another document states that Tony Diprose joined Canford School as head of sport, implying that he is a prominent figure in rugby, but again, there is no information about him attending Campion School.\n\nBased on this analysis, I would conclude:\n\n```json\n{'output': 'no'}\n```\n\nThe documents do not provide evidence to support the claim that Tony Diprose attended Campion School, Hornchurch."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents mention that Tony Diprose is associated with Campion School. Specifically, the file_path `122.txt` states, \"Tony, who won 10 full caps for England, and who has a reputation as being one of the most talented footballing forwards of his generation, signed for Harlequins from Saracens in 2001.\" Although it does not explicitly state that he attended Campion School, another document (`82.txt`) confirms, \"The Campion School is a distinguished Roman Catholic institution that caters to boys for secondary education and transitions into a coeducational sixth form. Pupils who attend the school have to be Catholic and the school has a strong Catholic ethos.\" Given this context, it can reasonably be inferred that Tony Diprose attended Campion School before his sports career."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "There are multiple mentions of Diprose's career path, including playing for Saracens, England, Harlequins, and becoming a coach. There's no mention of him attending Campion School in any of the provided texts.",
+            "category": 1
+        },
+        "llama3.1": {
+            "reason": "Tony Diprose only joined Canford School as head of sport in January, whereas Campion School was founded in September 1962 and Tony Diprose attended school at a different time.",
+            "category": 2
+        }
+    }
+}

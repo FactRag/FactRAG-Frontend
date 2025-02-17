@@ -1,0 +1,148 @@
+{
+    "subject": "Natalia_Rivera_Aitoro",
+    "predicate": "isMarriedTo",
+    "object": "Gus_Aitoro",
+    "human_readable": "Natalia Rivera Aitoro is married to Gus Aitoro.",
+    "questions": [
+        {
+            "score": 0.9819082617759705,
+            "question": "To whom is Natalia Rivera Aitoro married?"
+        },
+        {
+            "score": 0.9809680581092834,
+            "question": "Is Natalia Rivera Aitoro married?"
+        },
+        {
+            "score": 0.9801299571990967,
+            "question": "Who is Natalia Rivera Aitoro married to?"
+        },
+        {
+            "score": 0.9764633178710938,
+            "question": "Is there a relationship between Natalia Rivera Aitoro and Gus Aitoro?"
+        },
+        {
+            "score": 0.9588046669960022,
+            "question": "Name the person Gus Aitoro is married to."
+        },
+        {
+            "score": 0.9334381818771362,
+            "question": "Who is married to Gus Aitoro?"
+        },
+        {
+            "score": 0.9332702159881592,
+            "question": "What is the relationship between Natalia Rivera Aitoro and Gus Aitoro?"
+        },
+        {
+            "score": 0.8597539663314819,
+            "question": "Who are Gus Aitoro's spouse?"
+        },
+        {
+            "score": 0.834550678730011,
+            "question": "What is the full name of the person married to Gus Aitoro?"
+        },
+        {
+            "score": 0.789680540561676,
+            "question": "What is the name of Gus Aitoro's spouse?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Natalia Rivera Aitoro is married to Gus Aitoro.",
+            "html": "yago_25959_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the full name of the person married to Gus Aitoro?",
+            "html": "yago_25959_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who are Gus Aitoro's spouse?",
+            "html": "yago_25959_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the relationship between Natalia Rivera Aitoro and Gus Aitoro?",
+            "html": "yago_25959_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "yago_25959_10.txt"
+        },
+        {
+            "file_id": "yago_25959_12.txt"
+        },
+        {
+            "file_id": "yago_25959_21.txt"
+        },
+        {
+            "file_id": "yago_25959_28.txt"
+        },
+        {
+            "file_id": "yago_25959_31.txt"
+        },
+        {
+            "file_id": "yago_25959_34.txt"
+        },
+        {
+            "file_id": "yago_25959_38.txt"
+        },
+        {
+            "file_id": "yago_25959_43.txt"
+        },
+        {
+            "file_id": "yago_25959_51.txt"
+        },
+        {
+            "file_id": "yago_25959_57.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'} \n```  \n\n\n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": -1,
+            "full_ans": "After evaluating the context information, I found that:\n\n* The character Natalia Rivera Aitoro has a spouse named Augustus \"Gus\" Aitoro (document 2 and 5).\n* However, in document 12, it is stated that Gus and Natalia married each other.\n\nBased on this information, the triple \"Natalia Rivera Aitoro is married to Gus Aitoro\" is partially supported by the documents, but with a correction. The correct statement would be \"Gus Aitoro was previously married to Augustus 'Gus' Aitoro's husband was not present in the context, it seems he is actually the spouse of Natalia Rivera Aitoro, however they later marry each other\""
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\n**Explanation:** The documents provide information that supports the statement \"Natalia Rivera Aitoro is married to Gus Aitoro.\" Specifically, the document at file_path `/Users/stefanomarchesin/Research/fshami/Rag/docs/yago_25959/re-ranker-msmarco/38.txt` mentions:\n\n```\nPast marriage(s):\nAugustus \"Gus\" Aitoro (dissolved) [2008]\n```\n\nThis indicates that Natalia Rivera Aitoro was married to Gus Aitoro."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n    \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "mistral-nemo": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Natalia Rivera Aitoro was married to Augustus \"Gus\" Aitoro (dissolved) [2008] before Gus died, but the character Gus Aitoro died in a motorcycle accident (as per context information) and hence cannot be her current spouse.",
+            "category": 0
+        },
+        "gemma2": {
+            "reason": "It states Natalia Rivera Aitoro is married to Gus Aitoro, but context 3 says their marriage was dissolved in 2008.",
+            "category": 0
+        },
+        "llama3.1": {
+            "reason": "Gus died in a motorcycle accident before marrying Natalia.",
+            "category": 0
+        }
+    }
+}

@@ -1,0 +1,134 @@
+{
+    "subject": "resource/The_Runaways",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "The Runaways",
+    "human_readable": "The name of The Runaways is The Runaways.",
+    "questions": [
+        {
+            "score": 0.9101261496543884,
+            "question": "Who or what is known as 'The Runaways'?"
+        },
+        {
+            "score": 0.8797995448112488,
+            "question": "Is 'The Runaways' the name of the band?"
+        },
+        {
+            "score": 0.06670568883419037,
+            "question": "What is the name of the band?"
+        },
+        {
+            "score": 0.05472760647535324,
+            "question": "What is the recognized name of the group?"
+        },
+        {
+            "score": 0.052227552980184555,
+            "question": "How are they commonly known?"
+        },
+        {
+            "score": 0.04054459556937218,
+            "question": "Which name represents this band?"
+        },
+        {
+            "score": 0.029254481196403503,
+            "question": "If someone asked 'What's the name of that band?', what would you say?"
+        },
+        {
+            "score": 0.025954248383641243,
+            "question": "What name is used to identify the musical group?"
+        },
+        {
+            "score": 0.025676658377051353,
+            "question": "How would you refer to the band?"
+        },
+        {
+            "score": 0.014375883154571056,
+            "question": "What title is given to the musical group?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The name of The Runaways is The Runaways.",
+            "html": "dbpedia_8311_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How would you refer to the band?",
+            "html": "dbpedia_8311_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What name is used to identify the musical group?",
+            "html": "dbpedia_8311_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If someone asked 'What's the name of that band?', what would you say?",
+            "html": "dbpedia_8311_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8311_29.txt"
+        },
+        {
+            "file_id": "dbpedia_8311_46.txt"
+        },
+        {
+            "file_id": "dbpedia_8311_58.txt"
+        },
+        {
+            "file_id": "dbpedia_8311_59.txt"
+        },
+        {
+            "file_id": "dbpedia_8311_60.txt"
+        },
+        {
+            "file_id": "dbpedia_8311_62.txt"
+        },
+        {
+            "file_id": "dbpedia_8311_65.txt"
+        },
+        {
+            "file_id": "dbpedia_8311_70.txt"
+        },
+        {
+            "file_id": "dbpedia_8311_80.txt"
+        },
+        {
+            "file_id": "dbpedia_8311_82.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "After analyzing the context information, I found that it provides details about a rock band called \"The Runaways\". However, this group is different from the one mentioned in the question. \n\nThe Runaways mentioned in the documents were an all-girl rock band formed by Joan Jett and Sandy West in 1975 (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8311/re-ranker-msmarco/65.txt), while the Runaways mentioned in the question are a group of teenagers who try to make up for the evil done by their super villain parents by becoming superheroes (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8311/re-ranker-msmarco/66.txt).\n\nTherefore, the answer is:\n\n`{'output': 'no'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe query \"The name of The Runaways is The Runaways\" is supported by the documents, as multiple references are made to both the band and the comic book series under the title \"The Runaways\"."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "Involves tautology.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,134 @@
+{
+    "subject": "resource/A_Price_Above_Rubies",
+    "predicate": "http://purl.org/dc/terms/subject",
+    "object": "resource/Category:Miramax_films",
+    "human_readable": "A Price Above Rubies is about Miramax films.",
+    "questions": [
+        {
+            "score": 0.9871238470077515,
+            "question": "Is 'A Price Above Rubies' a Miramax film?"
+        },
+        {
+            "score": 0.9091506004333496,
+            "question": "How might the film 'A Price Above Rubies' shed light on Miramax's history?"
+        },
+        {
+            "score": 0.6950287222862244,
+            "question": "What is the subject of the film 'A Price Above Rubies'?"
+        },
+        {
+            "score": 0.6670425534248352,
+            "question": "Which company is associated with the film 'A Price Above Rubies'?"
+        },
+        {
+            "score": 0.5545899868011475,
+            "question": "What themes might be explored in a film about Miramax films?"
+        },
+        {
+            "score": 0.5371521711349487,
+            "question": "Who might have directed or acted in 'A Price Above Rubies'?"
+        },
+        {
+            "score": 0.5123017430305481,
+            "question": "Are there any documentaries about Miramax films?"
+        },
+        {
+            "score": 0.4873591959476471,
+            "question": "What genre is 'A Price Above Rubies' likely to be?"
+        },
+        {
+            "score": 0.44139575958251953,
+            "question": "Can you provide examples of other films produced by Miramax?"
+        },
+        {
+            "score": 0.4305356442928314,
+            "question": "What impact did Miramax have on the film industry?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=A Price Above Rubies is about Miramax films.",
+            "html": "dbpedia_7932_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you provide examples of other films produced by Miramax?",
+            "html": "dbpedia_7932_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What genre is 'A Price Above Rubies' likely to be?",
+            "html": "dbpedia_7932_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any documentaries about Miramax films?",
+            "html": "dbpedia_7932_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_7932_10.txt"
+        },
+        {
+            "file_id": "dbpedia_7932_15.txt"
+        },
+        {
+            "file_id": "dbpedia_7932_21.txt"
+        },
+        {
+            "file_id": "dbpedia_7932_35.txt"
+        },
+        {
+            "file_id": "dbpedia_7932_36.txt"
+        },
+        {
+            "file_id": "dbpedia_7932_37.txt"
+        },
+        {
+            "file_id": "dbpedia_7932_40.txt"
+        },
+        {
+            "file_id": "dbpedia_7932_43.txt"
+        },
+        {
+            "file_id": "dbpedia_7932_44.txt"
+        },
+        {
+            "file_id": "dbpedia_7932_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here's the response in the requested format:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents contain information that suggests \"A Price Above Rubies\" is a film produced by Miramax Films, which supports the triple."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\"output\": \"yes\"}\n```\n\nThe information provided in the documents states that \"A Price Above Rubies\" is a film produced by Miramax Films. Therefore, the triple stating that \"A Price Above Rubies is about Miramax films\" is supported by the given context."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Multiple passages explicitly state the film was produced by Miramax Films. Additionally, it is listed under \"A Miramax Film presentation\" in a section detailing the production credits and associated companies.",
+            "category": 3
+        }
+    }
+}

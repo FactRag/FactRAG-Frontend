@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Bruce_Willis",
+    "predicate": "ontology/alias",
+    "object": "Willis, Walter Bruce; W.B. Willis; Bruno",
+    "human_readable": "Bruce Willis is also known as Willis, Walter Bruce, W.B. Willis, and Bruno.",
+    "questions": [
+        {
+            "score": 0.9736537337303162,
+            "question": "Which of these names is NOT a name Bruce Willis has been called: Walter Bruce, W.B. Willis, Bruno, or John Doe?"
+        },
+        {
+            "score": 0.9666246175765991,
+            "question": "Which of these names is a shortened version of his full name: Willis, Walter Bruce, W.B. Willis?"
+        },
+        {
+            "score": 0.8229444026947021,
+            "question": "Besides Bruce Willis, what other names is he known by?"
+        },
+        {
+            "score": 0.8216415047645569,
+            "question": "What is Bruce Willis's full name?"
+        },
+        {
+            "score": 0.7686209082603455,
+            "question": "What name is most commonly used for Bruce Willis?"
+        },
+        {
+            "score": 0.7127073407173157,
+            "question": "How many different names are associated with Bruce Willis?"
+        },
+        {
+            "score": 0.6899938583374023,
+            "question": "Does Bruce Willis have any nicknames?"
+        },
+        {
+            "score": 0.598145067691803,
+            "question": "If you were to meet Bruce Willis, which name would he most likely introduce himself as?"
+        },
+        {
+            "score": 0.47572416067123413,
+            "question": "What are the different aliases used for Bruce Willis?"
+        },
+        {
+            "score": 0.46804994344711304,
+            "question": "What is the nickname Bruno associated with?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Bruce Willis is also known as Willis, Walter Bruce, W.B. Willis, and Bruno.",
+            "html": "dbpedia_7834_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are the different aliases used for Bruce Willis?",
+            "html": "dbpedia_7834_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=If you were to meet Bruce Willis, which name would he most likely introduce himself as?",
+            "html": "dbpedia_7834_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Bruce Willis have any nicknames?",
+            "html": "dbpedia_7834_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_7834_14.txt"
+        },
+        {
+            "file_id": "dbpedia_7834_24.txt"
+        },
+        {
+            "file_id": "dbpedia_7834_25.txt"
+        },
+        {
+            "file_id": "dbpedia_7834_3.txt"
+        },
+        {
+            "file_id": "dbpedia_7834_38.txt"
+        },
+        {
+            "file_id": "dbpedia_7834_55.txt"
+        },
+        {
+            "file_id": "dbpedia_7834_57.txt"
+        },
+        {
+            "file_id": "dbpedia_7834_61.txt"
+        },
+        {
+            "file_id": "dbpedia_7834_82.txt"
+        },
+        {
+            "file_id": "dbpedia_7834_9.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have any other triples you'd like me to evaluate!  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the context information provided, here's my evaluation of the triple:\n\n{\n  \"output\": \"no\"\n}\n\nThe reason for this answer is that while the documents mention various names associated with Bruce Willis (e.g., Walter Bruce Willis, Bruce Willis), there is no mention of him being also known as \"Willis\", \"W.B. Willis\", or \"Bruno\"."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nThe documents do not provide any information to support the claim that Bruce Willis has alternative names such as \"Walter Bruce,\" \"Willis,\" or \"Bruno.\" The names mentioned in the provided texts are \"Bruce Willis\" and occasionally refer to him by his birth name, Walter Bruce Willis. There is no evidence of additional common aliases like W.B. Willis."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nThe provided documents mention several aliases for Bruce Willis (such as his full name Walter Bruce Willis) but do not explicitly state that he is known by the names \"Willis,\" \"W.B. Willis,\" or \"Bruno.\" Therefore, based on the given context, this statement cannot be confirmed and should be evaluated as incorrect."
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{\n    \"output\": \"yes\"\n}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "There is no information provided to support the additional names (Willis, Walter Bruce, W.B. Willis, and Bruno) being used for Bruce Willis, whereas multiple sources mention him as Walter Bruce Willis or simply Bruce Willis.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context information provided does not mention any alternative names or aliases for Bruce Willis. His name is consistently referred to as Walter Bruce Willis or simply Bruce Willis, without including the other variations mentioned.",
+            "category": 2
+        }
+    }
+}

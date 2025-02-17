@@ -1,0 +1,142 @@
+{
+    "subject": "resource/David_Rovics",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "Rovics, David",
+    "human_readable": "The full name of David Rovics is Rovics, David.",
+    "questions": [
+        {
+            "score": 0.9841465353965759,
+            "question": "What is the full name of David Rovics?"
+        },
+        {
+            "score": 0.9776910543441772,
+            "question": "Is 'Rovics, David' the correct order for David Rovics' full name?"
+        },
+        {
+            "score": 0.9492054581642151,
+            "question": "If you met someone named David Rovics, what would be their full name?"
+        },
+        {
+            "score": 0.937127411365509,
+            "question": "What is David Rovics' last name?"
+        },
+        {
+            "score": 0.923238217830658,
+            "question": "Does David Rovics have a middle name?"
+        },
+        {
+            "score": 0.9180384278297424,
+            "question": "Is 'David Rovics' a common way to write someone's full name?"
+        },
+        {
+            "score": 0.9082819819450378,
+            "question": "What is David Rovics' first name?"
+        },
+        {
+            "score": 0.896377682685852,
+            "question": "What is the order of David Rovics' names?"
+        },
+        {
+            "score": 0.8833719491958618,
+            "question": "How many words are in David Rovics' full name?"
+        },
+        {
+            "score": 0.08515322953462601,
+            "question": "What is the typical format for writing a person's full name?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The full name of David Rovics is Rovics, David.",
+            "html": "dbpedia_9170_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How many words are in David Rovics' full name?",
+            "html": "dbpedia_9170_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the order of David Rovics' names?",
+            "html": "dbpedia_9170_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is David Rovics' first name?",
+            "html": "dbpedia_9170_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_9170_13.txt"
+        },
+        {
+            "file_id": "dbpedia_9170_16.txt"
+        },
+        {
+            "file_id": "dbpedia_9170_20.txt"
+        },
+        {
+            "file_id": "dbpedia_9170_29.txt"
+        },
+        {
+            "file_id": "dbpedia_9170_31.txt"
+        },
+        {
+            "file_id": "dbpedia_9170_40.txt"
+        },
+        {
+            "file_id": "dbpedia_9170_51.txt"
+        },
+        {
+            "file_id": "dbpedia_9170_52.txt"
+        },
+        {
+            "file_id": "dbpedia_9170_6.txt"
+        },
+        {
+            "file_id": "dbpedia_9170_62.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nNone of the documents list his full name as \"Rovics, David\".  \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation in JSON format:\n\n{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nThe documents provide information about David Rovics's career and background but do not include his full name. There is no mention that confirms his full name is \"Rovics, David.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "The provided context consistently refers to him as \"David Rovics,\" suggesting that \"Rovics, David\" is an incorrect order of his name.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The provided context information does not mention David Rovics' full name as \"Rovics, David\".",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The context provides information about David Rovics using his full name \"David Rovics\" throughout, indicating that he goes by the name David Rovics and not just Rovics, David.",
+            "category": 2
+        }
+    }
+}

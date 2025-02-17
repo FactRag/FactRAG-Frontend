@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Leipzig",
+    "predicate": "property/imageCoa",
+    "object": "Coat of arms of Leipzig.svg",
+    "human_readable": "The coat of arms of Leipzig is Coat of arms of Leipzig.svg.",
+    "questions": [
+        {
+            "score": 0.938820481300354,
+            "question": "What does the coat of arms of Leipzig depict?"
+        },
+        {
+            "score": 0.909151554107666,
+            "question": "Can you describe the design of the Leipzig coat of arms?"
+        },
+        {
+            "score": 0.9075192809104919,
+            "question": "Where can one find a visual representation of the Leipzig coat of arms?"
+        },
+        {
+            "score": 0.8792151808738708,
+            "question": "What colors are used in the Leipzig coat of arms?"
+        },
+        {
+            "score": 0.8720918893814087,
+            "question": "Is there a specific historical event or figure represented in the Leipzig coat of arms?"
+        },
+        {
+            "score": 0.8589531779289246,
+            "question": "What symbols are featured on the Leipzig coat of arms?"
+        },
+        {
+            "score": 0.8583382368087769,
+            "question": "When was the Leipzig coat of arms officially adopted?"
+        },
+        {
+            "score": 0.8479032516479492,
+            "question": "Are there any variations or adaptations of the Leipzig coat of arms?"
+        },
+        {
+            "score": 0.7477702498435974,
+            "question": "How is the Leipzig coat of arms used in civic contexts?"
+        },
+        {
+            "score": 0.7368547916412354,
+            "question": "What does the Leipzig coat of arms symbolize about the city?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The coat of arms of Leipzig is Coat of arms of Leipzig.svg.",
+            "html": "dbpedia_6757_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How is the Leipzig coat of arms used in civic contexts?",
+            "html": "dbpedia_6757_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any variations or adaptations of the Leipzig coat of arms?",
+            "html": "dbpedia_6757_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=When was the Leipzig coat of arms officially adopted?",
+            "html": "dbpedia_6757_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6757_12.txt"
+        },
+        {
+            "file_id": "dbpedia_6757_30.txt"
+        },
+        {
+            "file_id": "dbpedia_6757_37.txt"
+        },
+        {
+            "file_id": "dbpedia_6757_39.txt"
+        },
+        {
+            "file_id": "dbpedia_6757_48.txt"
+        },
+        {
+            "file_id": "dbpedia_6757_64.txt"
+        },
+        {
+            "file_id": "dbpedia_6757_71.txt"
+        },
+        {
+            "file_id": "dbpedia_6757_74.txt"
+        },
+        {
+            "file_id": "dbpedia_6757_89.txt"
+        },
+        {
+            "file_id": "dbpedia_6757_92.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n\n\nLet me know if you'd like to try another query!  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here's the evaluation:\n\n* Query: The coat of arms of Leipzig is a shield divided vertically into two sections, with a black lion on a yellow background on the left side and a series of alternating vertical blue and yellow bars on the right side.\nResponse:\n{\n  \"output\": \"yes\"\n}\n\nExplanation: This query matches the description in file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6757/re-ranker-msmarco/12.txt.\n\n* Query: The coat of arms of Leipzig is Coat of Arms Of Leipzig Germany Souvenir.\nResponse:\n{\n  \"output\": \"no\"\n}\n\nExplanation: This query does not match the description in file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6757/re-ranker-msmarco/88.txt, which describes a T-shirt with the coat of arms on it.\n\n* Query: The coat of arms of Leipzig is a horizontal blue over yellow bicolour with centred arms.\nResponse:\n{\n  \"output\": \"yes\"\n}\n\nExplanation: This query matches the description in file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6757/re-ranker-msmarco/91.txt.\n\nTherefore, the final answer is:\n\n* The coat of arms of Leipzig is a shield divided vertically into two sections, with a black lion on a yellow background on the left side and a series of alternating vertical blue and yellow bars on the right side: {'output': 'yes'}\n* The coat of arms of Leipzig is Coat of Arms Of Leipzig Germany Souvenir: {'output': 'no'}\n* The coat of arms of Leipzig is a horizontal blue over yellow bicolour with centred arms: {'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\n**Explanation**: The documents describe the coat of arms of Leipzig, detailing its design (a shield divided vertically into two sections with a black lion on the left and alternating vertical blue and yellow bars on the right). While they do not directly mention \"Coat of arms of Leipzig.svg,\" the information provided about the design strongly supports that such an image would exist or could be named accordingly."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Multiple sources describe the specific elements of Leipzig's coat of arms, including a lion on one side and alternating blue and yellow bars on the other. A simple statement that the coat of arms is \"Coat of arms of Leipzig.svg\" doesn't provide this level of detail and fails to match the descriptions given.",
+            "category": 2
+        }
+    }
+}

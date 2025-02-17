@@ -1,0 +1,102 @@
+{
+    "subject": "resource/George_Harrison",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "George Harrison",
+    "human_readable": "The label of George Harrison is George Harrison.",
+    "questions": [
+        {
+            "score": 0.9564689993858337,
+            "question": "What is the label associated with George Harrison?"
+        },
+        {
+            "score": 0.8963248133659363,
+            "question": "Who is George Harrison?"
+        },
+        {
+            "score": 0.8301345705986023,
+            "question": "Is there any other information available about George Harrison besides his label?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The label of George Harrison is George Harrison.",
+            "html": "dbpedia_8879_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is George Harrison?",
+            "html": "dbpedia_8879_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the label associated with George Harrison?",
+            "html": "dbpedia_8879_2.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8879_126.txt"
+        },
+        {
+            "file_id": "dbpedia_8879_138.txt"
+        },
+        {
+            "file_id": "dbpedia_8879_14.txt"
+        },
+        {
+            "file_id": "dbpedia_8879_142.txt"
+        },
+        {
+            "file_id": "dbpedia_8879_16.txt"
+        },
+        {
+            "file_id": "dbpedia_8879_32.txt"
+        },
+        {
+            "file_id": "dbpedia_8879_39.txt"
+        },
+        {
+            "file_id": "dbpedia_8879_75.txt"
+        },
+        {
+            "file_id": "dbpedia_8879_8.txt"
+        },
+        {
+            "file_id": "dbpedia_8879_95.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\nThe context states that George Harrison founded the Dark Horse Records label, not that he named it after himself.  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the answer in JSON format:\n\n```\n{\n  \"output\": \"yes\"\n}\n```\n\nThe reason for this response is that according to the context information, it states that \"George Harrison founded the Dark Horse Records label in 1974\" and also mentions that \"Dark Horse Records was George's own label\". This suggests that the label of George Harrison is indeed Dark Horse Records."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThis response is based on the information provided, where multiple documents confirm that George Harrison was involved with various labels such as Dark Horse Records and Apple Records, further supporting his independence after Apple's decline. However, the query simplifies to just stating \"The label of George Harrison is George Harrison,\" which is a tautology and inherently correct, thus the response is \"yes.\""
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "The provided text states that George Harrison founded the Dark Horse Records label, indicating that the label bears his name, not the other way around.",
+            "category": 4
+        }
+    }
+}

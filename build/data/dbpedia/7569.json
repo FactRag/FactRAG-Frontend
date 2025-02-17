@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Sarah_Silverman",
+    "predicate": "ontology/influenced",
+    "object": "resource/Daniel_Dickey",
+    "human_readable": "Sarah Silverman was influenced by Daniel Dickey.",
+    "questions": [
+        {
+            "score": 0.9871932864189148,
+            "question": "Was Daniel Dickey a positive influence on Sarah Silverman?"
+        },
+        {
+            "score": 0.9817550778388977,
+            "question": "What kind of impact did Daniel Dickey have on Sarah Silverman?"
+        },
+        {
+            "score": 0.9588786363601685,
+            "question": "How might Daniel Dickey's influence be seen in Sarah Silverman's work?"
+        },
+        {
+            "score": 0.9502916932106018,
+            "question": "Did Daniel Dickey have a role in shaping Sarah Silverman's career?"
+        },
+        {
+            "score": 0.9244086146354675,
+            "question": "Who influenced Sarah Silverman?"
+        },
+        {
+            "score": 0.8735334277153015,
+            "question": "What is the connection between Sarah Silverman and Daniel Dickey?"
+        },
+        {
+            "score": 0.8569698333740234,
+            "question": "What is the relationship between Sarah Silverman and Daniel Dickey?"
+        },
+        {
+            "score": 0.8215327262878418,
+            "question": "Who inspired Sarah Silverman?"
+        },
+        {
+            "score": 0.8156251907348633,
+            "question": "Can you name someone who influenced Sarah Silverman?"
+        },
+        {
+            "score": 0.5732409358024597,
+            "question": "Who was an important figure in Sarah Silverman's development?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Sarah Silverman was influenced by Daniel Dickey.",
+            "html": "dbpedia_7569_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you name someone who influenced Sarah Silverman?",
+            "html": "dbpedia_7569_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who inspired Sarah Silverman?",
+            "html": "dbpedia_7569_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the relationship between Sarah Silverman and Daniel Dickey?",
+            "html": "dbpedia_7569_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_7569_1.txt"
+        },
+        {
+            "file_id": "dbpedia_7569_20.txt"
+        },
+        {
+            "file_id": "dbpedia_7569_23.txt"
+        },
+        {
+            "file_id": "dbpedia_7569_26.txt"
+        },
+        {
+            "file_id": "dbpedia_7569_34.txt"
+        },
+        {
+            "file_id": "dbpedia_7569_36.txt"
+        },
+        {
+            "file_id": "dbpedia_7569_37.txt"
+        },
+        {
+            "file_id": "dbpedia_7569_40.txt"
+        },
+        {
+            "file_id": "dbpedia_7569_6.txt"
+        },
+        {
+            "file_id": "dbpedia_7569_8.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}  \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation of the triple:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe reason for this answer is that according to the documents, Sarah Silverman has influenced the careers of other comedians and writers, including Amy Schumer, Daniel Dickey, and Erez Ben-Ari. This implies that she was also influenced by Daniel Dickey, although it does not explicitly state so in the provided context. However, based on the general meaning of the sentence, it can be inferred that she must have been influenced by him as well to influence his career."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: The documents mention that Sarah Silverman has influenced the careers of other comedians like Daniel Dickey, which directly supports the statement that Sarah Silverman was influential to Daniel Dickey."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nThe context information provided does not support the statement \"Sarah Silverman was influenced by Daniel Dickey.\" Instead, it indicates that Sarah Silverman has influenced the careers of other comedians and writers like Amy Schumer, Daniel Dickey, and Erez Ben-Ari. Therefore, the correct relationship is reversed: Daniel Dickey has been influenced by Sarah Silverman, not vice versa."
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Sarah Silverman influenced the careers of other comedians such as Amy Schumer, Daniel Dickey, and Erez Ben-Ari, not the other way around.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "It states that Sarah Silverman was influenced by Daniel Dickey, but the provided text says that Silverman *influenced* Daniel Dickey's career.",
+            "category": 2
+        }
+    }
+}

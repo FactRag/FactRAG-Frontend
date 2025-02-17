@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Test_Tube_Babies_(film)",
+    "predicate": "ontology/country",
+    "object": "resource/United_States",
+    "human_readable": "The country where the film 'Test Tube Babies' is set is United States.",
+    "questions": [
+        {
+            "score": 0.9261732697486877,
+            "question": "In what country is the film 'Test Tube Babies' set?"
+        },
+        {
+            "score": 0.746482789516449,
+            "question": "Which country serves as the backdrop for the events in 'Test Tube Babies'?"
+        },
+        {
+            "score": 0.7036594748497009,
+            "question": "Is 'Test Tube Babies' a US production?"
+        },
+        {
+            "score": 0.6934888958930969,
+            "question": "What is the setting of the film 'Test Tube Babies'?"
+        },
+        {
+            "score": 0.6257703304290771,
+            "question": "Where does the story of 'Test Tube Babies' take place?"
+        },
+        {
+            "score": 0.5783002376556396,
+            "question": "What are some potential cultural differences that might be explored in 'Test Tube Babies', given its US setting?"
+        },
+        {
+            "score": 0.470068097114563,
+            "question": "Does 'Test Tube Babies' explore themes related to American culture?"
+        },
+        {
+            "score": 0.41361236572265625,
+            "question": "What nationality are the characters in 'Test Tube Babies' likely to be?"
+        },
+        {
+            "score": 0.3440703749656677,
+            "question": "Could the setting of 'Test Tube Babies' influence its plot or characters?"
+        },
+        {
+            "score": 0.2342946082353592,
+            "question": "If the film were set in a different country, how might its story change?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The country where the film 'Test Tube Babies' is set is United States.",
+            "html": "dbpedia_6709_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Could the setting of 'Test Tube Babies' influence its plot or characters?",
+            "html": "dbpedia_6709_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What nationality are the characters in 'Test Tube Babies' likely to be?",
+            "html": "dbpedia_6709_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does 'Test Tube Babies' explore themes related to American culture?",
+            "html": "dbpedia_6709_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6709_1.txt"
+        },
+        {
+            "file_id": "dbpedia_6709_11.txt"
+        },
+        {
+            "file_id": "dbpedia_6709_21.txt"
+        },
+        {
+            "file_id": "dbpedia_6709_4.txt"
+        },
+        {
+            "file_id": "dbpedia_6709_48.txt"
+        },
+        {
+            "file_id": "dbpedia_6709_56.txt"
+        },
+        {
+            "file_id": "dbpedia_6709_66.txt"
+        },
+        {
+            "file_id": "dbpedia_6709_68.txt"
+        },
+        {
+            "file_id": "dbpedia_6709_80.txt"
+        },
+        {
+            "file_id": "dbpedia_6709_93.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents mention that a film called \"Test Tube Babies\" was made in the US in 1948, which supports the statement that the film is set in the United States."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'} \n\nThe documents mention a film called \"Test Tube Babies\" made in the US in 1948, which supports the statement that the film is set in the United States."
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "The information provided does not specify the country where the film 'Test Tube Babies' is set. The context only mentions that it was made in the US in 1948, but it doesn't imply that it is set there.",
+            "category": 3
+        },
+        "gemma2": {
+            "reason": "Context information states the film \"Test Tube Babies\" was made in the US.",
+            "category": 3
+        }
+    }
+}

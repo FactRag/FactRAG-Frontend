@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Robert_Ford_(poet)",
+    "predicate": "ontology/birthPlace",
+    "object": "resource/Ottawa",
+    "human_readable": "Robert Ford was born in Ottawa.",
+    "questions": [
+        {
+            "score": 0.8700827360153198,
+            "question": "Where was Robert Ford born?"
+        },
+        {
+            "score": 0.7668018937110901,
+            "question": "What year was Robert Ford born?"
+        },
+        {
+            "score": 0.644675612449646,
+            "question": "Where did Robert Ford grow up?"
+        },
+        {
+            "score": 0.4322204887866974,
+            "question": "What is Robert Ford known for?"
+        },
+        {
+            "score": 0.3046736717224121,
+            "question": "Is there any information about Robert Ford's family?"
+        },
+        {
+            "score": 0.3045904338359833,
+            "question": "Where does Robert Ford currently reside?"
+        },
+        {
+            "score": 0.28264424204826355,
+            "question": "What is Robert Ford's profession?"
+        },
+        {
+            "score": 0.23120883107185364,
+            "question": "Is there anything interesting about Robert Ford's early life?"
+        },
+        {
+            "score": 0.22583390772342682,
+            "question": "Does Robert Ford have any notable achievements?"
+        },
+        {
+            "score": 0.11785134673118591,
+            "question": "Has Robert Ford won any awards or recognitions?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Robert Ford was born in Ottawa.",
+            "html": "dbpedia_7455_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Robert Ford have any notable achievements?",
+            "html": "dbpedia_7455_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there anything interesting about Robert Ford's early life?",
+            "html": "dbpedia_7455_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is Robert Ford's profession?",
+            "html": "dbpedia_7455_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_7455_104.txt"
+        },
+        {
+            "file_id": "dbpedia_7455_108.txt"
+        },
+        {
+            "file_id": "dbpedia_7455_127.txt"
+        },
+        {
+            "file_id": "dbpedia_7455_153.txt"
+        },
+        {
+            "file_id": "dbpedia_7455_154.txt"
+        },
+        {
+            "file_id": "dbpedia_7455_28.txt"
+        },
+        {
+            "file_id": "dbpedia_7455_33.txt"
+        },
+        {
+            "file_id": "dbpedia_7455_35.txt"
+        },
+        {
+            "file_id": "dbpedia_7455_64.txt"
+        },
+        {
+            "file_id": "dbpedia_7455_7.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the response in JSON format:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe information in the documents supports the triple. There are multiple references to Robert Ford being born in Ottawa, including:\n\n* file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_7455/re-ranker-msmarco/61.txt: \"Robert Arthur Douglas Ford was born in Ottawa on January 8, 1915.\"\n* file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_7455/re-ranker-msmarco/31.txt: \"Born in Ottawa, Ontario, the son of former London Free Press Editor-in Chief and University of Western Ontario Chancellor Arthur Ford...\"\n* file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_7455/re-ranker-msmarco/149.txt: \"Robert was born August 3, 1947 in Ottawa, Illinois...\" (Note: This one is referring to a different Robert Ford, but the question seems to be asking about Robert Arthur Douglas Ford or possibly Robert Bruce Ford)\n* file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_7455/re-ranker-msmarco/26.txt and 148.txt (same info as in 31.txt)"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\nExplanation:\n- The documents mention multiple individuals named Robert Ford. One document specifically states, \"Robert Arthur Douglas Ford was born in Ottawa on January 8, 1915,\" and another mentions, \"Ford was born in Etobicoke, Ontario, Canada, in 1969.\" Since the query only requires that at least one Robert Ford was born in Ottawa (or near), and both documents support this, the answer is \"yes\"."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n    \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Very Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

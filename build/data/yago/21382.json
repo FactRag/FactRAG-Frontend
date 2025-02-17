@@ -1,0 +1,144 @@
+{
+    "subject": "Liza_Minnelli",
+    "predicate": "isMarriedTo",
+    "object": "David_Gest",
+    "human_readable": "Liza Minnelli is married to David Gest.",
+    "questions": [
+        {
+            "score": 0.9883274435997009,
+            "question": "Is David Gest married to Liza Minnelli?"
+        },
+        {
+            "score": 0.9642782211303711,
+            "question": "When did Liza Minnelli and David Gest get married?"
+        },
+        {
+            "score": 0.921235978603363,
+            "question": "Who is Liza Minnelli married to?"
+        },
+        {
+            "score": 0.8056715726852417,
+            "question": "Has Liza Minnelli been married before?"
+        },
+        {
+            "score": 0.673854649066925,
+            "question": "Who is Liza Minnelli?"
+        },
+        {
+            "score": 0.6569696664810181,
+            "question": "What is the name of Liza Minnelli's husband?"
+        },
+        {
+            "score": 0.5270022749900818,
+            "question": "Are there any famous children of Liza Minnelli and David Gest?"
+        },
+        {
+            "score": 0.4056372046470642,
+            "question": "Is Liza Minnelli a singer?"
+        },
+        {
+            "score": 0.36718741059303284,
+            "question": "Is David Gest known for being an actor?"
+        },
+        {
+            "score": 0.28170305490493774,
+            "question": "What is David Gest's profession?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Liza Minnelli is married to David Gest.",
+            "html": "yago_21382_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is David Gest known for being an actor?",
+            "html": "yago_21382_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Liza Minnelli a singer?",
+            "html": "yago_21382_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Are there any famous children of Liza Minnelli and David Gest?",
+            "html": "yago_21382_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "yago_21382_26.txt"
+        },
+        {
+            "file_id": "yago_21382_33.txt"
+        },
+        {
+            "file_id": "yago_21382_34.txt"
+        },
+        {
+            "file_id": "yago_21382_36.txt"
+        },
+        {
+            "file_id": "yago_21382_39.txt"
+        },
+        {
+            "file_id": "yago_21382_4.txt"
+        },
+        {
+            "file_id": "yago_21382_43.txt"
+        },
+        {
+            "file_id": "yago_21382_47.txt"
+        },
+        {
+            "file_id": "yago_21382_6.txt"
+        },
+        {
+            "file_id": "yago_21382_65.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Based on the context information provided, here is the evaluation of the triple:\n\n{\n  \"output\": \"yes\"\n}\n\nExplanation:\n\nThe documents mention that David Gest was briefly married to stage star Liza Minnelli (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/yago_21382/re-ranker-msmarco/5.txt) and that he, the former husband of entertainer Liza Minnelli, died in London on Tuesday (file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/yago_21382/re-ranker-msmarco/63.txt). This information supports the triple \"Liza Minnelli is married to David Gest.\""
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe documents provided do not support the triple \"Liza Minnelli is married to David Gest.\" The information given indicates that David Gest and Liza Minnelli had a marriage, but it was brief and ended in separation."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "mistral-nemo": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\nThe documents mention that David Gest and Liza Minnelli were married, but they also state that they separated in 2003. Therefore, the statement \"Liza Minnelli is married to David Gest\" is not supported by the provided information at the time of writing these documents (in April 2016)."
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Multiple sources state that Gest and Minnelli were married but separated in 2003.",
+            "category": 0
+        },
+        "qwen2.5": {
+            "reason": "David Gest was briefly married to Liza Minnelli from 2002 to 2003, but they separated the following year, and thus were not married at the time of his death.",
+            "category": 0
+        }
+    }
+}

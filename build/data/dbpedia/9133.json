@@ -1,0 +1,142 @@
+{
+    "subject": "resource/Kingdom_of_Burundi",
+    "predicate": "ontology/capital",
+    "object": "resource/Gitega",
+    "human_readable": "The capital of Kingdom of Burundi is Gitega.",
+    "questions": [
+        {
+            "score": 0.9581199884414673,
+            "question": "Is Gitega the current capital of Burundi?"
+        },
+        {
+            "score": 0.9108524918556213,
+            "question": "When did Gitega become the capital of Burundi?"
+        },
+        {
+            "score": 0.8631606101989746,
+            "question": "What is the capital of the Kingdom of Burundi?"
+        },
+        {
+            "score": 0.6916604042053223,
+            "question": "What country does Gitega serve as the capital of?"
+        },
+        {
+            "score": 0.4723169505596161,
+            "question": "Where is Gitega located?"
+        },
+        {
+            "score": 0.4562312960624695,
+            "question": "Are there any historical facts associated with Gitega?"
+        },
+        {
+            "score": 0.3976093530654907,
+            "question": "What are some notable landmarks in Gitega?"
+        },
+        {
+            "score": 0.2913723886013031,
+            "question": "What is the population of Gitega?"
+        },
+        {
+            "score": 0.22140485048294067,
+            "question": "What are some cultural traditions practiced in Gitega?"
+        },
+        {
+            "score": 0.17980879545211792,
+            "question": "What is the climate like in Gitega?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The capital of Kingdom of Burundi is Gitega.",
+            "html": "dbpedia_9133_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some cultural traditions practiced in Gitega?",
+            "html": "dbpedia_9133_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the population of Gitega?",
+            "html": "dbpedia_9133_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some notable landmarks in Gitega?",
+            "html": "dbpedia_9133_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_9133_10.txt"
+        },
+        {
+            "file_id": "dbpedia_9133_19.txt"
+        },
+        {
+            "file_id": "dbpedia_9133_35.txt"
+        },
+        {
+            "file_id": "dbpedia_9133_47.txt"
+        },
+        {
+            "file_id": "dbpedia_9133_61.txt"
+        },
+        {
+            "file_id": "dbpedia_9133_65.txt"
+        },
+        {
+            "file_id": "dbpedia_9133_66.txt"
+        },
+        {
+            "file_id": "dbpedia_9133_76.txt"
+        },
+        {
+            "file_id": "dbpedia_9133_8.txt"
+        },
+        {
+            "file_id": "dbpedia_9133_81.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the context information, the answer to the query \"The capital of Kingdom of Burundi is Gitega.\" is:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation:\n\nWhile it is mentioned in one of the documents that Gitega became the capital of Burundi in 2019 (specifically, in document `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_9133/re-ranker-msmarco/61.txt`), there is no information to suggest that Gitega was the capital of the Kingdom of Burundi before 2019. In fact, it is mentioned in another document (`/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_9133/re-ranker-msmarco/32.txt`) that Gitega carries a rich historical significance that goes back many centuries, and that it was initially the seat of the Burundian monarchy. However, there is no specific mention of Gitega being the capital of the Kingdom of Burundi.\n\nIt's worth noting that the Kingdom of Burundi existed until the late 19th century, and it's likely that its capital would have been different from the current capital of Burundi."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provided support the statement that the capital of the Kingdom of Burundi is Gitega. This can be derived from multiple sources within the given text, such as:\n\n- \"Gitega is the capital of Burundi.\"\n- \"It\u2019s surrounded by hilly and mountainous terrain, characteristic of Burundi\u2019s landscape. Its central location makes it relatively accessible from different parts of the country.\" \n- \"History of Gitega: Gitega, which became the capital of Burundi in 2019, carries a rich historical significance that goes back many centuries.\"\n\nThese excerpts clearly indicate that Gitega is the capital city of Burundi."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Gitega only became the capital of Burundi in modern times (2019), whereas the Kingdom of Burundi existed until the late 19th century, predating the establishment of modern-day Burundi as we know it today.",
+            "category": -1
+        },
+        "gemma2": {
+            "reason": "While Gitega was the seat of the Burundian monarchy and held cultural significance, it became the capital of Burundi in 2019. The Kingdom of Burundi existed until the late 19th century.",
+            "category": -1
+        },
+        "qwen2.5": {
+            "reason": "Gitega became the capital of Burundi in 2019 after Bujumbura, which was both the political and economic capital previously. The Kingdom of Burundi's capital was also its seat of monarchy, but this predates the modern capital city designation, making the statement about it being the capital city in the current sense inaccurate.",
+            "category": -1
+        }
+    }
+}

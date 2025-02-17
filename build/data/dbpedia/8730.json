@@ -1,0 +1,144 @@
+{
+    "subject": "resource/Denmark",
+    "predicate": "ontology/leader",
+    "object": "resource/Margrethe_II_of_Denmark",
+    "human_readable": "Margrethe II of Denmark leads Denmark.",
+    "questions": [
+        {
+            "score": 0.9566715359687805,
+            "question": "What is Margrethe II's role in Denmark?"
+        },
+        {
+            "score": 0.8222845196723938,
+            "question": "Who is the leader of Denmark?"
+        },
+        {
+            "score": 0.8148214221000671,
+            "question": "What position does Margrethe II hold in Danish government?"
+        },
+        {
+            "score": 0.7525747418403625,
+            "question": "What country does Margrethe II lead?"
+        },
+        {
+            "score": 0.5753138065338135,
+            "question": "Is Margrethe II a popular leader?"
+        },
+        {
+            "score": 0.5150865316390991,
+            "question": "Who is the current head of state of Denmark?"
+        },
+        {
+            "score": 0.4465331435203552,
+            "question": "Is Margrethe II a monarch?"
+        },
+        {
+            "score": 0.4103006422519684,
+            "question": "What are some important decisions made by the Danish leader?"
+        },
+        {
+            "score": 0.33427777886390686,
+            "question": "Who is the female monarch of Denmark?"
+        },
+        {
+            "score": 0.26539814472198486,
+            "question": "Does Denmark have a queen?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Margrethe II of Denmark leads Denmark.",
+            "html": "dbpedia_8730_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is the female monarch of Denmark?",
+            "html": "dbpedia_8730_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some important decisions made by the Danish leader?",
+            "html": "dbpedia_8730_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Margrethe II a monarch?",
+            "html": "dbpedia_8730_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8730_124.txt"
+        },
+        {
+            "file_id": "dbpedia_8730_144.txt"
+        },
+        {
+            "file_id": "dbpedia_8730_20.txt"
+        },
+        {
+            "file_id": "dbpedia_8730_200.txt"
+        },
+        {
+            "file_id": "dbpedia_8730_44.txt"
+        },
+        {
+            "file_id": "dbpedia_8730_47.txt"
+        },
+        {
+            "file_id": "dbpedia_8730_52.txt"
+        },
+        {
+            "file_id": "dbpedia_8730_55.txt"
+        },
+        {
+            "file_id": "dbpedia_8730_86.txt"
+        },
+        {
+            "file_id": "dbpedia_8730_99.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me explain why:\n\n* **The context states:** \"Queen Margrethe II has been the reigning monarch of Denmark since 1972.\" and \"Her reign continues to be marked by grace, intelligence, and a deep love for her country.\"  These statements strongly imply that she is the leader of Denmark. \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the structured JSON format for your query:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: While Queen Margrethe II is mentioned to be the reigning monarch of Denmark, it is stated that \"Political power lies in the hands of the elected government.\" This implies that the monarch (in this case, Queen Margrethe II) does not lead the country, but rather serves a ceremonial or symbolic role."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\nThe documents provide information about Queen Margrethe II's role as the monarch of Denmark, which supports the statement that she leads Denmark."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        },
+        "llama3.1:70b": {
+            "short_ans": 1,
+            "full_ans": "{'output': 'yes'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Political power lies in the hands of the elected government.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "Political power lies in the hands of the elected government, not the monarch.",
+            "category": 2
+        }
+    }
+}

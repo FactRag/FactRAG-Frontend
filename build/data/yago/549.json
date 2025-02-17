@@ -1,0 +1,134 @@
+{
+    "subject": "Tiberius",
+    "predicate": "isMarriedTo",
+    "object": "Julia_the_Elder",
+    "human_readable": "Tiberius is married to Julia the Elder.",
+    "questions": [
+        {
+            "score": 0.9645389914512634,
+            "question": "Is there a relationship between Tiberius and Julia the Elder?"
+        },
+        {
+            "score": 0.9136713147163391,
+            "question": "Name the person married to Julia the Elder."
+        },
+        {
+            "score": 0.9133583307266235,
+            "question": "Is Tiberius connected to Julia the Elder?"
+        },
+        {
+            "score": 0.9109015464782715,
+            "question": "What is the relationship between Tiberius and Julia the Elder?"
+        },
+        {
+            "score": 0.8998077511787415,
+            "question": "To whom is Tiberius married?"
+        },
+        {
+            "score": 0.8917456865310669,
+            "question": "Who is married to Julia the Elder?"
+        },
+        {
+            "score": 0.8139510750770569,
+            "question": "Does Tiberius have a wife?"
+        },
+        {
+            "score": 0.7411149144172668,
+            "question": "Who is Julia the Elder's spouse?"
+        },
+        {
+            "score": 0.6418933272361755,
+            "question": "What is the name of Tiberius's wife?"
+        },
+        {
+            "score": 0.08639451116323471,
+            "question": "Who are the two people involved in a marital relationship according to this statement?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Tiberius is married to Julia the Elder.",
+            "html": "yago_549_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of Tiberius's wife?",
+            "html": "yago_549_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is Julia the Elder's spouse?",
+            "html": "yago_549_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Tiberius have a wife?",
+            "html": "yago_549_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "yago_549_15.txt"
+        },
+        {
+            "file_id": "yago_549_17.txt"
+        },
+        {
+            "file_id": "yago_549_20.txt"
+        },
+        {
+            "file_id": "yago_549_34.txt"
+        },
+        {
+            "file_id": "yago_549_6.txt"
+        },
+        {
+            "file_id": "yago_549_63.txt"
+        },
+        {
+            "file_id": "yago_549_65.txt"
+        },
+        {
+            "file_id": "yago_549_8.txt"
+        },
+        {
+            "file_id": "yago_549_82.txt"
+        },
+        {
+            "file_id": "yago_549_91.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation of the triple \"Tiberius is married to Julia the Elder\" based on the provided context information:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: While it is mentioned in the documents that Tiberius was married, the name \"Julia the Younger\" (daughter of Tiberius and Julia the Elder) appears in some of the files, but not the specific name \"Julia the Elder\" as Tiberius' wife. The file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/yago_549/re-ranker-msmarco/61.txt explicitly states that Julia was the daughter of Octavian and his wife Scribonia, and she married her cousin Marcus Claudius Marcellus, then Augustus' friend and general Marcus Vipsanius Agrippa. The file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/yago_549/re-ranker-msmarco/18.txt mentions that Julia was the wife of Tiberius, but it does not explicitly state that this is her first marriage to Tiberius or that she was previously married to someone else. However, based on the information in file_path /Users/stefanomarchesin/Research/fshami/Rag/docs/yago_549/re-ranker-msmarco/61.txt and other files, it can be inferred that Julia had previous marriages, specifically with Marcus Claudius Marcellus (in 25 BC) and then with Agrippa. Therefore, the specific triple \"Tiberius is married to Julia the Elder\" is not explicitly supported by the provided context information."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide clear information that Tiberius married Julia (Julia the Elder) around 11 BC, supporting the statement."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "Julia the Elder is actually married to Marcus Vipsanius Agrippa, not Tiberius.",
+            "category": 0
+        }
+    }
+}

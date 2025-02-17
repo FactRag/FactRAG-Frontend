@@ -1,0 +1,134 @@
+{
+    "subject": "Kenneth_Branagh",
+    "predicate": "produced",
+    "object": "Love's_Labour's_Lost__2000_film_",
+    "human_readable": "Kenneth Branagh produced the film Love's Labour's Lost (2000).",
+    "questions": [
+        {
+            "score": 0.961884617805481,
+            "question": "Who produced the film Love's Labour's Lost (2000)?"
+        },
+        {
+            "score": 0.8302888870239258,
+            "question": "What is the name of the film that Kenneth Branagh produced?"
+        },
+        {
+            "score": 0.7888118028640747,
+            "question": "What year was the film Love's Labour's Lost released?"
+        },
+        {
+            "score": 0.7495515942573547,
+            "question": "Who are some of the actors in Love's Labour's Lost (2000)?"
+        },
+        {
+            "score": 0.7105188369750977,
+            "question": "Are there any other notable films produced by Kenneth Branagh?"
+        },
+        {
+            "score": 0.6497717499732971,
+            "question": "Is Kenneth Branagh known for directing films?"
+        },
+        {
+            "score": 0.5724986791610718,
+            "question": "How is Love's Labour's Lost (2000) received by critics?"
+        },
+        {
+            "score": 0.5603253245353699,
+            "question": "What genre is the film Love's Labour's Lost?"
+        },
+        {
+            "score": 0.25613632798194885,
+            "question": "Has Kenneth Branagh worked on any other Shakespearean adaptations?"
+        },
+        {
+            "score": 0.02100677229464054,
+            "question": "What are some common themes explored in Shakespeare's comedies?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Kenneth Branagh produced the film Love's Labour's Lost (2000).",
+            "html": "yago_21973_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Has Kenneth Branagh worked on any other Shakespearean adaptations?",
+            "html": "yago_21973_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What genre is the film Love's Labour's Lost?",
+            "html": "yago_21973_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How is Love's Labour's Lost (2000) received by critics?",
+            "html": "yago_21973_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "yago_21973_113.txt"
+        },
+        {
+            "file_id": "yago_21973_125.txt"
+        },
+        {
+            "file_id": "yago_21973_134.txt"
+        },
+        {
+            "file_id": "yago_21973_25.txt"
+        },
+        {
+            "file_id": "yago_21973_27.txt"
+        },
+        {
+            "file_id": "yago_21973_39.txt"
+        },
+        {
+            "file_id": "yago_21973_4.txt"
+        },
+        {
+            "file_id": "yago_21973_52.txt"
+        },
+        {
+            "file_id": "yago_21973_8.txt"
+        },
+        {
+            "file_id": "yago_21973_93.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "To evaluate whether the information in the documents supports the triple, let's break down the query:\n\n\"Kenneth Branagh produced the film Love's Labour's Lost (2000).\"\n\nThe relevant document for this query is file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/yago_21973/re-ranker-msmarco/57.txt, which contains the following information:\n\n\"Love's Labour's Lost\n\n(2000)\n\nSynopsis\n\nShakespeare's romance of a king and his three comrades who try to swear off women is updated by director-star Kenneth Branagh in the style of a '30s musical comedy.  The Princess: Alicia Silverstone.  The King: Alessandro Nivola.\"\n\nFrom this document, we can see that Kenneth Branagh directed the film Love's Labour's Lost (2000), not produced it. Therefore, the information in the documents does not support the triple.\n\nThe final answer is:\n\n`{'output': 'no'}`"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\n**Explanation:** The documents provide information that supports this triple. In particular, multiple files mention that Kenneth Branagh directed and starred in the film adaptation of \"Love's Labour's Lost\" (2000), confirming his role as a producer/director/star of the film."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "llama3.1": {
+            "reason": "Kenneth Branagh wrote, directed by, and starred in the film Love's Labour's Lost (2000), not produced it.",
+            "category": 3
+        }
+    }
+}

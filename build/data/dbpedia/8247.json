@@ -1,0 +1,144 @@
+{
+    "subject": "resource/United_States_District_Court_for_the_District_of_Oregon",
+    "predicate": "property/appointer",
+    "object": "resource/List_of_federal_judges_appointed_by_George_H._W._Bush",
+    "human_readable": "The United States District Court for the District of Oregon was appointed by George H.W. Bush.",
+    "questions": [
+        {
+            "score": 0.9799581170082092,
+            "question": "Who appointed the United States District Court for the District of Oregon?"
+        },
+        {
+            "score": 0.9702707529067993,
+            "question": "When was the United States District Court for the District of Oregon appointed?"
+        },
+        {
+            "score": 0.9580585956573486,
+            "question": "Which district is the United States District Court for the District of Oregon responsible for?"
+        },
+        {
+            "score": 0.918951690196991,
+            "question": "What type of court is the United States District Court for the District of Oregon?"
+        },
+        {
+            "score": 0.740898072719574,
+            "question": "Is there a connection between George H.W. Bush and the legal system in Oregon?"
+        },
+        {
+            "score": 0.6345791220664978,
+            "question": "What was George H.W. Bush's role in relation to the court?"
+        },
+        {
+            "score": 0.4968489110469818,
+            "question": "What are the responsibilities of a United States District Court?"
+        },
+        {
+            "score": 0.4178023040294647,
+            "question": "What is the significance of having a dedicated court for Oregon?"
+        },
+        {
+            "score": 0.3858779966831207,
+            "question": "What other courts might exist within the United States District Court system?"
+        },
+        {
+            "score": 0.0937356948852539,
+            "question": "How does the appointment process for federal courts work?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The United States District Court for the District of Oregon was appointed by George H.W. Bush.",
+            "html": "dbpedia_8247_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What other courts might exist within the United States District Court system?",
+            "html": "dbpedia_8247_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the significance of having a dedicated court for Oregon?",
+            "html": "dbpedia_8247_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are the responsibilities of a United States District Court?",
+            "html": "dbpedia_8247_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8247_1.txt"
+        },
+        {
+            "file_id": "dbpedia_8247_23.txt"
+        },
+        {
+            "file_id": "dbpedia_8247_31.txt"
+        },
+        {
+            "file_id": "dbpedia_8247_34.txt"
+        },
+        {
+            "file_id": "dbpedia_8247_40.txt"
+        },
+        {
+            "file_id": "dbpedia_8247_48.txt"
+        },
+        {
+            "file_id": "dbpedia_8247_61.txt"
+        },
+        {
+            "file_id": "dbpedia_8247_77.txt"
+        },
+        {
+            "file_id": "dbpedia_8247_81.txt"
+        },
+        {
+            "file_id": "dbpedia_8247_83.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation:\n\nThe triple to evaluate is:\n\"The United States District Court for the District of Oregon was appointed by George H.W. Bush.\"\n\nAccording to the documents, George H.W. Bush nominated Jones (a judge) to become a United States District Judge of the United States District Court for the District of Oregon on February 20, 1990.\n\nThis does not directly imply that The United States District Court for the District of Oregon itself was appointed by George H.W. Bush. However, it suggests that one of its judges (Jones) was nominated and confirmed by him.\n\nBased on this analysis:\n\n{\n  \"output\": \"no\"\n}"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nExplanation: According to the document at file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8247/re-ranker-msmarco/39.txt, on February 20, 1990, Jones was nominated by President George H. W. Bush to become a United States District Judge of the United States District Court for the District of Oregon, supporting the statement that this court was appointed by George H.W. Bush (noting here that \"appointed\" in the context is more accurately described as \"nominated and confirmed\", but the query asks if it was appointed which aligns with his nomination)."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": true,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}\n\nExplanation: The documents indicate that President George H. W. Bush nominated Jones to become a U.S. District Judge for the District of Oregon, not that he appointed the entire court. The correct statement would be about specific individuals being nominated and confirmed by the Senate for positions in this court."
+        },
+        "llama3.1:70b": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'}"
+        }
+    },
+    "final_decision": -1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Jones was nominated by President George H.W. Bush to be a judge on the court, not that the entire court was appointed by him.  The court itself has judges appointed through nomination and confirmation processes over time.",
+            "category": -1
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because the United States District Court for the District of Oregon was established by an act of Congress on March 3, 1859 (as stated in context information point 2), and its judges are appointed through a process that involves presidential nomination with senatorial advice and consent, which was described in context information points 2 and 4.",
+            "category": -1
+        }
+    }
+}

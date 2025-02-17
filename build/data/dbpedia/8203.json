@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Ajinomoto",
+    "predicate": "ontology/product",
+    "object": "resource/Pharmaceutical_drug",
+    "human_readable": "Ajinomoto produces a Pharmaceutical drug.",
+    "questions": [
+        {
+            "score": 0.9805784225463867,
+            "question": "Does Ajinomoto manufacture pharmaceutical drugs?"
+        },
+        {
+            "score": 0.9411443471908569,
+            "question": "What is an example of a pharmaceutical drug produced by Ajinomoto?"
+        },
+        {
+            "score": 0.8786503672599792,
+            "question": "Does Ajinomoto have a presence in the pharmaceutical market?"
+        },
+        {
+            "score": 0.8724738359451294,
+            "question": "Is Ajinomoto known for producing both food and medicine?"
+        },
+        {
+            "score": 0.7630102634429932,
+            "question": "What are some of the products manufactured by Ajinomoto?"
+        },
+        {
+            "score": 0.6922151446342468,
+            "question": "Ajinomoto's product range includes pharmaceuticals. True or False?"
+        },
+        {
+            "score": 0.6805387139320374,
+            "question": "In what industry does Ajinomoto operate?"
+        },
+        {
+            "score": 0.6455128788948059,
+            "question": "What type of product does Ajinomoto make?"
+        },
+        {
+            "score": 0.6241535544395447,
+            "question": "Besides food products, what else does Ajinomoto produce?"
+        },
+        {
+            "score": 0.6036050915718079,
+            "question": "What kind of company is Ajinomoto?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Ajinomoto produces a Pharmaceutical drug.",
+            "html": "dbpedia_8203_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Besides food products, what else does Ajinomoto produce?",
+            "html": "dbpedia_8203_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of product does Ajinomoto make?",
+            "html": "dbpedia_8203_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In what industry does Ajinomoto operate?",
+            "html": "dbpedia_8203_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8203_12.txt"
+        },
+        {
+            "file_id": "dbpedia_8203_31.txt"
+        },
+        {
+            "file_id": "dbpedia_8203_39.txt"
+        },
+        {
+            "file_id": "dbpedia_8203_48.txt"
+        },
+        {
+            "file_id": "dbpedia_8203_49.txt"
+        },
+        {
+            "file_id": "dbpedia_8203_6.txt"
+        },
+        {
+            "file_id": "dbpedia_8203_60.txt"
+        },
+        {
+            "file_id": "dbpedia_8203_72.txt"
+        },
+        {
+            "file_id": "dbpedia_8203_78.txt"
+        },
+        {
+            "file_id": "dbpedia_8203_80.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the evaluation of the triple:\n\n{\n  \"output\": \"yes\"\n}\n\nReasoning: The documents mention that Ajinomoto Bio-Pharma Services, a subsidiary of Ajinomoto Group, has announced the approval of the first commercial drug manufactured using their proprietary Ajiphase production process. This suggests that Ajinomoto is involved in producing pharmaceutical drugs."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information that supports the statement \"Ajinomoto produces a pharmaceutical drug.\" Specifically, Document 76.txt mentions that Ajinomoto Bio-Pharma Services announced FDA approval for a commercial drug manufactured using their proprietary Ajiphase production process."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Ajinomoto Bio-Pharma Services provides services for the development, manufacturing, and distribution of pharmaceutical drugs; however, it does not explicitly state that they produce a specific drug.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "While the text mentions Ajinomoto Bio-Pharma Services producing a commercially approved drug using their proprietary Ajiphase process, there is no mention of Ajinomoto itself directly producing pharmaceutical drugs.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "It contradicts point 1 which explicitly states that Ajinomoto Bio-Pharma Services has produced the first commercial drug manufactured using their proprietary Ajiphase production process.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "The information provided indicates that Ajinomoto Bio-Pharma Services received FDA approval for a drug manufactured using their proprietary process, but it does not state that Ajinomoto itself produces the pharmaceutical drug. Rather, it suggests that Ajinomoto provides contract development and manufacturing services to produce drugs for its partners.",
+            "category": 2
+        }
+    }
+}

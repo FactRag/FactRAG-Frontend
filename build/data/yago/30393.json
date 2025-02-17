@@ -1,0 +1,134 @@
+{
+    "subject": "Natalie_Buchanan",
+    "predicate": "isMarriedTo",
+    "object": "Jared_Banks",
+    "human_readable": "Natalie Buchanan is married to Jared Banks.",
+    "questions": [
+        {
+            "score": 0.9158660173416138,
+            "question": "To whom is Natalie Buchanan married?"
+        },
+        {
+            "score": 0.8930970430374146,
+            "question": "Who is married to Jared Banks?"
+        },
+        {
+            "score": 0.8133664131164551,
+            "question": "Who is Jared Banks' wife?"
+        },
+        {
+            "score": 0.700895369052887,
+            "question": "What connection exists between Natalie Buchanan and Jared Banks?"
+        },
+        {
+            "score": 0.6796379685401917,
+            "question": "Is Natalie Buchanan in a relationship?"
+        },
+        {
+            "score": 0.6770727038383484,
+            "question": "What is the name of Jared Banks' spouse?"
+        },
+        {
+            "score": 0.11873648315668106,
+            "question": "Is there information about a marriage in this statement?"
+        },
+        {
+            "score": 0.09360163658857346,
+            "question": "Can you identify a marital relationship described here?"
+        },
+        {
+            "score": 0.07305175811052322,
+            "question": "Based on the statement, who is linked as a couple?"
+        },
+        {
+            "score": 0.06212698295712471,
+            "question": "Who are the individuals mentioned in this statement?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Natalie Buchanan is married to Jared Banks.",
+            "html": "yago_30393_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Based on the statement, who is linked as a couple?",
+            "html": "yago_30393_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you identify a marital relationship described here?",
+            "html": "yago_30393_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is there information about a marriage in this statement?",
+            "html": "yago_30393_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "yago_30393_101.txt"
+        },
+        {
+            "file_id": "yago_30393_11.txt"
+        },
+        {
+            "file_id": "yago_30393_15.txt"
+        },
+        {
+            "file_id": "yago_30393_18.txt"
+        },
+        {
+            "file_id": "yago_30393_35.txt"
+        },
+        {
+            "file_id": "yago_30393_39.txt"
+        },
+        {
+            "file_id": "yago_30393_41.txt"
+        },
+        {
+            "file_id": "yago_30393_55.txt"
+        },
+        {
+            "file_id": "yago_30393_7.txt"
+        },
+        {
+            "file_id": "yago_30393_80.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n\n\nLet me know if you have any other queries!"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "After analyzing the context information, I can provide an answer.\n\n{\n  \"output\": \"yes\"\n}\n\nThe documents contain multiple mentions of Natalie Buchanan being married to Jared Banks. For example:\n\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/yago_30393/re-ranker-msmarco/15.txt, it is mentioned that \"Marital status (at death): Natalie Buchanan Banks (married) [05/2009-11/2009] Jared Banks\".\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/yago_30393/re-ranker-msmarco/41.txt, it is mentioned that \"Jared Banks (widowed; 2009)\".\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/yago_30393/re-ranker-msmarco/79.txt, there is no information about Natalie Buchanan being married to Jared Banks.\n\nHowever, the other two documents explicitly state that Natalie Buchanan was married to Jared Banks. Therefore, based on this evidence, the answer to whether Natalie Buchanan is married to Jared Banks is \"yes\"."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide information that supports the statement \"Natalie Buchanan is married to Jared Banks.\" Both `55.txt` and `15.txt` mention that Natalie Buchanan was married to Jared Banks from May 2009 to November 2009, indicating a marriage between them."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n      \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Jared Banks died on November 13, 2009. Therefore, he was not married to Natalie Buchanan after that date.",
+            "category": 0
+        }
+    }
+}

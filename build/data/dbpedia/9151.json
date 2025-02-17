@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Bruce_Hornsby",
+    "predicate": "ontology/hometown",
+    "object": "resource/United_States",
+    "human_readable": "Bruce Hornsby's hometown is United States.",
+    "questions": [
+        {
+            "score": 0.9416735768318176,
+            "question": "Is Bruce Hornsby from the United States?"
+        },
+        {
+            "score": 0.938973605632782,
+            "question": "What is Bruce Hornsby's hometown?"
+        },
+        {
+            "score": 0.8962275981903076,
+            "question": "What is the name of Bruce Hornsby's hometown?"
+        },
+        {
+            "score": 0.5775037407875061,
+            "question": "Where was Bruce Hornsby born?"
+        },
+        {
+            "score": 0.5195896029472351,
+            "question": "What nationality is Bruce Hornsby?"
+        },
+        {
+            "score": 0.47777798771858215,
+            "question": "In which country did Bruce Hornsby grow up?"
+        },
+        {
+            "score": 0.4599542021751404,
+            "question": "Is Bruce Hornsby known for being from a specific place?"
+        },
+        {
+            "score": 0.42805323004722595,
+            "question": "Can you tell me more about where Bruce Hornsby is from?"
+        },
+        {
+            "score": 0.40310388803482056,
+            "question": "Where does Bruce Hornsby consider home?"
+        },
+        {
+            "score": 0.339697927236557,
+            "question": "If Bruce Hornsby was to return home, where would he go?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Bruce Hornsby's hometown is United States.",
+            "html": "dbpedia_9151_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where does Bruce Hornsby consider home?",
+            "html": "dbpedia_9151_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Can you tell me more about where Bruce Hornsby is from?",
+            "html": "dbpedia_9151_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Is Bruce Hornsby known for being from a specific place?",
+            "html": "dbpedia_9151_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_9151_19.txt"
+        },
+        {
+            "file_id": "dbpedia_9151_20.txt"
+        },
+        {
+            "file_id": "dbpedia_9151_23.txt"
+        },
+        {
+            "file_id": "dbpedia_9151_28.txt"
+        },
+        {
+            "file_id": "dbpedia_9151_30.txt"
+        },
+        {
+            "file_id": "dbpedia_9151_39.txt"
+        },
+        {
+            "file_id": "dbpedia_9151_47.txt"
+        },
+        {
+            "file_id": "dbpedia_9151_75.txt"
+        },
+        {
+            "file_id": "dbpedia_9151_87.txt"
+        },
+        {
+            "file_id": "dbpedia_9151_96.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```  \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```"
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\n**Explanation:** The documents provide information about Bruce Hornsby\u2019s birthplace and background, which include that he was born in Williamsburg, Virginia, USA. Given this context, it can be reasonably inferred that his hometown is the United States."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "gemma2": {
+            "reason": "Context information states Bruce Hornsby was born in Williamsburg, Virginia, USA.",
+            "category": 2
+        }
+    }
+}

@@ -1,0 +1,109 @@
+{
+    "subject": "Lilli_Palmer",
+    "predicate": "isMarriedTo",
+    "object": "Rex_Harrison",
+    "human_readable": "Lilli Palmer is married to Rex Harrison.",
+    "questions": [
+        {
+            "score": 0.9883694648742676,
+            "question": "Is Rex Harrison married to Lilli Palmer?"
+        },
+        {
+            "score": 0.8738768100738525,
+            "question": "Who is Lilli Palmer married to?"
+        },
+        {
+            "score": 0.873652994632721,
+            "question": "What is the relationship between Lilli Palmer and Rex Harrison?"
+        },
+        {
+            "score": 0.6381773352622986,
+            "question": "Who is Lilli Palmer?"
+        },
+        {
+            "score": 0.5600203275680542,
+            "question": "Who is Rex Harrison?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Lilli Palmer is married to Rex Harrison.",
+            "html": "yago_24768_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is Lilli Palmer?",
+            "html": "yago_24768_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the relationship between Lilli Palmer and Rex Harrison?",
+            "html": "yago_24768_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who is Lilli Palmer married to?",
+            "html": "yago_24768_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "yago_24768_11.txt"
+        },
+        {
+            "file_id": "yago_24768_19.txt"
+        },
+        {
+            "file_id": "yago_24768_2.txt"
+        },
+        {
+            "file_id": "yago_24768_24.txt"
+        },
+        {
+            "file_id": "yago_24768_32.txt"
+        },
+        {
+            "file_id": "yago_24768_4.txt"
+        },
+        {
+            "file_id": "yago_24768_42.txt"
+        },
+        {
+            "file_id": "yago_24768_45.txt"
+        },
+        {
+            "file_id": "yago_24768_6.txt"
+        },
+        {
+            "file_id": "yago_24768_68.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the structured JSON format containing the evaluation of the triple:\n\n```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provided contain information about Lilli Palmer and her marriage history, which confirms that she was indeed married to Rex Harrison. The text states that they were married from 1943-1956 (document 6), had a son together named Carey Harrison (documents 23 and 6), and got divorced in 1957 (document 39). Therefore, the triple \"Lilli Palmer is married to Rex Harrison\" is supported by the provided documents."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{\n  \"output\": \"yes\"\n}\n```\n\nThe documents provide multiple pieces of information that support the statement \"Lilli Palmer is married to Rex Harrison.\" Specifically, document 39.txt states their marriage occurred on January 25, 1943, and ended in divorce on February 6, 1957. Documents 6.txt and 23.txt also confirm they were husband and wife from 1943 to 1956."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "mistral-nemo": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "-",
+        "topic": "-"
+    },
+    "errors": {}
+}

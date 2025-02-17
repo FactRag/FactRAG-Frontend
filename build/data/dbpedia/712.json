@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Birth_of_a_Notion_(film)",
+    "predicate": "property/animator",
+    "object": "Fred Jones",
+    "human_readable": "The animator of the film Birth of a Notion is Fred Jones.",
+    "questions": [
+        {
+            "score": 0.8910181522369385,
+            "question": "Who animated the film Birth of a Notion?"
+        },
+        {
+            "score": 0.8731712698936462,
+            "question": "Is Fred Jones known for animating films?"
+        },
+        {
+            "score": 0.8549278974533081,
+            "question": "What is the title of the film animated by Fred Jones?"
+        },
+        {
+            "score": 0.8450819849967957,
+            "question": "Which film did Fred Jones animate?"
+        },
+        {
+            "score": 0.7688177824020386,
+            "question": "What is the name of the animator who worked on Birth of a Notion?"
+        },
+        {
+            "score": 0.7646076679229736,
+            "question": "Can you name a film animated by Fred Jones?"
+        },
+        {
+            "score": 0.7349913716316223,
+            "question": "What is the name of the person who animated Birth of a Notion?"
+        },
+        {
+            "score": 0.6698251366615295,
+            "question": "What film features the work of Fred Jones?"
+        },
+        {
+            "score": 0.4451097548007965,
+            "question": "Who was involved in the creation of Birth of a Notion?"
+        },
+        {
+            "score": 0.2255251407623291,
+            "question": "Fred Jones worked on what kind of project?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The animator of the film Birth of a Notion is Fred Jones.",
+            "html": "dbpedia_712_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who was involved in the creation of Birth of a Notion?",
+            "html": "dbpedia_712_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What film features the work of Fred Jones?",
+            "html": "dbpedia_712_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is the name of the person who animated Birth of a Notion?",
+            "html": "dbpedia_712_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_712_10.txt"
+        },
+        {
+            "file_id": "dbpedia_712_102.txt"
+        },
+        {
+            "file_id": "dbpedia_712_111.txt"
+        },
+        {
+            "file_id": "dbpedia_712_20.txt"
+        },
+        {
+            "file_id": "dbpedia_712_29.txt"
+        },
+        {
+            "file_id": "dbpedia_712_36.txt"
+        },
+        {
+            "file_id": "dbpedia_712_39.txt"
+        },
+        {
+            "file_id": "dbpedia_712_6.txt"
+        },
+        {
+            "file_id": "dbpedia_712_75.txt"
+        },
+        {
+            "file_id": "dbpedia_712_89.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "{'output': 'no'} \n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation in JSON format:\n\n```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe reason for this answer is that there are multiple documents mentioning the animation film \"Birth of a Notion\", but none of them mention Fred Jones as its animator. In fact, one of the documents states that the cartoon was finished by Robert McKimson, and another document mentions Chuck Jones's exhibit featuring an animation film with the same title, but does not explicitly state that he was the animator of this particular \"Birth of a Notion\"."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n```\n\nThe provided context does not mention Fred Jones as the animator of \"Birth of a Notion.\" The information indicates that Bob Clampett was initially slated to direct it, but Robert McKimson finished it. There's no reference to Fred Jones in connection with this cartoon."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "The Least Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Fred Jones was a character from the Scooby-Doo franchise, not an animator for the Looney Tunes short \"Birth of a Notion\".",
+            "category": 3
+        },
+        "gemma2": {
+            "reason": "The provided text mentions Robert McKimson as the director and animator of \"Birth of a Notion\", while Fred Jones is known for acting roles, particularly in the \"Scooby-Doo\" films.",
+            "category": 3
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because Chuck Jones was a cartoon director, but there is no connection between him and the film Birth of a Notion. The context information states that Robert McKimson directed Birth of a Notion, not Chuck Jones, and mentions a gala inauguration of an exhibit celebrating Chuck Jones's 104th birthday with a different title \"Birth of a Notion\" related to his work.",
+            "category": 3
+        },
+        "qwen2.5": {
+            "reason": "The context information states that Robert McKimson directed \"Birth of a Notion,\" not Fred Jones.",
+            "category": 3
+        }
+    }
+}

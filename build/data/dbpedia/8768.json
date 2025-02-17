@@ -1,0 +1,134 @@
+{
+    "subject": "resource/Sanjak_of_Ohrid",
+    "predicate": "ontology/capital",
+    "object": "resource/Bitola",
+    "human_readable": "The capital of Sanjak of Ohrid is Bitola.",
+    "questions": [
+        {
+            "score": 0.9149919748306274,
+            "question": "What is the capital of the Sanjak of Ohrid?"
+        },
+        {
+            "score": 0.7050555348396301,
+            "question": "What is the history of Bitola as a capital?"
+        },
+        {
+            "score": 0.6476868391036987,
+            "question": "Which administrative region has Bitola as its capital?"
+        },
+        {
+            "score": 0.5984863042831421,
+            "question": "Is Bitola a city?"
+        },
+        {
+            "score": 0.5646198391914368,
+            "question": "Where is Bitola located?"
+        },
+        {
+            "score": 0.5615831017494202,
+            "question": "What other cities are in the Sanjak of Ohrid?"
+        },
+        {
+            "score": 0.4623975455760956,
+            "question": "What are some notable landmarks in Bitola?"
+        },
+        {
+            "score": 0.4441637396812439,
+            "question": "What is important about the Sanjak of Ohrid?"
+        },
+        {
+            "score": 0.36932265758514404,
+            "question": "How big is Bitola?"
+        },
+        {
+            "score": 0.2560848593711853,
+            "question": "What is the climate like in Bitola?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=The capital of Sanjak of Ohrid is Bitola.",
+            "html": "dbpedia_8768_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=How big is Bitola?",
+            "html": "dbpedia_8768_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What is important about the Sanjak of Ohrid?",
+            "html": "dbpedia_8768_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What are some notable landmarks in Bitola?",
+            "html": "dbpedia_8768_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8768_18.txt"
+        },
+        {
+            "file_id": "dbpedia_8768_27.txt"
+        },
+        {
+            "file_id": "dbpedia_8768_32.txt"
+        },
+        {
+            "file_id": "dbpedia_8768_35.txt"
+        },
+        {
+            "file_id": "dbpedia_8768_4.txt"
+        },
+        {
+            "file_id": "dbpedia_8768_45.txt"
+        },
+        {
+            "file_id": "dbpedia_8768_46.txt"
+        },
+        {
+            "file_id": "dbpedia_8768_49.txt"
+        },
+        {
+            "file_id": "dbpedia_8768_6.txt"
+        },
+        {
+            "file_id": "dbpedia_8768_60.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'} \n``` \n\n\nThe documents state that the initial county town was Bitola, but later it became Ohrid.  Therefore, while Bitola was once the capital, it is not currently the capital of the Sanjak of Ohrid."
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Here is the evaluation:\n\nThe triple to be evaluated is: \"The capital of Sanjak of Ohrid is Bitola.\"\n\nAfter analyzing the provided context information, I found that:\n\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8768/re-ranker-msmarco/28.txt, it is mentioned that initially, the county town was Bitola and later it was Ohrid.\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8768/re-ranker-msmarco/2.txt, it is mentioned that Ohrid was a township center bounded to Monastir sanjak in Manastir Vilayet (present-day Bitola).\n* In file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8768/re-ranker-msmarco/3.txt, it is mentioned that before 1912, Ohrid was a township center bounded to Monastir sanjak in Monastir province (present-day Bitola).\n\nHowever, in file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8768/re-ranker-msmarco/46.txt, it is mentioned that Ohrid was called Achrida and was the capital of this sanjak.\n\nTherefore, considering all the provided information, I conclude that:\n\nResponse: {'output': 'no'}\n\nThe triple \"The capital of Sanjak of Ohrid is Bitola\" is not entirely accurate according to the documents."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nThe documents mention that the county town (initially) of the Sanjak of Ohrid was Bitola, but they do not explicitly state that Bitola was the capital. The term \"capital\" is more specific and suggests a higher administrative status than just being the county town, which is not directly supported by the given texts."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\"output\": \"yes\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 0,
+    "analysis": {
+        "stratum": "The Most Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Initially, the county town of Sanjak of Ohrid was Bitola, but later it was moved to Ohrid. Therefore, Ohrid can be considered as the capital of Sanjak of Ohrid, not Bitola.",
+            "category": -1
+        }
+    }
+}

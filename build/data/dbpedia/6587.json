@@ -1,0 +1,146 @@
+{
+    "subject": "resource/Walter_Turner_(cricketer)",
+    "predicate": "property/birthPlace",
+    "object": "resource/India",
+    "human_readable": "Walter Turner was born in India.",
+    "questions": [
+        {
+            "score": 0.9106312990188599,
+            "question": "Is Walter Turner Indian?"
+        },
+        {
+            "score": 0.8551262617111206,
+            "question": "Where was Walter Turner born?"
+        },
+        {
+            "score": 0.7942302227020264,
+            "question": "What country is associated with Walter Turner's birth?"
+        },
+        {
+            "score": 0.6788930296897888,
+            "question": "What nationality is Walter Turner?"
+        },
+        {
+            "score": 0.6616451144218445,
+            "question": "Can you tell me about Walter Turner's birthplace?"
+        },
+        {
+            "score": 0.6220794320106506,
+            "question": "What is the connection between Walter Turner and India?"
+        },
+        {
+            "score": 0.6191667318344116,
+            "question": "Where did Walter Turner come from?"
+        },
+        {
+            "score": 0.4530429244041443,
+            "question": "In which country did Walter Turner spend his early years?"
+        },
+        {
+            "score": 0.3439660370349884,
+            "question": "Do you know anything about Walter Turner's origins?"
+        },
+        {
+            "score": 0.10066896677017212,
+            "question": "India holds significance for whom?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Walter Turner was born in India.",
+            "html": "dbpedia_6587_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Do you know anything about Walter Turner's origins?",
+            "html": "dbpedia_6587_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=In which country did Walter Turner spend his early years?",
+            "html": "dbpedia_6587_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Where did Walter Turner come from?",
+            "html": "dbpedia_6587_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6587_106.txt"
+        },
+        {
+            "file_id": "dbpedia_6587_22.txt"
+        },
+        {
+            "file_id": "dbpedia_6587_25.txt"
+        },
+        {
+            "file_id": "dbpedia_6587_27.txt"
+        },
+        {
+            "file_id": "dbpedia_6587_39.txt"
+        },
+        {
+            "file_id": "dbpedia_6587_41.txt"
+        },
+        {
+            "file_id": "dbpedia_6587_54.txt"
+        },
+        {
+            "file_id": "dbpedia_6587_57.txt"
+        },
+        {
+            "file_id": "dbpedia_6587_70.txt"
+        },
+        {
+            "file_id": "dbpedia_6587_99.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation:\nThe documents provide information about different individuals named Walter Turner, but none of them mention being born in India. The first document mentions a Walter Samuel Turner born in Gestingthorpe, Essex, while the second document mentions a Walter Turner born in Hague, VA, and the third document mentions an Australian-born poet with the name Walter James Redfern Turner. There is no information about any of these individuals being born in India."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: According to the documents, there are multiple Walter Turners mentioned with different birthplaces and details. The document at path `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6587/re-ranker-msmarco/40.txt` states \"Walter Samuel Turner was born at Gestingthorpe, Essex, on January 13th, 1842,\" and another document at path `/Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_6587/re-ranker-msmarco/38.txt` mentions Walter Martin FitzHerbert Turner who was born in Meerut, Uttar Pradesh, India. Therefore, the statement that \"Walter Turner was born in India\" cannot be universally supported as true based on the given documents, since there is at least one Walter Turner (Walter Samuel) whose birthplace is clearly stated to be Essex, England."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\"output\": \"no\"}"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "Walter Turner was born at Gestingthorpe, Essex, not in India.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "The provided text states Walter Turner was born on April 4, 1881, in Meerut, Uttar Pradesh, India.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because Walter Martin FitzHerbert Turner was actually born on 4th April 1881, in Meerut, Uttar Pradesh, India, but then another person with the name 'Walter Turner' was born in Hague, VA. in 1943 and also another person named Walter James Redfern Turner who was born in South Melbourne into a fairly ordinary family, there is no information about a person named Walter Turner that matches the fact 'Walter Turner was born in India.'",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "None of the Walter Turners mentioned were born in India. The birthplaces given are Essex, Virginia, South Melbourne, West Brighton, Meerut (India for one individual), and Ossett.",
+            "category": 2
+        }
+    }
+}

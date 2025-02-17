@@ -1,0 +1,129 @@
+{
+    "subject": "resource/Frances_Lennon",
+    "predicate": "ontology/birthPlace",
+    "object": "resource/Stretford",
+    "human_readable": "Frances Lennon was born in Stretford.",
+    "questions": [
+        {
+            "score": 0.7849043011665344,
+            "question": "Where was Frances Lennon born?"
+        },
+        {
+            "score": 0.6591546535491943,
+            "question": "When was Frances Lennon born?"
+        },
+        {
+            "score": 0.41120007634162903,
+            "question": "What is Frances Lennon's nationality?"
+        },
+        {
+            "score": 0.40170755982398987,
+            "question": "Is Frances Lennon famous?"
+        },
+        {
+            "score": 0.3840978443622589,
+            "question": "Who are some other famous people from Stretford?"
+        },
+        {
+            "score": 0.36490461230278015,
+            "question": "What is Stretford known for?"
+        },
+        {
+            "score": 0.35784029960632324,
+            "question": "What country is Stretford in?"
+        },
+        {
+            "score": 0.34695136547088623,
+            "question": "What kind of place is Stretford?"
+        },
+        {
+            "score": 0.24631543457508087,
+            "question": "Does Frances Lennon have any siblings?"
+        },
+        {
+            "score": 0.2206110954284668,
+            "question": "Is Stretford a large town or city?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=Frances Lennon was born in Stretford.",
+            "html": "dbpedia_8636_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Does Frances Lennon have any siblings?",
+            "html": "dbpedia_8636_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What kind of place is Stretford?",
+            "html": "dbpedia_8636_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What country is Stretford in?",
+            "html": "dbpedia_8636_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_8636_1.txt"
+        },
+        {
+            "file_id": "dbpedia_8636_12.txt"
+        },
+        {
+            "file_id": "dbpedia_8636_22.txt"
+        },
+        {
+            "file_id": "dbpedia_8636_28.txt"
+        },
+        {
+            "file_id": "dbpedia_8636_4.txt"
+        },
+        {
+            "file_id": "dbpedia_8636_41.txt"
+        },
+        {
+            "file_id": "dbpedia_8636_7.txt"
+        },
+        {
+            "file_id": "dbpedia_8636_70.txt"
+        },
+        {
+            "file_id": "dbpedia_8636_74.txt"
+        },
+        {
+            "file_id": "dbpedia_8636_8.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n``` \n"
+        },
+        "llama3.1": {
+            "short_ans": 1,
+            "full_ans": "Here is the answer in the requested format:\n\n```json\n{\n    \"output\": \"yes\"\n}\n```\n\nThe information in the documents supports the triple that Frances Lennon was born in Stretford. This is confirmed by multiple sources, including her early life (document 40.txt) and other biographical information (documents 1.txt, 7.txt, etc.)."
+        },
+        "qwen2.5": {
+            "short_ans": 1,
+            "full_ans": "```json\n{'output': 'yes'}\n```\n\nThe documents provide information that supports the statement \"Frances Lennon was born in Stretford.\" Specifically, the document `file_path: /Users/stefanomarchesin/Research/fshami/Rag/docs/dbpedia_8636/re-ranker-msmarco/40.txt` states, \"Lennon was born on Haddon Street, in the Gorse Hill district of Stretford,\" which confirms her birthplace as Stretford."
+        },
+        "mistral": {
+            "short_ans": 1,
+            "full_ans": " {\n      \"output\": \"yes\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 1,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "Extremely Popular",
+        "topic": "-"
+    },
+    "errors": {}
+}

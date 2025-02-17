@@ -1,0 +1,146 @@
+{
+    "subject": "resource/SonicWall",
+    "predicate": "property/successor",
+    "object": "Dell subsidiary",
+    "human_readable": "SonicWall was succeeded by Dell subsidiary.",
+    "questions": [
+        {
+            "score": 0.9712182283401489,
+            "question": "Which subsidiary of Dell acquired SonicWall?"
+        },
+        {
+            "score": 0.8332024216651917,
+            "question": "What company succeeded SonicWall?"
+        },
+        {
+            "score": 0.7953394055366516,
+            "question": "When did Dell acquire SonicWall?"
+        },
+        {
+            "score": 0.7516806125640869,
+            "question": "Why might Dell have acquired SonicWall?"
+        },
+        {
+            "score": 0.7205849885940552,
+            "question": "Is Dell the parent company of SonicWall?"
+        },
+        {
+            "score": 0.6894115209579468,
+            "question": "Does Dell still produce SonicWall products?"
+        },
+        {
+            "score": 0.5265596508979797,
+            "question": "Was SonicWall an independent company before the acquisition?"
+        },
+        {
+            "score": 0.5124893188476562,
+            "question": "What type of company was SonicWall?"
+        },
+        {
+            "score": 0.4477386772632599,
+            "question": "Who now owns SonicWall?"
+        },
+        {
+            "score": 0.4361451268196106,
+            "question": "What happened to SonicWall after being acquired?"
+        }
+    ],
+    "google_pages": [
+        {
+            "url": "https://www.google.com/search?q=SonicWall was succeeded by Dell subsidiary.",
+            "html": "dbpedia_6722_0.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Who now owns SonicWall?",
+            "html": "dbpedia_6722_1.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=What type of company was SonicWall?",
+            "html": "dbpedia_6722_2.html"
+        },
+        {
+            "url": "https://www.google.com/search?q=Was SonicWall an independent company before the acquisition?",
+            "html": "dbpedia_6722_3.html"
+        }
+    ],
+    "selected_docs": [
+        {
+            "file_id": "dbpedia_6722_10.txt"
+        },
+        {
+            "file_id": "dbpedia_6722_104.txt"
+        },
+        {
+            "file_id": "dbpedia_6722_105.txt"
+        },
+        {
+            "file_id": "dbpedia_6722_23.txt"
+        },
+        {
+            "file_id": "dbpedia_6722_28.txt"
+        },
+        {
+            "file_id": "dbpedia_6722_35.txt"
+        },
+        {
+            "file_id": "dbpedia_6722_44.txt"
+        },
+        {
+            "file_id": "dbpedia_6722_46.txt"
+        },
+        {
+            "file_id": "dbpedia_6722_48.txt"
+        },
+        {
+            "file_id": "dbpedia_6722_62.txt"
+        }
+    ],
+    "final_question": "Is true?",
+    "responses": {
+        "gemma2": {
+            "short_ans": 0,
+            "full_ans": "```json\n{'output': 'no'}\n``` \n\n\n"
+        },
+        "llama3.1": {
+            "short_ans": 0,
+            "full_ans": "Based on the context information, here is the evaluation of the triple:\n\n{\n  \"output\": \"no\"\n}\n\nExplanation: The documents provide information about SonicWall's acquisition by Dell and its subsequent divestiture to Francisco Partners and Elliot Management. There is no mention of SonicWall being a subsidiary of another company, let alone Dell. In fact, the text states that SonicWall is now privately owned by Francisco Partners and Elliot Management, suggesting that it has been spun out as an independent company."
+        },
+        "qwen2.5": {
+            "short_ans": 0,
+            "full_ans": "```json\n{\n  \"output\": \"no\"\n}\n```\n\nExplanation: The documents provide information that SonicWall has been spun out of Dell Technologies and is now privately owned, rather than remaining as a Dell subsidiary. Therefore, the statement that SonicWall was succeeded by a Dell subsidiary is incorrect based on the given context."
+        },
+        "mistral": {
+            "short_ans": 0,
+            "full_ans": " {\n      \"output\": \"no\"\n   }"
+        }
+    },
+    "need_tiebreaker": false,
+    "tiebreakers_responses": {
+        "qwen2.5:14b": {},
+        "llama3.1:70b": {}
+    },
+    "final_decision": 0,
+    "actual_decision": 1,
+    "analysis": {
+        "stratum": "More Popular",
+        "topic": "-"
+    },
+    "errors": {
+        "mistral": {
+            "reason": "SonicWall was never a subsidiary of Dell. It was originally a private company, then acquired by Dell in 2012, but has now been spun out as an independent company owned by Francisco Partners and Elliott Management.",
+            "category": 2
+        },
+        "gemma2": {
+            "reason": "Multiple sources state that Dell acquired SonicWall, not the other way around.",
+            "category": 2
+        },
+        "llama3.1": {
+            "reason": "The claim is wrong because SonicWall was actually spun out of Dell Technologies as an independent company, with private equity firm Francisco Partners and hedge fund Elliott Management completing the acquisition.",
+            "category": 2
+        },
+        "qwen2.5": {
+            "reason": "SonicWall has officially spun out of Dell Technologies as an independent company, with private equity firm Francisco Partners and hedge fund Elliott Management completing the acquisition of the technology giant's software arm. This means that SonicWall is no longer a subsidiary of Dell but has become privately owned by Francisco Partners and Elliot Management.",
+            "category": 2
+        }
+    }
+}
