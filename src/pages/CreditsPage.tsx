@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Button } from 'flowbite-react'
-import { BookOpen, Github, Mail } from 'lucide-react'
+import { BookOpen, Github, Mail, Link } from 'lucide-react'
 import Header from '../components/layout/Header'
 
 interface TeamMember {
@@ -13,6 +13,7 @@ interface TeamMember {
     github?: string;
     scholar?: string;
     email?: string;
+    webpage?: string;
   };
 }
 
@@ -39,7 +40,8 @@ export const CreditsPage: React.FC = () => {
       links: {
         github: 'https://github.com/stefano-marchesin',
         scholar: 'https://scholar.google.com/citations?user=AVZdcS8AAAAJ&hl=en',
-        email: 'stefano.marchesin@unipd.it'
+        email: 'stefano.marchesin@unipd.it',
+        webpage: 'https://www.dei.unipd.it/~marches1/'
       }
     },
     {
@@ -49,9 +51,9 @@ export const CreditsPage: React.FC = () => {
       image: 'https://gda.dei.unipd.it/static/images/credits/gian_960x960.jpg',
       bio: 'Expert in knowledge management, information access, and algorithmic fairness.',
       links: {
-        // github: 'https://github.com/sophiec',
         scholar: 'http://scholar.google.com/citations?user=pY24h-YAAAAJ&hl=en',
-        email: 'silvello@dei.unipd.it'
+        email: 'silvello@dei.unipd.it',
+        webpage: 'https://www.dei.unipd.it/~silvello/'
       }
     }
   ];
@@ -125,6 +127,7 @@ const TeamMemberCard: React.FC<{ member: TeamMember }> = ({ member }) => {
                 >
                   {key === 'email' ? <Mail className="w-4 h-4" /> :
                     key === 'github' ? <Github className="w-4 h-4" /> :
+                      key === 'webpage' ? <Link className="w-4 h-4"/> :
                       <BookOpen className="w-4 h-4" />}
                 </a>
               )
@@ -162,7 +165,7 @@ const ProjectLinks: React.FC = () => (
         <BookOpen className="w-5 h-5" />
         <div>
           <div className="font-medium text-sm">Research Paper</div>
-          <div className="text-xs text-gray-500">Read on SIGIR</div>
+          <div className="text-xs text-gray-500">Read</div>
         </div>
       </a>
     </div>
